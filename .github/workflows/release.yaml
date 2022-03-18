@@ -52,9 +52,9 @@ jobs:
           MAVEN_CENTRAL_TOKEN: ${{ secrets.MAVEN_CENTRAL_TOKEN }}
           MAVEN_GPG_PASSPHRASE: ${{ secrets.MAVEN_GPG_PASSPHRASE }}
 
-      - name: Compile command line
-        run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" src\net\JavaBridgeCLI\JavaBridgeCLI.csproj
-
+      # - name: Compile command line
+      #   run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" src\net\JavaBridgeCLI\JavaBridgeCLI.csproj
+      #
       # - uses: nuget/setup-nuget@v1
       #   with:
       #     nuget-version: '5.x'
@@ -68,4 +68,3 @@ jobs:
         run: |
           nuget push .\bin\*.nupkg -ApiKey ${{ secrets.MASES_NUGET_API_KEY }} -Source https://api.nuget.org/v3/index.json -SkipDuplicate
           nuget push .\bin\*.snupkg -ApiKey ${{ secrets.MASES_NUGET_API_KEY }} -Source https://api.nuget.org/v3/index.json -SkipDuplicate
-          
