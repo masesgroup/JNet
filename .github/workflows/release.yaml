@@ -68,4 +68,3 @@ jobs:
         run: |
           nuget push .\bin\*.nupkg -ApiKey ${{ secrets.MASES_NUGET_API_KEY }} -Source https://api.nuget.org/v3/index.json -SkipDuplicate
           nuget push .\bin\*.snupkg -ApiKey ${{ secrets.MASES_NUGET_API_KEY }} -Source https://api.nuget.org/v3/index.json -SkipDuplicate
-          
