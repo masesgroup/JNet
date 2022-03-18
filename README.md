@@ -12,7 +12,7 @@ This project adheres to the Contributor [Covenant code of conduct](CODE_OF_CONDU
 
 ## Scope of the project
 
-This project aims to create a library to direct access, from .NET, all the features available in the Java Platform, this is the counterpart of [JCOReflector](https://github.com/masesgroup/JCOReflector)
+This project aims to create a library to direct access, from .NET, all the features available in the Java Platform, this is the counterpart of [JCOReflector](https://github.com/masesgroup/JCOReflector).
 
 There are many client libraries written to manage communication with Java. Conversely, this project use directly the Java packages giving more than one benefit:
 * all implemented features are availables at no extra implementation costs, see [JavaBridge usage](src/net/Documentation/articles/usage.md);
