@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "MASES s.r.l.",
+  "classifications": [ "Common", "Console", "C#8" ],
+  "identity": "MASES.JavaBridgeTemplate.JavaBridgeApp",
+  "name": "Console templates: Java Bridge project",
+  "shortName": "javabridgeApp",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  }
+}

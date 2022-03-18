@@ -1,11 +1,5 @@
 # JavaBridge: the Java .NET implementation
 
-[![CI_BUILD](https://github.com/masesgroup/JavaBridge/actions/workflows/build.yaml/badge.svg)](https://github.com/masesgroup/JavaBridge/actions/workflows/build.yaml) [![CI_RELEASE](https://github.com/masesgroup/JavaBridge/actions/workflows/release.yaml/badge.svg)](https://github.com/masesgroup/JavaBridge/actions/workflows/release.yaml) 
-
-|JavaBridge | JavaBridge.Templates |
-|---	|---	|
-|[![JavaBridge nuget](https://img.shields.io/nuget/v/MASES.JavaBridge)](https://www.nuget.org/packages/MASES.JavaBridge) [![downloads](https://img.shields.io/nuget/dt/MASES.JavaBridge)](https://www.nuget.org/packages/MASES.JavaBridge) | [![JavaBridge.Templates nuget](https://img.shields.io/nuget/v/MASES.JavaBridge.Templates)](https://www.nuget.org/packages/MASES.JavaBridge.Templates) [![downloads](https://img.shields.io/nuget/dt/MASES.JavaBridge.Templates)](https://www.nuget.org/packages/MASES.JavaBridge.Templates)|
-
 JavaBridge is a .NET mirror of Java APIs.
 
 This project adheres to the Contributor [Covenant code of conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to coc_reporting@masesgroup.com.
@@ -32,7 +26,7 @@ JavaBridge uses [JCOBridge](https://www.jcobridge.com), and its [features](https
   * No need to learn new APIs: we try to expose the same APIs in C# style;
   * No extra validation cycle on protocol and functionality: bug fix, improvements, new features are immediately available;
   * Documentation is shared;
-* **Dynamic code**: it helps to write a Java/Scala/Kotlin/etc seamless language code directly inside a standard .NET application written in C#/VB.NET: look at this [simple example](https://www.jcobridge.com/net-examples/dotnet-examples/) and [JavaBridge APIs extensibility](src/net/Documentation/articles/API_extensibility.md).
+* **Dynamic code**: it helps to write a Java/Scala/Kotlin/etc seamless language code directly inside a standard .NET application written in C#/VB.NET: look at this [simple example](https://www.jcobridge.com/net-examples/dotnet-examples/) and [JavaBridge APIs extensibility](articles/API_extensibility.md).
 
 Have a look at the following resources:
 - [Release notes](https://www.jcobridge.com/release-notes/)
@@ -42,9 +36,9 @@ Have a look at the following resources:
 ---
 ## Summary
 
-* [Roadmap](src/net/Documentation/articles/roadmap.md)
-* [Actual state](src/net/Documentation/articles/actualstate.md)
-* [JavaBridge usage](src/net/Documentation/articles/usage.md)
-* [JavaBridge APIs extensibility](src/net/Documentation/articles/API_extensibility.md)
+* [Roadmap](articles/roadmap.md)
+* [Actual state](articles/actualstate.md)
+* [JavaBridge usage](articles/usage.md)
+* [JavaBridge APIs extensibility](articles/API_extensibility.md)
 
 ---
