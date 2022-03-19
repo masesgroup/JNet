@@ -26,7 +26,7 @@ namespace MASES.JNetTest
     {
         static void Main(string[] args)
         {
-            var appArgs = JNetCore.GlobalInstance.ApplicationArgs;
+            var appArgs = JNetCore.GlobalInstance.FilteredArgs;
             if (args.Length != 0)
             {
                 var set = Collections.Singleton(appArgs[0]);
