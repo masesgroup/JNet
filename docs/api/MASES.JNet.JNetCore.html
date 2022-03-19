@@ -73,7 +73,8 @@
   
   <h1 id="MASES_JNet_JNetCore" data-uid="MASES.JNet.JNetCore" class="text-break">Class JNetCore
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Concrete implementation of <a class="xref" href="MASES.JNet.JNetCore-1.html">JNetCore&lt;T&gt;</a></p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -91,12 +92,6 @@
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="MASES.JNet.JNetCore-1.html#MASES_JNet_JNetCore_1_GlobalInstance">JNetCore&lt;JNetCore&gt;.GlobalInstance</a>
-    </div>
-    <div>
-      <a class="xref" href="MASES.JNet.JNetCore-1.html#MASES_JNet_JNetCore_1_CreateGlobalInstance">JNetCore&lt;JNetCore&gt;.CreateGlobalInstance()</a>
-    </div>
-    <div>
       <a class="xref" href="MASES.JNet.JNetCore-1.html#MASES_JNet_JNetCore_1_Parser">JNetCore&lt;JNetCore&gt;.Parser</a>
     </div>
     <div>
@@ -106,7 +101,7 @@
       <a class="xref" href="MASES.JNet.JNetCore-1.html#MASES_JNet_JNetCore_1_ParsedArgs">JNetCore&lt;JNetCore&gt;.ParsedArgs</a>
     </div>
     <div>
-      <a class="xref" href="MASES.JNet.JNetCore-1.html#MASES_JNet_JNetCore_1_ApplicationArgs">JNetCore&lt;JNetCore&gt;.ApplicationArgs</a>
+      <a class="xref" href="MASES.JNet.JNetCore-1.html#MASES_JNet_JNetCore_1_ProcessCommandLine">JNetCore&lt;JNetCore&gt;.ProcessCommandLine()</a>
     </div>
     <div>
       <a class="xref" href="MASES.JNet.JNetCore-1.html#MASES_JNet_JNetCore_1_PerformanceOptions">JNetCore&lt;JNetCore&gt;.PerformanceOptions</a>
@@ -124,10 +119,16 @@
       <a class="xref" href="MASES.JNet.JNetCore-1.html#MASES_JNet_JNetCore_1_PathToParse">JNetCore&lt;JNetCore&gt;.PathToParse</a>
     </div>
     <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.SetupJVMWrapper&lt;MASES.JNet.JNetCore&gt;.CreateGlobalInstance()</span>
+    </div>
+    <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.SetupJVMWrapper&lt;MASES.JNet.JNetCore&gt;.UnwrapOn(System.Threading.ParameterizedThreadStart, System.Object, System.Threading.ApartmentState)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.SetupJVMWrapper&lt;MASES.JNet.JNetCore&gt;.UnwrapAndDemonizeOn(System.Threading.ParameterizedThreadStart, System.Object, System.Threading.ApartmentState)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.SetupJVMWrapper&lt;MASES.JNet.JNetCore&gt;.GlobalInstance</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.SetupJVMWrapper.Initialize()</span>
@@ -175,6 +176,9 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.SetupJVMWrapper.UnwrapAndDemonizeOn&lt;T&gt;(System.Threading.ParameterizedThreadStart, System.Object, System.Threading.ApartmentState)</span>
     </div>
     <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.SetupJVMWrapper.FilteredArgs</span>
+    </div>
+    <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.SetupJVMWrapper.JVM</span>
     </div>
     <div>
@@ -211,7 +215,25 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.SetupJVMWrapper.JNIOutputFile</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.SetupJVMWrapper.FilteredArgs</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.SetupJVMWrapper.GlobalHeapSize</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.SetupJVMWrapper.InitialHeapSize</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.SetupJVMWrapper.JmxPort</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.SetupJVMWrapper.EnableDebug</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.SetupJVMWrapper.JavaDebugPort</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.SetupJVMWrapper.DebugSuspendFlag</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.SetupJVMWrapper.JavaDebugOpts</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.SetupJVMWrapper.LastBindingException</span>
@@ -259,10 +281,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/masesgroup/JavaBridge/new/master/apiSpec/new?filename=MASES_JNet_JNetCore.md&amp;value=---%0Auid%3A%20MASES.JNet.JNetCore%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNet_JNetCore.md&amp;value=---%0Auid%3A%20MASES.JNet.JNetCore%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/masesgroup/JavaBridge/blob/master/src/net/JNet/JNetCore.cs/#L178" class="contribution-link">View Source</a>
+                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/JNetCore.cs/#L147" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
