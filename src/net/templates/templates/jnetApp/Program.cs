@@ -8,7 +8,8 @@ namespace MASES.JNetTemplate.JNetApp
     {
         static void Main(string[] args)
         {
-            var appArgs = JNetCore.GlobalInstance.ApplicationArgs;
+            JNetCore.CreateGlobalInstance();
+            var appArgs = JNetCore.FilteredArgs;
             if (args.Length != 0)
             {
                 var set = Collections.Singleton(appArgs[0]);
