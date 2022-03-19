@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <PackageType>Template</PackageType>
-    <PackageVersion>1.0.0.0</PackageVersion>
+    <PackageVersion>1.1.0.0</PackageVersion>
     <PackageId>MASES.JNet.Templates</PackageId>
     <Title>JNet Templates - Templates to use the JNet</Title>
     <Authors>MASES s.r.l.</Authors>

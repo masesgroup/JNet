@@ -22,19 +22,30 @@ using System.Collections.Generic;
 
 namespace Java.Util
 {
+    /// <summary>
+    /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html"/>
+    /// </summary>
+    /// <typeparam name="E"><see href="https://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html"/></typeparam>
     public class Iterator<E> : JVMBridgeBase<Iterator<E>>, IEnumerable<E>
     {
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "java.util.Iterator";
-
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+        /// <summary>
+        /// Returns <see langword="true"/> if the iteration has more elements.
+        /// </summary>
         public bool HasNext => IExecute<bool>("hasNext");
-
+        /// <summary>
+        /// Returns the next element in the iteration.
+        /// </summary>
         public E Next => IExecute<E>("next");
-
+        /// <inheritdoc cref="IEnumerable{T}.GetEnumerator"/>
         public IEnumerator<E> GetEnumerator()
         {
             return new JVMBridgeBaseEnumerator<E>(Instance);
         }
-
+        /// <inheritdoc cref="IEnumerable.GetEnumerator"/>
         IEnumerator IEnumerable.GetEnumerator()
         {
             return GetEnumerator();

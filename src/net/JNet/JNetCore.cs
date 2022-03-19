@@ -20,45 +20,15 @@ using MASES.CLIParser;
 using MASES.JCOBridge.C2JBridge;
 using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 
 namespace MASES.JNet
 {
     /// <summary>
-    /// Public entry point of <see cref="JNetCore"/>
+    /// Public entry point of <see cref="JNetCore{T}"/>
     /// </summary>
-    public class JNetCore<T> : SetupJVMWrapper<T> where T : JNetCore<T>
+    public abstract class JNetCore<T> : SetupJVMWrapper<T> where T : JNetCore<T>
     {
-        static readonly object lockInstance = new();
-        static T _instance = null;
-        /// <summary>
-        /// Create and return a singleton global instance of <typeparamref name="T"/>
-        /// </summary>
-        public static T GlobalInstance
-        {
-            get
-            {
-                lock (lockInstance)
-                {
-                    if (_instance == null) _instance = Activator.CreateInstance(typeof(T)) as T;
-                    _instance.Globalize();
-                }
-                return _instance;
-            }
-        }
-        /// <summary>
-        /// Creates the <see cref="GlobalInstance"/> and initialize the engine
-        /// </summary>
-        public static void CreateGlobalInstance()
-        {
-            lock (lockInstance)
-            {
-                if (_instance == null) _instance = Activator.CreateInstance(typeof(T)) as T;
-                _instance.Globalize();
-            }
-        }
-
         /// <summary>
         /// Command line <see cref="Parser"/> instance
         /// </summary>
@@ -80,7 +50,7 @@ namespace MASES.JNet
                 },
             };
 
-        readonly bool _logClassPath = false;
+        bool _logClassPath = false;
         IEnumerable<IArgumentMetadataParsed> _parsedArgs = null;
         /// <summary>
         /// Arguments parsed
@@ -91,23 +61,20 @@ namespace MASES.JNet
         /// </summary>
         public JNetCore()
         {
-            Parser.Add(CommandLineArguments);
-            _parsedArgs = Parser.Parse(FilteredArgs);
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<Java.Util.Concurrent.ExecutionException>();
+        }
 
-            ApplicationArgs = Parser.UnparsedArgs.FilterJCOBridgeArguments();
+        protected override string[] ProcessCommandLine()
+        {
+            Parser.Add(CommandLineArguments);
+            _parsedArgs = Parser.Parse(base.ProcessCommandLine());
 #if DEBUG
             _logClassPath = true;
 #else
             _logClassPath = _parsedArgs.Exist(CLIParam.LogClassPath);
 #endif
-
-            JCOBridge.C2JBridge.JCOBridge.RegisterException<Java.Util.Concurrent.ExecutionException>();
+            return Parser.UnparsedArgs.FilterJCOBridgeArguments();
         }
-
-        /// <summary>
-        /// The filtered application arguments 
-        /// </summary>
-        public string[] ApplicationArgs { get; private set; }
         /// <summary>
         /// Default performance options used in initialization
         /// </summary>
@@ -174,7 +141,9 @@ namespace MASES.JNet
             return classPath;
         }
     }
-
+    /// <summary>
+    /// Concrete implementation of <see cref="JNetCore{T}"/>
+    /// </summary>
     public class JNetCore : JNetCore<JNetCore>
     {
 
