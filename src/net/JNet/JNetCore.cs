@@ -61,6 +61,59 @@ namespace MASES.JNet
         /// </summary>
         public JNetCore()
         {
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<Java.Lang.Throwable>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<Java.Lang.ArithmeticException>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<Java.Lang.ArrayIndexOutOfBoundsException>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<Java.Lang.ArrayStoreException>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<Java.Lang.ClassCastException>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<Java.Lang.ClassNotFoundException>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<Java.Lang.CloneNotSupportedException>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<Java.Lang.EnumConstantNotPresentException>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<Java.Lang.Exception>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<Java.Lang.IllegalAccessException>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<Java.Lang.IllegalArgumentException>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<Java.Lang.IllegalMonitorStateException>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<Java.Lang.IllegalStateException>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<Java.Lang.IllegalThreadStateException>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<Java.Lang.IndexOutOfBoundsException>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<Java.Lang.InstantiationException>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<Java.Lang.InterruptedException>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<Java.Lang.NegativeArraySizeException>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<Java.Lang.NoSuchFieldException>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<Java.Lang.NoSuchMethodException>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<Java.Lang.NullPointerException>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<Java.Lang.NumberFormatException>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<Java.Lang.ReflectiveOperationException>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<Java.Lang.RuntimeException>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<Java.Lang.SecurityException>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<Java.Lang.StringIndexOutOfBoundsException>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<Java.Lang.TypeNotPresentException>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<Java.Lang.UnsupportedOperationException>();
+
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<Java.Lang.AbstractMethodError>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<Java.Lang.AssertionError>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<Java.Lang.BootstrapMethodError>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<Java.Lang.ClassCircularityError>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<Java.Lang.ClassFormatError>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<Java.Lang.Error>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<Java.Lang.ExceptionInInitializerError>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<Java.Lang.IllegalAccessError>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<Java.Lang.IncompatibleClassChangeError>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<Java.Lang.InstantiationError>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<Java.Lang.InternalError>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<Java.Lang.LinkageError>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<Java.Lang.NoClassDefFoundError>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<Java.Lang.NoSuchFieldError>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<Java.Lang.NoSuchMethodError>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<Java.Lang.OutOfMemoryError>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<Java.Lang.StackOverflowError>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<Java.Lang.ThreadDeath>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<Java.Lang.UnknownError>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<Java.Lang.UnsatisfiedLinkError>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<Java.Lang.UnsupportedClassVersionError>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<Java.Lang.VerifyError>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<Java.Lang.VirtualMachineError>();
+
             JCOBridge.C2JBridge.JCOBridge.RegisterException<Java.Util.Concurrent.ExecutionException>();
         }
 
