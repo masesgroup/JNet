@@ -16,7 +16,7 @@
 *  Refer to LICENSE for more information.
 */
 
-namespace MASES.JavaBridge
+namespace MASES.JNet
 {
     class CLIParam
     {

@@ -1,10 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <AssemblyName>KafkaBridgeTest</AssemblyName>
+    <AssemblyName>JnetTest</AssemblyName>
     <OutputType>Exe</OutputType>
-    <RootNamespace>MASES.KafkaBridgeTest</RootNamespace>
-    <Title>JavaBridgeTest - a test tool for JavaBridge</Title>
-    <Description>KafkaBridgeTest - a test tool for JavaBridge</Description>
+    <RootNamespace>MASES.JNetTest</RootNamespace>
+    <Title>JnetTest - a test tool for Jnet</Title>
+    <Description>JnetTest - a test tool for Jnet</Description>
     <Copyright>Copyright ©  MASES s.r.l. 2022</Copyright>
     <Authors>MASES s.r.l.</Authors>
     <Company>MASES s.r.l.</Company>
@@ -17,6 +17,6 @@
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\src\net\JavaBridge\JavaBridge.csproj" />
+    <ProjectReference Include="..\..\src\net\Jnet\Jnet.csproj" />
   </ItemGroup>
 </Project>

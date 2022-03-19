@@ -1,4 +1,4 @@
-# JavaBridge: APIs extendibility
+# JNet: APIs extendibility
 
 What to do if an API was not yet implemented? The simplest answer is: help us to make this product reacher :-)
 Anyway there is another answer which is not available with other products: Dynamic code and programmatically API access.

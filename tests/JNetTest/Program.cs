@@ -17,16 +17,16 @@
 */
 
 using Java.Util;
-using MASES.JavaBridge;
+using MASES.JNet;
 using System;
 
-namespace MASES.JavaBridgeTemplate.JavaBridgeApp
+namespace MASES.JNetTest
 {
     class Program
     {
         static void Main(string[] args)
         {
-            var appArgs = JavaBridgeCore.GlobalInstance.ApplicationArgs;
+            var appArgs = JNetCore.GlobalInstance.ApplicationArgs;
             if (args.Length != 0)
             {
                 var set = Collections.Singleton(appArgs[0]);

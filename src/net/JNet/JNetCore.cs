@@ -23,12 +23,12 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
-namespace MASES.JavaBridge
+namespace MASES.JNet
 {
     /// <summary>
-    /// Public entry point of <see cref="JavaBridgeCore"/>
+    /// Public entry point of <see cref="JNetCore"/>
     /// </summary>
-    public class JavaBridgeCore<T> : SetupJVMWrapper<T> where T : JavaBridgeCore<T>
+    public class JNetCore<T> : SetupJVMWrapper<T> where T : JNetCore<T>
     {
         static readonly object lockInstance = new();
         static T _instance = null;
@@ -89,7 +89,7 @@ namespace MASES.JavaBridge
         /// <summary>
         /// Public ctor
         /// </summary>
-        public JavaBridgeCore()
+        public JNetCore()
         {
             Parser.Add(CommandLineArguments);
             _parsedArgs = Parser.Parse(FilteredArgs);
@@ -175,7 +175,7 @@ namespace MASES.JavaBridge
         }
     }
 
-    public class JavaBridgeCore : JavaBridgeCore<JavaBridgeCore>
+    public class JNetCore : JNetCore<JNetCore>
     {
 
     }

@@ -1,15 +1,15 @@
-# JavaBridge: JVM callbacks
+# JNet: JVM callbacks
 
-One of the features of [JCOBridge](https://www.jcobridge.com/), used in JavaBridge, is the callback management from JVM.
+One of the features of [JCOBridge](https://www.jcobridge.com/), used in JNet, is the callback management from JVM.
 Many applications use the callback mechanism to be informed about events which happens during execution.
 Apache Kakfa exposes many API which have callbacks in the parameters.
-The Java code of a callback can be written with lambda expressions, but JavaBridge cannot, it needs an object.
+The Java code of a callback can be written with lambda expressions, but JNet cannot, it needs an object.
 
-## JavaBridge Callback internals
+## JNet Callback internals
 
-JavaBridge is based on [JCOBridge](https://www.jcobridge.com/). JCOBridge as per its name is a bridge between the CLR (CoreCLR) and the JVM.
+JNet is based on [JCOBridge](https://www.jcobridge.com/). JCOBridge as per its name is a bridge between the CLR (CoreCLR) and the JVM.
 Events, generally are expressed as interfaces in Java, and a lambda expression is translated into an object at compile time. Otherwise the developer can implement a Java class which **implements** the interface: with JCOBridge the developer needs to follow a seamless approach.
-In JavaBridge some callbacks are ready made. In this tutorial the **Callback** interface (org.apache.kafka.clients.producer.Callback) will be taken as an example.
+In JNet some callbacks are ready made. In this tutorial the **Callback** interface (org.apache.kafka.clients.producer.Callback) will be taken as an example.
 The concrete class implementing the interface is the following one:
 
 ```java
@@ -38,7 +38,7 @@ Going on to the CLR side a possible concrete class in C# is as the following one
 ```c#
 public class Callback : CLRListener
 {
-	public sealed override string JniClass => "org.mases.JavaBridge.clients.producer.CallbackImpl";
+	public sealed override string JniClass => "org.mases.JNet.clients.producer.CallbackImpl";
 
 	readonly Action<RecordMetadata, JVMBridgeException> executionFunction = null;
 	public virtual Action<RecordMetadata, JVMBridgeException> Execute { get { return executionFunction; } }
@@ -80,7 +80,7 @@ The structure follows the guidelines of JCOBridge:
   * Creating a new class extending `Callback` class, the method `OnCompletion` can be overridden;
   * Otherwise to the property `Execute` can be associated to an handler;
     	
-## JavaBridge Callback lifecycle
+## JNet Callback lifecycle
 
 The lifecycle of the callback managed from JCOBridge is slightly different from the standard one.
 A `CLRListener` to be able to live without to be recovered from the Garbage Collector shall be registered. `CLRListener` do this automatically within the initialization (this behavior can be avoided with the property `AutoInit`).

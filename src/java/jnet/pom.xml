@@ -5,10 +5,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.masesgroup</groupId>
-    <artifactId>javabridge</artifactId>
-    <name>mases.javabridge</name>
+    <artifactId>jnet</artifactId>
+    <name>mases.jnet</name>
     <description>Java interface bridging implementation</description>
-    <url>https://github.com/masesgroup/JavaBridge</url>
+    <url>https://github.com/masesgroup/JNet</url>
     <version>1.1.12.0</version>
 
     <licenses>
@@ -20,13 +20,13 @@
         </license>
     </licenses>
     <issueManagement>
-        <url>https://github.com/masesgroup/JavaBridge/issues</url>
+        <url>https://github.com/masesgroup/JNet/issues</url>
         <system>GitHub Issues</system>
     </issueManagement>
     <scm>
-        <url>https://github.com/masesgroup/JavaBridge</url>
-        <connection>scm:git:git://github.com/masesgroup/JavaBridge.git</connection>
-        <developerConnection>scm:git:git@github.com:masesgroup/JavaBridge.git</developerConnection>
+        <url>https://github.com/masesgroup/JNet</url>
+        <connection>scm:git:git://github.com/masesgroup/JNet.git</connection>
+        <developerConnection>scm:git:git@github.com:masesgroup/JNet.git</developerConnection>
     </scm>
     <developers>
         <developer>
@@ -40,7 +40,6 @@
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
         <classpathfile>${basedir}/classpathfile.classpath</classpathfile>
-        <kafkaVersion>3.1.0</kafkaVersion>
     </properties>
     <distributionManagement>
         <snapshotRepository>
