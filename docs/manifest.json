@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Io.File.html",
-          "hash": "3BIthvpzUHrXpnn8TPKvYnoCs6hNFwQDdPMX4Fe4ieI="
+          "hash": "lBe2b2nH9xfAekesfoZ/UwG6Yz1xsxU5/um2SmTBcMk="
         }
       },
       "is_incremental": false,
@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Io.html",
-          "hash": "ni6rbjDQqg5KGsLUA8Zv+wHZUXzccsNz5sTk+SUVuLQ="
+          "hash": "TLvyRvVVGYj2vh2AL3bv0ZX03UTK2Fja5IkQZVNPyc0="
         }
       },
       "is_incremental": false,
@@ -33,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Math.BigDecimal.html",
-          "hash": "+SUBSl9qDnnydL/9YPWD75Ekq+Z/tsDyIa8uPA0i2t4="
+          "hash": "Ta+Y54/WxHooSpGwGDfNbdwN3Yrl4RktxRuABFubCs4="
         }
       },
       "is_incremental": false,
@@ -45,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Math.html",
-          "hash": "Y2kCk5bVN2SQ8+0nFn/TDgv1YcBSjoQXiIZvnPcRLO0="
+          "hash": "HtYeZMoKYy6s2VAsiugnrIanGESv6DfpbQdebVbO7Kw="
         }
       },
       "is_incremental": false,
@@ -57,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Nio.ByteBuffer.html",
-          "hash": "Y4r9vxlak6MJ83RBH0M0QRCrcKTFnoBRnTB9X+cFdO8="
+          "hash": "voSiHewi8nDIkdPOxm4miQGzyacXia9RJiURvjWoV+Y="
         }
       },
       "is_incremental": false,
@@ -69,7 +69,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Nio.html",
-          "hash": "foPVEWHXWG5g+5UbnCaErYEtJk1UBOQKXkF9QIaMCKI="
+          "hash": "RbH7b5GI285h2Rogu56TluiD2l2QdNusPu3gahkIwJI="
         }
       },
       "is_incremental": false,
@@ -81,7 +81,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Time.Duration.html",
-          "hash": "Lx7nRUxFUjmU0WO66LWX8eYTQ1s1GLcJz5+Mf1A3ZLE="
+          "hash": "igi6hfH+CC4K5Vc45Cxipkyr6yVd/KF8C7SzFGsnZHw="
         }
       },
       "is_incremental": false,
@@ -93,7 +93,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Time.Instant.html",
-          "hash": "nTZH2ZmB0KON14eW1mqRdZIz8xWWRpgw2VdTJCwFtRY="
+          "hash": "viUbDZY5dn9Tt4rquT0GPyykslCJr082ghj7HJ7MPLU="
         }
       },
       "is_incremental": false,
@@ -105,7 +105,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Time.html",
-          "hash": "aoQBREyph2vniOgVK+l3QpExMAdhmBEa6IKvWrUHuIA="
+          "hash": "Y1u2UR/u2IiUeD4bK/nkPOINV6t/saY65M4ukPjVY/w="
         }
       },
       "is_incremental": false,
@@ -117,7 +117,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.AbstractMap-2.html",
-          "hash": "VqfGjSr7F6uU4M/+03fWcD30d8dN0W63SKRGWOHWbAM="
+          "hash": "Iy1dIKK4BAxVHyzCKAvoSlyoWWO8uMXpjQqpTkvr5Zs="
         }
       },
       "is_incremental": false,
@@ -129,7 +129,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.ArrayList-1.html",
-          "hash": "B6ntmbCtAKjkQx723C8ZaGGZ/CUZPrvta2uKxCLj32w="
+          "hash": "Q4296+3Fk3uOV0OhEa56+jE+XKRw0cEYM/gcCC+0aU0="
         }
       },
       "is_incremental": false,
@@ -141,7 +141,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Collection-1.html",
-          "hash": "kzbrNIU3LpUXTBwIvRMYCEwpkxrYe5NYBxySI9Ae9tc="
+          "hash": "FNzCgJq9QXF7HItQRWeyxQETC7AISQo3eWRv7LdHn30="
         }
       },
       "is_incremental": false,
@@ -153,7 +153,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Collections.html",
-          "hash": "XPLyDj9XaNdiJHKYO91UB+dz7ABwJgcExGh0ZxGUK0w="
+          "hash": "HUB3+xTnZPJUTbR5+emb7TFBPsH18Kilql0lxJQyqzk="
         }
       },
       "is_incremental": false,
@@ -165,7 +165,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Concurrent.ExecutionException.html",
-          "hash": "C4E9sv0+bQh4TwH2D+J/y06gT+k1YVcd6A9apGWkddk="
+          "hash": "m8Ubdc1A018LVerdzwIk3AGfxriIV5obAKSK15y/u+s="
         }
       },
       "is_incremental": false,
@@ -177,7 +177,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Concurrent.Future-1.html",
-          "hash": "ud7EAw8AQZ+8BWyusjANkkmEuRtu93xeUVcCJOJM45U="
+          "hash": "TfQSVOJybSyVOHcBhE2TpOyf8DmZkWOlIK1k8xRyZ4U="
         }
       },
       "is_incremental": false,
@@ -189,7 +189,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Concurrent.TimeUnit.html",
-          "hash": "6+iF8WSEppP8uSgF14RMpumtc3qgssqmnxNNPMfqpH4="
+          "hash": "OIqBZpypgu39FPdDLPhHYmndKB85D+47/KYApPeb2Jw="
         }
       },
       "is_incremental": false,
@@ -201,7 +201,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Concurrent.html",
-          "hash": "p35g7bL58IXQs2Vn573N1Z8c87i+IQDw/xdc2Ff4DF4="
+          "hash": "AQFOLqDy5B2SXWiAavU4pRDHX2yXXj0rgdZM1NM6Z8U="
         }
       },
       "is_incremental": false,
@@ -213,7 +213,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Date.html",
-          "hash": "LLyJ2Pkr3Uftav33yy1r2i64rECQtptnNUMCEkamTDM="
+          "hash": "f8uVOrXAp7NSMwIp6SBx4Rxr2oZJcNaCiHKBPzbqY2k="
         }
       },
       "is_incremental": false,
@@ -225,7 +225,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Dictionary-2.html",
-          "hash": "HFyCBFD90qaZrAWo00gbV1X7q/0UMFjcl90SDT9oxRw="
+          "hash": "jhygy36mz8unPo8q46VnPSB/RlgpBNQtWXqhqOi2Qwo="
         }
       },
       "is_incremental": false,
@@ -237,7 +237,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.HashMap-2.html",
-          "hash": "iJZmAq8M0qAzali31ZVjZJ+Z3kDuWpmiVSuGcq2optI="
+          "hash": "9TL0cDirMuhlR4Y+eVgOvsxDb8b1p44p0deHF/SRnCQ="
         }
       },
       "is_incremental": false,
@@ -249,7 +249,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Hashtable-2.html",
-          "hash": "jFBoENeK/4BsjvtG9BxtsAb6fyOmIZ0WV9abcMwwpR0="
+          "hash": "K5fOHIH5SdL0TFAz4ULrin3YyLKq76uQzkWRpx1Vt1w="
         }
       },
       "is_incremental": false,
@@ -261,7 +261,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Iterator-1.html",
-          "hash": "3vjwfl4PCBsvRAV77vTGhcrMfyBKOzclFyHDi3E7Psw="
+          "hash": "qB7LtkBGupEEaT6Z267kTCGgr8uiBfzHezv2Bw0ckMY="
         }
       },
       "is_incremental": false,
@@ -273,7 +273,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.List-1.html",
-          "hash": "YDom1Hjp5YPjeAUhkMiqwF7g6B4F9W+ylaQpnsdAyu4="
+          "hash": "7yymbstNz0ds/PA+/wzwHIhEYfmOl38GHvW2pPjjBN8="
         }
       },
       "is_incremental": false,
@@ -285,7 +285,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.List.html",
-          "hash": "UqeNWkYv4/Q55cZOF6Uy/73Ir1DSrZpmaBmGZOASIP4="
+          "hash": "8q6uJQqUufPei6Ncgr289dk2IW4UiKI0GsPXhSEZSrw="
         }
       },
       "is_incremental": false,
@@ -297,7 +297,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Map-2.html",
-          "hash": "vcqcXEpFqbk5Me9pC0maEuapm+JF8H8jozhqkDTkYTs="
+          "hash": "YkBrjudywN9nvrc6+HT7fvxqBt77b203W/6kyFoGYFU="
         }
       },
       "is_incremental": false,
@@ -309,7 +309,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Map.html",
-          "hash": "KYkDALmFWAx8DVEZiJN19qQ/1jEyXfMEk2xHOKF1eiU="
+          "hash": "Zwa96i3bPVZZ6i5gSBtsajraUttdFONeEgzaOz7tBsg="
         }
       },
       "is_incremental": false,
@@ -321,7 +321,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Optional-1.html",
-          "hash": "X62Nbb5VJ5mrzQOenUx5Xblb6K/0LomhZ5zCScSCZYQ="
+          "hash": "JOtuFPNtV1WhEsvffZSnMilD3mfGDD1TELMhak3WGXg="
         }
       },
       "is_incremental": false,
@@ -333,7 +333,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.OptionalDouble.html",
-          "hash": "F9bV/uFS61pZBYVlffMt/UIl7xL87vdbka+wA4otvF0="
+          "hash": "QBBUgH1VD6fSkllLoLt5Eug782cgEwYBupJWgSZZQvg="
         }
       },
       "is_incremental": false,
@@ -345,7 +345,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.OptionalInt.html",
-          "hash": "WdkyLXfrQeDQW2mRmNs/zz0dBjbAizwD7gNFzvAUUms="
+          "hash": "98UMyv/fF9gQYi14rAzo/kxpFm7Lq/3WRXg2LrjFIh8="
         }
       },
       "is_incremental": false,
@@ -357,7 +357,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.OptionalLong.html",
-          "hash": "icB/UnsUH5r9qZCnkZM5d4uDOTgXBkyR+hcSuZJQ4WI="
+          "hash": "TEuLTifPsTHMhbwwyWGeNZH02Qp7GrtPyei4SwhhvkQ="
         }
       },
       "is_incremental": false,
@@ -369,7 +369,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Properties.html",
-          "hash": "HNFagQIIilQqeQHvwqeKES684td6UxGIOnREd9nPYgM="
+          "hash": "HB4l9JaOEhu65Zo1ro2u0m9+5hH5YqVxVngYAKgByB8="
         }
       },
       "is_incremental": false,
@@ -381,7 +381,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Regex.Pattern.html",
-          "hash": "VpXEEFai+JsLVt/IQEM1Tjn9dwxz9v42F+qwlKzL0C8="
+          "hash": "o/kz4kqUORKczqjsZQWf5oLncY2n3RQKOsLUQQ4QXBc="
         }
       },
       "is_incremental": false,
@@ -393,7 +393,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Regex.html",
-          "hash": "//+2P81dWlVcxsRkUn99i6kVdXVOTXfXDEC8SfIeL5s="
+          "hash": "dWEFKg2cfEAjlFt8nkw+gSDe5hsIGl6fW0x0Y3kclDU="
         }
       },
       "is_incremental": false,
@@ -405,7 +405,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Set-1.html",
-          "hash": "uxm2ZomojzCaEV7OA8+/6yrkMKcnnpUMYm/A7VYyQA0="
+          "hash": "ZQ/lJrRGEkKo8oPfGDeZ1yGOhoKELOO/i84IbaX63qA="
         }
       },
       "is_incremental": false,
@@ -417,7 +417,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.TreeMap-2.html",
-          "hash": "gtWsbCxMOEz4HmcFh1TVd4GYI0E6aTTQSCDd+bQl4wk="
+          "hash": "KMbPKFo+oZLjOD5ANnMVhFVLJ1XnT4A4d3C3GgHD7hg="
         }
       },
       "is_incremental": false,
@@ -429,7 +429,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.UUID.html",
-          "hash": "qgzHENQfsGKLlKUWnTZs6in03u4lXhtCzkR9o0VXt/s="
+          "hash": "ctqUoDA+JCeNvCMz5w32a4Tab1WB+n3M4i2SJLH64fM="
         }
       },
       "is_incremental": false,
@@ -441,7 +441,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.html",
-          "hash": "H0LUKTFKL747lrobBORmqs0lvcKwlHgcQgymffNXlb8="
+          "hash": "rkLqHhg5+Fr1rbIySpkS0AtRZ7P1IqvUTV/ZNwmgMuU="
         }
       },
       "is_incremental": false,
@@ -449,11 +449,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JavaBridge.JavaBridgeCore-1.yml",
+      "source_relative_path": "api/MASES.JNet.JNetCore-1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/MASES.JavaBridge.JavaBridgeCore-1.html",
-          "hash": "zs3oiKZWy13ImoyBMHGOwyW+/4p5Of4QJOAi/gI+x3E="
+          "relative_path": "api/MASES.JNet.JNetCore-1.html",
+          "hash": "es5dbtMGAG/zhDR9fyLtWwTC2nEKfnhvYn8Jm2KCgfQ="
         }
       },
       "is_incremental": false,
@@ -461,11 +461,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JavaBridge.JavaBridgeCore.yml",
+      "source_relative_path": "api/MASES.JNet.JNetCore.yml",
       "output": {
         ".html": {
-          "relative_path": "api/MASES.JavaBridge.JavaBridgeCore.html",
-          "hash": "hNtzwC2xN17n88YU5oxrqy2iBnLPQY4z2mKM/qUbgN4="
+          "relative_path": "api/MASES.JNet.JNetCore.html",
+          "hash": "xHEgivOaI+n11L+UtA1fesM7LDplz8zvL8ow8CQaMIo="
         }
       },
       "is_incremental": false,
@@ -473,11 +473,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JavaBridge.yml",
+      "source_relative_path": "api/MASES.JNet.yml",
       "output": {
         ".html": {
-          "relative_path": "api/MASES.JavaBridge.html",
-          "hash": "DDZLhk6c4cKIF46rOf6bg14LXlFVrW/kDSb/lEQS4aY="
+          "relative_path": "api/MASES.JNet.html",
+          "hash": "W+VhWhkVLGjzQMOtLhXGfS/+A0os8geuajJXe4TcEkE="
         }
       },
       "is_incremental": false,
@@ -489,7 +489,7 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "GUkdLkkBDXlYRRXGg19PZNcWki9BT3IgtiFV32D9XTs="
+          "hash": "yWFRYWQXBdb8k2+ZYQz9xwsudtdZ4mtaAUcihD+ipCI="
         }
       },
       "is_incremental": false,
@@ -501,7 +501,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "8tLLR+r6VSpBiVho+TJhmJVso9kM+ZjJgTLeE3YIn9E="
+          "hash": "R669Si9R0MTBNPKNitOAymRd+vkPBUikSdnhztLCDRA="
         }
       },
       "is_incremental": false,
@@ -513,7 +513,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/API_extensibility.html",
-          "hash": "98WXl9W0LeLSmvwkCV9hDFvIA2PqSUfU8t1BIICg+yk="
+          "hash": "6mraiclKJiaJu4I1IqK8BlTEWgG916fCYDY+ON2w2Jc="
         }
       },
       "is_incremental": false,
@@ -525,7 +525,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/actualstate.html",
-          "hash": "ttRLj4NEasdUavaANQYtqS6fcoqymFxpdikC8kAJWok="
+          "hash": "LuMpzD7q1HZRUDg6l07sFQ3uVuwP7ATYQvEZIhEhzNw="
         }
       },
       "is_incremental": false,
@@ -540,7 +540,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/intro.html",
-          "hash": "VOhSAWXNs4SdTkJhWq+lpBHIRynLu0c4cNLzc2rEzh8="
+          "hash": "4x694Tony1AotaaWiJwrq8guNia4gpPO+XezlwLDhWk="
         }
       },
       "is_incremental": false,
@@ -552,7 +552,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/jvm_callbacks.html",
-          "hash": "VUrzG7QLEzQ1hCdU7JFMBqYb00zhjV6wVF0m1raSatY="
+          "hash": "+aaZCZ2dS8LFznHXI8cV6236dhqIUDtI2Jd0/5Y84zA="
         }
       },
       "is_incremental": false,
@@ -564,7 +564,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/roadmap.html",
-          "hash": "85zPgV0kQmUZdDoT7atvRnjsnKaXaExnkv8+jDAOTFw="
+          "hash": "85wKiLO/he0EL0cuUmDIbWUGFLmmS7ill9Vith8WGWs="
         }
       },
       "is_incremental": false,
@@ -588,7 +588,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/usage.html",
-          "hash": "yGAuj2XQ4btDuZQECmtXyeAuKqETwoPpd6oaIHsdrQA="
+          "hash": "vSgnmkAAkcQGbN+zndBJmeSEdaICm4hxtnbcEXAtBRo="
         }
       },
       "is_incremental": false,
@@ -614,7 +614,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "3GH1Gkss7mCRzN0PBOen805WmLZWuQOrSZujOdZgMYY="
+          "hash": "CYBeYZ9HmspwGaqvexKp8o6i12BEaOXTq2fEqtV4Vgo="
         }
       },
       "is_incremental": false,

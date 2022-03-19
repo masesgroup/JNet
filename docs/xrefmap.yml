@@ -1680,219 +1680,219 @@ references:
   isSpec: "True"
   fullName: Java.Util.UUID.IsStatic
   nameWithType: UUID.IsStatic
-- uid: MASES.JavaBridge
-  name: MASES.JavaBridge
-  href: api/MASES.JavaBridge.html
-  commentId: N:MASES.JavaBridge
-  fullName: MASES.JavaBridge
-  nameWithType: MASES.JavaBridge
-- uid: MASES.JavaBridge.JavaBridgeCore
-  name: JavaBridgeCore
-  href: api/MASES.JavaBridge.JavaBridgeCore.html
-  commentId: T:MASES.JavaBridge.JavaBridgeCore
-  fullName: MASES.JavaBridge.JavaBridgeCore
-  nameWithType: JavaBridgeCore
-- uid: MASES.JavaBridge.JavaBridgeCore`1
-  name: JavaBridgeCore<T>
-  href: api/MASES.JavaBridge.JavaBridgeCore-1.html
-  commentId: T:MASES.JavaBridge.JavaBridgeCore`1
-  name.vb: JavaBridgeCore(Of T)
-  fullName: MASES.JavaBridge.JavaBridgeCore<T>
-  fullName.vb: MASES.JavaBridge.JavaBridgeCore(Of T)
-  nameWithType: JavaBridgeCore<T>
-  nameWithType.vb: JavaBridgeCore(Of T)
-- uid: MASES.JavaBridge.JavaBridgeCore`1.#ctor
-  name: JavaBridgeCore()
-  href: api/MASES.JavaBridge.JavaBridgeCore-1.html#MASES_JavaBridge_JavaBridgeCore_1__ctor
-  commentId: M:MASES.JavaBridge.JavaBridgeCore`1.#ctor
-  fullName: MASES.JavaBridge.JavaBridgeCore<T>.JavaBridgeCore()
-  fullName.vb: MASES.JavaBridge.JavaBridgeCore(Of T).JavaBridgeCore()
-  nameWithType: JavaBridgeCore<T>.JavaBridgeCore()
-  nameWithType.vb: JavaBridgeCore(Of T).JavaBridgeCore()
-- uid: MASES.JavaBridge.JavaBridgeCore`1.#ctor*
-  name: JavaBridgeCore
-  href: api/MASES.JavaBridge.JavaBridgeCore-1.html#MASES_JavaBridge_JavaBridgeCore_1__ctor_
-  commentId: Overload:MASES.JavaBridge.JavaBridgeCore`1.#ctor
+- uid: MASES.JNet
+  name: MASES.JNet
+  href: api/MASES.JNet.html
+  commentId: N:MASES.JNet
+  fullName: MASES.JNet
+  nameWithType: MASES.JNet
+- uid: MASES.JNet.JNetCore
+  name: JNetCore
+  href: api/MASES.JNet.JNetCore.html
+  commentId: T:MASES.JNet.JNetCore
+  fullName: MASES.JNet.JNetCore
+  nameWithType: JNetCore
+- uid: MASES.JNet.JNetCore`1
+  name: JNetCore<T>
+  href: api/MASES.JNet.JNetCore-1.html
+  commentId: T:MASES.JNet.JNetCore`1
+  name.vb: JNetCore(Of T)
+  fullName: MASES.JNet.JNetCore<T>
+  fullName.vb: MASES.JNet.JNetCore(Of T)
+  nameWithType: JNetCore<T>
+  nameWithType.vb: JNetCore(Of T)
+- uid: MASES.JNet.JNetCore`1.#ctor
+  name: JNetCore()
+  href: api/MASES.JNet.JNetCore-1.html#MASES_JNet_JNetCore_1__ctor
+  commentId: M:MASES.JNet.JNetCore`1.#ctor
+  fullName: MASES.JNet.JNetCore<T>.JNetCore()
+  fullName.vb: MASES.JNet.JNetCore(Of T).JNetCore()
+  nameWithType: JNetCore<T>.JNetCore()
+  nameWithType.vb: JNetCore(Of T).JNetCore()
+- uid: MASES.JNet.JNetCore`1.#ctor*
+  name: JNetCore
+  href: api/MASES.JNet.JNetCore-1.html#MASES_JNet_JNetCore_1__ctor_
+  commentId: Overload:MASES.JNet.JNetCore`1.#ctor
   isSpec: "True"
-  fullName: MASES.JavaBridge.JavaBridgeCore<T>.JavaBridgeCore
-  fullName.vb: MASES.JavaBridge.JavaBridgeCore(Of T).JavaBridgeCore
-  nameWithType: JavaBridgeCore<T>.JavaBridgeCore
-  nameWithType.vb: JavaBridgeCore(Of T).JavaBridgeCore
-- uid: MASES.JavaBridge.JavaBridgeCore`1.ApplicationArgs
+  fullName: MASES.JNet.JNetCore<T>.JNetCore
+  fullName.vb: MASES.JNet.JNetCore(Of T).JNetCore
+  nameWithType: JNetCore<T>.JNetCore
+  nameWithType.vb: JNetCore(Of T).JNetCore
+- uid: MASES.JNet.JNetCore`1.ApplicationArgs
   name: ApplicationArgs
-  href: api/MASES.JavaBridge.JavaBridgeCore-1.html#MASES_JavaBridge_JavaBridgeCore_1_ApplicationArgs
-  commentId: P:MASES.JavaBridge.JavaBridgeCore`1.ApplicationArgs
-  fullName: MASES.JavaBridge.JavaBridgeCore<T>.ApplicationArgs
-  fullName.vb: MASES.JavaBridge.JavaBridgeCore(Of T).ApplicationArgs
-  nameWithType: JavaBridgeCore<T>.ApplicationArgs
-  nameWithType.vb: JavaBridgeCore(Of T).ApplicationArgs
-- uid: MASES.JavaBridge.JavaBridgeCore`1.ApplicationArgs*
+  href: api/MASES.JNet.JNetCore-1.html#MASES_JNet_JNetCore_1_ApplicationArgs
+  commentId: P:MASES.JNet.JNetCore`1.ApplicationArgs
+  fullName: MASES.JNet.JNetCore<T>.ApplicationArgs
+  fullName.vb: MASES.JNet.JNetCore(Of T).ApplicationArgs
+  nameWithType: JNetCore<T>.ApplicationArgs
+  nameWithType.vb: JNetCore(Of T).ApplicationArgs
+- uid: MASES.JNet.JNetCore`1.ApplicationArgs*
   name: ApplicationArgs
-  href: api/MASES.JavaBridge.JavaBridgeCore-1.html#MASES_JavaBridge_JavaBridgeCore_1_ApplicationArgs_
-  commentId: Overload:MASES.JavaBridge.JavaBridgeCore`1.ApplicationArgs
+  href: api/MASES.JNet.JNetCore-1.html#MASES_JNet_JNetCore_1_ApplicationArgs_
+  commentId: Overload:MASES.JNet.JNetCore`1.ApplicationArgs
   isSpec: "True"
-  fullName: MASES.JavaBridge.JavaBridgeCore<T>.ApplicationArgs
-  fullName.vb: MASES.JavaBridge.JavaBridgeCore(Of T).ApplicationArgs
-  nameWithType: JavaBridgeCore<T>.ApplicationArgs
-  nameWithType.vb: JavaBridgeCore(Of T).ApplicationArgs
-- uid: MASES.JavaBridge.JavaBridgeCore`1.ClassPath
+  fullName: MASES.JNet.JNetCore<T>.ApplicationArgs
+  fullName.vb: MASES.JNet.JNetCore(Of T).ApplicationArgs
+  nameWithType: JNetCore<T>.ApplicationArgs
+  nameWithType.vb: JNetCore(Of T).ApplicationArgs
+- uid: MASES.JNet.JNetCore`1.ClassPath
   name: ClassPath
-  href: api/MASES.JavaBridge.JavaBridgeCore-1.html#MASES_JavaBridge_JavaBridgeCore_1_ClassPath
-  commentId: P:MASES.JavaBridge.JavaBridgeCore`1.ClassPath
-  fullName: MASES.JavaBridge.JavaBridgeCore<T>.ClassPath
-  fullName.vb: MASES.JavaBridge.JavaBridgeCore(Of T).ClassPath
-  nameWithType: JavaBridgeCore<T>.ClassPath
-  nameWithType.vb: JavaBridgeCore(Of T).ClassPath
-- uid: MASES.JavaBridge.JavaBridgeCore`1.ClassPath*
+  href: api/MASES.JNet.JNetCore-1.html#MASES_JNet_JNetCore_1_ClassPath
+  commentId: P:MASES.JNet.JNetCore`1.ClassPath
+  fullName: MASES.JNet.JNetCore<T>.ClassPath
+  fullName.vb: MASES.JNet.JNetCore(Of T).ClassPath
+  nameWithType: JNetCore<T>.ClassPath
+  nameWithType.vb: JNetCore(Of T).ClassPath
+- uid: MASES.JNet.JNetCore`1.ClassPath*
   name: ClassPath
-  href: api/MASES.JavaBridge.JavaBridgeCore-1.html#MASES_JavaBridge_JavaBridgeCore_1_ClassPath_
-  commentId: Overload:MASES.JavaBridge.JavaBridgeCore`1.ClassPath
+  href: api/MASES.JNet.JNetCore-1.html#MASES_JNet_JNetCore_1_ClassPath_
+  commentId: Overload:MASES.JNet.JNetCore`1.ClassPath
   isSpec: "True"
-  fullName: MASES.JavaBridge.JavaBridgeCore<T>.ClassPath
-  fullName.vb: MASES.JavaBridge.JavaBridgeCore(Of T).ClassPath
-  nameWithType: JavaBridgeCore<T>.ClassPath
-  nameWithType.vb: JavaBridgeCore(Of T).ClassPath
-- uid: MASES.JavaBridge.JavaBridgeCore`1.CommandLineArguments
+  fullName: MASES.JNet.JNetCore<T>.ClassPath
+  fullName.vb: MASES.JNet.JNetCore(Of T).ClassPath
+  nameWithType: JNetCore<T>.ClassPath
+  nameWithType.vb: JNetCore(Of T).ClassPath
+- uid: MASES.JNet.JNetCore`1.CommandLineArguments
   name: CommandLineArguments
-  href: api/MASES.JavaBridge.JavaBridgeCore-1.html#MASES_JavaBridge_JavaBridgeCore_1_CommandLineArguments
-  commentId: P:MASES.JavaBridge.JavaBridgeCore`1.CommandLineArguments
-  fullName: MASES.JavaBridge.JavaBridgeCore<T>.CommandLineArguments
-  fullName.vb: MASES.JavaBridge.JavaBridgeCore(Of T).CommandLineArguments
-  nameWithType: JavaBridgeCore<T>.CommandLineArguments
-  nameWithType.vb: JavaBridgeCore(Of T).CommandLineArguments
-- uid: MASES.JavaBridge.JavaBridgeCore`1.CommandLineArguments*
+  href: api/MASES.JNet.JNetCore-1.html#MASES_JNet_JNetCore_1_CommandLineArguments
+  commentId: P:MASES.JNet.JNetCore`1.CommandLineArguments
+  fullName: MASES.JNet.JNetCore<T>.CommandLineArguments
+  fullName.vb: MASES.JNet.JNetCore(Of T).CommandLineArguments
+  nameWithType: JNetCore<T>.CommandLineArguments
+  nameWithType.vb: JNetCore(Of T).CommandLineArguments
+- uid: MASES.JNet.JNetCore`1.CommandLineArguments*
   name: CommandLineArguments
-  href: api/MASES.JavaBridge.JavaBridgeCore-1.html#MASES_JavaBridge_JavaBridgeCore_1_CommandLineArguments_
-  commentId: Overload:MASES.JavaBridge.JavaBridgeCore`1.CommandLineArguments
+  href: api/MASES.JNet.JNetCore-1.html#MASES_JNet_JNetCore_1_CommandLineArguments_
+  commentId: Overload:MASES.JNet.JNetCore`1.CommandLineArguments
   isSpec: "True"
-  fullName: MASES.JavaBridge.JavaBridgeCore<T>.CommandLineArguments
-  fullName.vb: MASES.JavaBridge.JavaBridgeCore(Of T).CommandLineArguments
-  nameWithType: JavaBridgeCore<T>.CommandLineArguments
-  nameWithType.vb: JavaBridgeCore(Of T).CommandLineArguments
-- uid: MASES.JavaBridge.JavaBridgeCore`1.CreateGlobalInstance
+  fullName: MASES.JNet.JNetCore<T>.CommandLineArguments
+  fullName.vb: MASES.JNet.JNetCore(Of T).CommandLineArguments
+  nameWithType: JNetCore<T>.CommandLineArguments
+  nameWithType.vb: JNetCore(Of T).CommandLineArguments
+- uid: MASES.JNet.JNetCore`1.CreateGlobalInstance
   name: CreateGlobalInstance()
-  href: api/MASES.JavaBridge.JavaBridgeCore-1.html#MASES_JavaBridge_JavaBridgeCore_1_CreateGlobalInstance
-  commentId: M:MASES.JavaBridge.JavaBridgeCore`1.CreateGlobalInstance
-  fullName: MASES.JavaBridge.JavaBridgeCore<T>.CreateGlobalInstance()
-  fullName.vb: MASES.JavaBridge.JavaBridgeCore(Of T).CreateGlobalInstance()
-  nameWithType: JavaBridgeCore<T>.CreateGlobalInstance()
-  nameWithType.vb: JavaBridgeCore(Of T).CreateGlobalInstance()
-- uid: MASES.JavaBridge.JavaBridgeCore`1.CreateGlobalInstance*
+  href: api/MASES.JNet.JNetCore-1.html#MASES_JNet_JNetCore_1_CreateGlobalInstance
+  commentId: M:MASES.JNet.JNetCore`1.CreateGlobalInstance
+  fullName: MASES.JNet.JNetCore<T>.CreateGlobalInstance()
+  fullName.vb: MASES.JNet.JNetCore(Of T).CreateGlobalInstance()
+  nameWithType: JNetCore<T>.CreateGlobalInstance()
+  nameWithType.vb: JNetCore(Of T).CreateGlobalInstance()
+- uid: MASES.JNet.JNetCore`1.CreateGlobalInstance*
   name: CreateGlobalInstance
-  href: api/MASES.JavaBridge.JavaBridgeCore-1.html#MASES_JavaBridge_JavaBridgeCore_1_CreateGlobalInstance_
-  commentId: Overload:MASES.JavaBridge.JavaBridgeCore`1.CreateGlobalInstance
+  href: api/MASES.JNet.JNetCore-1.html#MASES_JNet_JNetCore_1_CreateGlobalInstance_
+  commentId: Overload:MASES.JNet.JNetCore`1.CreateGlobalInstance
   isSpec: "True"
-  fullName: MASES.JavaBridge.JavaBridgeCore<T>.CreateGlobalInstance
-  fullName.vb: MASES.JavaBridge.JavaBridgeCore(Of T).CreateGlobalInstance
-  nameWithType: JavaBridgeCore<T>.CreateGlobalInstance
-  nameWithType.vb: JavaBridgeCore(Of T).CreateGlobalInstance
-- uid: MASES.JavaBridge.JavaBridgeCore`1.GlobalInstance
+  fullName: MASES.JNet.JNetCore<T>.CreateGlobalInstance
+  fullName.vb: MASES.JNet.JNetCore(Of T).CreateGlobalInstance
+  nameWithType: JNetCore<T>.CreateGlobalInstance
+  nameWithType.vb: JNetCore(Of T).CreateGlobalInstance
+- uid: MASES.JNet.JNetCore`1.GlobalInstance
   name: GlobalInstance
-  href: api/MASES.JavaBridge.JavaBridgeCore-1.html#MASES_JavaBridge_JavaBridgeCore_1_GlobalInstance
-  commentId: P:MASES.JavaBridge.JavaBridgeCore`1.GlobalInstance
-  fullName: MASES.JavaBridge.JavaBridgeCore<T>.GlobalInstance
-  fullName.vb: MASES.JavaBridge.JavaBridgeCore(Of T).GlobalInstance
-  nameWithType: JavaBridgeCore<T>.GlobalInstance
-  nameWithType.vb: JavaBridgeCore(Of T).GlobalInstance
-- uid: MASES.JavaBridge.JavaBridgeCore`1.GlobalInstance*
+  href: api/MASES.JNet.JNetCore-1.html#MASES_JNet_JNetCore_1_GlobalInstance
+  commentId: P:MASES.JNet.JNetCore`1.GlobalInstance
+  fullName: MASES.JNet.JNetCore<T>.GlobalInstance
+  fullName.vb: MASES.JNet.JNetCore(Of T).GlobalInstance
+  nameWithType: JNetCore<T>.GlobalInstance
+  nameWithType.vb: JNetCore(Of T).GlobalInstance
+- uid: MASES.JNet.JNetCore`1.GlobalInstance*
   name: GlobalInstance
-  href: api/MASES.JavaBridge.JavaBridgeCore-1.html#MASES_JavaBridge_JavaBridgeCore_1_GlobalInstance_
-  commentId: Overload:MASES.JavaBridge.JavaBridgeCore`1.GlobalInstance
+  href: api/MASES.JNet.JNetCore-1.html#MASES_JNet_JNetCore_1_GlobalInstance_
+  commentId: Overload:MASES.JNet.JNetCore`1.GlobalInstance
   isSpec: "True"
-  fullName: MASES.JavaBridge.JavaBridgeCore<T>.GlobalInstance
-  fullName.vb: MASES.JavaBridge.JavaBridgeCore(Of T).GlobalInstance
-  nameWithType: JavaBridgeCore<T>.GlobalInstance
-  nameWithType.vb: JavaBridgeCore(Of T).GlobalInstance
-- uid: MASES.JavaBridge.JavaBridgeCore`1.JVMOptions
+  fullName: MASES.JNet.JNetCore<T>.GlobalInstance
+  fullName.vb: MASES.JNet.JNetCore(Of T).GlobalInstance
+  nameWithType: JNetCore<T>.GlobalInstance
+  nameWithType.vb: JNetCore(Of T).GlobalInstance
+- uid: MASES.JNet.JNetCore`1.JVMOptions
   name: JVMOptions
-  href: api/MASES.JavaBridge.JavaBridgeCore-1.html#MASES_JavaBridge_JavaBridgeCore_1_JVMOptions
-  commentId: P:MASES.JavaBridge.JavaBridgeCore`1.JVMOptions
-  fullName: MASES.JavaBridge.JavaBridgeCore<T>.JVMOptions
-  fullName.vb: MASES.JavaBridge.JavaBridgeCore(Of T).JVMOptions
-  nameWithType: JavaBridgeCore<T>.JVMOptions
-  nameWithType.vb: JavaBridgeCore(Of T).JVMOptions
-- uid: MASES.JavaBridge.JavaBridgeCore`1.JVMOptions*
+  href: api/MASES.JNet.JNetCore-1.html#MASES_JNet_JNetCore_1_JVMOptions
+  commentId: P:MASES.JNet.JNetCore`1.JVMOptions
+  fullName: MASES.JNet.JNetCore<T>.JVMOptions
+  fullName.vb: MASES.JNet.JNetCore(Of T).JVMOptions
+  nameWithType: JNetCore<T>.JVMOptions
+  nameWithType.vb: JNetCore(Of T).JVMOptions
+- uid: MASES.JNet.JNetCore`1.JVMOptions*
   name: JVMOptions
-  href: api/MASES.JavaBridge.JavaBridgeCore-1.html#MASES_JavaBridge_JavaBridgeCore_1_JVMOptions_
-  commentId: Overload:MASES.JavaBridge.JavaBridgeCore`1.JVMOptions
+  href: api/MASES.JNet.JNetCore-1.html#MASES_JNet_JNetCore_1_JVMOptions_
+  commentId: Overload:MASES.JNet.JNetCore`1.JVMOptions
   isSpec: "True"
-  fullName: MASES.JavaBridge.JavaBridgeCore<T>.JVMOptions
-  fullName.vb: MASES.JavaBridge.JavaBridgeCore(Of T).JVMOptions
-  nameWithType: JavaBridgeCore<T>.JVMOptions
-  nameWithType.vb: JavaBridgeCore(Of T).JVMOptions
-- uid: MASES.JavaBridge.JavaBridgeCore`1.Options
+  fullName: MASES.JNet.JNetCore<T>.JVMOptions
+  fullName.vb: MASES.JNet.JNetCore(Of T).JVMOptions
+  nameWithType: JNetCore<T>.JVMOptions
+  nameWithType.vb: JNetCore(Of T).JVMOptions
+- uid: MASES.JNet.JNetCore`1.Options
   name: Options
-  href: api/MASES.JavaBridge.JavaBridgeCore-1.html#MASES_JavaBridge_JavaBridgeCore_1_Options
-  commentId: P:MASES.JavaBridge.JavaBridgeCore`1.Options
-  fullName: MASES.JavaBridge.JavaBridgeCore<T>.Options
-  fullName.vb: MASES.JavaBridge.JavaBridgeCore(Of T).Options
-  nameWithType: JavaBridgeCore<T>.Options
-  nameWithType.vb: JavaBridgeCore(Of T).Options
-- uid: MASES.JavaBridge.JavaBridgeCore`1.Options*
+  href: api/MASES.JNet.JNetCore-1.html#MASES_JNet_JNetCore_1_Options
+  commentId: P:MASES.JNet.JNetCore`1.Options
+  fullName: MASES.JNet.JNetCore<T>.Options
+  fullName.vb: MASES.JNet.JNetCore(Of T).Options
+  nameWithType: JNetCore<T>.Options
+  nameWithType.vb: JNetCore(Of T).Options
+- uid: MASES.JNet.JNetCore`1.Options*
   name: Options
-  href: api/MASES.JavaBridge.JavaBridgeCore-1.html#MASES_JavaBridge_JavaBridgeCore_1_Options_
-  commentId: Overload:MASES.JavaBridge.JavaBridgeCore`1.Options
+  href: api/MASES.JNet.JNetCore-1.html#MASES_JNet_JNetCore_1_Options_
+  commentId: Overload:MASES.JNet.JNetCore`1.Options
   isSpec: "True"
-  fullName: MASES.JavaBridge.JavaBridgeCore<T>.Options
-  fullName.vb: MASES.JavaBridge.JavaBridgeCore(Of T).Options
-  nameWithType: JavaBridgeCore<T>.Options
-  nameWithType.vb: JavaBridgeCore(Of T).Options
-- uid: MASES.JavaBridge.JavaBridgeCore`1.ParsedArgs
+  fullName: MASES.JNet.JNetCore<T>.Options
+  fullName.vb: MASES.JNet.JNetCore(Of T).Options
+  nameWithType: JNetCore<T>.Options
+  nameWithType.vb: JNetCore(Of T).Options
+- uid: MASES.JNet.JNetCore`1.ParsedArgs
   name: ParsedArgs
-  href: api/MASES.JavaBridge.JavaBridgeCore-1.html#MASES_JavaBridge_JavaBridgeCore_1_ParsedArgs
-  commentId: P:MASES.JavaBridge.JavaBridgeCore`1.ParsedArgs
-  fullName: MASES.JavaBridge.JavaBridgeCore<T>.ParsedArgs
-  fullName.vb: MASES.JavaBridge.JavaBridgeCore(Of T).ParsedArgs
-  nameWithType: JavaBridgeCore<T>.ParsedArgs
-  nameWithType.vb: JavaBridgeCore(Of T).ParsedArgs
-- uid: MASES.JavaBridge.JavaBridgeCore`1.ParsedArgs*
+  href: api/MASES.JNet.JNetCore-1.html#MASES_JNet_JNetCore_1_ParsedArgs
+  commentId: P:MASES.JNet.JNetCore`1.ParsedArgs
+  fullName: MASES.JNet.JNetCore<T>.ParsedArgs
+  fullName.vb: MASES.JNet.JNetCore(Of T).ParsedArgs
+  nameWithType: JNetCore<T>.ParsedArgs
+  nameWithType.vb: JNetCore(Of T).ParsedArgs
+- uid: MASES.JNet.JNetCore`1.ParsedArgs*
   name: ParsedArgs
-  href: api/MASES.JavaBridge.JavaBridgeCore-1.html#MASES_JavaBridge_JavaBridgeCore_1_ParsedArgs_
-  commentId: Overload:MASES.JavaBridge.JavaBridgeCore`1.ParsedArgs
+  href: api/MASES.JNet.JNetCore-1.html#MASES_JNet_JNetCore_1_ParsedArgs_
+  commentId: Overload:MASES.JNet.JNetCore`1.ParsedArgs
   isSpec: "True"
-  fullName: MASES.JavaBridge.JavaBridgeCore<T>.ParsedArgs
-  fullName.vb: MASES.JavaBridge.JavaBridgeCore(Of T).ParsedArgs
-  nameWithType: JavaBridgeCore<T>.ParsedArgs
-  nameWithType.vb: JavaBridgeCore(Of T).ParsedArgs
-- uid: MASES.JavaBridge.JavaBridgeCore`1.Parser
+  fullName: MASES.JNet.JNetCore<T>.ParsedArgs
+  fullName.vb: MASES.JNet.JNetCore(Of T).ParsedArgs
+  nameWithType: JNetCore<T>.ParsedArgs
+  nameWithType.vb: JNetCore(Of T).ParsedArgs
+- uid: MASES.JNet.JNetCore`1.Parser
   name: Parser
-  href: api/MASES.JavaBridge.JavaBridgeCore-1.html#MASES_JavaBridge_JavaBridgeCore_1_Parser
-  commentId: F:MASES.JavaBridge.JavaBridgeCore`1.Parser
-  fullName: MASES.JavaBridge.JavaBridgeCore<T>.Parser
-  fullName.vb: MASES.JavaBridge.JavaBridgeCore(Of T).Parser
-  nameWithType: JavaBridgeCore<T>.Parser
-  nameWithType.vb: JavaBridgeCore(Of T).Parser
-- uid: MASES.JavaBridge.JavaBridgeCore`1.PathToParse
+  href: api/MASES.JNet.JNetCore-1.html#MASES_JNet_JNetCore_1_Parser
+  commentId: F:MASES.JNet.JNetCore`1.Parser
+  fullName: MASES.JNet.JNetCore<T>.Parser
+  fullName.vb: MASES.JNet.JNetCore(Of T).Parser
+  nameWithType: JNetCore<T>.Parser
+  nameWithType.vb: JNetCore(Of T).Parser
+- uid: MASES.JNet.JNetCore`1.PathToParse
   name: PathToParse
-  href: api/MASES.JavaBridge.JavaBridgeCore-1.html#MASES_JavaBridge_JavaBridgeCore_1_PathToParse
-  commentId: P:MASES.JavaBridge.JavaBridgeCore`1.PathToParse
-  fullName: MASES.JavaBridge.JavaBridgeCore<T>.PathToParse
-  fullName.vb: MASES.JavaBridge.JavaBridgeCore(Of T).PathToParse
-  nameWithType: JavaBridgeCore<T>.PathToParse
-  nameWithType.vb: JavaBridgeCore(Of T).PathToParse
-- uid: MASES.JavaBridge.JavaBridgeCore`1.PathToParse*
+  href: api/MASES.JNet.JNetCore-1.html#MASES_JNet_JNetCore_1_PathToParse
+  commentId: P:MASES.JNet.JNetCore`1.PathToParse
+  fullName: MASES.JNet.JNetCore<T>.PathToParse
+  fullName.vb: MASES.JNet.JNetCore(Of T).PathToParse
+  nameWithType: JNetCore<T>.PathToParse
+  nameWithType.vb: JNetCore(Of T).PathToParse
+- uid: MASES.JNet.JNetCore`1.PathToParse*
   name: PathToParse
-  href: api/MASES.JavaBridge.JavaBridgeCore-1.html#MASES_JavaBridge_JavaBridgeCore_1_PathToParse_
-  commentId: Overload:MASES.JavaBridge.JavaBridgeCore`1.PathToParse
+  href: api/MASES.JNet.JNetCore-1.html#MASES_JNet_JNetCore_1_PathToParse_
+  commentId: Overload:MASES.JNet.JNetCore`1.PathToParse
   isSpec: "True"
-  fullName: MASES.JavaBridge.JavaBridgeCore<T>.PathToParse
-  fullName.vb: MASES.JavaBridge.JavaBridgeCore(Of T).PathToParse
-  nameWithType: JavaBridgeCore<T>.PathToParse
-  nameWithType.vb: JavaBridgeCore(Of T).PathToParse
-- uid: MASES.JavaBridge.JavaBridgeCore`1.PerformanceOptions
+  fullName: MASES.JNet.JNetCore<T>.PathToParse
+  fullName.vb: MASES.JNet.JNetCore(Of T).PathToParse
+  nameWithType: JNetCore<T>.PathToParse
+  nameWithType.vb: JNetCore(Of T).PathToParse
+- uid: MASES.JNet.JNetCore`1.PerformanceOptions
   name: PerformanceOptions
-  href: api/MASES.JavaBridge.JavaBridgeCore-1.html#MASES_JavaBridge_JavaBridgeCore_1_PerformanceOptions
-  commentId: P:MASES.JavaBridge.JavaBridgeCore`1.PerformanceOptions
-  fullName: MASES.JavaBridge.JavaBridgeCore<T>.PerformanceOptions
-  fullName.vb: MASES.JavaBridge.JavaBridgeCore(Of T).PerformanceOptions
-  nameWithType: JavaBridgeCore<T>.PerformanceOptions
-  nameWithType.vb: JavaBridgeCore(Of T).PerformanceOptions
-- uid: MASES.JavaBridge.JavaBridgeCore`1.PerformanceOptions*
+  href: api/MASES.JNet.JNetCore-1.html#MASES_JNet_JNetCore_1_PerformanceOptions
+  commentId: P:MASES.JNet.JNetCore`1.PerformanceOptions
+  fullName: MASES.JNet.JNetCore<T>.PerformanceOptions
+  fullName.vb: MASES.JNet.JNetCore(Of T).PerformanceOptions
+  nameWithType: JNetCore<T>.PerformanceOptions
+  nameWithType.vb: JNetCore(Of T).PerformanceOptions
+- uid: MASES.JNet.JNetCore`1.PerformanceOptions*
   name: PerformanceOptions
-  href: api/MASES.JavaBridge.JavaBridgeCore-1.html#MASES_JavaBridge_JavaBridgeCore_1_PerformanceOptions_
-  commentId: Overload:MASES.JavaBridge.JavaBridgeCore`1.PerformanceOptions
+  href: api/MASES.JNet.JNetCore-1.html#MASES_JNet_JNetCore_1_PerformanceOptions_
+  commentId: Overload:MASES.JNet.JNetCore`1.PerformanceOptions
   isSpec: "True"
-  fullName: MASES.JavaBridge.JavaBridgeCore<T>.PerformanceOptions
-  fullName.vb: MASES.JavaBridge.JavaBridgeCore(Of T).PerformanceOptions
-  nameWithType: JavaBridgeCore<T>.PerformanceOptions
-  nameWithType.vb: JavaBridgeCore(Of T).PerformanceOptions
+  fullName: MASES.JNet.JNetCore<T>.PerformanceOptions
+  fullName.vb: MASES.JNet.JNetCore(Of T).PerformanceOptions
+  nameWithType: JNetCore<T>.PerformanceOptions
+  nameWithType.vb: JNetCore(Of T).PerformanceOptions
