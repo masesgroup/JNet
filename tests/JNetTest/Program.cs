@@ -17,7 +17,7 @@
 */
 
 using Java.Util;
-using MASES.JavaBridge;
+using MASES.JNet;
 using System;
 
 namespace MASES.JNetTest
