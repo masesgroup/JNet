@@ -1,10 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <AssemblyName>JnetTest</AssemblyName>
+    <AssemblyName>JNetTest</AssemblyName>
     <OutputType>Exe</OutputType>
     <RootNamespace>MASES.JNetTest</RootNamespace>
-    <Title>JnetTest - a test tool for Jnet</Title>
-    <Description>JnetTest - a test tool for Jnet</Description>
+    <Title>JNetTest - a test tool for JNet</Title>
+    <Description>JNetTest - a test tool for JNet</Description>
     <Copyright>Copyright ©  MASES s.r.l. 2022</Copyright>
     <Authors>MASES s.r.l.</Authors>
     <Company>MASES s.r.l.</Company>
@@ -17,6 +17,6 @@
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\src\net\Jnet\Jnet.csproj" />
+    <ProjectReference Include="..\..\src\net\JNet\JNet.csproj" />
   </ItemGroup>
 </Project>
