@@ -1,3 +1,3 @@
-# JavaBridge .NET implementation
+# JNet .NET implementation
 
-This folder contains the project and classes ported from the official Apache Kafka delivery.
+This folder contains the project and classes ported from Java platform.
