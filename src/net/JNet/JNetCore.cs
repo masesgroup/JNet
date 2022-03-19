@@ -25,9 +25,9 @@ using System.Linq;
 namespace MASES.JNet
 {
     /// <summary>
-    /// Public entry point of <see cref="JNetCore"/>
+    /// Public entry point of <see cref="JNetCore{T}"/>
     /// </summary>
-    public class JNetCore<T> : SetupJVMWrapper<T> where T : JNetCore<T>
+    public abstract class JNetCore<T> : SetupJVMWrapper<T> where T : JNetCore<T>
     {
         /// <summary>
         /// Command line <see cref="Parser"/> instance
@@ -141,7 +141,9 @@ namespace MASES.JNet
             return classPath;
         }
     }
-
+    /// <summary>
+    /// Concrete implementation of <see cref="JNetCore{T}"/>
+    /// </summary>
     public class JNetCore : JNetCore<JNetCore>
     {
 
