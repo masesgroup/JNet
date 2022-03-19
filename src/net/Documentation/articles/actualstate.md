@@ -1,4 +1,4 @@
-# JavaBridge development state
+# JNet development state
 
 This release comes with some ready made classes:
 

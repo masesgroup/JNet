@@ -1,4 +1,4 @@
-# JavaBridge roadmap
+# JNet roadmap
 
 The roadmap can be synthetized in the following points:
 

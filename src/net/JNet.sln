@@ -5,7 +5,7 @@ VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "templatepack", "templates\templatepack.csproj", "{8778C196-4145-4140-8E91-9C2475DEB121}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JavaBridge", "JavaBridge\JavaBridge.csproj", "{7BB826C1-C900-4A40-8236-2DAC9D3A2201}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JNet", "JNet\JNet.csproj", "{4F5B925E-7E21-4971-AE00-9D0C5DBC25E8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{8778C196-4145-4140-8E91-9C2475DEB121}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8778C196-4145-4140-8E91-9C2475DEB121}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8778C196-4145-4140-8E91-9C2475DEB121}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7BB826C1-C900-4A40-8236-2DAC9D3A2201}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7BB826C1-C900-4A40-8236-2DAC9D3A2201}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7BB826C1-C900-4A40-8236-2DAC9D3A2201}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7BB826C1-C900-4A40-8236-2DAC9D3A2201}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F5B925E-7E21-4971-AE00-9D0C5DBC25E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F5B925E-7E21-4971-AE00-9D0C5DBC25E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F5B925E-7E21-4971-AE00-9D0C5DBC25E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F5B925E-7E21-4971-AE00-9D0C5DBC25E8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

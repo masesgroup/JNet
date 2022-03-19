@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JNet", "JNet\JNet.csproj", "{E3614C53-869D-4E9E-B03B-231E270BD782}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "jnetApp", "templates\templates\jnetApp\jnetApp.csproj", "{72B4B72F-87E2-41D5-81A4-F694DD94DA6F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E3614C53-869D-4E9E-B03B-231E270BD782}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3614C53-869D-4E9E-B03B-231E270BD782}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3614C53-869D-4E9E-B03B-231E270BD782}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3614C53-869D-4E9E-B03B-231E270BD782}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72B4B72F-87E2-41D5-81A4-F694DD94DA6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72B4B72F-87E2-41D5-81A4-F694DD94DA6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72B4B72F-87E2-41D5-81A4-F694DD94DA6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72B4B72F-87E2-41D5-81A4-F694DD94DA6F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {337100A8-DBCD-4838-B9C7-74EC0DE78755}
+	EndGlobalSection
+EndGlobal
