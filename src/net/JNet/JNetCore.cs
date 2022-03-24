@@ -115,6 +115,10 @@ namespace MASES.JNet
             JCOBridge.C2JBridge.JCOBridge.RegisterException<Java.Lang.VirtualMachineError>();
 
             JCOBridge.C2JBridge.JCOBridge.RegisterException<Java.Util.Concurrent.ExecutionException>();
+
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<Java.Sql.SQLException>();
+
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<JavaX.Naming.NamingException>();
         }
 
         protected override string[] ProcessCommandLine()
@@ -177,7 +181,7 @@ namespace MASES.JNet
 
         string buildClassPath()
         {
-            ClassPathBuilder builder = new();
+            ClassPathBuilder builder = new(System.IO.Path.GetDirectoryName(typeof(JNetCore).Assembly.Location));
 
             if (PathToParse != null) builder.Add(PathToParse.ToArray());
 
