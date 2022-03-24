@@ -181,7 +181,7 @@ namespace MASES.JNet
 
         string buildClassPath()
         {
-            ClassPathBuilder builder = new(System.IO.Path.GetDirectoryName(typeof(JNetCore).Assembly.Location));
+            ClassPathBuilder builder = new(System.IO.Path.Combine( System.IO.Path.GetDirectoryName(typeof(JNetCore).Assembly.Location), "jnet-*.jar"));
 
             if (PathToParse != null) builder.Add(PathToParse.ToArray());
 
