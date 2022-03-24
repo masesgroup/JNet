@@ -5,6 +5,918 @@
   "files": [
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.AWTEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.AWTEvent.html",
+          "hash": "h9CB7FouHKW99LwU7mvE0czhzgnQY+Am1N7o0cQLaEE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Adjustable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Adjustable.html",
+          "hash": "CDqJFeGy0WL8Ti9RWhnRz0JyFC0enVAmpb5tuwZ1Wzg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Component.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Component.html",
+          "hash": "T2zrayeELSkvwIS9SEUcNDrrPf71ZWTG4b6jTxR9JXQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Container.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Container.html",
+          "hash": "bNpbWFi+yfS+fuAeh7vo/1qVumzBDgpSatjiLd7CKVk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Cursor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Cursor.html",
+          "hash": "/5sYueGUtVIuXYXNeSfU9eDzHh2dS2LfWnKB7yo5PKc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Datatransfer.DataFlavor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Datatransfer.DataFlavor.html",
+          "hash": "tuwd+l0PnmwK33aZ2Qy645OZXj8q1PI7cRJMo62RYGs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Datatransfer.Transferable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Datatransfer.Transferable.html",
+          "hash": "7uA7PyF9JUmKOeNkiWaCsXr9ZOsFXIFq6CrWURwnXVY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Datatransfer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Datatransfer.html",
+          "hash": "FuBrgXliH+KzTKuCyHTXjn0Y61pNA0vRDmNjPMvHXXs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Dnd.DragGestureEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Dnd.DragGestureEvent.html",
+          "hash": "039ZW3EjqXIEjRxpFRzjZUuBKowAj49dKZHT8nrLtTo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Dnd.DragGestureListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Dnd.DragGestureListener.html",
+          "hash": "meVK3AMHrHbnOGJAaDpiKzCdxsQ2M/fmKj7h4vpTvZg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Dnd.DragGestureRecognizer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Dnd.DragGestureRecognizer.html",
+          "hash": "cgG0y/cPr9Ce+OzYdiO9MERJGvWnuyFCjyUvAINctZ0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Dnd.DragSource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Dnd.DragSource.html",
+          "hash": "8G/5zf1hBM7QKgIwLw9MYvEpHEJ28prErChEj1tXNII="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Dnd.DragSourceAdapter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Dnd.DragSourceAdapter.html",
+          "hash": "YSeil9N3ypUUk3iQb77UdllauLbPoJEP3Z9R9Dvcl4c="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Dnd.DragSourceContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Dnd.DragSourceContext.html",
+          "hash": "sbeCkTQajwu0WNkyUEZhysCzC+2kH9V3SWvNmlvhYS0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Dnd.DragSourceDragEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Dnd.DragSourceDragEvent.html",
+          "hash": "Slmub2qY9kWOmVniGQJCfvZT5PP21RcLYB07lOeBAlE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Dnd.DragSourceDropEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Dnd.DragSourceDropEvent.html",
+          "hash": "2o0EhoYXJCs+NvoVgo0JYoqFvNMPlYcO8+sJ4n16XNg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Dnd.DragSourceEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Dnd.DragSourceEvent.html",
+          "hash": "cy1xVcX6Kz4IVeQl7JaWXJXgCuRZ+3zFoKX7832zZww="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Dnd.DragSourceListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Dnd.DragSourceListener.html",
+          "hash": "62tbJkAk61gKCd6ZnSq4KViB74TBHegqoUKdAOuS36o="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Dnd.DropTargetContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Dnd.DropTargetContext.html",
+          "hash": "Mx1fYAeP9GrzZ8c0kcGsNArFXVi+JFXkBUsNHZWLN2o="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Dnd.DropTargetDragEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Dnd.DropTargetDragEvent.html",
+          "hash": "Khqkg7pM6oQDYxo7BktXn6EadC7F00JdjBUJIAZLW30="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Dnd.DropTargetDropEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Dnd.DropTargetDropEvent.html",
+          "hash": "+eRc6+Kgx26ByR1J3hItt0NAof/GNz5DBkiVcbvzAbg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Dnd.DropTargetEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Dnd.DropTargetEvent.html",
+          "hash": "uvA3a2scjXjIMjJoXsPszMIdzhDiU4c18Pyc+acQLyM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Dnd.DropTargetListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Dnd.DropTargetListener.html",
+          "hash": "CNvsFB4v8qJWFgX/I1mB0C2HJFqvcnVqDMXqDermwWY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Dnd.IDragGestureListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Dnd.IDragGestureListener.html",
+          "hash": "T75HAL0JcP2p4aJ/btBOMOLdqlaZMjO1UdrwgcQzZwg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Dnd.IDragSourceAdapter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Dnd.IDragSourceAdapter.html",
+          "hash": "PwA8UrRETVY47QAOHDPGv1UFATvCPXS14OF4WQRD7n0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Dnd.IDragSourceListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Dnd.IDragSourceListener.html",
+          "hash": "4CxVJ7N7rM+t4wdo7RXbSUeZZ6zBT+kTk7L+pZOTEqU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Dnd.IDropTargetListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Dnd.IDropTargetListener.html",
+          "hash": "GggGdLL5O/J4k4eNg8jovm3qTrmFR0zoUiie186rd8U="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Dnd.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Dnd.html",
+          "hash": "X9Gyiu96rk8rY3LXxCxqEEr6NowEbHWMfu/8N4PMNB0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Event.AWTEventListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Event.AWTEventListener.html",
+          "hash": "h+M33fAtI7mG8mUkuAQOwbzA1qEGbHZ412dzi8GJQI0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Event.ActionEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Event.ActionEvent.html",
+          "hash": "GuDtBuaDtbwWmHZmyWOhXYZaAB7aFWqdCOju9OCzV+Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Event.ActionListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Event.ActionListener.html",
+          "hash": "eGeDfqJBp8unpK1+uumIol0c5KHOrP9I5AJeNmY681A="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Event.AdjustmentEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Event.AdjustmentEvent.html",
+          "hash": "0k4EiS1cqIJthvCM0Y3FcR61ozIl/jgJwO9DfNKjTEk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Event.AdjustmentListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Event.AdjustmentListener.html",
+          "hash": "9ONLdATGrDgvZeH7MH+zzoZZKrpaE3SgYPtGu5R7a/w="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Event.ComponentEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Event.ComponentEvent.html",
+          "hash": "1Ez1XRN8eDFkRs3MmAs1EXyMJmWjZ60kHbxDfgLKeFs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Event.ComponentListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Event.ComponentListener.html",
+          "hash": "y0Uj7Ivb620z9FVYg6KhKjyzD8SwGwF0i7FyA35xIy4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Event.FocusEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Event.FocusEvent.html",
+          "hash": "2xOHlVCEOhYuvuXr86WVRlSoOzbWneGaXMSDkzH8VJk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Event.FocusListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Event.FocusListener.html",
+          "hash": "36x39vRku+VrW1R6qUsz6cxh5yLn115kahw7Y9CA4Q8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Event.IAWTEventListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Event.IAWTEventListener.html",
+          "hash": "VGZJhUDWpJQ9NAe6GkxlU/kx5xbPjMh3untTn8z2+dU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Event.IActionListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Event.IActionListener.html",
+          "hash": "w+4Ndk8aURAVPw97UzOuaC61lZF4KnXsuUVExiMfVmc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Event.IAdjustmentListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Event.IAdjustmentListener.html",
+          "hash": "rLMHP/e9Df/lP7diYtdCj4brZAKe54jcKfLzEeR+/uk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Event.IComponentListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Event.IComponentListener.html",
+          "hash": "kMQPbQPqXjJo5TFPVGh8EB8OIe41k8Y5zQKoSocU9aU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Event.IFocusListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Event.IFocusListener.html",
+          "hash": "zHYitRaiiwIHTNnXxkJ6CCW7bzvlg4beaCR0iHITZn8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Event.IInputMethodListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Event.IInputMethodListener.html",
+          "hash": "E0uRbSITvI/65+Z3ufPs+kTKQW0qzobjDC/38Du0l8w="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Event.IItemListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Event.IItemListener.html",
+          "hash": "KF8ncZsoPJM/fBc/gv8FBIAU8VMMpLZ+psOzirBYbgI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Event.IKeyListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Event.IKeyListener.html",
+          "hash": "6k4PE78BkLio6spYIVmXXXaW6aj3KXhxi7M/JvCPEaU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Event.IMouseAdapter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Event.IMouseAdapter.html",
+          "hash": "hYpK4Tt43r4ukDPyuXQdnc5SoiJyHF55gRsYAgfWcGM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Event.ITextListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Event.ITextListener.html",
+          "hash": "3K8n2yCkwBZGFLe6uKY7UtSL75KpTXDwhtfe8J7d2yY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Event.IWindowAdapter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Event.IWindowAdapter.html",
+          "hash": "q4uqhoff0CfzLxeeAWmq0xtsHH8lONLrJkfROGE6FMQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Event.InputEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Event.InputEvent.html",
+          "hash": "MotqDb3mBqQY60pxypKpJwmC4fNYYJsWDvtoHdcGqK0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Event.InputMethodEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Event.InputMethodEvent.html",
+          "hash": "r6nVCKf3LcsIcgRbueCM80RSfpSEpqXrLFhGG6XQM9I="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Event.InputMethodListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Event.InputMethodListener.html",
+          "hash": "oCHH7CCdl/ZwbQFjMHrLizTdcuY9T4SkJT76k4KcWsM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Event.ItemEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Event.ItemEvent.html",
+          "hash": "EsEfAaF7yLMWhONk8GsUfpD24hWqdw9K/IAXztXzGog="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Event.ItemListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Event.ItemListener.html",
+          "hash": "fSepKSxrYM2adAPFvv1XESOInWKc6ZNwz/xnCVWz9lk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Event.KeyEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Event.KeyEvent.html",
+          "hash": "vCWIppiU10rQViseqXh5sahIiHE0gemO8f9ScJ5JgEI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Event.KeyListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Event.KeyListener.html",
+          "hash": "CG8AtRXkFtsXgmzUZAtSaECqFtoa4HaGeJpgo2+zY8U="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Event.MouseAdapter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Event.MouseAdapter.html",
+          "hash": "ad+Vym+EVg52J1tc2VzMa4n6udJ+nByunONrka/mu2c="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Event.MouseEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Event.MouseEvent.html",
+          "hash": "fr2E9X5VhMFdA3RO4gnLrVYY33P1sLTogSlztKV0ZGY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Event.MouseWheelEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Event.MouseWheelEvent.html",
+          "hash": "t6zd9HNANqYiF8INNlOYSiSzguFPuk/zQh4EiVpIUe0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Event.TextEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Event.TextEvent.html",
+          "hash": "z/Ic2aiOBwI8AHyXcUoH92rkqrJeWQGNzx/SCCpYhpo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Event.TextListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Event.TextListener.html",
+          "hash": "o51PVSOOteUC/74lwdMYnl+kIHUmqsCQSOk53an4xBE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Event.WindowAdapter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Event.WindowAdapter.html",
+          "hash": "Rhk6vuSAHI2OMdfqafIntoQFP5Oeh/Ccf0zWNf6cPSc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Event.WindowEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Event.WindowEvent.html",
+          "hash": "nJG3idPtg0Q8lQYu2g80RyXn0R5pEsOKZVeStAdh2HM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Event.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Event.html",
+          "hash": "Rxin2sjph08pbcq6uTd3oj5jSkM0Lpx76oe2+4cb2So="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Font.TextHitInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Font.TextHitInfo.html",
+          "hash": "kgyXQCdMzHZea4IGkb5Ndq7zHJVIdTz7ptr0/wOT94I="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Font.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Font.html",
+          "hash": "vCGz5iIAEqH9TivXm+ztZ48tQ4rH5dj7GbTgz7XSpdw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Geom.Point2D.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Geom.Point2D.html",
+          "hash": "EbXsKdfUhnYip/6IWf/8jd5phEWh4CZEHQx+82aFUys="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Geom.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Geom.html",
+          "hash": "z6j+B4Hxe9gmeCyzwGMwy5Jdd6MnJ5zTnoxk6fOoxyo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Image.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Image.html",
+          "hash": "zZbVYyOVmC3zWfxs6XBboSsmN4e/0W7QAokgZA/WtlA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.ItemSelectable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.ItemSelectable.html",
+          "hash": "2Htiqz+3r9NcUoSqPm5b6+YVRDWwme3oxBWnJpF/rG8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Point.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Point.html",
+          "hash": "OZexsnQPsbsDfhNNhGiU8utZsEY3ah4fU1cmFFw/13o="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.Window.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.Window.html",
+          "hash": "9F6gIkAuyf25myyI3XFVh8HAL+Jxqxkqbb2whtU7BVc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Awt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Awt.html",
+          "hash": "M38AMF8qH/ldEXzir58KCFJPJD1KzfQLzelF4vClyLU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Beans.IPropertyChangeListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Beans.IPropertyChangeListener.html",
+          "hash": "5B01EFFp4OSehkcGeN2OKuAYIXIXUOHxVAnuEYxil6w="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Beans.PropertyChangeEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Beans.PropertyChangeEvent.html",
+          "hash": "uSYujrWKnVnTHz/vJJjRXA5M/yWLiJH7PgPT1fw8NVE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Beans.PropertyChangeListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Beans.PropertyChangeListener.html",
+          "hash": "tLCYRB4cgXb+rFsIwU9dvSyrLaiepXH6n+naIAfddZk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Beans.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Beans.html",
+          "hash": "Z4Tjv/UD1/0CBJyKGwaAFsAwjZ8E01i6kyITN5A8OFs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Io.File.yml",
       "output": {
         ".html": {
@@ -1085,6 +1997,54 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Sql.SQLException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Sql.SQLException.html",
+          "hash": "SxtcVhDtdVlGIP0mgHHR9LMwnFjFgOxcwc4znqHJB3g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Sql.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Sql.html",
+          "hash": "AvGGbsa0PutwUZUeFmqorZUJ5fehPljTajyt6s6aLCs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Text.AttributedCharacterIterator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Text.AttributedCharacterIterator.html",
+          "hash": "9KkFjOZWqQgIo8JwrxS53d9mDHCrRGqEP30mq4zIEws="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Text.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Text.html",
+          "hash": "Ksir/nU/rgj1zhO+TofOeZyAuNMsopXju0O1oNNrkT0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Time.Duration.yml",
       "output": {
         ".html": {
@@ -1234,6 +2194,18 @@
         ".html": {
           "relative_path": "api/Java.Util.Dictionary-2.html",
           "hash": "K5MQ2ZecMqcZfmH+SY7HedNwoQ9z+QYPOTO3s2oZ6AY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.EventObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.EventObject.html",
+          "hash": "71wd03+YzdFAncfPxXrx8lNbzGABA8S8WLoqdroWnlo="
         }
       },
       "is_incremental": false,
@@ -1449,7 +2421,307 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.html",
-          "hash": "dg7DJDov0MueJsNjVf/H/q1xLK/3h33Ib0HVwGu+/L8="
+          "hash": "CXzd5njqngZRHAdq5lItW/Us2fGUj69DWotZX0eEKzc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Naming.Binding.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Naming.Binding.html",
+          "hash": "o9/Hnahh1xVsoIHseAIbCjMmKc0EOkPcVpwsPFcUdFI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Naming.Event.EventContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Naming.Event.EventContext.html",
+          "hash": "6G1/CHFEorvv9ABMcvhgsl+GsiP3GXmgDZ4dTFje8CQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Naming.Event.INamingListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Naming.Event.INamingListener.html",
+          "hash": "1+9dOf1crzpqBLCgQKtlMLswy1YedonO1GxJOibBwUU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Naming.Event.IObjectChangeListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Naming.Event.IObjectChangeListener.html",
+          "hash": "37fXQ5e43gKrKtrtwBB7FhmkeIzscP6aSLv3P9x+gKA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Naming.Event.NamingEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Naming.Event.NamingEvent.html",
+          "hash": "K2DxspYPG3DqDFxx2dgemDWUXCt/bMrt2N/ywC7e/jo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Naming.Event.NamingExceptionEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Naming.Event.NamingExceptionEvent.html",
+          "hash": "jmu6lEJl6Gd6/O6OJmTScawA5whTy9cJpB2fFlHfgao="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Naming.Event.NamingListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Naming.Event.NamingListener.html",
+          "hash": "RKSNsfrfy0Cg0Gbx8iWmFKyhVEqf0ubxI+beZFC8VWk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Naming.Event.ObjectChangeListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Naming.Event.ObjectChangeListener.html",
+          "hash": "xL7lqd21gRks/VjvC6BtYpq8NnZ8Us1hry5zdV+xP8k="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Naming.Event.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Naming.Event.html",
+          "hash": "vapkRu1/ic1WqR5oNbMxjGEoWeA/1AR+70TDXyByzUA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Naming.NameClassPair.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Naming.NameClassPair.html",
+          "hash": "Lo4Vcg6WhqtNl80pbCXkK1t6De++L64v9yDqJHUBEA0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Naming.NamingException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Naming.NamingException.html",
+          "hash": "essa0xzJaf95Iy14brKHkhYx53hmTy+1CGGybjOt10U="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Naming.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Naming.html",
+          "hash": "gh7mkkBbMTh9ygeSDM239s1VcqEijiGm+P10SC6pA/s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Sql.ConnectionEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Sql.ConnectionEvent.html",
+          "hash": "EiDxFjq2S4MqPLU7UvAIhXpEQBPKwAl55xU+2ijSs2M="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Sql.ConnectionEventListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Sql.ConnectionEventListener.html",
+          "hash": "U73fYR+K7IH8L9i7MNeVj+tuyVotnQmQbgZvl+KYFT8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Sql.IConnectionEventListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Sql.IConnectionEventListener.html",
+          "hash": "k3BJwfzHwLMV2Coc08cD/1uRCfS/MrUUIuL+v6lq7kw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Sql.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Sql.html",
+          "hash": "Gd38xvvliklidL2OEXUXAzUlJLZhYmqEVqZBc5F3BgU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Swing.Event.CaretEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Swing.Event.CaretEvent.html",
+          "hash": "YST2GwCoLDYj1aZE2saEfrt636FeBeMExoTwA3Pk/Oo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Swing.Event.CaretListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Swing.Event.CaretListener.html",
+          "hash": "kK4KqCIVaD6YuLGVqKKQeAn9cvWXfA9lJPGy1+1Zpzk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Swing.Event.ChangeEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Swing.Event.ChangeEvent.html",
+          "hash": "2ndT4AH36xSFQIF5I0zAFFg5hbLFzmtQCJKXozE69qA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Swing.Event.ChangeListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Swing.Event.ChangeListener.html",
+          "hash": "/nqjPCnzXXrRSPq6nf9kh7tOpwVN/vQU8Ou04UUZzeY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Swing.Event.ICaretListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Swing.Event.ICaretListener.html",
+          "hash": "CYhzyrDfA019VcxTGRrc1X5xPQgmWZexbRuha3WXxiE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Swing.Event.IChangeListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Swing.Event.IChangeListener.html",
+          "hash": "EkukdX8HRLkX213OHB/Dzt4zPAscl/rK2eD/5eIWL+I="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Swing.Event.IMouseInputAdapter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Swing.Event.IMouseInputAdapter.html",
+          "hash": "Z/pEEaTfcge7k4lduRQJJaDyev4nd25j7+VdlInXcBM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Swing.Event.MouseInputAdapter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Swing.Event.MouseInputAdapter.html",
+          "hash": "2V2ZaUUHsADfv5Xdp9cUId4EQiuA1vqBd6bqKQyq4Zg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Swing.Event.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Swing.Event.html",
+          "hash": "Ur3X+e5C91KYCEkYB69yCLHMuKXwaC7LGHFv72OLUyg="
         }
       },
       "is_incremental": false,
@@ -1461,7 +2733,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MASES.JNet.JNetCore-1.html",
-          "hash": "HHUtg7A0yyDZJdl5anqwG/OMqC26dkA6S3qYQDbRQCc="
+          "hash": "GD3bzvgbijrdTHVfqR8zSJ2KWWTQDUvsltM3Z/3/xWo="
         }
       },
       "is_incremental": false,
@@ -1473,7 +2745,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MASES.JNet.JNetCore.html",
-          "hash": "bNEZltcItD23MahjzxtGJgmgsBJi3TUXJVHjkxqIr+4="
+          "hash": "CW+MfF0T7Q5KDsWHTK5tnA1zUKF6CCX7sixzgeGQR54="
         }
       },
       "is_incremental": false,
@@ -1509,7 +2781,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "6mBycTp4mcEByylaxDot9Xo5UetrA4T+DONWoVuqHD8="
+          "hash": "0WnBNFqMzhs8PgUbslAGmBs/LtyfGzOGdHoLvvKYekY="
         }
       },
       "is_incremental": false,
@@ -1661,7 +2933,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 124,
+          "total_file_count": 230,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
