@@ -16,11 +16,54 @@
 *  Refer to LICENSE for more information.
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Awt
 {
     public class Container : Component
     {
         public override string ClassName => "java.awt.Container";
+
+        ~Container()
+        {
+            Dispose();
+        }
+
+        IJCGraphicContainer _container = null;
+        /// <summary>
+        /// Creates the <see cref="HostedContainer"/> and returns <see cref="IJCGraphicContainer.GraphicObject"/>
+        /// </summary>
+        /// <param name="isWPF"><see langword="true"/> if the object will be inserted in a WPF layout, <see langword="true"/> if the object will be inserted in a Windows Forms layout</param>
+        /// <returns>The <see cref="object"/> in the <see cref="IJCGraphicContainer.GraphicObject"/> property</returns>
+        public object CreateHostedContainer(bool isWPF)
+        {
+            lock (this)
+            {
+                if (_container == null)
+                {
+                    _container = Management.GetJCGraphicContainer(Instance, isWPF);
+                }
+                return _container.GraphicObject;
+            }
+        }
+
+        /// <summary>
+        /// Returns the hostable <see cref="IJCGraphicContainer"/>
+        /// </summary>
+        public IJCGraphicContainer HostedContainer => _container;
+
+        public override void Dispose()
+        {
+            lock (this)
+            {
+                if (_container != null)
+                {
+                    Management.ReleaseJCGraphicContainer(_container);
+                    _container = null;
+                }
+            }
+            base.Dispose();
+        }
 
         // TODO: complete the class
     }
