@@ -29,20 +29,22 @@ namespace Java.Util
         /// Constructs a vector containing the elements of the specified collection, in the order they are returned by the collection's iterator.
         /// </summary>
         /// <param name="c"></param>
-        Vector(Collection<E> c)
+        public Vector(Collection<E> c)
             : base(c) { }
         /// <summary>
         /// Constructs an empty vector with the specified initial capacity and with its capacity increment equal to zero.
         /// </summary>
         /// <param name="initialCapacity"></param>
-        Vector(int initialCapacity)
+        public Vector(int initialCapacity)
             : base(initialCapacity) { }
         /// <summary>
         /// Constructs an empty vector with the specified initial capacity and capacity increment.
         /// </summary>
         /// <param name="initialCapacity"></param>
         /// <param name="capacityIncrement"></param>
-        Vector(int initialCapacity, int capacityIncrement)
+        public Vector(int initialCapacity, int capacityIncrement)
             : base(initialCapacity, capacityIncrement) { }
+
+
     }
 }
