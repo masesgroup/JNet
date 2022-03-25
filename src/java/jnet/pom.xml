@@ -9,7 +9,7 @@
     <name>mases.jnet</name>
     <description>Java interface bridging implementation</description>
     <url>https://github.com/masesgroup/JNet</url>
-    <version>1.2.0.0</version>
+    <version>1.3.0.0</version>
 
     <licenses>
         <license>
