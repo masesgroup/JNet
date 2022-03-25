@@ -23,9 +23,9 @@ using System.Collections.Generic;
 namespace Java.Util
 {
     /// <summary>
-    /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html"/>
+    /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/util/ListIterator.html"/>
     /// </summary>
-    /// <typeparam name="E"><see href="https://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html"/></typeparam>
+    /// <typeparam name="E"><see href="https://docs.oracle.com/javase/8/docs/api/java/util/ListIterator.html"/></typeparam>
     public class ListIterator<E> : Iterator<E>
     {
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
