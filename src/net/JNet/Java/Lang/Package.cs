@@ -16,29 +16,16 @@
 *  Refer to LICENSE for more information.
 */
 
-using Java.Util;
-using MASES.JNet;
-using System;
+using MASES.JCOBridge.C2JBridge;
 
-namespace MASES.JNetTest
+namespace Java.Lang
 {
-    class Program
+    /// <summary>
+    /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Package.html"/>
+    /// </summary>
+    public sealed class Package : JVMBridgeBase<Package>
     {
-        static void Main(string[] args)
-        {
-            JNetCore.CreateGlobalInstance();
-            var appArgs = JNetCore.FilteredArgs;
-
-            var cls = Java.Lang.Class.Of<Vector<string>>();
-            var cls2 = JNetCore.Class<Vector<string>>();
-
-            var res = cls.Equals(cls2);
-
-            if (args.Length != 0)
-            {
-                var set = Collections.Singleton(appArgs[0]);
-                Console.WriteLine(set.ToString());
-            }
-        }
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.lang.Package";
     }
 }

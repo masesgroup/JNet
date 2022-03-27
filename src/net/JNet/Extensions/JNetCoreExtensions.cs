@@ -16,29 +16,15 @@
 *  Refer to LICENSE for more information.
 */
 
-using Java.Util;
-using MASES.JNet;
-using System;
+using MASES.JCOBridge.C2JBridge;
 
-namespace MASES.JNetTest
+namespace MASES.JNet.Extensions
 {
-    class Program
+    public static class JNetCoreExtensions
     {
-        static void Main(string[] args)
+        public static Java.Lang.Class<TClass> Class<TClass>(this TClass _) where TClass : IJVMBridgeBase, new()
         {
-            JNetCore.CreateGlobalInstance();
-            var appArgs = JNetCore.FilteredArgs;
-
-            var cls = Java.Lang.Class.Of<Vector<string>>();
-            var cls2 = JNetCore.Class<Vector<string>>();
-
-            var res = cls.Equals(cls2);
-
-            if (args.Length != 0)
-            {
-                var set = Collections.Singleton(appArgs[0]);
-                Console.WriteLine(set.ToString());
-            }
+            return Java.Lang.Class.Of<TClass>();
         }
     }
 }
