@@ -13,10 +13,8 @@
                 <TextBox DockPanel.Dock="Top" Name="tbOutput" Width="200" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto"/>
             </DockPanel>
         </GroupBox>
-        <DockPanel LastChildFill="False" DockPanel.Dock="Right">
+        <DockPanel LastChildFill="True" DockPanel.Dock="Right">
             <GroupBox Name="jvmGropuBox" DockPanel.Dock="Top"/>
-            <GroupBox Name="jvmGropuBox2" DockPanel.Dock="Right"/>
-            <GroupBox Name="jvmGropuBox3" DockPanel.Dock="Left"/>
         </DockPanel>
     </DockPanel>
 </Window>
