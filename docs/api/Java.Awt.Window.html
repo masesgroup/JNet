@@ -90,12 +90,21 @@
     <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeCore</span></div>
     <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
-    <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic</span>&lt;<a class="xref" href="Java.Awt.Component.html">Component</a>&gt;</div>
+    <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBase</span></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_CreateHostedContainer_System_Boolean_">Container.CreateHostedContainer(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_HostedContainer">Container.HostedContainer</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_Dispose">Container.Dispose()</a>
+    </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Awt.Component&gt;.SExecute(System.String, System.Object[])</span>
     </div>
@@ -130,16 +139,16 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Awt.Component&gt;.Clazz</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Awt.Component&gt;.Class</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Awt.Component&gt;.MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.DynClazz</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Awt.Component&gt;.MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic&lt;Java.Awt.Component&gt;.DynClazz</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Awt.Component&gt;.MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.Clazz</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Awt.Component&gt;.MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic&lt;Java.Awt.Component&gt;.Clazz</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Awt.Component&gt;.MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic&lt;Java.Awt.Component&gt;.Class</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.ClassOf&lt;T&gt;()</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
@@ -167,9 +176,6 @@
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.New&lt;TNewClass, TReturn, TConverter&gt;(System.String, System.Object[])</span>
-    </div>
-    <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Dispose()</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.ToString()</span>
@@ -272,7 +278,7 @@
   <h6><strong>Assembly</strong>: MASES.JNet.dll</h6>
   <h5 id="Java_Awt_Window_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Window : Container, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic&lt;Component&gt;, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+    <pre><code class="lang-csharp hljs">public class Window : Container, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
@@ -319,13 +325,17 @@
       <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">System.IDisposable</a>
   </div>
   <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic&lt;TClass&gt;</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic</span>
   </div>
   <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBase</span>
   </div>
   <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="MASES.JNet.Extensions.JNetCoreExtensions.html#MASES_JNet_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
   </div>
 </article>
           </div>
