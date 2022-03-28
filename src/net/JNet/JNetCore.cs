@@ -181,7 +181,7 @@ namespace MASES.JNet
 
         string buildClassPath()
         {
-            ClassPathBuilder builder = new(System.IO.Path.Combine( System.IO.Path.GetDirectoryName(typeof(JNetCore).Assembly.Location), "jnet-*.jar"));
+            ClassPathBuilder builder = new(System.IO.Path.Combine(System.IO.Path.GetDirectoryName(typeof(JNetCore).Assembly.Location), "jnet-*.jar"));
 
             if (PathToParse != null) builder.Add(PathToParse.ToArray());
 
@@ -203,6 +203,15 @@ namespace MASES.JNet
     /// </summary>
     public class JNetCore : JNetCore<JNetCore>
     {
-
+        /// <summary>
+        /// Retrieve the <see cref="IJVMBridgeDefinition.ClassName"/> of <typeparamref name="T"></typeparamref>
+        /// </summary>
+        /// <typeparam name="T">A type implementing <see cref="IJVMBridgeBase"/></typeparam>
+        /// <returns>The <see cref="IJVMBridgeDefinition.ClassName"/></returns>
+        public static Java.Lang.Class<TClass> Class<TClass>() where TClass : IJVMBridgeBase, new()
+        {
+            var className = JVMBridgeBase.ClassNameOf<TClass>();
+            return Java.Lang.Class<TClass>.SExecute<Java.Lang.Class<TClass>>("forName", className);
+        }
     }
 }

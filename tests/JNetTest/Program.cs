@@ -28,6 +28,12 @@ namespace MASES.JNetTest
         {
             JNetCore.CreateGlobalInstance();
             var appArgs = JNetCore.FilteredArgs;
+
+            var cls = Java.Lang.Class.Of<Vector<string>>();
+            var cls2 = JNetCore.Class<Vector<string>>();
+
+            var res = cls.Equals(cls2);
+
             if (args.Length != 0)
             {
                 var set = Collections.Singleton(appArgs[0]);
