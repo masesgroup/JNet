@@ -12,6 +12,6 @@
   </ItemGroup>
   <ItemGroup Condition="!Exists('..\..\..\JNet\JNet.csproj')">
     <!--Outside GitHub repo-->
-    <PackageReference Include="MASES.JNet" Version="1.3.0" IncludeAssets="All" PrivateAssets="None" />
+    <PackageReference Include="MASES.JNet" Version="1.3.1" IncludeAssets="All" PrivateAssets="None" />
   </ItemGroup>
 </Project>
