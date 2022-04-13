@@ -39,7 +39,7 @@ namespace MASES.JNet
         /// <summary>
         /// <see cref="IEnumerable{IArgumentMetadata}"/> for command line
         /// </summary>
-        protected virtual IEnumerable<IArgumentMetadata> CommandLineArguments =>
+        public virtual IEnumerable<IArgumentMetadata> CommandLineArguments =>
         new IArgumentMetadata[]
             {
                 new ArgumentMetadata<bool>()
@@ -55,7 +55,7 @@ namespace MASES.JNet
         /// <summary>
         /// Arguments parsed
         /// </summary>
-        protected IEnumerable<IArgumentMetadataParsed> ParsedArgs => _parsedArgs;
+        public IEnumerable<IArgumentMetadataParsed> ParsedArgs => _parsedArgs;
         /// <summary>
         /// Public ctor
         /// </summary>
