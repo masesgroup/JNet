@@ -53,8 +53,8 @@
     <None Include="..\Documentation\articles\usage.md" Pack="true" PackagePath="\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="MASES.CLIParser" Version="3.0.0" />
-    <PackageReference Include="MASES.JCOBridge" Version="2.4.9">
+    <PackageReference Include="MASES.CLIParser" Version="3.1.2" />
+    <PackageReference Include="MASES.JCOBridge" Version="2.4.10">
       <IncludeAssets>All</IncludeAssets>
       <PrivateAssets>None</PrivateAssets>
     </PackageReference>
