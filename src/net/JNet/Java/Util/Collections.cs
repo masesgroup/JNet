@@ -37,9 +37,29 @@ namespace Java.Util
 
         public static Map<K, V> SingletonMap<K, V>(K key, V value)
         {
-            return SExecute<Map<K, V>>("singletonMap", 
+            return SExecute<Map<K, V>>("singletonMap",
                                        (typeof(JVMBridgeBase).IsAssignableFrom(typeof(K))) ? (object)(key as JVMBridgeBase) : (object)key,
                                        (typeof(JVMBridgeBase).IsAssignableFrom(typeof(V))) ? (object)(value as JVMBridgeBase) : (object)value);
         }
+        /// <summary>
+        /// Returns an iterator that has no elements.
+        /// </summary>
+        public static Iterator<T> EmptyIterator<T>() => SExecute<Iterator<T>>("emptyIterator");
+        /// <summary>
+        /// Returns an empty list(immutable).
+        /// </summary>
+        public static List<T> EmptyList<T>() => SExecute<List<T>>("emptyList");
+        /// <summary>
+        ///  Returns a list iterator that has no elements.
+        /// </summary>
+        public static ListIterator<T> EmptyListIterator<T>() => SExecute<ListIterator<T>>("emptyListIterator");
+        /// <summary>
+        /// Returns an empty map(immutable).
+        /// </summary>
+        public static Map<K, V> EmptyMap<K, V>() => SExecute<Map<K, V>>("emptyMap");
+        /// <summary>
+        /// Returns an empty set(immutable).
+        /// </summary>
+        public static Set<T> EmptySet<T>() => SExecute<Set<T>>("emptySet");
     }
 }

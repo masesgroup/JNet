@@ -29,6 +29,8 @@ namespace MASES.JNetTest
             JNetCore.CreateGlobalInstance();
             var appArgs = JNetCore.FilteredArgs;
 
+            var setEmpty = Collections.EmptySet<int>();
+
             var cls = Java.Lang.Class.Of<Vector<string>>();
             var cls2 = JNetCore.Class<Vector<string>>();
 
