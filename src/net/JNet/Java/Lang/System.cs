@@ -120,24 +120,18 @@ namespace Java.Lang
         /// Runs the finalization methods of any objects pending finalization.
         /// </summary>
         public static void RunFinalization() => SExecute("runFinalization​​​​​​​​​");
-        //        /// <summary>
-        //        /// Reassigns the "standard" error output stream.
-        //        /// </summary>
-        //        /// <param name="err"></param>
-        //        static void setErr​(PrintStream err)
-        //            /// <summary>
-        //            /// Reassigns the "standard" input stream.
-        //            /// </summary>
-        //            /// <param name=""></param>
-        //            /// <param name=""></param>
-        //        static void setIn​(InputStream in)
-        ///// <summary>
-        ///// Reassigns the "standard" output stream.
-        ///// </summary>
-        ///// <param name=""></param>
-        ///// <param name=""></param>
-        //static void setOut​(PrintStream out)
-
+        /// <summary>
+        /// Reassigns the "standard" error output stream.
+        /// </summary>
+        public static void SetErr​(PrintStream err) => SExecute("setErr​​​​​​​​​​", err);
+        /// <summary>
+        /// Reassigns the "standard" input stream.
+        /// </summary>
+        public static void SetIn​(InputStream _in) => SExecute("setIn​​​​​​​​​​​", _in);
+        /// <summary>
+        /// Reassigns the "standard" output stream.
+        /// </summary>
+        public static void SetOut​(PrintStream _out) => SExecute("setOut​​​​​​​​​​​​", _out);
         /// <summary>
         /// Sets the system properties to the Properties argument.
         /// </summary>
