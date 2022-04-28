@@ -30,7 +30,7 @@ namespace Java.Util.Function
     }
 
     /// <summary>
-    /// Listener for Java ObjIntConsumer <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/ObjIntConsumer.html"/>. Extends <see cref="BiConsumerListener{T, Int32}"/>
+    /// Listener for Java ObjIntConsumer <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/ObjIntConsumer.html"/>. Extends <see cref="BiConsumer{T, Int32}"/>
     /// </summary>
     /// <typeparam name="T">The data associated to the event</typeparam>
     public class ObjIntConsumer<T> : BiConsumer<T, int>, IObjIntConsumer<T>

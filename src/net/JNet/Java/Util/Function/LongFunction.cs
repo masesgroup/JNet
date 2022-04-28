@@ -30,7 +30,7 @@ namespace Java.Util.Function
     }
 
     /// <summary>
-    /// Listener for Java LongFunction <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/LongFunction.html"/>. Extends <see cref="FunctionListener{Int64, TResult}"/>
+    /// Listener for Java LongFunction <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/LongFunction.html"/>. Extends <see cref="Function{Int64, TResult}"/>
     /// </summary>
     /// <typeparam name="TReturn">The return data type associated to the event</typeparam>
     public class LongFunction<TReturn> : Function<long, TReturn>, ILongFunction<TReturn>

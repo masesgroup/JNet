@@ -30,7 +30,7 @@ namespace Java.Util.Function
     }
 
     /// <summary>
-    /// Listener for Java ObjLongConsumer <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/ObjLongConsumer.html"/>. Extends <see cref="JVMBridgeListener"/>
+    /// Listener for Java ObjLongConsumer <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/ObjLongConsumer.html"/>. Extends <see cref="BiConsumer{T, Int64}"/>
     /// </summary>
     /// <typeparam name="T">The data associated to the event</typeparam>
     public class ObjLongConsumer<T> : BiConsumer<T, long>, IObjLongConsumer<T>

@@ -102,7 +102,7 @@ namespace Java.Util
         /// </summary>
         public virtual Func<T, T, int> OnCompare { get { return CompareFunction; } }
         /// <summary>
-        /// Initialize a new instance of <see cref="ActionListener"/>
+        /// Initialize a new instance of <see cref="Comparator{T}"/>
         /// </summary>
         /// <param name="compare">The <see cref="Func{T, T, int}"/> to be executed on Compare</param>
         /// <param name="attachEventHandler">Set to false to disable attach of <see cref="EventHandler"/> and set an own one</param>

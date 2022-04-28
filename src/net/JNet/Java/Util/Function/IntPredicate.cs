@@ -29,7 +29,7 @@ namespace Java.Util.Function
     }
 
     /// <summary>
-    /// Listener for Java IntPredicate <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/IntPredicate.html"/>. Extends <see cref="PredicateListener{Int32}"/>
+    /// Listener for Java IntPredicate <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/IntPredicate.html"/>. Extends <see cref="Predicate{Int32}"/>
     /// </summary>
     public class IntPredicate : Predicate<int>, IIntPredicate
     {
