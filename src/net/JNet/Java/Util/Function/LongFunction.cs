@@ -39,7 +39,6 @@ namespace Java.Util.Function
         public sealed override string ClassName => "org.mases.jnet.util.function.JNetLongFunction";
 
         /// <inheritdoc cref="Function{Int64, TReturn}"/>
-        /// <param name="func">The <see cref="Func{Int32, TReturn}"/> to be executed</param>
         public LongFunction(Func<long, TReturn> func = null) : base(func) { }
     }
 }

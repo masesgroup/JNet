@@ -37,7 +37,6 @@ namespace Java.Util.Function
         public sealed override string ClassName => "org.mases.jnet.util.function.JNetIntPredicate";
 
         /// <inheritdoc cref="Predicate{Int32}"/>
-        /// <param name="func">The <see cref="Func{Int32, Boolean}"/> to be executed</param>
         public IntPredicate(Func<int, bool> func = null) : base(func) { }
     }
 }

@@ -39,7 +39,6 @@ namespace Java.Util.Function
         public sealed override string ClassName => "org.mases.jnet.util.function.JNetObjLongConsumer";
 
         /// <inheritdoc cref="BiConsumer{T, Int64}"/>
-        /// <param name="action">The <see cref="Action{T, Int64}"/> to be executed</param>
         public ObjLongConsumer(Action<T, long> action = null) : base(action) { }
     }
 }

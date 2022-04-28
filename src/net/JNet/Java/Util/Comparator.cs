@@ -33,7 +33,7 @@ namespace Java.Util
         /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
         public override bool IsInterface => true;
         /// <summary>
-        /// Accepts a function that extracts a Comparable sort key from a type T, and returns a Comparator<T> that compares by that sort key.
+        /// Accepts a function that extracts a Comparable sort key from a type T, and returns a <see cref="Comparator"/> that compares by that sort key.
         /// </summary>
         /// <typeparam name="SuperT"></typeparam>
         /// <typeparam name="SuperU"></typeparam>
@@ -41,22 +41,22 @@ namespace Java.Util
         /// <returns></returns>
         public static Comparator Comparing<SuperT, SuperU>(Function<SuperT, SuperU> keyExtractor) => SExecute<Comparator>("comparing", keyExtractor);
         /// <summary>
-        /// Accepts a function that extracts a sort key from a type T, and returns a Comparator<T> that compares by that sort key using the specified Comparator.
+        /// Accepts a function that extracts a sort key from a type T, and returns a <see cref="Comparator"/> that compares by that sort key using the specified Comparator.
         /// </summary>
         public static Comparator Comparing<SuperT, SuperU>(Function<SuperT, SuperU> keyExtractor, Comparator<SuperU> keyComparator) => SExecute<Comparator>("comparing", keyExtractor, keyComparator);
         /// <summary>
-        /// Accepts a function that extracts a double sort key from a type T, and returns a Comparator<T> that compares by that sort key.
+        /// Accepts a function that extracts a double sort key from a type T, and returns a <see cref="Comparator"/> that compares by that sort key.
         /// </summary>
         /// <typeparam name="SuperT"></typeparam>
         /// <param name="keyExtractor"></param>
         /// <returns></returns>
         public static Comparator ComparingDouble<SuperT>(ToDoubleFunction<SuperT> keyExtractor) => SExecute<Comparator>("comparingDouble", keyExtractor);
         /// <summary>
-        /// Accepts a function that extracts an int sort key from a type T, and returns a Comparator<T> that compares by that sort key.
+        /// Accepts a function that extracts an int sort key from a type T, and returns a <see cref="Comparator"/> that compares by that sort key.
         /// </summary>
         public static Comparator ComparingInt<SuperT>(ToIntFunction<SuperT> keyExtractor) => SExecute<Comparator>("comparingInt", keyExtractor);
         /// <summary>
-        /// Accepts a function that extracts a long sort key from a type T, and returns a Comparator<T> that compares by that sort key.
+        /// Accepts a function that extracts a long sort key from a type T, and returns a <see cref="Comparator"/> that compares by that sort key.
         /// </summary>
         /// <typeparam name="SuperT"></typeparam>
         /// <param name="keyExtractor"></param>

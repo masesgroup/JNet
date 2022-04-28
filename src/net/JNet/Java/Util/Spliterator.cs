@@ -36,7 +36,7 @@ namespace Java.Util
         /// </summary>
         public int Characteristics => IExecute<int>("characteristics");
         /// <summary>
-        /// Returns an estimate of the number of elements that would be encountered by a forEachRemaining(java.util.function.Consumer<? super T>) traversal, or returns Long.MAX_VALUE if infinite, unknown, or too expensive to compute.
+        /// Returns an estimate of the number of elements that would be encountered by a forEachRemaining(java.util.function.Consumer{? super T}) traversal, or returns Long.MAX_VALUE if infinite, unknown, or too expensive to compute.
         /// </summary>
         public long EstimateSize => IExecute<long>("estimateSize");
         /// <summary>
