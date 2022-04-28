@@ -22,7 +22,7 @@ using System;
 namespace Java.Util.Function
 {
     /// <summary>
-    /// Listener for Java ObjLongConsumer <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/ObjLongConsumer.html"/>. Extends <see cref="BiConsumerListener{T, Int64}"/>
+    /// Listener for Java ObjLongConsumer <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/ObjLongConsumer.html"/>. Extends <see cref="IBiConsumer{T, Int64}"/>
     /// </summary>
     /// <typeparam name="T">The data associated to the event</typeparam>
     public interface IObjLongConsumer<T> : IBiConsumer<T, long>
