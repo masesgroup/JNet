@@ -25,7 +25,7 @@ namespace Java.Lang
     /// </summary>
     public class ClassLoader : JVMBridgeBase<ClassLoader>
     {
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+//        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "java.lang.ClassLoader";
     }
 }

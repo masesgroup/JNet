@@ -26,7 +26,7 @@ namespace Java.Lang
     /// <typeparam name="E"><see href="https://docs.oracle.com/javase/8/docs/api/java/lang/ThreadLocal.html"/></typeparam>
     public class ThreadLocal<E> : JVMBridgeBase<ThreadLocal<E>>
     {
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+//        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "java.lang.ThreadLocal";
     }
 }

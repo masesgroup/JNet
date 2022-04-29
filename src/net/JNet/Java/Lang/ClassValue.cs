@@ -26,7 +26,7 @@ namespace Java.Lang
     /// <typeparam name="T"><see href="https://docs.oracle.com/javase/8/docs/api/java/lang/ClassValue.html"/></typeparam>
     public class ClassValue<T> : JVMBridgeBase<ClassValue<T>>
     {
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+//        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "java.lang.ClassValue";
     }
 }

@@ -25,7 +25,7 @@ namespace Java.Lang
     /// </summary>
     public class Throwable : JVMBridgeException<Throwable>
     {
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+//        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "java.lang.Throwable";
         /// <summary>
         /// Appends the specified exception to the exceptions that were suppressed in order to deliver this exception.

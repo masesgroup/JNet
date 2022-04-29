@@ -25,7 +25,7 @@ namespace Java.Lang
     /// </summary>
     public class Compiler : JVMBridgeBase<Compiler>
     {
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+//        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "java.lang.Compiler";
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => true;

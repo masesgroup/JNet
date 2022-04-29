@@ -25,7 +25,7 @@ namespace Java.Lang
     /// </summary>
     public sealed class ProcessBuilder : JVMBridgeBase<ProcessBuilder>
     {
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+//        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "java.lang.ProcessBuilder";
 
         /// <summary>
@@ -33,7 +33,7 @@ namespace Java.Lang
         /// </summary>
         public sealed class Redirect : JVMBridgeBase<Redirect>
         {
-            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+    //        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
             public override string ClassName => "java.lang.ProcessBuilder.Redirect";
             /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
             public override bool IsStatic => true;

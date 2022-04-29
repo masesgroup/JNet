@@ -27,7 +27,7 @@ namespace Java.Lang
     public class Enum<E> : JVMBridgeBase<Enum<E>>
         where E : Enum<E>
     {
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+//        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "java.lang.Enum";
     }
 }

@@ -26,9 +26,9 @@ namespace Java.Lang
     /// <typeparam name="T"><see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html"/></typeparam>
     public class Comparable<T> : JVMBridgeBase<Comparable<T>>
     {
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+//        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "java.lang.Comparable";
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+//        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
         public override bool IsInterface => true;
         /// <summary>
         /// Compares this object with the specified object for order. Returns a negative integer, zero, or a positive integer as this object is less than, equal to, or greater than the specified object. 

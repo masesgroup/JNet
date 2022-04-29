@@ -26,7 +26,7 @@ namespace Java.Lang
     /// </summary>
     public sealed class Runtime : JVMBridgeBase<Runtime>
     {
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+//        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "java.lang.Runtime";
         /// <summary>
         /// Registers a new virtual-machine shutdown hook.
@@ -111,7 +111,7 @@ namespace Java.Lang
 
         public sealed class Version : JVMBridgeBase<Version>
         {
-            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+    //        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
             public override string ClassName => "java.lang.Runtime.Version";
         }
     }

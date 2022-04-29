@@ -25,7 +25,7 @@ namespace Java.Lang
     /// </summary>
     public sealed class StackTraceElement : JVMBridgeBase<StackTraceElement>
     {
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+//        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "java.lang.StackTraceElement";
     }
 }

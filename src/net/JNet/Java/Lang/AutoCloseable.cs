@@ -25,9 +25,9 @@ namespace Java.Lang
     /// </summary>
     public class AutoCloseable : JVMBridgeBase<AutoCloseable>
     {
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+//        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "java.lang.AutoCloseable";
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+//        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
         public override bool IsInterface => true;
         /// <summary>
         /// Closes this resource, relinquishing any underlying resources.

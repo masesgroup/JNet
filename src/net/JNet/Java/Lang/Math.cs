@@ -25,7 +25,7 @@ namespace Java.Lang
     /// </summary>
     public sealed class Math : JVMBridgeBase<Math>
     {
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+//        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "java.lang.Math";
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => true;

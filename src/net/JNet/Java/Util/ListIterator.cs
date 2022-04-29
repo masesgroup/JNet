@@ -28,9 +28,9 @@ namespace Java.Util
     /// <typeparam name="E"><see href="https://docs.oracle.com/javase/8/docs/api/java/util/ListIterator.html"/></typeparam>
     public class ListIterator<E> : Iterator<E>
     {
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+//        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "java.util.ListIterator";
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+//        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
         public override bool IsInterface => true;
         /// <summary>
         /// Inserts the specified element into the list(optional operation).
