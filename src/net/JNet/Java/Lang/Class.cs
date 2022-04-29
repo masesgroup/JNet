@@ -26,7 +26,7 @@ namespace Java.Lang
     /// </summary>
     public class Class : JVMBridgeBase<Class>
     {
-//        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "java.lang.Class";
         /// <summary>
         /// Returns the <see cref="Class"/> object associated with the class or interface with the given string name.

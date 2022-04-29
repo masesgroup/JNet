@@ -39,9 +39,9 @@ namespace MASES.JNet
         /// </summary>
         public static string ApplicationInitialHeapSize { get; set; }
 
-        /// <inheritdoc cref="JNetCore{T}.GlobalHeapSize" />
+        /// <inheritdoc cref="SetupJVMWrapper{T}.GlobalHeapSize" />
         public override string GlobalHeapSize { get { return string.IsNullOrEmpty(base.GlobalHeapSize) ? ApplicationHeapSize : base.GlobalHeapSize; } }
-        /// <inheritdoc cref="JNetCore{T}.InitialHeapSize" />
+        /// <inheritdoc cref="SetupJVMWrapper{T}.InitialHeapSize" />
         public override string InitialHeapSize { get { return string.IsNullOrEmpty(base.InitialHeapSize) ? ApplicationInitialHeapSize : base.InitialHeapSize; } }
 
         /// <summary>

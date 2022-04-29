@@ -26,7 +26,7 @@ namespace Java.Lang
     /// </summary>
     public class Thread : JVMBridgeBase<Thread>
     {
-//        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "java.lang.Thread";
         /// <summary>
         /// Allocates a new Thread object.

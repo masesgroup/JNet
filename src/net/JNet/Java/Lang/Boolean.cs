@@ -25,7 +25,7 @@ namespace Java.Lang
     /// </summary>
     public sealed class Boolean : JVMBridgeBase<Boolean>
     {
-//        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "java.lang.Boolean";
         /// <summary>
         /// Compares two boolean values.

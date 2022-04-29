@@ -25,7 +25,7 @@ namespace Java.Lang
     /// </summary>
     public sealed class StrictMath : JVMBridgeBase<StrictMath>
     {
-//        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "java.lang.StrictMath";
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => true;

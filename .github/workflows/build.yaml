@@ -66,15 +66,6 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-maven-
 
-      - name: Clear documentation folder 
-        run: Remove-Item .\docs\* -Recurse -Force -Exclude _config.yml
-
-      - name: Build documentation
-        run: |
-          choco install docfx
-          cd src\net\Documentation
-          docfx
-
       - name: Pre compile templates
         run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" src\net\JNetTemplates.sln
 
@@ -113,6 +104,15 @@ jobs:
 
       - name: Recompile to create nuget packages
         run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" src\net\JNet.sln
+
+      - name: Clear documentation folder 
+        run: Remove-Item .\docs\* -Recurse -Force -Exclude _config.yml
+
+      - name: Build documentation
+        run: |
+          choco install docfx
+          cd src\net\Documentation
+          docfx
 
       - uses: actions/upload-artifact@v2
         with:

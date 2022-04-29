@@ -25,7 +25,7 @@ namespace Java.Lang
     /// </summary>
     public sealed class Long : Number
     {
-//        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "java.lang.Long";
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;

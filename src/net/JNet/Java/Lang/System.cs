@@ -28,7 +28,7 @@ namespace Java.Lang
     /// </summary>
     public sealed class System : JVMBridgeBase<System>
     {
-//        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "java.lang.System";
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => true;
@@ -148,7 +148,7 @@ namespace Java.Lang
         public sealed class Logger : JVMBridgeBase<Logger>
         {
             public override bool IsInterface => true;
-    //        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
             public override string ClassName => "java.lang.System.Logger";
         }
     }

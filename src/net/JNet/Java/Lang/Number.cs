@@ -25,7 +25,7 @@ namespace Java.Lang
     /// </summary>
     public class Number : JVMBridgeBase<Number>
     {
-//        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "java.lang.Number";
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;

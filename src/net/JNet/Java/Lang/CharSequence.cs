@@ -25,9 +25,9 @@ namespace Java.Lang
     /// </summary>
     public class CharSequence : JVMBridgeBase<CharSequence>
     {
-//        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "java.lang.CharSequence";
-//        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
         public override bool IsInterface => true;
         /// <summary>
         /// Returns the char value at the specified index. An index ranges from zero to length() - 1. The first char value of the sequence is at index zero, the next at index one, and so on, as for array indexing. 

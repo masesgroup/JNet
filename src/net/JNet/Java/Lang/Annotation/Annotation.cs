@@ -25,7 +25,7 @@ namespace Java.Lang.Annotation
     /// </summary>
     public class Annotation : JVMBridgeBase<Annotation>
     {
-//        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "java.lang.annotation.Annotation";
         /// <summary>
         /// Returns the annotation type of this annotation.

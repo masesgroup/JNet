@@ -25,7 +25,7 @@ namespace Java.Lang
     /// </summary>
     public sealed class Package : JVMBridgeBase<Package>
     {
-//        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "java.lang.Package";
     }
 }

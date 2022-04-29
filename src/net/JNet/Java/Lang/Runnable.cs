@@ -25,9 +25,9 @@ namespace Java.Lang
     /// </summary>
     public class Runnable : JVMBridgeBase<Runnable>
     {
-//        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "java.lang.Runnable";
-//        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
         public override bool IsInterface => true;
         /// <summary>
         /// When an object implementing interface <see cref="Runnable"/> is used to create a thread, starting the thread causes the object's run method to be called in that separately executing thread.

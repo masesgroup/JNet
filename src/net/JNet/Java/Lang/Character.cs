@@ -25,7 +25,7 @@ namespace Java.Lang
     /// </summary>
     public sealed class Character : JVMBridgeBase<Character>
     {
-//        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "java.lang.Character";
         /// <summary>
         /// Do not use: it is intended for internal use.
@@ -47,7 +47,7 @@ namespace Java.Lang
         /// </summary>
         public sealed class Subset : JVMBridgeBase<Subset>
         {
-    //        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
             public override string ClassName => "java.lang.Character.Subset";
         }
         /// <summary>
@@ -55,7 +55,7 @@ namespace Java.Lang
         /// </summary>
         public sealed class UnicodeBlock : JVMBridgeBase<UnicodeBlock>
         {
-    //        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
             public override string ClassName => "java.lang.Character.UnicodeBlock";
             /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
             public override bool IsStatic => true;
