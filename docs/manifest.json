@@ -929,6 +929,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Io.Console.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Io.Console.html",
+          "hash": "37Fd9DXVH+F/U/rv4MyF5nFHuG1n0mnstZ2+WMr9+xU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Io.File.yml",
       "output": {
         ".html": {
@@ -941,11 +953,35 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Io.InputStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Io.InputStream.html",
+          "hash": "eeuDEWZvMzS1nURCIspPYRWElK6Z8PL6N++ohs6HZ48="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Io.PrintStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Io.PrintStream.html",
+          "hash": "P8r8yUxSh71sALd/6GjZ2zjxCODS89RMJu5BgXX6Mmw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Io.yml",
       "output": {
         ".html": {
           "relative_path": "api/Java.Io.html",
-          "hash": "OwIsnNuSaU75i+6rLNeCutLV4Zv5C/EUvEDiwumv6+I="
+          "hash": "HhHIUYONTHPTv5ytc5Ayqjnsq9neZVflIOq3c5jcggU="
         }
       },
       "is_incremental": false,
@@ -1769,11 +1805,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Lang.Runtime.Version.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Lang.Runtime.Version.html",
+          "hash": "g8ke9J+7fiCwsEZlk9cOWlsFwU6F8O3VTWkJfNvgwLo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Lang.Runtime.yml",
       "output": {
         ".html": {
           "relative_path": "api/Java.Lang.Runtime.html",
-          "hash": "LOsP+mLtyBPLJIgV0qZ0NXRyCdnSh0mbyT/EkTPGaRQ="
+          "hash": "SHjGBPQbKFZbvdeFnWOhGUX4hivGoweB7JqdZOJID8A="
         }
       },
       "is_incremental": false,
@@ -1913,11 +1961,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Lang.System.Logger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Lang.System.Logger.html",
+          "hash": "089Po/L1bznTBMLPccR8yT6/H9WVDrcYy4SEunK3NBw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Lang.System.yml",
       "output": {
         ".html": {
           "relative_path": "api/Java.Lang.System.html",
-          "hash": "KlPXmSoO5EwgEZhUhbUnXmBRrRHuGj1o3Lk67NIfMDs="
+          "hash": "EEyXeBRiK4eeiEkxQ7klEzXXg9UTVWxPTVSboHJC6AY="
         }
       },
       "is_incremental": false,
@@ -2097,7 +2157,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Lang.html",
-          "hash": "PCNSD9RY8rrCEy8TiPOFw1yvK0dA8Y93WaAWsB2aRMw="
+          "hash": "6cUFR+uBkpG2LRyI4kQaQdF5Ztwe8O5g9zHYa49zcFA="
         }
       },
       "is_incremental": false,
@@ -2141,11 +2201,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Nio.Channel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Nio.Channel.html",
+          "hash": "Aucrv2203g9EIMfym3y39i+m1HgXK/s2D2B9BBoxeKs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Nio.yml",
       "output": {
         ".html": {
           "relative_path": "api/Java.Nio.html",
-          "hash": "fjT+TbEapDB2QDhVQAjJuyGAmnCVAq0u0Cham34H1vo="
+          "hash": "yowgDVCV/TPYvPOrLMtaFEmugcQWDANQWH2AEYSxX58="
         }
       },
       "is_incremental": false,
@@ -2301,7 +2373,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Collections.html",
-          "hash": "yDFm72XXXQvI1qSa2jvskWiS9awqwlEVnhebcUQtdaI="
+          "hash": "GcS3xetkAilTJe4SPvpi2dOXSnE+X3dgut/wKK1V0IU="
         }
       },
       "is_incremental": false,
@@ -2313,7 +2385,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Comparator-1.html",
-          "hash": "dufvN8k03eSQk9M1Pw3Zx4v4m/dE4JJ0Hw9Qf5TH+Ig="
+          "hash": "LpBnqc5kIszJz/aLV9Z7N9DkzZyhHL8sRnUQENAbusY="
         }
       },
       "is_incremental": false,
@@ -2325,7 +2397,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Comparator.html",
-          "hash": "bapa8auIjHgQ6I86P95LxBgMcrFRYSfBe8E4Ihb9Mbc="
+          "hash": "6URSEDbDlezreg5dinaH0xplW3R6NIXoCO5wSzoGwGA="
         }
       },
       "is_incremental": false,
@@ -3009,7 +3081,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Function.IObjLongConsumer-1.html",
-          "hash": "VjpwjRVxf5MFvPZXdsEOg23kYA0Y3hgJmegjxkSyULc="
+          "hash": "TmhwS6QCxbsflzpu7ZTkLRhkS9g/2oDt8usAkMYsjZQ="
         }
       },
       "is_incremental": false,
@@ -3165,7 +3237,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Function.IntPredicate.html",
-          "hash": "Imf8g29OBGa5ETsBMZ0mt3QDUcx9h7bQYVYxB7v209A="
+          "hash": "i7ttbtucmnGxeumv6T2ImpKbI2L96Ev3G/pFoXTgLoM="
         }
       },
       "is_incremental": false,
@@ -3249,7 +3321,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Function.LongFunction-1.html",
-          "hash": "NOq/vLu1TkXCzz5fGCGX2WWxGK3fcQTEOi2nkcX3TYc="
+          "hash": "OnFHHqefly0Qo3E4UaUPP5TIQNbHeC0mE6fE4Z1uhf0="
         }
       },
       "is_incremental": false,
@@ -3333,7 +3405,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Function.ObjIntConsumer-1.html",
-          "hash": "bzdwm/OfN1SXRPGSmIxjbzk3qrsSZiwAG7AJARmX+oY="
+          "hash": "9ssNjo/AohpdKAPvUaEG3XvtPzBZc2aOERyRpydd2t4="
         }
       },
       "is_incremental": false,
@@ -3345,7 +3417,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Function.ObjLongConsumer-1.html",
-          "hash": "vQfo8VXCLEc2yn3Ur7tsPGq55JTmp1Kr/UE93192hXw="
+          "hash": "dQBONvalFMI95e61O7pJB1+9aXivu/NhEQC/C5JVJ8A="
         }
       },
       "is_incremental": false,
@@ -3465,7 +3537,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Function.html",
-          "hash": "ZsJQcKpHs96+diQ2pK84L54P8YRZq4ieqLjHPMd/1kA="
+          "hash": "YUqzx9Yb9YNsbdQHPGyXLUguOaeBnkRYHfnNA9roQIg="
         }
       },
       "is_incremental": false,
@@ -3665,6 +3737,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.ResourceBundle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.ResourceBundle.html",
+          "hash": "armdNh6CvNbSOW67Op72UUweQLCsCiSl37Ee5Ubpaik="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Util.Set-1.yml",
       "output": {
         ".html": {
@@ -3681,7 +3765,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.Spliterator-1.html",
-          "hash": "Jo1Yw+6nLsK1qqFkTExB5SP7Eds7peiCKV67nhqiJI0="
+          "hash": "TUvnGeJ8zskC6B/24p/Yh3+FeCFVoDpao2AByVotwPs="
         }
       },
       "is_incremental": false,
@@ -3741,7 +3825,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.html",
-          "hash": "KFtJtnTdan12qzomDjBP///lm97ht9LOspAak7dmRr8="
+          "hash": "cDYWgDC9Xq+43JddOFXQVZetJ6BgOi0sM+VAMswcvEg="
         }
       },
       "is_incremental": false,
@@ -4137,7 +4221,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MASES.JNet.JNetCore-1.html",
-          "hash": "30j+buLSW5uJHE/e5VEbEut/OLK9F+xSB11mTTMI8Tg="
+          "hash": "hbfVOwQG2jThVGn/rTTUXoV6bcL3E7Dqs1k59bDaXm8="
         }
       },
       "is_incremental": false,
@@ -4149,7 +4233,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MASES.JNet.JNetCore.html",
-          "hash": "ZcIs9RWv2XVLu9Y8lJWIuM+mM8PNRVStguJKSprym5o="
+          "hash": "6goFmlGMLFRuh/BlyiuyGLrsFjfSJIPh8mHrQ44YnYU="
         }
       },
       "is_incremental": false,
@@ -4185,7 +4269,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "GgDSBR9P/udM0DuO1swIUQlUtz2cYJWw+RuErHuF2kQ="
+          "hash": "GewR51GKNkERu7B9dc/1pSR58PWPa3eooAcQFo2u9Jc="
         }
       },
       "is_incremental": false,
@@ -4337,7 +4421,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 347,
+          "total_file_count": 354,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

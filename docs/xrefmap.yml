@@ -5242,6 +5242,25 @@ references:
   commentId: N:Java.Io
   fullName: Java.Io
   nameWithType: Java.Io
+- uid: Java.Io.Console
+  name: Console
+  href: api/Java.Io.Console.html
+  commentId: T:Java.Io.Console
+  fullName: Java.Io.Console
+  nameWithType: Console
+- uid: Java.Io.Console.ClassName
+  name: ClassName
+  href: api/Java.Io.Console.html#Java_Io_Console_ClassName
+  commentId: P:Java.Io.Console.ClassName
+  fullName: Java.Io.Console.ClassName
+  nameWithType: Console.ClassName
+- uid: Java.Io.Console.ClassName*
+  name: ClassName
+  href: api/Java.Io.Console.html#Java_Io_Console_ClassName_
+  commentId: Overload:Java.Io.Console.ClassName
+  isSpec: "True"
+  fullName: Java.Io.Console.ClassName
+  nameWithType: Console.ClassName
 - uid: Java.Io.File
   name: File
   href: api/Java.Io.File.html
@@ -5261,6 +5280,44 @@ references:
   isSpec: "True"
   fullName: Java.Io.File.ClassName
   nameWithType: File.ClassName
+- uid: Java.Io.InputStream
+  name: InputStream
+  href: api/Java.Io.InputStream.html
+  commentId: T:Java.Io.InputStream
+  fullName: Java.Io.InputStream
+  nameWithType: InputStream
+- uid: Java.Io.InputStream.ClassName
+  name: ClassName
+  href: api/Java.Io.InputStream.html#Java_Io_InputStream_ClassName
+  commentId: P:Java.Io.InputStream.ClassName
+  fullName: Java.Io.InputStream.ClassName
+  nameWithType: InputStream.ClassName
+- uid: Java.Io.InputStream.ClassName*
+  name: ClassName
+  href: api/Java.Io.InputStream.html#Java_Io_InputStream_ClassName_
+  commentId: Overload:Java.Io.InputStream.ClassName
+  isSpec: "True"
+  fullName: Java.Io.InputStream.ClassName
+  nameWithType: InputStream.ClassName
+- uid: Java.Io.PrintStream
+  name: PrintStream
+  href: api/Java.Io.PrintStream.html
+  commentId: T:Java.Io.PrintStream
+  fullName: Java.Io.PrintStream
+  nameWithType: PrintStream
+- uid: Java.Io.PrintStream.ClassName
+  name: ClassName
+  href: api/Java.Io.PrintStream.html#Java_Io_PrintStream_ClassName
+  commentId: P:Java.Io.PrintStream.ClassName
+  fullName: Java.Io.PrintStream.ClassName
+  nameWithType: PrintStream.ClassName
+- uid: Java.Io.PrintStream.ClassName*
+  name: ClassName
+  href: api/Java.Io.PrintStream.html#Java_Io_PrintStream_ClassName_
+  commentId: Overload:Java.Io.PrintStream.ClassName
+  isSpec: "True"
+  fullName: Java.Io.PrintStream.ClassName
+  nameWithType: PrintStream.ClassName
 - uid: Java.Lang
   name: Java.Lang
   href: api/Java.Lang.html
@@ -7628,6 +7685,32 @@ references:
   commentId: T:Java.Lang.Runtime
   fullName: Java.Lang.Runtime
   nameWithType: Runtime
+- uid: Java.Lang.Runtime.AddShutdownHook(Java.Lang.Thread)
+  name: AddShutdownHook(Thread)
+  href: api/Java.Lang.Runtime.html#Java_Lang_Runtime_AddShutdownHook_Java_Lang_Thread_
+  commentId: M:Java.Lang.Runtime.AddShutdownHook(Java.Lang.Thread)
+  fullName: Java.Lang.Runtime.AddShutdownHook(Java.Lang.Thread)
+  nameWithType: Runtime.AddShutdownHook(Thread)
+- uid: Java.Lang.Runtime.AddShutdownHook*
+  name: AddShutdownHook
+  href: api/Java.Lang.Runtime.html#Java_Lang_Runtime_AddShutdownHook_
+  commentId: Overload:Java.Lang.Runtime.AddShutdownHook
+  isSpec: "True"
+  fullName: Java.Lang.Runtime.AddShutdownHook
+  nameWithType: Runtime.AddShutdownHook
+- uid: Java.Lang.Runtime.AvailableProcessors
+  name: AvailableProcessors
+  href: api/Java.Lang.Runtime.html#Java_Lang_Runtime_AvailableProcessors
+  commentId: P:Java.Lang.Runtime.AvailableProcessors
+  fullName: Java.Lang.Runtime.AvailableProcessors
+  nameWithType: Runtime.AvailableProcessors
+- uid: Java.Lang.Runtime.AvailableProcessors*
+  name: AvailableProcessors
+  href: api/Java.Lang.Runtime.html#Java_Lang_Runtime_AvailableProcessors_
+  commentId: Overload:Java.Lang.Runtime.AvailableProcessors
+  isSpec: "True"
+  fullName: Java.Lang.Runtime.AvailableProcessors
+  nameWithType: Runtime.AvailableProcessors
 - uid: Java.Lang.Runtime.ClassName
   name: ClassName
   href: api/Java.Lang.Runtime.html#Java_Lang_Runtime_ClassName
@@ -7641,6 +7724,239 @@ references:
   isSpec: "True"
   fullName: Java.Lang.Runtime.ClassName
   nameWithType: Runtime.ClassName
+- uid: Java.Lang.Runtime.Current
+  name: Current
+  href: api/Java.Lang.Runtime.html#Java_Lang_Runtime_Current
+  commentId: P:Java.Lang.Runtime.Current
+  fullName: Java.Lang.Runtime.Current
+  nameWithType: Runtime.Current
+- uid: Java.Lang.Runtime.Current*
+  name: Current
+  href: api/Java.Lang.Runtime.html#Java_Lang_Runtime_Current_
+  commentId: Overload:Java.Lang.Runtime.Current
+  isSpec: "True"
+  fullName: Java.Lang.Runtime.Current
+  nameWithType: Runtime.Current
+- uid: Java.Lang.Runtime.CurrentVersion
+  name: CurrentVersion
+  href: api/Java.Lang.Runtime.html#Java_Lang_Runtime_CurrentVersion
+  commentId: P:Java.Lang.Runtime.CurrentVersion
+  fullName: Java.Lang.Runtime.CurrentVersion
+  nameWithType: Runtime.CurrentVersion
+- uid: Java.Lang.Runtime.CurrentVersion*
+  name: CurrentVersion
+  href: api/Java.Lang.Runtime.html#Java_Lang_Runtime_CurrentVersion_
+  commentId: Overload:Java.Lang.Runtime.CurrentVersion
+  isSpec: "True"
+  fullName: Java.Lang.Runtime.CurrentVersion
+  nameWithType: Runtime.CurrentVersion
+- uid: Java.Lang.Runtime.Exec(Java.Lang.String)
+  name: Exec(String)
+  href: api/Java.Lang.Runtime.html#Java_Lang_Runtime_Exec_Java_Lang_String_
+  commentId: M:Java.Lang.Runtime.Exec(Java.Lang.String)
+  fullName: Java.Lang.Runtime.Exec(Java.Lang.String)
+  nameWithType: Runtime.Exec(String)
+- uid: Java.Lang.Runtime.Exec(Java.Lang.String,Java.Lang.String[])
+  name: Exec(String, String[])
+  href: api/Java.Lang.Runtime.html#Java_Lang_Runtime_Exec_Java_Lang_String_Java_Lang_String___
+  commentId: M:Java.Lang.Runtime.Exec(Java.Lang.String,Java.Lang.String[])
+  name.vb: Exec(String, String())
+  fullName: Java.Lang.Runtime.Exec(Java.Lang.String, Java.Lang.String[])
+  fullName.vb: Java.Lang.Runtime.Exec(Java.Lang.String, Java.Lang.String())
+  nameWithType: Runtime.Exec(String, String[])
+  nameWithType.vb: Runtime.Exec(String, String())
+- uid: Java.Lang.Runtime.Exec(Java.Lang.String,Java.Lang.String[],Java.Io.File)
+  name: Exec(String, String[], File)
+  href: api/Java.Lang.Runtime.html#Java_Lang_Runtime_Exec_Java_Lang_String_Java_Lang_String___Java_Io_File_
+  commentId: M:Java.Lang.Runtime.Exec(Java.Lang.String,Java.Lang.String[],Java.Io.File)
+  name.vb: Exec(String, String(), File)
+  fullName: Java.Lang.Runtime.Exec(Java.Lang.String, Java.Lang.String[], Java.Io.File)
+  fullName.vb: Java.Lang.Runtime.Exec(Java.Lang.String, Java.Lang.String(), Java.Io.File)
+  nameWithType: Runtime.Exec(String, String[], File)
+  nameWithType.vb: Runtime.Exec(String, String(), File)
+- uid: Java.Lang.Runtime.Exec(Java.Lang.String[])
+  name: Exec(String[])
+  href: api/Java.Lang.Runtime.html#Java_Lang_Runtime_Exec_Java_Lang_String___
+  commentId: M:Java.Lang.Runtime.Exec(Java.Lang.String[])
+  name.vb: Exec(String())
+  fullName: Java.Lang.Runtime.Exec(Java.Lang.String[])
+  fullName.vb: Java.Lang.Runtime.Exec(Java.Lang.String())
+  nameWithType: Runtime.Exec(String[])
+  nameWithType.vb: Runtime.Exec(String())
+- uid: Java.Lang.Runtime.Exec(Java.Lang.String[],Java.Lang.String[])
+  name: Exec(String[], String[])
+  href: api/Java.Lang.Runtime.html#Java_Lang_Runtime_Exec_Java_Lang_String___Java_Lang_String___
+  commentId: M:Java.Lang.Runtime.Exec(Java.Lang.String[],Java.Lang.String[])
+  name.vb: Exec(String(), String())
+  fullName: Java.Lang.Runtime.Exec(Java.Lang.String[], Java.Lang.String[])
+  fullName.vb: Java.Lang.Runtime.Exec(Java.Lang.String(), Java.Lang.String())
+  nameWithType: Runtime.Exec(String[], String[])
+  nameWithType.vb: Runtime.Exec(String(), String())
+- uid: Java.Lang.Runtime.Exec(Java.Lang.String[],Java.Lang.String[],Java.Io.File)
+  name: Exec(String[], String[], File)
+  href: api/Java.Lang.Runtime.html#Java_Lang_Runtime_Exec_Java_Lang_String___Java_Lang_String___Java_Io_File_
+  commentId: M:Java.Lang.Runtime.Exec(Java.Lang.String[],Java.Lang.String[],Java.Io.File)
+  name.vb: Exec(String(), String(), File)
+  fullName: Java.Lang.Runtime.Exec(Java.Lang.String[], Java.Lang.String[], Java.Io.File)
+  fullName.vb: Java.Lang.Runtime.Exec(Java.Lang.String(), Java.Lang.String(), Java.Io.File)
+  nameWithType: Runtime.Exec(String[], String[], File)
+  nameWithType.vb: Runtime.Exec(String(), String(), File)
+- uid: Java.Lang.Runtime.Exec*
+  name: Exec
+  href: api/Java.Lang.Runtime.html#Java_Lang_Runtime_Exec_
+  commentId: Overload:Java.Lang.Runtime.Exec
+  isSpec: "True"
+  fullName: Java.Lang.Runtime.Exec
+  nameWithType: Runtime.Exec
+- uid: Java.Lang.Runtime.Exit(System.Int32)
+  name: Exit(Int32)
+  href: api/Java.Lang.Runtime.html#Java_Lang_Runtime_Exit_System_Int32_
+  commentId: M:Java.Lang.Runtime.Exit(System.Int32)
+  fullName: Java.Lang.Runtime.Exit(System.Int32)
+  nameWithType: Runtime.Exit(Int32)
+- uid: Java.Lang.Runtime.Exit*
+  name: Exit
+  href: api/Java.Lang.Runtime.html#Java_Lang_Runtime_Exit_
+  commentId: Overload:Java.Lang.Runtime.Exit
+  isSpec: "True"
+  fullName: Java.Lang.Runtime.Exit
+  nameWithType: Runtime.Exit
+- uid: Java.Lang.Runtime.FreeMemory
+  name: FreeMemory
+  href: api/Java.Lang.Runtime.html#Java_Lang_Runtime_FreeMemory
+  commentId: P:Java.Lang.Runtime.FreeMemory
+  fullName: Java.Lang.Runtime.FreeMemory
+  nameWithType: Runtime.FreeMemory
+- uid: Java.Lang.Runtime.FreeMemory*
+  name: FreeMemory
+  href: api/Java.Lang.Runtime.html#Java_Lang_Runtime_FreeMemory_
+  commentId: Overload:Java.Lang.Runtime.FreeMemory
+  isSpec: "True"
+  fullName: Java.Lang.Runtime.FreeMemory
+  nameWithType: Runtime.FreeMemory
+- uid: Java.Lang.Runtime.Gc
+  name: Gc()
+  href: api/Java.Lang.Runtime.html#Java_Lang_Runtime_Gc
+  commentId: M:Java.Lang.Runtime.Gc
+  fullName: Java.Lang.Runtime.Gc()
+  nameWithType: Runtime.Gc()
+- uid: Java.Lang.Runtime.Gc*
+  name: Gc
+  href: api/Java.Lang.Runtime.html#Java_Lang_Runtime_Gc_
+  commentId: Overload:Java.Lang.Runtime.Gc
+  isSpec: "True"
+  fullName: Java.Lang.Runtime.Gc
+  nameWithType: Runtime.Gc
+- uid: Java.Lang.Runtime.Halt(System.Int32)
+  name: Halt(Int32)
+  href: api/Java.Lang.Runtime.html#Java_Lang_Runtime_Halt_System_Int32_
+  commentId: M:Java.Lang.Runtime.Halt(System.Int32)
+  fullName: Java.Lang.Runtime.Halt(System.Int32)
+  nameWithType: Runtime.Halt(Int32)
+- uid: Java.Lang.Runtime.Halt*
+  name: Halt
+  href: api/Java.Lang.Runtime.html#Java_Lang_Runtime_Halt_
+  commentId: Overload:Java.Lang.Runtime.Halt
+  isSpec: "True"
+  fullName: Java.Lang.Runtime.Halt
+  nameWithType: Runtime.Halt
+- uid: Java.Lang.Runtime.Load(Java.Lang.String)
+  name: Load(String)
+  href: api/Java.Lang.Runtime.html#Java_Lang_Runtime_Load_Java_Lang_String_
+  commentId: M:Java.Lang.Runtime.Load(Java.Lang.String)
+  fullName: Java.Lang.Runtime.Load(Java.Lang.String)
+  nameWithType: Runtime.Load(String)
+- uid: Java.Lang.Runtime.Load*
+  name: Load
+  href: api/Java.Lang.Runtime.html#Java_Lang_Runtime_Load_
+  commentId: Overload:Java.Lang.Runtime.Load
+  isSpec: "True"
+  fullName: Java.Lang.Runtime.Load
+  nameWithType: Runtime.Load
+- uid: Java.Lang.Runtime.LoadLibrary(Java.Lang.String)
+  name: LoadLibrary(String)
+  href: api/Java.Lang.Runtime.html#Java_Lang_Runtime_LoadLibrary_Java_Lang_String_
+  commentId: M:Java.Lang.Runtime.LoadLibrary(Java.Lang.String)
+  fullName: Java.Lang.Runtime.LoadLibrary(Java.Lang.String)
+  nameWithType: Runtime.LoadLibrary(String)
+- uid: Java.Lang.Runtime.LoadLibrary*
+  name: LoadLibrary
+  href: api/Java.Lang.Runtime.html#Java_Lang_Runtime_LoadLibrary_
+  commentId: Overload:Java.Lang.Runtime.LoadLibrary
+  isSpec: "True"
+  fullName: Java.Lang.Runtime.LoadLibrary
+  nameWithType: Runtime.LoadLibrary
+- uid: Java.Lang.Runtime.MaxMemory
+  name: MaxMemory
+  href: api/Java.Lang.Runtime.html#Java_Lang_Runtime_MaxMemory
+  commentId: P:Java.Lang.Runtime.MaxMemory
+  fullName: Java.Lang.Runtime.MaxMemory
+  nameWithType: Runtime.MaxMemory
+- uid: Java.Lang.Runtime.MaxMemory*
+  name: MaxMemory
+  href: api/Java.Lang.Runtime.html#Java_Lang_Runtime_MaxMemory_
+  commentId: Overload:Java.Lang.Runtime.MaxMemory
+  isSpec: "True"
+  fullName: Java.Lang.Runtime.MaxMemory
+  nameWithType: Runtime.MaxMemory
+- uid: Java.Lang.Runtime.RemoveShutdownHook(Java.Lang.Thread)
+  name: RemoveShutdownHook(Thread)
+  href: api/Java.Lang.Runtime.html#Java_Lang_Runtime_RemoveShutdownHook_Java_Lang_Thread_
+  commentId: M:Java.Lang.Runtime.RemoveShutdownHook(Java.Lang.Thread)
+  fullName: Java.Lang.Runtime.RemoveShutdownHook(Java.Lang.Thread)
+  nameWithType: Runtime.RemoveShutdownHook(Thread)
+- uid: Java.Lang.Runtime.RemoveShutdownHook*
+  name: RemoveShutdownHook
+  href: api/Java.Lang.Runtime.html#Java_Lang_Runtime_RemoveShutdownHook_
+  commentId: Overload:Java.Lang.Runtime.RemoveShutdownHook
+  isSpec: "True"
+  fullName: Java.Lang.Runtime.RemoveShutdownHook
+  nameWithType: Runtime.RemoveShutdownHook
+- uid: Java.Lang.Runtime.RunFinalization
+  name: RunFinalization()
+  href: api/Java.Lang.Runtime.html#Java_Lang_Runtime_RunFinalization
+  commentId: M:Java.Lang.Runtime.RunFinalization
+  fullName: Java.Lang.Runtime.RunFinalization()
+  nameWithType: Runtime.RunFinalization()
+- uid: Java.Lang.Runtime.RunFinalization*
+  name: RunFinalization
+  href: api/Java.Lang.Runtime.html#Java_Lang_Runtime_RunFinalization_
+  commentId: Overload:Java.Lang.Runtime.RunFinalization
+  isSpec: "True"
+  fullName: Java.Lang.Runtime.RunFinalization
+  nameWithType: Runtime.RunFinalization
+- uid: Java.Lang.Runtime.TotalMemory
+  name: TotalMemory
+  href: api/Java.Lang.Runtime.html#Java_Lang_Runtime_TotalMemory
+  commentId: P:Java.Lang.Runtime.TotalMemory
+  fullName: Java.Lang.Runtime.TotalMemory
+  nameWithType: Runtime.TotalMemory
+- uid: Java.Lang.Runtime.TotalMemory*
+  name: TotalMemory
+  href: api/Java.Lang.Runtime.html#Java_Lang_Runtime_TotalMemory_
+  commentId: Overload:Java.Lang.Runtime.TotalMemory
+  isSpec: "True"
+  fullName: Java.Lang.Runtime.TotalMemory
+  nameWithType: Runtime.TotalMemory
+- uid: Java.Lang.Runtime.Version
+  name: Runtime.Version
+  href: api/Java.Lang.Runtime.Version.html
+  commentId: T:Java.Lang.Runtime.Version
+  fullName: Java.Lang.Runtime.Version
+  nameWithType: Runtime.Version
+- uid: Java.Lang.Runtime.Version.ClassName
+  name: ClassName
+  href: api/Java.Lang.Runtime.Version.html#Java_Lang_Runtime_Version_ClassName
+  commentId: P:Java.Lang.Runtime.Version.ClassName
+  fullName: Java.Lang.Runtime.Version.ClassName
+  nameWithType: Runtime.Version.ClassName
+- uid: Java.Lang.Runtime.Version.ClassName*
+  name: ClassName
+  href: api/Java.Lang.Runtime.Version.html#Java_Lang_Runtime_Version_ClassName_
+  commentId: Overload:Java.Lang.Runtime.Version.ClassName
+  isSpec: "True"
+  fullName: Java.Lang.Runtime.Version.ClassName
+  nameWithType: Runtime.Version.ClassName
 - uid: Java.Lang.RuntimeException
   name: RuntimeException
   href: api/Java.Lang.RuntimeException.html
@@ -7882,6 +8198,19 @@ references:
   commentId: T:Java.Lang.System
   fullName: Java.Lang.System
   nameWithType: System
+- uid: Java.Lang.System.Arraycopy(Java.Lang.Object,System.Int32,Java.Lang.Object,System.Int32,System.Int32)
+  name: Arraycopy(Object, Int32, Object, Int32, Int32)
+  href: api/Java.Lang.System.html#Java_Lang_System_Arraycopy_Java_Lang_Object_System_Int32_Java_Lang_Object_System_Int32_System_Int32_
+  commentId: M:Java.Lang.System.Arraycopy(Java.Lang.Object,System.Int32,Java.Lang.Object,System.Int32,System.Int32)
+  fullName: Java.Lang.System.Arraycopy(Java.Lang.Object, System.Int32, Java.Lang.Object, System.Int32, System.Int32)
+  nameWithType: System.Arraycopy(Object, Int32, Object, Int32, Int32)
+- uid: Java.Lang.System.Arraycopy*
+  name: Arraycopy
+  href: api/Java.Lang.System.html#Java_Lang_System_Arraycopy_
+  commentId: Overload:Java.Lang.System.Arraycopy
+  isSpec: "True"
+  fullName: Java.Lang.System.Arraycopy
+  nameWithType: System.Arraycopy
 - uid: Java.Lang.System.ClassName
   name: ClassName
   href: api/Java.Lang.System.html#Java_Lang_System_ClassName
@@ -7895,6 +8224,161 @@ references:
   isSpec: "True"
   fullName: Java.Lang.System.ClassName
   nameWithType: System.ClassName
+- uid: Java.Lang.System.ClearProperty(System.String)
+  name: ClearProperty(String)
+  href: api/Java.Lang.System.html#Java_Lang_System_ClearProperty_System_String_
+  commentId: M:Java.Lang.System.ClearProperty(System.String)
+  fullName: Java.Lang.System.ClearProperty(System.String)
+  nameWithType: System.ClearProperty(String)
+- uid: Java.Lang.System.ClearProperty*
+  name: ClearProperty
+  href: api/Java.Lang.System.html#Java_Lang_System_ClearProperty_
+  commentId: Overload:Java.Lang.System.ClearProperty
+  isSpec: "True"
+  fullName: Java.Lang.System.ClearProperty
+  nameWithType: System.ClearProperty
+- uid: Java.Lang.System.Console
+  name: Console
+  href: api/Java.Lang.System.html#Java_Lang_System_Console
+  commentId: P:Java.Lang.System.Console
+  fullName: Java.Lang.System.Console
+  nameWithType: System.Console
+- uid: Java.Lang.System.Console*
+  name: Console
+  href: api/Java.Lang.System.html#Java_Lang_System_Console_
+  commentId: Overload:Java.Lang.System.Console
+  isSpec: "True"
+  fullName: Java.Lang.System.Console
+  nameWithType: System.Console
+- uid: Java.Lang.System.CurrentTimeMillis
+  name: CurrentTimeMillis
+  href: api/Java.Lang.System.html#Java_Lang_System_CurrentTimeMillis
+  commentId: P:Java.Lang.System.CurrentTimeMillis
+  fullName: Java.Lang.System.CurrentTimeMillis
+  nameWithType: System.CurrentTimeMillis
+- uid: Java.Lang.System.CurrentTimeMillis*
+  name: CurrentTimeMillis
+  href: api/Java.Lang.System.html#Java_Lang_System_CurrentTimeMillis_
+  commentId: Overload:Java.Lang.System.CurrentTimeMillis
+  isSpec: "True"
+  fullName: Java.Lang.System.CurrentTimeMillis
+  nameWithType: System.CurrentTimeMillis
+- uid: Java.Lang.System.Env
+  name: Env
+  href: api/Java.Lang.System.html#Java_Lang_System_Env
+  commentId: P:Java.Lang.System.Env
+  fullName: Java.Lang.System.Env
+  nameWithType: System.Env
+- uid: Java.Lang.System.Env*
+  name: Env
+  href: api/Java.Lang.System.html#Java_Lang_System_Env_
+  commentId: Overload:Java.Lang.System.Env
+  isSpec: "True"
+  fullName: Java.Lang.System.Env
+  nameWithType: System.Env
+- uid: Java.Lang.System.Exit(System.Int32)
+  name: Exit(Int32)
+  href: api/Java.Lang.System.html#Java_Lang_System_Exit_System_Int32_
+  commentId: M:Java.Lang.System.Exit(System.Int32)
+  fullName: Java.Lang.System.Exit(System.Int32)
+  nameWithType: System.Exit(Int32)
+- uid: Java.Lang.System.Exit*
+  name: Exit
+  href: api/Java.Lang.System.html#Java_Lang_System_Exit_
+  commentId: Overload:Java.Lang.System.Exit
+  isSpec: "True"
+  fullName: Java.Lang.System.Exit
+  nameWithType: System.Exit
+- uid: Java.Lang.System.Gc
+  name: Gc()
+  href: api/Java.Lang.System.html#Java_Lang_System_Gc
+  commentId: M:Java.Lang.System.Gc
+  fullName: Java.Lang.System.Gc()
+  nameWithType: System.Gc()
+- uid: Java.Lang.System.Gc*
+  name: Gc
+  href: api/Java.Lang.System.html#Java_Lang_System_Gc_
+  commentId: Overload:Java.Lang.System.Gc
+  isSpec: "True"
+  fullName: Java.Lang.System.Gc
+  nameWithType: System.Gc
+- uid: Java.Lang.System.Getenv(System.String)
+  name: Getenv(String)
+  href: api/Java.Lang.System.html#Java_Lang_System_Getenv_System_String_
+  commentId: M:Java.Lang.System.Getenv(System.String)
+  fullName: Java.Lang.System.Getenv(System.String)
+  nameWithType: System.Getenv(String)
+- uid: Java.Lang.System.Getenv*
+  name: Getenv
+  href: api/Java.Lang.System.html#Java_Lang_System_Getenv_
+  commentId: Overload:Java.Lang.System.Getenv
+  isSpec: "True"
+  fullName: Java.Lang.System.Getenv
+  nameWithType: System.Getenv
+- uid: Java.Lang.System.GetLogger(System.String)
+  name: GetLogger(String)
+  href: api/Java.Lang.System.html#Java_Lang_System_GetLogger_System_String_
+  commentId: M:Java.Lang.System.GetLogger(System.String)
+  fullName: Java.Lang.System.GetLogger(System.String)
+  nameWithType: System.GetLogger(String)
+- uid: Java.Lang.System.GetLogger(System.String,Java.Util.ResourceBundle)
+  name: GetLogger(String, ResourceBundle)
+  href: api/Java.Lang.System.html#Java_Lang_System_GetLogger_System_String_Java_Util_ResourceBundle_
+  commentId: M:Java.Lang.System.GetLogger(System.String,Java.Util.ResourceBundle)
+  fullName: Java.Lang.System.GetLogger(System.String, Java.Util.ResourceBundle)
+  nameWithType: System.GetLogger(String, ResourceBundle)
+- uid: Java.Lang.System.GetLogger*
+  name: GetLogger
+  href: api/Java.Lang.System.html#Java_Lang_System_GetLogger_
+  commentId: Overload:Java.Lang.System.GetLogger
+  isSpec: "True"
+  fullName: Java.Lang.System.GetLogger
+  nameWithType: System.GetLogger
+- uid: Java.Lang.System.GetProperty(System.String)
+  name: GetProperty(String)
+  href: api/Java.Lang.System.html#Java_Lang_System_GetProperty_System_String_
+  commentId: M:Java.Lang.System.GetProperty(System.String)
+  fullName: Java.Lang.System.GetProperty(System.String)
+  nameWithType: System.GetProperty(String)
+- uid: Java.Lang.System.GetProperty(System.String,System.String)
+  name: GetProperty(String, String)
+  href: api/Java.Lang.System.html#Java_Lang_System_GetProperty_System_String_System_String_
+  commentId: M:Java.Lang.System.GetProperty(System.String,System.String)
+  fullName: Java.Lang.System.GetProperty(System.String, System.String)
+  nameWithType: System.GetProperty(String, String)
+- uid: Java.Lang.System.GetProperty*
+  name: GetProperty
+  href: api/Java.Lang.System.html#Java_Lang_System_GetProperty_
+  commentId: Overload:Java.Lang.System.GetProperty
+  isSpec: "True"
+  fullName: Java.Lang.System.GetProperty
+  nameWithType: System.GetProperty
+- uid: Java.Lang.System.IdentityHashCode(System.Object)
+  name: IdentityHashCode(Object)
+  href: api/Java.Lang.System.html#Java_Lang_System_IdentityHashCode_System_Object_
+  commentId: M:Java.Lang.System.IdentityHashCode(System.Object)
+  fullName: Java.Lang.System.IdentityHashCode(System.Object)
+  nameWithType: System.IdentityHashCode(Object)
+- uid: Java.Lang.System.IdentityHashCode*
+  name: IdentityHashCode
+  href: api/Java.Lang.System.html#Java_Lang_System_IdentityHashCode_
+  commentId: Overload:Java.Lang.System.IdentityHashCode
+  isSpec: "True"
+  fullName: Java.Lang.System.IdentityHashCode
+  nameWithType: System.IdentityHashCode
+- uid: Java.Lang.System.inheritedChannel
+  name: inheritedChannel
+  href: api/Java.Lang.System.html#Java_Lang_System_inheritedChannel
+  commentId: P:Java.Lang.System.inheritedChannel
+  fullName: Java.Lang.System.inheritedChannel
+  nameWithType: System.inheritedChannel
+- uid: Java.Lang.System.inheritedChannel*
+  name: inheritedChannel
+  href: api/Java.Lang.System.html#Java_Lang_System_inheritedChannel_
+  commentId: Overload:Java.Lang.System.inheritedChannel
+  isSpec: "True"
+  fullName: Java.Lang.System.inheritedChannel
+  nameWithType: System.inheritedChannel
 - uid: Java.Lang.System.IsStatic
   name: IsStatic
   href: api/Java.Lang.System.html#Java_Lang_System_IsStatic
@@ -7908,6 +8392,220 @@ references:
   isSpec: "True"
   fullName: Java.Lang.System.IsStatic
   nameWithType: System.IsStatic
+- uid: Java.Lang.System.LineSeparator
+  name: LineSeparator
+  href: api/Java.Lang.System.html#Java_Lang_System_LineSeparator
+  commentId: P:Java.Lang.System.LineSeparator
+  fullName: Java.Lang.System.LineSeparator
+  nameWithType: System.LineSeparator
+- uid: Java.Lang.System.LineSeparator*
+  name: LineSeparator
+  href: api/Java.Lang.System.html#Java_Lang_System_LineSeparator_
+  commentId: Overload:Java.Lang.System.LineSeparator
+  isSpec: "True"
+  fullName: Java.Lang.System.LineSeparator
+  nameWithType: System.LineSeparator
+- uid: Java.Lang.System.Load(System.String)
+  name: Load(String)
+  href: api/Java.Lang.System.html#Java_Lang_System_Load_System_String_
+  commentId: M:Java.Lang.System.Load(System.String)
+  fullName: Java.Lang.System.Load(System.String)
+  nameWithType: System.Load(String)
+- uid: Java.Lang.System.Load*
+  name: Load
+  href: api/Java.Lang.System.html#Java_Lang_System_Load_
+  commentId: Overload:Java.Lang.System.Load
+  isSpec: "True"
+  fullName: Java.Lang.System.Load
+  nameWithType: System.Load
+- uid: Java.Lang.System.LoadLibrary(System.String)
+  name: LoadLibrary(String)
+  href: api/Java.Lang.System.html#Java_Lang_System_LoadLibrary_System_String_
+  commentId: M:Java.Lang.System.LoadLibrary(System.String)
+  fullName: Java.Lang.System.LoadLibrary(System.String)
+  nameWithType: System.LoadLibrary(String)
+- uid: Java.Lang.System.LoadLibrary*
+  name: LoadLibrary
+  href: api/Java.Lang.System.html#Java_Lang_System_LoadLibrary_
+  commentId: Overload:Java.Lang.System.LoadLibrary
+  isSpec: "True"
+  fullName: Java.Lang.System.LoadLibrary
+  nameWithType: System.LoadLibrary
+- uid: Java.Lang.System.Logger
+  name: System.Logger
+  href: api/Java.Lang.System.Logger.html
+  commentId: T:Java.Lang.System.Logger
+  fullName: Java.Lang.System.Logger
+  nameWithType: System.Logger
+- uid: Java.Lang.System.Logger.ClassName
+  name: ClassName
+  href: api/Java.Lang.System.Logger.html#Java_Lang_System_Logger_ClassName
+  commentId: P:Java.Lang.System.Logger.ClassName
+  fullName: Java.Lang.System.Logger.ClassName
+  nameWithType: System.Logger.ClassName
+- uid: Java.Lang.System.Logger.ClassName*
+  name: ClassName
+  href: api/Java.Lang.System.Logger.html#Java_Lang_System_Logger_ClassName_
+  commentId: Overload:Java.Lang.System.Logger.ClassName
+  isSpec: "True"
+  fullName: Java.Lang.System.Logger.ClassName
+  nameWithType: System.Logger.ClassName
+- uid: Java.Lang.System.Logger.IsInterface
+  name: IsInterface
+  href: api/Java.Lang.System.Logger.html#Java_Lang_System_Logger_IsInterface
+  commentId: P:Java.Lang.System.Logger.IsInterface
+  fullName: Java.Lang.System.Logger.IsInterface
+  nameWithType: System.Logger.IsInterface
+- uid: Java.Lang.System.Logger.IsInterface*
+  name: IsInterface
+  href: api/Java.Lang.System.Logger.html#Java_Lang_System_Logger_IsInterface_
+  commentId: Overload:Java.Lang.System.Logger.IsInterface
+  isSpec: "True"
+  fullName: Java.Lang.System.Logger.IsInterface
+  nameWithType: System.Logger.IsInterface
+- uid: Java.Lang.System.MapLibraryName(System.String)
+  name: MapLibraryName(String)
+  href: api/Java.Lang.System.html#Java_Lang_System_MapLibraryName_System_String_
+  commentId: M:Java.Lang.System.MapLibraryName(System.String)
+  fullName: Java.Lang.System.MapLibraryName(System.String)
+  nameWithType: System.MapLibraryName(String)
+- uid: Java.Lang.System.MapLibraryName*
+  name: MapLibraryName
+  href: api/Java.Lang.System.html#Java_Lang_System_MapLibraryName_
+  commentId: Overload:Java.Lang.System.MapLibraryName
+  isSpec: "True"
+  fullName: Java.Lang.System.MapLibraryName
+  nameWithType: System.MapLibraryName
+- uid: Java.Lang.System.NanoTime
+  name: NanoTime
+  href: api/Java.Lang.System.html#Java_Lang_System_NanoTime
+  commentId: P:Java.Lang.System.NanoTime
+  fullName: Java.Lang.System.NanoTime
+  nameWithType: System.NanoTime
+- uid: Java.Lang.System.NanoTime*
+  name: NanoTime
+  href: api/Java.Lang.System.html#Java_Lang_System_NanoTime_
+  commentId: Overload:Java.Lang.System.NanoTime
+  isSpec: "True"
+  fullName: Java.Lang.System.NanoTime
+  nameWithType: System.NanoTime
+- uid: Java.Lang.System.Properties
+  name: Properties
+  href: api/Java.Lang.System.html#Java_Lang_System_Properties
+  commentId: P:Java.Lang.System.Properties
+  fullName: Java.Lang.System.Properties
+  nameWithType: System.Properties
+- uid: Java.Lang.System.Properties*
+  name: Properties
+  href: api/Java.Lang.System.html#Java_Lang_System_Properties_
+  commentId: Overload:Java.Lang.System.Properties
+  isSpec: "True"
+  fullName: Java.Lang.System.Properties
+  nameWithType: System.Properties
+- uid: Java.Lang.System.RunFinalization
+  name: RunFinalization()
+  href: api/Java.Lang.System.html#Java_Lang_System_RunFinalization
+  commentId: M:Java.Lang.System.RunFinalization
+  fullName: Java.Lang.System.RunFinalization()
+  nameWithType: System.RunFinalization()
+- uid: Java.Lang.System.RunFinalization*
+  name: RunFinalization
+  href: api/Java.Lang.System.html#Java_Lang_System_RunFinalization_
+  commentId: Overload:Java.Lang.System.RunFinalization
+  isSpec: "True"
+  fullName: Java.Lang.System.RunFinalization
+  nameWithType: System.RunFinalization
+- uid: Java.Lang.System.SecurityManager
+  name: SecurityManager
+  href: api/Java.Lang.System.html#Java_Lang_System_SecurityManager
+  commentId: P:Java.Lang.System.SecurityManager
+  fullName: Java.Lang.System.SecurityManager
+  nameWithType: System.SecurityManager
+- uid: Java.Lang.System.SecurityManager*
+  name: SecurityManager
+  href: api/Java.Lang.System.html#Java_Lang_System_SecurityManager_
+  commentId: Overload:Java.Lang.System.SecurityManager
+  isSpec: "True"
+  fullName: Java.Lang.System.SecurityManager
+  nameWithType: System.SecurityManager
+- uid: Java.Lang.System.SetErr(Java.Io.PrintStream)
+  name: SetErr(PrintStream)
+  href: api/Java.Lang.System.html#Java_Lang_System_SetErr_Java_Io_PrintStream_
+  commentId: M:Java.Lang.System.SetErr(Java.Io.PrintStream)
+  fullName: Java.Lang.System.SetErr(Java.Io.PrintStream)
+  nameWithType: System.SetErr(PrintStream)
+- uid: Java.Lang.System.SetErr*
+  name: SetErr
+  href: api/Java.Lang.System.html#Java_Lang_System_SetErr_
+  commentId: Overload:Java.Lang.System.SetErr
+  isSpec: "True"
+  fullName: Java.Lang.System.SetErr
+  nameWithType: System.SetErr
+- uid: Java.Lang.System.SetIn(Java.Io.InputStream)
+  name: SetIn(InputStream)
+  href: api/Java.Lang.System.html#Java_Lang_System_SetIn_Java_Io_InputStream_
+  commentId: M:Java.Lang.System.SetIn(Java.Io.InputStream)
+  fullName: Java.Lang.System.SetIn(Java.Io.InputStream)
+  nameWithType: System.SetIn(InputStream)
+- uid: Java.Lang.System.SetIn*
+  name: SetIn
+  href: api/Java.Lang.System.html#Java_Lang_System_SetIn_
+  commentId: Overload:Java.Lang.System.SetIn
+  isSpec: "True"
+  fullName: Java.Lang.System.SetIn
+  nameWithType: System.SetIn
+- uid: Java.Lang.System.SetOut(Java.Io.PrintStream)
+  name: SetOut(PrintStream)
+  href: api/Java.Lang.System.html#Java_Lang_System_SetOut_Java_Io_PrintStream_
+  commentId: M:Java.Lang.System.SetOut(Java.Io.PrintStream)
+  fullName: Java.Lang.System.SetOut(Java.Io.PrintStream)
+  nameWithType: System.SetOut(PrintStream)
+- uid: Java.Lang.System.SetOut*
+  name: SetOut
+  href: api/Java.Lang.System.html#Java_Lang_System_SetOut_
+  commentId: Overload:Java.Lang.System.SetOut
+  isSpec: "True"
+  fullName: Java.Lang.System.SetOut
+  nameWithType: System.SetOut
+- uid: Java.Lang.System.SetProperties(Java.Util.Properties)
+  name: SetProperties(Properties)
+  href: api/Java.Lang.System.html#Java_Lang_System_SetProperties_Java_Util_Properties_
+  commentId: M:Java.Lang.System.SetProperties(Java.Util.Properties)
+  fullName: Java.Lang.System.SetProperties(Java.Util.Properties)
+  nameWithType: System.SetProperties(Properties)
+- uid: Java.Lang.System.SetProperties*
+  name: SetProperties
+  href: api/Java.Lang.System.html#Java_Lang_System_SetProperties_
+  commentId: Overload:Java.Lang.System.SetProperties
+  isSpec: "True"
+  fullName: Java.Lang.System.SetProperties
+  nameWithType: System.SetProperties
+- uid: Java.Lang.System.SetProperty(System.String,System.String)
+  name: SetProperty(String, String)
+  href: api/Java.Lang.System.html#Java_Lang_System_SetProperty_System_String_System_String_
+  commentId: M:Java.Lang.System.SetProperty(System.String,System.String)
+  fullName: Java.Lang.System.SetProperty(System.String, System.String)
+  nameWithType: System.SetProperty(String, String)
+- uid: Java.Lang.System.SetProperty*
+  name: SetProperty
+  href: api/Java.Lang.System.html#Java_Lang_System_SetProperty_
+  commentId: Overload:Java.Lang.System.SetProperty
+  isSpec: "True"
+  fullName: Java.Lang.System.SetProperty
+  nameWithType: System.SetProperty
+- uid: Java.Lang.System.SetSecurityManager(Java.Lang.SecurityManager)
+  name: SetSecurityManager(SecurityManager)
+  href: api/Java.Lang.System.html#Java_Lang_System_SetSecurityManager_Java_Lang_SecurityManager_
+  commentId: M:Java.Lang.System.SetSecurityManager(Java.Lang.SecurityManager)
+  fullName: Java.Lang.System.SetSecurityManager(Java.Lang.SecurityManager)
+  nameWithType: System.SetSecurityManager(SecurityManager)
+- uid: Java.Lang.System.SetSecurityManager*
+  name: SetSecurityManager
+  href: api/Java.Lang.System.html#Java_Lang_System_SetSecurityManager_
+  commentId: Overload:Java.Lang.System.SetSecurityManager
+  isSpec: "True"
+  fullName: Java.Lang.System.SetSecurityManager
+  nameWithType: System.SetSecurityManager
 - uid: Java.Lang.Thread
   name: Thread
   href: api/Java.Lang.Thread.html
@@ -8684,6 +9382,38 @@ references:
   isSpec: "True"
   fullName: Java.Nio.ByteBuffer.ClassName
   nameWithType: ByteBuffer.ClassName
+- uid: Java.Nio.Channel
+  name: Channel
+  href: api/Java.Nio.Channel.html
+  commentId: T:Java.Nio.Channel
+  fullName: Java.Nio.Channel
+  nameWithType: Channel
+- uid: Java.Nio.Channel.ClassName
+  name: ClassName
+  href: api/Java.Nio.Channel.html#Java_Nio_Channel_ClassName
+  commentId: P:Java.Nio.Channel.ClassName
+  fullName: Java.Nio.Channel.ClassName
+  nameWithType: Channel.ClassName
+- uid: Java.Nio.Channel.ClassName*
+  name: ClassName
+  href: api/Java.Nio.Channel.html#Java_Nio_Channel_ClassName_
+  commentId: Overload:Java.Nio.Channel.ClassName
+  isSpec: "True"
+  fullName: Java.Nio.Channel.ClassName
+  nameWithType: Channel.ClassName
+- uid: Java.Nio.Channel.IsInterface
+  name: IsInterface
+  href: api/Java.Nio.Channel.html#Java_Nio_Channel_IsInterface
+  commentId: P:Java.Nio.Channel.IsInterface
+  fullName: Java.Nio.Channel.IsInterface
+  nameWithType: Channel.IsInterface
+- uid: Java.Nio.Channel.IsInterface*
+  name: IsInterface
+  href: api/Java.Nio.Channel.html#Java_Nio_Channel_IsInterface_
+  commentId: Overload:Java.Nio.Channel.IsInterface
+  isSpec: "True"
+  fullName: Java.Nio.Channel.IsInterface
+  nameWithType: Channel.IsInterface
 - uid: Java.Sql
   name: Java.Sql
   href: api/Java.Sql.html
@@ -9595,6 +10325,86 @@ references:
   isSpec: "True"
   fullName: Java.Util.Collections.ClassName
   nameWithType: Collections.ClassName
+- uid: Java.Util.Collections.EmptyIterator*
+  name: EmptyIterator
+  href: api/Java.Util.Collections.html#Java_Util_Collections_EmptyIterator_
+  commentId: Overload:Java.Util.Collections.EmptyIterator
+  isSpec: "True"
+  fullName: Java.Util.Collections.EmptyIterator
+  nameWithType: Collections.EmptyIterator
+- uid: Java.Util.Collections.EmptyIterator``1
+  name: EmptyIterator<T>()
+  href: api/Java.Util.Collections.html#Java_Util_Collections_EmptyIterator__1
+  commentId: M:Java.Util.Collections.EmptyIterator``1
+  name.vb: EmptyIterator(Of T)()
+  fullName: Java.Util.Collections.EmptyIterator<T>()
+  fullName.vb: Java.Util.Collections.EmptyIterator(Of T)()
+  nameWithType: Collections.EmptyIterator<T>()
+  nameWithType.vb: Collections.EmptyIterator(Of T)()
+- uid: Java.Util.Collections.EmptyList*
+  name: EmptyList
+  href: api/Java.Util.Collections.html#Java_Util_Collections_EmptyList_
+  commentId: Overload:Java.Util.Collections.EmptyList
+  isSpec: "True"
+  fullName: Java.Util.Collections.EmptyList
+  nameWithType: Collections.EmptyList
+- uid: Java.Util.Collections.EmptyList``1
+  name: EmptyList<T>()
+  href: api/Java.Util.Collections.html#Java_Util_Collections_EmptyList__1
+  commentId: M:Java.Util.Collections.EmptyList``1
+  name.vb: EmptyList(Of T)()
+  fullName: Java.Util.Collections.EmptyList<T>()
+  fullName.vb: Java.Util.Collections.EmptyList(Of T)()
+  nameWithType: Collections.EmptyList<T>()
+  nameWithType.vb: Collections.EmptyList(Of T)()
+- uid: Java.Util.Collections.EmptyListIterator*
+  name: EmptyListIterator
+  href: api/Java.Util.Collections.html#Java_Util_Collections_EmptyListIterator_
+  commentId: Overload:Java.Util.Collections.EmptyListIterator
+  isSpec: "True"
+  fullName: Java.Util.Collections.EmptyListIterator
+  nameWithType: Collections.EmptyListIterator
+- uid: Java.Util.Collections.EmptyListIterator``1
+  name: EmptyListIterator<T>()
+  href: api/Java.Util.Collections.html#Java_Util_Collections_EmptyListIterator__1
+  commentId: M:Java.Util.Collections.EmptyListIterator``1
+  name.vb: EmptyListIterator(Of T)()
+  fullName: Java.Util.Collections.EmptyListIterator<T>()
+  fullName.vb: Java.Util.Collections.EmptyListIterator(Of T)()
+  nameWithType: Collections.EmptyListIterator<T>()
+  nameWithType.vb: Collections.EmptyListIterator(Of T)()
+- uid: Java.Util.Collections.EmptyMap*
+  name: EmptyMap
+  href: api/Java.Util.Collections.html#Java_Util_Collections_EmptyMap_
+  commentId: Overload:Java.Util.Collections.EmptyMap
+  isSpec: "True"
+  fullName: Java.Util.Collections.EmptyMap
+  nameWithType: Collections.EmptyMap
+- uid: Java.Util.Collections.EmptyMap``2
+  name: EmptyMap<K, V>()
+  href: api/Java.Util.Collections.html#Java_Util_Collections_EmptyMap__2
+  commentId: M:Java.Util.Collections.EmptyMap``2
+  name.vb: EmptyMap(Of K, V)()
+  fullName: Java.Util.Collections.EmptyMap<K, V>()
+  fullName.vb: Java.Util.Collections.EmptyMap(Of K, V)()
+  nameWithType: Collections.EmptyMap<K, V>()
+  nameWithType.vb: Collections.EmptyMap(Of K, V)()
+- uid: Java.Util.Collections.EmptySet*
+  name: EmptySet
+  href: api/Java.Util.Collections.html#Java_Util_Collections_EmptySet_
+  commentId: Overload:Java.Util.Collections.EmptySet
+  isSpec: "True"
+  fullName: Java.Util.Collections.EmptySet
+  nameWithType: Collections.EmptySet
+- uid: Java.Util.Collections.EmptySet``1
+  name: EmptySet<T>()
+  href: api/Java.Util.Collections.html#Java_Util_Collections_EmptySet__1
+  commentId: M:Java.Util.Collections.EmptySet``1
+  name.vb: EmptySet(Of T)()
+  fullName: Java.Util.Collections.EmptySet<T>()
+  fullName.vb: Java.Util.Collections.EmptySet(Of T)()
+  nameWithType: Collections.EmptySet<T>()
+  nameWithType.vb: Collections.EmptySet(Of T)()
 - uid: Java.Util.Collections.IsStatic
   name: IsStatic
   href: api/Java.Util.Collections.html#Java_Util_Collections_IsStatic
@@ -14790,6 +15600,25 @@ references:
   isSpec: "True"
   fullName: Java.Util.Regex.Pattern.Compile
   nameWithType: Pattern.Compile
+- uid: Java.Util.ResourceBundle
+  name: ResourceBundle
+  href: api/Java.Util.ResourceBundle.html
+  commentId: T:Java.Util.ResourceBundle
+  fullName: Java.Util.ResourceBundle
+  nameWithType: ResourceBundle
+- uid: Java.Util.ResourceBundle.ClassName
+  name: ClassName
+  href: api/Java.Util.ResourceBundle.html#Java_Util_ResourceBundle_ClassName
+  commentId: P:Java.Util.ResourceBundle.ClassName
+  fullName: Java.Util.ResourceBundle.ClassName
+  nameWithType: ResourceBundle.ClassName
+- uid: Java.Util.ResourceBundle.ClassName*
+  name: ClassName
+  href: api/Java.Util.ResourceBundle.html#Java_Util_ResourceBundle_ClassName_
+  commentId: Overload:Java.Util.ResourceBundle.ClassName
+  isSpec: "True"
+  fullName: Java.Util.ResourceBundle.ClassName
+  nameWithType: ResourceBundle.ClassName
 - uid: Java.Util.Set`1
   name: Set<E>
   href: api/Java.Util.Set-1.html
@@ -17018,6 +17847,40 @@ references:
   fullName.vb: MASES.JNet.JNetCore(Of T).JNetCore
   nameWithType: JNetCore<T>.JNetCore
   nameWithType.vb: JNetCore(Of T).JNetCore
+- uid: MASES.JNet.JNetCore`1.ApplicationHeapSize
+  name: ApplicationHeapSize
+  href: api/MASES.JNet.JNetCore-1.html#MASES_JNet_JNetCore_1_ApplicationHeapSize
+  commentId: P:MASES.JNet.JNetCore`1.ApplicationHeapSize
+  fullName: MASES.JNet.JNetCore<T>.ApplicationHeapSize
+  fullName.vb: MASES.JNet.JNetCore(Of T).ApplicationHeapSize
+  nameWithType: JNetCore<T>.ApplicationHeapSize
+  nameWithType.vb: JNetCore(Of T).ApplicationHeapSize
+- uid: MASES.JNet.JNetCore`1.ApplicationHeapSize*
+  name: ApplicationHeapSize
+  href: api/MASES.JNet.JNetCore-1.html#MASES_JNet_JNetCore_1_ApplicationHeapSize_
+  commentId: Overload:MASES.JNet.JNetCore`1.ApplicationHeapSize
+  isSpec: "True"
+  fullName: MASES.JNet.JNetCore<T>.ApplicationHeapSize
+  fullName.vb: MASES.JNet.JNetCore(Of T).ApplicationHeapSize
+  nameWithType: JNetCore<T>.ApplicationHeapSize
+  nameWithType.vb: JNetCore(Of T).ApplicationHeapSize
+- uid: MASES.JNet.JNetCore`1.ApplicationInitialHeapSize
+  name: ApplicationInitialHeapSize
+  href: api/MASES.JNet.JNetCore-1.html#MASES_JNet_JNetCore_1_ApplicationInitialHeapSize
+  commentId: P:MASES.JNet.JNetCore`1.ApplicationInitialHeapSize
+  fullName: MASES.JNet.JNetCore<T>.ApplicationInitialHeapSize
+  fullName.vb: MASES.JNet.JNetCore(Of T).ApplicationInitialHeapSize
+  nameWithType: JNetCore<T>.ApplicationInitialHeapSize
+  nameWithType.vb: JNetCore(Of T).ApplicationInitialHeapSize
+- uid: MASES.JNet.JNetCore`1.ApplicationInitialHeapSize*
+  name: ApplicationInitialHeapSize
+  href: api/MASES.JNet.JNetCore-1.html#MASES_JNet_JNetCore_1_ApplicationInitialHeapSize_
+  commentId: Overload:MASES.JNet.JNetCore`1.ApplicationInitialHeapSize
+  isSpec: "True"
+  fullName: MASES.JNet.JNetCore<T>.ApplicationInitialHeapSize
+  fullName.vb: MASES.JNet.JNetCore(Of T).ApplicationInitialHeapSize
+  nameWithType: JNetCore<T>.ApplicationInitialHeapSize
+  nameWithType.vb: JNetCore(Of T).ApplicationInitialHeapSize
 - uid: MASES.JNet.JNetCore`1.ClassPath
   name: ClassPath
   href: api/MASES.JNet.JNetCore-1.html#MASES_JNet_JNetCore_1_ClassPath
@@ -17052,6 +17915,40 @@ references:
   fullName.vb: MASES.JNet.JNetCore(Of T).CommandLineArguments
   nameWithType: JNetCore<T>.CommandLineArguments
   nameWithType.vb: JNetCore(Of T).CommandLineArguments
+- uid: MASES.JNet.JNetCore`1.GlobalHeapSize
+  name: GlobalHeapSize
+  href: api/MASES.JNet.JNetCore-1.html#MASES_JNet_JNetCore_1_GlobalHeapSize
+  commentId: P:MASES.JNet.JNetCore`1.GlobalHeapSize
+  fullName: MASES.JNet.JNetCore<T>.GlobalHeapSize
+  fullName.vb: MASES.JNet.JNetCore(Of T).GlobalHeapSize
+  nameWithType: JNetCore<T>.GlobalHeapSize
+  nameWithType.vb: JNetCore(Of T).GlobalHeapSize
+- uid: MASES.JNet.JNetCore`1.GlobalHeapSize*
+  name: GlobalHeapSize
+  href: api/MASES.JNet.JNetCore-1.html#MASES_JNet_JNetCore_1_GlobalHeapSize_
+  commentId: Overload:MASES.JNet.JNetCore`1.GlobalHeapSize
+  isSpec: "True"
+  fullName: MASES.JNet.JNetCore<T>.GlobalHeapSize
+  fullName.vb: MASES.JNet.JNetCore(Of T).GlobalHeapSize
+  nameWithType: JNetCore<T>.GlobalHeapSize
+  nameWithType.vb: JNetCore(Of T).GlobalHeapSize
+- uid: MASES.JNet.JNetCore`1.InitialHeapSize
+  name: InitialHeapSize
+  href: api/MASES.JNet.JNetCore-1.html#MASES_JNet_JNetCore_1_InitialHeapSize
+  commentId: P:MASES.JNet.JNetCore`1.InitialHeapSize
+  fullName: MASES.JNet.JNetCore<T>.InitialHeapSize
+  fullName.vb: MASES.JNet.JNetCore(Of T).InitialHeapSize
+  nameWithType: JNetCore<T>.InitialHeapSize
+  nameWithType.vb: JNetCore(Of T).InitialHeapSize
+- uid: MASES.JNet.JNetCore`1.InitialHeapSize*
+  name: InitialHeapSize
+  href: api/MASES.JNet.JNetCore-1.html#MASES_JNet_JNetCore_1_InitialHeapSize_
+  commentId: Overload:MASES.JNet.JNetCore`1.InitialHeapSize
+  isSpec: "True"
+  fullName: MASES.JNet.JNetCore<T>.InitialHeapSize
+  fullName.vb: MASES.JNet.JNetCore(Of T).InitialHeapSize
+  nameWithType: JNetCore<T>.InitialHeapSize
+  nameWithType.vb: JNetCore(Of T).InitialHeapSize
 - uid: MASES.JNet.JNetCore`1.JVMOptions
   name: JVMOptions
   href: api/MASES.JNet.JNetCore-1.html#MASES_JNet_JNetCore_1_JVMOptions
