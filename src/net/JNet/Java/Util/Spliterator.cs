@@ -32,11 +32,11 @@ namespace Java.Util
         /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
         public override bool IsInterface => true;
         /// <summary>
-        /// Returns a set of characteristics of this Spliterator and its elements.
+        /// Returns a set of characteristics of this <see cref="Spliterator{T}"/> and its elements.
         /// </summary>
         public int Characteristics => IExecute<int>("characteristics");
         /// <summary>
-        /// Returns an estimate of the number of elements that would be encountered by a forEachRemaining(java.util.function.Consumer<? super T>) traversal, or returns Long.MAX_VALUE if infinite, unknown, or too expensive to compute.
+        /// Returns an estimate of the number of elements that would be encountered by a <see cref="ForEachRemaining{TSuper}(Consumer{TSuper})"/> traversal, or returns Long.MAX_VALUE if infinite, unknown, or too expensive to compute.
         /// </summary>
         public long EstimateSize => IExecute<long>("estimateSize");
         /// <summary>
@@ -46,15 +46,15 @@ namespace Java.Util
         /// <param name="action"></param>
         public void ForEachRemaining<TSuper>(Consumer<TSuper> action) where TSuper : T => IExecute("forEachRemaining", action);
         /// <summary>
-        /// If this Spliterator's source is SORTED by a Comparator, returns that Comparator.
+        /// If this <see cref="Spliterator{T}"/> source is SORTED by a <see cref="Comparator"/>, returns that <see cref="Comparator"/>.
         /// </summary>
         public Comparator Comparator => IExecute<Comparator>("getComparator");
         /// <summary>
-        /// Convenience method that returns estimateSize() if this Spliterator is SIZED, else -1.
+        /// Convenience method that returns <see cref="EstimateSize"/> if this <see cref="Spliterator{T}"/> is SIZED, else -1.
         /// </summary>
         public long ExactSizeIfKnown => IExecute<long>("getExactSizeIfKnown");
         /// <summary>
-        /// Returns true if this Spliterator's characteristics() contain all of the given characteristics.
+        /// Returns true if this <see cref="Spliterator{T}"/> <see cref="Characteristics"/> contain all of the given characteristics.
         /// </summary>
         /// <param name="characteristics"></param>
         /// <returns></returns>
@@ -67,7 +67,7 @@ namespace Java.Util
         /// <returns></returns>
         public bool TryAdvance<SuperT>(Consumer<SuperT> action) where SuperT : T => IExecute<bool>("tryAdvance", action);
         /// <summary>
-        /// If this spliterator can be partitioned, returns a Spliterator covering elements, that will, upon return from this method, not be covered by this Spliterator.
+        /// If this spliterator can be partitioned, returns a <see cref="Spliterator{T}"/> covering elements, that will, upon return from this method, not be covered by this <see cref="Spliterator{T}"/>.
         /// </summary>
         /// <returns></returns>
         public Spliterator<T> TrySplit() => IExecute<Spliterator<T>>("trySplit");

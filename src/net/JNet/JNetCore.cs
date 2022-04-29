@@ -30,6 +30,21 @@ namespace MASES.JNet
     public abstract class JNetCore<T> : SetupJVMWrapper<T> where T : JNetCore<T>
     {
         /// <summary>
+        /// Sets the global value of the heap size
+        /// </summary>
+        public static string ApplicationHeapSize { get; set; }
+
+        /// <summary>
+        /// Sets the global value of the heap size
+        /// </summary>
+        public static string ApplicationInitialHeapSize { get; set; }
+
+        /// <inheritdoc cref="SetupJVMWrapper{T}.GlobalHeapSize" />
+        public override string GlobalHeapSize { get { return string.IsNullOrEmpty(base.GlobalHeapSize) ? ApplicationHeapSize : base.GlobalHeapSize; } }
+        /// <inheritdoc cref="SetupJVMWrapper{T}.InitialHeapSize" />
+        public override string InitialHeapSize { get { return string.IsNullOrEmpty(base.InitialHeapSize) ? ApplicationInitialHeapSize : base.InitialHeapSize; } }
+
+        /// <summary>
         /// Command line <see cref="Parser"/> instance
         /// </summary>
         protected static readonly Parser Parser = Parser.CreateInstance(new Settings()
@@ -159,12 +174,26 @@ namespace MASES.JNet
         {
             get
             {
-                IDictionary<string, string> opt = Options;
+                IDictionary<string, string> opt = new Dictionary<string, string>();
                 if (base.JVMOptions != null)
                 {
                     foreach (var item in base.JVMOptions)
                     {
                         opt.Add(item);
+                    }
+                }
+                if (Options != null)
+                {
+                    foreach (var item in Options)
+                    {
+                        try
+                        {
+                            opt.Add(item);
+                        }
+                        catch (Exception e)
+                        {
+                            throw new ArgumentException($"Cannot add option {item.Key}: {e.Message}");
+                        }
                     }
                 }
                 return opt;

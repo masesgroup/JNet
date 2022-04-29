@@ -30,7 +30,7 @@ namespace Java.Util.Function
     }
 
     /// <summary>
-    /// Listener for Java LongFunction <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/LongFunction.html"/>. Extends <see cref="FunctionListener{Int64, TResult}"/>
+    /// Listener for Java LongFunction <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/LongFunction.html"/>. Extends <see cref="Function{Int64, TResult}"/>
     /// </summary>
     /// <typeparam name="TReturn">The return data type associated to the event</typeparam>
     public class LongFunction<TReturn> : Function<long, TReturn>, ILongFunction<TReturn>
@@ -39,7 +39,6 @@ namespace Java.Util.Function
         public sealed override string ClassName => "org.mases.jnet.util.function.JNetLongFunction";
 
         /// <inheritdoc cref="Function{Int64, TReturn}"/>
-        /// <param name="func">The <see cref="Func{Int32, TReturn}"/> to be executed</param>
         public LongFunction(Func<long, TReturn> func = null) : base(func) { }
     }
 }

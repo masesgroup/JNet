@@ -30,7 +30,7 @@ namespace Java.Util.Function
     }
 
     /// <summary>
-    /// Listener for Java ObjIntConsumer <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/ObjIntConsumer.html"/>. Extends <see cref="BiConsumerListener{T, Int32}"/>
+    /// Listener for Java ObjIntConsumer <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/ObjIntConsumer.html"/>. Extends <see cref="BiConsumer{T, Int32}"/>
     /// </summary>
     /// <typeparam name="T">The data associated to the event</typeparam>
     public class ObjIntConsumer<T> : BiConsumer<T, int>, IObjIntConsumer<T>
@@ -39,7 +39,6 @@ namespace Java.Util.Function
         public sealed override string ClassName => "org.mases.jnet.util.function.JNetObjIntConsumer";
 
         /// <inheritdoc cref="BiConsumer{T, Int32}"/>
-        /// <param name="action">The <see cref="Action{T, Int32}"/> to be executed</param>
         public ObjIntConsumer(Action<T, int> action = null) : base(action) { }
     }
 }

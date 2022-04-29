@@ -22,7 +22,7 @@ using System;
 namespace Java.Util.Function
 {
     /// <summary>
-    /// Listener for Java ObjLongConsumer <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/ObjLongConsumer.html"/>. Extends <see cref="BiConsumerListener{T, Int64}"/>
+    /// Listener for Java ObjLongConsumer <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/ObjLongConsumer.html"/>. Extends <see cref="IBiConsumer{T, Int64}"/>
     /// </summary>
     /// <typeparam name="T">The data associated to the event</typeparam>
     public interface IObjLongConsumer<T> : IBiConsumer<T, long>
@@ -30,7 +30,7 @@ namespace Java.Util.Function
     }
 
     /// <summary>
-    /// Listener for Java ObjLongConsumer <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/ObjLongConsumer.html"/>. Extends <see cref="JVMBridgeListener"/>
+    /// Listener for Java ObjLongConsumer <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/ObjLongConsumer.html"/>. Extends <see cref="BiConsumer{T, Int64}"/>
     /// </summary>
     /// <typeparam name="T">The data associated to the event</typeparam>
     public class ObjLongConsumer<T> : BiConsumer<T, long>, IObjLongConsumer<T>
@@ -39,7 +39,6 @@ namespace Java.Util.Function
         public sealed override string ClassName => "org.mases.jnet.util.function.JNetObjLongConsumer";
 
         /// <inheritdoc cref="BiConsumer{T, Int64}"/>
-        /// <param name="action">The <see cref="Action{T, Int64}"/> to be executed</param>
         public ObjLongConsumer(Action<T, long> action = null) : base(action) { }
     }
 }

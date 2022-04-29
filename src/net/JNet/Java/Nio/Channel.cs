@@ -16,31 +16,13 @@
 *  Refer to LICENSE for more information.
 */
 
-using Java.Util;
-using MASES.JNet;
-using System;
+using MASES.JCOBridge.C2JBridge;
 
-namespace MASES.JNetTest
+namespace Java.Nio
 {
-    class Program
+    public class Channel : JVMBridgeBase<Channel>
     {
-        static void Main(string[] args)
-        {
-            JNetCore.CreateGlobalInstance();
-            var appArgs = JNetCore.FilteredArgs;
-
-            var setEmpty = Collections.EmptySet<int>();
-
-            var cls = Java.Lang.Class.Of<Vector<string>>();
-            var cls2 = JNetCore.Class<Vector<string>>();
-
-            var res = cls.Equals(cls2);
-
-            if (args.Length != 0)
-            {
-                var set = Collections.Singleton(appArgs[0]);
-                Console.WriteLine(set.ToString());
-            }
-        }
+        public override bool IsInterface => true;
+        public override string ClassName => "java.nio.Channel";
     }
 }
