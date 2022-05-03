@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <PackageType>Template</PackageType>
-    <PackageVersion>1.4.1.0</PackageVersion>
+    <PackageVersion>1.5.0.0</PackageVersion>
     <PackageId>MASES.JNet.Templates</PackageId>
     <Title>JNet Templates - Templates to use the JNet</Title>
     <Authors>MASES s.r.l.</Authors>
@@ -10,7 +10,7 @@
     <Copyright>Copyright ©  MASES s.r.l. 2022</Copyright>
     <Summary>Ready made templates to create applications based on JNet</Summary>
     <Description>Ready made templates to create applications based on JNet. The templates are ready made starting points, all information and APIs are available in the official website https://masesgroup.github.io/JNet</Description>
-    <TargetFrameworks>net6.0;net5.0;netcoreapp3.1;net461</TargetFrameworks>
+    <TargetFrameworks>net6.0;net5.0;netcoreapp3.1;net462</TargetFrameworks>
     <OutputPath>..\..\..\bin\</OutputPath>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
