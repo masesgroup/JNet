@@ -16,6 +16,7 @@
 *  Refer to LICENSE for more information.
 */
 
+using Java.Util.Function;
 using MASES.JCOBridge.C2JBridge;
 using MASES.JCOBridge.C2JBridge.JVMInterop;
 
@@ -33,12 +34,18 @@ namespace Java.Util
             : base(args)
         {
         }
+
+        public void Clear() => IExecute("clear");
+
+        public bool ContainsKey(object key) => IExecute<bool>("containsKey", key);
+
+        public bool ContainsValue(object value) => IExecute<bool>("containsValue", value);
+
+        public bool Remove(object key, object value) => IExecute<bool>("remove", key, value);
     }
 
     public class Map<K, V> : Map
     {
-        public override string ClassName => "java.util.Map";
-
         public Map()
         {
         }
@@ -48,16 +55,70 @@ namespace Java.Util
         {
         }
 
+        public void ForEach<SuperK, SuperV>(BiConsumer<SuperK, SuperV> action)
+            where SuperK : K
+            where SuperV : V
+        {
+            IExecute("forEach", action);
+        }
+
+        public V GetOrDefault(object key, V defaultValue) => IExecute<V>("getOrDefault", key, defaultValue);
+
         public virtual V Get​(K key) { return IExecute<V>("get", key); }
+
+        public bool IsEmpty => IExecute<bool>("isEmpty");
+
+        public Set<K> KeySet => IExecute<Set<K>>("keySet");
+
+        public V Merge<SuperV, ExtendsV>(K key, V value, BiFunction<SuperV, SuperV, ExtendsV> remappingFunction)
+            where SuperV : V
+            where ExtendsV : V
+        {
+            return IExecute<V>("merge", key, value, remappingFunction);
+        }
 
         public virtual V Put​(K key, V value)
         {
-            var obj = IExecute<V>("put", key, value);
-            if (value is IJVMBridgeBase)
-            {
-                return Wraps<V>(obj as IJavaObject);
-            }
-            else return obj;
+            return IExecute<V>("put", key, value);
         }
+
+        public void PutAll<ExtendsK, ExtendsV>(Map<ExtendsK, ExtendsV> m)
+            where ExtendsK : K
+            where ExtendsV : V
+        {
+            IExecute("putAll", m);
+        }
+
+        public V PutIfAbsent(K key, V value)
+        {
+            return IExecute<V>("putIfAbsent", key, value);
+        }
+
+        public V Remove(object key)
+        {
+            return IExecute<V>("remove", key);
+        }
+
+        public virtual V Replace(K key, V value)
+        {
+            return IExecute<V>("replace", key, value);
+        }
+
+        public virtual V Replace(K key, V oldValue, V newValue)
+        {
+            return IExecute<V>("replace", key, oldValue, newValue);
+        }
+
+        public void ReplaceAll<SuperK, SuperV, ExtendsV>(BiFunction<SuperK, SuperV, ExtendsV> function)
+            where SuperK : K
+            where SuperV : V
+            where ExtendsV : V
+        {
+            IExecute("replaceAll", function);
+        }
+
+        public int Size => IExecute<int>("size");
+
+        public Collection<V> Values => IExecute<Collection<V>>("values");
     }
 }
