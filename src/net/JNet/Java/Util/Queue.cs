@@ -16,30 +16,20 @@
 *  Refer to LICENSE for more information.
 */
 
-using Java.Util;
-using MASES.JNet;
-
-namespace MASES.JNetTest
+namespace Java.Util
 {
-    class Program
+    public class Queue<E> : Collection<E>
     {
-        static void Main(string[] args)
-        {
-            JNetCore.CreateGlobalInstance();
-            var appArgs = JNetCore.FilteredArgs;
+        public override string ClassName => "java.util.Queue";
 
-            var setEmpty = Collections.EmptySet<int>();
+        public E Element() => IExecute<E>("element");
 
-            var cls = Java.Lang.Class.Of<Vector<string>>();
-            var cls2 = JNetCore.Class<Vector<string>>();
+        public bool Offer​(E e) => IExecute<bool>("offer​", e);
 
-            var res = cls.Equals(cls2);
+        public E Peek() => IExecute<E>("peek");
 
-            if (args.Length != 0)
-            {
-                var set = Collections.Singleton(appArgs[0]);
-                set.Add("test");
-            }
-        }
+        public E Poll() => IExecute<E>("poll");
+
+        public E Remove() => IExecute<E>("remove");
     }
 }

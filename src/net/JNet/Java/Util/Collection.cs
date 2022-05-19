@@ -16,6 +16,7 @@
 *  Refer to LICENSE for more information.
 */
 
+using Java.Util.Function;
 using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
@@ -24,9 +25,32 @@ namespace Java.Util
     {
         public override string ClassName => "java.util.Collection";
 
-        public bool Add(E e)
-        {
-            return IExecute<bool>("add", e);
-        }
+        public static implicit operator Lang.Iterable<E>(Collection<E> instance) => instance.Cast<Lang.Iterable<E>>();
+
+        public bool Add(E e) => IExecute<bool>("add", e);
+
+        public bool AddAll<ExtendsE>(Collection<ExtendsE> c) where ExtendsE : E => IExecute<bool>("addAll", c);
+
+        public void Clear() => IExecute("clear");
+
+        public bool Contains​(object o) => IExecute<bool>("contains​", o);
+
+        public bool ContainsAll<T>(Collection<T> c) => IExecute<bool>("containsAll", c);
+
+        public bool IsEmpty => IExecute<bool>("isEmpty");
+
+        public Iterator<E> Iterator() => IExecute<Iterator<E>>("iterator");
+
+        public bool Remove​(object o) => IExecute<bool>("remove​​", o);
+
+        public bool RemoveAll​<T>(Collection<T> c) => IExecute<bool>("removeAll​", c);
+
+        public bool RemoveIf<SuperE>(Predicate<SuperE> filter) => IExecute<bool>("removeIf", filter);
+
+        public bool RetainAll​<T>(Collection<T> c) => IExecute<bool>("retainAll​​", c);
+
+        public int Size => IExecute<int>("size");
+
+        public Spliterator<E> Spliterator() => IExecute<Spliterator<E>>("spliterator");
     }
 }
