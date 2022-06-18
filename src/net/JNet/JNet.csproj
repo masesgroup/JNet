@@ -9,10 +9,10 @@
 		<Owners>MASES s.r.l.</Owners>
 		<Authors>MASES s.r.l.</Authors>
 		<Company>MASES s.r.l.</Company>
-		<Version>1.4.3.0</Version>
+		<Version>1.4.4.0</Version>
 		<Product>JNet</Product>
 		<GenerateAssemblyInfo>true</GenerateAssemblyInfo>
-		<TargetFrameworks>net462;netcoreapp3.1;net5.0;net6.0</TargetFrameworks>
+		<TargetFrameworks>net462;netcoreapp3.1;net6.0</TargetFrameworks>
 		<OutputPath>..\..\..\bin\</OutputPath>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
@@ -21,7 +21,7 @@
 		<PackageReleaseNotes>https://github.com/masesgroup/JNet/releases</PackageReleaseNotes>
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
 		<PackageIcon>JCOB128x128.png</PackageIcon>
-		<PackageTags>jnet dotnet clr netcore net5 net6 java bridge</PackageTags>
+		<PackageTags>jnet dotnet clr dotnetcore netcore dotnet6 net6 java bridge</PackageTags>
 		<PackageId>MASES.JNet</PackageId>
 		<IncludeSymbols>true</IncludeSymbols>
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
@@ -41,7 +41,7 @@
   <PropertyGroup Condition="'$(GITHUB_ACTIONS)' == 'true'">
     <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
   </PropertyGroup>
-  <ItemGroup Condition="'$(TargetFramework)' == 'net461'">
+  <ItemGroup Condition="'$(TargetFramework)' == 'net462'">
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
