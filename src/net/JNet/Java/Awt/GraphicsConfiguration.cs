@@ -20,17 +20,11 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt
 {
-    public class Component : JVMBridgeBase<Component>
+    public class GraphicsConfiguration : JVMBridgeBase<GraphicsConfiguration>
     {
-        public override string ClassName => "java.awt.Component";
+        public override bool IsAbstract => true;
 
-        public Component()
-        {
-        }
-
-        public Component(params object[] args) : base(args)
-        {
-        }
+        public override string ClassName => "java.awt.GraphicsConfiguration";
 
         // TODO: complete the class
     }

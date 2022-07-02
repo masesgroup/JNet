@@ -16,19 +16,17 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.JCOBridge.C2JBridge;
-
 namespace Java.Awt
 {
-    public class Component : JVMBridgeBase<Component>
+    public class Button : Component
     {
-        public override string ClassName => "java.awt.Component";
+        public override string ClassName => "java.awt.Button";
 
-        public Component()
+        public Button()
         {
         }
 
-        public Component(params object[] args) : base(args)
+       public Button(string label) : base(label)
         {
         }
 

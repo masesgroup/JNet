@@ -16,19 +16,25 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.JCOBridge.C2JBridge;
-
 namespace Java.Awt
 {
-    public class Component : JVMBridgeBase<Component>
+    public class Frame : Window
     {
-        public override string ClassName => "java.awt.Component";
+        public override string ClassName => "java.awt.Frame";
 
-        public Component()
+        public Frame()
         {
         }
 
-        public Component(params object[] args) : base(args)
+        public Frame(GraphicsConfiguration gc) : base(gc)
+        {
+        }
+
+        public Frame(string title) : base(title)
+        {
+        }
+
+        public Frame(string title, GraphicsConfiguration gc) : base(title, gc)
         {
         }
 

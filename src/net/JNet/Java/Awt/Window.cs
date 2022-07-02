@@ -22,6 +22,14 @@ namespace Java.Awt
     {
         public override string ClassName => "java.awt.Window";
 
+        public Window()
+        {
+        }
+
+        public Window(params object[] args) : base(args)
+        {
+        }
+
         // TODO: complete the class
     }
 }

@@ -20,15 +20,19 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt
 {
-    public class Component : JVMBridgeBase<Component>
+    public class GridLayout : JVMBridgeBase<GridLayout>
     {
-        public override string ClassName => "java.awt.Component";
+        public override string ClassName => "java.awt.GridLayout";
 
-        public Component()
+        public GridLayout()
         {
         }
 
-        public Component(params object[] args) : base(args)
+        public GridLayout(int rows, int cols) : base(rows, cols)
+        {
+        }
+
+        public GridLayout(int rows, int cols, int hgap, int vgap) : base(rows, cols, hgap, vgap)
         {
         }
 
