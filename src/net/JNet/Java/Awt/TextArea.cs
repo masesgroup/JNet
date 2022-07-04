@@ -18,15 +18,27 @@
 
 namespace Java.Awt
 {
-    public class Button : Component
+    public class TextArea : TextComponent
     {
-        public override string ClassName => "java.awt.Button";
+        public override string ClassName => "java.awt.TextArea";
 
-        public Button()
+        public TextArea()
         {
         }
 
-        public Button(string label) : base(label)
+        public TextArea(int rows, int columns) : base(rows, columns)
+        {
+        }
+
+        public TextArea(string text) : base(text)
+        {
+        }
+
+        public TextArea(string text, int rows, int columns) : base(text, rows, columns)
+        {
+        }
+
+        public TextArea(string text, int rows, int columns, int scrollbars) : base(text, rows, columns, scrollbars)
         {
         }
 

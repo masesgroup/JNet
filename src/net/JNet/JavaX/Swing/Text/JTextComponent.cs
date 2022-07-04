@@ -16,20 +16,18 @@
 *  Refer to LICENSE for more information.
 */
 
-namespace Java.Awt
+namespace JavaX.Swing.Text
 {
-    public class Button : Component
+    public class JTextComponent : JComponent
     {
-        public override string ClassName => "java.awt.Button";
+        public override string ClassName => "javax.swing.text.JTextComponent";
 
-        public Button()
+        public JTextComponent()
         {
         }
 
-        public Button(string label) : base(label)
+        public JTextComponent(params object[] args) : base(args)
         {
         }
-
-        // TODO: complete the class
     }
 }

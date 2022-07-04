@@ -16,20 +16,36 @@
 *  Refer to LICENSE for more information.
 */
 
-namespace Java.Awt
+using JavaX.Swing.Text;
+
+namespace JavaX.Swing
 {
-    public class Button : Component
+    public class JTextArea : JTextComponent
     {
-        public override string ClassName => "java.awt.Button";
+        public override string ClassName => "javax.swing.JTextArea";
 
-        public Button()
+        public JTextArea()
         {
         }
 
-        public Button(string label) : base(label)
+        //public JTextArea(Document doc) : base(doc)
+        //{
+        //}
+
+        //public JTextArea(Document doc, string text, int rows, int columns) : base(doc, text, rows, columns)
+        //{
+        //}
+
+        public JTextArea(int rows, int columns) : base(rows, columns)
         {
         }
 
-        // TODO: complete the class
+        public JTextArea(string text) : base(text)
+        {
+        }
+
+        public JTextArea(string text, int rows, int columns) : base(text, rows, columns)
+        {
+        }
     }
 }

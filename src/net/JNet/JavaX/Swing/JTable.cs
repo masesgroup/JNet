@@ -16,19 +16,11 @@
 *  Refer to LICENSE for more information.
 */
 
-namespace Java.Awt
+namespace JavaX.Swing
 {
-    public class Button : Component
+    public class JTable : JComponent
     {
-        public override string ClassName => "java.awt.Button";
-
-        public Button()
-        {
-        }
-
-        public Button(string label) : base(label)
-        {
-        }
+        public override string ClassName => "javax.swing.JTable";
 
         // TODO: complete the class
     }

@@ -16,20 +16,13 @@
 *  Refer to LICENSE for more information.
 */
 
-namespace Java.Awt
+using Java.Awt;
+
+namespace JavaX.Swing
 {
-    public class Button : Component
+    public class KeyStroke : AWTKeyStroke
     {
-        public override string ClassName => "java.awt.Button";
+        public override string ClassName => "javax.swing.KeyStroke";
 
-        public Button()
-        {
-        }
-
-        public Button(string label) : base(label)
-        {
-        }
-
-        // TODO: complete the class
     }
 }

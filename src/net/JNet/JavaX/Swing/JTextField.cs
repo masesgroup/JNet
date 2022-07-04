@@ -16,20 +16,32 @@
 *  Refer to LICENSE for more information.
 */
 
-namespace Java.Awt
+using JavaX.Swing.Text;
+
+namespace JavaX.Swing
 {
-    public class Button : Component
+    public class JTextField : JTextComponent
     {
-        public override string ClassName => "java.awt.Button";
+        public override string ClassName => "javax.swing.JTextField";
 
-        public Button()
+        public JTextField()
         {
         }
 
-        public Button(string label) : base(label)
+        //public JTextField(Document doc, string text, int columns) : base(doc, text, columns)
+        //{
+        //}
+
+        public JTextField(int columns) : base(columns)
         {
         }
 
-        // TODO: complete the class
+        public JTextField(string text) : base(text)
+        {
+        }
+
+        public JTextField(string text, int columns) : base(text, columns)
+        {
+        }
     }
 }

@@ -16,20 +16,18 @@
 *  Refer to LICENSE for more information.
 */
 
-namespace Java.Awt
+namespace JavaX.Swing
 {
-    public class Button : Component
+    public class JSpinner : JComponent
     {
-        public override string ClassName => "java.awt.Button";
+        public override string ClassName => "javax.swing.JSpinner";
 
-        public Button()
+        public JSpinner()
         {
         }
 
-        public Button(string label) : base(label)
+        public JSpinner(SpinnerModel model) : base(model)
         {
         }
-
-        // TODO: complete the class
     }
 }

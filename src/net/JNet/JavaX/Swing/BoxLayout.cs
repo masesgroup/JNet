@@ -16,20 +16,21 @@
 *  Refer to LICENSE for more information.
 */
 
-namespace Java.Awt
+using Java.Awt;
+using MASES.JCOBridge.C2JBridge;
+
+namespace JavaX.Swing
 {
-    public class Button : Component
+    public class BoxLayout : JVMBridgeBase<BoxLayout>
     {
-        public override string ClassName => "java.awt.Button";
+        public override string ClassName => "javax.swing.BoxLayout";
 
-        public Button()
+        public BoxLayout()
         {
         }
 
-        public Button(string label) : base(label)
+        public BoxLayout(Container target, int axis) : base(target, axis)
         {
         }
-
-        // TODO: complete the class
     }
 }

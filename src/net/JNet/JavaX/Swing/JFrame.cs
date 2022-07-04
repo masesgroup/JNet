@@ -16,20 +16,30 @@
 *  Refer to LICENSE for more information.
 */
 
-namespace Java.Awt
+using Java.Awt;
+
+namespace JavaX.Swing
 {
-    public class Button : Component
+    public class JFrame : Frame
     {
-        public override string ClassName => "java.awt.Button";
+        public override string ClassName => "javax.swing.JFrame";
 
-        public Button()
+        public JFrame()
         {
         }
 
-        public Button(string label) : base(label)
+        public JFrame(GraphicsConfiguration gc) : base(gc)
         {
         }
 
-        // TODO: complete the class
+        public JFrame(string title) : base(title)
+        {
+        }
+
+        public JFrame(string title, GraphicsConfiguration gc) : base(title, gc)
+        {
+        }
+
+        public static void SetDefaultLookAndFeelDecorated(bool defaultLookAndFeelDecorated) => SExecute("setDefaultLookAndFeelDecorated​", defaultLookAndFeelDecorated);
     }
 }

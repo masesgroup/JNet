@@ -12,7 +12,7 @@ namespace MASES.JNetGraphicCommon
     {
         public static dynamic TextArea { get; private set; }
 
-        static Container CommonContainer { get; set; }
+        static dynamic CommonContainer { get; set; }
 
         public static IJCGraphicContainer Container { get; private set; }
         static ActionListener _Listener;
@@ -23,14 +23,14 @@ namespace MASES.JNetGraphicCommon
             {
                 _Listener = new ActionListener(handler);
                 CommonContainer = new Panel();
-                var layout = JNetCore.GlobalInstance.DynJVM.java.awt.GridLayout.@new(2, 1);
-                CommonContainer.Dyn().setLayout(layout);
-                TextArea = JNetCore.GlobalInstance.DynJVM.java.awt.TextArea.@new("", 10, 40);
-                CommonContainer.Dyn().add(TextArea);
-                var button = JNetCore.GlobalInstance.DynJVM.java.awt.Button.@new("Send TextArea text to Host Application");
+                dynamic layout = new GridLayout(2, 1);
+                CommonContainer.setLayout(layout);
+                TextArea = new TextArea("", 10, 40);
+                CommonContainer.add(TextArea);
+                dynamic button = new Button("Send TextArea text to Host Application");
                 button.setActionCommand("sendData");
                 button.addActionListener(_Listener.Instance);
-                CommonContainer.Dyn().add(button);
+                CommonContainer.add(button);
                 Container = CommonContainer.HostedContainer;
 #if WINFORMS
                 return CommonContainer.CreateHostedContainer(false);
@@ -83,9 +83,10 @@ namespace MASES.JNetGraphicCommon
                 dynamic tableModel;
                 string[][] data;
 
-                JNetCore.GlobalInstance.DynJVM.javax.swing.JFrame.setDefaultLookAndFeelDecorated(true);
+                // don't work: JFrame.SetDefaultLookAndFeelDecorated(true);
+                JNetCore.GlobalInstance.DynJVM.JFrame.setDefaultLookAndFeelDecorated(true);
 
-                JNetCore.GlobalInstance.DynJVM.UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
+                UIManager.DynClazz.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
 
                 // Define the panel to hold the components  
                 CommonContainer = new JPanel();
@@ -99,11 +100,11 @@ namespace MASES.JNetGraphicCommon
                 imagePanel = new JPanel();
 
                 // Define layouts
-                dynamic chatLayout = JNetCore.GlobalInstance.DynJVM.BoxLayout.@new(chatPanel.Instance, JNetCore.GlobalInstance.DynJVM.BoxLayout.Y_AXIS);
-                dynamic messageLayout = JNetCore.GlobalInstance.DynJVM.BoxLayout.@new(messagePanel.Instance, JNetCore.GlobalInstance.DynJVM.BoxLayout.X_AXIS);
-                dynamic tableLayout = JNetCore.GlobalInstance.DynJVM.BoxLayout.@new(tablePanel.Instance, JNetCore.GlobalInstance.DynJVM.BoxLayout.Y_AXIS);
-                dynamic tableButtonLayout = JNetCore.GlobalInstance.DynJVM.BoxLayout.@new(tableButtonPanel.Instance, JNetCore.GlobalInstance.DynJVM.BoxLayout.X_AXIS);
-                layout = JNetCore.GlobalInstance.DynJVM.SpringLayout.@new();
+                dynamic chatLayout = new BoxLayout(chatPanel, BoxLayout.DynClazz.Y_AXIS);
+                dynamic messageLayout = new BoxLayout(messagePanel, BoxLayout.DynClazz.X_AXIS);
+                dynamic tableLayout = new BoxLayout(tablePanel, BoxLayout.DynClazz.Y_AXIS);
+                dynamic tableButtonLayout = new BoxLayout(tableButtonPanel, BoxLayout.DynClazz.X_AXIS);
+                layout = new SpringLayout();
 
                 // Set Layouts
                 chatPanel.Dyn().setLayout(chatLayout);
@@ -112,19 +113,20 @@ namespace MASES.JNetGraphicCommon
                 tableButtonPanel.Dyn().setLayout(tableButtonLayout);
 
                 // Create buttons
-                clearButton = JNetCore.GlobalInstance.DynJVM.javax.swing.JButton.@new("Clear");
-                sendButton = JNetCore.GlobalInstance.DynJVM.javax.swing.JButton.@new("Send");
-                addRowButton = JNetCore.GlobalInstance.DynJVM.javax.swing.JButton.@new("Add Row");
+                clearButton = new JButton("Clear");
+                sendButton = new JButton("Send");
+                addRowButton = new JButton("Add Row");
                 clearButton.setActionCommand("Clear");
                 sendButton.setActionCommand("Send");
                 addRowButton.setActionCommand("AddRow");
 
                 // Add chats components
-                textLabel = JNetCore.GlobalInstance.DynJVM.JLabel.@new("Message: ");
-                textField = JNetCore.GlobalInstance.DynJVM.JTextField.@new("Test Message", 15);
+                textLabel = new JLabel("Message: ");
+                textField = new JTextField("Test Message", 15);
                 textField.setActionCommand("TextEntered");
-                textArea = JNetCore.GlobalInstance.DynJVM.JTextArea.@new("Message Area\n", 10, 5);
+                textArea = new JTextArea("Message Area\n", 10, 5);
 
+                // don't work var keystroke = KeyStroke.DynClazz.getKeyStroke('a', false);
                 var keystroke = JNetCore.GlobalInstance.DynJVM.KeyStroke.getKeyStroke('a', false);
                 var condition = JNetCore.GlobalInstance.DynJVM.JComponent.WHEN_FOCUSED;
 
@@ -137,12 +139,12 @@ namespace MASES.JNetGraphicCommon
                 chatPanel.Dyn().setSize(100, 100);
 
                 // Add spinner
-                var zoomModel = JNetCore.GlobalInstance.DynJVM.SpinnerNumberModel.@new(100, //initial value
-                                                                                       25,  //min
-                                                                                       200, //max
-                                                                                       25); //step
-                spinner = JNetCore.GlobalInstance.DynJVM.JSpinner.@new(zoomModel);
-                var labelZoom = JNetCore.GlobalInstance.DynJVM.JLabel.@new("Zoom X");
+                var zoomModel = new SpinnerNumberModel(100, //initial value
+                                                        25,  //min
+                                                        200, //max
+                                                        25); //step
+                spinner = new JSpinner(zoomModel);
+                var labelZoom = new JLabel("Zoom X");
 
                 //Add table
                 data = new string[][] { new string[] { "101","Amit","670000"},
@@ -170,26 +172,28 @@ namespace MASES.JNetGraphicCommon
                 var scrollPane = JNetCore.GlobalInstance.DynJVM.JScrollPane.@new(jt);
 
                 //configure panel
-                CommonContainer.Dyn().setSize(500, 600);
-                CommonContainer.Dyn().setLayout(layout);
-                CommonContainer.Dyn().add(chatPanel.Instance);
+                CommonContainer.setSize(500, 600);
+                CommonContainer.setLayout(layout);
+                CommonContainer.add(chatPanel.Instance);
                 tableButtonPanel.Dyn().add(addRowButton);
                 tablePanel.Dyn().add(tableButtonPanel.Instance);
                 tablePanel.Dyn().add(scrollPane);
-                CommonContainer.Dyn().add(tablePanel.Instance);
+                CommonContainer.add(tablePanel.Instance);
+
+                dynamic layoutAccessor = JNetCore.GlobalInstance.DynJVM.SpringLayout;
 
                 // Put constraint on components
-                layout.putConstraint(JNetCore.GlobalInstance.DynJVM.SpringLayout.HORIZONTAL_CENTER, chatPanel.Instance, 5, JNetCore.GlobalInstance.DynJVM.SpringLayout.HORIZONTAL_CENTER, CommonContainer.Instance);
-                layout.putConstraint(JNetCore.GlobalInstance.DynJVM.SpringLayout.WIDTH, chatPanel.Instance, 5, JNetCore.GlobalInstance.DynJVM.SpringLayout.WIDTH, CommonContainer.Instance);
-                layout.putConstraint(JNetCore.GlobalInstance.DynJVM.SpringLayout.NORTH, chatPanel.Instance, 5, JNetCore.GlobalInstance.DynJVM.SpringLayout.NORTH, CommonContainer.Instance);
+                layout.putConstraint(layoutAccessor.HORIZONTAL_CENTER, chatPanel.Instance, 5, layoutAccessor.HORIZONTAL_CENTER, CommonContainer.Instance);
+                layout.putConstraint(layoutAccessor.WIDTH, chatPanel.Instance, 5, layoutAccessor.WIDTH, CommonContainer.Instance);
+                layout.putConstraint(layoutAccessor.NORTH, chatPanel.Instance, 5, layoutAccessor.NORTH, CommonContainer.Instance);
 
-                layout.putConstraint(JNetCore.GlobalInstance.DynJVM.SpringLayout.NORTH, imagePanel.Instance, 5, JNetCore.GlobalInstance.DynJVM.SpringLayout.SOUTH, chatPanel.Instance);
-                layout.putConstraint(JNetCore.GlobalInstance.DynJVM.SpringLayout.HORIZONTAL_CENTER, imagePanel.Instance, 5, JNetCore.GlobalInstance.DynJVM.SpringLayout.HORIZONTAL_CENTER, CommonContainer.Instance);
-                layout.putConstraint(JNetCore.GlobalInstance.DynJVM.SpringLayout.WIDTH, imagePanel.Instance, 5, JNetCore.GlobalInstance.DynJVM.SpringLayout.WIDTH, CommonContainer.Instance);
+                layout.putConstraint(layoutAccessor.NORTH, imagePanel.Instance, 5, layoutAccessor.SOUTH, chatPanel.Instance);
+                layout.putConstraint(layoutAccessor.HORIZONTAL_CENTER, imagePanel.Instance, 5, layoutAccessor.HORIZONTAL_CENTER, CommonContainer.Instance);
+                layout.putConstraint(layoutAccessor.WIDTH, imagePanel.Instance, 5, layoutAccessor.WIDTH, CommonContainer.Instance);
 
-                layout.putConstraint(JNetCore.GlobalInstance.DynJVM.SpringLayout.NORTH, tablePanel.Instance, 5, JNetCore.GlobalInstance.DynJVM.SpringLayout.SOUTH, imagePanel.Instance);
-                layout.putConstraint(JNetCore.GlobalInstance.DynJVM.SpringLayout.HORIZONTAL_CENTER, imagePanel.Instance, 5, JNetCore.GlobalInstance.DynJVM.SpringLayout.HORIZONTAL_CENTER, CommonContainer.Instance);
-                layout.putConstraint(JNetCore.GlobalInstance.DynJVM.SpringLayout.WIDTH, tablePanel.Instance, 5, JNetCore.GlobalInstance.DynJVM.SpringLayout.WIDTH, CommonContainer.Instance);
+                layout.putConstraint(layoutAccessor.NORTH, tablePanel.Instance, 5, layoutAccessor.SOUTH, imagePanel.Instance);
+                layout.putConstraint(layoutAccessor.HORIZONTAL_CENTER, imagePanel.Instance, 5, layoutAccessor.HORIZONTAL_CENTER, CommonContainer.Instance);
+                layout.putConstraint(layoutAccessor.WIDTH, tablePanel.Instance, 5, layoutAccessor.WIDTH, CommonContainer.Instance);
                 Container = CommonContainer.HostedContainer;
 #if WINFORMS
                 return CommonContainer.CreateHostedContainer(false);

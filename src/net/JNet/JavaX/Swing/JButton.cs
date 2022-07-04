@@ -16,20 +16,31 @@
 *  Refer to LICENSE for more information.
 */
 
-namespace Java.Awt
+namespace JavaX.Swing
 {
-    public class Button : Component
+    public class JButton : AbstractButton
     {
-        public override string ClassName => "java.awt.Button";
+        public override string ClassName => "javax.swing.JButton";
 
-        public Button()
+        public JButton()
+        {
+
+        }
+
+        //public Button(Action a) : base(a)
+        //{
+        //}
+
+        //public JButton(Icon icon) : base(icon)
+        //{
+        //}
+
+        public JButton(string text) : base(text)
         {
         }
 
-        public Button(string label) : base(label)
-        {
-        }
-
-        // TODO: complete the class
+        //public JButton(string text, Icon icon): base(text, icon)
+        //{
+        //}
     }
 }

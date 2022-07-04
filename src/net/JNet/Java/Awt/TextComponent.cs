@@ -18,15 +18,19 @@
 
 namespace Java.Awt
 {
-    public class Button : Component
+    public class TextComponent : Component
     {
-        public override string ClassName => "java.awt.Button";
+        public override string ClassName => "java.awt.TextComponent";
 
-        public Button()
+        public TextComponent()
         {
         }
 
-        public Button(string label) : base(label)
+        public TextComponent(params object[] args) : base(args)
+        {
+        }
+
+        public TextComponent(string label) : base(label)
         {
         }
 

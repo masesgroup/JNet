@@ -16,17 +16,19 @@
 *  Refer to LICENSE for more information.
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Awt
 {
-    public class Button : Component
+    public class AWTKeyStroke : JVMBridgeBase<AWTKeyStroke>
     {
-        public override string ClassName => "java.awt.Button";
+        public override string ClassName => "java.awt.AWTKeyStroke";
 
-        public Button()
+        public AWTKeyStroke()
         {
         }
 
-        public Button(string label) : base(label)
+        public AWTKeyStroke(params object[] args) : base(args)
         {
         }
 

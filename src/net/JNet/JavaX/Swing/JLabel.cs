@@ -16,20 +16,34 @@
 *  Refer to LICENSE for more information.
 */
 
-namespace Java.Awt
+namespace JavaX.Swing
 {
-    public class Button : Component
+    public class JLabel : JComponent
     {
-        public override string ClassName => "java.awt.Button";
+        public override string ClassName => "javax.swing.JLabel";
 
-        public Button()
+        public JLabel()
         {
         }
 
-        public Button(string label) : base(label)
+        //public JLabel(Icon image) : base(image)
+        //{
+        //}
+
+        //public JLabel(Icon image, int horizontalAlignment) : base(image, horizontalAlignment)
+        //{
+        //}
+
+        public JLabel(string text) : base(text)
         {
         }
 
-        // TODO: complete the class
+        //public JLabel(string text, Icon icon, int horizontalAlignment) : base(text, icon, horizontalAlignment)
+        //{
+        //}
+
+        public JLabel(string text, int horizontalAlignment) : base(text, horizontalAlignment)
+        {
+        }
     }
 }
