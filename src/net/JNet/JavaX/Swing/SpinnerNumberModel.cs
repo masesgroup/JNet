@@ -16,19 +16,27 @@
 *  Refer to LICENSE for more information.
 */
 
-using Java.Awt;
+using Java.Lang;
 
 namespace JavaX.Swing
 {
-    public class JComponent : Container
+    public class SpinnerNumberModel : AbstractSpinnerModel
     {
-        public override string ClassName => "javax.swing.JComponent";
+        public override string ClassName => "javax.swing.SpinnerNumberModel";
 
-        public JComponent()
+        public SpinnerNumberModel()
         {
         }
 
-        public JComponent(params object[] args) : base(args)
+        public SpinnerNumberModel(double value, double minimum, double maximum, double stepSize) : base(value, minimum, maximum, stepSize)
+        {
+        }
+
+        public SpinnerNumberModel(int value, int minimum, int maximum, int stepSize) : base(value, minimum, maximum, stepSize)
+        {
+        }
+
+        public SpinnerNumberModel(Number value, Comparable minimum, Comparable maximum, Number stepSize) : base(value, minimum, maximum, stepSize)
         {
         }
     }

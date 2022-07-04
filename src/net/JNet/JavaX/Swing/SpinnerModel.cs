@@ -16,20 +16,29 @@
 *  Refer to LICENSE for more information.
 */
 
-using Java.Awt;
+using JavaX.Swing.Event;
+using MASES.JCOBridge.C2JBridge;
 
 namespace JavaX.Swing
 {
-    public class JComponent : Container
+    public class SpinnerModel : JVMBridgeBase<SpinnerModel>
     {
-        public override string ClassName => "javax.swing.JComponent";
+        public override bool IsInterface => true;
 
-        public JComponent()
+        public override string ClassName => "javax.swing.SpinnerModel";
+
+        public void AddChangeListener(ChangeListener l) => IExecute("addChangeListener", l);
+
+        public object NextValue => IExecute("getNextValue");
+
+        public object PreviousValue => IExecute("getPreviousValue");
+
+        public object Value
         {
+            get { return IExecute("getValue"); }
+            set { IExecute("setValue", value); }
         }
 
-        public JComponent(params object[] args) : base(args)
-        {
-        }
+        public void RemoveChangeListener(ChangeListener l) => IExecute("removeChangeListener", l);
     }
 }

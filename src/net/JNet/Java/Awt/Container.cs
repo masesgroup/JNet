@@ -24,6 +24,14 @@ namespace Java.Awt
     {
         public override string ClassName => "java.awt.Container";
 
+        public Container()
+        {
+        }
+
+        public Container(params object[] args) : base(args)
+        {
+        }
+
         ~Container()
         {
             Dispose();

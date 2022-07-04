@@ -16,19 +16,21 @@
 *  Refer to LICENSE for more information.
 */
 
-using Java.Awt;
+using MASES.JCOBridge.C2JBridge;
 
 namespace JavaX.Swing
 {
-    public class JComponent : Container
+    public class AbstractSpinnerModel : JVMBridgeBase<AbstractSpinnerModel>
     {
-        public override string ClassName => "javax.swing.JComponent";
+        public override string ClassName => "javax.swing.AbstractSpinnerModel";
 
-        public JComponent()
+        public static implicit operator SpinnerModel(AbstractSpinnerModel model) { return model.Cast<SpinnerModel>(); }
+
+        public AbstractSpinnerModel()
         {
         }
 
-        public JComponent(params object[] args) : base(args)
+        public AbstractSpinnerModel(params object[] args) : base(args)
         {
         }
     }

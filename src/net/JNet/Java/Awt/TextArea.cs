@@ -16,20 +16,32 @@
 *  Refer to LICENSE for more information.
 */
 
-using Java.Awt;
-
-namespace JavaX.Swing
+namespace Java.Awt
 {
-    public class JComponent : Container
+    public class TextArea : TextComponent
     {
-        public override string ClassName => "javax.swing.JComponent";
+        public override string ClassName => "java.awt.TextArea";
 
-        public JComponent()
+        public TextArea()
         {
         }
 
-        public JComponent(params object[] args) : base(args)
+        public TextArea(int rows, int columns) : base(rows, columns)
         {
         }
+
+        public TextArea(string text) : base(text)
+        {
+        }
+
+        public TextArea(string text, int rows, int columns) : base(text, rows, columns)
+        {
+        }
+
+        public TextArea(string text, int rows, int columns, int scrollbars) : base(text, rows, columns, scrollbars)
+        {
+        }
+
+        // TODO: complete the class
     }
 }

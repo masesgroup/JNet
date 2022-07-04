@@ -16,19 +16,17 @@
 *  Refer to LICENSE for more information.
 */
 
-using Java.Awt;
-
 namespace JavaX.Swing
 {
-    public class JComponent : Container
+    public class AbstractButton : JComponent
     {
-        public override string ClassName => "javax.swing.JComponent";
+        public override string ClassName => "javax.swing.AbstractButton";
 
-        public JComponent()
+        public AbstractButton()
         {
         }
 
-        public JComponent(params object[] args) : base(args)
+        public AbstractButton(params object[] args) : base(args)
         {
         }
     }

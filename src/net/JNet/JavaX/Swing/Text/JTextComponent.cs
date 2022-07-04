@@ -16,19 +16,17 @@
 *  Refer to LICENSE for more information.
 */
 
-using Java.Awt;
-
-namespace JavaX.Swing
+namespace JavaX.Swing.Text
 {
-    public class JComponent : Container
+    public class JTextComponent : JComponent
     {
-        public override string ClassName => "javax.swing.JComponent";
+        public override string ClassName => "javax.swing.text.JTextComponent";
 
-        public JComponent()
+        public JTextComponent()
         {
         }
 
-        public JComponent(params object[] args) : base(args)
+        public JTextComponent(params object[] args) : base(args)
         {
         }
     }

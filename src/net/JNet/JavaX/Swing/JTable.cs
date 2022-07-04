@@ -16,20 +16,12 @@
 *  Refer to LICENSE for more information.
 */
 
-using Java.Awt;
-
 namespace JavaX.Swing
 {
-    public class JComponent : Container
+    public class JTable : JComponent
     {
-        public override string ClassName => "javax.swing.JComponent";
+        public override string ClassName => "javax.swing.JTable";
 
-        public JComponent()
-        {
-        }
-
-        public JComponent(params object[] args) : base(args)
-        {
-        }
+        // TODO: complete the class
     }
 }

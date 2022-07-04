@@ -16,20 +16,26 @@
 *  Refer to LICENSE for more information.
 */
 
-using Java.Awt;
+using MASES.JCOBridge.C2JBridge;
 
-namespace JavaX.Swing
+namespace Java.Awt
 {
-    public class JComponent : Container
+    public class GridLayout : JVMBridgeBase<GridLayout>
     {
-        public override string ClassName => "javax.swing.JComponent";
+        public override string ClassName => "java.awt.GridLayout";
 
-        public JComponent()
+        public GridLayout()
         {
         }
 
-        public JComponent(params object[] args) : base(args)
+        public GridLayout(int rows, int cols) : base(rows, cols)
         {
         }
+
+        public GridLayout(int rows, int cols, int hgap, int vgap) : base(rows, cols, hgap, vgap)
+        {
+        }
+
+        // TODO: complete the class
     }
 }

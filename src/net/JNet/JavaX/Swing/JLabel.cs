@@ -16,19 +16,33 @@
 *  Refer to LICENSE for more information.
 */
 
-using Java.Awt;
-
 namespace JavaX.Swing
 {
-    public class JComponent : Container
+    public class JLabel : JComponent
     {
-        public override string ClassName => "javax.swing.JComponent";
+        public override string ClassName => "javax.swing.JLabel";
 
-        public JComponent()
+        public JLabel()
         {
         }
 
-        public JComponent(params object[] args) : base(args)
+        //public JLabel(Icon image) : base(image)
+        //{
+        //}
+
+        //public JLabel(Icon image, int horizontalAlignment) : base(image, horizontalAlignment)
+        //{
+        //}
+
+        public JLabel(string text) : base(text)
+        {
+        }
+
+        //public JLabel(string text, Icon icon, int horizontalAlignment) : base(text, icon, horizontalAlignment)
+        //{
+        //}
+
+        public JLabel(string text, int horizontalAlignment) : base(text, horizontalAlignment)
         {
         }
     }

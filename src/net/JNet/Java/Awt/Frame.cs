@@ -16,20 +16,28 @@
 *  Refer to LICENSE for more information.
 */
 
-using Java.Awt;
-
-namespace JavaX.Swing
+namespace Java.Awt
 {
-    public class JComponent : Container
+    public class Frame : Window
     {
-        public override string ClassName => "javax.swing.JComponent";
+        public override string ClassName => "java.awt.Frame";
 
-        public JComponent()
+        public Frame()
         {
         }
 
-        public JComponent(params object[] args) : base(args)
+        public Frame(GraphicsConfiguration gc) : base(gc)
         {
         }
+
+        public Frame(string title) : base(title)
+        {
+        }
+
+        public Frame(string title, GraphicsConfiguration gc) : base(title, gc)
+        {
+        }
+
+        // TODO: complete the class
     }
 }
