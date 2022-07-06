@@ -1,4 +1,4 @@
-# JNet: the Java .NET implementation
+# JNet: .NET implementation of Java API
 
 [![CI_BUILD](https://github.com/masesgroup/JNet/actions/workflows/build.yaml/badge.svg)](https://github.com/masesgroup/JNet/actions/workflows/build.yaml) [![CI_RELEASE](https://github.com/masesgroup/JNet/actions/workflows/release.yaml/badge.svg)](https://github.com/masesgroup/JNet/actions/workflows/release.yaml) 
 
@@ -6,7 +6,7 @@
 |---	|---	|
 |[![JNet nuget](https://img.shields.io/nuget/v/MASES.JNet)](https://www.nuget.org/packages/MASES.JNet) [![downloads](https://img.shields.io/nuget/dt/MASES.JNet)](https://www.nuget.org/packages/MASES.JNet) | [![JNet.Templates nuget](https://img.shields.io/nuget/v/MASES.JNet.Templates)](https://www.nuget.org/packages/MASES.JNet.Templates) [![downloads](https://img.shields.io/nuget/dt/MASES.JNet.Templates)](https://www.nuget.org/packages/MASES.JNet.Templates)|
 
-JNet is a .NET mirror of Java APIs.
+JNet is a .NET implementation of Java APIs.
 
 This project adheres to the Contributor [Covenant code of conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to coc_reporting@masesgroup.com.
 
@@ -28,7 +28,7 @@ JNet uses [JCOBridge](https://www.jcobridge.com), and its [features](https://www
   * JCOBridge does not use any other communication mechanism than JNI;
   * .NET (CLR) inherently inherits the cyber-security levels of running JVM; 
 * **Direct access the JVM from any .NET application**: 
-  * Any Java/Scala class can be directly managed;
+  * Any Java/Scala/Kotlin/... class can be directly managed;
   * No need to learn new APIs: we try to expose the same APIs in C# style;
   * No extra validation cycle on protocol and functionality: bug fix, improvements, new features are immediately available;
   * Documentation is shared;
