@@ -1,6 +1,6 @@
 # JNet: APIs extendibility
 
-What to do if an API was not yet implemented? The simplest answer is: help us to make this product reacher :-)
+What to do if an API was not yet implemented? The simplest answer is: help us to make this product reacher :smile:
 There is another answer which is not available with other products: Dynamic code and programmatically API access.
 
 With **JCOBridge** a developer can use some properties to manage objects in the JVM. 
@@ -18,7 +18,7 @@ public void Put(K key, V value) => IExecute("put", key, value);
 ```
 
 This is a void method, using **IExecute** the user of the library can invoke the `Put` method on the class and execute the Java counterpart. 
-The developer can invoke the `put` method directly from the instance of the `Hashtable` class using two different paradigms: **direct** or **dynamic** access.
+The developer can, anyway, invoke the `put` method directly from the instance of the `Hashtable` class using two different paradigms: **direct** or **dynamic** access.
 The `put` method can be replaced with any method (with or without parameters) of the `Hashtable` class.
 
 ### Direct access
@@ -49,20 +49,21 @@ var isEmpty = data.isEmpty();
 ```
 
 The `Hashtable`, and any other ready made class of the library, supports the **dynamic** access to the methods available in Java side.
-The previous example demostrate the behavior.
+The previous example demostrates the behavior.
 
 ## When a class is not available
 
-In a more complex scenario the method can return back objects or can accept input of not available classes: no problem, there is a solution.
+In a more complex scenario the method can return back objects or can accept input of not ready made classes: no problem, there is a solution.
 
 ### Return class is not available
 
-To discuss this case we use another class: the [AWT Component](https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html), implemented in [Java.Awt.Component](https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Awt/Component.cs).
-The .NET class does not have implemented methods: we discuss about [createVolatileImage](https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#createVolatileImage-int-int-).
-The methods returns a [VolatileImage](https://docs.oracle.com/javase/8/docs/api/java/awt/image/VolatileImage.html) which is not yet implemented; a solution on this problem is to use directly the `createVolatileImage` Java method like the following code snippet does:
+To discuss this case we use another class: the [AWT Panel](https://docs.oracle.com/javase/8/docs/api/java/awt/Panel.html), implemented in [Java.Awt.Panel](https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Awt/Panel.cs).
+The .NET class does not have any implemented method: we discuss about [createVolatileImage](https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#createVolatileImage-int-int-) inherited from the base class `Component`.
+The method returns a [VolatileImage](https://docs.oracle.com/javase/8/docs/api/java/awt/image/VolatileImage.html) which is not yet implemented; a solution on this problem is to use directly the `createVolatileImage` Java method like the following code snippet does:
+
 ```C#
-Container container = new Container();
-var volImage = container.IExecute("createVolatileImage", 100, 100); // the returned object is a dynamic object which reference the VolatileImage object in Java
+Java.Awt.Panel panel = new();
+var volImage = panel.IExecute("createVolatileImage", 100, 100); // the returned object is a dynamic object which reference the VolatileImage object in Java
 var snapshot = volImage.getSnapshot(); // the returned object is a dynamic object reference of the BufferedImage object in Java
 var isContentLost = volImage.contentsLost(); // the returned object is a bool representing the Java counterpart
 
@@ -75,16 +76,16 @@ The example above uses the classes `VolatileImage` and `BufferedImage` which are
 If even the input class is not available the solution is like the following:
 
 ```C#
-Container container = new Container();
-var dynImageCapabilities = container.JVM.New("java.awt.ImageCapabilities", true); // the returned object is a dynamic object which is a reference of the ImageCapabilities object in Java
-var volImage = container.IExecute("createVolatileImage", 100, 100, dynImageCapabilities); // the returned object is a dynamic object which reference the VolatileImage object in Java
+Java.Awt.Panel panel = new();
+var dynImageCapabilities = panel.JVM.New("java.awt.ImageCapabilities", true); // the returned object is a dynamic object which is a reference of the ImageCapabilities object in Java
+var volImage = panel.IExecute("createVolatileImage", 100, 100, dynImageCapabilities); // the returned object is a dynamic object which reference the VolatileImage object in Java
 var snapshot = volImage.getSnapshot(); // the returned object is a dynamic object reference of the BufferedImage object in Java
 var isContentLost = volImage.contentsLost(); // the returned object is a bool representing the Java counterpart
 
 ```
 
-The example above consider that the class `ImageCapabilities` is not implemented yet. Since it exists in the JVM it can be allocated and used.
-Each object, like `Component` instance, exposes (hidden in the editor) two properties:
+In the above example the class `ImageCapabilities` is not implemented yet. Since it exists in the JVM it can be allocated and used.
+Each object, like `Panel` instance, exposes (hidden in the editor) two properties:
 * **JVM** which access the JVM using methods;
 * **DynJVM** which access the JVM using the Dynamic engine.
 
@@ -95,15 +96,15 @@ Using the listed properties it is possible to instruct the JVM about the action 
 If no classes are available the solution comes from the global accessor available in JCOBridge and the code snippet is like the following one:
 
 ```C#
-var container = JCOBridge.Global.JVM.New("java.awt.Container"); // the returned object is a dynamic object reference of the Container object in Java
-var dynImageCapabilities = JCOBridge.Global.JVM.New("java.awt.ImageCapabilities", true); // the returned object is a dynamic object which is a reference of the ImageCapabilities object in Java
-var volImage = container.createVolatileImage(100, 100, dynImageCapabilities); // the returned object is a dynamic object which reference the VolatileImage object in Java
+var panel = JNetCore.New("java.awt.Panel"); // the returned object is a dynamic object reference of the Panel object in Java
+var dynImageCapabilities = JNetCore.New("java.awt.ImageCapabilities", true); // the returned object is a dynamic object which is a reference of the ImageCapabilities object in Java
+var volImage = panel.createVolatileImage(100, 100, dynImageCapabilities); // the returned object is a dynamic object which reference the VolatileImage object in Java
 var snapshot = volImage.getSnapshot(); // the returned object is a dynamic object reference of the BufferedImage object in Java
 var isContentLost = volImage.contentsLost(); // the returned object is a bool representing the Java counterpart
 
 ```
 
-The example above consider that even the class `Container` is not implemented yet. Since it exists in the JVM it can be allocated and used.
+The example above consider that even the class `Panel` is not implemented yet. Since it exists in the JVM it can be allocated and used.
 In previous chapter the tutorial reports about two hidden properties in each object; the properties on each class are just an useful reference to the real one available in `JCOBridge.Global`:
 * **JVM** which access the JVM using methods;
 * **DynJVM** which access the JVM using the Dynamic engine.
@@ -116,12 +117,12 @@ Look at the simple example below:
 
 ```C#
 
-Container container = new Container();
-var result = container.DynInstance.getLayout(); // this line invokes dynamically the getLayout method on the instance of the Container
+Java.Awt.Panel panel = new();
+var result = panel.DynInstance.getLayout(); // this line invokes dynamically the getLayout method on the instance of the Panel
 
 ```
 
-As exposed before, each object, like `Container` instance, exposes (hidden in the editor) two properties.
+As exposed before, each object, like `Panel` instance, exposes (hidden in the editor) two properties.
 
 Explaining the code:
 * The first line creates a JVM object in C# style: `Container` lives in the CLR and has its counterpart in the JVM.

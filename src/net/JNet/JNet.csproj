@@ -3,8 +3,8 @@
 		<LangVersion>latest</LangVersion>
 		<AssemblyName>MASES.JNet</AssemblyName>
 		<RootNamespace>MASES.JNet</RootNamespace>
-		<Title>JNet - the Java .NET implementation</Title>
-		<Description>JNet - the Java .NET implementation</Description>
+		<Title>JNet - .NET gateway for Java APIs</Title>
+		<Description>JNet - .NET gateway for Java APIs</Description>
 		<Copyright>Copyright ©  MASES s.r.l. 2022</Copyright>
 		<Owners>MASES s.r.l.</Owners>
 		<Authors>MASES s.r.l.</Authors>
@@ -21,7 +21,7 @@
 		<PackageReleaseNotes>https://github.com/masesgroup/JNet/releases</PackageReleaseNotes>
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
 		<PackageIcon>JCOB128x128.png</PackageIcon>
-		<PackageTags>jnet dotnet clr dotnetcore netcore dotnet6 net6 java bridge</PackageTags>
+		<PackageTags>jnet dotnet clr dotnetcore netcore dotnet6 net6 java bridge gateway</PackageTags>
 		<PackageId>MASES.JNet</PackageId>
 		<IncludeSymbols>true</IncludeSymbols>
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
