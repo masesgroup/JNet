@@ -1,4 +1,4 @@
-# JNet: .NET gateway for Java APIs
+# JNet: .NET gateway for JVM APIs (Java, Scala, Kotlin, ...)
 
 [![CI_BUILD](https://github.com/masesgroup/JNet/actions/workflows/build.yaml/badge.svg)](https://github.com/masesgroup/JNet/actions/workflows/build.yaml) [![CI_RELEASE](https://github.com/masesgroup/JNet/actions/workflows/release.yaml/badge.svg)](https://github.com/masesgroup/JNet/actions/workflows/release.yaml) 
 
@@ -6,7 +6,7 @@
 |---	|---	|
 |[![JNet nuget](https://img.shields.io/nuget/v/MASES.JNet)](https://www.nuget.org/packages/MASES.JNet) [![downloads](https://img.shields.io/nuget/dt/MASES.JNet)](https://www.nuget.org/packages/MASES.JNet) | [![JNet.Templates nuget](https://img.shields.io/nuget/v/MASES.JNet.Templates)](https://www.nuget.org/packages/MASES.JNet.Templates) [![downloads](https://img.shields.io/nuget/dt/MASES.JNet.Templates)](https://www.nuget.org/packages/MASES.JNet.Templates)|
 
-JNet is a .NET gateway for Java APIs.
+JNet is a .NET gateway for JVM APIs (Java, Scala, Kotlin, ...).
 
 This project adheres to the Contributor [Covenant code of conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to coc_reporting@masesgroup.com.
 
@@ -36,7 +36,8 @@ JNet uses [JCOBridge](https://www.jcobridge.com), and its [features](https://www
 
 Have a look at the following resources:
 - [Release notes](https://www.jcobridge.com/release-notes/)
-- [Commercial info](https://www.jcobridge.com/pricing/)
+- [Non Profit or University](https://www.jcobridge.com/pricing/)
+- [Commercial info: Professional or Enterprise](https://www.jcobridge.com/pricing/)
 - [![JCOBridge nuget](https://img.shields.io/nuget/v/MASES.JCOBridge)](https://www.nuget.org/packages/MASES.JCOBridge)
 
 ---

@@ -3,8 +3,8 @@
 		<LangVersion>latest</LangVersion>
 		<AssemblyName>MASES.JNet</AssemblyName>
 		<RootNamespace>MASES.JNet</RootNamespace>
-		<Title>JNet - .NET gateway for Java APIs</Title>
-		<Description>JNet - .NET gateway for Java APIs</Description>
+		<Title>JNet - .NET gateway for JVM APIs (Java, Scala, Kotlin, ...)</Title>
+		<Description>JNet - .NET gateway for JVM APIs (Java, Scala, Kotlin, ...)</Description>
 		<Copyright>Copyright ©  MASES s.r.l. 2022</Copyright>
 		<Owners>MASES s.r.l.</Owners>
 		<Authors>MASES s.r.l.</Authors>
