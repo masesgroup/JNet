@@ -8,7 +8,7 @@
     <title>JNet: JVM callbacks | JNet website </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="JNet: JVM callbacks | JNet website ">
-    <meta name="generator" content="docfx 2.59.2.0">
+    <meta name="generator" content="docfx 2.59.3.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -76,16 +76,18 @@ The Java code of a callback can be written with lambda expressions, but JNet can
 <h2 id="jnet-callback-internals">JNet Callback internals</h2>
 <p>JNet is based on <a href="https://www.jcobridge.com/">JCOBridge</a>. JCOBridge as per its name is a bridge between the CLR (CoreCLR) and the JVM.
 Events, generally are expressed as interfaces in Java, and a lambda expression is translated into an object at compile time. Otherwise the developer can implement a Java class which <strong>implements</strong> the interface: with JCOBridge the developer needs to follow a seamless approach.
-In JNet some callbacks are ready made. In this tutorial the <strong>Callback</strong> interface (org.apache.kafka.clients.producer.Callback) will be taken as an example.
+In JNet some callbacks are ready made. In this tutorial the <strong>Predicate</strong> interface (<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html">java.util.function.Predicate</a>) will be taken as an example.
 The concrete class implementing the interface is the following one:</p>
-<pre><code class="lang-java">public final class CallbackImpl extends JCListener implements Callback {
-    public CallbackImpl(String key) throws JCNativeException {
+<pre><code class="lang-java">public final class JNetPredicate extends JCListener implements Predicate {
+    public JNetPredicate(String key) throws JCNativeException {
         super(key);
     }
 
     @Override
-    public void onCompletion(org.apache.kafka.clients.producer.RecordMetadata metadata, Exception exception) {
-        raiseEvent(&quot;onCompletion&quot;, metadata, exception);
+    public boolean test(Object e) {
+        raiseEvent(&quot;test&quot;, e);
+        Object retVal = getReturnData();
+        return (boolean) retVal;
     }
 }
 </code></pre>
@@ -93,7 +95,7 @@ The concrete class implementing the interface is the following one:</p>
 <ul>
 <li>It <strong>must</strong> <code>extends</code> the base class <code>JCListener</code> (or <code>implements</code> the interface <code>IJCListener</code>): this is a constraint of JCOBridge; <code>JCListener</code> has many ready made methods; if the callback is not based on an interface the developer can <code>implements</code> the <code>IJCListener</code>;</li>
 <li>The concrete class <strong>must</strong> have at least a constructor accepting a String;</li>
-<li>Within the implementation of the interface method (in this case the method <code>onCompletion</code> of the <code>Callback</code> interface) the method <code>raiseEvent</code> informs the CLR that a method was raised using the specific key (<strong>onCompletion</strong> in this case) along with all associated objects:
+<li>Within the implementation of the interface method (in this case the method <code>test</code> of the <code>Predicate</code> interface) the method <code>raiseEvent</code> informs the CLR that a method was raised using the specific key (<strong>test</strong> in this case) along with all associated objects:
 <ul>
 <li>If the interface has many methods each one must have its own <code>raiseEvent</code> call;</li>
 <li>The key used from raiseEvent is not mandatory to be equal to the name of the calling method, it is only a convention for the mapping: this will be more clear looking at the C# code.</li>
@@ -102,99 +104,89 @@ The concrete class implementing the interface is the following one:</p>
 </ul>
 <p>Now there is a concrete class within the JVM space.
 Going on to the CLR side a possible concrete class in C# is as the following one:</p>
-<pre><code class="lang-c#">public class Callback : CLRListener
+<pre><code class="lang-c#">public class Predicate&lt;TObject&gt; : JVMBridgeListener
 {
-	public sealed override string JniClass =&gt; &quot;org.mases.JNet.clients.producer.CallbackImpl&quot;;
+	public override string ClassName =&gt; &quot;org.mases.jnet.util.function.JNetPredicate&quot;;
 
-	readonly Action&lt;RecordMetadata, JVMBridgeException&gt; executionFunction = null;
-	public virtual Action&lt;RecordMetadata, JVMBridgeException&gt; Execute { get { return executionFunction; } }
-	public Callback(Action&lt;RecordMetadata, JVMBridgeException&gt; func = null)
+	Func&lt;TObject, bool&gt; executionFunction = null;
+	public virtual Func&lt;TObject, bool&gt; OnTest { get { return executionFunction; } }
+	
+	public Predicate(Func&lt;TObject, bool&gt; func = null, bool attachEventHandler = true)
 	{
 		if (func != null) executionFunction = func;
-		else executionFunction = OnCompletion;
+		else executionFunction = Test;
 
-		AddEventHandler(&quot;onCompletion&quot;, new EventHandler&lt;CLRListenerEventArgs&lt;JVMBridgeEventData&lt;RecordMetadata&gt;&gt;&gt;(EventHandler));
+		if (attachEventHandler)
+		{
+			AddEventHandler(&quot;test&quot;, new EventHandler&lt;CLRListenerEventArgs&lt;CLREventData&lt;TObject&gt;&gt;&gt;(EventHandler));
+		}
 	}
 
-	void EventHandler(object sender, CLRListenerEventArgs&lt;JVMBridgeEventData&lt;RecordMetadata&gt;&gt; data)
+	void EventHandler(object sender, CLRListenerEventArgs&lt;CLREventData&lt;TObject&gt;&gt; data)
 	{
-		var exception = data.EventData.ExtraData.Get(0) as IJavaObject;
-		Execute(data.EventData.TypedEventData, JVMBridgeException.New(exception));
+		var retVal = OnTest(data.EventData.TypedEventData);
+		data.SetReturnValue(retVal);
 	}
-	public virtual void OnCompletion(RecordMetadata metadata, JVMBridgeException exception) { }
+
+	public virtual bool Test(TObject obj) { return false; }
 }
 </code></pre>
 <p>The structure follows the guidelines of JCOBridge:</p>
 <ul>
-<li>It <strong>must</strong> <code>extends</code> the base class <code>CLRListener</code> : this is a constraint of JCOBridge; <code>CLRListener</code> contains all the functionality to handle events from the JVM;</li>
-<li>The <code>JniClass</code> property informs the base class about the concrete class in JVM associated to this event handler;</li>
+<li>It <strong>must</strong> <code>extends</code> the base class <code>JVMBridgeListener</code> : this is a constraint of JCOBridge; <code>JVMBridgeListener</code> contains all the functionality to handle events from the JVM;</li>
+<li>The <code>ClassName</code> property informs the base class about the concrete class in JVM associated to this event handler;</li>
 <li>Within the constructor the method <code>AddEventHandler</code> registers a .NET <code>EventHandler</code> associated to the method in JVM; look at the key string: <strong>it is the same used from the JVM</strong>;
 <ul>
-<li>The costructor of the code above accept in input an <code>Action</code> which permits to write lambda expression in C#;</li>
+<li>The costructor of the code above accept in input an <code>Func</code> which permits to write lambda expression in C#;</li>
 <li>The code above associate a private handler with specific data type:
 <ul>
-<li><code>CLRListenerEventArgs</code> is mandatory and it is used from <code>CLRListener</code>;</li>
-<li><code>JVMBridgeEventData</code> informs the subsystem that the first parameter inherits from a <code>JVMBridgeBase</code> class and must be treated accordingly;</li>
-<li><code>RecordMetadata</code> represents the CLR version of the corresponding <code>RecordMetadata</code> within the JVM;</li>
+<li><code>CLRListenerEventArgs</code> is mandatory and it is used from <code>JVMBridgeListener</code>;</li>
+<li><code>TObject</code> represents the CLR version of the corresponding <code>TObject</code> within the JVM;</li>
 </ul>
 </li>
 </ul>
 </li>
-<li>On callback invocation (<code>onCompletion</code> in this case) the CLR will invoke <code>EventHandler</code>:
+<li>On callback invocation (<code>test</code> in this case) the CLR will invoke <code>EventHandler</code>:
 <ul>
 <li>The first parameter is directly reported using the <code>TypedEventData</code> property;</li>
-<li>The second parameter shall be managed differently in this case because it is an <code>Exception</code>:
-<ul>
-<li>JCOBridge has its own mechanism to translate the exception from the JVM;</li>
-<li>Parameters raised from JVM, beyond the first, are available within <code>ExtraData</code> property;</li>
-<li>The code extracts the first object (the second of the event) and converts it into a generic <code>IJavaObject</code>;</li>
-<li>Invoking <code>JVMBridgeException.New(exception)</code> the subsystem reads the data from the real JVM exception and try to instantiate a valid exception, otherwise returns a generic <code>JVMBridgeException</code>;
-<ul>
-<li><code>JVMBridgeException.New(exception)</code> can return null if the extracted data is not an <code>IJavaObject</code> or it is null within the JVM;</li>
-</ul>
-</li>
-</ul>
-</li>
+<li>On completion the result is reported back to the JVM using the <code>SetReturnValue</code> function;</li>
 </ul>
 </li>
 <li>Other pieces of the class are useful in other condition:
 <ul>
-<li>Creating a new class extending <code>Callback</code> class, the method <code>OnCompletion</code> can be overridden;</li>
-<li>Otherwise to the property <code>Execute</code> can be associated to an handler;</li>
+<li>Creating a new class extending <code>Callback</code> class, the method <code>OnTest</code> can be overridden;</li>
+<li>Otherwise to the property <code>OnTest</code> can be associated to an handler;</li>
 </ul>
 </li>
 </ul>
 <h2 id="jnet-callback-lifecycle">JNet Callback lifecycle</h2>
 <p>The lifecycle of the callback managed from JCOBridge is slightly different from the standard one.
-A <code>CLRListener</code> to be able to live without to be recovered from the Garbage Collector shall be registered. <code>CLRListener</code> do this automatically within the initialization (this behavior can be avoided with the property <code>AutoInit</code>).
-So at the end of its use it must be disposed to avoid a resource leak. In the <a href="usage.html">Producer with Callback</a> example there is a <strong>using</strong> clause and the class is instantiated only one time.
+To avoid the Garbage Collector collects an instance of <code>JVMBridgeListener</code> it shall be registered. <code>JVMBridgeListener</code> do this automatically within the initialization (this behavior can be avoided using the property <code>AutoInit</code>).
+So at the end of its use it must be disposed to avoid a resource leak. In the example below there is a <strong>using</strong> clause and the class is instantiated only one time.
 A correct approach is like the following:</p>
-<pre><code class="lang-c#">using (var callback = new Callback((o1, o2) =&gt;
+<pre><code class="lang-c#">using (var handler = new Predicate&lt;int&gt;((o1) =&gt;
 {
-	if (o2 != null) Console.WriteLine(o2.ToString());
-	else Console.WriteLine($&quot;Produced on topic {o1.Topic} at offset {o1.Offset}&quot;);
+	if (o1 &gt; 10) return true;
+	return false;
 }))
 {
 	while (!resetEvent.WaitOne(0))
 	{
-		var record = new ProducerRecord&lt;string, string&gt;(topicToUse, i.ToString(), i.ToString());
-		var result = producer.Send(record, callback);
-		Console.WriteLine($&quot;Producing: {record} with result: {result.Get()}&quot;);
-		producer.Flush();
+		if (o.CanSend(i, handler)) o.Send(i);
 		i++;
 	}
 }
 </code></pre>
-<p>while an approach like the following one:</p>
-<pre><code class="lang-c#">var result = producer.Send(record, new Callback((o1, o2) =&gt;
+<p>while with an approach like the following one:</p>
+<pre><code class="lang-c#">var result = o.CanSend(i, new Predicate&lt;int&gt;((o1) =&gt;
 {
-	if (o2 != null) Console.WriteLine(o2.ToString());
-	else Console.WriteLine($&quot;Produced on topic {o1.Topic} at offset {o1.Offset}&quot;);
+	if (o1 &gt; 10) return true;
+	return false;
 }));
 </code></pre>
 <p>there are two main drawbacks:</p>
 <ul>
-<li>it creates a resource leak because the object cannot be programmatically disposed;</li>
+<li>it creates a resource leak because the object instance related to <code>Predicate&lt;int&gt;</code> cannot be programmatically disposed;</li>
 <li>on each cycle, the engine shall allocate the infrastructure to handle events from the JVM.</li>
 </ul>
 </article>

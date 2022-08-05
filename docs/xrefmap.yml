@@ -15331,6 +15331,23 @@ references:
   fullName.vb: Java.Util.Hashtable(Of K, V).ClassName
   nameWithType: Hashtable<K, V>.ClassName
   nameWithType.vb: Hashtable(Of K, V).ClassName
+- uid: Java.Util.Hashtable`2.Get(System.Object)
+  name: Get(Object)
+  href: api/Java.Util.Hashtable-2.html#Java_Util_Hashtable_2_Get_System_Object_
+  commentId: M:Java.Util.Hashtable`2.Get(System.Object)
+  fullName: Java.Util.Hashtable<K, V>.Get(System.Object)
+  fullName.vb: Java.Util.Hashtable(Of K, V).Get(System.Object)
+  nameWithType: Hashtable<K, V>.Get(Object)
+  nameWithType.vb: Hashtable(Of K, V).Get(Object)
+- uid: Java.Util.Hashtable`2.Get*
+  name: Get
+  href: api/Java.Util.Hashtable-2.html#Java_Util_Hashtable_2_Get_
+  commentId: Overload:Java.Util.Hashtable`2.Get
+  isSpec: "True"
+  fullName: Java.Util.Hashtable<K, V>.Get
+  fullName.vb: Java.Util.Hashtable(Of K, V).Get
+  nameWithType: Hashtable<K, V>.Get
+  nameWithType.vb: Hashtable(Of K, V).Get
 - uid: Java.Util.Hashtable`2.op_Implicit(Java.Util.Hashtable{`0,`1})~Java.Util.Map{`0,`1}
   name: Implicit(Hashtable<K, V> to Map<K, V>)
   href: api/Java.Util.Hashtable-2.html#Java_Util_Hashtable_2_op_Implicit_Java_Util_Hashtable__0__1___Java_Util_Map__0__1_
@@ -15350,6 +15367,23 @@ references:
   fullName.vb: Java.Util.Hashtable(Of K, V).Widening
   nameWithType: Hashtable<K, V>.Implicit
   nameWithType.vb: Hashtable(Of K, V).Widening
+- uid: Java.Util.Hashtable`2.Put(`0,`1)
+  name: Put(K, V)
+  href: api/Java.Util.Hashtable-2.html#Java_Util_Hashtable_2_Put__0__1_
+  commentId: M:Java.Util.Hashtable`2.Put(`0,`1)
+  fullName: Java.Util.Hashtable<K, V>.Put(K, V)
+  fullName.vb: Java.Util.Hashtable(Of K, V).Put(K, V)
+  nameWithType: Hashtable<K, V>.Put(K, V)
+  nameWithType.vb: Hashtable(Of K, V).Put(K, V)
+- uid: Java.Util.Hashtable`2.Put*
+  name: Put
+  href: api/Java.Util.Hashtable-2.html#Java_Util_Hashtable_2_Put_
+  commentId: Overload:Java.Util.Hashtable`2.Put
+  isSpec: "True"
+  fullName: Java.Util.Hashtable<K, V>.Put
+  fullName.vb: Java.Util.Hashtable(Of K, V).Put
+  nameWithType: Hashtable<K, V>.Put
+  nameWithType.vb: Hashtable(Of K, V).Put
 - uid: Java.Util.IComparator`1
   name: IComparator<T>
   href: api/Java.Util.IComparator-1.html
@@ -16892,19 +16926,6 @@ references:
   isSpec: "True"
   fullName: Java.Util.Properties.ClassName
   nameWithType: Properties.ClassName
-- uid: Java.Util.Properties.Put(System.Object,System.Object)
-  name: Put(Object, Object)
-  href: api/Java.Util.Properties.html#Java_Util_Properties_Put_System_Object_System_Object_
-  commentId: M:Java.Util.Properties.Put(System.Object,System.Object)
-  fullName: Java.Util.Properties.Put(System.Object, System.Object)
-  nameWithType: Properties.Put(Object, Object)
-- uid: Java.Util.Properties.Put*
-  name: Put
-  href: api/Java.Util.Properties.html#Java_Util_Properties_Put_
-  commentId: Overload:Java.Util.Properties.Put
-  isSpec: "True"
-  fullName: Java.Util.Properties.Put
-  nameWithType: Properties.Put
 - uid: Java.Util.Queue`1
   name: Queue<E>
   href: api/Java.Util.Queue-1.html
@@ -20097,22 +20118,6 @@ references:
   commentId: T:MASES.JNet.JNetCore
   fullName: MASES.JNet.JNetCore
   nameWithType: JNetCore
-- uid: MASES.JNet.JNetCore.Class*
-  name: Class
-  href: api/MASES.JNet.JNetCore.html#MASES_JNet_JNetCore_Class_
-  commentId: Overload:MASES.JNet.JNetCore.Class
-  isSpec: "True"
-  fullName: MASES.JNet.JNetCore.Class
-  nameWithType: JNetCore.Class
-- uid: MASES.JNet.JNetCore.Class``1
-  name: Class<TClass>()
-  href: api/MASES.JNet.JNetCore.html#MASES_JNet_JNetCore_Class__1
-  commentId: M:MASES.JNet.JNetCore.Class``1
-  name.vb: Class(Of TClass)()
-  fullName: MASES.JNet.JNetCore.Class<TClass>()
-  fullName.vb: MASES.JNet.JNetCore.Class(Of TClass)()
-  nameWithType: JNetCore.Class<TClass>()
-  nameWithType.vb: JNetCore.Class(Of TClass)()
 - uid: MASES.JNet.JNetCore`1
   name: JNetCore<T>
   href: api/MASES.JNet.JNetCore-1.html
@@ -20173,6 +20178,24 @@ references:
   fullName.vb: MASES.JNet.JNetCore(Of T).ApplicationInitialHeapSize
   nameWithType: JNetCore<T>.ApplicationInitialHeapSize
   nameWithType.vb: JNetCore(Of T).ApplicationInitialHeapSize
+- uid: MASES.JNet.JNetCore`1.Class*
+  name: Class
+  href: api/MASES.JNet.JNetCore-1.html#MASES_JNet_JNetCore_1_Class_
+  commentId: Overload:MASES.JNet.JNetCore`1.Class
+  isSpec: "True"
+  fullName: MASES.JNet.JNetCore<T>.Class
+  fullName.vb: MASES.JNet.JNetCore(Of T).Class
+  nameWithType: JNetCore<T>.Class
+  nameWithType.vb: JNetCore(Of T).Class
+- uid: MASES.JNet.JNetCore`1.Class``1
+  name: Class<TClass>()
+  href: api/MASES.JNet.JNetCore-1.html#MASES_JNet_JNetCore_1_Class__1
+  commentId: M:MASES.JNet.JNetCore`1.Class``1
+  name.vb: Class(Of TClass)()
+  fullName: MASES.JNet.JNetCore<T>.Class<TClass>()
+  fullName.vb: MASES.JNet.JNetCore(Of T).Class(Of TClass)()
+  nameWithType: JNetCore<T>.Class<TClass>()
+  nameWithType.vb: JNetCore(Of T).Class(Of TClass)()
 - uid: MASES.JNet.JNetCore`1.ClassPath
   name: ClassPath
   href: api/MASES.JNet.JNetCore-1.html#MASES_JNet_JNetCore_1_ClassPath
@@ -20258,6 +20281,32 @@ references:
   fullName.vb: MASES.JNet.JNetCore(Of T).JVMOptions
   nameWithType: JNetCore<T>.JVMOptions
   nameWithType.vb: JNetCore(Of T).JVMOptions
+- uid: MASES.JNet.JNetCore`1.New(System.String)
+  name: New(String)
+  href: api/MASES.JNet.JNetCore-1.html#MASES_JNet_JNetCore_1_New_System_String_
+  commentId: M:MASES.JNet.JNetCore`1.New(System.String)
+  fullName: MASES.JNet.JNetCore<T>.New(System.String)
+  fullName.vb: MASES.JNet.JNetCore(Of T).New(System.String)
+  nameWithType: JNetCore<T>.New(String)
+  nameWithType.vb: JNetCore(Of T).New(String)
+- uid: MASES.JNet.JNetCore`1.New(System.String,System.Object[])
+  name: New(String, Object[])
+  href: api/MASES.JNet.JNetCore-1.html#MASES_JNet_JNetCore_1_New_System_String_System_Object___
+  commentId: M:MASES.JNet.JNetCore`1.New(System.String,System.Object[])
+  name.vb: New(String, Object())
+  fullName: MASES.JNet.JNetCore<T>.New(System.String, System.Object[])
+  fullName.vb: MASES.JNet.JNetCore(Of T).New(System.String, System.Object())
+  nameWithType: JNetCore<T>.New(String, Object[])
+  nameWithType.vb: JNetCore(Of T).New(String, Object())
+- uid: MASES.JNet.JNetCore`1.New*
+  name: New
+  href: api/MASES.JNet.JNetCore-1.html#MASES_JNet_JNetCore_1_New_
+  commentId: Overload:MASES.JNet.JNetCore`1.New
+  isSpec: "True"
+  fullName: MASES.JNet.JNetCore<T>.New
+  fullName.vb: MASES.JNet.JNetCore(Of T).New
+  nameWithType: JNetCore<T>.New
+  nameWithType.vb: JNetCore(Of T).New
 - uid: MASES.JNet.JNetCore`1.Options
   name: Options
   href: api/MASES.JNet.JNetCore-1.html#MASES_JNet_JNetCore_1_Options
