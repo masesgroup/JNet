@@ -9,7 +9,7 @@
     <name>mases.jnet</name>
     <description>Java interface bridging implementation</description>
     <url>https://github.com/masesgroup/JNet</url>
-    <version>1.4.5.0</version>
+    <version>1.4.6.0</version>
 
     <licenses>
         <license>
@@ -40,7 +40,7 @@
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
         <classpathfile>${basedir}/classpathfile.classpath</classpathfile>
-		<jcobridgeversion>2.4.12</jcobridgeversion>
+		<jcobridgeversion>2.4.13</jcobridgeversion>
     </properties>
     <distributionManagement>
         <snapshotRepository>
