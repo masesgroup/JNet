@@ -14,7 +14,7 @@
     <Product>JNetCLI</Product>
     <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
     <TargetFrameworks>net462;netcoreapp3.1;net6.0</TargetFrameworks>
-    <OutputPath>..\..\..\bin\</OutputPath>
+    <OutputPath>..\..\..\binCLI\</OutputPath>
     <!--<GeneratePackageOnBuild>true</GeneratePackageOnBuild>-->
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageProjectUrl>https://github.com/masesgroup/KafkaBridge/</PackageProjectUrl>
