@@ -44,7 +44,10 @@ namespace MASES.JNet
         public override string GlobalHeapSize { get { return string.IsNullOrEmpty(base.GlobalHeapSize) ? ApplicationHeapSize : base.GlobalHeapSize; } }
         /// <inheritdoc cref="SetupJVMWrapper{T}.InitialHeapSize" />
         public override string InitialHeapSize { get { return string.IsNullOrEmpty(base.InitialHeapSize) ? ApplicationInitialHeapSize : base.InitialHeapSize; } }
-
+        /// <inheritdoc cref="SetupJVMWrapper{T}.ScopedOn" />
+        public override string ScopedOn => typeof(JNetCore<>).Assembly.GetName().Name;
+        /// <inheritdoc cref="SetupJVMWrapper{T}.ScopedOn" />
+        public override Version ScopedOnVersion => typeof(JNetCore<>).Assembly.GetName().Version;
         /// <summary>
         /// Command line <see cref="Parser"/> instance
         /// </summary>

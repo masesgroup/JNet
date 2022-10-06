@@ -16,21 +16,10 @@
 *  Refer to LICENSE for more information.
 */
 
-using Java.Lang;
-using MASES.JCOBridge.C2JBridge;
-
-namespace Java.Nio
+namespace MASES.JNetCLI
 {
-    public class ByteBuffer : Buffer
+    class InternalConst
     {
-        public override string ClassName => "java.nio.ByteBuffer";
 
-        public static implicit operator Comparable<ByteBuffer>(ByteBuffer buffer) => buffer.Cast<Comparable<ByteBuffer>>();
-
-        public static ByteBuffer Allocate(int capacity) => SExecute<ByteBuffer>("allocate", capacity);
-
-        public static ByteBuffer AllocateDirect(int capacity) => SExecute<ByteBuffer>("allocateDirect", capacity);
-
-        public byte[] Array => IExecute<byte[]>("array");
     }
 }
