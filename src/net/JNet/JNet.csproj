@@ -1,15 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
+	<Import Project="..\Common\Common.props" />
 	<PropertyGroup>
 		<LangVersion>latest</LangVersion>
 		<AssemblyName>MASES.JNet</AssemblyName>
 		<RootNamespace>MASES.JNet</RootNamespace>
 		<Title>JNet - .NET gateway for JVM APIs (Java, Scala, Kotlin, ...)</Title>
 		<Description>JNet - .NET gateway for JVM APIs (Java, Scala, Kotlin, ...)</Description>
-		<Copyright>Copyright ©  MASES s.r.l. 2022</Copyright>
-		<Owners>MASES s.r.l.</Owners>
-		<Authors>MASES s.r.l.</Authors>
-		<Company>MASES s.r.l.</Company>
-		<Version>1.5.0.0</Version>
 		<Product>JNet</Product>
 		<GenerateAssemblyInfo>true</GenerateAssemblyInfo>
 		<TargetFrameworks>net462;net6.0;net7.0</TargetFrameworks>
@@ -41,9 +37,6 @@
   <PropertyGroup Condition="'$(GITHUB_ACTIONS)' == 'true'">
     <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
   </PropertyGroup>
-  <ItemGroup Condition="'$(TargetFramework)' == 'net462'">
-    <Reference Include="Microsoft.CSharp" />
-  </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\LICENSE" Pack="true" PackagePath="" />
     <None Include="..\Common\JCOB128x128.png" Pack="true" PackagePath="" />

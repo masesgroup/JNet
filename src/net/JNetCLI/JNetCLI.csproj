@@ -1,4 +1,5 @@
 <Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\Common\Common.props" />
   <PropertyGroup>
 	<PackageType>DotnetTool</PackageType>
     <OutputType>Exe</OutputType>
@@ -6,14 +7,9 @@
     <RootNamespace>MASES.JNetCLI</RootNamespace>
     <Title>JNetCLI - JNet command line interface</Title>
     <Description>JNetCLI - JNet command line interface</Description>
-    <Copyright>Copyright ©  MASES s.r.l. 2022</Copyright>
-    <Owners>MASES s.r.l.</Owners>
-    <Authors>MASES s.r.l.</Authors>
-    <Company>MASES s.r.l.</Company>
-    <Version>1.5.0.0</Version>
     <Product>JNetCLI</Product>
     <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
-    <TargetFrameworks>net462;netcoreapp3.1;net6.0</TargetFrameworks>
+    <TargetFrameworks>net462;net6.0;net7.0</TargetFrameworks>
     <OutputPath>..\..\..\binCLI\</OutputPath>
     <!--<GeneratePackageOnBuild>true</GeneratePackageOnBuild>-->
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
@@ -34,6 +30,7 @@
   <!-- Fix start https://github.com/dotnet/sourcelink/issues/572 -->
   <PropertyGroup>
     <TargetFrameworkMonikerAssemblyAttributesPath>$([System.IO.Path]::Combine('$(IntermediateOutputPath)','$(TargetFrameworkMoniker).AssemblyAttributes$(DefaultLanguageSourceExtension)'))</TargetFrameworkMonikerAssemblyAttributesPath>
+    <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
   </PropertyGroup>
   <ItemGroup>
     <EmbeddedFiles Include="$(GeneratedAssemblyInfoFile)" />

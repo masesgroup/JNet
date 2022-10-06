@@ -1,4 +1,5 @@
 <Project Sdk="Microsoft.NET.Sdk">
+	<Import Project="..\Common\Common.props" />
 	<PropertyGroup>
 		<UseWPF>true</UseWPF>
 		<AssemblyName>JNetWPFTest</AssemblyName>
@@ -6,17 +7,9 @@
 		<RootNamespace>MASES.JNetWPFTest</RootNamespace>
 		<Title>JNetWPFTest - a test tool for JNet</Title>
 		<Description>JNetWPFTest - a test tool for JNet</Description>
-		<Copyright>Copyright ©  MASES s.r.l. 2022</Copyright>
-		<Authors>MASES s.r.l.</Authors>
-		<Company>MASES s.r.l.</Company>
-		<Version>1.5.0.0</Version>
 		<TargetFrameworks>net462;net6.0-windows;net7.0-windows</TargetFrameworks>
 		<OutputPath>..\..\bin\</OutputPath>
-		<LangVersion>latest</LangVersion>
 	</PropertyGroup>
-	<ItemGroup Condition="'$(TargetFramework)' == 'net462'">
-		<Reference Include="Microsoft.CSharp" />
-	</ItemGroup>
 	<ItemGroup>
 		<None Include="..\Common\app.manifest">
 			<Link>app.manifest</Link>
