@@ -23,5 +23,13 @@ namespace JavaX.Swing
     public class JComponent : Container
     {
         public override string ClassName => "javax.swing.JComponent";
+
+        public JComponent()
+        {
+        }
+
+        public JComponent(params object[] args) : base(args)
+        {
+        }
     }
 }

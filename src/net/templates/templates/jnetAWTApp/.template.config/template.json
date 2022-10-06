@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "MASES s.r.l.",
+  "classifications": [ "Common", "Console" ],
+  "identity": "MASES.JNetTemplate.JNetAWTApp",
+  "name": "Console Templates: JNet AWT project",
+  "shortName": "jnetAWTApp",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  }
+}

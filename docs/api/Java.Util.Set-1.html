@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class Set&lt;E&gt;
    | JNet website ">
-    <meta name="generator" content="docfx 2.59.2.0">
+    <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -85,7 +85,7 @@
     <div class="level5"><a class="xref" href="Java.Util.Collection-1.html">Collection</a>&lt;E&gt;</div>
     <div class="level6"><span class="xref">Set&lt;E&gt;</span></div>
   </div>
-  <div classs="implements">
+  <div class="implements">
     <h5>Implements</h5>
     <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
     <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeCore</span></div>
@@ -99,6 +99,42 @@
     <h5>Inherited Members</h5>
     <div>
       <a class="xref" href="Java.Util.Collection-1.html#Java_Util_Collection_1_Add__0_">Collection&lt;E&gt;.Add(E)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Util.Collection-1.html#Java_Util_Collection_1_AddAll__1_Java_Util_Collection___0__">Collection&lt;E&gt;.AddAll&lt;ExtendsE&gt;(Collection&lt;ExtendsE&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Util.Collection-1.html#Java_Util_Collection_1_Clear">Collection&lt;E&gt;.Clear()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Util.Collection-1.html#Java_Util_Collection_1_Contains_System_Object_">Collection&lt;E&gt;.Contains(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Util.Collection-1.html#Java_Util_Collection_1_ContainsAll__1_Java_Util_Collection___0__">Collection&lt;E&gt;.ContainsAll&lt;T&gt;(Collection&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Util.Collection-1.html#Java_Util_Collection_1_IsEmpty">Collection&lt;E&gt;.IsEmpty</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Util.Collection-1.html#Java_Util_Collection_1_Iterator">Collection&lt;E&gt;.Iterator()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Util.Collection-1.html#Java_Util_Collection_1_Remove_System_Object_">Collection&lt;E&gt;.Remove(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Util.Collection-1.html#Java_Util_Collection_1_RemoveAll__1_Java_Util_Collection___0__">Collection&lt;E&gt;.RemoveAll&lt;T&gt;(Collection&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Util.Collection-1.html#Java_Util_Collection_1_RemoveIf__1_Java_Util_Function_Predicate___0__">Collection&lt;E&gt;.RemoveIf&lt;SuperE&gt;(Predicate&lt;SuperE&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Util.Collection-1.html#Java_Util_Collection_1_RetainAll__1_Java_Util_Collection___0__">Collection&lt;E&gt;.RetainAll&lt;T&gt;(Collection&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Util.Collection-1.html#Java_Util_Collection_1_Size">Collection&lt;E&gt;.Size</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Util.Collection-1.html#Java_Util_Collection_1_Spliterator">Collection&lt;E&gt;.Spliterator()</a>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBaseEnumerable&lt;Java.Util.Collection&lt;E&gt;&gt;.GetEnumerator()</span>
@@ -330,6 +366,843 @@
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><span class="xref">Java.Util.Collection&lt;E&gt;.ClassName</span></div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Set_1_CopyOf__1_Java_Util_Collection___0__.md&amp;value=---%0Auid%3A%20Java.Util.Set%601.CopyOf%60%601(Java.Util.Collection%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Util/Set.cs/#L25">View Source</a>
+  </span>
+  <a id="Java_Util_Set_1_CopyOf_" data-uid="Java.Util.Set`1.CopyOf*"></a>
+  <h4 id="Java_Util_Set_1_CopyOf__1_Java_Util_Collection___0__" data-uid="Java.Util.Set`1.CopyOf``1(Java.Util.Collection{``0})">CopyOf&lt;ExtendsE&gt;(Collection&lt;ExtendsE&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Set&lt;E&gt; CopyOf&lt;ExtendsE&gt;(Collection&lt;ExtendsE&gt; coll)
+    where ExtendsE : E</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Collection-1.html">Collection</a>&lt;ExtendsE&gt;</td>
+        <td><span class="parametername">coll</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Set-1.html">Set</a>&lt;E&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">ExtendsE</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Set_1_Of.md&amp;value=---%0Auid%3A%20Java.Util.Set%601.Of%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Util/Set.cs/#L27">View Source</a>
+  </span>
+  <a id="Java_Util_Set_1_Of_" data-uid="Java.Util.Set`1.Of*"></a>
+  <h4 id="Java_Util_Set_1_Of" data-uid="Java.Util.Set`1.Of">Of()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Set&lt;E&gt; Of()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Set-1.html">Set</a>&lt;E&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Set_1_Of__0_.md&amp;value=---%0Auid%3A%20Java.Util.Set%601.Of(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Util/Set.cs/#L29">View Source</a>
+  </span>
+  <a id="Java_Util_Set_1_Of_" data-uid="Java.Util.Set`1.Of*"></a>
+  <h4 id="Java_Util_Set_1_Of__0_" data-uid="Java.Util.Set`1.Of(`0)">Of(E)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Set&lt;E&gt; Of(E e1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">E</span></td>
+        <td><span class="parametername">e1</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Set-1.html">Set</a>&lt;E&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Set_1_Of__0__0_.md&amp;value=---%0Auid%3A%20Java.Util.Set%601.Of(%600%2C%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Util/Set.cs/#L33">View Source</a>
+  </span>
+  <a id="Java_Util_Set_1_Of_" data-uid="Java.Util.Set`1.Of*"></a>
+  <h4 id="Java_Util_Set_1_Of__0__0_" data-uid="Java.Util.Set`1.Of(`0,`0)">Of(E, E)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Set&lt;E&gt; Of(E e1, E e2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">E</span></td>
+        <td><span class="parametername">e1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">E</span></td>
+        <td><span class="parametername">e2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Set-1.html">Set</a>&lt;E&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Set_1_Of__0__0__0_.md&amp;value=---%0Auid%3A%20Java.Util.Set%601.Of(%600%2C%600%2C%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Util/Set.cs/#L35">View Source</a>
+  </span>
+  <a id="Java_Util_Set_1_Of_" data-uid="Java.Util.Set`1.Of*"></a>
+  <h4 id="Java_Util_Set_1_Of__0__0__0_" data-uid="Java.Util.Set`1.Of(`0,`0,`0)">Of(E, E, E)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Set&lt;E&gt; Of(E e1, E e2, E e3)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">E</span></td>
+        <td><span class="parametername">e1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">E</span></td>
+        <td><span class="parametername">e2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">E</span></td>
+        <td><span class="parametername">e3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Set-1.html">Set</a>&lt;E&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Set_1_Of__0__0__0__0_.md&amp;value=---%0Auid%3A%20Java.Util.Set%601.Of(%600%2C%600%2C%600%2C%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Util/Set.cs/#L37">View Source</a>
+  </span>
+  <a id="Java_Util_Set_1_Of_" data-uid="Java.Util.Set`1.Of*"></a>
+  <h4 id="Java_Util_Set_1_Of__0__0__0__0_" data-uid="Java.Util.Set`1.Of(`0,`0,`0,`0)">Of(E, E, E, E)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Set&lt;E&gt; Of(E e1, E e2, E e3, E e4)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">E</span></td>
+        <td><span class="parametername">e1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">E</span></td>
+        <td><span class="parametername">e2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">E</span></td>
+        <td><span class="parametername">e3</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">E</span></td>
+        <td><span class="parametername">e4</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Set-1.html">Set</a>&lt;E&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Set_1_Of__0__0__0__0__0_.md&amp;value=---%0Auid%3A%20Java.Util.Set%601.Of(%600%2C%600%2C%600%2C%600%2C%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Util/Set.cs/#L39">View Source</a>
+  </span>
+  <a id="Java_Util_Set_1_Of_" data-uid="Java.Util.Set`1.Of*"></a>
+  <h4 id="Java_Util_Set_1_Of__0__0__0__0__0_" data-uid="Java.Util.Set`1.Of(`0,`0,`0,`0,`0)">Of(E, E, E, E, E)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Set&lt;E&gt; Of(E e1, E e2, E e3, E e4, E e5)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">E</span></td>
+        <td><span class="parametername">e1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">E</span></td>
+        <td><span class="parametername">e2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">E</span></td>
+        <td><span class="parametername">e3</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">E</span></td>
+        <td><span class="parametername">e4</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">E</span></td>
+        <td><span class="parametername">e5</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Set-1.html">Set</a>&lt;E&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Set_1_Of__0__0__0__0__0__0_.md&amp;value=---%0Auid%3A%20Java.Util.Set%601.Of(%600%2C%600%2C%600%2C%600%2C%600%2C%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Util/Set.cs/#L41">View Source</a>
+  </span>
+  <a id="Java_Util_Set_1_Of_" data-uid="Java.Util.Set`1.Of*"></a>
+  <h4 id="Java_Util_Set_1_Of__0__0__0__0__0__0_" data-uid="Java.Util.Set`1.Of(`0,`0,`0,`0,`0,`0)">Of(E, E, E, E, E, E)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Set&lt;E&gt; Of(E e1, E e2, E e3, E e4, E e5, E e6)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">E</span></td>
+        <td><span class="parametername">e1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">E</span></td>
+        <td><span class="parametername">e2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">E</span></td>
+        <td><span class="parametername">e3</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">E</span></td>
+        <td><span class="parametername">e4</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">E</span></td>
+        <td><span class="parametername">e5</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">E</span></td>
+        <td><span class="parametername">e6</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Set-1.html">Set</a>&lt;E&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Set_1_Of__0__0__0__0__0__0__0_.md&amp;value=---%0Auid%3A%20Java.Util.Set%601.Of(%600%2C%600%2C%600%2C%600%2C%600%2C%600%2C%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Util/Set.cs/#L43">View Source</a>
+  </span>
+  <a id="Java_Util_Set_1_Of_" data-uid="Java.Util.Set`1.Of*"></a>
+  <h4 id="Java_Util_Set_1_Of__0__0__0__0__0__0__0_" data-uid="Java.Util.Set`1.Of(`0,`0,`0,`0,`0,`0,`0)">Of(E, E, E, E, E, E, E)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Set&lt;E&gt; Of(E e1, E e2, E e3, E e4, E e5, E e6, E e7)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">E</span></td>
+        <td><span class="parametername">e1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">E</span></td>
+        <td><span class="parametername">e2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">E</span></td>
+        <td><span class="parametername">e3</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">E</span></td>
+        <td><span class="parametername">e4</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">E</span></td>
+        <td><span class="parametername">e5</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">E</span></td>
+        <td><span class="parametername">e6</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">E</span></td>
+        <td><span class="parametername">e7</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Set-1.html">Set</a>&lt;E&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Set_1_Of__0__0__0__0__0__0__0__0_.md&amp;value=---%0Auid%3A%20Java.Util.Set%601.Of(%600%2C%600%2C%600%2C%600%2C%600%2C%600%2C%600%2C%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Util/Set.cs/#L45">View Source</a>
+  </span>
+  <a id="Java_Util_Set_1_Of_" data-uid="Java.Util.Set`1.Of*"></a>
+  <h4 id="Java_Util_Set_1_Of__0__0__0__0__0__0__0__0_" data-uid="Java.Util.Set`1.Of(`0,`0,`0,`0,`0,`0,`0,`0)">Of(E, E, E, E, E, E, E, E)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Set&lt;E&gt; Of(E e1, E e2, E e3, E e4, E e5, E e6, E e7, E e8)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">E</span></td>
+        <td><span class="parametername">e1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">E</span></td>
+        <td><span class="parametername">e2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">E</span></td>
+        <td><span class="parametername">e3</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">E</span></td>
+        <td><span class="parametername">e4</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">E</span></td>
+        <td><span class="parametername">e5</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">E</span></td>
+        <td><span class="parametername">e6</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">E</span></td>
+        <td><span class="parametername">e7</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">E</span></td>
+        <td><span class="parametername">e8</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Set-1.html">Set</a>&lt;E&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Set_1_Of__0__0__0__0__0__0__0__0__0_.md&amp;value=---%0Auid%3A%20Java.Util.Set%601.Of(%600%2C%600%2C%600%2C%600%2C%600%2C%600%2C%600%2C%600%2C%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Util/Set.cs/#L47">View Source</a>
+  </span>
+  <a id="Java_Util_Set_1_Of_" data-uid="Java.Util.Set`1.Of*"></a>
+  <h4 id="Java_Util_Set_1_Of__0__0__0__0__0__0__0__0__0_" data-uid="Java.Util.Set`1.Of(`0,`0,`0,`0,`0,`0,`0,`0,`0)">Of(E, E, E, E, E, E, E, E, E)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Set&lt;E&gt; Of(E e1, E e2, E e3, E e4, E e5, E e6, E e7, E e8, E e9)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">E</span></td>
+        <td><span class="parametername">e1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">E</span></td>
+        <td><span class="parametername">e2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">E</span></td>
+        <td><span class="parametername">e3</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">E</span></td>
+        <td><span class="parametername">e4</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">E</span></td>
+        <td><span class="parametername">e5</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">E</span></td>
+        <td><span class="parametername">e6</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">E</span></td>
+        <td><span class="parametername">e7</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">E</span></td>
+        <td><span class="parametername">e8</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">E</span></td>
+        <td><span class="parametername">e9</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Set-1.html">Set</a>&lt;E&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Set_1_Of__0__0__0__0__0__0__0__0__0__0_.md&amp;value=---%0Auid%3A%20Java.Util.Set%601.Of(%600%2C%600%2C%600%2C%600%2C%600%2C%600%2C%600%2C%600%2C%600%2C%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Util/Set.cs/#L49">View Source</a>
+  </span>
+  <a id="Java_Util_Set_1_Of_" data-uid="Java.Util.Set`1.Of*"></a>
+  <h4 id="Java_Util_Set_1_Of__0__0__0__0__0__0__0__0__0__0_" data-uid="Java.Util.Set`1.Of(`0,`0,`0,`0,`0,`0,`0,`0,`0,`0)">Of(E, E, E, E, E, E, E, E, E, E)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Set&lt;E&gt; Of(E e1, E e2, E e3, E e4, E e5, E e6, E e7, E e8, E e9, E e10)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">E</span></td>
+        <td><span class="parametername">e1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">E</span></td>
+        <td><span class="parametername">e2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">E</span></td>
+        <td><span class="parametername">e3</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">E</span></td>
+        <td><span class="parametername">e4</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">E</span></td>
+        <td><span class="parametername">e5</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">E</span></td>
+        <td><span class="parametername">e6</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">E</span></td>
+        <td><span class="parametername">e7</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">E</span></td>
+        <td><span class="parametername">e8</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">E</span></td>
+        <td><span class="parametername">e9</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">E</span></td>
+        <td><span class="parametername">e10</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Set-1.html">Set</a>&lt;E&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Util_Set_1_Of__0___.md&amp;value=---%0Auid%3A%20Java.Util.Set%601.Of(%600%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Util/Set.cs/#L31">View Source</a>
+  </span>
+  <a id="Java_Util_Set_1_Of_" data-uid="Java.Util.Set`1.Of*"></a>
+  <h4 id="Java_Util_Set_1_Of__0___" data-uid="Java.Util.Set`1.Of(`0[])">Of(E[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Set&lt;E&gt; Of(params E[] elements)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>E[]</td>
+        <td><span class="parametername">elements</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Set-1.html">Set</a>&lt;E&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">System.Dynamic.IDynamicMetaObjectProvider</a>

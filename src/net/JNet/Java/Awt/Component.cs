@@ -24,6 +24,14 @@ namespace Java.Awt
     {
         public override string ClassName => "java.awt.Component";
 
+        public Component()
+        {
+        }
+
+        public Component(params object[] args) : base(args)
+        {
+        }
+
         // TODO: complete the class
     }
 }

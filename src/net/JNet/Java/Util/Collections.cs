@@ -27,19 +27,17 @@ namespace Java.Util
 
         public static Set<E> Singleton<E>(E element)
         {
-            return SExecute<Set<E>>("singleton", (typeof(JVMBridgeBase).IsAssignableFrom(typeof(E))) ? (object)(element as JVMBridgeBase) : (object)element);
+            return SExecute<Set<E>>("singleton", element);
         }
 
         public static List<E> SingletonList<E>(E element)
         {
-            return SExecute<List<E>>("singleton", (typeof(JVMBridgeBase).IsAssignableFrom(typeof(E))) ? (object)(element as JVMBridgeBase) : (object)element);
+            return SExecute<List<E>>("singleton", element);
         }
 
         public static Map<K, V> SingletonMap<K, V>(K key, V value)
         {
-            return SExecute<Map<K, V>>("singletonMap",
-                                       (typeof(JVMBridgeBase).IsAssignableFrom(typeof(K))) ? (object)(key as JVMBridgeBase) : (object)key,
-                                       (typeof(JVMBridgeBase).IsAssignableFrom(typeof(V))) ? (object)(value as JVMBridgeBase) : (object)value);
+            return SExecute<Map<K, V>>("singletonMap", key, value);
         }
         /// <summary>
         /// Returns an iterator that has no elements.

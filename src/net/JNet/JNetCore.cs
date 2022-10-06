@@ -29,6 +29,7 @@ namespace MASES.JNet
     /// </summary>
     public abstract class JNetCore<T> : SetupJVMWrapper<T> where T : JNetCore<T>
     {
+        #region Initialization
         /// <summary>
         /// Sets the global value of the heap size
         /// </summary>
@@ -226,12 +227,10 @@ namespace MASES.JNet
             }
             return classPath;
         }
-    }
-    /// <summary>
-    /// Concrete implementation of <see cref="JNetCore{T}"/>
-    /// </summary>
-    public class JNetCore : JNetCore<JNetCore>
-    {
+
+        #endregion
+
+        #region Auxiliary Methods
         /// <summary>
         /// Retrieve the <see cref="IJVMBridgeDefinition.ClassName"/> of <typeparamref name="T"></typeparamref>
         /// </summary>
@@ -242,5 +241,34 @@ namespace MASES.JNet
             var className = JVMBridgeBase.ClassNameOf<TClass>();
             return Java.Lang.Class<TClass>.SExecute<Java.Lang.Class<TClass>>("forName", className);
         }
+
+        /// <summary>
+        /// Retrieve the object associated to <paramref name="className"/>
+        /// </summary>
+        /// <param name="className">The java class to be instantiated</param>
+        /// <returns>The instance associated to the requested <paramref name="className"/></returns>
+        public static dynamic New(string className)
+        {
+            return New(className, null);
+        }
+
+        /// <summary>
+        /// Retrieve the object associated to <paramref name="className"/>
+        /// </summary>
+        /// <param name="className">The java class to be instantiated</param>
+        /// <param name="args">The argument of the costructor</param>
+        /// <returns>The instance associated to the requested <paramref name="className"/></returns>
+        public static dynamic New(string className, params object[] args)
+        {
+            return GlobalInstance.JVM.New(className, args);
+        }
+
+        #endregion
+    }
+    /// <summary>
+    /// Concrete implementation of <see cref="JNetCore{T}"/>
+    /// </summary>
+    public class JNetCore : JNetCore<JNetCore>
+    {
     }
 }

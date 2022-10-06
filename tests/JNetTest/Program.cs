@@ -18,7 +18,6 @@
 
 using Java.Util;
 using MASES.JNet;
-using System;
 
 namespace MASES.JNetTest
 {
@@ -39,7 +38,7 @@ namespace MASES.JNetTest
             if (args.Length != 0)
             {
                 var set = Collections.Singleton(appArgs[0]);
-                Console.WriteLine(set.ToString());
+                set.Add("test");
             }
         }
     }

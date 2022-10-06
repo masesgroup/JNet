@@ -1,102 +1,110 @@
 # JNet: APIs extendibility
 
-What to do if an API was not yet implemented? The simplest answer is: help us to make this product reacher :-)
-Anyway there is another answer which is not available with other products: Dynamic code and programmatically API access.
+What to do if an API was not yet implemented? The simplest answer is: help us to make this product reacher :smile:
+There is another answer which is not available with other products: Dynamic code and programmatically API access.
 
 With **JCOBridge** a developer can use some properties to manage objects in the JVM. 
 Each JNet class implemented contains some methods and two properties: a direct and a dynamic accessor able to analyze the JVM class and executes the code.
 So it is not necessary at all to have the methods be ready to be used.
 
+Let's go to show some possible conditions analyzing the `Hashtable` class (code at https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Util/Hashtable.cs).
+
 ## When a method is not available
 
-Let's go with an example of a ready made API available in `KafkaProducer`:
+The class has a single ready made method:
 
 ```C#
-public void BeginTransaction()
-{
-	IExecute("beginTransaction");
-}
+public void Put(K key, V value) => IExecute("put", key, value);
 ```
 
-This is a void method, using **IExecute** the user of the library can invoke the `BeginTransaction` method on the class. Anyway the developer can invoke the internal method directly from the instance of the object:
+This is a void method, using **IExecute** the user of the library can invoke the `Put` method on the class and execute the Java counterpart. 
+The developer can, anyway, invoke the `put` method directly from the instance of the `Hashtable` class using two different paradigms: **direct** or **dynamic** access.
+The `put` method can be replaced with any method (with or without parameters) of the `Hashtable` class.
+
+### Direct access
+
+The `IExecute` method is public and can be executed using the instance of the `Hashtable` class.
+
 ```C#
-KafkaProducer producer = new KafkaProducer(...);
+Hashtable<string, string> data = new Hashtable<string, string>(...);
 
-producer.IExecute("beginTransaction");
+data.IExecute("put", "a", "b");
 ```
 
-`beginTransaction` can be replaced with any method (with or without parameters) of the class (`KafkaProducer` was only an example).
+Anyway other methods can be accessed like in the following example where an overload of `IExecute` method returns a **bool** value:
+
+```C#
+Hashtable<string, string> data = new Hashtable<string, string>(...);
+
+bool isEmpty = data.IExecute<bool>("isEmpty");
+```
+
+### Dynamic access
+
+```C#
+dynamic data = new Hashtable<string, string>(...);
+
+data.put("a", "b");
+var isEmpty = data.isEmpty();
+```
+
+The `Hashtable`, and any other ready made class of the library, supports the **dynamic** access to the methods available in Java side.
+The previous example demostrates the behavior.
 
 ## When a class is not available
 
-In a more compex scenario the method can return back objects. We start again from a ready made API:
-
-```C#
-public Future<RecordMetadata> Send(ProducerRecord record)
-{
-	return New<Future<RecordMetadata>>("send", record.Instance);
-}
-```
-
-in this case the method accept in input a ready made class `ProducerRecord` and returns a ready made `Future<RecordMetadata>`. From a user point of view the C# and Java method behave the same.
+In a more complex scenario the method can return back objects or can accept input of not ready made classes: no problem, there is a solution.
 
 ### Return class is not available
 
-Now consider that the returned data type (`Future<RecordMetadata>`) is not yet implemented; a solution on this problem is to use directly the `send` Java method like in the following code snippet does:
+To discuss this case we use another class: the [AWT Panel](https://docs.oracle.com/javase/8/docs/api/java/awt/Panel.html), implemented in [Java.Awt.Panel](https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Awt/Panel.cs).
+The .NET class does not have any implemented method: we discuss about [createVolatileImage](https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#createVolatileImage-int-int-) inherited from the base class `Component`.
+The method returns a [VolatileImage](https://docs.oracle.com/javase/8/docs/api/java/awt/image/VolatileImage.html) which is not yet implemented; a solution on this problem is to use directly the `createVolatileImage` Java method like the following code snippet does:
+
 ```C#
-KafkaProducer producer = new KafkaProducer(...);
-ProducerRecord record = new ProducerRecord(...);
-var dynFuture = producer.IExecute("send", record.Instance); // the returned object is a dynamic object reference of the Future object in Java
-var dynRecordMetadata = dynFuture.get();  // the returned object is a dynamic object reference of the RecordMetadata object in Java
-
-// then the developer can access any method of the RecordMetadata using dynRecordMetadata
-
-bool hasOffset = dynRecordMetadata.hasOffset();
+Java.Awt.Panel panel = new();
+var volImage = panel.IExecute("createVolatileImage", 100, 100); // the returned object is a dynamic object which reference the VolatileImage object in Java
+var snapshot = volImage.getSnapshot(); // the returned object is a dynamic object reference of the BufferedImage object in Java
+var isContentLost = volImage.contentsLost(); // the returned object is a bool representing the Java counterpart
 
 ```
 
-The example above consider the classes `Future` and `RecordMetadata` not implemented yet. Anyway them exists in JVM.
+The example above uses the classes `VolatileImage` and `BufferedImage` which are not implemented yet: the classes exists in JVM and can be accessed.
 
 ### Input and Return class are not available
 
 If even the input class is not available the solution is like the following:
 
 ```C#
-KafkaProducer producer = new KafkaProducer(...);
-var dynProducerRecord = producer.JVM.New("ProducerRecord", ....); // the returned object is a dynamic object reference of the ProducerRecord object in Java
-var dynFuture = producer.IExecute("send", dynProducerRecord); // the returned object is a dynamic object reference of the Future object in Java
-var dynRecordMetadata = dynFuture.get();  // the returned object is a dynamic object reference of the RecordMetadata object in Java
-
-// then the developer can access any method of the RecordMetadata using dynRecordMetadata
-
-bool hasOffset = dynRecordMetadata.hasOffset();
+Java.Awt.Panel panel = new();
+var dynImageCapabilities = panel.JVM.New("java.awt.ImageCapabilities", true); // the returned object is a dynamic object which is a reference of the ImageCapabilities object in Java
+var volImage = panel.IExecute("createVolatileImage", 100, 100, dynImageCapabilities); // the returned object is a dynamic object which reference the VolatileImage object in Java
+var snapshot = volImage.getSnapshot(); // the returned object is a dynamic object reference of the BufferedImage object in Java
+var isContentLost = volImage.contentsLost(); // the returned object is a bool representing the Java counterpart
 
 ```
 
-The example above consider that even the class `ProducerRecord` is not implemented yet. Anyway it exists in JVM.
-Each object, like `KafkaProducer` instance, exposes (hidden in the editor) two properties:
+In the above example the class `ImageCapabilities` is not implemented yet. Since it exists in the JVM it can be allocated and used.
+Each object, like `Panel` instance, exposes (hidden in the editor) two properties:
 * **JVM** which access the JVM using methods;
 * **DynJVM** which access the JVM using the Dynamic engine.
 
-Using the properties it is possible to instruct the JVM about the action to be done.
+Using the listed properties it is possible to instruct the JVM about the action to be done.
 
 ### Anything is not available
 
 If no classes are available the solution comes from the global accessor available in JCOBridge and the code snippet is like the following one:
 
 ```C#
-var dynKafkaProducer = JCOBridge.Global.JVM.New("KafkaProducer", ...); // the returned object is a dynamic object reference of the KafkaProducer object in Java
-var dynProducerRecord = JCOBridge.Global.JVM.New("ProducerRecord", ....); // the returned object is a dynamic object reference of the ProducerRecord object in Java
-var dynFuture = dynKafkaProducer.send(dynProducerRecord); // the returned object is a dynamic object reference of the Future object in Java
-var dynRecordMetadata = dynFuture.get();  // the returned object is a dynamic object reference of the RecordMetadata object in Java
-
-// then the developer can access any method of the RecordMetadata using dynRecordMetadata
-
-bool hasOffset = dynRecordMetadata.hasOffset();
+var panel = JNetCore.New("java.awt.Panel"); // the returned object is a dynamic object reference of the Panel object in Java
+var dynImageCapabilities = JNetCore.New("java.awt.ImageCapabilities", true); // the returned object is a dynamic object which is a reference of the ImageCapabilities object in Java
+var volImage = panel.createVolatileImage(100, 100, dynImageCapabilities); // the returned object is a dynamic object which reference the VolatileImage object in Java
+var snapshot = volImage.getSnapshot(); // the returned object is a dynamic object reference of the BufferedImage object in Java
+var isContentLost = volImage.contentsLost(); // the returned object is a bool representing the Java counterpart
 
 ```
 
-The example above consider that even the class `KafkaProducer` is not implemented yet. Anyway it exists in JVM.
+The example above consider that even the class `Panel` is not implemented yet. Since it exists in the JVM it can be allocated and used.
 In previous chapter the tutorial reports about two hidden properties in each object; the properties on each class are just an useful reference to the real one available in `JCOBridge.Global`:
 * **JVM** which access the JVM using methods;
 * **DynJVM** which access the JVM using the Dynamic engine.
@@ -109,19 +117,16 @@ Look at the simple example below:
 
 ```C#
 
-var consumer = new KafkaConsumer<string, string>(props);
-var topPart = consumer.JVM.New("TopicPartition", "myTopic", 0); // the returned object is a dynamic object reference of the TopicPartition object in Java
-var result = consumer.DynInstance.committed(topPart); // this line invokes dynamically the committed on the instance of the KafkaConsumer
+Java.Awt.Panel panel = new();
+var result = panel.DynInstance.getLayout(); // this line invokes dynamically the getLayout method on the instance of the Panel
+
 ```
 
-The example above consider the class `TopicPartition` not implemented yet. Anyway it exists in JVM.
-As exposed before, each object, like `KafkaConsumer` instance, exposes (hidden in the editor) two properties.
+As exposed before, each object, like `Panel` instance, exposes (hidden in the editor) two properties.
 
 Explaining the code:
-* The first line creates a JVM object in C# style: `KafkaConsumer` lives in the CLR and has its counterpart in the JVM.
-* The second line requests to the JVM to allocate a `TopicPartition` object with two parameters.
-* This resulting object (`topPart`) is used in the third line as parameter of the `committed` method invocation.
-* The `result` is a **dynamic** object that can be used to extract data or invokes other methods.
+* The first line creates a JVM object in C# style: `Container` lives in the CLR and has its counterpart in the JVM.
+* The `result` is a **dynamic** object that can be used to extract data or invokes other methods on the result of `getLayout` which is an object of type `LayoutManager`.
 
 ## API exendibility limitation
 

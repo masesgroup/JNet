@@ -16,8 +16,6 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.JCOBridge.C2JBridge;
-
 namespace Java.Util
 {
     public class Hashtable<K, V> : Dictionary<K, V>
@@ -25,5 +23,9 @@ namespace Java.Util
         public override string ClassName => "java.util.Hashtable";
 
         public static implicit operator Map<K, V>(Hashtable<K, V> table) { return Wraps<Map<K, V>>(table.Instance); }
+
+        public V Get(object key) => IExecute<V>("get", key);
+
+        public void Put(K key, V value) => IExecute("put", key, value);
     }
 }

@@ -201,12 +201,113 @@ references:
   isSpec: "True"
   fullName: Java.Awt.AWTEvent.SetSource
   nameWithType: AWTEvent.SetSource
+- uid: Java.Awt.AWTKeyStroke
+  name: AWTKeyStroke
+  href: api/Java.Awt.AWTKeyStroke.html
+  commentId: T:Java.Awt.AWTKeyStroke
+  fullName: Java.Awt.AWTKeyStroke
+  nameWithType: AWTKeyStroke
+- uid: Java.Awt.AWTKeyStroke.#ctor
+  name: AWTKeyStroke()
+  href: api/Java.Awt.AWTKeyStroke.html#Java_Awt_AWTKeyStroke__ctor
+  commentId: M:Java.Awt.AWTKeyStroke.#ctor
+  fullName: Java.Awt.AWTKeyStroke.AWTKeyStroke()
+  nameWithType: AWTKeyStroke.AWTKeyStroke()
+- uid: Java.Awt.AWTKeyStroke.#ctor(System.Object[])
+  name: AWTKeyStroke(Object[])
+  href: api/Java.Awt.AWTKeyStroke.html#Java_Awt_AWTKeyStroke__ctor_System_Object___
+  commentId: M:Java.Awt.AWTKeyStroke.#ctor(System.Object[])
+  name.vb: AWTKeyStroke(Object())
+  fullName: Java.Awt.AWTKeyStroke.AWTKeyStroke(System.Object[])
+  fullName.vb: Java.Awt.AWTKeyStroke.AWTKeyStroke(System.Object())
+  nameWithType: AWTKeyStroke.AWTKeyStroke(Object[])
+  nameWithType.vb: AWTKeyStroke.AWTKeyStroke(Object())
+- uid: Java.Awt.AWTKeyStroke.#ctor*
+  name: AWTKeyStroke
+  href: api/Java.Awt.AWTKeyStroke.html#Java_Awt_AWTKeyStroke__ctor_
+  commentId: Overload:Java.Awt.AWTKeyStroke.#ctor
+  isSpec: "True"
+  fullName: Java.Awt.AWTKeyStroke.AWTKeyStroke
+  nameWithType: AWTKeyStroke.AWTKeyStroke
+- uid: Java.Awt.AWTKeyStroke.ClassName
+  name: ClassName
+  href: api/Java.Awt.AWTKeyStroke.html#Java_Awt_AWTKeyStroke_ClassName
+  commentId: P:Java.Awt.AWTKeyStroke.ClassName
+  fullName: Java.Awt.AWTKeyStroke.ClassName
+  nameWithType: AWTKeyStroke.ClassName
+- uid: Java.Awt.AWTKeyStroke.ClassName*
+  name: ClassName
+  href: api/Java.Awt.AWTKeyStroke.html#Java_Awt_AWTKeyStroke_ClassName_
+  commentId: Overload:Java.Awt.AWTKeyStroke.ClassName
+  isSpec: "True"
+  fullName: Java.Awt.AWTKeyStroke.ClassName
+  nameWithType: AWTKeyStroke.ClassName
+- uid: Java.Awt.Button
+  name: Button
+  href: api/Java.Awt.Button.html
+  commentId: T:Java.Awt.Button
+  fullName: Java.Awt.Button
+  nameWithType: Button
+- uid: Java.Awt.Button.#ctor
+  name: Button()
+  href: api/Java.Awt.Button.html#Java_Awt_Button__ctor
+  commentId: M:Java.Awt.Button.#ctor
+  fullName: Java.Awt.Button.Button()
+  nameWithType: Button.Button()
+- uid: Java.Awt.Button.#ctor(System.String)
+  name: Button(String)
+  href: api/Java.Awt.Button.html#Java_Awt_Button__ctor_System_String_
+  commentId: M:Java.Awt.Button.#ctor(System.String)
+  fullName: Java.Awt.Button.Button(System.String)
+  nameWithType: Button.Button(String)
+- uid: Java.Awt.Button.#ctor*
+  name: Button
+  href: api/Java.Awt.Button.html#Java_Awt_Button__ctor_
+  commentId: Overload:Java.Awt.Button.#ctor
+  isSpec: "True"
+  fullName: Java.Awt.Button.Button
+  nameWithType: Button.Button
+- uid: Java.Awt.Button.ClassName
+  name: ClassName
+  href: api/Java.Awt.Button.html#Java_Awt_Button_ClassName
+  commentId: P:Java.Awt.Button.ClassName
+  fullName: Java.Awt.Button.ClassName
+  nameWithType: Button.ClassName
+- uid: Java.Awt.Button.ClassName*
+  name: ClassName
+  href: api/Java.Awt.Button.html#Java_Awt_Button_ClassName_
+  commentId: Overload:Java.Awt.Button.ClassName
+  isSpec: "True"
+  fullName: Java.Awt.Button.ClassName
+  nameWithType: Button.ClassName
 - uid: Java.Awt.Component
   name: Component
   href: api/Java.Awt.Component.html
   commentId: T:Java.Awt.Component
   fullName: Java.Awt.Component
   nameWithType: Component
+- uid: Java.Awt.Component.#ctor
+  name: Component()
+  href: api/Java.Awt.Component.html#Java_Awt_Component__ctor
+  commentId: M:Java.Awt.Component.#ctor
+  fullName: Java.Awt.Component.Component()
+  nameWithType: Component.Component()
+- uid: Java.Awt.Component.#ctor(System.Object[])
+  name: Component(Object[])
+  href: api/Java.Awt.Component.html#Java_Awt_Component__ctor_System_Object___
+  commentId: M:Java.Awt.Component.#ctor(System.Object[])
+  name.vb: Component(Object())
+  fullName: Java.Awt.Component.Component(System.Object[])
+  fullName.vb: Java.Awt.Component.Component(System.Object())
+  nameWithType: Component.Component(Object[])
+  nameWithType.vb: Component.Component(Object())
+- uid: Java.Awt.Component.#ctor*
+  name: Component
+  href: api/Java.Awt.Component.html#Java_Awt_Component__ctor_
+  commentId: Overload:Java.Awt.Component.#ctor
+  isSpec: "True"
+  fullName: Java.Awt.Component.Component
+  nameWithType: Component.Component
 - uid: Java.Awt.Component.ClassName
   name: ClassName
   href: api/Java.Awt.Component.html#Java_Awt_Component_ClassName
@@ -226,6 +327,28 @@ references:
   commentId: T:Java.Awt.Container
   fullName: Java.Awt.Container
   nameWithType: Container
+- uid: Java.Awt.Container.#ctor
+  name: Container()
+  href: api/Java.Awt.Container.html#Java_Awt_Container__ctor
+  commentId: M:Java.Awt.Container.#ctor
+  fullName: Java.Awt.Container.Container()
+  nameWithType: Container.Container()
+- uid: Java.Awt.Container.#ctor(System.Object[])
+  name: Container(Object[])
+  href: api/Java.Awt.Container.html#Java_Awt_Container__ctor_System_Object___
+  commentId: M:Java.Awt.Container.#ctor(System.Object[])
+  name.vb: Container(Object())
+  fullName: Java.Awt.Container.Container(System.Object[])
+  fullName.vb: Java.Awt.Container.Container(System.Object())
+  nameWithType: Container.Container(Object[])
+  nameWithType.vb: Container.Container(Object())
+- uid: Java.Awt.Container.#ctor*
+  name: Container
+  href: api/Java.Awt.Container.html#Java_Awt_Container__ctor_
+  commentId: Overload:Java.Awt.Container.#ctor
+  isSpec: "True"
+  fullName: Java.Awt.Container.Container
+  nameWithType: Container.Container
 - uid: Java.Awt.Container.ClassName
   name: ClassName
   href: api/Java.Awt.Container.html#Java_Awt_Container_ClassName
@@ -4759,6 +4882,56 @@ references:
   isSpec: "True"
   fullName: Java.Awt.Font.TextHitInfo.ClassName
   nameWithType: TextHitInfo.ClassName
+- uid: Java.Awt.Frame
+  name: Frame
+  href: api/Java.Awt.Frame.html
+  commentId: T:Java.Awt.Frame
+  fullName: Java.Awt.Frame
+  nameWithType: Frame
+- uid: Java.Awt.Frame.#ctor
+  name: Frame()
+  href: api/Java.Awt.Frame.html#Java_Awt_Frame__ctor
+  commentId: M:Java.Awt.Frame.#ctor
+  fullName: Java.Awt.Frame.Frame()
+  nameWithType: Frame.Frame()
+- uid: Java.Awt.Frame.#ctor(Java.Awt.GraphicsConfiguration)
+  name: Frame(GraphicsConfiguration)
+  href: api/Java.Awt.Frame.html#Java_Awt_Frame__ctor_Java_Awt_GraphicsConfiguration_
+  commentId: M:Java.Awt.Frame.#ctor(Java.Awt.GraphicsConfiguration)
+  fullName: Java.Awt.Frame.Frame(Java.Awt.GraphicsConfiguration)
+  nameWithType: Frame.Frame(GraphicsConfiguration)
+- uid: Java.Awt.Frame.#ctor(System.String)
+  name: Frame(String)
+  href: api/Java.Awt.Frame.html#Java_Awt_Frame__ctor_System_String_
+  commentId: M:Java.Awt.Frame.#ctor(System.String)
+  fullName: Java.Awt.Frame.Frame(System.String)
+  nameWithType: Frame.Frame(String)
+- uid: Java.Awt.Frame.#ctor(System.String,Java.Awt.GraphicsConfiguration)
+  name: Frame(String, GraphicsConfiguration)
+  href: api/Java.Awt.Frame.html#Java_Awt_Frame__ctor_System_String_Java_Awt_GraphicsConfiguration_
+  commentId: M:Java.Awt.Frame.#ctor(System.String,Java.Awt.GraphicsConfiguration)
+  fullName: Java.Awt.Frame.Frame(System.String, Java.Awt.GraphicsConfiguration)
+  nameWithType: Frame.Frame(String, GraphicsConfiguration)
+- uid: Java.Awt.Frame.#ctor*
+  name: Frame
+  href: api/Java.Awt.Frame.html#Java_Awt_Frame__ctor_
+  commentId: Overload:Java.Awt.Frame.#ctor
+  isSpec: "True"
+  fullName: Java.Awt.Frame.Frame
+  nameWithType: Frame.Frame
+- uid: Java.Awt.Frame.ClassName
+  name: ClassName
+  href: api/Java.Awt.Frame.html#Java_Awt_Frame_ClassName
+  commentId: P:Java.Awt.Frame.ClassName
+  fullName: Java.Awt.Frame.ClassName
+  nameWithType: Frame.ClassName
+- uid: Java.Awt.Frame.ClassName*
+  name: ClassName
+  href: api/Java.Awt.Frame.html#Java_Awt_Frame_ClassName_
+  commentId: Overload:Java.Awt.Frame.ClassName
+  isSpec: "True"
+  fullName: Java.Awt.Frame.ClassName
+  nameWithType: Frame.ClassName
 - uid: Java.Awt.Geom
   name: Java.Awt.Geom
   href: api/Java.Awt.Geom.html
@@ -4901,6 +5074,82 @@ references:
   isSpec: "True"
   fullName: Java.Awt.Geom.Point2D.Y
   nameWithType: Point2D.Y
+- uid: Java.Awt.GraphicsConfiguration
+  name: GraphicsConfiguration
+  href: api/Java.Awt.GraphicsConfiguration.html
+  commentId: T:Java.Awt.GraphicsConfiguration
+  fullName: Java.Awt.GraphicsConfiguration
+  nameWithType: GraphicsConfiguration
+- uid: Java.Awt.GraphicsConfiguration.ClassName
+  name: ClassName
+  href: api/Java.Awt.GraphicsConfiguration.html#Java_Awt_GraphicsConfiguration_ClassName
+  commentId: P:Java.Awt.GraphicsConfiguration.ClassName
+  fullName: Java.Awt.GraphicsConfiguration.ClassName
+  nameWithType: GraphicsConfiguration.ClassName
+- uid: Java.Awt.GraphicsConfiguration.ClassName*
+  name: ClassName
+  href: api/Java.Awt.GraphicsConfiguration.html#Java_Awt_GraphicsConfiguration_ClassName_
+  commentId: Overload:Java.Awt.GraphicsConfiguration.ClassName
+  isSpec: "True"
+  fullName: Java.Awt.GraphicsConfiguration.ClassName
+  nameWithType: GraphicsConfiguration.ClassName
+- uid: Java.Awt.GraphicsConfiguration.IsAbstract
+  name: IsAbstract
+  href: api/Java.Awt.GraphicsConfiguration.html#Java_Awt_GraphicsConfiguration_IsAbstract
+  commentId: P:Java.Awt.GraphicsConfiguration.IsAbstract
+  fullName: Java.Awt.GraphicsConfiguration.IsAbstract
+  nameWithType: GraphicsConfiguration.IsAbstract
+- uid: Java.Awt.GraphicsConfiguration.IsAbstract*
+  name: IsAbstract
+  href: api/Java.Awt.GraphicsConfiguration.html#Java_Awt_GraphicsConfiguration_IsAbstract_
+  commentId: Overload:Java.Awt.GraphicsConfiguration.IsAbstract
+  isSpec: "True"
+  fullName: Java.Awt.GraphicsConfiguration.IsAbstract
+  nameWithType: GraphicsConfiguration.IsAbstract
+- uid: Java.Awt.GridLayout
+  name: GridLayout
+  href: api/Java.Awt.GridLayout.html
+  commentId: T:Java.Awt.GridLayout
+  fullName: Java.Awt.GridLayout
+  nameWithType: GridLayout
+- uid: Java.Awt.GridLayout.#ctor
+  name: GridLayout()
+  href: api/Java.Awt.GridLayout.html#Java_Awt_GridLayout__ctor
+  commentId: M:Java.Awt.GridLayout.#ctor
+  fullName: Java.Awt.GridLayout.GridLayout()
+  nameWithType: GridLayout.GridLayout()
+- uid: Java.Awt.GridLayout.#ctor(System.Int32,System.Int32)
+  name: GridLayout(Int32, Int32)
+  href: api/Java.Awt.GridLayout.html#Java_Awt_GridLayout__ctor_System_Int32_System_Int32_
+  commentId: M:Java.Awt.GridLayout.#ctor(System.Int32,System.Int32)
+  fullName: Java.Awt.GridLayout.GridLayout(System.Int32, System.Int32)
+  nameWithType: GridLayout.GridLayout(Int32, Int32)
+- uid: Java.Awt.GridLayout.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)
+  name: GridLayout(Int32, Int32, Int32, Int32)
+  href: api/Java.Awt.GridLayout.html#Java_Awt_GridLayout__ctor_System_Int32_System_Int32_System_Int32_System_Int32_
+  commentId: M:Java.Awt.GridLayout.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)
+  fullName: Java.Awt.GridLayout.GridLayout(System.Int32, System.Int32, System.Int32, System.Int32)
+  nameWithType: GridLayout.GridLayout(Int32, Int32, Int32, Int32)
+- uid: Java.Awt.GridLayout.#ctor*
+  name: GridLayout
+  href: api/Java.Awt.GridLayout.html#Java_Awt_GridLayout__ctor_
+  commentId: Overload:Java.Awt.GridLayout.#ctor
+  isSpec: "True"
+  fullName: Java.Awt.GridLayout.GridLayout
+  nameWithType: GridLayout.GridLayout
+- uid: Java.Awt.GridLayout.ClassName
+  name: ClassName
+  href: api/Java.Awt.GridLayout.html#Java_Awt_GridLayout_ClassName
+  commentId: P:Java.Awt.GridLayout.ClassName
+  fullName: Java.Awt.GridLayout.ClassName
+  nameWithType: GridLayout.ClassName
+- uid: Java.Awt.GridLayout.ClassName*
+  name: ClassName
+  href: api/Java.Awt.GridLayout.html#Java_Awt_GridLayout_ClassName_
+  commentId: Overload:Java.Awt.GridLayout.ClassName
+  isSpec: "True"
+  fullName: Java.Awt.GridLayout.ClassName
+  nameWithType: GridLayout.ClassName
 - uid: Java.Awt.Image
   name: Image
   href: api/Java.Awt.Image.html
@@ -5060,12 +5309,137 @@ references:
   isSpec: "True"
   fullName: Java.Awt.Point.Translate
   nameWithType: Point.Translate
+- uid: Java.Awt.TextArea
+  name: TextArea
+  href: api/Java.Awt.TextArea.html
+  commentId: T:Java.Awt.TextArea
+  fullName: Java.Awt.TextArea
+  nameWithType: TextArea
+- uid: Java.Awt.TextArea.#ctor
+  name: TextArea()
+  href: api/Java.Awt.TextArea.html#Java_Awt_TextArea__ctor
+  commentId: M:Java.Awt.TextArea.#ctor
+  fullName: Java.Awt.TextArea.TextArea()
+  nameWithType: TextArea.TextArea()
+- uid: Java.Awt.TextArea.#ctor(System.Int32,System.Int32)
+  name: TextArea(Int32, Int32)
+  href: api/Java.Awt.TextArea.html#Java_Awt_TextArea__ctor_System_Int32_System_Int32_
+  commentId: M:Java.Awt.TextArea.#ctor(System.Int32,System.Int32)
+  fullName: Java.Awt.TextArea.TextArea(System.Int32, System.Int32)
+  nameWithType: TextArea.TextArea(Int32, Int32)
+- uid: Java.Awt.TextArea.#ctor(System.String)
+  name: TextArea(String)
+  href: api/Java.Awt.TextArea.html#Java_Awt_TextArea__ctor_System_String_
+  commentId: M:Java.Awt.TextArea.#ctor(System.String)
+  fullName: Java.Awt.TextArea.TextArea(System.String)
+  nameWithType: TextArea.TextArea(String)
+- uid: Java.Awt.TextArea.#ctor(System.String,System.Int32,System.Int32)
+  name: TextArea(String, Int32, Int32)
+  href: api/Java.Awt.TextArea.html#Java_Awt_TextArea__ctor_System_String_System_Int32_System_Int32_
+  commentId: M:Java.Awt.TextArea.#ctor(System.String,System.Int32,System.Int32)
+  fullName: Java.Awt.TextArea.TextArea(System.String, System.Int32, System.Int32)
+  nameWithType: TextArea.TextArea(String, Int32, Int32)
+- uid: Java.Awt.TextArea.#ctor(System.String,System.Int32,System.Int32,System.Int32)
+  name: TextArea(String, Int32, Int32, Int32)
+  href: api/Java.Awt.TextArea.html#Java_Awt_TextArea__ctor_System_String_System_Int32_System_Int32_System_Int32_
+  commentId: M:Java.Awt.TextArea.#ctor(System.String,System.Int32,System.Int32,System.Int32)
+  fullName: Java.Awt.TextArea.TextArea(System.String, System.Int32, System.Int32, System.Int32)
+  nameWithType: TextArea.TextArea(String, Int32, Int32, Int32)
+- uid: Java.Awt.TextArea.#ctor*
+  name: TextArea
+  href: api/Java.Awt.TextArea.html#Java_Awt_TextArea__ctor_
+  commentId: Overload:Java.Awt.TextArea.#ctor
+  isSpec: "True"
+  fullName: Java.Awt.TextArea.TextArea
+  nameWithType: TextArea.TextArea
+- uid: Java.Awt.TextArea.ClassName
+  name: ClassName
+  href: api/Java.Awt.TextArea.html#Java_Awt_TextArea_ClassName
+  commentId: P:Java.Awt.TextArea.ClassName
+  fullName: Java.Awt.TextArea.ClassName
+  nameWithType: TextArea.ClassName
+- uid: Java.Awt.TextArea.ClassName*
+  name: ClassName
+  href: api/Java.Awt.TextArea.html#Java_Awt_TextArea_ClassName_
+  commentId: Overload:Java.Awt.TextArea.ClassName
+  isSpec: "True"
+  fullName: Java.Awt.TextArea.ClassName
+  nameWithType: TextArea.ClassName
+- uid: Java.Awt.TextComponent
+  name: TextComponent
+  href: api/Java.Awt.TextComponent.html
+  commentId: T:Java.Awt.TextComponent
+  fullName: Java.Awt.TextComponent
+  nameWithType: TextComponent
+- uid: Java.Awt.TextComponent.#ctor
+  name: TextComponent()
+  href: api/Java.Awt.TextComponent.html#Java_Awt_TextComponent__ctor
+  commentId: M:Java.Awt.TextComponent.#ctor
+  fullName: Java.Awt.TextComponent.TextComponent()
+  nameWithType: TextComponent.TextComponent()
+- uid: Java.Awt.TextComponent.#ctor(System.Object[])
+  name: TextComponent(Object[])
+  href: api/Java.Awt.TextComponent.html#Java_Awt_TextComponent__ctor_System_Object___
+  commentId: M:Java.Awt.TextComponent.#ctor(System.Object[])
+  name.vb: TextComponent(Object())
+  fullName: Java.Awt.TextComponent.TextComponent(System.Object[])
+  fullName.vb: Java.Awt.TextComponent.TextComponent(System.Object())
+  nameWithType: TextComponent.TextComponent(Object[])
+  nameWithType.vb: TextComponent.TextComponent(Object())
+- uid: Java.Awt.TextComponent.#ctor(System.String)
+  name: TextComponent(String)
+  href: api/Java.Awt.TextComponent.html#Java_Awt_TextComponent__ctor_System_String_
+  commentId: M:Java.Awt.TextComponent.#ctor(System.String)
+  fullName: Java.Awt.TextComponent.TextComponent(System.String)
+  nameWithType: TextComponent.TextComponent(String)
+- uid: Java.Awt.TextComponent.#ctor*
+  name: TextComponent
+  href: api/Java.Awt.TextComponent.html#Java_Awt_TextComponent__ctor_
+  commentId: Overload:Java.Awt.TextComponent.#ctor
+  isSpec: "True"
+  fullName: Java.Awt.TextComponent.TextComponent
+  nameWithType: TextComponent.TextComponent
+- uid: Java.Awt.TextComponent.ClassName
+  name: ClassName
+  href: api/Java.Awt.TextComponent.html#Java_Awt_TextComponent_ClassName
+  commentId: P:Java.Awt.TextComponent.ClassName
+  fullName: Java.Awt.TextComponent.ClassName
+  nameWithType: TextComponent.ClassName
+- uid: Java.Awt.TextComponent.ClassName*
+  name: ClassName
+  href: api/Java.Awt.TextComponent.html#Java_Awt_TextComponent_ClassName_
+  commentId: Overload:Java.Awt.TextComponent.ClassName
+  isSpec: "True"
+  fullName: Java.Awt.TextComponent.ClassName
+  nameWithType: TextComponent.ClassName
 - uid: Java.Awt.Window
   name: Window
   href: api/Java.Awt.Window.html
   commentId: T:Java.Awt.Window
   fullName: Java.Awt.Window
   nameWithType: Window
+- uid: Java.Awt.Window.#ctor
+  name: Window()
+  href: api/Java.Awt.Window.html#Java_Awt_Window__ctor
+  commentId: M:Java.Awt.Window.#ctor
+  fullName: Java.Awt.Window.Window()
+  nameWithType: Window.Window()
+- uid: Java.Awt.Window.#ctor(System.Object[])
+  name: Window(Object[])
+  href: api/Java.Awt.Window.html#Java_Awt_Window__ctor_System_Object___
+  commentId: M:Java.Awt.Window.#ctor(System.Object[])
+  name.vb: Window(Object())
+  fullName: Java.Awt.Window.Window(System.Object[])
+  fullName.vb: Java.Awt.Window.Window(System.Object())
+  nameWithType: Window.Window(Object[])
+  nameWithType.vb: Window.Window(Object())
+- uid: Java.Awt.Window.#ctor*
+  name: Window
+  href: api/Java.Awt.Window.html#Java_Awt_Window__ctor_
+  commentId: Overload:Java.Awt.Window.#ctor
+  isSpec: "True"
+  fullName: Java.Awt.Window.Window
+  nameWithType: Window.Window
 - uid: Java.Awt.Window.ClassName
   name: ClassName
   href: api/Java.Awt.Window.html#Java_Awt_Window_ClassName
@@ -6539,6 +6913,38 @@ references:
   isSpec: "True"
   fullName: Java.Lang.CloneNotSupportedException.ClassName
   nameWithType: CloneNotSupportedException.ClassName
+- uid: Java.Lang.Comparable
+  name: Comparable
+  href: api/Java.Lang.Comparable.html
+  commentId: T:Java.Lang.Comparable
+  fullName: Java.Lang.Comparable
+  nameWithType: Comparable
+- uid: Java.Lang.Comparable.ClassName
+  name: ClassName
+  href: api/Java.Lang.Comparable.html#Java_Lang_Comparable_ClassName
+  commentId: P:Java.Lang.Comparable.ClassName
+  fullName: Java.Lang.Comparable.ClassName
+  nameWithType: Comparable.ClassName
+- uid: Java.Lang.Comparable.ClassName*
+  name: ClassName
+  href: api/Java.Lang.Comparable.html#Java_Lang_Comparable_ClassName_
+  commentId: Overload:Java.Lang.Comparable.ClassName
+  isSpec: "True"
+  fullName: Java.Lang.Comparable.ClassName
+  nameWithType: Comparable.ClassName
+- uid: Java.Lang.Comparable.IsInterface
+  name: IsInterface
+  href: api/Java.Lang.Comparable.html#Java_Lang_Comparable_IsInterface
+  commentId: P:Java.Lang.Comparable.IsInterface
+  fullName: Java.Lang.Comparable.IsInterface
+  nameWithType: Comparable.IsInterface
+- uid: Java.Lang.Comparable.IsInterface*
+  name: IsInterface
+  href: api/Java.Lang.Comparable.html#Java_Lang_Comparable_IsInterface_
+  commentId: Overload:Java.Lang.Comparable.IsInterface
+  isSpec: "True"
+  fullName: Java.Lang.Comparable.IsInterface
+  nameWithType: Comparable.IsInterface
 - uid: Java.Lang.Comparable`1
   name: Comparable<T>
   href: api/Java.Lang.Comparable-1.html
@@ -6548,23 +6954,6 @@ references:
   fullName.vb: Java.Lang.Comparable(Of T)
   nameWithType: Comparable<T>
   nameWithType.vb: Comparable(Of T)
-- uid: Java.Lang.Comparable`1.ClassName
-  name: ClassName
-  href: api/Java.Lang.Comparable-1.html#Java_Lang_Comparable_1_ClassName
-  commentId: P:Java.Lang.Comparable`1.ClassName
-  fullName: Java.Lang.Comparable<T>.ClassName
-  fullName.vb: Java.Lang.Comparable(Of T).ClassName
-  nameWithType: Comparable<T>.ClassName
-  nameWithType.vb: Comparable(Of T).ClassName
-- uid: Java.Lang.Comparable`1.ClassName*
-  name: ClassName
-  href: api/Java.Lang.Comparable-1.html#Java_Lang_Comparable_1_ClassName_
-  commentId: Overload:Java.Lang.Comparable`1.ClassName
-  isSpec: "True"
-  fullName: Java.Lang.Comparable<T>.ClassName
-  fullName.vb: Java.Lang.Comparable(Of T).ClassName
-  nameWithType: Comparable<T>.ClassName
-  nameWithType.vb: Comparable(Of T).ClassName
 - uid: Java.Lang.Comparable`1.CompareTo(`0)
   name: CompareTo(T)
   href: api/Java.Lang.Comparable-1.html#Java_Lang_Comparable_1_CompareTo__0_
@@ -6582,23 +6971,6 @@ references:
   fullName.vb: Java.Lang.Comparable(Of T).CompareTo
   nameWithType: Comparable<T>.CompareTo
   nameWithType.vb: Comparable(Of T).CompareTo
-- uid: Java.Lang.Comparable`1.IsInterface
-  name: IsInterface
-  href: api/Java.Lang.Comparable-1.html#Java_Lang_Comparable_1_IsInterface
-  commentId: P:Java.Lang.Comparable`1.IsInterface
-  fullName: Java.Lang.Comparable<T>.IsInterface
-  fullName.vb: Java.Lang.Comparable(Of T).IsInterface
-  nameWithType: Comparable<T>.IsInterface
-  nameWithType.vb: Comparable(Of T).IsInterface
-- uid: Java.Lang.Comparable`1.IsInterface*
-  name: IsInterface
-  href: api/Java.Lang.Comparable-1.html#Java_Lang_Comparable_1_IsInterface_
-  commentId: Overload:Java.Lang.Comparable`1.IsInterface
-  isSpec: "True"
-  fullName: Java.Lang.Comparable<T>.IsInterface
-  fullName.vb: Java.Lang.Comparable(Of T).IsInterface
-  nameWithType: Comparable<T>.IsInterface
-  nameWithType.vb: Comparable(Of T).IsInterface
 - uid: Java.Lang.Compiler
   name: Compiler
   href: api/Java.Lang.Compiler.html
@@ -10289,6 +10661,24 @@ references:
   fullName.vb: Java.Util.Collection(Of E).Add
   nameWithType: Collection<E>.Add
   nameWithType.vb: Collection(Of E).Add
+- uid: Java.Util.Collection`1.AddAll*
+  name: AddAll
+  href: api/Java.Util.Collection-1.html#Java_Util_Collection_1_AddAll_
+  commentId: Overload:Java.Util.Collection`1.AddAll
+  isSpec: "True"
+  fullName: Java.Util.Collection<E>.AddAll
+  fullName.vb: Java.Util.Collection(Of E).AddAll
+  nameWithType: Collection<E>.AddAll
+  nameWithType.vb: Collection(Of E).AddAll
+- uid: Java.Util.Collection`1.AddAll``1(Java.Util.Collection{``0})
+  name: AddAll<ExtendsE>(Collection<ExtendsE>)
+  href: api/Java.Util.Collection-1.html#Java_Util_Collection_1_AddAll__1_Java_Util_Collection___0__
+  commentId: M:Java.Util.Collection`1.AddAll``1(Java.Util.Collection{``0})
+  name.vb: AddAll(Of ExtendsE)(Collection(Of ExtendsE))
+  fullName: Java.Util.Collection<E>.AddAll<ExtendsE>(Java.Util.Collection<ExtendsE>)
+  fullName.vb: Java.Util.Collection(Of E).AddAll(Of ExtendsE)(Java.Util.Collection(Of ExtendsE))
+  nameWithType: Collection<E>.AddAll<ExtendsE>(Collection<ExtendsE>)
+  nameWithType.vb: Collection(Of E).AddAll(Of ExtendsE)(Collection(Of ExtendsE))
 - uid: Java.Util.Collection`1.ClassName
   name: ClassName
   href: api/Java.Util.Collection-1.html#Java_Util_Collection_1_ClassName
@@ -10306,6 +10696,216 @@ references:
   fullName.vb: Java.Util.Collection(Of E).ClassName
   nameWithType: Collection<E>.ClassName
   nameWithType.vb: Collection(Of E).ClassName
+- uid: Java.Util.Collection`1.Clear
+  name: Clear()
+  href: api/Java.Util.Collection-1.html#Java_Util_Collection_1_Clear
+  commentId: M:Java.Util.Collection`1.Clear
+  fullName: Java.Util.Collection<E>.Clear()
+  fullName.vb: Java.Util.Collection(Of E).Clear()
+  nameWithType: Collection<E>.Clear()
+  nameWithType.vb: Collection(Of E).Clear()
+- uid: Java.Util.Collection`1.Clear*
+  name: Clear
+  href: api/Java.Util.Collection-1.html#Java_Util_Collection_1_Clear_
+  commentId: Overload:Java.Util.Collection`1.Clear
+  isSpec: "True"
+  fullName: Java.Util.Collection<E>.Clear
+  fullName.vb: Java.Util.Collection(Of E).Clear
+  nameWithType: Collection<E>.Clear
+  nameWithType.vb: Collection(Of E).Clear
+- uid: Java.Util.Collection`1.Contains(System.Object)
+  name: Contains(Object)
+  href: api/Java.Util.Collection-1.html#Java_Util_Collection_1_Contains_System_Object_
+  commentId: M:Java.Util.Collection`1.Contains(System.Object)
+  fullName: Java.Util.Collection<E>.Contains(System.Object)
+  fullName.vb: Java.Util.Collection(Of E).Contains(System.Object)
+  nameWithType: Collection<E>.Contains(Object)
+  nameWithType.vb: Collection(Of E).Contains(Object)
+- uid: Java.Util.Collection`1.Contains*
+  name: Contains
+  href: api/Java.Util.Collection-1.html#Java_Util_Collection_1_Contains_
+  commentId: Overload:Java.Util.Collection`1.Contains
+  isSpec: "True"
+  fullName: Java.Util.Collection<E>.Contains
+  fullName.vb: Java.Util.Collection(Of E).Contains
+  nameWithType: Collection<E>.Contains
+  nameWithType.vb: Collection(Of E).Contains
+- uid: Java.Util.Collection`1.ContainsAll*
+  name: ContainsAll
+  href: api/Java.Util.Collection-1.html#Java_Util_Collection_1_ContainsAll_
+  commentId: Overload:Java.Util.Collection`1.ContainsAll
+  isSpec: "True"
+  fullName: Java.Util.Collection<E>.ContainsAll
+  fullName.vb: Java.Util.Collection(Of E).ContainsAll
+  nameWithType: Collection<E>.ContainsAll
+  nameWithType.vb: Collection(Of E).ContainsAll
+- uid: Java.Util.Collection`1.ContainsAll``1(Java.Util.Collection{``0})
+  name: ContainsAll<T>(Collection<T>)
+  href: api/Java.Util.Collection-1.html#Java_Util_Collection_1_ContainsAll__1_Java_Util_Collection___0__
+  commentId: M:Java.Util.Collection`1.ContainsAll``1(Java.Util.Collection{``0})
+  name.vb: ContainsAll(Of T)(Collection(Of T))
+  fullName: Java.Util.Collection<E>.ContainsAll<T>(Java.Util.Collection<T>)
+  fullName.vb: Java.Util.Collection(Of E).ContainsAll(Of T)(Java.Util.Collection(Of T))
+  nameWithType: Collection<E>.ContainsAll<T>(Collection<T>)
+  nameWithType.vb: Collection(Of E).ContainsAll(Of T)(Collection(Of T))
+- uid: Java.Util.Collection`1.IsEmpty
+  name: IsEmpty
+  href: api/Java.Util.Collection-1.html#Java_Util_Collection_1_IsEmpty
+  commentId: P:Java.Util.Collection`1.IsEmpty
+  fullName: Java.Util.Collection<E>.IsEmpty
+  fullName.vb: Java.Util.Collection(Of E).IsEmpty
+  nameWithType: Collection<E>.IsEmpty
+  nameWithType.vb: Collection(Of E).IsEmpty
+- uid: Java.Util.Collection`1.IsEmpty*
+  name: IsEmpty
+  href: api/Java.Util.Collection-1.html#Java_Util_Collection_1_IsEmpty_
+  commentId: Overload:Java.Util.Collection`1.IsEmpty
+  isSpec: "True"
+  fullName: Java.Util.Collection<E>.IsEmpty
+  fullName.vb: Java.Util.Collection(Of E).IsEmpty
+  nameWithType: Collection<E>.IsEmpty
+  nameWithType.vb: Collection(Of E).IsEmpty
+- uid: Java.Util.Collection`1.Iterator
+  name: Iterator()
+  href: api/Java.Util.Collection-1.html#Java_Util_Collection_1_Iterator
+  commentId: M:Java.Util.Collection`1.Iterator
+  fullName: Java.Util.Collection<E>.Iterator()
+  fullName.vb: Java.Util.Collection(Of E).Iterator()
+  nameWithType: Collection<E>.Iterator()
+  nameWithType.vb: Collection(Of E).Iterator()
+- uid: Java.Util.Collection`1.Iterator*
+  name: Iterator
+  href: api/Java.Util.Collection-1.html#Java_Util_Collection_1_Iterator_
+  commentId: Overload:Java.Util.Collection`1.Iterator
+  isSpec: "True"
+  fullName: Java.Util.Collection<E>.Iterator
+  fullName.vb: Java.Util.Collection(Of E).Iterator
+  nameWithType: Collection<E>.Iterator
+  nameWithType.vb: Collection(Of E).Iterator
+- uid: Java.Util.Collection`1.op_Implicit(Java.Util.Collection{`0})~Java.Lang.Iterable{`0}
+  name: Implicit(Collection<E> to Iterable<E>)
+  href: api/Java.Util.Collection-1.html#Java_Util_Collection_1_op_Implicit_Java_Util_Collection__0___Java_Lang_Iterable__0_
+  commentId: M:Java.Util.Collection`1.op_Implicit(Java.Util.Collection{`0})~Java.Lang.Iterable{`0}
+  name.vb: Widening(Collection(Of E) to Iterable(Of E))
+  fullName: Java.Util.Collection<E>.Implicit(Java.Util.Collection<E> to Java.Lang.Iterable<E>)
+  fullName.vb: Java.Util.Collection(Of E).Widening(Java.Util.Collection(Of E) to Java.Lang.Iterable(Of E))
+  nameWithType: Collection<E>.Implicit(Collection<E> to Iterable<E>)
+  nameWithType.vb: Collection(Of E).Widening(Collection(Of E) to Iterable(Of E))
+- uid: Java.Util.Collection`1.op_Implicit*
+  name: Implicit
+  href: api/Java.Util.Collection-1.html#Java_Util_Collection_1_op_Implicit_
+  commentId: Overload:Java.Util.Collection`1.op_Implicit
+  isSpec: "True"
+  name.vb: Widening
+  fullName: Java.Util.Collection<E>.Implicit
+  fullName.vb: Java.Util.Collection(Of E).Widening
+  nameWithType: Collection<E>.Implicit
+  nameWithType.vb: Collection(Of E).Widening
+- uid: Java.Util.Collection`1.Remove(System.Object)
+  name: Remove(Object)
+  href: api/Java.Util.Collection-1.html#Java_Util_Collection_1_Remove_System_Object_
+  commentId: M:Java.Util.Collection`1.Remove(System.Object)
+  fullName: Java.Util.Collection<E>.Remove(System.Object)
+  fullName.vb: Java.Util.Collection(Of E).Remove(System.Object)
+  nameWithType: Collection<E>.Remove(Object)
+  nameWithType.vb: Collection(Of E).Remove(Object)
+- uid: Java.Util.Collection`1.Remove*
+  name: Remove
+  href: api/Java.Util.Collection-1.html#Java_Util_Collection_1_Remove_
+  commentId: Overload:Java.Util.Collection`1.Remove
+  isSpec: "True"
+  fullName: Java.Util.Collection<E>.Remove
+  fullName.vb: Java.Util.Collection(Of E).Remove
+  nameWithType: Collection<E>.Remove
+  nameWithType.vb: Collection(Of E).Remove
+- uid: Java.Util.Collection`1.RemoveAll*
+  name: RemoveAll
+  href: api/Java.Util.Collection-1.html#Java_Util_Collection_1_RemoveAll_
+  commentId: Overload:Java.Util.Collection`1.RemoveAll
+  isSpec: "True"
+  fullName: Java.Util.Collection<E>.RemoveAll
+  fullName.vb: Java.Util.Collection(Of E).RemoveAll
+  nameWithType: Collection<E>.RemoveAll
+  nameWithType.vb: Collection(Of E).RemoveAll
+- uid: Java.Util.Collection`1.RemoveAll``1(Java.Util.Collection{``0})
+  name: RemoveAll<T>(Collection<T>)
+  href: api/Java.Util.Collection-1.html#Java_Util_Collection_1_RemoveAll__1_Java_Util_Collection___0__
+  commentId: M:Java.Util.Collection`1.RemoveAll``1(Java.Util.Collection{``0})
+  name.vb: RemoveAll(Of T)(Collection(Of T))
+  fullName: Java.Util.Collection<E>.RemoveAll<T>(Java.Util.Collection<T>)
+  fullName.vb: Java.Util.Collection(Of E).RemoveAll(Of T)(Java.Util.Collection(Of T))
+  nameWithType: Collection<E>.RemoveAll<T>(Collection<T>)
+  nameWithType.vb: Collection(Of E).RemoveAll(Of T)(Collection(Of T))
+- uid: Java.Util.Collection`1.RemoveIf*
+  name: RemoveIf
+  href: api/Java.Util.Collection-1.html#Java_Util_Collection_1_RemoveIf_
+  commentId: Overload:Java.Util.Collection`1.RemoveIf
+  isSpec: "True"
+  fullName: Java.Util.Collection<E>.RemoveIf
+  fullName.vb: Java.Util.Collection(Of E).RemoveIf
+  nameWithType: Collection<E>.RemoveIf
+  nameWithType.vb: Collection(Of E).RemoveIf
+- uid: Java.Util.Collection`1.RemoveIf``1(Java.Util.Function.Predicate{``0})
+  name: RemoveIf<SuperE>(Predicate<SuperE>)
+  href: api/Java.Util.Collection-1.html#Java_Util_Collection_1_RemoveIf__1_Java_Util_Function_Predicate___0__
+  commentId: M:Java.Util.Collection`1.RemoveIf``1(Java.Util.Function.Predicate{``0})
+  name.vb: RemoveIf(Of SuperE)(Predicate(Of SuperE))
+  fullName: Java.Util.Collection<E>.RemoveIf<SuperE>(Java.Util.Function.Predicate<SuperE>)
+  fullName.vb: Java.Util.Collection(Of E).RemoveIf(Of SuperE)(Java.Util.Function.Predicate(Of SuperE))
+  nameWithType: Collection<E>.RemoveIf<SuperE>(Predicate<SuperE>)
+  nameWithType.vb: Collection(Of E).RemoveIf(Of SuperE)(Predicate(Of SuperE))
+- uid: Java.Util.Collection`1.RetainAll*
+  name: RetainAll
+  href: api/Java.Util.Collection-1.html#Java_Util_Collection_1_RetainAll_
+  commentId: Overload:Java.Util.Collection`1.RetainAll
+  isSpec: "True"
+  fullName: Java.Util.Collection<E>.RetainAll
+  fullName.vb: Java.Util.Collection(Of E).RetainAll
+  nameWithType: Collection<E>.RetainAll
+  nameWithType.vb: Collection(Of E).RetainAll
+- uid: Java.Util.Collection`1.RetainAll``1(Java.Util.Collection{``0})
+  name: RetainAll<T>(Collection<T>)
+  href: api/Java.Util.Collection-1.html#Java_Util_Collection_1_RetainAll__1_Java_Util_Collection___0__
+  commentId: M:Java.Util.Collection`1.RetainAll``1(Java.Util.Collection{``0})
+  name.vb: RetainAll(Of T)(Collection(Of T))
+  fullName: Java.Util.Collection<E>.RetainAll<T>(Java.Util.Collection<T>)
+  fullName.vb: Java.Util.Collection(Of E).RetainAll(Of T)(Java.Util.Collection(Of T))
+  nameWithType: Collection<E>.RetainAll<T>(Collection<T>)
+  nameWithType.vb: Collection(Of E).RetainAll(Of T)(Collection(Of T))
+- uid: Java.Util.Collection`1.Size
+  name: Size
+  href: api/Java.Util.Collection-1.html#Java_Util_Collection_1_Size
+  commentId: P:Java.Util.Collection`1.Size
+  fullName: Java.Util.Collection<E>.Size
+  fullName.vb: Java.Util.Collection(Of E).Size
+  nameWithType: Collection<E>.Size
+  nameWithType.vb: Collection(Of E).Size
+- uid: Java.Util.Collection`1.Size*
+  name: Size
+  href: api/Java.Util.Collection-1.html#Java_Util_Collection_1_Size_
+  commentId: Overload:Java.Util.Collection`1.Size
+  isSpec: "True"
+  fullName: Java.Util.Collection<E>.Size
+  fullName.vb: Java.Util.Collection(Of E).Size
+  nameWithType: Collection<E>.Size
+  nameWithType.vb: Collection(Of E).Size
+- uid: Java.Util.Collection`1.Spliterator
+  name: Spliterator()
+  href: api/Java.Util.Collection-1.html#Java_Util_Collection_1_Spliterator
+  commentId: M:Java.Util.Collection`1.Spliterator
+  fullName: Java.Util.Collection<E>.Spliterator()
+  fullName.vb: Java.Util.Collection(Of E).Spliterator()
+  nameWithType: Collection<E>.Spliterator()
+  nameWithType.vb: Collection(Of E).Spliterator()
+- uid: Java.Util.Collection`1.Spliterator*
+  name: Spliterator
+  href: api/Java.Util.Collection-1.html#Java_Util_Collection_1_Spliterator_
+  commentId: Overload:Java.Util.Collection`1.Spliterator
+  isSpec: "True"
+  fullName: Java.Util.Collection<E>.Spliterator
+  fullName.vb: Java.Util.Collection(Of E).Spliterator
+  nameWithType: Collection<E>.Spliterator
+  nameWithType.vb: Collection(Of E).Spliterator
 - uid: Java.Util.Collections
   name: Collections
   href: api/Java.Util.Collections.html
@@ -14731,6 +15331,23 @@ references:
   fullName.vb: Java.Util.Hashtable(Of K, V).ClassName
   nameWithType: Hashtable<K, V>.ClassName
   nameWithType.vb: Hashtable(Of K, V).ClassName
+- uid: Java.Util.Hashtable`2.Get(System.Object)
+  name: Get(Object)
+  href: api/Java.Util.Hashtable-2.html#Java_Util_Hashtable_2_Get_System_Object_
+  commentId: M:Java.Util.Hashtable`2.Get(System.Object)
+  fullName: Java.Util.Hashtable<K, V>.Get(System.Object)
+  fullName.vb: Java.Util.Hashtable(Of K, V).Get(System.Object)
+  nameWithType: Hashtable<K, V>.Get(Object)
+  nameWithType.vb: Hashtable(Of K, V).Get(Object)
+- uid: Java.Util.Hashtable`2.Get*
+  name: Get
+  href: api/Java.Util.Hashtable-2.html#Java_Util_Hashtable_2_Get_
+  commentId: Overload:Java.Util.Hashtable`2.Get
+  isSpec: "True"
+  fullName: Java.Util.Hashtable<K, V>.Get
+  fullName.vb: Java.Util.Hashtable(Of K, V).Get
+  nameWithType: Hashtable<K, V>.Get
+  nameWithType.vb: Hashtable(Of K, V).Get
 - uid: Java.Util.Hashtable`2.op_Implicit(Java.Util.Hashtable{`0,`1})~Java.Util.Map{`0,`1}
   name: Implicit(Hashtable<K, V> to Map<K, V>)
   href: api/Java.Util.Hashtable-2.html#Java_Util_Hashtable_2_op_Implicit_Java_Util_Hashtable__0__1___Java_Util_Map__0__1_
@@ -14750,6 +15367,23 @@ references:
   fullName.vb: Java.Util.Hashtable(Of K, V).Widening
   nameWithType: Hashtable<K, V>.Implicit
   nameWithType.vb: Hashtable(Of K, V).Widening
+- uid: Java.Util.Hashtable`2.Put(`0,`1)
+  name: Put(K, V)
+  href: api/Java.Util.Hashtable-2.html#Java_Util_Hashtable_2_Put__0__1_
+  commentId: M:Java.Util.Hashtable`2.Put(`0,`1)
+  fullName: Java.Util.Hashtable<K, V>.Put(K, V)
+  fullName.vb: Java.Util.Hashtable(Of K, V).Put(K, V)
+  nameWithType: Hashtable<K, V>.Put(K, V)
+  nameWithType.vb: Hashtable(Of K, V).Put(K, V)
+- uid: Java.Util.Hashtable`2.Put*
+  name: Put
+  href: api/Java.Util.Hashtable-2.html#Java_Util_Hashtable_2_Put_
+  commentId: Overload:Java.Util.Hashtable`2.Put
+  isSpec: "True"
+  fullName: Java.Util.Hashtable<K, V>.Put
+  fullName.vb: Java.Util.Hashtable(Of K, V).Put
+  nameWithType: Hashtable<K, V>.Put
+  nameWithType.vb: Hashtable(Of K, V).Put
 - uid: Java.Util.IComparator`1
   name: IComparator<T>
   href: api/Java.Util.IComparator-1.html
@@ -14908,6 +15542,71 @@ references:
   isSpec: "True"
   fullName: Java.Util.List.ClassName
   nameWithType: List.ClassName
+- uid: Java.Util.List.Clear
+  name: Clear()
+  href: api/Java.Util.List.html#Java_Util_List_Clear
+  commentId: M:Java.Util.List.Clear
+  fullName: Java.Util.List.Clear()
+  nameWithType: List.Clear()
+- uid: Java.Util.List.Clear*
+  name: Clear
+  href: api/Java.Util.List.html#Java_Util_List_Clear_
+  commentId: Overload:Java.Util.List.Clear
+  isSpec: "True"
+  fullName: Java.Util.List.Clear
+  nameWithType: List.Clear
+- uid: Java.Util.List.Contains(System.Object)
+  name: Contains(Object)
+  href: api/Java.Util.List.html#Java_Util_List_Contains_System_Object_
+  commentId: M:Java.Util.List.Contains(System.Object)
+  fullName: Java.Util.List.Contains(System.Object)
+  nameWithType: List.Contains(Object)
+- uid: Java.Util.List.Contains*
+  name: Contains
+  href: api/Java.Util.List.html#Java_Util_List_Contains_
+  commentId: Overload:Java.Util.List.Contains
+  isSpec: "True"
+  fullName: Java.Util.List.Contains
+  nameWithType: List.Contains
+- uid: Java.Util.List.IndexOf(System.Object)
+  name: IndexOf(Object)
+  href: api/Java.Util.List.html#Java_Util_List_IndexOf_System_Object_
+  commentId: M:Java.Util.List.IndexOf(System.Object)
+  fullName: Java.Util.List.IndexOf(System.Object)
+  nameWithType: List.IndexOf(Object)
+- uid: Java.Util.List.IndexOf*
+  name: IndexOf
+  href: api/Java.Util.List.html#Java_Util_List_IndexOf_
+  commentId: Overload:Java.Util.List.IndexOf
+  isSpec: "True"
+  fullName: Java.Util.List.IndexOf
+  nameWithType: List.IndexOf
+- uid: Java.Util.List.LastIndexOf(System.Object)
+  name: LastIndexOf(Object)
+  href: api/Java.Util.List.html#Java_Util_List_LastIndexOf_System_Object_
+  commentId: M:Java.Util.List.LastIndexOf(System.Object)
+  fullName: Java.Util.List.LastIndexOf(System.Object)
+  nameWithType: List.LastIndexOf(Object)
+- uid: Java.Util.List.LastIndexOf*
+  name: LastIndexOf
+  href: api/Java.Util.List.html#Java_Util_List_LastIndexOf_
+  commentId: Overload:Java.Util.List.LastIndexOf
+  isSpec: "True"
+  fullName: Java.Util.List.LastIndexOf
+  nameWithType: List.LastIndexOf
+- uid: Java.Util.List.Remove(System.Object)
+  name: Remove(Object)
+  href: api/Java.Util.List.html#Java_Util_List_Remove_System_Object_
+  commentId: M:Java.Util.List.Remove(System.Object)
+  fullName: Java.Util.List.Remove(System.Object)
+  nameWithType: List.Remove(Object)
+- uid: Java.Util.List.Remove*
+  name: Remove
+  href: api/Java.Util.List.html#Java_Util_List_Remove_
+  commentId: Overload:Java.Util.List.Remove
+  isSpec: "True"
+  fullName: Java.Util.List.Remove
+  nameWithType: List.Remove
 - uid: Java.Util.List`1
   name: List<E>
   href: api/Java.Util.List-1.html
@@ -14917,6 +15616,433 @@ references:
   fullName.vb: Java.Util.List(Of E)
   nameWithType: List<E>
   nameWithType.vb: List(Of E)
+- uid: Java.Util.List`1.Add(`0)
+  name: Add(E)
+  href: api/Java.Util.List-1.html#Java_Util_List_1_Add__0_
+  commentId: M:Java.Util.List`1.Add(`0)
+  fullName: Java.Util.List<E>.Add(E)
+  fullName.vb: Java.Util.List(Of E).Add(E)
+  nameWithType: List<E>.Add(E)
+  nameWithType.vb: List(Of E).Add(E)
+- uid: Java.Util.List`1.Add(System.Int32,`0)
+  name: Add(Int32, E)
+  href: api/Java.Util.List-1.html#Java_Util_List_1_Add_System_Int32__0_
+  commentId: M:Java.Util.List`1.Add(System.Int32,`0)
+  fullName: Java.Util.List<E>.Add(System.Int32, E)
+  fullName.vb: Java.Util.List(Of E).Add(System.Int32, E)
+  nameWithType: List<E>.Add(Int32, E)
+  nameWithType.vb: List(Of E).Add(Int32, E)
+- uid: Java.Util.List`1.Add*
+  name: Add
+  href: api/Java.Util.List-1.html#Java_Util_List_1_Add_
+  commentId: Overload:Java.Util.List`1.Add
+  isSpec: "True"
+  fullName: Java.Util.List<E>.Add
+  fullName.vb: Java.Util.List(Of E).Add
+  nameWithType: List<E>.Add
+  nameWithType.vb: List(Of E).Add
+- uid: Java.Util.List`1.AddAll*
+  name: AddAll
+  href: api/Java.Util.List-1.html#Java_Util_List_1_AddAll_
+  commentId: Overload:Java.Util.List`1.AddAll
+  isSpec: "True"
+  fullName: Java.Util.List<E>.AddAll
+  fullName.vb: Java.Util.List(Of E).AddAll
+  nameWithType: List<E>.AddAll
+  nameWithType.vb: List(Of E).AddAll
+- uid: Java.Util.List`1.AddAll``1(Java.Util.Collection{``0})
+  name: AddAll<ExtendsE>(Collection<ExtendsE>)
+  href: api/Java.Util.List-1.html#Java_Util_List_1_AddAll__1_Java_Util_Collection___0__
+  commentId: M:Java.Util.List`1.AddAll``1(Java.Util.Collection{``0})
+  name.vb: AddAll(Of ExtendsE)(Collection(Of ExtendsE))
+  fullName: Java.Util.List<E>.AddAll<ExtendsE>(Java.Util.Collection<ExtendsE>)
+  fullName.vb: Java.Util.List(Of E).AddAll(Of ExtendsE)(Java.Util.Collection(Of ExtendsE))
+  nameWithType: List<E>.AddAll<ExtendsE>(Collection<ExtendsE>)
+  nameWithType.vb: List(Of E).AddAll(Of ExtendsE)(Collection(Of ExtendsE))
+- uid: Java.Util.List`1.AddAll``1(System.Int32,Java.Util.Collection{``0})
+  name: AddAll<ExtendsE>(Int32, Collection<ExtendsE>)
+  href: api/Java.Util.List-1.html#Java_Util_List_1_AddAll__1_System_Int32_Java_Util_Collection___0__
+  commentId: M:Java.Util.List`1.AddAll``1(System.Int32,Java.Util.Collection{``0})
+  name.vb: AddAll(Of ExtendsE)(Int32, Collection(Of ExtendsE))
+  fullName: Java.Util.List<E>.AddAll<ExtendsE>(System.Int32, Java.Util.Collection<ExtendsE>)
+  fullName.vb: Java.Util.List(Of E).AddAll(Of ExtendsE)(System.Int32, Java.Util.Collection(Of ExtendsE))
+  nameWithType: List<E>.AddAll<ExtendsE>(Int32, Collection<ExtendsE>)
+  nameWithType.vb: List(Of E).AddAll(Of ExtendsE)(Int32, Collection(Of ExtendsE))
+- uid: Java.Util.List`1.ContainsAll*
+  name: ContainsAll
+  href: api/Java.Util.List-1.html#Java_Util_List_1_ContainsAll_
+  commentId: Overload:Java.Util.List`1.ContainsAll
+  isSpec: "True"
+  fullName: Java.Util.List<E>.ContainsAll
+  fullName.vb: Java.Util.List(Of E).ContainsAll
+  nameWithType: List<E>.ContainsAll
+  nameWithType.vb: List(Of E).ContainsAll
+- uid: Java.Util.List`1.ContainsAll``1(Java.Util.Collection{``0})
+  name: ContainsAll<T>(Collection<T>)
+  href: api/Java.Util.List-1.html#Java_Util_List_1_ContainsAll__1_Java_Util_Collection___0__
+  commentId: M:Java.Util.List`1.ContainsAll``1(Java.Util.Collection{``0})
+  name.vb: ContainsAll(Of T)(Collection(Of T))
+  fullName: Java.Util.List<E>.ContainsAll<T>(Java.Util.Collection<T>)
+  fullName.vb: Java.Util.List(Of E).ContainsAll(Of T)(Java.Util.Collection(Of T))
+  nameWithType: List<E>.ContainsAll<T>(Collection<T>)
+  nameWithType.vb: List(Of E).ContainsAll(Of T)(Collection(Of T))
+- uid: Java.Util.List`1.CopyOf*
+  name: CopyOf
+  href: api/Java.Util.List-1.html#Java_Util_List_1_CopyOf_
+  commentId: Overload:Java.Util.List`1.CopyOf
+  isSpec: "True"
+  fullName: Java.Util.List<E>.CopyOf
+  fullName.vb: Java.Util.List(Of E).CopyOf
+  nameWithType: List<E>.CopyOf
+  nameWithType.vb: List(Of E).CopyOf
+- uid: Java.Util.List`1.CopyOf``1(Java.Util.Collection{``0})
+  name: CopyOf<ExtendsE>(Collection<ExtendsE>)
+  href: api/Java.Util.List-1.html#Java_Util_List_1_CopyOf__1_Java_Util_Collection___0__
+  commentId: M:Java.Util.List`1.CopyOf``1(Java.Util.Collection{``0})
+  name.vb: CopyOf(Of ExtendsE)(Collection(Of ExtendsE))
+  fullName: Java.Util.List<E>.CopyOf<ExtendsE>(Java.Util.Collection<ExtendsE>)
+  fullName.vb: Java.Util.List(Of E).CopyOf(Of ExtendsE)(Java.Util.Collection(Of ExtendsE))
+  nameWithType: List<E>.CopyOf<ExtendsE>(Collection<ExtendsE>)
+  nameWithType.vb: List(Of E).CopyOf(Of ExtendsE)(Collection(Of ExtendsE))
+- uid: Java.Util.List`1.Get(System.Int32)
+  name: Get(Int32)
+  href: api/Java.Util.List-1.html#Java_Util_List_1_Get_System_Int32_
+  commentId: M:Java.Util.List`1.Get(System.Int32)
+  fullName: Java.Util.List<E>.Get(System.Int32)
+  fullName.vb: Java.Util.List(Of E).Get(System.Int32)
+  nameWithType: List<E>.Get(Int32)
+  nameWithType.vb: List(Of E).Get(Int32)
+- uid: Java.Util.List`1.Get*
+  name: Get
+  href: api/Java.Util.List-1.html#Java_Util_List_1_Get_
+  commentId: Overload:Java.Util.List`1.Get
+  isSpec: "True"
+  fullName: Java.Util.List<E>.Get
+  fullName.vb: Java.Util.List(Of E).Get
+  nameWithType: List<E>.Get
+  nameWithType.vb: List(Of E).Get
+- uid: Java.Util.List`1.IsEmpty
+  name: IsEmpty
+  href: api/Java.Util.List-1.html#Java_Util_List_1_IsEmpty
+  commentId: P:Java.Util.List`1.IsEmpty
+  fullName: Java.Util.List<E>.IsEmpty
+  fullName.vb: Java.Util.List(Of E).IsEmpty
+  nameWithType: List<E>.IsEmpty
+  nameWithType.vb: List(Of E).IsEmpty
+- uid: Java.Util.List`1.IsEmpty*
+  name: IsEmpty
+  href: api/Java.Util.List-1.html#Java_Util_List_1_IsEmpty_
+  commentId: Overload:Java.Util.List`1.IsEmpty
+  isSpec: "True"
+  fullName: Java.Util.List<E>.IsEmpty
+  fullName.vb: Java.Util.List(Of E).IsEmpty
+  nameWithType: List<E>.IsEmpty
+  nameWithType.vb: List(Of E).IsEmpty
+- uid: Java.Util.List`1.Iterator
+  name: Iterator
+  href: api/Java.Util.List-1.html#Java_Util_List_1_Iterator
+  commentId: P:Java.Util.List`1.Iterator
+  fullName: Java.Util.List<E>.Iterator
+  fullName.vb: Java.Util.List(Of E).Iterator
+  nameWithType: List<E>.Iterator
+  nameWithType.vb: List(Of E).Iterator
+- uid: Java.Util.List`1.Iterator*
+  name: Iterator
+  href: api/Java.Util.List-1.html#Java_Util_List_1_Iterator_
+  commentId: Overload:Java.Util.List`1.Iterator
+  isSpec: "True"
+  fullName: Java.Util.List<E>.Iterator
+  fullName.vb: Java.Util.List(Of E).Iterator
+  nameWithType: List<E>.Iterator
+  nameWithType.vb: List(Of E).Iterator
+- uid: Java.Util.List`1.ListIterator
+  name: ListIterator()
+  href: api/Java.Util.List-1.html#Java_Util_List_1_ListIterator
+  commentId: M:Java.Util.List`1.ListIterator
+  fullName: Java.Util.List<E>.ListIterator()
+  fullName.vb: Java.Util.List(Of E).ListIterator()
+  nameWithType: List<E>.ListIterator()
+  nameWithType.vb: List(Of E).ListIterator()
+- uid: Java.Util.List`1.ListIterator(System.Int32)
+  name: ListIterator(Int32)
+  href: api/Java.Util.List-1.html#Java_Util_List_1_ListIterator_System_Int32_
+  commentId: M:Java.Util.List`1.ListIterator(System.Int32)
+  fullName: Java.Util.List<E>.ListIterator(System.Int32)
+  fullName.vb: Java.Util.List(Of E).ListIterator(System.Int32)
+  nameWithType: List<E>.ListIterator(Int32)
+  nameWithType.vb: List(Of E).ListIterator(Int32)
+- uid: Java.Util.List`1.ListIterator*
+  name: ListIterator
+  href: api/Java.Util.List-1.html#Java_Util_List_1_ListIterator_
+  commentId: Overload:Java.Util.List`1.ListIterator
+  isSpec: "True"
+  fullName: Java.Util.List<E>.ListIterator
+  fullName.vb: Java.Util.List(Of E).ListIterator
+  nameWithType: List<E>.ListIterator
+  nameWithType.vb: List(Of E).ListIterator
+- uid: Java.Util.List`1.Of
+  name: Of()
+  href: api/Java.Util.List-1.html#Java_Util_List_1_Of
+  commentId: M:Java.Util.List`1.Of
+  fullName: Java.Util.List<E>.Of()
+  fullName.vb: Java.Util.List(Of E).Of()
+  nameWithType: List<E>.Of()
+  nameWithType.vb: List(Of E).Of()
+- uid: Java.Util.List`1.Of(`0)
+  name: Of(E)
+  href: api/Java.Util.List-1.html#Java_Util_List_1_Of__0_
+  commentId: M:Java.Util.List`1.Of(`0)
+  fullName: Java.Util.List<E>.Of(E)
+  fullName.vb: Java.Util.List(Of E).Of(E)
+  nameWithType: List<E>.Of(E)
+  nameWithType.vb: List(Of E).Of(E)
+- uid: Java.Util.List`1.Of(`0,`0)
+  name: Of(E, E)
+  href: api/Java.Util.List-1.html#Java_Util_List_1_Of__0__0_
+  commentId: M:Java.Util.List`1.Of(`0,`0)
+  fullName: Java.Util.List<E>.Of(E, E)
+  fullName.vb: Java.Util.List(Of E).Of(E, E)
+  nameWithType: List<E>.Of(E, E)
+  nameWithType.vb: List(Of E).Of(E, E)
+- uid: Java.Util.List`1.Of(`0,`0,`0)
+  name: Of(E, E, E)
+  href: api/Java.Util.List-1.html#Java_Util_List_1_Of__0__0__0_
+  commentId: M:Java.Util.List`1.Of(`0,`0,`0)
+  fullName: Java.Util.List<E>.Of(E, E, E)
+  fullName.vb: Java.Util.List(Of E).Of(E, E, E)
+  nameWithType: List<E>.Of(E, E, E)
+  nameWithType.vb: List(Of E).Of(E, E, E)
+- uid: Java.Util.List`1.Of(`0,`0,`0,`0)
+  name: Of(E, E, E, E)
+  href: api/Java.Util.List-1.html#Java_Util_List_1_Of__0__0__0__0_
+  commentId: M:Java.Util.List`1.Of(`0,`0,`0,`0)
+  fullName: Java.Util.List<E>.Of(E, E, E, E)
+  fullName.vb: Java.Util.List(Of E).Of(E, E, E, E)
+  nameWithType: List<E>.Of(E, E, E, E)
+  nameWithType.vb: List(Of E).Of(E, E, E, E)
+- uid: Java.Util.List`1.Of(`0,`0,`0,`0,`0)
+  name: Of(E, E, E, E, E)
+  href: api/Java.Util.List-1.html#Java_Util_List_1_Of__0__0__0__0__0_
+  commentId: M:Java.Util.List`1.Of(`0,`0,`0,`0,`0)
+  fullName: Java.Util.List<E>.Of(E, E, E, E, E)
+  fullName.vb: Java.Util.List(Of E).Of(E, E, E, E, E)
+  nameWithType: List<E>.Of(E, E, E, E, E)
+  nameWithType.vb: List(Of E).Of(E, E, E, E, E)
+- uid: Java.Util.List`1.Of(`0,`0,`0,`0,`0,`0)
+  name: Of(E, E, E, E, E, E)
+  href: api/Java.Util.List-1.html#Java_Util_List_1_Of__0__0__0__0__0__0_
+  commentId: M:Java.Util.List`1.Of(`0,`0,`0,`0,`0,`0)
+  fullName: Java.Util.List<E>.Of(E, E, E, E, E, E)
+  fullName.vb: Java.Util.List(Of E).Of(E, E, E, E, E, E)
+  nameWithType: List<E>.Of(E, E, E, E, E, E)
+  nameWithType.vb: List(Of E).Of(E, E, E, E, E, E)
+- uid: Java.Util.List`1.Of(`0,`0,`0,`0,`0,`0,`0)
+  name: Of(E, E, E, E, E, E, E)
+  href: api/Java.Util.List-1.html#Java_Util_List_1_Of__0__0__0__0__0__0__0_
+  commentId: M:Java.Util.List`1.Of(`0,`0,`0,`0,`0,`0,`0)
+  fullName: Java.Util.List<E>.Of(E, E, E, E, E, E, E)
+  fullName.vb: Java.Util.List(Of E).Of(E, E, E, E, E, E, E)
+  nameWithType: List<E>.Of(E, E, E, E, E, E, E)
+  nameWithType.vb: List(Of E).Of(E, E, E, E, E, E, E)
+- uid: Java.Util.List`1.Of(`0,`0,`0,`0,`0,`0,`0,`0)
+  name: Of(E, E, E, E, E, E, E, E)
+  href: api/Java.Util.List-1.html#Java_Util_List_1_Of__0__0__0__0__0__0__0__0_
+  commentId: M:Java.Util.List`1.Of(`0,`0,`0,`0,`0,`0,`0,`0)
+  fullName: Java.Util.List<E>.Of(E, E, E, E, E, E, E, E)
+  fullName.vb: Java.Util.List(Of E).Of(E, E, E, E, E, E, E, E)
+  nameWithType: List<E>.Of(E, E, E, E, E, E, E, E)
+  nameWithType.vb: List(Of E).Of(E, E, E, E, E, E, E, E)
+- uid: Java.Util.List`1.Of(`0,`0,`0,`0,`0,`0,`0,`0,`0)
+  name: Of(E, E, E, E, E, E, E, E, E)
+  href: api/Java.Util.List-1.html#Java_Util_List_1_Of__0__0__0__0__0__0__0__0__0_
+  commentId: M:Java.Util.List`1.Of(`0,`0,`0,`0,`0,`0,`0,`0,`0)
+  fullName: Java.Util.List<E>.Of(E, E, E, E, E, E, E, E, E)
+  fullName.vb: Java.Util.List(Of E).Of(E, E, E, E, E, E, E, E, E)
+  nameWithType: List<E>.Of(E, E, E, E, E, E, E, E, E)
+  nameWithType.vb: List(Of E).Of(E, E, E, E, E, E, E, E, E)
+- uid: Java.Util.List`1.Of(`0,`0,`0,`0,`0,`0,`0,`0,`0,`0)
+  name: Of(E, E, E, E, E, E, E, E, E, E)
+  href: api/Java.Util.List-1.html#Java_Util_List_1_Of__0__0__0__0__0__0__0__0__0__0_
+  commentId: M:Java.Util.List`1.Of(`0,`0,`0,`0,`0,`0,`0,`0,`0,`0)
+  fullName: Java.Util.List<E>.Of(E, E, E, E, E, E, E, E, E, E)
+  fullName.vb: Java.Util.List(Of E).Of(E, E, E, E, E, E, E, E, E, E)
+  nameWithType: List<E>.Of(E, E, E, E, E, E, E, E, E, E)
+  nameWithType.vb: List(Of E).Of(E, E, E, E, E, E, E, E, E, E)
+- uid: Java.Util.List`1.Of(`0[])
+  name: Of(E[])
+  href: api/Java.Util.List-1.html#Java_Util_List_1_Of__0___
+  commentId: M:Java.Util.List`1.Of(`0[])
+  name.vb: Of(E())
+  fullName: Java.Util.List<E>.Of(E[])
+  fullName.vb: Java.Util.List(Of E).Of(E())
+  nameWithType: List<E>.Of(E[])
+  nameWithType.vb: List(Of E).Of(E())
+- uid: Java.Util.List`1.Of*
+  name: Of
+  href: api/Java.Util.List-1.html#Java_Util_List_1_Of_
+  commentId: Overload:Java.Util.List`1.Of
+  isSpec: "True"
+  fullName: Java.Util.List<E>.Of
+  fullName.vb: Java.Util.List(Of E).Of
+  nameWithType: List<E>.Of
+  nameWithType.vb: List(Of E).Of
+- uid: Java.Util.List`1.Remove(System.Int32)
+  name: Remove(Int32)
+  href: api/Java.Util.List-1.html#Java_Util_List_1_Remove_System_Int32_
+  commentId: M:Java.Util.List`1.Remove(System.Int32)
+  fullName: Java.Util.List<E>.Remove(System.Int32)
+  fullName.vb: Java.Util.List(Of E).Remove(System.Int32)
+  nameWithType: List<E>.Remove(Int32)
+  nameWithType.vb: List(Of E).Remove(Int32)
+- uid: Java.Util.List`1.Remove*
+  name: Remove
+  href: api/Java.Util.List-1.html#Java_Util_List_1_Remove_
+  commentId: Overload:Java.Util.List`1.Remove
+  isSpec: "True"
+  fullName: Java.Util.List<E>.Remove
+  fullName.vb: Java.Util.List(Of E).Remove
+  nameWithType: List<E>.Remove
+  nameWithType.vb: List(Of E).Remove
+- uid: Java.Util.List`1.RemoveAll*
+  name: RemoveAll
+  href: api/Java.Util.List-1.html#Java_Util_List_1_RemoveAll_
+  commentId: Overload:Java.Util.List`1.RemoveAll
+  isSpec: "True"
+  fullName: Java.Util.List<E>.RemoveAll
+  fullName.vb: Java.Util.List(Of E).RemoveAll
+  nameWithType: List<E>.RemoveAll
+  nameWithType.vb: List(Of E).RemoveAll
+- uid: Java.Util.List`1.RemoveAll``1(Java.Util.Collection{``0})
+  name: RemoveAll<T>(Collection<T>)
+  href: api/Java.Util.List-1.html#Java_Util_List_1_RemoveAll__1_Java_Util_Collection___0__
+  commentId: M:Java.Util.List`1.RemoveAll``1(Java.Util.Collection{``0})
+  name.vb: RemoveAll(Of T)(Collection(Of T))
+  fullName: Java.Util.List<E>.RemoveAll<T>(Java.Util.Collection<T>)
+  fullName.vb: Java.Util.List(Of E).RemoveAll(Of T)(Java.Util.Collection(Of T))
+  nameWithType: List<E>.RemoveAll<T>(Collection<T>)
+  nameWithType.vb: List(Of E).RemoveAll(Of T)(Collection(Of T))
+- uid: Java.Util.List`1.ReplaceAll(Java.Util.Function.UnaryOperator{`0})
+  name: ReplaceAll(UnaryOperator<E>)
+  href: api/Java.Util.List-1.html#Java_Util_List_1_ReplaceAll_Java_Util_Function_UnaryOperator__0__
+  commentId: M:Java.Util.List`1.ReplaceAll(Java.Util.Function.UnaryOperator{`0})
+  name.vb: ReplaceAll(UnaryOperator(Of E))
+  fullName: Java.Util.List<E>.ReplaceAll(Java.Util.Function.UnaryOperator<E>)
+  fullName.vb: Java.Util.List(Of E).ReplaceAll(Java.Util.Function.UnaryOperator(Of E))
+  nameWithType: List<E>.ReplaceAll(UnaryOperator<E>)
+  nameWithType.vb: List(Of E).ReplaceAll(UnaryOperator(Of E))
+- uid: Java.Util.List`1.ReplaceAll*
+  name: ReplaceAll
+  href: api/Java.Util.List-1.html#Java_Util_List_1_ReplaceAll_
+  commentId: Overload:Java.Util.List`1.ReplaceAll
+  isSpec: "True"
+  fullName: Java.Util.List<E>.ReplaceAll
+  fullName.vb: Java.Util.List(Of E).ReplaceAll
+  nameWithType: List<E>.ReplaceAll
+  nameWithType.vb: List(Of E).ReplaceAll
+- uid: Java.Util.List`1.RetainAll*
+  name: RetainAll
+  href: api/Java.Util.List-1.html#Java_Util_List_1_RetainAll_
+  commentId: Overload:Java.Util.List`1.RetainAll
+  isSpec: "True"
+  fullName: Java.Util.List<E>.RetainAll
+  fullName.vb: Java.Util.List(Of E).RetainAll
+  nameWithType: List<E>.RetainAll
+  nameWithType.vb: List(Of E).RetainAll
+- uid: Java.Util.List`1.RetainAll``1(Java.Util.Collection{``0})
+  name: RetainAll<T>(Collection<T>)
+  href: api/Java.Util.List-1.html#Java_Util_List_1_RetainAll__1_Java_Util_Collection___0__
+  commentId: M:Java.Util.List`1.RetainAll``1(Java.Util.Collection{``0})
+  name.vb: RetainAll(Of T)(Collection(Of T))
+  fullName: Java.Util.List<E>.RetainAll<T>(Java.Util.Collection<T>)
+  fullName.vb: Java.Util.List(Of E).RetainAll(Of T)(Java.Util.Collection(Of T))
+  nameWithType: List<E>.RetainAll<T>(Collection<T>)
+  nameWithType.vb: List(Of E).RetainAll(Of T)(Collection(Of T))
+- uid: Java.Util.List`1.Set(System.Int32,`0)
+  name: Set(Int32, E)
+  href: api/Java.Util.List-1.html#Java_Util_List_1_Set_System_Int32__0_
+  commentId: M:Java.Util.List`1.Set(System.Int32,`0)
+  fullName: Java.Util.List<E>.Set(System.Int32, E)
+  fullName.vb: Java.Util.List(Of E).Set(System.Int32, E)
+  nameWithType: List<E>.Set(Int32, E)
+  nameWithType.vb: List(Of E).Set(Int32, E)
+- uid: Java.Util.List`1.Set*
+  name: Set
+  href: api/Java.Util.List-1.html#Java_Util_List_1_Set_
+  commentId: Overload:Java.Util.List`1.Set
+  isSpec: "True"
+  fullName: Java.Util.List<E>.Set
+  fullName.vb: Java.Util.List(Of E).Set
+  nameWithType: List<E>.Set
+  nameWithType.vb: List(Of E).Set
+- uid: Java.Util.List`1.Size
+  name: Size
+  href: api/Java.Util.List-1.html#Java_Util_List_1_Size
+  commentId: P:Java.Util.List`1.Size
+  fullName: Java.Util.List<E>.Size
+  fullName.vb: Java.Util.List(Of E).Size
+  nameWithType: List<E>.Size
+  nameWithType.vb: List(Of E).Size
+- uid: Java.Util.List`1.Size*
+  name: Size
+  href: api/Java.Util.List-1.html#Java_Util_List_1_Size_
+  commentId: Overload:Java.Util.List`1.Size
+  isSpec: "True"
+  fullName: Java.Util.List<E>.Size
+  fullName.vb: Java.Util.List(Of E).Size
+  nameWithType: List<E>.Size
+  nameWithType.vb: List(Of E).Size
+- uid: Java.Util.List`1.Sort*
+  name: Sort
+  href: api/Java.Util.List-1.html#Java_Util_List_1_Sort_
+  commentId: Overload:Java.Util.List`1.Sort
+  isSpec: "True"
+  fullName: Java.Util.List<E>.Sort
+  fullName.vb: Java.Util.List(Of E).Sort
+  nameWithType: List<E>.Sort
+  nameWithType.vb: List(Of E).Sort
+- uid: Java.Util.List`1.Sort``1(Java.Util.Comparator{``0})
+  name: Sort<SuperE>(Comparator<SuperE>)
+  href: api/Java.Util.List-1.html#Java_Util_List_1_Sort__1_Java_Util_Comparator___0__
+  commentId: M:Java.Util.List`1.Sort``1(Java.Util.Comparator{``0})
+  name.vb: Sort(Of SuperE)(Comparator(Of SuperE))
+  fullName: Java.Util.List<E>.Sort<SuperE>(Java.Util.Comparator<SuperE>)
+  fullName.vb: Java.Util.List(Of E).Sort(Of SuperE)(Java.Util.Comparator(Of SuperE))
+  nameWithType: List<E>.Sort<SuperE>(Comparator<SuperE>)
+  nameWithType.vb: List(Of E).Sort(Of SuperE)(Comparator(Of SuperE))
+- uid: Java.Util.List`1.Spliterator
+  name: Spliterator()
+  href: api/Java.Util.List-1.html#Java_Util_List_1_Spliterator
+  commentId: M:Java.Util.List`1.Spliterator
+  fullName: Java.Util.List<E>.Spliterator()
+  fullName.vb: Java.Util.List(Of E).Spliterator()
+  nameWithType: List<E>.Spliterator()
+  nameWithType.vb: List(Of E).Spliterator()
+- uid: Java.Util.List`1.Spliterator*
+  name: Spliterator
+  href: api/Java.Util.List-1.html#Java_Util_List_1_Spliterator_
+  commentId: Overload:Java.Util.List`1.Spliterator
+  isSpec: "True"
+  fullName: Java.Util.List<E>.Spliterator
+  fullName.vb: Java.Util.List(Of E).Spliterator
+  nameWithType: List<E>.Spliterator
+  nameWithType.vb: List(Of E).Spliterator
+- uid: Java.Util.List`1.SubList(System.Int32,System.Int32)
+  name: SubList(Int32, Int32)
+  href: api/Java.Util.List-1.html#Java_Util_List_1_SubList_System_Int32_System_Int32_
+  commentId: M:Java.Util.List`1.SubList(System.Int32,System.Int32)
+  fullName: Java.Util.List<E>.SubList(System.Int32, System.Int32)
+  fullName.vb: Java.Util.List(Of E).SubList(System.Int32, System.Int32)
+  nameWithType: List<E>.SubList(Int32, Int32)
+  nameWithType.vb: List(Of E).SubList(Int32, Int32)
+- uid: Java.Util.List`1.SubList*
+  name: SubList
+  href: api/Java.Util.List-1.html#Java_Util_List_1_SubList_
+  commentId: Overload:Java.Util.List`1.SubList
+  isSpec: "True"
+  fullName: Java.Util.List<E>.SubList
+  fullName.vb: Java.Util.List(Of E).SubList
+  nameWithType: List<E>.SubList
+  nameWithType.vb: List(Of E).SubList
 - uid: Java.Util.ListIterator`1
   name: ListIterator<E>
   href: api/Java.Util.ListIterator-1.html
@@ -15120,6 +16246,58 @@ references:
   isSpec: "True"
   fullName: Java.Util.Map.ClassName
   nameWithType: Map.ClassName
+- uid: Java.Util.Map.Clear
+  name: Clear()
+  href: api/Java.Util.Map.html#Java_Util_Map_Clear
+  commentId: M:Java.Util.Map.Clear
+  fullName: Java.Util.Map.Clear()
+  nameWithType: Map.Clear()
+- uid: Java.Util.Map.Clear*
+  name: Clear
+  href: api/Java.Util.Map.html#Java_Util_Map_Clear_
+  commentId: Overload:Java.Util.Map.Clear
+  isSpec: "True"
+  fullName: Java.Util.Map.Clear
+  nameWithType: Map.Clear
+- uid: Java.Util.Map.ContainsKey(System.Object)
+  name: ContainsKey(Object)
+  href: api/Java.Util.Map.html#Java_Util_Map_ContainsKey_System_Object_
+  commentId: M:Java.Util.Map.ContainsKey(System.Object)
+  fullName: Java.Util.Map.ContainsKey(System.Object)
+  nameWithType: Map.ContainsKey(Object)
+- uid: Java.Util.Map.ContainsKey*
+  name: ContainsKey
+  href: api/Java.Util.Map.html#Java_Util_Map_ContainsKey_
+  commentId: Overload:Java.Util.Map.ContainsKey
+  isSpec: "True"
+  fullName: Java.Util.Map.ContainsKey
+  nameWithType: Map.ContainsKey
+- uid: Java.Util.Map.ContainsValue(System.Object)
+  name: ContainsValue(Object)
+  href: api/Java.Util.Map.html#Java_Util_Map_ContainsValue_System_Object_
+  commentId: M:Java.Util.Map.ContainsValue(System.Object)
+  fullName: Java.Util.Map.ContainsValue(System.Object)
+  nameWithType: Map.ContainsValue(Object)
+- uid: Java.Util.Map.ContainsValue*
+  name: ContainsValue
+  href: api/Java.Util.Map.html#Java_Util_Map_ContainsValue_
+  commentId: Overload:Java.Util.Map.ContainsValue
+  isSpec: "True"
+  fullName: Java.Util.Map.ContainsValue
+  nameWithType: Map.ContainsValue
+- uid: Java.Util.Map.Remove(System.Object,System.Object)
+  name: Remove(Object, Object)
+  href: api/Java.Util.Map.html#Java_Util_Map_Remove_System_Object_System_Object_
+  commentId: M:Java.Util.Map.Remove(System.Object,System.Object)
+  fullName: Java.Util.Map.Remove(System.Object, System.Object)
+  nameWithType: Map.Remove(Object, Object)
+- uid: Java.Util.Map.Remove*
+  name: Remove
+  href: api/Java.Util.Map.html#Java_Util_Map_Remove_
+  commentId: Overload:Java.Util.Map.Remove
+  isSpec: "True"
+  fullName: Java.Util.Map.Remove
+  nameWithType: Map.Remove
 - uid: Java.Util.Map`2
   name: Map<K, V>
   href: api/Java.Util.Map-2.html
@@ -15155,23 +16333,24 @@ references:
   fullName.vb: Java.Util.Map(Of K, V).Map
   nameWithType: Map<K, V>.Map
   nameWithType.vb: Map(Of K, V).Map
-- uid: Java.Util.Map`2.ClassName
-  name: ClassName
-  href: api/Java.Util.Map-2.html#Java_Util_Map_2_ClassName
-  commentId: P:Java.Util.Map`2.ClassName
-  fullName: Java.Util.Map<K, V>.ClassName
-  fullName.vb: Java.Util.Map(Of K, V).ClassName
-  nameWithType: Map<K, V>.ClassName
-  nameWithType.vb: Map(Of K, V).ClassName
-- uid: Java.Util.Map`2.ClassName*
-  name: ClassName
-  href: api/Java.Util.Map-2.html#Java_Util_Map_2_ClassName_
-  commentId: Overload:Java.Util.Map`2.ClassName
+- uid: Java.Util.Map`2.ForEach*
+  name: ForEach
+  href: api/Java.Util.Map-2.html#Java_Util_Map_2_ForEach_
+  commentId: Overload:Java.Util.Map`2.ForEach
   isSpec: "True"
-  fullName: Java.Util.Map<K, V>.ClassName
-  fullName.vb: Java.Util.Map(Of K, V).ClassName
-  nameWithType: Map<K, V>.ClassName
-  nameWithType.vb: Map(Of K, V).ClassName
+  fullName: Java.Util.Map<K, V>.ForEach
+  fullName.vb: Java.Util.Map(Of K, V).ForEach
+  nameWithType: Map<K, V>.ForEach
+  nameWithType.vb: Map(Of K, V).ForEach
+- uid: Java.Util.Map`2.ForEach``2(Java.Util.Function.BiConsumer{``0,``1})
+  name: ForEach<SuperK, SuperV>(BiConsumer<SuperK, SuperV>)
+  href: api/Java.Util.Map-2.html#Java_Util_Map_2_ForEach__2_Java_Util_Function_BiConsumer___0___1__
+  commentId: M:Java.Util.Map`2.ForEach``2(Java.Util.Function.BiConsumer{``0,``1})
+  name.vb: ForEach(Of SuperK, SuperV)(BiConsumer(Of SuperK, SuperV))
+  fullName: Java.Util.Map<K, V>.ForEach<SuperK, SuperV>(Java.Util.Function.BiConsumer<SuperK, SuperV>)
+  fullName.vb: Java.Util.Map(Of K, V).ForEach(Of SuperK, SuperV)(Java.Util.Function.BiConsumer(Of SuperK, SuperV))
+  nameWithType: Map<K, V>.ForEach<SuperK, SuperV>(BiConsumer<SuperK, SuperV>)
+  nameWithType.vb: Map(Of K, V).ForEach(Of SuperK, SuperV)(BiConsumer(Of SuperK, SuperV))
 - uid: Java.Util.Map`2.Get(`0)
   name: Get(K)
   href: api/Java.Util.Map-2.html#Java_Util_Map_2_Get__0_
@@ -15189,6 +16368,75 @@ references:
   fullName.vb: Java.Util.Map(Of K, V).Get
   nameWithType: Map<K, V>.Get
   nameWithType.vb: Map(Of K, V).Get
+- uid: Java.Util.Map`2.GetOrDefault(System.Object,`1)
+  name: GetOrDefault(Object, V)
+  href: api/Java.Util.Map-2.html#Java_Util_Map_2_GetOrDefault_System_Object__1_
+  commentId: M:Java.Util.Map`2.GetOrDefault(System.Object,`1)
+  fullName: Java.Util.Map<K, V>.GetOrDefault(System.Object, V)
+  fullName.vb: Java.Util.Map(Of K, V).GetOrDefault(System.Object, V)
+  nameWithType: Map<K, V>.GetOrDefault(Object, V)
+  nameWithType.vb: Map(Of K, V).GetOrDefault(Object, V)
+- uid: Java.Util.Map`2.GetOrDefault*
+  name: GetOrDefault
+  href: api/Java.Util.Map-2.html#Java_Util_Map_2_GetOrDefault_
+  commentId: Overload:Java.Util.Map`2.GetOrDefault
+  isSpec: "True"
+  fullName: Java.Util.Map<K, V>.GetOrDefault
+  fullName.vb: Java.Util.Map(Of K, V).GetOrDefault
+  nameWithType: Map<K, V>.GetOrDefault
+  nameWithType.vb: Map(Of K, V).GetOrDefault
+- uid: Java.Util.Map`2.IsEmpty
+  name: IsEmpty
+  href: api/Java.Util.Map-2.html#Java_Util_Map_2_IsEmpty
+  commentId: P:Java.Util.Map`2.IsEmpty
+  fullName: Java.Util.Map<K, V>.IsEmpty
+  fullName.vb: Java.Util.Map(Of K, V).IsEmpty
+  nameWithType: Map<K, V>.IsEmpty
+  nameWithType.vb: Map(Of K, V).IsEmpty
+- uid: Java.Util.Map`2.IsEmpty*
+  name: IsEmpty
+  href: api/Java.Util.Map-2.html#Java_Util_Map_2_IsEmpty_
+  commentId: Overload:Java.Util.Map`2.IsEmpty
+  isSpec: "True"
+  fullName: Java.Util.Map<K, V>.IsEmpty
+  fullName.vb: Java.Util.Map(Of K, V).IsEmpty
+  nameWithType: Map<K, V>.IsEmpty
+  nameWithType.vb: Map(Of K, V).IsEmpty
+- uid: Java.Util.Map`2.KeySet
+  name: KeySet
+  href: api/Java.Util.Map-2.html#Java_Util_Map_2_KeySet
+  commentId: P:Java.Util.Map`2.KeySet
+  fullName: Java.Util.Map<K, V>.KeySet
+  fullName.vb: Java.Util.Map(Of K, V).KeySet
+  nameWithType: Map<K, V>.KeySet
+  nameWithType.vb: Map(Of K, V).KeySet
+- uid: Java.Util.Map`2.KeySet*
+  name: KeySet
+  href: api/Java.Util.Map-2.html#Java_Util_Map_2_KeySet_
+  commentId: Overload:Java.Util.Map`2.KeySet
+  isSpec: "True"
+  fullName: Java.Util.Map<K, V>.KeySet
+  fullName.vb: Java.Util.Map(Of K, V).KeySet
+  nameWithType: Map<K, V>.KeySet
+  nameWithType.vb: Map(Of K, V).KeySet
+- uid: Java.Util.Map`2.Merge*
+  name: Merge
+  href: api/Java.Util.Map-2.html#Java_Util_Map_2_Merge_
+  commentId: Overload:Java.Util.Map`2.Merge
+  isSpec: "True"
+  fullName: Java.Util.Map<K, V>.Merge
+  fullName.vb: Java.Util.Map(Of K, V).Merge
+  nameWithType: Map<K, V>.Merge
+  nameWithType.vb: Map(Of K, V).Merge
+- uid: Java.Util.Map`2.Merge``2(`0,`1,Java.Util.Function.BiFunction{``0,``0,``1})
+  name: Merge<SuperV, ExtendsV>(K, V, BiFunction<SuperV, SuperV, ExtendsV>)
+  href: api/Java.Util.Map-2.html#Java_Util_Map_2_Merge__2__0__1_Java_Util_Function_BiFunction___0___0___1__
+  commentId: M:Java.Util.Map`2.Merge``2(`0,`1,Java.Util.Function.BiFunction{``0,``0,``1})
+  name.vb: Merge(Of SuperV, ExtendsV)(K, V, BiFunction(Of SuperV, SuperV, ExtendsV))
+  fullName: Java.Util.Map<K, V>.Merge<SuperV, ExtendsV>(K, V, Java.Util.Function.BiFunction<SuperV, SuperV, ExtendsV>)
+  fullName.vb: Java.Util.Map(Of K, V).Merge(Of SuperV, ExtendsV)(K, V, Java.Util.Function.BiFunction(Of SuperV, SuperV, ExtendsV))
+  nameWithType: Map<K, V>.Merge<SuperV, ExtendsV>(K, V, BiFunction<SuperV, SuperV, ExtendsV>)
+  nameWithType.vb: Map(Of K, V).Merge(Of SuperV, ExtendsV)(K, V, BiFunction(Of SuperV, SuperV, ExtendsV))
 - uid: Java.Util.Map`2.Put(`0,`1)
   name: Put(K, V)
   href: api/Java.Util.Map-2.html#Java_Util_Map_2_Put__0__1_
@@ -15206,6 +16454,135 @@ references:
   fullName.vb: Java.Util.Map(Of K, V).Put
   nameWithType: Map<K, V>.Put
   nameWithType.vb: Map(Of K, V).Put
+- uid: Java.Util.Map`2.PutAll*
+  name: PutAll
+  href: api/Java.Util.Map-2.html#Java_Util_Map_2_PutAll_
+  commentId: Overload:Java.Util.Map`2.PutAll
+  isSpec: "True"
+  fullName: Java.Util.Map<K, V>.PutAll
+  fullName.vb: Java.Util.Map(Of K, V).PutAll
+  nameWithType: Map<K, V>.PutAll
+  nameWithType.vb: Map(Of K, V).PutAll
+- uid: Java.Util.Map`2.PutAll``2(Java.Util.Map{``0,``1})
+  name: PutAll<ExtendsK, ExtendsV>(Map<ExtendsK, ExtendsV>)
+  href: api/Java.Util.Map-2.html#Java_Util_Map_2_PutAll__2_Java_Util_Map___0___1__
+  commentId: M:Java.Util.Map`2.PutAll``2(Java.Util.Map{``0,``1})
+  name.vb: PutAll(Of ExtendsK, ExtendsV)(Map(Of ExtendsK, ExtendsV))
+  fullName: Java.Util.Map<K, V>.PutAll<ExtendsK, ExtendsV>(Java.Util.Map<ExtendsK, ExtendsV>)
+  fullName.vb: Java.Util.Map(Of K, V).PutAll(Of ExtendsK, ExtendsV)(Java.Util.Map(Of ExtendsK, ExtendsV))
+  nameWithType: Map<K, V>.PutAll<ExtendsK, ExtendsV>(Map<ExtendsK, ExtendsV>)
+  nameWithType.vb: Map(Of K, V).PutAll(Of ExtendsK, ExtendsV)(Map(Of ExtendsK, ExtendsV))
+- uid: Java.Util.Map`2.PutIfAbsent(`0,`1)
+  name: PutIfAbsent(K, V)
+  href: api/Java.Util.Map-2.html#Java_Util_Map_2_PutIfAbsent__0__1_
+  commentId: M:Java.Util.Map`2.PutIfAbsent(`0,`1)
+  fullName: Java.Util.Map<K, V>.PutIfAbsent(K, V)
+  fullName.vb: Java.Util.Map(Of K, V).PutIfAbsent(K, V)
+  nameWithType: Map<K, V>.PutIfAbsent(K, V)
+  nameWithType.vb: Map(Of K, V).PutIfAbsent(K, V)
+- uid: Java.Util.Map`2.PutIfAbsent*
+  name: PutIfAbsent
+  href: api/Java.Util.Map-2.html#Java_Util_Map_2_PutIfAbsent_
+  commentId: Overload:Java.Util.Map`2.PutIfAbsent
+  isSpec: "True"
+  fullName: Java.Util.Map<K, V>.PutIfAbsent
+  fullName.vb: Java.Util.Map(Of K, V).PutIfAbsent
+  nameWithType: Map<K, V>.PutIfAbsent
+  nameWithType.vb: Map(Of K, V).PutIfAbsent
+- uid: Java.Util.Map`2.Remove(System.Object)
+  name: Remove(Object)
+  href: api/Java.Util.Map-2.html#Java_Util_Map_2_Remove_System_Object_
+  commentId: M:Java.Util.Map`2.Remove(System.Object)
+  fullName: Java.Util.Map<K, V>.Remove(System.Object)
+  fullName.vb: Java.Util.Map(Of K, V).Remove(System.Object)
+  nameWithType: Map<K, V>.Remove(Object)
+  nameWithType.vb: Map(Of K, V).Remove(Object)
+- uid: Java.Util.Map`2.Remove*
+  name: Remove
+  href: api/Java.Util.Map-2.html#Java_Util_Map_2_Remove_
+  commentId: Overload:Java.Util.Map`2.Remove
+  isSpec: "True"
+  fullName: Java.Util.Map<K, V>.Remove
+  fullName.vb: Java.Util.Map(Of K, V).Remove
+  nameWithType: Map<K, V>.Remove
+  nameWithType.vb: Map(Of K, V).Remove
+- uid: Java.Util.Map`2.Replace(`0,`1)
+  name: Replace(K, V)
+  href: api/Java.Util.Map-2.html#Java_Util_Map_2_Replace__0__1_
+  commentId: M:Java.Util.Map`2.Replace(`0,`1)
+  fullName: Java.Util.Map<K, V>.Replace(K, V)
+  fullName.vb: Java.Util.Map(Of K, V).Replace(K, V)
+  nameWithType: Map<K, V>.Replace(K, V)
+  nameWithType.vb: Map(Of K, V).Replace(K, V)
+- uid: Java.Util.Map`2.Replace(`0,`1,`1)
+  name: Replace(K, V, V)
+  href: api/Java.Util.Map-2.html#Java_Util_Map_2_Replace__0__1__1_
+  commentId: M:Java.Util.Map`2.Replace(`0,`1,`1)
+  fullName: Java.Util.Map<K, V>.Replace(K, V, V)
+  fullName.vb: Java.Util.Map(Of K, V).Replace(K, V, V)
+  nameWithType: Map<K, V>.Replace(K, V, V)
+  nameWithType.vb: Map(Of K, V).Replace(K, V, V)
+- uid: Java.Util.Map`2.Replace*
+  name: Replace
+  href: api/Java.Util.Map-2.html#Java_Util_Map_2_Replace_
+  commentId: Overload:Java.Util.Map`2.Replace
+  isSpec: "True"
+  fullName: Java.Util.Map<K, V>.Replace
+  fullName.vb: Java.Util.Map(Of K, V).Replace
+  nameWithType: Map<K, V>.Replace
+  nameWithType.vb: Map(Of K, V).Replace
+- uid: Java.Util.Map`2.ReplaceAll*
+  name: ReplaceAll
+  href: api/Java.Util.Map-2.html#Java_Util_Map_2_ReplaceAll_
+  commentId: Overload:Java.Util.Map`2.ReplaceAll
+  isSpec: "True"
+  fullName: Java.Util.Map<K, V>.ReplaceAll
+  fullName.vb: Java.Util.Map(Of K, V).ReplaceAll
+  nameWithType: Map<K, V>.ReplaceAll
+  nameWithType.vb: Map(Of K, V).ReplaceAll
+- uid: Java.Util.Map`2.ReplaceAll``3(Java.Util.Function.BiFunction{``0,``1,``2})
+  name: ReplaceAll<SuperK, SuperV, ExtendsV>(BiFunction<SuperK, SuperV, ExtendsV>)
+  href: api/Java.Util.Map-2.html#Java_Util_Map_2_ReplaceAll__3_Java_Util_Function_BiFunction___0___1___2__
+  commentId: M:Java.Util.Map`2.ReplaceAll``3(Java.Util.Function.BiFunction{``0,``1,``2})
+  name.vb: ReplaceAll(Of SuperK, SuperV, ExtendsV)(BiFunction(Of SuperK, SuperV, ExtendsV))
+  fullName: Java.Util.Map<K, V>.ReplaceAll<SuperK, SuperV, ExtendsV>(Java.Util.Function.BiFunction<SuperK, SuperV, ExtendsV>)
+  fullName.vb: Java.Util.Map(Of K, V).ReplaceAll(Of SuperK, SuperV, ExtendsV)(Java.Util.Function.BiFunction(Of SuperK, SuperV, ExtendsV))
+  nameWithType: Map<K, V>.ReplaceAll<SuperK, SuperV, ExtendsV>(BiFunction<SuperK, SuperV, ExtendsV>)
+  nameWithType.vb: Map(Of K, V).ReplaceAll(Of SuperK, SuperV, ExtendsV)(BiFunction(Of SuperK, SuperV, ExtendsV))
+- uid: Java.Util.Map`2.Size
+  name: Size
+  href: api/Java.Util.Map-2.html#Java_Util_Map_2_Size
+  commentId: P:Java.Util.Map`2.Size
+  fullName: Java.Util.Map<K, V>.Size
+  fullName.vb: Java.Util.Map(Of K, V).Size
+  nameWithType: Map<K, V>.Size
+  nameWithType.vb: Map(Of K, V).Size
+- uid: Java.Util.Map`2.Size*
+  name: Size
+  href: api/Java.Util.Map-2.html#Java_Util_Map_2_Size_
+  commentId: Overload:Java.Util.Map`2.Size
+  isSpec: "True"
+  fullName: Java.Util.Map<K, V>.Size
+  fullName.vb: Java.Util.Map(Of K, V).Size
+  nameWithType: Map<K, V>.Size
+  nameWithType.vb: Map(Of K, V).Size
+- uid: Java.Util.Map`2.Values
+  name: Values
+  href: api/Java.Util.Map-2.html#Java_Util_Map_2_Values
+  commentId: P:Java.Util.Map`2.Values
+  fullName: Java.Util.Map<K, V>.Values
+  fullName.vb: Java.Util.Map(Of K, V).Values
+  nameWithType: Map<K, V>.Values
+  nameWithType.vb: Map(Of K, V).Values
+- uid: Java.Util.Map`2.Values*
+  name: Values
+  href: api/Java.Util.Map-2.html#Java_Util_Map_2_Values_
+  commentId: Overload:Java.Util.Map`2.Values
+  isSpec: "True"
+  fullName: Java.Util.Map<K, V>.Values
+  fullName.vb: Java.Util.Map(Of K, V).Values
+  nameWithType: Map<K, V>.Values
+  nameWithType.vb: Map(Of K, V).Values
 - uid: Java.Util.Optional`1
   name: Optional<T>
   href: api/Java.Util.Optional-1.html
@@ -15549,19 +16926,117 @@ references:
   isSpec: "True"
   fullName: Java.Util.Properties.ClassName
   nameWithType: Properties.ClassName
-- uid: Java.Util.Properties.Put(System.Object,System.Object)
-  name: Put(Object, Object)
-  href: api/Java.Util.Properties.html#Java_Util_Properties_Put_System_Object_System_Object_
-  commentId: M:Java.Util.Properties.Put(System.Object,System.Object)
-  fullName: Java.Util.Properties.Put(System.Object, System.Object)
-  nameWithType: Properties.Put(Object, Object)
-- uid: Java.Util.Properties.Put*
-  name: Put
-  href: api/Java.Util.Properties.html#Java_Util_Properties_Put_
-  commentId: Overload:Java.Util.Properties.Put
+- uid: Java.Util.Queue`1
+  name: Queue<E>
+  href: api/Java.Util.Queue-1.html
+  commentId: T:Java.Util.Queue`1
+  name.vb: Queue(Of E)
+  fullName: Java.Util.Queue<E>
+  fullName.vb: Java.Util.Queue(Of E)
+  nameWithType: Queue<E>
+  nameWithType.vb: Queue(Of E)
+- uid: Java.Util.Queue`1.ClassName
+  name: ClassName
+  href: api/Java.Util.Queue-1.html#Java_Util_Queue_1_ClassName
+  commentId: P:Java.Util.Queue`1.ClassName
+  fullName: Java.Util.Queue<E>.ClassName
+  fullName.vb: Java.Util.Queue(Of E).ClassName
+  nameWithType: Queue<E>.ClassName
+  nameWithType.vb: Queue(Of E).ClassName
+- uid: Java.Util.Queue`1.ClassName*
+  name: ClassName
+  href: api/Java.Util.Queue-1.html#Java_Util_Queue_1_ClassName_
+  commentId: Overload:Java.Util.Queue`1.ClassName
   isSpec: "True"
-  fullName: Java.Util.Properties.Put
-  nameWithType: Properties.Put
+  fullName: Java.Util.Queue<E>.ClassName
+  fullName.vb: Java.Util.Queue(Of E).ClassName
+  nameWithType: Queue<E>.ClassName
+  nameWithType.vb: Queue(Of E).ClassName
+- uid: Java.Util.Queue`1.Element
+  name: Element()
+  href: api/Java.Util.Queue-1.html#Java_Util_Queue_1_Element
+  commentId: M:Java.Util.Queue`1.Element
+  fullName: Java.Util.Queue<E>.Element()
+  fullName.vb: Java.Util.Queue(Of E).Element()
+  nameWithType: Queue<E>.Element()
+  nameWithType.vb: Queue(Of E).Element()
+- uid: Java.Util.Queue`1.Element*
+  name: Element
+  href: api/Java.Util.Queue-1.html#Java_Util_Queue_1_Element_
+  commentId: Overload:Java.Util.Queue`1.Element
+  isSpec: "True"
+  fullName: Java.Util.Queue<E>.Element
+  fullName.vb: Java.Util.Queue(Of E).Element
+  nameWithType: Queue<E>.Element
+  nameWithType.vb: Queue(Of E).Element
+- uid: Java.Util.Queue`1.Offer(`0)
+  name: Offer(E)
+  href: api/Java.Util.Queue-1.html#Java_Util_Queue_1_Offer__0_
+  commentId: M:Java.Util.Queue`1.Offer(`0)
+  fullName: Java.Util.Queue<E>.Offer(E)
+  fullName.vb: Java.Util.Queue(Of E).Offer(E)
+  nameWithType: Queue<E>.Offer(E)
+  nameWithType.vb: Queue(Of E).Offer(E)
+- uid: Java.Util.Queue`1.Offer*
+  name: Offer
+  href: api/Java.Util.Queue-1.html#Java_Util_Queue_1_Offer_
+  commentId: Overload:Java.Util.Queue`1.Offer
+  isSpec: "True"
+  fullName: Java.Util.Queue<E>.Offer
+  fullName.vb: Java.Util.Queue(Of E).Offer
+  nameWithType: Queue<E>.Offer
+  nameWithType.vb: Queue(Of E).Offer
+- uid: Java.Util.Queue`1.Peek
+  name: Peek()
+  href: api/Java.Util.Queue-1.html#Java_Util_Queue_1_Peek
+  commentId: M:Java.Util.Queue`1.Peek
+  fullName: Java.Util.Queue<E>.Peek()
+  fullName.vb: Java.Util.Queue(Of E).Peek()
+  nameWithType: Queue<E>.Peek()
+  nameWithType.vb: Queue(Of E).Peek()
+- uid: Java.Util.Queue`1.Peek*
+  name: Peek
+  href: api/Java.Util.Queue-1.html#Java_Util_Queue_1_Peek_
+  commentId: Overload:Java.Util.Queue`1.Peek
+  isSpec: "True"
+  fullName: Java.Util.Queue<E>.Peek
+  fullName.vb: Java.Util.Queue(Of E).Peek
+  nameWithType: Queue<E>.Peek
+  nameWithType.vb: Queue(Of E).Peek
+- uid: Java.Util.Queue`1.Poll
+  name: Poll()
+  href: api/Java.Util.Queue-1.html#Java_Util_Queue_1_Poll
+  commentId: M:Java.Util.Queue`1.Poll
+  fullName: Java.Util.Queue<E>.Poll()
+  fullName.vb: Java.Util.Queue(Of E).Poll()
+  nameWithType: Queue<E>.Poll()
+  nameWithType.vb: Queue(Of E).Poll()
+- uid: Java.Util.Queue`1.Poll*
+  name: Poll
+  href: api/Java.Util.Queue-1.html#Java_Util_Queue_1_Poll_
+  commentId: Overload:Java.Util.Queue`1.Poll
+  isSpec: "True"
+  fullName: Java.Util.Queue<E>.Poll
+  fullName.vb: Java.Util.Queue(Of E).Poll
+  nameWithType: Queue<E>.Poll
+  nameWithType.vb: Queue(Of E).Poll
+- uid: Java.Util.Queue`1.Remove
+  name: Remove()
+  href: api/Java.Util.Queue-1.html#Java_Util_Queue_1_Remove
+  commentId: M:Java.Util.Queue`1.Remove
+  fullName: Java.Util.Queue<E>.Remove()
+  fullName.vb: Java.Util.Queue(Of E).Remove()
+  nameWithType: Queue<E>.Remove()
+  nameWithType.vb: Queue(Of E).Remove()
+- uid: Java.Util.Queue`1.Remove*
+  name: Remove
+  href: api/Java.Util.Queue-1.html#Java_Util_Queue_1_Remove_
+  commentId: Overload:Java.Util.Queue`1.Remove
+  isSpec: "True"
+  fullName: Java.Util.Queue<E>.Remove
+  fullName.vb: Java.Util.Queue(Of E).Remove
+  nameWithType: Queue<E>.Remove
+  nameWithType.vb: Queue(Of E).Remove
 - uid: Java.Util.Regex
   name: Java.Util.Regex
   href: api/Java.Util.Regex.html
@@ -15645,6 +17120,130 @@ references:
   fullName.vb: Java.Util.Set(Of E).ClassName
   nameWithType: Set<E>.ClassName
   nameWithType.vb: Set(Of E).ClassName
+- uid: Java.Util.Set`1.CopyOf*
+  name: CopyOf
+  href: api/Java.Util.Set-1.html#Java_Util_Set_1_CopyOf_
+  commentId: Overload:Java.Util.Set`1.CopyOf
+  isSpec: "True"
+  fullName: Java.Util.Set<E>.CopyOf
+  fullName.vb: Java.Util.Set(Of E).CopyOf
+  nameWithType: Set<E>.CopyOf
+  nameWithType.vb: Set(Of E).CopyOf
+- uid: Java.Util.Set`1.CopyOf``1(Java.Util.Collection{``0})
+  name: CopyOf<ExtendsE>(Collection<ExtendsE>)
+  href: api/Java.Util.Set-1.html#Java_Util_Set_1_CopyOf__1_Java_Util_Collection___0__
+  commentId: M:Java.Util.Set`1.CopyOf``1(Java.Util.Collection{``0})
+  name.vb: CopyOf(Of ExtendsE)(Collection(Of ExtendsE))
+  fullName: Java.Util.Set<E>.CopyOf<ExtendsE>(Java.Util.Collection<ExtendsE>)
+  fullName.vb: Java.Util.Set(Of E).CopyOf(Of ExtendsE)(Java.Util.Collection(Of ExtendsE))
+  nameWithType: Set<E>.CopyOf<ExtendsE>(Collection<ExtendsE>)
+  nameWithType.vb: Set(Of E).CopyOf(Of ExtendsE)(Collection(Of ExtendsE))
+- uid: Java.Util.Set`1.Of
+  name: Of()
+  href: api/Java.Util.Set-1.html#Java_Util_Set_1_Of
+  commentId: M:Java.Util.Set`1.Of
+  fullName: Java.Util.Set<E>.Of()
+  fullName.vb: Java.Util.Set(Of E).Of()
+  nameWithType: Set<E>.Of()
+  nameWithType.vb: Set(Of E).Of()
+- uid: Java.Util.Set`1.Of(`0)
+  name: Of(E)
+  href: api/Java.Util.Set-1.html#Java_Util_Set_1_Of__0_
+  commentId: M:Java.Util.Set`1.Of(`0)
+  fullName: Java.Util.Set<E>.Of(E)
+  fullName.vb: Java.Util.Set(Of E).Of(E)
+  nameWithType: Set<E>.Of(E)
+  nameWithType.vb: Set(Of E).Of(E)
+- uid: Java.Util.Set`1.Of(`0,`0)
+  name: Of(E, E)
+  href: api/Java.Util.Set-1.html#Java_Util_Set_1_Of__0__0_
+  commentId: M:Java.Util.Set`1.Of(`0,`0)
+  fullName: Java.Util.Set<E>.Of(E, E)
+  fullName.vb: Java.Util.Set(Of E).Of(E, E)
+  nameWithType: Set<E>.Of(E, E)
+  nameWithType.vb: Set(Of E).Of(E, E)
+- uid: Java.Util.Set`1.Of(`0,`0,`0)
+  name: Of(E, E, E)
+  href: api/Java.Util.Set-1.html#Java_Util_Set_1_Of__0__0__0_
+  commentId: M:Java.Util.Set`1.Of(`0,`0,`0)
+  fullName: Java.Util.Set<E>.Of(E, E, E)
+  fullName.vb: Java.Util.Set(Of E).Of(E, E, E)
+  nameWithType: Set<E>.Of(E, E, E)
+  nameWithType.vb: Set(Of E).Of(E, E, E)
+- uid: Java.Util.Set`1.Of(`0,`0,`0,`0)
+  name: Of(E, E, E, E)
+  href: api/Java.Util.Set-1.html#Java_Util_Set_1_Of__0__0__0__0_
+  commentId: M:Java.Util.Set`1.Of(`0,`0,`0,`0)
+  fullName: Java.Util.Set<E>.Of(E, E, E, E)
+  fullName.vb: Java.Util.Set(Of E).Of(E, E, E, E)
+  nameWithType: Set<E>.Of(E, E, E, E)
+  nameWithType.vb: Set(Of E).Of(E, E, E, E)
+- uid: Java.Util.Set`1.Of(`0,`0,`0,`0,`0)
+  name: Of(E, E, E, E, E)
+  href: api/Java.Util.Set-1.html#Java_Util_Set_1_Of__0__0__0__0__0_
+  commentId: M:Java.Util.Set`1.Of(`0,`0,`0,`0,`0)
+  fullName: Java.Util.Set<E>.Of(E, E, E, E, E)
+  fullName.vb: Java.Util.Set(Of E).Of(E, E, E, E, E)
+  nameWithType: Set<E>.Of(E, E, E, E, E)
+  nameWithType.vb: Set(Of E).Of(E, E, E, E, E)
+- uid: Java.Util.Set`1.Of(`0,`0,`0,`0,`0,`0)
+  name: Of(E, E, E, E, E, E)
+  href: api/Java.Util.Set-1.html#Java_Util_Set_1_Of__0__0__0__0__0__0_
+  commentId: M:Java.Util.Set`1.Of(`0,`0,`0,`0,`0,`0)
+  fullName: Java.Util.Set<E>.Of(E, E, E, E, E, E)
+  fullName.vb: Java.Util.Set(Of E).Of(E, E, E, E, E, E)
+  nameWithType: Set<E>.Of(E, E, E, E, E, E)
+  nameWithType.vb: Set(Of E).Of(E, E, E, E, E, E)
+- uid: Java.Util.Set`1.Of(`0,`0,`0,`0,`0,`0,`0)
+  name: Of(E, E, E, E, E, E, E)
+  href: api/Java.Util.Set-1.html#Java_Util_Set_1_Of__0__0__0__0__0__0__0_
+  commentId: M:Java.Util.Set`1.Of(`0,`0,`0,`0,`0,`0,`0)
+  fullName: Java.Util.Set<E>.Of(E, E, E, E, E, E, E)
+  fullName.vb: Java.Util.Set(Of E).Of(E, E, E, E, E, E, E)
+  nameWithType: Set<E>.Of(E, E, E, E, E, E, E)
+  nameWithType.vb: Set(Of E).Of(E, E, E, E, E, E, E)
+- uid: Java.Util.Set`1.Of(`0,`0,`0,`0,`0,`0,`0,`0)
+  name: Of(E, E, E, E, E, E, E, E)
+  href: api/Java.Util.Set-1.html#Java_Util_Set_1_Of__0__0__0__0__0__0__0__0_
+  commentId: M:Java.Util.Set`1.Of(`0,`0,`0,`0,`0,`0,`0,`0)
+  fullName: Java.Util.Set<E>.Of(E, E, E, E, E, E, E, E)
+  fullName.vb: Java.Util.Set(Of E).Of(E, E, E, E, E, E, E, E)
+  nameWithType: Set<E>.Of(E, E, E, E, E, E, E, E)
+  nameWithType.vb: Set(Of E).Of(E, E, E, E, E, E, E, E)
+- uid: Java.Util.Set`1.Of(`0,`0,`0,`0,`0,`0,`0,`0,`0)
+  name: Of(E, E, E, E, E, E, E, E, E)
+  href: api/Java.Util.Set-1.html#Java_Util_Set_1_Of__0__0__0__0__0__0__0__0__0_
+  commentId: M:Java.Util.Set`1.Of(`0,`0,`0,`0,`0,`0,`0,`0,`0)
+  fullName: Java.Util.Set<E>.Of(E, E, E, E, E, E, E, E, E)
+  fullName.vb: Java.Util.Set(Of E).Of(E, E, E, E, E, E, E, E, E)
+  nameWithType: Set<E>.Of(E, E, E, E, E, E, E, E, E)
+  nameWithType.vb: Set(Of E).Of(E, E, E, E, E, E, E, E, E)
+- uid: Java.Util.Set`1.Of(`0,`0,`0,`0,`0,`0,`0,`0,`0,`0)
+  name: Of(E, E, E, E, E, E, E, E, E, E)
+  href: api/Java.Util.Set-1.html#Java_Util_Set_1_Of__0__0__0__0__0__0__0__0__0__0_
+  commentId: M:Java.Util.Set`1.Of(`0,`0,`0,`0,`0,`0,`0,`0,`0,`0)
+  fullName: Java.Util.Set<E>.Of(E, E, E, E, E, E, E, E, E, E)
+  fullName.vb: Java.Util.Set(Of E).Of(E, E, E, E, E, E, E, E, E, E)
+  nameWithType: Set<E>.Of(E, E, E, E, E, E, E, E, E, E)
+  nameWithType.vb: Set(Of E).Of(E, E, E, E, E, E, E, E, E, E)
+- uid: Java.Util.Set`1.Of(`0[])
+  name: Of(E[])
+  href: api/Java.Util.Set-1.html#Java_Util_Set_1_Of__0___
+  commentId: M:Java.Util.Set`1.Of(`0[])
+  name.vb: Of(E())
+  fullName: Java.Util.Set<E>.Of(E[])
+  fullName.vb: Java.Util.Set(Of E).Of(E())
+  nameWithType: Set<E>.Of(E[])
+  nameWithType.vb: Set(Of E).Of(E())
+- uid: Java.Util.Set`1.Of*
+  name: Of
+  href: api/Java.Util.Set-1.html#Java_Util_Set_1_Of_
+  commentId: Overload:Java.Util.Set`1.Of
+  isSpec: "True"
+  fullName: Java.Util.Set<E>.Of
+  fullName.vb: Java.Util.Set(Of E).Of
+  nameWithType: Set<E>.Of
+  nameWithType.vb: Set(Of E).Of
 - uid: Java.Util.Spliterator`1
   name: Spliterator<T>
   href: api/Java.Util.Spliterator-1.html
@@ -17074,6 +18673,145 @@ references:
   commentId: N:JavaX.Swing
   fullName: JavaX.Swing
   nameWithType: JavaX.Swing
+- uid: JavaX.Swing.AbstractButton
+  name: AbstractButton
+  href: api/JavaX.Swing.AbstractButton.html
+  commentId: T:JavaX.Swing.AbstractButton
+  fullName: JavaX.Swing.AbstractButton
+  nameWithType: AbstractButton
+- uid: JavaX.Swing.AbstractButton.#ctor
+  name: AbstractButton()
+  href: api/JavaX.Swing.AbstractButton.html#JavaX_Swing_AbstractButton__ctor
+  commentId: M:JavaX.Swing.AbstractButton.#ctor
+  fullName: JavaX.Swing.AbstractButton.AbstractButton()
+  nameWithType: AbstractButton.AbstractButton()
+- uid: JavaX.Swing.AbstractButton.#ctor(System.Object[])
+  name: AbstractButton(Object[])
+  href: api/JavaX.Swing.AbstractButton.html#JavaX_Swing_AbstractButton__ctor_System_Object___
+  commentId: M:JavaX.Swing.AbstractButton.#ctor(System.Object[])
+  name.vb: AbstractButton(Object())
+  fullName: JavaX.Swing.AbstractButton.AbstractButton(System.Object[])
+  fullName.vb: JavaX.Swing.AbstractButton.AbstractButton(System.Object())
+  nameWithType: AbstractButton.AbstractButton(Object[])
+  nameWithType.vb: AbstractButton.AbstractButton(Object())
+- uid: JavaX.Swing.AbstractButton.#ctor*
+  name: AbstractButton
+  href: api/JavaX.Swing.AbstractButton.html#JavaX_Swing_AbstractButton__ctor_
+  commentId: Overload:JavaX.Swing.AbstractButton.#ctor
+  isSpec: "True"
+  fullName: JavaX.Swing.AbstractButton.AbstractButton
+  nameWithType: AbstractButton.AbstractButton
+- uid: JavaX.Swing.AbstractButton.ClassName
+  name: ClassName
+  href: api/JavaX.Swing.AbstractButton.html#JavaX_Swing_AbstractButton_ClassName
+  commentId: P:JavaX.Swing.AbstractButton.ClassName
+  fullName: JavaX.Swing.AbstractButton.ClassName
+  nameWithType: AbstractButton.ClassName
+- uid: JavaX.Swing.AbstractButton.ClassName*
+  name: ClassName
+  href: api/JavaX.Swing.AbstractButton.html#JavaX_Swing_AbstractButton_ClassName_
+  commentId: Overload:JavaX.Swing.AbstractButton.ClassName
+  isSpec: "True"
+  fullName: JavaX.Swing.AbstractButton.ClassName
+  nameWithType: AbstractButton.ClassName
+- uid: JavaX.Swing.AbstractSpinnerModel
+  name: AbstractSpinnerModel
+  href: api/JavaX.Swing.AbstractSpinnerModel.html
+  commentId: T:JavaX.Swing.AbstractSpinnerModel
+  fullName: JavaX.Swing.AbstractSpinnerModel
+  nameWithType: AbstractSpinnerModel
+- uid: JavaX.Swing.AbstractSpinnerModel.#ctor
+  name: AbstractSpinnerModel()
+  href: api/JavaX.Swing.AbstractSpinnerModel.html#JavaX_Swing_AbstractSpinnerModel__ctor
+  commentId: M:JavaX.Swing.AbstractSpinnerModel.#ctor
+  fullName: JavaX.Swing.AbstractSpinnerModel.AbstractSpinnerModel()
+  nameWithType: AbstractSpinnerModel.AbstractSpinnerModel()
+- uid: JavaX.Swing.AbstractSpinnerModel.#ctor(System.Object[])
+  name: AbstractSpinnerModel(Object[])
+  href: api/JavaX.Swing.AbstractSpinnerModel.html#JavaX_Swing_AbstractSpinnerModel__ctor_System_Object___
+  commentId: M:JavaX.Swing.AbstractSpinnerModel.#ctor(System.Object[])
+  name.vb: AbstractSpinnerModel(Object())
+  fullName: JavaX.Swing.AbstractSpinnerModel.AbstractSpinnerModel(System.Object[])
+  fullName.vb: JavaX.Swing.AbstractSpinnerModel.AbstractSpinnerModel(System.Object())
+  nameWithType: AbstractSpinnerModel.AbstractSpinnerModel(Object[])
+  nameWithType.vb: AbstractSpinnerModel.AbstractSpinnerModel(Object())
+- uid: JavaX.Swing.AbstractSpinnerModel.#ctor*
+  name: AbstractSpinnerModel
+  href: api/JavaX.Swing.AbstractSpinnerModel.html#JavaX_Swing_AbstractSpinnerModel__ctor_
+  commentId: Overload:JavaX.Swing.AbstractSpinnerModel.#ctor
+  isSpec: "True"
+  fullName: JavaX.Swing.AbstractSpinnerModel.AbstractSpinnerModel
+  nameWithType: AbstractSpinnerModel.AbstractSpinnerModel
+- uid: JavaX.Swing.AbstractSpinnerModel.ClassName
+  name: ClassName
+  href: api/JavaX.Swing.AbstractSpinnerModel.html#JavaX_Swing_AbstractSpinnerModel_ClassName
+  commentId: P:JavaX.Swing.AbstractSpinnerModel.ClassName
+  fullName: JavaX.Swing.AbstractSpinnerModel.ClassName
+  nameWithType: AbstractSpinnerModel.ClassName
+- uid: JavaX.Swing.AbstractSpinnerModel.ClassName*
+  name: ClassName
+  href: api/JavaX.Swing.AbstractSpinnerModel.html#JavaX_Swing_AbstractSpinnerModel_ClassName_
+  commentId: Overload:JavaX.Swing.AbstractSpinnerModel.ClassName
+  isSpec: "True"
+  fullName: JavaX.Swing.AbstractSpinnerModel.ClassName
+  nameWithType: AbstractSpinnerModel.ClassName
+- uid: JavaX.Swing.AbstractSpinnerModel.op_Implicit(JavaX.Swing.AbstractSpinnerModel)~JavaX.Swing.SpinnerModel
+  name: Implicit(AbstractSpinnerModel to SpinnerModel)
+  href: api/JavaX.Swing.AbstractSpinnerModel.html#JavaX_Swing_AbstractSpinnerModel_op_Implicit_JavaX_Swing_AbstractSpinnerModel__JavaX_Swing_SpinnerModel
+  commentId: M:JavaX.Swing.AbstractSpinnerModel.op_Implicit(JavaX.Swing.AbstractSpinnerModel)~JavaX.Swing.SpinnerModel
+  name.vb: Widening(AbstractSpinnerModel to SpinnerModel)
+  fullName: JavaX.Swing.AbstractSpinnerModel.Implicit(JavaX.Swing.AbstractSpinnerModel to JavaX.Swing.SpinnerModel)
+  fullName.vb: JavaX.Swing.AbstractSpinnerModel.Widening(JavaX.Swing.AbstractSpinnerModel to JavaX.Swing.SpinnerModel)
+  nameWithType: AbstractSpinnerModel.Implicit(AbstractSpinnerModel to SpinnerModel)
+  nameWithType.vb: AbstractSpinnerModel.Widening(AbstractSpinnerModel to SpinnerModel)
+- uid: JavaX.Swing.AbstractSpinnerModel.op_Implicit*
+  name: Implicit
+  href: api/JavaX.Swing.AbstractSpinnerModel.html#JavaX_Swing_AbstractSpinnerModel_op_Implicit_
+  commentId: Overload:JavaX.Swing.AbstractSpinnerModel.op_Implicit
+  isSpec: "True"
+  name.vb: Widening
+  fullName: JavaX.Swing.AbstractSpinnerModel.Implicit
+  fullName.vb: JavaX.Swing.AbstractSpinnerModel.Widening
+  nameWithType: AbstractSpinnerModel.Implicit
+  nameWithType.vb: AbstractSpinnerModel.Widening
+- uid: JavaX.Swing.BoxLayout
+  name: BoxLayout
+  href: api/JavaX.Swing.BoxLayout.html
+  commentId: T:JavaX.Swing.BoxLayout
+  fullName: JavaX.Swing.BoxLayout
+  nameWithType: BoxLayout
+- uid: JavaX.Swing.BoxLayout.#ctor
+  name: BoxLayout()
+  href: api/JavaX.Swing.BoxLayout.html#JavaX_Swing_BoxLayout__ctor
+  commentId: M:JavaX.Swing.BoxLayout.#ctor
+  fullName: JavaX.Swing.BoxLayout.BoxLayout()
+  nameWithType: BoxLayout.BoxLayout()
+- uid: JavaX.Swing.BoxLayout.#ctor(Java.Awt.Container,System.Int32)
+  name: BoxLayout(Container, Int32)
+  href: api/JavaX.Swing.BoxLayout.html#JavaX_Swing_BoxLayout__ctor_Java_Awt_Container_System_Int32_
+  commentId: M:JavaX.Swing.BoxLayout.#ctor(Java.Awt.Container,System.Int32)
+  fullName: JavaX.Swing.BoxLayout.BoxLayout(Java.Awt.Container, System.Int32)
+  nameWithType: BoxLayout.BoxLayout(Container, Int32)
+- uid: JavaX.Swing.BoxLayout.#ctor*
+  name: BoxLayout
+  href: api/JavaX.Swing.BoxLayout.html#JavaX_Swing_BoxLayout__ctor_
+  commentId: Overload:JavaX.Swing.BoxLayout.#ctor
+  isSpec: "True"
+  fullName: JavaX.Swing.BoxLayout.BoxLayout
+  nameWithType: BoxLayout.BoxLayout
+- uid: JavaX.Swing.BoxLayout.ClassName
+  name: ClassName
+  href: api/JavaX.Swing.BoxLayout.html#JavaX_Swing_BoxLayout_ClassName
+  commentId: P:JavaX.Swing.BoxLayout.ClassName
+  fullName: JavaX.Swing.BoxLayout.ClassName
+  nameWithType: BoxLayout.ClassName
+- uid: JavaX.Swing.BoxLayout.ClassName*
+  name: ClassName
+  href: api/JavaX.Swing.BoxLayout.html#JavaX_Swing_BoxLayout_ClassName_
+  commentId: Overload:JavaX.Swing.BoxLayout.ClassName
+  isSpec: "True"
+  fullName: JavaX.Swing.BoxLayout.ClassName
+  nameWithType: BoxLayout.ClassName
 - uid: JavaX.Swing.Event
   name: JavaX.Swing.Event
   href: api/JavaX.Swing.Event.html
@@ -17657,12 +19395,72 @@ references:
   isSpec: "True"
   fullName: JavaX.Swing.Event.MouseInputAdapter.OnMouseWheelMoved
   nameWithType: MouseInputAdapter.OnMouseWheelMoved
+- uid: JavaX.Swing.JButton
+  name: JButton
+  href: api/JavaX.Swing.JButton.html
+  commentId: T:JavaX.Swing.JButton
+  fullName: JavaX.Swing.JButton
+  nameWithType: JButton
+- uid: JavaX.Swing.JButton.#ctor
+  name: JButton()
+  href: api/JavaX.Swing.JButton.html#JavaX_Swing_JButton__ctor
+  commentId: M:JavaX.Swing.JButton.#ctor
+  fullName: JavaX.Swing.JButton.JButton()
+  nameWithType: JButton.JButton()
+- uid: JavaX.Swing.JButton.#ctor(System.String)
+  name: JButton(String)
+  href: api/JavaX.Swing.JButton.html#JavaX_Swing_JButton__ctor_System_String_
+  commentId: M:JavaX.Swing.JButton.#ctor(System.String)
+  fullName: JavaX.Swing.JButton.JButton(System.String)
+  nameWithType: JButton.JButton(String)
+- uid: JavaX.Swing.JButton.#ctor*
+  name: JButton
+  href: api/JavaX.Swing.JButton.html#JavaX_Swing_JButton__ctor_
+  commentId: Overload:JavaX.Swing.JButton.#ctor
+  isSpec: "True"
+  fullName: JavaX.Swing.JButton.JButton
+  nameWithType: JButton.JButton
+- uid: JavaX.Swing.JButton.ClassName
+  name: ClassName
+  href: api/JavaX.Swing.JButton.html#JavaX_Swing_JButton_ClassName
+  commentId: P:JavaX.Swing.JButton.ClassName
+  fullName: JavaX.Swing.JButton.ClassName
+  nameWithType: JButton.ClassName
+- uid: JavaX.Swing.JButton.ClassName*
+  name: ClassName
+  href: api/JavaX.Swing.JButton.html#JavaX_Swing_JButton_ClassName_
+  commentId: Overload:JavaX.Swing.JButton.ClassName
+  isSpec: "True"
+  fullName: JavaX.Swing.JButton.ClassName
+  nameWithType: JButton.ClassName
 - uid: JavaX.Swing.JComponent
   name: JComponent
   href: api/JavaX.Swing.JComponent.html
   commentId: T:JavaX.Swing.JComponent
   fullName: JavaX.Swing.JComponent
   nameWithType: JComponent
+- uid: JavaX.Swing.JComponent.#ctor
+  name: JComponent()
+  href: api/JavaX.Swing.JComponent.html#JavaX_Swing_JComponent__ctor
+  commentId: M:JavaX.Swing.JComponent.#ctor
+  fullName: JavaX.Swing.JComponent.JComponent()
+  nameWithType: JComponent.JComponent()
+- uid: JavaX.Swing.JComponent.#ctor(System.Object[])
+  name: JComponent(Object[])
+  href: api/JavaX.Swing.JComponent.html#JavaX_Swing_JComponent__ctor_System_Object___
+  commentId: M:JavaX.Swing.JComponent.#ctor(System.Object[])
+  name.vb: JComponent(Object())
+  fullName: JavaX.Swing.JComponent.JComponent(System.Object[])
+  fullName.vb: JavaX.Swing.JComponent.JComponent(System.Object())
+  nameWithType: JComponent.JComponent(Object[])
+  nameWithType.vb: JComponent.JComponent(Object())
+- uid: JavaX.Swing.JComponent.#ctor*
+  name: JComponent
+  href: api/JavaX.Swing.JComponent.html#JavaX_Swing_JComponent__ctor_
+  commentId: Overload:JavaX.Swing.JComponent.#ctor
+  isSpec: "True"
+  fullName: JavaX.Swing.JComponent.JComponent
+  nameWithType: JComponent.JComponent
 - uid: JavaX.Swing.JComponent.ClassName
   name: ClassName
   href: api/JavaX.Swing.JComponent.html#JavaX_Swing_JComponent_ClassName
@@ -17676,6 +19474,113 @@ references:
   isSpec: "True"
   fullName: JavaX.Swing.JComponent.ClassName
   nameWithType: JComponent.ClassName
+- uid: JavaX.Swing.JFrame
+  name: JFrame
+  href: api/JavaX.Swing.JFrame.html
+  commentId: T:JavaX.Swing.JFrame
+  fullName: JavaX.Swing.JFrame
+  nameWithType: JFrame
+- uid: JavaX.Swing.JFrame.#ctor
+  name: JFrame()
+  href: api/JavaX.Swing.JFrame.html#JavaX_Swing_JFrame__ctor
+  commentId: M:JavaX.Swing.JFrame.#ctor
+  fullName: JavaX.Swing.JFrame.JFrame()
+  nameWithType: JFrame.JFrame()
+- uid: JavaX.Swing.JFrame.#ctor(Java.Awt.GraphicsConfiguration)
+  name: JFrame(GraphicsConfiguration)
+  href: api/JavaX.Swing.JFrame.html#JavaX_Swing_JFrame__ctor_Java_Awt_GraphicsConfiguration_
+  commentId: M:JavaX.Swing.JFrame.#ctor(Java.Awt.GraphicsConfiguration)
+  fullName: JavaX.Swing.JFrame.JFrame(Java.Awt.GraphicsConfiguration)
+  nameWithType: JFrame.JFrame(GraphicsConfiguration)
+- uid: JavaX.Swing.JFrame.#ctor(System.String)
+  name: JFrame(String)
+  href: api/JavaX.Swing.JFrame.html#JavaX_Swing_JFrame__ctor_System_String_
+  commentId: M:JavaX.Swing.JFrame.#ctor(System.String)
+  fullName: JavaX.Swing.JFrame.JFrame(System.String)
+  nameWithType: JFrame.JFrame(String)
+- uid: JavaX.Swing.JFrame.#ctor(System.String,Java.Awt.GraphicsConfiguration)
+  name: JFrame(String, GraphicsConfiguration)
+  href: api/JavaX.Swing.JFrame.html#JavaX_Swing_JFrame__ctor_System_String_Java_Awt_GraphicsConfiguration_
+  commentId: M:JavaX.Swing.JFrame.#ctor(System.String,Java.Awt.GraphicsConfiguration)
+  fullName: JavaX.Swing.JFrame.JFrame(System.String, Java.Awt.GraphicsConfiguration)
+  nameWithType: JFrame.JFrame(String, GraphicsConfiguration)
+- uid: JavaX.Swing.JFrame.#ctor*
+  name: JFrame
+  href: api/JavaX.Swing.JFrame.html#JavaX_Swing_JFrame__ctor_
+  commentId: Overload:JavaX.Swing.JFrame.#ctor
+  isSpec: "True"
+  fullName: JavaX.Swing.JFrame.JFrame
+  nameWithType: JFrame.JFrame
+- uid: JavaX.Swing.JFrame.ClassName
+  name: ClassName
+  href: api/JavaX.Swing.JFrame.html#JavaX_Swing_JFrame_ClassName
+  commentId: P:JavaX.Swing.JFrame.ClassName
+  fullName: JavaX.Swing.JFrame.ClassName
+  nameWithType: JFrame.ClassName
+- uid: JavaX.Swing.JFrame.ClassName*
+  name: ClassName
+  href: api/JavaX.Swing.JFrame.html#JavaX_Swing_JFrame_ClassName_
+  commentId: Overload:JavaX.Swing.JFrame.ClassName
+  isSpec: "True"
+  fullName: JavaX.Swing.JFrame.ClassName
+  nameWithType: JFrame.ClassName
+- uid: JavaX.Swing.JFrame.SetDefaultLookAndFeelDecorated(System.Boolean)
+  name: SetDefaultLookAndFeelDecorated(Boolean)
+  href: api/JavaX.Swing.JFrame.html#JavaX_Swing_JFrame_SetDefaultLookAndFeelDecorated_System_Boolean_
+  commentId: M:JavaX.Swing.JFrame.SetDefaultLookAndFeelDecorated(System.Boolean)
+  fullName: JavaX.Swing.JFrame.SetDefaultLookAndFeelDecorated(System.Boolean)
+  nameWithType: JFrame.SetDefaultLookAndFeelDecorated(Boolean)
+- uid: JavaX.Swing.JFrame.SetDefaultLookAndFeelDecorated*
+  name: SetDefaultLookAndFeelDecorated
+  href: api/JavaX.Swing.JFrame.html#JavaX_Swing_JFrame_SetDefaultLookAndFeelDecorated_
+  commentId: Overload:JavaX.Swing.JFrame.SetDefaultLookAndFeelDecorated
+  isSpec: "True"
+  fullName: JavaX.Swing.JFrame.SetDefaultLookAndFeelDecorated
+  nameWithType: JFrame.SetDefaultLookAndFeelDecorated
+- uid: JavaX.Swing.JLabel
+  name: JLabel
+  href: api/JavaX.Swing.JLabel.html
+  commentId: T:JavaX.Swing.JLabel
+  fullName: JavaX.Swing.JLabel
+  nameWithType: JLabel
+- uid: JavaX.Swing.JLabel.#ctor
+  name: JLabel()
+  href: api/JavaX.Swing.JLabel.html#JavaX_Swing_JLabel__ctor
+  commentId: M:JavaX.Swing.JLabel.#ctor
+  fullName: JavaX.Swing.JLabel.JLabel()
+  nameWithType: JLabel.JLabel()
+- uid: JavaX.Swing.JLabel.#ctor(System.String)
+  name: JLabel(String)
+  href: api/JavaX.Swing.JLabel.html#JavaX_Swing_JLabel__ctor_System_String_
+  commentId: M:JavaX.Swing.JLabel.#ctor(System.String)
+  fullName: JavaX.Swing.JLabel.JLabel(System.String)
+  nameWithType: JLabel.JLabel(String)
+- uid: JavaX.Swing.JLabel.#ctor(System.String,System.Int32)
+  name: JLabel(String, Int32)
+  href: api/JavaX.Swing.JLabel.html#JavaX_Swing_JLabel__ctor_System_String_System_Int32_
+  commentId: M:JavaX.Swing.JLabel.#ctor(System.String,System.Int32)
+  fullName: JavaX.Swing.JLabel.JLabel(System.String, System.Int32)
+  nameWithType: JLabel.JLabel(String, Int32)
+- uid: JavaX.Swing.JLabel.#ctor*
+  name: JLabel
+  href: api/JavaX.Swing.JLabel.html#JavaX_Swing_JLabel__ctor_
+  commentId: Overload:JavaX.Swing.JLabel.#ctor
+  isSpec: "True"
+  fullName: JavaX.Swing.JLabel.JLabel
+  nameWithType: JLabel.JLabel
+- uid: JavaX.Swing.JLabel.ClassName
+  name: ClassName
+  href: api/JavaX.Swing.JLabel.html#JavaX_Swing_JLabel_ClassName
+  commentId: P:JavaX.Swing.JLabel.ClassName
+  fullName: JavaX.Swing.JLabel.ClassName
+  nameWithType: JLabel.ClassName
+- uid: JavaX.Swing.JLabel.ClassName*
+  name: ClassName
+  href: api/JavaX.Swing.JLabel.html#JavaX_Swing_JLabel_ClassName_
+  commentId: Overload:JavaX.Swing.JLabel.ClassName
+  isSpec: "True"
+  fullName: JavaX.Swing.JLabel.ClassName
+  nameWithType: JLabel.ClassName
 - uid: JavaX.Swing.JPanel
   name: JPanel
   href: api/JavaX.Swing.JPanel.html
@@ -17695,6 +19600,414 @@ references:
   isSpec: "True"
   fullName: JavaX.Swing.JPanel.ClassName
   nameWithType: JPanel.ClassName
+- uid: JavaX.Swing.JSpinner
+  name: JSpinner
+  href: api/JavaX.Swing.JSpinner.html
+  commentId: T:JavaX.Swing.JSpinner
+  fullName: JavaX.Swing.JSpinner
+  nameWithType: JSpinner
+- uid: JavaX.Swing.JSpinner.#ctor
+  name: JSpinner()
+  href: api/JavaX.Swing.JSpinner.html#JavaX_Swing_JSpinner__ctor
+  commentId: M:JavaX.Swing.JSpinner.#ctor
+  fullName: JavaX.Swing.JSpinner.JSpinner()
+  nameWithType: JSpinner.JSpinner()
+- uid: JavaX.Swing.JSpinner.#ctor(JavaX.Swing.SpinnerModel)
+  name: JSpinner(SpinnerModel)
+  href: api/JavaX.Swing.JSpinner.html#JavaX_Swing_JSpinner__ctor_JavaX_Swing_SpinnerModel_
+  commentId: M:JavaX.Swing.JSpinner.#ctor(JavaX.Swing.SpinnerModel)
+  fullName: JavaX.Swing.JSpinner.JSpinner(JavaX.Swing.SpinnerModel)
+  nameWithType: JSpinner.JSpinner(SpinnerModel)
+- uid: JavaX.Swing.JSpinner.#ctor*
+  name: JSpinner
+  href: api/JavaX.Swing.JSpinner.html#JavaX_Swing_JSpinner__ctor_
+  commentId: Overload:JavaX.Swing.JSpinner.#ctor
+  isSpec: "True"
+  fullName: JavaX.Swing.JSpinner.JSpinner
+  nameWithType: JSpinner.JSpinner
+- uid: JavaX.Swing.JSpinner.ClassName
+  name: ClassName
+  href: api/JavaX.Swing.JSpinner.html#JavaX_Swing_JSpinner_ClassName
+  commentId: P:JavaX.Swing.JSpinner.ClassName
+  fullName: JavaX.Swing.JSpinner.ClassName
+  nameWithType: JSpinner.ClassName
+- uid: JavaX.Swing.JSpinner.ClassName*
+  name: ClassName
+  href: api/JavaX.Swing.JSpinner.html#JavaX_Swing_JSpinner_ClassName_
+  commentId: Overload:JavaX.Swing.JSpinner.ClassName
+  isSpec: "True"
+  fullName: JavaX.Swing.JSpinner.ClassName
+  nameWithType: JSpinner.ClassName
+- uid: JavaX.Swing.JTable
+  name: JTable
+  href: api/JavaX.Swing.JTable.html
+  commentId: T:JavaX.Swing.JTable
+  fullName: JavaX.Swing.JTable
+  nameWithType: JTable
+- uid: JavaX.Swing.JTable.ClassName
+  name: ClassName
+  href: api/JavaX.Swing.JTable.html#JavaX_Swing_JTable_ClassName
+  commentId: P:JavaX.Swing.JTable.ClassName
+  fullName: JavaX.Swing.JTable.ClassName
+  nameWithType: JTable.ClassName
+- uid: JavaX.Swing.JTable.ClassName*
+  name: ClassName
+  href: api/JavaX.Swing.JTable.html#JavaX_Swing_JTable_ClassName_
+  commentId: Overload:JavaX.Swing.JTable.ClassName
+  isSpec: "True"
+  fullName: JavaX.Swing.JTable.ClassName
+  nameWithType: JTable.ClassName
+- uid: JavaX.Swing.JTextArea
+  name: JTextArea
+  href: api/JavaX.Swing.JTextArea.html
+  commentId: T:JavaX.Swing.JTextArea
+  fullName: JavaX.Swing.JTextArea
+  nameWithType: JTextArea
+- uid: JavaX.Swing.JTextArea.#ctor
+  name: JTextArea()
+  href: api/JavaX.Swing.JTextArea.html#JavaX_Swing_JTextArea__ctor
+  commentId: M:JavaX.Swing.JTextArea.#ctor
+  fullName: JavaX.Swing.JTextArea.JTextArea()
+  nameWithType: JTextArea.JTextArea()
+- uid: JavaX.Swing.JTextArea.#ctor(System.Int32,System.Int32)
+  name: JTextArea(Int32, Int32)
+  href: api/JavaX.Swing.JTextArea.html#JavaX_Swing_JTextArea__ctor_System_Int32_System_Int32_
+  commentId: M:JavaX.Swing.JTextArea.#ctor(System.Int32,System.Int32)
+  fullName: JavaX.Swing.JTextArea.JTextArea(System.Int32, System.Int32)
+  nameWithType: JTextArea.JTextArea(Int32, Int32)
+- uid: JavaX.Swing.JTextArea.#ctor(System.String)
+  name: JTextArea(String)
+  href: api/JavaX.Swing.JTextArea.html#JavaX_Swing_JTextArea__ctor_System_String_
+  commentId: M:JavaX.Swing.JTextArea.#ctor(System.String)
+  fullName: JavaX.Swing.JTextArea.JTextArea(System.String)
+  nameWithType: JTextArea.JTextArea(String)
+- uid: JavaX.Swing.JTextArea.#ctor(System.String,System.Int32,System.Int32)
+  name: JTextArea(String, Int32, Int32)
+  href: api/JavaX.Swing.JTextArea.html#JavaX_Swing_JTextArea__ctor_System_String_System_Int32_System_Int32_
+  commentId: M:JavaX.Swing.JTextArea.#ctor(System.String,System.Int32,System.Int32)
+  fullName: JavaX.Swing.JTextArea.JTextArea(System.String, System.Int32, System.Int32)
+  nameWithType: JTextArea.JTextArea(String, Int32, Int32)
+- uid: JavaX.Swing.JTextArea.#ctor*
+  name: JTextArea
+  href: api/JavaX.Swing.JTextArea.html#JavaX_Swing_JTextArea__ctor_
+  commentId: Overload:JavaX.Swing.JTextArea.#ctor
+  isSpec: "True"
+  fullName: JavaX.Swing.JTextArea.JTextArea
+  nameWithType: JTextArea.JTextArea
+- uid: JavaX.Swing.JTextArea.ClassName
+  name: ClassName
+  href: api/JavaX.Swing.JTextArea.html#JavaX_Swing_JTextArea_ClassName
+  commentId: P:JavaX.Swing.JTextArea.ClassName
+  fullName: JavaX.Swing.JTextArea.ClassName
+  nameWithType: JTextArea.ClassName
+- uid: JavaX.Swing.JTextArea.ClassName*
+  name: ClassName
+  href: api/JavaX.Swing.JTextArea.html#JavaX_Swing_JTextArea_ClassName_
+  commentId: Overload:JavaX.Swing.JTextArea.ClassName
+  isSpec: "True"
+  fullName: JavaX.Swing.JTextArea.ClassName
+  nameWithType: JTextArea.ClassName
+- uid: JavaX.Swing.JTextField
+  name: JTextField
+  href: api/JavaX.Swing.JTextField.html
+  commentId: T:JavaX.Swing.JTextField
+  fullName: JavaX.Swing.JTextField
+  nameWithType: JTextField
+- uid: JavaX.Swing.JTextField.#ctor
+  name: JTextField()
+  href: api/JavaX.Swing.JTextField.html#JavaX_Swing_JTextField__ctor
+  commentId: M:JavaX.Swing.JTextField.#ctor
+  fullName: JavaX.Swing.JTextField.JTextField()
+  nameWithType: JTextField.JTextField()
+- uid: JavaX.Swing.JTextField.#ctor(System.Int32)
+  name: JTextField(Int32)
+  href: api/JavaX.Swing.JTextField.html#JavaX_Swing_JTextField__ctor_System_Int32_
+  commentId: M:JavaX.Swing.JTextField.#ctor(System.Int32)
+  fullName: JavaX.Swing.JTextField.JTextField(System.Int32)
+  nameWithType: JTextField.JTextField(Int32)
+- uid: JavaX.Swing.JTextField.#ctor(System.String)
+  name: JTextField(String)
+  href: api/JavaX.Swing.JTextField.html#JavaX_Swing_JTextField__ctor_System_String_
+  commentId: M:JavaX.Swing.JTextField.#ctor(System.String)
+  fullName: JavaX.Swing.JTextField.JTextField(System.String)
+  nameWithType: JTextField.JTextField(String)
+- uid: JavaX.Swing.JTextField.#ctor(System.String,System.Int32)
+  name: JTextField(String, Int32)
+  href: api/JavaX.Swing.JTextField.html#JavaX_Swing_JTextField__ctor_System_String_System_Int32_
+  commentId: M:JavaX.Swing.JTextField.#ctor(System.String,System.Int32)
+  fullName: JavaX.Swing.JTextField.JTextField(System.String, System.Int32)
+  nameWithType: JTextField.JTextField(String, Int32)
+- uid: JavaX.Swing.JTextField.#ctor*
+  name: JTextField
+  href: api/JavaX.Swing.JTextField.html#JavaX_Swing_JTextField__ctor_
+  commentId: Overload:JavaX.Swing.JTextField.#ctor
+  isSpec: "True"
+  fullName: JavaX.Swing.JTextField.JTextField
+  nameWithType: JTextField.JTextField
+- uid: JavaX.Swing.JTextField.ClassName
+  name: ClassName
+  href: api/JavaX.Swing.JTextField.html#JavaX_Swing_JTextField_ClassName
+  commentId: P:JavaX.Swing.JTextField.ClassName
+  fullName: JavaX.Swing.JTextField.ClassName
+  nameWithType: JTextField.ClassName
+- uid: JavaX.Swing.JTextField.ClassName*
+  name: ClassName
+  href: api/JavaX.Swing.JTextField.html#JavaX_Swing_JTextField_ClassName_
+  commentId: Overload:JavaX.Swing.JTextField.ClassName
+  isSpec: "True"
+  fullName: JavaX.Swing.JTextField.ClassName
+  nameWithType: JTextField.ClassName
+- uid: JavaX.Swing.KeyStroke
+  name: KeyStroke
+  href: api/JavaX.Swing.KeyStroke.html
+  commentId: T:JavaX.Swing.KeyStroke
+  fullName: JavaX.Swing.KeyStroke
+  nameWithType: KeyStroke
+- uid: JavaX.Swing.KeyStroke.ClassName
+  name: ClassName
+  href: api/JavaX.Swing.KeyStroke.html#JavaX_Swing_KeyStroke_ClassName
+  commentId: P:JavaX.Swing.KeyStroke.ClassName
+  fullName: JavaX.Swing.KeyStroke.ClassName
+  nameWithType: KeyStroke.ClassName
+- uid: JavaX.Swing.KeyStroke.ClassName*
+  name: ClassName
+  href: api/JavaX.Swing.KeyStroke.html#JavaX_Swing_KeyStroke_ClassName_
+  commentId: Overload:JavaX.Swing.KeyStroke.ClassName
+  isSpec: "True"
+  fullName: JavaX.Swing.KeyStroke.ClassName
+  nameWithType: KeyStroke.ClassName
+- uid: JavaX.Swing.SpinnerModel
+  name: SpinnerModel
+  href: api/JavaX.Swing.SpinnerModel.html
+  commentId: T:JavaX.Swing.SpinnerModel
+  fullName: JavaX.Swing.SpinnerModel
+  nameWithType: SpinnerModel
+- uid: JavaX.Swing.SpinnerModel.AddChangeListener(JavaX.Swing.Event.ChangeListener)
+  name: AddChangeListener(ChangeListener)
+  href: api/JavaX.Swing.SpinnerModel.html#JavaX_Swing_SpinnerModel_AddChangeListener_JavaX_Swing_Event_ChangeListener_
+  commentId: M:JavaX.Swing.SpinnerModel.AddChangeListener(JavaX.Swing.Event.ChangeListener)
+  fullName: JavaX.Swing.SpinnerModel.AddChangeListener(JavaX.Swing.Event.ChangeListener)
+  nameWithType: SpinnerModel.AddChangeListener(ChangeListener)
+- uid: JavaX.Swing.SpinnerModel.AddChangeListener*
+  name: AddChangeListener
+  href: api/JavaX.Swing.SpinnerModel.html#JavaX_Swing_SpinnerModel_AddChangeListener_
+  commentId: Overload:JavaX.Swing.SpinnerModel.AddChangeListener
+  isSpec: "True"
+  fullName: JavaX.Swing.SpinnerModel.AddChangeListener
+  nameWithType: SpinnerModel.AddChangeListener
+- uid: JavaX.Swing.SpinnerModel.ClassName
+  name: ClassName
+  href: api/JavaX.Swing.SpinnerModel.html#JavaX_Swing_SpinnerModel_ClassName
+  commentId: P:JavaX.Swing.SpinnerModel.ClassName
+  fullName: JavaX.Swing.SpinnerModel.ClassName
+  nameWithType: SpinnerModel.ClassName
+- uid: JavaX.Swing.SpinnerModel.ClassName*
+  name: ClassName
+  href: api/JavaX.Swing.SpinnerModel.html#JavaX_Swing_SpinnerModel_ClassName_
+  commentId: Overload:JavaX.Swing.SpinnerModel.ClassName
+  isSpec: "True"
+  fullName: JavaX.Swing.SpinnerModel.ClassName
+  nameWithType: SpinnerModel.ClassName
+- uid: JavaX.Swing.SpinnerModel.IsInterface
+  name: IsInterface
+  href: api/JavaX.Swing.SpinnerModel.html#JavaX_Swing_SpinnerModel_IsInterface
+  commentId: P:JavaX.Swing.SpinnerModel.IsInterface
+  fullName: JavaX.Swing.SpinnerModel.IsInterface
+  nameWithType: SpinnerModel.IsInterface
+- uid: JavaX.Swing.SpinnerModel.IsInterface*
+  name: IsInterface
+  href: api/JavaX.Swing.SpinnerModel.html#JavaX_Swing_SpinnerModel_IsInterface_
+  commentId: Overload:JavaX.Swing.SpinnerModel.IsInterface
+  isSpec: "True"
+  fullName: JavaX.Swing.SpinnerModel.IsInterface
+  nameWithType: SpinnerModel.IsInterface
+- uid: JavaX.Swing.SpinnerModel.NextValue
+  name: NextValue
+  href: api/JavaX.Swing.SpinnerModel.html#JavaX_Swing_SpinnerModel_NextValue
+  commentId: P:JavaX.Swing.SpinnerModel.NextValue
+  fullName: JavaX.Swing.SpinnerModel.NextValue
+  nameWithType: SpinnerModel.NextValue
+- uid: JavaX.Swing.SpinnerModel.NextValue*
+  name: NextValue
+  href: api/JavaX.Swing.SpinnerModel.html#JavaX_Swing_SpinnerModel_NextValue_
+  commentId: Overload:JavaX.Swing.SpinnerModel.NextValue
+  isSpec: "True"
+  fullName: JavaX.Swing.SpinnerModel.NextValue
+  nameWithType: SpinnerModel.NextValue
+- uid: JavaX.Swing.SpinnerModel.PreviousValue
+  name: PreviousValue
+  href: api/JavaX.Swing.SpinnerModel.html#JavaX_Swing_SpinnerModel_PreviousValue
+  commentId: P:JavaX.Swing.SpinnerModel.PreviousValue
+  fullName: JavaX.Swing.SpinnerModel.PreviousValue
+  nameWithType: SpinnerModel.PreviousValue
+- uid: JavaX.Swing.SpinnerModel.PreviousValue*
+  name: PreviousValue
+  href: api/JavaX.Swing.SpinnerModel.html#JavaX_Swing_SpinnerModel_PreviousValue_
+  commentId: Overload:JavaX.Swing.SpinnerModel.PreviousValue
+  isSpec: "True"
+  fullName: JavaX.Swing.SpinnerModel.PreviousValue
+  nameWithType: SpinnerModel.PreviousValue
+- uid: JavaX.Swing.SpinnerModel.RemoveChangeListener(JavaX.Swing.Event.ChangeListener)
+  name: RemoveChangeListener(ChangeListener)
+  href: api/JavaX.Swing.SpinnerModel.html#JavaX_Swing_SpinnerModel_RemoveChangeListener_JavaX_Swing_Event_ChangeListener_
+  commentId: M:JavaX.Swing.SpinnerModel.RemoveChangeListener(JavaX.Swing.Event.ChangeListener)
+  fullName: JavaX.Swing.SpinnerModel.RemoveChangeListener(JavaX.Swing.Event.ChangeListener)
+  nameWithType: SpinnerModel.RemoveChangeListener(ChangeListener)
+- uid: JavaX.Swing.SpinnerModel.RemoveChangeListener*
+  name: RemoveChangeListener
+  href: api/JavaX.Swing.SpinnerModel.html#JavaX_Swing_SpinnerModel_RemoveChangeListener_
+  commentId: Overload:JavaX.Swing.SpinnerModel.RemoveChangeListener
+  isSpec: "True"
+  fullName: JavaX.Swing.SpinnerModel.RemoveChangeListener
+  nameWithType: SpinnerModel.RemoveChangeListener
+- uid: JavaX.Swing.SpinnerModel.Value
+  name: Value
+  href: api/JavaX.Swing.SpinnerModel.html#JavaX_Swing_SpinnerModel_Value
+  commentId: P:JavaX.Swing.SpinnerModel.Value
+  fullName: JavaX.Swing.SpinnerModel.Value
+  nameWithType: SpinnerModel.Value
+- uid: JavaX.Swing.SpinnerModel.Value*
+  name: Value
+  href: api/JavaX.Swing.SpinnerModel.html#JavaX_Swing_SpinnerModel_Value_
+  commentId: Overload:JavaX.Swing.SpinnerModel.Value
+  isSpec: "True"
+  fullName: JavaX.Swing.SpinnerModel.Value
+  nameWithType: SpinnerModel.Value
+- uid: JavaX.Swing.SpinnerNumberModel
+  name: SpinnerNumberModel
+  href: api/JavaX.Swing.SpinnerNumberModel.html
+  commentId: T:JavaX.Swing.SpinnerNumberModel
+  fullName: JavaX.Swing.SpinnerNumberModel
+  nameWithType: SpinnerNumberModel
+- uid: JavaX.Swing.SpinnerNumberModel.#ctor
+  name: SpinnerNumberModel()
+  href: api/JavaX.Swing.SpinnerNumberModel.html#JavaX_Swing_SpinnerNumberModel__ctor
+  commentId: M:JavaX.Swing.SpinnerNumberModel.#ctor
+  fullName: JavaX.Swing.SpinnerNumberModel.SpinnerNumberModel()
+  nameWithType: SpinnerNumberModel.SpinnerNumberModel()
+- uid: JavaX.Swing.SpinnerNumberModel.#ctor(Java.Lang.Number,Java.Lang.Comparable,Java.Lang.Comparable,Java.Lang.Number)
+  name: SpinnerNumberModel(Number, Comparable, Comparable, Number)
+  href: api/JavaX.Swing.SpinnerNumberModel.html#JavaX_Swing_SpinnerNumberModel__ctor_Java_Lang_Number_Java_Lang_Comparable_Java_Lang_Comparable_Java_Lang_Number_
+  commentId: M:JavaX.Swing.SpinnerNumberModel.#ctor(Java.Lang.Number,Java.Lang.Comparable,Java.Lang.Comparable,Java.Lang.Number)
+  fullName: JavaX.Swing.SpinnerNumberModel.SpinnerNumberModel(Java.Lang.Number, Java.Lang.Comparable, Java.Lang.Comparable, Java.Lang.Number)
+  nameWithType: SpinnerNumberModel.SpinnerNumberModel(Number, Comparable, Comparable, Number)
+- uid: JavaX.Swing.SpinnerNumberModel.#ctor(System.Double,System.Double,System.Double,System.Double)
+  name: SpinnerNumberModel(Double, Double, Double, Double)
+  href: api/JavaX.Swing.SpinnerNumberModel.html#JavaX_Swing_SpinnerNumberModel__ctor_System_Double_System_Double_System_Double_System_Double_
+  commentId: M:JavaX.Swing.SpinnerNumberModel.#ctor(System.Double,System.Double,System.Double,System.Double)
+  fullName: JavaX.Swing.SpinnerNumberModel.SpinnerNumberModel(System.Double, System.Double, System.Double, System.Double)
+  nameWithType: SpinnerNumberModel.SpinnerNumberModel(Double, Double, Double, Double)
+- uid: JavaX.Swing.SpinnerNumberModel.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)
+  name: SpinnerNumberModel(Int32, Int32, Int32, Int32)
+  href: api/JavaX.Swing.SpinnerNumberModel.html#JavaX_Swing_SpinnerNumberModel__ctor_System_Int32_System_Int32_System_Int32_System_Int32_
+  commentId: M:JavaX.Swing.SpinnerNumberModel.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)
+  fullName: JavaX.Swing.SpinnerNumberModel.SpinnerNumberModel(System.Int32, System.Int32, System.Int32, System.Int32)
+  nameWithType: SpinnerNumberModel.SpinnerNumberModel(Int32, Int32, Int32, Int32)
+- uid: JavaX.Swing.SpinnerNumberModel.#ctor*
+  name: SpinnerNumberModel
+  href: api/JavaX.Swing.SpinnerNumberModel.html#JavaX_Swing_SpinnerNumberModel__ctor_
+  commentId: Overload:JavaX.Swing.SpinnerNumberModel.#ctor
+  isSpec: "True"
+  fullName: JavaX.Swing.SpinnerNumberModel.SpinnerNumberModel
+  nameWithType: SpinnerNumberModel.SpinnerNumberModel
+- uid: JavaX.Swing.SpinnerNumberModel.ClassName
+  name: ClassName
+  href: api/JavaX.Swing.SpinnerNumberModel.html#JavaX_Swing_SpinnerNumberModel_ClassName
+  commentId: P:JavaX.Swing.SpinnerNumberModel.ClassName
+  fullName: JavaX.Swing.SpinnerNumberModel.ClassName
+  nameWithType: SpinnerNumberModel.ClassName
+- uid: JavaX.Swing.SpinnerNumberModel.ClassName*
+  name: ClassName
+  href: api/JavaX.Swing.SpinnerNumberModel.html#JavaX_Swing_SpinnerNumberModel_ClassName_
+  commentId: Overload:JavaX.Swing.SpinnerNumberModel.ClassName
+  isSpec: "True"
+  fullName: JavaX.Swing.SpinnerNumberModel.ClassName
+  nameWithType: SpinnerNumberModel.ClassName
+- uid: JavaX.Swing.SpringLayout
+  name: SpringLayout
+  href: api/JavaX.Swing.SpringLayout.html
+  commentId: T:JavaX.Swing.SpringLayout
+  fullName: JavaX.Swing.SpringLayout
+  nameWithType: SpringLayout
+- uid: JavaX.Swing.SpringLayout.ClassName
+  name: ClassName
+  href: api/JavaX.Swing.SpringLayout.html#JavaX_Swing_SpringLayout_ClassName
+  commentId: P:JavaX.Swing.SpringLayout.ClassName
+  fullName: JavaX.Swing.SpringLayout.ClassName
+  nameWithType: SpringLayout.ClassName
+- uid: JavaX.Swing.SpringLayout.ClassName*
+  name: ClassName
+  href: api/JavaX.Swing.SpringLayout.html#JavaX_Swing_SpringLayout_ClassName_
+  commentId: Overload:JavaX.Swing.SpringLayout.ClassName
+  isSpec: "True"
+  fullName: JavaX.Swing.SpringLayout.ClassName
+  nameWithType: SpringLayout.ClassName
+- uid: JavaX.Swing.Text
+  name: JavaX.Swing.Text
+  href: api/JavaX.Swing.Text.html
+  commentId: N:JavaX.Swing.Text
+  fullName: JavaX.Swing.Text
+  nameWithType: JavaX.Swing.Text
+- uid: JavaX.Swing.Text.JTextComponent
+  name: JTextComponent
+  href: api/JavaX.Swing.Text.JTextComponent.html
+  commentId: T:JavaX.Swing.Text.JTextComponent
+  fullName: JavaX.Swing.Text.JTextComponent
+  nameWithType: JTextComponent
+- uid: JavaX.Swing.Text.JTextComponent.#ctor
+  name: JTextComponent()
+  href: api/JavaX.Swing.Text.JTextComponent.html#JavaX_Swing_Text_JTextComponent__ctor
+  commentId: M:JavaX.Swing.Text.JTextComponent.#ctor
+  fullName: JavaX.Swing.Text.JTextComponent.JTextComponent()
+  nameWithType: JTextComponent.JTextComponent()
+- uid: JavaX.Swing.Text.JTextComponent.#ctor(System.Object[])
+  name: JTextComponent(Object[])
+  href: api/JavaX.Swing.Text.JTextComponent.html#JavaX_Swing_Text_JTextComponent__ctor_System_Object___
+  commentId: M:JavaX.Swing.Text.JTextComponent.#ctor(System.Object[])
+  name.vb: JTextComponent(Object())
+  fullName: JavaX.Swing.Text.JTextComponent.JTextComponent(System.Object[])
+  fullName.vb: JavaX.Swing.Text.JTextComponent.JTextComponent(System.Object())
+  nameWithType: JTextComponent.JTextComponent(Object[])
+  nameWithType.vb: JTextComponent.JTextComponent(Object())
+- uid: JavaX.Swing.Text.JTextComponent.#ctor*
+  name: JTextComponent
+  href: api/JavaX.Swing.Text.JTextComponent.html#JavaX_Swing_Text_JTextComponent__ctor_
+  commentId: Overload:JavaX.Swing.Text.JTextComponent.#ctor
+  isSpec: "True"
+  fullName: JavaX.Swing.Text.JTextComponent.JTextComponent
+  nameWithType: JTextComponent.JTextComponent
+- uid: JavaX.Swing.Text.JTextComponent.ClassName
+  name: ClassName
+  href: api/JavaX.Swing.Text.JTextComponent.html#JavaX_Swing_Text_JTextComponent_ClassName
+  commentId: P:JavaX.Swing.Text.JTextComponent.ClassName
+  fullName: JavaX.Swing.Text.JTextComponent.ClassName
+  nameWithType: JTextComponent.ClassName
+- uid: JavaX.Swing.Text.JTextComponent.ClassName*
+  name: ClassName
+  href: api/JavaX.Swing.Text.JTextComponent.html#JavaX_Swing_Text_JTextComponent_ClassName_
+  commentId: Overload:JavaX.Swing.Text.JTextComponent.ClassName
+  isSpec: "True"
+  fullName: JavaX.Swing.Text.JTextComponent.ClassName
+  nameWithType: JTextComponent.ClassName
+- uid: JavaX.Swing.UIManager
+  name: UIManager
+  href: api/JavaX.Swing.UIManager.html
+  commentId: T:JavaX.Swing.UIManager
+  fullName: JavaX.Swing.UIManager
+  nameWithType: UIManager
+- uid: JavaX.Swing.UIManager.ClassName
+  name: ClassName
+  href: api/JavaX.Swing.UIManager.html#JavaX_Swing_UIManager_ClassName
+  commentId: P:JavaX.Swing.UIManager.ClassName
+  fullName: JavaX.Swing.UIManager.ClassName
+  nameWithType: UIManager.ClassName
+- uid: JavaX.Swing.UIManager.ClassName*
+  name: ClassName
+  href: api/JavaX.Swing.UIManager.html#JavaX_Swing_UIManager_ClassName_
+  commentId: Overload:JavaX.Swing.UIManager.ClassName
+  isSpec: "True"
+  fullName: JavaX.Swing.UIManager.ClassName
+  nameWithType: UIManager.ClassName
 - uid: MASES.JNet
   name: MASES.JNet
   href: api/MASES.JNet.html
@@ -17805,22 +20118,6 @@ references:
   commentId: T:MASES.JNet.JNetCore
   fullName: MASES.JNet.JNetCore
   nameWithType: JNetCore
-- uid: MASES.JNet.JNetCore.Class*
-  name: Class
-  href: api/MASES.JNet.JNetCore.html#MASES_JNet_JNetCore_Class_
-  commentId: Overload:MASES.JNet.JNetCore.Class
-  isSpec: "True"
-  fullName: MASES.JNet.JNetCore.Class
-  nameWithType: JNetCore.Class
-- uid: MASES.JNet.JNetCore.Class``1
-  name: Class<TClass>()
-  href: api/MASES.JNet.JNetCore.html#MASES_JNet_JNetCore_Class__1
-  commentId: M:MASES.JNet.JNetCore.Class``1
-  name.vb: Class(Of TClass)()
-  fullName: MASES.JNet.JNetCore.Class<TClass>()
-  fullName.vb: MASES.JNet.JNetCore.Class(Of TClass)()
-  nameWithType: JNetCore.Class<TClass>()
-  nameWithType.vb: JNetCore.Class(Of TClass)()
 - uid: MASES.JNet.JNetCore`1
   name: JNetCore<T>
   href: api/MASES.JNet.JNetCore-1.html
@@ -17881,6 +20178,24 @@ references:
   fullName.vb: MASES.JNet.JNetCore(Of T).ApplicationInitialHeapSize
   nameWithType: JNetCore<T>.ApplicationInitialHeapSize
   nameWithType.vb: JNetCore(Of T).ApplicationInitialHeapSize
+- uid: MASES.JNet.JNetCore`1.Class*
+  name: Class
+  href: api/MASES.JNet.JNetCore-1.html#MASES_JNet_JNetCore_1_Class_
+  commentId: Overload:MASES.JNet.JNetCore`1.Class
+  isSpec: "True"
+  fullName: MASES.JNet.JNetCore<T>.Class
+  fullName.vb: MASES.JNet.JNetCore(Of T).Class
+  nameWithType: JNetCore<T>.Class
+  nameWithType.vb: JNetCore(Of T).Class
+- uid: MASES.JNet.JNetCore`1.Class``1
+  name: Class<TClass>()
+  href: api/MASES.JNet.JNetCore-1.html#MASES_JNet_JNetCore_1_Class__1
+  commentId: M:MASES.JNet.JNetCore`1.Class``1
+  name.vb: Class(Of TClass)()
+  fullName: MASES.JNet.JNetCore<T>.Class<TClass>()
+  fullName.vb: MASES.JNet.JNetCore(Of T).Class(Of TClass)()
+  nameWithType: JNetCore<T>.Class<TClass>()
+  nameWithType.vb: JNetCore(Of T).Class(Of TClass)()
 - uid: MASES.JNet.JNetCore`1.ClassPath
   name: ClassPath
   href: api/MASES.JNet.JNetCore-1.html#MASES_JNet_JNetCore_1_ClassPath
@@ -17966,6 +20281,32 @@ references:
   fullName.vb: MASES.JNet.JNetCore(Of T).JVMOptions
   nameWithType: JNetCore<T>.JVMOptions
   nameWithType.vb: JNetCore(Of T).JVMOptions
+- uid: MASES.JNet.JNetCore`1.New(System.String)
+  name: New(String)
+  href: api/MASES.JNet.JNetCore-1.html#MASES_JNet_JNetCore_1_New_System_String_
+  commentId: M:MASES.JNet.JNetCore`1.New(System.String)
+  fullName: MASES.JNet.JNetCore<T>.New(System.String)
+  fullName.vb: MASES.JNet.JNetCore(Of T).New(System.String)
+  nameWithType: JNetCore<T>.New(String)
+  nameWithType.vb: JNetCore(Of T).New(String)
+- uid: MASES.JNet.JNetCore`1.New(System.String,System.Object[])
+  name: New(String, Object[])
+  href: api/MASES.JNet.JNetCore-1.html#MASES_JNet_JNetCore_1_New_System_String_System_Object___
+  commentId: M:MASES.JNet.JNetCore`1.New(System.String,System.Object[])
+  name.vb: New(String, Object())
+  fullName: MASES.JNet.JNetCore<T>.New(System.String, System.Object[])
+  fullName.vb: MASES.JNet.JNetCore(Of T).New(System.String, System.Object())
+  nameWithType: JNetCore<T>.New(String, Object[])
+  nameWithType.vb: JNetCore(Of T).New(String, Object())
+- uid: MASES.JNet.JNetCore`1.New*
+  name: New
+  href: api/MASES.JNet.JNetCore-1.html#MASES_JNet_JNetCore_1_New_
+  commentId: Overload:MASES.JNet.JNetCore`1.New
+  isSpec: "True"
+  fullName: MASES.JNet.JNetCore<T>.New
+  fullName.vb: MASES.JNet.JNetCore(Of T).New
+  nameWithType: JNetCore<T>.New
+  nameWithType.vb: JNetCore(Of T).New
 - uid: MASES.JNet.JNetCore`1.Options
   name: Options
   href: api/MASES.JNet.JNetCore-1.html#MASES_JNet_JNetCore_1_Options

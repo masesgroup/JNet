@@ -16,17 +16,10 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.JCOBridge.C2JBridge;
-
 namespace Java.Util
 {
-    public class Properties : JVMBridgeBase<Properties>
+    public class Properties : Hashtable<object, object>
     {
         public override string ClassName => "java.util.Properties";
-
-        public void Put(object key, object value)
-        {
-            IExecute("put", key, value);
-        }
     }
 }
