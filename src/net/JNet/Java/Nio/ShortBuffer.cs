@@ -21,16 +21,14 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio
 {
-    public class ByteBuffer : Buffer
+    public class ShortBuffer : Buffer
     {
-        public override string ClassName => "java.nio.ByteBuffer";
+        public override string ClassName => "java.nio.ShortBuffer";
 
-        public static implicit operator Comparable<ByteBuffer>(ByteBuffer buffer) => buffer.Cast<Comparable<ByteBuffer>>();
+        public static implicit operator Comparable<ShortBuffer>(ShortBuffer buffer) => buffer.Cast<Comparable<ShortBuffer>>();
 
-        public static ByteBuffer Allocate(int capacity) => SExecute<ByteBuffer>("allocate", capacity);
+        public static ShortBuffer Allocate(int capacity) => SExecute<ShortBuffer>("allocate", capacity);
 
-        public static ByteBuffer AllocateDirect(int capacity) => SExecute<ByteBuffer>("allocateDirect", capacity);
-
-        public byte[] Array => IExecute<byte[]>("array");
+        public short[] Array => IExecute<short[]>("array");
     }
 }

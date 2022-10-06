@@ -31,6 +31,8 @@ namespace MASES.JNetCLI
             {
                 if (args.Length == 0) { showHelp(); return; }
 
+
+
             }
             catch (Exception e)
             {
@@ -53,7 +55,7 @@ namespace MASES.JNetCLI
             Console.WriteLine("JCOBridgeArguments: the arguments of JCOBridge (see online at https://www.jcobridge.com/net-examples/command-line-options/ for the possible values). ");
             Console.WriteLine();
             Console.WriteLine("Examples:");
-            Console.WriteLine(assembly.GetName().Name + " -ClassToRun ConsoleConsumer --bootstrap-server SERVER-ADDRESS:9093 --topic topic_name --from-beginning");
+            Console.WriteLine(assembly.GetName().Name + " ");
         }
     }
 }
