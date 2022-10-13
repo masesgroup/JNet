@@ -132,8 +132,8 @@ jobs:
 
       - name: Publish to GitHub
         run: |
-          nuget push .\bin\*.nupkg -ApiKey ${{ secrets.MASES_NUGET_API_KEY }} -Source "github" -SkipDuplicate
-          nuget push .\bin\*.snupkg -ApiKey ${{ secrets.MASES_NUGET_API_KEY }} -Source "github" -SkipDuplicate
+          nuget push .\bin\*.nupkg -ApiKey ${{ secrets.GITHUB_TOKEN }} -Source "github" -SkipDuplicate
+          nuget push .\bin\*.snupkg -ApiKey ${{ secrets.GITHUB_TOKEN }} -Source "github" -SkipDuplicate
 
       - name: Publish to NuGet
         run: |
