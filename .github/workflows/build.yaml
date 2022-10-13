@@ -90,6 +90,17 @@ jobs:
         
       - name: Build Docker Image
         run: docker build -t mases.jnet -f Dockerfile.linux .
+        
+      - name: Save Docker Image
+        run: docker image save -o mases.jnet.linux.tar mases.jnet
+        
+      - name: Compress Docker Image
+        run: gzip mases.jnet.linux.tar
+        
+      - uses: actions/upload-artifact@v2
+        with:
+          name: mases.jnet.linux.tar.gz
+          path: .\*.tar.gz
 
   # Now run "build_windows"
   build_windows:
