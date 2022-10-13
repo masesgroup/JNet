@@ -36,6 +36,11 @@ jobs:
                 echo "::set-output name=run_build_windows::true"
                 break
               fi
+              if [[ $added_modified_file == "Dockerfile.linux"* ]]; then
+                echo "$added_modified_file file changed"
+                echo "::set-output name=run_build_windows::true"
+                break
+              fi
           done
       - name: Get run_build_windows
         run: echo "The selected run_build_windows is ${{ steps.check_files.outputs.run_build_windows }}"
