@@ -1,16 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\Common\Common.props" />
   <PropertyGroup>
     <PackageType>Template</PackageType>
-    <PackageVersion>1.4.6.0</PackageVersion>
     <PackageId>MASES.JNet.Templates</PackageId>
     <Title>JNet Templates - Templates to use the JNet</Title>
-    <Authors>MASES s.r.l.</Authors>
-    <Owners>MASES s.r.l.</Owners>
-    <Company>MASES s.r.l.</Company>
-    <Copyright>Copyright ©  MASES s.r.l. 2022</Copyright>
     <Summary>Ready made templates to create applications based on JNet</Summary>
     <Description>Ready made templates to create applications based on JNet. The templates are ready made starting points, all information and APIs are available in the official website https://masesgroup.github.io/JNet</Description>
-    <TargetFrameworks>net6.0;netcoreapp3.1;net462</TargetFrameworks>
     <OutputPath>..\..\..\bin\</OutputPath>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
@@ -20,7 +15,6 @@
 	<PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageIcon>JCOB128x128.png</PackageIcon>
     <PackageTags>template jnet dotnet clr dotnetcore netcore dotnet6 net6 java bridge</PackageTags>
-    <LangVersion>8.0</LangVersion>
     <Product>JNet Templates</Product>
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
     <SignAssembly>true</SignAssembly>
@@ -29,17 +23,6 @@
     <IncludeBuildOutput>false</IncludeBuildOutput>
     <ContentTargetFolders>content</ContentTargetFolders>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-  </PropertyGroup>
-  <!-- Fix start https://github.com/dotnet/sourcelink/issues/572 -->
-  <PropertyGroup>
-    <TargetFrameworkMonikerAssemblyAttributesPath>$([System.IO.Path]::Combine('$(IntermediateOutputPath)','$(TargetFrameworkMoniker).AssemblyAttributes$(DefaultLanguageSourceExtension)'))</TargetFrameworkMonikerAssemblyAttributesPath>
-  </PropertyGroup>
-  <ItemGroup>
-    <EmbeddedFiles Include="$(GeneratedAssemblyInfoFile)" />
-  </ItemGroup>
-  <!-- Fix end -->
-  <PropertyGroup Condition="'$(GITHUB_ACTIONS)' == 'true'">
-    <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
   </PropertyGroup>
   <ItemGroup>
     <None Include="..\..\..\LICENSE" Pack="true" PackagePath="" />
