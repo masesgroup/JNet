@@ -10,8 +10,6 @@ on:
 
 jobs:
   build_container_linux:
-    needs: check_changes
-    if: "always() && needs.check_changes.outputs.run_build_windows == 'true'"
     runs-on: ubuntu-latest
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:    
