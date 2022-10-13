@@ -100,7 +100,7 @@ jobs:
       - uses: actions/upload-artifact@v2
         with:
           name: mases.jnet.linux.tar.gz
-          path: .\*.tar.gz
+          path: ./*.tar.gz
 
   # Now run "build_windows"
   build_windows:
