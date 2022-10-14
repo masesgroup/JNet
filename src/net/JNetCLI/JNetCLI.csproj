@@ -9,7 +9,6 @@
     <Description>JNetCLI - JNet command line interface</Description>
     <Product>JNetCLI</Product>
     <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
-    <TargetFrameworks>net462;net6.0;net7.0</TargetFrameworks>
     <OutputPath>..\..\..\binCLI\</OutputPath>
     <!--<GeneratePackageOnBuild>true</GeneratePackageOnBuild>-->
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
@@ -27,18 +26,6 @@
     <AssemblyOriginatorKeyFile>..\Common\JNet.snk</AssemblyOriginatorKeyFile>
     <PackageReadmeFile>usageCLI.md</PackageReadmeFile>
   </PropertyGroup>
-  <!-- Fix start https://github.com/dotnet/sourcelink/issues/572 -->
-  <PropertyGroup>
-    <TargetFrameworkMonikerAssemblyAttributesPath>$([System.IO.Path]::Combine('$(IntermediateOutputPath)','$(TargetFrameworkMoniker).AssemblyAttributes$(DefaultLanguageSourceExtension)'))</TargetFrameworkMonikerAssemblyAttributesPath>
-    <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
-  </PropertyGroup>
-  <ItemGroup>
-    <EmbeddedFiles Include="$(GeneratedAssemblyInfoFile)" />
-  </ItemGroup>
-  <!-- Fix end -->
-  <PropertyGroup Condition="'$(GITHUB_ACTIONS)' == 'true'">
-    <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
-  </PropertyGroup>
   <ItemGroup>
     <None Include="..\..\..\LICENSE" Pack="true" PackagePath="" />
     <None Include="..\Common\JCOB128x128.png" Pack="true" PackagePath="" />
@@ -46,11 +33,10 @@
     <None Include="..\Documentation\articles\usageCLI.md" Pack="true" PackagePath="\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="MASES.CLIParser" Version="3.1.2" />
-    <PackageReference Include="MASES.JCOBridge" Version="2.4.14">
-      <IncludeAssets>All</IncludeAssets>
-      <PrivateAssets>None</PrivateAssets>
-    </PackageReference>
+    <ProjectReference Include="..\JNet\JNet.csproj">
+		<IncludeAssets>All</IncludeAssets>
+        <PrivateAssets>None</PrivateAssets>
+    </ProjectReference>
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All" />
   </ItemGroup>
   <ItemGroup>

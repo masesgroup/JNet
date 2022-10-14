@@ -6,8 +6,20 @@
 		<Company>MASES s.r.l.</Company>
 		<Version>1.5.0.0</Version>
 		<LangVersion>latest</LangVersion>
+		<TargetFrameworks>net462;net6.0;net7.0</TargetFrameworks>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(GITHUB_ACTIONS)' == 'true'">
+		<ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
 	</PropertyGroup>
 	<ItemGroup Condition="'$(TargetFramework)' == 'net462'">
 		<Reference Include="Microsoft.CSharp" />
 	</ItemGroup>
+	<!-- Fix start https://github.com/dotnet/sourcelink/issues/572 -->
+	<PropertyGroup>
+		<TargetFrameworkMonikerAssemblyAttributesPath>$([System.IO.Path]::Combine('$(IntermediateOutputPath)','$(TargetFrameworkMoniker).AssemblyAttributes$(DefaultLanguageSourceExtension)'))</TargetFrameworkMonikerAssemblyAttributesPath>
+	</PropertyGroup>
+	<ItemGroup>
+		<EmbeddedFiles Include="$(GeneratedAssemblyInfoFile)" />
+	</ItemGroup>
+	<!-- Fix end -->
 </Project>

@@ -1,14 +1,12 @@
 <Project Sdk="Microsoft.NET.Sdk">
 	<Import Project="..\Common\Common.props" />
 	<PropertyGroup>
-		<LangVersion>latest</LangVersion>
 		<AssemblyName>MASES.JNet</AssemblyName>
 		<RootNamespace>MASES.JNet</RootNamespace>
 		<Title>JNet - .NET gateway for JVM APIs (Java, Scala, Kotlin, ...)</Title>
 		<Description>JNet - .NET gateway for JVM APIs (Java, Scala, Kotlin, ...)</Description>
 		<Product>JNet</Product>
 		<GenerateAssemblyInfo>true</GenerateAssemblyInfo>
-		<TargetFrameworks>net462;net6.0;net7.0</TargetFrameworks>
 		<OutputPath>..\..\..\bin\</OutputPath>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
@@ -26,17 +24,6 @@
 		<AssemblyOriginatorKeyFile>..\Common\JNet.snk</AssemblyOriginatorKeyFile>
 		<PackageReadmeFile>usage.md</PackageReadmeFile>
 	</PropertyGroup>
-  <!-- Fix start https://github.com/dotnet/sourcelink/issues/572 -->
-  <PropertyGroup>
-    <TargetFrameworkMonikerAssemblyAttributesPath>$([System.IO.Path]::Combine('$(IntermediateOutputPath)','$(TargetFrameworkMoniker).AssemblyAttributes$(DefaultLanguageSourceExtension)'))</TargetFrameworkMonikerAssemblyAttributesPath>
-  </PropertyGroup>
-  <ItemGroup>
-    <EmbeddedFiles Include="$(GeneratedAssemblyInfoFile)" />
-  </ItemGroup>
-  <!-- Fix end -->
-  <PropertyGroup Condition="'$(GITHUB_ACTIONS)' == 'true'">
-    <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
-  </PropertyGroup>
   <ItemGroup>
     <None Include="..\..\..\LICENSE" Pack="true" PackagePath="" />
     <None Include="..\Common\JCOB128x128.png" Pack="true" PackagePath="" />
@@ -47,7 +34,10 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MASES.CLIParser" Version="3.1.2" />
-    <PackageReference Include="MASES.JCOBridge" Version="2.5.0" />
+    <PackageReference Include="MASES.JCOBridge" Version="2.5.0">
+      <IncludeAssets>All</IncludeAssets>
+      <PrivateAssets>None</PrivateAssets>
+    </PackageReference>
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All" />
   </ItemGroup>
 </Project>

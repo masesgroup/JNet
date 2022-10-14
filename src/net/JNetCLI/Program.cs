@@ -29,23 +29,31 @@ namespace MASES.JNetCLI
         {
             try
             {
-                if (args.Length == 0) { showHelp(); return; }
-
-
-
+                var assembly = typeof(Program).Assembly;
+                Console.WriteLine($"{assembly.GetName().Name} (ver. {assembly.GetName().Version}) - JNet command line interface");
+                Console.WriteLine();
+                Console.WriteLine("Basic interface to execute something from container.");
             }
             catch (Exception e)
             {
-                Console.WriteLine(e.Message);
+                StringBuilder sb = new StringBuilder();
+                sb.AppendLine(e.Message);
+                Exception innerException = e.InnerException;
+                while (innerException != null)
+                {
+                    sb.AppendLine(innerException.Message);
+                    innerException = innerException.InnerException;
+                }
+                ShowHelp(sb.ToString());
             }
         }
 
-        static void showHelp(string errorString = null)
+        static void ShowHelp(string errorString = null)
         {
             var assembly = typeof(Program).Assembly;
 
-            Console.WriteLine("JNetCLI - JNet command line interface - Version " + assembly.GetName().Version.ToString());
-            Console.WriteLine(assembly.GetName().Name + " <JCOBridgeArguments> <ClassArguments>");
+            Console.WriteLine($"{assembly.GetName().Name} (ver. {assembly.GetName().Version}) - JNet command line interface");
+            Console.WriteLine($"{assembly.GetName().Name} <JCOBridgeArguments> <ClassArguments>");
             Console.WriteLine();
             if (!string.IsNullOrEmpty(errorString))
             {
