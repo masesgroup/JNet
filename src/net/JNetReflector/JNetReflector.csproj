@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\Common\Common.props" />
+  <PropertyGroup>
+	<PackageType>DotnetTool</PackageType>
+    <OutputType>Exe</OutputType>
+    <AssemblyName>MASES.JNetReflector</AssemblyName>
+    <RootNamespace>MASES.JNetReflector</RootNamespace>
+    <Title>JNetReflector - JNet class reflection utility command line interface</Title>
+    <Description>JNetCLI - JNet class reflection utility command line interface</Description>
+    <Product>JNetReflector</Product>
+    <OutputPath>..\..\..\binReflector\</OutputPath>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <PackageTags>jnet cli reflection utility dotnet clr netcore net6 java jvm</PackageTags>
+    <PackageId>MASES.JNetReflector</PackageId>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All" />
+  </ItemGroup>
+</Project>

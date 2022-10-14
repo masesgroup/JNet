@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>MASES.JNetReflector</id>
+    <version>1.4.8</version>
+    <title>JNetReflector - JNet class reflection utility command line interface</title>
+    <authors>MASES s.r.l.</authors>
+    <owners>MASES s.r.l.</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectUrl>https://github.com/masesgroup/JNet/</projectUrl>
+    <repository type="git" url="https://github.com/masesgroup/JNet/" />
+    <description>JNetReflector - JNet class reflection utility command line interface</description>
+    <releaseNotes>https://github.com/masesgroup/JNet/releases</releaseNotes>
+    <copyright>Copyright ©  MASES s.r.l. 2022</copyright>
+    <license type="file">LICENSE</license>
+    <icon>JCOB128x128.png</icon>
+    <tags>jnet cli reflection utility dotnet clr netcore net6 java jvm</tags>
+    <packageTypes>
+    <packageType name="DotnetTool" />
+    </packageTypes>
+    <readme>usageReflector.md</readme>
+  </metadata>
+	<files>
+		<file src="..\..\..\LICENSE" target="LICENSE" />
+		<file src="..\Common\JCOB128x128.png" target="" />
+		<file src="..\Documentation\articles\usageReflector.md" target="" />
+		<file src="..\..\..\binReflector\net6.0\" target="tools\net6.0\any\" />
+	</files>
+</package>
