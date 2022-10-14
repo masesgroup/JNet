@@ -8,28 +8,11 @@
     <Title>JNetCLI - JNet command line interface</Title>
     <Description>JNetCLI - JNet command line interface</Description>
     <Product>JNetCLI</Product>
-    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
     <OutputPath>..\..\..\binCLI\</OutputPath>
-    <!--<GeneratePackageOnBuild>true</GeneratePackageOnBuild>-->
-    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <PackageProjectUrl>https://github.com/masesgroup/KafkaBridge/</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/masesgroup/KafkaBridge</RepositoryUrl>
-    <PackageReleaseNotes>https://github.com/masesgroup/KafkaBridge/releases</PackageReleaseNotes>
-    <PackageLicenseFile>LICENSE</PackageLicenseFile>
-    <PackageIcon>JCOB128x128.png</PackageIcon>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <PackageTags>jnet cli dotnet clr netcore net6</PackageTags>
     <PackageId>MASES.JNetCLI</PackageId>
-    <IncludeSymbols>true</IncludeSymbols>
-    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
-    <EmbedUntrackedSources>true</EmbedUntrackedSources>
-    <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>..\Common\JNet.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
-  <ItemGroup>
-    <None Include="..\..\..\LICENSE" Pack="true" PackagePath="" />
-    <None Include="..\Common\JCOB128x128.png" Pack="true" PackagePath="" />
-    <None Include="..\Common\JNet.snk" Link="JNet.snk" />
-  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\JNet\JNet.csproj">
 		<IncludeAssets>All</IncludeAssets>

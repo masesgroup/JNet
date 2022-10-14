@@ -6,30 +6,14 @@
 		<Title>JNet - .NET gateway for JVM APIs (Java, Scala, Kotlin, ...)</Title>
 		<Description>JNet - .NET gateway for JVM APIs (Java, Scala, Kotlin, ...)</Description>
 		<Product>JNet</Product>
-		<GenerateAssemblyInfo>true</GenerateAssemblyInfo>
 		<OutputPath>..\..\..\bin\</OutputPath>
-		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-		<PackageProjectUrl>https://github.com/masesgroup/JNet/</PackageProjectUrl>
-		<RepositoryUrl>https://github.com/masesgroup/JNet</RepositoryUrl>
-		<PackageReleaseNotes>https://github.com/masesgroup/JNet/releases</PackageReleaseNotes>
-		<PackageLicenseFile>LICENSE</PackageLicenseFile>
-		<PackageIcon>JCOB128x128.png</PackageIcon>
 		<PackageTags>jnet dotnet clr dotnetcore netcore dotnet6 net6 java bridge gateway</PackageTags>
 		<PackageId>MASES.JNet</PackageId>
-		<IncludeSymbols>true</IncludeSymbols>
-		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
-		<EmbedUntrackedSources>true</EmbedUntrackedSources>
-		<SignAssembly>true</SignAssembly>
-		<AssemblyOriginatorKeyFile>..\Common\JNet.snk</AssemblyOriginatorKeyFile>
 		<PackageReadmeFile>usage.md</PackageReadmeFile>
 	</PropertyGroup>
   <ItemGroup>
-    <None Include="..\..\..\LICENSE" Pack="true" PackagePath="" />
-    <None Include="..\Common\JCOB128x128.png" Pack="true" PackagePath="" />
     <None Include="mases.jnet.targets" Pack="true" PackagePath="build" />
     <None Include="..\..\..\jars\*.jar" Pack="true" PackagePath="build\jars" />
-    <None Include="..\Common\JNet.snk" Link="JNet.snk" />
     <None Include="..\Documentation\articles\usage.md" Pack="true" PackagePath="\" />
   </ItemGroup>
   <ItemGroup>

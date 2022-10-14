@@ -5,12 +5,27 @@
 		<Authors>MASES s.r.l.</Authors>
 		<Company>MASES s.r.l.</Company>
 		<Version>1.4.7.0</Version>
-		<LangVersion>latest</LangVersion>
 		<TargetFrameworks>net462;netcoreapp3.1;net6.0</TargetFrameworks>
+		<LangVersion>latest</LangVersion>
+		<GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+		<PackageProjectUrl>https://github.com/masesgroup/JNet/</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/masesgroup/JNet</RepositoryUrl>
+		<PackageReleaseNotes>https://github.com/masesgroup/JNet/releases</PackageReleaseNotes>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+		<PackageIcon>JCOB128x128.png</PackageIcon>
+		<IncludeSymbols>true</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+		<EmbedUntrackedSources>true</EmbedUntrackedSources>
+		<SignAssembly>true</SignAssembly>
+		<AssemblyOriginatorKeyFile>..\Common\JNet.snk</AssemblyOriginatorKeyFile>
 	</PropertyGroup>
-	<PropertyGroup Condition="'$(GITHUB_ACTIONS)' == 'true'">
-		<ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
-	</PropertyGroup>
+	<ItemGroup>
+		<None Include="..\..\..\LICENSE" Pack="true" PackagePath="" />
+		<None Include="..\Common\JCOB128x128.png" Pack="true" PackagePath="" />
+		<None Include="..\Common\JNet.snk" Link="JNet.snk" />
+	</ItemGroup>
 	<ItemGroup Condition="'$(TargetFramework)' == 'net462'">
 		<Reference Include="Microsoft.CSharp" />
 	</ItemGroup>
@@ -22,4 +37,7 @@
 		<EmbeddedFiles Include="$(GeneratedAssemblyInfoFile)" />
 	</ItemGroup>
 	<!-- Fix end -->
+	<PropertyGroup Condition="'$(GITHUB_ACTIONS)' == 'true'">
+		<ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+	</PropertyGroup>
 </Project>

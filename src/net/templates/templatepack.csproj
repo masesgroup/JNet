@@ -7,27 +7,15 @@
     <Summary>Ready made templates to create applications based on JNet</Summary>
     <Description>Ready made templates to create applications based on JNet. The templates are ready made starting points, all information and APIs are available in the official website https://masesgroup.github.io/JNet</Description>
     <OutputPath>..\..\..\bin\</OutputPath>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <PackageProjectUrl>https://github.com/masesgroup/JNet/</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/masesgroup/JNet</RepositoryUrl>
-    <PackageReleaseNotes>https://github.com/masesgroup/JNet/releases</PackageReleaseNotes>
-	<PackageLicenseFile>LICENSE</PackageLicenseFile>
-    <PackageIcon>JCOB128x128.png</PackageIcon>
     <PackageTags>template jnet dotnet clr dotnetcore netcore dotnet6 net6 java bridge</PackageTags>
     <Product>JNet Templates</Product>
-    <EmbedUntrackedSources>true</EmbedUntrackedSources>
-    <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>..\Common\JNet.snk</AssemblyOriginatorKeyFile>
-    <IncludeContentInPack>true</IncludeContentInPack>
-    <IncludeBuildOutput>false</IncludeBuildOutput>
-    <ContentTargetFolders>content</ContentTargetFolders>
+	<IncludeSymbols>false</IncludeSymbols>
+	<IncludeBuildOutput>false</IncludeBuildOutput>
+	<IncludeContentInPack>true</IncludeContentInPack>
+	<ContentTargetFolders>content</ContentTargetFolders>
     <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="..\..\..\LICENSE" Pack="true" PackagePath="" />
-    <None Include="..\Common\JCOB128x128.png" Pack="true" PackagePath="" />
-    <None Include="..\Common\JNet.snk" Link="JNet.snk" />
     <None Include="..\..\..\README.md" Pack="true" PackagePath="\" />
     <Content Include="templates\**\*" Exclude="templates\**\bin\**;templates\**\obj\**;templates\**\.vscode\**" />
     <Compile Remove="**\*" />
