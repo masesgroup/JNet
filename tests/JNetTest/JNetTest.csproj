@@ -1,22 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\Common\Common.props" />
   <PropertyGroup>
     <AssemblyName>JNetTest</AssemblyName>
     <OutputType>Exe</OutputType>
     <RootNamespace>MASES.JNetTest</RootNamespace>
     <Title>JNetTest - a test tool for JNet</Title>
     <Description>JNetTest - a test tool for JNet</Description>
-    <Copyright>Copyright ©  MASES s.r.l. 2022</Copyright>
-    <Authors>MASES s.r.l.</Authors>
-    <Company>MASES s.r.l.</Company>
-    <Version>1.4.6.0</Version>
-    <TargetFrameworks>net462;netcoreapp3.1;net6.0</TargetFrameworks>
     <OutputPath>..\..\bin\</OutputPath>
-    <LangVersion>latest</LangVersion>
   </PropertyGroup>
-  <ItemGroup Condition="'$(TargetFramework)' == 'net462'">
-    <Reference Include="Microsoft.CSharp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\src\net\JNet\JNet.csproj" />
-  </ItemGroup>
 </Project>
