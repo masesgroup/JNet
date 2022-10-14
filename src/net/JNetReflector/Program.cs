@@ -16,9 +16,7 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.JCOBridge.C2JBridge;
 using System;
-using System.Reflection;
 using System.Text;
 
 namespace MASES.JNetCLI
@@ -30,9 +28,10 @@ namespace MASES.JNetCLI
             try
             {
                 var assembly = typeof(Program).Assembly;
-                Console.WriteLine($"{assembly.GetName().Name} (ver. {assembly.GetName().Version}) - JNet command line interface");
+                Console.WriteLine($"{assembly.GetName().Name} (ver. {assembly.GetName().Version}) - JNet class reflection utility command line interface");
                 Console.WriteLine();
-                Console.WriteLine("Basic interface to execute something from container.");
+
+
             }
             catch (Exception e)
             {
@@ -52,15 +51,14 @@ namespace MASES.JNetCLI
         {
             var assembly = typeof(Program).Assembly;
 
-            Console.WriteLine($"{assembly.GetName().Name} (ver. {assembly.GetName().Version}) - JNet command line interface");
-            Console.WriteLine($"{assembly.GetName().Name} <JCOBridgeArguments> <ClassArguments>");
+            Console.WriteLine($"{assembly.GetName().Name} (ver. {assembly.GetName().Version}) - JNet class reflection utility command line interface");
+            Console.WriteLine($"{assembly.GetName().Name} ");
             Console.WriteLine();
             if (!string.IsNullOrEmpty(errorString))
             {
                 Console.WriteLine("Error: {0}", errorString);
             }
 
-            Console.WriteLine("JCOBridgeArguments: the arguments of JCOBridge (see online at https://www.jcobridge.com/net-examples/command-line-options/ for the possible values). ");
             Console.WriteLine();
             Console.WriteLine("Examples:");
             Console.WriteLine(assembly.GetName().Name + " ");
