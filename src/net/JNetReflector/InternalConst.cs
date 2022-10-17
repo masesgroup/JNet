@@ -21,12 +21,22 @@ using System;
 using System.IO.Compression;
 using System.Linq;
 using System.Collections.Generic;
+using MASES.JCOBridge.C2JBridge.JVMInterop;
 
-namespace MASES.JNetReflector
+namespace MASES.JNet
 {
     class CLIParam
     {
         // CommonArgs
+        public const string LogClassPath = "LogClassPath";
+    }
+}
+
+namespace MASES.JNetReflector
+{
+    class CLIParam : MASES.JNet.CLIParam
+    {
+        // ReflectorArgs
         public const string OriginRootPath = "OriginRootPath";
         public const string OriginJavadocUrl = "OriginJavadocUrl";
         public const string DestinationRootPath = "DestinationRootPath";
@@ -36,6 +46,17 @@ namespace MASES.JNetReflector
 
     public static class JNetReflectorExtensions
     {
+        static Java.Lang.ClassLoader _loader;
+        static Java.Lang.ClassLoader SystemClassLoader
+        {
+            get
+            {
+                if (_loader == null) _loader = Java.Lang.ClassLoader.SystemClassLoader;
+                return _loader;
+            }
+        }
+
+
         public static bool IsSpecialFolder(this ZipArchiveEntry entry)
         {
             var name = entry.FullName.ToLowerInvariant();
@@ -81,13 +102,17 @@ namespace MASES.JNetReflector
 
         public static string Namespace(this ZipArchiveEntry entry)
         {
-            return Namespace(entry.FullName);
+            return Namespace(entry.FullName.Replace('/', '.'));
         }
 
         public static string Namespace(string fullName)
         {
-            var package = fullName.Substring(0, fullName.LastIndexOf('/'));
-            var splitted = package.Split('/');
+            if (fullName.EndsWith(SpecialNames.ClassExtension))
+            {
+                fullName = fullName.Remove(fullName.IndexOf(SpecialNames.ClassExtension));
+            }
+            var package = fullName.Substring(0, fullName.LastIndexOf('.'));
+            var splitted = package.Split('.');
             var ns = string.Join(".", splitted.Select((o) => Camel(o)));
             return ns;
         }
@@ -111,33 +136,40 @@ namespace MASES.JNetReflector
             return name.Replace('/', '.');
         }
 
-        public static string JVMBaseClassName(this ZipArchiveEntry entry)
+        public static string JVMFullQualifiedClassName(this ZipArchiveEntry entry)
         {
             var cName = entry.FullName.Substring(0, entry.FullName.LastIndexOf(SpecialNames.ClassExtension));
+            return cName.Replace('/', '.');
+        }
+
+        public static string JVMBaseClassName(this ZipArchiveEntry entry)
+        {
+            var cName = entry.JVMFullQualifiedClassName();
             try
             {
-                var jType = JNetReflectedCore.GlobalInstance.JVM.GetClass(cName);
-                if (jType == null || jType.SuperClass == null || jType.SuperClass.JniClassName == SpecialNames.JavaLangObject)
+                var jType = Java.Lang.Class.ForName(cName, true, SystemClassLoader);
+
+                if (jType == null || jType.SuperClass == null || jType.SuperClass.CanonicalName == SpecialNames.JavaLangObject)
                 {
                     string innerName = entry.IsJVMNestedClass() ? entry.JVMNestedClassName() : entry.JVMClassName();
                     return string.Format("MASES.JCOBridge.C2JBridge.JVMBridgeCore<{0}>", innerName);
                 }
-                else if (jType == null || jType.SuperClass == null || jType.SuperClass.JniClassName == SpecialNames.JavaLangThrowable)
+                else if (jType == null || jType.SuperClass == null || jType.SuperClass.CanonicalName == SpecialNames.JavaLangThrowable)
                 {
                     return "Java.Lang.Throwable";
                 }
-                else if (jType == null || jType.SuperClass == null || jType.SuperClass.JniClassName == SpecialNames.JavaLangException)
+                else if (jType == null || jType.SuperClass == null || jType.SuperClass.CanonicalName == SpecialNames.JavaLangException)
                 {
                     string innerName = entry.IsJVMNestedClass() ? entry.JVMNestedClassName() : entry.JVMClassName();
                     return string.Format("MASES.JCOBridge.C2JBridge.JVMBridgeException<{0}>", innerName);
                 }
-                else if (jType == null || jType.SuperClass == null || jType.SuperClass.JniClassName == SpecialNames.JavaLangError)
+                else if (jType == null || jType.SuperClass == null || jType.SuperClass.CanonicalName == SpecialNames.JavaLangError)
                 {
                     return "Java.Lang.Error";
                 }
 
-                var sClassName = jType.SuperClass.JniClassName;
-                string className = sClassName.Substring(sClassName.LastIndexOf('/') + 1);
+                var sClassName = jType.SuperClass.CanonicalName;
+                string className = sClassName.Substring(sClassName.LastIndexOf('.') + 1);
                 className = Namespace(sClassName) + "." + className.Replace(SpecialNames.NestedClassSeparator, '.');
                 return className;
             }
@@ -145,6 +177,19 @@ namespace MASES.JNetReflector
             {
                 string className = entry.IsJVMNestedClass() ? entry.JVMNestedClassName() : entry.JVMClassName();
                 return string.Format("MASES.JCOBridge.C2JBridge.JVMBridgeCore<{0}>", className);
+            }
+        }
+
+        public static Java.Lang.Class JVMClass(this ZipArchiveEntry entry)
+        {
+            var cName = entry.JVMFullQualifiedClassName();
+            try
+            {
+                return Java.Lang.Class.ForName(cName, true, SystemClassLoader);
+            }
+            catch
+            {
+                return null;
             }
         }
 
@@ -197,10 +242,10 @@ namespace MASES.JNetReflector
         public const string ClassExtension = ".class";
         public const char NestedClassSeparator = '$';
         public const string Internal = "internal";
-        public const string JavaLangObject = "java/lang/Object";
-        public const string JavaLangThrowable = "java/lang/Throwable";
-        public const string JavaLangException = "java/lang/Exception";
-        public const string JavaLangError = "java/lang/Error";
+        public const string JavaLangObject = "java.lang.Object";
+        public const string JavaLangThrowable = "java.lang.Throwable";
+        public const string JavaLangException = "java.lang.Exception";
+        public const string JavaLangError = "java.lang.Error";
 
         public static IEnumerable<string> SpecialNumberedNames = CreateSpecialNumberedNames();
 
@@ -232,34 +277,5 @@ namespace MASES.JNetReflector
         public const string JavaClassExtension = "class";
 
         public const string AllPackageClassesFileName = "AllPackageClasses.cs";
-    }
-
-    public class Usings
-    {
-        public const string USING = "using {0};";
-    }
-
-    public class AllPackageClasses
-    {
-        public const string USING_PLACEHOLDER = "ALLPACKAGE_USING_PLACEHOLDER";
-        public const string NAMESPACE_PLACEHOLDER = "ALLPACKAGE_NAMESPACE_PLACEHOLDER";
-        public const string CLASSES_PLACEHOLDER = "// ALLPACKAGE_CLASSES_PLACEHOLDER";
-
-        public class ClassStub
-        {
-            public const string HELP_PLACEHOLDER = "ALLPACKAGE_CLASSES_STUB_CLASS_HELP_PLACEHOLDER";
-            public const string CLASS_PLACEHOLDER = "ALLPACKAGE_CLASSES_STUB_CLASS_PLACEHOLDER";
-            public const string BASECLASS_PLACEHOLDER = "ALLPACKAGE_CLASSES_STUB_BASECLASS_PLACEHOLDER";
-            public const string JAVACLASS_PLACEHOLDER = "ALLPACKAGE_CLASSES_STUB_JAVACLASS_PLACEHOLDER";
-            public const string NESTED_CLASSES_PLACEHOLDER = "// ALLPACKAGE_CLASSES_STUB_NESTED_CLASSES_PLACEHOLDER";
-
-            public class NestedClassStub
-            {
-                public const string HELP_PLACEHOLDER = "ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_HELP_PLACEHOLDER";
-                public const string CLASS_PLACEHOLDER = "ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_PLACEHOLDER";
-                public const string BASECLASS_PLACEHOLDER = "ALLPACKAGE_CLASSES_STUB_NESTED_BASECLASS_PLACEHOLDER";
-                public const string JAVACLASS_PLACEHOLDER = "ALLPACKAGE_CLASSES_STUB_NESTED_JAVACLASS_PLACEHOLDER";
-            }
-        }
     }
 }

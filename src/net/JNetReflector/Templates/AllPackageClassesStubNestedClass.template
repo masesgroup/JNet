@@ -6,6 +6,14 @@
         public partial class ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_PLACEHOLDER : ALLPACKAGE_CLASSES_STUB_NESTED_BASECLASS_PLACEHOLDER
         {
             public override string ClassName => "ALLPACKAGE_CLASSES_STUB_NESTED_JAVACLASS_PLACEHOLDER";
+
+            public override bool IsAbstract => ALLPACKAGE_CLASSES_STUB_NESTED_ISABSTRACT_PLACEHOLDER;
+            
+            public override bool IsCloseable => ALLPACKAGE_CLASSES_STUB_NESTED_ISCLOSEABLE_PLACEHOLDER;
+            
+            public override bool IsInterface => ALLPACKAGE_CLASSES_STUB_NESTED_ISINTERFACE_PLACEHOLDER;
+            
+            public override bool IsStatic => ALLPACKAGE_CLASSES_STUB_NESTED_ISSTATIC_PLACEHOLDER;
         
             // TODO: complete the class
         }

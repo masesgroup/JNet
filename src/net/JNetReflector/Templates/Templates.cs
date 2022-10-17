@@ -69,4 +69,43 @@ namespace MASES.JNetReflector.Templates
         public const string SingleClassTemplate = "SingleClass.template";
         public const string SingleNestedClassTemplate = "SingleNestedClass.template";
     }
+
+    public class Usings
+    {
+        public const string USING = "using {0};";
+    }
+
+    public class AllPackageClasses
+    {
+        public const string USING_PLACEHOLDER = "ALLPACKAGE_USING_PLACEHOLDER";
+        public const string NAMESPACE_PLACEHOLDER = "ALLPACKAGE_NAMESPACE_PLACEHOLDER";
+        public const string CLASSES_PLACEHOLDER = "// ALLPACKAGE_CLASSES_PLACEHOLDER";
+
+        public class ClassStub
+        {
+            public const string HELP_PLACEHOLDER = "ALLPACKAGE_CLASSES_STUB_CLASS_HELP_PLACEHOLDER";
+            public const string CLASS_PLACEHOLDER = "ALLPACKAGE_CLASSES_STUB_CLASS_PLACEHOLDER";
+            public const string BASECLASS_PLACEHOLDER = "ALLPACKAGE_CLASSES_STUB_BASECLASS_PLACEHOLDER";
+            public const string JAVACLASS_PLACEHOLDER = "ALLPACKAGE_CLASSES_STUB_JAVACLASS_PLACEHOLDER";
+            public const string NESTED_CLASSES_PLACEHOLDER = "// ALLPACKAGE_CLASSES_STUB_NESTED_CLASSES_PLACEHOLDER";
+
+            public const string ISABSTRACT_PLACEHOLDER = "ALLPACKAGE_CLASSES_STUB_ISABSTRACT_PLACEHOLDER";
+            public const string ISCLOSEABLE_PLACEHOLDER = "ALLPACKAGE_CLASSES_STUB_ISCLOSEABLE_PLACEHOLDER";
+            public const string ISINTERFACE_PLACEHOLDER = "ALLPACKAGE_CLASSES_STUB_ISINTERFACE_PLACEHOLDER";
+            public const string ISSTATIC_PLACEHOLDER = "ALLPACKAGE_CLASSES_STUB_ISSTATIC_PLACEHOLDER";
+
+            public class NestedClassStub
+            {
+                public const string HELP_PLACEHOLDER = "ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_HELP_PLACEHOLDER";
+                public const string CLASS_PLACEHOLDER = "ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_PLACEHOLDER";
+                public const string BASECLASS_PLACEHOLDER = "ALLPACKAGE_CLASSES_STUB_NESTED_BASECLASS_PLACEHOLDER";
+                public const string JAVACLASS_PLACEHOLDER = "ALLPACKAGE_CLASSES_STUB_NESTED_JAVACLASS_PLACEHOLDER";
+
+                public const string ISABSTRACT_PLACEHOLDER = "ALLPACKAGE_CLASSES_STUB_NESTED_ISABSTRACT_PLACEHOLDER";
+                public const string ISCLOSEABLE_PLACEHOLDER = "ALLPACKAGE_CLASSES_STUB_NESTED_ISCLOSEABLE_PLACEHOLDER";
+                public const string ISINTERFACE_PLACEHOLDER = "ALLPACKAGE_CLASSES_STUB_NESTED_ISINTERFACE_PLACEHOLDER";
+                public const string ISSTATIC_PLACEHOLDER = "ALLPACKAGE_CLASSES_STUB_NESTED_ISSTATIC_PLACEHOLDER";
+            }
+        }
+    }
 }

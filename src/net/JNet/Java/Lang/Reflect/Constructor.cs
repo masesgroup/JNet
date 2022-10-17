@@ -18,16 +18,22 @@
 
 using MASES.JCOBridge.C2JBridge;
 
-namespace Java.Lang
+namespace Java.Lang.Reflect
 {
     /// <summary>
-    /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/ClassLoader.html"/>
+    /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Constructor.html"/>
     /// </summary>
-    public class ClassLoader : JVMBridgeBase<ClassLoader>
+    public class Constructor : AccessibleObject
     {
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.lang.ClassLoader";
+        public override string ClassName => "java.lang.reflect.Constructor";
+    }
 
-        public static ClassLoader SystemClassLoader => SExecute<ClassLoader>("getSystemClassLoader");
+    /// <summary>
+    /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Constructor.html"/>
+    /// </summary>
+    public class Constructor<T> : Constructor
+    {
+
     }
 }

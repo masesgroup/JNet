@@ -65,6 +65,11 @@
     <Compile Include="..\JNet\Java\Lang\OutOfMemoryError.cs" Link="Java\Lang\OutOfMemoryError.cs" />
     <Compile Include="..\JNet\Java\Lang\Package.cs" Link="Java\Lang\Package.cs" />
     <Compile Include="..\JNet\Java\Lang\ReflectiveOperationException.cs" Link="Java\Lang\ReflectiveOperationException.cs" />
+    <Compile Include="..\JNet\Java\Lang\Reflect\AccessibleObject.cs" Link="Java\Lang\Reflect\AccessibleObject.cs" />
+    <Compile Include="..\JNet\Java\Lang\Reflect\Constructor.cs" Link="Java\Lang\Reflect\Constructor.cs" />
+    <Compile Include="..\JNet\Java\Lang\Reflect\Field.cs" Link="Java\Lang\Reflect\Field.cs" />
+    <Compile Include="..\JNet\Java\Lang\Reflect\Method.cs" Link="Java\Lang\Reflect\Method.cs" />
+    <Compile Include="..\JNet\Java\Lang\Reflect\Type.cs" Link="Java\Lang\Reflect\Type.cs" />
     <Compile Include="..\JNet\Java\Lang\RuntimeException.cs" Link="Java\Lang\RuntimeException.cs" />
     <Compile Include="..\JNet\Java\Lang\SecurityException.cs" Link="Java\Lang\SecurityException.cs" />
     <Compile Include="..\JNet\Java\Lang\SecurityManager.cs" Link="Java\Lang\SecurityManager.cs" />
@@ -98,5 +103,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Java\Lang\Annotation\" />
+    <Folder Include="Java\Lang\Reflect\" />
   </ItemGroup>
 </Project>

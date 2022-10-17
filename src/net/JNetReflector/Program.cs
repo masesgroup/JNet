@@ -16,12 +16,10 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.CLIParser;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.IO.Compression;
-using System.Linq;
 using System.Text;
 using MASES.JNetReflector.Templates;
 
@@ -138,10 +136,18 @@ namespace MASES.JNetReflector
             {
                 if (entry.IsJVMNestedClass())
                 {
+                    var jSubClass = entry.JVMClass();
+                    bool isSubClassCloseable = false; // to be defined
+                    bool isSubClassStatic = false; // to be defined
+
                     var nestedClassBlock = allPackageStubNestedClass.Replace(AllPackageClasses.ClassStub.NestedClassStub.JAVACLASS_PLACEHOLDER, entry.JVMFullClassName())
                                                                     .Replace(AllPackageClasses.ClassStub.NestedClassStub.CLASS_PLACEHOLDER, entry.JVMNestedClassName())
                                                                     .Replace(AllPackageClasses.ClassStub.NestedClassStub.HELP_PLACEHOLDER, entry.JavadocUrl(javaDocUrl))
-                                                                    .Replace(AllPackageClasses.ClassStub.NestedClassStub.BASECLASS_PLACEHOLDER, entry.JVMBaseClassName());
+                                                                    .Replace(AllPackageClasses.ClassStub.NestedClassStub.BASECLASS_PLACEHOLDER, entry.JVMBaseClassName())
+                                                                    .Replace(AllPackageClasses.ClassStub.NestedClassStub.ISABSTRACT_PLACEHOLDER, jSubClass.IsAbstract ? "true" :"false")
+                                                                    .Replace(AllPackageClasses.ClassStub.NestedClassStub.ISCLOSEABLE_PLACEHOLDER, isSubClassCloseable ? "true" : "false")
+                                                                    .Replace(AllPackageClasses.ClassStub.NestedClassStub.ISINTERFACE_PLACEHOLDER, jSubClass.IsInterface ? "true" : "false")
+                                                                    .Replace(AllPackageClasses.ClassStub.NestedClassStub.ISSTATIC_PLACEHOLDER, isSubClassStatic ? "true" : "false");
 
                     subClassBlock.AppendLine(nestedClassBlock);
 
@@ -159,10 +165,18 @@ namespace MASES.JNetReflector
 
             if (!mainClassDone) return string.Empty;
 
+            var jClass = mainClass.JVMClass();
+            bool isClassCloseable = false; // to be defined
+            bool isClassStatic = false; // to be defined
+
             classBlock = allPackageStubClass.Replace(AllPackageClasses.ClassStub.JAVACLASS_PLACEHOLDER, mainClass.JVMFullClassName())
                                             .Replace(AllPackageClasses.ClassStub.CLASS_PLACEHOLDER, mainClass.JVMClassName())
                                             .Replace(AllPackageClasses.ClassStub.HELP_PLACEHOLDER, mainClass.JavadocUrl(javaDocUrl))
-                                            .Replace(AllPackageClasses.ClassStub.BASECLASS_PLACEHOLDER, mainClass.JVMBaseClassName());
+                                            .Replace(AllPackageClasses.ClassStub.BASECLASS_PLACEHOLDER, mainClass.JVMBaseClassName())
+                                            .Replace(AllPackageClasses.ClassStub.ISABSTRACT_PLACEHOLDER, jClass.IsAbstract ? "true" : "false")
+                                            .Replace(AllPackageClasses.ClassStub.ISCLOSEABLE_PLACEHOLDER, isClassCloseable ? "true" : "false")
+                                            .Replace(AllPackageClasses.ClassStub.ISINTERFACE_PLACEHOLDER, jClass.IsInterface ? "true" : "false")
+                                            .Replace(AllPackageClasses.ClassStub.ISSTATIC_PLACEHOLDER, isClassStatic ? "true" : "false");
 
             sb.AppendLine(classBlock);
 

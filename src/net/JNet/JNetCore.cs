@@ -44,21 +44,6 @@ namespace MASES.JNet
         public override string InitialHeapSize { get { return string.IsNullOrEmpty(base.InitialHeapSize) ? ApplicationInitialHeapSize : base.InitialHeapSize; } }
 
         /// <summary>
-        /// <see cref="IEnumerable{IArgumentMetadata}"/> for command line
-        /// </summary>
-        public override IEnumerable<IArgumentMetadata> CommandLineArguments =>
-        new IArgumentMetadata[]
-            {
-                new ArgumentMetadata<bool>()
-                {
-                    Name = CLIParam.LogClassPath,
-                    Type = ArgumentType.Single,
-                    Help = "Add on command-line to show ClassPath resolution.",
-                },
-            };
-
-        bool _logClassPath = false;
-        /// <summary>
         /// Public ctor
         /// </summary>
         public JNetCore()
@@ -72,16 +57,6 @@ namespace MASES.JNet
             JCOBridge.C2JBridge.JCOBridge.RegisterException<JavaX.Naming.NamingException>();
         }
 
-        protected override string[] ProcessCommandLine()
-        {
-            var result = base.ProcessCommandLine();
-#if DEBUG
-            _logClassPath = true;
-#else
-            _logClassPath = _parsedArgs.Exist(CLIParam.LogClassPath);
-#endif
-            return result;
-        }
         /// <summary>
         /// Default performance options used in initialization
         /// </summary>

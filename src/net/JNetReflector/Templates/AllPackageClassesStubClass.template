@@ -7,6 +7,14 @@
     {
         public override string ClassName => "ALLPACKAGE_CLASSES_STUB_JAVACLASS_PLACEHOLDER";
 
+        public override bool IsAbstract => ALLPACKAGE_CLASSES_STUB_ISABSTRACT_PLACEHOLDER;
+
+        public override bool IsCloseable => ALLPACKAGE_CLASSES_STUB_ISCLOSEABLE_PLACEHOLDER;
+
+        public override bool IsInterface => ALLPACKAGE_CLASSES_STUB_ISINTERFACE_PLACEHOLDER;
+
+        public override bool IsStatic => ALLPACKAGE_CLASSES_STUB_ISSTATIC_PLACEHOLDER;
+
         // TODO: complete the class
 // ALLPACKAGE_CLASSES_STUB_NESTED_CLASSES_PLACEHOLDER
     }

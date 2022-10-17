@@ -18,9 +18,12 @@
 
 using MASES.CLIParser;
 using MASES.JCOBridge.C2JBridge;
+using MASES.JCOBridge.C2JBridge.JVMInterop;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
+using System.Xml.Linq;
 
 namespace MASES.JNet
 {
@@ -40,7 +43,16 @@ namespace MASES.JNet
         /// <summary>
         /// <see cref="IEnumerable{IArgumentMetadata}"/> for command line
         /// </summary>
-        public abstract IEnumerable<IArgumentMetadata> CommandLineArguments { get; }
+        public virtual IEnumerable<IArgumentMetadata> CommandLineArguments =>
+        new IArgumentMetadata[]
+            {
+                new ArgumentMetadata<bool>()
+                {
+                    Name = CLIParam.LogClassPath,
+                    Type = ArgumentType.Single,
+                    Help = "Add on command-line to show ClassPath resolution.",
+                },
+            };
 
         bool _logClassPath = false;
         IEnumerable<IArgumentMetadataParsed> _parsedArgs = null;
@@ -111,6 +123,11 @@ namespace MASES.JNet
         {
             Parser.Add(CommandLineArguments);
             _parsedArgs = Parser.Parse(base.ProcessCommandLine());
+#if DEBUG
+            _logClassPath = true;
+#else
+            _logClassPath = _parsedArgs.Exist(CLIParam.LogClassPath);
+#endif
             return Parser.UnparsedArgs.FilterJCOBridgeArguments();
         }
         /// <summary>
@@ -212,5 +229,36 @@ namespace MASES.JNet
         }
 
         #endregion
+    }
+
+    public static class JNetExtensions
+    {
+        /// <summary>
+        /// Execute the method and build the result as an array of <typeparamref name="T"/>
+        /// </summary>
+        /// <typeparam name="T">The expected result <see cref="Type"/></typeparam>
+        /// <param name="instance">The <see cref="JVMBridgeBase"/> instance to execute on</param>
+        /// <param name="methodName">The method to execute</param>
+        /// <param name="args">The aruments</param>
+        /// <returns>An array of <typeparamref name="T"/></returns>
+        public static T[] IExecuteArray<T>(this JVMBridgeBase instance, string methodName, params object[] args)
+        {
+            bool assignable = typeof(IJVMBridgeBase).IsAssignableFrom(typeof(T));
+            var array = instance.IExecute(methodName, args) as IJavaArray;
+            if (array == null) return null;
+            System.Collections.Generic.List<T> elements = new System.Collections.Generic.List<T>();
+            foreach (var item in array)
+            {
+                if (assignable)
+                {
+                    elements.Add(JVMBridgeBase.Wraps<T>(item as IJavaObject));
+                }
+                else
+                {
+                    elements.Add((T)item);
+                }
+            }
+            return elements.ToArray();
+        }
     }
 }

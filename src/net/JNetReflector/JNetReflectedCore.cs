@@ -21,6 +21,7 @@ using MASES.JNet;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Runtime.CompilerServices;
 
 namespace MASES.JNetReflector
 {
@@ -31,44 +32,51 @@ namespace MASES.JNetReflector
     {
         #region Initialization
         /// <inheritdoc cref="JNetCoreBase{T}.CommandLineArguments"/>
-        public override IEnumerable<IArgumentMetadata> CommandLineArguments =>
-        new IArgumentMetadata[]
+        public override IEnumerable<IArgumentMetadata> CommandLineArguments
+        {
+            get
             {
-                new ArgumentMetadata<string>()
+                var lst = new List<IArgumentMetadata>(base.CommandLineArguments);
+                lst.AddRange(new IArgumentMetadata[]
                 {
-                    Name = CLIParam.OriginRootPath,
-                    Type = ArgumentType.Double,
-                    IsMandatory = true,
-                    Help = "Set the origin path where Jars are stored",
-                },
-                new ArgumentMetadata<string>()
-                {
-                    Name = CLIParam.OriginJavadocUrl,
-                    Type = ArgumentType.Double,
-                    Default = null,
-                    Help = "The URL of the Javadoc to be associated to the classes",
-                },
-                new ArgumentMetadata<string>()
-                {
-                    Name = CLIParam.DestinationRootPath,
-                    Type = ArgumentType.Double,
-                    Default = SpecialNames.JNetReflectorGeneratedFolder,
-                    Help = "Set the destination root path",
-                },
-                new ArgumentMetadata<string>()
-                {
-                    Name = CLIParam.JarList,
-                    Type = ArgumentType.Double,
-                    Help = "A named list, separated with comma, of Jar to be analyzed",
-                },
-                new ArgumentMetadata<bool>()
-                {
-                    Name = CLIParam.DryRun,
-                    Type = ArgumentType.Single,
-                    Default = false,
-                    Help = "Do not write anything to disk",
-                },
-            };
+                    new ArgumentMetadata<string>()
+                    {
+                        Name = CLIParam.OriginRootPath,
+                        Type = ArgumentType.Double,
+                        IsMandatory = true,
+                        Help = "Set the origin path where Jars are stored",
+                    },
+                    new ArgumentMetadata<string>()
+                    {
+                        Name = CLIParam.OriginJavadocUrl,
+                        Type = ArgumentType.Double,
+                        Default = null,
+                        Help = "The URL of the Javadoc to be associated to the classes",
+                    },
+                    new ArgumentMetadata<string>()
+                    {
+                        Name = CLIParam.DestinationRootPath,
+                        Type = ArgumentType.Double,
+                        Default = SpecialNames.JNetReflectorGeneratedFolder,
+                        Help = "Set the destination root path",
+                    },
+                    new ArgumentMetadata<string>()
+                    {
+                        Name = CLIParam.JarList,
+                        Type = ArgumentType.Double,
+                        Help = "A named list, separated with comma, of Jar to be analyzed",
+                    },
+                    new ArgumentMetadata<bool>()
+                    {
+                        Name = CLIParam.DryRun,
+                        Type = ArgumentType.Single,
+                        Default = false,
+                        Help = "Do not write anything to disk",
+                    },
+                });
+                return lst;
+            }
+        }
 
         /// <summary>
         /// Public ctor
@@ -133,12 +141,16 @@ namespace MASES.JNetReflector
                 var lst = base.PathToParse;
                 foreach (var item in _JarsToAnaylyze)
                 {
-                    lst.Add(item);
+                    lst.Add(Path.GetFullPath(item));
                 }        
                 return lst;
             }
         }
         #endregion
+
+#if DEBUG
+        public override bool EnableDebug => true;
+#endif
     }
     /// <summary>
     /// Concrete implementation of <see cref="JNetReflectedCore{T}"/>

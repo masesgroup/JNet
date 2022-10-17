@@ -18,16 +18,14 @@
 
 using MASES.JCOBridge.C2JBridge;
 
-namespace Java.Lang
+namespace Java.Lang.Reflect
 {
     /// <summary>
-    /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/ClassLoader.html"/>
+    /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Method.html"/>
     /// </summary>
-    public class ClassLoader : JVMBridgeBase<ClassLoader>
+    public class Method : AccessibleObject
     {
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.lang.ClassLoader";
-
-        public static ClassLoader SystemClassLoader => SExecute<ClassLoader>("getSystemClassLoader");
+        public override string ClassName => "java.lang.reflect.Method";
     }
 }
