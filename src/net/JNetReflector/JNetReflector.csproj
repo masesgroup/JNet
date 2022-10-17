@@ -14,6 +14,89 @@
     <PackageId>MASES.JNetReflector</PackageId>
   </PropertyGroup>
   <ItemGroup>
+    <None Remove="AllPackageClasses.template" />
+    <None Remove="AllPackageClassesStubClass.template" />
+    <None Remove="AllPackageClassesStubNestedClass.template" />
+    <None Remove="SingleClass.template" />
+    <None Remove="Templates\SingleNestedClass.template" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\JNet\Java\Lang\AbstractMethodError.cs" Link="Java\Lang\AbstractMethodError.cs" />
+    <Compile Include="..\JNet\Java\Lang\Annotation\Annotation.cs" Link="Java\Lang\Annotation\Annotation.cs" />
+    <Compile Include="..\JNet\Java\Lang\ArithmeticException.cs" Link="Java\Lang\ArithmeticException.cs" />
+    <Compile Include="..\JNet\Java\Lang\ArrayIndexOutOfBoundsException.cs" Link="Java\Lang\ArrayIndexOutOfBoundsException.cs" />
+    <Compile Include="..\JNet\Java\Lang\ArrayStoreException.cs" Link="Java\Lang\ArrayStoreException.cs" />
+    <Compile Include="..\JNet\Java\Lang\AssertionError.cs" Link="Java\Lang\AssertionError.cs" />
+    <Compile Include="..\JNet\Java\Lang\BootstrapMethodError.cs" Link="Java\Lang\BootstrapMethodError.cs" />
+    <Compile Include="..\JNet\Java\Lang\Class.cs" Link="Java\Lang\Class.cs" />
+    <Compile Include="..\JNet\Java\Lang\ClassCastException.cs" Link="Java\Lang\ClassCastException.cs" />
+    <Compile Include="..\JNet\Java\Lang\ClassCircularityError.cs" Link="Java\Lang\ClassCircularityError.cs" />
+    <Compile Include="..\JNet\Java\Lang\ClassFormatError.cs" Link="Java\Lang\ClassFormatError.cs" />
+    <Compile Include="..\JNet\Java\Lang\ClassLoader.cs" Link="Java\Lang\ClassLoader.cs" />
+    <Compile Include="..\JNet\Java\Lang\ClassNotFoundException.cs" Link="Java\Lang\ClassNotFoundException.cs" />
+    <Compile Include="..\JNet\Java\Lang\ClassValue.cs" Link="Java\Lang\ClassValue.cs" />
+    <Compile Include="..\JNet\Java\Lang\CloneNotSupportedException.cs" Link="Java\Lang\CloneNotSupportedException.cs" />
+    <Compile Include="..\JNet\Java\Lang\EnumConstantNotPresentException.cs" Link="Java\Lang\EnumConstantNotPresentException.cs" />
+    <Compile Include="..\JNet\Java\Lang\Error.cs" Link="Java\Lang\Error.cs" />
+    <Compile Include="..\JNet\Java\Lang\Exception.cs" Link="Java\Lang\Exception.cs" />
+    <Compile Include="..\JNet\Java\Lang\ExceptionInInitializerError.cs" Link="Java\Lang\ExceptionInInitializerError.cs" />
+    <Compile Include="..\JNet\Java\Lang\IllegalAccessError.cs" Link="Java\Lang\IllegalAccessError.cs" />
+    <Compile Include="..\JNet\Java\Lang\IllegalAccessException.cs" Link="Java\Lang\IllegalAccessException.cs" />
+    <Compile Include="..\JNet\Java\Lang\IllegalArgumentException.cs" Link="Java\Lang\IllegalArgumentException.cs" />
+    <Compile Include="..\JNet\Java\Lang\IllegalMonitorStateException.cs" Link="Java\Lang\IllegalMonitorStateException.cs" />
+    <Compile Include="..\JNet\Java\Lang\IllegalStateException.cs" Link="Java\Lang\IllegalStateException.cs" />
+    <Compile Include="..\JNet\Java\Lang\IllegalThreadStateException.cs" Link="Java\Lang\IllegalThreadStateException.cs" />
+    <Compile Include="..\JNet\Java\Lang\IncompatibleClassChangeError.cs" Link="Java\Lang\IncompatibleClassChangeError.cs" />
+    <Compile Include="..\JNet\Java\Lang\IndexOutOfBoundsException.cs" Link="Java\Lang\IndexOutOfBoundsException.cs" />
+    <Compile Include="..\JNet\Java\Lang\InstantiationError.cs" Link="Java\Lang\InstantiationError.cs" />
+    <Compile Include="..\JNet\Java\Lang\InstantiationException.cs" Link="Java\Lang\InstantiationException.cs" />
+    <Compile Include="..\JNet\Java\Lang\InternalError.cs" Link="Java\Lang\InternalError.cs" />
+    <Compile Include="..\JNet\Java\Lang\InterruptedException.cs" Link="Java\Lang\InterruptedException.cs" />
+    <Compile Include="..\JNet\Java\Lang\LinkageError.cs" Link="Java\Lang\LinkageError.cs" />
+    <Compile Include="..\JNet\Java\Lang\NegativeArraySizeException.cs" Link="Java\Lang\NegativeArraySizeException.cs" />
+    <Compile Include="..\JNet\Java\Lang\NoClassDefFoundError.cs" Link="Java\Lang\NoClassDefFoundError.cs" />
+    <Compile Include="..\JNet\Java\Lang\NoSuchFieldError.cs" Link="Java\Lang\NoSuchFieldError.cs" />
+    <Compile Include="..\JNet\Java\Lang\NoSuchFieldException.cs" Link="Java\Lang\NoSuchFieldException.cs" />
+    <Compile Include="..\JNet\Java\Lang\NoSuchMethodError.cs" Link="Java\Lang\NoSuchMethodError.cs" />
+    <Compile Include="..\JNet\Java\Lang\NoSuchMethodException.cs" Link="Java\Lang\NoSuchMethodException.cs" />
+    <Compile Include="..\JNet\Java\Lang\NullPointerException.cs" Link="Java\Lang\NullPointerException.cs" />
+    <Compile Include="..\JNet\Java\Lang\NumberFormatException.cs" Link="Java\Lang\NumberFormatException.cs" />
+    <Compile Include="..\JNet\Java\Lang\Object.cs" Link="Java\Lang\Object.cs" />
+    <Compile Include="..\JNet\Java\Lang\OutOfMemoryError.cs" Link="Java\Lang\OutOfMemoryError.cs" />
+    <Compile Include="..\JNet\Java\Lang\Package.cs" Link="Java\Lang\Package.cs" />
+    <Compile Include="..\JNet\Java\Lang\ReflectiveOperationException.cs" Link="Java\Lang\ReflectiveOperationException.cs" />
+    <Compile Include="..\JNet\Java\Lang\RuntimeException.cs" Link="Java\Lang\RuntimeException.cs" />
+    <Compile Include="..\JNet\Java\Lang\SecurityException.cs" Link="Java\Lang\SecurityException.cs" />
+    <Compile Include="..\JNet\Java\Lang\SecurityManager.cs" Link="Java\Lang\SecurityManager.cs" />
+    <Compile Include="..\JNet\Java\Lang\StackOverflowError.cs" Link="Java\Lang\StackOverflowError.cs" />
+    <Compile Include="..\JNet\Java\Lang\StackTraceElement.cs" Link="Java\Lang\StackTraceElement.cs" />
+    <Compile Include="..\JNet\Java\Lang\StringIndexOutOfBoundsException.cs" Link="Java\Lang\StringIndexOutOfBoundsException.cs" />
+    <Compile Include="..\JNet\Java\Lang\Throwable.cs" Link="Java\Lang\Throwable.cs" />
+    <Compile Include="..\JNet\Java\Lang\TypeNotPresentException.cs" Link="Java\Lang\TypeNotPresentException.cs" />
+    <Compile Include="..\JNet\Java\Lang\UnknownError.cs" Link="Java\Lang\UnknownError.cs" />
+    <Compile Include="..\JNet\Java\Lang\UnsatisfiedLinkError.cs" Link="Java\Lang\UnsatisfiedLinkError.cs" />
+    <Compile Include="..\JNet\Java\Lang\UnsupportedClassVersionError.cs" Link="Java\Lang\UnsupportedClassVersionError.cs" />
+    <Compile Include="..\JNet\Java\Lang\UnsupportedOperationException.cs" Link="Java\Lang\UnsupportedOperationException.cs" />
+    <Compile Include="..\JNet\Java\Lang\VerifyError.cs" Link="Java\Lang\VerifyError.cs" />
+    <Compile Include="..\JNet\Java\Lang\VirtualMachineError.cs" Link="Java\Lang\VirtualMachineError.cs" />
+    <Compile Include="..\JNet\JNetCoreBase.cs" Link="JNetCoreBase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Templates\SingleNestedClass.template" />
+    <EmbeddedResource Include="Templates\SingleClass.template" />
+    <EmbeddedResource Include="Templates\AllPackageClassesStubNestedClass.template" />
+    <EmbeddedResource Include="Templates\AllPackageClassesStubClass.template" />
+    <EmbeddedResource Include="Templates\AllPackageClasses.template" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MASES.CLIParser" Version="3.1.2" />
+	<PackageReference Include="MASES.JCOBridge" Version="2.4.14">
+		<IncludeAssets>All</IncludeAssets>
+		<PrivateAssets>None</PrivateAssets>
+	</PackageReference>
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Java\Lang\Annotation\" />
   </ItemGroup>
 </Project>

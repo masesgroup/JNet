@@ -1,0 +1,12 @@
+﻿
+        #region ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_PLACEHOLDER
+        /// <summary>
+        /// ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_HELP_PLACEHOLDER
+        /// </summary>
+        public partial class ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_PLACEHOLDER : ALLPACKAGE_CLASSES_STUB_NESTED_BASECLASS_PLACEHOLDER
+        {
+            public override string ClassName => "ALLPACKAGE_CLASSES_STUB_NESTED_JAVACLASS_PLACEHOLDER";
+        
+            // TODO: complete the class
+        }
+        #endregion
