@@ -73,6 +73,7 @@
     <Compile Include="..\JNet\Java\Lang\Reflect\Field.cs" Link="Java\Lang\Reflect\Field.cs" />
     <Compile Include="..\JNet\Java\Lang\Reflect\GenericDeclaration.cs" Link="Java\Lang\Reflect\GenericDeclaration.cs" />
     <Compile Include="..\JNet\Java\Lang\Reflect\Method.cs" Link="Java\Lang\Reflect\Method.cs" />
+    <Compile Include="..\JNet\Java\Lang\Reflect\Modifier.cs" Link="Java\Lang\Reflect\Modifier.cs" />
     <Compile Include="..\JNet\Java\Lang\Reflect\Parameter.cs" Link="Java\Lang\Reflect\Parameter.cs" />
     <Compile Include="..\JNet\Java\Lang\Reflect\Type.cs" Link="Java\Lang\Reflect\Type.cs" />
     <Compile Include="..\JNet\Java\Lang\Reflect\TypeVariable.cs" Link="Java\Lang\Reflect\TypeVariable.cs" />

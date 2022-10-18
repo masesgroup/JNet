@@ -63,7 +63,13 @@ namespace MASES.JNetReflector
                     {
                         Name = CLIParam.JarList,
                         Type = ArgumentType.Double,
-                        Help = "A named list, separated with comma, of Jar to be analyzed",
+                        Help = "A CSV list, separated with comma, of Jar to be analyzed",
+                    },
+                    new ArgumentMetadata<string>()
+                    {
+                        Name = CLIParam.NamespacesToAvoid,
+                        Type = ArgumentType.Double,
+                        Help = "A CSV list, separated with comma, of namespaces to be removed from analysis",
                     },
                     new ArgumentMetadata<bool>()
                     {
@@ -96,6 +102,9 @@ namespace MASES.JNetReflector
         static IEnumerable<string> _JarsToAnaylyze;
         public static IEnumerable<string> JarsToAnaylyze => _JarsToAnaylyze;
 
+        static IEnumerable<string> _NamespacesToAvoid;
+        public static IEnumerable<string> NamespacesToAvoid => _NamespacesToAvoid;
+
         static bool _DryRun;
         public static bool DryRun => _DryRun;
 
@@ -111,7 +120,7 @@ namespace MASES.JNetReflector
             List<string> jarsToAnaylyze = new List<string>();
             if (ParsedArgs.Exist(CLIParam.JarList))
             {
-                var jars = ParsedArgs.Get<string>(CLIParam.JarList).Split(',');
+                var jars = ParsedArgs.Get<string>(CLIParam.JarList).Split(',', ';');
                 jarsToAnaylyze.AddRange(jars.Select((o) => Path.Combine(originalRootPath, o)));
             }
             else
@@ -119,6 +128,14 @@ namespace MASES.JNetReflector
                 jarsToAnaylyze.AddRange(Directory.EnumerateFiles(originalRootPath));
             }
             _JarsToAnaylyze = jarsToAnaylyze;
+
+            List<string> namespacesToAvoid = new List<string>();
+            if (ParsedArgs.Exist(CLIParam.NamespacesToAvoid))
+            {
+                var namespaces = ParsedArgs.Get<string>(CLIParam.NamespacesToAvoid).Split(',', ';');
+                namespacesToAvoid.AddRange(namespaces.Select((o) => o.Replace('/', '.')));
+            }
+            _NamespacesToAvoid = namespacesToAvoid;
 
             var destinationFolder = Path.GetFullPath(ParsedArgs.Get<string>(CLIParam.DestinationRootPath));
             _DestinationRootPath = Path.GetFullPath(destinationFolder);

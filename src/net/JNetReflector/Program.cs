@@ -21,7 +21,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.IO.Compression;
 using System.Text;
-using MASES.CLIParser;
 using MASES.JNetReflector.Templates;
 
 namespace MASES.JNetReflector
@@ -66,7 +65,7 @@ namespace MASES.JNetReflector
                 foreach (var entry in archive.Entries)
                 {
                     if (entry.IsSpecialFolder()) continue; // do not reflect this folders
-                    if (entry.IsSpecialClass()) continue; // do not reflect this folders
+                    if (entry.IsSpecialClass()) continue; // do not reflect this classes
                     if (entry.IsFolder())
                     {
                         var path = Path.Combine(rootDesinationFolder, entry.Namespace().Replace('.', Path.DirectorySeparatorChar));

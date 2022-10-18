@@ -41,6 +41,7 @@ namespace MASES.JNetReflector
         public const string OriginJavadocUrl = "OriginJavadocUrl";
         public const string DestinationRootPath = "DestinationRootPath";
         public const string JarList = "JarList";
+        public const string NamespacesToAvoid = "NamespacesToAvoid";
         public const string DryRun = "DryRun";
     }
 
@@ -61,7 +62,7 @@ namespace MASES.JNetReflector
         {
             var name = entry.FullName.ToLowerInvariant();
             if (name.Contains(FileNameAndDirectory.METAINF.ToLowerInvariant())
-                || name.Contains(SpecialNames.Internal.ToLowerInvariant())) return true;
+                || JNetReflectedCore.NamespacesToAvoid.Contains(entry.Namespace(false))) return true;
             return false;
         }
 
@@ -100,12 +101,12 @@ namespace MASES.JNetReflector
             else return char.ToUpper(str[0]) + str.Substring(1);
         }
 
-        public static string Namespace(this ZipArchiveEntry entry)
+        public static string Namespace(this ZipArchiveEntry entry, bool camel = true)
         {
-            return Namespace(entry.FullName.Replace('/', '.'));
+            return Namespace(entry.FullName.Replace('/', '.'), camel);
         }
 
-        public static string Namespace(string fullName)
+        public static string Namespace(string fullName, bool camel = true)
         {
             if (fullName.EndsWith(SpecialNames.ClassExtension))
             {
@@ -113,7 +114,7 @@ namespace MASES.JNetReflector
             }
             var package = fullName.Substring(0, fullName.LastIndexOf('.'));
             var splitted = package.Split('.');
-            var ns = string.Join(".", splitted.Select((o) => Camel(o)));
+            var ns = string.Join(".", splitted.Select((o) => camel ? Camel(o) : o));
             return ns;
         }
 
@@ -241,7 +242,6 @@ namespace MASES.JNetReflector
         public const string JNetReflectorGeneratedFolder = "JNetReflectorGenerated";
         public const string ClassExtension = ".class";
         public const char NestedClassSeparator = '$';
-        public const string Internal = "internal";
         public const string JavaLangObject = "java.lang.Object";
         public const string JavaLangThrowable = "java.lang.Throwable";
         public const string JavaLangException = "java.lang.Exception";
