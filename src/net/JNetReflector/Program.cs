@@ -21,6 +21,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.IO.Compression;
 using System.Text;
+using MASES.CLIParser;
 using MASES.JNetReflector.Templates;
 
 namespace MASES.JNetReflector
@@ -202,6 +203,7 @@ namespace MASES.JNetReflector
         static void ShowHelp(string errorString = null)
         {
             var assembly = typeof(Program).Assembly;
+
 
             Console.WriteLine($"{assembly.GetName().Name} (ver. {assembly.GetName().Version}) - JNet class reflection utility command line interface");
             Console.WriteLine($"{assembly.GetName().Name} ");

@@ -21,7 +21,6 @@ using MASES.JNet;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Runtime.CompilerServices;
 
 namespace MASES.JNetReflector
 {
