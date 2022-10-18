@@ -74,6 +74,28 @@ namespace Java.Lang
         /// </summary>
         public bool DesiredAssertionStatus => IExecute<bool>("desiredAssertionStatus");
         /// <summary>
+        /// Returns an array of <see cref="AnnotatedType"/> objects that represent the use of types to specify superinterfaces of the entity represented by this <see cref="Class"/> object.
+        /// </summary>
+        /// <returns></returns>
+        public AnnotatedType[] AnnotatedInterfaces => this.IExecuteArray<AnnotatedType>("getAnnotatedInterfaces");
+        /// <summary>
+        /// Returns an <see cref="AnnotatedType"/> object that represents the use of a type to specify the superclass of the entity represented by this <see cref="Class"/> object.
+        /// </summary>
+        public AnnotatedType AnnotatedSuperclass => IExecute<AnnotatedType>("getAnnotatedSuperclass");
+        /// <summary>
+        /// Returns this element's annotation for the specified type if such an annotation is present, else null.
+        /// </summary>
+        public A GetAnnotation<A>(Class<A> annotationClass) where A : Annotation.Annotation => IExecute<A>("getAnnotation", annotationClass);
+        /// <summary>
+        /// Returns annotations that are present on this element.
+        /// </summary>
+        /// <returns></returns>
+        public Annotation.Annotation[] Annotations => this.IExecuteArray<Annotation.Annotation>("getAnnotations");
+        /// <summary>
+        /// Returns annotations that are associated with this element.
+        /// </summary>
+        public A[] GetAnnotationsByType<A>(Class<A> annotationClass) where A : Annotation.Annotation => this.IExecuteArray<A>("getAnnotationsByType", annotationClass);
+        /// <summary>
         /// Returns the canonical name of the underlying class as defined by the Java Language Specification.
         /// Returns null if the underlying class does not have a canonical name (i.e., if it is a local or anonymous class or an array whose component type does not have a canonical name).
         /// </summary>
@@ -81,7 +103,7 @@ namespace Java.Lang
         /// <summary>
         /// Returns an array containing <see cref="Class"/> objects representing all the public classes and interfaces that are members of the class represented by this <see cref="Class"/> object.
         /// </summary>
-        public Class[] Classes => this.IExecuteArray<Class>("getClasses");  
+        public Class[] Classes => this.IExecuteArray<Class>("getClasses");
         /// <summary>
         /// Returns the class loader for the class. Some implementations may use null to represent the bootstrap class loader. This method will return null in such implementations if this class was loaded by the bootstrap class loader. 
         /// </summary>
@@ -266,7 +288,7 @@ namespace Java.Lang
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html"/>
     /// </summary>
     /// <typeparam name="T">the type of the class modeled by this <see cref="Class{T}"/> object.</typeparam>
-    public class Class<T> : Class where T : IJVMBridgeBase, new()
+    public class Class<T> : Class where T : IJVMBridgeBase
     {
         /// <summary>
         /// Casts an object to the class or interface represented by this Class object.

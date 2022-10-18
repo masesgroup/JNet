@@ -66,10 +66,16 @@
     <Compile Include="..\JNet\Java\Lang\Package.cs" Link="Java\Lang\Package.cs" />
     <Compile Include="..\JNet\Java\Lang\ReflectiveOperationException.cs" Link="Java\Lang\ReflectiveOperationException.cs" />
     <Compile Include="..\JNet\Java\Lang\Reflect\AccessibleObject.cs" Link="Java\Lang\Reflect\AccessibleObject.cs" />
+    <Compile Include="..\JNet\Java\Lang\Reflect\AnnotatedElement.cs" Link="Java\Lang\Reflect\AnnotatedElement.cs" />
+    <Compile Include="..\JNet\Java\Lang\Reflect\AnnotatedType.cs" Link="Java\Lang\Reflect\AnnotatedType.cs" />
     <Compile Include="..\JNet\Java\Lang\Reflect\Constructor.cs" Link="Java\Lang\Reflect\Constructor.cs" />
+    <Compile Include="..\JNet\Java\Lang\Reflect\Executable.cs" Link="Java\Lang\Reflect\Executable.cs" />
     <Compile Include="..\JNet\Java\Lang\Reflect\Field.cs" Link="Java\Lang\Reflect\Field.cs" />
+    <Compile Include="..\JNet\Java\Lang\Reflect\GenericDeclaration.cs" Link="Java\Lang\Reflect\GenericDeclaration.cs" />
     <Compile Include="..\JNet\Java\Lang\Reflect\Method.cs" Link="Java\Lang\Reflect\Method.cs" />
+    <Compile Include="..\JNet\Java\Lang\Reflect\Parameter.cs" Link="Java\Lang\Reflect\Parameter.cs" />
     <Compile Include="..\JNet\Java\Lang\Reflect\Type.cs" Link="Java\Lang\Reflect\Type.cs" />
+    <Compile Include="..\JNet\Java\Lang\Reflect\TypeVariable.cs" Link="Java\Lang\Reflect\TypeVariable.cs" />
     <Compile Include="..\JNet\Java\Lang\RuntimeException.cs" Link="Java\Lang\RuntimeException.cs" />
     <Compile Include="..\JNet\Java\Lang\SecurityException.cs" Link="Java\Lang\SecurityException.cs" />
     <Compile Include="..\JNet\Java\Lang\SecurityManager.cs" Link="Java\Lang\SecurityManager.cs" />

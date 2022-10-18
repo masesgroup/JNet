@@ -18,20 +18,17 @@
 
 using MASES.JCOBridge.C2JBridge;
 
-namespace Java.Lang.Annotation
+namespace Java.Lang.Reflect
 {
     /// <summary>
-    /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Annotation.html"/>
+    /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/AnnotatedType.html"/>
     /// </summary>
-    public class Annotation : JVMBridgeBase<Annotation>
+    public class AnnotatedType : AnnotatedElement
     {
-        public Annotation() { }
-
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.lang.annotation.Annotation";
-        /// <summary>
-        /// Returns the annotation type of this annotation.
-        /// </summary>
-        public Class AnnotationType => IExecute<Class>("annotationType");
+        public override string ClassName => "java.lang.reflect.AnnotatedType";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
     }
 }

@@ -22,12 +22,15 @@ using MASES.JNet;
 namespace Java.Lang.Reflect
 {
     /// <summary>
-    /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/AccessibleObject.html"/>
+    /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/AnnotatedElement.html"/>
     /// </summary>
-    public class AccessibleObject : JVMBridgeBase<AccessibleObject>
+    public class AnnotatedElement : JVMBridgeBase<AnnotatedElement>
     {
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.lang.reflect.AccessibleObject";
+        public override string ClassName => "java.lang.reflect.AnnotatedElement";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
         /// <summary>
         /// Returns this element's annotation for the specified type if such an annotation is present, else null.
         /// </summary>
@@ -39,7 +42,7 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// Returns annotations that are associated with this element.
         /// </summary>
-        public T[] GetAnnotationsByType<T>(Class<T> annotationClass) where T : Annotation.Annotation => this.IExecuteArray<T>("getAnnotationsByType", annotationClass);
+        public T[] GetAnnotationsByType<T>(Class<T> annotationClass) where T : Annotation.Annotation => this.IExecuteArray<T>("getAnnotationsByType");
         /// <summary>
         /// Returns this element's annotation for the specified type if such an annotation is directly present, else null.
         /// </summary>
@@ -53,20 +56,8 @@ namespace Java.Lang.Reflect
         /// </summary>
         public T[] GetDeclaredAnnotationsByType<T>(Class<T> annotationClass) where T : Annotation.Annotation => this.IExecuteArray<T>("getDeclaredAnnotationsByType", annotationClass);
         /// <summary>
-        /// Get the value of the accessible flag for this object.
-        /// </summary>
-        public bool IsAccessible => IExecute<bool>("isAccessible");
-        /// <summary>
         /// Returns <see langword="true"/> if an annotation for the specified type is present on this element, else <see langword="false"/>.
         /// </summary>
-        public bool IsAnnotationPresent<T>(Class<T> annotationClass) where T : Annotation.Annotation => IExecute<bool>("isAnnotationPresent", annotationClass);
-        /// <summary>
-        /// Convenience method to set the accessible flag for an array of objects with a single security check(for efficiency).
-        /// </summary>
-        public static void SetAccessible(AccessibleObject[] array, bool flag) => SExecute("setAccessible", array, flag);
-        /// <summary>
-        /// Set the accessible flag for this object to the indicated boolean value.
-        /// </summary>
-        public void SetAccessible(bool flag) => IExecute("setAccessible", flag);
+        public bool IsAnnotationPresent<T>(Class<T> annotationClass) where T : Annotation.Annotation => this.IExecute<bool>("isAnnotationPresent", annotationClass);
     }
 }

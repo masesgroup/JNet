@@ -21,22 +21,21 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Lang.Reflect
 {
     /// <summary>
-    /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Constructor.html"/>
+    /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/TypeVariable.html"/>
     /// </summary>
-    public class Constructor : Executable
+    public class TypeVariable : AnnotatedElement
     {
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.lang.reflect.Constructor";
+        public override string ClassName => "java.lang.reflect.TypeVariable";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
     }
 
     /// <summary>
-    /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Constructor.html"/>
+    /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/TypeVariable.html"/>
     /// </summary>
-    public class Constructor<T> : Constructor
+    public class TypeVariable<D> : TypeVariable where D : GenericDeclaration
     {
-        /// <summary>
-        /// Uses the constructor represented by this <see cref="Constructor"/> object to create and initialize a new instance of the constructor's declaring class, with the specified initialization parameters.
-        /// </summary>
-        public T NewInstance(params object[] initargs) => IExecute<T>("newInstance", initargs);
     }
 }
