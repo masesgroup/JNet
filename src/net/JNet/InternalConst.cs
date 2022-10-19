@@ -16,9 +16,6 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.JCOBridge.C2JBridge.JVMInterop;
-using MASES.JCOBridge.C2JBridge;
-
 namespace MASES.JNet
 {
     class CLIParam
