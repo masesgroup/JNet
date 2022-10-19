@@ -22,8 +22,6 @@ using MASES.JCOBridge.C2JBridge.JVMInterop;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Xml.Linq;
 
 namespace MASES.JNet
 {

@@ -18,6 +18,8 @@
     <None Remove="AllPackageClassesStubClass.template" />
     <None Remove="AllPackageClassesStubNestedClass.template" />
     <None Remove="SingleClass.template" />
+    <None Remove="Templates\AllPackageClassesStubException.template" />
+    <None Remove="Templates\AllPackageClassesStubNestedException.template" />
     <None Remove="Templates\SingleNestedClass.template" />
   </ItemGroup>
   <ItemGroup>
@@ -71,12 +73,15 @@
     <Compile Include="..\JNet\Java\Lang\Reflect\Constructor.cs" Link="Java\Lang\Reflect\Constructor.cs" />
     <Compile Include="..\JNet\Java\Lang\Reflect\Executable.cs" Link="Java\Lang\Reflect\Executable.cs" />
     <Compile Include="..\JNet\Java\Lang\Reflect\Field.cs" Link="Java\Lang\Reflect\Field.cs" />
+    <Compile Include="..\JNet\Java\Lang\Reflect\GenericArrayType.cs" Link="Java\Lang\Reflect\GenericArrayType.cs" />
     <Compile Include="..\JNet\Java\Lang\Reflect\GenericDeclaration.cs" Link="Java\Lang\Reflect\GenericDeclaration.cs" />
     <Compile Include="..\JNet\Java\Lang\Reflect\Method.cs" Link="Java\Lang\Reflect\Method.cs" />
     <Compile Include="..\JNet\Java\Lang\Reflect\Modifier.cs" Link="Java\Lang\Reflect\Modifier.cs" />
     <Compile Include="..\JNet\Java\Lang\Reflect\Parameter.cs" Link="Java\Lang\Reflect\Parameter.cs" />
+    <Compile Include="..\JNet\Java\Lang\Reflect\ParameterizedType.cs" Link="Java\Lang\Reflect\ParameterizedType.cs" />
     <Compile Include="..\JNet\Java\Lang\Reflect\Type.cs" Link="Java\Lang\Reflect\Type.cs" />
     <Compile Include="..\JNet\Java\Lang\Reflect\TypeVariable.cs" Link="Java\Lang\Reflect\TypeVariable.cs" />
+    <Compile Include="..\JNet\Java\Lang\Reflect\WildcardType.cs" Link="Java\Lang\Reflect\WildcardType.cs" />
     <Compile Include="..\JNet\Java\Lang\RuntimeException.cs" Link="Java\Lang\RuntimeException.cs" />
     <Compile Include="..\JNet\Java\Lang\SecurityException.cs" Link="Java\Lang\SecurityException.cs" />
     <Compile Include="..\JNet\Java\Lang\SecurityManager.cs" Link="Java\Lang\SecurityManager.cs" />
@@ -94,6 +99,8 @@
     <Compile Include="..\JNet\JNetCoreBase.cs" Link="JNetCoreBase.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Templates\AllPackageClassesStubException.template" />
+    <EmbeddedResource Include="Templates\AllPackageClassesStubNestedException.template" />
     <EmbeddedResource Include="Templates\SingleNestedClass.template" />
     <EmbeddedResource Include="Templates\SingleClass.template" />
     <EmbeddedResource Include="Templates\AllPackageClassesStubNestedClass.template" />

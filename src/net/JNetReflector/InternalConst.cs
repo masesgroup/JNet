@@ -21,7 +21,6 @@ using System;
 using System.IO.Compression;
 using System.Linq;
 using System.Collections.Generic;
-using MASES.JCOBridge.C2JBridge.JVMInterop;
 
 namespace MASES.JNet
 {
@@ -95,6 +94,27 @@ namespace MASES.JNetReflector
             return false;
         }
 
+        public static bool IsJVMException(this Java.Lang.Class entry)
+        {
+            if (entry == null) return false;
+            if (SpecialNames.IsJavaLangException(entry.CanonicalName)) return true;
+            return IsJVMException(entry.SuperClass);
+        }
+
+        public static bool IsOrInheritFromJVMGenericClass(this Java.Lang.Class entry)
+        {
+            if (entry == null) return false;
+            if (entry.IsJVMGenericClass()) return true;
+            return IsOrInheritFromJVMGenericClass(entry.SuperClass);
+        }
+
+        public static bool IsJVMGenericClass(this Java.Lang.Class entry)
+        {
+            if (entry == null) return false;
+            if (entry.TypeParameters.Length == 0) return false;
+            return true;
+        }
+
         public static string Camel(string str)
         {
             if (str.Length == 0 || str.Length == 1) return str;
@@ -143,41 +163,45 @@ namespace MASES.JNetReflector
             return cName.Replace('/', '.');
         }
 
+        public static string ToFullQualifiedClassName(string canonicalName)
+        {
+            string className = canonicalName.Substring(canonicalName.LastIndexOf('.') + 1);
+            className = Namespace(canonicalName) + "." + className.Replace(SpecialNames.NestedClassSeparator, '.');
+            return className;
+        }
+
+
         public static string JVMBaseClassName(this ZipArchiveEntry entry)
         {
-            var cName = entry.JVMFullQualifiedClassName();
             try
             {
-                var jType = Java.Lang.Class.ForName(cName, true, SystemClassLoader);
+                var jType = Java.Lang.Class.ForName(entry.JVMFullQualifiedClassName(), true, SystemClassLoader);
 
                 if (jType == null || jType.SuperClass == null || jType.SuperClass.CanonicalName == SpecialNames.JavaLangObject)
                 {
                     string innerName = entry.IsJVMNestedClass() ? entry.JVMNestedClassName() : entry.JVMClassName();
-                    return string.Format("MASES.JCOBridge.C2JBridge.JVMBridgeCore<{0}>", innerName);
+                    return string.Format("MASES.JCOBridge.C2JBridge.JVMBridgeBase<{0}>", innerName);
                 }
-                else if (jType == null || jType.SuperClass == null || jType.SuperClass.CanonicalName == SpecialNames.JavaLangThrowable)
+                else if (jType == null || jType.SuperClass == null || SpecialNames.IsJavaLangException(jType.SuperClass.CanonicalName))
                 {
-                    return "Java.Lang.Throwable";
+                    return ToFullQualifiedClassName(jType.SuperClass.CanonicalName);
                 }
-                else if (jType == null || jType.SuperClass == null || jType.SuperClass.CanonicalName == SpecialNames.JavaLangException)
-                {
-                    string innerName = entry.IsJVMNestedClass() ? entry.JVMNestedClassName() : entry.JVMClassName();
-                    return string.Format("MASES.JCOBridge.C2JBridge.JVMBridgeException<{0}>", innerName);
-                }
-                else if (jType == null || jType.SuperClass == null || jType.SuperClass.CanonicalName == SpecialNames.JavaLangError)
-                {
-                    return "Java.Lang.Error";
-                }
+                //else if (jType == null || jType.SuperClass == null || jType.SuperClass.CanonicalName == SpecialNames.JavaLangException)
+                //{
+                //    string innerName = entry.IsJVMNestedClass() ? entry.JVMNestedClassName() : entry.JVMClassName();
+                //    return string.Format("MASES.JCOBridge.C2JBridge.JVMBridgeException<{0}>", innerName);
+                //}
+                //else if (jType == null || jType.SuperClass == null || jType.SuperClass.CanonicalName == SpecialNames.JavaLangError)
+                //{
+                //    return "Java.Lang.Error";
+                //}
 
-                var sClassName = jType.SuperClass.CanonicalName;
-                string className = sClassName.Substring(sClassName.LastIndexOf('.') + 1);
-                className = Namespace(sClassName) + "." + className.Replace(SpecialNames.NestedClassSeparator, '.');
-                return className;
+                return ToFullQualifiedClassName(jType.SuperClass.CanonicalName);
             }
             catch
             {
                 string className = entry.IsJVMNestedClass() ? entry.JVMNestedClassName() : entry.JVMClassName();
-                return string.Format("MASES.JCOBridge.C2JBridge.JVMBridgeCore<{0}>", className);
+                return string.Format("MASES.JCOBridge.C2JBridge.JVMBridgeBase<{0}>", className);
             }
         }
 
@@ -243,9 +267,66 @@ namespace MASES.JNetReflector
         public const string ClassExtension = ".class";
         public const char NestedClassSeparator = '$';
         public const string JavaLangObject = "java.lang.Object";
-        public const string JavaLangThrowable = "java.lang.Throwable";
-        public const string JavaLangException = "java.lang.Exception";
-        public const string JavaLangError = "java.lang.Error";
+
+        public static bool IsJavaLangException(string canonicalName)
+        {
+            return JavaLangExceptions.Contains(canonicalName);
+        }
+
+        public static IEnumerable<string> JavaLangExceptions = new string[]
+        {
+            "java.lang.Throwable",
+            "java.lang.ArithmeticException",
+            "java.lang.ArrayIndexOutOfBoundsException",
+            "java.lang.ArrayStoreException",
+            "java.lang.ClassCastException",
+            "java.lang.ClassNotFoundException",
+            "java.lang.CloneNotSupportedException",
+            "java.lang.EnumConstantNotPresentException",
+            "java.lang.Exception",
+            "java.lang.IllegalAccessException",
+            "java.lang.IllegalArgumentException",
+            "java.lang.IllegalMonitorStateException",
+            "java.lang.IllegalStateException",
+            "java.lang.IllegalThreadStateException",
+            "java.lang.IndexOutOfBoundsException",
+            "java.lang.InstantiationException",
+            "java.lang.InterruptedException",
+            "java.lang.NegativeArraySizeException",
+            "java.lang.NoSuchFieldException",
+            "java.lang.NoSuchMethodException",
+            "java.lang.NullPointerException",
+            "java.lang.NumberFormatException",
+            "java.lang.ReflectiveOperationException",
+            "java.lang.RuntimeException",
+            "java.lang.SecurityException",
+            "java.lang.StringIndexOutOfBoundsException",
+            "java.lang.TypeNotPresentException",
+            "java.lang.UnsupportedOperationException",
+            "java.lang.AbstractMethodError",
+            "java.lang.AssertionError",
+            "java.lang.BootstrapMethodError",
+            "java.lang.ClassCircularityError",
+            "java.lang.ClassFormatError",
+            "java.lang.Error",
+            "java.lang.ExceptionInInitializerError",
+            "java.lang.IllegalAccessError",
+            "java.lang.IncompatibleClassChangeError",
+            "java.lang.InstantiationError",
+            "java.lang.InternalError",
+            "java.lang.LinkageError",
+            "java.lang.NoClassDefFoundError",
+            "java.lang.NoSuchFieldError",
+            "java.lang.NoSuchMethodError",
+            "java.lang.OutOfMemoryError",
+            "java.lang.StackOverflowError",
+            "java.lang.UnknownError",
+            "java.lang.UnsatisfiedLinkError",
+            "java.lang.UnsupportedClassVersionError",
+            "java.lang.VerifyError",
+            "java.lang.VirtualMachineError",
+        };
+
 
         public static IEnumerable<string> SpecialNumberedNames = CreateSpecialNumberedNames();
 
