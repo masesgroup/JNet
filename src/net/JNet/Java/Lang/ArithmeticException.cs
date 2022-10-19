@@ -23,9 +23,9 @@ namespace Java.Lang
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/ArithmeticException.html"/>
     /// </summary>
-    public sealed class ArithmeticException : JVMBridgeException<ArithmeticException>
+    public class ArithmeticException : JVMBridgeException<ArithmeticException>
     {
         /// <inheritdoc cref="JVMBridgeException.ClassName"/>
-        public sealed override string ClassName => "java.lang.ArithmeticException";
+        public override string ClassName => "java.lang.ArithmeticException";
     }
 }

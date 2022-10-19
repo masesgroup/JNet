@@ -23,9 +23,9 @@ namespace Java.Lang
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/InstantiationException.html"/>
     /// </summary>
-    public sealed class InstantiationException : JVMBridgeException<InstantiationException>
+    public class InstantiationException : JVMBridgeException<InstantiationException>
     {
         /// <inheritdoc cref="JVMBridgeException.ClassName"/>
-        public sealed override string ClassName => "java.lang.InstantiationException";
+        public override string ClassName => "java.lang.InstantiationException";
     }
 }

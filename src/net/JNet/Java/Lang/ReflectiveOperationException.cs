@@ -23,9 +23,9 @@ namespace Java.Lang
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/ReflectiveOperationException.html"/>
     /// </summary>
-    public sealed class ReflectiveOperationException : JVMBridgeException<ReflectiveOperationException>
+    public class ReflectiveOperationException : JVMBridgeException<ReflectiveOperationException>
     {
         /// <inheritdoc cref="JVMBridgeException.ClassName"/>
-        public sealed override string ClassName => "java.lang.ReflectiveOperationException";
+        public override string ClassName => "java.lang.ReflectiveOperationException";
     }
 }

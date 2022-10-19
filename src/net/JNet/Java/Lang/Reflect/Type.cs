@@ -27,5 +27,9 @@ namespace Java.Lang.Reflect
     {
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "java.lang.reflect.Type";
+        /// <summary>
+        /// Returns a string describing this type, including information about any type parameters.
+        /// </summary>
+        public string TypeName => IExecute<string>("getTypeName");
     }
 }

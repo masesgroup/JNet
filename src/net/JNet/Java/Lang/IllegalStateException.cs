@@ -23,9 +23,9 @@ namespace Java.Lang
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalStateException.html"/>
     /// </summary>
-    public sealed class IllegalStateException : JVMBridgeException<IllegalStateException>
+    public class IllegalStateException : JVMBridgeException<IllegalStateException>
     {
         /// <inheritdoc cref="JVMBridgeException.ClassName"/>
-        public sealed override string ClassName => "java.lang.IllegalStateException";
+        public override string ClassName => "java.lang.IllegalStateException";
     }
 }

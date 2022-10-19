@@ -23,9 +23,9 @@ namespace Java.Lang
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/NegativeArraySizeException.html"/>
     /// </summary>
-    public sealed class NegativeArraySizeException : JVMBridgeException<NegativeArraySizeException>
+    public class NegativeArraySizeException : JVMBridgeException<NegativeArraySizeException>
     {
         /// <inheritdoc cref="JVMBridgeException.ClassName"/>
-        public sealed override string ClassName => "java.lang.NegativeArraySizeException";
+        public override string ClassName => "java.lang.NegativeArraySizeException";
     }
 }

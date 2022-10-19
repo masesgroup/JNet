@@ -23,9 +23,9 @@ namespace Java.Lang
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html"/>
     /// </summary>
-    public sealed class NullPointerException : JVMBridgeException<NullPointerException>
+    public class NullPointerException : JVMBridgeException<NullPointerException>
     {
         /// <inheritdoc cref="JVMBridgeException.ClassName"/>
-        public sealed override string ClassName => "java.lang.NullPointerException";
+        public override string ClassName => "java.lang.NullPointerException";
     }
 }

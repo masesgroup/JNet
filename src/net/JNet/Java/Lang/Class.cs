@@ -221,6 +221,10 @@ namespace Java.Lang
         /// </summary>
         public string TypeName => IExecute<string>("getTypeName");
         /// <summary>
+        /// Returns an array of <see cref="TypeVariable"/> objects that represent the type variables declared by the generic declaration represented by this <see cref="GenericDeclaration"/> object, in declaration order.
+        /// </summary>
+        public TypeVariable[] TypeParameters => this.IExecuteArray<TypeVariable>("getTypeParameters");
+        /// <summary>
         /// Returns <see langword="true"/> if an annotation for the specified type is present on this element, else <see langword="false"/>. This method is designed primarily for convenient access to marker annotations. 
         /// </summary>
         /// <typeparam name="TAnnotation">The <see cref="Annotation.Annotation"/> class</typeparam>

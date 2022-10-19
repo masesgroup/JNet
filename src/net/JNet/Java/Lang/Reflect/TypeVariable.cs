@@ -17,6 +17,7 @@
 */
 
 using MASES.JCOBridge.C2JBridge;
+using MASES.JNet;
 
 namespace Java.Lang.Reflect
 {
@@ -28,8 +29,22 @@ namespace Java.Lang.Reflect
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "java.lang.reflect.TypeVariable";
 
+        public static implicit operator Type(TypeVariable t) => t.Cast<Type>();
+
         /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
         public override bool IsInterface => true;
+        /// <summary>
+        /// Returns an array of <see cref="AnnotatedType"/> objects that represent the use of types to denote the upper bounds of the type parameter represented by this <see cref="TypeVariable"/>.
+        /// </summary>
+        public AnnotatedType[] AnnotatedBounds => this.IExecuteArray<AnnotatedType>("getAnnotatedBounds");
+        /// <summary>
+        /// Returns an array of <see cref="Type"/> objects representing the upper bound(s) of this type variable.
+        /// </summary>
+        public Type[] Bounds => this.IExecuteArray<Type>("getBounds");
+        /// <summary>
+        /// Returns the name of this type variable, as it occurs in the source code.
+        /// </summary>
+        public string Name => IExecute<string>("getName");
     }
 
     /// <summary>
@@ -37,5 +52,9 @@ namespace Java.Lang.Reflect
     /// </summary>
     public class TypeVariable<D> : TypeVariable where D : GenericDeclaration
     {
+        /// <summary>
+        /// Returns the <see cref="GenericDeclaration"/> object representing the generic declaration declared this type variable.
+        /// </summary>
+        public D GenericDeclaration => IExecute<D>("getGenericDeclaration");
     }
 }

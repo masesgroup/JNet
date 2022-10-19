@@ -23,9 +23,9 @@ namespace Java.Lang
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/NoSuchMethodException.html"/>
     /// </summary>
-    public sealed class NoSuchMethodException : JVMBridgeException<NoSuchMethodException>
+    public class NoSuchMethodException : JVMBridgeException<NoSuchMethodException>
     {
         /// <inheritdoc cref="JVMBridgeException.ClassName"/>
-        public sealed override string ClassName => "java.lang.NoSuchMethodException";
+        public override string ClassName => "java.lang.NoSuchMethodException";
     }
 }
