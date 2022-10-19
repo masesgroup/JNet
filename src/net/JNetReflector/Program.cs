@@ -20,6 +20,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.IO.Compression;
+using System.Reflection;
 using System.Text;
 using MASES.JNetReflector.Templates;
 
@@ -41,6 +42,19 @@ namespace MASES.JNetReflector
                 {
                     AnalyzedJar(item, JNetReflectedCore.DestinationRootPath, JNetReflectedCore.OriginJavadocUrl, JNetReflectedCore.DryRun);
                 }
+            }
+            catch (TargetInvocationException tie)
+            {
+                StringBuilder sb = new StringBuilder();
+                Exception e = tie.InnerException;
+                sb.AppendLine(e.Message);
+                Exception innerException = e.InnerException;
+                while (innerException != null)
+                {
+                    sb.AppendLine(innerException.Message);
+                    innerException = innerException.InnerException;
+                }
+                ShowHelp(sb.ToString());
             }
             catch (Exception e)
             {
@@ -124,7 +138,6 @@ namespace MASES.JNetReflector
         static string AnalyzedClass(string jarName, IList<ZipArchiveEntry> classDefinitions, string rootDesinationFolder, string javaDocUrl, bool dryRun)
         {
             bool mainClassDone = false;
-            string classBlock = string.Empty;
             var allPackageStubNestedClass = Template.GetTemplate(Template.AllPackageClassesStubNestedClassTemplate);
             var allPackageStubNestedException = Template.GetTemplate(Template.AllPackageClassesStubNestedExceptionTemplate);
             var allPackageStubClass = Template.GetTemplate(Template.AllPackageClassesStubClassTemplate);
@@ -188,6 +201,7 @@ namespace MASES.JNetReflector
             var jClass = mainClass.JVMClass();
             if (jClass.IsOrInheritFromJVMGenericClass()) return string.Empty;
 
+            string classBlock = string.Empty;
             if (jClass.IsJVMException())
             {
                 classBlock = allPackageStubException.Replace(AllPackageClasses.ClassStub.JAVACLASS_PLACEHOLDER, mainClass.JVMFullClassName())
@@ -232,19 +246,16 @@ namespace MASES.JNetReflector
         static void ShowHelp(string errorString = null)
         {
             var assembly = typeof(Program).Assembly;
-
-
-            Console.WriteLine($"{assembly.GetName().Name} (ver. {assembly.GetName().Version}) - JNet class reflection utility command line interface");
-            Console.WriteLine($"{assembly.GetName().Name} ");
-            Console.WriteLine();
             if (!string.IsNullOrEmpty(errorString))
             {
                 Console.WriteLine("Error: {0}", errorString);
             }
 
+            Console.WriteLine(JNetReflectedCore.HelpInfo());
+
             Console.WriteLine();
-            Console.WriteLine("Examples:");
-            Console.WriteLine(assembly.GetName().Name + " ");
+            Console.WriteLine("Examples: ");
+            Console.WriteLine("dotnet" + assembly.GetName().Name + ".dll -OriginRootPath C:\\myJars -OriginJavadocUrl \"https://thehost/javadoc/\" -DestinationRootPath c:\\ReflectionDestination ");
         }
     }
 }

@@ -50,7 +50,7 @@ namespace MASES.JNetReflector
                         Name = CLIParam.OriginJavadocUrl,
                         Type = ArgumentType.Double,
                         Default = null,
-                        Help = "The URL of the Javadoc to be associated to the classes",
+                        Help = "The base URL of the Javadoc to be associated to the classes",
                     },
                     new ArgumentMetadata<string>()
                     {
@@ -173,5 +173,7 @@ namespace MASES.JNetReflector
     /// </summary>
     public class JNetReflectedCore : JNetReflectedCore<JNetReflectedCore>
     {
+        /// <inheritdoc cref="Parser.HelpInfo(int?)"/>
+        public static string HelpInfo(int? width = null) => Parser.HelpInfo(width);
     }
 }
