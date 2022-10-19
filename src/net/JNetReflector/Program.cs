@@ -139,13 +139,12 @@ namespace MASES.JNetReflector
                 if (entry.IsJVMNestedClass())
                 {
                     var jSubClass = entry.JVMClass();
+                    if (jSubClass.IsOrInheritFromJVMGenericClass()) continue;
 
                     string nestedClassBlock;
 
                     if (jSubClass.IsJVMException())
                     {
-                        if (jSubClass.IsOrInheritFromJVMGenericClass()) continue;
-
                         nestedClassBlock = allPackageStubNestedException.Replace(AllPackageClasses.ClassStub.NestedClassStub.JAVACLASS_PLACEHOLDER, entry.JVMFullClassName())
                                                                         .Replace(AllPackageClasses.ClassStub.NestedClassStub.CLASS_PLACEHOLDER, entry.JVMNestedClassName())
                                                                         .Replace(AllPackageClasses.ClassStub.NestedClassStub.HELP_PLACEHOLDER, entry.JavadocUrl(javaDocUrl))

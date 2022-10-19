@@ -104,6 +104,7 @@ namespace MASES.JNetReflector
         public static bool IsOrInheritFromJVMGenericClass(this Java.Lang.Class entry)
         {
             if (entry == null) return false;
+            if (entry.EnclosingClass != null && entry.EnclosingClass.IsOrInheritFromJVMGenericClass()) return true;
             if (entry.IsJVMGenericClass()) return true;
             return IsOrInheritFromJVMGenericClass(entry.SuperClass);
         }
