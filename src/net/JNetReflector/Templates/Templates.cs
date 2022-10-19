@@ -68,7 +68,7 @@ namespace MASES.JNetReflector.Templates
         public const string AllPackageClassesStubClassTemplate = "AllPackageClassesStubClass.template";
         public const string AllPackageClassesStubExceptionTemplate = "AllPackageClassesStubException.template";
         public const string AllPackageClassesStubNestedClassTemplate = "AllPackageClassesStubNestedClass.template";
- public const string AllPackageClassesStubNestedExceptionTemplate = "AllPackageClassesStubNestedException.template";
+        public const string AllPackageClassesStubNestedExceptionTemplate = "AllPackageClassesStubNestedException.template";
 
         public const string SingleClassTemplate = "SingleClass.template";
         public const string SingleNestedClassTemplate = "SingleNestedClass.template";
@@ -81,7 +81,8 @@ namespace MASES.JNetReflector.Templates
 
     public class AllPackageClasses
     {
-        public const string USING_PLACEHOLDER = "ALLPACKAGE_USING_PLACEHOLDER";
+        public const string VERSION_PLACEHOLDER = "ALLPACKAGE_VERSION_PLACEHOLDER";
+        public const string JAR_PLACEHOLDER = "ALLPACKAGE_JAR_PLACEHOLDER";
         public const string NAMESPACE_PLACEHOLDER = "ALLPACKAGE_NAMESPACE_PLACEHOLDER";
         public const string CLASSES_PLACEHOLDER = "// ALLPACKAGE_CLASSES_PLACEHOLDER";
 

@@ -21,6 +21,7 @@ using System;
 using System.IO.Compression;
 using System.Linq;
 using System.Collections.Generic;
+using System.Reflection;
 
 namespace MASES.JNet
 {
@@ -264,6 +265,13 @@ namespace MASES.JNetReflector
 
     public static class SpecialNames
     {
+        static Assembly assembly = typeof(Program).Assembly;
+
+        public static string VersionPlaceHolder()
+        {
+            return $"{assembly.GetName().Name} (ver. {assembly.GetName().Version})";
+        }
+
         public const string JNetReflectorGeneratedFolder = "JNetReflectorGenerated";
         public const string ClassExtension = ".class";
         public const char NestedClassSeparator = '$';

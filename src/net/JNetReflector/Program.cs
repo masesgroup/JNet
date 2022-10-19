@@ -91,13 +91,14 @@ namespace MASES.JNetReflector
                 }
 
                 var allPackageClasses = Template.GetTemplate(Template.AllPackageClassesTemplate);
+                var jarName = Path.GetFileName(pathToJar);
 
                 foreach (var item in resultingArguments)
                 {
                     StringBuilder sb = new StringBuilder();
                     foreach (var entry in item.Value)
                     {
-                        var classContent = AnalyzedClass(entry.Value, rootDesinationFolder, javaDocUrl, dryRun);
+                        var classContent = AnalyzedClass(jarName, entry.Value, rootDesinationFolder, javaDocUrl, dryRun);
                         if (!string.IsNullOrEmpty(classContent))
                         {
                             sb.AppendLine(classContent);
@@ -105,7 +106,8 @@ namespace MASES.JNetReflector
                         }
                     }
 
-                    var itemPackage = allPackageClasses.Replace(AllPackageClasses.USING_PLACEHOLDER, string.Empty)
+                    var itemPackage = allPackageClasses.Replace(AllPackageClasses.VERSION_PLACEHOLDER, SpecialNames.VersionPlaceHolder())
+                                                       .Replace(AllPackageClasses.JAR_PLACEHOLDER, jarName)
                                                        .Replace(AllPackageClasses.NAMESPACE_PLACEHOLDER, item.Key)
                                                        .Replace(AllPackageClasses.CLASSES_PLACEHOLDER, sb.ToString());
 
@@ -119,7 +121,7 @@ namespace MASES.JNetReflector
             }
         }
 
-        static string AnalyzedClass(IList<ZipArchiveEntry> classDefinitions, string rootDesinationFolder, string javaDocUrl, bool dryRun)
+        static string AnalyzedClass(string jarName, IList<ZipArchiveEntry> classDefinitions, string rootDesinationFolder, string javaDocUrl, bool dryRun)
         {
             bool mainClassDone = false;
             string classBlock = string.Empty;
@@ -207,7 +209,8 @@ namespace MASES.JNetReflector
                                                 .Replace(AllPackageClasses.ClassStub.ISSTATIC_PLACEHOLDER, isClassStatic ? "true" : "false");
             }
 
-            var singleClassStr = singleClassTemplate.Replace(AllPackageClasses.USING_PLACEHOLDER, string.Empty)
+            var singleClassStr = singleClassTemplate.Replace(AllPackageClasses.VERSION_PLACEHOLDER, SpecialNames.VersionPlaceHolder())
+                                                    .Replace(AllPackageClasses.JAR_PLACEHOLDER, jarName)
                                                     .Replace(AllPackageClasses.NAMESPACE_PLACEHOLDER, mainClass.Namespace())
                                                     .Replace(AllPackageClasses.ClassStub.CLASS_PLACEHOLDER, mainClass.JVMClassName())
                                                     .Replace(AllPackageClasses.ClassStub.NESTED_CLASSES_PLACEHOLDER, subClassAutonoumous.ToString());
