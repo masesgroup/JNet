@@ -2,5 +2,6 @@
 <DotNetCliTool Version="1">
 	<Commands>
 		<Command Name="jnetreflector" EntryPoint="MASES.JNetReflector.dll" Runner="dotnet" />
+		<Command Name="jnr" EntryPoint="MASES.JNetReflector.dll" Runner="dotnet" />
 	</Commands>
 </DotNetCliTool>
