@@ -5,6 +5,5 @@
 		<RootNamespace>MASES.JNetTest</RootNamespace>
 		<Title>JNetReflectorGenerated - a test tool for JNetReflector</Title>
 		<Description>JNetReflectorGenerated - a test tool for JNetReflector</Description>
-		<OutputPath>..\..\bin\</OutputPath>
 	</PropertyGroup>
 </Project>

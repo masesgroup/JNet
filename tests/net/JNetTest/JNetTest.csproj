@@ -6,6 +6,5 @@
     <RootNamespace>MASES.JNetTest</RootNamespace>
     <Title>JNetTest - a test tool for JNet</Title>
     <Description>JNetTest - a test tool for JNet</Description>
-    <OutputPath>..\..\bin\</OutputPath>
   </PropertyGroup>
 </Project>
