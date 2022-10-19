@@ -63,13 +63,13 @@ namespace MASES.JNetReflector
                     {
                         Name = CLIParam.JarList,
                         Type = ArgumentType.Double,
-                        Help = "A CSV list, separated with comma, of Jar to be analyzed",
+                        Help = "A CSV list of JAR to be analyzed or folders containing the JARs",
                     },
                     new ArgumentMetadata<string>()
                     {
                         Name = CLIParam.NamespacesToAvoid,
                         Type = ArgumentType.Double,
-                        Help = "A CSV list, separated with comma, of namespaces to be removed from analysis",
+                        Help = "A CSV list of namespaces to be removed from analysis",
                     },
                     new ArgumentMetadata<bool>()
                     {
