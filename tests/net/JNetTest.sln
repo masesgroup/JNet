@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JNetWPFTest", "JNetWPFTest\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JNet", "..\..\src\net\JNet\JNet.csproj", "{EC444991-FDF7-4521-AED6-6BE32EAF8542}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JNetReflectorGenerated", "JNetReflectorGenerated\JNetReflectorGenerated.csproj", "{D417C2E0-E317-4547-969F-1C21E031478A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{EC444991-FDF7-4521-AED6-6BE32EAF8542}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC444991-FDF7-4521-AED6-6BE32EAF8542}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC444991-FDF7-4521-AED6-6BE32EAF8542}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D417C2E0-E317-4547-969F-1C21E031478A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D417C2E0-E317-4547-969F-1C21E031478A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D417C2E0-E317-4547-969F-1C21E031478A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D417C2E0-E317-4547-969F-1C21E031478A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
