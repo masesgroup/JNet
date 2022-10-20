@@ -6,4 +6,9 @@ To install the tool follows the instructions on https://docs.microsoft.com/en-us
 
 ## Usage
 
-The tool is under construction
+To use JNetReflector runs a command like the following:
+
+* dotnet tool
+> jnetreflector -OriginRootPath C:\\myJars -OriginJavadocUrl \"https://thehost/javadoc/\" -DestinationRootPath C:\\ReflectionDestination
+
+> jnr -OriginRootPath C:\\myJars -OriginJavadocUrl \"https://thehost/javadoc/\" -DestinationRootPath C:\\ReflectionDestination
