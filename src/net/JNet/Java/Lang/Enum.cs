@@ -24,10 +24,37 @@ namespace Java.Lang
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Enum.html"/>
     /// </summary>
     /// <typeparam name="E"><see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Enum.html"/></typeparam>
-    public class Enum<E> : JVMBridgeBase<Enum<E>>
-        where E : Enum<E>
+    public class Enum : JVMBridgeBase<Enum>
     {
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "java.lang.Enum";
+        /// <summary>
+        /// Returns the name of this enum constant, exactly as declared in its enum declaration.
+        /// </summary>
+        public string Name => IExecute<string>("name");
+        /// <summary>
+        /// Returns the ordinal of this enumeration constant(its position in its enum declaration, where the initial constant is assigned an ordinal of zero).
+        /// </summary>
+        public int Ordinal => IExecute<int>("ordinal");
+    }
+
+    /// <summary>
+    /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Enum.html"/>
+    /// </summary>
+    /// <typeparam name="E"><see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Enum.html"/></typeparam>
+    public class Enum<E> : Enum where E : Enum<E>
+    {
+        /// <summary>
+        /// Compares this enum with the specified object for order.
+        /// </summary>
+        public int CompareTo(E o) => IExecute<int>("compareTo", o);
+        /// <summary>
+        /// Returns the <see cref="Class"/> object corresponding to this enum constant's enum type.
+        /// </summary>
+        public Class<E> DeclaringClass => IExecute<Class<E>>("getDeclaringClass");
+        /// <summary>
+        /// Returns the enum constant of the specified enum type with the specified name.
+        /// </summary>
+        public static T ValueOf<T>(Class<T> enumType, string name) where T : Enum<T> => SExecute<T>("valueOf", enumType, name);
     }
 }

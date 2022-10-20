@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JNet", "JNet\JNet.csproj", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JNetCLI", "JNetCLI\JNetCLI.csproj", "{9179A73E-9425-4745-A07B-45C34945961B}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JNetReflector", "JNetReflector\JNetReflector.csproj", "{48E1694F-BD32-4096-9DCA-7D64D0F58DCD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{9179A73E-9425-4745-A07B-45C34945961B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9179A73E-9425-4745-A07B-45C34945961B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9179A73E-9425-4745-A07B-45C34945961B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48E1694F-BD32-4096-9DCA-7D64D0F58DCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48E1694F-BD32-4096-9DCA-7D64D0F58DCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48E1694F-BD32-4096-9DCA-7D64D0F58DCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48E1694F-BD32-4096-9DCA-7D64D0F58DCD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

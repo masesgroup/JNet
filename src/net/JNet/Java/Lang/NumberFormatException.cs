@@ -23,9 +23,9 @@ namespace Java.Lang
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/NumberFormatException.html"/>
     /// </summary>
-    public sealed class NumberFormatException : JVMBridgeException<NumberFormatException>
+    public class NumberFormatException : JVMBridgeException<NumberFormatException>
     {
         /// <inheritdoc cref="JVMBridgeException.ClassName"/>
-        public sealed override string ClassName => "java.lang.NumberFormatException";
+        public override string ClassName => "java.lang.NumberFormatException";
     }
 }

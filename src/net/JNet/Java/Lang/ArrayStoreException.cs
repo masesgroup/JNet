@@ -23,9 +23,9 @@ namespace Java.Lang
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/ArrayStoreException.html"/>
     /// </summary>
-    public sealed class ArrayStoreException : JVMBridgeException<ArrayStoreException>
+    public class ArrayStoreException : JVMBridgeException<ArrayStoreException>
     {
         /// <inheritdoc cref="JVMBridgeException.ClassName"/>
-        public sealed override string ClassName => "java.lang.ArrayStoreException";
+        public override string ClassName => "java.lang.ArrayStoreException";
     }
 }

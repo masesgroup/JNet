@@ -23,9 +23,9 @@ namespace Java.Lang
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/NoSuchFieldException.html"/>
     /// </summary>
-    public sealed class NoSuchFieldException : JVMBridgeException<NoSuchFieldException>
+    public class NoSuchFieldException : JVMBridgeException<NoSuchFieldException>
     {
         /// <inheritdoc cref="JVMBridgeException.ClassName"/>
-        public sealed override string ClassName => "java.lang.NoSuchFieldException";
+        public override string ClassName => "java.lang.NoSuchFieldException";
     }
 }

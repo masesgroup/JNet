@@ -23,9 +23,9 @@ namespace Java.Lang
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html"/>
     /// </summary>
-    public sealed class IllegalArgumentException : JVMBridgeException<IllegalArgumentException>
+    public class IllegalArgumentException : JVMBridgeException<IllegalArgumentException>
     {
         /// <inheritdoc cref="JVMBridgeException.ClassName"/>
-        public sealed override string ClassName => "java.lang.IllegalArgumentException";
+        public override string ClassName => "java.lang.IllegalArgumentException";
     }
 }

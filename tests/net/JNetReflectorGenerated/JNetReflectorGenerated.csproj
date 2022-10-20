@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<Import Project="..\Common\Common.props" />
+	<PropertyGroup>
+		<AssemblyName>JNetReflectorGenerated</AssemblyName>
+		<RootNamespace>MASES.JNetTest</RootNamespace>
+		<Title>JNetReflectorGenerated - a test tool for JNetReflector</Title>
+		<Description>JNetReflectorGenerated - a test tool for JNetReflector</Description>
+	</PropertyGroup>
+</Project>

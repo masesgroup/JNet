@@ -23,9 +23,9 @@ namespace Java.Lang
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/InterruptedException.html"/>
     /// </summary>
-    public sealed class InterruptedException : JVMBridgeException<InterruptedException>
+    public class InterruptedException : JVMBridgeException<InterruptedException>
     {
         /// <inheritdoc cref="JVMBridgeException.ClassName"/>
-        public sealed override string ClassName => "java.lang.InterruptedException";
+        public override string ClassName => "java.lang.InterruptedException";
     }
 }

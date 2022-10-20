@@ -23,9 +23,9 @@ namespace Java.Lang
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html"/>
     /// </summary>
-    public sealed class Exception : JVMBridgeException<Exception>
+    public class Exception : JVMBridgeException<Exception>
     {
         /// <inheritdoc cref="JVMBridgeException.ClassName"/>
-        public sealed override string ClassName => "java.lang.Exception";
+        public override string ClassName => "java.lang.Exception";
     }
 }

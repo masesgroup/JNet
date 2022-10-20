@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JNet", "..\src\net\JNet\JNet.csproj", "{067E5A2E-168E-4CD5-855F-672A0FE86DA1}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JNetTest", "JNetTest\JNetTest.csproj", "{F3A53651-9728-427B-A429-7B3F1B6C8DA0}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JNetWinFormsTest", "JNetWinFormsTest\JNetWinFormsTest.csproj", "{C34F594A-16F6-4BF1-A11B-5C92CD618DD2}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JNetWPFTest", "JNetWPFTest\JNetWPFTest.csproj", "{94523BE2-B9F9-403E-B93B-AE1AED3256D3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JNet", "..\..\src\net\JNet\JNet.csproj", "{EC444991-FDF7-4521-AED6-6BE32EAF8542}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JNetReflectorGenerated", "JNetReflectorGenerated\JNetReflectorGenerated.csproj", "{D417C2E0-E317-4547-969F-1C21E031478A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +19,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{067E5A2E-168E-4CD5-855F-672A0FE86DA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{067E5A2E-168E-4CD5-855F-672A0FE86DA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{067E5A2E-168E-4CD5-855F-672A0FE86DA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{067E5A2E-168E-4CD5-855F-672A0FE86DA1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F3A53651-9728-427B-A429-7B3F1B6C8DA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F3A53651-9728-427B-A429-7B3F1B6C8DA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F3A53651-9728-427B-A429-7B3F1B6C8DA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -33,6 +31,14 @@ Global
 		{94523BE2-B9F9-403E-B93B-AE1AED3256D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94523BE2-B9F9-403E-B93B-AE1AED3256D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94523BE2-B9F9-403E-B93B-AE1AED3256D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC444991-FDF7-4521-AED6-6BE32EAF8542}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC444991-FDF7-4521-AED6-6BE32EAF8542}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC444991-FDF7-4521-AED6-6BE32EAF8542}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC444991-FDF7-4521-AED6-6BE32EAF8542}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D417C2E0-E317-4547-969F-1C21E031478A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D417C2E0-E317-4547-969F-1C21E031478A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D417C2E0-E317-4547-969F-1C21E031478A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D417C2E0-E317-4547-969F-1C21E031478A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

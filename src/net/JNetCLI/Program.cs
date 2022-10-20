@@ -16,9 +16,7 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.JCOBridge.C2JBridge;
 using System;
-using System.Reflection;
 using System.Text;
 
 namespace MASES.JNetCLI

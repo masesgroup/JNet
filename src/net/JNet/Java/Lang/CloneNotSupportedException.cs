@@ -23,9 +23,9 @@ namespace Java.Lang
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/CloneNotSupportedException.html"/>
     /// </summary>
-    public sealed class CloneNotSupportedException : JVMBridgeException<CloneNotSupportedException>
+    public class CloneNotSupportedException : JVMBridgeException<CloneNotSupportedException>
     {
         /// <inheritdoc cref="JVMBridgeException.ClassName"/>
-        public sealed override string ClassName => "java.lang.CloneNotSupportedException";
+        public override string ClassName => "java.lang.CloneNotSupportedException";
     }
 }
