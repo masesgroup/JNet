@@ -25,6 +25,12 @@ using System.Linq;
 
 namespace MASES.JNet
 {
+    class CLIParam
+    {
+        // CommonArgs
+        public const string LogClassPath = "LogClassPath";
+    }
+
     /// <summary>
     /// Public entry point of <see cref="JNetCoreBase{T}"/>
     /// </summary>
@@ -194,6 +200,9 @@ namespace MASES.JNet
         #endregion
 
         #region Auxiliary Methods
+        /// <inheritdoc cref="Parser.HelpInfo(int?)"/>
+        public static string HelpInfo(int? width = null) => Parser.HelpInfo(width);
+
         /// <summary>
         /// Retrieve the <see cref="IJVMBridgeDefinition.ClassName"/> of <typeparamref name="T"></typeparamref>
         /// </summary>

@@ -18,9 +18,5 @@
 
 namespace MASES.JNet
 {
-    class CLIParam
-    {
-        // CommonArgs
-        public const string LogClassPath = "LogClassPath";
-    }
+
 }

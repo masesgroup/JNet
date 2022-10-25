@@ -23,15 +23,6 @@ using System.Linq;
 using System.Collections.Generic;
 using System.Reflection;
 
-namespace MASES.JNet
-{
-    class CLIParam
-    {
-        // CommonArgs
-        public const string LogClassPath = "LogClassPath";
-    }
-}
-
 namespace MASES.JNetReflector
 {
     class CLIParam : MASES.JNet.CLIParam

@@ -121,11 +121,14 @@ namespace MASES.JNetReflector
             if (ParsedArgs.Exist(CLIParam.JarList))
             {
                 var jars = ParsedArgs.Get<string>(CLIParam.JarList).Split(',', ';');
-                jarsToAnaylyze.AddRange(jars.Select((o) => Path.Combine(originalRootPath, o)));
+                foreach (var item in jars.Select((o) => Path.Combine(originalRootPath, o)))
+                {
+                    if (!jarsToAnaylyze.Contains(item)) jarsToAnaylyze.Add(item);
+                }
             }
             else
             {
-                jarsToAnaylyze.AddRange(Directory.EnumerateFiles(originalRootPath));
+                jarsToAnaylyze.AddRange(Directory.EnumerateFiles(originalRootPath, "*.jar"));
             }
             _JarsToAnaylyze = jarsToAnaylyze;
 
@@ -133,7 +136,10 @@ namespace MASES.JNetReflector
             if (ParsedArgs.Exist(CLIParam.NamespacesToAvoid))
             {
                 var namespaces = ParsedArgs.Get<string>(CLIParam.NamespacesToAvoid).Split(',', ';');
-                namespacesToAvoid.AddRange(namespaces.Select((o) => o.Replace('/', '.')));
+                foreach (var item in namespaces.Select((o) => o.Replace('/', '.')))
+                {
+                    if (!namespacesToAvoid.Contains(item)) namespacesToAvoid.Add(item);
+                }
             }
             _NamespacesToAvoid = namespacesToAvoid;
 
@@ -173,7 +179,5 @@ namespace MASES.JNetReflector
     /// </summary>
     public class JNetReflectedCore : JNetReflectedCore<JNetReflectedCore>
     {
-        /// <inheritdoc cref="Parser.HelpInfo(int?)"/>
-        public static string HelpInfo(int? width = null) => Parser.HelpInfo(width);
     }
 }
