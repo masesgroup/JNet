@@ -163,12 +163,16 @@ jobs:
       - name: Compile JNetReflector
         run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" src\net\JNetReflector\JNetReflector.csproj
  
+      - name: Compile JNetPS
+        run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" src\net\JNetPS\JNetPS.csproj
+ 
       - uses: nuget/setup-nuget@v1
         with:
           nuget-version: '5.x'
           
       - run: nuget pack src\net\JNetCLI\JNetCLI.nuspec -OutputDirectory .\bin
       - run: nuget pack src\net\JNetReflector\JNetReflector.nuspec -OutputDirectory .\bin
+      - run: nuget pack src\net\JNetPS\JNetPS.nuspec -OutputDirectory .\bin
 
       - name: Recompile to create nuget packages
         run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" src\net\JNet.sln

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>MASES.JNetPS</id>
+    <version>1.4.9</version>
+    <title>JNetPS - PowerShell command line interface</title>
+    <authors>MASES s.r.l.</authors>
+    <owners>MASES s.r.l.</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectUrl>https://github.com/masesgroup/JNet/</projectUrl>
+    <repository type="git" url="https://github.com/masesgroup/JNet/" />
+    <description>JNetPS - PowerShell interface of JNet</description>
+    <releaseNotes>https://github.com/masesgroup/JNet/releases</releaseNotes>
+    <copyright>Copyright ©  MASES s.r.l. 2022</copyright>
+    <license type="file">LICENSE</license>
+    <icon>JCOB128x128.png</icon>
+    <tags>jnet cli dotnet clr netcore net6 powershell</tags>
+    <readme>usagePS.md</readme>
+  </metadata>
+	<files>
+		<file src="..\..\..\LICENSE" target="LICENSE" />
+		<file src="..\Common\JCOB128x128.png" target="" />
+		<file src="..\Documentation\articles\usagePS.md" target="" />
+		<file src="..\..\..\binPS\net6.0\" target="net6.0" />
+		<file src="..\..\..\binPS\net462\" target="net462" />
+		<file src=".\Scripts\JNetPS.psd1" target="" />
+		<file src=".\Scripts\JNetPS.psm1" target="" />
+	</files>
+</package>
