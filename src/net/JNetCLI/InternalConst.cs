@@ -18,6 +18,17 @@
 
 namespace MASES.JNetCLI
 {
+    class CLIParam
+    {
+        // ReflectorArgs
+        public const string Interactive = "Interactive";
+        public const string RunCommand = "RunCommand";
+        public const string Script = "Script";
+        public const string JarList = "JarList";
+        public const string NamespaceList = "NamespaceList";
+        public const string ImportList = "ImportList";
+    }
+
     class InternalConst
     {
 

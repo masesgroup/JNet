@@ -3,11 +3,11 @@
 	<PropertyGroup>
 		<AssemblyName>MASES.JNet</AssemblyName>
 		<RootNamespace>MASES.JNet</RootNamespace>
-		<Title>JNet - .NET gateway for JVM APIs (Java, Scala, Kotlin, ...)</Title>
-		<Description>JNet - .NET gateway for JVM APIs (Java, Scala, Kotlin, ...)</Description>
+		<Title>JNet - .NET gateway for JVM APIs (Java, Scala, Kotlin, ...) to use .NET and JVM side-by-side</Title>
+		<Description>JNet - .NET gateway for JVM APIs (Java, Scala, Kotlin, ...) to use .NET and JVM side-by-side</Description>
 		<Product>JNet</Product>
 		<OutputPath>..\..\..\bin\</OutputPath>
-		<PackageTags>jnet dotnet clr dotnetcore netcore dotnet6 net6 java bridge gateway</PackageTags>
+		<PackageTags>jnet dotnet clr jvm dotnetcore netcore dotnet6 net6 java bridge gateway</PackageTags>
 		<PackageId>MASES.JNet</PackageId>
 		<PackageReadmeFile>usage.md</PackageReadmeFile>
 	</PropertyGroup>
