@@ -22765,6 +22765,24 @@ references:
   fullName.vb: MASES.JNet.JNetCoreBase(Of T).CommandLineArguments
   nameWithType: JNetCoreBase<T>.CommandLineArguments
   nameWithType.vb: JNetCoreBase(Of T).CommandLineArguments
+- uid: MASES.JNet.JNetCoreBase`1.HelpInfo(System.Nullable{System.Int32})
+  name: HelpInfo(Nullable<Int32>)
+  href: api/MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_HelpInfo_System_Nullable_System_Int32__
+  commentId: M:MASES.JNet.JNetCoreBase`1.HelpInfo(System.Nullable{System.Int32})
+  name.vb: HelpInfo(Nullable(Of Int32))
+  fullName: MASES.JNet.JNetCoreBase<T>.HelpInfo(System.Nullable<System.Int32>)
+  fullName.vb: MASES.JNet.JNetCoreBase(Of T).HelpInfo(System.Nullable(Of System.Int32))
+  nameWithType: JNetCoreBase<T>.HelpInfo(Nullable<Int32>)
+  nameWithType.vb: JNetCoreBase(Of T).HelpInfo(Nullable(Of Int32))
+- uid: MASES.JNet.JNetCoreBase`1.HelpInfo*
+  name: HelpInfo
+  href: api/MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_HelpInfo_
+  commentId: Overload:MASES.JNet.JNetCoreBase`1.HelpInfo
+  isSpec: "True"
+  fullName: MASES.JNet.JNetCoreBase<T>.HelpInfo
+  fullName.vb: MASES.JNet.JNetCoreBase(Of T).HelpInfo
+  nameWithType: JNetCoreBase<T>.HelpInfo
+  nameWithType.vb: JNetCoreBase(Of T).HelpInfo
 - uid: MASES.JNet.JNetCoreBase`1.JVMOptions
   name: JVMOptions
   href: api/MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_JVMOptions
@@ -22906,6 +22924,246 @@ references:
   fullName.vb: MASES.JNet.JNetExtensions.IExecuteArray(Of T)(MASES.JCOBridge.C2JBridge.JVMBridgeBase, System.String, System.Object())
   nameWithType: JNetExtensions.IExecuteArray<T>(JVMBridgeBase, String, Object[])
   nameWithType.vb: JNetExtensions.IExecuteArray(Of T)(JVMBridgeBase, String, Object())
+- uid: MASES.JNetCLI
+  name: MASES.JNetCLI
+  href: api/MASES.JNetCLI.html
+  commentId: N:MASES.JNetCLI
+  fullName: MASES.JNetCLI
+  nameWithType: MASES.JNetCLI
+- uid: MASES.JNetCLI.GenericCommand
+  name: GenericCommand
+  href: api/MASES.JNetCLI.GenericCommand.html
+  commentId: T:MASES.JNetCLI.GenericCommand
+  fullName: MASES.JNetCLI.GenericCommand
+  nameWithType: GenericCommand
+- uid: MASES.JNetCLI.GenericCommand.#ctor
+  name: GenericCommand()
+  href: api/MASES.JNetCLI.GenericCommand.html#MASES_JNetCLI_GenericCommand__ctor
+  commentId: M:MASES.JNetCLI.GenericCommand.#ctor
+  fullName: MASES.JNetCLI.GenericCommand.GenericCommand()
+  nameWithType: GenericCommand.GenericCommand()
+- uid: MASES.JNetCLI.GenericCommand.#ctor*
+  name: GenericCommand
+  href: api/MASES.JNetCLI.GenericCommand.html#MASES_JNetCLI_GenericCommand__ctor_
+  commentId: Overload:MASES.JNetCLI.GenericCommand.#ctor
+  isSpec: "True"
+  fullName: MASES.JNetCLI.GenericCommand.GenericCommand
+  nameWithType: GenericCommand.GenericCommand
+- uid: MASES.JNetCLI.GenericCommand.Create(System.String)
+  name: Create(String)
+  href: api/MASES.JNetCLI.GenericCommand.html#MASES_JNetCLI_GenericCommand_Create_System_String_
+  commentId: M:MASES.JNetCLI.GenericCommand.Create(System.String)
+  fullName: MASES.JNetCLI.GenericCommand.Create(System.String)
+  nameWithType: GenericCommand.Create(String)
+- uid: MASES.JNetCLI.GenericCommand.Create*
+  name: Create
+  href: api/MASES.JNetCLI.GenericCommand.html#MASES_JNetCLI_GenericCommand_Create_
+  commentId: Overload:MASES.JNetCLI.GenericCommand.Create
+  isSpec: "True"
+  fullName: MASES.JNetCLI.GenericCommand.Create
+  nameWithType: GenericCommand.Create
+- uid: MASES.JNetCLI.JNetCLICore
+  name: JNetCLICore
+  href: api/MASES.JNetCLI.JNetCLICore.html
+  commentId: T:MASES.JNetCLI.JNetCLICore
+  fullName: MASES.JNetCLI.JNetCLICore
+  nameWithType: JNetCLICore
+- uid: MASES.JNetCLI.JNetCLICore`1
+  name: JNetCLICore<T>
+  href: api/MASES.JNetCLI.JNetCLICore-1.html
+  commentId: T:MASES.JNetCLI.JNetCLICore`1
+  name.vb: JNetCLICore(Of T)
+  fullName: MASES.JNetCLI.JNetCLICore<T>
+  fullName.vb: MASES.JNetCLI.JNetCLICore(Of T)
+  nameWithType: JNetCLICore<T>
+  nameWithType.vb: JNetCLICore(Of T)
+- uid: MASES.JNetCLI.JNetCLICore`1.#ctor
+  name: JNetCLICore()
+  href: api/MASES.JNetCLI.JNetCLICore-1.html#MASES_JNetCLI_JNetCLICore_1__ctor
+  commentId: M:MASES.JNetCLI.JNetCLICore`1.#ctor
+  fullName: MASES.JNetCLI.JNetCLICore<T>.JNetCLICore()
+  fullName.vb: MASES.JNetCLI.JNetCLICore(Of T).JNetCLICore()
+  nameWithType: JNetCLICore<T>.JNetCLICore()
+  nameWithType.vb: JNetCLICore(Of T).JNetCLICore()
+- uid: MASES.JNetCLI.JNetCLICore`1.#ctor*
+  name: JNetCLICore
+  href: api/MASES.JNetCLI.JNetCLICore-1.html#MASES_JNetCLI_JNetCLICore_1__ctor_
+  commentId: Overload:MASES.JNetCLI.JNetCLICore`1.#ctor
+  isSpec: "True"
+  fullName: MASES.JNetCLI.JNetCLICore<T>.JNetCLICore
+  fullName.vb: MASES.JNetCLI.JNetCLICore(Of T).JNetCLICore
+  nameWithType: JNetCLICore<T>.JNetCLICore
+  nameWithType.vb: JNetCLICore(Of T).JNetCLICore
+- uid: MASES.JNetCLI.JNetCLICore`1.CommandLineArguments
+  name: CommandLineArguments
+  href: api/MASES.JNetCLI.JNetCLICore-1.html#MASES_JNetCLI_JNetCLICore_1_CommandLineArguments
+  commentId: P:MASES.JNetCLI.JNetCLICore`1.CommandLineArguments
+  fullName: MASES.JNetCLI.JNetCLICore<T>.CommandLineArguments
+  fullName.vb: MASES.JNetCLI.JNetCLICore(Of T).CommandLineArguments
+  nameWithType: JNetCLICore<T>.CommandLineArguments
+  nameWithType.vb: JNetCLICore(Of T).CommandLineArguments
+- uid: MASES.JNetCLI.JNetCLICore`1.CommandLineArguments*
+  name: CommandLineArguments
+  href: api/MASES.JNetCLI.JNetCLICore-1.html#MASES_JNetCLI_JNetCLICore_1_CommandLineArguments_
+  commentId: Overload:MASES.JNetCLI.JNetCLICore`1.CommandLineArguments
+  isSpec: "True"
+  fullName: MASES.JNetCLI.JNetCLICore<T>.CommandLineArguments
+  fullName.vb: MASES.JNetCLI.JNetCLICore(Of T).CommandLineArguments
+  nameWithType: JNetCLICore<T>.CommandLineArguments
+  nameWithType.vb: JNetCLICore(Of T).CommandLineArguments
+- uid: MASES.JNetCLI.JNetCLICore`1.ImportList
+  name: ImportList
+  href: api/MASES.JNetCLI.JNetCLICore-1.html#MASES_JNetCLI_JNetCLICore_1_ImportList
+  commentId: P:MASES.JNetCLI.JNetCLICore`1.ImportList
+  fullName: MASES.JNetCLI.JNetCLICore<T>.ImportList
+  fullName.vb: MASES.JNetCLI.JNetCLICore(Of T).ImportList
+  nameWithType: JNetCLICore<T>.ImportList
+  nameWithType.vb: JNetCLICore(Of T).ImportList
+- uid: MASES.JNetCLI.JNetCLICore`1.ImportList*
+  name: ImportList
+  href: api/MASES.JNetCLI.JNetCLICore-1.html#MASES_JNetCLI_JNetCLICore_1_ImportList_
+  commentId: Overload:MASES.JNetCLI.JNetCLICore`1.ImportList
+  isSpec: "True"
+  fullName: MASES.JNetCLI.JNetCLICore<T>.ImportList
+  fullName.vb: MASES.JNetCLI.JNetCLICore(Of T).ImportList
+  nameWithType: JNetCLICore<T>.ImportList
+  nameWithType.vb: JNetCLICore(Of T).ImportList
+- uid: MASES.JNetCLI.JNetCLICore`1.Interactive
+  name: Interactive
+  href: api/MASES.JNetCLI.JNetCLICore-1.html#MASES_JNetCLI_JNetCLICore_1_Interactive
+  commentId: P:MASES.JNetCLI.JNetCLICore`1.Interactive
+  fullName: MASES.JNetCLI.JNetCLICore<T>.Interactive
+  fullName.vb: MASES.JNetCLI.JNetCLICore(Of T).Interactive
+  nameWithType: JNetCLICore<T>.Interactive
+  nameWithType.vb: JNetCLICore(Of T).Interactive
+- uid: MASES.JNetCLI.JNetCLICore`1.Interactive*
+  name: Interactive
+  href: api/MASES.JNetCLI.JNetCLICore-1.html#MASES_JNetCLI_JNetCLICore_1_Interactive_
+  commentId: Overload:MASES.JNetCLI.JNetCLICore`1.Interactive
+  isSpec: "True"
+  fullName: MASES.JNetCLI.JNetCLICore<T>.Interactive
+  fullName.vb: MASES.JNetCLI.JNetCLICore(Of T).Interactive
+  nameWithType: JNetCLICore<T>.Interactive
+  nameWithType.vb: JNetCLICore(Of T).Interactive
+- uid: MASES.JNetCLI.JNetCLICore`1.JarList
+  name: JarList
+  href: api/MASES.JNetCLI.JNetCLICore-1.html#MASES_JNetCLI_JNetCLICore_1_JarList
+  commentId: P:MASES.JNetCLI.JNetCLICore`1.JarList
+  fullName: MASES.JNetCLI.JNetCLICore<T>.JarList
+  fullName.vb: MASES.JNetCLI.JNetCLICore(Of T).JarList
+  nameWithType: JNetCLICore<T>.JarList
+  nameWithType.vb: JNetCLICore(Of T).JarList
+- uid: MASES.JNetCLI.JNetCLICore`1.JarList*
+  name: JarList
+  href: api/MASES.JNetCLI.JNetCLICore-1.html#MASES_JNetCLI_JNetCLICore_1_JarList_
+  commentId: Overload:MASES.JNetCLI.JNetCLICore`1.JarList
+  isSpec: "True"
+  fullName: MASES.JNetCLI.JNetCLICore<T>.JarList
+  fullName.vb: MASES.JNetCLI.JNetCLICore(Of T).JarList
+  nameWithType: JNetCLICore<T>.JarList
+  nameWithType.vb: JNetCLICore(Of T).JarList
+- uid: MASES.JNetCLI.JNetCLICore`1.NamespaceList
+  name: NamespaceList
+  href: api/MASES.JNetCLI.JNetCLICore-1.html#MASES_JNetCLI_JNetCLICore_1_NamespaceList
+  commentId: P:MASES.JNetCLI.JNetCLICore`1.NamespaceList
+  fullName: MASES.JNetCLI.JNetCLICore<T>.NamespaceList
+  fullName.vb: MASES.JNetCLI.JNetCLICore(Of T).NamespaceList
+  nameWithType: JNetCLICore<T>.NamespaceList
+  nameWithType.vb: JNetCLICore(Of T).NamespaceList
+- uid: MASES.JNetCLI.JNetCLICore`1.NamespaceList*
+  name: NamespaceList
+  href: api/MASES.JNetCLI.JNetCLICore-1.html#MASES_JNetCLI_JNetCLICore_1_NamespaceList_
+  commentId: Overload:MASES.JNetCLI.JNetCLICore`1.NamespaceList
+  isSpec: "True"
+  fullName: MASES.JNetCLI.JNetCLICore<T>.NamespaceList
+  fullName.vb: MASES.JNetCLI.JNetCLICore(Of T).NamespaceList
+  nameWithType: JNetCLICore<T>.NamespaceList
+  nameWithType.vb: JNetCLICore(Of T).NamespaceList
+- uid: MASES.JNetCLI.JNetCLICore`1.Options
+  name: Options
+  href: api/MASES.JNetCLI.JNetCLICore-1.html#MASES_JNetCLI_JNetCLICore_1_Options
+  commentId: P:MASES.JNetCLI.JNetCLICore`1.Options
+  fullName: MASES.JNetCLI.JNetCLICore<T>.Options
+  fullName.vb: MASES.JNetCLI.JNetCLICore(Of T).Options
+  nameWithType: JNetCLICore<T>.Options
+  nameWithType.vb: JNetCLICore(Of T).Options
+- uid: MASES.JNetCLI.JNetCLICore`1.Options*
+  name: Options
+  href: api/MASES.JNetCLI.JNetCLICore-1.html#MASES_JNetCLI_JNetCLICore_1_Options_
+  commentId: Overload:MASES.JNetCLI.JNetCLICore`1.Options
+  isSpec: "True"
+  fullName: MASES.JNetCLI.JNetCLICore<T>.Options
+  fullName.vb: MASES.JNetCLI.JNetCLICore(Of T).Options
+  nameWithType: JNetCLICore<T>.Options
+  nameWithType.vb: JNetCLICore(Of T).Options
+- uid: MASES.JNetCLI.JNetCLICore`1.PathToParse
+  name: PathToParse
+  href: api/MASES.JNetCLI.JNetCLICore-1.html#MASES_JNetCLI_JNetCLICore_1_PathToParse
+  commentId: P:MASES.JNetCLI.JNetCLICore`1.PathToParse
+  fullName: MASES.JNetCLI.JNetCLICore<T>.PathToParse
+  fullName.vb: MASES.JNetCLI.JNetCLICore(Of T).PathToParse
+  nameWithType: JNetCLICore<T>.PathToParse
+  nameWithType.vb: JNetCLICore(Of T).PathToParse
+- uid: MASES.JNetCLI.JNetCLICore`1.PathToParse*
+  name: PathToParse
+  href: api/MASES.JNetCLI.JNetCLICore-1.html#MASES_JNetCLI_JNetCLICore_1_PathToParse_
+  commentId: Overload:MASES.JNetCLI.JNetCLICore`1.PathToParse
+  isSpec: "True"
+  fullName: MASES.JNetCLI.JNetCLICore<T>.PathToParse
+  fullName.vb: MASES.JNetCLI.JNetCLICore(Of T).PathToParse
+  nameWithType: JNetCLICore<T>.PathToParse
+  nameWithType.vb: JNetCLICore(Of T).PathToParse
+- uid: MASES.JNetCLI.JNetCLICore`1.ProcessCommandLine
+  name: ProcessCommandLine()
+  href: api/MASES.JNetCLI.JNetCLICore-1.html#MASES_JNetCLI_JNetCLICore_1_ProcessCommandLine
+  commentId: M:MASES.JNetCLI.JNetCLICore`1.ProcessCommandLine
+  fullName: MASES.JNetCLI.JNetCLICore<T>.ProcessCommandLine()
+  fullName.vb: MASES.JNetCLI.JNetCLICore(Of T).ProcessCommandLine()
+  nameWithType: JNetCLICore<T>.ProcessCommandLine()
+  nameWithType.vb: JNetCLICore(Of T).ProcessCommandLine()
+- uid: MASES.JNetCLI.JNetCLICore`1.ProcessCommandLine*
+  name: ProcessCommandLine
+  href: api/MASES.JNetCLI.JNetCLICore-1.html#MASES_JNetCLI_JNetCLICore_1_ProcessCommandLine_
+  commentId: Overload:MASES.JNetCLI.JNetCLICore`1.ProcessCommandLine
+  isSpec: "True"
+  fullName: MASES.JNetCLI.JNetCLICore<T>.ProcessCommandLine
+  fullName.vb: MASES.JNetCLI.JNetCLICore(Of T).ProcessCommandLine
+  nameWithType: JNetCLICore<T>.ProcessCommandLine
+  nameWithType.vb: JNetCLICore(Of T).ProcessCommandLine
+- uid: MASES.JNetCLI.JNetCLICore`1.RunCommand
+  name: RunCommand
+  href: api/MASES.JNetCLI.JNetCLICore-1.html#MASES_JNetCLI_JNetCLICore_1_RunCommand
+  commentId: P:MASES.JNetCLI.JNetCLICore`1.RunCommand
+  fullName: MASES.JNetCLI.JNetCLICore<T>.RunCommand
+  fullName.vb: MASES.JNetCLI.JNetCLICore(Of T).RunCommand
+  nameWithType: JNetCLICore<T>.RunCommand
+  nameWithType.vb: JNetCLICore(Of T).RunCommand
+- uid: MASES.JNetCLI.JNetCLICore`1.RunCommand*
+  name: RunCommand
+  href: api/MASES.JNetCLI.JNetCLICore-1.html#MASES_JNetCLI_JNetCLICore_1_RunCommand_
+  commentId: Overload:MASES.JNetCLI.JNetCLICore`1.RunCommand
+  isSpec: "True"
+  fullName: MASES.JNetCLI.JNetCLICore<T>.RunCommand
+  fullName.vb: MASES.JNetCLI.JNetCLICore(Of T).RunCommand
+  nameWithType: JNetCLICore<T>.RunCommand
+  nameWithType.vb: JNetCLICore(Of T).RunCommand
+- uid: MASES.JNetCLI.JNetCLICore`1.Script
+  name: Script
+  href: api/MASES.JNetCLI.JNetCLICore-1.html#MASES_JNetCLI_JNetCLICore_1_Script
+  commentId: P:MASES.JNetCLI.JNetCLICore`1.Script
+  fullName: MASES.JNetCLI.JNetCLICore<T>.Script
+  fullName.vb: MASES.JNetCLI.JNetCLICore(Of T).Script
+  nameWithType: JNetCLICore<T>.Script
+  nameWithType.vb: JNetCLICore(Of T).Script
+- uid: MASES.JNetCLI.JNetCLICore`1.Script*
+  name: Script
+  href: api/MASES.JNetCLI.JNetCLICore-1.html#MASES_JNetCLI_JNetCLICore_1_Script_
+  commentId: Overload:MASES.JNetCLI.JNetCLICore`1.Script
+  isSpec: "True"
+  fullName: MASES.JNetCLI.JNetCLICore<T>.Script
+  fullName.vb: MASES.JNetCLI.JNetCLICore(Of T).Script
+  nameWithType: JNetCLICore<T>.Script
+  nameWithType.vb: JNetCLICore(Of T).Script
 - uid: MASES.JNetReflector
   name: MASES.JNetReflector
   href: api/MASES.JNetReflector.html
@@ -22955,22 +23213,6 @@ references:
   commentId: T:MASES.JNetReflector.JNetReflectedCore
   fullName: MASES.JNetReflector.JNetReflectedCore
   nameWithType: JNetReflectedCore
-- uid: MASES.JNetReflector.JNetReflectedCore.HelpInfo(System.Nullable{System.Int32})
-  name: HelpInfo(Nullable<Int32>)
-  href: api/MASES.JNetReflector.JNetReflectedCore.html#MASES_JNetReflector_JNetReflectedCore_HelpInfo_System_Nullable_System_Int32__
-  commentId: M:MASES.JNetReflector.JNetReflectedCore.HelpInfo(System.Nullable{System.Int32})
-  name.vb: HelpInfo(Nullable(Of Int32))
-  fullName: MASES.JNetReflector.JNetReflectedCore.HelpInfo(System.Nullable<System.Int32>)
-  fullName.vb: MASES.JNetReflector.JNetReflectedCore.HelpInfo(System.Nullable(Of System.Int32))
-  nameWithType: JNetReflectedCore.HelpInfo(Nullable<Int32>)
-  nameWithType.vb: JNetReflectedCore.HelpInfo(Nullable(Of Int32))
-- uid: MASES.JNetReflector.JNetReflectedCore.HelpInfo*
-  name: HelpInfo
-  href: api/MASES.JNetReflector.JNetReflectedCore.html#MASES_JNetReflector_JNetReflectedCore_HelpInfo_
-  commentId: Overload:MASES.JNetReflector.JNetReflectedCore.HelpInfo
-  isSpec: "True"
-  fullName: MASES.JNetReflector.JNetReflectedCore.HelpInfo
-  nameWithType: JNetReflectedCore.HelpInfo
 - uid: MASES.JNetReflector.JNetReflectedCore`1
   name: JNetReflectedCore<T>
   href: api/MASES.JNetReflector.JNetReflectedCore-1.html
