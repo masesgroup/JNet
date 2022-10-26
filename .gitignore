@@ -24,7 +24,8 @@ launchSettings.json
 /**/packages/
 /**/bin/
 /**/binCLI/
-/**/binPS/
+/**/MASES.JNetPS/
+/**/binPSCore/
 /**/binReflector/
 /**/obj/
 /**/jars/
