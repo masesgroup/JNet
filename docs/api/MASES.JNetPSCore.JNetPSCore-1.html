@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class JNetCLICore&lt;T&gt;
+    <title>Class JNetPSCore&lt;T&gt;
    | JNet website </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class JNetCLICore&lt;T&gt;
+    <meta name="title" content="Class JNetPSCore&lt;T&gt;
    | JNet website ">
     <meta name="generator" content="docfx 2.59.4.0">
     
@@ -68,12 +68,12 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="MASES.JNetCLI.JNetCLICore`1">
+            <article class="content wrap" id="_content" data-uid="MASES.JNetPSCore.JNetPSCore`1">
   
   
-  <h1 id="MASES_JNetCLI_JNetCLICore_1" data-uid="MASES.JNetCLI.JNetCLICore`1" class="text-break">Class JNetCLICore&lt;T&gt;
+  <h1 id="MASES_JNetPSCore_JNetPSCore_1" data-uid="MASES.JNetPSCore.JNetPSCore`1" class="text-break">Class JNetPSCore&lt;T&gt;
   </h1>
-  <div class="markdown level0 summary"><p>Public entry point of <a class="xref" href="MASES.JNetCLI.JNetCLICore-1.html">JNetCLICore&lt;T&gt;</a></p>
+  <div class="markdown level0 summary"><p>Public entry point of <a class="xref" href="MASES.JNetPSCore.JNetPSCore-1.html">JNetPSCore&lt;T&gt;</a></p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -83,8 +83,8 @@
     <div class="level2"><span class="xref">MASES.JCOBridge.C2JBridge.SetupJVMWrapper</span>&lt;T&gt;</div>
     <div class="level3"><a class="xref" href="MASES.JNet.JNetCoreBase-1.html">JNetCoreBase</a>&lt;T&gt;</div>
     <div class="level4"><a class="xref" href="MASES.JNet.JNetCore-1.html">JNetCore</a>&lt;T&gt;</div>
-    <div class="level5"><span class="xref">JNetCLICore&lt;T&gt;</span></div>
-      <div class="level6"><a class="xref" href="MASES.JNetCLI.JNetCLICore.html">JNetCLICore</a></div>
+    <div class="level5"><span class="xref">JNetPSCore&lt;T&gt;</span></div>
+      <div class="level6"><a class="xref" href="MASES.JNetPSCore.JNetPSCore.html">JNetPSCore</a></div>
   </div>
   <div class="implements">
     <h5>Implements</h5>
@@ -172,7 +172,13 @@
       <a class="xref" href="MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_Parser">JNetCoreBase&lt;T&gt;.Parser</a>
     </div>
     <div>
+      <a class="xref" href="MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_CommandLineArguments">JNetCoreBase&lt;T&gt;.CommandLineArguments</a>
+    </div>
+    <div>
       <a class="xref" href="MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_ParsedArgs">JNetCoreBase&lt;T&gt;.ParsedArgs</a>
+    </div>
+    <div>
+      <a class="xref" href="MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_ProcessCommandLine">JNetCoreBase&lt;T&gt;.ProcessCommandLine()</a>
     </div>
     <div>
       <a class="xref" href="MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_JVMOptions">JNetCoreBase&lt;T&gt;.JVMOptions</a>
@@ -298,11 +304,11 @@
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="MASES.JNetCLI.html">MASES.JNetCLI</a></h6>
-  <h6><strong>Assembly</strong>: MASES.JNetCLI.dll</h6>
-  <h5 id="MASES_JNetCLI_JNetCLICore_1_syntax">Syntax</h5>
+  <h6><strong>Namespace</strong>: <a class="xref" href="MASES.JNetPSCore.html">MASES.JNetPSCore</a></h6>
+  <h6><strong>Assembly</strong>: MASES.JNetPSCore.dll</h6>
+  <h5 id="MASES_JNetPSCore_JNetPSCore_1_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class JNetCLICore&lt;T&gt; : JNetCore&lt;T&gt;, IJVMWrapperManagement, IJVMBridgeCore where T : JNetCLICore&lt;T&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class JNetPSCore&lt;T&gt; : JNetCore&lt;T&gt;, IJVMWrapperManagement, IJVMBridgeCore where T : JNetPSCore&lt;T&gt;</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -323,184 +329,31 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetCLI_JNetCLICore_1__ctor.md&amp;value=---%0Auid%3A%20MASES.JNetCLI.JNetCLICore%601.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetPSCore_JNetPSCore_1__ctor.md&amp;value=---%0Auid%3A%20MASES.JNetPSCore.JNetPSCore%601.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetCLI/JNetCLICore.cs/#L91">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/JNetPSCore.cs/#L65">View Source</a>
   </span>
-  <a id="MASES_JNetCLI_JNetCLICore_1__ctor_" data-uid="MASES.JNetCLI.JNetCLICore`1.#ctor*"></a>
-  <h4 id="MASES_JNetCLI_JNetCLICore_1__ctor" data-uid="MASES.JNetCLI.JNetCLICore`1.#ctor">JNetCLICore()</h4>
+  <a id="MASES_JNetPSCore_JNetPSCore_1__ctor_" data-uid="MASES.JNetPSCore.JNetPSCore`1.#ctor*"></a>
+  <h4 id="MASES_JNetPSCore_JNetPSCore_1__ctor" data-uid="MASES.JNetPSCore.JNetPSCore`1.#ctor">JNetPSCore()</h4>
   <div class="markdown level1 summary"><p>Public ctor</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public JNetCLICore()</code></pre>
+    <pre><code class="lang-csharp hljs">public JNetPSCore()</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetCLI_JNetCLICore_1_CommandLineArguments.md&amp;value=---%0Auid%3A%20MASES.JNetCLI.JNetCLICore%601.CommandLineArguments%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetPSCore_JNetPSCore_1_Options.md&amp;value=---%0Auid%3A%20MASES.JNetPSCore.JNetPSCore%601.Options%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetCLI/JNetCLICore.cs/#L34">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/JNetPSCore.cs/#L69">View Source</a>
   </span>
-  <a id="MASES_JNetCLI_JNetCLICore_1_CommandLineArguments_" data-uid="MASES.JNetCLI.JNetCLICore`1.CommandLineArguments*"></a>
-  <h4 id="MASES_JNetCLI_JNetCLICore_1_CommandLineArguments" data-uid="MASES.JNetCLI.JNetCLICore`1.CommandLineArguments">CommandLineArguments</h4>
-  <div class="markdown level1 summary"><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> for command line</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override IEnumerable&lt;IArgumentMetadata&gt; CommandLineArguments { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">MASES.CLIParser.IArgumentMetadata</span>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">MASES.JNet.JNetCoreBase&lt;T&gt;.CommandLineArguments</span></div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetCLI_JNetCLICore_1_ImportList.md&amp;value=---%0Auid%3A%20MASES.JNetCLI.JNetCLICore%601.ImportList%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetCLI/JNetCLICore.cs/#L115">View Source</a>
-  </span>
-  <a id="MASES_JNetCLI_JNetCLICore_1_ImportList_" data-uid="MASES.JNetCLI.JNetCLICore`1.ImportList*"></a>
-  <h4 id="MASES_JNetCLI_JNetCLICore_1_ImportList" data-uid="MASES.JNetCLI.JNetCLICore`1.ImportList">ImportList</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;string&gt; ImportList { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetCLI_JNetCLICore_1_Interactive.md&amp;value=---%0Auid%3A%20MASES.JNetCLI.JNetCLICore%601.Interactive%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetCLI/JNetCLICore.cs/#L100">View Source</a>
-  </span>
-  <a id="MASES_JNetCLI_JNetCLICore_1_Interactive_" data-uid="MASES.JNetCLI.JNetCLICore`1.Interactive*"></a>
-  <h4 id="MASES_JNetCLI_JNetCLICore_1_Interactive" data-uid="MASES.JNetCLI.JNetCLICore`1.Interactive">Interactive</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool Interactive { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetCLI_JNetCLICore_1_JarList.md&amp;value=---%0Auid%3A%20MASES.JNetCLI.JNetCLICore%601.JarList%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetCLI/JNetCLICore.cs/#L109">View Source</a>
-  </span>
-  <a id="MASES_JNetCLI_JNetCLICore_1_JarList_" data-uid="MASES.JNetCLI.JNetCLICore`1.JarList*"></a>
-  <h4 id="MASES_JNetCLI_JNetCLICore_1_JarList" data-uid="MASES.JNetCLI.JNetCLICore`1.JarList">JarList</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;string&gt; JarList { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetCLI_JNetCLICore_1_NamespaceList.md&amp;value=---%0Auid%3A%20MASES.JNetCLI.JNetCLICore%601.NamespaceList%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetCLI/JNetCLICore.cs/#L112">View Source</a>
-  </span>
-  <a id="MASES_JNetCLI_JNetCLICore_1_NamespaceList_" data-uid="MASES.JNetCLI.JNetCLICore`1.NamespaceList*"></a>
-  <h4 id="MASES_JNetCLI_JNetCLICore_1_NamespaceList" data-uid="MASES.JNetCLI.JNetCLICore`1.NamespaceList">NamespaceList</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;string&gt; NamespaceList { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetCLI_JNetCLICore_1_Options.md&amp;value=---%0Auid%3A%20MASES.JNetCLI.JNetCLICore%601.Options%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetCLI/JNetCLICore.cs/#L170">View Source</a>
-  </span>
-  <a id="MASES_JNetCLI_JNetCLICore_1_Options_" data-uid="MASES.JNetCLI.JNetCLICore`1.Options*"></a>
-  <h4 id="MASES_JNetCLI_JNetCLICore_1_Options" data-uid="MASES.JNetCLI.JNetCLICore`1.Options">Options</h4>
+  <a id="MASES_JNetPSCore_JNetPSCore_1_Options_" data-uid="MASES.JNetPSCore.JNetPSCore`1.Options*"></a>
+  <h4 id="MASES_JNetPSCore_JNetPSCore_1_Options" data-uid="MASES.JNetPSCore.JNetPSCore`1.Options">Options</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -526,13 +379,13 @@
   <div><span class="xref">MASES.JNet.JNetCore&lt;T&gt;.Options</span></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetCLI_JNetCLICore_1_PathToParse.md&amp;value=---%0Auid%3A%20MASES.JNetCLI.JNetCLICore%601.PathToParse%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetPSCore_JNetPSCore_1_PathToParse.md&amp;value=---%0Auid%3A%20MASES.JNetPSCore.JNetPSCore%601.PathToParse%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetCLI/JNetCLICore.cs/#L173">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/JNetPSCore.cs/#L72">View Source</a>
   </span>
-  <a id="MASES_JNetCLI_JNetCLICore_1_PathToParse_" data-uid="MASES.JNetCLI.JNetCLICore`1.PathToParse*"></a>
-  <h4 id="MASES_JNetCLI_JNetCLICore_1_PathToParse" data-uid="MASES.JNetCLI.JNetCLICore`1.PathToParse">PathToParse</h4>
+  <a id="MASES_JNetPSCore_JNetPSCore_1_PathToParse_" data-uid="MASES.JNetPSCore.JNetPSCore`1.PathToParse*"></a>
+  <h4 id="MASES_JNetPSCore_JNetPSCore_1_PathToParse" data-uid="MASES.JNetPSCore.JNetPSCore`1.PathToParse">PathToParse</h4>
   <div class="markdown level1 summary"><p>A list of paths to be used in initialization of JVM ClassPath</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -557,100 +410,6 @@
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><span class="xref">MASES.JNet.JNetCore&lt;T&gt;.PathToParse</span></div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetCLI_JNetCLICore_1_RunCommand.md&amp;value=---%0Auid%3A%20MASES.JNetCLI.JNetCLICore%601.RunCommand%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetCLI/JNetCLICore.cs/#L103">View Source</a>
-  </span>
-  <a id="MASES_JNetCLI_JNetCLICore_1_RunCommand_" data-uid="MASES.JNetCLI.JNetCLICore`1.RunCommand*"></a>
-  <h4 id="MASES_JNetCLI_JNetCLICore_1_RunCommand" data-uid="MASES.JNetCLI.JNetCLICore`1.RunCommand">RunCommand</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string RunCommand { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetCLI_JNetCLICore_1_Script.md&amp;value=---%0Auid%3A%20MASES.JNetCLI.JNetCLICore%601.Script%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetCLI/JNetCLICore.cs/#L106">View Source</a>
-  </span>
-  <a id="MASES_JNetCLI_JNetCLICore_1_Script_" data-uid="MASES.JNetCLI.JNetCLICore`1.Script*"></a>
-  <h4 id="MASES_JNetCLI_JNetCLICore_1_Script" data-uid="MASES.JNetCLI.JNetCLICore`1.Script">Script</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string Script { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="methods">Methods
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetCLI_JNetCLICore_1_ProcessCommandLine.md&amp;value=---%0Auid%3A%20MASES.JNetCLI.JNetCLICore%601.ProcessCommandLine%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetCLI/JNetCLICore.cs/#L118">View Source</a>
-  </span>
-  <a id="MASES_JNetCLI_JNetCLICore_1_ProcessCommandLine_" data-uid="MASES.JNetCLI.JNetCLICore`1.ProcessCommandLine*"></a>
-  <h4 id="MASES_JNetCLI_JNetCLICore_1_ProcessCommandLine" data-uid="MASES.JNetCLI.JNetCLICore`1.ProcessCommandLine">ProcessCommandLine()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override string[] ProcessCommandLine()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>[]</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">MASES.JNet.JNetCoreBase&lt;T&gt;.ProcessCommandLine()</span></div>
   <h3 id="implements">Implements</h3>
   <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMInterop.IJVMWrapperManagement</span>
@@ -666,10 +425,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetCLI_JNetCLICore_1.md&amp;value=---%0Auid%3A%20MASES.JNetCLI.JNetCLICore%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetPSCore_JNetPSCore_1.md&amp;value=---%0Auid%3A%20MASES.JNetPSCore.JNetPSCore%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetCLI/JNetCLICore.cs/#L30" class="contribution-link">View Source</a>
+                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/JNetPSCore.cs/#L58" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

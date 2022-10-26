@@ -70,9 +70,34 @@
 <h1 id="jnet-cli">JNet: CLI</h1>
 
 <h2 id="installation">Installation</h2>
-<p>To install the tool follows the instructions on <a href="https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools">https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools</a>.</p>
+<ul>
+<li><strong>dotnet tool</strong> hosted on NuGet.org: check <a href="https://www.nuget.org/packages/MASES.JNetCLI/">https://www.nuget.org/packages/MASES.JNetCLI/</a> and <a href="https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools">https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools</a> for installation deep instructions.</li>
+<li><strong>Docker image</strong> hosted on <a href="https://github.com/masesgroup/JNet/pkgs/container/mases.jnet">https://github.com/masesgroup/JNet/pkgs/container/mases.jnet</a>: follow instruction within the page and general instruction on <a href="https://docs.docker.com">https://docs.docker.com</a></li>
+</ul>
 <h2 id="usage">Usage</h2>
-<p>The tool is under construction</p>
+<p>To use the CLI interface (JNetCLI) runs a command like the following:</p>
+<ul>
+<li><strong>dotnet tool</strong></li>
+</ul>
+<blockquote>
+<p>jnet -i</p>
+</blockquote>
+<ul>
+<li><strong>Docker image</strong></li>
+</ul>
+<blockquote>
+<p>docker run ghcr.io/masesgroup/mases.jnet -i</p>
+</blockquote>
+<h2 id="command-switch-available">Command switch available</h2>
+<p><em>jnet</em> accepts the following command-line switch:</p>
+<ul>
+<li><strong>Interactive</strong> (<strong>i</strong>): Activates an interactive shell</li>
+<li><strong>RunCommand</strong> (<strong>r</strong>): executes the main method of a specific Java class in argument and exit</li>
+<li><strong>Script</strong> (<strong>s</strong>): Executes the c# script in the file arument</li>
+<li><strong>JarList</strong> (<strong>jl</strong>): A CSV list of JAR to be used or folders containing the JARs</li>
+<li><strong>NamespaceList</strong> (<strong>nl</strong>): A CSV list of namespace to be used for interactive shell, JNet namespace are added automatically</li>
+<li><strong>ImportList</strong> (<strong>il</strong>): A CSV list of import to be used</li>
+</ul>
 </article>
           </div>
           

@@ -4733,11 +4733,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.GenericCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.GenericCommand.html",
+          "hash": "hPd9z76NA1vCOVUjTRP5mcGH6EI6QIi6RHMKjmIYqoU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MASES.JNet.JNetBase-1.yml",
       "output": {
         ".html": {
           "relative_path": "api/MASES.JNet.JNetBase-1.html",
-          "hash": "VzC1p44gcZPfqXLB+00WV9lC0foTGTIF8RsoNVxjLqE="
+          "hash": "zpSsB/IZ4Nnahs5PVqLySJsma232tfMCt77OBxbLPak="
         }
       },
       "is_incremental": false,
@@ -4749,7 +4761,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MASES.JNet.JNetBase-2.html",
-          "hash": "R7dDqbcatV2g8pWh7lmn6cLvpygQXJyLfBpr/qlhB+Q="
+          "hash": "jVoZ6mZW0Knx+984dymUJbt+1Bg4DbjzaQZ9R55Bo8E="
         }
       },
       "is_incremental": false,
@@ -4761,7 +4773,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MASES.JNet.JNetCore-1.html",
-          "hash": "Eaf4ijjrnccah7pVWMx+3F1yUjCq0YIUTCjR9Jwc6jM="
+          "hash": "FDANqeYnOzfpdX+/hL3l8dMe90ihhYQtPBAG7KnFs2M="
         }
       },
       "is_incremental": false,
@@ -4773,7 +4785,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MASES.JNet.JNetCore.html",
-          "hash": "+A7ZTxS7l9k4+vEJzJ7+b/AneQveZ1PRFye45C96L6g="
+          "hash": "OkWerzKw+/5yA/sX2wns6o0I1Y2zMc8z4HrseANDbxk="
         }
       },
       "is_incremental": false,
@@ -4785,7 +4797,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MASES.JNet.JNetCoreBase-1.html",
-          "hash": "IuN0KsYFdyiI9HmUnlAfhdMlGbIAhqZiHLHBgs/fyEA="
+          "hash": "3Eyv6KGKifO9OgED9ngm2LqZXiKZsMqyNBxAjw9nwiI="
         }
       },
       "is_incremental": false,
@@ -4797,7 +4809,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MASES.JNet.JNetExtensions.html",
-          "hash": "oZobCFjLzHCT0MYL2CBfp4S5q+Aj6zOrX1CG48086T0="
+          "hash": "549pa/YQ6+uzJ+9YJ1eB6A0YAiHke5GKKDtt3HQOnsY="
         }
       },
       "is_incremental": false,
@@ -4809,19 +4821,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MASES.JNet.html",
-          "hash": "G7FKtev5qk/GuAVFiGVq+vl50KDZYVFaCtiFWSiNeHc="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetCLI.GenericCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetCLI.GenericCommand.html",
-          "hash": "upcW4U6SIvCSzw+78GplbX+j6dbs+KGjBLPKpL9+Ro4="
+          "hash": "iZSanFTMGqA+UaScZy8uSqMY96iGPLQRMN8+cBFoSdg="
         }
       },
       "is_incremental": false,
@@ -4833,7 +4833,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MASES.JNetCLI.JNetCLICore-1.html",
-          "hash": "1HaQdkYr6xrSnTITlMSBD9JcBMlgoWslU7TGaziB4l8="
+          "hash": "7UP3bSUqy0FTVXcM8/C2zVQ4C8JgCmMkXhEiV9P9LN0="
         }
       },
       "is_incremental": false,
@@ -4845,7 +4845,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MASES.JNetCLI.JNetCLICore.html",
-          "hash": "F6L9HnUIb4GbLFgk1nCQDkH81Ft7kPtAsAfI1V5MUcg="
+          "hash": "ng2z8+ZuRNlf/EQmxKUH9KfFdPJa0Cfkd8Vj7kBAyZQ="
         }
       },
       "is_incremental": false,
@@ -4857,7 +4857,151 @@
       "output": {
         ".html": {
           "relative_path": "api/MASES.JNetCLI.html",
-          "hash": "myleRoAgrOgE/mpumSuh1Gbnu+DRup2aPZo1QIS1rd8="
+          "hash": "gdUlaZXaApIZCsOiErl/8pxLb+RzGbNTsKmKBje4pQE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNetPS.Cmdlet.InvokeCommandCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNetPS.Cmdlet.InvokeCommandCmdletCommand.html",
+          "hash": "79U5j1ctqbbX0E3s8k+og70rg1Sk3KnMImjm48+0IXs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNetPS.Cmdlet.NewObjectCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNetPS.Cmdlet.NewObjectCmdletCommand.html",
+          "hash": "yhBaP8m142arZwJn/AksNkEopadHdOB5Nt+OQ7U1KVw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNetPS.Cmdlet.StartJNetPSCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNetPS.Cmdlet.StartJNetPSCmdletCommand.html",
+          "hash": "U1ixS+iWfCglXLD9DVrIfnhx5B2/3uo4D5grHFucYIQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNetPS.Cmdlet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNetPS.Cmdlet.html",
+          "hash": "EVzROBgZm0aPneMHCvxMst/GS9qYDi6APc8vwRF91Rs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase.html",
+          "hash": "8xj2/Gc0m+rIh02M5h93W0Ytgcukl6ndiBjILkt8RsI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase-1.html",
+          "hash": "avq4VbGk21WGqH6YkiEEhkIWNKDQAXwQikFcOChVh7w="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-1.html",
+          "hash": "3RSzIiDXDlqnsBxCnHDIqPGykYXeAoIK46IoMsacQfg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNetPSCore.Cmdlet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNetPSCore.Cmdlet.html",
+          "hash": "V5Ot2Ojst7rekAdJnAbyK3mnfQCCcES/0QSGcdoYWpA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNetPSCore.JNetPSCore-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNetPSCore.JNetPSCore-1.html",
+          "hash": "blwixqd1KKC3HhMxweiN2MhRUMmbmUrOyMBF2VTMBV0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNetPSCore.JNetPSCore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNetPSCore.JNetPSCore.html",
+          "hash": "AHFZ0xmKIkflVh8+Vwh5rSN/X6I+0GU1Tbewvt1xuKw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNetPSCore.JNetPSCoreExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNetPSCore.JNetPSCoreExtensions.html",
+          "hash": "5IYagjnnBGwdMz0yUPUbgjTNIRWNy17CaRU7t95ZRaA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNetPSCore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNetPSCore.html",
+          "hash": "gyP1v1GrnH4b7jXCFmewfE13376VPHutmrJ1Bd8TMmc="
         }
       },
       "is_incremental": false,
@@ -4881,7 +5025,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MASES.JNetReflector.JNetReflectedCore-1.html",
-          "hash": "awPVRM/T4ee+Ulz4Vf5MaUpfoHZhQ7Cyy9z3Fg3KgnY="
+          "hash": "7/Stvh+NJuwRPkgK/C/ScoeZC9doo7bHkcyWymL8n+E="
         }
       },
       "is_incremental": false,
@@ -4893,7 +5037,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MASES.JNetReflector.JNetReflectedCore.html",
-          "hash": "bFAeArVddlo5KGpHJhKPvgZWpChWiGVmjP9KxxvLX/0="
+          "hash": "jeVUrGLQAJOcrJS4GkO0mB1eMyEPjqIPJN1zxPsGpjM="
         }
       },
       "is_incremental": false,
@@ -5025,7 +5169,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "7yKyscP88OVQfWGkxfIJ2gzzI20Jqsa8vos97OzmgY4="
+          "hash": "jnjQgEXVrCDU7a7kbKFTpXY50TidNsg0lQtz2PDpSD8="
         }
       },
       "is_incremental": false,
@@ -5049,7 +5193,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/actualstate.html",
-          "hash": "Cco7iadG4Yrs9XXqQNDy50p7sovTgl4BKfWL7nNO5dc="
+          "hash": "cfcSwdb2sre4GcOjwNTibbX/FVAIdX/JdgXfeh75pLM="
         }
       },
       "is_incremental": false,
@@ -5088,7 +5232,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/roadmap.html",
-          "hash": "8c6cSJp57OvA13qFknFtkjIIrsooM5WrfvdISoE0UK8="
+          "hash": "MjPdMXgfzq1KvpYJfrKkj2vWqxpBnGVWf6TYgBzuWwE="
         }
       },
       "is_incremental": false,
@@ -5100,7 +5244,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
-          "hash": "0wd/6NwFvekBmBhFW+VL1mbQuK7fu7yvGQHxXNG/Fak="
+          "hash": "k/I60tWMVhWnW1pA/CB3HhQ/kVYjqps3BihBMKxGaxs="
         }
       },
       "is_incremental": false,
@@ -5124,7 +5268,19 @@
       "output": {
         ".html": {
           "relative_path": "articles/usageCLI.html",
-          "hash": "iEpmhn/jDjn2FE9bHvTHu58WvHIbphXEQrOSqz3+5BQ="
+          "hash": "vzrEqeFqqR3jNdeTRgjT92tidNBKJswWNDWqHspnnZ0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/usagePS.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/usagePS.html",
+          "hash": "k2CDy2QcFuZPpEPrwftkk3DjIB6jx38BVWc36YpQ8TY="
         }
       },
       "is_incremental": false,
@@ -5195,13 +5351,13 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 10,
+          "total_file_count": 11,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 417,
+          "total_file_count": 429,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
