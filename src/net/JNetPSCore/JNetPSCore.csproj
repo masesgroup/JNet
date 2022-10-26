@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<Import Project="..\Common\Common.props" />
+	<PropertyGroup>
+		<AssemblyName>MASES.JNetPSCore</AssemblyName>
+		<RootNamespace>MASES.JNetPSCore</RootNamespace>
+		<Title>JNetPSCore - PowerShell base library for JNet</Title>
+		<Description>JNetPSCore - PowerShell base library for JNet</Description>
+		<Product>JNetPSCore</Product>
+		<OutputPath>..\..\..\bin\</OutputPath>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<PackageTags>jnet cli powershell dotnet clr jvm dotnetcore netcore dotnet6 net6 java bridge gateway</PackageTags>
+		<PackageId>MASES.JNetPSCore</PackageId>
+	</PropertyGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\JNet\JNet.csproj">
+			<IncludeAssets>All</IncludeAssets>
+			<PrivateAssets>None</PrivateAssets>
+		</ProjectReference>
+		<PackageReference Include="PowerShellStandard.Library" Version="5.1.1">
+			<PrivateAssets>All</PrivateAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All" />
+	</ItemGroup>
+</Project>

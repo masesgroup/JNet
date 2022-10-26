@@ -10,3 +10,9 @@
   href: jvm_callbacks.md
 - name: Usage
   href: usage.md
+- name: Usage CLI
+  href: usageCLI.md
+- name: Usage Reflector
+  href: usageReflector.md
+- name: Usage PowerShell
+  href: usagePS.md

@@ -163,12 +163,32 @@ jobs:
       - name: Compile JNetReflector
         run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" src\net\JNetReflector\JNetReflector.csproj
  
+      - name: Compile JNetPSCore
+        run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" src\net\JNetPSCore\JNetPSCore.csproj
+        
+      - name: Compile JNetPS
+        run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" src\net\JNetPS\JNetPS.csproj
+ 
       - uses: nuget/setup-nuget@v1
         with:
           nuget-version: '5.x'
           
       - run: nuget pack src\net\JNetCLI\JNetCLI.nuspec -OutputDirectory .\bin
       - run: nuget pack src\net\JNetReflector\JNetReflector.nuspec -OutputDirectory .\bin
+
+      - name: Prepare PowerShell package
+        run: |
+          Copy-Item .\src\net\JNetPS\MASES.JNetPS.psd1 -Destination .\MASES.JNetPS\MASES.JNetPS.psd1 -Force
+          Copy-Item .\src\net\JNetPS\MASES.JNetPS.psm1 -Destination .\MASES.JNetPS\MASES.JNetPS.psm1 -Force
+          New-FileCatalog -Path .\MASES.JNetPS\ -CatalogFilePath .\MASES.JNetPS\MASES.JNetPS.cat
+        shell: pwsh
+     
+      - name: Create PowerShell package
+        run: |
+          $env:DOTNET_CLI_UI_LANGUAGE="en_US"
+          Register-PSRepository -Name Local_Nuget_Feed -SourceLocation $env:GITHUB_WORKSPACE\bin -PublishLocation $env:GITHUB_WORKSPACE\bin -InstallationPolicy Trusted
+          Publish-Module -Path .\MASES.JNetPS -Repository Local_Nuget_Feed -NuGetApiKey 'ABC123'
+        shell: pwsh
 
       - name: Recompile to create nuget packages
         run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" src\net\JNet.sln

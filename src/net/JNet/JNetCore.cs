@@ -16,7 +16,6 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.CLIParser;
 using MASES.JCOBridge.C2JBridge;
 using System.Collections.Generic;
 
@@ -28,21 +27,6 @@ namespace MASES.JNet
     public abstract class JNetCore<T> : JNetCoreBase<T> where T : JNetCore<T>
     {
         #region Initialization
-        /// <summary>
-        /// Sets the global value of the heap size
-        /// </summary>
-        public static string ApplicationHeapSize { get; set; }
-
-        /// <summary>
-        /// Sets the global value of the heap size
-        /// </summary>
-        public static string ApplicationInitialHeapSize { get; set; }
-
-        /// <inheritdoc cref="SetupJVMWrapper{T}.GlobalHeapSize" />
-        public override string GlobalHeapSize { get { return string.IsNullOrEmpty(base.GlobalHeapSize) ? ApplicationHeapSize : base.GlobalHeapSize; } }
-        /// <inheritdoc cref="SetupJVMWrapper{T}.InitialHeapSize" />
-        public override string InitialHeapSize { get { return string.IsNullOrEmpty(base.InitialHeapSize) ? ApplicationInitialHeapSize : base.InitialHeapSize; } }
-
         /// <summary>
         /// Public ctor
         /// </summary>

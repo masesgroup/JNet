@@ -10,3 +10,8 @@ The roadmap can be synthetized in the following points:
     * Add methods reflection
     * Add fields reflection
     * Extend functionalities to cover more JVM classes (e.g. generics)
+* JNetPSCore:
+	* Add more functionalities
+* JNetPS:
+	* Add more cmdlets or scripts
+	

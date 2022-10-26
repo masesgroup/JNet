@@ -38,6 +38,80 @@ namespace MASES.JNet
     {
         #region Initialization
         /// <summary>
+        /// Sets the value of <see cref="SetupJVMWrapper{T}.LicensePath"/>
+        /// </summary>
+        public static string ApplicationLicensePath { get; set; }
+        /// <summary>
+        /// Sets the value of <see cref="SetupJVMWrapper{T}.JDKHome"/>
+        /// </summary>
+        public static string ApplicationJDKHome { get; set; }
+        /// <summary>
+        /// Sets the value of <see cref="SetupJVMWrapper{T}.JVMPath"/>
+        /// </summary>
+        public static string ApplicationJVMPath { get; set; }
+        /// <summary>
+        /// Sets the value of <see cref="SetupJVMWrapper{T}.JNIVerbosity"/>
+        /// </summary>
+        public static string ApplicationJNIVerbosity { get; set; }
+        /// <summary>
+        /// Sets the value of <see cref="SetupJVMWrapper{T}.JNIOutputFile"/>
+        /// </summary>
+        public static string ApplicationJNIOutputFile { get; set; }
+        /// <summary>
+        /// Sets the value of <see cref="SetupJVMWrapper{T}.JmxPort"/>
+        /// </summary>
+        public static short? ApplicationJmxPort { get; set; }
+        /// <summary>
+        /// Sets the value of <see cref="SetupJVMWrapper{T}.EnableDebug"/>
+        /// </summary>
+        public static bool? ApplicationEnableDebug { get; set; }
+        /// <summary>
+        /// Sets the value of <see cref="SetupJVMWrapper{T}.JavaDebugPort"/>
+        /// </summary>
+        public static short? ApplicationJavaDebugPort { get; set; }
+        /// <summary>
+        /// Sets the value of <see cref="SetupJVMWrapper{T}.DebugSuspendFlag"/>
+        /// </summary>
+        public static string ApplicationDebugSuspendFlag { get; set; }
+        /// <summary>
+        /// Sets the value of <see cref="SetupJVMWrapper{T}.JavaDebugOpts"/>
+        /// </summary>
+        public static string ApplicationJavaDebugOpts { get; set; }
+        /// <summary>
+        /// Sets the global value of the heap size
+        /// </summary>
+        public static string ApplicationHeapSize { get; set; }
+        /// <summary>
+        /// Sets the global value of the heap size
+        /// </summary>
+        public static string ApplicationInitialHeapSize { get; set; }
+
+        /// <inheritdoc cref="SetupJVMWrapper{T}.LicensePath" />
+        public override string LicensePath { get { return ApplicationLicensePath ?? base.LicensePath; } }
+        /// <inheritdoc cref="SetupJVMWrapper{T}.JDKHome" />
+        public override string JDKHome { get { return ApplicationJDKHome ?? base.JDKHome; } }
+        /// <inheritdoc cref="SetupJVMWrapper{T}.JVMPath" />
+        public override string JVMPath { get { return ApplicationJVMPath ?? base.JVMPath; } }
+        /// <inheritdoc cref="SetupJVMWrapper{T}.JNIVerbosity" />
+        public override string JNIVerbosity { get { return ApplicationJNIVerbosity ?? base.JNIVerbosity; } }
+        /// <inheritdoc cref="SetupJVMWrapper{T}.JNIOutputFile" />
+        public override string JNIOutputFile { get { return ApplicationJNIOutputFile ?? base.JNIOutputFile; } }
+        /// <inheritdoc cref="SetupJVMWrapper{T}.JmxPort" />
+        public override short? JmxPort { get { return ApplicationJmxPort.HasValue ? ApplicationJmxPort : base.JmxPort; } }
+        /// <inheritdoc cref="SetupJVMWrapper{T}.EnableDebug" />
+        public override bool EnableDebug { get { return ApplicationEnableDebug ?? base.EnableDebug; } }
+        /// <inheritdoc cref="SetupJVMWrapper{T}.JavaDebugPort" />
+        public override short JavaDebugPort { get { return ApplicationJavaDebugPort ?? base.JavaDebugPort; } }
+        /// <inheritdoc cref="SetupJVMWrapper{T}.DebugSuspendFlag" />
+        public override string DebugSuspendFlag { get { return ApplicationDebugSuspendFlag != null ? ApplicationDebugSuspendFlag : base.DebugSuspendFlag; } }
+        /// <inheritdoc cref="SetupJVMWrapper{T}.JavaDebugOpts" />
+        public override string JavaDebugOpts { get { return ApplicationJavaDebugOpts != null ? ApplicationJavaDebugOpts : base.JavaDebugOpts; } }
+        /// <inheritdoc cref="SetupJVMWrapper{T}.GlobalHeapSize" />
+        public override string GlobalHeapSize { get { return string.IsNullOrEmpty(base.GlobalHeapSize) ? ApplicationHeapSize : base.GlobalHeapSize; } }
+        /// <inheritdoc cref="SetupJVMWrapper{T}.InitialHeapSize" />
+        public override string InitialHeapSize { get { return string.IsNullOrEmpty(base.InitialHeapSize) ? ApplicationInitialHeapSize : base.InitialHeapSize; } }
+
+        /// <summary>
         /// Command line <see cref="Parser"/> instance
         /// </summary>
         protected static readonly Parser Parser = Parser.CreateInstance(new Settings()

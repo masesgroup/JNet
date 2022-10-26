@@ -17,6 +17,7 @@
 */
 
 using MASES.JCOBridge.C2JBridge;
+using System.Runtime.InteropServices;
 
 namespace MASES.JNet
 {
@@ -47,5 +48,51 @@ namespace MASES.JNet
         /// </summary>
         /// <param name="args">The arguments of constructor</param>
         public JNetBase(params object[] args) : base(args) { }
+    }
+
+    /// <summary>
+    /// Generic class to launch a main method in a Java class
+    /// </summary>
+    public class GenericCommand : JCOBridge.C2JBridge.JVMBridgeMain<GenericCommand>
+    {
+        static object _classNameLock = new object();
+        static string _className;
+
+        /// <summary>
+        /// Creates the <see cref="GenericCommand"/> class based on <paramref name="className"/>
+        /// </summary>
+        /// <param name="className">The class to be instantiated having the main method</param>
+        /// <returns><see cref="GenericCommand"/></returns>
+        public static GenericCommand Create(string className)
+        {
+            lock (_classNameLock)
+            {
+                try
+                {
+                    _className = className;
+                    return new GenericCommand();
+                }
+                finally
+                {
+                    _className = null;
+                }
+            }
+        }
+
+        /// <summary>
+        /// Creates and launch the <see cref="GenericCommand"/> class based on <paramref name="className"/>
+        /// </summary>
+        /// <param name="className">The class to be instantiated having the main method</param>
+        /// <param name="args">Arguments to send to main method</param>
+        public static void CreateAndLaunch(string className, params object[] args)
+        {
+            GenericCommand command = Create(className);
+            command.Execute(args);
+        }
+
+        /// <remarks>
+        /// Not use directly
+        /// </remarks>
+        public GenericCommand() : base(_className) { }
     }
 }

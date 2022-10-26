@@ -16,21 +16,17 @@
 *  Refer to LICENSE for more information.
 */
 
+using System;
+
 namespace MASES.JNetCLI
 {
-    class CLIParam
+    class Program
     {
-        // ReflectorArgs
-        public static string[] Interactive = new string[] { "Interactive", "i" };
-        public static string[] RunCommand = new string[] { "RunCommand", "r" };
-        public static string[] Script = new string[] { "Script", "s" };
-        public static string[] JarList = new string[] { "JarList", "jl" };
-        public static string[] NamespaceList = new string[] { "NamespaceList", "nl" };
-        public static string[] ImportList = new string[] { "ImportList", "il" };
-    }
-
-    class InternalConst
-    {
-
+        static void Main(string[] args)
+        {
+            // this code is a workaround to copy some library to the output path
+            JNetPSCore.JNetPSCore core = new JNetPSCore.JNetPSCore();
+            Console.WriteLine(core.ClassPath);
+        }
     }
 }
