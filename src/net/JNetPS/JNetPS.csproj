@@ -1,9 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<Import Project="..\Common\Common.props" />
 	<PropertyGroup>
-		<OutputPath>..\..\..\binPS\</OutputPath>
+		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+		<AssemblyName>MASES.JNetPS</AssemblyName>
+		<RootNamespace>MASES.JNetPS</RootNamespace>
+		<Title>JNetPS - PowerShell command line interface for JNet</Title>
+		<Description>JNetPS - PowerShell command line interface for JNet</Description>
+		<Product>JNetPS</Product>
+		<OutputPath>..\..\..\JNetPS\</OutputPath>
 		<TargetFrameworks>net462;net6.0</TargetFrameworks>
-		<AssemblyName>JNetPS</AssemblyName>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -17,7 +22,11 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Scripts\net462\" />
-	  <Folder Include="Scripts\net6.0\" />
+	  <None Update="JNetPSFramework.psd1" Condition="'$(TargetFramework)' == 'net462'">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </None>
+	  <None Update="JNetPSCore.psd1" Condition="'$(TargetFramework)' == 'net6.0'">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </None>
 	</ItemGroup>
 </Project>
