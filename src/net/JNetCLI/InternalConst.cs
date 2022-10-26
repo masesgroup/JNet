@@ -21,12 +21,12 @@ namespace MASES.JNetCLI
     class CLIParam
     {
         // ReflectorArgs
-        public const string Interactive = "Interactive";
-        public const string RunCommand = "RunCommand";
-        public const string Script = "Script";
-        public const string JarList = "JarList";
-        public const string NamespaceList = "NamespaceList";
-        public const string ImportList = "ImportList";
+        public static string[] Interactive = new string[] { "Interactive", "i" };
+        public static string[] RunCommand = new string[] { "RunCommand", "r" };
+        public static string[] Script = new string[] { "Script", "s" };
+        public static string[] JarList = new string[] { "JarList", "jl" };
+        public static string[] NamespaceList = new string[] { "NamespaceList", "nl" };
+        public static string[] ImportList = new string[] { "ImportList", "il" };
     }
 
     class InternalConst
