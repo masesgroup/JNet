@@ -10,11 +10,13 @@ To install the tool executes the following command within a PowerShell shell:
 
 To use the PowerShell interface (JNetPS) runs the following commands within a **PowerShell** shell:
 
-> Import-Module MASES.JNetPS
+### Initialization
 
-then run the following to initialize the environment:
+* The following cmdlet initialize the environment:
 
 > Start-JNetPS
+
+### Execution
 
 Now everting is ready and tou can create objects like in the following snippet
 
@@ -32,7 +34,7 @@ Hello from
 Hello from JNetPS
 ```
 
-### Cmdlet available
+## Cmdlet available
 
 _jnetps_ accepts the following cmdlets:
 

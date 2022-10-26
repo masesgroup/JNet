@@ -24,7 +24,7 @@ There are many client libraries written to manage communication with Java. Conve
 ### News
 
 * V1.4.8+: From version 1.4.8 there is a new project, named JNetReflector (still in development phase), able to build C# gateway classes from JARs containing the JVM classes, exactly the same [JCOReflector](https://github.com/masesgroup/JCOReflector) does for .NET in JVM.
-* V1.4.9+: From version 1.4.9 there are two new projects, JNetPSCore and JNetPS:
+* V1.4.9+: From version 1.4.9 there are two new projects:
   * JNetPSCore: the core library for PowerShell development, it can be extended in other projects based on JNet;
   * JNetPS: a PowerShell module to use JNet within a PowerShell shell.
 

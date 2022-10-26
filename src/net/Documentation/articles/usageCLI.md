@@ -17,7 +17,7 @@ To use the CLI interface (JNetCLI) runs a command like the following:
 
 > docker run ghcr.io/masesgroup/mases.jnet -i
 
-### Commands available
+## Command switch available
 
 _jnet_ accepts the following command-line switch:
 
