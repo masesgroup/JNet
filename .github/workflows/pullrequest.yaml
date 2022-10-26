@@ -134,7 +134,7 @@ jobs:
       - name: Create PowerShell package
         run: |
           $env:DOTNET_CLI_UI_LANGUAGE="en_US"
-          Register-PSRepository -Name Local_Nuget_Feed -SourceLocation .\bin -PublishLocation .\bin -InstallationPolicy Trusted
+          Register-PSRepository -Name Local_Nuget_Feed -SourceLocation $env:GITHUB_WORKSPACE\bin -PublishLocation $env:GITHUB_WORKSPACE\bin -InstallationPolicy Trusted
           Publish-Module -Path .\MASES.JNetPS -Repository Local_Nuget_Feed -NuGetApiKey 'ABC123'
         shell: pwsh
 

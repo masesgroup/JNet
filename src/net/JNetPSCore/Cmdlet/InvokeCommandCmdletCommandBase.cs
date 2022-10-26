@@ -29,13 +29,12 @@ namespace MASES.JNetPSCore.Cmdlet
             ValueFromPipeline = true,
             ValueFromPipelineByPropertyName = true,
             HelpMessage = "The java Main-Class name to be launched")]
-        public string Class { get; set; }
+        public string MainClass { get; set; }
 
         [Parameter(
             Position = 1,
             ValueFromPipelineByPropertyName = true,
             HelpMessage = "The Main-Class arguments to be used")]
-
 
         public string[] Arguments { get; set; }
 
@@ -48,7 +47,7 @@ namespace MASES.JNetPSCore.Cmdlet
         // This method will be called for each input received from the pipeline to this cmdlet; if no input is received, this method is not called
         protected override void ProcessRecord()
         {
-            GenericCommand.CreateAndLaunch(Class, Arguments);
+            GenericCommand.CreateAndLaunch(MainClass, Arguments);
         }
 
         // This method will be called once at the end of pipeline execution; if no input is received, this method is not called
