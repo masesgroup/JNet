@@ -16,23 +16,12 @@
 *  Refer to LICENSE for more information.
 */
 
+using MASES.JNet;
+using System.Collections.Generic;
 using System.Management.Automation;
 
 namespace MASES.JNetPS.Cmdlet
 {
-    public class GenericCommand : JCOBridge.C2JBridge.JVMBridgeMain<GenericCommand>
-    {
-        public static GenericCommand Create(string className)
-        {
-            _className = className;
-            return new GenericCommand();
-        }
-
-        static string _className;
-
-        public GenericCommand() : base(_className) { }
-    }
-
     [Cmdlet(VerbsLifecycle.Invoke, "Command")]
     public class RunCommandCmdletCommand : PSCmdlet
     {
@@ -57,8 +46,7 @@ namespace MASES.JNetPS.Cmdlet
         // This method will be called for each input received from the pipeline to this cmdlet; if no input is received, this method is not called
         protected override void ProcessRecord()
         {
-            var command = GenericCommand.Create(Class);
-            command.Execute(Arguments);
+            GenericCommand.CreateAndLaunch(Class, Arguments);
         }
 
         // This method will be called once at the end of pipeline execution; if no input is received, this method is not called

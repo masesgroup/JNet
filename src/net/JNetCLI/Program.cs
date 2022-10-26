@@ -28,19 +28,6 @@ using System.Threading.Tasks;
 
 namespace MASES.JNetCLI
 {
-    public class GenericCommand : JCOBridge.C2JBridge.JVMBridgeMain<GenericCommand>
-    {
-        public static GenericCommand Create(string className)
-        {
-            _className = className;
-            return new GenericCommand();
-        }
-
-        static string _className;
-
-        public GenericCommand() : base(_className) { }
-    }
-
     class Program
     {
         static async Task Main(string[] args)
@@ -107,8 +94,7 @@ namespace MASES.JNetCLI
                 }
                 else if (!string.IsNullOrEmpty(JNetCLICore.RunCommand))
                 {
-                    var command = GenericCommand.Create(JNetCLICore.RunCommand);
-                    command.Execute(JNetCLICore.FilteredArgs);
+                    GenericCommand.CreateAndLaunch(JNetCLICore.RunCommand, JNetCLICore.FilteredArgs);
                 }
                 else ShowHelp();
             }
