@@ -16,14 +16,42 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.CLIParser;
 using MASES.JNet;
+using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
 
-namespace MASES.JNetPS
+namespace MASES.JNetPSCore
 {
+    public static class JNetPSCoreExtensions
+    {
+        static Type CheckOn(Type source, Type t)
+        {
+            if (t.IsGenericTypeDefinition)
+            {
+                if (source.IsGenericType)
+                {
+                    return source.GetGenericTypeDefinition();
+                }
+                else
+                {
+                    return source;
+                }
+            }
+            return source;
+        }
+
+        public static Type TraverseUntil(this Type source, Type t)
+        {
+            var baseType = source;
+            while(baseType != null && CheckOn(baseType, t) != t)
+            {
+                baseType = baseType.BaseType;
+            }
+
+            return baseType;
+        }
+    }
+
     /// <summary>
     /// Public entry point of <see cref="JNetPSCore{T}"/>
     /// </summary>
@@ -37,24 +65,6 @@ namespace MASES.JNetPS
         public JNetPSCore()
         {
         }
-
-        static string _OriginRootPath;
-        public static string OriginRootPath => _OriginRootPath;
-
-        static string _OriginJavadocUrl;
-        public static string OriginJavadocUrl => _OriginJavadocUrl;
-
-        static string _DestinationRootPath;
-        public static string DestinationRootPath => _DestinationRootPath;
-
-        static IEnumerable<string> _JarsToAnaylyze;
-        public static IEnumerable<string> JarsToAnaylyze => _JarsToAnaylyze;
-
-        static IEnumerable<string> _NamespacesToAvoid;
-        public static IEnumerable<string> NamespacesToAvoid => _NamespacesToAvoid;
-
-        static bool _DryRun;
-        public static bool DryRun => _DryRun;
 
         protected override IDictionary<string, string> Options => new Dictionary<string, string>();
 

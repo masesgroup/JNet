@@ -16,43 +16,14 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.JNet;
-using System.Collections.Generic;
+using MASES.JNetPSCore.Cmdlet;
 using System.Management.Automation;
 
 namespace MASES.JNetPS.Cmdlet
 {
-    [Cmdlet(VerbsLifecycle.Invoke, "Command")]
-    public class RunCommandCmdletCommand : PSCmdlet
+    [Cmdlet(VerbsLifecycle.Invoke, "JCommand")]
+    public class InvokeCommandCmdletCommand : InvokeCommandCmdletCommandBase
     {
-        [Parameter(
-            Mandatory = true,
-            Position = 0,
-            ValueFromPipeline = true,
-            ValueFromPipelineByPropertyName = true)]
-        public string Class { get; set; }
 
-        [Parameter(
-            Position = 1,
-            ValueFromPipelineByPropertyName = true)]
-        public string[] Arguments { get; set; }
-
-        // This method gets called once for each cmdlet in the pipeline when the pipeline starts executing
-        protected override void BeginProcessing()
-        {
-            WriteVerbose("Begin!");
-        }
-
-        // This method will be called for each input received from the pipeline to this cmdlet; if no input is received, this method is not called
-        protected override void ProcessRecord()
-        {
-            GenericCommand.CreateAndLaunch(Class, Arguments);
-        }
-
-        // This method will be called once at the end of pipeline execution; if no input is received, this method is not called
-        protected override void EndProcessing()
-        {
-            WriteVerbose("End!");
-        }
     }
 }

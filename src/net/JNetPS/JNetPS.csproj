@@ -1,18 +1,19 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<Import Project="..\Common\Common.props" />
 	<PropertyGroup>
+		<OutputType>Exe</OutputType>
 		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
 		<AssemblyName>MASES.JNetPS</AssemblyName>
 		<RootNamespace>MASES.JNetPS</RootNamespace>
 		<Title>JNetPS - PowerShell command line interface for JNet</Title>
 		<Description>JNetPS - PowerShell command line interface for JNet</Description>
 		<Product>JNetPS</Product>
-		<OutputPath>..\..\..\JNetPS\</OutputPath>
+		<OutputPath>..\..\..\MASES.JNetPS\</OutputPath>
 		<TargetFrameworks>net462;net6.0</TargetFrameworks>
 	</PropertyGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\JNet\JNet.csproj">
+		<ProjectReference Include="..\JNetPSCore\JNetPSCore.csproj">
 			<IncludeAssets>All</IncludeAssets>
 			<PrivateAssets>None</PrivateAssets>
 		</ProjectReference>
@@ -22,10 +23,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Update="JNetPSFramework.psd1" Condition="'$(TargetFramework)' == 'net462'">
+	  <None Update="MASES.JNetPSFramework.psd1" Condition="'$(TargetFramework)' == 'net462'">
 	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	  </None>
-	  <None Update="JNetPSCore.psd1" Condition="'$(TargetFramework)' == 'net6.0'">
+	  <None Update="MASES.JNetPSCore.psd1" Condition="'$(TargetFramework)' == 'net6.0'">
 	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	  </None>
 	</ItemGroup>

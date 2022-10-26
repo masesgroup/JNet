@@ -16,14 +16,17 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.JNetPSCore.Cmdlet;
-using System.Management.Automation;
+using System;
 
-namespace MASES.JNetPS.Cmdlet
+namespace MASES.JNetCLI
 {
-    [Cmdlet(VerbsCommon.New, "JObject")]
-    public class NewObjectCmdletCommand : NewObjectCmdletCommandBase<JNetPSCore.JNetPSCore>
+    class Program
     {
- 
+        static void Main(string[] args)
+        {
+            // this code is a workaround to copy some library to the output path
+            JNetPSCore.JNetPSCore core = new JNetPSCore.JNetPSCore();
+            Console.WriteLine(core.ClassPath);
+        }
     }
 }
