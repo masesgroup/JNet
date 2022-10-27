@@ -21,7 +21,7 @@ using System.Management.Automation;
 
 namespace MASES.JNetPSCore.Cmdlet
 {
-    public class InvokeCommandCmdletCommandBase : PSCmdlet
+    public abstract class InvokeCommandCmdletCommandBase : PSCmdlet
     {
         [Parameter(
             Mandatory = true,

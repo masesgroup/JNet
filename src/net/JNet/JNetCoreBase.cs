@@ -85,6 +85,11 @@ namespace MASES.JNet
         /// Sets the global value of the heap size
         /// </summary>
         public static string ApplicationInitialHeapSize { get; set; }
+        /// <summary>
+        /// Sets the global value of the log class path
+        /// </summary>
+        public static bool? ApplicationLogClassPath { get; set; }
+
 
         /// <inheritdoc cref="SetupJVMWrapper{T}.LicensePath" />
         public override string LicensePath { get { return ApplicationLicensePath ?? base.LicensePath; } }
@@ -133,6 +138,11 @@ namespace MASES.JNet
             };
 
         bool _logClassPath = false;
+        /// <summary>
+        /// Set to <see langword="true"/> to print ClassPath
+        /// </summary>
+        public virtual bool LogClassPath => ApplicationLogClassPath ?? _logClassPath;
+
         IEnumerable<IArgumentMetadataParsed> _parsedArgs = null;
         /// <summary>
         /// Arguments parsed
@@ -260,7 +270,7 @@ namespace MASES.JNet
 
             classPath = builder.Build();
 
-            if (_logClassPath)
+            if (LogClassPath)
             {
                 Console.WriteLine("ClassPath is defined from:");
                 foreach (var item in classPath.Split(ClassPathBuilder.PathSeparator))

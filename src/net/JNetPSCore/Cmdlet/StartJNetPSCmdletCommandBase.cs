@@ -19,17 +19,19 @@
 using MASES.JCOBridge.C2JBridge;
 using MASES.JNet;
 using System.Management.Automation;
-using System.Reflection;
 
 namespace MASES.JNetPSCore.Cmdlet
 {
+    /// <summary>
+    /// Base class to be extended in derived projects to add other parameters
+    /// </summary>
+    /// <typeparam name="T">A class based on <see cref="JNetCore{T}"/></typeparam>
     public abstract class StartJNetPSCmdletCommandBase<T> : PSCmdlet
         where T : JNetCore<T>
     {
         /// <inheritdoc cref="JNetCoreBase{T}.ApplicationLicensePath" />
         [Parameter(
             // Mandatory = true,
-            Position = 0,
             ValueFromPipeline = true,
             ValueFromPipelineByPropertyName = true,
             HelpMessage = "The path where is located the license file")]
@@ -38,7 +40,6 @@ namespace MASES.JNetPSCore.Cmdlet
         /// <inheritdoc cref="JNetCoreBase{T}.ApplicationJDKHome" />
         [Parameter(
             // Mandatory = true,
-            Position = 1,
             ValueFromPipeline = true,
             ValueFromPipelineByPropertyName = true,
             HelpMessage = "The path where is located the JRE of the installed JDK")]
@@ -47,7 +48,6 @@ namespace MASES.JNetPSCore.Cmdlet
         /// <inheritdoc cref="JNetCoreBase{T}.ApplicationJVMPath" />
         [Parameter(
             // Mandatory = true,
-            Position = 2,
             ValueFromPipeline = true,
             ValueFromPipelineByPropertyName = true,
             HelpMessage = "The path to the JRE ennvironment or full path to (jvm.dll/libjvm.so). If not set the library try to find a suitable version on the system")]
@@ -56,7 +56,6 @@ namespace MASES.JNetPSCore.Cmdlet
         /// <inheritdoc cref="JNetCoreBase{T}.ApplicationJNIVerbosity" />
         [Parameter(
             // Mandatory = true,
-            Position = 3,
             ValueFromPipeline = true,
             ValueFromPipelineByPropertyName = true,
             HelpMessage = "Sets the verbosity of the JNI interface. See oracle documentation")]
@@ -65,7 +64,6 @@ namespace MASES.JNetPSCore.Cmdlet
         /// <inheritdoc cref="JNetCoreBase{T}.ApplicationJNIOutputFile" />
         [Parameter(
             // Mandatory = true,
-            Position = 4,
             ValueFromPipeline = true,
             ValueFromPipelineByPropertyName = true,
             HelpMessage = "The path where the JNI verbose info will be written. The file will be opened in append mode")]
@@ -74,7 +72,6 @@ namespace MASES.JNetPSCore.Cmdlet
         /// <inheritdoc cref="JNetCoreBase{T}.ApplicationJmxPort" />
         [Parameter(
             // Mandatory = true,
-            Position = 5,
             ValueFromPipeline = true,
             ValueFromPipelineByPropertyName = true,
             HelpMessage = "The JMX port to be set when JVM will be created")]
@@ -83,7 +80,6 @@ namespace MASES.JNetPSCore.Cmdlet
         /// <inheritdoc cref="JNetCoreBase{T}.ApplicationEnableDebug" />
         [Parameter(
             // Mandatory = true,
-            Position = 6,
             ValueFromPipeline = true,
             ValueFromPipelineByPropertyName = true,
             HelpMessage = "Put in command line to enable JVM debug")]
@@ -92,7 +88,6 @@ namespace MASES.JNetPSCore.Cmdlet
         /// <inheritdoc cref="JNetCoreBase{T}.ApplicationJavaDebugPort" />
         [Parameter(
             // Mandatory = true,
-            Position = 7,
             ValueFromPipeline = true,
             ValueFromPipelineByPropertyName = true,
             HelpMessage = "The port to be used for debug when JVM will be created")]
@@ -101,7 +96,6 @@ namespace MASES.JNetPSCore.Cmdlet
         /// <inheritdoc cref="JNetCoreBase{T}.ApplicationDebugSuspendFlag" />
         [Parameter(
             // Mandatory = true,
-            Position = 8,
             ValueFromPipeline = true,
             ValueFromPipelineByPropertyName = true,
             HelpMessage = "The suspend flag to be used in the debug option when JVM will be created. Default is \"n\"")]
@@ -110,7 +104,6 @@ namespace MASES.JNetPSCore.Cmdlet
         /// <inheritdoc cref="JNetCoreBase{T}.ApplicationJavaDebugOpts" />
         [Parameter(
             // Mandatory = true,
-            Position = 9,
             ValueFromPipeline = true,
             ValueFromPipelineByPropertyName = true,
             HelpMessage = "The string to be used in the debug option when JVM will be created. Default is \"-agentlib:jdwp=transport=dt_socket,server=y,suspend={JVMDebugSuspendFlag},address={JVMDebugPort}\"")]
@@ -119,7 +112,6 @@ namespace MASES.JNetPSCore.Cmdlet
         /// <inheritdoc cref="JNetCoreBase{T}.ApplicationHeapSize" />
         [Parameter(
             // Mandatory = true,
-            Position = 10,
             ValueFromPipeline = true,
             ValueFromPipelineByPropertyName = true,
             HelpMessage = "The Heap size (-Xmx) to be set when JVM will be created")]
@@ -128,26 +120,18 @@ namespace MASES.JNetPSCore.Cmdlet
         /// <inheritdoc cref="JNetCoreBase{T}.ApplicationInitialHeapSize" />
         [Parameter(
             // Mandatory = true,
-            Position = 11,
             ValueFromPipeline = true,
             ValueFromPipelineByPropertyName = true,
             HelpMessage = "The initial Heap size (-Xms) to be set when JVM will be created")]
         public string InitialHeapSize { get; set; }
 
-        private static readonly PropertyInfo ApplicationLicensePathProperty = typeof(T).TraverseUntil(typeof(JNetCoreBase<>)).GetProperty(nameof(JNetCore.ApplicationLicensePath));
-        private static readonly PropertyInfo ApplicationJDKHomeProperty = typeof(T).TraverseUntil(typeof(JNetCoreBase<>)).GetProperty(nameof(JNetCore.ApplicationJDKHome));
-        private static readonly PropertyInfo ApplicationJVMPathProperty = typeof(T).TraverseUntil(typeof(JNetCoreBase<>)).GetProperty(nameof(JNetCore.ApplicationJVMPath));
-        private static readonly PropertyInfo ApplicationJNIVerbosityProperty = typeof(T).TraverseUntil(typeof(JNetCoreBase<>)).GetProperty(nameof(JNetCore.ApplicationJNIVerbosity));
-        private static readonly PropertyInfo ApplicationJNIOutputFileProperty = typeof(T).TraverseUntil(typeof(JNetCoreBase<>)).GetProperty(nameof(JNetCore.ApplicationJNIOutputFile));
-        private static readonly PropertyInfo ApplicationJmxPortProperty = typeof(T).TraverseUntil(typeof(JNetCoreBase<>)).GetProperty(nameof(JNetCore.ApplicationJmxPort));
-        private static readonly PropertyInfo ApplicationEnableDebugProperty = typeof(T).TraverseUntil(typeof(JNetCoreBase<>)).GetProperty(nameof(JNetCore.ApplicationEnableDebug));
-        private static readonly PropertyInfo ApplicationJavaDebugPortProperty = typeof(T).TraverseUntil(typeof(JNetCoreBase<>)).GetProperty(nameof(JNetCore.ApplicationJavaDebugPort));
-        private static readonly PropertyInfo ApplicationDebugSuspendFlagProperty = typeof(T).TraverseUntil(typeof(JNetCoreBase<>)).GetProperty(nameof(JNetCore.ApplicationDebugSuspendFlag));
-        private static readonly PropertyInfo ApplicationJavaDebugOptsProperty = typeof(T).TraverseUntil(typeof(JNetCoreBase<>)).GetProperty(nameof(JNetCore.ApplicationJavaDebugOpts));
-        private static readonly PropertyInfo ApplicationHeapSizeProperty = typeof(T).TraverseUntil(typeof(JNetCoreBase<>)).GetProperty(nameof(JNetCore.ApplicationHeapSize));
-        private static readonly PropertyInfo ApplicationInitialHeapSizeProperty = typeof(T).TraverseUntil(typeof(JNetCoreBase<>)).GetProperty(nameof(JNetCore.ApplicationInitialHeapSize));
-
-        private static readonly MethodInfo CreateGlobalInstanceMethod = typeof(T).TraverseUntil(typeof(SetupJVMWrapper<>)).GetMethod(nameof(JNetCore.CreateGlobalInstance));
+        /// <inheritdoc cref="JNetCoreBase{T}.ApplicationLogClassPath" />
+        [Parameter(
+            // Mandatory = true,
+            ValueFromPipeline = true,
+            ValueFromPipelineByPropertyName = true,
+            HelpMessage = "Set to true to print ClassPath")]
+        public bool? LogClassPath { get; set; }
 
         // This method gets called once for each cmdlet in the pipeline when the pipeline starts executing
         protected override void BeginProcessing()
@@ -158,18 +142,18 @@ namespace MASES.JNetPSCore.Cmdlet
         // This method will be called for each input received from the pipeline to this cmdlet; if no input is received, this method is not called
         protected override void ProcessRecord()
         {
-            ApplicationLicensePathProperty.SetValue(null, LicensePath);
-            ApplicationJDKHomeProperty.SetValue(null, JDKHome);
-            ApplicationJVMPathProperty.SetValue(null, JVMPath);
-            ApplicationJNIVerbosityProperty.SetValue(null, JNIVerbosity);
-            ApplicationJNIOutputFileProperty.SetValue(null, JNIOutputFile);
-            ApplicationJmxPortProperty.SetValue(null, JmxPort);
-            ApplicationEnableDebugProperty.SetValue(null, EnableDebug);
-            ApplicationJavaDebugPortProperty.SetValue(null, JavaDebugPort);
-            ApplicationDebugSuspendFlagProperty.SetValue(null, DebugSuspendFlag);
-            ApplicationJavaDebugOptsProperty.SetValue(null, JavaDebugOpts);
-            ApplicationHeapSizeProperty.SetValue(null, HeapSize);
-            ApplicationInitialHeapSizeProperty.SetValue(null, InitialHeapSize);
+            JNetPSHelper<T>.SetLicensePath(LicensePath);
+            JNetPSHelper<T>.SetJDKHome(JDKHome);
+            JNetPSHelper<T>.SetJVMPath(JVMPath);
+            JNetPSHelper<T>.SetJNIVerbosity(JNIVerbosity);
+            JNetPSHelper<T>.SetJNIOutputFile(JNIOutputFile);
+            JNetPSHelper<T>.SetJmxPort(JmxPort);
+            JNetPSHelper<T>.SetEnableDebug(EnableDebug);
+            JNetPSHelper<T>.SetJavaDebugPort(JavaDebugPort);
+            JNetPSHelper<T>.SetDebugSuspendFlag(DebugSuspendFlag);
+            JNetPSHelper<T>.SetJavaDebugOpts(JavaDebugOpts);
+            JNetPSHelper<T>.SetHeapSize(HeapSize);
+            JNetPSHelper<T>.SetInitialHeapSize(InitialHeapSize);
 
             OnBeforeCreateGlobalInstance();
             CreateGlobalInstance();
@@ -179,9 +163,9 @@ namespace MASES.JNetPSCore.Cmdlet
         /// </summary>
         public virtual void OnBeforeCreateGlobalInstance() { }
         /// <summary>
-        /// Invokes 
+        /// Invokes the <see cref="SetupJVMWrapper{T}.CreateGlobalInstance"/>
         /// </summary>
-        public virtual void CreateGlobalInstance() { CreateGlobalInstanceMethod.Invoke(null, null); }
+        public virtual void CreateGlobalInstance() { JNetPSHelper<T>.CreateGlobalInstance(); }
 
         // This method will be called once at the end of pipeline execution; if no input is received, this method is not called
         protected override void EndProcessing()
