@@ -13,6 +13,17 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+		<jars Include="$(ProjectDir)\..\..\..\jars\*.*" />
+	</ItemGroup>
+	
+	<Target Name="CopyCustomContent" AfterTargets="AfterBuild">
+		<Copy SourceFiles="@(jars)" DestinationFolder="$(OutDir)\jars" />
+	</Target>
+	<Target Name="CopyCustomContentOnPublish" AfterTargets="Publish">
+		<Copy SourceFiles="@(jars)" DestinationFolder="$(PublishDir)\jars" />
+	</Target>
+
+	<ItemGroup>
 		<ProjectReference Include="..\JNetPSCore\JNetPSCore.csproj">
 			<IncludeAssets>All</IncludeAssets>
 			<PrivateAssets>None</PrivateAssets>
