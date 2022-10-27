@@ -16,6 +16,7 @@
 *  Refer to LICENSE for more information.
 */
 
+using MASES.JNet;
 using System;
 
 namespace MASES.JNetCLI
@@ -25,8 +26,8 @@ namespace MASES.JNetCLI
         static void Main(string[] args)
         {
             // this code is a workaround to copy some library to the output path
-            JNetPSCore.JNetPSCore core = new JNetPSCore.JNetPSCore();
-            Console.WriteLine(core.ClassPath);
+            JNetCore core = new JNetCore();
+            Console.WriteLine(core.ClassPath); // NOP
         }
     }
 }
