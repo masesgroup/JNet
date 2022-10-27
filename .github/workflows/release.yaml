@@ -157,7 +157,6 @@ jobs:
         run: |
           nuget push .\bin\*.nupkg -ApiKey ${{ secrets.GITHUB_TOKEN }} -Source "github" -SkipDuplicate
           nuget push .\bin\*.snupkg -ApiKey ${{ secrets.GITHUB_TOKEN }} -Source "github" -SkipDuplicate
-          nuget push .\binPS\*.nupkg -ApiKey ${{ secrets.GITHUB_TOKEN }} -Source "github" -SkipDuplicate
 
       - name: Publish to NuGet
         run: |
