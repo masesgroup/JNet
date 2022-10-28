@@ -22897,6 +22897,23 @@ references:
   fullName.vb: MASES.JNet.JNetCoreBase(Of T).ApplicationLicensePath
   nameWithType: JNetCoreBase<T>.ApplicationLicensePath
   nameWithType.vb: JNetCoreBase(Of T).ApplicationLicensePath
+- uid: MASES.JNet.JNetCoreBase`1.ApplicationLogClassPath
+  name: ApplicationLogClassPath
+  href: api/MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_ApplicationLogClassPath
+  commentId: P:MASES.JNet.JNetCoreBase`1.ApplicationLogClassPath
+  fullName: MASES.JNet.JNetCoreBase<T>.ApplicationLogClassPath
+  fullName.vb: MASES.JNet.JNetCoreBase(Of T).ApplicationLogClassPath
+  nameWithType: JNetCoreBase<T>.ApplicationLogClassPath
+  nameWithType.vb: JNetCoreBase(Of T).ApplicationLogClassPath
+- uid: MASES.JNet.JNetCoreBase`1.ApplicationLogClassPath*
+  name: ApplicationLogClassPath
+  href: api/MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_ApplicationLogClassPath_
+  commentId: Overload:MASES.JNet.JNetCoreBase`1.ApplicationLogClassPath
+  isSpec: "True"
+  fullName: MASES.JNet.JNetCoreBase<T>.ApplicationLogClassPath
+  fullName.vb: MASES.JNet.JNetCoreBase(Of T).ApplicationLogClassPath
+  nameWithType: JNetCoreBase<T>.ApplicationLogClassPath
+  nameWithType.vb: JNetCoreBase(Of T).ApplicationLogClassPath
 - uid: MASES.JNet.JNetCoreBase`1.Class*
   name: Class
   href: api/MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_Class_
@@ -23188,6 +23205,23 @@ references:
   fullName.vb: MASES.JNet.JNetCoreBase(Of T).LicensePath
   nameWithType: JNetCoreBase<T>.LicensePath
   nameWithType.vb: JNetCoreBase(Of T).LicensePath
+- uid: MASES.JNet.JNetCoreBase`1.LogClassPath
+  name: LogClassPath
+  href: api/MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_LogClassPath
+  commentId: P:MASES.JNet.JNetCoreBase`1.LogClassPath
+  fullName: MASES.JNet.JNetCoreBase<T>.LogClassPath
+  fullName.vb: MASES.JNet.JNetCoreBase(Of T).LogClassPath
+  nameWithType: JNetCoreBase<T>.LogClassPath
+  nameWithType.vb: JNetCoreBase(Of T).LogClassPath
+- uid: MASES.JNet.JNetCoreBase`1.LogClassPath*
+  name: LogClassPath
+  href: api/MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_LogClassPath_
+  commentId: Overload:MASES.JNet.JNetCoreBase`1.LogClassPath
+  isSpec: "True"
+  fullName: MASES.JNet.JNetCoreBase<T>.LogClassPath
+  fullName.vb: MASES.JNet.JNetCoreBase(Of T).LogClassPath
+  nameWithType: JNetCoreBase<T>.LogClassPath
+  nameWithType.vb: JNetCoreBase(Of T).LogClassPath
 - uid: MASES.JNet.JNetCoreBase`1.New(System.String)
   name: New(String)
   href: api/MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_New_System_String_
@@ -23985,6 +24019,40 @@ references:
   fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of T).LicensePath
   nameWithType: StartJNetPSCmdletCommandBase<T>.LicensePath
   nameWithType.vb: StartJNetPSCmdletCommandBase(Of T).LicensePath
+- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.LogClassPath
+  name: LogClassPath
+  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-1.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_LogClassPath
+  commentId: P:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.LogClassPath
+  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<T>.LogClassPath
+  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of T).LogClassPath
+  nameWithType: StartJNetPSCmdletCommandBase<T>.LogClassPath
+  nameWithType.vb: StartJNetPSCmdletCommandBase(Of T).LogClassPath
+- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.LogClassPath*
+  name: LogClassPath
+  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-1.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_LogClassPath_
+  commentId: Overload:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.LogClassPath
+  isSpec: "True"
+  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<T>.LogClassPath
+  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of T).LogClassPath
+  nameWithType: StartJNetPSCmdletCommandBase<T>.LogClassPath
+  nameWithType.vb: StartJNetPSCmdletCommandBase(Of T).LogClassPath
+- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.OnAfterCreateGlobalInstance
+  name: OnAfterCreateGlobalInstance()
+  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-1.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_OnAfterCreateGlobalInstance
+  commentId: M:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.OnAfterCreateGlobalInstance
+  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<T>.OnAfterCreateGlobalInstance()
+  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of T).OnAfterCreateGlobalInstance()
+  nameWithType: StartJNetPSCmdletCommandBase<T>.OnAfterCreateGlobalInstance()
+  nameWithType.vb: StartJNetPSCmdletCommandBase(Of T).OnAfterCreateGlobalInstance()
+- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.OnAfterCreateGlobalInstance*
+  name: OnAfterCreateGlobalInstance
+  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-1.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_OnAfterCreateGlobalInstance_
+  commentId: Overload:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.OnAfterCreateGlobalInstance
+  isSpec: "True"
+  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<T>.OnAfterCreateGlobalInstance
+  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of T).OnAfterCreateGlobalInstance
+  nameWithType: StartJNetPSCmdletCommandBase<T>.OnAfterCreateGlobalInstance
+  nameWithType.vb: StartJNetPSCmdletCommandBase(Of T).OnAfterCreateGlobalInstance
 - uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.OnBeforeCreateGlobalInstance
   name: OnBeforeCreateGlobalInstance()
   href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-1.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_OnBeforeCreateGlobalInstance
@@ -24019,91 +24087,345 @@ references:
   fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of T).ProcessRecord
   nameWithType: StartJNetPSCmdletCommandBase<T>.ProcessRecord
   nameWithType.vb: StartJNetPSCmdletCommandBase(Of T).ProcessRecord
-- uid: MASES.JNetPSCore.JNetPSCore
-  name: JNetPSCore
-  href: api/MASES.JNetPSCore.JNetPSCore.html
-  commentId: T:MASES.JNetPSCore.JNetPSCore
-  fullName: MASES.JNetPSCore.JNetPSCore
-  nameWithType: JNetPSCore
-- uid: MASES.JNetPSCore.JNetPSCore`1
-  name: JNetPSCore<T>
-  href: api/MASES.JNetPSCore.JNetPSCore-1.html
-  commentId: T:MASES.JNetPSCore.JNetPSCore`1
-  name.vb: JNetPSCore(Of T)
-  fullName: MASES.JNetPSCore.JNetPSCore<T>
-  fullName.vb: MASES.JNetPSCore.JNetPSCore(Of T)
-  nameWithType: JNetPSCore<T>
-  nameWithType.vb: JNetPSCore(Of T)
-- uid: MASES.JNetPSCore.JNetPSCore`1.#ctor
-  name: JNetPSCore()
-  href: api/MASES.JNetPSCore.JNetPSCore-1.html#MASES_JNetPSCore_JNetPSCore_1__ctor
-  commentId: M:MASES.JNetPSCore.JNetPSCore`1.#ctor
-  fullName: MASES.JNetPSCore.JNetPSCore<T>.JNetPSCore()
-  fullName.vb: MASES.JNetPSCore.JNetPSCore(Of T).JNetPSCore()
-  nameWithType: JNetPSCore<T>.JNetPSCore()
-  nameWithType.vb: JNetPSCore(Of T).JNetPSCore()
-- uid: MASES.JNetPSCore.JNetPSCore`1.#ctor*
-  name: JNetPSCore
-  href: api/MASES.JNetPSCore.JNetPSCore-1.html#MASES_JNetPSCore_JNetPSCore_1__ctor_
-  commentId: Overload:MASES.JNetPSCore.JNetPSCore`1.#ctor
+- uid: MASES.JNetPSCore.JNetPSHelper`1
+  name: JNetPSHelper<TClass>
+  href: api/MASES.JNetPSCore.JNetPSHelper-1.html
+  commentId: T:MASES.JNetPSCore.JNetPSHelper`1
+  name.vb: JNetPSHelper(Of TClass)
+  fullName: MASES.JNetPSCore.JNetPSHelper<TClass>
+  fullName.vb: MASES.JNetPSCore.JNetPSHelper(Of TClass)
+  nameWithType: JNetPSHelper<TClass>
+  nameWithType.vb: JNetPSHelper(Of TClass)
+- uid: MASES.JNetPSCore.JNetPSHelper`1.CreateGlobalInstance
+  name: CreateGlobalInstance()
+  href: api/MASES.JNetPSCore.JNetPSHelper-1.html#MASES_JNetPSCore_JNetPSHelper_1_CreateGlobalInstance
+  commentId: M:MASES.JNetPSCore.JNetPSHelper`1.CreateGlobalInstance
+  fullName: MASES.JNetPSCore.JNetPSHelper<TClass>.CreateGlobalInstance()
+  fullName.vb: MASES.JNetPSCore.JNetPSHelper(Of TClass).CreateGlobalInstance()
+  nameWithType: JNetPSHelper<TClass>.CreateGlobalInstance()
+  nameWithType.vb: JNetPSHelper(Of TClass).CreateGlobalInstance()
+- uid: MASES.JNetPSCore.JNetPSHelper`1.CreateGlobalInstance*
+  name: CreateGlobalInstance
+  href: api/MASES.JNetPSCore.JNetPSHelper-1.html#MASES_JNetPSCore_JNetPSHelper_1_CreateGlobalInstance_
+  commentId: Overload:MASES.JNetPSCore.JNetPSHelper`1.CreateGlobalInstance
   isSpec: "True"
-  fullName: MASES.JNetPSCore.JNetPSCore<T>.JNetPSCore
-  fullName.vb: MASES.JNetPSCore.JNetPSCore(Of T).JNetPSCore
-  nameWithType: JNetPSCore<T>.JNetPSCore
-  nameWithType.vb: JNetPSCore(Of T).JNetPSCore
-- uid: MASES.JNetPSCore.JNetPSCore`1.Options
-  name: Options
-  href: api/MASES.JNetPSCore.JNetPSCore-1.html#MASES_JNetPSCore_JNetPSCore_1_Options
-  commentId: P:MASES.JNetPSCore.JNetPSCore`1.Options
-  fullName: MASES.JNetPSCore.JNetPSCore<T>.Options
-  fullName.vb: MASES.JNetPSCore.JNetPSCore(Of T).Options
-  nameWithType: JNetPSCore<T>.Options
-  nameWithType.vb: JNetPSCore(Of T).Options
-- uid: MASES.JNetPSCore.JNetPSCore`1.Options*
-  name: Options
-  href: api/MASES.JNetPSCore.JNetPSCore-1.html#MASES_JNetPSCore_JNetPSCore_1_Options_
-  commentId: Overload:MASES.JNetPSCore.JNetPSCore`1.Options
+  fullName: MASES.JNetPSCore.JNetPSHelper<TClass>.CreateGlobalInstance
+  fullName.vb: MASES.JNetPSCore.JNetPSHelper(Of TClass).CreateGlobalInstance
+  nameWithType: JNetPSHelper<TClass>.CreateGlobalInstance
+  nameWithType.vb: JNetPSHelper(Of TClass).CreateGlobalInstance
+- uid: MASES.JNetPSCore.JNetPSHelper`1.SetDebugSuspendFlag(System.String)
+  name: SetDebugSuspendFlag(String)
+  href: api/MASES.JNetPSCore.JNetPSHelper-1.html#MASES_JNetPSCore_JNetPSHelper_1_SetDebugSuspendFlag_System_String_
+  commentId: M:MASES.JNetPSCore.JNetPSHelper`1.SetDebugSuspendFlag(System.String)
+  fullName: MASES.JNetPSCore.JNetPSHelper<TClass>.SetDebugSuspendFlag(System.String)
+  fullName.vb: MASES.JNetPSCore.JNetPSHelper(Of TClass).SetDebugSuspendFlag(System.String)
+  nameWithType: JNetPSHelper<TClass>.SetDebugSuspendFlag(String)
+  nameWithType.vb: JNetPSHelper(Of TClass).SetDebugSuspendFlag(String)
+- uid: MASES.JNetPSCore.JNetPSHelper`1.SetDebugSuspendFlag*
+  name: SetDebugSuspendFlag
+  href: api/MASES.JNetPSCore.JNetPSHelper-1.html#MASES_JNetPSCore_JNetPSHelper_1_SetDebugSuspendFlag_
+  commentId: Overload:MASES.JNetPSCore.JNetPSHelper`1.SetDebugSuspendFlag
   isSpec: "True"
-  fullName: MASES.JNetPSCore.JNetPSCore<T>.Options
-  fullName.vb: MASES.JNetPSCore.JNetPSCore(Of T).Options
-  nameWithType: JNetPSCore<T>.Options
-  nameWithType.vb: JNetPSCore(Of T).Options
-- uid: MASES.JNetPSCore.JNetPSCore`1.PathToParse
-  name: PathToParse
-  href: api/MASES.JNetPSCore.JNetPSCore-1.html#MASES_JNetPSCore_JNetPSCore_1_PathToParse
-  commentId: P:MASES.JNetPSCore.JNetPSCore`1.PathToParse
-  fullName: MASES.JNetPSCore.JNetPSCore<T>.PathToParse
-  fullName.vb: MASES.JNetPSCore.JNetPSCore(Of T).PathToParse
-  nameWithType: JNetPSCore<T>.PathToParse
-  nameWithType.vb: JNetPSCore(Of T).PathToParse
-- uid: MASES.JNetPSCore.JNetPSCore`1.PathToParse*
-  name: PathToParse
-  href: api/MASES.JNetPSCore.JNetPSCore-1.html#MASES_JNetPSCore_JNetPSCore_1_PathToParse_
-  commentId: Overload:MASES.JNetPSCore.JNetPSCore`1.PathToParse
+  fullName: MASES.JNetPSCore.JNetPSHelper<TClass>.SetDebugSuspendFlag
+  fullName.vb: MASES.JNetPSCore.JNetPSHelper(Of TClass).SetDebugSuspendFlag
+  nameWithType: JNetPSHelper<TClass>.SetDebugSuspendFlag
+  nameWithType.vb: JNetPSHelper(Of TClass).SetDebugSuspendFlag
+- uid: MASES.JNetPSCore.JNetPSHelper`1.SetEnableDebug(System.Nullable{System.Boolean})
+  name: SetEnableDebug(Nullable<Boolean>)
+  href: api/MASES.JNetPSCore.JNetPSHelper-1.html#MASES_JNetPSCore_JNetPSHelper_1_SetEnableDebug_System_Nullable_System_Boolean__
+  commentId: M:MASES.JNetPSCore.JNetPSHelper`1.SetEnableDebug(System.Nullable{System.Boolean})
+  name.vb: SetEnableDebug(Nullable(Of Boolean))
+  fullName: MASES.JNetPSCore.JNetPSHelper<TClass>.SetEnableDebug(System.Nullable<System.Boolean>)
+  fullName.vb: MASES.JNetPSCore.JNetPSHelper(Of TClass).SetEnableDebug(System.Nullable(Of System.Boolean))
+  nameWithType: JNetPSHelper<TClass>.SetEnableDebug(Nullable<Boolean>)
+  nameWithType.vb: JNetPSHelper(Of TClass).SetEnableDebug(Nullable(Of Boolean))
+- uid: MASES.JNetPSCore.JNetPSHelper`1.SetEnableDebug*
+  name: SetEnableDebug
+  href: api/MASES.JNetPSCore.JNetPSHelper-1.html#MASES_JNetPSCore_JNetPSHelper_1_SetEnableDebug_
+  commentId: Overload:MASES.JNetPSCore.JNetPSHelper`1.SetEnableDebug
   isSpec: "True"
-  fullName: MASES.JNetPSCore.JNetPSCore<T>.PathToParse
-  fullName.vb: MASES.JNetPSCore.JNetPSCore(Of T).PathToParse
-  nameWithType: JNetPSCore<T>.PathToParse
-  nameWithType.vb: JNetPSCore(Of T).PathToParse
-- uid: MASES.JNetPSCore.JNetPSCoreExtensions
-  name: JNetPSCoreExtensions
-  href: api/MASES.JNetPSCore.JNetPSCoreExtensions.html
-  commentId: T:MASES.JNetPSCore.JNetPSCoreExtensions
-  fullName: MASES.JNetPSCore.JNetPSCoreExtensions
-  nameWithType: JNetPSCoreExtensions
-- uid: MASES.JNetPSCore.JNetPSCoreExtensions.TraverseUntil(System.Type,System.Type)
+  fullName: MASES.JNetPSCore.JNetPSHelper<TClass>.SetEnableDebug
+  fullName.vb: MASES.JNetPSCore.JNetPSHelper(Of TClass).SetEnableDebug
+  nameWithType: JNetPSHelper<TClass>.SetEnableDebug
+  nameWithType.vb: JNetPSHelper(Of TClass).SetEnableDebug
+- uid: MASES.JNetPSCore.JNetPSHelper`1.SetHeapSize(System.String)
+  name: SetHeapSize(String)
+  href: api/MASES.JNetPSCore.JNetPSHelper-1.html#MASES_JNetPSCore_JNetPSHelper_1_SetHeapSize_System_String_
+  commentId: M:MASES.JNetPSCore.JNetPSHelper`1.SetHeapSize(System.String)
+  fullName: MASES.JNetPSCore.JNetPSHelper<TClass>.SetHeapSize(System.String)
+  fullName.vb: MASES.JNetPSCore.JNetPSHelper(Of TClass).SetHeapSize(System.String)
+  nameWithType: JNetPSHelper<TClass>.SetHeapSize(String)
+  nameWithType.vb: JNetPSHelper(Of TClass).SetHeapSize(String)
+- uid: MASES.JNetPSCore.JNetPSHelper`1.SetHeapSize*
+  name: SetHeapSize
+  href: api/MASES.JNetPSCore.JNetPSHelper-1.html#MASES_JNetPSCore_JNetPSHelper_1_SetHeapSize_
+  commentId: Overload:MASES.JNetPSCore.JNetPSHelper`1.SetHeapSize
+  isSpec: "True"
+  fullName: MASES.JNetPSCore.JNetPSHelper<TClass>.SetHeapSize
+  fullName.vb: MASES.JNetPSCore.JNetPSHelper(Of TClass).SetHeapSize
+  nameWithType: JNetPSHelper<TClass>.SetHeapSize
+  nameWithType.vb: JNetPSHelper(Of TClass).SetHeapSize
+- uid: MASES.JNetPSCore.JNetPSHelper`1.SetInitialHeapSize(System.String)
+  name: SetInitialHeapSize(String)
+  href: api/MASES.JNetPSCore.JNetPSHelper-1.html#MASES_JNetPSCore_JNetPSHelper_1_SetInitialHeapSize_System_String_
+  commentId: M:MASES.JNetPSCore.JNetPSHelper`1.SetInitialHeapSize(System.String)
+  fullName: MASES.JNetPSCore.JNetPSHelper<TClass>.SetInitialHeapSize(System.String)
+  fullName.vb: MASES.JNetPSCore.JNetPSHelper(Of TClass).SetInitialHeapSize(System.String)
+  nameWithType: JNetPSHelper<TClass>.SetInitialHeapSize(String)
+  nameWithType.vb: JNetPSHelper(Of TClass).SetInitialHeapSize(String)
+- uid: MASES.JNetPSCore.JNetPSHelper`1.SetInitialHeapSize*
+  name: SetInitialHeapSize
+  href: api/MASES.JNetPSCore.JNetPSHelper-1.html#MASES_JNetPSCore_JNetPSHelper_1_SetInitialHeapSize_
+  commentId: Overload:MASES.JNetPSCore.JNetPSHelper`1.SetInitialHeapSize
+  isSpec: "True"
+  fullName: MASES.JNetPSCore.JNetPSHelper<TClass>.SetInitialHeapSize
+  fullName.vb: MASES.JNetPSCore.JNetPSHelper(Of TClass).SetInitialHeapSize
+  nameWithType: JNetPSHelper<TClass>.SetInitialHeapSize
+  nameWithType.vb: JNetPSHelper(Of TClass).SetInitialHeapSize
+- uid: MASES.JNetPSCore.JNetPSHelper`1.SetJavaDebugOpts(System.String)
+  name: SetJavaDebugOpts(String)
+  href: api/MASES.JNetPSCore.JNetPSHelper-1.html#MASES_JNetPSCore_JNetPSHelper_1_SetJavaDebugOpts_System_String_
+  commentId: M:MASES.JNetPSCore.JNetPSHelper`1.SetJavaDebugOpts(System.String)
+  fullName: MASES.JNetPSCore.JNetPSHelper<TClass>.SetJavaDebugOpts(System.String)
+  fullName.vb: MASES.JNetPSCore.JNetPSHelper(Of TClass).SetJavaDebugOpts(System.String)
+  nameWithType: JNetPSHelper<TClass>.SetJavaDebugOpts(String)
+  nameWithType.vb: JNetPSHelper(Of TClass).SetJavaDebugOpts(String)
+- uid: MASES.JNetPSCore.JNetPSHelper`1.SetJavaDebugOpts*
+  name: SetJavaDebugOpts
+  href: api/MASES.JNetPSCore.JNetPSHelper-1.html#MASES_JNetPSCore_JNetPSHelper_1_SetJavaDebugOpts_
+  commentId: Overload:MASES.JNetPSCore.JNetPSHelper`1.SetJavaDebugOpts
+  isSpec: "True"
+  fullName: MASES.JNetPSCore.JNetPSHelper<TClass>.SetJavaDebugOpts
+  fullName.vb: MASES.JNetPSCore.JNetPSHelper(Of TClass).SetJavaDebugOpts
+  nameWithType: JNetPSHelper<TClass>.SetJavaDebugOpts
+  nameWithType.vb: JNetPSHelper(Of TClass).SetJavaDebugOpts
+- uid: MASES.JNetPSCore.JNetPSHelper`1.SetJavaDebugPort(System.Nullable{System.Int16})
+  name: SetJavaDebugPort(Nullable<Int16>)
+  href: api/MASES.JNetPSCore.JNetPSHelper-1.html#MASES_JNetPSCore_JNetPSHelper_1_SetJavaDebugPort_System_Nullable_System_Int16__
+  commentId: M:MASES.JNetPSCore.JNetPSHelper`1.SetJavaDebugPort(System.Nullable{System.Int16})
+  name.vb: SetJavaDebugPort(Nullable(Of Int16))
+  fullName: MASES.JNetPSCore.JNetPSHelper<TClass>.SetJavaDebugPort(System.Nullable<System.Int16>)
+  fullName.vb: MASES.JNetPSCore.JNetPSHelper(Of TClass).SetJavaDebugPort(System.Nullable(Of System.Int16))
+  nameWithType: JNetPSHelper<TClass>.SetJavaDebugPort(Nullable<Int16>)
+  nameWithType.vb: JNetPSHelper(Of TClass).SetJavaDebugPort(Nullable(Of Int16))
+- uid: MASES.JNetPSCore.JNetPSHelper`1.SetJavaDebugPort*
+  name: SetJavaDebugPort
+  href: api/MASES.JNetPSCore.JNetPSHelper-1.html#MASES_JNetPSCore_JNetPSHelper_1_SetJavaDebugPort_
+  commentId: Overload:MASES.JNetPSCore.JNetPSHelper`1.SetJavaDebugPort
+  isSpec: "True"
+  fullName: MASES.JNetPSCore.JNetPSHelper<TClass>.SetJavaDebugPort
+  fullName.vb: MASES.JNetPSCore.JNetPSHelper(Of TClass).SetJavaDebugPort
+  nameWithType: JNetPSHelper<TClass>.SetJavaDebugPort
+  nameWithType.vb: JNetPSHelper(Of TClass).SetJavaDebugPort
+- uid: MASES.JNetPSCore.JNetPSHelper`1.SetJDKHome(System.String)
+  name: SetJDKHome(String)
+  href: api/MASES.JNetPSCore.JNetPSHelper-1.html#MASES_JNetPSCore_JNetPSHelper_1_SetJDKHome_System_String_
+  commentId: M:MASES.JNetPSCore.JNetPSHelper`1.SetJDKHome(System.String)
+  fullName: MASES.JNetPSCore.JNetPSHelper<TClass>.SetJDKHome(System.String)
+  fullName.vb: MASES.JNetPSCore.JNetPSHelper(Of TClass).SetJDKHome(System.String)
+  nameWithType: JNetPSHelper<TClass>.SetJDKHome(String)
+  nameWithType.vb: JNetPSHelper(Of TClass).SetJDKHome(String)
+- uid: MASES.JNetPSCore.JNetPSHelper`1.SetJDKHome*
+  name: SetJDKHome
+  href: api/MASES.JNetPSCore.JNetPSHelper-1.html#MASES_JNetPSCore_JNetPSHelper_1_SetJDKHome_
+  commentId: Overload:MASES.JNetPSCore.JNetPSHelper`1.SetJDKHome
+  isSpec: "True"
+  fullName: MASES.JNetPSCore.JNetPSHelper<TClass>.SetJDKHome
+  fullName.vb: MASES.JNetPSCore.JNetPSHelper(Of TClass).SetJDKHome
+  nameWithType: JNetPSHelper<TClass>.SetJDKHome
+  nameWithType.vb: JNetPSHelper(Of TClass).SetJDKHome
+- uid: MASES.JNetPSCore.JNetPSHelper`1.SetJmxPort(System.Nullable{System.Int16})
+  name: SetJmxPort(Nullable<Int16>)
+  href: api/MASES.JNetPSCore.JNetPSHelper-1.html#MASES_JNetPSCore_JNetPSHelper_1_SetJmxPort_System_Nullable_System_Int16__
+  commentId: M:MASES.JNetPSCore.JNetPSHelper`1.SetJmxPort(System.Nullable{System.Int16})
+  name.vb: SetJmxPort(Nullable(Of Int16))
+  fullName: MASES.JNetPSCore.JNetPSHelper<TClass>.SetJmxPort(System.Nullable<System.Int16>)
+  fullName.vb: MASES.JNetPSCore.JNetPSHelper(Of TClass).SetJmxPort(System.Nullable(Of System.Int16))
+  nameWithType: JNetPSHelper<TClass>.SetJmxPort(Nullable<Int16>)
+  nameWithType.vb: JNetPSHelper(Of TClass).SetJmxPort(Nullable(Of Int16))
+- uid: MASES.JNetPSCore.JNetPSHelper`1.SetJmxPort*
+  name: SetJmxPort
+  href: api/MASES.JNetPSCore.JNetPSHelper-1.html#MASES_JNetPSCore_JNetPSHelper_1_SetJmxPort_
+  commentId: Overload:MASES.JNetPSCore.JNetPSHelper`1.SetJmxPort
+  isSpec: "True"
+  fullName: MASES.JNetPSCore.JNetPSHelper<TClass>.SetJmxPort
+  fullName.vb: MASES.JNetPSCore.JNetPSHelper(Of TClass).SetJmxPort
+  nameWithType: JNetPSHelper<TClass>.SetJmxPort
+  nameWithType.vb: JNetPSHelper(Of TClass).SetJmxPort
+- uid: MASES.JNetPSCore.JNetPSHelper`1.SetJNIOutputFile(System.String)
+  name: SetJNIOutputFile(String)
+  href: api/MASES.JNetPSCore.JNetPSHelper-1.html#MASES_JNetPSCore_JNetPSHelper_1_SetJNIOutputFile_System_String_
+  commentId: M:MASES.JNetPSCore.JNetPSHelper`1.SetJNIOutputFile(System.String)
+  fullName: MASES.JNetPSCore.JNetPSHelper<TClass>.SetJNIOutputFile(System.String)
+  fullName.vb: MASES.JNetPSCore.JNetPSHelper(Of TClass).SetJNIOutputFile(System.String)
+  nameWithType: JNetPSHelper<TClass>.SetJNIOutputFile(String)
+  nameWithType.vb: JNetPSHelper(Of TClass).SetJNIOutputFile(String)
+- uid: MASES.JNetPSCore.JNetPSHelper`1.SetJNIOutputFile*
+  name: SetJNIOutputFile
+  href: api/MASES.JNetPSCore.JNetPSHelper-1.html#MASES_JNetPSCore_JNetPSHelper_1_SetJNIOutputFile_
+  commentId: Overload:MASES.JNetPSCore.JNetPSHelper`1.SetJNIOutputFile
+  isSpec: "True"
+  fullName: MASES.JNetPSCore.JNetPSHelper<TClass>.SetJNIOutputFile
+  fullName.vb: MASES.JNetPSCore.JNetPSHelper(Of TClass).SetJNIOutputFile
+  nameWithType: JNetPSHelper<TClass>.SetJNIOutputFile
+  nameWithType.vb: JNetPSHelper(Of TClass).SetJNIOutputFile
+- uid: MASES.JNetPSCore.JNetPSHelper`1.SetJNIVerbosity(System.String)
+  name: SetJNIVerbosity(String)
+  href: api/MASES.JNetPSCore.JNetPSHelper-1.html#MASES_JNetPSCore_JNetPSHelper_1_SetJNIVerbosity_System_String_
+  commentId: M:MASES.JNetPSCore.JNetPSHelper`1.SetJNIVerbosity(System.String)
+  fullName: MASES.JNetPSCore.JNetPSHelper<TClass>.SetJNIVerbosity(System.String)
+  fullName.vb: MASES.JNetPSCore.JNetPSHelper(Of TClass).SetJNIVerbosity(System.String)
+  nameWithType: JNetPSHelper<TClass>.SetJNIVerbosity(String)
+  nameWithType.vb: JNetPSHelper(Of TClass).SetJNIVerbosity(String)
+- uid: MASES.JNetPSCore.JNetPSHelper`1.SetJNIVerbosity*
+  name: SetJNIVerbosity
+  href: api/MASES.JNetPSCore.JNetPSHelper-1.html#MASES_JNetPSCore_JNetPSHelper_1_SetJNIVerbosity_
+  commentId: Overload:MASES.JNetPSCore.JNetPSHelper`1.SetJNIVerbosity
+  isSpec: "True"
+  fullName: MASES.JNetPSCore.JNetPSHelper<TClass>.SetJNIVerbosity
+  fullName.vb: MASES.JNetPSCore.JNetPSHelper(Of TClass).SetJNIVerbosity
+  nameWithType: JNetPSHelper<TClass>.SetJNIVerbosity
+  nameWithType.vb: JNetPSHelper(Of TClass).SetJNIVerbosity
+- uid: MASES.JNetPSCore.JNetPSHelper`1.SetJVMPath(System.String)
+  name: SetJVMPath(String)
+  href: api/MASES.JNetPSCore.JNetPSHelper-1.html#MASES_JNetPSCore_JNetPSHelper_1_SetJVMPath_System_String_
+  commentId: M:MASES.JNetPSCore.JNetPSHelper`1.SetJVMPath(System.String)
+  fullName: MASES.JNetPSCore.JNetPSHelper<TClass>.SetJVMPath(System.String)
+  fullName.vb: MASES.JNetPSCore.JNetPSHelper(Of TClass).SetJVMPath(System.String)
+  nameWithType: JNetPSHelper<TClass>.SetJVMPath(String)
+  nameWithType.vb: JNetPSHelper(Of TClass).SetJVMPath(String)
+- uid: MASES.JNetPSCore.JNetPSHelper`1.SetJVMPath*
+  name: SetJVMPath
+  href: api/MASES.JNetPSCore.JNetPSHelper-1.html#MASES_JNetPSCore_JNetPSHelper_1_SetJVMPath_
+  commentId: Overload:MASES.JNetPSCore.JNetPSHelper`1.SetJVMPath
+  isSpec: "True"
+  fullName: MASES.JNetPSCore.JNetPSHelper<TClass>.SetJVMPath
+  fullName.vb: MASES.JNetPSCore.JNetPSHelper(Of TClass).SetJVMPath
+  nameWithType: JNetPSHelper<TClass>.SetJVMPath
+  nameWithType.vb: JNetPSHelper(Of TClass).SetJVMPath
+- uid: MASES.JNetPSCore.JNetPSHelper`1.SetLicensePath(System.String)
+  name: SetLicensePath(String)
+  href: api/MASES.JNetPSCore.JNetPSHelper-1.html#MASES_JNetPSCore_JNetPSHelper_1_SetLicensePath_System_String_
+  commentId: M:MASES.JNetPSCore.JNetPSHelper`1.SetLicensePath(System.String)
+  fullName: MASES.JNetPSCore.JNetPSHelper<TClass>.SetLicensePath(System.String)
+  fullName.vb: MASES.JNetPSCore.JNetPSHelper(Of TClass).SetLicensePath(System.String)
+  nameWithType: JNetPSHelper<TClass>.SetLicensePath(String)
+  nameWithType.vb: JNetPSHelper(Of TClass).SetLicensePath(String)
+- uid: MASES.JNetPSCore.JNetPSHelper`1.SetLicensePath*
+  name: SetLicensePath
+  href: api/MASES.JNetPSCore.JNetPSHelper-1.html#MASES_JNetPSCore_JNetPSHelper_1_SetLicensePath_
+  commentId: Overload:MASES.JNetPSCore.JNetPSHelper`1.SetLicensePath
+  isSpec: "True"
+  fullName: MASES.JNetPSCore.JNetPSHelper<TClass>.SetLicensePath
+  fullName.vb: MASES.JNetPSCore.JNetPSHelper(Of TClass).SetLicensePath
+  nameWithType: JNetPSHelper<TClass>.SetLicensePath
+  nameWithType.vb: JNetPSHelper(Of TClass).SetLicensePath
+- uid: MASES.JNetPSCore.JNetPSHelper`1.SetLogClassPath(System.Nullable{System.Boolean})
+  name: SetLogClassPath(Nullable<Boolean>)
+  href: api/MASES.JNetPSCore.JNetPSHelper-1.html#MASES_JNetPSCore_JNetPSHelper_1_SetLogClassPath_System_Nullable_System_Boolean__
+  commentId: M:MASES.JNetPSCore.JNetPSHelper`1.SetLogClassPath(System.Nullable{System.Boolean})
+  name.vb: SetLogClassPath(Nullable(Of Boolean))
+  fullName: MASES.JNetPSCore.JNetPSHelper<TClass>.SetLogClassPath(System.Nullable<System.Boolean>)
+  fullName.vb: MASES.JNetPSCore.JNetPSHelper(Of TClass).SetLogClassPath(System.Nullable(Of System.Boolean))
+  nameWithType: JNetPSHelper<TClass>.SetLogClassPath(Nullable<Boolean>)
+  nameWithType.vb: JNetPSHelper(Of TClass).SetLogClassPath(Nullable(Of Boolean))
+- uid: MASES.JNetPSCore.JNetPSHelper`1.SetLogClassPath*
+  name: SetLogClassPath
+  href: api/MASES.JNetPSCore.JNetPSHelper-1.html#MASES_JNetPSCore_JNetPSHelper_1_SetLogClassPath_
+  commentId: Overload:MASES.JNetPSCore.JNetPSHelper`1.SetLogClassPath
+  isSpec: "True"
+  fullName: MASES.JNetPSCore.JNetPSHelper<TClass>.SetLogClassPath
+  fullName.vb: MASES.JNetPSCore.JNetPSHelper(Of TClass).SetLogClassPath
+  nameWithType: JNetPSHelper<TClass>.SetLogClassPath
+  nameWithType.vb: JNetPSHelper(Of TClass).SetLogClassPath
+- uid: MASES.JNetPSCore.JNetPSHelperExtensions
+  name: JNetPSHelperExtensions
+  href: api/MASES.JNetPSCore.JNetPSHelperExtensions.html
+  commentId: T:MASES.JNetPSCore.JNetPSHelperExtensions
+  fullName: MASES.JNetPSCore.JNetPSHelperExtensions
+  nameWithType: JNetPSHelperExtensions
+- uid: MASES.JNetPSCore.JNetPSHelperExtensions.GetStaticPropertyOn(System.Type,System.Type,System.String)
+  name: GetStaticPropertyOn(Type, Type, String)
+  href: api/MASES.JNetPSCore.JNetPSHelperExtensions.html#MASES_JNetPSCore_JNetPSHelperExtensions_GetStaticPropertyOn_System_Type_System_Type_System_String_
+  commentId: M:MASES.JNetPSCore.JNetPSHelperExtensions.GetStaticPropertyOn(System.Type,System.Type,System.String)
+  fullName: MASES.JNetPSCore.JNetPSHelperExtensions.GetStaticPropertyOn(System.Type, System.Type, System.String)
+  nameWithType: JNetPSHelperExtensions.GetStaticPropertyOn(Type, Type, String)
+- uid: MASES.JNetPSCore.JNetPSHelperExtensions.GetStaticPropertyOn*
+  name: GetStaticPropertyOn
+  href: api/MASES.JNetPSCore.JNetPSHelperExtensions.html#MASES_JNetPSCore_JNetPSHelperExtensions_GetStaticPropertyOn_
+  commentId: Overload:MASES.JNetPSCore.JNetPSHelperExtensions.GetStaticPropertyOn
+  isSpec: "True"
+  fullName: MASES.JNetPSCore.JNetPSHelperExtensions.GetStaticPropertyOn
+  nameWithType: JNetPSHelperExtensions.GetStaticPropertyOn
+- uid: MASES.JNetPSCore.JNetPSHelperExtensions.GetStaticPropertyOn``1(System.Type,System.String)
+  name: GetStaticPropertyOn<TContainingClass>(Type, String)
+  href: api/MASES.JNetPSCore.JNetPSHelperExtensions.html#MASES_JNetPSCore_JNetPSHelperExtensions_GetStaticPropertyOn__1_System_Type_System_String_
+  commentId: M:MASES.JNetPSCore.JNetPSHelperExtensions.GetStaticPropertyOn``1(System.Type,System.String)
+  name.vb: GetStaticPropertyOn(Of TContainingClass)(Type, String)
+  fullName: MASES.JNetPSCore.JNetPSHelperExtensions.GetStaticPropertyOn<TContainingClass>(System.Type, System.String)
+  fullName.vb: MASES.JNetPSCore.JNetPSHelperExtensions.GetStaticPropertyOn(Of TContainingClass)(System.Type, System.String)
+  nameWithType: JNetPSHelperExtensions.GetStaticPropertyOn<TContainingClass>(Type, String)
+  nameWithType.vb: JNetPSHelperExtensions.GetStaticPropertyOn(Of TContainingClass)(Type, String)
+- uid: MASES.JNetPSCore.JNetPSHelperExtensions.RunStaticMethodOn(System.Type,System.Type,System.String,System.Object[])
+  name: RunStaticMethodOn(Type, Type, String, Object[])
+  href: api/MASES.JNetPSCore.JNetPSHelperExtensions.html#MASES_JNetPSCore_JNetPSHelperExtensions_RunStaticMethodOn_System_Type_System_Type_System_String_System_Object___
+  commentId: M:MASES.JNetPSCore.JNetPSHelperExtensions.RunStaticMethodOn(System.Type,System.Type,System.String,System.Object[])
+  name.vb: RunStaticMethodOn(Type, Type, String, Object())
+  fullName: MASES.JNetPSCore.JNetPSHelperExtensions.RunStaticMethodOn(System.Type, System.Type, System.String, System.Object[])
+  fullName.vb: MASES.JNetPSCore.JNetPSHelperExtensions.RunStaticMethodOn(System.Type, System.Type, System.String, System.Object())
+  nameWithType: JNetPSHelperExtensions.RunStaticMethodOn(Type, Type, String, Object[])
+  nameWithType.vb: JNetPSHelperExtensions.RunStaticMethodOn(Type, Type, String, Object())
+- uid: MASES.JNetPSCore.JNetPSHelperExtensions.RunStaticMethodOn*
+  name: RunStaticMethodOn
+  href: api/MASES.JNetPSCore.JNetPSHelperExtensions.html#MASES_JNetPSCore_JNetPSHelperExtensions_RunStaticMethodOn_
+  commentId: Overload:MASES.JNetPSCore.JNetPSHelperExtensions.RunStaticMethodOn
+  isSpec: "True"
+  fullName: MASES.JNetPSCore.JNetPSHelperExtensions.RunStaticMethodOn
+  nameWithType: JNetPSHelperExtensions.RunStaticMethodOn
+- uid: MASES.JNetPSCore.JNetPSHelperExtensions.RunStaticMethodOn``1(System.Type,System.String,System.Object[])
+  name: RunStaticMethodOn<TContainingClass>(Type, String, Object[])
+  href: api/MASES.JNetPSCore.JNetPSHelperExtensions.html#MASES_JNetPSCore_JNetPSHelperExtensions_RunStaticMethodOn__1_System_Type_System_String_System_Object___
+  commentId: M:MASES.JNetPSCore.JNetPSHelperExtensions.RunStaticMethodOn``1(System.Type,System.String,System.Object[])
+  name.vb: RunStaticMethodOn(Of TContainingClass)(Type, String, Object())
+  fullName: MASES.JNetPSCore.JNetPSHelperExtensions.RunStaticMethodOn<TContainingClass>(System.Type, System.String, System.Object[])
+  fullName.vb: MASES.JNetPSCore.JNetPSHelperExtensions.RunStaticMethodOn(Of TContainingClass)(System.Type, System.String, System.Object())
+  nameWithType: JNetPSHelperExtensions.RunStaticMethodOn<TContainingClass>(Type, String, Object[])
+  nameWithType.vb: JNetPSHelperExtensions.RunStaticMethodOn(Of TContainingClass)(Type, String, Object())
+- uid: MASES.JNetPSCore.JNetPSHelperExtensions.SetStaticPropertyOn(System.Type,System.Type,System.String,System.Object)
+  name: SetStaticPropertyOn(Type, Type, String, Object)
+  href: api/MASES.JNetPSCore.JNetPSHelperExtensions.html#MASES_JNetPSCore_JNetPSHelperExtensions_SetStaticPropertyOn_System_Type_System_Type_System_String_System_Object_
+  commentId: M:MASES.JNetPSCore.JNetPSHelperExtensions.SetStaticPropertyOn(System.Type,System.Type,System.String,System.Object)
+  fullName: MASES.JNetPSCore.JNetPSHelperExtensions.SetStaticPropertyOn(System.Type, System.Type, System.String, System.Object)
+  nameWithType: JNetPSHelperExtensions.SetStaticPropertyOn(Type, Type, String, Object)
+- uid: MASES.JNetPSCore.JNetPSHelperExtensions.SetStaticPropertyOn*
+  name: SetStaticPropertyOn
+  href: api/MASES.JNetPSCore.JNetPSHelperExtensions.html#MASES_JNetPSCore_JNetPSHelperExtensions_SetStaticPropertyOn_
+  commentId: Overload:MASES.JNetPSCore.JNetPSHelperExtensions.SetStaticPropertyOn
+  isSpec: "True"
+  fullName: MASES.JNetPSCore.JNetPSHelperExtensions.SetStaticPropertyOn
+  nameWithType: JNetPSHelperExtensions.SetStaticPropertyOn
+- uid: MASES.JNetPSCore.JNetPSHelperExtensions.SetStaticPropertyOn``1(System.Type,System.String,System.Object)
+  name: SetStaticPropertyOn<TContainingClass>(Type, String, Object)
+  href: api/MASES.JNetPSCore.JNetPSHelperExtensions.html#MASES_JNetPSCore_JNetPSHelperExtensions_SetStaticPropertyOn__1_System_Type_System_String_System_Object_
+  commentId: M:MASES.JNetPSCore.JNetPSHelperExtensions.SetStaticPropertyOn``1(System.Type,System.String,System.Object)
+  name.vb: SetStaticPropertyOn(Of TContainingClass)(Type, String, Object)
+  fullName: MASES.JNetPSCore.JNetPSHelperExtensions.SetStaticPropertyOn<TContainingClass>(System.Type, System.String, System.Object)
+  fullName.vb: MASES.JNetPSCore.JNetPSHelperExtensions.SetStaticPropertyOn(Of TContainingClass)(System.Type, System.String, System.Object)
+  nameWithType: JNetPSHelperExtensions.SetStaticPropertyOn<TContainingClass>(Type, String, Object)
+  nameWithType.vb: JNetPSHelperExtensions.SetStaticPropertyOn(Of TContainingClass)(Type, String, Object)
+- uid: MASES.JNetPSCore.JNetPSHelperExtensions.TraverseUntil(System.Type,System.Type)
   name: TraverseUntil(Type, Type)
-  href: api/MASES.JNetPSCore.JNetPSCoreExtensions.html#MASES_JNetPSCore_JNetPSCoreExtensions_TraverseUntil_System_Type_System_Type_
-  commentId: M:MASES.JNetPSCore.JNetPSCoreExtensions.TraverseUntil(System.Type,System.Type)
-  fullName: MASES.JNetPSCore.JNetPSCoreExtensions.TraverseUntil(System.Type, System.Type)
-  nameWithType: JNetPSCoreExtensions.TraverseUntil(Type, Type)
-- uid: MASES.JNetPSCore.JNetPSCoreExtensions.TraverseUntil*
+  href: api/MASES.JNetPSCore.JNetPSHelperExtensions.html#MASES_JNetPSCore_JNetPSHelperExtensions_TraverseUntil_System_Type_System_Type_
+  commentId: M:MASES.JNetPSCore.JNetPSHelperExtensions.TraverseUntil(System.Type,System.Type)
+  fullName: MASES.JNetPSCore.JNetPSHelperExtensions.TraverseUntil(System.Type, System.Type)
+  nameWithType: JNetPSHelperExtensions.TraverseUntil(Type, Type)
+- uid: MASES.JNetPSCore.JNetPSHelperExtensions.TraverseUntil*
   name: TraverseUntil
-  href: api/MASES.JNetPSCore.JNetPSCoreExtensions.html#MASES_JNetPSCore_JNetPSCoreExtensions_TraverseUntil_
-  commentId: Overload:MASES.JNetPSCore.JNetPSCoreExtensions.TraverseUntil
+  href: api/MASES.JNetPSCore.JNetPSHelperExtensions.html#MASES_JNetPSCore_JNetPSHelperExtensions_TraverseUntil_
+  commentId: Overload:MASES.JNetPSCore.JNetPSHelperExtensions.TraverseUntil
   isSpec: "True"
-  fullName: MASES.JNetPSCore.JNetPSCoreExtensions.TraverseUntil
-  nameWithType: JNetPSCoreExtensions.TraverseUntil
+  fullName: MASES.JNetPSCore.JNetPSHelperExtensions.TraverseUntil
+  nameWithType: JNetPSHelperExtensions.TraverseUntil
 - uid: MASES.JNetReflector
   name: MASES.JNetReflector
   href: api/MASES.JNetReflector.html

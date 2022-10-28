@@ -73,7 +73,8 @@
   
   <h1 id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1" class="text-break">Class StartJNetPSCmdletCommandBase&lt;T&gt;
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Base class to be extended in derived projects to add other parameters</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -254,7 +255,8 @@
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td></td>
+        <td><p>A class based on <a class="xref" href="MASES.JNet.JNetCore-1.html">JNetCore&lt;T&gt;</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -265,7 +267,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_DebugSuspendFlag.md&amp;value=---%0Auid%3A%20MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase%601.DebugSuspendFlag%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L102">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L97">View Source</a>
   </span>
   <a id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_DebugSuspendFlag_" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.DebugSuspendFlag*"></a>
   <h4 id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_DebugSuspendFlag" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.DebugSuspendFlag">DebugSuspendFlag</h4>
@@ -274,7 +276,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Parameter(Position = 8, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = &quot;The suspend flag to be used in the debug option when JVM will be created. Default is \&quot;n\&quot;&quot;)]
+    <pre><code class="lang-csharp hljs">[Parameter(ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = &quot;The suspend flag to be used in the debug option when JVM will be created. Default is \&quot;n\&quot;&quot;)]
 public string DebugSuspendFlag { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
@@ -297,7 +299,7 @@ public string DebugSuspendFlag { get; set; }</code></pre>
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_EnableDebug.md&amp;value=---%0Auid%3A%20MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase%601.EnableDebug%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L84">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L81">View Source</a>
   </span>
   <a id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_EnableDebug_" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.EnableDebug*"></a>
   <h4 id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_EnableDebug" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.EnableDebug">EnableDebug</h4>
@@ -306,7 +308,7 @@ public string DebugSuspendFlag { get; set; }</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Parameter(Position = 6, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = &quot;Put in command line to enable JVM debug&quot;)]
+    <pre><code class="lang-csharp hljs">[Parameter(ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = &quot;Put in command line to enable JVM debug&quot;)]
 public bool? EnableDebug { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
@@ -329,7 +331,7 @@ public bool? EnableDebug { get; set; }</code></pre>
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_HeapSize.md&amp;value=---%0Auid%3A%20MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase%601.HeapSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L120">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L113">View Source</a>
   </span>
   <a id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_HeapSize_" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.HeapSize*"></a>
   <h4 id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_HeapSize" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.HeapSize">HeapSize</h4>
@@ -338,7 +340,7 @@ public bool? EnableDebug { get; set; }</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Parameter(Position = 10, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = &quot;The Heap size (-Xmx) to be set when JVM will be created&quot;)]
+    <pre><code class="lang-csharp hljs">[Parameter(ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = &quot;The Heap size (-Xmx) to be set when JVM will be created&quot;)]
 public string HeapSize { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
@@ -361,7 +363,7 @@ public string HeapSize { get; set; }</code></pre>
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_InitialHeapSize.md&amp;value=---%0Auid%3A%20MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase%601.InitialHeapSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L129">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L121">View Source</a>
   </span>
   <a id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_InitialHeapSize_" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.InitialHeapSize*"></a>
   <h4 id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_InitialHeapSize" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.InitialHeapSize">InitialHeapSize</h4>
@@ -370,7 +372,7 @@ public string HeapSize { get; set; }</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Parameter(Position = 11, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = &quot;The initial Heap size (-Xms) to be set when JVM will be created&quot;)]
+    <pre><code class="lang-csharp hljs">[Parameter(ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = &quot;The initial Heap size (-Xms) to be set when JVM will be created&quot;)]
 public string InitialHeapSize { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
@@ -393,7 +395,7 @@ public string InitialHeapSize { get; set; }</code></pre>
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_JavaDebugOpts.md&amp;value=---%0Auid%3A%20MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase%601.JavaDebugOpts%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L111">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L105">View Source</a>
   </span>
   <a id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_JavaDebugOpts_" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.JavaDebugOpts*"></a>
   <h4 id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_JavaDebugOpts" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.JavaDebugOpts">JavaDebugOpts</h4>
@@ -402,7 +404,7 @@ public string InitialHeapSize { get; set; }</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Parameter(Position = 9, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = &quot;The string to be used in the debug option when JVM will be created. Default is \&quot;-agentlib:jdwp=transport=dt_socket,server=y,suspend={JVMDebugSuspendFlag},address={JVMDebugPort}\&quot;&quot;)]
+    <pre><code class="lang-csharp hljs">[Parameter(ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = &quot;The string to be used in the debug option when JVM will be created. Default is \&quot;-agentlib:jdwp=transport=dt_socket,server=y,suspend={JVMDebugSuspendFlag},address={JVMDebugPort}\&quot;&quot;)]
 public string JavaDebugOpts { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
@@ -425,7 +427,7 @@ public string JavaDebugOpts { get; set; }</code></pre>
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_JavaDebugPort.md&amp;value=---%0Auid%3A%20MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase%601.JavaDebugPort%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L93">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L89">View Source</a>
   </span>
   <a id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_JavaDebugPort_" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.JavaDebugPort*"></a>
   <h4 id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_JavaDebugPort" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.JavaDebugPort">JavaDebugPort</h4>
@@ -434,7 +436,7 @@ public string JavaDebugOpts { get; set; }</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Parameter(Position = 7, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = &quot;The port to be used for debug when JVM will be created&quot;)]
+    <pre><code class="lang-csharp hljs">[Parameter(ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = &quot;The port to be used for debug when JVM will be created&quot;)]
 public short? JavaDebugPort { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
@@ -457,7 +459,7 @@ public short? JavaDebugPort { get; set; }</code></pre>
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_JDKHome.md&amp;value=---%0Auid%3A%20MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase%601.JDKHome%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L39">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L41">View Source</a>
   </span>
   <a id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_JDKHome_" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.JDKHome*"></a>
   <h4 id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_JDKHome" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.JDKHome">JDKHome</h4>
@@ -466,7 +468,7 @@ public short? JavaDebugPort { get; set; }</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Parameter(Position = 1, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = &quot;The path where is located the JRE of the installed JDK&quot;)]
+    <pre><code class="lang-csharp hljs">[Parameter(ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = &quot;The path where is located the JRE of the installed JDK&quot;)]
 public string JDKHome { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
@@ -489,7 +491,7 @@ public string JDKHome { get; set; }</code></pre>
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_JmxPort.md&amp;value=---%0Auid%3A%20MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase%601.JmxPort%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L75">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L73">View Source</a>
   </span>
   <a id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_JmxPort_" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.JmxPort*"></a>
   <h4 id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_JmxPort" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.JmxPort">JmxPort</h4>
@@ -498,7 +500,7 @@ public string JDKHome { get; set; }</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Parameter(Position = 5, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = &quot;The JMX port to be set when JVM will be created&quot;)]
+    <pre><code class="lang-csharp hljs">[Parameter(ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = &quot;The JMX port to be set when JVM will be created&quot;)]
 public short? JmxPort { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
@@ -521,7 +523,7 @@ public short? JmxPort { get; set; }</code></pre>
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_JNIOutputFile.md&amp;value=---%0Auid%3A%20MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase%601.JNIOutputFile%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L66">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L65">View Source</a>
   </span>
   <a id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_JNIOutputFile_" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.JNIOutputFile*"></a>
   <h4 id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_JNIOutputFile" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.JNIOutputFile">JNIOutputFile</h4>
@@ -530,7 +532,7 @@ public short? JmxPort { get; set; }</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Parameter(Position = 4, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = &quot;The path where the JNI verbose info will be written. The file will be opened in append mode&quot;)]
+    <pre><code class="lang-csharp hljs">[Parameter(ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = &quot;The path where the JNI verbose info will be written. The file will be opened in append mode&quot;)]
 public string JNIOutputFile { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
@@ -562,7 +564,7 @@ public string JNIOutputFile { get; set; }</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Parameter(Position = 3, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = &quot;Sets the verbosity of the JNI interface. See oracle documentation&quot;)]
+    <pre><code class="lang-csharp hljs">[Parameter(ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = &quot;Sets the verbosity of the JNI interface. See oracle documentation&quot;)]
 public string JNIVerbosity { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
@@ -585,7 +587,7 @@ public string JNIVerbosity { get; set; }</code></pre>
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_JVMPath.md&amp;value=---%0Auid%3A%20MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase%601.JVMPath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L48">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L49">View Source</a>
   </span>
   <a id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_JVMPath_" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.JVMPath*"></a>
   <h4 id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_JVMPath" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.JVMPath">JVMPath</h4>
@@ -594,7 +596,7 @@ public string JNIVerbosity { get; set; }</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Parameter(Position = 2, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = &quot;The path to the JRE ennvironment or full path to (jvm.dll/libjvm.so). If not set the library try to find a suitable version on the system&quot;)]
+    <pre><code class="lang-csharp hljs">[Parameter(ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = &quot;The path to the JRE ennvironment or full path to (jvm.dll/libjvm.so). If not set the library try to find a suitable version on the system&quot;)]
 public string JVMPath { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
@@ -617,7 +619,7 @@ public string JVMPath { get; set; }</code></pre>
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_LicensePath.md&amp;value=---%0Auid%3A%20MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase%601.LicensePath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L30">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L33">View Source</a>
   </span>
   <a id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_LicensePath_" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.LicensePath*"></a>
   <h4 id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_LicensePath" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.LicensePath">LicensePath</h4>
@@ -626,7 +628,7 @@ public string JVMPath { get; set; }</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Parameter(Position = 0, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = &quot;The path where is located the license file&quot;)]
+    <pre><code class="lang-csharp hljs">[Parameter(ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = &quot;The path where is located the license file&quot;)]
 public string LicensePath { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
@@ -644,6 +646,38 @@ public string LicensePath { get; set; }</code></pre>
       </tr>
     </tbody>
   </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_LogClassPath.md&amp;value=---%0Auid%3A%20MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase%601.LogClassPath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L129">View Source</a>
+  </span>
+  <a id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_LogClassPath_" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.LogClassPath*"></a>
+  <h4 id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_LogClassPath" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.LogClassPath">LogClassPath</h4>
+  <div class="markdown level1 summary"><p>Sets the global value of the log class path</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Parameter(ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = &quot;Set to true to print ClassPath&quot;)]
+public bool? LogClassPath { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
@@ -651,7 +685,7 @@ public string LicensePath { get; set; }</code></pre>
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_BeginProcessing.md&amp;value=---%0Auid%3A%20MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase%601.BeginProcessing%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L153">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L137">View Source</a>
   </span>
   <a id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_BeginProcessing_" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.BeginProcessing*"></a>
   <h4 id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_BeginProcessing" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.BeginProcessing">BeginProcessing()</h4>
@@ -668,11 +702,11 @@ public string LicensePath { get; set; }</code></pre>
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_CreateGlobalInstance.md&amp;value=---%0Auid%3A%20MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase%601.CreateGlobalInstance%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L184">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L169">View Source</a>
   </span>
   <a id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_CreateGlobalInstance_" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.CreateGlobalInstance*"></a>
   <h4 id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_CreateGlobalInstance" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.CreateGlobalInstance">CreateGlobalInstance()</h4>
-  <div class="markdown level1 summary"><p>Invokes</p>
+  <div class="markdown level1 summary"><p>Invokes the <span class="xref">MASES.JCOBridge.C2JBridge.SetupJVMWrapper&lt;T&gt;.CreateGlobalInstance()</span></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -684,7 +718,7 @@ public string LicensePath { get; set; }</code></pre>
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_EndProcessing.md&amp;value=---%0Auid%3A%20MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase%601.EndProcessing%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L187">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L176">View Source</a>
   </span>
   <a id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_EndProcessing_" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.EndProcessing*"></a>
   <h4 id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_EndProcessing" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.EndProcessing">EndProcessing()</h4>
@@ -698,10 +732,26 @@ public string LicensePath { get; set; }</code></pre>
   <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.management.automation.cmdlet.endprocessing#system-management-automation-cmdlet-endprocessing">Cmdlet.EndProcessing()</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_OnAfterCreateGlobalInstance.md&amp;value=---%0Auid%3A%20MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase%601.OnAfterCreateGlobalInstance%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L173">View Source</a>
+  </span>
+  <a id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_OnAfterCreateGlobalInstance_" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.OnAfterCreateGlobalInstance*"></a>
+  <h4 id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_OnAfterCreateGlobalInstance" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.OnAfterCreateGlobalInstance">OnAfterCreateGlobalInstance()</h4>
+  <div class="markdown level1 summary"><p>Executes the code after invoke <a class="xref" href="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-1.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_CreateGlobalInstance">CreateGlobalInstance()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnAfterCreateGlobalInstance()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_OnBeforeCreateGlobalInstance.md&amp;value=---%0Auid%3A%20MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase%601.OnBeforeCreateGlobalInstance%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L180">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L165">View Source</a>
   </span>
   <a id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_OnBeforeCreateGlobalInstance_" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.OnBeforeCreateGlobalInstance*"></a>
   <h4 id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_OnBeforeCreateGlobalInstance" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.OnBeforeCreateGlobalInstance">OnBeforeCreateGlobalInstance()</h4>
@@ -717,7 +767,7 @@ public string LicensePath { get; set; }</code></pre>
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_ProcessRecord.md&amp;value=---%0Auid%3A%20MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase%601.ProcessRecord%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L159">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L143">View Source</a>
   </span>
   <a id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_ProcessRecord_" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.ProcessRecord*"></a>
   <h4 id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_ProcessRecord" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.ProcessRecord">ProcessRecord()</h4>
@@ -740,7 +790,7 @@ public string LicensePath { get; set; }</code></pre>
                     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1.md&amp;value=---%0Auid%3A%20MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L26" class="contribution-link">View Source</a>
+                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L29" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
