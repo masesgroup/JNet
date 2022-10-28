@@ -157,6 +157,7 @@ namespace MASES.JNetPSCore.Cmdlet
 
             OnBeforeCreateGlobalInstance();
             CreateGlobalInstance();
+            OnAfterCreateGlobalInstance();
         }
         /// <summary>
         /// Executes the code before invoke <see cref="CreateGlobalInstance"/>
@@ -166,6 +167,10 @@ namespace MASES.JNetPSCore.Cmdlet
         /// Invokes the <see cref="SetupJVMWrapper{T}.CreateGlobalInstance"/>
         /// </summary>
         public virtual void CreateGlobalInstance() { JNetPSHelper<T>.CreateGlobalInstance(); }
+        /// <summary>
+        /// Executes the code after invoke <see cref="CreateGlobalInstance"/>
+        /// </summary>
+        public virtual void OnAfterCreateGlobalInstance() { }
 
         // This method will be called once at the end of pipeline execution; if no input is received, this method is not called
         protected override void EndProcessing()

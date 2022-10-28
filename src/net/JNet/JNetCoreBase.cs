@@ -90,7 +90,6 @@ namespace MASES.JNet
         /// </summary>
         public static bool? ApplicationLogClassPath { get; set; }
 
-
         /// <inheritdoc cref="SetupJVMWrapper{T}.LicensePath" />
         public override string LicensePath { get { return ApplicationLicensePath ?? base.LicensePath; } }
         /// <inheritdoc cref="SetupJVMWrapper{T}.JDKHome" />
