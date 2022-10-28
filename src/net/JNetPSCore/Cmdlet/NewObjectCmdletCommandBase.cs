@@ -24,8 +24,7 @@ using System.Reflection;
 
 namespace MASES.JNetPSCore.Cmdlet
 {
-    [Cmdlet(VerbsCommon.New, "JObject")]
-    public class NewObjectCmdletCommandBase<T> : PSCmdlet
+    public abstract class NewObjectCmdletCommandBase<T> : PSCmdlet
         where T : JNetCore<T>
     {
         [Parameter(
