@@ -12,15 +12,15 @@
 		<TargetFrameworks>net462;net6.0</TargetFrameworks>
 	</PropertyGroup>
 
-	<ItemGroup>
+	<ItemGroup Condition="True">
 		<jars Include="$(ProjectDir)\..\..\..\jars\*.*" />
 	</ItemGroup>
 	
 	<Target Name="CopyCustomContent" AfterTargets="AfterBuild">
-		<Copy SourceFiles="@(jars)" DestinationFolder="$(OutDir)\jars" />
+		<Copy SourceFiles="@(jars)" DestinationFolder="$(OutDir)" />
 	</Target>
 	<Target Name="CopyCustomContentOnPublish" AfterTargets="Publish">
-		<Copy SourceFiles="@(jars)" DestinationFolder="$(PublishDir)\jars" />
+		<Copy SourceFiles="@(jars)" DestinationFolder="$(PublishDir)" />
 	</Target>
 
 	<ItemGroup>
