@@ -4,7 +4,7 @@
 
 To install the tool executes the following command within a PowerShell shell:
 
-> Install-Module MASES.JNetPS
+> Install-Module -Name MASES.JNetPS
 
 ## Usage
 
@@ -18,7 +18,7 @@ To use the PowerShell interface (JNetPS) runs the following commands within a **
 
 ### Execution
 
-Now everting is ready and tou can create objects like in the following snippet
+Now everything is ready and you can create objects like in the following snippet:
 
 ```powershell
 $var = New-JObject java.lang.String "Hello from"
@@ -51,6 +51,7 @@ _jnetps_ accepts the following cmdlets:
   * JavaDebugOpts
   * HeapSize
   * InitialHeapSize
+  * LogClassPath
 * **Invoke-JCommand**: executes the main method of a specific Java Main-Class in argument and exit. The arguments are:
   * MainClass
   * Arguments
