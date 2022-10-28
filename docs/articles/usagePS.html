@@ -72,7 +72,7 @@
 <h2 id="installation">Installation</h2>
 <p>To install the tool executes the following command within a PowerShell shell:</p>
 <blockquote>
-<p>Install-Module MASES.JNetPS</p>
+<p>Install-Module -Name MASES.JNetPS</p>
 </blockquote>
 <h2 id="usage">Usage</h2>
 <p>To use the PowerShell interface (JNetPS) runs the following commands within a <strong>PowerShell</strong> shell:</p>
@@ -84,7 +84,7 @@
 <p>Start-JNetPS</p>
 </blockquote>
 <h3 id="execution">Execution</h3>
-<p>Now everting is ready and tou can create objects like in the following snippet</p>
+<p>Now everything is ready and you can create objects like in the following snippet:</p>
 <pre><code class="lang-powershell">$var = New-JObject java.lang.String &quot;Hello from&quot;
 $var.ToString()
 $var = $var.concat(&quot; JNetPS&quot;)
@@ -111,6 +111,7 @@ Hello from JNetPS
 <li>JavaDebugOpts</li>
 <li>HeapSize</li>
 <li>InitialHeapSize</li>
+<li>LogClassPath</li>
 </ul>
 </li>
 <li><strong>Invoke-JCommand</strong>: executes the main method of a specific Java Main-Class in argument and exit. The arguments are:
