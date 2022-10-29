@@ -168,6 +168,7 @@ namespace MASES.JNetPSCore
                             psInfo.Arguments += $" '{entry}'";
                         }
                     }
+                    else if (item.Value is SwitchParameter) continue;
                     else
                     {
                         psInfo.Arguments += $" '{item.Value}'";

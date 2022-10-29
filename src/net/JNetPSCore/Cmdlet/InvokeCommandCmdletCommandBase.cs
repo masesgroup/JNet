@@ -17,6 +17,7 @@
 */
 
 using MASES.JNet;
+using System;
 using System.Management.Automation;
 
 namespace MASES.JNetPSCore.Cmdlet
@@ -34,13 +35,19 @@ namespace MASES.JNetPSCore.Cmdlet
 
         [Parameter(
             ValueFromPipelineByPropertyName = true,
-            HelpMessage = "The Main-Class arguments to be used")]
-        public string[] Arguments { get; set; }
+            HelpMessage = "The Main-Class arguments to be used. Put them within a single string.")]
+        public string Arguments { get; set; }
 
         // This method will be called for each input received from the pipeline to this cmdlet; if no input is received, this method is not called
         protected override void OnAfterCreateGlobalInstance()
         {
-            GenericCommand.CreateAndLaunch(MainClass, Arguments);
+            string[] arguments = Array.Empty<string>();
+            if (Arguments != null)
+            {
+                arguments = Arguments.Split(' ');
+            }
+
+            GenericCommand.CreateAndLaunch(MainClass, arguments);
         }
     }
 }
