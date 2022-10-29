@@ -407,9 +407,16 @@ namespace MASES.JNetPSCore
         /// Invokes <see cref="SetupJVMWrapper{T}.CreateGlobalInstance"/> to start engine
         /// </summary>
         /// <remarks>All properties must be set prior to execute this command. Updates to the JVM environment cannot be done later.</remarks>
-        public static void CreateGlobalInstance()
+        public static void CreateGlobalInstance(System.Management.Automation.Cmdlet cmdlet)
         {
-            _ = typeof(TClass).RunStaticMethodOn(typeof(SetupJVMWrapper<>), nameof(JNetCore.CreateGlobalInstance));
+            lock (_instanceCreatedLock)
+            {
+                if (_instanceCreated) { cmdlet.WriteWarning("CreateGlobalInstance requested but it was previously requested."); return; }
+                cmdlet.WriteDebug("Invoking CreateGlobalInstance");
+                _ = typeof(TClass).RunStaticMethodOn(typeof(SetupJVMWrapper<>), nameof(JNetCore.CreateGlobalInstance));
+                cmdlet.WriteDebug("Invoked CreateGlobalInstance");
+                _instanceCreated = true;
+            }
         }
         /// <summary>
         /// Creates a new class instance
