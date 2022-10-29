@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class InvokeCommandCmdletCommandBase
+    <title>Class JNetPSExternalizableCmdlet&lt;T&gt;
    | JNet website </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class InvokeCommandCmdletCommandBase
+    <meta name="title" content="Class JNetPSExternalizableCmdlet&lt;T&gt;
    | JNet website ">
     <meta name="generator" content="docfx 2.59.4.0">
     
@@ -68,12 +68,13 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase">
+            <article class="content wrap" id="_content" data-uid="MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet`1">
   
   
-  <h1 id="MASES_JNetPSCore_Cmdlet_InvokeCommandCmdletCommandBase" data-uid="MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase" class="text-break">Class InvokeCommandCmdletCommandBase
+  <h1 id="MASES_JNetPSCore_Cmdlet_JNetPSExternalizableCmdlet_1" data-uid="MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet`1" class="text-break">Class JNetPSExternalizableCmdlet&lt;T&gt;
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Base class to be extended in derived projects to execute externally</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -81,8 +82,9 @@
     <div class="level1"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.management.automation.internal.internalcommand">InternalCommand</a></div>
     <div class="level2"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.management.automation.cmdlet">Cmdlet</a></div>
     <div class="level3"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.management.automation.pscmdlet">PSCmdlet</a></div>
-    <div class="level4"><span class="xref">InvokeCommandCmdletCommandBase</span></div>
-      <div class="level5"><a class="xref" href="MASES.JNetPS.Cmdlet.InvokeCommandCmdletCommand.html">InvokeCommandCmdletCommand</a></div>
+    <div class="level4"><span class="xref">JNetPSExternalizableCmdlet&lt;T&gt;</span></div>
+      <div class="level5"><a class="xref" href="MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase-2.html">NewObjectCmdletCommandBase&lt;TCmdlet, TCore&gt;</a></div>
+      <div class="level5"><a class="xref" href="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-2.html">StartJNetPSCmdletCommandBase&lt;TCmdlet, TCore&gt;</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -239,27 +241,43 @@
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="MASES.JNetPSCore.Cmdlet.html">MASES.JNetPSCore.Cmdlet</a></h6>
   <h6><strong>Assembly</strong>: MASES.JNetPSCore.dll</h6>
-  <h5 id="MASES_JNetPSCore_Cmdlet_InvokeCommandCmdletCommandBase_syntax">Syntax</h5>
+  <h5 id="MASES_JNetPSCore_Cmdlet_JNetPSExternalizableCmdlet_1_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class InvokeCommandCmdletCommandBase : PSCmdlet</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class JNetPSExternalizableCmdlet&lt;T&gt; : PSCmdlet where T : JNetPSExternalizableCmdlet&lt;T&gt;</code></pre>
   </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="properties">Properties
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetPSCore_Cmdlet_InvokeCommandCmdletCommandBase_Arguments.md&amp;value=---%0Auid%3A%20MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase.Arguments%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetPSCore_Cmdlet_JNetPSExternalizableCmdlet_1_BypassJNetPSExternalize.md&amp;value=---%0Auid%3A%20MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet%601.BypassJNetPSExternalize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/InvokeCommandCmdletCommandBase.cs/#L34">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/JNetPSExternalizableCmdlet.cs/#L46">View Source</a>
   </span>
-  <a id="MASES_JNetPSCore_Cmdlet_InvokeCommandCmdletCommandBase_Arguments_" data-uid="MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase.Arguments*"></a>
-  <h4 id="MASES_JNetPSCore_Cmdlet_InvokeCommandCmdletCommandBase_Arguments" data-uid="MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase.Arguments">Arguments</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="MASES_JNetPSCore_Cmdlet_JNetPSExternalizableCmdlet_1_BypassJNetPSExternalize_" data-uid="MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet`1.BypassJNetPSExternalize*"></a>
+  <h4 id="MASES_JNetPSCore_Cmdlet_JNetPSExternalizableCmdlet_1_BypassJNetPSExternalize" data-uid="MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet`1.BypassJNetPSExternalize">BypassJNetPSExternalize</h4>
+  <div class="markdown level1 summary"><p>Permit to bypass the <a class="xref" href="MASES.JNetPSCore.Cmdlet.JNetPSExternalize.html">JNetPSExternalize</a> attribute</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Parameter(Position = 1, ValueFromPipelineByPropertyName = true, HelpMessage = &quot;The Main-Class arguments to be used&quot;)]
-public string[] Arguments { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Parameter(DontShow = true, ValueFromPipelineByPropertyName = true)]
+public SwitchParameter BypassJNetPSExternalize { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -271,26 +289,27 @@ public string[] Arguments { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a>[]</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.management.automation.switchparameter">SwitchParameter</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetPSCore_Cmdlet_InvokeCommandCmdletCommandBase_MainClass.md&amp;value=---%0Auid%3A%20MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase.MainClass%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetPSCore_Cmdlet_JNetPSExternalizableCmdlet_1_ForceJNetPSExternalize.md&amp;value=---%0Auid%3A%20MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet%601.ForceJNetPSExternalize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/InvokeCommandCmdletCommandBase.cs/#L26">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/JNetPSExternalizableCmdlet.cs/#L52">View Source</a>
   </span>
-  <a id="MASES_JNetPSCore_Cmdlet_InvokeCommandCmdletCommandBase_MainClass_" data-uid="MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase.MainClass*"></a>
-  <h4 id="MASES_JNetPSCore_Cmdlet_InvokeCommandCmdletCommandBase_MainClass" data-uid="MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase.MainClass">MainClass</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="MASES_JNetPSCore_Cmdlet_JNetPSExternalizableCmdlet_1_ForceJNetPSExternalize_" data-uid="MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet`1.ForceJNetPSExternalize*"></a>
+  <h4 id="MASES_JNetPSCore_Cmdlet_JNetPSExternalizableCmdlet_1_ForceJNetPSExternalize" data-uid="MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet`1.ForceJNetPSExternalize">ForceJNetPSExternalize</h4>
+  <div class="markdown level1 summary"><p>Force the external execution even if the <a class="xref" href="MASES.JNetPSCore.Cmdlet.JNetPSExternalize.html">JNetPSExternalize</a> attribute was not defined</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Parameter(Mandatory = true, Position = 0, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = &quot;The java Main-Class name to be launched&quot;)]
-public string MainClass { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Parameter(DontShow = true, ValueFromPipelineByPropertyName = true)]
+public SwitchParameter ForceJNetPSExternalize { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -302,7 +321,39 @@ public string MainClass { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.management.automation.switchparameter">SwitchParameter</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetPSCore_Cmdlet_JNetPSExternalizableCmdlet_1_JNetPSCmdletDetached.md&amp;value=---%0Auid%3A%20MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet%601.JNetPSCmdletDetached%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/JNetPSExternalizableCmdlet.cs/#L40">View Source</a>
+  </span>
+  <a id="MASES_JNetPSCore_Cmdlet_JNetPSExternalizableCmdlet_1_JNetPSCmdletDetached_" data-uid="MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet`1.JNetPSCmdletDetached*"></a>
+  <h4 id="MASES_JNetPSCore_Cmdlet_JNetPSExternalizableCmdlet_1_JNetPSCmdletDetached" data-uid="MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet`1.JNetPSCmdletDetached">JNetPSCmdletDetached</h4>
+  <div class="markdown level1 summary"><p>Used internally</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Parameter(DontShow = true, ValueFromPipelineByPropertyName = true)]
+public SwitchParameter JNetPSCmdletDetached { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.management.automation.switchparameter">SwitchParameter</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -311,13 +362,13 @@ public string MainClass { get; set; }</code></pre>
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetPSCore_Cmdlet_InvokeCommandCmdletCommandBase_BeginProcessing.md&amp;value=---%0Auid%3A%20MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase.BeginProcessing%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetPSCore_Cmdlet_JNetPSExternalizableCmdlet_1_BeginProcessing.md&amp;value=---%0Auid%3A%20MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet%601.BeginProcessing%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/InvokeCommandCmdletCommandBase.cs/#L42">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/JNetPSExternalizableCmdlet.cs/#L56">View Source</a>
   </span>
-  <a id="MASES_JNetPSCore_Cmdlet_InvokeCommandCmdletCommandBase_BeginProcessing_" data-uid="MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase.BeginProcessing*"></a>
-  <h4 id="MASES_JNetPSCore_Cmdlet_InvokeCommandCmdletCommandBase_BeginProcessing" data-uid="MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase.BeginProcessing">BeginProcessing()</h4>
+  <a id="MASES_JNetPSCore_Cmdlet_JNetPSExternalizableCmdlet_1_BeginProcessing_" data-uid="MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet`1.BeginProcessing*"></a>
+  <h4 id="MASES_JNetPSCore_Cmdlet_JNetPSExternalizableCmdlet_1_BeginProcessing" data-uid="MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet`1.BeginProcessing">BeginProcessing()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -328,13 +379,13 @@ public string MainClass { get; set; }</code></pre>
   <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.management.automation.cmdlet.beginprocessing#system-management-automation-cmdlet-beginprocessing">Cmdlet.BeginProcessing()</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetPSCore_Cmdlet_InvokeCommandCmdletCommandBase_EndProcessing.md&amp;value=---%0Auid%3A%20MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase.EndProcessing%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetPSCore_Cmdlet_JNetPSExternalizableCmdlet_1_EndProcessing.md&amp;value=---%0Auid%3A%20MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet%601.EndProcessing%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/InvokeCommandCmdletCommandBase.cs/#L54">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/JNetPSExternalizableCmdlet.cs/#L75">View Source</a>
   </span>
-  <a id="MASES_JNetPSCore_Cmdlet_InvokeCommandCmdletCommandBase_EndProcessing_" data-uid="MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase.EndProcessing*"></a>
-  <h4 id="MASES_JNetPSCore_Cmdlet_InvokeCommandCmdletCommandBase_EndProcessing" data-uid="MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase.EndProcessing">EndProcessing()</h4>
+  <a id="MASES_JNetPSCore_Cmdlet_JNetPSExternalizableCmdlet_1_EndProcessing_" data-uid="MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet`1.EndProcessing*"></a>
+  <h4 id="MASES_JNetPSCore_Cmdlet_JNetPSExternalizableCmdlet_1_EndProcessing" data-uid="MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet`1.EndProcessing">EndProcessing()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -345,21 +396,49 @@ public string MainClass { get; set; }</code></pre>
   <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.management.automation.cmdlet.endprocessing#system-management-automation-cmdlet-endprocessing">Cmdlet.EndProcessing()</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetPSCore_Cmdlet_InvokeCommandCmdletCommandBase_ProcessRecord.md&amp;value=---%0Auid%3A%20MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase.ProcessRecord%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetPSCore_Cmdlet_JNetPSExternalizableCmdlet_1_ProcessCommand.md&amp;value=---%0Auid%3A%20MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet%601.ProcessCommand%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/InvokeCommandCmdletCommandBase.cs/#L48">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/JNetPSExternalizableCmdlet.cs/#L72">View Source</a>
   </span>
-  <a id="MASES_JNetPSCore_Cmdlet_InvokeCommandCmdletCommandBase_ProcessRecord_" data-uid="MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase.ProcessRecord*"></a>
-  <h4 id="MASES_JNetPSCore_Cmdlet_InvokeCommandCmdletCommandBase_ProcessRecord" data-uid="MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase.ProcessRecord">ProcessRecord()</h4>
+  <a id="MASES_JNetPSCore_Cmdlet_JNetPSExternalizableCmdlet_1_ProcessCommand_" data-uid="MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet`1.ProcessCommand*"></a>
+  <h4 id="MASES_JNetPSCore_Cmdlet_JNetPSExternalizableCmdlet_1_ProcessCommand" data-uid="MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet`1.ProcessCommand">ProcessCommand()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override void ProcessRecord()</code></pre>
+    <pre><code class="lang-csharp hljs">protected abstract void ProcessCommand()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetPSCore_Cmdlet_JNetPSExternalizableCmdlet_1_ProcessRecord.md&amp;value=---%0Auid%3A%20MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet%601.ProcessRecord%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/JNetPSExternalizableCmdlet.cs/#L63">View Source</a>
+  </span>
+  <a id="MASES_JNetPSCore_Cmdlet_JNetPSExternalizableCmdlet_1_ProcessRecord_" data-uid="MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet`1.ProcessRecord*"></a>
+  <h4 id="MASES_JNetPSCore_Cmdlet_JNetPSExternalizableCmdlet_1_ProcessRecord" data-uid="MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet`1.ProcessRecord">ProcessRecord()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected sealed override void ProcessRecord()</code></pre>
   </div>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.management.automation.cmdlet.processrecord#system-management-automation-cmdlet-processrecord">Cmdlet.ProcessRecord()</a></div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="MASES.JNetPSCore.JNetPSHelperExtensions.html#MASES_JNetPSCore_JNetPSHelperExtensions_NounName__1___0_">JNetPSHelperExtensions.NounName&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="MASES.JNetPSCore.JNetPSHelperExtensions.html#MASES_JNetPSCore_JNetPSHelperExtensions_VerbName__1___0_">JNetPSHelperExtensions.VerbName&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="MASES.JNetPSCore.JNetPSHelperExtensions.html#MASES_JNetPSCore_JNetPSHelperExtensions_IsExternal__1___0_">JNetPSHelperExtensions.IsExternal&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="MASES.JNetPSCore.JNetPSHelperExtensions.html#MASES_JNetPSCore_JNetPSHelperExtensions_InvokeExternal__1___0_">JNetPSHelperExtensions.InvokeExternal&lt;T&gt;(T)</a>
+  </div>
 </article>
           </div>
           
@@ -368,10 +447,10 @@ public string MainClass { get; set; }</code></pre>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetPSCore_Cmdlet_InvokeCommandCmdletCommandBase.md&amp;value=---%0Auid%3A%20MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetPSCore_Cmdlet_JNetPSExternalizableCmdlet_1.md&amp;value=---%0Auid%3A%20MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/InvokeCommandCmdletCommandBase.cs/#L24" class="contribution-link">View Source</a>
+                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/JNetPSExternalizableCmdlet.cs/#L34" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

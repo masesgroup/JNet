@@ -22485,19 +22485,6 @@ references:
   isSpec: "True"
   fullName: MASES.JNet.GenericCommand.GenericCommand
   nameWithType: GenericCommand.GenericCommand
-- uid: MASES.JNet.GenericCommand.Create(System.String)
-  name: Create(String)
-  href: api/MASES.JNet.GenericCommand.html#MASES_JNet_GenericCommand_Create_System_String_
-  commentId: M:MASES.JNet.GenericCommand.Create(System.String)
-  fullName: MASES.JNet.GenericCommand.Create(System.String)
-  nameWithType: GenericCommand.Create(String)
-- uid: MASES.JNet.GenericCommand.Create*
-  name: Create
-  href: api/MASES.JNet.GenericCommand.html#MASES_JNet_GenericCommand_Create_
-  commentId: Overload:MASES.JNet.GenericCommand.Create
-  isSpec: "True"
-  fullName: MASES.JNet.GenericCommand.Create
-  nameWithType: GenericCommand.Create
 - uid: MASES.JNet.GenericCommand.CreateAndLaunch(System.String,System.Object[])
   name: CreateAndLaunch(String, Object[])
   href: api/MASES.JNet.GenericCommand.html#MASES_JNet_GenericCommand_CreateAndLaunch_System_String_System_Object___
@@ -23590,503 +23577,612 @@ references:
   commentId: N:MASES.JNetPSCore.Cmdlet
   fullName: MASES.JNetPSCore.Cmdlet
   nameWithType: MASES.JNetPSCore.Cmdlet
-- uid: MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase
-  name: InvokeCommandCmdletCommandBase
-  href: api/MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase.html
-  commentId: T:MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase
-  fullName: MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase
-  nameWithType: InvokeCommandCmdletCommandBase
-- uid: MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase.Arguments
+- uid: MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase`2
+  name: InvokeCommandCmdletCommandBase<TCmdlet, TCore>
+  href: api/MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase-2.html
+  commentId: T:MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase`2
+  name.vb: InvokeCommandCmdletCommandBase(Of TCmdlet, TCore)
+  fullName: MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase<TCmdlet, TCore>
+  fullName.vb: MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase(Of TCmdlet, TCore)
+  nameWithType: InvokeCommandCmdletCommandBase<TCmdlet, TCore>
+  nameWithType.vb: InvokeCommandCmdletCommandBase(Of TCmdlet, TCore)
+- uid: MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase`2.Arguments
   name: Arguments
-  href: api/MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase.html#MASES_JNetPSCore_Cmdlet_InvokeCommandCmdletCommandBase_Arguments
-  commentId: P:MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase.Arguments
-  fullName: MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase.Arguments
-  nameWithType: InvokeCommandCmdletCommandBase.Arguments
-- uid: MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase.Arguments*
+  href: api/MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase-2.html#MASES_JNetPSCore_Cmdlet_InvokeCommandCmdletCommandBase_2_Arguments
+  commentId: P:MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase`2.Arguments
+  fullName: MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase<TCmdlet, TCore>.Arguments
+  fullName.vb: MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase(Of TCmdlet, TCore).Arguments
+  nameWithType: InvokeCommandCmdletCommandBase<TCmdlet, TCore>.Arguments
+  nameWithType.vb: InvokeCommandCmdletCommandBase(Of TCmdlet, TCore).Arguments
+- uid: MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase`2.Arguments*
   name: Arguments
-  href: api/MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase.html#MASES_JNetPSCore_Cmdlet_InvokeCommandCmdletCommandBase_Arguments_
-  commentId: Overload:MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase.Arguments
+  href: api/MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase-2.html#MASES_JNetPSCore_Cmdlet_InvokeCommandCmdletCommandBase_2_Arguments_
+  commentId: Overload:MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase`2.Arguments
   isSpec: "True"
-  fullName: MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase.Arguments
-  nameWithType: InvokeCommandCmdletCommandBase.Arguments
-- uid: MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase.BeginProcessing
-  name: BeginProcessing()
-  href: api/MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase.html#MASES_JNetPSCore_Cmdlet_InvokeCommandCmdletCommandBase_BeginProcessing
-  commentId: M:MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase.BeginProcessing
-  fullName: MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase.BeginProcessing()
-  nameWithType: InvokeCommandCmdletCommandBase.BeginProcessing()
-- uid: MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase.BeginProcessing*
-  name: BeginProcessing
-  href: api/MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase.html#MASES_JNetPSCore_Cmdlet_InvokeCommandCmdletCommandBase_BeginProcessing_
-  commentId: Overload:MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase.BeginProcessing
-  isSpec: "True"
-  fullName: MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase.BeginProcessing
-  nameWithType: InvokeCommandCmdletCommandBase.BeginProcessing
-- uid: MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase.EndProcessing
-  name: EndProcessing()
-  href: api/MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase.html#MASES_JNetPSCore_Cmdlet_InvokeCommandCmdletCommandBase_EndProcessing
-  commentId: M:MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase.EndProcessing
-  fullName: MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase.EndProcessing()
-  nameWithType: InvokeCommandCmdletCommandBase.EndProcessing()
-- uid: MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase.EndProcessing*
-  name: EndProcessing
-  href: api/MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase.html#MASES_JNetPSCore_Cmdlet_InvokeCommandCmdletCommandBase_EndProcessing_
-  commentId: Overload:MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase.EndProcessing
-  isSpec: "True"
-  fullName: MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase.EndProcessing
-  nameWithType: InvokeCommandCmdletCommandBase.EndProcessing
-- uid: MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase.MainClass
+  fullName: MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase<TCmdlet, TCore>.Arguments
+  fullName.vb: MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase(Of TCmdlet, TCore).Arguments
+  nameWithType: InvokeCommandCmdletCommandBase<TCmdlet, TCore>.Arguments
+  nameWithType.vb: InvokeCommandCmdletCommandBase(Of TCmdlet, TCore).Arguments
+- uid: MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase`2.MainClass
   name: MainClass
-  href: api/MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase.html#MASES_JNetPSCore_Cmdlet_InvokeCommandCmdletCommandBase_MainClass
-  commentId: P:MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase.MainClass
-  fullName: MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase.MainClass
-  nameWithType: InvokeCommandCmdletCommandBase.MainClass
-- uid: MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase.MainClass*
+  href: api/MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase-2.html#MASES_JNetPSCore_Cmdlet_InvokeCommandCmdletCommandBase_2_MainClass
+  commentId: P:MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase`2.MainClass
+  fullName: MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase<TCmdlet, TCore>.MainClass
+  fullName.vb: MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase(Of TCmdlet, TCore).MainClass
+  nameWithType: InvokeCommandCmdletCommandBase<TCmdlet, TCore>.MainClass
+  nameWithType.vb: InvokeCommandCmdletCommandBase(Of TCmdlet, TCore).MainClass
+- uid: MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase`2.MainClass*
   name: MainClass
-  href: api/MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase.html#MASES_JNetPSCore_Cmdlet_InvokeCommandCmdletCommandBase_MainClass_
-  commentId: Overload:MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase.MainClass
+  href: api/MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase-2.html#MASES_JNetPSCore_Cmdlet_InvokeCommandCmdletCommandBase_2_MainClass_
+  commentId: Overload:MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase`2.MainClass
   isSpec: "True"
-  fullName: MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase.MainClass
-  nameWithType: InvokeCommandCmdletCommandBase.MainClass
-- uid: MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase.ProcessRecord
-  name: ProcessRecord()
-  href: api/MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase.html#MASES_JNetPSCore_Cmdlet_InvokeCommandCmdletCommandBase_ProcessRecord
-  commentId: M:MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase.ProcessRecord
-  fullName: MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase.ProcessRecord()
-  nameWithType: InvokeCommandCmdletCommandBase.ProcessRecord()
-- uid: MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase.ProcessRecord*
-  name: ProcessRecord
-  href: api/MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase.html#MASES_JNetPSCore_Cmdlet_InvokeCommandCmdletCommandBase_ProcessRecord_
-  commentId: Overload:MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase.ProcessRecord
-  isSpec: "True"
-  fullName: MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase.ProcessRecord
-  nameWithType: InvokeCommandCmdletCommandBase.ProcessRecord
-- uid: MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase`1
-  name: NewObjectCmdletCommandBase<T>
-  href: api/MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase-1.html
-  commentId: T:MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase`1
-  name.vb: NewObjectCmdletCommandBase(Of T)
-  fullName: MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase<T>
-  fullName.vb: MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase(Of T)
-  nameWithType: NewObjectCmdletCommandBase<T>
-  nameWithType.vb: NewObjectCmdletCommandBase(Of T)
-- uid: MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase`1.Arguments
-  name: Arguments
-  href: api/MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase-1.html#MASES_JNetPSCore_Cmdlet_NewObjectCmdletCommandBase_1_Arguments
-  commentId: P:MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase`1.Arguments
-  fullName: MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase<T>.Arguments
-  fullName.vb: MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase(Of T).Arguments
-  nameWithType: NewObjectCmdletCommandBase<T>.Arguments
-  nameWithType.vb: NewObjectCmdletCommandBase(Of T).Arguments
-- uid: MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase`1.Arguments*
-  name: Arguments
-  href: api/MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase-1.html#MASES_JNetPSCore_Cmdlet_NewObjectCmdletCommandBase_1_Arguments_
-  commentId: Overload:MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase`1.Arguments
-  isSpec: "True"
-  fullName: MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase<T>.Arguments
-  fullName.vb: MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase(Of T).Arguments
-  nameWithType: NewObjectCmdletCommandBase<T>.Arguments
-  nameWithType.vb: NewObjectCmdletCommandBase(Of T).Arguments
-- uid: MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase`1.BeginProcessing
-  name: BeginProcessing()
-  href: api/MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase-1.html#MASES_JNetPSCore_Cmdlet_NewObjectCmdletCommandBase_1_BeginProcessing
-  commentId: M:MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase`1.BeginProcessing
-  fullName: MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase<T>.BeginProcessing()
-  fullName.vb: MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase(Of T).BeginProcessing()
-  nameWithType: NewObjectCmdletCommandBase<T>.BeginProcessing()
-  nameWithType.vb: NewObjectCmdletCommandBase(Of T).BeginProcessing()
-- uid: MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase`1.BeginProcessing*
-  name: BeginProcessing
-  href: api/MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase-1.html#MASES_JNetPSCore_Cmdlet_NewObjectCmdletCommandBase_1_BeginProcessing_
-  commentId: Overload:MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase`1.BeginProcessing
-  isSpec: "True"
-  fullName: MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase<T>.BeginProcessing
-  fullName.vb: MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase(Of T).BeginProcessing
-  nameWithType: NewObjectCmdletCommandBase<T>.BeginProcessing
-  nameWithType.vb: NewObjectCmdletCommandBase(Of T).BeginProcessing
-- uid: MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase`1.Class
-  name: Class
-  href: api/MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase-1.html#MASES_JNetPSCore_Cmdlet_NewObjectCmdletCommandBase_1_Class
-  commentId: P:MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase`1.Class
-  fullName: MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase<T>.Class
-  fullName.vb: MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase(Of T).Class
-  nameWithType: NewObjectCmdletCommandBase<T>.Class
-  nameWithType.vb: NewObjectCmdletCommandBase(Of T).Class
-- uid: MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase`1.Class*
-  name: Class
-  href: api/MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase-1.html#MASES_JNetPSCore_Cmdlet_NewObjectCmdletCommandBase_1_Class_
-  commentId: Overload:MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase`1.Class
-  isSpec: "True"
-  fullName: MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase<T>.Class
-  fullName.vb: MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase(Of T).Class
-  nameWithType: NewObjectCmdletCommandBase<T>.Class
-  nameWithType.vb: NewObjectCmdletCommandBase(Of T).Class
-- uid: MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase`1.EndProcessing
-  name: EndProcessing()
-  href: api/MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase-1.html#MASES_JNetPSCore_Cmdlet_NewObjectCmdletCommandBase_1_EndProcessing
-  commentId: M:MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase`1.EndProcessing
-  fullName: MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase<T>.EndProcessing()
-  fullName.vb: MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase(Of T).EndProcessing()
-  nameWithType: NewObjectCmdletCommandBase<T>.EndProcessing()
-  nameWithType.vb: NewObjectCmdletCommandBase(Of T).EndProcessing()
-- uid: MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase`1.EndProcessing*
-  name: EndProcessing
-  href: api/MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase-1.html#MASES_JNetPSCore_Cmdlet_NewObjectCmdletCommandBase_1_EndProcessing_
-  commentId: Overload:MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase`1.EndProcessing
-  isSpec: "True"
-  fullName: MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase<T>.EndProcessing
-  fullName.vb: MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase(Of T).EndProcessing
-  nameWithType: NewObjectCmdletCommandBase<T>.EndProcessing
-  nameWithType.vb: NewObjectCmdletCommandBase(Of T).EndProcessing
-- uid: MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase`1.ProcessRecord
-  name: ProcessRecord()
-  href: api/MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase-1.html#MASES_JNetPSCore_Cmdlet_NewObjectCmdletCommandBase_1_ProcessRecord
-  commentId: M:MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase`1.ProcessRecord
-  fullName: MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase<T>.ProcessRecord()
-  fullName.vb: MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase(Of T).ProcessRecord()
-  nameWithType: NewObjectCmdletCommandBase<T>.ProcessRecord()
-  nameWithType.vb: NewObjectCmdletCommandBase(Of T).ProcessRecord()
-- uid: MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase`1.ProcessRecord*
-  name: ProcessRecord
-  href: api/MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase-1.html#MASES_JNetPSCore_Cmdlet_NewObjectCmdletCommandBase_1_ProcessRecord_
-  commentId: Overload:MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase`1.ProcessRecord
-  isSpec: "True"
-  fullName: MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase<T>.ProcessRecord
-  fullName.vb: MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase(Of T).ProcessRecord
-  nameWithType: NewObjectCmdletCommandBase<T>.ProcessRecord
-  nameWithType.vb: NewObjectCmdletCommandBase(Of T).ProcessRecord
-- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1
-  name: StartJNetPSCmdletCommandBase<T>
-  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-1.html
-  commentId: T:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1
-  name.vb: StartJNetPSCmdletCommandBase(Of T)
-  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<T>
-  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of T)
-  nameWithType: StartJNetPSCmdletCommandBase<T>
-  nameWithType.vb: StartJNetPSCmdletCommandBase(Of T)
-- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.BeginProcessing
-  name: BeginProcessing()
-  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-1.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_BeginProcessing
-  commentId: M:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.BeginProcessing
-  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<T>.BeginProcessing()
-  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of T).BeginProcessing()
-  nameWithType: StartJNetPSCmdletCommandBase<T>.BeginProcessing()
-  nameWithType.vb: StartJNetPSCmdletCommandBase(Of T).BeginProcessing()
-- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.BeginProcessing*
-  name: BeginProcessing
-  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-1.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_BeginProcessing_
-  commentId: Overload:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.BeginProcessing
-  isSpec: "True"
-  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<T>.BeginProcessing
-  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of T).BeginProcessing
-  nameWithType: StartJNetPSCmdletCommandBase<T>.BeginProcessing
-  nameWithType.vb: StartJNetPSCmdletCommandBase(Of T).BeginProcessing
-- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.CreateGlobalInstance
-  name: CreateGlobalInstance()
-  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-1.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_CreateGlobalInstance
-  commentId: M:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.CreateGlobalInstance
-  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<T>.CreateGlobalInstance()
-  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of T).CreateGlobalInstance()
-  nameWithType: StartJNetPSCmdletCommandBase<T>.CreateGlobalInstance()
-  nameWithType.vb: StartJNetPSCmdletCommandBase(Of T).CreateGlobalInstance()
-- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.CreateGlobalInstance*
-  name: CreateGlobalInstance
-  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-1.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_CreateGlobalInstance_
-  commentId: Overload:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.CreateGlobalInstance
-  isSpec: "True"
-  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<T>.CreateGlobalInstance
-  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of T).CreateGlobalInstance
-  nameWithType: StartJNetPSCmdletCommandBase<T>.CreateGlobalInstance
-  nameWithType.vb: StartJNetPSCmdletCommandBase(Of T).CreateGlobalInstance
-- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.DebugSuspendFlag
-  name: DebugSuspendFlag
-  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-1.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_DebugSuspendFlag
-  commentId: P:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.DebugSuspendFlag
-  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<T>.DebugSuspendFlag
-  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of T).DebugSuspendFlag
-  nameWithType: StartJNetPSCmdletCommandBase<T>.DebugSuspendFlag
-  nameWithType.vb: StartJNetPSCmdletCommandBase(Of T).DebugSuspendFlag
-- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.DebugSuspendFlag*
-  name: DebugSuspendFlag
-  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-1.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_DebugSuspendFlag_
-  commentId: Overload:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.DebugSuspendFlag
-  isSpec: "True"
-  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<T>.DebugSuspendFlag
-  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of T).DebugSuspendFlag
-  nameWithType: StartJNetPSCmdletCommandBase<T>.DebugSuspendFlag
-  nameWithType.vb: StartJNetPSCmdletCommandBase(Of T).DebugSuspendFlag
-- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.EnableDebug
-  name: EnableDebug
-  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-1.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_EnableDebug
-  commentId: P:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.EnableDebug
-  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<T>.EnableDebug
-  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of T).EnableDebug
-  nameWithType: StartJNetPSCmdletCommandBase<T>.EnableDebug
-  nameWithType.vb: StartJNetPSCmdletCommandBase(Of T).EnableDebug
-- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.EnableDebug*
-  name: EnableDebug
-  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-1.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_EnableDebug_
-  commentId: Overload:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.EnableDebug
-  isSpec: "True"
-  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<T>.EnableDebug
-  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of T).EnableDebug
-  nameWithType: StartJNetPSCmdletCommandBase<T>.EnableDebug
-  nameWithType.vb: StartJNetPSCmdletCommandBase(Of T).EnableDebug
-- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.EndProcessing
-  name: EndProcessing()
-  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-1.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_EndProcessing
-  commentId: M:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.EndProcessing
-  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<T>.EndProcessing()
-  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of T).EndProcessing()
-  nameWithType: StartJNetPSCmdletCommandBase<T>.EndProcessing()
-  nameWithType.vb: StartJNetPSCmdletCommandBase(Of T).EndProcessing()
-- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.EndProcessing*
-  name: EndProcessing
-  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-1.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_EndProcessing_
-  commentId: Overload:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.EndProcessing
-  isSpec: "True"
-  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<T>.EndProcessing
-  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of T).EndProcessing
-  nameWithType: StartJNetPSCmdletCommandBase<T>.EndProcessing
-  nameWithType.vb: StartJNetPSCmdletCommandBase(Of T).EndProcessing
-- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.HeapSize
-  name: HeapSize
-  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-1.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_HeapSize
-  commentId: P:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.HeapSize
-  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<T>.HeapSize
-  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of T).HeapSize
-  nameWithType: StartJNetPSCmdletCommandBase<T>.HeapSize
-  nameWithType.vb: StartJNetPSCmdletCommandBase(Of T).HeapSize
-- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.HeapSize*
-  name: HeapSize
-  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-1.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_HeapSize_
-  commentId: Overload:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.HeapSize
-  isSpec: "True"
-  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<T>.HeapSize
-  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of T).HeapSize
-  nameWithType: StartJNetPSCmdletCommandBase<T>.HeapSize
-  nameWithType.vb: StartJNetPSCmdletCommandBase(Of T).HeapSize
-- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.InitialHeapSize
-  name: InitialHeapSize
-  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-1.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_InitialHeapSize
-  commentId: P:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.InitialHeapSize
-  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<T>.InitialHeapSize
-  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of T).InitialHeapSize
-  nameWithType: StartJNetPSCmdletCommandBase<T>.InitialHeapSize
-  nameWithType.vb: StartJNetPSCmdletCommandBase(Of T).InitialHeapSize
-- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.InitialHeapSize*
-  name: InitialHeapSize
-  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-1.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_InitialHeapSize_
-  commentId: Overload:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.InitialHeapSize
-  isSpec: "True"
-  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<T>.InitialHeapSize
-  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of T).InitialHeapSize
-  nameWithType: StartJNetPSCmdletCommandBase<T>.InitialHeapSize
-  nameWithType.vb: StartJNetPSCmdletCommandBase(Of T).InitialHeapSize
-- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.JavaDebugOpts
-  name: JavaDebugOpts
-  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-1.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_JavaDebugOpts
-  commentId: P:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.JavaDebugOpts
-  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<T>.JavaDebugOpts
-  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of T).JavaDebugOpts
-  nameWithType: StartJNetPSCmdletCommandBase<T>.JavaDebugOpts
-  nameWithType.vb: StartJNetPSCmdletCommandBase(Of T).JavaDebugOpts
-- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.JavaDebugOpts*
-  name: JavaDebugOpts
-  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-1.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_JavaDebugOpts_
-  commentId: Overload:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.JavaDebugOpts
-  isSpec: "True"
-  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<T>.JavaDebugOpts
-  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of T).JavaDebugOpts
-  nameWithType: StartJNetPSCmdletCommandBase<T>.JavaDebugOpts
-  nameWithType.vb: StartJNetPSCmdletCommandBase(Of T).JavaDebugOpts
-- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.JavaDebugPort
-  name: JavaDebugPort
-  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-1.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_JavaDebugPort
-  commentId: P:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.JavaDebugPort
-  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<T>.JavaDebugPort
-  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of T).JavaDebugPort
-  nameWithType: StartJNetPSCmdletCommandBase<T>.JavaDebugPort
-  nameWithType.vb: StartJNetPSCmdletCommandBase(Of T).JavaDebugPort
-- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.JavaDebugPort*
-  name: JavaDebugPort
-  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-1.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_JavaDebugPort_
-  commentId: Overload:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.JavaDebugPort
-  isSpec: "True"
-  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<T>.JavaDebugPort
-  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of T).JavaDebugPort
-  nameWithType: StartJNetPSCmdletCommandBase<T>.JavaDebugPort
-  nameWithType.vb: StartJNetPSCmdletCommandBase(Of T).JavaDebugPort
-- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.JDKHome
-  name: JDKHome
-  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-1.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_JDKHome
-  commentId: P:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.JDKHome
-  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<T>.JDKHome
-  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of T).JDKHome
-  nameWithType: StartJNetPSCmdletCommandBase<T>.JDKHome
-  nameWithType.vb: StartJNetPSCmdletCommandBase(Of T).JDKHome
-- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.JDKHome*
-  name: JDKHome
-  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-1.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_JDKHome_
-  commentId: Overload:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.JDKHome
-  isSpec: "True"
-  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<T>.JDKHome
-  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of T).JDKHome
-  nameWithType: StartJNetPSCmdletCommandBase<T>.JDKHome
-  nameWithType.vb: StartJNetPSCmdletCommandBase(Of T).JDKHome
-- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.JmxPort
-  name: JmxPort
-  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-1.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_JmxPort
-  commentId: P:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.JmxPort
-  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<T>.JmxPort
-  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of T).JmxPort
-  nameWithType: StartJNetPSCmdletCommandBase<T>.JmxPort
-  nameWithType.vb: StartJNetPSCmdletCommandBase(Of T).JmxPort
-- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.JmxPort*
-  name: JmxPort
-  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-1.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_JmxPort_
-  commentId: Overload:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.JmxPort
-  isSpec: "True"
-  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<T>.JmxPort
-  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of T).JmxPort
-  nameWithType: StartJNetPSCmdletCommandBase<T>.JmxPort
-  nameWithType.vb: StartJNetPSCmdletCommandBase(Of T).JmxPort
-- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.JNIOutputFile
-  name: JNIOutputFile
-  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-1.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_JNIOutputFile
-  commentId: P:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.JNIOutputFile
-  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<T>.JNIOutputFile
-  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of T).JNIOutputFile
-  nameWithType: StartJNetPSCmdletCommandBase<T>.JNIOutputFile
-  nameWithType.vb: StartJNetPSCmdletCommandBase(Of T).JNIOutputFile
-- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.JNIOutputFile*
-  name: JNIOutputFile
-  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-1.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_JNIOutputFile_
-  commentId: Overload:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.JNIOutputFile
-  isSpec: "True"
-  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<T>.JNIOutputFile
-  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of T).JNIOutputFile
-  nameWithType: StartJNetPSCmdletCommandBase<T>.JNIOutputFile
-  nameWithType.vb: StartJNetPSCmdletCommandBase(Of T).JNIOutputFile
-- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.JNIVerbosity
-  name: JNIVerbosity
-  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-1.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_JNIVerbosity
-  commentId: P:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.JNIVerbosity
-  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<T>.JNIVerbosity
-  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of T).JNIVerbosity
-  nameWithType: StartJNetPSCmdletCommandBase<T>.JNIVerbosity
-  nameWithType.vb: StartJNetPSCmdletCommandBase(Of T).JNIVerbosity
-- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.JNIVerbosity*
-  name: JNIVerbosity
-  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-1.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_JNIVerbosity_
-  commentId: Overload:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.JNIVerbosity
-  isSpec: "True"
-  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<T>.JNIVerbosity
-  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of T).JNIVerbosity
-  nameWithType: StartJNetPSCmdletCommandBase<T>.JNIVerbosity
-  nameWithType.vb: StartJNetPSCmdletCommandBase(Of T).JNIVerbosity
-- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.JVMPath
-  name: JVMPath
-  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-1.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_JVMPath
-  commentId: P:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.JVMPath
-  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<T>.JVMPath
-  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of T).JVMPath
-  nameWithType: StartJNetPSCmdletCommandBase<T>.JVMPath
-  nameWithType.vb: StartJNetPSCmdletCommandBase(Of T).JVMPath
-- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.JVMPath*
-  name: JVMPath
-  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-1.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_JVMPath_
-  commentId: Overload:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.JVMPath
-  isSpec: "True"
-  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<T>.JVMPath
-  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of T).JVMPath
-  nameWithType: StartJNetPSCmdletCommandBase<T>.JVMPath
-  nameWithType.vb: StartJNetPSCmdletCommandBase(Of T).JVMPath
-- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.LicensePath
-  name: LicensePath
-  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-1.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_LicensePath
-  commentId: P:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.LicensePath
-  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<T>.LicensePath
-  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of T).LicensePath
-  nameWithType: StartJNetPSCmdletCommandBase<T>.LicensePath
-  nameWithType.vb: StartJNetPSCmdletCommandBase(Of T).LicensePath
-- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.LicensePath*
-  name: LicensePath
-  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-1.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_LicensePath_
-  commentId: Overload:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.LicensePath
-  isSpec: "True"
-  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<T>.LicensePath
-  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of T).LicensePath
-  nameWithType: StartJNetPSCmdletCommandBase<T>.LicensePath
-  nameWithType.vb: StartJNetPSCmdletCommandBase(Of T).LicensePath
-- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.LogClassPath
-  name: LogClassPath
-  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-1.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_LogClassPath
-  commentId: P:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.LogClassPath
-  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<T>.LogClassPath
-  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of T).LogClassPath
-  nameWithType: StartJNetPSCmdletCommandBase<T>.LogClassPath
-  nameWithType.vb: StartJNetPSCmdletCommandBase(Of T).LogClassPath
-- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.LogClassPath*
-  name: LogClassPath
-  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-1.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_LogClassPath_
-  commentId: Overload:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.LogClassPath
-  isSpec: "True"
-  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<T>.LogClassPath
-  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of T).LogClassPath
-  nameWithType: StartJNetPSCmdletCommandBase<T>.LogClassPath
-  nameWithType.vb: StartJNetPSCmdletCommandBase(Of T).LogClassPath
-- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.OnAfterCreateGlobalInstance
+  fullName: MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase<TCmdlet, TCore>.MainClass
+  fullName.vb: MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase(Of TCmdlet, TCore).MainClass
+  nameWithType: InvokeCommandCmdletCommandBase<TCmdlet, TCore>.MainClass
+  nameWithType.vb: InvokeCommandCmdletCommandBase(Of TCmdlet, TCore).MainClass
+- uid: MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase`2.OnAfterCreateGlobalInstance
   name: OnAfterCreateGlobalInstance()
-  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-1.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_OnAfterCreateGlobalInstance
-  commentId: M:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.OnAfterCreateGlobalInstance
-  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<T>.OnAfterCreateGlobalInstance()
-  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of T).OnAfterCreateGlobalInstance()
-  nameWithType: StartJNetPSCmdletCommandBase<T>.OnAfterCreateGlobalInstance()
-  nameWithType.vb: StartJNetPSCmdletCommandBase(Of T).OnAfterCreateGlobalInstance()
-- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.OnAfterCreateGlobalInstance*
+  href: api/MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase-2.html#MASES_JNetPSCore_Cmdlet_InvokeCommandCmdletCommandBase_2_OnAfterCreateGlobalInstance
+  commentId: M:MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase`2.OnAfterCreateGlobalInstance
+  fullName: MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase<TCmdlet, TCore>.OnAfterCreateGlobalInstance()
+  fullName.vb: MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase(Of TCmdlet, TCore).OnAfterCreateGlobalInstance()
+  nameWithType: InvokeCommandCmdletCommandBase<TCmdlet, TCore>.OnAfterCreateGlobalInstance()
+  nameWithType.vb: InvokeCommandCmdletCommandBase(Of TCmdlet, TCore).OnAfterCreateGlobalInstance()
+- uid: MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase`2.OnAfterCreateGlobalInstance*
   name: OnAfterCreateGlobalInstance
-  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-1.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_OnAfterCreateGlobalInstance_
-  commentId: Overload:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.OnAfterCreateGlobalInstance
+  href: api/MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase-2.html#MASES_JNetPSCore_Cmdlet_InvokeCommandCmdletCommandBase_2_OnAfterCreateGlobalInstance_
+  commentId: Overload:MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase`2.OnAfterCreateGlobalInstance
   isSpec: "True"
-  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<T>.OnAfterCreateGlobalInstance
-  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of T).OnAfterCreateGlobalInstance
-  nameWithType: StartJNetPSCmdletCommandBase<T>.OnAfterCreateGlobalInstance
-  nameWithType.vb: StartJNetPSCmdletCommandBase(Of T).OnAfterCreateGlobalInstance
-- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.OnBeforeCreateGlobalInstance
-  name: OnBeforeCreateGlobalInstance()
-  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-1.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_OnBeforeCreateGlobalInstance
-  commentId: M:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.OnBeforeCreateGlobalInstance
-  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<T>.OnBeforeCreateGlobalInstance()
-  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of T).OnBeforeCreateGlobalInstance()
-  nameWithType: StartJNetPSCmdletCommandBase<T>.OnBeforeCreateGlobalInstance()
-  nameWithType.vb: StartJNetPSCmdletCommandBase(Of T).OnBeforeCreateGlobalInstance()
-- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.OnBeforeCreateGlobalInstance*
-  name: OnBeforeCreateGlobalInstance
-  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-1.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_OnBeforeCreateGlobalInstance_
-  commentId: Overload:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.OnBeforeCreateGlobalInstance
+  fullName: MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase<TCmdlet, TCore>.OnAfterCreateGlobalInstance
+  fullName.vb: MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase(Of TCmdlet, TCore).OnAfterCreateGlobalInstance
+  nameWithType: InvokeCommandCmdletCommandBase<TCmdlet, TCore>.OnAfterCreateGlobalInstance
+  nameWithType.vb: InvokeCommandCmdletCommandBase(Of TCmdlet, TCore).OnAfterCreateGlobalInstance
+- uid: MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet`1
+  name: JNetPSExternalizableCmdlet<T>
+  href: api/MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet-1.html
+  commentId: T:MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet`1
+  name.vb: JNetPSExternalizableCmdlet(Of T)
+  fullName: MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet<T>
+  fullName.vb: MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet(Of T)
+  nameWithType: JNetPSExternalizableCmdlet<T>
+  nameWithType.vb: JNetPSExternalizableCmdlet(Of T)
+- uid: MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet`1.BeginProcessing
+  name: BeginProcessing()
+  href: api/MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet-1.html#MASES_JNetPSCore_Cmdlet_JNetPSExternalizableCmdlet_1_BeginProcessing
+  commentId: M:MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet`1.BeginProcessing
+  fullName: MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet<T>.BeginProcessing()
+  fullName.vb: MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet(Of T).BeginProcessing()
+  nameWithType: JNetPSExternalizableCmdlet<T>.BeginProcessing()
+  nameWithType.vb: JNetPSExternalizableCmdlet(Of T).BeginProcessing()
+- uid: MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet`1.BeginProcessing*
+  name: BeginProcessing
+  href: api/MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet-1.html#MASES_JNetPSCore_Cmdlet_JNetPSExternalizableCmdlet_1_BeginProcessing_
+  commentId: Overload:MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet`1.BeginProcessing
   isSpec: "True"
-  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<T>.OnBeforeCreateGlobalInstance
-  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of T).OnBeforeCreateGlobalInstance
-  nameWithType: StartJNetPSCmdletCommandBase<T>.OnBeforeCreateGlobalInstance
-  nameWithType.vb: StartJNetPSCmdletCommandBase(Of T).OnBeforeCreateGlobalInstance
-- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.ProcessRecord
+  fullName: MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet<T>.BeginProcessing
+  fullName.vb: MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet(Of T).BeginProcessing
+  nameWithType: JNetPSExternalizableCmdlet<T>.BeginProcessing
+  nameWithType.vb: JNetPSExternalizableCmdlet(Of T).BeginProcessing
+- uid: MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet`1.BypassJNetPSExternalize
+  name: BypassJNetPSExternalize
+  href: api/MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet-1.html#MASES_JNetPSCore_Cmdlet_JNetPSExternalizableCmdlet_1_BypassJNetPSExternalize
+  commentId: P:MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet`1.BypassJNetPSExternalize
+  fullName: MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet<T>.BypassJNetPSExternalize
+  fullName.vb: MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet(Of T).BypassJNetPSExternalize
+  nameWithType: JNetPSExternalizableCmdlet<T>.BypassJNetPSExternalize
+  nameWithType.vb: JNetPSExternalizableCmdlet(Of T).BypassJNetPSExternalize
+- uid: MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet`1.BypassJNetPSExternalize*
+  name: BypassJNetPSExternalize
+  href: api/MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet-1.html#MASES_JNetPSCore_Cmdlet_JNetPSExternalizableCmdlet_1_BypassJNetPSExternalize_
+  commentId: Overload:MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet`1.BypassJNetPSExternalize
+  isSpec: "True"
+  fullName: MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet<T>.BypassJNetPSExternalize
+  fullName.vb: MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet(Of T).BypassJNetPSExternalize
+  nameWithType: JNetPSExternalizableCmdlet<T>.BypassJNetPSExternalize
+  nameWithType.vb: JNetPSExternalizableCmdlet(Of T).BypassJNetPSExternalize
+- uid: MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet`1.EndProcessing
+  name: EndProcessing()
+  href: api/MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet-1.html#MASES_JNetPSCore_Cmdlet_JNetPSExternalizableCmdlet_1_EndProcessing
+  commentId: M:MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet`1.EndProcessing
+  fullName: MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet<T>.EndProcessing()
+  fullName.vb: MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet(Of T).EndProcessing()
+  nameWithType: JNetPSExternalizableCmdlet<T>.EndProcessing()
+  nameWithType.vb: JNetPSExternalizableCmdlet(Of T).EndProcessing()
+- uid: MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet`1.EndProcessing*
+  name: EndProcessing
+  href: api/MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet-1.html#MASES_JNetPSCore_Cmdlet_JNetPSExternalizableCmdlet_1_EndProcessing_
+  commentId: Overload:MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet`1.EndProcessing
+  isSpec: "True"
+  fullName: MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet<T>.EndProcessing
+  fullName.vb: MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet(Of T).EndProcessing
+  nameWithType: JNetPSExternalizableCmdlet<T>.EndProcessing
+  nameWithType.vb: JNetPSExternalizableCmdlet(Of T).EndProcessing
+- uid: MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet`1.ForceJNetPSExternalize
+  name: ForceJNetPSExternalize
+  href: api/MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet-1.html#MASES_JNetPSCore_Cmdlet_JNetPSExternalizableCmdlet_1_ForceJNetPSExternalize
+  commentId: P:MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet`1.ForceJNetPSExternalize
+  fullName: MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet<T>.ForceJNetPSExternalize
+  fullName.vb: MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet(Of T).ForceJNetPSExternalize
+  nameWithType: JNetPSExternalizableCmdlet<T>.ForceJNetPSExternalize
+  nameWithType.vb: JNetPSExternalizableCmdlet(Of T).ForceJNetPSExternalize
+- uid: MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet`1.ForceJNetPSExternalize*
+  name: ForceJNetPSExternalize
+  href: api/MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet-1.html#MASES_JNetPSCore_Cmdlet_JNetPSExternalizableCmdlet_1_ForceJNetPSExternalize_
+  commentId: Overload:MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet`1.ForceJNetPSExternalize
+  isSpec: "True"
+  fullName: MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet<T>.ForceJNetPSExternalize
+  fullName.vb: MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet(Of T).ForceJNetPSExternalize
+  nameWithType: JNetPSExternalizableCmdlet<T>.ForceJNetPSExternalize
+  nameWithType.vb: JNetPSExternalizableCmdlet(Of T).ForceJNetPSExternalize
+- uid: MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet`1.JNetPSCmdletDetached
+  name: JNetPSCmdletDetached
+  href: api/MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet-1.html#MASES_JNetPSCore_Cmdlet_JNetPSExternalizableCmdlet_1_JNetPSCmdletDetached
+  commentId: P:MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet`1.JNetPSCmdletDetached
+  fullName: MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet<T>.JNetPSCmdletDetached
+  fullName.vb: MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet(Of T).JNetPSCmdletDetached
+  nameWithType: JNetPSExternalizableCmdlet<T>.JNetPSCmdletDetached
+  nameWithType.vb: JNetPSExternalizableCmdlet(Of T).JNetPSCmdletDetached
+- uid: MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet`1.JNetPSCmdletDetached*
+  name: JNetPSCmdletDetached
+  href: api/MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet-1.html#MASES_JNetPSCore_Cmdlet_JNetPSExternalizableCmdlet_1_JNetPSCmdletDetached_
+  commentId: Overload:MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet`1.JNetPSCmdletDetached
+  isSpec: "True"
+  fullName: MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet<T>.JNetPSCmdletDetached
+  fullName.vb: MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet(Of T).JNetPSCmdletDetached
+  nameWithType: JNetPSExternalizableCmdlet<T>.JNetPSCmdletDetached
+  nameWithType.vb: JNetPSExternalizableCmdlet(Of T).JNetPSCmdletDetached
+- uid: MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet`1.ProcessCommand
+  name: ProcessCommand()
+  href: api/MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet-1.html#MASES_JNetPSCore_Cmdlet_JNetPSExternalizableCmdlet_1_ProcessCommand
+  commentId: M:MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet`1.ProcessCommand
+  fullName: MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet<T>.ProcessCommand()
+  fullName.vb: MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet(Of T).ProcessCommand()
+  nameWithType: JNetPSExternalizableCmdlet<T>.ProcessCommand()
+  nameWithType.vb: JNetPSExternalizableCmdlet(Of T).ProcessCommand()
+- uid: MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet`1.ProcessCommand*
+  name: ProcessCommand
+  href: api/MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet-1.html#MASES_JNetPSCore_Cmdlet_JNetPSExternalizableCmdlet_1_ProcessCommand_
+  commentId: Overload:MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet`1.ProcessCommand
+  isSpec: "True"
+  fullName: MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet<T>.ProcessCommand
+  fullName.vb: MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet(Of T).ProcessCommand
+  nameWithType: JNetPSExternalizableCmdlet<T>.ProcessCommand
+  nameWithType.vb: JNetPSExternalizableCmdlet(Of T).ProcessCommand
+- uid: MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet`1.ProcessRecord
   name: ProcessRecord()
-  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-1.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_ProcessRecord
-  commentId: M:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.ProcessRecord
-  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<T>.ProcessRecord()
-  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of T).ProcessRecord()
-  nameWithType: StartJNetPSCmdletCommandBase<T>.ProcessRecord()
-  nameWithType.vb: StartJNetPSCmdletCommandBase(Of T).ProcessRecord()
-- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.ProcessRecord*
+  href: api/MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet-1.html#MASES_JNetPSCore_Cmdlet_JNetPSExternalizableCmdlet_1_ProcessRecord
+  commentId: M:MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet`1.ProcessRecord
+  fullName: MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet<T>.ProcessRecord()
+  fullName.vb: MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet(Of T).ProcessRecord()
+  nameWithType: JNetPSExternalizableCmdlet<T>.ProcessRecord()
+  nameWithType.vb: JNetPSExternalizableCmdlet(Of T).ProcessRecord()
+- uid: MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet`1.ProcessRecord*
   name: ProcessRecord
-  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-1.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_1_ProcessRecord_
-  commentId: Overload:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`1.ProcessRecord
+  href: api/MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet-1.html#MASES_JNetPSCore_Cmdlet_JNetPSExternalizableCmdlet_1_ProcessRecord_
+  commentId: Overload:MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet`1.ProcessRecord
   isSpec: "True"
-  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<T>.ProcessRecord
-  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of T).ProcessRecord
-  nameWithType: StartJNetPSCmdletCommandBase<T>.ProcessRecord
-  nameWithType.vb: StartJNetPSCmdletCommandBase(Of T).ProcessRecord
+  fullName: MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet<T>.ProcessRecord
+  fullName.vb: MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet(Of T).ProcessRecord
+  nameWithType: JNetPSExternalizableCmdlet<T>.ProcessRecord
+  nameWithType.vb: JNetPSExternalizableCmdlet(Of T).ProcessRecord
+- uid: MASES.JNetPSCore.Cmdlet.JNetPSExternalize
+  name: JNetPSExternalize
+  href: api/MASES.JNetPSCore.Cmdlet.JNetPSExternalize.html
+  commentId: T:MASES.JNetPSCore.Cmdlet.JNetPSExternalize
+  fullName: MASES.JNetPSCore.Cmdlet.JNetPSExternalize
+  nameWithType: JNetPSExternalize
+- uid: MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase`2
+  name: NewObjectCmdletCommandBase<TCmdlet, TCore>
+  href: api/MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase-2.html
+  commentId: T:MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase`2
+  name.vb: NewObjectCmdletCommandBase(Of TCmdlet, TCore)
+  fullName: MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase<TCmdlet, TCore>
+  fullName.vb: MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase(Of TCmdlet, TCore)
+  nameWithType: NewObjectCmdletCommandBase<TCmdlet, TCore>
+  nameWithType.vb: NewObjectCmdletCommandBase(Of TCmdlet, TCore)
+- uid: MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase`2.Arguments
+  name: Arguments
+  href: api/MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase-2.html#MASES_JNetPSCore_Cmdlet_NewObjectCmdletCommandBase_2_Arguments
+  commentId: P:MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase`2.Arguments
+  fullName: MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase<TCmdlet, TCore>.Arguments
+  fullName.vb: MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase(Of TCmdlet, TCore).Arguments
+  nameWithType: NewObjectCmdletCommandBase<TCmdlet, TCore>.Arguments
+  nameWithType.vb: NewObjectCmdletCommandBase(Of TCmdlet, TCore).Arguments
+- uid: MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase`2.Arguments*
+  name: Arguments
+  href: api/MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase-2.html#MASES_JNetPSCore_Cmdlet_NewObjectCmdletCommandBase_2_Arguments_
+  commentId: Overload:MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase`2.Arguments
+  isSpec: "True"
+  fullName: MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase<TCmdlet, TCore>.Arguments
+  fullName.vb: MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase(Of TCmdlet, TCore).Arguments
+  nameWithType: NewObjectCmdletCommandBase<TCmdlet, TCore>.Arguments
+  nameWithType.vb: NewObjectCmdletCommandBase(Of TCmdlet, TCore).Arguments
+- uid: MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase`2.Class
+  name: Class
+  href: api/MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase-2.html#MASES_JNetPSCore_Cmdlet_NewObjectCmdletCommandBase_2_Class
+  commentId: P:MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase`2.Class
+  fullName: MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase<TCmdlet, TCore>.Class
+  fullName.vb: MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase(Of TCmdlet, TCore).Class
+  nameWithType: NewObjectCmdletCommandBase<TCmdlet, TCore>.Class
+  nameWithType.vb: NewObjectCmdletCommandBase(Of TCmdlet, TCore).Class
+- uid: MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase`2.Class*
+  name: Class
+  href: api/MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase-2.html#MASES_JNetPSCore_Cmdlet_NewObjectCmdletCommandBase_2_Class_
+  commentId: Overload:MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase`2.Class
+  isSpec: "True"
+  fullName: MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase<TCmdlet, TCore>.Class
+  fullName.vb: MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase(Of TCmdlet, TCore).Class
+  nameWithType: NewObjectCmdletCommandBase<TCmdlet, TCore>.Class
+  nameWithType.vb: NewObjectCmdletCommandBase(Of TCmdlet, TCore).Class
+- uid: MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase`2.ProcessCommand
+  name: ProcessCommand()
+  href: api/MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase-2.html#MASES_JNetPSCore_Cmdlet_NewObjectCmdletCommandBase_2_ProcessCommand
+  commentId: M:MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase`2.ProcessCommand
+  fullName: MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase<TCmdlet, TCore>.ProcessCommand()
+  fullName.vb: MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase(Of TCmdlet, TCore).ProcessCommand()
+  nameWithType: NewObjectCmdletCommandBase<TCmdlet, TCore>.ProcessCommand()
+  nameWithType.vb: NewObjectCmdletCommandBase(Of TCmdlet, TCore).ProcessCommand()
+- uid: MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase`2.ProcessCommand*
+  name: ProcessCommand
+  href: api/MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase-2.html#MASES_JNetPSCore_Cmdlet_NewObjectCmdletCommandBase_2_ProcessCommand_
+  commentId: Overload:MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase`2.ProcessCommand
+  isSpec: "True"
+  fullName: MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase<TCmdlet, TCore>.ProcessCommand
+  fullName.vb: MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase(Of TCmdlet, TCore).ProcessCommand
+  nameWithType: NewObjectCmdletCommandBase<TCmdlet, TCore>.ProcessCommand
+  nameWithType.vb: NewObjectCmdletCommandBase(Of TCmdlet, TCore).ProcessCommand
+- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2
+  name: StartJNetPSCmdletCommandBase<TCmdlet, TCore>
+  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-2.html
+  commentId: T:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2
+  name.vb: StartJNetPSCmdletCommandBase(Of TCmdlet, TCore)
+  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<TCmdlet, TCore>
+  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of TCmdlet, TCore)
+  nameWithType: StartJNetPSCmdletCommandBase<TCmdlet, TCore>
+  nameWithType.vb: StartJNetPSCmdletCommandBase(Of TCmdlet, TCore)
+- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.CreateGlobalInstance
+  name: CreateGlobalInstance()
+  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-2.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_CreateGlobalInstance
+  commentId: M:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.CreateGlobalInstance
+  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<TCmdlet, TCore>.CreateGlobalInstance()
+  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).CreateGlobalInstance()
+  nameWithType: StartJNetPSCmdletCommandBase<TCmdlet, TCore>.CreateGlobalInstance()
+  nameWithType.vb: StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).CreateGlobalInstance()
+- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.CreateGlobalInstance*
+  name: CreateGlobalInstance
+  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-2.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_CreateGlobalInstance_
+  commentId: Overload:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.CreateGlobalInstance
+  isSpec: "True"
+  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<TCmdlet, TCore>.CreateGlobalInstance
+  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).CreateGlobalInstance
+  nameWithType: StartJNetPSCmdletCommandBase<TCmdlet, TCore>.CreateGlobalInstance
+  nameWithType.vb: StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).CreateGlobalInstance
+- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.DebugSuspendFlag
+  name: DebugSuspendFlag
+  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-2.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_DebugSuspendFlag
+  commentId: P:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.DebugSuspendFlag
+  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<TCmdlet, TCore>.DebugSuspendFlag
+  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).DebugSuspendFlag
+  nameWithType: StartJNetPSCmdletCommandBase<TCmdlet, TCore>.DebugSuspendFlag
+  nameWithType.vb: StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).DebugSuspendFlag
+- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.DebugSuspendFlag*
+  name: DebugSuspendFlag
+  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-2.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_DebugSuspendFlag_
+  commentId: Overload:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.DebugSuspendFlag
+  isSpec: "True"
+  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<TCmdlet, TCore>.DebugSuspendFlag
+  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).DebugSuspendFlag
+  nameWithType: StartJNetPSCmdletCommandBase<TCmdlet, TCore>.DebugSuspendFlag
+  nameWithType.vb: StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).DebugSuspendFlag
+- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.EnableDebug
+  name: EnableDebug
+  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-2.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_EnableDebug
+  commentId: P:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.EnableDebug
+  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<TCmdlet, TCore>.EnableDebug
+  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).EnableDebug
+  nameWithType: StartJNetPSCmdletCommandBase<TCmdlet, TCore>.EnableDebug
+  nameWithType.vb: StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).EnableDebug
+- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.EnableDebug*
+  name: EnableDebug
+  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-2.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_EnableDebug_
+  commentId: Overload:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.EnableDebug
+  isSpec: "True"
+  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<TCmdlet, TCore>.EnableDebug
+  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).EnableDebug
+  nameWithType: StartJNetPSCmdletCommandBase<TCmdlet, TCore>.EnableDebug
+  nameWithType.vb: StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).EnableDebug
+- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.HeapSize
+  name: HeapSize
+  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-2.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_HeapSize
+  commentId: P:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.HeapSize
+  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<TCmdlet, TCore>.HeapSize
+  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).HeapSize
+  nameWithType: StartJNetPSCmdletCommandBase<TCmdlet, TCore>.HeapSize
+  nameWithType.vb: StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).HeapSize
+- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.HeapSize*
+  name: HeapSize
+  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-2.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_HeapSize_
+  commentId: Overload:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.HeapSize
+  isSpec: "True"
+  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<TCmdlet, TCore>.HeapSize
+  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).HeapSize
+  nameWithType: StartJNetPSCmdletCommandBase<TCmdlet, TCore>.HeapSize
+  nameWithType.vb: StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).HeapSize
+- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.InitialHeapSize
+  name: InitialHeapSize
+  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-2.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_InitialHeapSize
+  commentId: P:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.InitialHeapSize
+  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<TCmdlet, TCore>.InitialHeapSize
+  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).InitialHeapSize
+  nameWithType: StartJNetPSCmdletCommandBase<TCmdlet, TCore>.InitialHeapSize
+  nameWithType.vb: StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).InitialHeapSize
+- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.InitialHeapSize*
+  name: InitialHeapSize
+  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-2.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_InitialHeapSize_
+  commentId: Overload:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.InitialHeapSize
+  isSpec: "True"
+  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<TCmdlet, TCore>.InitialHeapSize
+  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).InitialHeapSize
+  nameWithType: StartJNetPSCmdletCommandBase<TCmdlet, TCore>.InitialHeapSize
+  nameWithType.vb: StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).InitialHeapSize
+- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.JavaDebugOpts
+  name: JavaDebugOpts
+  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-2.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_JavaDebugOpts
+  commentId: P:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.JavaDebugOpts
+  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<TCmdlet, TCore>.JavaDebugOpts
+  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).JavaDebugOpts
+  nameWithType: StartJNetPSCmdletCommandBase<TCmdlet, TCore>.JavaDebugOpts
+  nameWithType.vb: StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).JavaDebugOpts
+- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.JavaDebugOpts*
+  name: JavaDebugOpts
+  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-2.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_JavaDebugOpts_
+  commentId: Overload:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.JavaDebugOpts
+  isSpec: "True"
+  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<TCmdlet, TCore>.JavaDebugOpts
+  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).JavaDebugOpts
+  nameWithType: StartJNetPSCmdletCommandBase<TCmdlet, TCore>.JavaDebugOpts
+  nameWithType.vb: StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).JavaDebugOpts
+- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.JavaDebugPort
+  name: JavaDebugPort
+  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-2.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_JavaDebugPort
+  commentId: P:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.JavaDebugPort
+  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<TCmdlet, TCore>.JavaDebugPort
+  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).JavaDebugPort
+  nameWithType: StartJNetPSCmdletCommandBase<TCmdlet, TCore>.JavaDebugPort
+  nameWithType.vb: StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).JavaDebugPort
+- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.JavaDebugPort*
+  name: JavaDebugPort
+  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-2.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_JavaDebugPort_
+  commentId: Overload:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.JavaDebugPort
+  isSpec: "True"
+  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<TCmdlet, TCore>.JavaDebugPort
+  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).JavaDebugPort
+  nameWithType: StartJNetPSCmdletCommandBase<TCmdlet, TCore>.JavaDebugPort
+  nameWithType.vb: StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).JavaDebugPort
+- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.JDKHome
+  name: JDKHome
+  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-2.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_JDKHome
+  commentId: P:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.JDKHome
+  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<TCmdlet, TCore>.JDKHome
+  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).JDKHome
+  nameWithType: StartJNetPSCmdletCommandBase<TCmdlet, TCore>.JDKHome
+  nameWithType.vb: StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).JDKHome
+- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.JDKHome*
+  name: JDKHome
+  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-2.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_JDKHome_
+  commentId: Overload:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.JDKHome
+  isSpec: "True"
+  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<TCmdlet, TCore>.JDKHome
+  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).JDKHome
+  nameWithType: StartJNetPSCmdletCommandBase<TCmdlet, TCore>.JDKHome
+  nameWithType.vb: StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).JDKHome
+- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.JmxPort
+  name: JmxPort
+  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-2.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_JmxPort
+  commentId: P:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.JmxPort
+  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<TCmdlet, TCore>.JmxPort
+  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).JmxPort
+  nameWithType: StartJNetPSCmdletCommandBase<TCmdlet, TCore>.JmxPort
+  nameWithType.vb: StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).JmxPort
+- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.JmxPort*
+  name: JmxPort
+  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-2.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_JmxPort_
+  commentId: Overload:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.JmxPort
+  isSpec: "True"
+  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<TCmdlet, TCore>.JmxPort
+  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).JmxPort
+  nameWithType: StartJNetPSCmdletCommandBase<TCmdlet, TCore>.JmxPort
+  nameWithType.vb: StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).JmxPort
+- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.JNIOutputFile
+  name: JNIOutputFile
+  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-2.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_JNIOutputFile
+  commentId: P:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.JNIOutputFile
+  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<TCmdlet, TCore>.JNIOutputFile
+  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).JNIOutputFile
+  nameWithType: StartJNetPSCmdletCommandBase<TCmdlet, TCore>.JNIOutputFile
+  nameWithType.vb: StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).JNIOutputFile
+- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.JNIOutputFile*
+  name: JNIOutputFile
+  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-2.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_JNIOutputFile_
+  commentId: Overload:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.JNIOutputFile
+  isSpec: "True"
+  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<TCmdlet, TCore>.JNIOutputFile
+  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).JNIOutputFile
+  nameWithType: StartJNetPSCmdletCommandBase<TCmdlet, TCore>.JNIOutputFile
+  nameWithType.vb: StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).JNIOutputFile
+- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.JNIVerbosity
+  name: JNIVerbosity
+  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-2.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_JNIVerbosity
+  commentId: P:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.JNIVerbosity
+  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<TCmdlet, TCore>.JNIVerbosity
+  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).JNIVerbosity
+  nameWithType: StartJNetPSCmdletCommandBase<TCmdlet, TCore>.JNIVerbosity
+  nameWithType.vb: StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).JNIVerbosity
+- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.JNIVerbosity*
+  name: JNIVerbosity
+  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-2.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_JNIVerbosity_
+  commentId: Overload:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.JNIVerbosity
+  isSpec: "True"
+  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<TCmdlet, TCore>.JNIVerbosity
+  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).JNIVerbosity
+  nameWithType: StartJNetPSCmdletCommandBase<TCmdlet, TCore>.JNIVerbosity
+  nameWithType.vb: StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).JNIVerbosity
+- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.JVMPath
+  name: JVMPath
+  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-2.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_JVMPath
+  commentId: P:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.JVMPath
+  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<TCmdlet, TCore>.JVMPath
+  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).JVMPath
+  nameWithType: StartJNetPSCmdletCommandBase<TCmdlet, TCore>.JVMPath
+  nameWithType.vb: StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).JVMPath
+- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.JVMPath*
+  name: JVMPath
+  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-2.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_JVMPath_
+  commentId: Overload:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.JVMPath
+  isSpec: "True"
+  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<TCmdlet, TCore>.JVMPath
+  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).JVMPath
+  nameWithType: StartJNetPSCmdletCommandBase<TCmdlet, TCore>.JVMPath
+  nameWithType.vb: StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).JVMPath
+- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.LicensePath
+  name: LicensePath
+  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-2.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_LicensePath
+  commentId: P:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.LicensePath
+  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<TCmdlet, TCore>.LicensePath
+  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).LicensePath
+  nameWithType: StartJNetPSCmdletCommandBase<TCmdlet, TCore>.LicensePath
+  nameWithType.vb: StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).LicensePath
+- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.LicensePath*
+  name: LicensePath
+  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-2.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_LicensePath_
+  commentId: Overload:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.LicensePath
+  isSpec: "True"
+  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<TCmdlet, TCore>.LicensePath
+  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).LicensePath
+  nameWithType: StartJNetPSCmdletCommandBase<TCmdlet, TCore>.LicensePath
+  nameWithType.vb: StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).LicensePath
+- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.LogClassPath
+  name: LogClassPath
+  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-2.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_LogClassPath
+  commentId: P:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.LogClassPath
+  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<TCmdlet, TCore>.LogClassPath
+  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).LogClassPath
+  nameWithType: StartJNetPSCmdletCommandBase<TCmdlet, TCore>.LogClassPath
+  nameWithType.vb: StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).LogClassPath
+- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.LogClassPath*
+  name: LogClassPath
+  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-2.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_LogClassPath_
+  commentId: Overload:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.LogClassPath
+  isSpec: "True"
+  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<TCmdlet, TCore>.LogClassPath
+  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).LogClassPath
+  nameWithType: StartJNetPSCmdletCommandBase<TCmdlet, TCore>.LogClassPath
+  nameWithType.vb: StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).LogClassPath
+- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.OnAfterCreateGlobalInstance
+  name: OnAfterCreateGlobalInstance()
+  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-2.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_OnAfterCreateGlobalInstance
+  commentId: M:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.OnAfterCreateGlobalInstance
+  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<TCmdlet, TCore>.OnAfterCreateGlobalInstance()
+  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).OnAfterCreateGlobalInstance()
+  nameWithType: StartJNetPSCmdletCommandBase<TCmdlet, TCore>.OnAfterCreateGlobalInstance()
+  nameWithType.vb: StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).OnAfterCreateGlobalInstance()
+- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.OnAfterCreateGlobalInstance*
+  name: OnAfterCreateGlobalInstance
+  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-2.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_OnAfterCreateGlobalInstance_
+  commentId: Overload:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.OnAfterCreateGlobalInstance
+  isSpec: "True"
+  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<TCmdlet, TCore>.OnAfterCreateGlobalInstance
+  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).OnAfterCreateGlobalInstance
+  nameWithType: StartJNetPSCmdletCommandBase<TCmdlet, TCore>.OnAfterCreateGlobalInstance
+  nameWithType.vb: StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).OnAfterCreateGlobalInstance
+- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.OnBeforeCreateGlobalInstance
+  name: OnBeforeCreateGlobalInstance()
+  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-2.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_OnBeforeCreateGlobalInstance
+  commentId: M:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.OnBeforeCreateGlobalInstance
+  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<TCmdlet, TCore>.OnBeforeCreateGlobalInstance()
+  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).OnBeforeCreateGlobalInstance()
+  nameWithType: StartJNetPSCmdletCommandBase<TCmdlet, TCore>.OnBeforeCreateGlobalInstance()
+  nameWithType.vb: StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).OnBeforeCreateGlobalInstance()
+- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.OnBeforeCreateGlobalInstance*
+  name: OnBeforeCreateGlobalInstance
+  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-2.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_OnBeforeCreateGlobalInstance_
+  commentId: Overload:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.OnBeforeCreateGlobalInstance
+  isSpec: "True"
+  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<TCmdlet, TCore>.OnBeforeCreateGlobalInstance
+  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).OnBeforeCreateGlobalInstance
+  nameWithType: StartJNetPSCmdletCommandBase<TCmdlet, TCore>.OnBeforeCreateGlobalInstance
+  nameWithType.vb: StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).OnBeforeCreateGlobalInstance
+- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.ProcessCommand
+  name: ProcessCommand()
+  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-2.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_ProcessCommand
+  commentId: M:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.ProcessCommand
+  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<TCmdlet, TCore>.ProcessCommand()
+  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).ProcessCommand()
+  nameWithType: StartJNetPSCmdletCommandBase<TCmdlet, TCore>.ProcessCommand()
+  nameWithType.vb: StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).ProcessCommand()
+- uid: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.ProcessCommand*
+  name: ProcessCommand
+  href: api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-2.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_ProcessCommand_
+  commentId: Overload:MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.ProcessCommand
+  isSpec: "True"
+  fullName: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<TCmdlet, TCore>.ProcessCommand
+  fullName.vb: MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).ProcessCommand
+  nameWithType: StartJNetPSCmdletCommandBase<TCmdlet, TCore>.ProcessCommand
+  nameWithType.vb: StartJNetPSCmdletCommandBase(Of TCmdlet, TCore).ProcessCommand
+- uid: MASES.JNetPSCore.JNetPSHelper
+  name: JNetPSHelper
+  href: api/MASES.JNetPSCore.JNetPSHelper.html
+  commentId: T:MASES.JNetPSCore.JNetPSHelper
+  fullName: MASES.JNetPSCore.JNetPSHelper
+  nameWithType: JNetPSHelper
+- uid: MASES.JNetPSCore.JNetPSHelper.NeedExternalProcess*
+  name: NeedExternalProcess
+  href: api/MASES.JNetPSCore.JNetPSHelper.html#MASES_JNetPSCore_JNetPSHelper_NeedExternalProcess_
+  commentId: Overload:MASES.JNetPSCore.JNetPSHelper.NeedExternalProcess
+  isSpec: "True"
+  fullName: MASES.JNetPSCore.JNetPSHelper.NeedExternalProcess
+  nameWithType: JNetPSHelper.NeedExternalProcess
+- uid: MASES.JNetPSCore.JNetPSHelper.NeedExternalProcess``1
+  name: NeedExternalProcess<T>()
+  href: api/MASES.JNetPSCore.JNetPSHelper.html#MASES_JNetPSCore_JNetPSHelper_NeedExternalProcess__1
+  commentId: M:MASES.JNetPSCore.JNetPSHelper.NeedExternalProcess``1
+  name.vb: NeedExternalProcess(Of T)()
+  fullName: MASES.JNetPSCore.JNetPSHelper.NeedExternalProcess<T>()
+  fullName.vb: MASES.JNetPSCore.JNetPSHelper.NeedExternalProcess(Of T)()
+  nameWithType: JNetPSHelper.NeedExternalProcess<T>()
+  nameWithType.vb: JNetPSHelper.NeedExternalProcess(Of T)()
+- uid: MASES.JNetPSCore.JNetPSHelper.NounName*
+  name: NounName
+  href: api/MASES.JNetPSCore.JNetPSHelper.html#MASES_JNetPSCore_JNetPSHelper_NounName_
+  commentId: Overload:MASES.JNetPSCore.JNetPSHelper.NounName
+  isSpec: "True"
+  fullName: MASES.JNetPSCore.JNetPSHelper.NounName
+  nameWithType: JNetPSHelper.NounName
+- uid: MASES.JNetPSCore.JNetPSHelper.NounName``1
+  name: NounName<T>()
+  href: api/MASES.JNetPSCore.JNetPSHelper.html#MASES_JNetPSCore_JNetPSHelper_NounName__1
+  commentId: M:MASES.JNetPSCore.JNetPSHelper.NounName``1
+  name.vb: NounName(Of T)()
+  fullName: MASES.JNetPSCore.JNetPSHelper.NounName<T>()
+  fullName.vb: MASES.JNetPSCore.JNetPSHelper.NounName(Of T)()
+  nameWithType: JNetPSHelper.NounName<T>()
+  nameWithType.vb: JNetPSHelper.NounName(Of T)()
+- uid: MASES.JNetPSCore.JNetPSHelper.VerbName*
+  name: VerbName
+  href: api/MASES.JNetPSCore.JNetPSHelper.html#MASES_JNetPSCore_JNetPSHelper_VerbName_
+  commentId: Overload:MASES.JNetPSCore.JNetPSHelper.VerbName
+  isSpec: "True"
+  fullName: MASES.JNetPSCore.JNetPSHelper.VerbName
+  nameWithType: JNetPSHelper.VerbName
+- uid: MASES.JNetPSCore.JNetPSHelper.VerbName``1
+  name: VerbName<T>()
+  href: api/MASES.JNetPSCore.JNetPSHelper.html#MASES_JNetPSCore_JNetPSHelper_VerbName__1
+  commentId: M:MASES.JNetPSCore.JNetPSHelper.VerbName``1
+  name.vb: VerbName(Of T)()
+  fullName: MASES.JNetPSCore.JNetPSHelper.VerbName<T>()
+  fullName.vb: MASES.JNetPSCore.JNetPSHelper.VerbName(Of T)()
+  nameWithType: JNetPSHelper.VerbName<T>()
+  nameWithType.vb: JNetPSHelper.VerbName(Of T)()
 - uid: MASES.JNetPSCore.JNetPSHelper`1
   name: JNetPSHelper<TClass>
   href: api/MASES.JNetPSCore.JNetPSHelper-1.html
@@ -24113,6 +24209,78 @@ references:
   fullName.vb: MASES.JNetPSCore.JNetPSHelper(Of TClass).CreateGlobalInstance
   nameWithType: JNetPSHelper<TClass>.CreateGlobalInstance
   nameWithType.vb: JNetPSHelper(Of TClass).CreateGlobalInstance
+- uid: MASES.JNetPSCore.JNetPSHelper`1.Get*
+  name: Get
+  href: api/MASES.JNetPSCore.JNetPSHelper-1.html#MASES_JNetPSCore_JNetPSHelper_1_Get_
+  commentId: Overload:MASES.JNetPSCore.JNetPSHelper`1.Get
+  isSpec: "True"
+  fullName: MASES.JNetPSCore.JNetPSHelper<TClass>.Get
+  fullName.vb: MASES.JNetPSCore.JNetPSHelper(Of TClass).Get
+  nameWithType: JNetPSHelper<TClass>.Get
+  nameWithType.vb: JNetPSHelper(Of TClass).Get
+- uid: MASES.JNetPSCore.JNetPSHelper`1.Get``1(System.Type,System.String)
+  name: Get<TProperty>(Type, String)
+  href: api/MASES.JNetPSCore.JNetPSHelper-1.html#MASES_JNetPSCore_JNetPSHelper_1_Get__1_System_Type_System_String_
+  commentId: M:MASES.JNetPSCore.JNetPSHelper`1.Get``1(System.Type,System.String)
+  name.vb: Get(Of TProperty)(Type, String)
+  fullName: MASES.JNetPSCore.JNetPSHelper<TClass>.Get<TProperty>(System.Type, System.String)
+  fullName.vb: MASES.JNetPSCore.JNetPSHelper(Of TClass).Get(Of TProperty)(System.Type, System.String)
+  nameWithType: JNetPSHelper<TClass>.Get<TProperty>(Type, String)
+  nameWithType.vb: JNetPSHelper(Of TClass).Get(Of TProperty)(Type, String)
+- uid: MASES.JNetPSCore.JNetPSHelper`1.Get``2(System.String)
+  name: Get<TTarget, TProperty>(String)
+  href: api/MASES.JNetPSCore.JNetPSHelper-1.html#MASES_JNetPSCore_JNetPSHelper_1_Get__2_System_String_
+  commentId: M:MASES.JNetPSCore.JNetPSHelper`1.Get``2(System.String)
+  name.vb: Get(Of TTarget, TProperty)(String)
+  fullName: MASES.JNetPSCore.JNetPSHelper<TClass>.Get<TTarget, TProperty>(System.String)
+  fullName.vb: MASES.JNetPSCore.JNetPSHelper(Of TClass).Get(Of TTarget, TProperty)(System.String)
+  nameWithType: JNetPSHelper<TClass>.Get<TTarget, TProperty>(String)
+  nameWithType.vb: JNetPSHelper(Of TClass).Get(Of TTarget, TProperty)(String)
+- uid: MASES.JNetPSCore.JNetPSHelper`1.New(System.String,System.Object[])
+  name: New(String, Object[])
+  href: api/MASES.JNetPSCore.JNetPSHelper-1.html#MASES_JNetPSCore_JNetPSHelper_1_New_System_String_System_Object___
+  commentId: M:MASES.JNetPSCore.JNetPSHelper`1.New(System.String,System.Object[])
+  name.vb: New(String, Object())
+  fullName: MASES.JNetPSCore.JNetPSHelper<TClass>.New(System.String, System.Object[])
+  fullName.vb: MASES.JNetPSCore.JNetPSHelper(Of TClass).New(System.String, System.Object())
+  nameWithType: JNetPSHelper<TClass>.New(String, Object[])
+  nameWithType.vb: JNetPSHelper(Of TClass).New(String, Object())
+- uid: MASES.JNetPSCore.JNetPSHelper`1.New*
+  name: New
+  href: api/MASES.JNetPSCore.JNetPSHelper-1.html#MASES_JNetPSCore_JNetPSHelper_1_New_
+  commentId: Overload:MASES.JNetPSCore.JNetPSHelper`1.New
+  isSpec: "True"
+  fullName: MASES.JNetPSCore.JNetPSHelper<TClass>.New
+  fullName.vb: MASES.JNetPSCore.JNetPSHelper(Of TClass).New
+  nameWithType: JNetPSHelper<TClass>.New
+  nameWithType.vb: JNetPSHelper(Of TClass).New
+- uid: MASES.JNetPSCore.JNetPSHelper`1.Set*
+  name: Set
+  href: api/MASES.JNetPSCore.JNetPSHelper-1.html#MASES_JNetPSCore_JNetPSHelper_1_Set_
+  commentId: Overload:MASES.JNetPSCore.JNetPSHelper`1.Set
+  isSpec: "True"
+  fullName: MASES.JNetPSCore.JNetPSHelper<TClass>.Set
+  fullName.vb: MASES.JNetPSCore.JNetPSHelper(Of TClass).Set
+  nameWithType: JNetPSHelper<TClass>.Set
+  nameWithType.vb: JNetPSHelper(Of TClass).Set
+- uid: MASES.JNetPSCore.JNetPSHelper`1.Set``1(System.Type,System.String,``0)
+  name: Set<TProperty>(Type, String, TProperty)
+  href: api/MASES.JNetPSCore.JNetPSHelper-1.html#MASES_JNetPSCore_JNetPSHelper_1_Set__1_System_Type_System_String___0_
+  commentId: M:MASES.JNetPSCore.JNetPSHelper`1.Set``1(System.Type,System.String,``0)
+  name.vb: Set(Of TProperty)(Type, String, TProperty)
+  fullName: MASES.JNetPSCore.JNetPSHelper<TClass>.Set<TProperty>(System.Type, System.String, TProperty)
+  fullName.vb: MASES.JNetPSCore.JNetPSHelper(Of TClass).Set(Of TProperty)(System.Type, System.String, TProperty)
+  nameWithType: JNetPSHelper<TClass>.Set<TProperty>(Type, String, TProperty)
+  nameWithType.vb: JNetPSHelper(Of TClass).Set(Of TProperty)(Type, String, TProperty)
+- uid: MASES.JNetPSCore.JNetPSHelper`1.Set``2(System.String,``1)
+  name: Set<TTarget, TProperty>(String, TProperty)
+  href: api/MASES.JNetPSCore.JNetPSHelper-1.html#MASES_JNetPSCore_JNetPSHelper_1_Set__2_System_String___1_
+  commentId: M:MASES.JNetPSCore.JNetPSHelper`1.Set``2(System.String,``1)
+  name.vb: Set(Of TTarget, TProperty)(String, TProperty)
+  fullName: MASES.JNetPSCore.JNetPSHelper<TClass>.Set<TTarget, TProperty>(System.String, TProperty)
+  fullName.vb: MASES.JNetPSCore.JNetPSHelper(Of TClass).Set(Of TTarget, TProperty)(System.String, TProperty)
+  nameWithType: JNetPSHelper<TClass>.Set<TTarget, TProperty>(String, TProperty)
+  nameWithType.vb: JNetPSHelper(Of TClass).Set(Of TTarget, TProperty)(String, TProperty)
 - uid: MASES.JNetPSCore.JNetPSHelper`1.SetDebugSuspendFlag(System.String)
   name: SetDebugSuspendFlag(String)
   href: api/MASES.JNetPSCore.JNetPSHelper-1.html#MASES_JNetPSCore_JNetPSHelper_1_SetDebugSuspendFlag_System_String_
@@ -24366,6 +24534,54 @@ references:
   fullName.vb: MASES.JNetPSCore.JNetPSHelperExtensions.GetStaticPropertyOn(Of TContainingClass)(System.Type, System.String)
   nameWithType: JNetPSHelperExtensions.GetStaticPropertyOn<TContainingClass>(Type, String)
   nameWithType.vb: JNetPSHelperExtensions.GetStaticPropertyOn(Of TContainingClass)(Type, String)
+- uid: MASES.JNetPSCore.JNetPSHelperExtensions.InvokeExternal*
+  name: InvokeExternal
+  href: api/MASES.JNetPSCore.JNetPSHelperExtensions.html#MASES_JNetPSCore_JNetPSHelperExtensions_InvokeExternal_
+  commentId: Overload:MASES.JNetPSCore.JNetPSHelperExtensions.InvokeExternal
+  isSpec: "True"
+  fullName: MASES.JNetPSCore.JNetPSHelperExtensions.InvokeExternal
+  nameWithType: JNetPSHelperExtensions.InvokeExternal
+- uid: MASES.JNetPSCore.JNetPSHelperExtensions.InvokeExternal``1(``0)
+  name: InvokeExternal<T>(T)
+  href: api/MASES.JNetPSCore.JNetPSHelperExtensions.html#MASES_JNetPSCore_JNetPSHelperExtensions_InvokeExternal__1___0_
+  commentId: M:MASES.JNetPSCore.JNetPSHelperExtensions.InvokeExternal``1(``0)
+  name.vb: InvokeExternal(Of T)(T)
+  fullName: MASES.JNetPSCore.JNetPSHelperExtensions.InvokeExternal<T>(T)
+  fullName.vb: MASES.JNetPSCore.JNetPSHelperExtensions.InvokeExternal(Of T)(T)
+  nameWithType: JNetPSHelperExtensions.InvokeExternal<T>(T)
+  nameWithType.vb: JNetPSHelperExtensions.InvokeExternal(Of T)(T)
+- uid: MASES.JNetPSCore.JNetPSHelperExtensions.IsExternal*
+  name: IsExternal
+  href: api/MASES.JNetPSCore.JNetPSHelperExtensions.html#MASES_JNetPSCore_JNetPSHelperExtensions_IsExternal_
+  commentId: Overload:MASES.JNetPSCore.JNetPSHelperExtensions.IsExternal
+  isSpec: "True"
+  fullName: MASES.JNetPSCore.JNetPSHelperExtensions.IsExternal
+  nameWithType: JNetPSHelperExtensions.IsExternal
+- uid: MASES.JNetPSCore.JNetPSHelperExtensions.IsExternal``1(``0)
+  name: IsExternal<T>(T)
+  href: api/MASES.JNetPSCore.JNetPSHelperExtensions.html#MASES_JNetPSCore_JNetPSHelperExtensions_IsExternal__1___0_
+  commentId: M:MASES.JNetPSCore.JNetPSHelperExtensions.IsExternal``1(``0)
+  name.vb: IsExternal(Of T)(T)
+  fullName: MASES.JNetPSCore.JNetPSHelperExtensions.IsExternal<T>(T)
+  fullName.vb: MASES.JNetPSCore.JNetPSHelperExtensions.IsExternal(Of T)(T)
+  nameWithType: JNetPSHelperExtensions.IsExternal<T>(T)
+  nameWithType.vb: JNetPSHelperExtensions.IsExternal(Of T)(T)
+- uid: MASES.JNetPSCore.JNetPSHelperExtensions.NounName*
+  name: NounName
+  href: api/MASES.JNetPSCore.JNetPSHelperExtensions.html#MASES_JNetPSCore_JNetPSHelperExtensions_NounName_
+  commentId: Overload:MASES.JNetPSCore.JNetPSHelperExtensions.NounName
+  isSpec: "True"
+  fullName: MASES.JNetPSCore.JNetPSHelperExtensions.NounName
+  nameWithType: JNetPSHelperExtensions.NounName
+- uid: MASES.JNetPSCore.JNetPSHelperExtensions.NounName``1(``0)
+  name: NounName<T>(T)
+  href: api/MASES.JNetPSCore.JNetPSHelperExtensions.html#MASES_JNetPSCore_JNetPSHelperExtensions_NounName__1___0_
+  commentId: M:MASES.JNetPSCore.JNetPSHelperExtensions.NounName``1(``0)
+  name.vb: NounName(Of T)(T)
+  fullName: MASES.JNetPSCore.JNetPSHelperExtensions.NounName<T>(T)
+  fullName.vb: MASES.JNetPSCore.JNetPSHelperExtensions.NounName(Of T)(T)
+  nameWithType: JNetPSHelperExtensions.NounName<T>(T)
+  nameWithType.vb: JNetPSHelperExtensions.NounName(Of T)(T)
 - uid: MASES.JNetPSCore.JNetPSHelperExtensions.RunStaticMethodOn(System.Type,System.Type,System.String,System.Object[])
   name: RunStaticMethodOn(Type, Type, String, Object[])
   href: api/MASES.JNetPSCore.JNetPSHelperExtensions.html#MASES_JNetPSCore_JNetPSHelperExtensions_RunStaticMethodOn_System_Type_System_Type_System_String_System_Object___
@@ -24426,6 +24642,22 @@ references:
   isSpec: "True"
   fullName: MASES.JNetPSCore.JNetPSHelperExtensions.TraverseUntil
   nameWithType: JNetPSHelperExtensions.TraverseUntil
+- uid: MASES.JNetPSCore.JNetPSHelperExtensions.VerbName*
+  name: VerbName
+  href: api/MASES.JNetPSCore.JNetPSHelperExtensions.html#MASES_JNetPSCore_JNetPSHelperExtensions_VerbName_
+  commentId: Overload:MASES.JNetPSCore.JNetPSHelperExtensions.VerbName
+  isSpec: "True"
+  fullName: MASES.JNetPSCore.JNetPSHelperExtensions.VerbName
+  nameWithType: JNetPSHelperExtensions.VerbName
+- uid: MASES.JNetPSCore.JNetPSHelperExtensions.VerbName``1(``0)
+  name: VerbName<T>(T)
+  href: api/MASES.JNetPSCore.JNetPSHelperExtensions.html#MASES_JNetPSCore_JNetPSHelperExtensions_VerbName__1___0_
+  commentId: M:MASES.JNetPSCore.JNetPSHelperExtensions.VerbName``1(``0)
+  name.vb: VerbName(Of T)(T)
+  fullName: MASES.JNetPSCore.JNetPSHelperExtensions.VerbName<T>(T)
+  fullName.vb: MASES.JNetPSCore.JNetPSHelperExtensions.VerbName(Of T)(T)
+  nameWithType: JNetPSHelperExtensions.VerbName<T>(T)
+  nameWithType.vb: JNetPSHelperExtensions.VerbName(Of T)(T)
 - uid: MASES.JNetReflector
   name: MASES.JNetReflector
   href: api/MASES.JNetReflector.html
