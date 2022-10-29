@@ -24192,14 +24192,14 @@ references:
   fullName.vb: MASES.JNetPSCore.JNetPSHelper(Of TClass)
   nameWithType: JNetPSHelper<TClass>
   nameWithType.vb: JNetPSHelper(Of TClass)
-- uid: MASES.JNetPSCore.JNetPSHelper`1.CreateGlobalInstance
-  name: CreateGlobalInstance()
-  href: api/MASES.JNetPSCore.JNetPSHelper-1.html#MASES_JNetPSCore_JNetPSHelper_1_CreateGlobalInstance
-  commentId: M:MASES.JNetPSCore.JNetPSHelper`1.CreateGlobalInstance
-  fullName: MASES.JNetPSCore.JNetPSHelper<TClass>.CreateGlobalInstance()
-  fullName.vb: MASES.JNetPSCore.JNetPSHelper(Of TClass).CreateGlobalInstance()
-  nameWithType: JNetPSHelper<TClass>.CreateGlobalInstance()
-  nameWithType.vb: JNetPSHelper(Of TClass).CreateGlobalInstance()
+- uid: MASES.JNetPSCore.JNetPSHelper`1.CreateGlobalInstance(System.Management.Automation.Cmdlet)
+  name: CreateGlobalInstance(Cmdlet)
+  href: api/MASES.JNetPSCore.JNetPSHelper-1.html#MASES_JNetPSCore_JNetPSHelper_1_CreateGlobalInstance_System_Management_Automation_Cmdlet_
+  commentId: M:MASES.JNetPSCore.JNetPSHelper`1.CreateGlobalInstance(System.Management.Automation.Cmdlet)
+  fullName: MASES.JNetPSCore.JNetPSHelper<TClass>.CreateGlobalInstance(System.Management.Automation.Cmdlet)
+  fullName.vb: MASES.JNetPSCore.JNetPSHelper(Of TClass).CreateGlobalInstance(System.Management.Automation.Cmdlet)
+  nameWithType: JNetPSHelper<TClass>.CreateGlobalInstance(Cmdlet)
+  nameWithType.vb: JNetPSHelper(Of TClass).CreateGlobalInstance(Cmdlet)
 - uid: MASES.JNetPSCore.JNetPSHelper`1.CreateGlobalInstance*
   name: CreateGlobalInstance
   href: api/MASES.JNetPSCore.JNetPSHelper-1.html#MASES_JNetPSCore_JNetPSHelper_1_CreateGlobalInstance_
@@ -24236,6 +24236,23 @@ references:
   fullName.vb: MASES.JNetPSCore.JNetPSHelper(Of TClass).Get(Of TTarget, TProperty)(System.String)
   nameWithType: JNetPSHelper<TClass>.Get<TTarget, TProperty>(String)
   nameWithType.vb: JNetPSHelper(Of TClass).Get(Of TTarget, TProperty)(String)
+- uid: MASES.JNetPSCore.JNetPSHelper`1.InstanceCreated
+  name: InstanceCreated
+  href: api/MASES.JNetPSCore.JNetPSHelper-1.html#MASES_JNetPSCore_JNetPSHelper_1_InstanceCreated
+  commentId: P:MASES.JNetPSCore.JNetPSHelper`1.InstanceCreated
+  fullName: MASES.JNetPSCore.JNetPSHelper<TClass>.InstanceCreated
+  fullName.vb: MASES.JNetPSCore.JNetPSHelper(Of TClass).InstanceCreated
+  nameWithType: JNetPSHelper<TClass>.InstanceCreated
+  nameWithType.vb: JNetPSHelper(Of TClass).InstanceCreated
+- uid: MASES.JNetPSCore.JNetPSHelper`1.InstanceCreated*
+  name: InstanceCreated
+  href: api/MASES.JNetPSCore.JNetPSHelper-1.html#MASES_JNetPSCore_JNetPSHelper_1_InstanceCreated_
+  commentId: Overload:MASES.JNetPSCore.JNetPSHelper`1.InstanceCreated
+  isSpec: "True"
+  fullName: MASES.JNetPSCore.JNetPSHelper<TClass>.InstanceCreated
+  fullName.vb: MASES.JNetPSCore.JNetPSHelper(Of TClass).InstanceCreated
+  nameWithType: JNetPSHelper<TClass>.InstanceCreated
+  nameWithType.vb: JNetPSHelper(Of TClass).InstanceCreated
 - uid: MASES.JNetPSCore.JNetPSHelper`1.New(System.String,System.Object[])
   name: New(String, Object[])
   href: api/MASES.JNetPSCore.JNetPSHelper-1.html#MASES_JNetPSCore_JNetPSHelper_1_New_System_String_System_Object___
@@ -24534,38 +24551,6 @@ references:
   fullName.vb: MASES.JNetPSCore.JNetPSHelperExtensions.GetStaticPropertyOn(Of TContainingClass)(System.Type, System.String)
   nameWithType: JNetPSHelperExtensions.GetStaticPropertyOn<TContainingClass>(Type, String)
   nameWithType.vb: JNetPSHelperExtensions.GetStaticPropertyOn(Of TContainingClass)(Type, String)
-- uid: MASES.JNetPSCore.JNetPSHelperExtensions.InvokeExternal*
-  name: InvokeExternal
-  href: api/MASES.JNetPSCore.JNetPSHelperExtensions.html#MASES_JNetPSCore_JNetPSHelperExtensions_InvokeExternal_
-  commentId: Overload:MASES.JNetPSCore.JNetPSHelperExtensions.InvokeExternal
-  isSpec: "True"
-  fullName: MASES.JNetPSCore.JNetPSHelperExtensions.InvokeExternal
-  nameWithType: JNetPSHelperExtensions.InvokeExternal
-- uid: MASES.JNetPSCore.JNetPSHelperExtensions.InvokeExternal``1(``0)
-  name: InvokeExternal<T>(T)
-  href: api/MASES.JNetPSCore.JNetPSHelperExtensions.html#MASES_JNetPSCore_JNetPSHelperExtensions_InvokeExternal__1___0_
-  commentId: M:MASES.JNetPSCore.JNetPSHelperExtensions.InvokeExternal``1(``0)
-  name.vb: InvokeExternal(Of T)(T)
-  fullName: MASES.JNetPSCore.JNetPSHelperExtensions.InvokeExternal<T>(T)
-  fullName.vb: MASES.JNetPSCore.JNetPSHelperExtensions.InvokeExternal(Of T)(T)
-  nameWithType: JNetPSHelperExtensions.InvokeExternal<T>(T)
-  nameWithType.vb: JNetPSHelperExtensions.InvokeExternal(Of T)(T)
-- uid: MASES.JNetPSCore.JNetPSHelperExtensions.IsExternal*
-  name: IsExternal
-  href: api/MASES.JNetPSCore.JNetPSHelperExtensions.html#MASES_JNetPSCore_JNetPSHelperExtensions_IsExternal_
-  commentId: Overload:MASES.JNetPSCore.JNetPSHelperExtensions.IsExternal
-  isSpec: "True"
-  fullName: MASES.JNetPSCore.JNetPSHelperExtensions.IsExternal
-  nameWithType: JNetPSHelperExtensions.IsExternal
-- uid: MASES.JNetPSCore.JNetPSHelperExtensions.IsExternal``1(``0)
-  name: IsExternal<T>(T)
-  href: api/MASES.JNetPSCore.JNetPSHelperExtensions.html#MASES_JNetPSCore_JNetPSHelperExtensions_IsExternal__1___0_
-  commentId: M:MASES.JNetPSCore.JNetPSHelperExtensions.IsExternal``1(``0)
-  name.vb: IsExternal(Of T)(T)
-  fullName: MASES.JNetPSCore.JNetPSHelperExtensions.IsExternal<T>(T)
-  fullName.vb: MASES.JNetPSCore.JNetPSHelperExtensions.IsExternal(Of T)(T)
-  nameWithType: JNetPSHelperExtensions.IsExternal<T>(T)
-  nameWithType.vb: JNetPSHelperExtensions.IsExternal(Of T)(T)
 - uid: MASES.JNetPSCore.JNetPSHelperExtensions.NounName*
   name: NounName
   href: api/MASES.JNetPSCore.JNetPSHelperExtensions.html#MASES_JNetPSCore_JNetPSHelperExtensions_NounName_
