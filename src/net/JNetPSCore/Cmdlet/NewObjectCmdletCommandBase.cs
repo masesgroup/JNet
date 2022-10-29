@@ -16,41 +16,30 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.JCOBridge.C2JBridge;
 using MASES.JNet;
 using System.Collections.Generic;
 using System.Management.Automation;
-using System.Reflection;
 
 namespace MASES.JNetPSCore.Cmdlet
 {
-    public abstract class NewObjectCmdletCommandBase<T> : PSCmdlet
-        where T : JNetCore<T>
+    public abstract class NewObjectCmdletCommandBase<TCmdlet, TCore> : JNetPSExternalizableCmdlet<TCmdlet>
+        where TCmdlet : NewObjectCmdletCommandBase<TCmdlet, TCore>
+        where TCore : JNetCore<TCore>
     {
         [Parameter(
             Mandatory = true,
-            Position = 0,
             ValueFromPipeline = true,
             ValueFromPipelineByPropertyName = true,
             HelpMessage = "The java class name to be initialized")]
         public string Class { get; set; }
 
         [Parameter(
-            Position = 1,
             ValueFromPipelineByPropertyName = true,
             HelpMessage = "The constructor arguments to be used")]
         public object[] Arguments { get; set; }
 
-        private static readonly MethodInfo NewMethod = typeof(T).TraverseUntil(typeof(JNetCoreBase<>)).GetMethod(nameof(JNetCore.New), new System.Type[] { typeof(string), typeof(object[])});
-
-        // This method gets called once for each cmdlet in the pipeline when the pipeline starts executing
-        protected override void BeginProcessing()
-        {
-            WriteVerbose("Begin!");
-        }
-
         // This method will be called for each input received from the pipeline to this cmdlet; if no input is received, this method is not called
-        protected override void ProcessRecord()
+        protected override void ProcessCommand()
         {
             object[] args = Arguments;
             if (Arguments != null)
@@ -70,14 +59,8 @@ namespace MASES.JNetPSCore.Cmdlet
                 args = objects.ToArray();
             }
 
-            var result = NewMethod.Invoke(null, new object[] { Class, args });
+            var result = JNetPSHelper<TCore>.New(Class, args);
             WriteObject(result);
-        }
-
-        // This method will be called once at the end of pipeline execution; if no input is received, this method is not called
-        protected override void EndProcessing()
-        {
-            WriteVerbose("End!");
         }
     }
 }

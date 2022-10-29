@@ -59,35 +59,25 @@ namespace MASES.JNet
         static string _className;
 
         /// <summary>
-        /// Creates the <see cref="GenericCommand"/> class based on <paramref name="className"/>
-        /// </summary>
-        /// <param name="className">The class to be instantiated having the main method</param>
-        /// <returns><see cref="GenericCommand"/></returns>
-        public static GenericCommand Create(string className)
-        {
-            lock (_classNameLock)
-            {
-                try
-                {
-                    _className = className;
-                    return new GenericCommand();
-                }
-                finally
-                {
-                    _className = null;
-                }
-            }
-        }
-
-        /// <summary>
         /// Creates and launch the <see cref="GenericCommand"/> class based on <paramref name="className"/>
         /// </summary>
         /// <param name="className">The class to be instantiated having the main method</param>
         /// <param name="args">Arguments to send to main method</param>
         public static void CreateAndLaunch(string className, params object[] args)
         {
-            GenericCommand command = Create(className);
-            command.Execute(args);
+            lock (_classNameLock)
+            {
+                try
+                {
+                    _className = className;
+                    var command = new GenericCommand();
+                    command.Execute(args);
+                }
+                finally
+                {
+                    _className = null;
+                }
+            }
         }
 
         /// <remarks>

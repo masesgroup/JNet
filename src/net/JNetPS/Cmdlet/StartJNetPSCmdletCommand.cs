@@ -23,7 +23,7 @@ using System.Management.Automation;
 namespace MASES.JNetPS.Cmdlet
 {
     [Cmdlet(VerbsLifecycle.Start, "JNetPS")]
-    public class StartJNetPSCmdletCommand : StartJNetPSCmdletCommandBase<JNetCore>
+    public class StartJNetPSCmdletCommand : StartJNetPSCmdletCommandBase<StartJNetPSCmdletCommand, JNetCore>
     {
 
     }
