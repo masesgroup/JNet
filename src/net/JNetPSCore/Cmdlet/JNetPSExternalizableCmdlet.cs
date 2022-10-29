@@ -16,8 +16,6 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.JCOBridge.C2JBridge;
-using MASES.JNet;
 using System;
 using System.Management.Automation;
 
@@ -36,8 +34,23 @@ namespace MASES.JNetPSCore.Cmdlet
     public abstract class JNetPSExternalizableCmdlet<T> : PSCmdlet
         where T : JNetPSExternalizableCmdlet<T>
     {
+        /// <summary>
+        /// Used internally
+        /// </summary>
         [Parameter(DontShow = true, ValueFromPipelineByPropertyName = true)]
         public SwitchParameter JNetPSCmdletDetached { get; set; }
+
+        /// <summary>
+        /// Permit to bypass the <see cref="JNetPSExternalize"/> attribute
+        /// </summary>
+        [Parameter(DontShow = true, ValueFromPipelineByPropertyName = true)]
+        public SwitchParameter BypassJNetPSExternalize { get; set; }
+
+        /// <summary>
+        /// Force the external execution even if the <see cref="JNetPSExternalize"/> attribute was not defined
+        /// </summary>
+        [Parameter(DontShow = true, ValueFromPipelineByPropertyName = true)]
+        public SwitchParameter ForceJNetPSExternalize { get; set; }
 
         // This method gets called once for each cmdlet in the pipeline when the pipeline starts executing
         protected override void BeginProcessing()
@@ -49,7 +62,7 @@ namespace MASES.JNetPSCore.Cmdlet
         // This method will be called for each input received from the pipeline to this cmdlet; if no input is received, this method is not called
         protected sealed override void ProcessRecord()
         {
-            if (JNetPSHelper.NeedExternalProcess<T>())
+            if (ForceJNetPSExternalize.IsPresent || (!BypassJNetPSExternalize.IsPresent && JNetPSHelper.NeedExternalProcess<T>()))
             {
                 if (!this.IsExternal()) { this.InvokeExternal(); return; }
             }

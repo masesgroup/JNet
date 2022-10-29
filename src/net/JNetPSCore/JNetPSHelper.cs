@@ -175,8 +175,7 @@ namespace MASES.JNetPSCore
                 }
             }
 
-            cmdlet.WriteVerbose("Running: " + psInfo.Arguments);
-
+            cmdlet.WriteVerbose($"Running: {psInfo.FileName} {psInfo.Arguments}");
             using (var proc = System.Diagnostics.Process.Start(psInfo))
             {
                 try
@@ -195,6 +194,7 @@ namespace MASES.JNetPSCore
                     proc.ErrorDataReceived -= Proc_ErrorDataReceived;
                     proc.OutputDataReceived -= Proc_OutputDataReceived;
                 }
+                cmdlet.WriteVerbose($"Return code is: {proc.ExitCode}");
             }
         }
 

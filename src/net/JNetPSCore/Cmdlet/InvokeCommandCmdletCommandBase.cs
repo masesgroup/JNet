@@ -21,7 +21,7 @@ using System.Management.Automation;
 
 namespace MASES.JNetPSCore.Cmdlet
 {
-    public abstract class InvokeCommandCmdletCommandBase<TCmdlet, TCore> : JNetPSExternalizableCmdlet<TCmdlet>
+    public abstract class InvokeCommandCmdletCommandBase<TCmdlet, TCore> : StartJNetPSCmdletCommandBase<TCmdlet, TCore>
         where TCmdlet : InvokeCommandCmdletCommandBase<TCmdlet, TCore>
         where TCore : JNetCore<TCore>
     {
@@ -38,7 +38,7 @@ namespace MASES.JNetPSCore.Cmdlet
         public string[] Arguments { get; set; }
 
         // This method will be called for each input received from the pipeline to this cmdlet; if no input is received, this method is not called
-        protected override void ProcessCommand()
+        protected override void OnAfterCreateGlobalInstance()
         {
             GenericCommand.CreateAndLaunch(MainClass, Arguments);
         }
