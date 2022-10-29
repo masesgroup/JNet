@@ -12,7 +12,7 @@ ModuleVersion = '1.4.12'
 
 # CompatiblePSEditions = @()
 
-GUID = '799c6600-abd6-4f6d-92f1-301a056f3f1b'
+GUID = '82FBF86C-1604-4940-84D1-993CC42D7853'
 
 Author = 'MASES s.r.l.'
 

@@ -161,7 +161,7 @@ namespace MASES.JNetPSCore.Cmdlet
         /// <summary>
         /// Invokes the <see cref="SetupJVMWrapper{TCore}.CreateGlobalInstance"/>
         /// </summary>
-        protected virtual void CreateGlobalInstance() { JNetPSHelper<TCore>.CreateGlobalInstance(); }
+        protected virtual void CreateGlobalInstance() { JNetPSHelper<TCore>.CreateGlobalInstance(this); }
         /// <summary>
         /// Executes the code after invoke <see cref="CreateGlobalInstance"/>
         /// </summary>

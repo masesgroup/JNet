@@ -51,7 +51,12 @@ namespace MASES.JNetPSCore
             }
             return source;
         }
-
+        /// <summary>
+        /// Traverse the class chain from <paramref name="source"/> until <paramref name="t"/>
+        /// </summary>
+        /// <param name="source">The source</param>
+        /// <param name="t">The target</param>
+        /// <returns>The <see cref="Type"/> found</returns>
         public static Type TraverseUntil(this Type source, Type t)
         {
             var baseType = source;
@@ -62,30 +67,61 @@ namespace MASES.JNetPSCore
 
             return baseType;
         }
-
-        public static object GetStaticPropertyOn(this Type source, Type destination, string propertyName)
+        /// <summary>
+        /// Generic static property getter
+        /// </summary>
+        /// <param name="origin">The origin</param>
+        /// <param name="target">The target <see cref="Type"/> where the static property was defined</param>
+        /// <param name="propertName">The property name</param>
+        /// <returns>The property value</returns>
+        public static object GetStaticPropertyOn(this Type origin, Type target, string propertyName)
         {
-            PropertyInfo prop = source.TraverseUntil(destination).GetProperty(propertyName);
+            PropertyInfo prop = origin.TraverseUntil(target).GetProperty(propertyName);
             return prop.GetValue(null);
         }
-
-        public static object GetStaticPropertyOn<TContainingClass>(this Type source, string propertyName)
+        /// <summary>
+        /// Generic static property getter
+        /// </summary>
+        /// <typeparam name="TContainingClass">The target <see cref="Type"/> where the static property was defined</typeparam>
+        /// <param name="origin">The origin</param>
+        /// <param name="propertName">The property name</param>
+        /// <returns>The property value</returns>
+        public static object GetStaticPropertyOn<TContainingClass>(this Type origin, string propertyName)
         {
-            return GetStaticPropertyOn(source, typeof(TContainingClass), propertyName);
+            return GetStaticPropertyOn(origin, typeof(TContainingClass), propertyName);
         }
-
-        public static void SetStaticPropertyOn(this Type source, Type destination, string propertyName, object value)
+        /// <summary>
+        /// Generic static property setter
+        /// </summary>
+        /// <param name="origin">The origin</param>
+        /// <param name="destination">The target <see cref="Type"/> where the static property was defined</param>
+        /// <param name="propertName">The property name</param>
+        /// <param name="value">The property value</param>
+        public static void SetStaticPropertyOn(this Type origin, Type destination, string propertyName, object value)
         {
-            PropertyInfo prop = source.TraverseUntil(destination).GetProperty(propertyName);
+            PropertyInfo prop = origin.TraverseUntil(destination).GetProperty(propertyName);
             prop.SetValue(null, value);
         }
-
-        public static void SetStaticPropertyOn<TContainingClass>(this Type source, string propertyName, object value)
+        /// <summary>
+        /// Generic static property setter
+        /// </summary>
+        /// <typeparam name="TContainingClass">The target <see cref="Type"/> where the static property was defined</typeparam>
+        /// <param name="origin">The origin</param>
+        /// <param name="propertName">The property name</param>
+        /// <param name="value">The property value</param>
+        public static void SetStaticPropertyOn<TContainingClass>(this Type origin, string propertyName, object value)
         {
-            SetStaticPropertyOn(source, typeof(TContainingClass), propertyName, value);
+            SetStaticPropertyOn(origin, typeof(TContainingClass), propertyName, value);
         }
-
-        public static object RunStaticMethodOn(this Type source, Type destination, string methodName, params object[] args)
+        /// <summary>
+        /// Executes a static method defined in <paramref name="destination"/>
+        /// </summary>
+        /// <param name="origin">The origin</param>
+        /// <param name="destination">The target <see cref="Type"/> where the static method was defined</param>
+        /// <param name="methodName">The method name</param>
+        /// <param name="args">The method arguments</param>
+        /// <returns>The method result</returns>
+        public static object RunStaticMethodOn(this Type origin, Type destination, string methodName, params object[] args)
         {
             List<Type> lst = new List<Type>();
             foreach (var item in args)
@@ -94,32 +130,49 @@ namespace MASES.JNetPSCore
                 lst.Add(item.GetType());
             }
 
-            MethodInfo method = source.TraverseUntil(destination).GetMethod(methodName, lst.ToArray());
+            MethodInfo method = origin.TraverseUntil(destination).GetMethod(methodName, lst.ToArray());
             if (method == null) throw new ArgumentException($"Not found method {methodName} with supplied arguments.");
             return method.Invoke(null, args);
         }
-
+        /// <summary>
+        /// Executes a static method defined in <paramref name="destination"/>
+        /// </summary>
+        /// <typeparam name="TContainingClass">The target <see cref="Type"/> where the static method was defined</typeparam>
+        /// <param name="origin">The origin</param>
+        /// <param name="methodName">The method name</param>
+        /// <param name="args">The method arguments</param>
+        /// <returns>The method result</returns>
         public static object RunStaticMethodOn<TContainingClass>(this Type source, string methodName, params object[] args)
         {
             return RunStaticMethodOn(source, typeof(TContainingClass), methodName, args);
         }
-
+        /// <summary>
+        /// The noun name of <typeparamref name="T"/>
+        /// </summary>
+        /// <typeparam name="T">The <see cref="System.Management.Automation.Cmdlet"/></typeparam>
+        /// <param name="cmdlet">The <see cref="System.Management.Automation.Cmdlet"/></param>
+        /// <returns>Noun name</returns>
         public static string NounName<T>(this T cmdlet) where T : System.Management.Automation.Cmdlet
         {
             return JNetPSHelper.NounName<T>();
         }
-
+        /// <summary>
+        /// The verb name of <typeparamref name="T"/>
+        /// </summary>
+        /// <typeparam name="T">The <see cref="System.Management.Automation.Cmdlet"/></typeparam>
+        /// <param name="cmdlet">The <see cref="System.Management.Automation.Cmdlet"/></param>
+        /// <returns>Verb name</returns>
         public static string VerbName<T>(this T cmdlet) where T : System.Management.Automation.Cmdlet
         {
             return JNetPSHelper.VerbName<T>();
         }
 
-        public static bool IsExternal<T>(this T cmdlet) where T : System.Management.Automation.PSCmdlet
+        internal static bool IsExternal<T>(this T cmdlet) where T : System.Management.Automation.PSCmdlet
         {
             return cmdlet.MyInvocation.BoundParameters.ContainsKey("JNetPSCmdletDetached");
         }
 
-        public static void InvokeExternal<T>(this T cmdlet) where T : PSCmdlet
+        internal static void InvokeExternal<T>(this T cmdlet) where T : PSCmdlet
         {
             System.Diagnostics.ProcessStartInfo psInfo = new System.Diagnostics.ProcessStartInfo();
 
@@ -215,13 +268,22 @@ namespace MASES.JNetPSCore
     /// </summary>
     public static class JNetPSHelper
     {
+        /// <summary>
+        /// <see langword="true"/> if the <typeparamref name="T"/> needs to be executed externally
+        /// </summary>
+        /// <typeparam name="T">The <see cref="System.Management.Automation.Cmdlet"/></typeparam>
+        /// <returns><see langword="true"/> if the <typeparamref name="T"/> needs to be executed externally</returns>
         public static bool NeedExternalProcess<T>() where T : System.Management.Automation.Cmdlet
         {
             var t = typeof(T);
             if (t.IsGenericType) t = t.GenericTypeArguments.FirstOrDefault();
             return t.IsDefined(typeof(JNetPSExternalize), false);
         }
-
+        /// <summary>
+        /// Extracts the noun name from the <see cref="CmdletAttribute"/>
+        /// </summary>
+        /// <typeparam name="T">The <see cref="System.Management.Automation.Cmdlet"/></typeparam>
+        /// <returns>The noun name</returns>
         public static string NounName<T>() where T : System.Management.Automation.Cmdlet
         {
             var t = typeof(T);
@@ -230,7 +292,11 @@ namespace MASES.JNetPSCore
             var attribute = t.GetCustomAttributes(typeof(CmdletAttribute), false).First() as CmdletAttribute;
             return attribute.NounName;
         }
-
+        /// <summary>
+        /// Extracts the verb name from the <see cref="CmdletAttribute"/>
+        /// </summary>
+        /// <typeparam name="T">The <see cref="System.Management.Automation.Cmdlet"/></typeparam>
+        /// <returns>The verb name</returns>
         public static string VerbName<T>() where T : System.Management.Automation.Cmdlet
         {
             var t = typeof(T);
@@ -247,45 +313,117 @@ namespace MASES.JNetPSCore
     /// <typeparam name="TClass">A class extendind <see cref="JNetCore{T}"/></typeparam>
     public static class JNetPSHelper<TClass> where TClass : JNetCore<TClass>
     {
+        static object _instanceCreatedLock = new object();
+        static bool _instanceCreated = false;
+        /// <summary>
+        /// <see langword="true"/> if a call to <see cref="CreateGlobalInstance"/> was done
+        /// </summary>
+        public static bool InstanceCreated { get { lock (_instanceCreatedLock) { return _instanceCreated; } } }
+        /// <summary>
+        /// Generic static property getter
+        /// </summary>
+        /// <typeparam name="TProperty">Property type</typeparam>
+        /// <param name="target">The target <see cref="Type"/> where the static property was defined</param>
+        /// <param name="propertName">The property name</param>
+        /// <returns>The property <typeparamref name="TProperty"/> value</returns>
         public static TProperty Get<TProperty>(Type target, string propertName) { return (TProperty)typeof(TClass).GetStaticPropertyOn(target, propertName); }
-
+        /// <summary>
+        /// Generic static property getter
+        /// </summary>
+        /// <typeparam name="TTarget">The target <see cref="Type"/> where the static property was defined</typeparam>
+        /// <typeparam name="TProperty">Property type</typeparam>
+        /// <param name="propertName">The property name</param>
+        /// <returns>The property <typeparamref name="TProperty"/> value</returns>
         public static TProperty Get<TTarget, TProperty>(string propertName) { return (TProperty)typeof(TClass).GetStaticPropertyOn(typeof(TTarget), propertName); }
-
+        /// <summary>
+        /// Generic static property setter
+        /// </summary>
+        /// <typeparam name="TProperty">Property type</typeparam>
+        /// <param name="target">The target <see cref="Type"/> where the static property was defined</param>
+        /// <param name="propertName">The property name</param>
+        /// <param name="value">The <typeparamref name="TProperty"/> property value</param>
         public static void Set<TProperty>(Type target, string propertName, TProperty value) { typeof(TClass).SetStaticPropertyOn(target, propertName, value); }
-
+        /// <summary>
+        /// Generic static property setter
+        /// </summary>
+        /// <typeparam name="TTarget">The target <see cref="Type"/> where the static property was defined</typeparam>
+        /// <typeparam name="TProperty">Property type</typeparam>
+        /// <param name="propertName">The property name</param>
+        /// <param name="value">The <typeparamref name="TProperty"/> property value</param>
         public static void Set<TTarget, TProperty>(string propertName, TProperty value) { typeof(TClass).SetStaticPropertyOn(typeof(TTarget), propertName, value); }
-
+        /// <summary>
+        /// Sets <see cref="JNetCoreBase{T}.ApplicationLicensePath"/>
+        /// </summary>
         public static void SetLicensePath(string licensePath) { Set(typeof(JNetCoreBase<>), nameof(JNetCore.ApplicationLicensePath), licensePath); }
-
+        /// <summary>
+        /// Sets <see cref="JNetCoreBase{T}.ApplicationJDKHome"/>
+        /// </summary>
         public static void SetJDKHome(string jdkHome) { Set(typeof(JNetCoreBase<>), nameof(JNetCore.ApplicationJDKHome), jdkHome); }
-
+        /// <summary>
+        /// Sets <see cref="JNetCoreBase{T}.ApplicationJVMPath"/>
+        /// </summary>
         public static void SetJVMPath(string jvmPath) { Set(typeof(JNetCoreBase<>), nameof(JNetCore.ApplicationJVMPath), jvmPath); }
-
+        /// <summary>
+        /// Sets <see cref="JNetCoreBase{T}.ApplicationJNIVerbosity"/>
+        /// </summary>
         public static void SetJNIVerbosity(string jniVerbosity) { Set(typeof(JNetCoreBase<>), nameof(JNetCore.ApplicationJNIVerbosity), jniVerbosity); }
-
+        /// <summary>
+        /// Sets <see cref="JNetCoreBase{T}.ApplicationJNIOutputFile"/>
+        /// </summary>
         public static void SetJNIOutputFile(string jniOutputFile) { Set(typeof(JNetCoreBase<>), nameof(JNetCore.ApplicationJNIOutputFile), jniOutputFile); }
-
+        /// <summary>
+        /// Sets <see cref="JNetCoreBase{T}.ApplicationJmxPort"/>
+        /// </summary>
         public static void SetJmxPort(short? jmxPort) { Set(typeof(JNetCoreBase<>), nameof(JNetCore.ApplicationJmxPort), jmxPort); }
-
+        /// <summary>
+        /// Sets <see cref="JNetCoreBase{T}.ApplicationEnableDebug"/>
+        /// </summary>
         public static void SetEnableDebug(bool? enableDebug) { Set(typeof(JNetCoreBase<>), nameof(JNetCore.ApplicationEnableDebug), enableDebug); }
-
+        /// <summary>
+        /// Sets <see cref="JNetCoreBase{T}.ApplicationJavaDebugPort"/>
+        /// </summary>
         public static void SetJavaDebugPort(short? javaDebugPort) { Set(typeof(JNetCoreBase<>), nameof(JNetCore.ApplicationJavaDebugPort), javaDebugPort); }
-
+        /// <summary>
+        /// Sets <see cref="JNetCoreBase{T}.ApplicationDebugSuspendFlag"/>
+        /// </summary>
         public static void SetDebugSuspendFlag(string debugSuspendFlag) { Set(typeof(JNetCoreBase<>), nameof(JNetCore.ApplicationDebugSuspendFlag), debugSuspendFlag); }
-
+        /// <summary>
+        /// Sets <see cref="JNetCoreBase{T}.ApplicationJavaDebugOpts"/>
+        /// </summary>
         public static void SetJavaDebugOpts(string javaDebugOpts) { Set(typeof(JNetCoreBase<>), nameof(JNetCore.ApplicationJavaDebugOpts), javaDebugOpts); }
-
+        /// <summary>
+        /// Sets <see cref="JNetCoreBase{T}.ApplicationHeapSize"/>
+        /// </summary>
         public static void SetHeapSize(string heapSize) { Set(typeof(JNetCoreBase<>), nameof(JNetCore.ApplicationHeapSize), heapSize); }
-
+        /// <summary>
+        /// Sets <see cref="JNetCoreBase{T}.ApplicationInitialHeapSize"/>
+        /// </summary>
         public static void SetInitialHeapSize(string initialHeapSize) { Set(typeof(JNetCoreBase<>), nameof(JNetCore.ApplicationInitialHeapSize), initialHeapSize); }
-
+        /// <summary>
+        /// Sets <see cref="JNetCoreBase{T}.ApplicationLogClassPath"/>
+        /// </summary>
         public static void SetLogClassPath(bool? logClassPath) { Set(typeof(JNetCoreBase<>), nameof(JNetCore.ApplicationLogClassPath), logClassPath); }
-
-        public static void CreateGlobalInstance()
+        /// <summary>
+        /// Invokes <see cref="SetupJVMWrapper{T}.CreateGlobalInstance"/> to start engine
+        /// </summary>
+        /// <remarks>All properties must be set prior to execute this command. Updates to the JVM environment cannot be done later.</remarks>
+        public static void CreateGlobalInstance(System.Management.Automation.Cmdlet cmdlet)
         {
-            _ = typeof(TClass).RunStaticMethodOn(typeof(SetupJVMWrapper<>), nameof(JNetCore.CreateGlobalInstance));
+            lock (_instanceCreatedLock)
+            {
+                if (_instanceCreated) { cmdlet.WriteWarning("CreateGlobalInstance requested but it was previously requested."); return; }
+                cmdlet.WriteDebug("Invoking CreateGlobalInstance");
+                _ = typeof(TClass).RunStaticMethodOn(typeof(SetupJVMWrapper<>), nameof(JNetCore.CreateGlobalInstance));
+                cmdlet.WriteDebug("Invoked CreateGlobalInstance");
+                _instanceCreated = true;
+            }
         }
-
+        /// <summary>
+        /// Creates a new class instance
+        /// </summary>
+        /// <param name="className">The class to be created</param>
+        /// <param name="args">The arguments of the constructor</param>
+        /// <returns>The newly created object</returns>
         public static object New(string className, params object[] args)
         {
             return typeof(TClass).RunStaticMethodOn(typeof(JNetCoreBase<>), nameof(JNetCore.New), className, args);

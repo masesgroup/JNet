@@ -41,6 +41,12 @@ namespace MASES.JNetPSCore.Cmdlet
         // This method will be called for each input received from the pipeline to this cmdlet; if no input is received, this method is not called
         protected override void ProcessCommand()
         {
+            if (!JNetPSHelper<TCore>.InstanceCreated)
+            {
+                WriteWarning("Engine was not started, cannot execute the command");
+                return;
+            }
+
             object[] args = Arguments;
             if (Arguments != null)
             {
