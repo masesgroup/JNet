@@ -23,8 +23,8 @@ using System.Management.Automation;
 namespace MASES.JNetPS.Cmdlet
 {
     [Cmdlet(VerbsCommon.New, "JObject")]
-    public class NewObjectCmdletCommand : NewObjectCmdletCommandBase<JNetCore>
+    public class NewObjectCmdletCommand : NewObjectCmdletCommandBase<NewObjectCmdletCommand, JNetCore>
     {
- 
+
     }
 }

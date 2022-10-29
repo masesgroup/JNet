@@ -18,7 +18,15 @@
 
 using MASES.JCOBridge.C2JBridge;
 using MASES.JNet;
+using MASES.JNetPSCore.Cmdlet;
 using System;
+using System.CodeDom;
+using System.Collections;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.IO;
+using System.Linq;
+using System.Management.Automation;
 using System.Reflection;
 
 namespace MASES.JNetPSCore
@@ -79,7 +87,15 @@ namespace MASES.JNetPSCore
 
         public static object RunStaticMethodOn(this Type source, Type destination, string methodName, params object[] args)
         {
-            MethodInfo method = source.TraverseUntil(destination).GetMethod(nameof(JNetCore.CreateGlobalInstance));
+            List<Type> lst = new List<Type>();
+            foreach (var item in args)
+            {
+                if (item == null) throw new ArgumentNullException("Cannot infer Type from a null value.");
+                lst.Add(item.GetType());
+            }
+
+            MethodInfo method = source.TraverseUntil(destination).GetMethod(methodName, lst.ToArray());
+            if (method == null) throw new ArgumentException($"Not found method {methodName} with supplied arguments.");
             return method.Invoke(null, args);
         }
 
@@ -87,42 +103,191 @@ namespace MASES.JNetPSCore
         {
             return RunStaticMethodOn(source, typeof(TContainingClass), methodName, args);
         }
+
+        public static string NounName<T>(this T cmdlet) where T : System.Management.Automation.Cmdlet
+        {
+            return JNetPSHelper.NounName<T>();
+        }
+
+        public static string VerbName<T>(this T cmdlet) where T : System.Management.Automation.Cmdlet
+        {
+            return JNetPSHelper.VerbName<T>();
+        }
+
+        public static bool IsExternal<T>(this T cmdlet) where T : System.Management.Automation.PSCmdlet
+        {
+            return cmdlet.MyInvocation.BoundParameters.ContainsKey("JNetPSCmdletDetached");
+        }
+
+        public static void InvokeExternal<T>(this T cmdlet) where T : PSCmdlet
+        {
+            System.Diagnostics.ProcessStartInfo psInfo = new System.Diagnostics.ProcessStartInfo();
+
+            var filename = Environment.GetCommandLineArgs()[0];
+            switch (Environment.OSVersion.Platform)
+            {
+                case PlatformID.Unix:
+                    psInfo.FileName = "dotnet";
+                    psInfo.Arguments = filename + " ";
+                    break;
+                case PlatformID.MacOSX:
+                    throw new NotImplementedException();
+                default:
+                    psInfo.FileName = System.IO.Path.ChangeExtension(filename, "exe");
+                    break;
+            }
+
+            var cmdletType = typeof(T);
+            while (cmdletType.IsGenericType)
+            {
+                cmdletType = cmdletType.GetGenericArguments().First();
+            }
+
+            psInfo.WorkingDirectory = Path.GetDirectoryName(cmdletType.Assembly.Location);
+            psInfo.UseShellExecute = false;
+            psInfo.RedirectStandardInput = true;
+            psInfo.RedirectStandardOutput = true;
+            psInfo.RedirectStandardError = true;
+            psInfo.CreateNoWindow = true;
+
+            psInfo.Arguments += $"-Command Import-Module {cmdletType.Assembly.Location}; {cmdlet.VerbName()}-{cmdlet.NounName()}";
+            psInfo.Arguments += " -JNetPSCmdletDetached";
+            foreach (var item in cmdlet.MyInvocation.BoundParameters)
+            {
+                psInfo.Arguments += $" -{item.Key}";
+                if (item.Value != null)
+                {
+                    if (item.Value is string)
+                    {
+                        psInfo.Arguments += $" '{item.Value}'";
+                    }
+                    else if (item.Value is IEnumerable enumerable)
+                    {
+                        foreach (var entry in enumerable)
+                        {
+                            psInfo.Arguments += $" '{entry}'";
+                        }
+                    }
+                    else
+                    {
+                        psInfo.Arguments += $" '{item.Value}'";
+                    }
+                }
+            }
+
+            cmdlet.WriteVerbose("Running: " + psInfo.Arguments);
+
+            using (var proc = System.Diagnostics.Process.Start(psInfo))
+            {
+                try
+                {
+                    proc.ErrorDataReceived += Proc_ErrorDataReceived;
+                    proc.BeginErrorReadLine();
+                    proc.OutputDataReceived += Proc_OutputDataReceived;
+                    proc.BeginOutputReadLine();
+                    while (!proc.HasExited)
+                    {
+                        proc.StandardInput.Write(System.Console.In.Read());
+                    }
+                }
+                finally
+                {
+                    proc.ErrorDataReceived -= Proc_ErrorDataReceived;
+                    proc.OutputDataReceived -= Proc_OutputDataReceived;
+                }
+            }
+        }
+
+        private static void Proc_OutputDataReceived(object sender, System.Diagnostics.DataReceivedEventArgs e)
+        {
+            System.Console.WriteLine(e.Data);
+        }
+
+        private static void Proc_ErrorDataReceived(object sender, System.Diagnostics.DataReceivedEventArgs e)
+        {
+            System.Console.WriteLine(e.Data);
+        }
     }
 
     /// <summary>
-    /// Public Helper class
+    /// Generic public Helper class
     /// </summary>
+    public static class JNetPSHelper
+    {
+        public static bool NeedExternalProcess<T>() where T : System.Management.Automation.Cmdlet
+        {
+            var t = typeof(T);
+            if (t.IsGenericType) t = t.GenericTypeArguments.FirstOrDefault();
+            return t.IsDefined(typeof(JNetPSExternalize), false);
+        }
+
+        public static string NounName<T>() where T : System.Management.Automation.Cmdlet
+        {
+            var t = typeof(T);
+            if (t.IsGenericType) t = t.GenericTypeArguments.FirstOrDefault();
+            if (!t.IsDefined(typeof(CmdletAttribute), false)) throw new PSInvalidOperationException("Missing Cmdlet attribute");
+            var attribute = t.GetCustomAttributes(typeof(CmdletAttribute), false).First() as CmdletAttribute;
+            return attribute.NounName;
+        }
+
+        public static string VerbName<T>() where T : System.Management.Automation.Cmdlet
+        {
+            var t = typeof(T);
+            if (t.IsGenericType) t = t.GenericTypeArguments.FirstOrDefault();
+            if (!t.IsDefined(typeof(CmdletAttribute), false)) throw new PSInvalidOperationException("Missing Cmdlet attribute");
+            var attribute = t.GetCustomAttributes(typeof(CmdletAttribute), false).First() as CmdletAttribute;
+            return attribute.VerbName;
+        }
+    }
+
+    /// <summary>
+    /// Public Helper class customized on <typeparamref name="TClass"/>
+    /// </summary>
+    /// <typeparam name="TClass">A class extendind <see cref="JNetCore{T}"/></typeparam>
     public static class JNetPSHelper<TClass> where TClass : JNetCore<TClass>
     {
-        public static void SetLicensePath(string licensePath) { typeof(TClass).SetStaticPropertyOn(typeof(JNetCoreBase<>), nameof(JNetCore.ApplicationLicensePath), licensePath); }
+        public static TProperty Get<TProperty>(Type target, string propertName) { return (TProperty)typeof(TClass).GetStaticPropertyOn(target, propertName); }
 
-        public static void SetJDKHome(string jdkHome) { typeof(TClass).SetStaticPropertyOn(typeof(JNetCoreBase<>), nameof(JNetCore.ApplicationJDKHome), jdkHome); }
+        public static TProperty Get<TTarget, TProperty>(string propertName) { return (TProperty)typeof(TClass).GetStaticPropertyOn(typeof(TTarget), propertName); }
 
-        public static void SetJVMPath(string jvmPath) { typeof(TClass).SetStaticPropertyOn(typeof(JNetCoreBase<>), nameof(JNetCore.ApplicationJVMPath), jvmPath); }
+        public static void Set<TProperty>(Type target, string propertName, TProperty value) { typeof(TClass).SetStaticPropertyOn(target, propertName, value); }
 
-        public static void SetJNIVerbosity(string jniVerbosity) { typeof(TClass).SetStaticPropertyOn(typeof(JNetCoreBase<>), nameof(JNetCore.ApplicationJNIVerbosity), jniVerbosity); }
+        public static void Set<TTarget, TProperty>(string propertName, TProperty value) { typeof(TClass).SetStaticPropertyOn(typeof(TTarget), propertName, value); }
 
-        public static void SetJNIOutputFile(string jniOutputFile) { typeof(TClass).SetStaticPropertyOn(typeof(JNetCoreBase<>), nameof(JNetCore.ApplicationJNIOutputFile), jniOutputFile); }
+        public static void SetLicensePath(string licensePath) { Set(typeof(JNetCoreBase<>), nameof(JNetCore.ApplicationLicensePath), licensePath); }
 
-        public static void SetJmxPort(short? jmxPort) { typeof(TClass).SetStaticPropertyOn(typeof(JNetCoreBase<>), nameof(JNetCore.ApplicationJmxPort), jmxPort); }
+        public static void SetJDKHome(string jdkHome) { Set(typeof(JNetCoreBase<>), nameof(JNetCore.ApplicationJDKHome), jdkHome); }
 
-        public static void SetEnableDebug(bool? enableDebug) { typeof(TClass).SetStaticPropertyOn(typeof(JNetCoreBase<>), nameof(JNetCore.ApplicationEnableDebug), enableDebug); }
+        public static void SetJVMPath(string jvmPath) { Set(typeof(JNetCoreBase<>), nameof(JNetCore.ApplicationJVMPath), jvmPath); }
 
-        public static void SetJavaDebugPort(short? javaDebugPort) { typeof(TClass).SetStaticPropertyOn(typeof(JNetCoreBase<>), nameof(JNetCore.ApplicationJavaDebugPort), javaDebugPort); }
+        public static void SetJNIVerbosity(string jniVerbosity) { Set(typeof(JNetCoreBase<>), nameof(JNetCore.ApplicationJNIVerbosity), jniVerbosity); }
 
-        public static void SetDebugSuspendFlag(string debugSuspendFlag) { typeof(TClass).SetStaticPropertyOn(typeof(JNetCoreBase<>), nameof(JNetCore.ApplicationDebugSuspendFlag), debugSuspendFlag); }
+        public static void SetJNIOutputFile(string jniOutputFile) { Set(typeof(JNetCoreBase<>), nameof(JNetCore.ApplicationJNIOutputFile), jniOutputFile); }
 
-        public static void SetJavaDebugOpts(string javaDebugOpts) { typeof(TClass).SetStaticPropertyOn(typeof(JNetCoreBase<>), nameof(JNetCore.ApplicationJavaDebugOpts), javaDebugOpts); }
+        public static void SetJmxPort(short? jmxPort) { Set(typeof(JNetCoreBase<>), nameof(JNetCore.ApplicationJmxPort), jmxPort); }
 
-        public static void SetHeapSize(string heapSize) { typeof(TClass).SetStaticPropertyOn(typeof(JNetCoreBase<>), nameof(JNetCore.ApplicationHeapSize), heapSize); }
+        public static void SetEnableDebug(bool? enableDebug) { Set(typeof(JNetCoreBase<>), nameof(JNetCore.ApplicationEnableDebug), enableDebug); }
 
-        public static void SetInitialHeapSize(string initialHeapSize) { typeof(TClass).SetStaticPropertyOn(typeof(JNetCoreBase<>), nameof(JNetCore.ApplicationInitialHeapSize), initialHeapSize); }
+        public static void SetJavaDebugPort(short? javaDebugPort) { Set(typeof(JNetCoreBase<>), nameof(JNetCore.ApplicationJavaDebugPort), javaDebugPort); }
 
-        public static void SetLogClassPath(bool? logClassPath) { typeof(TClass).SetStaticPropertyOn(typeof(JNetCoreBase<>), nameof(JNetCore.ApplicationLogClassPath), logClassPath); }
+        public static void SetDebugSuspendFlag(string debugSuspendFlag) { Set(typeof(JNetCoreBase<>), nameof(JNetCore.ApplicationDebugSuspendFlag), debugSuspendFlag); }
+
+        public static void SetJavaDebugOpts(string javaDebugOpts) { Set(typeof(JNetCoreBase<>), nameof(JNetCore.ApplicationJavaDebugOpts), javaDebugOpts); }
+
+        public static void SetHeapSize(string heapSize) { Set(typeof(JNetCoreBase<>), nameof(JNetCore.ApplicationHeapSize), heapSize); }
+
+        public static void SetInitialHeapSize(string initialHeapSize) { Set(typeof(JNetCoreBase<>), nameof(JNetCore.ApplicationInitialHeapSize), initialHeapSize); }
+
+        public static void SetLogClassPath(bool? logClassPath) { Set(typeof(JNetCoreBase<>), nameof(JNetCore.ApplicationLogClassPath), logClassPath); }
 
         public static void CreateGlobalInstance()
         {
             _ = typeof(TClass).RunStaticMethodOn(typeof(SetupJVMWrapper<>), nameof(JNetCore.CreateGlobalInstance));
+        }
+
+        public static object New(string className, params object[] args)
+        {
+            return typeof(TClass).RunStaticMethodOn(typeof(JNetCoreBase<>), nameof(JNetCore.New), className, args);
         }
     }
 }

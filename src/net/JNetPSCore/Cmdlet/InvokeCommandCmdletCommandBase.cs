@@ -21,39 +21,26 @@ using System.Management.Automation;
 
 namespace MASES.JNetPSCore.Cmdlet
 {
-    public abstract class InvokeCommandCmdletCommandBase : PSCmdlet
+    public abstract class InvokeCommandCmdletCommandBase<TCmdlet, TCore> : JNetPSExternalizableCmdlet<TCmdlet>
+        where TCmdlet : InvokeCommandCmdletCommandBase<TCmdlet, TCore>
+        where TCore : JNetCore<TCore>
     {
         [Parameter(
             Mandatory = true,
-            Position = 0,
             ValueFromPipeline = true,
             ValueFromPipelineByPropertyName = true,
             HelpMessage = "The java Main-Class name to be launched")]
         public string MainClass { get; set; }
 
         [Parameter(
-            Position = 1,
             ValueFromPipelineByPropertyName = true,
             HelpMessage = "The Main-Class arguments to be used")]
-
         public string[] Arguments { get; set; }
 
-        // This method gets called once for each cmdlet in the pipeline when the pipeline starts executing
-        protected override void BeginProcessing()
-        {
-            WriteVerbose("Begin!");
-        }
-
         // This method will be called for each input received from the pipeline to this cmdlet; if no input is received, this method is not called
-        protected override void ProcessRecord()
+        protected override void ProcessCommand()
         {
             GenericCommand.CreateAndLaunch(MainClass, Arguments);
-        }
-
-        // This method will be called once at the end of pipeline execution; if no input is received, this method is not called
-        protected override void EndProcessing()
-        {
-            WriteVerbose("End!");
         }
     }
 }
