@@ -23039,6 +23039,14 @@ references:
   fullName.vb: MASES.JNet.JNetCoreBase(Of T).InitialHeapSize
   nameWithType: JNetCoreBase<T>.InitialHeapSize
   nameWithType.vb: JNetCoreBase(Of T).InitialHeapSize
+- uid: MASES.JNet.JNetCoreBase`1.JARsSubFolder
+  name: JARsSubFolder
+  href: api/MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_JARsSubFolder
+  commentId: F:MASES.JNet.JNetCoreBase`1.JARsSubFolder
+  fullName: MASES.JNet.JNetCoreBase<T>.JARsSubFolder
+  fullName.vb: MASES.JNet.JNetCoreBase(Of T).JARsSubFolder
+  nameWithType: JNetCoreBase<T>.JARsSubFolder
+  nameWithType.vb: JNetCoreBase(Of T).JARsSubFolder
 - uid: MASES.JNet.JNetCoreBase`1.JavaDebugOpts
   name: JavaDebugOpts
   href: api/MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_JavaDebugOpts
