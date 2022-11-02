@@ -56,8 +56,8 @@ Have a look at the following resources:
 * [Actual state](src/net/Documentation/articles/actualstate.md)
 * [JNet usage](src/net/Documentation/articles/usage.md)
 * [JNet APIs extensibility](src/net/Documentation/articles/API_extensibility.md)
-* [JNet CLI](src/net/Documentation/articles/usageCLI.md)
-* [JNet Reflector](src/net/Documentation/articles/usageReflector.md)
-* [JNet PowerShell](src/net/Documentation/articles/usagePS.md)
+* [JNet CLI usage](src/net/Documentation/articles/usageCLI.md)
+* [JNet Reflector usage](src/net/Documentation/articles/usageReflector.md)
+* [JNet PowerShell usage](src/net/Documentation/articles/usagePS.md)
 
 ---
