@@ -17,7 +17,6 @@
 */
 
 using MASES.JCOBridge.C2JBridge;
-using System.Runtime.InteropServices;
 
 namespace MASES.JNet
 {

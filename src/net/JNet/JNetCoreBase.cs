@@ -36,6 +36,13 @@ namespace MASES.JNet
     /// </summary>
     public abstract class JNetCoreBase<T> : SetupJVMWrapper<T> where T : JNetCoreBase<T>
     {
+        #region Public const
+        /// <summary>
+        /// The path where JARs are stored
+        /// </summary>
+        public const string JARsSubFolder = "jars";
+        #endregion
+
         #region Initialization
         /// <summary>
         /// Sets the value of <see cref="SetupJVMWrapper{T}.LicensePath"/>
@@ -336,7 +343,7 @@ namespace MASES.JNet
             bool assignable = typeof(IJVMBridgeBase).IsAssignableFrom(typeof(T));
             var array = instance.IExecute(methodName, args) as IJavaArray;
             if (array == null) return null;
-            System.Collections.Generic.List<T> elements = new System.Collections.Generic.List<T>();
+            List<T> elements = new List<T>();
             foreach (var item in array)
             {
                 if (assignable)

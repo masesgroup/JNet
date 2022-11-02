@@ -4,10 +4,10 @@
   </ItemGroup>
 
   <Target Name="CopyFilesNative" BeforeTargets="Build">
-    <Copy SourceFiles="@(jnet_jars)" DestinationFolder="$(TargetDir)" />
+    <Copy SourceFiles="@(jnet_jars)" DestinationFolder="$(TargetDir)\jars" />
   </Target>
   
   <Target Name="CopyFilesNativePublish" BeforeTargets="Publish">
-    <Copy SourceFiles="@(jnet_jars)" DestinationFolder="$(PublishDir)" />
+    <Copy SourceFiles="@(jnet_jars)" DestinationFolder="$(PublishDir)\jars" />
   </Target>
 </Project>
