@@ -17,63 +17,46 @@
 */
 
 using MASES.JCOBridge.C2JBridge;
-using System;
+using MASES.JNet;
 using System.Management.Automation;
+using System.Reflection;
 
 namespace MASES.JNetPSCore.Cmdlet
 {
     /// <summary>
-    /// Set to indicate the class need to run externally
+    /// Base class to be extended in derived projects for all PS cmdlet which needs the core active
     /// </summary>
-    public class JNetPSExternalize : Attribute
+    public abstract class JNetPSCmdlet<TCore> : PSCmdlet
+        where TCore : JNetCore<TCore>
     {
-    }
-
-    /// <summary>
-    /// Base class to be extended in derived projects to execute externally
-    /// </summary>
-    public abstract class JNetPSExternalizableCmdlet<T> : PSCmdlet
-        where T : JNetPSExternalizableCmdlet<T>
-    {
-        /// <summary>
-        /// Used internally
-        /// </summary>
-        [Parameter(DontShow = true, ValueFromPipelineByPropertyName = true)]
-        public SwitchParameter JNetPSCmdletDetached { get; set; }
-
-        /// <summary>
-        /// Permit to bypass the <see cref="JNetPSExternalize"/> attribute
-        /// </summary>
-        [Parameter(DontShow = true, ValueFromPipelineByPropertyName = true)]
-        public SwitchParameter BypassJNetPSExternalize { get; set; }
-
-        /// <summary>
-        /// Force the external execution even if the <see cref="JNetPSExternalize"/> attribute was not defined
-        /// </summary>
-        [Parameter(DontShow = true, ValueFromPipelineByPropertyName = true)]
-        public SwitchParameter ForceJNetPSExternalize { get; set; }
-
         // This method gets called once for each cmdlet in the pipeline when the pipeline starts executing
         protected override void BeginProcessing()
         {
-            WriteVerbose("Begin of JNetPSExternalizableCmdlet");
+            WriteVerbose("Begin of JNetPSCmdlet");
             WriteVerbose(MyInvocation.Line);
         }
 
         // This method will be called for each input received from the pipeline to this cmdlet; if no input is received, this method is not called
         protected sealed override void ProcessRecord()
         {
-            if (ForceJNetPSExternalize.IsPresent || (!BypassJNetPSExternalize.IsPresent && JNetPSHelper.NeedExternalProcess<T>()))
+            if (!JNetPSHelper<TCore>.InstanceCreated)
             {
-                if (!this.IsExternal()) { this.InvokeExternal(); return; }
+                WriteWarning("Engine was not started, cannot execute the command");
+                return;
             }
+
             try
             {
                 ProcessCommand();
             }
+            catch (TargetInvocationException tie)
+            {
+                WriteError(new ErrorRecord(tie.InnerException, tie.InnerException.Source, ErrorCategory.InvalidOperation, tie.InnerException));
+            }
             catch (JCOBridge.C2JBridge.JVMInterop.JavaException je)
             {
-                throw je.Convert();
+                var newEx = je.Convert();
+                WriteError(new ErrorRecord(newEx, newEx.Source, ErrorCategory.InvalidOperation, newEx));
             }
         }
 
@@ -82,7 +65,7 @@ namespace MASES.JNetPSCore.Cmdlet
         // This method will be called once at the end of pipeline execution; if no input is received, this method is not called
         protected override void EndProcessing()
         {
-            WriteVerbose("End of JNetPSExternalizableCmdlet");
+            WriteVerbose("End of JNetPSCmdlet");
         }
     }
 }
