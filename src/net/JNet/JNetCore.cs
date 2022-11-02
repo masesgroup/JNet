@@ -72,7 +72,7 @@ namespace MASES.JNet
             get
             {
                 var lst = base.PathToParse; 
-                lst.Add(System.IO.Path.Combine(System.IO.Path.GetDirectoryName(typeof(JNetCore).Assembly.Location), "jnet-*.jar"));
+                lst.Add(System.IO.Path.Combine(System.IO.Path.GetDirectoryName(typeof(JNetCore).Assembly.Location), JARsSubFolder, "*.jar"));
                 return lst;
             }
         }
