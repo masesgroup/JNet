@@ -22,7 +22,7 @@ using System.Management.Automation;
 
 namespace MASES.JNetPSCore.Cmdlet
 {
-    public abstract class NewObjectCmdletCommandBase<TCmdlet, TCore> : JNetPSExternalizableCmdlet<TCmdlet>
+    public abstract class NewObjectCmdletCommandBase<TCmdlet, TCore> : JNetPSCmdlet<TCore>
         where TCmdlet : NewObjectCmdletCommandBase<TCmdlet, TCore>
         where TCore : JNetCore<TCore>
     {
@@ -41,12 +41,6 @@ namespace MASES.JNetPSCore.Cmdlet
         // This method will be called for each input received from the pipeline to this cmdlet; if no input is received, this method is not called
         protected override void ProcessCommand()
         {
-            if (!JNetPSHelper<TCore>.InstanceCreated)
-            {
-                WriteWarning("Engine was not started, cannot execute the command");
-                return;
-            }
-
             object[] args = Arguments;
             if (Arguments != null)
             {

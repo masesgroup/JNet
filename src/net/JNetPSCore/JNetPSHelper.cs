@@ -28,6 +28,7 @@ using System.IO;
 using System.Linq;
 using System.Management.Automation;
 using System.Reflection;
+using System.Threading;
 
 namespace MASES.JNetPSCore
 {
@@ -230,26 +231,60 @@ namespace MASES.JNetPSCore
             }
 
             cmdlet.WriteVerbose($"Running: {psInfo.FileName} {psInfo.Arguments}");
-            using (var proc = System.Diagnostics.Process.Start(psInfo))
+            using (var proc = new System.Diagnostics.Process())
             {
                 try
                 {
+                    processExited = cancelKeyRaised = false;
+                    Console.CancelKeyPress += Console_CancelKeyPress;
+                    proc.StartInfo = psInfo;
                     proc.ErrorDataReceived += Proc_ErrorDataReceived;
                     proc.BeginErrorReadLine();
                     proc.OutputDataReceived += Proc_OutputDataReceived;
                     proc.BeginOutputReadLine();
+                    proc.Exited += Proc_Exited;
+                    proc.Start();
                     while (!proc.HasExited)
                     {
-                        proc.StandardInput.Write(System.Console.In.Read());
+                        if (Console.KeyAvailable)
+                        {
+                            var key = Console.ReadKey();
+                            if (!processExited)
+                            {
+                                proc.StandardInput.Write(key.KeyChar);
+                            }
+                        }
+                        else Thread.Yield();
+
+                        if (cancelKeyRaised)
+                        {
+                            proc.Kill();
+                        }
                     }
                 }
                 finally
                 {
                     proc.ErrorDataReceived -= Proc_ErrorDataReceived;
                     proc.OutputDataReceived -= Proc_OutputDataReceived;
+                    Console.CancelKeyPress -= Console_CancelKeyPress;
+                    proc.Exited += Proc_Exited;
                 }
                 cmdlet.WriteVerbose($"Return code is: {proc.ExitCode}");
             }
+        }
+
+        static bool processExited = false;
+
+        private static void Proc_Exited(object sender, EventArgs e)
+        {
+            processExited = true;
+        }
+
+        static bool cancelKeyRaised = false;
+
+        private static void Console_CancelKeyPress(object sender, ConsoleCancelEventArgs e)
+        {
+            cancelKeyRaised = true;
         }
 
         private static void Proc_OutputDataReceived(object sender, System.Diagnostics.DataReceivedEventArgs e)
@@ -304,6 +339,28 @@ namespace MASES.JNetPSCore
             if (!t.IsDefined(typeof(CmdletAttribute), false)) throw new PSInvalidOperationException("Missing Cmdlet attribute");
             var attribute = t.GetCustomAttributes(typeof(CmdletAttribute), false).First() as CmdletAttribute;
             return attribute.VerbName;
+        }
+
+        /// <summary>
+        /// Wites full exception in <paramref name="e"/> raised from <paramref name="cmdlet"/>
+        /// </summary>
+        /// <param name="cmdlet">The <see cref="System.Management.Automation.Cmdlet"/> executing</param>
+        /// <param name="e">The base <see cref="Exception"/> raised</param>
+        public static void WriteExtendedError(this System.Management.Automation.Cmdlet cmdlet, Exception e)
+        {
+            var exception = e;
+            while (exception != null)
+            {
+                cmdlet.WriteError(new ErrorRecord(exception, exception.Source, ErrorCategory.InvalidOperation, exception));
+                if (exception is JVMBridgeException jvmException)
+                {
+                    exception = jvmException.InnerException;
+                }
+                else
+                {
+                    exception = exception.InnerException;
+                }
+            }
         }
     }
 
@@ -411,7 +468,7 @@ namespace MASES.JNetPSCore
         {
             lock (_instanceCreatedLock)
             {
-                if (_instanceCreated) { cmdlet.WriteWarning("CreateGlobalInstance requested but it was previously requested."); return; }
+                if (_instanceCreated) { cmdlet.WriteWarning("A new CreateGlobalInstance requested, but it was previously requested."); return; }
                 cmdlet.WriteDebug("Invoking CreateGlobalInstance");
                 _ = typeof(TClass).RunStaticMethodOn(typeof(SetupJVMWrapper<>), nameof(JNetCore.CreateGlobalInstance));
                 cmdlet.WriteDebug("Invoked CreateGlobalInstance");
