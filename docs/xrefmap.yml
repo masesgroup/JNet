@@ -23637,6 +23637,83 @@ references:
   fullName.vb: MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase(Of TCmdlet, TCore).OnAfterCreateGlobalInstance
   nameWithType: InvokeCommandCmdletCommandBase<TCmdlet, TCore>.OnAfterCreateGlobalInstance
   nameWithType.vb: InvokeCommandCmdletCommandBase(Of TCmdlet, TCore).OnAfterCreateGlobalInstance
+- uid: MASES.JNetPSCore.Cmdlet.JNetPSCmdlet`1
+  name: JNetPSCmdlet<TCore>
+  href: api/MASES.JNetPSCore.Cmdlet.JNetPSCmdlet-1.html
+  commentId: T:MASES.JNetPSCore.Cmdlet.JNetPSCmdlet`1
+  name.vb: JNetPSCmdlet(Of TCore)
+  fullName: MASES.JNetPSCore.Cmdlet.JNetPSCmdlet<TCore>
+  fullName.vb: MASES.JNetPSCore.Cmdlet.JNetPSCmdlet(Of TCore)
+  nameWithType: JNetPSCmdlet<TCore>
+  nameWithType.vb: JNetPSCmdlet(Of TCore)
+- uid: MASES.JNetPSCore.Cmdlet.JNetPSCmdlet`1.BeginProcessing
+  name: BeginProcessing()
+  href: api/MASES.JNetPSCore.Cmdlet.JNetPSCmdlet-1.html#MASES_JNetPSCore_Cmdlet_JNetPSCmdlet_1_BeginProcessing
+  commentId: M:MASES.JNetPSCore.Cmdlet.JNetPSCmdlet`1.BeginProcessing
+  fullName: MASES.JNetPSCore.Cmdlet.JNetPSCmdlet<TCore>.BeginProcessing()
+  fullName.vb: MASES.JNetPSCore.Cmdlet.JNetPSCmdlet(Of TCore).BeginProcessing()
+  nameWithType: JNetPSCmdlet<TCore>.BeginProcessing()
+  nameWithType.vb: JNetPSCmdlet(Of TCore).BeginProcessing()
+- uid: MASES.JNetPSCore.Cmdlet.JNetPSCmdlet`1.BeginProcessing*
+  name: BeginProcessing
+  href: api/MASES.JNetPSCore.Cmdlet.JNetPSCmdlet-1.html#MASES_JNetPSCore_Cmdlet_JNetPSCmdlet_1_BeginProcessing_
+  commentId: Overload:MASES.JNetPSCore.Cmdlet.JNetPSCmdlet`1.BeginProcessing
+  isSpec: "True"
+  fullName: MASES.JNetPSCore.Cmdlet.JNetPSCmdlet<TCore>.BeginProcessing
+  fullName.vb: MASES.JNetPSCore.Cmdlet.JNetPSCmdlet(Of TCore).BeginProcessing
+  nameWithType: JNetPSCmdlet<TCore>.BeginProcessing
+  nameWithType.vb: JNetPSCmdlet(Of TCore).BeginProcessing
+- uid: MASES.JNetPSCore.Cmdlet.JNetPSCmdlet`1.EndProcessing
+  name: EndProcessing()
+  href: api/MASES.JNetPSCore.Cmdlet.JNetPSCmdlet-1.html#MASES_JNetPSCore_Cmdlet_JNetPSCmdlet_1_EndProcessing
+  commentId: M:MASES.JNetPSCore.Cmdlet.JNetPSCmdlet`1.EndProcessing
+  fullName: MASES.JNetPSCore.Cmdlet.JNetPSCmdlet<TCore>.EndProcessing()
+  fullName.vb: MASES.JNetPSCore.Cmdlet.JNetPSCmdlet(Of TCore).EndProcessing()
+  nameWithType: JNetPSCmdlet<TCore>.EndProcessing()
+  nameWithType.vb: JNetPSCmdlet(Of TCore).EndProcessing()
+- uid: MASES.JNetPSCore.Cmdlet.JNetPSCmdlet`1.EndProcessing*
+  name: EndProcessing
+  href: api/MASES.JNetPSCore.Cmdlet.JNetPSCmdlet-1.html#MASES_JNetPSCore_Cmdlet_JNetPSCmdlet_1_EndProcessing_
+  commentId: Overload:MASES.JNetPSCore.Cmdlet.JNetPSCmdlet`1.EndProcessing
+  isSpec: "True"
+  fullName: MASES.JNetPSCore.Cmdlet.JNetPSCmdlet<TCore>.EndProcessing
+  fullName.vb: MASES.JNetPSCore.Cmdlet.JNetPSCmdlet(Of TCore).EndProcessing
+  nameWithType: JNetPSCmdlet<TCore>.EndProcessing
+  nameWithType.vb: JNetPSCmdlet(Of TCore).EndProcessing
+- uid: MASES.JNetPSCore.Cmdlet.JNetPSCmdlet`1.ProcessCommand
+  name: ProcessCommand()
+  href: api/MASES.JNetPSCore.Cmdlet.JNetPSCmdlet-1.html#MASES_JNetPSCore_Cmdlet_JNetPSCmdlet_1_ProcessCommand
+  commentId: M:MASES.JNetPSCore.Cmdlet.JNetPSCmdlet`1.ProcessCommand
+  fullName: MASES.JNetPSCore.Cmdlet.JNetPSCmdlet<TCore>.ProcessCommand()
+  fullName.vb: MASES.JNetPSCore.Cmdlet.JNetPSCmdlet(Of TCore).ProcessCommand()
+  nameWithType: JNetPSCmdlet<TCore>.ProcessCommand()
+  nameWithType.vb: JNetPSCmdlet(Of TCore).ProcessCommand()
+- uid: MASES.JNetPSCore.Cmdlet.JNetPSCmdlet`1.ProcessCommand*
+  name: ProcessCommand
+  href: api/MASES.JNetPSCore.Cmdlet.JNetPSCmdlet-1.html#MASES_JNetPSCore_Cmdlet_JNetPSCmdlet_1_ProcessCommand_
+  commentId: Overload:MASES.JNetPSCore.Cmdlet.JNetPSCmdlet`1.ProcessCommand
+  isSpec: "True"
+  fullName: MASES.JNetPSCore.Cmdlet.JNetPSCmdlet<TCore>.ProcessCommand
+  fullName.vb: MASES.JNetPSCore.Cmdlet.JNetPSCmdlet(Of TCore).ProcessCommand
+  nameWithType: JNetPSCmdlet<TCore>.ProcessCommand
+  nameWithType.vb: JNetPSCmdlet(Of TCore).ProcessCommand
+- uid: MASES.JNetPSCore.Cmdlet.JNetPSCmdlet`1.ProcessRecord
+  name: ProcessRecord()
+  href: api/MASES.JNetPSCore.Cmdlet.JNetPSCmdlet-1.html#MASES_JNetPSCore_Cmdlet_JNetPSCmdlet_1_ProcessRecord
+  commentId: M:MASES.JNetPSCore.Cmdlet.JNetPSCmdlet`1.ProcessRecord
+  fullName: MASES.JNetPSCore.Cmdlet.JNetPSCmdlet<TCore>.ProcessRecord()
+  fullName.vb: MASES.JNetPSCore.Cmdlet.JNetPSCmdlet(Of TCore).ProcessRecord()
+  nameWithType: JNetPSCmdlet<TCore>.ProcessRecord()
+  nameWithType.vb: JNetPSCmdlet(Of TCore).ProcessRecord()
+- uid: MASES.JNetPSCore.Cmdlet.JNetPSCmdlet`1.ProcessRecord*
+  name: ProcessRecord
+  href: api/MASES.JNetPSCore.Cmdlet.JNetPSCmdlet-1.html#MASES_JNetPSCore_Cmdlet_JNetPSCmdlet_1_ProcessRecord_
+  commentId: Overload:MASES.JNetPSCore.Cmdlet.JNetPSCmdlet`1.ProcessRecord
+  isSpec: "True"
+  fullName: MASES.JNetPSCore.Cmdlet.JNetPSCmdlet<TCore>.ProcessRecord
+  fullName.vb: MASES.JNetPSCore.Cmdlet.JNetPSCmdlet(Of TCore).ProcessRecord
+  nameWithType: JNetPSCmdlet<TCore>.ProcessRecord
+  nameWithType.vb: JNetPSCmdlet(Of TCore).ProcessRecord
 - uid: MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet`1
   name: JNetPSExternalizableCmdlet<T>
   href: api/MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet-1.html
@@ -24183,6 +24260,19 @@ references:
   fullName.vb: MASES.JNetPSCore.JNetPSHelper.VerbName(Of T)()
   nameWithType: JNetPSHelper.VerbName<T>()
   nameWithType.vb: JNetPSHelper.VerbName(Of T)()
+- uid: MASES.JNetPSCore.JNetPSHelper.WriteExtendedError(System.Management.Automation.Cmdlet,System.Exception)
+  name: WriteExtendedError(Cmdlet, Exception)
+  href: api/MASES.JNetPSCore.JNetPSHelper.html#MASES_JNetPSCore_JNetPSHelper_WriteExtendedError_System_Management_Automation_Cmdlet_System_Exception_
+  commentId: M:MASES.JNetPSCore.JNetPSHelper.WriteExtendedError(System.Management.Automation.Cmdlet,System.Exception)
+  fullName: MASES.JNetPSCore.JNetPSHelper.WriteExtendedError(System.Management.Automation.Cmdlet, System.Exception)
+  nameWithType: JNetPSHelper.WriteExtendedError(Cmdlet, Exception)
+- uid: MASES.JNetPSCore.JNetPSHelper.WriteExtendedError*
+  name: WriteExtendedError
+  href: api/MASES.JNetPSCore.JNetPSHelper.html#MASES_JNetPSCore_JNetPSHelper_WriteExtendedError_
+  commentId: Overload:MASES.JNetPSCore.JNetPSHelper.WriteExtendedError
+  isSpec: "True"
+  fullName: MASES.JNetPSCore.JNetPSHelper.WriteExtendedError
+  nameWithType: JNetPSHelper.WriteExtendedError
 - uid: MASES.JNetPSCore.JNetPSHelper`1
   name: JNetPSHelper<TClass>
   href: api/MASES.JNetPSCore.JNetPSHelper-1.html

@@ -81,29 +81,20 @@
     <div class="level1"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.management.automation.internal.internalcommand">InternalCommand</a></div>
     <div class="level2"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.management.automation.cmdlet">Cmdlet</a></div>
     <div class="level3"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.management.automation.pscmdlet">PSCmdlet</a></div>
-    <div class="level4"><a class="xref" href="MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet-1.html">JNetPSExternalizableCmdlet</a>&lt;TCmdlet&gt;</div>
+    <div class="level4"><a class="xref" href="MASES.JNetPSCore.Cmdlet.JNetPSCmdlet-1.html">JNetPSCmdlet</a>&lt;TCore&gt;</div>
     <div class="level5"><span class="xref">NewObjectCmdletCommandBase&lt;TCmdlet, TCore&gt;</span></div>
       <div class="level6"><a class="xref" href="MASES.JNetPS.Cmdlet.NewObjectCmdletCommand.html">NewObjectCmdletCommand</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet-1.html#MASES_JNetPSCore_Cmdlet_JNetPSExternalizableCmdlet_1_JNetPSCmdletDetached">JNetPSExternalizableCmdlet&lt;TCmdlet&gt;.JNetPSCmdletDetached</a>
+      <a class="xref" href="MASES.JNetPSCore.Cmdlet.JNetPSCmdlet-1.html#MASES_JNetPSCore_Cmdlet_JNetPSCmdlet_1_BeginProcessing">JNetPSCmdlet&lt;TCore&gt;.BeginProcessing()</a>
     </div>
     <div>
-      <a class="xref" href="MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet-1.html#MASES_JNetPSCore_Cmdlet_JNetPSExternalizableCmdlet_1_BypassJNetPSExternalize">JNetPSExternalizableCmdlet&lt;TCmdlet&gt;.BypassJNetPSExternalize</a>
+      <a class="xref" href="MASES.JNetPSCore.Cmdlet.JNetPSCmdlet-1.html#MASES_JNetPSCore_Cmdlet_JNetPSCmdlet_1_ProcessRecord">JNetPSCmdlet&lt;TCore&gt;.ProcessRecord()</a>
     </div>
     <div>
-      <a class="xref" href="MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet-1.html#MASES_JNetPSCore_Cmdlet_JNetPSExternalizableCmdlet_1_ForceJNetPSExternalize">JNetPSExternalizableCmdlet&lt;TCmdlet&gt;.ForceJNetPSExternalize</a>
-    </div>
-    <div>
-      <a class="xref" href="MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet-1.html#MASES_JNetPSCore_Cmdlet_JNetPSExternalizableCmdlet_1_BeginProcessing">JNetPSExternalizableCmdlet&lt;TCmdlet&gt;.BeginProcessing()</a>
-    </div>
-    <div>
-      <a class="xref" href="MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet-1.html#MASES_JNetPSCore_Cmdlet_JNetPSExternalizableCmdlet_1_ProcessRecord">JNetPSExternalizableCmdlet&lt;TCmdlet&gt;.ProcessRecord()</a>
-    </div>
-    <div>
-      <a class="xref" href="MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet-1.html#MASES_JNetPSCore_Cmdlet_JNetPSExternalizableCmdlet_1_EndProcessing">JNetPSExternalizableCmdlet&lt;TCmdlet&gt;.EndProcessing()</a>
+      <a class="xref" href="MASES.JNetPSCore.Cmdlet.JNetPSCmdlet-1.html#MASES_JNetPSCore_Cmdlet_JNetPSCmdlet_1_EndProcessing">JNetPSCmdlet&lt;TCore&gt;.EndProcessing()</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.management.automation.pscmdlet.currentproviderlocation#system-management-automation-pscmdlet-currentproviderlocation(system-string)">PSCmdlet.CurrentProviderLocation(String)</a>
@@ -260,7 +251,7 @@
   <h6><strong>Assembly</strong>: MASES.JNetPSCore.dll</h6>
   <h5 id="MASES_JNetPSCore_Cmdlet_NewObjectCmdletCommandBase_2_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class NewObjectCmdletCommandBase&lt;TCmdlet, TCore&gt; : JNetPSExternalizableCmdlet&lt;TCmdlet&gt; where TCmdlet : NewObjectCmdletCommandBase&lt;TCmdlet, TCore&gt; where TCore : JNetCore&lt;TCore&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class NewObjectCmdletCommandBase&lt;TCmdlet, TCore&gt; : JNetPSCmdlet&lt;TCore&gt; where TCmdlet : NewObjectCmdletCommandBase&lt;TCmdlet, TCore&gt; where TCore : JNetCore&lt;TCore&gt;</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -363,13 +354,16 @@ public string Class { get; set; }</code></pre>
     <pre><code class="lang-csharp hljs">protected override void ProcessCommand()</code></pre>
   </div>
   <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet&lt;TCmdlet&gt;.ProcessCommand()</span></div>
+  <div><span class="xref">MASES.JNetPSCore.Cmdlet.JNetPSCmdlet&lt;TCore&gt;.ProcessCommand()</span></div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="MASES.JNetPSCore.JNetPSHelperExtensions.html#MASES_JNetPSCore_JNetPSHelperExtensions_NounName__1___0_">JNetPSHelperExtensions.NounName&lt;T&gt;(T)</a>
   </div>
   <div>
       <a class="xref" href="MASES.JNetPSCore.JNetPSHelperExtensions.html#MASES_JNetPSCore_JNetPSHelperExtensions_VerbName__1___0_">JNetPSHelperExtensions.VerbName&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="MASES.JNetPSCore.JNetPSHelper.html#MASES_JNetPSCore_JNetPSHelper_WriteExtendedError_System_Management_Automation_Cmdlet_System_Exception_">JNetPSHelper.WriteExtendedError(Cmdlet, Exception)</a>
   </div>
 </article>
           </div>

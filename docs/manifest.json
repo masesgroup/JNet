@@ -4869,7 +4869,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MASES.JNetPS.Cmdlet.InvokeCommandCmdletCommand.html",
-          "hash": "5LEnKhIa7Lhus+rkYBkJ1mQMGIJKrxuTw43udFjiCV0="
+          "hash": "hHiPm78kVXqgAEK9h3o1+bsYI2Yfspe0/nY6fEgZYNw="
         }
       },
       "is_incremental": false,
@@ -4881,7 +4881,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MASES.JNetPS.Cmdlet.NewObjectCmdletCommand.html",
-          "hash": "QkoGYbg4VuM+k2Kp6pSqzcK7edsOPidP3wB3PYIaqWA="
+          "hash": "bMS0nn5/waJPqPc7CUkc6bBuOvfZPFeUYsi6YZgxS4Q="
         }
       },
       "is_incremental": false,
@@ -4893,7 +4893,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MASES.JNetPS.Cmdlet.StartJNetPSCmdletCommand.html",
-          "hash": "e2MFCTWRjYZiEzZmUKVp1xtYcnDRKmhdcnK5k6cKFJ0="
+          "hash": "dwL01dWWs1Vipt/kpmXvcDYz0x/RQeH/STj1ATRIZnU="
         }
       },
       "is_incremental": false,
@@ -4917,7 +4917,19 @@
       "output": {
         ".html": {
           "relative_path": "api/MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase-2.html",
-          "hash": "BSn43uJz9/CfJNdr/pDlSdEczGEu0xouufwXYSaEAns="
+          "hash": "wE4mClHZaiCxhUXMYXrGArIzsZnwdnRQSx9XFM20xEI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNetPSCore.Cmdlet.JNetPSCmdlet-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNetPSCore.Cmdlet.JNetPSCmdlet-1.html",
+          "hash": "PgFpheE8BWmBofo1GC+2SE+l0cOpfZHsRgZDpf9AkeI="
         }
       },
       "is_incremental": false,
@@ -4929,7 +4941,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet-1.html",
-          "hash": "Zu3+4IYmaJJ+ZsSoQqqzToQKB5dpli/1xALfg7gBeMs="
+          "hash": "kPjSrETQuSUjOZIHzh/kUlPByyjFjF0zR+jrz03pMFY="
         }
       },
       "is_incremental": false,
@@ -4941,7 +4953,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MASES.JNetPSCore.Cmdlet.JNetPSExternalize.html",
-          "hash": "X01cHjLYSnBMZB/WhdNt1jBHpDbqpXw0BD3GzQvf71I="
+          "hash": "OJ2VsjkQtv1n/RTHL1IAVsVAUX7cikHUNq0tImQuda8="
         }
       },
       "is_incremental": false,
@@ -4953,7 +4965,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase-2.html",
-          "hash": "87gNq3xXVZYru/GjkV1B2peuiGPHUWRS1QDQ6FNTnjc="
+          "hash": "D148E7iwRFVD3mz4u4sXzi4P+aK311ElP9IuGfRfTwY="
         }
       },
       "is_incremental": false,
@@ -4965,7 +4977,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-2.html",
-          "hash": "DWBsCaUV66oQWnFwE2KmweMpx6Hg62+nOCloWofIzH4="
+          "hash": "zrM1ovW0zPuBXAO0T6282TY1PvfIkYT15JhVCcOlVZo="
         }
       },
       "is_incremental": false,
@@ -4977,7 +4989,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MASES.JNetPSCore.Cmdlet.html",
-          "hash": "FvqnVLqyWBaNLVW88lC5hI8NuyooQlkRrE5vJ70fZ0I="
+          "hash": "6xCJsDvt5Ny9B0jc3TyPFjngNAx7DyBauY/4LGpA1YQ="
         }
       },
       "is_incremental": false,
@@ -4989,7 +5001,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MASES.JNetPSCore.JNetPSHelper-1.html",
-          "hash": "d2GDAEtwNAHihTrUHfwVQwr2ICbjhSqJCaETz06lnb4="
+          "hash": "VM4CwPBjybJm6BjRoUhWsSS2GQLWb87Hh5dRQVQqSig="
         }
       },
       "is_incremental": false,
@@ -5001,7 +5013,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MASES.JNetPSCore.JNetPSHelper.html",
-          "hash": "EXy0FQ/uDh5t1d0IvgSYVJoyYBJnTyO7/UNuPXC9Tw4="
+          "hash": "y1f86BqI1xaJjx14/h5DBl738EWoyyvhjlTcrE4cHQg="
         }
       },
       "is_incremental": false,
@@ -5013,7 +5025,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MASES.JNetPSCore.JNetPSHelperExtensions.html",
-          "hash": "DDC2RZVqG5omwyv/kl+AcCbWwY61hTwsIf90ciL51J4="
+          "hash": "qxkoxfsJYTt3rvK2NLRfjV/TxgK49pbYxzkN8Nh1PWA="
         }
       },
       "is_incremental": false,
@@ -5193,7 +5205,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "O7Y22kLyAlsJI/ovYGsAl+gWwUnJSPhRn00cSJlgWx4="
+          "hash": "K6fMICAqEMbjEn+TpMRTzyCy8k1FYWTewzVuuaD7Rq8="
         }
       },
       "is_incremental": false,
@@ -5381,7 +5393,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 431,
+          "total_file_count": 432,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
