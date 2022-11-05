@@ -172,7 +172,7 @@ jobs:
       - name: Compile JNetPS
         run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" src\net\JNetPS\JNetPS.csproj
  
-      - uses: nuget/setup-nuget@v1
+      - uses: nuget/setup-nuget@v1.1.1
         with:
           nuget-version: '5.x'
           
@@ -217,7 +217,7 @@ jobs:
 
       - name: Commit changes
         if: ${{ github.repository_owner == 'masesgroup'}} #do not push any changes outside main repo
-        uses: EndBug/add-and-commit@v5
+        uses: EndBug/add-and-commit@v9
         with:
           author_name: github-actions
           author_email: 41898282+github-actions[bot]@users.noreply.github.com
