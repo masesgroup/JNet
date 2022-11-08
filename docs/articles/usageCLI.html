@@ -71,8 +71,16 @@
 
 <h2 id="installation">Installation</h2>
 <ul>
-<li><strong>dotnet tool</strong> hosted on NuGet.org: check <a href="https://www.nuget.org/packages/MASES.JNetCLI/">https://www.nuget.org/packages/MASES.JNetCLI/</a> and <a href="https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools">https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools</a> for installation deep instructions.</li>
-<li><strong>Docker image</strong> hosted on <a href="https://github.com/masesgroup/JNet/pkgs/container/mases.jnet">https://github.com/masesgroup/JNet/pkgs/container/mases.jnet</a>: follow instruction within the page and general instruction on <a href="https://docs.docker.com">https://docs.docker.com</a></li>
+<li><strong>dotnet tool</strong> hosted on NuGet.org: check <a href="https://www.nuget.org/packages/MASES.JNetCLI/">https://www.nuget.org/packages/MASES.JNetCLI/</a> and <a href="https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools">https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools</a> for installation deep instructions.
+<ul>
+<li>The dotnet tool version needs and installed JRE/JDK within the system (see <a href="#jvm-identification">JVM identification</a>)</li>
+</ul>
+</li>
+<li><strong>Docker image</strong> hosted on <a href="https://github.com/masesgroup/JNet/pkgs/container/mases.jnet">https://github.com/masesgroup/JNet/pkgs/container/mases.jnet</a>: follow instruction within the page and general instruction on <a href="https://docs.docker.com">https://docs.docker.com</a>
+<ul>
+<li>The image hosts both .NET 6 and JRE 17 runtimes</li>
+</ul>
+</li>
 </ul>
 <h2 id="usage">Usage</h2>
 <p>To use the CLI interface (JNetCLI) runs a command like the following:</p>
@@ -98,6 +106,9 @@
 <li><strong>NamespaceList</strong> (<strong>nl</strong>): A CSV list of namespace to be used for interactive shell, JNet namespace are added automatically</li>
 <li><strong>ImportList</strong> (<strong>il</strong>): A CSV list of import to be used</li>
 </ul>
+<p>Plus other switches available at <a href="commandlineswitch.html">Command line switch</a> page.</p>
+<h3 id="jvm-identification">JVM identification</h3>
+<p>One of the most important command-line switch is <strong>JVMPath</strong> and it is available in <a href="https://www.jcobridge.com/net-examples/command-line-options/">JCOBridge switches</a>: it can be used to set-up the location of the JVM library (jvm.dll/libjvm.so) if JCOBridge is not able to identify a suitable JRE installation.</p>
 </article>
           </div>
           

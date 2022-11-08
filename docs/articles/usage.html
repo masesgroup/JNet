@@ -71,6 +71,23 @@
 
 <p>To use JNet classes the developer can write code in .NET using the same classes available in the official Java packages.
 If classes or methods are not available yet it is possible to use the approach synthetized in <a href="API_extensibility.html">What to do if an API was not yet implemented</a></p>
+<h2 id="environment-setup">Environment setup</h2>
+<p>JNet accepts many command-line switches to customize its behavior. The full list is available at <a href="commandlineswitch.html">Command line switch</a> page.</p>
+<h3 id="jvm-identification">JVM identification</h3>
+<p>One of the most important command-line switch is <strong>JVMPath</strong> and it is available in <a href="https://www.jcobridge.com/net-examples/command-line-options/">JCOBridge switches</a>: it can be used to set-up the location of the JVM library (jvm.dll/libjvm.so) if JCOBridge is not able to identify a suitable JRE installation.
+If a developer is using KNet within its own product it is possible to override the <strong>JVMPath</strong> property with a snippet like the following one:</p>
+<pre><code class="lang-c#">    class MyJNetCore : JNetCore
+    {
+        public override string JVMPath
+        {
+            get
+            {
+                string pathToJVM = &quot;Set here the path to JVM library or use your own search method&quot;;
+                return pathToJVM;
+            }
+        }
+    }
+</code></pre>
 </article>
           </div>
           
