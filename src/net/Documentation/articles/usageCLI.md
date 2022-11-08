@@ -3,7 +3,9 @@
 ## Installation
 
 - **dotnet tool** hosted on NuGet.org: check https://www.nuget.org/packages/MASES.JNetCLI/ and https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools for installation deep instructions.
+  * The dotnet tool version needs and installed JRE/JDK within the system (see [JVM identification](#jvm-identification))
 - **Docker image** hosted on https://github.com/masesgroup/JNet/pkgs/container/mases.jnet: follow instruction within the page and general instruction on https://docs.docker.com
+  * The image hosts both .NET 6 and JRE 17 runtimes
 
 ## Usage
 
@@ -28,3 +30,8 @@ _jnet_ accepts the following command-line switch:
 * **NamespaceList** (**nl**): A CSV list of namespace to be used for interactive shell, JNet namespace are added automatically
 * **ImportList** (**il**): A CSV list of import to be used
 
+Plus other switches available at [Command line switch](commandlineswitch.md) page.
+
+### JVM identification
+
+One of the most important command-line switch is **JVMPath** and it is available in [JCOBridge switches](https://www.jcobridge.com/net-examples/command-line-options/): it can be used to set-up the location of the JVM library (jvm.dll/libjvm.so) if JCOBridge is not able to identify a suitable JRE installation.
