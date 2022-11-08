@@ -16,3 +16,5 @@
   href: usageReflector.md
 - name: JNet PowerShell usage
   href: usagePS.md
+- name: Command-line switches
+  href: commandlineswitch.md
