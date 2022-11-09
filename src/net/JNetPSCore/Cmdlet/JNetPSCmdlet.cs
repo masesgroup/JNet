@@ -51,12 +51,16 @@ namespace MASES.JNetPSCore.Cmdlet
             }
             catch (TargetInvocationException tie)
             {
-                WriteError(new ErrorRecord(tie.InnerException, tie.InnerException.Source, ErrorCategory.InvalidOperation, tie.InnerException));
+                this.WriteExtendedError(tie.InnerException);
             }
             catch (JCOBridge.C2JBridge.JVMInterop.JavaException je)
             {
                 var newEx = je.Convert();
-                WriteError(new ErrorRecord(newEx, newEx.Source, ErrorCategory.InvalidOperation, newEx));
+                this.WriteExtendedError(newEx);
+            }
+            catch (JVMBridgeException je)
+            {
+                this.WriteExtendedError(je);
             }
         }
 
