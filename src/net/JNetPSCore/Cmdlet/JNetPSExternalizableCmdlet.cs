@@ -19,6 +19,7 @@
 using MASES.JCOBridge.C2JBridge;
 using System;
 using System.Management.Automation;
+using System.Reflection;
 
 namespace MASES.JNetPSCore.Cmdlet
 {
@@ -71,9 +72,18 @@ namespace MASES.JNetPSCore.Cmdlet
             {
                 ProcessCommand();
             }
+            catch (TargetInvocationException tie)
+            {
+                this.WriteExtendedError(tie.InnerException);
+            }
             catch (JCOBridge.C2JBridge.JVMInterop.JavaException je)
             {
-                throw je.Convert();
+                var newEx = je.Convert();
+                this.WriteExtendedError(newEx);
+            }
+            catch (JVMBridgeException je)
+            {
+                this.WriteExtendedError(je);
             }
         }
 
