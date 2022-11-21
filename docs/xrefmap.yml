@@ -18310,6 +18310,34 @@ references:
   fullName.vb: Java.Util.List(Of E).Of
   nameWithType: List<E>.Of
   nameWithType.vb: List(Of E).Of
+- uid: Java.Util.List`1.op_Implicit(Java.Util.List{`0})~Java.Lang.Iterable{`0}
+  name: Implicit(List<E> to Iterable<E>)
+  href: api/Java.Util.List-1.html#Java_Util_List_1_op_Implicit_Java_Util_List__0___Java_Lang_Iterable__0_
+  commentId: M:Java.Util.List`1.op_Implicit(Java.Util.List{`0})~Java.Lang.Iterable{`0}
+  name.vb: Widening(List(Of E) to Iterable(Of E))
+  fullName: Java.Util.List<E>.Implicit(Java.Util.List<E> to Java.Lang.Iterable<E>)
+  fullName.vb: Java.Util.List(Of E).Widening(Java.Util.List(Of E) to Java.Lang.Iterable(Of E))
+  nameWithType: List<E>.Implicit(List<E> to Iterable<E>)
+  nameWithType.vb: List(Of E).Widening(List(Of E) to Iterable(Of E))
+- uid: Java.Util.List`1.op_Implicit(Java.Util.List{`0})~Java.Util.Collection{`0}
+  name: Implicit(List<E> to Collection<E>)
+  href: api/Java.Util.List-1.html#Java_Util_List_1_op_Implicit_Java_Util_List__0___Java_Util_Collection__0_
+  commentId: M:Java.Util.List`1.op_Implicit(Java.Util.List{`0})~Java.Util.Collection{`0}
+  name.vb: Widening(List(Of E) to Collection(Of E))
+  fullName: Java.Util.List<E>.Implicit(Java.Util.List<E> to Java.Util.Collection<E>)
+  fullName.vb: Java.Util.List(Of E).Widening(Java.Util.List(Of E) to Java.Util.Collection(Of E))
+  nameWithType: List<E>.Implicit(List<E> to Collection<E>)
+  nameWithType.vb: List(Of E).Widening(List(Of E) to Collection(Of E))
+- uid: Java.Util.List`1.op_Implicit*
+  name: Implicit
+  href: api/Java.Util.List-1.html#Java_Util_List_1_op_Implicit_
+  commentId: Overload:Java.Util.List`1.op_Implicit
+  isSpec: "True"
+  name.vb: Widening
+  fullName: Java.Util.List<E>.Implicit
+  fullName.vb: Java.Util.List(Of E).Widening
+  nameWithType: List<E>.Implicit
+  nameWithType.vb: List(Of E).Widening
 - uid: Java.Util.List`1.Remove(System.Int32)
   name: Remove(Int32)
   href: api/Java.Util.List-1.html#Java_Util_List_1_Remove_System_Int32_
@@ -18709,6 +18737,131 @@ references:
   isSpec: "True"
   fullName: Java.Util.Map.ContainsValue
   nameWithType: Map.ContainsValue
+- uid: Java.Util.Map.Entry`2
+  name: Map.Entry<K, V>
+  href: api/Java.Util.Map.Entry-2.html
+  commentId: T:Java.Util.Map.Entry`2
+  name.vb: Map.Entry(Of K, V)
+  fullName: Java.Util.Map.Entry<K, V>
+  fullName.vb: Java.Util.Map.Entry(Of K, V)
+  nameWithType: Map.Entry<K, V>
+  nameWithType.vb: Map.Entry(Of K, V)
+- uid: Java.Util.Map.Entry`2.ClassName
+  name: ClassName
+  href: api/Java.Util.Map.Entry-2.html#Java_Util_Map_Entry_2_ClassName
+  commentId: P:Java.Util.Map.Entry`2.ClassName
+  fullName: Java.Util.Map.Entry<K, V>.ClassName
+  fullName.vb: Java.Util.Map.Entry(Of K, V).ClassName
+  nameWithType: Map.Entry<K, V>.ClassName
+  nameWithType.vb: Map.Entry(Of K, V).ClassName
+- uid: Java.Util.Map.Entry`2.ClassName*
+  name: ClassName
+  href: api/Java.Util.Map.Entry-2.html#Java_Util_Map_Entry_2_ClassName_
+  commentId: Overload:Java.Util.Map.Entry`2.ClassName
+  isSpec: "True"
+  fullName: Java.Util.Map.Entry<K, V>.ClassName
+  fullName.vb: Java.Util.Map.Entry(Of K, V).ClassName
+  nameWithType: Map.Entry<K, V>.ClassName
+  nameWithType.vb: Map.Entry(Of K, V).ClassName
+- uid: Java.Util.Map.Entry`2.ComparingByKey
+  name: ComparingByKey()
+  href: api/Java.Util.Map.Entry-2.html#Java_Util_Map_Entry_2_ComparingByKey
+  commentId: M:Java.Util.Map.Entry`2.ComparingByKey
+  fullName: Java.Util.Map.Entry<K, V>.ComparingByKey()
+  fullName.vb: Java.Util.Map.Entry(Of K, V).ComparingByKey()
+  nameWithType: Map.Entry<K, V>.ComparingByKey()
+  nameWithType.vb: Map.Entry(Of K, V).ComparingByKey()
+- uid: Java.Util.Map.Entry`2.ComparingByKey*
+  name: ComparingByKey
+  href: api/Java.Util.Map.Entry-2.html#Java_Util_Map_Entry_2_ComparingByKey_
+  commentId: Overload:Java.Util.Map.Entry`2.ComparingByKey
+  isSpec: "True"
+  fullName: Java.Util.Map.Entry<K, V>.ComparingByKey
+  fullName.vb: Java.Util.Map.Entry(Of K, V).ComparingByKey
+  nameWithType: Map.Entry<K, V>.ComparingByKey
+  nameWithType.vb: Map.Entry(Of K, V).ComparingByKey
+- uid: Java.Util.Map.Entry`2.ComparingByKey``1(Java.Util.Comparator{``0})
+  name: ComparingByKey<SuperK>(Comparator<SuperK>)
+  href: api/Java.Util.Map.Entry-2.html#Java_Util_Map_Entry_2_ComparingByKey__1_Java_Util_Comparator___0__
+  commentId: M:Java.Util.Map.Entry`2.ComparingByKey``1(Java.Util.Comparator{``0})
+  name.vb: ComparingByKey(Of SuperK)(Comparator(Of SuperK))
+  fullName: Java.Util.Map.Entry<K, V>.ComparingByKey<SuperK>(Java.Util.Comparator<SuperK>)
+  fullName.vb: Java.Util.Map.Entry(Of K, V).ComparingByKey(Of SuperK)(Java.Util.Comparator(Of SuperK))
+  nameWithType: Map.Entry<K, V>.ComparingByKey<SuperK>(Comparator<SuperK>)
+  nameWithType.vb: Map.Entry(Of K, V).ComparingByKey(Of SuperK)(Comparator(Of SuperK))
+- uid: Java.Util.Map.Entry`2.ComparingByValue
+  name: ComparingByValue()
+  href: api/Java.Util.Map.Entry-2.html#Java_Util_Map_Entry_2_ComparingByValue
+  commentId: M:Java.Util.Map.Entry`2.ComparingByValue
+  fullName: Java.Util.Map.Entry<K, V>.ComparingByValue()
+  fullName.vb: Java.Util.Map.Entry(Of K, V).ComparingByValue()
+  nameWithType: Map.Entry<K, V>.ComparingByValue()
+  nameWithType.vb: Map.Entry(Of K, V).ComparingByValue()
+- uid: Java.Util.Map.Entry`2.ComparingByValue*
+  name: ComparingByValue
+  href: api/Java.Util.Map.Entry-2.html#Java_Util_Map_Entry_2_ComparingByValue_
+  commentId: Overload:Java.Util.Map.Entry`2.ComparingByValue
+  isSpec: "True"
+  fullName: Java.Util.Map.Entry<K, V>.ComparingByValue
+  fullName.vb: Java.Util.Map.Entry(Of K, V).ComparingByValue
+  nameWithType: Map.Entry<K, V>.ComparingByValue
+  nameWithType.vb: Map.Entry(Of K, V).ComparingByValue
+- uid: Java.Util.Map.Entry`2.ComparingByValue``1(Java.Util.Comparator{``0})
+  name: ComparingByValue<SuperV>(Comparator<SuperV>)
+  href: api/Java.Util.Map.Entry-2.html#Java_Util_Map_Entry_2_ComparingByValue__1_Java_Util_Comparator___0__
+  commentId: M:Java.Util.Map.Entry`2.ComparingByValue``1(Java.Util.Comparator{``0})
+  name.vb: ComparingByValue(Of SuperV)(Comparator(Of SuperV))
+  fullName: Java.Util.Map.Entry<K, V>.ComparingByValue<SuperV>(Java.Util.Comparator<SuperV>)
+  fullName.vb: Java.Util.Map.Entry(Of K, V).ComparingByValue(Of SuperV)(Java.Util.Comparator(Of SuperV))
+  nameWithType: Map.Entry<K, V>.ComparingByValue<SuperV>(Comparator<SuperV>)
+  nameWithType.vb: Map.Entry(Of K, V).ComparingByValue(Of SuperV)(Comparator(Of SuperV))
+- uid: Java.Util.Map.Entry`2.Key
+  name: Key
+  href: api/Java.Util.Map.Entry-2.html#Java_Util_Map_Entry_2_Key
+  commentId: P:Java.Util.Map.Entry`2.Key
+  fullName: Java.Util.Map.Entry<K, V>.Key
+  fullName.vb: Java.Util.Map.Entry(Of K, V).Key
+  nameWithType: Map.Entry<K, V>.Key
+  nameWithType.vb: Map.Entry(Of K, V).Key
+- uid: Java.Util.Map.Entry`2.Key*
+  name: Key
+  href: api/Java.Util.Map.Entry-2.html#Java_Util_Map_Entry_2_Key_
+  commentId: Overload:Java.Util.Map.Entry`2.Key
+  isSpec: "True"
+  fullName: Java.Util.Map.Entry<K, V>.Key
+  fullName.vb: Java.Util.Map.Entry(Of K, V).Key
+  nameWithType: Map.Entry<K, V>.Key
+  nameWithType.vb: Map.Entry(Of K, V).Key
+- uid: Java.Util.Map.Entry`2.Value
+  name: Value
+  href: api/Java.Util.Map.Entry-2.html#Java_Util_Map_Entry_2_Value
+  commentId: P:Java.Util.Map.Entry`2.Value
+  fullName: Java.Util.Map.Entry<K, V>.Value
+  fullName.vb: Java.Util.Map.Entry(Of K, V).Value
+  nameWithType: Map.Entry<K, V>.Value
+  nameWithType.vb: Map.Entry(Of K, V).Value
+- uid: Java.Util.Map.Entry`2.Value*
+  name: Value
+  href: api/Java.Util.Map.Entry-2.html#Java_Util_Map_Entry_2_Value_
+  commentId: Overload:Java.Util.Map.Entry`2.Value
+  isSpec: "True"
+  fullName: Java.Util.Map.Entry<K, V>.Value
+  fullName.vb: Java.Util.Map.Entry(Of K, V).Value
+  nameWithType: Map.Entry<K, V>.Value
+  nameWithType.vb: Map.Entry(Of K, V).Value
+- uid: Java.Util.Map.IsEmpty
+  name: IsEmpty
+  href: api/Java.Util.Map.html#Java_Util_Map_IsEmpty
+  commentId: P:Java.Util.Map.IsEmpty
+  fullName: Java.Util.Map.IsEmpty
+  nameWithType: Map.IsEmpty
+- uid: Java.Util.Map.IsEmpty*
+  name: IsEmpty
+  href: api/Java.Util.Map.html#Java_Util_Map_IsEmpty_
+  commentId: Overload:Java.Util.Map.IsEmpty
+  isSpec: "True"
+  fullName: Java.Util.Map.IsEmpty
+  nameWithType: Map.IsEmpty
 - uid: Java.Util.Map.Remove(System.Object,System.Object)
   name: Remove(Object, Object)
   href: api/Java.Util.Map.html#Java_Util_Map_Remove_System_Object_System_Object_
@@ -18722,6 +18875,19 @@ references:
   isSpec: "True"
   fullName: Java.Util.Map.Remove
   nameWithType: Map.Remove
+- uid: Java.Util.Map.Size
+  name: Size
+  href: api/Java.Util.Map.html#Java_Util_Map_Size
+  commentId: P:Java.Util.Map.Size
+  fullName: Java.Util.Map.Size
+  nameWithType: Map.Size
+- uid: Java.Util.Map.Size*
+  name: Size
+  href: api/Java.Util.Map.html#Java_Util_Map_Size_
+  commentId: Overload:Java.Util.Map.Size
+  isSpec: "True"
+  fullName: Java.Util.Map.Size
+  nameWithType: Map.Size
 - uid: Java.Util.Map`2
   name: Map<K, V>
   href: api/Java.Util.Map-2.html
@@ -18757,6 +18923,23 @@ references:
   fullName.vb: Java.Util.Map(Of K, V).Map
   nameWithType: Map<K, V>.Map
   nameWithType.vb: Map(Of K, V).Map
+- uid: Java.Util.Map`2.EntrySet
+  name: EntrySet
+  href: api/Java.Util.Map-2.html#Java_Util_Map_2_EntrySet
+  commentId: P:Java.Util.Map`2.EntrySet
+  fullName: Java.Util.Map<K, V>.EntrySet
+  fullName.vb: Java.Util.Map(Of K, V).EntrySet
+  nameWithType: Map<K, V>.EntrySet
+  nameWithType.vb: Map(Of K, V).EntrySet
+- uid: Java.Util.Map`2.EntrySet*
+  name: EntrySet
+  href: api/Java.Util.Map-2.html#Java_Util_Map_2_EntrySet_
+  commentId: Overload:Java.Util.Map`2.EntrySet
+  isSpec: "True"
+  fullName: Java.Util.Map<K, V>.EntrySet
+  fullName.vb: Java.Util.Map(Of K, V).EntrySet
+  nameWithType: Map<K, V>.EntrySet
+  nameWithType.vb: Map(Of K, V).EntrySet
 - uid: Java.Util.Map`2.ForEach*
   name: ForEach
   href: api/Java.Util.Map-2.html#Java_Util_Map_2_ForEach_
@@ -18809,23 +18992,6 @@ references:
   fullName.vb: Java.Util.Map(Of K, V).GetOrDefault
   nameWithType: Map<K, V>.GetOrDefault
   nameWithType.vb: Map(Of K, V).GetOrDefault
-- uid: Java.Util.Map`2.IsEmpty
-  name: IsEmpty
-  href: api/Java.Util.Map-2.html#Java_Util_Map_2_IsEmpty
-  commentId: P:Java.Util.Map`2.IsEmpty
-  fullName: Java.Util.Map<K, V>.IsEmpty
-  fullName.vb: Java.Util.Map(Of K, V).IsEmpty
-  nameWithType: Map<K, V>.IsEmpty
-  nameWithType.vb: Map(Of K, V).IsEmpty
-- uid: Java.Util.Map`2.IsEmpty*
-  name: IsEmpty
-  href: api/Java.Util.Map-2.html#Java_Util_Map_2_IsEmpty_
-  commentId: Overload:Java.Util.Map`2.IsEmpty
-  isSpec: "True"
-  fullName: Java.Util.Map<K, V>.IsEmpty
-  fullName.vb: Java.Util.Map(Of K, V).IsEmpty
-  nameWithType: Map<K, V>.IsEmpty
-  nameWithType.vb: Map(Of K, V).IsEmpty
 - uid: Java.Util.Map`2.KeySet
   name: KeySet
   href: api/Java.Util.Map-2.html#Java_Util_Map_2_KeySet
@@ -18973,23 +19139,6 @@ references:
   fullName.vb: Java.Util.Map(Of K, V).ReplaceAll(Of SuperK, SuperV, ExtendsV)(Java.Util.Function.BiFunction(Of SuperK, SuperV, ExtendsV))
   nameWithType: Map<K, V>.ReplaceAll<SuperK, SuperV, ExtendsV>(BiFunction<SuperK, SuperV, ExtendsV>)
   nameWithType.vb: Map(Of K, V).ReplaceAll(Of SuperK, SuperV, ExtendsV)(BiFunction(Of SuperK, SuperV, ExtendsV))
-- uid: Java.Util.Map`2.Size
-  name: Size
-  href: api/Java.Util.Map-2.html#Java_Util_Map_2_Size
-  commentId: P:Java.Util.Map`2.Size
-  fullName: Java.Util.Map<K, V>.Size
-  fullName.vb: Java.Util.Map(Of K, V).Size
-  nameWithType: Map<K, V>.Size
-  nameWithType.vb: Map(Of K, V).Size
-- uid: Java.Util.Map`2.Size*
-  name: Size
-  href: api/Java.Util.Map-2.html#Java_Util_Map_2_Size_
-  commentId: Overload:Java.Util.Map`2.Size
-  isSpec: "True"
-  fullName: Java.Util.Map<K, V>.Size
-  fullName.vb: Java.Util.Map(Of K, V).Size
-  nameWithType: Map<K, V>.Size
-  nameWithType.vb: Map(Of K, V).Size
 - uid: Java.Util.Map`2.Values
   name: Values
   href: api/Java.Util.Map-2.html#Java_Util_Map_2_Values
@@ -22444,6 +22593,108 @@ references:
   commentId: N:MASES.JNet.Extensions
   fullName: MASES.JNet.Extensions
   nameWithType: MASES.JNet.Extensions
+- uid: MASES.JNet.Extensions.JavaUtilExtensions
+  name: JavaUtilExtensions
+  href: api/MASES.JNet.Extensions.JavaUtilExtensions.html
+  commentId: T:MASES.JNet.Extensions.JavaUtilExtensions
+  fullName: MASES.JNet.Extensions.JavaUtilExtensions
+  nameWithType: JavaUtilExtensions
+- uid: MASES.JNet.Extensions.JavaUtilExtensions.ToCollection*
+  name: ToCollection
+  href: api/MASES.JNet.Extensions.JavaUtilExtensions.html#MASES_JNet_Extensions_JavaUtilExtensions_ToCollection_
+  commentId: Overload:MASES.JNet.Extensions.JavaUtilExtensions.ToCollection
+  isSpec: "True"
+  fullName: MASES.JNet.Extensions.JavaUtilExtensions.ToCollection
+  nameWithType: JavaUtilExtensions.ToCollection
+- uid: MASES.JNet.Extensions.JavaUtilExtensions.ToCollection``1(Java.Util.Collection{``0})
+  name: ToCollection<T>(Collection<T>)
+  href: api/MASES.JNet.Extensions.JavaUtilExtensions.html#MASES_JNet_Extensions_JavaUtilExtensions_ToCollection__1_Java_Util_Collection___0__
+  commentId: M:MASES.JNet.Extensions.JavaUtilExtensions.ToCollection``1(Java.Util.Collection{``0})
+  name.vb: ToCollection(Of T)(Collection(Of T))
+  fullName: MASES.JNet.Extensions.JavaUtilExtensions.ToCollection<T>(Java.Util.Collection<T>)
+  fullName.vb: MASES.JNet.Extensions.JavaUtilExtensions.ToCollection(Of T)(Java.Util.Collection(Of T))
+  nameWithType: JavaUtilExtensions.ToCollection<T>(Collection<T>)
+  nameWithType.vb: JavaUtilExtensions.ToCollection(Of T)(Collection(Of T))
+- uid: MASES.JNet.Extensions.JavaUtilExtensions.ToDictiony*
+  name: ToDictiony
+  href: api/MASES.JNet.Extensions.JavaUtilExtensions.html#MASES_JNet_Extensions_JavaUtilExtensions_ToDictiony_
+  commentId: Overload:MASES.JNet.Extensions.JavaUtilExtensions.ToDictiony
+  isSpec: "True"
+  fullName: MASES.JNet.Extensions.JavaUtilExtensions.ToDictiony
+  nameWithType: JavaUtilExtensions.ToDictiony
+- uid: MASES.JNet.Extensions.JavaUtilExtensions.ToDictiony``2(Java.Util.Map{``0,``1})
+  name: ToDictiony<K, V>(Map<K, V>)
+  href: api/MASES.JNet.Extensions.JavaUtilExtensions.html#MASES_JNet_Extensions_JavaUtilExtensions_ToDictiony__2_Java_Util_Map___0___1__
+  commentId: M:MASES.JNet.Extensions.JavaUtilExtensions.ToDictiony``2(Java.Util.Map{``0,``1})
+  name.vb: ToDictiony(Of K, V)(Map(Of K, V))
+  fullName: MASES.JNet.Extensions.JavaUtilExtensions.ToDictiony<K, V>(Java.Util.Map<K, V>)
+  fullName.vb: MASES.JNet.Extensions.JavaUtilExtensions.ToDictiony(Of K, V)(Java.Util.Map(Of K, V))
+  nameWithType: JavaUtilExtensions.ToDictiony<K, V>(Map<K, V>)
+  nameWithType.vb: JavaUtilExtensions.ToDictiony(Of K, V)(Map(Of K, V))
+- uid: MASES.JNet.Extensions.JavaUtilExtensions.ToJCollection*
+  name: ToJCollection
+  href: api/MASES.JNet.Extensions.JavaUtilExtensions.html#MASES_JNet_Extensions_JavaUtilExtensions_ToJCollection_
+  commentId: Overload:MASES.JNet.Extensions.JavaUtilExtensions.ToJCollection
+  isSpec: "True"
+  fullName: MASES.JNet.Extensions.JavaUtilExtensions.ToJCollection
+  nameWithType: JavaUtilExtensions.ToJCollection
+- uid: MASES.JNet.Extensions.JavaUtilExtensions.ToJCollection``1(System.Collections.Generic.ICollection{``0})
+  name: ToJCollection<T>(ICollection<T>)
+  href: api/MASES.JNet.Extensions.JavaUtilExtensions.html#MASES_JNet_Extensions_JavaUtilExtensions_ToJCollection__1_System_Collections_Generic_ICollection___0__
+  commentId: M:MASES.JNet.Extensions.JavaUtilExtensions.ToJCollection``1(System.Collections.Generic.ICollection{``0})
+  name.vb: ToJCollection(Of T)(ICollection(Of T))
+  fullName: MASES.JNet.Extensions.JavaUtilExtensions.ToJCollection<T>(System.Collections.Generic.ICollection<T>)
+  fullName.vb: MASES.JNet.Extensions.JavaUtilExtensions.ToJCollection(Of T)(System.Collections.Generic.ICollection(Of T))
+  nameWithType: JavaUtilExtensions.ToJCollection<T>(ICollection<T>)
+  nameWithType.vb: JavaUtilExtensions.ToJCollection(Of T)(ICollection(Of T))
+- uid: MASES.JNet.Extensions.JavaUtilExtensions.ToJList*
+  name: ToJList
+  href: api/MASES.JNet.Extensions.JavaUtilExtensions.html#MASES_JNet_Extensions_JavaUtilExtensions_ToJList_
+  commentId: Overload:MASES.JNet.Extensions.JavaUtilExtensions.ToJList
+  isSpec: "True"
+  fullName: MASES.JNet.Extensions.JavaUtilExtensions.ToJList
+  nameWithType: JavaUtilExtensions.ToJList
+- uid: MASES.JNet.Extensions.JavaUtilExtensions.ToJList``1(System.Collections.Generic.ICollection{``0})
+  name: ToJList<T>(ICollection<T>)
+  href: api/MASES.JNet.Extensions.JavaUtilExtensions.html#MASES_JNet_Extensions_JavaUtilExtensions_ToJList__1_System_Collections_Generic_ICollection___0__
+  commentId: M:MASES.JNet.Extensions.JavaUtilExtensions.ToJList``1(System.Collections.Generic.ICollection{``0})
+  name.vb: ToJList(Of T)(ICollection(Of T))
+  fullName: MASES.JNet.Extensions.JavaUtilExtensions.ToJList<T>(System.Collections.Generic.ICollection<T>)
+  fullName.vb: MASES.JNet.Extensions.JavaUtilExtensions.ToJList(Of T)(System.Collections.Generic.ICollection(Of T))
+  nameWithType: JavaUtilExtensions.ToJList<T>(ICollection<T>)
+  nameWithType.vb: JavaUtilExtensions.ToJList(Of T)(ICollection(Of T))
+- uid: MASES.JNet.Extensions.JavaUtilExtensions.ToList*
+  name: ToList
+  href: api/MASES.JNet.Extensions.JavaUtilExtensions.html#MASES_JNet_Extensions_JavaUtilExtensions_ToList_
+  commentId: Overload:MASES.JNet.Extensions.JavaUtilExtensions.ToList
+  isSpec: "True"
+  fullName: MASES.JNet.Extensions.JavaUtilExtensions.ToList
+  nameWithType: JavaUtilExtensions.ToList
+- uid: MASES.JNet.Extensions.JavaUtilExtensions.ToList``1(Java.Util.Collection{``0})
+  name: ToList<T>(Collection<T>)
+  href: api/MASES.JNet.Extensions.JavaUtilExtensions.html#MASES_JNet_Extensions_JavaUtilExtensions_ToList__1_Java_Util_Collection___0__
+  commentId: M:MASES.JNet.Extensions.JavaUtilExtensions.ToList``1(Java.Util.Collection{``0})
+  name.vb: ToList(Of T)(Collection(Of T))
+  fullName: MASES.JNet.Extensions.JavaUtilExtensions.ToList<T>(Java.Util.Collection<T>)
+  fullName.vb: MASES.JNet.Extensions.JavaUtilExtensions.ToList(Of T)(Java.Util.Collection(Of T))
+  nameWithType: JavaUtilExtensions.ToList<T>(Collection<T>)
+  nameWithType.vb: JavaUtilExtensions.ToList(Of T)(Collection(Of T))
+- uid: MASES.JNet.Extensions.JavaUtilExtensions.ToMap*
+  name: ToMap
+  href: api/MASES.JNet.Extensions.JavaUtilExtensions.html#MASES_JNet_Extensions_JavaUtilExtensions_ToMap_
+  commentId: Overload:MASES.JNet.Extensions.JavaUtilExtensions.ToMap
+  isSpec: "True"
+  fullName: MASES.JNet.Extensions.JavaUtilExtensions.ToMap
+  nameWithType: JavaUtilExtensions.ToMap
+- uid: MASES.JNet.Extensions.JavaUtilExtensions.ToMap``2(System.Collections.Generic.IDictionary{``0,``1})
+  name: ToMap<K, V>(IDictionary<K, V>)
+  href: api/MASES.JNet.Extensions.JavaUtilExtensions.html#MASES_JNet_Extensions_JavaUtilExtensions_ToMap__2_System_Collections_Generic_IDictionary___0___1__
+  commentId: M:MASES.JNet.Extensions.JavaUtilExtensions.ToMap``2(System.Collections.Generic.IDictionary{``0,``1})
+  name.vb: ToMap(Of K, V)(IDictionary(Of K, V))
+  fullName: MASES.JNet.Extensions.JavaUtilExtensions.ToMap<K, V>(System.Collections.Generic.IDictionary<K, V>)
+  fullName.vb: MASES.JNet.Extensions.JavaUtilExtensions.ToMap(Of K, V)(System.Collections.Generic.IDictionary(Of K, V))
+  nameWithType: JavaUtilExtensions.ToMap<K, V>(IDictionary<K, V>)
+  nameWithType.vb: JavaUtilExtensions.ToMap(Of K, V)(IDictionary(Of K, V))
 - uid: MASES.JNet.Extensions.JNetCoreExtensions
   name: JNetCoreExtensions
   href: api/MASES.JNet.Extensions.JNetCoreExtensions.html
