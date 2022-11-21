@@ -21,7 +21,7 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    public class Collection<E> : JVMBridgeBaseEnumerable<Collection<E>>
+    public class Collection<E> : JVMBridgeBaseEnumerable<Collection<E>, E>
     {
         public override string ClassName => "java.util.Collection";
 

@@ -16,8 +16,10 @@
 *  Refer to LICENSE for more information.
 */
 
+using Java.Io;
 using Java.Util;
 using MASES.JNet;
+using MASES.JNet.Extensions;
 
 namespace MASES.JNetTest
 {
@@ -34,12 +36,32 @@ namespace MASES.JNetTest
             var cls2 = JNetCore.Class<Vector<string>>();
 
             var res = cls.Equals(cls2);
+            System.Console.WriteLine($"Class are equals: {res}");
 
             if (args.Length != 0)
             {
-                var set = Collections.Singleton(appArgs[0]);
-                set.Add("test");
+                try
+                {
+                    var set = Collections.Singleton(appArgs[0]);
+                    set.Add("test");
+                }
+                catch (System.Exception ex) { System.Console.WriteLine(ex.Message); }
             }
+
+            TestExtensions();
+        }
+
+        static void TestExtensions()
+        {
+            System.Collections.Generic.Dictionary<string, string> dict = new();
+            dict.Add("a", "a");
+            dict.Add("b", "b");
+            dict.Add("c", "c");
+            var map = dict.ToMap();
+            var newDict = map.ToDictiony();
+
+            var collection = newDict.Values.ToJCollection();
+            var list = collection.ToList();
         }
     }
 }
