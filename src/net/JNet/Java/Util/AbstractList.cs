@@ -28,7 +28,7 @@ namespace Java.Util
         {
         }
 
-        public AbstractList(params object[] args)
+        protected AbstractList(params object[] args)
             : base(args)
         {
 

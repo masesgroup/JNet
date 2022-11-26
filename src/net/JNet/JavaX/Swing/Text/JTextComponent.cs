@@ -26,7 +26,7 @@ namespace JavaX.Swing.Text
         {
         }
 
-        public JTextComponent(params object[] args) : base(args)
+        protected JTextComponent(params object[] args) : base(args)
         {
         }
     }

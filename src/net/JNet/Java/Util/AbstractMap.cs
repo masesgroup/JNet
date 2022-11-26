@@ -26,7 +26,7 @@ namespace Java.Util
         {
         }
 
-        public AbstractMap(params object[] args)
+        protected AbstractMap(params object[] args)
             : base(args)
         {
 

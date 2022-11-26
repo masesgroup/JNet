@@ -26,7 +26,7 @@ namespace JavaX.Swing
         {
         }
 
-        public AbstractButton(params object[] args) : base(args)
+        protected AbstractButton(params object[] args) : base(args)
         {
         }
     }
