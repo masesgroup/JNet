@@ -30,7 +30,7 @@ namespace Java.Util
         {
         }
 
-        public AbstractCollection(params object[] args)
+        protected AbstractCollection(params object[] args)
             : base(args)
         {
 

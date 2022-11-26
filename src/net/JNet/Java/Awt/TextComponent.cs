@@ -26,7 +26,7 @@ namespace Java.Awt
         {
         }
 
-        public TextComponent(params object[] args) : base(args)
+        protected TextComponent(params object[] args) : base(args)
         {
         }
 

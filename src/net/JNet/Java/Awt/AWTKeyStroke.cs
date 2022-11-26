@@ -28,7 +28,7 @@ namespace Java.Awt
         {
         }
 
-        public AWTKeyStroke(params object[] args) : base(args)
+        protected AWTKeyStroke(params object[] args) : base(args)
         {
         }
 
