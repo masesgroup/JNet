@@ -28,7 +28,7 @@ namespace Java.Awt
         {
         }
 
-        public Container(params object[] args) : base(args)
+        protected Container(params object[] args) : base(args)
         {
         }
 

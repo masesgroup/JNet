@@ -29,7 +29,7 @@ namespace Java.Util
         {
         }
 
-        public Map(params object[] args)
+        protected Map(params object[] args)
             : base(args)
         {
         }
@@ -70,7 +70,7 @@ namespace Java.Util
         {
         }
 
-        public Map(params object[] args)
+        protected Map(params object[] args)
             : base(args)
         {
         }

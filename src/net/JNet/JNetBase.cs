@@ -32,7 +32,7 @@ namespace MASES.JNet
         /// Used to create instance of <see cref="IJVMBridgeDefinition.ClassName"/>
         /// </summary>
         /// <param name="args">The arguments of constructor</param>
-        public JNetBase(params object[] args) : base(args) { }
+        protected JNetBase(params object[] args) : base(args) { }
     }
 
     public abstract class JNetBase<TClass, TInterface> : JVMBridgeBase<TClass, TInterface>
@@ -46,7 +46,7 @@ namespace MASES.JNet
         /// Used to create instance of <see cref="IJVMBridgeDefinition.ClassName"/>
         /// </summary>
         /// <param name="args">The arguments of constructor</param>
-        public JNetBase(params object[] args) : base(args) { }
+        protected JNetBase(params object[] args) : base(args) { }
     }
 
     /// <summary>
