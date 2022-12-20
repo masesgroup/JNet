@@ -28,7 +28,7 @@ namespace Java.Awt.Geom
         {
         }
 
-        public Point2D(params object[] args) : base(args)
+        protected Point2D(params object[] args) : base(args)
         {
         }
 

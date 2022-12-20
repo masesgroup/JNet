@@ -23,9 +23,9 @@ namespace Java.Lang
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/EnumConstantNotPresentException.html"/>
     /// </summary>
-    public sealed class EnumConstantNotPresentException : JVMBridgeException<EnumConstantNotPresentException>
+    public class EnumConstantNotPresentException : JVMBridgeException<EnumConstantNotPresentException>
     {
         /// <inheritdoc cref="JVMBridgeException.ClassName"/>
-        public sealed override string ClassName => "java.lang.EnumConstantNotPresentException";
+        public override string ClassName => "java.lang.EnumConstantNotPresentException";
     }
 }

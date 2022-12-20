@@ -23,9 +23,9 @@ namespace Java.Lang
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalThreadStateException.html"/>
     /// </summary>
-    public sealed class IllegalThreadStateException : JVMBridgeException<IllegalThreadStateException>
+    public class IllegalThreadStateException : JVMBridgeException<IllegalThreadStateException>
     {
         /// <inheritdoc cref="JVMBridgeException.ClassName"/>
-        public sealed override string ClassName => "java.lang.IllegalThreadStateException";
+        public override string ClassName => "java.lang.IllegalThreadStateException";
     }
 }

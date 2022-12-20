@@ -23,9 +23,9 @@ namespace Java.Lang
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/UnsupportedOperationException.html"/>
     /// </summary>
-    public sealed class UnsupportedOperationException : JVMBridgeException<UnsupportedOperationException>
+    public class UnsupportedOperationException : JVMBridgeException<UnsupportedOperationException>
     {
         /// <inheritdoc cref="JVMBridgeException.ClassName"/>
-        public sealed override string ClassName => "java.lang.UnsupportedOperationException";
+        public override string ClassName => "java.lang.UnsupportedOperationException";
     }
 }

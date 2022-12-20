@@ -24,6 +24,10 @@ launchSettings.json
 /**/packages/
 /**/bin/
 /**/binCLI/
+/**/MASES.JNetPS/
+/**/binPSCore/
+/**/binReflector/
 /**/obj/
 /**/jars/
 _site
+/**/.AssemblyAttributes

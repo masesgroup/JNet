@@ -23,9 +23,9 @@ namespace Java.Lang
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/ClassNotFoundException.html"/>
     /// </summary>
-    public sealed class ClassNotFoundException : JVMBridgeException<ClassNotFoundException>
+    public class ClassNotFoundException : JVMBridgeException<ClassNotFoundException>
     {
         /// <inheritdoc cref="JVMBridgeException.ClassName"/>
-        public sealed override string ClassName => "java.lang.ClassNotFoundException";
+        public override string ClassName => "java.lang.ClassNotFoundException";
     }
 }

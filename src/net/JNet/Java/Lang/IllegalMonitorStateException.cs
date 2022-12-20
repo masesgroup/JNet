@@ -23,9 +23,9 @@ namespace Java.Lang
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalMonitorStateException.html"/>
     /// </summary>
-    public sealed class IllegalMonitorStateException : JVMBridgeException<IllegalMonitorStateException>
+    public class IllegalMonitorStateException : JVMBridgeException<IllegalMonitorStateException>
     {
         /// <inheritdoc cref="JVMBridgeException.ClassName"/>
-        public sealed override string ClassName => "java.lang.IllegalMonitorStateException";
+        public override string ClassName => "java.lang.IllegalMonitorStateException";
     }
 }

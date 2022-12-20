@@ -18,7 +18,6 @@
 
 using Java.Util.Function;
 using MASES.JCOBridge.C2JBridge;
-using MASES.JCOBridge.C2JBridge.JVMInterop;
 
 namespace Java.Util
 {
@@ -30,18 +29,39 @@ namespace Java.Util
         {
         }
 
-        public Map(params object[] args)
+        protected Map(params object[] args)
             : base(args)
         {
         }
 
         public void Clear() => IExecute("clear");
 
+        public bool IsEmpty => IExecute<bool>("isEmpty");
+
         public bool ContainsKey(object key) => IExecute<bool>("containsKey", key);
 
         public bool ContainsValue(object value) => IExecute<bool>("containsValue", value);
 
         public bool Remove(object key, object value) => IExecute<bool>("remove", key, value);
+
+        public int Size => IExecute<int>("size");
+
+        public class Entry<K, V> : JVMBridgeBase<Entry<K, V>>
+        {
+            public override string ClassName => "java.util.Map$Entry";
+
+            public static Comparator<Map.Entry<K, V>> ComparingByKey() => SExecute<Comparator<Map.Entry<K, V>>>("comparingByKey");
+
+            public static Comparator<Map.Entry<K, V>> ComparingByKey<SuperK>(Comparator<SuperK> cmp) where SuperK : K => SExecute<Comparator<Map.Entry<K, V>>>("comparingByKey", cmp);
+
+            public static Comparator<Map.Entry<K, V>> ComparingByValue() => SExecute<Comparator<Map.Entry<K, V>>>("comparingByValue");
+
+            public static Comparator<Map.Entry<K, V>> ComparingByValue<SuperV>(Comparator<SuperV> cmp) where SuperV : V => SExecute<Comparator<Map.Entry<K, V>>>("comparingByValue", cmp);
+
+            public K Key => IExecute<K>("getKey");
+
+            public V Value { get { return IExecute<V>("getValue"); } set { IExecute("setValue", value); } }
+        }
     }
 
     public class Map<K, V> : Map
@@ -50,10 +70,12 @@ namespace Java.Util
         {
         }
 
-        public Map(params object[] args)
+        protected Map(params object[] args)
             : base(args)
         {
         }
+
+        public Set<Entry<K, V>> EntrySet => IExecute<Set<Entry<K, V>>>("entrySet");
 
         public void ForEach<SuperK, SuperV>(BiConsumer<SuperK, SuperV> action)
             where SuperK : K
@@ -65,8 +87,6 @@ namespace Java.Util
         public V GetOrDefault(object key, V defaultValue) => IExecute<V>("getOrDefault", key, defaultValue);
 
         public virtual V Get​(K key) { return IExecute<V>("get", key); }
-
-        public bool IsEmpty => IExecute<bool>("isEmpty");
 
         public Set<K> KeySet => IExecute<Set<K>>("keySet");
 
@@ -116,8 +136,6 @@ namespace Java.Util
         {
             IExecute("replaceAll", function);
         }
-
-        public int Size => IExecute<int>("size");
 
         public Collection<V> Values => IExecute<Collection<V>>("values");
     }

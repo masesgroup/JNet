@@ -8,5 +8,13 @@
   href: API_extensibility.md
 - name: JVM callbacks
   href: jvm_callbacks.md
-- name: Usage
+- name: JNet usage
   href: usage.md
+- name: JNet CLI usage
+  href: usageCLI.md
+- name: JNet Reflector usage
+  href: usageReflector.md
+- name: JNet PowerShell usage
+  href: usagePS.md
+- name: Command-line switches
+  href: commandlineswitch.md

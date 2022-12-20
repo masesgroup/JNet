@@ -28,7 +28,7 @@ namespace JavaX.Swing
         {
         }
 
-        public JComponent(params object[] args) : base(args)
+        protected JComponent(params object[] args) : base(args)
         {
         }
     }

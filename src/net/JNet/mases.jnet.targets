@@ -1,13 +1,13 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <jars Include="$(MSBuildThisFileDirectory)\jars\*.*" />
+    <jnet_jars Include="$(MSBuildThisFileDirectory)\jars\*.*" />
   </ItemGroup>
 
   <Target Name="CopyFilesNative" BeforeTargets="Build">
-    <Copy SourceFiles="@(jars)" DestinationFolder="$(TargetDir)" />
+    <Copy SourceFiles="@(jnet_jars)" DestinationFolder="$(TargetDir)\jars" />
   </Target>
   
   <Target Name="CopyFilesNativePublish" BeforeTargets="Publish">
-    <Copy SourceFiles="@(jars)" DestinationFolder="$(PublishDir)" />
+    <Copy SourceFiles="@(jnet_jars)" DestinationFolder="$(PublishDir)\jars" />
   </Target>
 </Project>

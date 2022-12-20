@@ -7,9 +7,9 @@
     <groupId>com.masesgroup</groupId>
     <artifactId>jnet</artifactId>
     <name>mases.jnet</name>
-    <description>Java interface bridging implementation</description>
+    <description>JNet-Java interface bridging implementation</description>
     <url>https://github.com/masesgroup/JNet</url>
-    <version>1.5.0.0</version>
+    <version>${jnetversion}</version>
 
     <licenses>
         <license>
@@ -40,6 +40,7 @@
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
         <classpathfile>${basedir}/classpathfile.classpath</classpathfile>
+		<jnetversion>1.5.0.0</jnetversion>
 		<jcobridgeversion>2.5.0</jcobridgeversion>
     </properties>
     <distributionManagement>

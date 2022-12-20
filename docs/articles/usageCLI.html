@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>JNet: CLI | JNet website </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="JNet: CLI | JNet website ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="jnet-cli">JNet: CLI</h1>
+
+<h2 id="installation">Installation</h2>
+<ul>
+<li><strong>dotnet tool</strong> hosted on NuGet.org: check <a href="https://www.nuget.org/packages/MASES.JNetCLI/">https://www.nuget.org/packages/MASES.JNetCLI/</a> and <a href="https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools">https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools</a> for installation deep instructions.
+<ul>
+<li>The dotnet tool version needs and installed JRE/JDK within the system (see <a href="#jvm-identification">JVM identification</a>)</li>
+</ul>
+</li>
+<li><strong>Docker image</strong> hosted on <a href="https://github.com/masesgroup/JNet/pkgs/container/mases.jnet">https://github.com/masesgroup/JNet/pkgs/container/mases.jnet</a>: follow instruction within the page and general instruction on <a href="https://docs.docker.com">https://docs.docker.com</a>
+<ul>
+<li>The image hosts both .NET 6 and JRE 17 runtimes</li>
+</ul>
+</li>
+</ul>
+<h2 id="usage">Usage</h2>
+<p>To use the CLI interface (JNetCLI) runs a command like the following:</p>
+<ul>
+<li><strong>dotnet tool</strong></li>
+</ul>
+<blockquote>
+<p>jnet -i</p>
+</blockquote>
+<ul>
+<li><strong>Docker image</strong></li>
+</ul>
+<blockquote>
+<p>docker run ghcr.io/masesgroup/mases.jnet -i</p>
+</blockquote>
+<h2 id="command-switch-available">Command switch available</h2>
+<p><em>jnet</em> accepts the following command-line switch:</p>
+<ul>
+<li><strong>Interactive</strong> (<strong>i</strong>): Activates an interactive shell</li>
+<li><strong>RunCommand</strong> (<strong>r</strong>): executes the main method of a specific Java class in argument and exit</li>
+<li><strong>Script</strong> (<strong>s</strong>): Executes the c# script in the file arument</li>
+<li><strong>JarList</strong> (<strong>jl</strong>): A CSV list of JAR to be used or folders containing the JARs</li>
+<li><strong>NamespaceList</strong> (<strong>nl</strong>): A CSV list of namespace to be used for interactive shell, JNet namespace are added automatically</li>
+<li><strong>ImportList</strong> (<strong>il</strong>): A CSV list of import to be used</li>
+</ul>
+<p>Plus other switches available at <a href="commandlineswitch.html">Command line switch</a> page.</p>
+<h3 id="jvm-identification">JVM identification</h3>
+<p>One of the most important command-line switch is <strong>JVMPath</strong> and it is available in <a href="https://www.jcobridge.com/net-examples/command-line-options/">JCOBridge switches</a>: it can be used to set-up the location of the JVM library (jvm.dll/libjvm.so) if JCOBridge is not able to identify a suitable JRE installation.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/Documentation/articles/usageCLI.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2022 MASES s.r.l..<br>Generated by <strong>DocFX</strong></span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

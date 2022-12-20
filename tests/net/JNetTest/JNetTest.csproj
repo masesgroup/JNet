@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\Common\Common.props" />
+  <PropertyGroup>
+    <AssemblyName>JNetTest</AssemblyName>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>MASES.JNetTest</RootNamespace>
+    <Title>JNetTest - a test tool for JNet</Title>
+    <Description>JNetTest - a test tool for JNet</Description>
+  </PropertyGroup>
+</Project>

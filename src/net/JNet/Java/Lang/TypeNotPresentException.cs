@@ -23,9 +23,9 @@ namespace Java.Lang
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/TypeNotPresentException.html"/>
     /// </summary>
-    public sealed class TypeNotPresentException : JVMBridgeException<TypeNotPresentException>
+    public class TypeNotPresentException : JVMBridgeException<TypeNotPresentException>
     {
         /// <inheritdoc cref="JVMBridgeException.ClassName"/>
-        public sealed override string ClassName => "java.lang.TypeNotPresentException";
+        public override string ClassName => "java.lang.TypeNotPresentException";
     }
 }

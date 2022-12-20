@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<Import Project="..\Common\Common.props" />
+	<PropertyGroup>
+		<UseWPF>true</UseWPF>
+		<UseWindowsForms>true</UseWindowsForms>
+		<AssemblyName>JNetWinFormsTest</AssemblyName>
+		<OutputType>Exe</OutputType>
+		<RootNamespace>MASES.JNetWinFormsTest</RootNamespace>
+		<Title>JNetWinFormsTest - a test tool for JNet</Title>
+		<Description>JNetWinFormsTest - a test tool for JNet</Description>
+		<TargetFrameworks>net462;netcoreapp3.1;net6.0-windows</TargetFrameworks>
+		<DefineConstants>$(DefineConstants);WINFORMS</DefineConstants>
+	</PropertyGroup>
+	<ItemGroup>
+		<Compile Include="..\Common\EmbeddedGraphic.cs">
+			<Link>EmbeddedGraphic.cs</Link>
+		</Compile>
+	</ItemGroup>
+</Project>

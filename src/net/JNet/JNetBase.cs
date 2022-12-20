@@ -32,7 +32,7 @@ namespace MASES.JNet
         /// Used to create instance of <see cref="IJVMBridgeDefinition.ClassName"/>
         /// </summary>
         /// <param name="args">The arguments of constructor</param>
-        public JNetBase(params object[] args) : base(args) { }
+        protected JNetBase(params object[] args) : base(args) { }
     }
 
     public abstract class JNetBase<TClass, TInterface> : JVMBridgeBase<TClass, TInterface>
@@ -46,6 +46,42 @@ namespace MASES.JNet
         /// Used to create instance of <see cref="IJVMBridgeDefinition.ClassName"/>
         /// </summary>
         /// <param name="args">The arguments of constructor</param>
-        public JNetBase(params object[] args) : base(args) { }
+        protected JNetBase(params object[] args) : base(args) { }
+    }
+
+    /// <summary>
+    /// Generic class to launch a main method in a Java class
+    /// </summary>
+    public class GenericCommand : JCOBridge.C2JBridge.JVMBridgeMain<GenericCommand>
+    {
+        static object _classNameLock = new object();
+        static string _className;
+
+        /// <summary>
+        /// Creates and launch the <see cref="GenericCommand"/> class based on <paramref name="className"/>
+        /// </summary>
+        /// <param name="className">The class to be instantiated having the main method</param>
+        /// <param name="args">Arguments to send to main method</param>
+        public static void CreateAndLaunch(string className, params object[] args)
+        {
+            lock (_classNameLock)
+            {
+                try
+                {
+                    _className = className;
+                    var command = new GenericCommand();
+                    command.Execute(args);
+                }
+                finally
+                {
+                    _className = null;
+                }
+            }
+        }
+
+        /// <remarks>
+        /// Not use directly
+        /// </remarks>
+        public GenericCommand() : base(_className) { }
     }
 }

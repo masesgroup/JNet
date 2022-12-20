@@ -27,5 +27,7 @@ namespace Java.Lang
     {
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "java.lang.ClassLoader";
+
+        public static ClassLoader SystemClassLoader => SExecute<ClassLoader>("getSystemClassLoader");
     }
 }

@@ -1,4 +1,4 @@
-# JNet: the Java .NET implementation
+# JNet: .NET gateway for JVM APIs
 
 JNet is a .NET mirror of Java APIs.
 
@@ -6,12 +6,19 @@ This project adheres to the Contributor [Covenant code of conduct](CODE_OF_CONDU
 
 ## Scope of the project
 
-This project aims to create a library to direct access, from .NET, all the features available in the Java Platform, this is the counterpart of [JCOReflector](https://github.com/masesgroup/JCOReflector)
+This project aims to create a library to direct access, from .NET, all the features available in the Java Platform, this is the counterpart of [JCOReflector](https://github.com/masesgroup/JCOReflector).
 
 There are many client libraries written to manage communication with Java. Conversely, this project use directly the Java packages giving more than one benefit:
-* all implemented features are availables at no extra implementation costs, see [JNet usage](src/net/Documentation/articles/usage.md);
+* all implemented features are availables at no extra implementation costs, see [JNet usage](articles/usage.md);
 * avoids any third party communication protocol implementation;
 * access all features made available from Java platform.
+
+### News
+
+* V1.4.8+: From version 1.4.8 there is a new project, named JNetReflector (still in development phase), able to build C# gateway classes from JARs containing the JVM classes, exactly the same [JCOReflector](https://github.com/masesgroup/JCOReflector) does for .NET in JVM.
+* V1.4.9+: From version 1.4.9 there are two new projects:
+  * JNetPSCore: the core library for PowerShell development, it can be extended in other projects based on JNet;
+  * JNetPS: a PowerShell module to use JNet within a PowerShell shell.
 
 ## Runtime engine
 
@@ -22,7 +29,7 @@ JNet uses [JCOBridge](https://www.jcobridge.com), and its [features](https://www
   * JCOBridge does not use any other communication mechanism than JNI;
   * .NET (CLR) inherently inherits the cyber-security levels of running JVM; 
 * **Direct access the JVM from any .NET application**: 
-  * Any Java/Scala class can be directly managed;
+  * Any Java/Scala/Kotlin/... class can be directly managed;
   * No need to learn new APIs: we try to expose the same APIs in C# style;
   * No extra validation cycle on protocol and functionality: bug fix, improvements, new features are immediately available;
   * Documentation is shared;
@@ -30,7 +37,8 @@ JNet uses [JCOBridge](https://www.jcobridge.com), and its [features](https://www
 
 Have a look at the following resources:
 - [Release notes](https://www.jcobridge.com/release-notes/)
-- [Commercial info](https://www.jcobridge.com/pricing/)
+- [Non Profit or University](https://www.jcobridge.com/pricing/)
+- [Commercial info: Professional or Enterprise](https://www.jcobridge.com/pricing/)
 - [![JCOBridge nuget](https://img.shields.io/nuget/v/MASES.JCOBridge)](https://www.nuget.org/packages/MASES.JCOBridge)
 
 ---
@@ -40,5 +48,8 @@ Have a look at the following resources:
 * [Actual state](articles/actualstate.md)
 * [JNet usage](articles/usage.md)
 * [JNet APIs extensibility](articles/API_extensibility.md)
+* [JNet CLI usage](articles/usageCLI.md)
+* [JNet Reflector usage](articles/usageReflector.md)
+* [JNet PowerShell usage](articles/usagePS.md)
 
 ---

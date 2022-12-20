@@ -30,7 +30,7 @@ namespace JavaX.Swing
         {
         }
 
-        public AbstractSpinnerModel(params object[] args) : base(args)
+        protected AbstractSpinnerModel(params object[] args) : base(args)
         {
         }
     }

@@ -26,7 +26,7 @@ namespace Java.Awt
         {
         }
 
-        public Window(params object[] args) : base(args)
+        protected Window(params object[] args) : base(args)
         {
         }
 

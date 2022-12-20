@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<Import Project="..\Common\Common.props" />
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+		<AssemblyName>MASES.JNetPS</AssemblyName>
+		<RootNamespace>MASES.JNetPS</RootNamespace>
+		<Title>JNetPS - PowerShell command line interface for JNet</Title>
+		<Description>JNetPS - PowerShell command line interface for JNet</Description>
+		<Product>JNetPS</Product>
+		<OutputPath>..\..\..\MASES.JNetPS\</OutputPath>
+		<TargetFrameworks>net462;net6.0</TargetFrameworks>
+	</PropertyGroup>
+
+	<ItemGroup Condition="True">
+		<jnetps_jars Include="$(ProjectDir)\..\..\..\jars\*.*" />
+	</ItemGroup>
+	
+	<Target Name="CopyCustomContent" AfterTargets="AfterBuild">
+		<Copy SourceFiles="@(jnetps_jars)" DestinationFolder="$(OutDir)\jars" />
+	</Target>
+	<Target Name="CopyCustomContentOnPublish" AfterTargets="Publish">
+		<Copy SourceFiles="@(jnetps_jars)" DestinationFolder="$(PublishDir)\jars" />
+	</Target>
+
+	<ItemGroup>
+		<ProjectReference Include="..\JNetPSCore\JNetPSCore.csproj">
+			<IncludeAssets>All</IncludeAssets>
+			<PrivateAssets>None</PrivateAssets>
+		</ProjectReference>
+		<PackageReference Include="PowerShellStandard.Library" Version="5.1.1">
+			<PrivateAssets>All</PrivateAssets>
+		</PackageReference>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Update="MASES.JNetPSFramework.psd1" Condition="'$(TargetFramework)' == 'net462'">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </None>
+	  <None Update="MASES.JNetPSCore.psd1" Condition="'$(TargetFramework)' == 'net6.0'">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </None>
+	</ItemGroup>
+</Project>

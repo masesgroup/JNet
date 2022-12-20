@@ -2,55 +2,36 @@
 
 ## Installation
 
-To install the tool follows the instructions on https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools.
+- **dotnet tool** hosted on NuGet.org: check https://www.nuget.org/packages/MASES.JNetCLI/ and https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools for installation deep instructions.
+  * The dotnet tool version needs and installed JRE/JDK within the system (see [JVM identification](#jvm-identification))
+- **Docker image** hosted on https://github.com/masesgroup/JNet/pkgs/container/mases.jnet: follow instruction within the page and general instruction on https://docs.docker.com
+  * The image hosts both .NET 6 and JRE 17 runtimes
 
 ## Usage
 
 To use the CLI interface (JNetCLI) runs a command like the following:
 
-> jnet -ClassToRun ConsoleConsumer --bootstrap-server SERVER-ADDRESS:9093 --topic topic_name --from-beginning
+- **dotnet tool**
+
+> jnet -i
+
+- **Docker image**
+
+> docker run ghcr.io/masesgroup/mases.jnet -i
+
+## Command switch available
 
 _jnet_ accepts the following command-line switch:
 
-* **ClassToRun**: represents the class to be executed; the list is:
-	* Administration scope:
-		* AclCommand
-		* BrokerApiVersionsCommand
-		* ConfigCommand
-		* ConsumerGroupCommand
-		* DelegationTokenCommand
-		* DeleteRecordsCommand
-		* FeatureCommand
-		* LeaderElectionCommand
-		* LogDirsCommand
-		* ReassignPartitionsCommand
-		* TopicCommand
-		* ZkSecurityMigrator
-	* Server scope:
-		* KafkaStart
-		* ZooKeeperShell
-		* ZooKeeperStart
-	* Shell scope:
-		* MetadataShell
-	* Tools scope:
-		* ClusterTool
-		* ConsoleConsumer
-		* ConsoleProducer
-		* ConsumerPerformance
-		* DumpLogSegments
-		* GetOffsetShell
-		* MirrorMaker
-		* ProducerPerformance
-		* ReplicaVerificationTool
-		* StorageTool
-		* StreamsResetter
-		* TransactionsCommand
-		* VerifiableConsumer
-		* VerifiableProducer
-	* Connect scope:
-		* ConnectDistributed
-		* ConnectStandalone
-		* MirrorMaker2
-* **KafkaLocation**: represents the path to the root folder of Apache Kafka binary distribution; default value consider that KNetCLI uses the Apache Kafka jars available under the jars folder prepared from the package;
-* **ScalaVersion**: the scala version to be used. The default version (_2.13.6_) is binded to the deafult Apache Kafka version available in the package;
-* **Log4JConfiguration**: the log4j configuration file; the default uses the file within the package.
+* **Interactive** (**i**): Activates an interactive shell
+* **RunCommand** (**r**): executes the main method of a specific Java class in argument and exit
+* **Script** (**s**): Executes the c# script in the file arument
+* **JarList** (**jl**): A CSV list of JAR to be used or folders containing the JARs
+* **NamespaceList** (**nl**): A CSV list of namespace to be used for interactive shell, JNet namespace are added automatically
+* **ImportList** (**il**): A CSV list of import to be used
+
+Plus other switches available at [Command line switch](commandlineswitch.md) page.
+
+### JVM identification
+
+One of the most important command-line switch is **JVMPath** and it is available in [JCOBridge switches](https://www.jcobridge.com/net-examples/command-line-options/): it can be used to set-up the location of the JVM library (jvm.dll/libjvm.so) if JCOBridge is not able to identify a suitable JRE installation.

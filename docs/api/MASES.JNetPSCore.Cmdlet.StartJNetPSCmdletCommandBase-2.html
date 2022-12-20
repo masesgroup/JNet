@@ -1,0 +1,823 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class StartJNetPSCmdletCommandBase&lt;TCmdlet, TCore&gt;
+   | JNet website </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class StartJNetPSCmdletCommandBase&lt;TCmdlet, TCore&gt;
+   | JNet website ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2">
+  
+  
+  <h1 id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2" class="text-break">Class StartJNetPSCmdletCommandBase&lt;TCmdlet, TCore&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>Base class to be extended in derived projects to add other parameters</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.management.automation.internal.internalcommand">InternalCommand</a></div>
+    <div class="level2"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.management.automation.cmdlet">Cmdlet</a></div>
+    <div class="level3"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.management.automation.pscmdlet">PSCmdlet</a></div>
+    <div class="level4"><a class="xref" href="MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet-1.html">JNetPSExternalizableCmdlet</a>&lt;TCmdlet&gt;</div>
+    <div class="level5"><span class="xref">StartJNetPSCmdletCommandBase&lt;TCmdlet, TCore&gt;</span></div>
+      <div class="level6"><a class="xref" href="MASES.JNetPS.Cmdlet.StartJNetPSCmdletCommand.html">StartJNetPSCmdletCommand</a></div>
+      <div class="level6"><a class="xref" href="MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase-2.html">InvokeCommandCmdletCommandBase&lt;TCmdlet, TCore&gt;</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet-1.html#MASES_JNetPSCore_Cmdlet_JNetPSExternalizableCmdlet_1_JNetPSCmdletDetached">JNetPSExternalizableCmdlet&lt;TCmdlet&gt;.JNetPSCmdletDetached</a>
+    </div>
+    <div>
+      <a class="xref" href="MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet-1.html#MASES_JNetPSCore_Cmdlet_JNetPSExternalizableCmdlet_1_BypassJNetPSExternalize">JNetPSExternalizableCmdlet&lt;TCmdlet&gt;.BypassJNetPSExternalize</a>
+    </div>
+    <div>
+      <a class="xref" href="MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet-1.html#MASES_JNetPSCore_Cmdlet_JNetPSExternalizableCmdlet_1_ForceJNetPSExternalize">JNetPSExternalizableCmdlet&lt;TCmdlet&gt;.ForceJNetPSExternalize</a>
+    </div>
+    <div>
+      <a class="xref" href="MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet-1.html#MASES_JNetPSCore_Cmdlet_JNetPSExternalizableCmdlet_1_BeginProcessing">JNetPSExternalizableCmdlet&lt;TCmdlet&gt;.BeginProcessing()</a>
+    </div>
+    <div>
+      <a class="xref" href="MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet-1.html#MASES_JNetPSCore_Cmdlet_JNetPSExternalizableCmdlet_1_ProcessRecord">JNetPSExternalizableCmdlet&lt;TCmdlet&gt;.ProcessRecord()</a>
+    </div>
+    <div>
+      <a class="xref" href="MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet-1.html#MASES_JNetPSCore_Cmdlet_JNetPSExternalizableCmdlet_1_EndProcessing">JNetPSExternalizableCmdlet&lt;TCmdlet&gt;.EndProcessing()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.management.automation.pscmdlet.currentproviderlocation#system-management-automation-pscmdlet-currentproviderlocation(system-string)">PSCmdlet.CurrentProviderLocation(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.management.automation.pscmdlet.getresolvedproviderpathfrompspath#system-management-automation-pscmdlet-getresolvedproviderpathfrompspath(system-string-system-management-automation-providerinfo@)">PSCmdlet.GetResolvedProviderPathFromPSPath(String, ProviderInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.management.automation.pscmdlet.getunresolvedproviderpathfrompspath#system-management-automation-pscmdlet-getunresolvedproviderpathfrompspath(system-string)">PSCmdlet.GetUnresolvedProviderPathFromPSPath(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.management.automation.pscmdlet.getvariablevalue#system-management-automation-pscmdlet-getvariablevalue(system-string)">PSCmdlet.GetVariableValue(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.management.automation.pscmdlet.getvariablevalue#system-management-automation-pscmdlet-getvariablevalue(system-string-system-object)">PSCmdlet.GetVariableValue(String, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.management.automation.pscmdlet.events#system-management-automation-pscmdlet-events">PSCmdlet.Events</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.management.automation.pscmdlet.host#system-management-automation-pscmdlet-host">PSCmdlet.Host</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.management.automation.pscmdlet.invokecommand#system-management-automation-pscmdlet-invokecommand">PSCmdlet.InvokeCommand</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.management.automation.pscmdlet.invokeprovider#system-management-automation-pscmdlet-invokeprovider">PSCmdlet.InvokeProvider</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.management.automation.pscmdlet.jobmanager#system-management-automation-pscmdlet-jobmanager">PSCmdlet.JobManager</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.management.automation.pscmdlet.jobrepository#system-management-automation-pscmdlet-jobrepository">PSCmdlet.JobRepository</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.management.automation.pscmdlet.myinvocation#system-management-automation-pscmdlet-myinvocation">PSCmdlet.MyInvocation</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.management.automation.pscmdlet.pagingparameters#system-management-automation-pscmdlet-pagingparameters">PSCmdlet.PagingParameters</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.management.automation.pscmdlet.parametersetname#system-management-automation-pscmdlet-parametersetname">PSCmdlet.ParameterSetName</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.management.automation.pscmdlet.sessionstate#system-management-automation-pscmdlet-sessionstate">PSCmdlet.SessionState</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.management.automation.cmdlet.getresourcestring#system-management-automation-cmdlet-getresourcestring(system-string-system-string)">Cmdlet.GetResourceString(String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.management.automation.cmdlet.invoke#system-management-automation-cmdlet-invoke">Cmdlet.Invoke()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.management.automation.cmdlet.invoke#system-management-automation-cmdlet-invoke-1">Cmdlet.Invoke&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.management.automation.cmdlet.shouldcontinue#system-management-automation-cmdlet-shouldcontinue(system-string-system-string-system-boolean-system-boolean@-system-boolean@)">Cmdlet.ShouldContinue(String, String, Boolean, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.management.automation.cmdlet.shouldcontinue#system-management-automation-cmdlet-shouldcontinue(system-string-system-string-system-boolean@-system-boolean@)">Cmdlet.ShouldContinue(String, String, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.management.automation.cmdlet.shouldcontinue#system-management-automation-cmdlet-shouldcontinue(system-string-system-string)">Cmdlet.ShouldContinue(String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.management.automation.cmdlet.shouldprocess#system-management-automation-cmdlet-shouldprocess(system-string-system-string-system-string-system-management-automation-shouldprocessreason@)">Cmdlet.ShouldProcess(String, String, String, ShouldProcessReason)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.management.automation.cmdlet.shouldprocess#system-management-automation-cmdlet-shouldprocess(system-string)">Cmdlet.ShouldProcess(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.management.automation.cmdlet.shouldprocess#system-management-automation-cmdlet-shouldprocess(system-string-system-string)">Cmdlet.ShouldProcess(String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.management.automation.cmdlet.shouldprocess#system-management-automation-cmdlet-shouldprocess(system-string-system-string-system-string)">Cmdlet.ShouldProcess(String, String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.management.automation.cmdlet.stopprocessing#system-management-automation-cmdlet-stopprocessing">Cmdlet.StopProcessing()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.management.automation.cmdlet.throwterminatingerror#system-management-automation-cmdlet-throwterminatingerror(system-management-automation-errorrecord)">Cmdlet.ThrowTerminatingError(ErrorRecord)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.management.automation.cmdlet.transactionavailable#system-management-automation-cmdlet-transactionavailable">Cmdlet.TransactionAvailable()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.management.automation.cmdlet.writecommanddetail#system-management-automation-cmdlet-writecommanddetail(system-string)">Cmdlet.WriteCommandDetail(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.management.automation.cmdlet.writedebug#system-management-automation-cmdlet-writedebug(system-string)">Cmdlet.WriteDebug(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.management.automation.cmdlet.writeerror#system-management-automation-cmdlet-writeerror(system-management-automation-errorrecord)">Cmdlet.WriteError(ErrorRecord)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.management.automation.cmdlet.writeinformation#system-management-automation-cmdlet-writeinformation(system-object-system-string())">Cmdlet.WriteInformation(Object, String[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.management.automation.cmdlet.writeinformation#system-management-automation-cmdlet-writeinformation(system-management-automation-informationrecord)">Cmdlet.WriteInformation(InformationRecord)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.management.automation.cmdlet.writeobject#system-management-automation-cmdlet-writeobject(system-object-system-boolean)">Cmdlet.WriteObject(Object, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.management.automation.cmdlet.writeobject#system-management-automation-cmdlet-writeobject(system-object)">Cmdlet.WriteObject(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.management.automation.cmdlet.writeprogress#system-management-automation-cmdlet-writeprogress(system-management-automation-progressrecord)">Cmdlet.WriteProgress(ProgressRecord)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.management.automation.cmdlet.writeverbose#system-management-automation-cmdlet-writeverbose(system-string)">Cmdlet.WriteVerbose(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.management.automation.cmdlet.writewarning#system-management-automation-cmdlet-writewarning(system-string)">Cmdlet.WriteWarning(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.management.automation.cmdlet.commandruntime#system-management-automation-cmdlet-commandruntime">Cmdlet.CommandRuntime</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.management.automation.cmdlet.commonparameters#system-management-automation-cmdlet-commonparameters">Cmdlet.CommonParameters</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.management.automation.cmdlet.optionalcommonparameters#system-management-automation-cmdlet-optionalcommonparameters">Cmdlet.OptionalCommonParameters</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.management.automation.cmdlet.stopping#system-management-automation-cmdlet-stopping">Cmdlet.Stopping</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.management.automation.internal.internalcommand.commandorigin#system-management-automation-internal-internalcommand-commandorigin">InternalCommand.CommandOrigin</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">Object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="MASES.JNetPSCore.Cmdlet.html">MASES.JNetPSCore.Cmdlet</a></h6>
+  <h6><strong>Assembly</strong>: MASES.JNetPSCore.dll</h6>
+  <h5 id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class StartJNetPSCmdletCommandBase&lt;TCmdlet, TCore&gt; : JNetPSExternalizableCmdlet&lt;TCmdlet&gt; where TCmdlet : StartJNetPSCmdletCommandBase&lt;TCmdlet, TCore&gt; where TCore : JNetCore&lt;TCore&gt;</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TCmdlet</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TCore</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_DebugSuspendFlag.md&amp;value=---%0Auid%3A%20MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase%602.DebugSuspendFlag%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L98">View Source</a>
+  </span>
+  <a id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_DebugSuspendFlag_" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.DebugSuspendFlag*"></a>
+  <h4 id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_DebugSuspendFlag" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.DebugSuspendFlag">DebugSuspendFlag</h4>
+  <div class="markdown level1 summary"><p>Sets the value of <see cref="!:SetupJVMWrapper&lt;T>.DebugSuspendFlag"></see></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Parameter(ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = &quot;The suspend flag to be used in the debug option when JVM will be created. Default is \&quot;n\&quot;&quot;)]
+public string DebugSuspendFlag { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_EnableDebug.md&amp;value=---%0Auid%3A%20MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase%602.EnableDebug%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L82">View Source</a>
+  </span>
+  <a id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_EnableDebug_" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.EnableDebug*"></a>
+  <h4 id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_EnableDebug" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.EnableDebug">EnableDebug</h4>
+  <div class="markdown level1 summary"><p>Sets the value of <see cref="!:SetupJVMWrapper&lt;T>.EnableDebug"></see></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Parameter(ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = &quot;Put in command line to enable JVM debug&quot;)]
+public bool? EnableDebug { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_HeapSize.md&amp;value=---%0Auid%3A%20MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase%602.HeapSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L114">View Source</a>
+  </span>
+  <a id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_HeapSize_" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.HeapSize*"></a>
+  <h4 id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_HeapSize" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.HeapSize">HeapSize</h4>
+  <div class="markdown level1 summary"><p>Sets the global value of the heap size</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Parameter(ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = &quot;The Heap size (-Xmx) to be set when JVM will be created&quot;)]
+public string HeapSize { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_InitialHeapSize.md&amp;value=---%0Auid%3A%20MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase%602.InitialHeapSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L122">View Source</a>
+  </span>
+  <a id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_InitialHeapSize_" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.InitialHeapSize*"></a>
+  <h4 id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_InitialHeapSize" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.InitialHeapSize">InitialHeapSize</h4>
+  <div class="markdown level1 summary"><p>Sets the global value of the heap size</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Parameter(ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = &quot;The initial Heap size (-Xms) to be set when JVM will be created&quot;)]
+public string InitialHeapSize { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_JavaDebugOpts.md&amp;value=---%0Auid%3A%20MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase%602.JavaDebugOpts%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L106">View Source</a>
+  </span>
+  <a id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_JavaDebugOpts_" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.JavaDebugOpts*"></a>
+  <h4 id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_JavaDebugOpts" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.JavaDebugOpts">JavaDebugOpts</h4>
+  <div class="markdown level1 summary"><p>Sets the value of <see cref="!:SetupJVMWrapper&lt;T>.JavaDebugOpts"></see></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Parameter(ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = &quot;The string to be used in the debug option when JVM will be created. Default is \&quot;-agentlib:jdwp=transport=dt_socket,server=y,suspend={JVMDebugSuspendFlag},address={JVMDebugPort}\&quot;&quot;)]
+public string JavaDebugOpts { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_JavaDebugPort.md&amp;value=---%0Auid%3A%20MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase%602.JavaDebugPort%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L90">View Source</a>
+  </span>
+  <a id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_JavaDebugPort_" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.JavaDebugPort*"></a>
+  <h4 id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_JavaDebugPort" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.JavaDebugPort">JavaDebugPort</h4>
+  <div class="markdown level1 summary"><p>Sets the value of <see cref="!:SetupJVMWrapper&lt;T>.JavaDebugPort"></see></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Parameter(ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = &quot;The port to be used for debug when JVM will be created&quot;)]
+public short? JavaDebugPort { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">Int16</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_JDKHome.md&amp;value=---%0Auid%3A%20MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase%602.JDKHome%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L42">View Source</a>
+  </span>
+  <a id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_JDKHome_" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.JDKHome*"></a>
+  <h4 id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_JDKHome" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.JDKHome">JDKHome</h4>
+  <div class="markdown level1 summary"><p>Sets the value of <see cref="!:SetupJVMWrapper&lt;T>.JDKHome"></see></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Parameter(ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = &quot;The path where is located the JRE of the installed JDK&quot;)]
+public string JDKHome { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_JmxPort.md&amp;value=---%0Auid%3A%20MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase%602.JmxPort%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L74">View Source</a>
+  </span>
+  <a id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_JmxPort_" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.JmxPort*"></a>
+  <h4 id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_JmxPort" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.JmxPort">JmxPort</h4>
+  <div class="markdown level1 summary"><p>Sets the value of <see cref="!:SetupJVMWrapper&lt;T>.JmxPort"></see></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Parameter(ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = &quot;The JMX port to be set when JVM will be created&quot;)]
+public short? JmxPort { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">Int16</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_JNIOutputFile.md&amp;value=---%0Auid%3A%20MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase%602.JNIOutputFile%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L66">View Source</a>
+  </span>
+  <a id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_JNIOutputFile_" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.JNIOutputFile*"></a>
+  <h4 id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_JNIOutputFile" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.JNIOutputFile">JNIOutputFile</h4>
+  <div class="markdown level1 summary"><p>Sets the value of <see cref="!:SetupJVMWrapper&lt;T>.JNIOutputFile"></see></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Parameter(ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = &quot;The path where the JNI verbose info will be written. The file will be opened in append mode&quot;)]
+public string JNIOutputFile { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_JNIVerbosity.md&amp;value=---%0Auid%3A%20MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase%602.JNIVerbosity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L58">View Source</a>
+  </span>
+  <a id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_JNIVerbosity_" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.JNIVerbosity*"></a>
+  <h4 id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_JNIVerbosity" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.JNIVerbosity">JNIVerbosity</h4>
+  <div class="markdown level1 summary"><p>Sets the value of <see cref="!:SetupJVMWrapper&lt;T>.JNIVerbosity"></see></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Parameter(ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = &quot;Sets the verbosity of the JNI interface. See oracle documentation&quot;)]
+public string JNIVerbosity { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_JVMPath.md&amp;value=---%0Auid%3A%20MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase%602.JVMPath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L50">View Source</a>
+  </span>
+  <a id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_JVMPath_" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.JVMPath*"></a>
+  <h4 id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_JVMPath" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.JVMPath">JVMPath</h4>
+  <div class="markdown level1 summary"><p>Sets the value of <see cref="!:SetupJVMWrapper&lt;T>.JVMPath"></see></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Parameter(ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = &quot;The path to the JRE ennvironment or full path to (jvm.dll/libjvm.so). If not set the library try to find a suitable version on the system&quot;)]
+public string JVMPath { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_LicensePath.md&amp;value=---%0Auid%3A%20MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase%602.LicensePath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L34">View Source</a>
+  </span>
+  <a id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_LicensePath_" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.LicensePath*"></a>
+  <h4 id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_LicensePath" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.LicensePath">LicensePath</h4>
+  <div class="markdown level1 summary"><p>Sets the value of <see cref="!:SetupJVMWrapper&lt;T>.LicensePath"></see></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Parameter(ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = &quot;The path where is located the license file&quot;)]
+public string LicensePath { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_LogClassPath.md&amp;value=---%0Auid%3A%20MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase%602.LogClassPath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L130">View Source</a>
+  </span>
+  <a id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_LogClassPath_" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.LogClassPath*"></a>
+  <h4 id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_LogClassPath" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.LogClassPath">LogClassPath</h4>
+  <div class="markdown level1 summary"><p>Sets the global value of the log class path</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Parameter(ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, HelpMessage = &quot;Set to true to print ClassPath&quot;)]
+public bool? LogClassPath { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_CreateGlobalInstance.md&amp;value=---%0Auid%3A%20MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase%602.CreateGlobalInstance%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L164">View Source</a>
+  </span>
+  <a id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_CreateGlobalInstance_" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.CreateGlobalInstance*"></a>
+  <h4 id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_CreateGlobalInstance" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.CreateGlobalInstance">CreateGlobalInstance()</h4>
+  <div class="markdown level1 summary"><p>Invokes the <span class="xref">MASES.JCOBridge.C2JBridge.SetupJVMWrapper&lt;T&gt;.CreateGlobalInstance()</span></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void CreateGlobalInstance()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_OnAfterCreateGlobalInstance.md&amp;value=---%0Auid%3A%20MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase%602.OnAfterCreateGlobalInstance%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L168">View Source</a>
+  </span>
+  <a id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_OnAfterCreateGlobalInstance_" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.OnAfterCreateGlobalInstance*"></a>
+  <h4 id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_OnAfterCreateGlobalInstance" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.OnAfterCreateGlobalInstance">OnAfterCreateGlobalInstance()</h4>
+  <div class="markdown level1 summary"><p>Executes the code after invoke <a class="xref" href="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-2.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_CreateGlobalInstance">CreateGlobalInstance()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnAfterCreateGlobalInstance()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_OnBeforeCreateGlobalInstance.md&amp;value=---%0Auid%3A%20MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase%602.OnBeforeCreateGlobalInstance%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L160">View Source</a>
+  </span>
+  <a id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_OnBeforeCreateGlobalInstance_" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.OnBeforeCreateGlobalInstance*"></a>
+  <h4 id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_OnBeforeCreateGlobalInstance" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.OnBeforeCreateGlobalInstance">OnBeforeCreateGlobalInstance()</h4>
+  <div class="markdown level1 summary"><p>Executes the code before invoke <a class="xref" href="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-2.html#MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_CreateGlobalInstance">CreateGlobalInstance()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnBeforeCreateGlobalInstance()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_ProcessCommand.md&amp;value=---%0Auid%3A%20MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase%602.ProcessCommand%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L138">View Source</a>
+  </span>
+  <a id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_ProcessCommand_" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.ProcessCommand*"></a>
+  <h4 id="MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2_ProcessCommand" data-uid="MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase`2.ProcessCommand">ProcessCommand()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void ProcessCommand()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet&lt;TCmdlet&gt;.ProcessCommand()</span></div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="MASES.JNetPSCore.JNetPSHelperExtensions.html#MASES_JNetPSCore_JNetPSHelperExtensions_NounName__1___0_">JNetPSHelperExtensions.NounName&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="MASES.JNetPSCore.JNetPSHelperExtensions.html#MASES_JNetPSCore_JNetPSHelperExtensions_VerbName__1___0_">JNetPSHelperExtensions.VerbName&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="MASES.JNetPSCore.JNetPSHelper.html#MASES_JNetPSCore_JNetPSHelper_WriteExtendedError_System_Management_Automation_Cmdlet_System_Exception_">JNetPSHelper.WriteExtendedError(Cmdlet, Exception)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetPSCore_Cmdlet_StartJNetPSCmdletCommandBase_2.md&amp;value=---%0Auid%3A%20MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase%602%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/Cmdlet/StartJNetPSCmdletCommandBase.cs/#L29" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2022 MASES s.r.l..<br>Generated by <strong>DocFX</strong></span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

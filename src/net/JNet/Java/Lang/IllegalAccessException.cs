@@ -23,9 +23,9 @@ namespace Java.Lang
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalAccessException.html"/>
     /// </summary>
-    public sealed class IllegalAccessException : JVMBridgeException<IllegalAccessException>
+    public class IllegalAccessException : JVMBridgeException<IllegalAccessException>
     {
         /// <inheritdoc cref="JVMBridgeException.ClassName"/>
-        public sealed override string ClassName => "java.lang.IllegalAccessException";
+        public override string ClassName => "java.lang.IllegalAccessException";
     }
 }

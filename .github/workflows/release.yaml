@@ -16,25 +16,20 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:    
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           fetch-depth: '1'
           submodules: 'true'
 
-      - name: Cache local Maven repository
-        uses: actions/cache@v2
-        with:
-          path: ~/.m2/repository
-          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
-          restore-keys: |
-            ${{ runner.os }}-maven-
       - name: Pre compile
         run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" src/net/JNet/JNet.csproj
         
       - name: Set up Apache Maven Central
-        uses: actions/setup-java@v1
+        uses: actions/setup-java@v3
         with: # running setup-java again overwrites the settings.xml
+          distribution: temurin
           java-version: 11
+          cache: 'maven'
           server-id: ossrh # Value of the distributionManagement/repository/id field of the pom.xml
           server-username: MAVEN_USERNAME # env variable for username in deploy
           server-password: MAVEN_CENTRAL_TOKEN # env variable for token in deploy
@@ -86,7 +81,7 @@ jobs:
         run: git config --system core.longpaths true
       
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it                                                                                  
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           fetch-depth: '1'
           submodules: 'true'
@@ -95,9 +90,11 @@ jobs:
         run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" src\net\JNet\JNet.csproj
 
       - name: Set up Apache Maven Central
-        uses: actions/setup-java@v1
+        uses: actions/setup-java@v3
         with: # running setup-java again overwrites the settings.xml
+          distribution: temurin
           java-version: 11
+          cache: 'maven'
           server-id: ossrh # Value of the distributionManagement/repository/id field of the pom.xml
           server-username: MAVEN_USERNAME # env variable for username in deploy
           server-password: MAVEN_CENTRAL_TOKEN # env variable for token in deploy
@@ -105,7 +102,7 @@ jobs:
           gpg-passphrase: MAVEN_GPG_PASSPHRASE # env variable for GPG private key passphrase
 
       - name: Install local file to be used within Javadoc plugin of generated POM
-        run: mvn install:install-file -DgroupId=JCOBridge -DartifactId=JCOBridge -Dversion=2.5.0 -Dpackaging=jar -Dfile=./bin/net6.0/JCOBridge.jar
+        run: mvn install:install-file -DgroupId=JCOBridge -DartifactId=JCOBridge -Dversion=2.4.14 -Dpackaging=jar -Dfile=./bin/net6.0/JCOBridge.jar
         shell: bash
 
       - name: Create Jars
@@ -115,14 +112,31 @@ jobs:
           MAVEN_CENTRAL_TOKEN: ${{ secrets.MAVEN_CENTRAL_TOKEN }}
           MAVEN_GPG_PASSPHRASE: ${{ secrets.MAVEN_GPG_PASSPHRASE }}
 
-      - name: Compile command line
+      - name: Compile JNetCLI
         run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" src\net\JNetCLI\JNetCLI.csproj
-      
-      - uses: nuget/setup-nuget@v1
+ 
+      - name: Compile JNetReflector
+        run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" src\net\JNetReflector\JNetReflector.csproj
+ 
+      - name: Compile JNetPSCore
+        run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" src\net\JNetPSCore\JNetPSCore.csproj
+        
+      - name: Compile JNetPS
+        run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" src\net\JNetPS\JNetPS.csproj
+ 
+      - uses: nuget/setup-nuget@v1.1.1
         with:
           nuget-version: '5.x'
           
       - run: nuget pack src\net\JNetCLI\JNetCLI.nuspec -OutputDirectory .\bin
+      - run: nuget pack src\net\JNetReflector\JNetReflector.nuspec -OutputDirectory .\bin
+
+      - name: Prepare PowerShell package
+        run: |
+          Copy-Item .\src\net\JNetPS\MASES.JNetPS.psd1 -Destination .\MASES.JNetPS\MASES.JNetPS.psd1 -Force
+          Copy-Item .\src\net\JNetPS\MASES.JNetPS.psm1 -Destination .\MASES.JNetPS\MASES.JNetPS.psm1 -Force
+          New-FileCatalog -Path .\MASES.JNetPS\ -CatalogFilePath .\MASES.JNetPS\MASES.JNetPS.cat
+        shell: pwsh
 
       - name: Recompile to create nuget packages
         run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" src\net\JNet.sln
@@ -130,6 +144,12 @@ jobs:
       - name: Authnticate to GitHub
         run: dotnet nuget add source --username ${{ github.actor }} --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json"
 
+      - name: Publish to PowerShell Gallery
+        run: |
+          $env:DOTNET_CLI_UI_LANGUAGE="en_US"
+          Publish-Module -Name .\MASES.JNetPS -NuGetApiKey ${{ secrets.MASES_POWERSHELLGALLERY_API_KEY }}
+        shell: pwsh
+        
       - name: Publish to GitHub
         run: |
           nuget push .\bin\*.nupkg -ApiKey ${{ secrets.GITHUB_TOKEN }} -Source "github" -SkipDuplicate

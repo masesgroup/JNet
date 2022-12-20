@@ -16,6 +16,7 @@
 *  Refer to LICENSE for more information.
 */
 
+using Java.Lang;
 using Java.Util.Function;
 using MASES.JCOBridge.C2JBridge;
 
@@ -38,6 +39,10 @@ namespace Java.Util
 
     public class List<E> : List
     {
+        public static implicit operator Collection<E>(List<E> instance) => instance.Cast<Collection<E>>();
+
+        public static implicit operator Iterable<E>(List<E> instance) => instance.Cast<Iterable<E>>();
+
         public void Add​(int index, E element) => IExecute("add", index, element);
 
         public bool Add​(E e) => IExecute<bool>("add", e);

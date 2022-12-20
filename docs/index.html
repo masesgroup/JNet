@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>JNet: the Java .NET implementation | JNet website </title>
+    <title>JNet: .NET gateway for JVM APIs | JNet website </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="JNet: the Java .NET implementation | JNet website ">
+    <meta name="title" content="JNet: .NET gateway for JVM APIs | JNet website ">
     <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="favicon.ico">
@@ -60,17 +60,27 @@
         <div class="article row grid">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="jnet-the-java-net-implementation">JNet: the Java .NET implementation</h1>
+<h1 id="jnet-net-gateway-for-jvm-apis">JNet: .NET gateway for JVM APIs</h1>
 
 <p>JNet is a .NET mirror of Java APIs.</p>
 <p>This project adheres to the Contributor <a href="CODE_OF_CONDUCT.md">Covenant code of conduct</a>. By participating, you are expected to uphold this code. Please report unacceptable behavior to coc_reporting@masesgroup.com.</p>
 <h2 id="scope-of-the-project">Scope of the project</h2>
-<p>This project aims to create a library to direct access, from .NET, all the features available in the Java Platform, this is the counterpart of <a href="https://github.com/masesgroup/JCOReflector">JCOReflector</a></p>
+<p>This project aims to create a library to direct access, from .NET, all the features available in the Java Platform, this is the counterpart of <a href="https://github.com/masesgroup/JCOReflector">JCOReflector</a>.</p>
 <p>There are many client libraries written to manage communication with Java. Conversely, this project use directly the Java packages giving more than one benefit:</p>
 <ul>
-<li>all implemented features are availables at no extra implementation costs, see <a href="src/net/Documentation/articles/usage.md">JNet usage</a>;</li>
+<li>all implemented features are availables at no extra implementation costs, see <a href="articles/usage.html">JNet usage</a>;</li>
 <li>avoids any third party communication protocol implementation;</li>
 <li>access all features made available from Java platform.</li>
+</ul>
+<h3 id="news">News</h3>
+<ul>
+<li>V1.4.8+: From version 1.4.8 there is a new project, named JNetReflector (still in development phase), able to build C# gateway classes from JARs containing the JVM classes, exactly the same <a href="https://github.com/masesgroup/JCOReflector">JCOReflector</a> does for .NET in JVM.</li>
+<li>V1.4.9+: From version 1.4.9 there are two new projects:
+<ul>
+<li>JNetPSCore: the core library for PowerShell development, it can be extended in other projects based on JNet;</li>
+<li>JNetPS: a PowerShell module to use JNet within a PowerShell shell.</li>
+</ul>
+</li>
 </ul>
 <h2 id="runtime-engine">Runtime engine</h2>
 <p>JNet uses <a href="https://www.jcobridge.com">JCOBridge</a>, and its <a href="https://www.jcobridge.com/features/">features</a>, to obtain many benefits:</p>
@@ -85,7 +95,7 @@
 </li>
 <li><strong>Direct access the JVM from any .NET application</strong>:
 <ul>
-<li>Any Java/Scala class can be directly managed;</li>
+<li>Any Java/Scala/Kotlin/... class can be directly managed;</li>
 <li>No need to learn new APIs: we try to expose the same APIs in C# style;</li>
 <li>No extra validation cycle on protocol and functionality: bug fix, improvements, new features are immediately available;</li>
 <li>Documentation is shared;</li>
@@ -96,7 +106,8 @@
 <p>Have a look at the following resources:</p>
 <ul>
 <li><a href="https://www.jcobridge.com/release-notes/">Release notes</a></li>
-<li><a href="https://www.jcobridge.com/pricing/">Commercial info</a></li>
+<li><a href="https://www.jcobridge.com/pricing/">Non Profit or University</a></li>
+<li><a href="https://www.jcobridge.com/pricing/">Commercial info: Professional or Enterprise</a></li>
 <li><a href="https://www.nuget.org/packages/MASES.JCOBridge"><img src="https://img.shields.io/nuget/v/MASES.JCOBridge" alt="JCOBridge nuget"></a></li>
 </ul>
 <hr>
@@ -106,6 +117,9 @@
 <li><a href="articles/actualstate.html">Actual state</a></li>
 <li><a href="articles/usage.html">JNet usage</a></li>
 <li><a href="articles/API_extensibility.html">JNet APIs extensibility</a></li>
+<li><a href="articles/usageCLI.html">JNet CLI usage</a></li>
+<li><a href="articles/usageReflector.html">JNet Reflector usage</a></li>
+<li><a href="articles/usagePS.html">JNet PowerShell usage</a></li>
 </ul>
 <hr>
 </article>

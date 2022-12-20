@@ -23,9 +23,9 @@ namespace Java.Lang
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/StringIndexOutOfBoundsException.html"/>
     /// </summary>
-    public sealed class StringIndexOutOfBoundsException : JVMBridgeException<StringIndexOutOfBoundsException>
+    public class StringIndexOutOfBoundsException : JVMBridgeException<StringIndexOutOfBoundsException>
     {
         /// <inheritdoc cref="JVMBridgeException.ClassName"/>
-        public sealed override string ClassName => "java.lang.StringIndexOutOfBoundsException";
+        public override string ClassName => "java.lang.StringIndexOutOfBoundsException";
     }
 }
