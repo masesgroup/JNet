@@ -22,7 +22,7 @@ Author = 'MASES s.r.l.'
 CompanyName = 'MASES s.r.l.'
 
 # Copyright statement for this module
-Copyright = 'Copyright ©  MASES s.r.l. 2022'
+Copyright = 'Copyright ©  MASES s.r.l. 2023'
 
 # Description of the functionality provided by this module
 Description = 'PowerShell Module to use JVM and PowerShell side-by-side. With JNetPS it is possible to use JVM objects within PowerShell. See https://github.com/masesgroup/JNet for further information.'

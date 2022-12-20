@@ -11,7 +11,7 @@
     <repository type="git" url="https://github.com/masesgroup/JNet/" />
     <description>JNetCLI - CLI interface of JNet</description>
     <releaseNotes>https://github.com/masesgroup/JNet/releases</releaseNotes>
-    <copyright>Copyright ©  MASES s.r.l. 2022</copyright>
+    <copyright>Copyright ©  MASES s.r.l. 2023</copyright>
     <license type="file">LICENSE</license>
     <icon>JCOB128x128.png</icon>
     <tags>jnet cli dotnet clr netcore net6</tags>
