@@ -37,6 +37,6 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// Uses the constructor represented by this <see cref="Constructor"/> object to create and initialize a new instance of the constructor's declaring class, with the specified initialization parameters.
         /// </summary>
-        public T NewInstance(params object[] initargs) => IExecute<T>("newInstance", initargs);
+        public T NewInstance(params object[] initargs) => initargs.Length == 0 ? IExecute<T>("newInstance") : IExecute<T>("newInstance", initargs);
     }
 }

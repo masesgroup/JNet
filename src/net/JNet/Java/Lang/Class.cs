@@ -115,7 +115,7 @@ namespace Java.Lang
         /// <summary>
         /// Returns a Constructor object that reflects the specified public constructor of the class represented by this Class object.
         /// </summary>
-        public Constructor GetConstructor(params Class[] parameterTypes) => IExecute<Constructor>("getConstructor", parameterTypes);
+        public Constructor GetConstructor(params Class[] parameterTypes) => parameterTypes.Length == 0 ? IExecute<Constructor>("getConstructor") : IExecute<Constructor>("getConstructor", parameterTypes);
         /// <summary>
         /// Returns an array containing <see cref="Constructor"/> objects reflecting all the public constructors of the class represented by this <see cref="Class"/> object..
         /// </summary>
@@ -131,7 +131,7 @@ namespace Java.Lang
         /// <summary>
         /// Returns a Constructor object that reflects the specified constructor of the class or interface represented by this Class object.
         /// </summary>
-        public Constructor GetDeclaredConstructor(params Class[] parameterTypes) => IExecute<Constructor>("getDeclaredConstructor", parameterTypes);
+        public Constructor GetDeclaredConstructor(params Class[] parameterTypes) => parameterTypes.Length == 0 ? IExecute<Constructor>("getDeclaredConstructor") : IExecute<Constructor>("getDeclaredConstructor", parameterTypes);
         /// <summary>
         /// Returns an array of <see cref="Constructor"/> objects reflecting all the constructors declared by the class represented by this <see cref="Class"/> object.
         /// </summary>
@@ -191,9 +191,9 @@ namespace Java.Lang
         /// <summary>
         /// Returns a <see cref="Method"/> object that reflects the specified public member method of the class or interface represented by this <see cref="Class"/> object.
         /// </summary>
-        public Method GetMethod(string name, params Class[] parameterTypes) => IExecute<Method>("getMethod", name, parameterTypes);
+        public Method GetMethod(string name, params Class[] parameterTypes) => parameterTypes.Length == 0 ? IExecute<Method>("getMethod", name) : IExecute<Method>("getMethod", name, parameterTypes);
         /// <summary>
-        /// Returns an array containing Method objects reflecting all the public member methods of the class or interface represented by this <see cref="Class"/> object, including those declared by the class or interface and those inherited from superclasses and superinterfaces.
+        /// Returns an array containing <see cref="Method"/> objects reflecting all the public member methods of the class or interface represented by this <see cref="Class"/> object, including those declared by the class or interface and those inherited from superclasses and superinterfaces.
         /// </summary>
         public Method[] Methods => this.IExecuteArray<Method>("getMethods");
         /// <summary>

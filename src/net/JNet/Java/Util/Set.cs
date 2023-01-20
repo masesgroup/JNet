@@ -28,7 +28,7 @@ namespace Java.Util
 
         public static Set<E> Of(E e1) => SExecute<Set<E>>("of", e1);
 
-        public static Set<E> Of(params E[] elements) => SExecute<Set<E>>("of", elements);
+        public static Set<E> Of(params E[] elements) => elements.Length == 0 ? SExecute<Set<E>>("of") : SExecute<Set<E>>("of", elements);
 
         public static Set<E> Of(E e1, E e2) => SExecute<Set<E>>("of", e1, e2);
 
