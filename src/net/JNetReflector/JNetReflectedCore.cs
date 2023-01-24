@@ -52,6 +52,13 @@ namespace MASES.JNetReflector
                         Default = null,
                         Help = "The base URL of the Javadoc to be associated to the classes",
                     },
+                    new ArgumentMetadata<int>()
+                    {
+                        Name = CLIParam.JavadocVersion,
+                        Type = ArgumentType.Double,
+                        Default = 11,
+                        Help = "The version of the Javadoc to be associated to the classes",
+                    },
                     new ArgumentMetadata<string>()
                     {
                         Name = CLIParam.DestinationRootPath,
@@ -96,6 +103,9 @@ namespace MASES.JNetReflector
         static string _OriginJavadocUrl;
         public static string OriginJavadocUrl => _OriginJavadocUrl;
 
+        static int _JavadocVersion;
+        public static int JavadocVersion => _JavadocVersion;
+
         static string _DestinationRootPath;
         public static string DestinationRootPath => _DestinationRootPath;
 
@@ -136,7 +146,7 @@ namespace MASES.JNetReflector
             if (ParsedArgs.Exist(CLIParam.NamespacesToAvoid))
             {
                 var namespaces = ParsedArgs.Get<string>(CLIParam.NamespacesToAvoid).Split(',', ';');
-                foreach (var item in namespaces.Select((o) => o.Replace('/', '.')))
+                foreach (var item in namespaces.Select((o) => o.Replace(SpecialNames.JNISeparator, SpecialNames.NamespaceSeparator)))
                 {
                     if (!namespacesToAvoid.Contains(item)) namespacesToAvoid.Add(item);
                 }
@@ -147,6 +157,7 @@ namespace MASES.JNetReflector
             _DestinationRootPath = Path.GetFullPath(destinationFolder);
 
             _OriginJavadocUrl = ParsedArgs.Get<string>(CLIParam.OriginJavadocUrl);
+            _JavadocVersion = ParsedArgs.Get<int>(CLIParam.JavadocVersion);
 
             _DryRun = ParsedArgs.Get<bool>(CLIParam.DryRun);
 
