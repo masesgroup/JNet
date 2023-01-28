@@ -40,8 +40,8 @@
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
         <classpathfile>${basedir}/classpathfile.classpath</classpathfile>
-		<jnetversion>1.4.15.0</jnetversion>
-		<jcobridgeversion>2.4.14</jcobridgeversion>
+		<jnetversion>1.5.0.0</jnetversion>
+		<jcobridgeversion>2.5.0</jcobridgeversion>
     </properties>
     <distributionManagement>
         <snapshotRepository>

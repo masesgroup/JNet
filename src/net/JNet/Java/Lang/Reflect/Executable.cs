@@ -1,5 +1,5 @@
 ﻿/*
-*  Copyright 2022 MASES s.r.l.
+*  Copyright 2023 MASES s.r.l.
 *
 *  Licensed under the Apache License, Version 2.0 (the "License");
 *  you may not use this file except in compliance with the License.
@@ -35,11 +35,11 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// Returns an array of <see cref="AnnotatedType"/> objects that represent the use of types to specify the declared exceptions of the method/constructor represented by this <see cref="Executable"/>.
         /// </summary>
-        public AnnotatedType[] AnnotatedExceptionTypes => this.IExecuteArray<AnnotatedType>("getAnnotatedExceptionTypes");
+        public AnnotatedType[] AnnotatedExceptionTypes => IExecuteArray<AnnotatedType>("getAnnotatedExceptionTypes");
         /// <summary>
         /// Returns an array of <see cref="AnnotatedType"/> objects that represent the use of types to specify formal parameter types of the method/constructor represented by this <see cref="Executable"/>.
         /// </summary>
-        public AnnotatedType[] AnnotatedParameterTypes => this.IExecuteArray<AnnotatedType>("getAnnotatedParameterTypes");
+        public AnnotatedType[] AnnotatedParameterTypes => IExecuteArray<AnnotatedType>("getAnnotatedParameterTypes");
         /// <summary>
         ///  Returns an <see cref="AnnotatedType"/> object that represents the use of a type to specify the receiver type of the method/constructor represented by this <see cref="Executable"/> object.
         /// </summary>
@@ -55,15 +55,15 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// Returns an array of <see cref="Class"/> objects that represent the types of exceptions declared to be thrown by the underlying executable represented by this object.
         /// </summary>
-        public Class[] ExceptionTypes => this.IExecuteArray<Class>("getExceptionTypes");
+        public Class[] ExceptionTypes => IExecuteArray<Class>("getExceptionTypes");
         /// <summary>
         /// Returns an array of Type objects that represent the exceptions declared to be thrown by this executable object.
         /// </summary>
-        public Type[] GenericExceptionTypes => this.IExecuteArray<Type>("getGenericExceptionTypes");
+        public Type[] GenericExceptionTypes => IExecuteArray<Type>("getGenericExceptionTypes");
         /// <summary>
         /// Returns an array of Type objects that represent the formal parameter types, in declaration order, of the executable represented by this object.
         /// </summary>
-        public Type[] GenericParameterTypes => this.IExecuteArray<Type>("getGenericParameterTypes");
+        public Type[] GenericParameterTypes => IExecuteArray<Type>("getGenericParameterTypes");
         /// <summary>
         /// Returns the Java language modifiers for the executable represented by this object.
         /// </summary>
@@ -83,15 +83,15 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// Returns an array of Parameter objects that represent all the parameters to the underlying executable represented by this object.
         /// </summary>
-        public Parameter[] Parameters => this.IExecuteArray<Parameter>("getParameters");
+        public Parameter[] Parameters => IExecuteArray<Parameter>("getParameters");
         /// <summary>
         /// Returns an array of Class objects that represent the formal parameter types, in declaration order, of the executable represented by this object.
         /// </summary>
-        public Class[] ParameterTypes => this.IExecuteArray<Class>("getParameterTypes");
+        public Class[] ParameterTypes => IExecuteArray<Class>("getParameterTypes");
         /// <summary>
         /// Returns an array of <see cref="TypeVariable"/> objects that represent the type variables declared by the generic declaration represented by this GenericDeclaration object, in declaration order.
         /// </summary>
-        public TypeVariable[] TypeParameters => this.IExecuteArray<TypeVariable>("getTypeParameters");
+        public TypeVariable[] TypeParameters => IExecuteArray<TypeVariable>("getTypeParameters");
         /// <summary>
         /// Returns <see langword="true"/> if this executable is a synthetic construct; returns <see langword="false"/> otherwise.
         /// </summary>

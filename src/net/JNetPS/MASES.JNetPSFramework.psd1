@@ -10,7 +10,7 @@
 ModuleToProcess = 'MASES.JNetPS.dll'
 
 # Version number of this module.
-ModuleVersion = '1.4.15'
+ModuleVersion = '1.5.0'
 
 # ID used to uniquely identify this module
 GUID = 'AD7117B7-AC1A-4769-80FC-BF63A11D2B92'
@@ -22,7 +22,7 @@ Author = 'MASES s.r.l.'
 CompanyName = 'MASES s.r.l.'
 
 # Copyright statement for this module
-Copyright = 'Copyright ©  MASES s.r.l. 2022'
+Copyright = 'Copyright ©  MASES s.r.l. 2023'
 
 # Description of the functionality provided by this module
 Description = 'PowerShell Module to use JVM and PowerShell side-by-side. With JNetPS it is possible to use JVM objects within PowerShell. See https://github.com/masesgroup/JNet for further information.'

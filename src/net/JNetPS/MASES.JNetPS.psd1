@@ -8,7 +8,7 @@
 
 RootModule = 'MASES.JNetPS.psm1'
 
-ModuleVersion = '1.4.15'
+ModuleVersion = '1.5.0'
 
 # CompatiblePSEditions = @()
 
@@ -18,7 +18,7 @@ Author = 'MASES s.r.l.'
 
 CompanyName = 'MASES s.r.l.'
 
-Copyright = 'Copyright ©  MASES s.r.l. 2022'
+Copyright = 'Copyright ©  MASES s.r.l. 2023'
 
 Description = 'JNet PowerShell (aka JNetPS) is a PowerShell Module to use JVM and PowerShell side-by-side. With JNetPS it is possible to:
 - create and use JVM objects from PowerShell: initialize JVM object (Java, Scala, Kotlin, ...), execute mehods on the object, read data from the object to be used for further PowerShell code 

@@ -1,5 +1,5 @@
 ﻿/*
-*  Copyright 2022 MASES s.r.l.
+*  Copyright 2023 MASES s.r.l.
 *
 *  Licensed under the Apache License, Version 2.0 (the "License");
 *  you may not use this file except in compliance with the License.
@@ -16,12 +16,21 @@
 *  Refer to LICENSE for more information.
 */
 
+using Java.Lang;
 using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio
 {
-    public class ByteBuffer : JVMBridgeBase<ByteBuffer>
+    public class ByteBuffer : Buffer
     {
         public override string ClassName => "java.nio.ByteBuffer";
+
+        public static implicit operator Comparable<ByteBuffer>(ByteBuffer buffer) => buffer.Cast<Comparable<ByteBuffer>>();
+
+        public static ByteBuffer Allocate(int capacity) => SExecute<ByteBuffer>("allocate", capacity);
+
+        public static ByteBuffer AllocateDirect(int capacity) => SExecute<ByteBuffer>("allocateDirect", capacity);
+
+        public byte[] Array => IExecute<byte[]>("array");
     }
 }

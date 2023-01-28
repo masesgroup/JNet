@@ -1,5 +1,5 @@
 ﻿/*
-*  Copyright 2022 MASES s.r.l.
+*  Copyright 2023 MASES s.r.l.
 *
 *  Licensed under the Apache License, Version 2.0 (the "License");
 *  you may not use this file except in compliance with the License.
@@ -326,36 +326,5 @@ namespace MASES.JNet
         }
 
         #endregion
-    }
-
-    public static class JNetExtensions
-    {
-        /// <summary>
-        /// Execute the method and build the result as an array of <typeparamref name="T"/>
-        /// </summary>
-        /// <typeparam name="T">The expected result <see cref="Type"/></typeparam>
-        /// <param name="instance">The <see cref="JVMBridgeBase"/> instance to execute on</param>
-        /// <param name="methodName">The method to execute</param>
-        /// <param name="args">The aruments</param>
-        /// <returns>An array of <typeparamref name="T"/></returns>
-        public static T[] IExecuteArray<T>(this JVMBridgeBase instance, string methodName, params object[] args)
-        {
-            bool assignable = typeof(IJVMBridgeBase).IsAssignableFrom(typeof(T));
-            var array = instance.IExecute(methodName, args) as IJavaArray;
-            if (array == null) return null;
-            List<T> elements = new List<T>();
-            foreach (var item in array)
-            {
-                if (assignable)
-                {
-                    elements.Add(JVMBridgeBase.Wraps<T>(item as IJavaObject));
-                }
-                else
-                {
-                    elements.Add((T)item);
-                }
-            }
-            return elements.ToArray();
-        }
     }
 }

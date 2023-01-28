@@ -1,5 +1,5 @@
 ﻿/*
-*  Copyright 2022 MASES s.r.l.
+*  Copyright 2023 MASES s.r.l.
 *
 *  Licensed under the Apache License, Version 2.0 (the "License");
 *  you may not use this file except in compliance with the License.
@@ -31,10 +31,10 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// Returns an array of <see cref="Type"/> objects representing the lower bound(s) of this type variable.
         /// </summary>
-        public Type[] LowerBounds => this.IExecuteArray<Type>("getLowerBounds");
+        public Type[] LowerBounds => IExecuteArray<Type>("getLowerBounds");
         /// <summary>
         /// Returns an array of <see cref="Type"/> objects representing the upper bound(s) of this type variable.
         /// </summary>
-        public Type[] UpperBounds => this.IExecuteArray<Type>("getUpperBounds");
+        public Type[] UpperBounds => IExecuteArray<Type>("getUpperBounds");
     }
 }
