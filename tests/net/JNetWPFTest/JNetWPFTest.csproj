@@ -7,7 +7,7 @@
 		<RootNamespace>MASES.JNetWPFTest</RootNamespace>
 		<Title>JNetWPFTest - a test tool for JNet</Title>
 		<Description>JNetWPFTest - a test tool for JNet</Description>
-		<TargetFrameworks>net462;netcoreapp3.1;net6.0-windows</TargetFrameworks>
+		<TargetFrameworks>net462;net6.0-windows;net7.0-windows</TargetFrameworks>
 	</PropertyGroup>
 	<ItemGroup>
 		<None Include="..\Common\app.manifest">
