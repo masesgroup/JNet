@@ -36,11 +36,11 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// Returns an array of <see cref="AnnotatedType"/> objects that represent the use of types to denote the upper bounds of the type parameter represented by this <see cref="TypeVariable"/>.
         /// </summary>
-        public AnnotatedType[] AnnotatedBounds => this.IExecuteArray<AnnotatedType>("getAnnotatedBounds");
+        public AnnotatedType[] AnnotatedBounds => IExecuteArray<AnnotatedType>("getAnnotatedBounds");
         /// <summary>
         /// Returns an array of <see cref="Type"/> objects representing the upper bound(s) of this type variable.
         /// </summary>
-        public Type[] Bounds => this.IExecuteArray<Type>("getBounds");
+        public Type[] Bounds => IExecuteArray<Type>("getBounds");
         /// <summary>
         /// Returns the name of this type variable, as it occurs in the source code.
         /// </summary>

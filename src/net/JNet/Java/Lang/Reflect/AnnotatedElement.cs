@@ -38,11 +38,11 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// Returns annotations that are present on this element.
         /// </summary>
-        public Annotation.Annotation[] Annotations => this.IExecuteArray<Annotation.Annotation>("getAnnotations");
+        public Annotation.Annotation[] Annotations => IExecuteArray<Annotation.Annotation>("getAnnotations");
         /// <summary>
         /// Returns annotations that are associated with this element.
         /// </summary>
-        public T[] GetAnnotationsByType<T>(Class<T> annotationClass) where T : Annotation.Annotation => this.IExecuteArray<T>("getAnnotationsByType");
+        public T[] GetAnnotationsByType<T>(Class<T> annotationClass) where T : Annotation.Annotation => IExecuteArray<T>("getAnnotationsByType");
         /// <summary>
         /// Returns this element's annotation for the specified type if such an annotation is directly present, else null.
         /// </summary>
@@ -50,11 +50,11 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// Returns annotations that are directly present on this element.
         /// </summary>
-        public Annotation.Annotation[] DeclaredAnnotations => this.IExecuteArray<Annotation.Annotation>("getDeclaredAnnotations");
+        public Annotation.Annotation[] DeclaredAnnotations => IExecuteArray<Annotation.Annotation>("getDeclaredAnnotations");
         /// <summary>
         /// Returns this element's annotation(s) for the specified type if such annotations are either directly present or indirectly present.
         /// </summary>
-        public T[] GetDeclaredAnnotationsByType<T>(Class<T> annotationClass) where T : Annotation.Annotation => this.IExecuteArray<T>("getDeclaredAnnotationsByType", annotationClass);
+        public T[] GetDeclaredAnnotationsByType<T>(Class<T> annotationClass) where T : Annotation.Annotation => IExecuteArray<T>("getDeclaredAnnotationsByType", annotationClass);
         /// <summary>
         /// Returns <see langword="true"/> if an annotation for the specified type is present on this element, else <see langword="false"/>.
         /// </summary>
