@@ -1,8 +1,6 @@
 ﻿using System;
 using Java.Awt;
 using Java.Awt.Event;
-using MASES.JCOBridge.C2JBridge;
-using MASES.JCOBridge.C2JBridge.Specialized;
 using MASES.JNet;
 
 /*
