@@ -77,7 +77,7 @@ namespace Java.Lang
         /// Returns an array of <see cref="AnnotatedType"/> objects that represent the use of types to specify superinterfaces of the entity represented by this <see cref="Class"/> object.
         /// </summary>
         /// <returns></returns>
-        public AnnotatedType[] AnnotatedInterfaces => this.IExecuteArray<AnnotatedType>("getAnnotatedInterfaces");
+        public AnnotatedType[] AnnotatedInterfaces => IExecuteArray<AnnotatedType>("getAnnotatedInterfaces");
         /// <summary>
         /// Returns an <see cref="AnnotatedType"/> object that represents the use of a type to specify the superclass of the entity represented by this <see cref="Class"/> object.
         /// </summary>
@@ -90,11 +90,11 @@ namespace Java.Lang
         /// Returns annotations that are present on this element.
         /// </summary>
         /// <returns></returns>
-        public Annotation.Annotation[] Annotations => this.IExecuteArray<Annotation.Annotation>("getAnnotations");
+        public Annotation.Annotation[] Annotations => IExecuteArray<Annotation.Annotation>("getAnnotations");
         /// <summary>
         /// Returns annotations that are associated with this element.
         /// </summary>
-        public A[] GetAnnotationsByType<A>(Class<A> annotationClass) where A : Annotation.Annotation => this.IExecuteArray<A>("getAnnotationsByType", annotationClass);
+        public A[] GetAnnotationsByType<A>(Class<A> annotationClass) where A : Annotation.Annotation => IExecuteArray<A>("getAnnotationsByType", annotationClass);
         /// <summary>
         /// Returns the canonical name of the underlying class as defined by the Java Language Specification.
         /// Returns null if the underlying class does not have a canonical name (i.e., if it is a local or anonymous class or an array whose component type does not have a canonical name).
@@ -103,7 +103,7 @@ namespace Java.Lang
         /// <summary>
         /// Returns an array containing <see cref="Class"/> objects representing all the public classes and interfaces that are members of the class represented by this <see cref="Class"/> object.
         /// </summary>
-        public Class[] Classes => this.IExecuteArray<Class>("getClasses");
+        public Class[] Classes => IExecuteArray<Class>("getClasses");
         /// <summary>
         /// Returns the class loader for the class. Some implementations may use null to represent the bootstrap class loader. This method will return null in such implementations if this class was loaded by the bootstrap class loader. 
         /// </summary>
@@ -119,15 +119,15 @@ namespace Java.Lang
         /// <summary>
         /// Returns an array containing <see cref="Constructor"/> objects reflecting all the public constructors of the class represented by this <see cref="Class"/> object..
         /// </summary>
-        public Constructor[] Constructors => this.IExecuteArray<Constructor>("getConstructors");
+        public Constructor[] Constructors => IExecuteArray<Constructor>("getConstructors");
         /// <summary>
         /// Returns all annotations that are directly present on this element.
         /// </summary>
-        public Annotation.Annotation[] DeclaredAnnotations => this.IExecuteArray<Annotation.Annotation>("getDeclaredAnnotations");
+        public Annotation.Annotation[] DeclaredAnnotations => IExecuteArray<Annotation.Annotation>("getDeclaredAnnotations");
         /// <summary>
         /// Returns an array of <see cref="Class"/> objects reflecting all the classes and interfaces declared as members of the class represented by this <see cref="Class"/> object.
         /// </summary>
-        public Class[] DeclaredClasses => this.IExecuteArray<Class>("getDeclaredClasses");
+        public Class[] DeclaredClasses => IExecuteArray<Class>("getDeclaredClasses");
         /// <summary>
         /// Returns a Constructor object that reflects the specified constructor of the class or interface represented by this Class object.
         /// </summary>
@@ -135,7 +135,7 @@ namespace Java.Lang
         /// <summary>
         /// Returns an array of <see cref="Constructor"/> objects reflecting all the constructors declared by the class represented by this <see cref="Class"/> object.
         /// </summary>
-        public Constructor[] DeclaredConstructors => this.IExecuteArray<Constructor>("getDeclaredConstructors");
+        public Constructor[] DeclaredConstructors => IExecuteArray<Constructor>("getDeclaredConstructors");
         /// <summary>
         /// Returns a <see cref="Field"/> object that reflects the specified declared field of the class or interface represented by this <see cref="Class"/> object.
         /// </summary>
@@ -147,7 +147,7 @@ namespace Java.Lang
         /// <summary>
         /// Returns an array of <see cref="Method"/> objects reflecting all the methods declared by the class or interface represented by this <see cref="Class"/> object.
         /// </summary>
-        public Method[] DeclaredMethods => this.IExecuteArray<Method>("getDeclaredMethods");
+        public Method[] DeclaredMethods => IExecuteArray<Method>("getDeclaredMethods");
         /// <summary>
         /// If the class or interface represented by this <see cref="Class"/> object is a member of another class, returns the <see cref="Class"/> object representing the class in which it was declared.
         /// </summary>
@@ -167,7 +167,7 @@ namespace Java.Lang
         /// <summary>
         /// Returns the elements of this enum class or null if this <see cref="Class"/> object does not represent an enum type.
         /// </summary>
-        public object[] EnumConstants => this.IExecuteArray<object>("getEnumConstants");
+        public object[] EnumConstants => IExecuteArray<object>("getEnumConstants");
         /// <summary>
         /// Returns a <see cref="Field"/> object that reflects the specified public member field of the class or interface represented by this <see cref="Class"/> object.
         /// </summary>
@@ -175,11 +175,11 @@ namespace Java.Lang
         /// <summary>
         /// Returns an array containing <see cref="Field"/> objects reflecting all the accessible public fields of the class or interface represented by this <see cref="Class"/> object.
         /// </summary>
-        public Field[] Fields => this.IExecuteArray<Field>("getFields");
+        public Field[] Fields => IExecuteArray<Field>("getFields");
         /// <summary>
         /// Returns the <see cref="Type"/>s representing the interfaces directly implemented by the class or interface represented by this object.
         /// </summary>
-        public Type[] GenericInterfaces => this.IExecuteArray<Type>("getGenericInterfaces");
+        public Type[] GenericInterfaces => IExecuteArray<Type>("getGenericInterfaces");
         /// <summary>
         /// Returns the <see cref="Type"/> representing the direct superclass of the entity (class, interface, primitive type or void) represented by this <see cref="Class"/>.
         /// </summary>
@@ -187,7 +187,7 @@ namespace Java.Lang
         /// <summary>
         /// Determines the interfaces implemented by the class or interface represented by this object.
         /// </summary>
-        public Class[] Interfaces => this.IExecuteArray<Class>("getInterfaces");
+        public Class[] Interfaces => IExecuteArray<Class>("getInterfaces");
         /// <summary>
         /// Returns a <see cref="Method"/> object that reflects the specified public member method of the class or interface represented by this <see cref="Class"/> object.
         /// </summary>
@@ -195,7 +195,7 @@ namespace Java.Lang
         /// <summary>
         /// Returns an array containing <see cref="Method"/> objects reflecting all the public member methods of the class or interface represented by this <see cref="Class"/> object, including those declared by the class or interface and those inherited from superclasses and superinterfaces.
         /// </summary>
-        public Method[] Methods => this.IExecuteArray<Method>("getMethods");
+        public Method[] Methods => IExecuteArray<Method>("getMethods");
         /// <summary>
         /// Returns the Java language modifiers for this class or interface, encoded in an integer.
         /// </summary>
@@ -223,7 +223,7 @@ namespace Java.Lang
         /// <summary>
         /// Returns an array of <see cref="TypeVariable"/> objects that represent the type variables declared by the generic declaration represented by this <see cref="GenericDeclaration"/> object, in declaration order.
         /// </summary>
-        public TypeVariable[] TypeParameters => this.IExecuteArray<TypeVariable>("getTypeParameters");
+        public TypeVariable[] TypeParameters => IExecuteArray<TypeVariable>("getTypeParameters");
         /// <summary>
         /// Returns <see langword="true"/> if an annotation for the specified type is present on this element, else <see langword="false"/>. This method is designed primarily for convenient access to marker annotations. 
         /// </summary>

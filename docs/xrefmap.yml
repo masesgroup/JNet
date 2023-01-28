@@ -12159,12 +12159,274 @@ references:
   commentId: N:Java.Nio
   fullName: Java.Nio
   nameWithType: Java.Nio
+- uid: Java.Nio.Buffer
+  name: Buffer
+  href: api/Java.Nio.Buffer.html
+  commentId: T:Java.Nio.Buffer
+  fullName: Java.Nio.Buffer
+  nameWithType: Buffer
+- uid: Java.Nio.Buffer.Array*
+  name: Array
+  href: api/Java.Nio.Buffer.html#Java_Nio_Buffer_Array_
+  commentId: Overload:Java.Nio.Buffer.Array
+  isSpec: "True"
+  fullName: Java.Nio.Buffer.Array
+  nameWithType: Buffer.Array
+- uid: Java.Nio.Buffer.Array``1
+  name: Array<T>()
+  href: api/Java.Nio.Buffer.html#Java_Nio_Buffer_Array__1
+  commentId: M:Java.Nio.Buffer.Array``1
+  name.vb: Array(Of T)()
+  fullName: Java.Nio.Buffer.Array<T>()
+  fullName.vb: Java.Nio.Buffer.Array(Of T)()
+  nameWithType: Buffer.Array<T>()
+  nameWithType.vb: Buffer.Array(Of T)()
+- uid: Java.Nio.Buffer.ArrayOffset
+  name: ArrayOffset
+  href: api/Java.Nio.Buffer.html#Java_Nio_Buffer_ArrayOffset
+  commentId: P:Java.Nio.Buffer.ArrayOffset
+  fullName: Java.Nio.Buffer.ArrayOffset
+  nameWithType: Buffer.ArrayOffset
+- uid: Java.Nio.Buffer.ArrayOffset*
+  name: ArrayOffset
+  href: api/Java.Nio.Buffer.html#Java_Nio_Buffer_ArrayOffset_
+  commentId: Overload:Java.Nio.Buffer.ArrayOffset
+  isSpec: "True"
+  fullName: Java.Nio.Buffer.ArrayOffset
+  nameWithType: Buffer.ArrayOffset
+- uid: Java.Nio.Buffer.Capacity
+  name: Capacity
+  href: api/Java.Nio.Buffer.html#Java_Nio_Buffer_Capacity
+  commentId: P:Java.Nio.Buffer.Capacity
+  fullName: Java.Nio.Buffer.Capacity
+  nameWithType: Buffer.Capacity
+- uid: Java.Nio.Buffer.Capacity*
+  name: Capacity
+  href: api/Java.Nio.Buffer.html#Java_Nio_Buffer_Capacity_
+  commentId: Overload:Java.Nio.Buffer.Capacity
+  isSpec: "True"
+  fullName: Java.Nio.Buffer.Capacity
+  nameWithType: Buffer.Capacity
+- uid: Java.Nio.Buffer.ClassName
+  name: ClassName
+  href: api/Java.Nio.Buffer.html#Java_Nio_Buffer_ClassName
+  commentId: P:Java.Nio.Buffer.ClassName
+  fullName: Java.Nio.Buffer.ClassName
+  nameWithType: Buffer.ClassName
+- uid: Java.Nio.Buffer.ClassName*
+  name: ClassName
+  href: api/Java.Nio.Buffer.html#Java_Nio_Buffer_ClassName_
+  commentId: Overload:Java.Nio.Buffer.ClassName
+  isSpec: "True"
+  fullName: Java.Nio.Buffer.ClassName
+  nameWithType: Buffer.ClassName
+- uid: Java.Nio.Buffer.Clear
+  name: Clear()
+  href: api/Java.Nio.Buffer.html#Java_Nio_Buffer_Clear
+  commentId: M:Java.Nio.Buffer.Clear
+  fullName: Java.Nio.Buffer.Clear()
+  nameWithType: Buffer.Clear()
+- uid: Java.Nio.Buffer.Clear*
+  name: Clear
+  href: api/Java.Nio.Buffer.html#Java_Nio_Buffer_Clear_
+  commentId: Overload:Java.Nio.Buffer.Clear
+  isSpec: "True"
+  fullName: Java.Nio.Buffer.Clear
+  nameWithType: Buffer.Clear
+- uid: Java.Nio.Buffer.HasArray
+  name: HasArray
+  href: api/Java.Nio.Buffer.html#Java_Nio_Buffer_HasArray
+  commentId: P:Java.Nio.Buffer.HasArray
+  fullName: Java.Nio.Buffer.HasArray
+  nameWithType: Buffer.HasArray
+- uid: Java.Nio.Buffer.HasArray*
+  name: HasArray
+  href: api/Java.Nio.Buffer.html#Java_Nio_Buffer_HasArray_
+  commentId: Overload:Java.Nio.Buffer.HasArray
+  isSpec: "True"
+  fullName: Java.Nio.Buffer.HasArray
+  nameWithType: Buffer.HasArray
+- uid: Java.Nio.Buffer.HasRemaining
+  name: HasRemaining
+  href: api/Java.Nio.Buffer.html#Java_Nio_Buffer_HasRemaining
+  commentId: P:Java.Nio.Buffer.HasRemaining
+  fullName: Java.Nio.Buffer.HasRemaining
+  nameWithType: Buffer.HasRemaining
+- uid: Java.Nio.Buffer.HasRemaining*
+  name: HasRemaining
+  href: api/Java.Nio.Buffer.html#Java_Nio_Buffer_HasRemaining_
+  commentId: Overload:Java.Nio.Buffer.HasRemaining
+  isSpec: "True"
+  fullName: Java.Nio.Buffer.HasRemaining
+  nameWithType: Buffer.HasRemaining
+- uid: Java.Nio.Buffer.IsAbstract
+  name: IsAbstract
+  href: api/Java.Nio.Buffer.html#Java_Nio_Buffer_IsAbstract
+  commentId: P:Java.Nio.Buffer.IsAbstract
+  fullName: Java.Nio.Buffer.IsAbstract
+  nameWithType: Buffer.IsAbstract
+- uid: Java.Nio.Buffer.IsAbstract*
+  name: IsAbstract
+  href: api/Java.Nio.Buffer.html#Java_Nio_Buffer_IsAbstract_
+  commentId: Overload:Java.Nio.Buffer.IsAbstract
+  isSpec: "True"
+  fullName: Java.Nio.Buffer.IsAbstract
+  nameWithType: Buffer.IsAbstract
+- uid: Java.Nio.Buffer.IsDirect
+  name: IsDirect
+  href: api/Java.Nio.Buffer.html#Java_Nio_Buffer_IsDirect
+  commentId: P:Java.Nio.Buffer.IsDirect
+  fullName: Java.Nio.Buffer.IsDirect
+  nameWithType: Buffer.IsDirect
+- uid: Java.Nio.Buffer.IsDirect*
+  name: IsDirect
+  href: api/Java.Nio.Buffer.html#Java_Nio_Buffer_IsDirect_
+  commentId: Overload:Java.Nio.Buffer.IsDirect
+  isSpec: "True"
+  fullName: Java.Nio.Buffer.IsDirect
+  nameWithType: Buffer.IsDirect
+- uid: Java.Nio.Buffer.IsReadOnly
+  name: IsReadOnly
+  href: api/Java.Nio.Buffer.html#Java_Nio_Buffer_IsReadOnly
+  commentId: P:Java.Nio.Buffer.IsReadOnly
+  fullName: Java.Nio.Buffer.IsReadOnly
+  nameWithType: Buffer.IsReadOnly
+- uid: Java.Nio.Buffer.IsReadOnly*
+  name: IsReadOnly
+  href: api/Java.Nio.Buffer.html#Java_Nio_Buffer_IsReadOnly_
+  commentId: Overload:Java.Nio.Buffer.IsReadOnly
+  isSpec: "True"
+  fullName: Java.Nio.Buffer.IsReadOnly
+  nameWithType: Buffer.IsReadOnly
+- uid: Java.Nio.Buffer.Limit
+  name: Limit()
+  href: api/Java.Nio.Buffer.html#Java_Nio_Buffer_Limit
+  commentId: M:Java.Nio.Buffer.Limit
+  fullName: Java.Nio.Buffer.Limit()
+  nameWithType: Buffer.Limit()
+- uid: Java.Nio.Buffer.Limit(System.Int32)
+  name: Limit(Int32)
+  href: api/Java.Nio.Buffer.html#Java_Nio_Buffer_Limit_System_Int32_
+  commentId: M:Java.Nio.Buffer.Limit(System.Int32)
+  fullName: Java.Nio.Buffer.Limit(System.Int32)
+  nameWithType: Buffer.Limit(Int32)
+- uid: Java.Nio.Buffer.Limit*
+  name: Limit
+  href: api/Java.Nio.Buffer.html#Java_Nio_Buffer_Limit_
+  commentId: Overload:Java.Nio.Buffer.Limit
+  isSpec: "True"
+  fullName: Java.Nio.Buffer.Limit
+  nameWithType: Buffer.Limit
+- uid: Java.Nio.Buffer.Mark
+  name: Mark()
+  href: api/Java.Nio.Buffer.html#Java_Nio_Buffer_Mark
+  commentId: M:Java.Nio.Buffer.Mark
+  fullName: Java.Nio.Buffer.Mark()
+  nameWithType: Buffer.Mark()
+- uid: Java.Nio.Buffer.Mark*
+  name: Mark
+  href: api/Java.Nio.Buffer.html#Java_Nio_Buffer_Mark_
+  commentId: Overload:Java.Nio.Buffer.Mark
+  isSpec: "True"
+  fullName: Java.Nio.Buffer.Mark
+  nameWithType: Buffer.Mark
+- uid: Java.Nio.Buffer.Position(System.Int32)
+  name: Position(Int32)
+  href: api/Java.Nio.Buffer.html#Java_Nio_Buffer_Position_System_Int32_
+  commentId: M:Java.Nio.Buffer.Position(System.Int32)
+  fullName: Java.Nio.Buffer.Position(System.Int32)
+  nameWithType: Buffer.Position(Int32)
+- uid: Java.Nio.Buffer.Position*
+  name: Position
+  href: api/Java.Nio.Buffer.html#Java_Nio_Buffer_Position_
+  commentId: Overload:Java.Nio.Buffer.Position
+  isSpec: "True"
+  fullName: Java.Nio.Buffer.Position
+  nameWithType: Buffer.Position
+- uid: Java.Nio.Buffer.Remaining
+  name: Remaining
+  href: api/Java.Nio.Buffer.html#Java_Nio_Buffer_Remaining
+  commentId: P:Java.Nio.Buffer.Remaining
+  fullName: Java.Nio.Buffer.Remaining
+  nameWithType: Buffer.Remaining
+- uid: Java.Nio.Buffer.Remaining*
+  name: Remaining
+  href: api/Java.Nio.Buffer.html#Java_Nio_Buffer_Remaining_
+  commentId: Overload:Java.Nio.Buffer.Remaining
+  isSpec: "True"
+  fullName: Java.Nio.Buffer.Remaining
+  nameWithType: Buffer.Remaining
+- uid: Java.Nio.Buffer.Reset
+  name: Reset()
+  href: api/Java.Nio.Buffer.html#Java_Nio_Buffer_Reset
+  commentId: M:Java.Nio.Buffer.Reset
+  fullName: Java.Nio.Buffer.Reset()
+  nameWithType: Buffer.Reset()
+- uid: Java.Nio.Buffer.Reset*
+  name: Reset
+  href: api/Java.Nio.Buffer.html#Java_Nio_Buffer_Reset_
+  commentId: Overload:Java.Nio.Buffer.Reset
+  isSpec: "True"
+  fullName: Java.Nio.Buffer.Reset
+  nameWithType: Buffer.Reset
+- uid: Java.Nio.Buffer.Rewind
+  name: Rewind()
+  href: api/Java.Nio.Buffer.html#Java_Nio_Buffer_Rewind
+  commentId: M:Java.Nio.Buffer.Rewind
+  fullName: Java.Nio.Buffer.Rewind()
+  nameWithType: Buffer.Rewind()
+- uid: Java.Nio.Buffer.Rewind*
+  name: Rewind
+  href: api/Java.Nio.Buffer.html#Java_Nio_Buffer_Rewind_
+  commentId: Overload:Java.Nio.Buffer.Rewind
+  isSpec: "True"
+  fullName: Java.Nio.Buffer.Rewind
+  nameWithType: Buffer.Rewind
 - uid: Java.Nio.ByteBuffer
   name: ByteBuffer
   href: api/Java.Nio.ByteBuffer.html
   commentId: T:Java.Nio.ByteBuffer
   fullName: Java.Nio.ByteBuffer
   nameWithType: ByteBuffer
+- uid: Java.Nio.ByteBuffer.Allocate(System.Int32)
+  name: Allocate(Int32)
+  href: api/Java.Nio.ByteBuffer.html#Java_Nio_ByteBuffer_Allocate_System_Int32_
+  commentId: M:Java.Nio.ByteBuffer.Allocate(System.Int32)
+  fullName: Java.Nio.ByteBuffer.Allocate(System.Int32)
+  nameWithType: ByteBuffer.Allocate(Int32)
+- uid: Java.Nio.ByteBuffer.Allocate*
+  name: Allocate
+  href: api/Java.Nio.ByteBuffer.html#Java_Nio_ByteBuffer_Allocate_
+  commentId: Overload:Java.Nio.ByteBuffer.Allocate
+  isSpec: "True"
+  fullName: Java.Nio.ByteBuffer.Allocate
+  nameWithType: ByteBuffer.Allocate
+- uid: Java.Nio.ByteBuffer.AllocateDirect(System.Int32)
+  name: AllocateDirect(Int32)
+  href: api/Java.Nio.ByteBuffer.html#Java_Nio_ByteBuffer_AllocateDirect_System_Int32_
+  commentId: M:Java.Nio.ByteBuffer.AllocateDirect(System.Int32)
+  fullName: Java.Nio.ByteBuffer.AllocateDirect(System.Int32)
+  nameWithType: ByteBuffer.AllocateDirect(Int32)
+- uid: Java.Nio.ByteBuffer.AllocateDirect*
+  name: AllocateDirect
+  href: api/Java.Nio.ByteBuffer.html#Java_Nio_ByteBuffer_AllocateDirect_
+  commentId: Overload:Java.Nio.ByteBuffer.AllocateDirect
+  isSpec: "True"
+  fullName: Java.Nio.ByteBuffer.AllocateDirect
+  nameWithType: ByteBuffer.AllocateDirect
+- uid: Java.Nio.ByteBuffer.Array
+  name: Array
+  href: api/Java.Nio.ByteBuffer.html#Java_Nio_ByteBuffer_Array
+  commentId: P:Java.Nio.ByteBuffer.Array
+  fullName: Java.Nio.ByteBuffer.Array
+  nameWithType: ByteBuffer.Array
+- uid: Java.Nio.ByteBuffer.Array*
+  name: Array
+  href: api/Java.Nio.ByteBuffer.html#Java_Nio_ByteBuffer_Array_
+  commentId: Overload:Java.Nio.ByteBuffer.Array
+  isSpec: "True"
+  fullName: Java.Nio.ByteBuffer.Array
+  nameWithType: ByteBuffer.Array
 - uid: Java.Nio.ByteBuffer.ClassName
   name: ClassName
   href: api/Java.Nio.ByteBuffer.html#Java_Nio_ByteBuffer_ClassName
@@ -12178,6 +12440,25 @@ references:
   isSpec: "True"
   fullName: Java.Nio.ByteBuffer.ClassName
   nameWithType: ByteBuffer.ClassName
+- uid: Java.Nio.ByteBuffer.op_Implicit(Java.Nio.ByteBuffer)~Java.Lang.Comparable{Java.Nio.ByteBuffer}
+  name: Implicit(ByteBuffer to Comparable<ByteBuffer>)
+  href: api/Java.Nio.ByteBuffer.html#Java_Nio_ByteBuffer_op_Implicit_Java_Nio_ByteBuffer__Java_Lang_Comparable_Java_Nio_ByteBuffer_
+  commentId: M:Java.Nio.ByteBuffer.op_Implicit(Java.Nio.ByteBuffer)~Java.Lang.Comparable{Java.Nio.ByteBuffer}
+  name.vb: Widening(ByteBuffer to Comparable(Of ByteBuffer))
+  fullName: Java.Nio.ByteBuffer.Implicit(Java.Nio.ByteBuffer to Java.Lang.Comparable<Java.Nio.ByteBuffer>)
+  fullName.vb: Java.Nio.ByteBuffer.Widening(Java.Nio.ByteBuffer to Java.Lang.Comparable(Of Java.Nio.ByteBuffer))
+  nameWithType: ByteBuffer.Implicit(ByteBuffer to Comparable<ByteBuffer>)
+  nameWithType.vb: ByteBuffer.Widening(ByteBuffer to Comparable(Of ByteBuffer))
+- uid: Java.Nio.ByteBuffer.op_Implicit*
+  name: Implicit
+  href: api/Java.Nio.ByteBuffer.html#Java_Nio_ByteBuffer_op_Implicit_
+  commentId: Overload:Java.Nio.ByteBuffer.op_Implicit
+  isSpec: "True"
+  name.vb: Widening
+  fullName: Java.Nio.ByteBuffer.Implicit
+  fullName.vb: Java.Nio.ByteBuffer.Widening
+  nameWithType: ByteBuffer.Implicit
+  nameWithType.vb: ByteBuffer.Widening
 - uid: Java.Nio.Channel
   name: Channel
   href: api/Java.Nio.Channel.html
@@ -12210,6 +12491,448 @@ references:
   isSpec: "True"
   fullName: Java.Nio.Channel.IsInterface
   nameWithType: Channel.IsInterface
+- uid: Java.Nio.CharBuffer
+  name: CharBuffer
+  href: api/Java.Nio.CharBuffer.html
+  commentId: T:Java.Nio.CharBuffer
+  fullName: Java.Nio.CharBuffer
+  nameWithType: CharBuffer
+- uid: Java.Nio.CharBuffer.Allocate(System.Int32)
+  name: Allocate(Int32)
+  href: api/Java.Nio.CharBuffer.html#Java_Nio_CharBuffer_Allocate_System_Int32_
+  commentId: M:Java.Nio.CharBuffer.Allocate(System.Int32)
+  fullName: Java.Nio.CharBuffer.Allocate(System.Int32)
+  nameWithType: CharBuffer.Allocate(Int32)
+- uid: Java.Nio.CharBuffer.Allocate*
+  name: Allocate
+  href: api/Java.Nio.CharBuffer.html#Java_Nio_CharBuffer_Allocate_
+  commentId: Overload:Java.Nio.CharBuffer.Allocate
+  isSpec: "True"
+  fullName: Java.Nio.CharBuffer.Allocate
+  nameWithType: CharBuffer.Allocate
+- uid: Java.Nio.CharBuffer.Array
+  name: Array
+  href: api/Java.Nio.CharBuffer.html#Java_Nio_CharBuffer_Array
+  commentId: P:Java.Nio.CharBuffer.Array
+  fullName: Java.Nio.CharBuffer.Array
+  nameWithType: CharBuffer.Array
+- uid: Java.Nio.CharBuffer.Array*
+  name: Array
+  href: api/Java.Nio.CharBuffer.html#Java_Nio_CharBuffer_Array_
+  commentId: Overload:Java.Nio.CharBuffer.Array
+  isSpec: "True"
+  fullName: Java.Nio.CharBuffer.Array
+  nameWithType: CharBuffer.Array
+- uid: Java.Nio.CharBuffer.ClassName
+  name: ClassName
+  href: api/Java.Nio.CharBuffer.html#Java_Nio_CharBuffer_ClassName
+  commentId: P:Java.Nio.CharBuffer.ClassName
+  fullName: Java.Nio.CharBuffer.ClassName
+  nameWithType: CharBuffer.ClassName
+- uid: Java.Nio.CharBuffer.ClassName*
+  name: ClassName
+  href: api/Java.Nio.CharBuffer.html#Java_Nio_CharBuffer_ClassName_
+  commentId: Overload:Java.Nio.CharBuffer.ClassName
+  isSpec: "True"
+  fullName: Java.Nio.CharBuffer.ClassName
+  nameWithType: CharBuffer.ClassName
+- uid: Java.Nio.CharBuffer.op_Implicit(Java.Nio.CharBuffer)~Java.Lang.Comparable{Java.Nio.CharBuffer}
+  name: Implicit(CharBuffer to Comparable<CharBuffer>)
+  href: api/Java.Nio.CharBuffer.html#Java_Nio_CharBuffer_op_Implicit_Java_Nio_CharBuffer__Java_Lang_Comparable_Java_Nio_CharBuffer_
+  commentId: M:Java.Nio.CharBuffer.op_Implicit(Java.Nio.CharBuffer)~Java.Lang.Comparable{Java.Nio.CharBuffer}
+  name.vb: Widening(CharBuffer to Comparable(Of CharBuffer))
+  fullName: Java.Nio.CharBuffer.Implicit(Java.Nio.CharBuffer to Java.Lang.Comparable<Java.Nio.CharBuffer>)
+  fullName.vb: Java.Nio.CharBuffer.Widening(Java.Nio.CharBuffer to Java.Lang.Comparable(Of Java.Nio.CharBuffer))
+  nameWithType: CharBuffer.Implicit(CharBuffer to Comparable<CharBuffer>)
+  nameWithType.vb: CharBuffer.Widening(CharBuffer to Comparable(Of CharBuffer))
+- uid: Java.Nio.CharBuffer.op_Implicit*
+  name: Implicit
+  href: api/Java.Nio.CharBuffer.html#Java_Nio_CharBuffer_op_Implicit_
+  commentId: Overload:Java.Nio.CharBuffer.op_Implicit
+  isSpec: "True"
+  name.vb: Widening
+  fullName: Java.Nio.CharBuffer.Implicit
+  fullName.vb: Java.Nio.CharBuffer.Widening
+  nameWithType: CharBuffer.Implicit
+  nameWithType.vb: CharBuffer.Widening
+- uid: Java.Nio.DoubleBuffer
+  name: DoubleBuffer
+  href: api/Java.Nio.DoubleBuffer.html
+  commentId: T:Java.Nio.DoubleBuffer
+  fullName: Java.Nio.DoubleBuffer
+  nameWithType: DoubleBuffer
+- uid: Java.Nio.DoubleBuffer.Allocate(System.Int32)
+  name: Allocate(Int32)
+  href: api/Java.Nio.DoubleBuffer.html#Java_Nio_DoubleBuffer_Allocate_System_Int32_
+  commentId: M:Java.Nio.DoubleBuffer.Allocate(System.Int32)
+  fullName: Java.Nio.DoubleBuffer.Allocate(System.Int32)
+  nameWithType: DoubleBuffer.Allocate(Int32)
+- uid: Java.Nio.DoubleBuffer.Allocate*
+  name: Allocate
+  href: api/Java.Nio.DoubleBuffer.html#Java_Nio_DoubleBuffer_Allocate_
+  commentId: Overload:Java.Nio.DoubleBuffer.Allocate
+  isSpec: "True"
+  fullName: Java.Nio.DoubleBuffer.Allocate
+  nameWithType: DoubleBuffer.Allocate
+- uid: Java.Nio.DoubleBuffer.Array
+  name: Array
+  href: api/Java.Nio.DoubleBuffer.html#Java_Nio_DoubleBuffer_Array
+  commentId: P:Java.Nio.DoubleBuffer.Array
+  fullName: Java.Nio.DoubleBuffer.Array
+  nameWithType: DoubleBuffer.Array
+- uid: Java.Nio.DoubleBuffer.Array*
+  name: Array
+  href: api/Java.Nio.DoubleBuffer.html#Java_Nio_DoubleBuffer_Array_
+  commentId: Overload:Java.Nio.DoubleBuffer.Array
+  isSpec: "True"
+  fullName: Java.Nio.DoubleBuffer.Array
+  nameWithType: DoubleBuffer.Array
+- uid: Java.Nio.DoubleBuffer.ClassName
+  name: ClassName
+  href: api/Java.Nio.DoubleBuffer.html#Java_Nio_DoubleBuffer_ClassName
+  commentId: P:Java.Nio.DoubleBuffer.ClassName
+  fullName: Java.Nio.DoubleBuffer.ClassName
+  nameWithType: DoubleBuffer.ClassName
+- uid: Java.Nio.DoubleBuffer.ClassName*
+  name: ClassName
+  href: api/Java.Nio.DoubleBuffer.html#Java_Nio_DoubleBuffer_ClassName_
+  commentId: Overload:Java.Nio.DoubleBuffer.ClassName
+  isSpec: "True"
+  fullName: Java.Nio.DoubleBuffer.ClassName
+  nameWithType: DoubleBuffer.ClassName
+- uid: Java.Nio.DoubleBuffer.op_Implicit(Java.Nio.DoubleBuffer)~Java.Lang.Comparable{Java.Nio.DoubleBuffer}
+  name: Implicit(DoubleBuffer to Comparable<DoubleBuffer>)
+  href: api/Java.Nio.DoubleBuffer.html#Java_Nio_DoubleBuffer_op_Implicit_Java_Nio_DoubleBuffer__Java_Lang_Comparable_Java_Nio_DoubleBuffer_
+  commentId: M:Java.Nio.DoubleBuffer.op_Implicit(Java.Nio.DoubleBuffer)~Java.Lang.Comparable{Java.Nio.DoubleBuffer}
+  name.vb: Widening(DoubleBuffer to Comparable(Of DoubleBuffer))
+  fullName: Java.Nio.DoubleBuffer.Implicit(Java.Nio.DoubleBuffer to Java.Lang.Comparable<Java.Nio.DoubleBuffer>)
+  fullName.vb: Java.Nio.DoubleBuffer.Widening(Java.Nio.DoubleBuffer to Java.Lang.Comparable(Of Java.Nio.DoubleBuffer))
+  nameWithType: DoubleBuffer.Implicit(DoubleBuffer to Comparable<DoubleBuffer>)
+  nameWithType.vb: DoubleBuffer.Widening(DoubleBuffer to Comparable(Of DoubleBuffer))
+- uid: Java.Nio.DoubleBuffer.op_Implicit*
+  name: Implicit
+  href: api/Java.Nio.DoubleBuffer.html#Java_Nio_DoubleBuffer_op_Implicit_
+  commentId: Overload:Java.Nio.DoubleBuffer.op_Implicit
+  isSpec: "True"
+  name.vb: Widening
+  fullName: Java.Nio.DoubleBuffer.Implicit
+  fullName.vb: Java.Nio.DoubleBuffer.Widening
+  nameWithType: DoubleBuffer.Implicit
+  nameWithType.vb: DoubleBuffer.Widening
+- uid: Java.Nio.FloatBuffer
+  name: FloatBuffer
+  href: api/Java.Nio.FloatBuffer.html
+  commentId: T:Java.Nio.FloatBuffer
+  fullName: Java.Nio.FloatBuffer
+  nameWithType: FloatBuffer
+- uid: Java.Nio.FloatBuffer.Allocate(System.Int32)
+  name: Allocate(Int32)
+  href: api/Java.Nio.FloatBuffer.html#Java_Nio_FloatBuffer_Allocate_System_Int32_
+  commentId: M:Java.Nio.FloatBuffer.Allocate(System.Int32)
+  fullName: Java.Nio.FloatBuffer.Allocate(System.Int32)
+  nameWithType: FloatBuffer.Allocate(Int32)
+- uid: Java.Nio.FloatBuffer.Allocate*
+  name: Allocate
+  href: api/Java.Nio.FloatBuffer.html#Java_Nio_FloatBuffer_Allocate_
+  commentId: Overload:Java.Nio.FloatBuffer.Allocate
+  isSpec: "True"
+  fullName: Java.Nio.FloatBuffer.Allocate
+  nameWithType: FloatBuffer.Allocate
+- uid: Java.Nio.FloatBuffer.Array
+  name: Array
+  href: api/Java.Nio.FloatBuffer.html#Java_Nio_FloatBuffer_Array
+  commentId: P:Java.Nio.FloatBuffer.Array
+  fullName: Java.Nio.FloatBuffer.Array
+  nameWithType: FloatBuffer.Array
+- uid: Java.Nio.FloatBuffer.Array*
+  name: Array
+  href: api/Java.Nio.FloatBuffer.html#Java_Nio_FloatBuffer_Array_
+  commentId: Overload:Java.Nio.FloatBuffer.Array
+  isSpec: "True"
+  fullName: Java.Nio.FloatBuffer.Array
+  nameWithType: FloatBuffer.Array
+- uid: Java.Nio.FloatBuffer.ClassName
+  name: ClassName
+  href: api/Java.Nio.FloatBuffer.html#Java_Nio_FloatBuffer_ClassName
+  commentId: P:Java.Nio.FloatBuffer.ClassName
+  fullName: Java.Nio.FloatBuffer.ClassName
+  nameWithType: FloatBuffer.ClassName
+- uid: Java.Nio.FloatBuffer.ClassName*
+  name: ClassName
+  href: api/Java.Nio.FloatBuffer.html#Java_Nio_FloatBuffer_ClassName_
+  commentId: Overload:Java.Nio.FloatBuffer.ClassName
+  isSpec: "True"
+  fullName: Java.Nio.FloatBuffer.ClassName
+  nameWithType: FloatBuffer.ClassName
+- uid: Java.Nio.FloatBuffer.op_Implicit(Java.Nio.FloatBuffer)~Java.Lang.Comparable{Java.Nio.FloatBuffer}
+  name: Implicit(FloatBuffer to Comparable<FloatBuffer>)
+  href: api/Java.Nio.FloatBuffer.html#Java_Nio_FloatBuffer_op_Implicit_Java_Nio_FloatBuffer__Java_Lang_Comparable_Java_Nio_FloatBuffer_
+  commentId: M:Java.Nio.FloatBuffer.op_Implicit(Java.Nio.FloatBuffer)~Java.Lang.Comparable{Java.Nio.FloatBuffer}
+  name.vb: Widening(FloatBuffer to Comparable(Of FloatBuffer))
+  fullName: Java.Nio.FloatBuffer.Implicit(Java.Nio.FloatBuffer to Java.Lang.Comparable<Java.Nio.FloatBuffer>)
+  fullName.vb: Java.Nio.FloatBuffer.Widening(Java.Nio.FloatBuffer to Java.Lang.Comparable(Of Java.Nio.FloatBuffer))
+  nameWithType: FloatBuffer.Implicit(FloatBuffer to Comparable<FloatBuffer>)
+  nameWithType.vb: FloatBuffer.Widening(FloatBuffer to Comparable(Of FloatBuffer))
+- uid: Java.Nio.FloatBuffer.op_Implicit*
+  name: Implicit
+  href: api/Java.Nio.FloatBuffer.html#Java_Nio_FloatBuffer_op_Implicit_
+  commentId: Overload:Java.Nio.FloatBuffer.op_Implicit
+  isSpec: "True"
+  name.vb: Widening
+  fullName: Java.Nio.FloatBuffer.Implicit
+  fullName.vb: Java.Nio.FloatBuffer.Widening
+  nameWithType: FloatBuffer.Implicit
+  nameWithType.vb: FloatBuffer.Widening
+- uid: Java.Nio.IntBuffer
+  name: IntBuffer
+  href: api/Java.Nio.IntBuffer.html
+  commentId: T:Java.Nio.IntBuffer
+  fullName: Java.Nio.IntBuffer
+  nameWithType: IntBuffer
+- uid: Java.Nio.IntBuffer.Allocate(System.Int32)
+  name: Allocate(Int32)
+  href: api/Java.Nio.IntBuffer.html#Java_Nio_IntBuffer_Allocate_System_Int32_
+  commentId: M:Java.Nio.IntBuffer.Allocate(System.Int32)
+  fullName: Java.Nio.IntBuffer.Allocate(System.Int32)
+  nameWithType: IntBuffer.Allocate(Int32)
+- uid: Java.Nio.IntBuffer.Allocate*
+  name: Allocate
+  href: api/Java.Nio.IntBuffer.html#Java_Nio_IntBuffer_Allocate_
+  commentId: Overload:Java.Nio.IntBuffer.Allocate
+  isSpec: "True"
+  fullName: Java.Nio.IntBuffer.Allocate
+  nameWithType: IntBuffer.Allocate
+- uid: Java.Nio.IntBuffer.Array
+  name: Array
+  href: api/Java.Nio.IntBuffer.html#Java_Nio_IntBuffer_Array
+  commentId: P:Java.Nio.IntBuffer.Array
+  fullName: Java.Nio.IntBuffer.Array
+  nameWithType: IntBuffer.Array
+- uid: Java.Nio.IntBuffer.Array*
+  name: Array
+  href: api/Java.Nio.IntBuffer.html#Java_Nio_IntBuffer_Array_
+  commentId: Overload:Java.Nio.IntBuffer.Array
+  isSpec: "True"
+  fullName: Java.Nio.IntBuffer.Array
+  nameWithType: IntBuffer.Array
+- uid: Java.Nio.IntBuffer.ClassName
+  name: ClassName
+  href: api/Java.Nio.IntBuffer.html#Java_Nio_IntBuffer_ClassName
+  commentId: P:Java.Nio.IntBuffer.ClassName
+  fullName: Java.Nio.IntBuffer.ClassName
+  nameWithType: IntBuffer.ClassName
+- uid: Java.Nio.IntBuffer.ClassName*
+  name: ClassName
+  href: api/Java.Nio.IntBuffer.html#Java_Nio_IntBuffer_ClassName_
+  commentId: Overload:Java.Nio.IntBuffer.ClassName
+  isSpec: "True"
+  fullName: Java.Nio.IntBuffer.ClassName
+  nameWithType: IntBuffer.ClassName
+- uid: Java.Nio.IntBuffer.op_Implicit(Java.Nio.IntBuffer)~Java.Lang.Comparable{Java.Nio.IntBuffer}
+  name: Implicit(IntBuffer to Comparable<IntBuffer>)
+  href: api/Java.Nio.IntBuffer.html#Java_Nio_IntBuffer_op_Implicit_Java_Nio_IntBuffer__Java_Lang_Comparable_Java_Nio_IntBuffer_
+  commentId: M:Java.Nio.IntBuffer.op_Implicit(Java.Nio.IntBuffer)~Java.Lang.Comparable{Java.Nio.IntBuffer}
+  name.vb: Widening(IntBuffer to Comparable(Of IntBuffer))
+  fullName: Java.Nio.IntBuffer.Implicit(Java.Nio.IntBuffer to Java.Lang.Comparable<Java.Nio.IntBuffer>)
+  fullName.vb: Java.Nio.IntBuffer.Widening(Java.Nio.IntBuffer to Java.Lang.Comparable(Of Java.Nio.IntBuffer))
+  nameWithType: IntBuffer.Implicit(IntBuffer to Comparable<IntBuffer>)
+  nameWithType.vb: IntBuffer.Widening(IntBuffer to Comparable(Of IntBuffer))
+- uid: Java.Nio.IntBuffer.op_Implicit*
+  name: Implicit
+  href: api/Java.Nio.IntBuffer.html#Java_Nio_IntBuffer_op_Implicit_
+  commentId: Overload:Java.Nio.IntBuffer.op_Implicit
+  isSpec: "True"
+  name.vb: Widening
+  fullName: Java.Nio.IntBuffer.Implicit
+  fullName.vb: Java.Nio.IntBuffer.Widening
+  nameWithType: IntBuffer.Implicit
+  nameWithType.vb: IntBuffer.Widening
+- uid: Java.Nio.LongBuffer
+  name: LongBuffer
+  href: api/Java.Nio.LongBuffer.html
+  commentId: T:Java.Nio.LongBuffer
+  fullName: Java.Nio.LongBuffer
+  nameWithType: LongBuffer
+- uid: Java.Nio.LongBuffer.Allocate(System.Int32)
+  name: Allocate(Int32)
+  href: api/Java.Nio.LongBuffer.html#Java_Nio_LongBuffer_Allocate_System_Int32_
+  commentId: M:Java.Nio.LongBuffer.Allocate(System.Int32)
+  fullName: Java.Nio.LongBuffer.Allocate(System.Int32)
+  nameWithType: LongBuffer.Allocate(Int32)
+- uid: Java.Nio.LongBuffer.Allocate*
+  name: Allocate
+  href: api/Java.Nio.LongBuffer.html#Java_Nio_LongBuffer_Allocate_
+  commentId: Overload:Java.Nio.LongBuffer.Allocate
+  isSpec: "True"
+  fullName: Java.Nio.LongBuffer.Allocate
+  nameWithType: LongBuffer.Allocate
+- uid: Java.Nio.LongBuffer.Array
+  name: Array
+  href: api/Java.Nio.LongBuffer.html#Java_Nio_LongBuffer_Array
+  commentId: P:Java.Nio.LongBuffer.Array
+  fullName: Java.Nio.LongBuffer.Array
+  nameWithType: LongBuffer.Array
+- uid: Java.Nio.LongBuffer.Array*
+  name: Array
+  href: api/Java.Nio.LongBuffer.html#Java_Nio_LongBuffer_Array_
+  commentId: Overload:Java.Nio.LongBuffer.Array
+  isSpec: "True"
+  fullName: Java.Nio.LongBuffer.Array
+  nameWithType: LongBuffer.Array
+- uid: Java.Nio.LongBuffer.ClassName
+  name: ClassName
+  href: api/Java.Nio.LongBuffer.html#Java_Nio_LongBuffer_ClassName
+  commentId: P:Java.Nio.LongBuffer.ClassName
+  fullName: Java.Nio.LongBuffer.ClassName
+  nameWithType: LongBuffer.ClassName
+- uid: Java.Nio.LongBuffer.ClassName*
+  name: ClassName
+  href: api/Java.Nio.LongBuffer.html#Java_Nio_LongBuffer_ClassName_
+  commentId: Overload:Java.Nio.LongBuffer.ClassName
+  isSpec: "True"
+  fullName: Java.Nio.LongBuffer.ClassName
+  nameWithType: LongBuffer.ClassName
+- uid: Java.Nio.LongBuffer.op_Implicit(Java.Nio.LongBuffer)~Java.Lang.Comparable{Java.Nio.LongBuffer}
+  name: Implicit(LongBuffer to Comparable<LongBuffer>)
+  href: api/Java.Nio.LongBuffer.html#Java_Nio_LongBuffer_op_Implicit_Java_Nio_LongBuffer__Java_Lang_Comparable_Java_Nio_LongBuffer_
+  commentId: M:Java.Nio.LongBuffer.op_Implicit(Java.Nio.LongBuffer)~Java.Lang.Comparable{Java.Nio.LongBuffer}
+  name.vb: Widening(LongBuffer to Comparable(Of LongBuffer))
+  fullName: Java.Nio.LongBuffer.Implicit(Java.Nio.LongBuffer to Java.Lang.Comparable<Java.Nio.LongBuffer>)
+  fullName.vb: Java.Nio.LongBuffer.Widening(Java.Nio.LongBuffer to Java.Lang.Comparable(Of Java.Nio.LongBuffer))
+  nameWithType: LongBuffer.Implicit(LongBuffer to Comparable<LongBuffer>)
+  nameWithType.vb: LongBuffer.Widening(LongBuffer to Comparable(Of LongBuffer))
+- uid: Java.Nio.LongBuffer.op_Implicit*
+  name: Implicit
+  href: api/Java.Nio.LongBuffer.html#Java_Nio_LongBuffer_op_Implicit_
+  commentId: Overload:Java.Nio.LongBuffer.op_Implicit
+  isSpec: "True"
+  name.vb: Widening
+  fullName: Java.Nio.LongBuffer.Implicit
+  fullName.vb: Java.Nio.LongBuffer.Widening
+  nameWithType: LongBuffer.Implicit
+  nameWithType.vb: LongBuffer.Widening
+- uid: Java.Nio.MappedByteBuffer
+  name: MappedByteBuffer
+  href: api/Java.Nio.MappedByteBuffer.html
+  commentId: T:Java.Nio.MappedByteBuffer
+  fullName: Java.Nio.MappedByteBuffer
+  nameWithType: MappedByteBuffer
+- uid: Java.Nio.MappedByteBuffer.ClassName
+  name: ClassName
+  href: api/Java.Nio.MappedByteBuffer.html#Java_Nio_MappedByteBuffer_ClassName
+  commentId: P:Java.Nio.MappedByteBuffer.ClassName
+  fullName: Java.Nio.MappedByteBuffer.ClassName
+  nameWithType: MappedByteBuffer.ClassName
+- uid: Java.Nio.MappedByteBuffer.ClassName*
+  name: ClassName
+  href: api/Java.Nio.MappedByteBuffer.html#Java_Nio_MappedByteBuffer_ClassName_
+  commentId: Overload:Java.Nio.MappedByteBuffer.ClassName
+  isSpec: "True"
+  fullName: Java.Nio.MappedByteBuffer.ClassName
+  nameWithType: MappedByteBuffer.ClassName
+- uid: Java.Nio.MappedByteBuffer.Force
+  name: Force()
+  href: api/Java.Nio.MappedByteBuffer.html#Java_Nio_MappedByteBuffer_Force
+  commentId: M:Java.Nio.MappedByteBuffer.Force
+  fullName: Java.Nio.MappedByteBuffer.Force()
+  nameWithType: MappedByteBuffer.Force()
+- uid: Java.Nio.MappedByteBuffer.Force*
+  name: Force
+  href: api/Java.Nio.MappedByteBuffer.html#Java_Nio_MappedByteBuffer_Force_
+  commentId: Overload:Java.Nio.MappedByteBuffer.Force
+  isSpec: "True"
+  fullName: Java.Nio.MappedByteBuffer.Force
+  nameWithType: MappedByteBuffer.Force
+- uid: Java.Nio.MappedByteBuffer.IsLoaded
+  name: IsLoaded
+  href: api/Java.Nio.MappedByteBuffer.html#Java_Nio_MappedByteBuffer_IsLoaded
+  commentId: P:Java.Nio.MappedByteBuffer.IsLoaded
+  fullName: Java.Nio.MappedByteBuffer.IsLoaded
+  nameWithType: MappedByteBuffer.IsLoaded
+- uid: Java.Nio.MappedByteBuffer.IsLoaded*
+  name: IsLoaded
+  href: api/Java.Nio.MappedByteBuffer.html#Java_Nio_MappedByteBuffer_IsLoaded_
+  commentId: Overload:Java.Nio.MappedByteBuffer.IsLoaded
+  isSpec: "True"
+  fullName: Java.Nio.MappedByteBuffer.IsLoaded
+  nameWithType: MappedByteBuffer.IsLoaded
+- uid: Java.Nio.MappedByteBuffer.Load
+  name: Load()
+  href: api/Java.Nio.MappedByteBuffer.html#Java_Nio_MappedByteBuffer_Load
+  commentId: M:Java.Nio.MappedByteBuffer.Load
+  fullName: Java.Nio.MappedByteBuffer.Load()
+  nameWithType: MappedByteBuffer.Load()
+- uid: Java.Nio.MappedByteBuffer.Load*
+  name: Load
+  href: api/Java.Nio.MappedByteBuffer.html#Java_Nio_MappedByteBuffer_Load_
+  commentId: Overload:Java.Nio.MappedByteBuffer.Load
+  isSpec: "True"
+  fullName: Java.Nio.MappedByteBuffer.Load
+  nameWithType: MappedByteBuffer.Load
+- uid: Java.Nio.ShortBuffer
+  name: ShortBuffer
+  href: api/Java.Nio.ShortBuffer.html
+  commentId: T:Java.Nio.ShortBuffer
+  fullName: Java.Nio.ShortBuffer
+  nameWithType: ShortBuffer
+- uid: Java.Nio.ShortBuffer.Allocate(System.Int32)
+  name: Allocate(Int32)
+  href: api/Java.Nio.ShortBuffer.html#Java_Nio_ShortBuffer_Allocate_System_Int32_
+  commentId: M:Java.Nio.ShortBuffer.Allocate(System.Int32)
+  fullName: Java.Nio.ShortBuffer.Allocate(System.Int32)
+  nameWithType: ShortBuffer.Allocate(Int32)
+- uid: Java.Nio.ShortBuffer.Allocate*
+  name: Allocate
+  href: api/Java.Nio.ShortBuffer.html#Java_Nio_ShortBuffer_Allocate_
+  commentId: Overload:Java.Nio.ShortBuffer.Allocate
+  isSpec: "True"
+  fullName: Java.Nio.ShortBuffer.Allocate
+  nameWithType: ShortBuffer.Allocate
+- uid: Java.Nio.ShortBuffer.Array
+  name: Array
+  href: api/Java.Nio.ShortBuffer.html#Java_Nio_ShortBuffer_Array
+  commentId: P:Java.Nio.ShortBuffer.Array
+  fullName: Java.Nio.ShortBuffer.Array
+  nameWithType: ShortBuffer.Array
+- uid: Java.Nio.ShortBuffer.Array*
+  name: Array
+  href: api/Java.Nio.ShortBuffer.html#Java_Nio_ShortBuffer_Array_
+  commentId: Overload:Java.Nio.ShortBuffer.Array
+  isSpec: "True"
+  fullName: Java.Nio.ShortBuffer.Array
+  nameWithType: ShortBuffer.Array
+- uid: Java.Nio.ShortBuffer.ClassName
+  name: ClassName
+  href: api/Java.Nio.ShortBuffer.html#Java_Nio_ShortBuffer_ClassName
+  commentId: P:Java.Nio.ShortBuffer.ClassName
+  fullName: Java.Nio.ShortBuffer.ClassName
+  nameWithType: ShortBuffer.ClassName
+- uid: Java.Nio.ShortBuffer.ClassName*
+  name: ClassName
+  href: api/Java.Nio.ShortBuffer.html#Java_Nio_ShortBuffer_ClassName_
+  commentId: Overload:Java.Nio.ShortBuffer.ClassName
+  isSpec: "True"
+  fullName: Java.Nio.ShortBuffer.ClassName
+  nameWithType: ShortBuffer.ClassName
+- uid: Java.Nio.ShortBuffer.op_Implicit(Java.Nio.ShortBuffer)~Java.Lang.Comparable{Java.Nio.ShortBuffer}
+  name: Implicit(ShortBuffer to Comparable<ShortBuffer>)
+  href: api/Java.Nio.ShortBuffer.html#Java_Nio_ShortBuffer_op_Implicit_Java_Nio_ShortBuffer__Java_Lang_Comparable_Java_Nio_ShortBuffer_
+  commentId: M:Java.Nio.ShortBuffer.op_Implicit(Java.Nio.ShortBuffer)~Java.Lang.Comparable{Java.Nio.ShortBuffer}
+  name.vb: Widening(ShortBuffer to Comparable(Of ShortBuffer))
+  fullName: Java.Nio.ShortBuffer.Implicit(Java.Nio.ShortBuffer to Java.Lang.Comparable<Java.Nio.ShortBuffer>)
+  fullName.vb: Java.Nio.ShortBuffer.Widening(Java.Nio.ShortBuffer to Java.Lang.Comparable(Of Java.Nio.ShortBuffer))
+  nameWithType: ShortBuffer.Implicit(ShortBuffer to Comparable<ShortBuffer>)
+  nameWithType.vb: ShortBuffer.Widening(ShortBuffer to Comparable(Of ShortBuffer))
+- uid: Java.Nio.ShortBuffer.op_Implicit*
+  name: Implicit
+  href: api/Java.Nio.ShortBuffer.html#Java_Nio_ShortBuffer_op_Implicit_
+  commentId: Overload:Java.Nio.ShortBuffer.op_Implicit
+  isSpec: "True"
+  name.vb: Widening
+  fullName: Java.Nio.ShortBuffer.Implicit
+  fullName.vb: Java.Nio.ShortBuffer.Widening
+  nameWithType: ShortBuffer.Implicit
+  nameWithType.vb: ShortBuffer.Widening
 - uid: Java.Sql
   name: Java.Sql
   href: api/Java.Sql.html
@@ -23570,28 +24293,6 @@ references:
   fullName.vb: MASES.JNet.JNetCoreBase(Of T).ProcessCommandLine
   nameWithType: JNetCoreBase<T>.ProcessCommandLine
   nameWithType.vb: JNetCoreBase(Of T).ProcessCommandLine
-- uid: MASES.JNet.JNetExtensions
-  name: JNetExtensions
-  href: api/MASES.JNet.JNetExtensions.html
-  commentId: T:MASES.JNet.JNetExtensions
-  fullName: MASES.JNet.JNetExtensions
-  nameWithType: JNetExtensions
-- uid: MASES.JNet.JNetExtensions.IExecuteArray*
-  name: IExecuteArray
-  href: api/MASES.JNet.JNetExtensions.html#MASES_JNet_JNetExtensions_IExecuteArray_
-  commentId: Overload:MASES.JNet.JNetExtensions.IExecuteArray
-  isSpec: "True"
-  fullName: MASES.JNet.JNetExtensions.IExecuteArray
-  nameWithType: JNetExtensions.IExecuteArray
-- uid: MASES.JNet.JNetExtensions.IExecuteArray``1(MASES.JCOBridge.C2JBridge.JVMBridgeBase,System.String,System.Object[])
-  name: IExecuteArray<T>(JVMBridgeBase, String, Object[])
-  href: api/MASES.JNet.JNetExtensions.html#MASES_JNet_JNetExtensions_IExecuteArray__1_MASES_JCOBridge_C2JBridge_JVMBridgeBase_System_String_System_Object___
-  commentId: M:MASES.JNet.JNetExtensions.IExecuteArray``1(MASES.JCOBridge.C2JBridge.JVMBridgeBase,System.String,System.Object[])
-  name.vb: IExecuteArray(Of T)(JVMBridgeBase, String, Object())
-  fullName: MASES.JNet.JNetExtensions.IExecuteArray<T>(MASES.JCOBridge.C2JBridge.JVMBridgeBase, System.String, System.Object[])
-  fullName.vb: MASES.JNet.JNetExtensions.IExecuteArray(Of T)(MASES.JCOBridge.C2JBridge.JVMBridgeBase, System.String, System.Object())
-  nameWithType: JNetExtensions.IExecuteArray<T>(JVMBridgeBase, String, Object[])
-  nameWithType.vb: JNetExtensions.IExecuteArray(Of T)(JVMBridgeBase, String, Object())
 - uid: MASES.JNetCLI
   name: MASES.JNetCLI
   href: api/MASES.JNetCLI.html

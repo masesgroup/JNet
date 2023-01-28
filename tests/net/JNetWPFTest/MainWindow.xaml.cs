@@ -1,6 +1,4 @@
-﻿using MASES.JCOBridge.C2JBridge;
-using MASES.JCOBridge.C2JBridge.Specialized;
-using System;
+﻿using System;
 using System.Windows;
 using MASES.JNetGraphicCommon;
 using MASES.JNet;
