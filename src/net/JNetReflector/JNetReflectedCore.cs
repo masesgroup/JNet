@@ -43,7 +43,7 @@ namespace MASES.JNetReflector
                         Name = CLIParam.OriginRootPath,
                         Type = ArgumentType.Double,
                         IsMandatory = true,
-                        Help = "Set the origin path where Jars are stored",
+                        Help = "The origin path where Jars to be analyzed are stored",
                     },
                     new ArgumentMetadata<string>()
                     {
@@ -57,14 +57,14 @@ namespace MASES.JNetReflector
                         Name = CLIParam.JavadocVersion,
                         Type = ArgumentType.Double,
                         Default = 11,
-                        Help = "The version of the Javadoc to be associated to the classes",
+                        Help = "The version of the Javadoc to be associated to the classes, it means the Javadoc tool version used",
                     },
                     new ArgumentMetadata<string>()
                     {
                         Name = CLIParam.DestinationRootPath,
                         Type = ArgumentType.Double,
                         Default = SpecialNames.JNetReflectorGeneratedFolder,
-                        Help = "Set the destination root path",
+                        Help = "The destination root path where reflected classes will be stored",
                     },
                     new ArgumentMetadata<string>()
                     {
@@ -83,7 +83,7 @@ namespace MASES.JNetReflector
                         Name = CLIParam.DryRun,
                         Type = ArgumentType.Single,
                         Default = false,
-                        Help = "Do not write anything to disk",
+                        Help = "Execute everything, but do not write anything to disk",
                     },
                 });
                 return lst;
