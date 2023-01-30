@@ -16,18 +16,17 @@
 *  Refer to LICENSE for more information.
 */
 
+using Java.Lang;
 using MASES.JCOBridge.C2JBridge;
 
-namespace Java.Util
+namespace Java.Io
 {
-    public class EventObject : JVMBridgeBase<EventObject>
+    /// <summary>
+    /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html"/>
+    /// </summary>
+    public class IOException : Exception
     {
-        public override string ClassName => "java.util.EventObject";
-
-        public EventObject() { }
-
-        protected EventObject(params object[] args) : base(args) { }
-
-        public virtual object Source => IExecute("getSource");
+        /// <inheritdoc cref="JVMBridgeException.ClassName"/>
+        public override string ClassName => "java.io.IOException";
     }
 }

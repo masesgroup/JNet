@@ -34,11 +34,15 @@ namespace MASES.JNet
         {
             JCOBridge.C2JBridge.JCOBridge.RegisterException<Java.Lang.ThreadDeath>();
 
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<Java.Io.IOException>();
+
             JCOBridge.C2JBridge.JCOBridge.RegisterException<Java.Util.Concurrent.ExecutionException>();
 
             JCOBridge.C2JBridge.JCOBridge.RegisterException<Java.Sql.SQLException>();
 
             JCOBridge.C2JBridge.JCOBridge.RegisterException<JavaX.Naming.NamingException>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<JavaX.Management.Remote.JMXProviderException>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<JavaX.Management.Remote.JMXServerErrorException>();
         }
 
         /// <summary>

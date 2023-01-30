@@ -18,16 +18,12 @@
 
 using MASES.JCOBridge.C2JBridge;
 
-namespace Java.Util
+namespace JavaX.Security.Auth
 {
-    public class EventObject : JVMBridgeBase<EventObject>
+    public class Subject : JVMBridgeBase<Subject>
     {
-        public override string ClassName => "java.util.EventObject";
+        public override string ClassName => "javax.security.auth.Subject";
 
-        public EventObject() { }
-
-        protected EventObject(params object[] args) : base(args) { }
-
-        public virtual object Source => IExecute("getSource");
+        // TODO: complete the class
     }
 }

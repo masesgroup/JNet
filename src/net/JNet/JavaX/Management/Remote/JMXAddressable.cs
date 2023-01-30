@@ -18,16 +18,15 @@
 
 using MASES.JCOBridge.C2JBridge;
 
-namespace Java.Util
+namespace JavaX.Management.Remote
 {
-    public class EventObject : JVMBridgeBase<EventObject>
+    public class JMXAddressable : JVMBridgeBase<JMXAddressable>
     {
-        public override string ClassName => "java.util.EventObject";
-
-        public EventObject() { }
-
-        protected EventObject(params object[] args) : base(args) { }
-
-        public virtual object Source => IExecute("getSource");
+        public override bool IsInterface => true;
+        public override string ClassName => "javax.management.remote.JMXAddressable";
+        /// <summary>
+        /// The address of this object.
+        /// </summary>
+        public JMXServiceURL Address => IExecute<JMXServiceURL>("getAddress");
     }
 }
