@@ -18,16 +18,18 @@
 
 using MASES.JCOBridge.C2JBridge;
 
-namespace Java.Util
+namespace JavaX.Management
 {
-    public class EventObject : JVMBridgeBase<EventObject>
+    /// <summary>
+    /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/RuntimeOperationsException.html"/>
+    /// </summary>
+    public class RuntimeOperationsException : JMRuntimeException
     {
-        public override string ClassName => "java.util.EventObject";
-
-        public EventObject() { }
-
-        protected EventObject(params object[] args) : base(args) { }
-
-        public virtual object Source => IExecute("getSource");
+        /// <inheritdoc cref="JVMBridgeException.ClassName"/>
+        public override string ClassName => "javax.management.RuntimeOperationsException";
+        /// <summary>
+        /// Return the actual <see cref="Java.Lang.RuntimeException"/> thrown.
+        /// </summary>
+        public Java.Lang.RuntimeException TargetException => IExecute<Java.Lang.RuntimeException>("getTargetException");
     }
 }

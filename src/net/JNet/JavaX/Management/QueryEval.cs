@@ -18,16 +18,18 @@
 
 using MASES.JCOBridge.C2JBridge;
 
-namespace Java.Util
+namespace JavaX.Management
 {
-    public class EventObject : JVMBridgeBase<EventObject>
+    public class QueryEval : JVMBridgeBase<QueryEval>
     {
-        public override string ClassName => "java.util.EventObject";
-
-        public EventObject() { }
-
-        protected EventObject(params object[] args) : base(args) { }
-
-        public virtual object Source => IExecute("getSource");
+        public override string ClassName => "javax.management.QueryEval";
+        /// <summary>
+        /// Return the MBean server that was most recently given to the setMBeanServer method by this thread.
+        /// </summary>
+        public static MBeanServer MBeanServer => SExecute<MBeanServer>("getMBeanServer");
+        /// <summary>
+        /// Sets the MBean server on which the query is to be performed.
+        /// </summary>
+        public void SetMBeanServer(MBeanServer mbs) => IExecute<bool>("setMBeanServer", mbs);
     }
 }

@@ -18,16 +18,21 @@
 
 using MASES.JCOBridge.C2JBridge;
 
-namespace Java.Util
+namespace JavaX.Management
 {
-    public class EventObject : JVMBridgeBase<EventObject>
+    public class ValueExp : JVMBridgeBase<ValueExp>
     {
-        public override string ClassName => "java.util.EventObject";
+        public override bool IsInterface => true;
 
-        public EventObject() { }
+        public override string ClassName => "javax.management.ValueExp";
 
-        protected EventObject(params object[] args) : base(args) { }
+        public ValueExp() { }
 
-        public virtual object Source => IExecute("getSource");
+        protected ValueExp(params object[] args) : base(args) { }
+
+        /// <summary>
+        /// Applies the ValueExp on a MBean.
+        /// </summary>
+        public ValueExp Apply(ObjectName name) => IExecute<ValueExp>("apply", name);
     }
 }

@@ -18,16 +18,20 @@
 
 using MASES.JCOBridge.C2JBridge;
 
-namespace Java.Util
+namespace JavaX.Management.Remote
 {
-    public class EventObject : JVMBridgeBase<EventObject>
+    public class JMXPrincipal : JVMBridgeBase<JMXPrincipal>
     {
-        public override string ClassName => "java.util.EventObject";
+        public override string ClassName => "javax.management.remote.JMXPrincipal";
 
-        public EventObject() { }
-
-        protected EventObject(params object[] args) : base(args) { }
-
-        public virtual object Source => IExecute("getSource");
+        public JMXPrincipal() { }
+        /// <summary>
+        /// Creates a <see cref="JMXPrincipal"/> for a given identity.
+        /// </summary>
+        public JMXPrincipal(string name) : base(name) { }
+        /// <summary>
+        /// Returns the name of this principal.
+        /// </summary>
+        public string Name => IExecute<string>("getName");
     }
 }

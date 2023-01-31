@@ -16,18 +16,18 @@
 *  Refer to LICENSE for more information.
 */
 
+using JavaX.Security.Auth;
 using MASES.JCOBridge.C2JBridge;
 
-namespace Java.Util
+namespace JavaX.Management.Remote
 {
-    public class EventObject : JVMBridgeBase<EventObject>
+    public class JMXAuthenticator : JVMBridgeBase<JMXAuthenticator>
     {
-        public override string ClassName => "java.util.EventObject";
-
-        public EventObject() { }
-
-        protected EventObject(params object[] args) : base(args) { }
-
-        public virtual object Source => IExecute("getSource");
+        public override bool IsInterface => true;
+        public override string ClassName => "javax.management.remote.JMXAuthenticator";
+        /// <summary>
+        /// Authenticates the MBeanServerConnection client with the given client credentials.
+        /// </summary>
+        public Subject Authenticate(object credentials) => IExecute<Subject>("authenticate", credentials);
     }
 }

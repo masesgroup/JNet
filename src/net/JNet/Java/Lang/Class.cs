@@ -306,5 +306,4 @@ namespace Java.Lang
         /// <returns>A newly allocated instance of the class represented by this object.</returns>
         public T NewInstance() => IExecute<T>("newInstance");
     }
-
 }

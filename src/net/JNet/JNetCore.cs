@@ -16,7 +16,6 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.JCOBridge.C2JBridge;
 using System.Collections.Generic;
 
 namespace MASES.JNet
@@ -34,11 +33,39 @@ namespace MASES.JNet
         {
             JCOBridge.C2JBridge.JCOBridge.RegisterException<Java.Lang.ThreadDeath>();
 
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<Java.Io.IOException>();
+
             JCOBridge.C2JBridge.JCOBridge.RegisterException<Java.Util.Concurrent.ExecutionException>();
 
             JCOBridge.C2JBridge.JCOBridge.RegisterException<Java.Sql.SQLException>();
 
             JCOBridge.C2JBridge.JCOBridge.RegisterException<JavaX.Naming.NamingException>();
+
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<JavaX.Management.AttributeNotFoundException>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<JavaX.Management.BadAttributeValueExpException>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<JavaX.Management.BadBinaryOpValueExpException>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<JavaX.Management.BadStringOperationException>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<JavaX.Management.InstanceAlreadyExistsException>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<JavaX.Management.InstanceNotFoundException>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<JavaX.Management.IntrospectionException>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<JavaX.Management.InvalidApplicationException>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<JavaX.Management.InvalidAttributeValueException>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<JavaX.Management.JMException>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<JavaX.Management.JMRuntimeException>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<JavaX.Management.ListenerNotFoundException>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<JavaX.Management.MalformedObjectNameException>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<JavaX.Management.MBeanException>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<JavaX.Management.MBeanRegistrationException>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<JavaX.Management.NotCompliantMBeanException>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<JavaX.Management.OperationsException>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<JavaX.Management.ReflectionException>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<JavaX.Management.RuntimeErrorException>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<JavaX.Management.RuntimeMBeanException>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<JavaX.Management.RuntimeOperationsException>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<JavaX.Management.ServiceNotFoundException>();
+
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<JavaX.Management.Remote.JMXProviderException>();
+            JCOBridge.C2JBridge.JCOBridge.RegisterException<JavaX.Management.Remote.JMXServerErrorException>();
         }
 
         /// <summary>

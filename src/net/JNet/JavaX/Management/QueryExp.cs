@@ -18,16 +18,21 @@
 
 using MASES.JCOBridge.C2JBridge;
 
-namespace Java.Util
+namespace JavaX.Management
 {
-    public class EventObject : JVMBridgeBase<EventObject>
+    public class QueryExp : JVMBridgeBase<QueryExp>
     {
-        public override string ClassName => "java.util.EventObject";
+        public override bool IsInterface => true;
 
-        public EventObject() { }
+        public override string ClassName => "javax.management.QueryExp";
 
-        protected EventObject(params object[] args) : base(args) { }
-
-        public virtual object Source => IExecute("getSource");
+        /// <summary>
+        /// Test whether this ObjectName, which may be a pattern, matches another ObjectName.
+        /// </summary>
+        public bool Apply(ObjectName name) => IExecute<bool>("apply", name);
+        /// <summary>
+        /// Sets the MBean server on which the query is to be performed.
+        /// </summary>
+        public void SetMBeanServer(MBeanServer mbs) => IExecute<bool>("setMBeanServer", mbs);
     }
 }

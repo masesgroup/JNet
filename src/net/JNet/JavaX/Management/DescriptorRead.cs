@@ -18,16 +18,16 @@
 
 using MASES.JCOBridge.C2JBridge;
 
-namespace Java.Util
+namespace JavaX.Management
 {
-    public class EventObject : JVMBridgeBase<EventObject>
+    public class DescriptorRead : JVMBridgeBase<DescriptorRead>
     {
-        public override string ClassName => "java.util.EventObject";
+        public override bool IsInterface => true;
 
-        public EventObject() { }
-
-        protected EventObject(params object[] args) : base(args) { }
-
-        public virtual object Source => IExecute("getSource");
+        public override string ClassName => "javax.management.DescriptorRead";
+        /// <summary>
+        /// Returns a copy of <see cref="Descriptor"/>.
+        /// </summary>
+        public Descriptor Descriptor => IExecute<Descriptor>("getDescriptor");
     }
 }

@@ -16,18 +16,17 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.JCOBridge.C2JBridge;
-
-namespace Java.Util
+namespace JavaX.Management
 {
-    public class EventObject : JVMBridgeBase<EventObject>
+    public class DescriptorAccess : DescriptorRead
     {
-        public override string ClassName => "java.util.EventObject";
+        public override bool IsInterface => true;
 
-        public EventObject() { }
+        public override string ClassName => "javax.management.DescriptorAccess";
 
-        protected EventObject(params object[] args) : base(args) { }
-
-        public virtual object Source => IExecute("getSource");
+        /// <summary>
+        /// Sets <see cref="Descriptor"/> (full replace).
+        /// </summary>
+        public void SetDescriptor(Descriptor inDescriptor) => IExecute("setDescriptor", inDescriptor);
     }
 }
