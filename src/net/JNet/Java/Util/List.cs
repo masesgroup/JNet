@@ -69,7 +69,7 @@ namespace Java.Util
 
         public static List<E> Of(E e1) => SExecute<List<E>>("of", e1);
 
-        public static List<E> Of(params E[] elements) => SExecute<List<E>>("of", elements);
+        public static List<E> Of(params E[] elements) => elements.Length == 0 ? SExecute<List<E>>("of") : SExecute<List<E>>("of", elements);
 
         public static List<E> Of(E e1, E e2) => SExecute<List<E>>("of", e1, e2);
 

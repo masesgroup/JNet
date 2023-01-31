@@ -25,7 +25,7 @@ namespace MASES.JNetReflector.Templates
 {
     public class Template
     {
-        static string[] templateStrings = new string[]
+        static readonly string[] templateStrings = new string[]
         {
                 AllPackageClassesTemplate,
                 AllPackageClassesStubClassTemplate,
@@ -34,6 +34,10 @@ namespace MASES.JNetReflector.Templates
                 AllPackageClassesStubNestedExceptionTemplate,
 
                 SingleClassTemplate,
+                SingleConstructorTemplate,
+                SingleFieldTemplate,
+                SingleMethodTemplate,
+                SinglePropertyTemplate,
                 SingleNestedClassTemplate,
         };
 
@@ -53,10 +57,10 @@ namespace MASES.JNetReflector.Templates
             }
         }
 
-        static IDictionary<string, string> templates = new ConcurrentDictionary<string, string>();
+        static readonly IDictionary<string, string> templates = new ConcurrentDictionary<string, string>();
         public static string GetTemplate(string templateName)
         {
-            string template = string.Empty;
+            string template;
             if (!templates.TryGetValue(templateName, out template))
             {
                 throw new InvalidOperationException(string.Format("Missing template {0}", templateName));
@@ -71,6 +75,10 @@ namespace MASES.JNetReflector.Templates
         public const string AllPackageClassesStubNestedExceptionTemplate = "AllPackageClassesStubNestedException.template";
 
         public const string SingleClassTemplate = "SingleClass.template";
+        public const string SingleConstructorTemplate = "SingleConstructor.template";
+        public const string SingleFieldTemplate = "SingleField.template";
+        public const string SingleMethodTemplate = "SingleMethod.template";
+        public const string SinglePropertyTemplate = "SingleProperty.template";
         public const string SingleNestedClassTemplate = "SingleNestedClass.template";
     }
 
@@ -81,35 +89,81 @@ namespace MASES.JNetReflector.Templates
 
     public class AllPackageClasses
     {
-        public const string VERSION_PLACEHOLDER = "ALLPACKAGE_VERSION_PLACEHOLDER";
-        public const string JAR_PLACEHOLDER = "ALLPACKAGE_JAR_PLACEHOLDER";
-        public const string NAMESPACE_PLACEHOLDER = "ALLPACKAGE_NAMESPACE_PLACEHOLDER";
-        public const string CLASSES_PLACEHOLDER = "// ALLPACKAGE_CLASSES_PLACEHOLDER";
+        public const string VERSION = "ALLPACKAGE_VERSION_PLACEHOLDER";
+        public const string JAR = "ALLPACKAGE_JAR_PLACEHOLDER";
+        public const string NAMESPACE = "ALLPACKAGE_NAMESPACE_PLACEHOLDER";
+        public const string CLASSES = "// ALLPACKAGE_CLASSES_PLACEHOLDER";
 
         public class ClassStub
         {
-            public const string HELP_PLACEHOLDER = "ALLPACKAGE_CLASSES_STUB_CLASS_HELP_PLACEHOLDER";
-            public const string CLASS_PLACEHOLDER = "ALLPACKAGE_CLASSES_STUB_CLASS_PLACEHOLDER";
-            public const string BASECLASS_PLACEHOLDER = "ALLPACKAGE_CLASSES_STUB_BASECLASS_PLACEHOLDER";
-            public const string JAVACLASS_PLACEHOLDER = "ALLPACKAGE_CLASSES_STUB_JAVACLASS_PLACEHOLDER";
-            public const string NESTED_CLASSES_PLACEHOLDER = "// ALLPACKAGE_CLASSES_STUB_NESTED_CLASSES_PLACEHOLDER";
+            public const string HELP = "ALLPACKAGE_CLASSES_STUB_CLASS_HELP_PLACEHOLDER";
+            public const string CLASS = "ALLPACKAGE_CLASSES_STUB_CLASS_PLACEHOLDER";
+            public const string BASECLASS = "ALLPACKAGE_CLASSES_STUB_BASECLASS_PLACEHOLDER";
+            public const string JAVACLASS = "ALLPACKAGE_CLASSES_STUB_JAVACLASS_PLACEHOLDER";
+            public const string CONSTRUCTORS = "// ALLPACKAGE_CLASSES_STUB_CONSTRUCTORS_PLACEHOLDER";
+            public const string FIELDS = "// ALLPACKAGE_CLASSES_STUB_FIELDS_PLACEHOLDER";
+            public const string STATICMETHODS = "// ALLPACKAGE_CLASSES_STUB_STATIC_METHODS_PLACEHOLDER";
+            public const string METHODS = "// ALLPACKAGE_CLASSES_STUB_METHODS_PLACEHOLDER";
+            public const string NESTED_CLASSES = "// ALLPACKAGE_CLASSES_STUB_NESTED_CLASSES_PLACEHOLDER";
 
-            public const string ISABSTRACT_PLACEHOLDER = "ALLPACKAGE_CLASSES_STUB_ISABSTRACT_PLACEHOLDER";
-            public const string ISCLOSEABLE_PLACEHOLDER = "ALLPACKAGE_CLASSES_STUB_ISCLOSEABLE_PLACEHOLDER";
-            public const string ISINTERFACE_PLACEHOLDER = "ALLPACKAGE_CLASSES_STUB_ISINTERFACE_PLACEHOLDER";
-            public const string ISSTATIC_PLACEHOLDER = "ALLPACKAGE_CLASSES_STUB_ISSTATIC_PLACEHOLDER";
+            public const string ISABSTRACT = "ALLPACKAGE_CLASSES_STUB_ISABSTRACT_PLACEHOLDER";
+            public const string ISCLOSEABLE = "ALLPACKAGE_CLASSES_STUB_ISCLOSEABLE_PLACEHOLDER";
+            public const string ISINTERFACE = "ALLPACKAGE_CLASSES_STUB_ISINTERFACE_PLACEHOLDER";
+            public const string ISSTATIC = "ALLPACKAGE_CLASSES_STUB_ISSTATIC_PLACEHOLDER";
+
+            public class ConstructorStub
+            {
+                public const string HELP = "CONSTRUCTOR_STUB_CONSTRUCTOR_HELP_PLACEHOLDER";
+                public const string MODIFIER = "CONSTRUCTOR_STUB_MODIFIER_PLACEHOLDER";
+                public const string NAME = "CONSTRUCTOR_STUB_CONSTRUCTOR_NAME_PLACEHOLDER";
+                public const string PARAMETERS = "CONSTRUCTOR_STUB_PARAMETERS_PLACEHOLDER";
+                public const string EXECUTION = "CONSTRUCTOR_STUB_EXECUTION_PLACEHOLDER";
+            }
+
+            public class MethodStub
+            {
+                public const string HELP = "METHOD_STUB_METHOD_HELP_PLACEHOLDER";
+                public const string MODIFIER = "METHOD_STUB_MODIFIER_PLACEHOLDER";
+                public const string RETURNTYPE = "METHOD_STUB_RETURN_TYPE_PLACEHOLDER";
+                public const string NAME = "METHOD_STUB_METHOD_NAME_PLACEHOLDER";
+                public const string PARAMETERS = "METHOD_STUB_PARAMETERS_PLACEHOLDER";
+                public const string EXECUTION = "METHOD_STUB_EXECUTION_PLACEHOLDER";
+                public const string EXECUTION_FORMAT = "{0}{1}{2}(\"{3}\"{4});";
+            }
+
+            public class PropertyStub
+            {
+                public const string GET_HELP = "PROPERTY_STUB_GET_PROPERTY_HELP_PLACEHOLDER";
+                public const string SET_HELP = "PROPERTY_STUB_SET_PROPERTY_HELP_PLACEHOLDER";
+                public const string MODIFIER = "PROPERTY_STUB_MODIFIER_PLACEHOLDER";
+                public const string TYPE = "PROPERTY_STUB_RETURN_TYPE_PLACEHOLDER";
+                public const string NAME = "PROPERTY_STUB_PROPERTY_NAME_PLACEHOLDER";
+                public const string EXECUTION = "PROPERTY_STUB_EXECUTION_PLACEHOLDER";
+                public const string GET_EXECUTION_FORMAT = "get {{ return {0}{1}(\"{2}\"); }}";
+                public const string SET_EXECUTION_FORMAT = "set {{ {0}(\"{1}\", value); }}";
+            }
+
+            public class FieldStub
+            {
+                public const string HELP = "FIELD_STUB_FIELD_HELP_PLACEHOLDER";
+                public const string MODIFIER = "FIELD_STUB_MODIFIER_PLACEHOLDER";
+                public const string TYPE = "FIELD_STUB_TYPE_PLACEHOLDER";
+                public const string NAME = "FIELD_STUB_FIELD_NAME_PLACEHOLDER";
+                public const string EXECUTION = "FIELD_STUB_EXECUTION_PLACEHOLDER";
+                public const string EXECUTION_FORMAT = "{0}.GetField{1}(\"{2}\");";
+            }
 
             public class NestedClassStub
             {
-                public const string HELP_PLACEHOLDER = "ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_HELP_PLACEHOLDER";
-                public const string CLASS_PLACEHOLDER = "ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_PLACEHOLDER";
-                public const string BASECLASS_PLACEHOLDER = "ALLPACKAGE_CLASSES_STUB_NESTED_BASECLASS_PLACEHOLDER";
-                public const string JAVACLASS_PLACEHOLDER = "ALLPACKAGE_CLASSES_STUB_NESTED_JAVACLASS_PLACEHOLDER";
+                public const string HELP = "ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_HELP_PLACEHOLDER";
+                public const string CLASS = "ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_PLACEHOLDER";
+                public const string BASECLASS = "ALLPACKAGE_CLASSES_STUB_NESTED_BASECLASS_PLACEHOLDER";
+                public const string JAVACLASS = "ALLPACKAGE_CLASSES_STUB_NESTED_JAVACLASS_PLACEHOLDER";
 
-                public const string ISABSTRACT_PLACEHOLDER = "ALLPACKAGE_CLASSES_STUB_NESTED_ISABSTRACT_PLACEHOLDER";
-                public const string ISCLOSEABLE_PLACEHOLDER = "ALLPACKAGE_CLASSES_STUB_NESTED_ISCLOSEABLE_PLACEHOLDER";
-                public const string ISINTERFACE_PLACEHOLDER = "ALLPACKAGE_CLASSES_STUB_NESTED_ISINTERFACE_PLACEHOLDER";
-                public const string ISSTATIC_PLACEHOLDER = "ALLPACKAGE_CLASSES_STUB_NESTED_ISSTATIC_PLACEHOLDER";
+                public const string ISABSTRACT = "ALLPACKAGE_CLASSES_STUB_NESTED_ISABSTRACT_PLACEHOLDER";
+                public const string ISCLOSEABLE = "ALLPACKAGE_CLASSES_STUB_NESTED_ISCLOSEABLE_PLACEHOLDER";
+                public const string ISINTERFACE = "ALLPACKAGE_CLASSES_STUB_NESTED_ISINTERFACE_PLACEHOLDER";
+                public const string ISSTATIC = "ALLPACKAGE_CLASSES_STUB_NESTED_ISSTATIC_PLACEHOLDER";
             }
         }
     }

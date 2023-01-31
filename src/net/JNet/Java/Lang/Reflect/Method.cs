@@ -43,7 +43,7 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// Invokes the underlying method represented by this Method object, on the specified object with the specified parameters.
         /// </summary>
-        public object Invoke(object obj, params object[] args) => IExecute("invoke", obj, args);
+        public object Invoke(object obj, params object[] args) => args.Length == 0 ? IExecute("invoke", obj) : IExecute("invoke", obj, args);
         /// <summary>
         /// Returns <see langword="true"/> if this method is a bridge method; returns <see langword="false"/> otherwise.
         /// </summary>

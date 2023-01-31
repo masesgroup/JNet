@@ -18,7 +18,6 @@
 
 using System.IO;
 using System;
-using System.IO.Compression;
 using System.Linq;
 using System.Collections.Generic;
 using System.Reflection;
@@ -30,228 +29,11 @@ namespace MASES.JNetReflector
         // ReflectorArgs
         public const string OriginRootPath = "OriginRootPath";
         public const string OriginJavadocUrl = "OriginJavadocUrl";
+        public const string JavadocVersion = "JavadocVersion";
         public const string DestinationRootPath = "DestinationRootPath";
         public const string JarList = "JarList";
         public const string NamespacesToAvoid = "NamespacesToAvoid";
         public const string DryRun = "DryRun";
-    }
-
-    public static class JNetReflectorExtensions
-    {
-        static Java.Lang.ClassLoader _loader;
-        static Java.Lang.ClassLoader SystemClassLoader
-        {
-            get
-            {
-                if (_loader == null) _loader = Java.Lang.ClassLoader.SystemClassLoader;
-                return _loader;
-            }
-        }
-
-
-        public static bool IsSpecialFolder(this ZipArchiveEntry entry)
-        {
-            var name = entry.FullName.ToLowerInvariant();
-            if (name.Contains(FileNameAndDirectory.METAINF.ToLowerInvariant())
-                || JNetReflectedCore.NamespacesToAvoid.Contains(entry.Namespace(false))) return true;
-            return false;
-        }
-
-        public static bool IsSpecialClass(this ZipArchiveEntry entry)
-        {
-            if (entry.IsJVMNestedClass()
-                && SpecialNames.SpecialNumberedNames.Any((o) => entry.JVMNestedClassName().StartsWith(o))) return true;
-            return false;
-        }
-
-        public static bool IsFolder(this ZipArchiveEntry entry)
-        {
-            if (entry.Length == 0) return true;
-            return false;
-        }
-
-        public static bool IsJVMNestedClass(this ZipArchiveEntry entry)
-        {
-            if (entry.Length != 0
-                && entry.Name.EndsWith(FileNameAndDirectory.JavaClassExtension)
-                && entry.Name.Contains(SpecialNames.NestedClassSeparator)) return true;
-            return false;
-        }
-
-        public static bool IsJVMClass(this ZipArchiveEntry entry)
-        {
-            if (entry.Length != 0
-                && entry.Name.EndsWith(FileNameAndDirectory.JavaClassExtension)
-                && !entry.Name.Contains(SpecialNames.NestedClassSeparator)) return true;
-            return false;
-        }
-
-        public static bool IsJVMException(this Java.Lang.Class entry)
-        {
-            if (entry == null) return false;
-            if (SpecialNames.IsJavaLangException(entry.CanonicalName)) return true;
-            return IsJVMException(entry.SuperClass);
-        }
-
-        public static bool IsOrInheritFromJVMGenericClass(this Java.Lang.Class entry)
-        {
-            if (entry == null) return false;
-            if (entry.EnclosingClass != null && entry.EnclosingClass.IsOrInheritFromJVMGenericClass()) return true;
-            if (entry.IsJVMGenericClass()) return true;
-            return IsOrInheritFromJVMGenericClass(entry.SuperClass);
-        }
-
-        public static bool IsJVMGenericClass(this Java.Lang.Class entry)
-        {
-            if (entry == null) return false;
-            if (entry.TypeParameters.Length == 0) return false;
-            return true;
-        }
-
-        public static string Camel(string str)
-        {
-            if (str.Length == 0 || str.Length == 1) return str;
-            else return char.ToUpper(str[0]) + str.Substring(1);
-        }
-
-        public static string Namespace(this ZipArchiveEntry entry, bool camel = true)
-        {
-            return Namespace(entry.FullName.Replace('/', '.'), camel);
-        }
-
-        public static string Namespace(string fullName, bool camel = true)
-        {
-            if (fullName.EndsWith(SpecialNames.ClassExtension))
-            {
-                fullName = fullName.Remove(fullName.IndexOf(SpecialNames.ClassExtension));
-            }
-            var package = fullName.Substring(0, fullName.LastIndexOf('.'));
-            var splitted = package.Split('.');
-            var ns = string.Join(".", splitted.Select((o) => camel ? Camel(o) : o));
-            return ns;
-        }
-
-        public static string JVMClassName(this ZipArchiveEntry entry)
-        {
-            var cName = Path.GetFileNameWithoutExtension(entry.Name);
-
-            return cName.Contains(SpecialNames.NestedClassSeparator) ? cName.Substring(0, cName.LastIndexOf(SpecialNames.NestedClassSeparator)) : cName;
-        }
-
-        public static string JVMNestedClassName(this ZipArchiveEntry entry)
-        {
-            var cName = Path.GetFileNameWithoutExtension(entry.Name);
-            return cName.Substring(cName.LastIndexOf(SpecialNames.NestedClassSeparator) + 1);
-        }
-
-        public static string JVMFullClassName(this ZipArchiveEntry entry)
-        {
-            var name = entry.FullName.Substring(0, entry.FullName.LastIndexOf("." + FileNameAndDirectory.JavaClassExtension));
-            return name.Replace('/', '.');
-        }
-
-        public static string JVMFullQualifiedClassName(this ZipArchiveEntry entry)
-        {
-            var cName = entry.FullName.Substring(0, entry.FullName.LastIndexOf(SpecialNames.ClassExtension));
-            return cName.Replace('/', '.');
-        }
-
-        public static string ToFullQualifiedClassName(string canonicalName)
-        {
-            string className = canonicalName.Substring(canonicalName.LastIndexOf('.') + 1);
-            className = Namespace(canonicalName) + "." + className.Replace(SpecialNames.NestedClassSeparator, '.');
-            return className;
-        }
-
-
-        public static string JVMBaseClassName(this ZipArchiveEntry entry)
-        {
-            try
-            {
-                var jType = Java.Lang.Class.ForName(entry.JVMFullQualifiedClassName(), true, SystemClassLoader);
-
-                if (jType == null || jType.SuperClass == null || jType.SuperClass.CanonicalName == SpecialNames.JavaLangObject)
-                {
-                    string innerName = entry.IsJVMNestedClass() ? entry.JVMNestedClassName() : entry.JVMClassName();
-                    return string.Format("MASES.JCOBridge.C2JBridge.JVMBridgeBase<{0}>", innerName);
-                }
-                else if (jType == null || jType.SuperClass == null || SpecialNames.IsJavaLangException(jType.SuperClass.CanonicalName))
-                {
-                    return ToFullQualifiedClassName(jType.SuperClass.CanonicalName);
-                }
-                //else if (jType == null || jType.SuperClass == null || jType.SuperClass.CanonicalName == SpecialNames.JavaLangException)
-                //{
-                //    string innerName = entry.IsJVMNestedClass() ? entry.JVMNestedClassName() : entry.JVMClassName();
-                //    return string.Format("MASES.JCOBridge.C2JBridge.JVMBridgeException<{0}>", innerName);
-                //}
-                //else if (jType == null || jType.SuperClass == null || jType.SuperClass.CanonicalName == SpecialNames.JavaLangError)
-                //{
-                //    return "Java.Lang.Error";
-                //}
-
-                return ToFullQualifiedClassName(jType.SuperClass.CanonicalName);
-            }
-            catch
-            {
-                string className = entry.IsJVMNestedClass() ? entry.JVMNestedClassName() : entry.JVMClassName();
-                return string.Format("MASES.JCOBridge.C2JBridge.JVMBridgeBase<{0}>", className);
-            }
-        }
-
-        public static Java.Lang.Class JVMClass(this ZipArchiveEntry entry)
-        {
-            var cName = entry.JVMFullQualifiedClassName();
-            try
-            {
-                return Java.Lang.Class.ForName(cName, true, SystemClassLoader);
-            }
-            catch
-            {
-                return null;
-            }
-        }
-
-        public static string JavadocUrl(this ZipArchiveEntry entry, string javaDocBaseUrl)
-        {
-            var newURl = javaDocBaseUrl;
-            if (newURl != null)
-            {
-                if (!newURl.EndsWith("/"))
-                    newURl += '/';
-                newURl += Path.ChangeExtension(entry.FullName, ".html");
-                return newURl;
-            }
-
-            return entry.JVMClassName();
-        }
-
-        public static string ToFolderName(this System.Reflection.AssemblyName assName)
-        {
-            var name = string.Concat(assName.FullName.Split(' '));
-
-            name = name.Replace(',', '_')
-                       .Replace('=', '_').ToLowerInvariant();
-
-            return name;
-        }
-
-        public static readonly string ReflectorVersion = typeof(JNetReflectorExtensions).Assembly.GetName().Version.ToString();
-
-        public static string[] KeyWords = new string[]
-        {
-            "import",
-            "final",
-            "package",
-            "implements",
-            "extends",
-            "break",
-            "finally",
-            "continue",
-            "Class",
-            "classType",
-            "classInstance",
-            "native"
-        };
     }
 
     public static class SpecialNames
@@ -265,6 +47,8 @@ namespace MASES.JNetReflector
 
         public const string JNetReflectorGeneratedFolder = "JNetReflectorGenerated";
         public const string ClassExtension = ".class";
+        public const char JNISeparator = '/';
+        public const char NamespaceSeparator = '.';
         public const char NestedClassSeparator = '$';
         public const string JavaLangObject = "java.lang.Object";
 

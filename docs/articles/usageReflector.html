@@ -77,11 +77,22 @@
 <li>dotnet tool</li>
 </ul>
 <blockquote>
-<p>jnetreflector -OriginRootPath C:\myJars -OriginJavadocUrl &quot;https://thehost/javadoc/&quot; -DestinationRootPath C:\ReflectionDestination</p>
+<p>jnetreflector -OriginRootPath C:\myJars -OriginJavadocUrl &quot;https://thehost/javadoc/&quot; -JavadocVersion 11 -DestinationRootPath C:\ReflectionDestination</p>
 </blockquote>
 <blockquote>
-<p>jnr -OriginRootPath C:\myJars -OriginJavadocUrl &quot;https://thehost/javadoc/&quot; -DestinationRootPath C:\ReflectionDestination</p>
+<p>jnr -OriginRootPath C:\myJars -OriginJavadocUrl &quot;https://thehost/javadoc/&quot; -JavadocVersion 11 -DestinationRootPath C:\ReflectionDestination</p>
 </blockquote>
+<h2 id="command-switch-available">Command switch available</h2>
+<p><em>jnr</em> accepts the following command-line switch:</p>
+<ul>
+<li><strong>OriginRootPath</strong>: The origin path where Jars to be analyzed are stored</li>
+<li><strong>OriginJavadocUrl</strong>: The base URL of the Javadoc to be associated to the classes</li>
+<li><strong>JavadocVersion</strong>: The version of the Javadoc to be associated to the classes, it means the Javadoc tool version used</li>
+<li><strong>DestinationRootPath</strong>: The destination root path where reflected classes will be stored</li>
+<li><strong>JarList</strong>: A CSV list of JAR to be analyzed or folders containing the JARs</li>
+<li><strong>NamespacesToAvoid</strong>: A CSV list of namespaces to be removed from analysis</li>
+<li><strong>DryRun</strong>: Execute everything, but do not write anything to disk</li>
+</ul>
 </article>
           </div>
           
