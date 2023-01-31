@@ -1037,6 +1037,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Io.IOException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Io.IOException.html",
+          "hash": "RrMKxcDn4YXM+lEm0KuVuDA5e4JavuISr/qeWcyicHU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Io.InputStream.yml",
       "output": {
         ".html": {
@@ -1077,7 +1089,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Io.html",
-          "hash": "rwUCuaA8B8WQREyF4C0LaYU6sAcJGqUbwRFE3OFiM74="
+          "hash": "X41pAYoc4tqSqRi//ks7zefKMQ7aG5mB+1syZJtprqY="
         }
       },
       "is_incremental": false,
@@ -1485,7 +1497,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Lang.Exception.html",
-          "hash": "vWpguof3/JkyOEcP6mO5Uz41NGTBQuC011Qsm2w+E84="
+          "hash": "sEZWTg+JifnLnLHGHuPJxCgIyOMWBSOZNsX2NjQvG8k="
         }
       },
       "is_incremental": false,
@@ -2181,7 +2193,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Lang.RuntimeException.html",
-          "hash": "ndF7wFEVzPddryuqyL1dYDoBSueIKtUKZscZGSN159M="
+          "hash": "KEmz19olGFXkyCvMBPJP5ImMSEyqaDZDE/1sD2jPwTs="
         }
       },
       "is_incremental": false,
@@ -2793,7 +2805,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.ArrayList-1.html",
-          "hash": "6XPS+5/BWtOKxUWh1/6QpvoyN/nEnJSo4ifqP5sJ6p8="
+          "hash": "Sx4ymO8nQ+3cfm6vCnRgVi4R3iNBB9l3sbV1vAhW8vw="
         }
       },
       "is_incremental": false,
@@ -2937,7 +2949,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Java.Util.EventObject.html",
-          "hash": "F3LTGJHB89WA0QiQ+BjI68kRy+MYjVAqoXVtm3arYtA="
+          "hash": "Y1zO0NTl0DY1lqEjI7mWDA/hUOMSrVbn4MphK/19JOg="
         }
       },
       "is_incremental": false,
@@ -4313,6 +4325,918 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.Attribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.Attribute.html",
+          "hash": "CJ+S2bY2MF+PcsainavdCsyMGftr4uFZCwurDQl7xRY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.AttributeChangeNotification.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.AttributeChangeNotification.html",
+          "hash": "y6UaRJgXipgCrS19luk7cEwHzgDvG/rG2xPeatAJdok="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.AttributeChangeNotificationFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.AttributeChangeNotificationFilter.html",
+          "hash": "Khttc3q1VhhunSizyhajv66eQH3lNaY6GwykDfGqZJE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.AttributeList.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.AttributeList.html",
+          "hash": "7MB5f15nMuHcPiit+1q1tQort0082TFSiMeIDca1Ask="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.AttributeNotFoundException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.AttributeNotFoundException.html",
+          "hash": "4trzg0Cx2OueAFOx+KbX0W0DZbeA7jZDPpMGO7P0czg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.AttributeValueExp.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.AttributeValueExp.html",
+          "hash": "3YRpztYjXI+Qp6AsfpHVi2OkgBkNpg6qRkM1iqm1Tvw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.BadAttributeValueExpException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.BadAttributeValueExpException.html",
+          "hash": "qad8ItZoWAjb5WPAiLt/Uo30tLSoCHigYbKS1yfwObQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.BadBinaryOpValueExpException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.BadBinaryOpValueExpException.html",
+          "hash": "lpCB/uTY4lbVE+eb18qaC+a+pHmdm7Kcx9XfF2VfCLY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.BadStringOperationException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.BadStringOperationException.html",
+          "hash": "BkV2x1TeaE2sH4Sz7/g9W1/MwJTBU9eGsKrMUJS4xBs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.Descriptor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.Descriptor.html",
+          "hash": "78MDy9weSvAJNaxrixS81kWXANRyT+qO1+J8OqGvqIM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.DescriptorAccess.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.DescriptorAccess.html",
+          "hash": "4ADo5xJ4fODR/xDdFOoRNGKl6ImVwmbZ7D++wewzXZ0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.DescriptorRead.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.DescriptorRead.html",
+          "hash": "CstX88eyLtNvxvL1KNsbrr3RnfKEQnmsOyAYEHfiIVM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.INotificationFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.INotificationFilter.html",
+          "hash": "+cde6aoD2X6uXjuRKfaYC/Owr/AmHP3N7nPy9G95mtc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.INotificationListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.INotificationListener.html",
+          "hash": "6THgQcrzCW/miyooUjWW+FYs4oV/2RXBgVmEs+633aQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.InstanceAlreadyExistsException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.InstanceAlreadyExistsException.html",
+          "hash": "rG6U8aXn4tUWqAOnVf/sxQNlupDZUbFdYR0TwsOAMP8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.InstanceNotFoundException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.InstanceNotFoundException.html",
+          "hash": "QUw2JVMwcx916yn6sbFDI6GJLARls75klwEs7Kzv3KQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.IntrospectionException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.IntrospectionException.html",
+          "hash": "s8NEUA8Ck/HYOKicPiMP6nLV0scSkfFz10Xz6DoVCLM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.InvalidApplicationException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.InvalidApplicationException.html",
+          "hash": "zMbjTS4QOnUyFZHHmzm6vzjfx1rpoREk3Ivksku1GJo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.InvalidAttributeValueException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.InvalidAttributeValueException.html",
+          "hash": "XzyXYNKvmFFwqZpdMB6q7EUJfNC4XffDETuW/n/oEBA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.JMException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.JMException.html",
+          "hash": "mbr0jBOBKGDKkkvAfl0TTV53f0YdVlHwxDvXxMqpQic="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.JMRuntimeException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.JMRuntimeException.html",
+          "hash": "ZgappTp/IA3iG99JCjM4JnZU8GUjKxnjGMKQX+fvgao="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.JMX.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.JMX.html",
+          "hash": "kMUu2wlSf+Wbe0hGEJySC56eZq4j/q7yrIbWe0+GwWY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.ListenerNotFoundException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.ListenerNotFoundException.html",
+          "hash": "W9cWRb4XFcQinlUcvCKQ5JmLcBUoVQuvvr+HQKJONZo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.Loading.ClassLoaderRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.Loading.ClassLoaderRepository.html",
+          "hash": "SOAbhhkL7y2Ez7lewis79JRlxsE9Fr7vVhtAxfxrQBw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.Loading.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.Loading.html",
+          "hash": "QLkI1xCvIWi/g2eIuf/X5E0qU273Z5JsOndUXRqSq6o="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.MBeanAttributeInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.MBeanAttributeInfo.html",
+          "hash": "zYJqCCFMOgCIr3vNHvIo/kobadnAhwiDqZ99GmOCeR0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.MBeanConstructorInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.MBeanConstructorInfo.html",
+          "hash": "YatwkgMOIylur0b5jcvvku5JJaTk0+no9bOJuoO6yBY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.MBeanException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.MBeanException.html",
+          "hash": "7/MWH+Sa/AkhFlW09lK317AVLm/FR1ntKiEdtor6MHo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.MBeanFeatureInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.MBeanFeatureInfo.html",
+          "hash": "cINLYdDeZSvi6UPLi5ei+KWVZ0yVds2FgwiZlDSMYKI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.MBeanInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.MBeanInfo.html",
+          "hash": "TpICEGn52fwZVDZxbvq9UVms87PI+AuHkyrdOq2vQNs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.MBeanNotificationInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.MBeanNotificationInfo.html",
+          "hash": "GM7082v0/pWA8rxxcxFM2ST11FK2vdRxCtKGDMizNeU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.MBeanOperationInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.MBeanOperationInfo.html",
+          "hash": "kRaOZnmd4sctY8GpgVYYlaV/7E9AePjX7okrHI+RnE8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.MBeanParameterInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.MBeanParameterInfo.html",
+          "hash": "T6BsOu0WeyvLdMaV2ZfkEdH2BIuCUncropVx1TMBO1o="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.MBeanRegistrationException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.MBeanRegistrationException.html",
+          "hash": "C2jK5khXqZaSqWvsGZnn1dtQmDsRixpyQKE01eYOdhE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.MBeanServer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.MBeanServer.html",
+          "hash": "Uvd3BaOIQPBMzG5vNSC799ObNAF4ye0p8dJFp2H60yg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.MBeanServerConnection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.MBeanServerConnection.html",
+          "hash": "NVH52dLNPT8gT++kWB3Nvs04juSGotEce5nenmJl+RU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.MBeanServerNotification.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.MBeanServerNotification.html",
+          "hash": "iQBoiHrY9XKdOYkhZOswSlibAX6f5mmZXJwtXsBbiUY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.MalformedObjectNameException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.MalformedObjectNameException.html",
+          "hash": "Z9HW1545U2KSGq2EX+TbLFqmhacJM6b+B1pnmxcuQGY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.Monitor.MonitorNotification.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.Monitor.MonitorNotification.html",
+          "hash": "NghfrWrXiZswVvjixtTq6/1HAsml/lkKjhNstqS7nnA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.Monitor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.Monitor.html",
+          "hash": "8IZIZaJXfoHvnlFicclUOkOqC6wuJGEl+6vjV/1SDQY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.NotCompliantMBeanException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.NotCompliantMBeanException.html",
+          "hash": "xRxuovc/PEFL7sBZP/VPQO4jCVR16JKcAAY0YeQ49hg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.Notification.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.Notification.html",
+          "hash": "LWmlUayvhMoXwZY+IT8XtaBhPQll3LqzKR1USPWwj10="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.NotificationFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.NotificationFilter.html",
+          "hash": "Z2tMa0CYVrDVCky4dQYnP9+ucIg+W6o2LWgFyEZwc7A="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.NotificationFilterSupport.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.NotificationFilterSupport.html",
+          "hash": "BXnyDXHYsJgtvc7SyRl/dwyMRspbsedEBYFGWM2th68="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.NotificationListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.NotificationListener.html",
+          "hash": "0HZ9c0wVlYqaVNBc9bWAynIGF2XXoOIuDf2srwa+lh0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.ObjectInstance.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.ObjectInstance.html",
+          "hash": "LWXgzwG6/lI/IhSdiiycUdeOdImDsBu2/Rtr9c1IRUU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.ObjectName.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.ObjectName.html",
+          "hash": "+QgAznyA9UCUJeZ8YOwkHTD8FP7eFI3+VMCl6OjFIqg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.OperationsException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.OperationsException.html",
+          "hash": "saENFTTMit8kFa1JRKZHsH8o6K5z2V4a+3FYQzFZ3kI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.Query.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.Query.html",
+          "hash": "u0jJHHr/JOZubeav1y1TIfAHEDJt6Sj7Ak5c4OpGc3s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.QueryEval.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.QueryEval.html",
+          "hash": "OwLHpvoB+OPUmrUwhYe+9XO1ayVVnw3SQrB+obVxGoE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.QueryExp.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.QueryExp.html",
+          "hash": "Aan7Trd0QV+62S+nTsJ0kON76dB0ZimCg0pwWxu6pqc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.ReflectionException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.ReflectionException.html",
+          "hash": "88diahCIZK1qxotIp2TIH0vCGSBeu3vdK1F8eRVm31k="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.Relation.RelationNotification.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.Relation.RelationNotification.html",
+          "hash": "EwzVdtrGIi4w/cL5e3pNL/CFbizQEXz/Fky38OTUCdA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.Relation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.Relation.html",
+          "hash": "qa66R5sT/ph0hiqo/c3LT7G9KSKgFmDDNEhSD/ClvJ8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.Remote.JMXAddressable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.Remote.JMXAddressable.html",
+          "hash": "TXKOjcydoYmkx7JMp0veuQcI4fUxYwK85Ut9uYA9+h8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.Remote.JMXAuthenticator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.Remote.JMXAuthenticator.html",
+          "hash": "qDA4bkr7VMvEUYtJ0mRv93q4PzyFBCc4cIf+a7mO0oM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.Remote.JMXConnectionNotification.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.Remote.JMXConnectionNotification.html",
+          "hash": "9O0uLEy3MWtSnwRCDbkhi6w9Axwa18zbKxpxG8X//iU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.Remote.JMXConnector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.Remote.JMXConnector.html",
+          "hash": "nozY85daojKbwoJ+ig20PASqxhHWQzt7Nr6dlPmjcbQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.Remote.JMXConnectorFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.Remote.JMXConnectorFactory.html",
+          "hash": "oIc0ZCxTPwp74fq3N6XlbhBcVQ3ScQn+UkOxvgZHxYY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.Remote.JMXConnectorProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.Remote.JMXConnectorProvider.html",
+          "hash": "rtkt2/ZZEAqG6nlwvoGuXEmOsbN6Qi6bqev8Mv2OVjY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.Remote.JMXPrincipal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.Remote.JMXPrincipal.html",
+          "hash": "Qi9szvfTN5B36hiN6jqn0c07VbZ684F3bFmXS8p6O+o="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.Remote.JMXProviderException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.Remote.JMXProviderException.html",
+          "hash": "RZleZc8y1XwD3OeU+lzj8+qKG16PLz8PYPhxDB5oFRk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.Remote.JMXServerErrorException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.Remote.JMXServerErrorException.html",
+          "hash": "9lZ6BwLxj7cJtMpVBKl6dCBwEwxNqOLhChbVlyB6xTo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.Remote.JMXServiceURL.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.Remote.JMXServiceURL.html",
+          "hash": "velTeKoTbfqBnbtx33yFMwVvk2WTyNs0uZPuu4ic0IY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.Remote.NotificationResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.Remote.NotificationResult.html",
+          "hash": "6QL5FdA+Fh6eLTqJ6RC0Y5KqGJYBF2KlXeR9RSjCYoA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.Remote.TargetedNotification.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.Remote.TargetedNotification.html",
+          "hash": "ifEF2378FET06NTdt13INUwitohkEr59g6ZXusKP6UE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.Remote.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.Remote.html",
+          "hash": "AY5Iex5Uxv+Z8JisCmWA+iYagGpi5EHscnz/P15w2GM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.RuntimeErrorException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.RuntimeErrorException.html",
+          "hash": "/hGa+M9QCbzWSTnYUTva9vYr05i33ioxgC8FfY1pQDU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.RuntimeMBeanException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.RuntimeMBeanException.html",
+          "hash": "ghfLMvsZ7rqQ7oERfv7/FfklaV7aej7urwZ944Fz8Qg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.RuntimeOperationsException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.RuntimeOperationsException.html",
+          "hash": "lxPJrrOzu06+C98XP4bFTlXlCW+w0lDgPiZjvqeaSm4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.ServiceNotFoundException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.ServiceNotFoundException.html",
+          "hash": "udzF3Wjk1iFAsoc+DQkmDXV/um/3LOu9ELbolnJtv08="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.StringValueExp.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.StringValueExp.html",
+          "hash": "rRrsWJCjAM2bSgUPRx4G9WGFCe6HDa00scx2T77kwhA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.Timer.TimerNotification.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.Timer.TimerNotification.html",
+          "hash": "nIgCRr86VglVoUrjvRAAvkYLXZ3GNn1uVKQ80L4BvYY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.Timer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.Timer.html",
+          "hash": "8qofLA5lQZSPEv8XAQqsYyOjUP1AONmrQQS6S55mmrA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.ValueExp.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.ValueExp.html",
+          "hash": "EbP01s7JelD/WP7SCGKD4+T26OjzF/1gg9ij9VI2f+c="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Management.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Management.html",
+          "hash": "1+g7+O4EO0jEN5l6RExCuOC5rhiUaG/2bIoUfh9j6XY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/JavaX.Naming.Binding.yml",
       "output": {
         ".html": {
@@ -4450,6 +5374,30 @@
         ".html": {
           "relative_path": "api/JavaX.Naming.html",
           "hash": "M1qPYfgqC2PjNCh4M7J12yYL2Gmd+8h3Wnc4Etx6NEk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Security.Auth.Subject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Security.Auth.Subject.html",
+          "hash": "+IfaRLHlnmF+cThCChg4oEzr2iiJcz0oVnIvqzHZ6K8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JavaX.Security.Auth.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JavaX.Security.Auth.html",
+          "hash": "wh/qmtz0WHWUMJMcQdQGMrcojVni10v9SQHEbsaD3qo="
         }
       },
       "is_incremental": false,
@@ -4929,7 +5877,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MASES.JNet.JNetCore-1.html",
-          "hash": "Ms38zbidIk1nrCyhLw3V1e84rkjeHdFZ8ufIYZnqh7o="
+          "hash": "K66cgE5woeIjXJXJNf/SI7wudxIqWC2lvEQSZ5DrXDA="
         }
       },
       "is_incremental": false,
@@ -4941,7 +5889,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MASES.JNet.JNetCore.html",
-          "hash": "V19QxtlmZKZiDmobHJCsZyZfsQ+84OVn+uClP8tB9Eo="
+          "hash": "8IOmw8dB5CDDneyhzhH3Yz5+m5S8Hxk9Ctcm9GAJxbQ="
         }
       },
       "is_incremental": false,
@@ -4953,7 +5901,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MASES.JNet.JNetCoreBase-1.html",
-          "hash": "9iNR5QT/+SETcKcitVhjr7JssT87WTgjCltbgEklmcs="
+          "hash": "Vd1H6U3593ZhiJM2FB43zyKg7sI18tfF5yMBszCdzU4="
         }
       },
       "is_incremental": false,
@@ -5385,7 +6333,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "ys7iw5i6ee1qv6hZJ/lvLOg8hDskaGdCnk4RFWX/jr8="
+          "hash": "d1gB39IZ0Dv2+IxFUwnRGtYrQSfILHVMUqugSf+cEuQ="
         }
       },
       "is_incremental": false,
@@ -5585,7 +6533,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 447,
+          "total_file_count": 526,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
