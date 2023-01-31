@@ -16,7 +16,6 @@
 *  Refer to LICENSE for more information.
 */
 
-using Java.Util;
 using MASES.JCOBridge.C2JBridge;
 
 namespace JavaX.Management
