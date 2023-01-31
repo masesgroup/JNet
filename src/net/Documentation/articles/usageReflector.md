@@ -9,6 +9,18 @@ To install the tool follows the instructions on https://docs.microsoft.com/en-us
 To use JNetReflector runs a command like the following:
 
 * dotnet tool
-> jnetreflector -OriginRootPath C:\\myJars -OriginJavadocUrl \"https://thehost/javadoc/\" -DestinationRootPath C:\\ReflectionDestination
+> jnetreflector -OriginRootPath C:\\myJars -OriginJavadocUrl \"https://thehost/javadoc/\" -JavadocVersion 11 -DestinationRootPath C:\\ReflectionDestination
 
-> jnr -OriginRootPath C:\\myJars -OriginJavadocUrl \"https://thehost/javadoc/\" -DestinationRootPath C:\\ReflectionDestination
+> jnr -OriginRootPath C:\\myJars -OriginJavadocUrl \"https://thehost/javadoc/\" -JavadocVersion 11 -DestinationRootPath C:\\ReflectionDestination
+
+## Command switch available
+
+_jnr_ accepts the following command-line switch:
+
+* **OriginRootPath**: The origin path where Jars to be analyzed are stored
+* **OriginJavadocUrl**: The base URL of the Javadoc to be associated to the classes
+* **JavadocVersion**: The version of the Javadoc to be associated to the classes, it means the Javadoc tool version used
+* **DestinationRootPath**: The destination root path where reflected classes will be stored
+* **JarList**: A CSV list of JAR to be analyzed or folders containing the JARs
+* **NamespacesToAvoid**: A CSV list of namespaces to be removed from analysis
+* **DryRun**: Execute everything, but do not write anything to disk

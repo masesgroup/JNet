@@ -43,7 +43,7 @@ namespace MASES.JNetReflector
                         Name = CLIParam.OriginRootPath,
                         Type = ArgumentType.Double,
                         IsMandatory = true,
-                        Help = "Set the origin path where Jars are stored",
+                        Help = "The origin path where Jars to be analyzed are stored",
                     },
                     new ArgumentMetadata<string>()
                     {
@@ -52,12 +52,19 @@ namespace MASES.JNetReflector
                         Default = null,
                         Help = "The base URL of the Javadoc to be associated to the classes",
                     },
+                    new ArgumentMetadata<int>()
+                    {
+                        Name = CLIParam.JavadocVersion,
+                        Type = ArgumentType.Double,
+                        Default = 11,
+                        Help = "The version of the Javadoc to be associated to the classes, it means the Javadoc tool version used",
+                    },
                     new ArgumentMetadata<string>()
                     {
                         Name = CLIParam.DestinationRootPath,
                         Type = ArgumentType.Double,
                         Default = SpecialNames.JNetReflectorGeneratedFolder,
-                        Help = "Set the destination root path",
+                        Help = "The destination root path where reflected classes will be stored",
                     },
                     new ArgumentMetadata<string>()
                     {
@@ -76,7 +83,7 @@ namespace MASES.JNetReflector
                         Name = CLIParam.DryRun,
                         Type = ArgumentType.Single,
                         Default = false,
-                        Help = "Do not write anything to disk",
+                        Help = "Execute everything, but do not write anything to disk",
                     },
                 });
                 return lst;
@@ -95,6 +102,9 @@ namespace MASES.JNetReflector
 
         static string _OriginJavadocUrl;
         public static string OriginJavadocUrl => _OriginJavadocUrl;
+
+        static int _JavadocVersion;
+        public static int JavadocVersion => _JavadocVersion;
 
         static string _DestinationRootPath;
         public static string DestinationRootPath => _DestinationRootPath;
@@ -136,7 +146,7 @@ namespace MASES.JNetReflector
             if (ParsedArgs.Exist(CLIParam.NamespacesToAvoid))
             {
                 var namespaces = ParsedArgs.Get<string>(CLIParam.NamespacesToAvoid).Split(',', ';');
-                foreach (var item in namespaces.Select((o) => o.Replace('/', '.')))
+                foreach (var item in namespaces.Select((o) => o.Replace(SpecialNames.JNISeparator, SpecialNames.NamespaceSeparator)))
                 {
                     if (!namespacesToAvoid.Contains(item)) namespacesToAvoid.Add(item);
                 }
@@ -147,6 +157,7 @@ namespace MASES.JNetReflector
             _DestinationRootPath = Path.GetFullPath(destinationFolder);
 
             _OriginJavadocUrl = ParsedArgs.Get<string>(CLIParam.OriginJavadocUrl);
+            _JavadocVersion = ParsedArgs.Get<int>(CLIParam.JavadocVersion);
 
             _DryRun = ParsedArgs.Get<bool>(CLIParam.DryRun);
 

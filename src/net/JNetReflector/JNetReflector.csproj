@@ -20,7 +20,11 @@
     <None Remove="SingleClass.template" />
     <None Remove="Templates\AllPackageClassesStubException.template" />
     <None Remove="Templates\AllPackageClassesStubNestedException.template" />
+    <None Remove="Templates\SingleConstructor.template" />
+    <None Remove="Templates\SingleField.template" />
+    <None Remove="Templates\SingleMethod.template" />
     <None Remove="Templates\SingleNestedClass.template" />
+    <None Remove="Templates\SingleProperty.template" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="..\JNet\Java\Lang\AbstractMethodError.cs" Link="Java\Lang\AbstractMethodError.cs" />
@@ -101,6 +105,10 @@
   <ItemGroup>
     <EmbeddedResource Include="Templates\AllPackageClassesStubException.template" />
     <EmbeddedResource Include="Templates\AllPackageClassesStubNestedException.template" />
+    <EmbeddedResource Include="Templates\SingleConstructor.template" />
+    <EmbeddedResource Include="Templates\SingleField.template" />
+    <EmbeddedResource Include="Templates\SingleProperty.template" />
+    <EmbeddedResource Include="Templates\SingleMethod.template" />
     <EmbeddedResource Include="Templates\SingleNestedClass.template" />
     <EmbeddedResource Include="Templates\SingleClass.template" />
     <EmbeddedResource Include="Templates\AllPackageClassesStubNestedClass.template" />
