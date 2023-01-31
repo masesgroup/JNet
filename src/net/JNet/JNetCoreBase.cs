@@ -18,7 +18,6 @@
 
 using MASES.CLIParser;
 using MASES.JCOBridge.C2JBridge;
-using MASES.JCOBridge.C2JBridge.JVMInterop;
 using System;
 using System.Collections.Generic;
 using System.Linq;

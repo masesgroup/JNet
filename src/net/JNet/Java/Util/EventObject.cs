@@ -16,7 +16,6 @@
 *  Refer to LICENSE for more information.
 */
 
-using Java.Lang;
 using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
@@ -25,6 +24,10 @@ namespace Java.Util
     {
         public override string ClassName => "java.util.EventObject";
 
-        public Object Source => IExecute<Object>("getSource");
+        public EventObject() { }
+
+        protected EventObject(params object[] args) : base(args) { }
+
+        public virtual object Source => IExecute("getSource");
     }
 }

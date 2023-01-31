@@ -31,6 +31,10 @@ namespace Java.Util
 
         public static implicit operator List<E>(ArrayList<E> array) { return Wraps<List<E>>(array.Instance); }
 
+        public ArrayList() { }
+
+        protected ArrayList(params object[] args) : base(args) { }
+
         public bool IsEmpty => IExecute<bool>("isEmpty");
 
         public bool Add(E element)
