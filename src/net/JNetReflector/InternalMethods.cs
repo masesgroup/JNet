@@ -30,23 +30,59 @@ namespace MASES.JNetReflector
 {
     static class ReflectionUtils
     {
+        public enum ReflectionTraceLevel
+        {
+            Critical,
+            Error,
+            Info,
+            Debug,
+            Trace,
+            Verbose,
+        }
+
+        static int Level { get; set; }
+        static EventHandler<string> TraceReportHandler { get; set; }
+
+        public static void SetHandlerAndLevel(EventHandler<string> traceReport, int level)
+        {
+            TraceReportHandler = traceReport;
+            Level = level;
+        }
+
+        static void ReportTrace(ReflectionTraceLevel level, string format, params object[] args)
+        {
+            if ((int)level > Level) return;
+            try
+            {
+                TraceReportHandler(null, string.Format(format, args));
+            }
+            catch (System.Exception e)
+            {
+                TraceReportHandler(null, e.ToString());
+            }
+        }
+
         public static void AnalyzeJar(string pathToJar, string rootDesinationFolder, bool dryRun = false)
         {
+            ReportTrace(ReflectionTraceLevel.Info, "AnalyzeJar {0}, DesinationFolder {1} DryRun {2}", pathToJar, rootDesinationFolder, dryRun);
             using (ZipArchive archive = ZipFile.OpenRead(pathToJar))
             {
                 Dictionary<string, IDictionary<string, IList<ZipArchiveEntry>>> resultingArguments = new Dictionary<string, IDictionary<string, IList<ZipArchiveEntry>>>();
 
                 foreach (var entry in archive.Entries)
                 {
+                    ReportTrace(ReflectionTraceLevel.Debug, "Entry {0}", entry.ToString());
                     if (entry.IsSpecialFolder()) continue; // do not reflect this folders
                     if (entry.IsSpecialClass()) continue; // do not reflect this classes
                     if (entry.IsFolder())
                     {
                         var path = Path.Combine(rootDesinationFolder, entry.Namespace().Replace(SpecialNames.NamespaceSeparator, Path.DirectorySeparatorChar));
+                        ReportTrace(ReflectionTraceLevel.Debug, "Create path {0}", path);
                         if (!dryRun && !Directory.Exists(path)) Directory.CreateDirectory(path);
                     }
                     if (entry.IsJVMClass() || entry.IsJVMNestedClass())
                     {
+                        ReportTrace(ReflectionTraceLevel.Debug, "Adding entry {0}", entry.ToString());
                         var package = entry.Namespace();
                         IDictionary<string, IList<ZipArchiveEntry>> entries;
                         if (!resultingArguments.TryGetValue(package, out entries))
@@ -97,6 +133,8 @@ namespace MASES.JNetReflector
 
         static string AnalyzeClass(string jarName, IList<ZipArchiveEntry> classDefinitions, string rootDesinationFolder, bool dryRun)
         {
+            ReportTrace(ReflectionTraceLevel.Info, "AnalyzeClass {0}, DesinationFolder {1} DryRun {2}", jarName, rootDesinationFolder, dryRun);
+
             bool mainClassDone = false;
             var allPackageStubNestedClass = Template.GetTemplate(Template.AllPackageClassesStubNestedClassTemplate);
             var allPackageStubNestedException = Template.GetTemplate(Template.AllPackageClassesStubNestedExceptionTemplate);
@@ -117,6 +155,8 @@ namespace MASES.JNetReflector
                     if (jSubClass.IsOrInheritFromJVMGenericClass()) continue;
 
                     string nestedClassBlock;
+
+                    ReportTrace(ReflectionTraceLevel.Info, "Preparing nested class {0}", jSubClass.GenericString);
 
                     if (jSubClass.IsJVMException())
                     {
@@ -155,6 +195,7 @@ namespace MASES.JNetReflector
                     if (mainClassDone) throw new InvalidOperationException("Too many main class");
                     mainClassDone = true;
                     mainClass = entry;
+                    ReportTrace(ReflectionTraceLevel.Info, "Identified main class {0}", mainClass.ToString());
                 }
             }
 
@@ -162,6 +203,8 @@ namespace MASES.JNetReflector
 
             var jClass = mainClass.JVMClass();
             if (jClass.IsOrInheritFromJVMGenericClass()) return string.Empty;
+
+            ReportTrace(ReflectionTraceLevel.Info, "Preparing main class {0}", jClass.GenericString);
 
             string classBlock;
             string constructorBlock = string.Empty;
@@ -222,6 +265,8 @@ namespace MASES.JNetReflector
 
         static string AnalyzeConstructors(this Class classDefinition, IList<ZipArchiveEntry> classDefinitions)
         {
+            ReportTrace(ReflectionTraceLevel.Info, "AnalyzeConstructors of {0}", classDefinition.GenericString);
+
             var singleConstructorTemplate = Template.GetTemplate(Template.SingleConstructorTemplate);
 
             StringBuilder subClassBlock = new StringBuilder();
@@ -263,6 +308,8 @@ namespace MASES.JNetReflector
                     methodParamsBuilder.AppendFormat($"params {varArg.Type()} {varArg.Name}, ");
                 }
 
+                ReportTrace(ReflectionTraceLevel.Info, "Preparing constructor class {0}", constructor.GenericString);
+
                 string paramsString = methodParamsBuilder.ToString();
                 string executionParamsString = methodExecutionParamsBuilder.ToString();
                 if (paramCount != 0)
@@ -285,6 +332,8 @@ namespace MASES.JNetReflector
 
         static string AnalyzeMethods(this Class classDefinition, IList<ZipArchiveEntry> classDefinitions, bool staticMethods)
         {
+            ReportTrace(ReflectionTraceLevel.Info, "AnalyzeMethods of {0} with static {1}", classDefinition.GenericString, staticMethods);
+
             var singleMethodTemplate = Template.GetTemplate(Template.SingleMethodTemplate);
             var singlePropertyTemplate = Template.GetTemplate(Template.SinglePropertyTemplate);
 
@@ -344,11 +393,11 @@ namespace MASES.JNetReflector
                 if (getMethod == null && setMethod != null) { methods.Add(setMethod.GenericString, setMethod); continue; } // avoid to create property which have only a set method
 
                 StringBuilder executionStub = new StringBuilder();
-                if (getMethod != null) 
+                if (getMethod != null)
                 {
                     executionStub.AppendFormat(AllPackageClasses.ClassStub.PropertyStub.GET_EXECUTION_FORMAT, getMethod.IsStatic() ? "SExecute" : "IExecute",
                                                                                                               getMethod.IsVoid() || getMethod.IsObjectReturnType() ? string.Empty : $"<{returnType}>",
-                                                                                                              getMethod.Name); 
+                                                                                                              getMethod.Name);
                 }
 
                 if (setMethod != null)
@@ -357,13 +406,15 @@ namespace MASES.JNetReflector
                                                                                                               setMethod.Name);
                 }
 
+                ReportTrace(ReflectionTraceLevel.Info, "Preparing properties for {0}", prop.Key);
+
                 var singleProperty = singlePropertyTemplate.Replace(AllPackageClasses.ClassStub.PropertyStub.MODIFIER, modifier)
                                                            .Replace(AllPackageClasses.ClassStub.PropertyStub.TYPE, returnType)
                                                            .Replace(AllPackageClasses.ClassStub.PropertyStub.NAME, methodName)
                                                            .Replace(AllPackageClasses.ClassStub.PropertyStub.EXECUTION, executionStub.ToString())
                                                            .Replace(AllPackageClasses.ClassStub.PropertyStub.GET_HELP, getMethod != null ? getMethod.JavadocUrl() : string.Empty)
                                                            .Replace(AllPackageClasses.ClassStub.PropertyStub.SET_HELP, setMethod != null ? setMethod.JavadocUrl() : string.Empty);
-                
+
                 subClassBlock.AppendLine(singleProperty);
             }
 
@@ -429,6 +480,8 @@ namespace MASES.JNetReflector
                     executionStub = $"if ({varArg.Name}.Length == 0) {executionStub} else {executionStubWithVarArg}";
                 }
 
+                ReportTrace(ReflectionTraceLevel.Info, "Preparing method for {0}", method.GenericString);
+
                 var singleMethod = singleMethodTemplate.Replace(AllPackageClasses.ClassStub.MethodStub.MODIFIER, modifier)
                                                        .Replace(AllPackageClasses.ClassStub.MethodStub.RETURNTYPE, returnType)
                                                        .Replace(AllPackageClasses.ClassStub.MethodStub.NAME, methodName)
@@ -444,6 +497,8 @@ namespace MASES.JNetReflector
 
         static string AnalyzeFields(this Class classDefinition, IList<ZipArchiveEntry> classDefinitions)
         {
+            ReportTrace(ReflectionTraceLevel.Info, "AnalyzeFields of {0}", classDefinition.GenericString);
+
             var singleFieldTemplate = Template.GetTemplate(Template.SingleFieldTemplate);
 
             StringBuilder subClassBlock = new StringBuilder();
@@ -460,6 +515,7 @@ namespace MASES.JNetReflector
                 string fieldType = field.Type();
                 string fieldName = field.Name();
 
+                ReportTrace(ReflectionTraceLevel.Info, "Preparing field for {0}", field.GenericString);
 
                 string executionStub = string.Format(AllPackageClasses.ClassStub.FieldStub.EXECUTION_FORMAT, field.IsStatic() ? "Clazz" : "Instance",
                                                                                                               field.IsObjectReturnType() ? string.Empty : $"<{fieldType}>",

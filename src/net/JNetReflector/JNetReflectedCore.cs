@@ -85,6 +85,13 @@ namespace MASES.JNetReflector
                         Default = false,
                         Help = "Execute everything, but do not write anything to disk",
                     },
+                    new ArgumentMetadata<int>()
+                    {
+                        Name = CLIParam.TraceLevel,
+                        Type = ArgumentType.Double,
+                        Default = (int)ReflectionUtils.ReflectionTraceLevel.Verbose,
+                        Help = "The level of traces to be reported: 0 - Critical ... 5 - Verbose",
+                    },
                 });
                 return lst;
             }
@@ -117,6 +124,9 @@ namespace MASES.JNetReflector
 
         static bool _DryRun;
         public static bool DryRun => _DryRun;
+
+        static int _TraceLevel;
+        public static int TraceLevel => _TraceLevel;
 
         /// <inheritdoc cref="JNetCoreBase{T}.ProcessCommandLine"/>
         protected override string[] ProcessCommandLine()
@@ -160,6 +170,7 @@ namespace MASES.JNetReflector
             _JavadocVersion = ParsedArgs.Get<int>(CLIParam.JavadocVersion);
 
             _DryRun = ParsedArgs.Get<bool>(CLIParam.DryRun);
+            _TraceLevel = ParsedArgs.Get<int>(CLIParam.TraceLevel);
 
             return result;
         }

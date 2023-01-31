@@ -34,6 +34,8 @@ namespace MASES.JNetReflector
 
                 JNetReflectedCore.CreateGlobalInstance();
 
+                ReflectionUtils.SetHandlerAndLevel((o1, o2) => Console.WriteLine(o2), JNetReflectedCore.TraceLevel);
+
                 foreach (var item in JNetReflectedCore.JarsToAnaylyze)
                 {
                    ReflectionUtils.AnalyzeJar(item, JNetReflectedCore.DestinationRootPath, JNetReflectedCore.DryRun);
