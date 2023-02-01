@@ -92,6 +92,13 @@ namespace MASES.JNetReflector
                         Default = (int)ReflectionUtils.ReflectionTraceLevel.Verbose,
                         Help = "The level of traces to be reported: 0 - Critical ... 5 - Verbose",
                     },
+                    new ArgumentMetadata<int>()
+                    {
+                        Name = CLIParam.TraceTo,
+                        Type = ArgumentType.Double,
+                        Default = null,
+                        Help = "The file name where traces will be write, default write to console",
+                    },
                 });
                 return lst;
             }
@@ -127,6 +134,9 @@ namespace MASES.JNetReflector
 
         static int _TraceLevel;
         public static int TraceLevel => _TraceLevel;
+
+        static string _TraceTo;
+        public static string TraceTo => _TraceTo;
 
         /// <inheritdoc cref="JNetCoreBase{T}.ProcessCommandLine"/>
         protected override string[] ProcessCommandLine()
@@ -171,6 +181,7 @@ namespace MASES.JNetReflector
 
             _DryRun = ParsedArgs.Get<bool>(CLIParam.DryRun);
             _TraceLevel = ParsedArgs.Get<int>(CLIParam.TraceLevel);
+            _TraceTo = ParsedArgs.Get<string>(CLIParam.TraceTo);
 
             return result;
         }

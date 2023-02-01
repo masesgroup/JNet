@@ -17,6 +17,7 @@
 */
 
 using System;
+using System.IO;
 using System.Reflection;
 using System.Text;
 
@@ -24,6 +25,8 @@ namespace MASES.JNetReflector
 {
     class Program
     {
+        static StreamWriter _writer = null;
+
         static void Main(string[] args)
         {
             try
@@ -33,12 +36,17 @@ namespace MASES.JNetReflector
                 Console.WriteLine();
 
                 JNetReflectedCore.CreateGlobalInstance();
+                if (JNetReflectedCore.TraceTo != null)
+                {
+                    _writer = File.Exists(JNetReflectedCore.TraceTo) ? File.AppendText(JNetReflectedCore.TraceTo) : File.CreateText(JNetReflectedCore.TraceTo);
+                    _writer.WriteLine($"Started new analysis at {DateTime.Now}");
+                }
 
-                ReflectionUtils.SetHandlerAndLevel((o1, o2) => Console.WriteLine(o2), JNetReflectedCore.TraceLevel);
+                ReflectionUtils.SetHandlerAndLevel(TraceReportHandler, JNetReflectedCore.TraceLevel);
 
                 foreach (var item in JNetReflectedCore.JarsToAnaylyze)
                 {
-                   ReflectionUtils.AnalyzeJar(item, JNetReflectedCore.DestinationRootPath, JNetReflectedCore.DryRun);
+                    ReflectionUtils.AnalyzeJar(item, JNetReflectedCore.DestinationRootPath, JNetReflectedCore.DryRun);
                 }
             }
             catch (TargetInvocationException tie)
@@ -65,6 +73,22 @@ namespace MASES.JNetReflector
                     innerException = innerException.InnerException;
                 }
                 ShowHelp(sb.ToString());
+            }
+            finally
+            {
+                _writer?.Dispose();
+            }
+        }
+
+        static void TraceReportHandler(object sender, string trace)
+        {
+            if (_writer != null)
+            {
+                _writer.WriteLine(trace);
+            }
+            else
+            {
+                Console.WriteLine(trace);
             }
         }
 

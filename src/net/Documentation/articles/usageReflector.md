@@ -25,3 +25,4 @@ _jnr_ accepts the following command-line switch:
 * **NamespacesToAvoid**: A CSV list of namespaces to be removed from analysis
 * **DryRun**: Execute everything, but do not write anything to disk
 * **TraceLevel**: The level of traces to be reported: 0 - Critical ... 5 - Verbose
+* **TraceTo**: The file name where traces will be write, default write to console
