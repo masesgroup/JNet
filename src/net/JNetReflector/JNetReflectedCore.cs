@@ -92,7 +92,7 @@ namespace MASES.JNetReflector
                         Default = (int)ReflectionUtils.ReflectionTraceLevel.Verbose,
                         Help = "The level of traces to be reported: 0 - Critical ... 5 - Verbose",
                     },
-                    new ArgumentMetadata<int>()
+                    new ArgumentMetadata<string>()
                     {
                         Name = CLIParam.TraceTo,
                         Type = ArgumentType.Double,
