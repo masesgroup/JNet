@@ -34,6 +34,8 @@ namespace MASES.JNetReflector
         public const string JarList = "JarList";
         public const string NamespacesToAvoid = "NamespacesToAvoid";
         public const string DryRun = "DryRun";
+        public const string TraceLevel = "TraceLevel";
+        public const string TraceTo = "TraceTo";
     }
 
     public static class SpecialNames

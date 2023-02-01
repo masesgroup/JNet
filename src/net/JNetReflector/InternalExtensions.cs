@@ -557,6 +557,7 @@ namespace MASES.JNetReflector
             {
                 var superClass = entry.DeclaringClass.SuperClass;
                 if (superClass == null) return false;
+                if (superClass.CanonicalName == "java.lang.Object") return false;
                 Method method = superClass.GetMethod(entry.Name, entry.ParameterTypes);
                 return true;
             }
