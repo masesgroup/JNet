@@ -54,7 +54,7 @@ namespace MASES.JNetReflector
             if ((int)level > Level) return;
             try
             {
-                TraceReportHandler(null, string.Format(format, args));
+                TraceReportHandler(null, level.ToString() + ": " + string.Format(format, args));
             }
             catch (System.Exception e)
             {
@@ -64,7 +64,7 @@ namespace MASES.JNetReflector
 
         public static void AnalyzeJar(string pathToJar, string rootDesinationFolder, bool dryRun = false)
         {
-            ReportTrace(ReflectionTraceLevel.Info, "AnalyzeJar {0}, DesinationFolder {1} DryRun {2}", pathToJar, rootDesinationFolder, dryRun);
+            ReportTrace(ReflectionTraceLevel.Info, "******************* Analyze Jar {0} *******************", pathToJar, rootDesinationFolder, dryRun);
             using (ZipArchive archive = ZipFile.OpenRead(pathToJar))
             {
                 Dictionary<string, IDictionary<string, IList<ZipArchiveEntry>>> resultingArguments = new Dictionary<string, IDictionary<string, IList<ZipArchiveEntry>>>();
@@ -77,12 +77,12 @@ namespace MASES.JNetReflector
                     if (entry.IsFolder())
                     {
                         var path = Path.Combine(rootDesinationFolder, entry.Namespace().Replace(SpecialNames.NamespaceSeparator, Path.DirectorySeparatorChar));
-                        ReportTrace(ReflectionTraceLevel.Debug, "Create path {0}", path);
+                        ReportTrace(ReflectionTraceLevel.Info, "Create path {0}", path);
                         if (!dryRun && !Directory.Exists(path)) Directory.CreateDirectory(path);
                     }
                     if (entry.IsJVMClass() || entry.IsJVMNestedClass())
                     {
-                        ReportTrace(ReflectionTraceLevel.Debug, "Adding entry {0}", entry.ToString());
+                        ReportTrace(ReflectionTraceLevel.Info, "Adding entry {0}", entry.ToString());
                         var package = entry.Namespace();
                         IDictionary<string, IList<ZipArchiveEntry>> entries;
                         if (!resultingArguments.TryGetValue(package, out entries))
@@ -133,7 +133,7 @@ namespace MASES.JNetReflector
 
         static string AnalyzeClass(string jarName, IList<ZipArchiveEntry> classDefinitions, string rootDesinationFolder, bool dryRun)
         {
-            ReportTrace(ReflectionTraceLevel.Info, "AnalyzeClass {0}, DesinationFolder {1} DryRun {2}", jarName, rootDesinationFolder, dryRun);
+            ReportTrace(ReflectionTraceLevel.Info, "******************* AnalyzeClass {0} *******************", jarName);
 
             bool mainClassDone = false;
             var allPackageStubNestedClass = Template.GetTemplate(Template.AllPackageClassesStubNestedClassTemplate);
@@ -265,7 +265,7 @@ namespace MASES.JNetReflector
 
         static string AnalyzeConstructors(this Class classDefinition, IList<ZipArchiveEntry> classDefinitions)
         {
-            ReportTrace(ReflectionTraceLevel.Info, "AnalyzeConstructors of {0}", classDefinition.GenericString);
+            ReportTrace(ReflectionTraceLevel.Info, "******************* Analyze Constructors of {0} *******************", classDefinition.GenericString);
 
             var singleConstructorTemplate = Template.GetTemplate(Template.SingleConstructorTemplate);
 
@@ -301,14 +301,18 @@ namespace MASES.JNetReflector
                     }
                 }
 
-                if (hasGeneric) continue;
+                if (hasGeneric)
+                {
+                    ReportTrace(ReflectionTraceLevel.Info, "Discarded constructor {0}", constructor.GenericString);
+                    continue;
+                }
                 if (hasVarArg && paramCount == 1 && varArg.IsObjectType()) continue; // this kinf of constructor is managed from AllClasses template as default for any JCOBridge reflected class
                 if (hasVarArg)
                 {
                     methodParamsBuilder.AppendFormat($"params {varArg.Type()} {varArg.Name}, ");
                 }
 
-                ReportTrace(ReflectionTraceLevel.Info, "Preparing constructor class {0}", constructor.GenericString);
+                ReportTrace(ReflectionTraceLevel.Info, "Preparing constructor {0}", constructor.GenericString);
 
                 string paramsString = methodParamsBuilder.ToString();
                 string executionParamsString = methodExecutionParamsBuilder.ToString();
@@ -332,7 +336,7 @@ namespace MASES.JNetReflector
 
         static string AnalyzeMethods(this Class classDefinition, IList<ZipArchiveEntry> classDefinitions, bool staticMethods)
         {
-            ReportTrace(ReflectionTraceLevel.Info, "AnalyzeMethods of {0} with static {1}", classDefinition.GenericString, staticMethods);
+            ReportTrace(ReflectionTraceLevel.Info, "******************* Analyze Methods of {0} with static {1} *******************", classDefinition.GenericString, staticMethods);
 
             var singleMethodTemplate = Template.GetTemplate(Template.SingleMethodTemplate);
             var singlePropertyTemplate = Template.GetTemplate(Template.SinglePropertyTemplate);
@@ -345,7 +349,6 @@ namespace MASES.JNetReflector
             {
                 var paramCount = method.ParameterCount;
                 var methodNameOrigin = method.Name;
-                if (method.IsOverrideOrConcrete()) continue; // this is very time consuming, anyway seems the only way to identify if a method was defined in the super abstract class
 
                 if (paramCount == 0 &&
                     (methodNameOrigin == "toString" || methodNameOrigin == "hashCode")
@@ -355,9 +358,19 @@ namespace MASES.JNetReflector
                     methodNameOrigin == "equals"
                    ) continue; // special methods managed from JCOBridge
 
+                if (method.IsOverrideOrConcrete())
+                {
+                    ReportTrace(ReflectionTraceLevel.Debug, "Discarded OverrideOrConcrete method {0}", method.GenericString);
+                    continue; // this is very time consuming, anyway seems the only way to identify if a method was defined in the super abstract class
+                }
+
                 if (staticMethods ^ method.IsStatic()) continue;
                 if (!method.IsPublic()) continue; // avoid not public methods
-                if (method.ReturnType.IsOrInheritFromJVMGenericClass()) continue; // avoid generics till now
+                if (method.ReturnType.IsOrInheritFromJVMGenericClass())
+                {
+                    ReportTrace(ReflectionTraceLevel.Debug, "Discarded IsOrInheritFromJVMGenericClass method {0}", method.GenericString);
+                    continue; // avoid generics till now
+                }
                 if (method.IsProperty())
                 {
                     var propertyName = method.PropertyName(classDefinitions);
@@ -390,7 +403,12 @@ namespace MASES.JNetReflector
                     if (item.IsSetProperty()) { setMethod = item; modifier = item.IsStatic() ? " static" : string.Empty; returnType = item.ReturnType(); }
                 }
 
-                if (getMethod == null && setMethod != null) { methods.Add(setMethod.GenericString, setMethod); continue; } // avoid to create property which have only a set method
+                if (getMethod == null && setMethod != null)
+                {
+                    ReportTrace(ReflectionTraceLevel.Debug, "Property moved to methods {0}", prop.Key);
+                    methods.Add(setMethod.GenericString, setMethod);
+                    continue;
+                } // avoid to create property which have only a set method
 
                 StringBuilder executionStub = new StringBuilder();
                 if (getMethod != null)
@@ -406,7 +424,7 @@ namespace MASES.JNetReflector
                                                                                                               setMethod.Name);
                 }
 
-                ReportTrace(ReflectionTraceLevel.Info, "Preparing properties for {0}", prop.Key);
+                ReportTrace(ReflectionTraceLevel.Info, "Preparing properties of {0}", prop.Key);
 
                 var singleProperty = singlePropertyTemplate.Replace(AllPackageClasses.ClassStub.PropertyStub.MODIFIER, modifier)
                                                            .Replace(AllPackageClasses.ClassStub.PropertyStub.TYPE, returnType)
@@ -448,7 +466,11 @@ namespace MASES.JNetReflector
                     }
                 }
 
-                if (hasGeneric) continue;
+                if (hasGeneric)
+                {
+                    ReportTrace(ReflectionTraceLevel.Debug, "Discarded method {0}", method.GenericString);
+                    continue;
+                }
                 if (hasVarArg)
                 {
                     methodParamsBuilder.AppendFormat($"params {varArg.Type()} {varArg.Name}, ");
@@ -480,7 +502,7 @@ namespace MASES.JNetReflector
                     executionStub = $"if ({varArg.Name}.Length == 0) {executionStub} else {executionStubWithVarArg}";
                 }
 
-                ReportTrace(ReflectionTraceLevel.Info, "Preparing method for {0}", method.GenericString);
+                ReportTrace(ReflectionTraceLevel.Info, "Preparing method {0}", method.GenericString);
 
                 var singleMethod = singleMethodTemplate.Replace(AllPackageClasses.ClassStub.MethodStub.MODIFIER, modifier)
                                                        .Replace(AllPackageClasses.ClassStub.MethodStub.RETURNTYPE, returnType)
@@ -497,7 +519,7 @@ namespace MASES.JNetReflector
 
         static string AnalyzeFields(this Class classDefinition, IList<ZipArchiveEntry> classDefinitions)
         {
-            ReportTrace(ReflectionTraceLevel.Info, "AnalyzeFields of {0}", classDefinition.GenericString);
+            ReportTrace(ReflectionTraceLevel.Info, "******************* Analyze Fields of {0} *******************", classDefinition.GenericString);
 
             var singleFieldTemplate = Template.GetTemplate(Template.SingleFieldTemplate);
 
@@ -506,7 +528,11 @@ namespace MASES.JNetReflector
             {
                 if (!field.DeclaringClass.Equals(classDefinition)) continue;
                 if (!field.IsPublic()) continue; // avoid not public methods
-                if (field.Type.IsOrInheritFromJVMGenericClass()) continue; // avoid generics till now
+                if (field.Type.IsOrInheritFromJVMGenericClass())
+                {
+                    ReportTrace(ReflectionTraceLevel.Debug, "Discarded field {0}", field.GenericString);
+                    continue; // avoid generics till now
+                }
                 string modifier = field.IsStatic() ? " static" : string.Empty;
                 if (field.IsTypeNative())
                 {
@@ -515,7 +541,7 @@ namespace MASES.JNetReflector
                 string fieldType = field.Type();
                 string fieldName = field.Name();
 
-                ReportTrace(ReflectionTraceLevel.Info, "Preparing field for {0}", field.GenericString);
+                ReportTrace(ReflectionTraceLevel.Info, "Preparing field {0}", field.GenericString);
 
                 string executionStub = string.Format(AllPackageClasses.ClassStub.FieldStub.EXECUTION_FORMAT, field.IsStatic() ? "Clazz" : "Instance",
                                                                                                               field.IsObjectReturnType() ? string.Empty : $"<{fieldType}>",
