@@ -31771,6 +31771,40 @@ references:
   fullName.vb: MASES.JNetReflector.JNetReflectedCore(Of T).ProcessCommandLine
   nameWithType: JNetReflectedCore<T>.ProcessCommandLine
   nameWithType.vb: JNetReflectedCore(Of T).ProcessCommandLine
+- uid: MASES.JNetReflector.JNetReflectedCore`1.TraceLevel
+  name: TraceLevel
+  href: api/MASES.JNetReflector.JNetReflectedCore-1.html#MASES_JNetReflector_JNetReflectedCore_1_TraceLevel
+  commentId: P:MASES.JNetReflector.JNetReflectedCore`1.TraceLevel
+  fullName: MASES.JNetReflector.JNetReflectedCore<T>.TraceLevel
+  fullName.vb: MASES.JNetReflector.JNetReflectedCore(Of T).TraceLevel
+  nameWithType: JNetReflectedCore<T>.TraceLevel
+  nameWithType.vb: JNetReflectedCore(Of T).TraceLevel
+- uid: MASES.JNetReflector.JNetReflectedCore`1.TraceLevel*
+  name: TraceLevel
+  href: api/MASES.JNetReflector.JNetReflectedCore-1.html#MASES_JNetReflector_JNetReflectedCore_1_TraceLevel_
+  commentId: Overload:MASES.JNetReflector.JNetReflectedCore`1.TraceLevel
+  isSpec: "True"
+  fullName: MASES.JNetReflector.JNetReflectedCore<T>.TraceLevel
+  fullName.vb: MASES.JNetReflector.JNetReflectedCore(Of T).TraceLevel
+  nameWithType: JNetReflectedCore<T>.TraceLevel
+  nameWithType.vb: JNetReflectedCore(Of T).TraceLevel
+- uid: MASES.JNetReflector.JNetReflectedCore`1.TraceTo
+  name: TraceTo
+  href: api/MASES.JNetReflector.JNetReflectedCore-1.html#MASES_JNetReflector_JNetReflectedCore_1_TraceTo
+  commentId: P:MASES.JNetReflector.JNetReflectedCore`1.TraceTo
+  fullName: MASES.JNetReflector.JNetReflectedCore<T>.TraceTo
+  fullName.vb: MASES.JNetReflector.JNetReflectedCore(Of T).TraceTo
+  nameWithType: JNetReflectedCore<T>.TraceTo
+  nameWithType.vb: JNetReflectedCore(Of T).TraceTo
+- uid: MASES.JNetReflector.JNetReflectedCore`1.TraceTo*
+  name: TraceTo
+  href: api/MASES.JNetReflector.JNetReflectedCore-1.html#MASES_JNetReflector_JNetReflectedCore_1_TraceTo_
+  commentId: Overload:MASES.JNetReflector.JNetReflectedCore`1.TraceTo
+  isSpec: "True"
+  fullName: MASES.JNetReflector.JNetReflectedCore<T>.TraceTo
+  fullName.vb: MASES.JNetReflector.JNetReflectedCore(Of T).TraceTo
+  nameWithType: JNetReflectedCore<T>.TraceTo
+  nameWithType.vb: JNetReflectedCore(Of T).TraceTo
 - uid: MASES.JNetReflector.SpecialNames
   name: SpecialNames
   href: api/MASES.JNetReflector.SpecialNames.html
