@@ -1,6 +1,23 @@
-﻿        #region ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_PLACEHOLDER
+﻿ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_DECORATION_PLACEHOLDER
+        #region ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_PLACEHOLDER
         public partial class ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_PLACEHOLDER
         {
+            #region Constructors
+// ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_CONSTRUCTORS_PLACEHOLDER
+            #endregion
+
+            #region Fields
+// ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_FIELDS_PLACEHOLDER
+            #endregion
+
+            #region Static methods
+// ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_STATIC_METHODS_PLACEHOLDER
+            #endregion
+
+            #region Instance methods
+// ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_METHODS_PLACEHOLDER
+            #endregion
+
             // TODO: complete the class
         }
         #endregion

@@ -21,8 +21,6 @@
             /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
             public override bool IsStatic => ALLPACKAGE_CLASSES_STUB_NESTED_ISSTATIC_PLACEHOLDER;
 
-// ALLPACKAGE_CLASSES_STUB_METHODS_PLACEHOLDER
-
             // TODO: complete the class
         }
         #endregion

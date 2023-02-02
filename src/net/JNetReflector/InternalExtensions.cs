@@ -23,6 +23,7 @@ using System.Linq;
 using System.Collections.Generic;
 using Java.Lang;
 using Java.Lang.Reflect;
+using System.Text;
 
 namespace MASES.JNetReflector
 {
@@ -63,6 +64,24 @@ namespace MASES.JNetReflector
             string className = canonicalName.Substring(canonicalName.LastIndexOf(SpecialNames.NamespaceSeparator) + 1);
             className = Namespace(canonicalName) + SpecialNames.NamespaceSeparator + className.Replace(SpecialNames.NestedClassSeparator, SpecialNames.NamespaceSeparator);
             return className;
+        }
+
+        public static string AddTabLevel(this string origin, int level)
+        {
+            if (string.IsNullOrEmpty(origin)) return origin;
+            string tabber = string.Empty;
+            for (int i = 0; i < level; i++)
+            {
+                tabber += "        ";
+            }
+            StringBuilder sb = new StringBuilder();
+            var pieces = origin.Split(new string[] { Environment.NewLine }, StringSplitOptions.None);
+            for (int i = 0; i < pieces.Length; i++)
+            {
+                if (i == pieces.Length - 1) sb.Append(tabber + pieces[i]);
+                else sb.AppendLine(tabber + pieces[i]);
+            }
+            return sb.ToString();
         }
 
         #endregion
@@ -200,6 +219,25 @@ namespace MASES.JNetReflector
         #endregion
 
         #region Class extension
+
+        public static bool IsDeprecatedAnnotation(this Class entry)
+        {
+            if (entry == null) throw new ArgumentNullException(nameof(entry));       
+            return entry.IsInterface() && entry.CanonicalName == "java.lang.Deprecated";
+        }
+
+        public static bool IsDeprecated(this Class entry)
+        {
+            if (entry == null) throw new ArgumentNullException(nameof(entry));
+            foreach (var item in entry.DeclaredAnnotations)
+            {
+                if (item.AnnotationType.IsDeprecatedAnnotation())
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
 
         public static bool IsInterface(this Class entry)
         {
@@ -369,6 +407,19 @@ namespace MASES.JNetReflector
 
         #region Constructor extension
 
+        public static bool IsDeprecated(this Constructor entry)
+        {
+            if (entry == null) throw new ArgumentNullException(nameof(entry));
+            foreach (var item in entry.DeclaredAnnotations)
+            {
+                if (item.AnnotationType.IsDeprecatedAnnotation())
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
         public static bool IsInterface(this Constructor entry)
         {
             if (entry == null) throw new ArgumentNullException(nameof(entry));
@@ -439,6 +490,19 @@ namespace MASES.JNetReflector
         #endregion
 
         #region Method extension
+
+        public static bool IsDeprecated(this Method entry)
+        {
+            if (entry == null) throw new ArgumentNullException(nameof(entry));
+            foreach (var item in entry.DeclaredAnnotations)
+            {
+                if (item.AnnotationType.IsDeprecatedAnnotation())
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
 
         public static bool IsVoid(this Method entry)
         {
@@ -594,6 +658,19 @@ namespace MASES.JNetReflector
 
         #region Field extension
 
+        public static bool IsDeprecated(this Field entry)
+        {
+            if (entry == null) throw new ArgumentNullException(nameof(entry));
+            foreach (var item in entry.DeclaredAnnotations)
+            {
+                if (item.AnnotationType.IsDeprecatedAnnotation())
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
         public static bool IsInterface(this Field entry)
         {
             if (entry == null) throw new ArgumentNullException(nameof(entry));
@@ -664,6 +741,19 @@ namespace MASES.JNetReflector
         #endregion
 
         #region Parameter extension
+
+        public static bool IsDeprecated(this Parameter entry)
+        {
+            if (entry == null) throw new ArgumentNullException(nameof(entry));
+            foreach (var item in entry.DeclaredAnnotations)
+            {
+                if (item.AnnotationType.IsDeprecatedAnnotation())
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
 
         public static bool IsInterface(this Parameter entry)
         {
