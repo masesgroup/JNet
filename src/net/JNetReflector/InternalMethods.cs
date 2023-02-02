@@ -156,7 +156,7 @@ namespace MASES.JNetReflector
                     string nestedStaticMethodBlock = string.Empty;
                     string nestedMethodBlock = string.Empty;
                     var jSubClass = entry.JVMClass();
-                    bool jSubClassIsDepracated = jSubClass.IsDepracated();
+                    bool jSubClassIsDepracated = jSubClass.IsDeprecated();
                     bool jSubClassIsOrFromGeneric = jSubClass.IsOrInheritFromJVMGenericClass();
 
                     string nestedClassBlock;
@@ -217,7 +217,7 @@ namespace MASES.JNetReflector
             if (!mainClassDone) return string.Empty;
 
             var jClass = mainClass.JVMClass();
-            bool jClassIsDepracated = jClass.IsDepracated();
+            bool jClassIsDepracated = jClass.IsDeprecated();
             bool jClassIsOrFromGeneric = jClass.IsOrInheritFromJVMGenericClass();
 
             ReportTrace(ReflectionTraceLevel.Info, "Preparing main class {0}", jClass.GenericString);
@@ -293,7 +293,7 @@ namespace MASES.JNetReflector
 
                 if (paramCount == 0) continue; // default constructor managed from AllClasses template as default for any JCOBridge reflected class
 
-                if (constructor.IsDepracated())
+                if (constructor.IsDeprecated())
                 {
                     ReportTrace(ReflectionTraceLevel.Info, "Discarded deprecated constructor {0}", constructor.GenericString);
                     continue;
@@ -383,7 +383,7 @@ namespace MASES.JNetReflector
                     methodNameOrigin == "equals"
                    ) continue; // special methods managed from JCOBridge
 
-                if (method.IsDepracated())
+                if (method.IsDeprecated())
                 {
                     ReportTrace(ReflectionTraceLevel.Debug, "Discarded deprecated method {0}", method.GenericString);
                     continue; // this is very time consuming, anyway seems the only way to identify if a method was defined in the super abstract class
@@ -559,7 +559,7 @@ namespace MASES.JNetReflector
             {
                 if (!field.DeclaringClass.Equals(classDefinition)) continue;
                 if (!field.IsPublic()) continue; // avoid not public methods
-                if (field.IsDepracated())
+                if (field.IsDeprecated())
                 {
                     ReportTrace(ReflectionTraceLevel.Debug, "Discarded deprecated field {0}", field.GenericString);
                     continue; // avoid generics till now
