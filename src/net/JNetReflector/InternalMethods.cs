@@ -157,6 +157,8 @@ namespace MASES.JNetReflector
                     string nestedMethodBlock = string.Empty;
                     var jSubClass = entry.JVMClass();
                     bool jSubClassIsDepracated = jSubClass.IsDeprecated();
+                    if (!JNetReflectedCore.ReflectDeprecated && jSubClassIsDepracated) continue;
+
                     bool jSubClassIsOrFromGeneric = jSubClass.IsOrInheritFromJVMGenericClass();
 
                     string nestedClassBlock;
@@ -195,7 +197,15 @@ namespace MASES.JNetReflector
                     subClassBlock.AppendLine(nestedClassBlock);
                     subClassBlock.AppendLine();
 
-                    var singleNestedClassStr = singleNestedClassTemplate.Replace(AllPackageClasses.ClassStub.NestedClassStub.CLASS, entry.JVMNestedClassName())
+                    StringBuilder jSubClassDecoration = new StringBuilder(AllPackageClasses.ClassStub.NestedClassStub.DEFAULT_DECORATION);
+                    if (jSubClassIsDepracated)
+                    {
+                        jSubClassDecoration.AppendLine();
+                        jSubClassDecoration.Append(AllPackageClasses.ClassStub.NestedClassStub.OBSOLETE_DECORATION);
+                    }
+
+                    var singleNestedClassStr = singleNestedClassTemplate.Replace(AllPackageClasses.ClassStub.NestedClassStub.DECORATION, jSubClassDecoration.ToString())
+                                                                        .Replace(AllPackageClasses.ClassStub.NestedClassStub.CLASS, entry.JVMNestedClassName())
                                                                         .Replace(AllPackageClasses.ClassStub.NestedClassStub.CONSTRUCTORS, nestedConstructorBlock)
                                                                         .Replace(AllPackageClasses.ClassStub.NestedClassStub.FIELDS, nestedFieldBlock)
                                                                         .Replace(AllPackageClasses.ClassStub.NestedClassStub.STATICMETHODS, nestedStaticMethodBlock)
@@ -218,6 +228,11 @@ namespace MASES.JNetReflector
 
             var jClass = mainClass.JVMClass();
             bool jClassIsDepracated = jClass.IsDeprecated();
+            if (!JNetReflectedCore.ReflectDeprecated && jClassIsDepracated)
+            {
+                ReportTrace(ReflectionTraceLevel.Info, "Discarded deprecated main class {0}", jClass.GenericString);
+                return string.Empty;
+            }
             bool jClassIsOrFromGeneric = jClass.IsOrInheritFromJVMGenericClass();
 
             ReportTrace(ReflectionTraceLevel.Info, "Preparing main class {0}", jClass.GenericString);
@@ -255,9 +270,17 @@ namespace MASES.JNetReflector
                 methodBlock = jClass.AnalyzeMethods(classDefinitions, false).AddTabLevel(1);
             }
 
+            StringBuilder jClassDecoration = new StringBuilder(AllPackageClasses.ClassStub.DEFAULT_DECORATION);
+            if (jClassIsDepracated)
+            {
+                jClassDecoration.AppendLine();
+                jClassDecoration.Append(AllPackageClasses.ClassStub.OBSOLETE_DECORATION);
+            }
+
             var singleClassStr = singleClassTemplate.Replace(AllPackageClasses.VERSION, SpecialNames.VersionPlaceHolder())
                                                     .Replace(AllPackageClasses.JAR, jarName)
                                                     .Replace(AllPackageClasses.NAMESPACE, mainClass.Namespace())
+                                                    .Replace(AllPackageClasses.ClassStub.DECORATION, jClassDecoration.ToString())
                                                     .Replace(AllPackageClasses.ClassStub.CLASS, mainClass.JVMClassName())
                                                     .Replace(AllPackageClasses.ClassStub.CONSTRUCTORS, constructorBlock)
                                                     .Replace(AllPackageClasses.ClassStub.FIELDS, fieldBlock)
@@ -292,8 +315,8 @@ namespace MASES.JNetReflector
                 var methodNameOrigin = constructor.Name;
 
                 if (paramCount == 0) continue; // default constructor managed from AllClasses template as default for any JCOBridge reflected class
-
-                if (constructor.IsDeprecated())
+                bool isDeprecated = constructor.IsDeprecated();
+                if (!JNetReflectedCore.ReflectDeprecated && isDeprecated)
                 {
                     ReportTrace(ReflectionTraceLevel.Info, "Discarded deprecated constructor {0}", constructor.GenericString);
                     continue;
@@ -347,11 +370,19 @@ namespace MASES.JNetReflector
                     if (executionParamsString.EndsWith(", ")) executionParamsString = executionParamsString.Substring(0, executionParamsString.Length - 2); // remove last occurrence of ", "
                 }
 
-                var singleConstructor = singleConstructorTemplate.Replace(AllPackageClasses.ClassStub.ConstructorStub.MODIFIER, modifier)
-                                                            .Replace(AllPackageClasses.ClassStub.ConstructorStub.NAME, constructorName)
-                                                            .Replace(AllPackageClasses.ClassStub.ConstructorStub.PARAMETERS, paramsString)
-                                                            .Replace(AllPackageClasses.ClassStub.ConstructorStub.EXECUTION, executionParamsString)
-                                                            .Replace(AllPackageClasses.ClassStub.ConstructorStub.HELP, constructor.JavadocUrl());
+                StringBuilder jDecoration = new StringBuilder(AllPackageClasses.ClassStub.ConstructorStub.DEFAULT_DECORATION);
+                if (isDeprecated)
+                {
+                    jDecoration.AppendLine();
+                    jDecoration.Append(AllPackageClasses.ClassStub.ConstructorStub.OBSOLETE_DECORATION);
+                }
+
+                var singleConstructor = singleConstructorTemplate.Replace(AllPackageClasses.ClassStub.ConstructorStub.DECORATION, jDecoration.ToString())
+                                                                 .Replace(AllPackageClasses.ClassStub.ConstructorStub.MODIFIER, modifier)
+                                                                 .Replace(AllPackageClasses.ClassStub.ConstructorStub.NAME, constructorName)
+                                                                 .Replace(AllPackageClasses.ClassStub.ConstructorStub.PARAMETERS, paramsString)
+                                                                 .Replace(AllPackageClasses.ClassStub.ConstructorStub.EXECUTION, executionParamsString)
+                                                                 .Replace(AllPackageClasses.ClassStub.ConstructorStub.HELP, constructor.JavadocUrl());
 
                 subClassBlock.AppendLine(singleConstructor);
             }
@@ -383,7 +414,7 @@ namespace MASES.JNetReflector
                     methodNameOrigin == "equals"
                    ) continue; // special methods managed from JCOBridge
 
-                if (method.IsDeprecated())
+                if (!JNetReflectedCore.ReflectDeprecated && method.IsDeprecated())
                 {
                     ReportTrace(ReflectionTraceLevel.Debug, "Discarded deprecated method {0}", method.GenericString);
                     continue; // this is very time consuming, anyway seems the only way to identify if a method was defined in the super abstract class
@@ -441,9 +472,13 @@ namespace MASES.JNetReflector
                     continue;
                 } // avoid to create property which have only a set method
 
+                bool isGetDeprecated = false;
+                bool isSetDeprecated = false;
+
                 StringBuilder executionStub = new StringBuilder();
                 if (getMethod != null)
                 {
+                    if (JNetReflectedCore.ReflectDeprecated) isGetDeprecated = getMethod.IsDeprecated();
                     executionStub.AppendFormat(AllPackageClasses.ClassStub.PropertyStub.GET_EXECUTION_FORMAT, getMethod.IsStatic() ? "SExecute" : "IExecute",
                                                                                                               getMethod.IsVoid() || getMethod.IsObjectReturnType() ? string.Empty : $"<{returnType}>",
                                                                                                               getMethod.Name);
@@ -451,13 +486,22 @@ namespace MASES.JNetReflector
 
                 if (setMethod != null)
                 {
+                    if (JNetReflectedCore.ReflectDeprecated) isSetDeprecated = setMethod.IsDeprecated();
                     executionStub.AppendFormat(AllPackageClasses.ClassStub.PropertyStub.SET_EXECUTION_FORMAT, setMethod.IsStatic() ? "SExecute" : "IExecute",
                                                                                                               setMethod.Name);
                 }
 
                 ReportTrace(ReflectionTraceLevel.Info, "Preparing properties of {0}", prop.Key);
 
-                var singleProperty = singlePropertyTemplate.Replace(AllPackageClasses.ClassStub.PropertyStub.MODIFIER, modifier)
+                StringBuilder jPropDecoration = new StringBuilder(AllPackageClasses.ClassStub.PropertyStub.DEFAULT_DECORATION);
+                if (isGetDeprecated || isSetDeprecated)
+                {
+                    jPropDecoration.AppendLine();
+                    jPropDecoration.Append(AllPackageClasses.ClassStub.MethodStub.OBSOLETE_DECORATION);
+                }
+
+                var singleProperty = singlePropertyTemplate.Replace(AllPackageClasses.ClassStub.PropertyStub.DECORATION, jPropDecoration.ToString())
+                                                           .Replace(AllPackageClasses.ClassStub.PropertyStub.MODIFIER, modifier)
                                                            .Replace(AllPackageClasses.ClassStub.PropertyStub.TYPE, returnType)
                                                            .Replace(AllPackageClasses.ClassStub.PropertyStub.NAME, methodName)
                                                            .Replace(AllPackageClasses.ClassStub.PropertyStub.EXECUTION, executionStub.ToString())
@@ -535,7 +579,15 @@ namespace MASES.JNetReflector
 
                 ReportTrace(ReflectionTraceLevel.Info, "Preparing method {0}", method.GenericString);
 
-                var singleMethod = singleMethodTemplate.Replace(AllPackageClasses.ClassStub.MethodStub.MODIFIER, modifier)
+                StringBuilder jDecoration = new StringBuilder(AllPackageClasses.ClassStub.MethodStub.DEFAULT_DECORATION);
+                if (JNetReflectedCore.ReflectDeprecated && method.IsDeprecated())
+                {
+                    jDecoration.AppendLine();
+                    jDecoration.Append(AllPackageClasses.ClassStub.MethodStub.OBSOLETE_DECORATION);
+                }
+
+                var singleMethod = singleMethodTemplate.Replace(AllPackageClasses.ClassStub.MethodStub.DECORATION, jDecoration.ToString())
+                                                       .Replace(AllPackageClasses.ClassStub.MethodStub.MODIFIER, modifier)
                                                        .Replace(AllPackageClasses.ClassStub.MethodStub.RETURNTYPE, returnType)
                                                        .Replace(AllPackageClasses.ClassStub.MethodStub.NAME, methodName)
                                                        .Replace(AllPackageClasses.ClassStub.MethodStub.PARAMETERS, paramsString)
@@ -559,7 +611,8 @@ namespace MASES.JNetReflector
             {
                 if (!field.DeclaringClass.Equals(classDefinition)) continue;
                 if (!field.IsPublic()) continue; // avoid not public methods
-                if (field.IsDeprecated())
+                bool isDeprecated = field.IsDeprecated();
+                if (!JNetReflectedCore.ReflectDeprecated && isDeprecated)
                 {
                     ReportTrace(ReflectionTraceLevel.Debug, "Discarded deprecated field {0}", field.GenericString);
                     continue; // avoid generics till now
@@ -581,7 +634,15 @@ namespace MASES.JNetReflector
                                                                                                              field.IsObjectReturnType() ? string.Empty : $"<{fieldType}>",
                                                                                                              field.Name);
 
-                var singleField = singleFieldTemplate.Replace(AllPackageClasses.ClassStub.FieldStub.MODIFIER, modifier)
+                StringBuilder jDecoration = new StringBuilder(AllPackageClasses.ClassStub.FieldStub.DEFAULT_DECORATION);
+                if (isDeprecated)
+                {
+                    jDecoration.AppendLine();
+                    jDecoration.Append(AllPackageClasses.ClassStub.FieldStub.OBSOLETE_DECORATION);
+                }
+
+                var singleField = singleFieldTemplate.Replace(AllPackageClasses.ClassStub.FieldStub.DECORATION, jDecoration.ToString())
+                                                     .Replace(AllPackageClasses.ClassStub.FieldStub.MODIFIER, modifier)
                                                      .Replace(AllPackageClasses.ClassStub.FieldStub.TYPE, fieldType)
                                                      .Replace(AllPackageClasses.ClassStub.FieldStub.NAME, fieldName)
                                                      .Replace(AllPackageClasses.ClassStub.FieldStub.EXECUTION, executionStub)

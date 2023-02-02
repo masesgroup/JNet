@@ -33,6 +33,7 @@ namespace MASES.JNetReflector
         public const string DestinationRootPath = "DestinationRootPath";
         public const string JarList = "JarList";
         public const string NamespacesToAvoid = "NamespacesToAvoid";
+        public const string ReflectDeprecated = "ReflectDeprecated";
         public const string DryRun = "DryRun";
         public const string TraceLevel = "TraceLevel";
         public const string TraceTo = "TraceTo";

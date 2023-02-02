@@ -96,6 +96,7 @@ namespace MASES.JNetReflector.Templates
 
         public class ClassStub
         {
+            public const string DECORATION = "ALLPACKAGE_CLASSES_STUB_CLASS_DECORATION_PLACEHOLDER";
             public const string HELP = "ALLPACKAGE_CLASSES_STUB_CLASS_HELP_PLACEHOLDER";
             public const string CLASS = "ALLPACKAGE_CLASSES_STUB_CLASS_PLACEHOLDER";
             public const string BASECLASS = "ALLPACKAGE_CLASSES_STUB_BASECLASS_PLACEHOLDER";
@@ -111,17 +112,27 @@ namespace MASES.JNetReflector.Templates
             public const string ISINTERFACE = "ALLPACKAGE_CLASSES_STUB_ISINTERFACE_PLACEHOLDER";
             public const string ISSTATIC = "ALLPACKAGE_CLASSES_STUB_ISSTATIC_PLACEHOLDER";
 
+            public const string DEFAULT_DECORATION = "    #region ALLPACKAGE_CLASSES_STUB_CLASS_PLACEHOLDER";
+            public const string OBSOLETE_DECORATION = "    [System.Obsolete()]";
+
             public class ConstructorStub
             {
+                public const string DECORATION = "CONSTRUCTOR_STUB_CONSTRUCTOR_DECORATION_PLACEHOLDER";
                 public const string HELP = "CONSTRUCTOR_STUB_CONSTRUCTOR_HELP_PLACEHOLDER";
                 public const string MODIFIER = "CONSTRUCTOR_STUB_MODIFIER_PLACEHOLDER";
                 public const string NAME = "CONSTRUCTOR_STUB_CONSTRUCTOR_NAME_PLACEHOLDER";
                 public const string PARAMETERS = "CONSTRUCTOR_STUB_PARAMETERS_PLACEHOLDER";
                 public const string EXECUTION = "CONSTRUCTOR_STUB_EXECUTION_PLACEHOLDER";
+
+                public static readonly string DEFAULT_DECORATION = "/// <summary>" + Environment.NewLine
+                                                                 + "/// CONSTRUCTOR_STUB_CONSTRUCTOR_HELP_PLACEHOLDER" + Environment.NewLine
+                                                                 + "/// </summary>";
+                public const string OBSOLETE_DECORATION = "[System.Obsolete()]";
             }
 
             public class MethodStub
             {
+                public const string DECORATION = "METHOD_STUB_METHOD_DECORATION_PLACEHOLDER";
                 public const string HELP = "METHOD_STUB_METHOD_HELP_PLACEHOLDER";
                 public const string MODIFIER = "METHOD_STUB_MODIFIER_PLACEHOLDER";
                 public const string RETURNTYPE = "METHOD_STUB_RETURN_TYPE_PLACEHOLDER";
@@ -129,10 +140,16 @@ namespace MASES.JNetReflector.Templates
                 public const string PARAMETERS = "METHOD_STUB_PARAMETERS_PLACEHOLDER";
                 public const string EXECUTION = "METHOD_STUB_EXECUTION_PLACEHOLDER";
                 public const string EXECUTION_FORMAT = "{0}{1}{2}(\"{3}\"{4});";
+
+                public static readonly string DEFAULT_DECORATION = "/// <summary>" + Environment.NewLine
+                                                                 + "/// METHOD_STUB_METHOD_HELP_PLACEHOLDER" + Environment.NewLine
+                                                                 + "/// </summary>";
+                public const string OBSOLETE_DECORATION = "[System.Obsolete()]";
             }
 
             public class PropertyStub
             {
+                public const string DECORATION = "PROPERTY_STUB_DECORATION_PLACEHOLDER";
                 public const string GET_HELP = "PROPERTY_STUB_GET_PROPERTY_HELP_PLACEHOLDER";
                 public const string SET_HELP = "PROPERTY_STUB_SET_PROPERTY_HELP_PLACEHOLDER";
                 public const string MODIFIER = "PROPERTY_STUB_MODIFIER_PLACEHOLDER";
@@ -141,20 +158,32 @@ namespace MASES.JNetReflector.Templates
                 public const string EXECUTION = "PROPERTY_STUB_EXECUTION_PLACEHOLDER";
                 public const string GET_EXECUTION_FORMAT = "get {{ return {0}{1}(\"{2}\"); }}";
                 public const string SET_EXECUTION_FORMAT = "set {{ {0}(\"{1}\", value); }}";
+
+                public static readonly string DEFAULT_DECORATION = "/// <summary>" + Environment.NewLine
+                                                                 + "/// PROPERTY_STUB_GET_PROPERTY_HELP_PLACEHOLDER PROPERTY_STUB_SET_PROPERTY_HELP_PLACEHOLDER" + Environment.NewLine
+                                                                 + "/// </summary>";
+                public const string OBSOLETE_DECORATION = "[System.Obsolete()]";
             }
 
             public class FieldStub
             {
+                public const string DECORATION = "FIELD_STUB_FIELD_DECORATION_PLACEHOLDER";
                 public const string HELP = "FIELD_STUB_FIELD_HELP_PLACEHOLDER";
                 public const string MODIFIER = "FIELD_STUB_MODIFIER_PLACEHOLDER";
                 public const string TYPE = "FIELD_STUB_TYPE_PLACEHOLDER";
                 public const string NAME = "FIELD_STUB_FIELD_NAME_PLACEHOLDER";
                 public const string EXECUTION = "FIELD_STUB_EXECUTION_PLACEHOLDER";
                 public const string EXECUTION_FORMAT = "{0}.GetField{1}(\"{2}\");";
+
+                public static readonly string DEFAULT_DECORATION = "/// <summary>" + Environment.NewLine
+                                                                 + "/// FIELD_STUB_FIELD_HELP_PLACEHOLDER" + Environment.NewLine
+                                                                 + "/// </summary>";
+                public const string OBSOLETE_DECORATION = "[System.Obsolete()]";
             }
 
             public class NestedClassStub
             {
+                public const string DECORATION = "ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_DECORATION_PLACEHOLDER";
                 public const string HELP = "ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_HELP_PLACEHOLDER";
                 public const string CLASS = "ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_PLACEHOLDER";
                 public const string BASECLASS = "ALLPACKAGE_CLASSES_STUB_NESTED_BASECLASS_PLACEHOLDER";
@@ -168,6 +197,9 @@ namespace MASES.JNetReflector.Templates
                 public const string ISCLOSEABLE = "ALLPACKAGE_CLASSES_STUB_NESTED_ISCLOSEABLE_PLACEHOLDER";
                 public const string ISINTERFACE = "ALLPACKAGE_CLASSES_STUB_NESTED_ISINTERFACE_PLACEHOLDER";
                 public const string ISSTATIC = "ALLPACKAGE_CLASSES_STUB_NESTED_ISSTATIC_PLACEHOLDER";
+
+                public const string DEFAULT_DECORATION = "        #region ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_PLACEHOLDER";
+                public const string OBSOLETE_DECORATION = "        [System.Obsolete()]";
             }
         }
     }

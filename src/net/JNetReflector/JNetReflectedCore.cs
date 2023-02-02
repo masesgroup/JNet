@@ -78,11 +78,16 @@ namespace MASES.JNetReflector
                         Type = ArgumentType.Double,
                         Help = "A CSV list of namespaces to be removed from analysis",
                     },
-                    new ArgumentMetadata<bool>()
+                    new ArgumentMetadata<object>()
+                    {
+                        Name = CLIParam.ReflectDeprecated,
+                        Type = ArgumentType.Single,
+                        Help = "The option force the tool to write any constructor, method or field marked as deprecated, default is to avoid deprecated",
+                    },
+                    new ArgumentMetadata<object>()
                     {
                         Name = CLIParam.DryRun,
                         Type = ArgumentType.Single,
-                        Default = false,
                         Help = "Execute everything, but do not write anything to disk",
                     },
                     new ArgumentMetadata<int>()
@@ -128,6 +133,9 @@ namespace MASES.JNetReflector
 
         static IEnumerable<string> _NamespacesToAvoid;
         public static IEnumerable<string> NamespacesToAvoid => _NamespacesToAvoid;
+
+        static bool _ReflectDeprecated;
+        public static bool ReflectDeprecated => _ReflectDeprecated;
 
         static bool _DryRun;
         public static bool DryRun => _DryRun;
@@ -179,7 +187,8 @@ namespace MASES.JNetReflector
             _OriginJavadocUrl = ParsedArgs.Get<string>(CLIParam.OriginJavadocUrl);
             _JavadocVersion = ParsedArgs.Get<int>(CLIParam.JavadocVersion);
 
-            _DryRun = ParsedArgs.Get<bool>(CLIParam.DryRun);
+            _ReflectDeprecated = ParsedArgs.Exist(CLIParam.ReflectDeprecated);
+            _DryRun = ParsedArgs.Exist(CLIParam.DryRun);
             _TraceLevel = ParsedArgs.Get<int>(CLIParam.TraceLevel);
             _TraceTo = ParsedArgs.Get<string>(CLIParam.TraceTo);
 
