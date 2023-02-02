@@ -31771,6 +31771,23 @@ references:
   fullName.vb: MASES.JNetReflector.JNetReflectedCore(Of T).ProcessCommandLine
   nameWithType: JNetReflectedCore<T>.ProcessCommandLine
   nameWithType.vb: JNetReflectedCore(Of T).ProcessCommandLine
+- uid: MASES.JNetReflector.JNetReflectedCore`1.ReflectDeprecated
+  name: ReflectDeprecated
+  href: api/MASES.JNetReflector.JNetReflectedCore-1.html#MASES_JNetReflector_JNetReflectedCore_1_ReflectDeprecated
+  commentId: P:MASES.JNetReflector.JNetReflectedCore`1.ReflectDeprecated
+  fullName: MASES.JNetReflector.JNetReflectedCore<T>.ReflectDeprecated
+  fullName.vb: MASES.JNetReflector.JNetReflectedCore(Of T).ReflectDeprecated
+  nameWithType: JNetReflectedCore<T>.ReflectDeprecated
+  nameWithType.vb: JNetReflectedCore(Of T).ReflectDeprecated
+- uid: MASES.JNetReflector.JNetReflectedCore`1.ReflectDeprecated*
+  name: ReflectDeprecated
+  href: api/MASES.JNetReflector.JNetReflectedCore-1.html#MASES_JNetReflector_JNetReflectedCore_1_ReflectDeprecated_
+  commentId: Overload:MASES.JNetReflector.JNetReflectedCore`1.ReflectDeprecated
+  isSpec: "True"
+  fullName: MASES.JNetReflector.JNetReflectedCore<T>.ReflectDeprecated
+  fullName.vb: MASES.JNetReflector.JNetReflectedCore(Of T).ReflectDeprecated
+  nameWithType: JNetReflectedCore<T>.ReflectDeprecated
+  nameWithType.vb: JNetReflectedCore(Of T).ReflectDeprecated
 - uid: MASES.JNetReflector.JNetReflectedCore`1.TraceLevel
   name: TraceLevel
   href: api/MASES.JNetReflector.JNetReflectedCore-1.html#MASES_JNetReflector_JNetReflectedCore_1_TraceLevel
@@ -31933,6 +31950,18 @@ references:
   commentId: T:MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.ConstructorStub
   fullName: MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.ConstructorStub
   nameWithType: AllPackageClasses.ClassStub.ConstructorStub
+- uid: MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.ConstructorStub.DECORATION
+  name: DECORATION
+  href: api/MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.ConstructorStub.html#MASES_JNetReflector_Templates_AllPackageClasses_ClassStub_ConstructorStub_DECORATION
+  commentId: F:MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.ConstructorStub.DECORATION
+  fullName: MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.ConstructorStub.DECORATION
+  nameWithType: AllPackageClasses.ClassStub.ConstructorStub.DECORATION
+- uid: MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.ConstructorStub.DEFAULT_DECORATION
+  name: DEFAULT_DECORATION
+  href: api/MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.ConstructorStub.html#MASES_JNetReflector_Templates_AllPackageClasses_ClassStub_ConstructorStub_DEFAULT_DECORATION
+  commentId: F:MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.ConstructorStub.DEFAULT_DECORATION
+  fullName: MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.ConstructorStub.DEFAULT_DECORATION
+  nameWithType: AllPackageClasses.ClassStub.ConstructorStub.DEFAULT_DECORATION
 - uid: MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.ConstructorStub.EXECUTION
   name: EXECUTION
   href: api/MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.ConstructorStub.html#MASES_JNetReflector_Templates_AllPackageClasses_ClassStub_ConstructorStub_EXECUTION
@@ -31957,12 +31986,30 @@ references:
   commentId: F:MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.ConstructorStub.NAME
   fullName: MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.ConstructorStub.NAME
   nameWithType: AllPackageClasses.ClassStub.ConstructorStub.NAME
+- uid: MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.ConstructorStub.OBSOLETE_DECORATION
+  name: OBSOLETE_DECORATION
+  href: api/MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.ConstructorStub.html#MASES_JNetReflector_Templates_AllPackageClasses_ClassStub_ConstructorStub_OBSOLETE_DECORATION
+  commentId: F:MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.ConstructorStub.OBSOLETE_DECORATION
+  fullName: MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.ConstructorStub.OBSOLETE_DECORATION
+  nameWithType: AllPackageClasses.ClassStub.ConstructorStub.OBSOLETE_DECORATION
 - uid: MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.ConstructorStub.PARAMETERS
   name: PARAMETERS
   href: api/MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.ConstructorStub.html#MASES_JNetReflector_Templates_AllPackageClasses_ClassStub_ConstructorStub_PARAMETERS
   commentId: F:MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.ConstructorStub.PARAMETERS
   fullName: MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.ConstructorStub.PARAMETERS
   nameWithType: AllPackageClasses.ClassStub.ConstructorStub.PARAMETERS
+- uid: MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.DECORATION
+  name: DECORATION
+  href: api/MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.html#MASES_JNetReflector_Templates_AllPackageClasses_ClassStub_DECORATION
+  commentId: F:MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.DECORATION
+  fullName: MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.DECORATION
+  nameWithType: AllPackageClasses.ClassStub.DECORATION
+- uid: MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.DEFAULT_DECORATION
+  name: DEFAULT_DECORATION
+  href: api/MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.html#MASES_JNetReflector_Templates_AllPackageClasses_ClassStub_DEFAULT_DECORATION
+  commentId: F:MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.DEFAULT_DECORATION
+  fullName: MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.DEFAULT_DECORATION
+  nameWithType: AllPackageClasses.ClassStub.DEFAULT_DECORATION
 - uid: MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.FIELDS
   name: FIELDS
   href: api/MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.html#MASES_JNetReflector_Templates_AllPackageClasses_ClassStub_FIELDS
@@ -31975,6 +32022,18 @@ references:
   commentId: T:MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.FieldStub
   fullName: MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.FieldStub
   nameWithType: AllPackageClasses.ClassStub.FieldStub
+- uid: MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.FieldStub.DECORATION
+  name: DECORATION
+  href: api/MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.FieldStub.html#MASES_JNetReflector_Templates_AllPackageClasses_ClassStub_FieldStub_DECORATION
+  commentId: F:MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.FieldStub.DECORATION
+  fullName: MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.FieldStub.DECORATION
+  nameWithType: AllPackageClasses.ClassStub.FieldStub.DECORATION
+- uid: MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.FieldStub.DEFAULT_DECORATION
+  name: DEFAULT_DECORATION
+  href: api/MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.FieldStub.html#MASES_JNetReflector_Templates_AllPackageClasses_ClassStub_FieldStub_DEFAULT_DECORATION
+  commentId: F:MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.FieldStub.DEFAULT_DECORATION
+  fullName: MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.FieldStub.DEFAULT_DECORATION
+  nameWithType: AllPackageClasses.ClassStub.FieldStub.DEFAULT_DECORATION
 - uid: MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.FieldStub.EXECUTION
   name: EXECUTION
   href: api/MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.FieldStub.html#MASES_JNetReflector_Templates_AllPackageClasses_ClassStub_FieldStub_EXECUTION
@@ -32005,6 +32064,12 @@ references:
   commentId: F:MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.FieldStub.NAME
   fullName: MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.FieldStub.NAME
   nameWithType: AllPackageClasses.ClassStub.FieldStub.NAME
+- uid: MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.FieldStub.OBSOLETE_DECORATION
+  name: OBSOLETE_DECORATION
+  href: api/MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.FieldStub.html#MASES_JNetReflector_Templates_AllPackageClasses_ClassStub_FieldStub_OBSOLETE_DECORATION
+  commentId: F:MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.FieldStub.OBSOLETE_DECORATION
+  fullName: MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.FieldStub.OBSOLETE_DECORATION
+  nameWithType: AllPackageClasses.ClassStub.FieldStub.OBSOLETE_DECORATION
 - uid: MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.FieldStub.TYPE
   name: TYPE
   href: api/MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.FieldStub.html#MASES_JNetReflector_Templates_AllPackageClasses_ClassStub_FieldStub_TYPE
@@ -32059,6 +32124,18 @@ references:
   commentId: T:MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.MethodStub
   fullName: MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.MethodStub
   nameWithType: AllPackageClasses.ClassStub.MethodStub
+- uid: MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.MethodStub.DECORATION
+  name: DECORATION
+  href: api/MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.MethodStub.html#MASES_JNetReflector_Templates_AllPackageClasses_ClassStub_MethodStub_DECORATION
+  commentId: F:MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.MethodStub.DECORATION
+  fullName: MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.MethodStub.DECORATION
+  nameWithType: AllPackageClasses.ClassStub.MethodStub.DECORATION
+- uid: MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.MethodStub.DEFAULT_DECORATION
+  name: DEFAULT_DECORATION
+  href: api/MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.MethodStub.html#MASES_JNetReflector_Templates_AllPackageClasses_ClassStub_MethodStub_DEFAULT_DECORATION
+  commentId: F:MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.MethodStub.DEFAULT_DECORATION
+  fullName: MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.MethodStub.DEFAULT_DECORATION
+  nameWithType: AllPackageClasses.ClassStub.MethodStub.DEFAULT_DECORATION
 - uid: MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.MethodStub.EXECUTION
   name: EXECUTION
   href: api/MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.MethodStub.html#MASES_JNetReflector_Templates_AllPackageClasses_ClassStub_MethodStub_EXECUTION
@@ -32089,6 +32166,12 @@ references:
   commentId: F:MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.MethodStub.NAME
   fullName: MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.MethodStub.NAME
   nameWithType: AllPackageClasses.ClassStub.MethodStub.NAME
+- uid: MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.MethodStub.OBSOLETE_DECORATION
+  name: OBSOLETE_DECORATION
+  href: api/MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.MethodStub.html#MASES_JNetReflector_Templates_AllPackageClasses_ClassStub_MethodStub_OBSOLETE_DECORATION
+  commentId: F:MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.MethodStub.OBSOLETE_DECORATION
+  fullName: MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.MethodStub.OBSOLETE_DECORATION
+  nameWithType: AllPackageClasses.ClassStub.MethodStub.OBSOLETE_DECORATION
 - uid: MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.MethodStub.PARAMETERS
   name: PARAMETERS
   href: api/MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.MethodStub.html#MASES_JNetReflector_Templates_AllPackageClasses_ClassStub_MethodStub_PARAMETERS
@@ -32125,6 +32208,30 @@ references:
   commentId: F:MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.NestedClassStub.CLASS
   fullName: MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.NestedClassStub.CLASS
   nameWithType: AllPackageClasses.ClassStub.NestedClassStub.CLASS
+- uid: MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.NestedClassStub.CONSTRUCTORS
+  name: CONSTRUCTORS
+  href: api/MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.NestedClassStub.html#MASES_JNetReflector_Templates_AllPackageClasses_ClassStub_NestedClassStub_CONSTRUCTORS
+  commentId: F:MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.NestedClassStub.CONSTRUCTORS
+  fullName: MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.NestedClassStub.CONSTRUCTORS
+  nameWithType: AllPackageClasses.ClassStub.NestedClassStub.CONSTRUCTORS
+- uid: MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.NestedClassStub.DECORATION
+  name: DECORATION
+  href: api/MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.NestedClassStub.html#MASES_JNetReflector_Templates_AllPackageClasses_ClassStub_NestedClassStub_DECORATION
+  commentId: F:MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.NestedClassStub.DECORATION
+  fullName: MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.NestedClassStub.DECORATION
+  nameWithType: AllPackageClasses.ClassStub.NestedClassStub.DECORATION
+- uid: MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.NestedClassStub.DEFAULT_DECORATION
+  name: DEFAULT_DECORATION
+  href: api/MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.NestedClassStub.html#MASES_JNetReflector_Templates_AllPackageClasses_ClassStub_NestedClassStub_DEFAULT_DECORATION
+  commentId: F:MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.NestedClassStub.DEFAULT_DECORATION
+  fullName: MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.NestedClassStub.DEFAULT_DECORATION
+  nameWithType: AllPackageClasses.ClassStub.NestedClassStub.DEFAULT_DECORATION
+- uid: MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.NestedClassStub.FIELDS
+  name: FIELDS
+  href: api/MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.NestedClassStub.html#MASES_JNetReflector_Templates_AllPackageClasses_ClassStub_NestedClassStub_FIELDS
+  commentId: F:MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.NestedClassStub.FIELDS
+  fullName: MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.NestedClassStub.FIELDS
+  nameWithType: AllPackageClasses.ClassStub.NestedClassStub.FIELDS
 - uid: MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.NestedClassStub.HELP
   name: HELP
   href: api/MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.NestedClassStub.html#MASES_JNetReflector_Templates_AllPackageClasses_ClassStub_NestedClassStub_HELP
@@ -32161,12 +32268,48 @@ references:
   commentId: F:MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.NestedClassStub.JAVACLASS
   fullName: MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.NestedClassStub.JAVACLASS
   nameWithType: AllPackageClasses.ClassStub.NestedClassStub.JAVACLASS
+- uid: MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.NestedClassStub.METHODS
+  name: METHODS
+  href: api/MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.NestedClassStub.html#MASES_JNetReflector_Templates_AllPackageClasses_ClassStub_NestedClassStub_METHODS
+  commentId: F:MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.NestedClassStub.METHODS
+  fullName: MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.NestedClassStub.METHODS
+  nameWithType: AllPackageClasses.ClassStub.NestedClassStub.METHODS
+- uid: MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.NestedClassStub.OBSOLETE_DECORATION
+  name: OBSOLETE_DECORATION
+  href: api/MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.NestedClassStub.html#MASES_JNetReflector_Templates_AllPackageClasses_ClassStub_NestedClassStub_OBSOLETE_DECORATION
+  commentId: F:MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.NestedClassStub.OBSOLETE_DECORATION
+  fullName: MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.NestedClassStub.OBSOLETE_DECORATION
+  nameWithType: AllPackageClasses.ClassStub.NestedClassStub.OBSOLETE_DECORATION
+- uid: MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.NestedClassStub.STATICMETHODS
+  name: STATICMETHODS
+  href: api/MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.NestedClassStub.html#MASES_JNetReflector_Templates_AllPackageClasses_ClassStub_NestedClassStub_STATICMETHODS
+  commentId: F:MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.NestedClassStub.STATICMETHODS
+  fullName: MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.NestedClassStub.STATICMETHODS
+  nameWithType: AllPackageClasses.ClassStub.NestedClassStub.STATICMETHODS
+- uid: MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.OBSOLETE_DECORATION
+  name: OBSOLETE_DECORATION
+  href: api/MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.html#MASES_JNetReflector_Templates_AllPackageClasses_ClassStub_OBSOLETE_DECORATION
+  commentId: F:MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.OBSOLETE_DECORATION
+  fullName: MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.OBSOLETE_DECORATION
+  nameWithType: AllPackageClasses.ClassStub.OBSOLETE_DECORATION
 - uid: MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.PropertyStub
   name: AllPackageClasses.ClassStub.PropertyStub
   href: api/MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.PropertyStub.html
   commentId: T:MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.PropertyStub
   fullName: MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.PropertyStub
   nameWithType: AllPackageClasses.ClassStub.PropertyStub
+- uid: MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.PropertyStub.DECORATION
+  name: DECORATION
+  href: api/MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.PropertyStub.html#MASES_JNetReflector_Templates_AllPackageClasses_ClassStub_PropertyStub_DECORATION
+  commentId: F:MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.PropertyStub.DECORATION
+  fullName: MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.PropertyStub.DECORATION
+  nameWithType: AllPackageClasses.ClassStub.PropertyStub.DECORATION
+- uid: MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.PropertyStub.DEFAULT_DECORATION
+  name: DEFAULT_DECORATION
+  href: api/MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.PropertyStub.html#MASES_JNetReflector_Templates_AllPackageClasses_ClassStub_PropertyStub_DEFAULT_DECORATION
+  commentId: F:MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.PropertyStub.DEFAULT_DECORATION
+  fullName: MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.PropertyStub.DEFAULT_DECORATION
+  nameWithType: AllPackageClasses.ClassStub.PropertyStub.DEFAULT_DECORATION
 - uid: MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.PropertyStub.EXECUTION
   name: EXECUTION
   href: api/MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.PropertyStub.html#MASES_JNetReflector_Templates_AllPackageClasses_ClassStub_PropertyStub_EXECUTION
@@ -32197,6 +32340,12 @@ references:
   commentId: F:MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.PropertyStub.NAME
   fullName: MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.PropertyStub.NAME
   nameWithType: AllPackageClasses.ClassStub.PropertyStub.NAME
+- uid: MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.PropertyStub.OBSOLETE_DECORATION
+  name: OBSOLETE_DECORATION
+  href: api/MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.PropertyStub.html#MASES_JNetReflector_Templates_AllPackageClasses_ClassStub_PropertyStub_OBSOLETE_DECORATION
+  commentId: F:MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.PropertyStub.OBSOLETE_DECORATION
+  fullName: MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.PropertyStub.OBSOLETE_DECORATION
+  nameWithType: AllPackageClasses.ClassStub.PropertyStub.OBSOLETE_DECORATION
 - uid: MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.PropertyStub.SET_EXECUTION_FORMAT
   name: SET_EXECUTION_FORMAT
   href: api/MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.PropertyStub.html#MASES_JNetReflector_Templates_AllPackageClasses_ClassStub_PropertyStub_SET_EXECUTION_FORMAT
