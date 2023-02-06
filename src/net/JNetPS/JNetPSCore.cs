@@ -16,14 +16,15 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.JNetPSCore.Cmdlet;
-using System.Management.Automation;
+using MASES.JNet;
+using System;
 
-namespace MASES.JNetPS.Cmdlet
+namespace MASES.JNetPS
 {
-    [Cmdlet(VerbsLifecycle.Start, "JNetPS")]
-    public class StartJNetPSCmdletCommand : StartJNetPSCmdletCommandBase<StartJNetPSCmdletCommand, JNetPSCore>
+    /// <summary>
+    /// Concrete implementation of <see cref="JNetCore{T}"/>
+    /// </summary>
+    public class JNetPSCore : JNetCore<JNetPSCore>
     {
-
     }
 }

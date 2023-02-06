@@ -16,7 +16,6 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.JNet;
 using MASES.JNetPSCore.Cmdlet;
 using System.Management.Automation;
 
@@ -24,7 +23,7 @@ namespace MASES.JNetPS.Cmdlet
 {
     [Cmdlet(VerbsLifecycle.Invoke, "JCommand")]
     [JNetPSExternalize]
-    public class InvokeCommandCmdletCommand : InvokeCommandCmdletCommandBase<InvokeCommandCmdletCommand, JNetCore>
+    public class InvokeCommandCmdletCommand : InvokeCommandCmdletCommandBase<InvokeCommandCmdletCommand, JNetPSCore>
     {
 
     }
