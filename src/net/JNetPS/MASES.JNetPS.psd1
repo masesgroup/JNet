@@ -55,7 +55,42 @@ FunctionsToExport = @()
 CmdletsToExport = @(
     'Start-JNetPS',
     'Invoke-JCommand',
-    'New-JObject'
+    'New-JObject',
+    'Get-ClassForName',
+    'Add-NotificationListener',
+    'Get-DefaultDomain',
+    'Get-Domains',
+    'Get-IsMXBeanInterface',
+    'Get-JMXConnector',
+    'Get-MBeanCount',
+    'Get-Names',
+    'Get-QueryClassattr',
+    'Get-QueryValueExp',
+    'Invoke-QueryAnd'
+    'Invoke-QueryAnySubString',
+    'Invoke-QueryAttr',
+    'Invoke-QueryBetween',
+    'Invoke-QueryDiv',
+    'Invoke-QueryEq',
+    'Invoke-QueryFinalSubString',
+    'Invoke-QueryGeq',
+    'Invoke-QueryGt',
+    'Invoke-QueryIn',
+    'Invoke-QueryInitialSubString',
+    'Invoke-QueryIsInstanceOf',
+    'Invoke-QueryLeq',
+    'Invoke-QueryLt',
+    'Invoke-QueryMatch',
+    'Invoke-QueryMinus',
+    'Invoke-QueryNot',
+    'Invoke-QueryOr',
+    'Invoke-QueryPlus',
+    'Invoke-QueryTimes',
+    'New-JMXServiceURL',
+    'New-MBeanProxy',
+    'New-MXBeanProxy',
+    'New-ObjectName',
+    'Remove-NotificationListener'
 )
 
 VariablesToExport = '*'

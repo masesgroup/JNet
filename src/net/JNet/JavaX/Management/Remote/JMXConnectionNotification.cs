@@ -21,6 +21,10 @@ namespace JavaX.Management.Remote
     public class JMXConnectionNotification : Notification
     {
         public override string ClassName => "javax.management.remote.JMXConnectionNotification";
+
+        public JMXConnectionNotification() { }
+
+        protected JMXConnectionNotification(params object[] args) : base(args) { }
         /// <summary>
         /// Constructs a new connection notification.
         /// </summary>
