@@ -4,6 +4,8 @@ using System.Windows.Forms;
 
 namespace MASES.JNetWinFormsTest
 {
+    class JNetTest : JNetCore<JNetTest> { }
+
     static class Program
     {
         /// <summary>
@@ -12,7 +14,7 @@ namespace MASES.JNetWinFormsTest
         [STAThread]
         static void Main()
         {
-            JNetCore.CreateGlobalInstance();
+            JNetTest.CreateGlobalInstance();
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

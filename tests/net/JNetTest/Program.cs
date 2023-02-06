@@ -23,17 +23,19 @@ using MASES.JNet.Extensions;
 
 namespace MASES.JNetTest
 {
+    class JNetTest : JNetCore<JNetTest> { }
+
     class Program
     {
         static void Main(string[] args)
         {
-            JNetCore.CreateGlobalInstance();
-            var appArgs = JNetCore.FilteredArgs;
+            JNetTest.CreateGlobalInstance();
+            var appArgs = JNetTest.FilteredArgs;
 
             var setEmpty = Collections.EmptySet<int>();
 
             var cls = Java.Lang.Class.Of<Vector<string>>();
-            var cls2 = JNetCore.Class<Vector<string>>();
+            var cls2 = JNetTest.Class<Vector<string>>();
 
             var res = cls.Equals(cls2);
             System.Console.WriteLine($"Class are equals: {res}");

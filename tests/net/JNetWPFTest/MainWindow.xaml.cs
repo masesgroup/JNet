@@ -12,9 +12,11 @@ namespace MASES.JNetWPFTest
     /// </summary>
     public partial class MainWindow : Window
     {
+        class JNetTest : JNetCore<JNetTest> { }
+
         public MainWindow()
         {
-            JNetCore.CreateGlobalInstance();
+            JNetTest.CreateGlobalInstance();
 
             InitializeComponent();
 #if NETFRAMEWORK
