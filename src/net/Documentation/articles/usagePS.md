@@ -44,7 +44,7 @@ $connector = Get-JMXConnector $url
 
 $domains = Get-Domains $connector
 $defaultdomain = Get-DefaultDomain $connector
-$names = Get-Names $connector
+$names = Get-QueryNames $connector
 
 $mbeanName = New-ObjectName "com.example:type=Hello"
 $mbeanProxy = New-MBeanProxy -Connector $connector -ObjectName $mbeanName -InterfaceName "HelloMBean" -WithNotificationEmitter
