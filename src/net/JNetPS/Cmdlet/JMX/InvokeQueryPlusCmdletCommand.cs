@@ -44,7 +44,7 @@ namespace MASES.JNetPS.Cmdlet.JMX
         // This method will be called for each input received from the pipeline to this cmdlet; if no input is received, this method is not called
         protected override void ProcessCommand()
         {
-            QueryExp result = Query.Plus(Value1, Value2);
+            ValueExp result = Query.Plus(Value1, Value2);
 
             WriteObject(result);
         }

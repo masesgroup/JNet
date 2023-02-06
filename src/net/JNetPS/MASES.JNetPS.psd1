@@ -63,7 +63,8 @@ CmdletsToExport = @(
     'Get-IsMXBeanInterface',
     'Get-JMXConnector',
     'Get-MBeanCount',
-    'Get-Names',
+    'Get-MBeanInfo',
+    'Get-QueryNames',
     'Get-QueryClassattr',
     'Get-QueryValueExp',
     'Invoke-QueryAnd'
@@ -89,6 +90,7 @@ CmdletsToExport = @(
     'New-JMXServiceURL',
     'New-MBeanProxy',
     'New-MXBeanProxy',
+    'New-NotificationListener',
     'New-ObjectName',
     'Remove-NotificationListener'
 )

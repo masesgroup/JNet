@@ -18,14 +18,13 @@
 
 using JavaX.Management;
 using JavaX.Management.Remote;
-using MASES.JNet.Extensions;
 using MASES.JNetPSCore.Cmdlet;
 using System.Management.Automation;
 
 namespace MASES.JNetPS.Cmdlet.JMX
 {
-    [Cmdlet(VerbsCommon.Get, "Names")]
-    public class GetNamesCmdletCommand : JNetPSCmdlet<JNetPSCore>
+    [Cmdlet(VerbsCommon.Get, "MBeanInfo")]
+    public class GetMBeanInfoCmdletCommand : JNetPSCmdlet<JNetPSCore>
     {
         [Parameter(
             Position = 0,
@@ -38,21 +37,15 @@ namespace MASES.JNetPS.Cmdlet.JMX
         [Parameter(
             Position = 1,
             ValueFromPipelineByPropertyName = true,
-            HelpMessage = "The object name pattern identifying the MBean names to be retrieved. If null or no domain and key properties are specified, the name of all registered MBeans will be retrieved.")]
+            HelpMessage = "The name of the MBean to analyze.")]
         public ObjectName ObjectName { get; set; }
-
-        [Parameter(
-            Position = 2,
-            ValueFromPipelineByPropertyName = true,
-            HelpMessage = "The query expression to be applied for selecting MBeans. If null no query expression will be applied for selecting MBeans.")]
-        public QueryExp Query { get; set; }
 
         // This method will be called for each input received from the pipeline to this cmdlet; if no input is received, this method is not called
         protected override void ProcessCommand()
         {
-            var objects = Connector.MBeanServerConnection.QueryNames(ObjectName, Query);
+            MBeanInfo info = Connector.MBeanServerConnection.GetMBeanInfo(ObjectName);
 
-            WriteObject(objects.ToList());
+            WriteObject(info);
         }
     }
 }
