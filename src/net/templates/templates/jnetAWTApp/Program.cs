@@ -12,12 +12,14 @@ using MASES.JNet;
 
 namespace MASES.JNetTemplate.JNetAWTApp
 {
+    class MyJNetCore : JNetCore<MyJNetCore> { }
+
     class Program
     {
         static void Main(string[] args)
         {
-            JNetCore.CreateGlobalInstance(); // this call prepares the environment: it is mandatory to initialize the JVM
-            var appArgs = JNetCore.FilteredArgs; // contains the remaining arguments, the JNet and JCOBridge arguments are discarded
+            MyJNetCore.CreateGlobalInstance(); // this call prepares the environment: it is mandatory to initialize the JVM
+            var appArgs = MyJNetCore.FilteredArgs; // contains the remaining arguments, the JNet and JCOBridge arguments are discarded
 
             try
             {
