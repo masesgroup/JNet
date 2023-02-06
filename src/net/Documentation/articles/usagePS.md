@@ -96,7 +96,7 @@ From version 1.5.0 new JMX comlets are available:
 * **Get-QueryNames**:
 * **Get-QueryClassattr**:
 * **Get-QueryValueExp**:
-* **Invoke-QueryAnd'
+* **Invoke-QueryAnd**:
 * **Invoke-QueryAnySubString**:
 * **Invoke-QueryAttr**:
 * **Invoke-QueryBetween**:
