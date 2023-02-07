@@ -24,6 +24,7 @@ using System.Management.Automation;
 namespace MASES.JNetPS.Cmdlet.JMX
 {
     [Cmdlet(VerbsCommon.Add, "NotificationListener")]
+    [OutputType(typeof(void))]
     public class AddNotificationListenerCmdletCommand : JNetPSCmdlet<JNetPSCore>
     {
         [Parameter(

@@ -23,6 +23,7 @@ using System.Management.Automation;
 namespace MASES.JNetPS.Cmdlet.JMX
 {
     [Cmdlet(VerbsLifecycle.Invoke, "QueryGeq")]
+    [OutputType(typeof(QueryExp))]
     public class InvokeQueryGeqCmdletCommand : JNetPSCmdlet<JNetPSCore>
     {
         [Parameter(

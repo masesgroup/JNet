@@ -23,6 +23,7 @@ using System.Management.Automation;
 namespace MASES.JNetPS.Cmdlet.JMX
 {
     [Cmdlet(VerbsLifecycle.Invoke, "QueryMinus")]
+    [OutputType(typeof(ValueExp))]
     public class InvokeQueryMinusCmdletCommand : JNetPSCmdlet<JNetPSCore>
     {
         [Parameter(

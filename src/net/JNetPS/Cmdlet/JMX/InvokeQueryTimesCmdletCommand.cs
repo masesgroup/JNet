@@ -23,6 +23,7 @@ using System.Management.Automation;
 namespace MASES.JNetPS.Cmdlet.JMX
 {
     [Cmdlet(VerbsLifecycle.Invoke, "QueryTimes")]
+    [OutputType(typeof(ValueExp))]
     public class InvokeQueryTimesCmdletCommand : JNetPSCmdlet<JNetPSCore>
     {
         [Parameter(

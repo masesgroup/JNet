@@ -23,6 +23,7 @@ using System.Management.Automation;
 namespace MASES.JNetPS.Cmdlet
 {
     [Cmdlet(VerbsCommon.Get, "ClassForName")]
+    [OutputType(typeof(Class))]
     public class GetClassForNameCmdletCommand : JNetPSCmdlet<JNetPSCore>
     {
         [Parameter(

@@ -23,6 +23,7 @@ using System.Management.Automation;
 namespace MASES.JNetPS.Cmdlet.JMX
 {
     [Cmdlet(VerbsCommon.Get, "Domains")]
+    [OutputType(typeof(string[]))]
     public class GetDomainsCmdletCommand : JNetPSCmdlet<JNetPSCore>
     {
         [Parameter(

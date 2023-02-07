@@ -26,6 +26,7 @@ using System.Management.Automation;
 namespace MASES.JNetPS.Cmdlet.JMX
 {
     [Cmdlet(VerbsCommon.Get, "JMXConnector")]
+    [OutputType(typeof(JMXConnector))]
     public class GetJMXConnectorCmdletCommand : JNetPSCmdlet<JNetPSCore>
     {
         [Parameter(

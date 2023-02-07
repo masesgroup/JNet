@@ -23,6 +23,7 @@ using System.Management.Automation;
 namespace MASES.JNetPS.Cmdlet.JMX
 {
     [Cmdlet(VerbsLifecycle.Invoke, "QueryIsInstanceOf")]
+    [OutputType(typeof(QueryExp))]
     public class InvokeQueryIsInstanceOfCmdletCommand : JNetPSCmdlet<JNetPSCore>
     {
         [Parameter(

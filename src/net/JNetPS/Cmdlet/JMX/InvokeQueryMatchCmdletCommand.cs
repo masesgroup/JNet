@@ -23,6 +23,7 @@ using System.Management.Automation;
 namespace MASES.JNetPS.Cmdlet.JMX
 {
     [Cmdlet(VerbsLifecycle.Invoke, "QueryMatch")]
+    [OutputType(typeof(QueryExp))]
     public class InvokeQueryMatchCmdletCommand : JNetPSCmdlet<JNetPSCore>
     {
         [Parameter(
