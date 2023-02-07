@@ -15,5 +15,6 @@
 		<Compile Include="..\Common\EmbeddedGraphic.cs">
 			<Link>EmbeddedGraphic.cs</Link>
 		</Compile>
+		<Compile Include="..\Common\Initializer.cs" Link="Initializer.cs" />
 	</ItemGroup>
 </Project>

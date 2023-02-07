@@ -1,5 +1,5 @@
 ﻿/*
-*  Copyright 2022 MASES s.r.l.
+*  Copyright 2023 MASES s.r.l.
 *
 *  Licensed under the Apache License, Version 2.0 (the "License");
 *  you may not use this file except in compliance with the License.
@@ -16,26 +16,23 @@
 *  Refer to LICENSE for more information.
 */
 
-using Java.Io;
 using Java.Util;
-using MASES.JNet;
+using MASES.JNetTest.Common;
 using MASES.JNet.Extensions;
 
 namespace MASES.JNetTest
 {
-    class JNetTest : JNetCore<JNetTest> { }
-
     class Program
     {
         static void Main(string[] args)
         {
-            JNetTest.CreateGlobalInstance();
-            var appArgs = JNetTest.FilteredArgs;
+            JNetTestCore.CreateGlobalInstance();
+            var appArgs = JNetTestCore.FilteredArgs;
 
             var setEmpty = Collections.EmptySet<int>();
 
             var cls = Java.Lang.Class.Of<Vector<string>>();
-            var cls2 = JNetTest.Class<Vector<string>>();
+            var cls2 = JNetTestCore.Class<Vector<string>>();
 
             var res = cls.Equals(cls2);
             System.Console.WriteLine($"Class are equals: {res}");
