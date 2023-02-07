@@ -4581,7 +4581,7 @@
       "output": {
         ".html": {
           "relative_path": "api/JavaX.Management.JMX.html",
-          "hash": "M/3sWUAayw0eFutBzaooOkva/C8nPntlPcFPCb0AlxI="
+          "hash": "bfInqgAWbYSBUpA2FM4iwfNyyEga29uzBEqVg57/Ack="
         }
       },
       "is_incremental": false,
@@ -5001,7 +5001,7 @@
       "output": {
         ".html": {
           "relative_path": "api/JavaX.Management.Remote.JMXConnectionNotification.html",
-          "hash": "vZLClajbdSBNGkg/VomwN/zJJpv4smzMJ+jC6wo5SWI="
+          "hash": "4zZPySdqAtFAbPwXEr/rillnp5zKDxYDgeIKdUNMwrQ="
         }
       },
       "is_incremental": false,
@@ -5817,7 +5817,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MASES.JNet.Extensions.JavaUtilExtensions.html",
-          "hash": "1S9+JDUmLYpRyx2GrWgV+/nZ/L7MlbG5VG6L8yJRwAs="
+          "hash": "Cn7JV6x/iiCw7LjS56+x4CHxSDgxnVFHxGTW8W2eK/0="
         }
       },
       "is_incremental": false,
@@ -5877,19 +5877,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MASES.JNet.JNetCore-1.html",
-          "hash": "K66cgE5woeIjXJXJNf/SI7wudxIqWC2lvEQSZ5DrXDA="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNet.JNetCore.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNet.JNetCore.html",
-          "hash": "8IOmw8dB5CDDneyhzhH3Yz5+m5S8Hxk9Ctcm9GAJxbQ="
+          "hash": "Du2hwKe8Enunu+Bbo+fN3jmV3SM5dCp3OMOzAmESsP8="
         }
       },
       "is_incremental": false,
@@ -5913,7 +5901,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MASES.JNet.html",
-          "hash": "yQl8j0wKklv3M2Iy+ZQTvBxt8Agq2IIYakunCuEhMOI="
+          "hash": "aBeOeB6SRxJV+4Vper3uM1nR4SogpUQfI00gub/oEkw="
         }
       },
       "is_incremental": false,
@@ -5957,11 +5945,467 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNetPS.Cmdlet.GetClassForNameCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNetPS.Cmdlet.GetClassForNameCmdletCommand.html",
+          "hash": "YfoapUNMaxp3oDLx+NoXqYfjK9s7YvHAx2IneoUtHMQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MASES.JNetPS.Cmdlet.InvokeCommandCmdletCommand.yml",
       "output": {
         ".html": {
           "relative_path": "api/MASES.JNetPS.Cmdlet.InvokeCommandCmdletCommand.html",
-          "hash": "K+Oep0GMqtS2XF9KBugh4Jpmq7bBGHHc2Q9rWTgMEQ4="
+          "hash": "TxF8p3pCbP0mbwe6VG7pTZ+ROZBOh7LNvZ6RZvzMGyc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.AddNotificationListenerCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.AddNotificationListenerCmdletCommand.html",
+          "hash": "2PCYjUoixJ+96xuYGvgZxujbnwKXVXCtIM44f7Nsoq0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.GetDefaultDomainCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.GetDefaultDomainCmdletCommand.html",
+          "hash": "1YjIy9xhHx8N7clgVjP1uoyNtJkikv9o1TI7lVh9XJ4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.GetDomainsCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.GetDomainsCmdletCommand.html",
+          "hash": "odLYo3TIbsgyFcIPo5mmqHdUv4jUhMtYW3tgOVJfTmA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.GetIsMXBeanInterfaceCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.GetIsMXBeanInterfaceCmdletCommand.html",
+          "hash": "brslxBoKjlm18rICHMNAlygYW+8jsF2bzcfOPtf1FQI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.GetJMXConnectorCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.GetJMXConnectorCmdletCommand.html",
+          "hash": "8l/CSSLcpAc2km5k3XhnBGHtX6S3EOuSVwfq1CdjC2c="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.GetMBeanCountCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.GetMBeanCountCmdletCommand.html",
+          "hash": "qmAUe/K5FnC+61pQ/z2htCo2zTeI1woJfv1nfP4WJDs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.GetMBeanInfoCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.GetMBeanInfoCmdletCommand.html",
+          "hash": "0gwBanghlBYBrdNdGEjuhEkVDKm2LfUuEQdJX0LoFQs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.GetQueryClassattrCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.GetQueryClassattrCmdletCommand.html",
+          "hash": "+HhyfNzpy9tQNqLpcA2GgJr2sv7cPNUnpXarJv7OeAA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.GetQueryNamesCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.GetQueryNamesCmdletCommand.html",
+          "hash": "C183CBg25rx7y3A2hKb5YkXy7rV/iJ4Lo9xT7V+6n1M="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.GetQueryValueExpCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.GetQueryValueExpCmdletCommand.html",
+          "hash": "+LzBC7etNNxksXv/vdRs6FrcZf/jL/P7Tc1zJFDzZ3g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryAndCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryAndCmdletCommand.html",
+          "hash": "dswmJOIY05tHMu0Pt7oB+73Tl+yRd8Psoo3vTcg78XY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryAnySubStringCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryAnySubStringCmdletCommand.html",
+          "hash": "CaG0Yzs6Jus6f7HSpF4tvaR8Vxx7YTefOmetwUDpyBI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryAttrCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryAttrCmdletCommand.html",
+          "hash": "p96d/Um3wfEmpWUsPsKL0JwR5xZ5T2vQx56NDTm/Cgs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryBetweenCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryBetweenCmdletCommand.html",
+          "hash": "pySCVe6zbXjJ20QUho7rRZ5nvwaYT3TvimPj84LqB6Q="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryDivCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryDivCmdletCommand.html",
+          "hash": "I733YX4OvmznxWrxkYuehCGsaSCjD/wlIt53V32TVoE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryEqCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryEqCmdletCommand.html",
+          "hash": "nxQmsJxXFS9ivg0r86xowYMT8rV+mvuAxUHxiyuOcjI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryFinalSubStringCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryFinalSubStringCmdletCommand.html",
+          "hash": "8l16aGKJDTupUMT7S+UeefCNbV/bGilkkOCEsJpz6fo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryGeqCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryGeqCmdletCommand.html",
+          "hash": "k46Sd4sztykCYfwRM3thCUg+t92qZwY/dlU+Vr/x3Oo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryGtCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryGtCmdletCommand.html",
+          "hash": "juYlHP0Hr9GpVZlRmcFK4dSHYtXwMc8Izry8KfPSi5o="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryInCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryInCmdletCommand.html",
+          "hash": "dkqHsK7MXzShquzATo2bkfJwNWG6kAJVUkvFeAWnlcE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryInitialSubStringCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryInitialSubStringCmdletCommand.html",
+          "hash": "i+Uf+qor+76f2hnTpCTyb+Ex60unw8ueQfGzhMontkM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryIsInstanceOfCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryIsInstanceOfCmdletCommand.html",
+          "hash": "cf9aXERt04ZvcUPoivCtFOR0BiT+2/a/JV1CDSK0s50="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryLeqCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryLeqCmdletCommand.html",
+          "hash": "kIKh+6WNZ3iULjcITISfU47+B6Ud+RU6nEWHV1LxvB0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryLtCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryLtCmdletCommand.html",
+          "hash": "KrYKb4u9nttyXqSGDlhDg75+FxGyPEW2/IJA1yJyn24="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryMatchCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryMatchCmdletCommand.html",
+          "hash": "PmEHyPCOcZZhT1/27P30Rba/M48V1IoOEA3KvAS8tOs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryMinusCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryMinusCmdletCommand.html",
+          "hash": "A5wk1fq+q417OEjybbzRoSs8hOEnUXuzEHLTv1GQt4g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryNotCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryNotCmdletCommand.html",
+          "hash": "p/xiUJ6xDMjm9jSLokRBa84Oj3fSUIwDGdBKOMDUy44="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryOrCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryOrCmdletCommand.html",
+          "hash": "gA0t8FXIq/jz6x+Hy+Mwozo+ntp7Y+0JookdCHp+gQQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryPlusCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryPlusCmdletCommand.html",
+          "hash": "Cz+4QYE55wKG54FUxDdBLCM4SygF/NgGBtQ/SZflpLk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryTimesCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryTimesCmdletCommand.html",
+          "hash": "JK1iE8uf9on9PqQRhoX3UlWj2tBpPlEef9VrrMqWQ/8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.NewJMXServiceURLCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.NewJMXServiceURLCmdletCommand.html",
+          "hash": "TETtTkfzGurdF+3ZQvYoEWRA8kv1MkVIJDcPkDfUdK8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.NewMBeanProxyCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.NewMBeanProxyCmdletCommand.html",
+          "hash": "G6FkjjNbtza30Bw8dTQJexoTkWZUXx0EsHjjNM7DaEg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.NewMXBeanProxyCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.NewMXBeanProxyCmdletCommand.html",
+          "hash": "S6SFHZGlb21Z8yo2X5dFJ/SdTx8peTc6+MIkgiH2T5Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.NewNotificationListenerCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.NewNotificationListenerCmdletCommand.html",
+          "hash": "egLxG+/azQwHd81mqNB+PMma56dkatKzRyKEF6ON73s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.NewObjectNameCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.NewObjectNameCmdletCommand.html",
+          "hash": "m7ppQqU2TR+/WAWn7mjCY0EU1hyU5u0nHMalsULr6lo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.RemoveNotificationListenerCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.RemoveNotificationListenerCmdletCommand.html",
+          "hash": "FaPgmPllbawHhFLws/F/SB5DfRf8/RPnPuNj/JsoK1g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.html",
+          "hash": "aP70oOEAAoyLDfcZCEQql6xBCX83yoyL2fmApuMfU1Y="
         }
       },
       "is_incremental": false,
@@ -5973,7 +6417,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MASES.JNetPS.Cmdlet.NewObjectCmdletCommand.html",
-          "hash": "x8kAhQi0cg4fqwzJ2gXChD35BntNhFVQMgfRCSXw/6U="
+          "hash": "4K4MuFGrnZgaDWwzhRTDNYuep+T6VRY+ryHmQdoVtkM="
         }
       },
       "is_incremental": false,
@@ -5985,7 +6429,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MASES.JNetPS.Cmdlet.StartJNetPSCmdletCommand.html",
-          "hash": "DTf29mtR/nRINnjgf3+BR/0ha9vcF+ptr+AwZUeKMjY="
+          "hash": "c5sLIz3pootERXVN1Jg5h13a7HDSdUG8it2vIL5jxiA="
         }
       },
       "is_incremental": false,
@@ -5997,7 +6441,31 @@
       "output": {
         ".html": {
           "relative_path": "api/MASES.JNetPS.Cmdlet.html",
-          "hash": "bJBO0TVkfyMAYJZDGp07UEnJeTyVCd29cn4hXgRamxE="
+          "hash": "ti10TBiGwQR9HkDC6O7Rc9yumQ2pX5vqKZBAMjJZ94g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNetPS.JNetPSCore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNetPS.JNetPSCore.html",
+          "hash": "W5vLnhhHrJjLkM5E+J0ipfPO5bX2UBos8WH8flvt2Lo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNetPS.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNetPS.html",
+          "hash": "o9f3Ee6t85ve1vNhEV8g/ThgT/fgpT//KNPVgOBUWX8="
         }
       },
       "is_incremental": false,
@@ -6021,7 +6489,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MASES.JNetPSCore.Cmdlet.JNetPSCmdlet-1.html",
-          "hash": "34HjHBaYhQrnqCYEOQXVMuUbayt3RK2i9G1qVvSb3Xg="
+          "hash": "GixiepwSTe/azbVS2wG+c2JPX9CGOxZEGSSK/BzeI4A="
         }
       },
       "is_incremental": false,
@@ -6093,7 +6561,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MASES.JNetPSCore.JNetPSHelper-1.html",
-          "hash": "bq/hxpnlLbX82mvdNBH5eUD4xdhc0FdeI1g5eSNGG7k="
+          "hash": "zPHRdqhkC63o5wc8OzE/NbByF7zntz1xfSp6WHUueF8="
         }
       },
       "is_incremental": false,
@@ -6105,7 +6573,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MASES.JNetPSCore.JNetPSHelper.html",
-          "hash": "Oxu3HF1M8A7F5Ou6kajdY6KbMH3l2jUoiKMTTp/giM4="
+          "hash": "2JYgE2LPSy905q8EotCg85v+OFx7j3DNX1oKtGBqblw="
         }
       },
       "is_incremental": false,
@@ -6117,7 +6585,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MASES.JNetPSCore.JNetPSHelperExtensions.html",
-          "hash": "mXZwnnxTfgVxQ2vOF8VfsgvKzO6jHWjJUI5MLbV99Bo="
+          "hash": "DPdUS8Y5V6xsiHDb+ssUeP5iaru8QojbjPzwlnbfa9E="
         }
       },
       "is_incremental": false,
@@ -6333,7 +6801,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "d1gB39IZ0Dv2+IxFUwnRGtYrQSfILHVMUqugSf+cEuQ="
+          "hash": "dmru+OXli6Q6f4r5+DYPOUQcfuakBDRbWyyQuUgWTGs="
         }
       },
       "is_incremental": false,
@@ -6456,7 +6924,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/usagePS.html",
-          "hash": "EbsrvQW+PJ4IGSP2rcI8OlQPctYpYMy/OB5kCpc/Jfs="
+          "hash": "tOhgaG8wSGoqHiStGEXvsxfAOTF4sOGYxL/zwYVyEyg="
         }
       },
       "is_incremental": false,
@@ -6533,7 +7001,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 526,
+          "total_file_count": 565,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

@@ -94,6 +94,26 @@ $var.ToString()
 <pre><code class="lang-shell">Hello from
 Hello from JNetPS
 </code></pre>
+<h3 id="jmx-example">JMX example</h3>
+<p>From version 1.5.0 new JMX comlets are available; the tutorial in <a href="https://docs.oracle.com/javase/tutorial/jmx/remote/custom.html">https://docs.oracle.com/javase/tutorial/jmx/remote/custom.html</a> can be reproduced in PowerShell:</p>
+<pre><code class="lang-powershell">$url = New-JMXServiceURL &quot;service:jmx:rmi:///jndi/rmi://:9999/jmxrmi&quot;
+$connector = Get-JMXConnector $url
+
+$domains = Get-Domains $connector
+$defaultdomain = Get-DefaultDomain $connector
+$names = Get-QueryNames $connector
+
+$mbeanName = New-ObjectName &quot;com.example:type=Hello&quot;
+$mbeanProxy = New-MBeanProxy -Connector $connector -ObjectName $mbeanName -InterfaceName &quot;HelloMBean&quot; -WithNotificationEmitter
+
+[Action[JavaX.Management.Notification, System.Object]]$action = {param($notification, $handback) Write-Host &quot;Notification message is $notification.Message&quot;}
+$listener = New-NotificationListener $action
+
+Add-NotificationListener $connector $mbeanName $listener 
+
+mbeanProxy.getCacheSize() // this use dynamic on mbeanProxy
+
+</code></pre>
 <h2 id="cmdlet-available">Cmdlet available</h2>
 <p><em>jnetps</em> accepts the following cmdlets:</p>
 <ul>
@@ -126,6 +146,50 @@ Hello from JNetPS
 <li>Arguments</li>
 </ul>
 </li>
+<li><strong>Get-ClassForName</strong>: returns a Class from the class name
+<ul>
+<li>ClassName</li>
+</ul>
+</li>
+</ul>
+<p>From version 1.5.0 new JMX comlets are available:</p>
+<ul>
+<li><strong>Add-NotificationListener</strong>:</li>
+<li><strong>Get-DefaultDomain</strong>:</li>
+<li><strong>Get-Domains</strong>:</li>
+<li><strong>Get-IsMXBeanInterface</strong>:</li>
+<li><strong>Get-JMXConnector</strong>:</li>
+<li><strong>Get-MBeanCount</strong>:</li>
+<li><strong>Get-MBeanInfo</strong>:</li>
+<li><strong>Get-QueryNames</strong>:</li>
+<li><strong>Get-QueryClassattr</strong>:</li>
+<li><strong>Get-QueryValueExp</strong>:</li>
+<li><strong>Invoke-QueryAnd</strong>:</li>
+<li><strong>Invoke-QueryAnySubString</strong>:</li>
+<li><strong>Invoke-QueryAttr</strong>:</li>
+<li><strong>Invoke-QueryBetween</strong>:</li>
+<li><strong>Invoke-QueryDiv</strong>:</li>
+<li><strong>Invoke-QueryEq</strong>:</li>
+<li><strong>Invoke-QueryFinalSubString</strong>:</li>
+<li><strong>Invoke-QueryGeq</strong>:</li>
+<li><strong>Invoke-QueryGt</strong>:</li>
+<li><strong>Invoke-QueryIn</strong>:</li>
+<li><strong>Invoke-QueryInitialSubString</strong>:</li>
+<li><strong>Invoke-QueryIsInstanceOf</strong>:</li>
+<li><strong>Invoke-QueryLeq</strong>:</li>
+<li><strong>Invoke-QueryLt</strong>:</li>
+<li><strong>Invoke-QueryMatch</strong>:</li>
+<li><strong>Invoke-QueryMinus</strong>:</li>
+<li><strong>Invoke-QueryNot</strong>:</li>
+<li><strong>Invoke-QueryOr</strong>:</li>
+<li><strong>Invoke-QueryPlus</strong>:</li>
+<li><strong>Invoke-QueryTimes</strong>:</li>
+<li><strong>New-JMXServiceURL</strong>:</li>
+<li><strong>New-MBeanProxy</strong>:</li>
+<li><strong>New-MXBeanProxy</strong>:</li>
+<li><strong>New-NotificationListener</strong>:</li>
+<li><strong>New-ObjectName</strong>:</li>
+<li><strong>Remove-NotificationListener</strong>:</li>
 </ul>
 <h3 id="jvm-identification">JVM identification</h3>
 <p>One of the most important command-line switch is <strong>JVMPath</strong>: it can be used to set-up the location of the JVM library (jvm.dll/libjvm.so) if JCOBridge is not able to identify a suitable JRE installation.</p>
