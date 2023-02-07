@@ -82,7 +82,7 @@ namespace MASES.JNetReflector
                     {
                         Name = CLIParam.ReflectDeprecated,
                         Type = ArgumentType.Single,
-                        Help = "The option force the tool to write any constructor, method or field marked as deprecated, default is to avoid deprecated",
+                        Help = "The option forces the tool to write any constructor, method or field marked as deprecated, default is to avoid deprecated",
                     },
                     new ArgumentMetadata<object>()
                     {
