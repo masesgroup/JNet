@@ -23,6 +23,7 @@ _jnr_ accepts the following command-line switch:
 * **DestinationRootPath**: The destination root path where reflected classes will be stored
 * **JarList**: A CSV list of JAR to be analyzed or folders containing the JARs
 * **NamespacesToAvoid**: A CSV list of namespaces to be removed from analysis
+* **ReflectDeprecated**: The option forces the tool to write any constructor, method or field marked as deprecated, default is to avoid deprecated
 * **DryRun**: Execute everything, but do not write anything to disk
 * **TraceLevel**: The level of traces to be reported: 0 - Critical ... 5 - Verbose
 * **TraceTo**: The file name where traces will be write, default write to console
