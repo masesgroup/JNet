@@ -22,31 +22,14 @@ using System.Management.Automation;
 
 namespace MASES.JNetPS.Cmdlet.JMX
 {
-    [Cmdlet(VerbsLifecycle.Invoke, "QueryAnd")]
-    [OutputType(typeof(QueryExp))]
-    public class InvokeQueryAndCmdletCommand : JNetPSCmdlet<JNetPSCore>
+    [Cmdlet(VerbsLifecycle.Invoke, "QueryClassattr")]
+    [OutputType(typeof(AttributeValueExp))]
+    public class InvokeQueryClassattrCmdletCommand : JNetPSCmdlet<JNetPSCore>
     {
-        [Parameter(
-            Position = 0,
-            Mandatory = true,
-            ValueFromPipeline = true,
-            ValueFromPipelineByPropertyName = true,
-            HelpMessage = "A query expression.")]
-        public QueryExp Q1 { get; set; }
-
-        [Parameter(
-            Position = 1,
-            Mandatory = true,
-            ValueFromPipeline = true,
-            ValueFromPipelineByPropertyName = true,
-            HelpMessage = "Another query expression.")]
-        public QueryExp Q2 { get; set; }
-
         // This method will be called for each input received from the pipeline to this cmdlet; if no input is received, this method is not called
         protected override void ProcessCommand()
         {
-            QueryExp result = Query.And(Q1, Q2);
-
+            AttributeValueExp result = Query.Classattr();
             WriteObject(result);
         }
     }

@@ -23,6 +23,7 @@ using System.Management.Automation;
 namespace MASES.JNetPS.Cmdlet.JMX
 {
     [Cmdlet(VerbsCommon.Get, "DefaultDomain")]
+    [OutputType(typeof(string))]
     public class GetDefaultDomainCmdletCommand : JNetPSCmdlet<JNetPSCore>
     {
         [Parameter(

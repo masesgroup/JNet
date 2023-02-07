@@ -87,9 +87,11 @@ CmdletsToExport = @(
     'Invoke-QueryOr',
     'Invoke-QueryPlus',
     'Invoke-QueryTimes',
+    'New-AttributeChangeNotificationFilter',
     'New-JMXServiceURL',
     'New-MBeanProxy',
     'New-MXBeanProxy',
+    'New-NotificationFilterSupport',
     'New-NotificationListener',
     'New-ObjectName',
     'Remove-NotificationListener'

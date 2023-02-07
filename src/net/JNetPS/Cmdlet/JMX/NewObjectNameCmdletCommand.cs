@@ -28,6 +28,7 @@ using System.Management.Automation;
 namespace MASES.JNetPS.Cmdlet.JMX
 {
     [Cmdlet(VerbsCommon.New, "ObjectName")]
+    [OutputType(typeof(ObjectName))]
     public class NewObjectNameCmdletCommand : JNetPSCmdlet<JNetPSCore>
     {
         [Parameter(
@@ -60,7 +61,7 @@ namespace MASES.JNetPS.Cmdlet.JMX
         // This method will be called for each input received from the pipeline to this cmdlet; if no input is received, this method is not called
         protected override void ProcessCommand()
         {
-            object result;
+            ObjectName result;
             if (Key == null && Table == null)
             {
                 var name = NameOrDomain;

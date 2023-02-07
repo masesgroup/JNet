@@ -23,6 +23,7 @@ using System.Management.Automation;
 namespace MASES.JNetPS.Cmdlet.JMX
 {
     [Cmdlet(VerbsLifecycle.Invoke, "QueryPlus")]
+    [OutputType(typeof(ValueExp))]
     public class InvokeQueryPlusCmdletCommand : JNetPSCmdlet<JNetPSCore>
     {
         [Parameter(

@@ -23,6 +23,7 @@ using System.Management.Automation;
 namespace MASES.JNetPS.Cmdlet.JMX
 {
     [Cmdlet(VerbsLifecycle.Invoke, "QueryAttr")]
+    [OutputType(typeof(AttributeValueExp))]
     public class InvokeQueryAttrCmdletCommand : JNetPSCmdlet<JNetPSCore>
     {
         [Parameter(

@@ -25,6 +25,7 @@ using System.Management.Automation;
 namespace MASES.JNetPS.Cmdlet.JMX
 {
     [Cmdlet(VerbsCommon.Get, "QueryNames")]
+    [OutputType(typeof(System.Collections.Generic.List<ObjectName>))]
     public class GetQueryNamesCmdletCommand : JNetPSCmdlet<JNetPSCore>
     {
         [Parameter(

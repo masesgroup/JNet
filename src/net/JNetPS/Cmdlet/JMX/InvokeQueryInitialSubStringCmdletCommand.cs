@@ -23,6 +23,7 @@ using System.Management.Automation;
 namespace MASES.JNetPS.Cmdlet.JMX
 {
     [Cmdlet(VerbsLifecycle.Invoke, "QueryInitialSubString")]
+    [OutputType(typeof(QueryExp))]
     public class InvokeQueryInitialSubStringCmdletCommand : JNetPSCmdlet<JNetPSCore>
     {
         [Parameter(

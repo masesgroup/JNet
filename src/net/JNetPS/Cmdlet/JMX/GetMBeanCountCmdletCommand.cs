@@ -23,6 +23,7 @@ using System.Management.Automation;
 namespace MASES.JNetPS.Cmdlet.JMX
 {
     [Cmdlet(VerbsCommon.Get, "MBeanCount")]
+    [OutputType(typeof(int))]
     public class GetMBeanCountCmdletCommand : JNetPSCmdlet<JNetPSCore>
     {
         [Parameter(

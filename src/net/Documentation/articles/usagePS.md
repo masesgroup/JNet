@@ -86,42 +86,44 @@ _jnetps_ accepts the following cmdlets:
   * ClassName
   
 From version 1.5.0 new JMX comlets are available:
-* **Add-NotificationListener**:
-* **Get-DefaultDomain**:
-* **Get-Domains**:
-* **Get-IsMXBeanInterface**:
-* **Get-JMXConnector**:
-* **Get-MBeanCount**:
-* **Get-MBeanInfo**:
-* **Get-QueryNames**:
-* **Get-QueryClassattr**:
-* **Get-QueryValueExp**:
-* **Invoke-QueryAnd**:
-* **Invoke-QueryAnySubString**:
-* **Invoke-QueryAttr**:
-* **Invoke-QueryBetween**:
-* **Invoke-QueryDiv**:
-* **Invoke-QueryEq**:
-* **Invoke-QueryFinalSubString**:
-* **Invoke-QueryGeq**:
-* **Invoke-QueryGt**:
-* **Invoke-QueryIn**:
-* **Invoke-QueryInitialSubString**:
-* **Invoke-QueryIsInstanceOf**:
-* **Invoke-QueryLeq**:
-* **Invoke-QueryLt**:
-* **Invoke-QueryMatch**:
-* **Invoke-QueryMinus**:
-* **Invoke-QueryNot**:
-* **Invoke-QueryOr**:
-* **Invoke-QueryPlus**:
-* **Invoke-QueryTimes**:
-* **New-JMXServiceURL**:
-* **New-MBeanProxy**:
-* **New-MXBeanProxy**:
-* **New-NotificationListener**:
-* **New-ObjectName**:
-* **Remove-NotificationListener**:
+* **Add-NotificationListener**: adds a notification listener and filter on a JMXConnector
+* **Get-DefaultDomain**: get default domain from a JMXConnector
+* **Get-Domains**: get all domains from a JMXConnector
+* **Get-IsMXBeanInterface**: verify if the class name is an MBean interface
+* **Get-JMXConnector**: get a JMXConnector
+* **Get-MBeanCount**: get the number of MBean from a JMXConnector
+* **Get-MBeanInfo**: get the MBeanInfo from an ObjectName using a JMXConnector
+* **Get-QueryNames**: get the ObjectNames using a JMXConnector
+* **Invoke-QueryAnd**: execute Query.And
+* **Invoke-QueryAnySubString**: execute Query.AnySubString
+* **Invoke-QueryAttr**: execute Query.Attr
+* **Invoke-QueryBetween**: execute Query.Between
+* **Invoke-QueryClassattr**: execute Query.Classattr
+* **Invoke-QueryDiv**: execute Query.Div
+* **Invoke-QueryEq**: execute Query.Eq
+* **Invoke-QueryFinalSubString**: execute Query.FinalSubString
+* **Invoke-QueryGeq**: execute Query.Geq
+* **Invoke-QueryGt**: execute Query.Gt
+* **Invoke-QueryIn**: execute Query.In
+* **Invoke-QueryInitialSubString**: execute Query.nitialSubString
+* **Invoke-QueryIsInstanceOf**: execute Query.IsInstanceOf
+* **Invoke-QueryLeq**: execute Query.Leq
+* **Invoke-QueryLt**: execute Query.Lt
+* **Invoke-QueryMatch**: execute Query.Match
+* **Invoke-QueryMinus**: execute Query.Minus
+* **Invoke-QueryNot**: execute Query.Not
+* **Invoke-QueryOr**: execute Query.Or
+* **Invoke-QueryPlus**: execute Query.Plus
+* **Invoke-QueryTimes**: execute Query.Times
+* **Invoke-QueryValue**: execute Query.Value
+* **New-AttributeChangeNotificationFilter**: create a new AttributeChangeNotificationFilter to be used in Add-NotificationListener
+* **New-JMXServiceURL**: create a new JMXServiceURL to be used in Get-JMXConnector
+* **New-MBeanProxy**: get a MBeanProxy from a JMXConnector
+* **New-MXBeanProxy**: get a MXBeanProxy from a JMXConnector
+* **New-NotificationFilterSupport**: create a new NotificationFilterSupport to be used in Add-NotificationListener
+* **New-NotificationListener**: create a new NotificationListener to be used in Add-NotificationListener
+* **New-ObjectName**: create a new ObjectName to be used in Get-JMXConnector
+* **Remove-NotificationListener**: removes a notification listener and filter from a JMXConnector
 
 ### JVM identification
 

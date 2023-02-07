@@ -17,8 +17,6 @@
 */
 
 using JavaX.Management.Remote;
-using MASES.JCOBridge.C2JBridge;
-using MASES.JNetPSCore;
 using MASES.JNetPSCore.Cmdlet;
 using System;
 using System.Management.Automation;
@@ -26,6 +24,7 @@ using System.Management.Automation;
 namespace MASES.JNetPS.Cmdlet.JMX
 {
     [Cmdlet(VerbsCommon.New, "JMXServiceURL")]
+    [OutputType(typeof(JMXServiceURL))]
     public class NewJMXServiceURLCmdletCommand : JNetPSCmdlet<JNetPSCore>
     {
         [Parameter(
@@ -57,7 +56,7 @@ namespace MASES.JNetPS.Cmdlet.JMX
         // This method will be called for each input received from the pipeline to this cmdlet; if no input is received, this method is not called
         protected override void ProcessCommand()
         {
-            object result;
+            JMXServiceURL result;
             if (HostName == null)
             {
                 result = new JMXServiceURL(ServiceURLOrProtocol);

@@ -24,6 +24,7 @@ using System.Management.Automation;
 namespace MASES.JNetPS.Cmdlet.JMX
 {
     [Cmdlet(VerbsCommon.Get, "MBeanInfo")]
+    [OutputType(typeof(MBeanInfo))]
     public class GetMBeanInfoCmdletCommand : JNetPSCmdlet<JNetPSCore>
     {
         [Parameter(

@@ -23,6 +23,7 @@ using System.Management.Automation;
 namespace MASES.JNetPS.Cmdlet.JMX
 {
     [Cmdlet(VerbsLifecycle.Invoke, "QueryDiv")]
+    [OutputType(typeof(ValueExp))]
     public class InvokeQueryDivCmdletCommand : JNetPSCmdlet<JNetPSCore>
     {
         [Parameter(

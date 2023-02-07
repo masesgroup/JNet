@@ -23,6 +23,7 @@ using System.Management.Automation;
 namespace MASES.JNetPS.Cmdlet.JMX
 {
     [Cmdlet(VerbsLifecycle.Invoke, "QueryFinalSubString")]
+    [OutputType(typeof(QueryExp))]
     public class InvokeQueryFinalSubStringCmdletCommand : JNetPSCmdlet<JNetPSCore>
     {
         [Parameter(

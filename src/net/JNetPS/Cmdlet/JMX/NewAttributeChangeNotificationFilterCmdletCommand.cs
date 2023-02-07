@@ -22,14 +22,15 @@ using System.Management.Automation;
 
 namespace MASES.JNetPS.Cmdlet.JMX
 {
-    [Cmdlet(VerbsCommon.Get, "QueryClassattr")]
-    public class GetQueryClassattrCmdletCommand : JNetPSCmdlet<JNetPSCore>
+    [Cmdlet(VerbsCommon.New, "AttributeChangeNotificationFilter")]
+    [OutputType(typeof(AttributeChangeNotificationFilter))]
+    public class NewAttributeChangeNotificationFilterCmdletCommand : JNetPSCmdlet<JNetPSCore>
     {
         // This method will be called for each input received from the pipeline to this cmdlet; if no input is received, this method is not called
         protected override void ProcessCommand()
         {
-            AttributeValueExp result = Query.Classattr();
-            WriteObject(result);
+            AttributeChangeNotificationFilter listener = new AttributeChangeNotificationFilter();
+            WriteObject(listener);
         }
     }
 }

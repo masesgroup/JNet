@@ -22,6 +22,7 @@ using System.Management.Automation;
 namespace MASES.JNetPS.Cmdlet.JMX
 {
     [Cmdlet(VerbsCommon.Get, "IsMXBeanInterface")]
+    [OutputType(typeof(bool))]
     public class GetIsMXBeanInterfaceCmdletCommand : JNetPSCmdlet<JNetPSCore>
     {
         [Parameter(

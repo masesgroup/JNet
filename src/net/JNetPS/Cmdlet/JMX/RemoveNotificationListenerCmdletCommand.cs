@@ -24,6 +24,7 @@ using System.Management.Automation;
 namespace MASES.JNetPS.Cmdlet.JMX
 {
     [Cmdlet(VerbsCommon.Remove, "NotificationListener")]
+    [OutputType(typeof(void))]
     public class RemoveNotificationListenerCmdletCommand : JNetPSCmdlet<JNetPSCore>
     {
         [Parameter(

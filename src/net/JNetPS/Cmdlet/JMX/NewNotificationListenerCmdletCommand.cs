@@ -29,6 +29,7 @@ using System.Management.Automation;
 namespace MASES.JNetPS.Cmdlet.JMX
 {
     [Cmdlet(VerbsCommon.New, "NotificationListener")]
+    [OutputType(typeof(NotificationListener))]
     public class NewNotificationListenerCmdletCommand : JNetPSCmdlet<JNetPSCore>
     {
         [Parameter(
