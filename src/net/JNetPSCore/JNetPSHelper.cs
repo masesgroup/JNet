@@ -20,10 +20,8 @@ using MASES.JCOBridge.C2JBridge;
 using MASES.JNet;
 using MASES.JNetPSCore.Cmdlet;
 using System;
-using System.CodeDom;
 using System.Collections;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.IO;
 using System.Linq;
 using System.Management.Automation;
@@ -411,55 +409,55 @@ namespace MASES.JNetPSCore
         /// <summary>
         /// Sets <see cref="JNetCoreBase{T}.ApplicationLicensePath"/>
         /// </summary>
-        public static void SetLicensePath(string licensePath) { Set(typeof(JNetCoreBase<>), nameof(JNetCore.ApplicationLicensePath), licensePath); }
+        public static void SetLicensePath(string licensePath) { Set(typeof(JNetCoreBase<>), nameof(JNetCore<TClass>.ApplicationLicensePath), licensePath); }
         /// <summary>
         /// Sets <see cref="JNetCoreBase{T}.ApplicationJDKHome"/>
         /// </summary>
-        public static void SetJDKHome(string jdkHome) { Set(typeof(JNetCoreBase<>), nameof(JNetCore.ApplicationJDKHome), jdkHome); }
+        public static void SetJDKHome(string jdkHome) { Set(typeof(JNetCoreBase<>), nameof(JNetCore<TClass>.ApplicationJDKHome), jdkHome); }
         /// <summary>
         /// Sets <see cref="JNetCoreBase{T}.ApplicationJVMPath"/>
         /// </summary>
-        public static void SetJVMPath(string jvmPath) { Set(typeof(JNetCoreBase<>), nameof(JNetCore.ApplicationJVMPath), jvmPath); }
+        public static void SetJVMPath(string jvmPath) { Set(typeof(JNetCoreBase<>), nameof(JNetCore<TClass>.ApplicationJVMPath), jvmPath); }
         /// <summary>
         /// Sets <see cref="JNetCoreBase{T}.ApplicationJNIVerbosity"/>
         /// </summary>
-        public static void SetJNIVerbosity(string jniVerbosity) { Set(typeof(JNetCoreBase<>), nameof(JNetCore.ApplicationJNIVerbosity), jniVerbosity); }
+        public static void SetJNIVerbosity(string jniVerbosity) { Set(typeof(JNetCoreBase<>), nameof(JNetCore<TClass>.ApplicationJNIVerbosity), jniVerbosity); }
         /// <summary>
         /// Sets <see cref="JNetCoreBase{T}.ApplicationJNIOutputFile"/>
         /// </summary>
-        public static void SetJNIOutputFile(string jniOutputFile) { Set(typeof(JNetCoreBase<>), nameof(JNetCore.ApplicationJNIOutputFile), jniOutputFile); }
+        public static void SetJNIOutputFile(string jniOutputFile) { Set(typeof(JNetCoreBase<>), nameof(JNetCore<TClass>.ApplicationJNIOutputFile), jniOutputFile); }
         /// <summary>
         /// Sets <see cref="JNetCoreBase{T}.ApplicationJmxPort"/>
         /// </summary>
-        public static void SetJmxPort(short? jmxPort) { Set(typeof(JNetCoreBase<>), nameof(JNetCore.ApplicationJmxPort), jmxPort); }
+        public static void SetJmxPort(short? jmxPort) { Set(typeof(JNetCoreBase<>), nameof(JNetCore<TClass>.ApplicationJmxPort), jmxPort); }
         /// <summary>
         /// Sets <see cref="JNetCoreBase{T}.ApplicationEnableDebug"/>
         /// </summary>
-        public static void SetEnableDebug(bool? enableDebug) { Set(typeof(JNetCoreBase<>), nameof(JNetCore.ApplicationEnableDebug), enableDebug); }
+        public static void SetEnableDebug(bool? enableDebug) { Set(typeof(JNetCoreBase<>), nameof(JNetCore<TClass>.ApplicationEnableDebug), enableDebug); }
         /// <summary>
         /// Sets <see cref="JNetCoreBase{T}.ApplicationJavaDebugPort"/>
         /// </summary>
-        public static void SetJavaDebugPort(short? javaDebugPort) { Set(typeof(JNetCoreBase<>), nameof(JNetCore.ApplicationJavaDebugPort), javaDebugPort); }
+        public static void SetJavaDebugPort(short? javaDebugPort) { Set(typeof(JNetCoreBase<>), nameof(JNetCore<TClass>.ApplicationJavaDebugPort), javaDebugPort); }
         /// <summary>
         /// Sets <see cref="JNetCoreBase{T}.ApplicationDebugSuspendFlag"/>
         /// </summary>
-        public static void SetDebugSuspendFlag(string debugSuspendFlag) { Set(typeof(JNetCoreBase<>), nameof(JNetCore.ApplicationDebugSuspendFlag), debugSuspendFlag); }
+        public static void SetDebugSuspendFlag(string debugSuspendFlag) { Set(typeof(JNetCoreBase<>), nameof(JNetCore<TClass>.ApplicationDebugSuspendFlag), debugSuspendFlag); }
         /// <summary>
         /// Sets <see cref="JNetCoreBase{T}.ApplicationJavaDebugOpts"/>
         /// </summary>
-        public static void SetJavaDebugOpts(string javaDebugOpts) { Set(typeof(JNetCoreBase<>), nameof(JNetCore.ApplicationJavaDebugOpts), javaDebugOpts); }
+        public static void SetJavaDebugOpts(string javaDebugOpts) { Set(typeof(JNetCoreBase<>), nameof(JNetCore<TClass>.ApplicationJavaDebugOpts), javaDebugOpts); }
         /// <summary>
         /// Sets <see cref="JNetCoreBase{T}.ApplicationHeapSize"/>
         /// </summary>
-        public static void SetHeapSize(string heapSize) { Set(typeof(JNetCoreBase<>), nameof(JNetCore.ApplicationHeapSize), heapSize); }
+        public static void SetHeapSize(string heapSize) { Set(typeof(JNetCoreBase<>), nameof(JNetCore<TClass>.ApplicationHeapSize), heapSize); }
         /// <summary>
         /// Sets <see cref="JNetCoreBase{T}.ApplicationInitialHeapSize"/>
         /// </summary>
-        public static void SetInitialHeapSize(string initialHeapSize) { Set(typeof(JNetCoreBase<>), nameof(JNetCore.ApplicationInitialHeapSize), initialHeapSize); }
+        public static void SetInitialHeapSize(string initialHeapSize) { Set(typeof(JNetCoreBase<>), nameof(JNetCore<TClass>.ApplicationInitialHeapSize), initialHeapSize); }
         /// <summary>
         /// Sets <see cref="JNetCoreBase{T}.ApplicationLogClassPath"/>
         /// </summary>
-        public static void SetLogClassPath(bool? logClassPath) { Set(typeof(JNetCoreBase<>), nameof(JNetCore.ApplicationLogClassPath), logClassPath); }
+        public static void SetLogClassPath(bool? logClassPath) { Set(typeof(JNetCoreBase<>), nameof(JNetCore<TClass>.ApplicationLogClassPath), logClassPath); }
         /// <summary>
         /// Invokes <see cref="SetupJVMWrapper{T}.CreateGlobalInstance"/> to start engine
         /// </summary>
@@ -470,7 +468,7 @@ namespace MASES.JNetPSCore
             {
                 if (_instanceCreated) { cmdlet.WriteWarning("A new CreateGlobalInstance requested, but it was previously requested."); return; }
                 cmdlet.WriteDebug("Invoking CreateGlobalInstance");
-                _ = typeof(TClass).RunStaticMethodOn(typeof(SetupJVMWrapper<>), nameof(JNetCore.CreateGlobalInstance));
+                _ = typeof(TClass).RunStaticMethodOn(typeof(SetupJVMWrapper<>), nameof(JNetCore<TClass>.CreateGlobalInstance));
                 cmdlet.WriteDebug("Invoked CreateGlobalInstance");
                 _instanceCreated = true;
             }
@@ -483,7 +481,7 @@ namespace MASES.JNetPSCore
         /// <returns>The newly created object</returns>
         public static object New(string className, params object[] args)
         {
-            return typeof(TClass).RunStaticMethodOn(typeof(JNetCoreBase<>), nameof(JNetCore.New), className, args);
+            return typeof(TClass).RunStaticMethodOn(typeof(JNetCoreBase<>), nameof(JNetCore<TClass>.New), className, args);
         }
     }
 }

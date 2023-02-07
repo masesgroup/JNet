@@ -1,12 +1,29 @@
+/*
+*  Copyright 2023 MASES s.r.l.
+*
+*  Licensed under the Apache License, Version 2.0 (the "License");
+*  you may not use this file except in compliance with the License.
+*  You may obtain a copy of the License at
+*
+*  http://www.apache.org/licenses/LICENSE-2.0
+*
+*  Unless required by applicable law or agreed to in writing, software
+*  distributed under the License is distributed on an "AS IS" BASIS,
+*  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+*  See the License for the specific language governing permissions and
+*  limitations under the License.
+*
+*  Refer to LICENSE for more information.
+*/
 
 using Java.Awt;
 using Java.Awt.Event;
 using JavaX.Swing;
 using MASES.JCOBridge.C2JBridge;
-using MASES.JNet;
+using MASES.JNetTest.Common;
 using System;
 
-namespace MASES.JNetGraphicCommon
+namespace MASES.JNetTest.GraphicCommon
 {
     static class GraphicCommon
     {
@@ -59,13 +76,13 @@ namespace MASES.JNetGraphicCommon
         {
             try
             {
-                JNetCore.GlobalInstance.JVM.ImportPackage("java.lang");
-                JNetCore.GlobalInstance.JVM.ImportPackage("java.util");
-                JNetCore.GlobalInstance.JVM.ImportPackage("java.lang.reflect");
-                JNetCore.GlobalInstance.JVM.ImportPackage("java.net");
-                JNetCore.GlobalInstance.JVM.ImportPackage("java.awt");
-                JNetCore.GlobalInstance.JVM.ImportPackage("javax.swing");
-                JNetCore.GlobalInstance.JVM.ImportPackage("rvl.awt.Slider");
+                JNetTestCore.GlobalInstance.JVM.ImportPackage("java.lang");
+                JNetTestCore.GlobalInstance.JVM.ImportPackage("java.util");
+                JNetTestCore.GlobalInstance.JVM.ImportPackage("java.lang.reflect");
+                JNetTestCore.GlobalInstance.JVM.ImportPackage("java.net");
+                JNetTestCore.GlobalInstance.JVM.ImportPackage("java.awt");
+                JNetTestCore.GlobalInstance.JVM.ImportPackage("javax.swing");
+                JNetTestCore.GlobalInstance.JVM.ImportPackage("rvl.awt.Slider");
 
                 dynamic clearButton;
                 dynamic sendButton;
@@ -84,7 +101,7 @@ namespace MASES.JNetGraphicCommon
                 string[][] data;
 
                 // don't work: JFrame.SetDefaultLookAndFeelDecorated(true);
-                JNetCore.GlobalInstance.DynJVM.JFrame.setDefaultLookAndFeelDecorated(true);
+                JNetTestCore.GlobalInstance.DynJVM.JFrame.setDefaultLookAndFeelDecorated(true);
 
                 UIManager.DynClazz.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
 
@@ -127,8 +144,8 @@ namespace MASES.JNetGraphicCommon
                 textArea = new JTextArea("Message Area\n", 10, 5);
 
                 // don't work var keystroke = KeyStroke.DynClazz.getKeyStroke('a', false);
-                var keystroke = JNetCore.GlobalInstance.DynJVM.KeyStroke.getKeyStroke('a', false);
-                var condition = JNetCore.GlobalInstance.DynJVM.JComponent.WHEN_FOCUSED;
+                var keystroke = JNetTestCore.GlobalInstance.DynJVM.KeyStroke.getKeyStroke('a', false);
+                var condition = JNetTestCore.GlobalInstance.DynJVM.JComponent.WHEN_FOCUSED;
 
                 messagePanel.Dyn().add(textLabel);
                 messagePanel.Dyn().add(textField);
@@ -153,7 +170,7 @@ namespace MASES.JNetGraphicCommon
                                         new string[] { "103","New Row","0"} };
 
                 string[] columns = { "ID", "NAME", "SALARY" };
-                var jt = JNetCore.GlobalInstance.DynJVM.JTable.@new(0, 3);
+                var jt = JNetTestCore.GlobalInstance.DynJVM.JTable.@new(0, 3);
                 tableModel = jt.getModel();
                 Java.Util.Vector<string> vector = new();
                 vector.Add(columns[0]); vector.Add(columns[1]); vector.Add(columns[2]);
@@ -169,7 +186,7 @@ namespace MASES.JNetGraphicCommon
                 tableModel.addRow(vector.Instance);
                 jt.setBounds(30, 40, 200, 300);
                 // Put table in a scroll panel
-                var scrollPane = JNetCore.GlobalInstance.DynJVM.JScrollPane.@new(jt);
+                var scrollPane = JNetTestCore.GlobalInstance.DynJVM.JScrollPane.@new(jt);
 
                 //configure panel
                 CommonContainer.setSize(500, 600);
@@ -180,7 +197,7 @@ namespace MASES.JNetGraphicCommon
                 tablePanel.Dyn().add(scrollPane);
                 CommonContainer.add(tablePanel.Instance);
 
-                dynamic layoutAccessor = JNetCore.GlobalInstance.DynJVM.SpringLayout;
+                dynamic layoutAccessor = JNetTestCore.GlobalInstance.DynJVM.SpringLayout;
 
                 // Put constraint on components
                 layout.putConstraint(layoutAccessor.HORIZONTAL_CENTER, chatPanel.Instance, 5, layoutAccessor.HORIZONTAL_CENTER, CommonContainer.Instance);

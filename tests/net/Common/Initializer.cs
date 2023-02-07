@@ -1,4 +1,4 @@
-﻿/*
+/*
 *  Copyright 2023 MASES s.r.l.
 *
 *  Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,14 +16,11 @@
 *  Refer to LICENSE for more information.
 */
 
-using System.Windows;
+using MASES.JNet;
 
-namespace MASES.JNetWPFTest
+namespace MASES.JNetTest.Common
 {
-    /// <summary>
-    /// Interaction logic for App.xaml
-    /// </summary>
-    public partial class App : Application
-    {
+    class JNetTestCore : JNetCore<JNetTestCore>
+    { 
     }
 }

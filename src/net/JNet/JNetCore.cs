@@ -98,7 +98,7 @@ namespace MASES.JNet
         {
             get
             {
-                var assembly = typeof(JNetCore).Assembly;
+                var assembly = typeof(JNetCore<>).Assembly;
                 var version = assembly.GetName().Version.ToString();
                 // 1. check first full version
                 var jnetFile = System.IO.Path.Combine(System.IO.Path.GetDirectoryName(assembly.Location), JARsSubFolder, $"jnet-{version}.jar");
@@ -114,11 +114,5 @@ namespace MASES.JNet
             }
         }
         #endregion
-    }
-    /// <summary>
-    /// Concrete implementation of <see cref="JNetCore{T}"/>
-    /// </summary>
-    public class JNetCore : JNetCore<JNetCore>
-    {
     }
 }

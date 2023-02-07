@@ -7,4 +7,7 @@
     <Title>JNetTest - a test tool for JNet</Title>
     <Description>JNetTest - a test tool for JNet</Description>
   </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\Common\Initializer.cs" Link="Initializer.cs" />
+  </ItemGroup>
 </Project>

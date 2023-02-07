@@ -16,14 +16,28 @@
 *  Refer to LICENSE for more information.
 */
 
+using Java.Lang;
 using MASES.JNetPSCore.Cmdlet;
 using System.Management.Automation;
 
 namespace MASES.JNetPS.Cmdlet
 {
-    [Cmdlet(VerbsLifecycle.Start, "JNetPS")]
-    public class StartJNetPSCmdletCommand : StartJNetPSCmdletCommandBase<StartJNetPSCmdletCommand, JNetPSCore>
+    [Cmdlet(VerbsCommon.Get, "ClassForName")]
+    public class GetClassForNameCmdletCommand : JNetPSCmdlet<JNetPSCore>
     {
+        [Parameter(
+            Mandatory = true,
+            ValueFromPipeline = true,
+            ValueFromPipelineByPropertyName = true,
+            HelpMessage = "The class name.")]
+        public string ClassName { get; set; }
 
+        // This method will be called for each input received from the pipeline to this cmdlet; if no input is received, this method is not called
+        protected override void ProcessCommand()
+        {
+            Class clazz = Class.ForName(ClassName);
+
+            WriteObject(clazz);
+        }
     }
 }

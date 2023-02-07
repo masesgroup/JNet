@@ -16,14 +16,20 @@
 *  Refer to LICENSE for more information.
 */
 
-using System.Windows;
+using JavaX.Management;
+using MASES.JNetPSCore.Cmdlet;
+using System.Management.Automation;
 
-namespace MASES.JNetWPFTest
+namespace MASES.JNetPS.Cmdlet.JMX
 {
-    /// <summary>
-    /// Interaction logic for App.xaml
-    /// </summary>
-    public partial class App : Application
+    [Cmdlet(VerbsCommon.Get, "QueryClassattr")]
+    public class GetQueryClassattrCmdletCommand : JNetPSCmdlet<JNetPSCore>
     {
+        // This method will be called for each input received from the pipeline to this cmdlet; if no input is received, this method is not called
+        protected override void ProcessCommand()
+        {
+            AttributeValueExp result = Query.Classattr();
+            WriteObject(result);
+        }
     }
 }

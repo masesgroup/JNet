@@ -16,14 +16,15 @@
 *  Refer to LICENSE for more information.
 */
 
-using System.Windows;
+using MASES.JNet;
+using System;
 
-namespace MASES.JNetWPFTest
+namespace MASES.JNetPS
 {
     /// <summary>
-    /// Interaction logic for App.xaml
+    /// Concrete implementation of <see cref="JNetCore{T}"/>
     /// </summary>
-    public partial class App : Application
+    public class JNetPSCore : JNetCore<JNetPSCore>
     {
     }
 }

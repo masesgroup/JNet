@@ -95,6 +95,17 @@ namespace MASES.JNet.Extensions
             return map;
         }
 
+        public static Hashtable<K, V> ToHashtable<K, V>(this IDictionary<K, V> dictionary)
+        {
+            Hashtable<K, V> hTable = new();
+            if (dictionary.Count == 0) return hTable;
+            foreach (var item in dictionary)
+            {
+                hTable.Put(item.Key, item.Value);
+            }
+            return hTable;
+        }
+
         #endregion
     }
 }
