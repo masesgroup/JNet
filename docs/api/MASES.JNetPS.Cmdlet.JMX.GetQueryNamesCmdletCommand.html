@@ -251,6 +251,7 @@
   <h5 id="MASES_JNetPS_Cmdlet_JMX_GetQueryNamesCmdletCommand_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Cmdlet(&quot;Get&quot;, &quot;QueryNames&quot;)]
+[OutputType(new Type[]{typeof(List&lt;ObjectName&gt;)})]
 public class GetQueryNamesCmdletCommand : JNetPSCmdlet&lt;JNetPSCore&gt;</code></pre>
   </div>
   <h3 id="properties">Properties
@@ -260,7 +261,7 @@ public class GetQueryNamesCmdletCommand : JNetPSCmdlet&lt;JNetPSCore&gt;</code><
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetPS_Cmdlet_JMX_GetQueryNamesCmdletCommand_Connector.md&amp;value=---%0Auid%3A%20MASES.JNetPS.Cmdlet.JMX.GetQueryNamesCmdletCommand.Connector%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPS/Cmdlet/JMX/GetQueryNamesCmdletCommand.cs/#L30">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPS/Cmdlet/JMX/GetQueryNamesCmdletCommand.cs/#L31">View Source</a>
   </span>
   <a id="MASES_JNetPS_Cmdlet_JMX_GetQueryNamesCmdletCommand_Connector_" data-uid="MASES.JNetPS.Cmdlet.JMX.GetQueryNamesCmdletCommand.Connector*"></a>
   <h4 id="MASES_JNetPS_Cmdlet_JMX_GetQueryNamesCmdletCommand_Connector" data-uid="MASES.JNetPS.Cmdlet.JMX.GetQueryNamesCmdletCommand.Connector">Connector</h4>
@@ -291,7 +292,7 @@ public JMXConnector Connector { get; set; }</code></pre>
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetPS_Cmdlet_JMX_GetQueryNamesCmdletCommand_ObjectName.md&amp;value=---%0Auid%3A%20MASES.JNetPS.Cmdlet.JMX.GetQueryNamesCmdletCommand.ObjectName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPS/Cmdlet/JMX/GetQueryNamesCmdletCommand.cs/#L38">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPS/Cmdlet/JMX/GetQueryNamesCmdletCommand.cs/#L39">View Source</a>
   </span>
   <a id="MASES_JNetPS_Cmdlet_JMX_GetQueryNamesCmdletCommand_ObjectName_" data-uid="MASES.JNetPS.Cmdlet.JMX.GetQueryNamesCmdletCommand.ObjectName*"></a>
   <h4 id="MASES_JNetPS_Cmdlet_JMX_GetQueryNamesCmdletCommand_ObjectName" data-uid="MASES.JNetPS.Cmdlet.JMX.GetQueryNamesCmdletCommand.ObjectName">ObjectName</h4>
@@ -322,7 +323,7 @@ public ObjectName ObjectName { get; set; }</code></pre>
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetPS_Cmdlet_JMX_GetQueryNamesCmdletCommand_Query.md&amp;value=---%0Auid%3A%20MASES.JNetPS.Cmdlet.JMX.GetQueryNamesCmdletCommand.Query%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPS/Cmdlet/JMX/GetQueryNamesCmdletCommand.cs/#L44">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPS/Cmdlet/JMX/GetQueryNamesCmdletCommand.cs/#L45">View Source</a>
   </span>
   <a id="MASES_JNetPS_Cmdlet_JMX_GetQueryNamesCmdletCommand_Query_" data-uid="MASES.JNetPS.Cmdlet.JMX.GetQueryNamesCmdletCommand.Query*"></a>
   <h4 id="MASES_JNetPS_Cmdlet_JMX_GetQueryNamesCmdletCommand_Query" data-uid="MASES.JNetPS.Cmdlet.JMX.GetQueryNamesCmdletCommand.Query">Query</h4>
@@ -355,7 +356,7 @@ public QueryExp Query { get; set; }</code></pre>
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetPS_Cmdlet_JMX_GetQueryNamesCmdletCommand_ProcessCommand.md&amp;value=---%0Auid%3A%20MASES.JNetPS.Cmdlet.JMX.GetQueryNamesCmdletCommand.ProcessCommand%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPS/Cmdlet/JMX/GetQueryNamesCmdletCommand.cs/#L51">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPS/Cmdlet/JMX/GetQueryNamesCmdletCommand.cs/#L52">View Source</a>
   </span>
   <a id="MASES_JNetPS_Cmdlet_JMX_GetQueryNamesCmdletCommand_ProcessCommand_" data-uid="MASES.JNetPS.Cmdlet.JMX.GetQueryNamesCmdletCommand.ProcessCommand*"></a>
   <h4 id="MASES_JNetPS_Cmdlet_JMX_GetQueryNamesCmdletCommand_ProcessCommand" data-uid="MASES.JNetPS.Cmdlet.JMX.GetQueryNamesCmdletCommand.ProcessCommand">ProcessCommand()</h4>

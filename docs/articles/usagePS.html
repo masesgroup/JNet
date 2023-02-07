@@ -154,42 +154,44 @@ mbeanProxy.getCacheSize() // this use dynamic on mbeanProxy
 </ul>
 <p>From version 1.5.0 new JMX comlets are available:</p>
 <ul>
-<li><strong>Add-NotificationListener</strong>:</li>
-<li><strong>Get-DefaultDomain</strong>:</li>
-<li><strong>Get-Domains</strong>:</li>
-<li><strong>Get-IsMXBeanInterface</strong>:</li>
-<li><strong>Get-JMXConnector</strong>:</li>
-<li><strong>Get-MBeanCount</strong>:</li>
-<li><strong>Get-MBeanInfo</strong>:</li>
-<li><strong>Get-QueryNames</strong>:</li>
-<li><strong>Get-QueryClassattr</strong>:</li>
-<li><strong>Get-QueryValueExp</strong>:</li>
-<li><strong>Invoke-QueryAnd</strong>:</li>
-<li><strong>Invoke-QueryAnySubString</strong>:</li>
-<li><strong>Invoke-QueryAttr</strong>:</li>
-<li><strong>Invoke-QueryBetween</strong>:</li>
-<li><strong>Invoke-QueryDiv</strong>:</li>
-<li><strong>Invoke-QueryEq</strong>:</li>
-<li><strong>Invoke-QueryFinalSubString</strong>:</li>
-<li><strong>Invoke-QueryGeq</strong>:</li>
-<li><strong>Invoke-QueryGt</strong>:</li>
-<li><strong>Invoke-QueryIn</strong>:</li>
-<li><strong>Invoke-QueryInitialSubString</strong>:</li>
-<li><strong>Invoke-QueryIsInstanceOf</strong>:</li>
-<li><strong>Invoke-QueryLeq</strong>:</li>
-<li><strong>Invoke-QueryLt</strong>:</li>
-<li><strong>Invoke-QueryMatch</strong>:</li>
-<li><strong>Invoke-QueryMinus</strong>:</li>
-<li><strong>Invoke-QueryNot</strong>:</li>
-<li><strong>Invoke-QueryOr</strong>:</li>
-<li><strong>Invoke-QueryPlus</strong>:</li>
-<li><strong>Invoke-QueryTimes</strong>:</li>
-<li><strong>New-JMXServiceURL</strong>:</li>
-<li><strong>New-MBeanProxy</strong>:</li>
-<li><strong>New-MXBeanProxy</strong>:</li>
-<li><strong>New-NotificationListener</strong>:</li>
-<li><strong>New-ObjectName</strong>:</li>
-<li><strong>Remove-NotificationListener</strong>:</li>
+<li><strong>Add-NotificationListener</strong>: adds a notification listener and filter on a JMXConnector</li>
+<li><strong>Get-DefaultDomain</strong>: get default domain from a JMXConnector</li>
+<li><strong>Get-Domains</strong>: get all domains from a JMXConnector</li>
+<li><strong>Get-IsMXBeanInterface</strong>: verify if the class name is an MBean interface</li>
+<li><strong>Get-JMXConnector</strong>: get a JMXConnector</li>
+<li><strong>Get-MBeanCount</strong>: get the number of MBean from a JMXConnector</li>
+<li><strong>Get-MBeanInfo</strong>: get the MBeanInfo from an ObjectName using a JMXConnector</li>
+<li><strong>Get-QueryNames</strong>: get the ObjectNames using a JMXConnector</li>
+<li><strong>Invoke-QueryAnd</strong>: execute Query.And</li>
+<li><strong>Invoke-QueryAnySubString</strong>: execute Query.AnySubString</li>
+<li><strong>Invoke-QueryAttr</strong>: execute Query.Attr</li>
+<li><strong>Invoke-QueryBetween</strong>: execute Query.Between</li>
+<li><strong>Invoke-QueryClassattr</strong>: execute Query.Classattr</li>
+<li><strong>Invoke-QueryDiv</strong>: execute Query.Div</li>
+<li><strong>Invoke-QueryEq</strong>: execute Query.Eq</li>
+<li><strong>Invoke-QueryFinalSubString</strong>: execute Query.FinalSubString</li>
+<li><strong>Invoke-QueryGeq</strong>: execute Query.Geq</li>
+<li><strong>Invoke-QueryGt</strong>: execute Query.Gt</li>
+<li><strong>Invoke-QueryIn</strong>: execute Query.In</li>
+<li><strong>Invoke-QueryInitialSubString</strong>: execute Query.nitialSubString</li>
+<li><strong>Invoke-QueryIsInstanceOf</strong>: execute Query.IsInstanceOf</li>
+<li><strong>Invoke-QueryLeq</strong>: execute Query.Leq</li>
+<li><strong>Invoke-QueryLt</strong>: execute Query.Lt</li>
+<li><strong>Invoke-QueryMatch</strong>: execute Query.Match</li>
+<li><strong>Invoke-QueryMinus</strong>: execute Query.Minus</li>
+<li><strong>Invoke-QueryNot</strong>: execute Query.Not</li>
+<li><strong>Invoke-QueryOr</strong>: execute Query.Or</li>
+<li><strong>Invoke-QueryPlus</strong>: execute Query.Plus</li>
+<li><strong>Invoke-QueryTimes</strong>: execute Query.Times</li>
+<li><strong>Invoke-QueryValue</strong>: execute Query.Value</li>
+<li><strong>New-AttributeChangeNotificationFilter</strong>: create a new AttributeChangeNotificationFilter to be used in Add-NotificationListener</li>
+<li><strong>New-JMXServiceURL</strong>: create a new JMXServiceURL to be used in Get-JMXConnector</li>
+<li><strong>New-MBeanProxy</strong>: get a MBeanProxy from a JMXConnector</li>
+<li><strong>New-MXBeanProxy</strong>: get a MXBeanProxy from a JMXConnector</li>
+<li><strong>New-NotificationFilterSupport</strong>: create a new NotificationFilterSupport to be used in Add-NotificationListener</li>
+<li><strong>New-NotificationListener</strong>: create a new NotificationListener to be used in Add-NotificationListener</li>
+<li><strong>New-ObjectName</strong>: create a new ObjectName to be used in Get-JMXConnector</li>
+<li><strong>Remove-NotificationListener</strong>: removes a notification listener and filter from a JMXConnector</li>
 </ul>
 <h3 id="jvm-identification">JVM identification</h3>
 <p>One of the most important command-line switch is <strong>JVMPath</strong>: it can be used to set-up the location of the JVM library (jvm.dll/libjvm.so) if JCOBridge is not able to identify a suitable JRE installation.</p>

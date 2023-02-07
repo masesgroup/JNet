@@ -25861,6 +25861,125 @@ references:
   commentId: N:JavaX.Management.Relation
   fullName: JavaX.Management.Relation
   nameWithType: JavaX.Management.Relation
+- uid: JavaX.Management.Relation.MBeanServerNotificationFilter
+  name: MBeanServerNotificationFilter
+  href: api/JavaX.Management.Relation.MBeanServerNotificationFilter.html
+  commentId: T:JavaX.Management.Relation.MBeanServerNotificationFilter
+  fullName: JavaX.Management.Relation.MBeanServerNotificationFilter
+  nameWithType: MBeanServerNotificationFilter
+- uid: JavaX.Management.Relation.MBeanServerNotificationFilter.#ctor
+  name: MBeanServerNotificationFilter()
+  href: api/JavaX.Management.Relation.MBeanServerNotificationFilter.html#JavaX_Management_Relation_MBeanServerNotificationFilter__ctor
+  commentId: M:JavaX.Management.Relation.MBeanServerNotificationFilter.#ctor
+  fullName: JavaX.Management.Relation.MBeanServerNotificationFilter.MBeanServerNotificationFilter()
+  nameWithType: MBeanServerNotificationFilter.MBeanServerNotificationFilter()
+- uid: JavaX.Management.Relation.MBeanServerNotificationFilter.#ctor(System.Object[])
+  name: MBeanServerNotificationFilter(Object[])
+  href: api/JavaX.Management.Relation.MBeanServerNotificationFilter.html#JavaX_Management_Relation_MBeanServerNotificationFilter__ctor_System_Object___
+  commentId: M:JavaX.Management.Relation.MBeanServerNotificationFilter.#ctor(System.Object[])
+  name.vb: MBeanServerNotificationFilter(Object())
+  fullName: JavaX.Management.Relation.MBeanServerNotificationFilter.MBeanServerNotificationFilter(System.Object[])
+  fullName.vb: JavaX.Management.Relation.MBeanServerNotificationFilter.MBeanServerNotificationFilter(System.Object())
+  nameWithType: MBeanServerNotificationFilter.MBeanServerNotificationFilter(Object[])
+  nameWithType.vb: MBeanServerNotificationFilter.MBeanServerNotificationFilter(Object())
+- uid: JavaX.Management.Relation.MBeanServerNotificationFilter.#ctor*
+  name: MBeanServerNotificationFilter
+  href: api/JavaX.Management.Relation.MBeanServerNotificationFilter.html#JavaX_Management_Relation_MBeanServerNotificationFilter__ctor_
+  commentId: Overload:JavaX.Management.Relation.MBeanServerNotificationFilter.#ctor
+  isSpec: "True"
+  fullName: JavaX.Management.Relation.MBeanServerNotificationFilter.MBeanServerNotificationFilter
+  nameWithType: MBeanServerNotificationFilter.MBeanServerNotificationFilter
+- uid: JavaX.Management.Relation.MBeanServerNotificationFilter.ClassName
+  name: ClassName
+  href: api/JavaX.Management.Relation.MBeanServerNotificationFilter.html#JavaX_Management_Relation_MBeanServerNotificationFilter_ClassName
+  commentId: P:JavaX.Management.Relation.MBeanServerNotificationFilter.ClassName
+  fullName: JavaX.Management.Relation.MBeanServerNotificationFilter.ClassName
+  nameWithType: MBeanServerNotificationFilter.ClassName
+- uid: JavaX.Management.Relation.MBeanServerNotificationFilter.ClassName*
+  name: ClassName
+  href: api/JavaX.Management.Relation.MBeanServerNotificationFilter.html#JavaX_Management_Relation_MBeanServerNotificationFilter_ClassName_
+  commentId: Overload:JavaX.Management.Relation.MBeanServerNotificationFilter.ClassName
+  isSpec: "True"
+  fullName: JavaX.Management.Relation.MBeanServerNotificationFilter.ClassName
+  nameWithType: MBeanServerNotificationFilter.ClassName
+- uid: JavaX.Management.Relation.MBeanServerNotificationFilter.DisableAllObjectNames
+  name: DisableAllObjectNames()
+  href: api/JavaX.Management.Relation.MBeanServerNotificationFilter.html#JavaX_Management_Relation_MBeanServerNotificationFilter_DisableAllObjectNames
+  commentId: M:JavaX.Management.Relation.MBeanServerNotificationFilter.DisableAllObjectNames
+  fullName: JavaX.Management.Relation.MBeanServerNotificationFilter.DisableAllObjectNames()
+  nameWithType: MBeanServerNotificationFilter.DisableAllObjectNames()
+- uid: JavaX.Management.Relation.MBeanServerNotificationFilter.DisableAllObjectNames*
+  name: DisableAllObjectNames
+  href: api/JavaX.Management.Relation.MBeanServerNotificationFilter.html#JavaX_Management_Relation_MBeanServerNotificationFilter_DisableAllObjectNames_
+  commentId: Overload:JavaX.Management.Relation.MBeanServerNotificationFilter.DisableAllObjectNames
+  isSpec: "True"
+  fullName: JavaX.Management.Relation.MBeanServerNotificationFilter.DisableAllObjectNames
+  nameWithType: MBeanServerNotificationFilter.DisableAllObjectNames
+- uid: JavaX.Management.Relation.MBeanServerNotificationFilter.DisabledObjectNames
+  name: DisabledObjectNames
+  href: api/JavaX.Management.Relation.MBeanServerNotificationFilter.html#JavaX_Management_Relation_MBeanServerNotificationFilter_DisabledObjectNames
+  commentId: P:JavaX.Management.Relation.MBeanServerNotificationFilter.DisabledObjectNames
+  fullName: JavaX.Management.Relation.MBeanServerNotificationFilter.DisabledObjectNames
+  nameWithType: MBeanServerNotificationFilter.DisabledObjectNames
+- uid: JavaX.Management.Relation.MBeanServerNotificationFilter.DisabledObjectNames*
+  name: DisabledObjectNames
+  href: api/JavaX.Management.Relation.MBeanServerNotificationFilter.html#JavaX_Management_Relation_MBeanServerNotificationFilter_DisabledObjectNames_
+  commentId: Overload:JavaX.Management.Relation.MBeanServerNotificationFilter.DisabledObjectNames
+  isSpec: "True"
+  fullName: JavaX.Management.Relation.MBeanServerNotificationFilter.DisabledObjectNames
+  nameWithType: MBeanServerNotificationFilter.DisabledObjectNames
+- uid: JavaX.Management.Relation.MBeanServerNotificationFilter.DisableObjectName(JavaX.Management.ObjectName)
+  name: DisableObjectName(ObjectName)
+  href: api/JavaX.Management.Relation.MBeanServerNotificationFilter.html#JavaX_Management_Relation_MBeanServerNotificationFilter_DisableObjectName_JavaX_Management_ObjectName_
+  commentId: M:JavaX.Management.Relation.MBeanServerNotificationFilter.DisableObjectName(JavaX.Management.ObjectName)
+  fullName: JavaX.Management.Relation.MBeanServerNotificationFilter.DisableObjectName(JavaX.Management.ObjectName)
+  nameWithType: MBeanServerNotificationFilter.DisableObjectName(ObjectName)
+- uid: JavaX.Management.Relation.MBeanServerNotificationFilter.DisableObjectName*
+  name: DisableObjectName
+  href: api/JavaX.Management.Relation.MBeanServerNotificationFilter.html#JavaX_Management_Relation_MBeanServerNotificationFilter_DisableObjectName_
+  commentId: Overload:JavaX.Management.Relation.MBeanServerNotificationFilter.DisableObjectName
+  isSpec: "True"
+  fullName: JavaX.Management.Relation.MBeanServerNotificationFilter.DisableObjectName
+  nameWithType: MBeanServerNotificationFilter.DisableObjectName
+- uid: JavaX.Management.Relation.MBeanServerNotificationFilter.EnableAllObjectNames
+  name: EnableAllObjectNames()
+  href: api/JavaX.Management.Relation.MBeanServerNotificationFilter.html#JavaX_Management_Relation_MBeanServerNotificationFilter_EnableAllObjectNames
+  commentId: M:JavaX.Management.Relation.MBeanServerNotificationFilter.EnableAllObjectNames
+  fullName: JavaX.Management.Relation.MBeanServerNotificationFilter.EnableAllObjectNames()
+  nameWithType: MBeanServerNotificationFilter.EnableAllObjectNames()
+- uid: JavaX.Management.Relation.MBeanServerNotificationFilter.EnableAllObjectNames*
+  name: EnableAllObjectNames
+  href: api/JavaX.Management.Relation.MBeanServerNotificationFilter.html#JavaX_Management_Relation_MBeanServerNotificationFilter_EnableAllObjectNames_
+  commentId: Overload:JavaX.Management.Relation.MBeanServerNotificationFilter.EnableAllObjectNames
+  isSpec: "True"
+  fullName: JavaX.Management.Relation.MBeanServerNotificationFilter.EnableAllObjectNames
+  nameWithType: MBeanServerNotificationFilter.EnableAllObjectNames
+- uid: JavaX.Management.Relation.MBeanServerNotificationFilter.EnabledObjectNames
+  name: EnabledObjectNames
+  href: api/JavaX.Management.Relation.MBeanServerNotificationFilter.html#JavaX_Management_Relation_MBeanServerNotificationFilter_EnabledObjectNames
+  commentId: P:JavaX.Management.Relation.MBeanServerNotificationFilter.EnabledObjectNames
+  fullName: JavaX.Management.Relation.MBeanServerNotificationFilter.EnabledObjectNames
+  nameWithType: MBeanServerNotificationFilter.EnabledObjectNames
+- uid: JavaX.Management.Relation.MBeanServerNotificationFilter.EnabledObjectNames*
+  name: EnabledObjectNames
+  href: api/JavaX.Management.Relation.MBeanServerNotificationFilter.html#JavaX_Management_Relation_MBeanServerNotificationFilter_EnabledObjectNames_
+  commentId: Overload:JavaX.Management.Relation.MBeanServerNotificationFilter.EnabledObjectNames
+  isSpec: "True"
+  fullName: JavaX.Management.Relation.MBeanServerNotificationFilter.EnabledObjectNames
+  nameWithType: MBeanServerNotificationFilter.EnabledObjectNames
+- uid: JavaX.Management.Relation.MBeanServerNotificationFilter.EnableObjectName(JavaX.Management.ObjectName)
+  name: EnableObjectName(ObjectName)
+  href: api/JavaX.Management.Relation.MBeanServerNotificationFilter.html#JavaX_Management_Relation_MBeanServerNotificationFilter_EnableObjectName_JavaX_Management_ObjectName_
+  commentId: M:JavaX.Management.Relation.MBeanServerNotificationFilter.EnableObjectName(JavaX.Management.ObjectName)
+  fullName: JavaX.Management.Relation.MBeanServerNotificationFilter.EnableObjectName(JavaX.Management.ObjectName)
+  nameWithType: MBeanServerNotificationFilter.EnableObjectName(ObjectName)
+- uid: JavaX.Management.Relation.MBeanServerNotificationFilter.EnableObjectName*
+  name: EnableObjectName
+  href: api/JavaX.Management.Relation.MBeanServerNotificationFilter.html#JavaX_Management_Relation_MBeanServerNotificationFilter_EnableObjectName_
+  commentId: Overload:JavaX.Management.Relation.MBeanServerNotificationFilter.EnableObjectName
+  isSpec: "True"
+  fullName: JavaX.Management.Relation.MBeanServerNotificationFilter.EnableObjectName
+  nameWithType: MBeanServerNotificationFilter.EnableObjectName
 - uid: JavaX.Management.Relation.RelationNotification
   name: RelationNotification
   href: api/JavaX.Management.Relation.RelationNotification.html
@@ -30743,25 +30862,6 @@ references:
   isSpec: "True"
   fullName: MASES.JNetPS.Cmdlet.JMX.GetMBeanInfoCmdletCommand.ProcessCommand
   nameWithType: GetMBeanInfoCmdletCommand.ProcessCommand
-- uid: MASES.JNetPS.Cmdlet.JMX.GetQueryClassattrCmdletCommand
-  name: GetQueryClassattrCmdletCommand
-  href: api/MASES.JNetPS.Cmdlet.JMX.GetQueryClassattrCmdletCommand.html
-  commentId: T:MASES.JNetPS.Cmdlet.JMX.GetQueryClassattrCmdletCommand
-  fullName: MASES.JNetPS.Cmdlet.JMX.GetQueryClassattrCmdletCommand
-  nameWithType: GetQueryClassattrCmdletCommand
-- uid: MASES.JNetPS.Cmdlet.JMX.GetQueryClassattrCmdletCommand.ProcessCommand
-  name: ProcessCommand()
-  href: api/MASES.JNetPS.Cmdlet.JMX.GetQueryClassattrCmdletCommand.html#MASES_JNetPS_Cmdlet_JMX_GetQueryClassattrCmdletCommand_ProcessCommand
-  commentId: M:MASES.JNetPS.Cmdlet.JMX.GetQueryClassattrCmdletCommand.ProcessCommand
-  fullName: MASES.JNetPS.Cmdlet.JMX.GetQueryClassattrCmdletCommand.ProcessCommand()
-  nameWithType: GetQueryClassattrCmdletCommand.ProcessCommand()
-- uid: MASES.JNetPS.Cmdlet.JMX.GetQueryClassattrCmdletCommand.ProcessCommand*
-  name: ProcessCommand
-  href: api/MASES.JNetPS.Cmdlet.JMX.GetQueryClassattrCmdletCommand.html#MASES_JNetPS_Cmdlet_JMX_GetQueryClassattrCmdletCommand_ProcessCommand_
-  commentId: Overload:MASES.JNetPS.Cmdlet.JMX.GetQueryClassattrCmdletCommand.ProcessCommand
-  isSpec: "True"
-  fullName: MASES.JNetPS.Cmdlet.JMX.GetQueryClassattrCmdletCommand.ProcessCommand
-  nameWithType: GetQueryClassattrCmdletCommand.ProcessCommand
 - uid: MASES.JNetPS.Cmdlet.JMX.GetQueryNamesCmdletCommand
   name: GetQueryNamesCmdletCommand
   href: api/MASES.JNetPS.Cmdlet.JMX.GetQueryNamesCmdletCommand.html
@@ -30820,38 +30920,6 @@ references:
   isSpec: "True"
   fullName: MASES.JNetPS.Cmdlet.JMX.GetQueryNamesCmdletCommand.Query
   nameWithType: GetQueryNamesCmdletCommand.Query
-- uid: MASES.JNetPS.Cmdlet.JMX.GetQueryValueExpCmdletCommand
-  name: GetQueryValueExpCmdletCommand
-  href: api/MASES.JNetPS.Cmdlet.JMX.GetQueryValueExpCmdletCommand.html
-  commentId: T:MASES.JNetPS.Cmdlet.JMX.GetQueryValueExpCmdletCommand
-  fullName: MASES.JNetPS.Cmdlet.JMX.GetQueryValueExpCmdletCommand
-  nameWithType: GetQueryValueExpCmdletCommand
-- uid: MASES.JNetPS.Cmdlet.JMX.GetQueryValueExpCmdletCommand.ProcessCommand
-  name: ProcessCommand()
-  href: api/MASES.JNetPS.Cmdlet.JMX.GetQueryValueExpCmdletCommand.html#MASES_JNetPS_Cmdlet_JMX_GetQueryValueExpCmdletCommand_ProcessCommand
-  commentId: M:MASES.JNetPS.Cmdlet.JMX.GetQueryValueExpCmdletCommand.ProcessCommand
-  fullName: MASES.JNetPS.Cmdlet.JMX.GetQueryValueExpCmdletCommand.ProcessCommand()
-  nameWithType: GetQueryValueExpCmdletCommand.ProcessCommand()
-- uid: MASES.JNetPS.Cmdlet.JMX.GetQueryValueExpCmdletCommand.ProcessCommand*
-  name: ProcessCommand
-  href: api/MASES.JNetPS.Cmdlet.JMX.GetQueryValueExpCmdletCommand.html#MASES_JNetPS_Cmdlet_JMX_GetQueryValueExpCmdletCommand_ProcessCommand_
-  commentId: Overload:MASES.JNetPS.Cmdlet.JMX.GetQueryValueExpCmdletCommand.ProcessCommand
-  isSpec: "True"
-  fullName: MASES.JNetPS.Cmdlet.JMX.GetQueryValueExpCmdletCommand.ProcessCommand
-  nameWithType: GetQueryValueExpCmdletCommand.ProcessCommand
-- uid: MASES.JNetPS.Cmdlet.JMX.GetQueryValueExpCmdletCommand.Value
-  name: Value
-  href: api/MASES.JNetPS.Cmdlet.JMX.GetQueryValueExpCmdletCommand.html#MASES_JNetPS_Cmdlet_JMX_GetQueryValueExpCmdletCommand_Value
-  commentId: P:MASES.JNetPS.Cmdlet.JMX.GetQueryValueExpCmdletCommand.Value
-  fullName: MASES.JNetPS.Cmdlet.JMX.GetQueryValueExpCmdletCommand.Value
-  nameWithType: GetQueryValueExpCmdletCommand.Value
-- uid: MASES.JNetPS.Cmdlet.JMX.GetQueryValueExpCmdletCommand.Value*
-  name: Value
-  href: api/MASES.JNetPS.Cmdlet.JMX.GetQueryValueExpCmdletCommand.html#MASES_JNetPS_Cmdlet_JMX_GetQueryValueExpCmdletCommand_Value_
-  commentId: Overload:MASES.JNetPS.Cmdlet.JMX.GetQueryValueExpCmdletCommand.Value
-  isSpec: "True"
-  fullName: MASES.JNetPS.Cmdlet.JMX.GetQueryValueExpCmdletCommand.Value
-  nameWithType: GetQueryValueExpCmdletCommand.Value
 - uid: MASES.JNetPS.Cmdlet.JMX.InvokeQueryAndCmdletCommand
   name: InvokeQueryAndCmdletCommand
   href: api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryAndCmdletCommand.html
@@ -31045,6 +31113,25 @@ references:
   isSpec: "True"
   fullName: MASES.JNetPS.Cmdlet.JMX.InvokeQueryBetweenCmdletCommand.V3
   nameWithType: InvokeQueryBetweenCmdletCommand.V3
+- uid: MASES.JNetPS.Cmdlet.JMX.InvokeQueryClassattrCmdletCommand
+  name: InvokeQueryClassattrCmdletCommand
+  href: api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryClassattrCmdletCommand.html
+  commentId: T:MASES.JNetPS.Cmdlet.JMX.InvokeQueryClassattrCmdletCommand
+  fullName: MASES.JNetPS.Cmdlet.JMX.InvokeQueryClassattrCmdletCommand
+  nameWithType: InvokeQueryClassattrCmdletCommand
+- uid: MASES.JNetPS.Cmdlet.JMX.InvokeQueryClassattrCmdletCommand.ProcessCommand
+  name: ProcessCommand()
+  href: api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryClassattrCmdletCommand.html#MASES_JNetPS_Cmdlet_JMX_InvokeQueryClassattrCmdletCommand_ProcessCommand
+  commentId: M:MASES.JNetPS.Cmdlet.JMX.InvokeQueryClassattrCmdletCommand.ProcessCommand
+  fullName: MASES.JNetPS.Cmdlet.JMX.InvokeQueryClassattrCmdletCommand.ProcessCommand()
+  nameWithType: InvokeQueryClassattrCmdletCommand.ProcessCommand()
+- uid: MASES.JNetPS.Cmdlet.JMX.InvokeQueryClassattrCmdletCommand.ProcessCommand*
+  name: ProcessCommand
+  href: api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryClassattrCmdletCommand.html#MASES_JNetPS_Cmdlet_JMX_InvokeQueryClassattrCmdletCommand_ProcessCommand_
+  commentId: Overload:MASES.JNetPS.Cmdlet.JMX.InvokeQueryClassattrCmdletCommand.ProcessCommand
+  isSpec: "True"
+  fullName: MASES.JNetPS.Cmdlet.JMX.InvokeQueryClassattrCmdletCommand.ProcessCommand
+  nameWithType: InvokeQueryClassattrCmdletCommand.ProcessCommand
 - uid: MASES.JNetPS.Cmdlet.JMX.InvokeQueryDivCmdletCommand
   name: InvokeQueryDivCmdletCommand
   href: api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryDivCmdletCommand.html
@@ -31739,6 +31826,57 @@ references:
   isSpec: "True"
   fullName: MASES.JNetPS.Cmdlet.JMX.InvokeQueryTimesCmdletCommand.Value2
   nameWithType: InvokeQueryTimesCmdletCommand.Value2
+- uid: MASES.JNetPS.Cmdlet.JMX.InvokeQueryValueCmdletCommand
+  name: InvokeQueryValueCmdletCommand
+  href: api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryValueCmdletCommand.html
+  commentId: T:MASES.JNetPS.Cmdlet.JMX.InvokeQueryValueCmdletCommand
+  fullName: MASES.JNetPS.Cmdlet.JMX.InvokeQueryValueCmdletCommand
+  nameWithType: InvokeQueryValueCmdletCommand
+- uid: MASES.JNetPS.Cmdlet.JMX.InvokeQueryValueCmdletCommand.ProcessCommand
+  name: ProcessCommand()
+  href: api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryValueCmdletCommand.html#MASES_JNetPS_Cmdlet_JMX_InvokeQueryValueCmdletCommand_ProcessCommand
+  commentId: M:MASES.JNetPS.Cmdlet.JMX.InvokeQueryValueCmdletCommand.ProcessCommand
+  fullName: MASES.JNetPS.Cmdlet.JMX.InvokeQueryValueCmdletCommand.ProcessCommand()
+  nameWithType: InvokeQueryValueCmdletCommand.ProcessCommand()
+- uid: MASES.JNetPS.Cmdlet.JMX.InvokeQueryValueCmdletCommand.ProcessCommand*
+  name: ProcessCommand
+  href: api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryValueCmdletCommand.html#MASES_JNetPS_Cmdlet_JMX_InvokeQueryValueCmdletCommand_ProcessCommand_
+  commentId: Overload:MASES.JNetPS.Cmdlet.JMX.InvokeQueryValueCmdletCommand.ProcessCommand
+  isSpec: "True"
+  fullName: MASES.JNetPS.Cmdlet.JMX.InvokeQueryValueCmdletCommand.ProcessCommand
+  nameWithType: InvokeQueryValueCmdletCommand.ProcessCommand
+- uid: MASES.JNetPS.Cmdlet.JMX.InvokeQueryValueCmdletCommand.Value
+  name: Value
+  href: api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryValueCmdletCommand.html#MASES_JNetPS_Cmdlet_JMX_InvokeQueryValueCmdletCommand_Value
+  commentId: P:MASES.JNetPS.Cmdlet.JMX.InvokeQueryValueCmdletCommand.Value
+  fullName: MASES.JNetPS.Cmdlet.JMX.InvokeQueryValueCmdletCommand.Value
+  nameWithType: InvokeQueryValueCmdletCommand.Value
+- uid: MASES.JNetPS.Cmdlet.JMX.InvokeQueryValueCmdletCommand.Value*
+  name: Value
+  href: api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryValueCmdletCommand.html#MASES_JNetPS_Cmdlet_JMX_InvokeQueryValueCmdletCommand_Value_
+  commentId: Overload:MASES.JNetPS.Cmdlet.JMX.InvokeQueryValueCmdletCommand.Value
+  isSpec: "True"
+  fullName: MASES.JNetPS.Cmdlet.JMX.InvokeQueryValueCmdletCommand.Value
+  nameWithType: InvokeQueryValueCmdletCommand.Value
+- uid: MASES.JNetPS.Cmdlet.JMX.NewAttributeChangeNotificationFilterCmdletCommand
+  name: NewAttributeChangeNotificationFilterCmdletCommand
+  href: api/MASES.JNetPS.Cmdlet.JMX.NewAttributeChangeNotificationFilterCmdletCommand.html
+  commentId: T:MASES.JNetPS.Cmdlet.JMX.NewAttributeChangeNotificationFilterCmdletCommand
+  fullName: MASES.JNetPS.Cmdlet.JMX.NewAttributeChangeNotificationFilterCmdletCommand
+  nameWithType: NewAttributeChangeNotificationFilterCmdletCommand
+- uid: MASES.JNetPS.Cmdlet.JMX.NewAttributeChangeNotificationFilterCmdletCommand.ProcessCommand
+  name: ProcessCommand()
+  href: api/MASES.JNetPS.Cmdlet.JMX.NewAttributeChangeNotificationFilterCmdletCommand.html#MASES_JNetPS_Cmdlet_JMX_NewAttributeChangeNotificationFilterCmdletCommand_ProcessCommand
+  commentId: M:MASES.JNetPS.Cmdlet.JMX.NewAttributeChangeNotificationFilterCmdletCommand.ProcessCommand
+  fullName: MASES.JNetPS.Cmdlet.JMX.NewAttributeChangeNotificationFilterCmdletCommand.ProcessCommand()
+  nameWithType: NewAttributeChangeNotificationFilterCmdletCommand.ProcessCommand()
+- uid: MASES.JNetPS.Cmdlet.JMX.NewAttributeChangeNotificationFilterCmdletCommand.ProcessCommand*
+  name: ProcessCommand
+  href: api/MASES.JNetPS.Cmdlet.JMX.NewAttributeChangeNotificationFilterCmdletCommand.html#MASES_JNetPS_Cmdlet_JMX_NewAttributeChangeNotificationFilterCmdletCommand_ProcessCommand_
+  commentId: Overload:MASES.JNetPS.Cmdlet.JMX.NewAttributeChangeNotificationFilterCmdletCommand.ProcessCommand
+  isSpec: "True"
+  fullName: MASES.JNetPS.Cmdlet.JMX.NewAttributeChangeNotificationFilterCmdletCommand.ProcessCommand
+  nameWithType: NewAttributeChangeNotificationFilterCmdletCommand.ProcessCommand
 - uid: MASES.JNetPS.Cmdlet.JMX.NewJMXServiceURLCmdletCommand
   name: NewJMXServiceURLCmdletCommand
   href: api/MASES.JNetPS.Cmdlet.JMX.NewJMXServiceURLCmdletCommand.html
@@ -31978,6 +32116,25 @@ references:
   isSpec: "True"
   fullName: MASES.JNetPS.Cmdlet.JMX.NewMXBeanProxyCmdletCommand.WithNotificationEmitter
   nameWithType: NewMXBeanProxyCmdletCommand.WithNotificationEmitter
+- uid: MASES.JNetPS.Cmdlet.JMX.NewNotificationFilterSupportCmdletCommand
+  name: NewNotificationFilterSupportCmdletCommand
+  href: api/MASES.JNetPS.Cmdlet.JMX.NewNotificationFilterSupportCmdletCommand.html
+  commentId: T:MASES.JNetPS.Cmdlet.JMX.NewNotificationFilterSupportCmdletCommand
+  fullName: MASES.JNetPS.Cmdlet.JMX.NewNotificationFilterSupportCmdletCommand
+  nameWithType: NewNotificationFilterSupportCmdletCommand
+- uid: MASES.JNetPS.Cmdlet.JMX.NewNotificationFilterSupportCmdletCommand.ProcessCommand
+  name: ProcessCommand()
+  href: api/MASES.JNetPS.Cmdlet.JMX.NewNotificationFilterSupportCmdletCommand.html#MASES_JNetPS_Cmdlet_JMX_NewNotificationFilterSupportCmdletCommand_ProcessCommand
+  commentId: M:MASES.JNetPS.Cmdlet.JMX.NewNotificationFilterSupportCmdletCommand.ProcessCommand
+  fullName: MASES.JNetPS.Cmdlet.JMX.NewNotificationFilterSupportCmdletCommand.ProcessCommand()
+  nameWithType: NewNotificationFilterSupportCmdletCommand.ProcessCommand()
+- uid: MASES.JNetPS.Cmdlet.JMX.NewNotificationFilterSupportCmdletCommand.ProcessCommand*
+  name: ProcessCommand
+  href: api/MASES.JNetPS.Cmdlet.JMX.NewNotificationFilterSupportCmdletCommand.html#MASES_JNetPS_Cmdlet_JMX_NewNotificationFilterSupportCmdletCommand_ProcessCommand_
+  commentId: Overload:MASES.JNetPS.Cmdlet.JMX.NewNotificationFilterSupportCmdletCommand.ProcessCommand
+  isSpec: "True"
+  fullName: MASES.JNetPS.Cmdlet.JMX.NewNotificationFilterSupportCmdletCommand.ProcessCommand
+  nameWithType: NewNotificationFilterSupportCmdletCommand.ProcessCommand
 - uid: MASES.JNetPS.Cmdlet.JMX.NewNotificationListenerCmdletCommand
   name: NewNotificationListenerCmdletCommand
   href: api/MASES.JNetPS.Cmdlet.JMX.NewNotificationListenerCmdletCommand.html

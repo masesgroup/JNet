@@ -251,6 +251,7 @@
   <h5 id="MASES_JNetPS_Cmdlet_JMX_NewJMXServiceURLCmdletCommand_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Cmdlet(&quot;New&quot;, &quot;JMXServiceURL&quot;)]
+[OutputType(new Type[]{typeof(JMXServiceURL)})]
 public class NewJMXServiceURLCmdletCommand : JNetPSCmdlet&lt;JNetPSCore&gt;</code></pre>
   </div>
   <h3 id="properties">Properties
@@ -260,7 +261,7 @@ public class NewJMXServiceURLCmdletCommand : JNetPSCmdlet&lt;JNetPSCore&gt;</cod
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetPS_Cmdlet_JMX_NewJMXServiceURLCmdletCommand_HostName.md&amp;value=---%0Auid%3A%20MASES.JNetPS.Cmdlet.JMX.NewJMXServiceURLCmdletCommand.HostName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPS/Cmdlet/JMX/NewJMXServiceURLCmdletCommand.cs/#L39">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPS/Cmdlet/JMX/NewJMXServiceURLCmdletCommand.cs/#L38">View Source</a>
   </span>
   <a id="MASES_JNetPS_Cmdlet_JMX_NewJMXServiceURLCmdletCommand_HostName_" data-uid="MASES.JNetPS.Cmdlet.JMX.NewJMXServiceURLCmdletCommand.HostName*"></a>
   <h4 id="MASES_JNetPS_Cmdlet_JMX_NewJMXServiceURLCmdletCommand_HostName" data-uid="MASES.JNetPS.Cmdlet.JMX.NewJMXServiceURLCmdletCommand.HostName">HostName</h4>
@@ -291,7 +292,7 @@ public string HostName { get; set; }</code></pre>
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetPS_Cmdlet_JMX_NewJMXServiceURLCmdletCommand_Port.md&amp;value=---%0Auid%3A%20MASES.JNetPS.Cmdlet.JMX.NewJMXServiceURLCmdletCommand.Port%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPS/Cmdlet/JMX/NewJMXServiceURLCmdletCommand.cs/#L45">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPS/Cmdlet/JMX/NewJMXServiceURLCmdletCommand.cs/#L44">View Source</a>
   </span>
   <a id="MASES_JNetPS_Cmdlet_JMX_NewJMXServiceURLCmdletCommand_Port_" data-uid="MASES.JNetPS.Cmdlet.JMX.NewJMXServiceURLCmdletCommand.Port*"></a>
   <h4 id="MASES_JNetPS_Cmdlet_JMX_NewJMXServiceURLCmdletCommand_Port" data-uid="MASES.JNetPS.Cmdlet.JMX.NewJMXServiceURLCmdletCommand.Port">Port</h4>
@@ -322,7 +323,7 @@ public int? Port { get; set; }</code></pre>
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetPS_Cmdlet_JMX_NewJMXServiceURLCmdletCommand_ServiceURLOrProtocol.md&amp;value=---%0Auid%3A%20MASES.JNetPS.Cmdlet.JMX.NewJMXServiceURLCmdletCommand.ServiceURLOrProtocol%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPS/Cmdlet/JMX/NewJMXServiceURLCmdletCommand.cs/#L31">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPS/Cmdlet/JMX/NewJMXServiceURLCmdletCommand.cs/#L30">View Source</a>
   </span>
   <a id="MASES_JNetPS_Cmdlet_JMX_NewJMXServiceURLCmdletCommand_ServiceURLOrProtocol_" data-uid="MASES.JNetPS.Cmdlet.JMX.NewJMXServiceURLCmdletCommand.ServiceURLOrProtocol*"></a>
   <h4 id="MASES_JNetPS_Cmdlet_JMX_NewJMXServiceURLCmdletCommand_ServiceURLOrProtocol" data-uid="MASES.JNetPS.Cmdlet.JMX.NewJMXServiceURLCmdletCommand.ServiceURLOrProtocol">ServiceURLOrProtocol</h4>
@@ -353,7 +354,7 @@ public string ServiceURLOrProtocol { get; set; }</code></pre>
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetPS_Cmdlet_JMX_NewJMXServiceURLCmdletCommand_UrlPath.md&amp;value=---%0Auid%3A%20MASES.JNetPS.Cmdlet.JMX.NewJMXServiceURLCmdletCommand.UrlPath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPS/Cmdlet/JMX/NewJMXServiceURLCmdletCommand.cs/#L51">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPS/Cmdlet/JMX/NewJMXServiceURLCmdletCommand.cs/#L50">View Source</a>
   </span>
   <a id="MASES_JNetPS_Cmdlet_JMX_NewJMXServiceURLCmdletCommand_UrlPath_" data-uid="MASES.JNetPS.Cmdlet.JMX.NewJMXServiceURLCmdletCommand.UrlPath*"></a>
   <h4 id="MASES_JNetPS_Cmdlet_JMX_NewJMXServiceURLCmdletCommand_UrlPath" data-uid="MASES.JNetPS.Cmdlet.JMX.NewJMXServiceURLCmdletCommand.UrlPath">UrlPath</h4>
@@ -386,7 +387,7 @@ public string UrlPath { get; set; }</code></pre>
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetPS_Cmdlet_JMX_NewJMXServiceURLCmdletCommand_ProcessCommand.md&amp;value=---%0Auid%3A%20MASES.JNetPS.Cmdlet.JMX.NewJMXServiceURLCmdletCommand.ProcessCommand%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPS/Cmdlet/JMX/NewJMXServiceURLCmdletCommand.cs/#L58">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPS/Cmdlet/JMX/NewJMXServiceURLCmdletCommand.cs/#L57">View Source</a>
   </span>
   <a id="MASES_JNetPS_Cmdlet_JMX_NewJMXServiceURLCmdletCommand_ProcessCommand_" data-uid="MASES.JNetPS.Cmdlet.JMX.NewJMXServiceURLCmdletCommand.ProcessCommand*"></a>
   <h4 id="MASES_JNetPS_Cmdlet_JMX_NewJMXServiceURLCmdletCommand_ProcessCommand" data-uid="MASES.JNetPS.Cmdlet.JMX.NewJMXServiceURLCmdletCommand.ProcessCommand">ProcessCommand()</h4>
@@ -419,7 +420,7 @@ public string UrlPath { get; set; }</code></pre>
                     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNetPS_Cmdlet_JMX_NewJMXServiceURLCmdletCommand.md&amp;value=---%0Auid%3A%20MASES.JNetPS.Cmdlet.JMX.NewJMXServiceURLCmdletCommand%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPS/Cmdlet/JMX/NewJMXServiceURLCmdletCommand.cs/#L28" class="contribution-link">View Source</a>
+                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPS/Cmdlet/JMX/NewJMXServiceURLCmdletCommand.cs/#L26" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
