@@ -23,9 +23,9 @@ using System.Management.Automation;
 
 namespace MASES.JNetPS.Cmdlet.JMX
 {
-    [Cmdlet(VerbsCommon.Get, "QueryValue")]
+    [Cmdlet(VerbsLifecycle.Invoke, "QueryValue")]
     [OutputType(typeof(ValueExp))]
-    public class GetQueryValueCmdletCommand : JNetPSCmdlet<JNetPSCore>
+    public class InvokeQueryValueCmdletCommand : JNetPSCmdlet<JNetPSCore>
     {
         [Parameter(
             Position = 0,
