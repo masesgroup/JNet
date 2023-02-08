@@ -92,7 +92,7 @@ namespace MASES.JNetReflector
         {
             var name = entry.FullName.ToLowerInvariant();
             if (name.Contains(FileNameAndDirectory.METAINF.ToLowerInvariant())
-                || JNetReflectedCore.NamespacesToAvoid.Contains(entry.Namespace(false))) return true;
+                || JNetReflectorCore.NamespacesToAvoid.Contains(entry.Namespace(false))) return true;
             return false;
         }
 
@@ -204,7 +204,7 @@ namespace MASES.JNetReflector
 
         public static string JavadocUrl(this ZipArchiveEntry entry)
         {
-            var newURl = JNetReflectedCore.OriginJavadocUrl;
+            var newURl = JNetReflectorCore.OriginJavadocUrl;
             if (newURl != null)
             {
                 if (!newURl.EndsWith("/"))
@@ -389,7 +389,7 @@ namespace MASES.JNetReflector
 
         public static string JavadocUrl(this Class entry)
         {
-            var newURl = JNetReflectedCore.OriginJavadocUrl;
+            var newURl = JNetReflectorCore.OriginJavadocUrl;
             if (newURl != null)
             {
                 if (!newURl.EndsWith("/"))
@@ -461,11 +461,11 @@ namespace MASES.JNetReflector
         public static string JavadocUrl(this Constructor entry)
         {
             var newURl = entry.DeclaringClass.JavadocUrl();
-            if (JNetReflectedCore.OriginJavadocUrl != null)
+            if (JNetReflectorCore.OriginJavadocUrl != null)
             {
                 var genString = entry.GenericString;
 
-                if (JNetReflectedCore.JavadocVersion > 9)
+                if (JNetReflectorCore.JavadocVersion > 9)
                 {
                     genString = genString.Substring(genString.IndexOf(entry.Name) + entry.Name.Length);
                     genString = "<init>" + genString;
@@ -475,7 +475,7 @@ namespace MASES.JNetReflector
                     genString = genString.Substring(genString.IndexOf(entry.Name));
                 }
 
-                if (JNetReflectedCore.JavadocVersion < 7)
+                if (JNetReflectorCore.JavadocVersion < 7)
                 {
                     genString = genString.Replace(",", ", ");
                 }
@@ -634,15 +634,15 @@ namespace MASES.JNetReflector
         public static string JavadocUrl(this Method entry)
         {
             var newURl = entry.DeclaringClass.JavadocUrl();
-            if (JNetReflectedCore.OriginJavadocUrl != null)
+            if (JNetReflectorCore.OriginJavadocUrl != null)
             {
                 var genString = entry.GenericString;
                 genString = genString.Substring(genString.IndexOf(entry.Name));
-                if (JNetReflectedCore.JavadocVersion < 7)
+                if (JNetReflectorCore.JavadocVersion < 7)
                 {
                     genString = genString.Replace(",", ", ");
                 }
-                else if (JNetReflectedCore.JavadocVersion > 7 && JNetReflectedCore.JavadocVersion < 10)
+                else if (JNetReflectorCore.JavadocVersion > 7 && JNetReflectorCore.JavadocVersion < 10)
                 {
                     genString = genString.Replace(",", "-").Replace('(', '-').Replace(')', '-');
                 }
@@ -728,7 +728,7 @@ namespace MASES.JNetReflector
         public static string JavadocUrl(this Field entry)
         {
             var newURl = entry.DeclaringClass.JavadocUrl();
-            if (JNetReflectedCore.OriginJavadocUrl != null)
+            if (JNetReflectorCore.OriginJavadocUrl != null)
             {
                 var genString = entry.Name;
                 newURl += "#" + genString;
