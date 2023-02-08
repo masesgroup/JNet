@@ -19,6 +19,7 @@
 using Java.Util;
 using MASES.JNetTest.Common;
 using MASES.JNet.Extensions;
+using System.Diagnostics;
 
 namespace MASES.JNetTest
 {
@@ -59,8 +60,27 @@ namespace MASES.JNetTest
             var map = dict.ToMap();
             var newDict = map.ToDictiony();
 
-            var collection = newDict.Values.ToJCollection();
-            var list = collection.ToList();
+            const int execution = 10000;
+            Stopwatch w = Stopwatch.StartNew();
+            ArrayList<string> alist = new Java.Util.ArrayList<string>();
+            for (int i = 0; i < execution; i++)
+            {
+                alist.Add(i.ToString());
+            }
+            w.Stop();
+            System.Console.WriteLine($"ArrayList Elapsed ticks: {w.ElapsedTicks}");
+            w.Restart();
+            System.Collections.Generic.List<string> nlist = new System.Collections.Generic.List<string>();
+            for (int i = 0; i < execution; i++)
+            {
+                nlist.Add(i.ToString());
+            }
+            w.Stop();
+            System.Console.WriteLine($"System.Collections.Generic.List Elapsed ticks: {w.ElapsedTicks}");
+
+            //var collection = newDict.Values.ToJCollection();
+            //var intermediate = collection.ToList<Map.Entry<string, string>>();
+            var list = ((Collection<string>)alist).ToList(); // Raise an exception because iterator returns java/util/HashMap$Node which is not convertible to string
         }
     }
 }
