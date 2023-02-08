@@ -25,9 +25,9 @@ using System.Linq;
 namespace MASES.JNetReflector
 {
     /// <summary>
-    /// Public entry point of <see cref="JNetReflectedCore{T}"/>
+    /// Public entry point of <see cref="JNetReflectorCore{T}"/>
     /// </summary>
-    public abstract class JNetReflectedCore<T> : JNetCoreBase<T> where T : JNetReflectedCore<T>
+    public abstract class JNetReflectorCore<T> : JNetCoreBase<T> where T : JNetReflectorCore<T>
     {
         #region Initialization
         /// <inheritdoc cref="JNetCoreBase{T}.CommandLineArguments"/>
@@ -112,7 +112,7 @@ namespace MASES.JNetReflector
         /// <summary>
         /// Public ctor
         /// </summary>
-        public JNetReflectedCore()
+        public JNetReflectorCore()
         {
         }
 
@@ -217,9 +217,9 @@ namespace MASES.JNetReflector
 #endif
     }
     /// <summary>
-    /// Concrete implementation of <see cref="JNetReflectedCore{T}"/>
+    /// Concrete implementation of <see cref="JNetReflectorCore{T}"/>
     /// </summary>
-    public class JNetReflectedCore : JNetReflectedCore<JNetReflectedCore>
+    public class JNetReflectorCore : JNetReflectorCore<JNetReflectorCore>
     {
     }
 }

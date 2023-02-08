@@ -157,7 +157,7 @@ namespace MASES.JNetReflector
                     string nestedMethodBlock = string.Empty;
                     var jSubClass = entry.JVMClass();
                     bool jSubClassIsDepracated = jSubClass.IsDeprecated();
-                    if (!JNetReflectedCore.ReflectDeprecated && jSubClassIsDepracated) continue;
+                    if (!JNetReflectorCore.ReflectDeprecated && jSubClassIsDepracated) continue;
 
                     bool jSubClassIsOrFromGeneric = jSubClass.IsOrInheritFromJVMGenericClass();
 
@@ -228,7 +228,7 @@ namespace MASES.JNetReflector
 
             var jClass = mainClass.JVMClass();
             bool jClassIsDepracated = jClass.IsDeprecated();
-            if (!JNetReflectedCore.ReflectDeprecated && jClassIsDepracated)
+            if (!JNetReflectorCore.ReflectDeprecated && jClassIsDepracated)
             {
                 ReportTrace(ReflectionTraceLevel.Info, "Discarded deprecated main class {0}", jClass.GenericString);
                 return string.Empty;
@@ -316,7 +316,7 @@ namespace MASES.JNetReflector
 
                 if (paramCount == 0) continue; // default constructor managed from AllClasses template as default for any JCOBridge reflected class
                 bool isDeprecated = constructor.IsDeprecated();
-                if (!JNetReflectedCore.ReflectDeprecated && isDeprecated)
+                if (!JNetReflectorCore.ReflectDeprecated && isDeprecated)
                 {
                     ReportTrace(ReflectionTraceLevel.Info, "Discarded deprecated constructor {0}", constructor.GenericString);
                     continue;
@@ -414,7 +414,7 @@ namespace MASES.JNetReflector
                     methodNameOrigin == "equals"
                    ) continue; // special methods managed from JCOBridge
 
-                if (!JNetReflectedCore.ReflectDeprecated && method.IsDeprecated())
+                if (!JNetReflectorCore.ReflectDeprecated && method.IsDeprecated())
                 {
                     ReportTrace(ReflectionTraceLevel.Debug, "Discarded deprecated method {0}", method.GenericString);
                     continue; // this is very time consuming, anyway seems the only way to identify if a method was defined in the super abstract class
@@ -478,7 +478,7 @@ namespace MASES.JNetReflector
                 StringBuilder executionStub = new StringBuilder();
                 if (getMethod != null)
                 {
-                    if (JNetReflectedCore.ReflectDeprecated) isGetDeprecated = getMethod.IsDeprecated();
+                    if (JNetReflectorCore.ReflectDeprecated) isGetDeprecated = getMethod.IsDeprecated();
                     executionStub.AppendFormat(AllPackageClasses.ClassStub.PropertyStub.GET_EXECUTION_FORMAT, getMethod.IsStatic() ? "SExecute" : "IExecute",
                                                                                                               getMethod.IsVoid() || getMethod.IsObjectReturnType() ? string.Empty : $"<{returnType}>",
                                                                                                               getMethod.Name);
@@ -486,7 +486,7 @@ namespace MASES.JNetReflector
 
                 if (setMethod != null)
                 {
-                    if (JNetReflectedCore.ReflectDeprecated) isSetDeprecated = setMethod.IsDeprecated();
+                    if (JNetReflectorCore.ReflectDeprecated) isSetDeprecated = setMethod.IsDeprecated();
                     executionStub.AppendFormat(AllPackageClasses.ClassStub.PropertyStub.SET_EXECUTION_FORMAT, setMethod.IsStatic() ? "SExecute" : "IExecute",
                                                                                                               setMethod.Name);
                 }
@@ -580,7 +580,7 @@ namespace MASES.JNetReflector
                 ReportTrace(ReflectionTraceLevel.Info, "Preparing method {0}", method.GenericString);
 
                 StringBuilder jDecoration = new StringBuilder(AllPackageClasses.ClassStub.MethodStub.DEFAULT_DECORATION);
-                if (JNetReflectedCore.ReflectDeprecated && method.IsDeprecated())
+                if (JNetReflectorCore.ReflectDeprecated && method.IsDeprecated())
                 {
                     jDecoration.AppendLine();
                     jDecoration.Append(AllPackageClasses.ClassStub.MethodStub.OBSOLETE_DECORATION);
@@ -612,7 +612,7 @@ namespace MASES.JNetReflector
                 if (!field.DeclaringClass.Equals(classDefinition)) continue;
                 if (!field.IsPublic()) continue; // avoid not public methods
                 bool isDeprecated = field.IsDeprecated();
-                if (!JNetReflectedCore.ReflectDeprecated && isDeprecated)
+                if (!JNetReflectorCore.ReflectDeprecated && isDeprecated)
                 {
                     ReportTrace(ReflectionTraceLevel.Debug, "Discarded deprecated field {0}", field.GenericString);
                     continue; // avoid generics till now

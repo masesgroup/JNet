@@ -35,18 +35,18 @@ namespace MASES.JNetReflector
                 Console.WriteLine($"{assembly.GetName().Name} (ver. {assembly.GetName().Version}) - JNet class reflection utility command line interface");
                 Console.WriteLine();
 
-                JNetReflectedCore.CreateGlobalInstance();
-                if (JNetReflectedCore.TraceTo != null)
+                JNetReflectorCore.CreateGlobalInstance();
+                if (JNetReflectorCore.TraceTo != null)
                 {
-                    _writer = File.Exists(JNetReflectedCore.TraceTo) ? File.AppendText(JNetReflectedCore.TraceTo) : File.CreateText(JNetReflectedCore.TraceTo);
+                    _writer = File.Exists(JNetReflectorCore.TraceTo) ? File.AppendText(JNetReflectorCore.TraceTo) : File.CreateText(JNetReflectorCore.TraceTo);
                     _writer.WriteLine($"Started new analysis at {DateTime.Now}");
                 }
 
-                ReflectionUtils.SetHandlerAndLevel(TraceReportHandler, JNetReflectedCore.TraceLevel);
+                ReflectionUtils.SetHandlerAndLevel(TraceReportHandler, JNetReflectorCore.TraceLevel);
 
-                foreach (var item in JNetReflectedCore.JarsToAnaylyze)
+                foreach (var item in JNetReflectorCore.JarsToAnaylyze)
                 {
-                    ReflectionUtils.AnalyzeJar(item, JNetReflectedCore.DestinationRootPath, JNetReflectedCore.DryRun);
+                    ReflectionUtils.AnalyzeJar(item, JNetReflectorCore.DestinationRootPath, JNetReflectorCore.DryRun);
                 }
             }
             catch (TargetInvocationException tie)
@@ -100,7 +100,7 @@ namespace MASES.JNetReflector
                 Console.WriteLine("Error: {0}", errorString);
             }
 
-            Console.WriteLine(JNetReflectedCore.HelpInfo());
+            Console.WriteLine(JNetReflectorCore.HelpInfo());
 
             Console.WriteLine();
             Console.WriteLine("Examples: ");
