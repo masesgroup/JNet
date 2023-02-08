@@ -5,7 +5,7 @@ WORKDIR /app
 COPY ./src/net ./
 ENV JNET_DOCKER_BUILD_ACTIONS=true
 # Restore as distinct layers
-RUN dotnet restore JNet.sln
+RUN dotnet restore JNetDocker.sln
 # Build and publish a release
 RUN dotnet publish ./JNetCLI/JNetCLI.csproj --framework net6.0 -c Release -o out
 
