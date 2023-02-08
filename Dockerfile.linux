@@ -3,10 +3,11 @@ WORKDIR /app
 
 # Copy everything
 COPY ./src/net ./
+ENV JNET_DOCKER_BUILD_ACTIONS=true
 # Restore as distinct layers
-RUN dotnet restore -p:TargetFramework=net6.0 JNet.sln
+RUN dotnet restore JNet.sln
 # Build and publish a release
-RUN dotnet publish -p:TargetFramework=net6.0 ./JNetCLI/JNetCLI.csproj -c Release -o out
+RUN dotnet publish ./JNetCLI/JNetCLI.csproj --framework net6.0 -c Release -o out
 
 # Build runtime image
 FROM mcr.microsoft.com/dotnet/runtime:6.0
