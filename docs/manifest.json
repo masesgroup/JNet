@@ -5901,7 +5901,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MASES.JNet.JNetCoreBase-1.html",
-          "hash": "Vd1H6U3593ZhiJM2FB43zyKg7sI18tfF5yMBszCdzU4="
+          "hash": "9fmUQ0GGokdcC1BYyFk/fUtizyw7I43LMy7hw3ZlCiE="
         }
       },
       "is_incremental": false,
@@ -6653,11 +6653,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetReflector.JNetReflectedCore-1.yml",
+      "source_relative_path": "api/MASES.JNetReflector.JNetReflectorCore-1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/MASES.JNetReflector.JNetReflectedCore-1.html",
-          "hash": "UsXPGFGi+AjPnzgsgGFlZOxSBOc0GhQnj+U0bd/1puw="
+          "relative_path": "api/MASES.JNetReflector.JNetReflectorCore-1.html",
+          "hash": "9h5fhF+6FLSZDzgYyw7i0+tLZ1VXyr/tNLjT7paO8I0="
         }
       },
       "is_incremental": false,
@@ -6665,11 +6665,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetReflector.JNetReflectedCore.yml",
+      "source_relative_path": "api/MASES.JNetReflector.JNetReflectorCore.yml",
       "output": {
         ".html": {
-          "relative_path": "api/MASES.JNetReflector.JNetReflectedCore.html",
-          "hash": "HyZscMimUvful9neaD2DNeE+d77ZdAa/k3RB7fS1OVs="
+          "relative_path": "api/MASES.JNetReflector.JNetReflectorCore.html",
+          "hash": "ZZyoL/yYp7mh2U2MgG9fmisqlyM4tGASF1IZ0RatH9E="
         }
       },
       "is_incremental": false,
@@ -6813,7 +6813,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MASES.JNetReflector.html",
-          "hash": "i+ICkZXmhRGgG6aTUoCxfhdagrQxY+ND0CCj9Z3Phqg="
+          "hash": "blCugmh4Uo6+Qfn5q50isJPdbf1/ESaEgGa14KmhLHI="
         }
       },
       "is_incremental": false,
@@ -6837,7 +6837,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "jyGPR/MitVfqytY9TbLXpOlp6H1o2y82gi8508M/VcQ="
+          "hash": "OpLAP0XvOVeWhjdX4AS6NGOM1iFe8X38/d8/FFWNEL8="
         }
       },
       "is_incremental": false,

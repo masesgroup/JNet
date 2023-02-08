@@ -33564,276 +33564,276 @@ references:
   commentId: F:MASES.JNetReflector.FileNameAndDirectory.METAINF
   fullName: MASES.JNetReflector.FileNameAndDirectory.METAINF
   nameWithType: FileNameAndDirectory.METAINF
-- uid: MASES.JNetReflector.JNetReflectedCore
-  name: JNetReflectedCore
-  href: api/MASES.JNetReflector.JNetReflectedCore.html
-  commentId: T:MASES.JNetReflector.JNetReflectedCore
-  fullName: MASES.JNetReflector.JNetReflectedCore
-  nameWithType: JNetReflectedCore
-- uid: MASES.JNetReflector.JNetReflectedCore`1
-  name: JNetReflectedCore<T>
-  href: api/MASES.JNetReflector.JNetReflectedCore-1.html
-  commentId: T:MASES.JNetReflector.JNetReflectedCore`1
-  name.vb: JNetReflectedCore(Of T)
-  fullName: MASES.JNetReflector.JNetReflectedCore<T>
-  fullName.vb: MASES.JNetReflector.JNetReflectedCore(Of T)
-  nameWithType: JNetReflectedCore<T>
-  nameWithType.vb: JNetReflectedCore(Of T)
-- uid: MASES.JNetReflector.JNetReflectedCore`1.#ctor
-  name: JNetReflectedCore()
-  href: api/MASES.JNetReflector.JNetReflectedCore-1.html#MASES_JNetReflector_JNetReflectedCore_1__ctor
-  commentId: M:MASES.JNetReflector.JNetReflectedCore`1.#ctor
-  fullName: MASES.JNetReflector.JNetReflectedCore<T>.JNetReflectedCore()
-  fullName.vb: MASES.JNetReflector.JNetReflectedCore(Of T).JNetReflectedCore()
-  nameWithType: JNetReflectedCore<T>.JNetReflectedCore()
-  nameWithType.vb: JNetReflectedCore(Of T).JNetReflectedCore()
-- uid: MASES.JNetReflector.JNetReflectedCore`1.#ctor*
-  name: JNetReflectedCore
-  href: api/MASES.JNetReflector.JNetReflectedCore-1.html#MASES_JNetReflector_JNetReflectedCore_1__ctor_
-  commentId: Overload:MASES.JNetReflector.JNetReflectedCore`1.#ctor
+- uid: MASES.JNetReflector.JNetReflectorCore
+  name: JNetReflectorCore
+  href: api/MASES.JNetReflector.JNetReflectorCore.html
+  commentId: T:MASES.JNetReflector.JNetReflectorCore
+  fullName: MASES.JNetReflector.JNetReflectorCore
+  nameWithType: JNetReflectorCore
+- uid: MASES.JNetReflector.JNetReflectorCore`1
+  name: JNetReflectorCore<T>
+  href: api/MASES.JNetReflector.JNetReflectorCore-1.html
+  commentId: T:MASES.JNetReflector.JNetReflectorCore`1
+  name.vb: JNetReflectorCore(Of T)
+  fullName: MASES.JNetReflector.JNetReflectorCore<T>
+  fullName.vb: MASES.JNetReflector.JNetReflectorCore(Of T)
+  nameWithType: JNetReflectorCore<T>
+  nameWithType.vb: JNetReflectorCore(Of T)
+- uid: MASES.JNetReflector.JNetReflectorCore`1.#ctor
+  name: JNetReflectorCore()
+  href: api/MASES.JNetReflector.JNetReflectorCore-1.html#MASES_JNetReflector_JNetReflectorCore_1__ctor
+  commentId: M:MASES.JNetReflector.JNetReflectorCore`1.#ctor
+  fullName: MASES.JNetReflector.JNetReflectorCore<T>.JNetReflectorCore()
+  fullName.vb: MASES.JNetReflector.JNetReflectorCore(Of T).JNetReflectorCore()
+  nameWithType: JNetReflectorCore<T>.JNetReflectorCore()
+  nameWithType.vb: JNetReflectorCore(Of T).JNetReflectorCore()
+- uid: MASES.JNetReflector.JNetReflectorCore`1.#ctor*
+  name: JNetReflectorCore
+  href: api/MASES.JNetReflector.JNetReflectorCore-1.html#MASES_JNetReflector_JNetReflectorCore_1__ctor_
+  commentId: Overload:MASES.JNetReflector.JNetReflectorCore`1.#ctor
   isSpec: "True"
-  fullName: MASES.JNetReflector.JNetReflectedCore<T>.JNetReflectedCore
-  fullName.vb: MASES.JNetReflector.JNetReflectedCore(Of T).JNetReflectedCore
-  nameWithType: JNetReflectedCore<T>.JNetReflectedCore
-  nameWithType.vb: JNetReflectedCore(Of T).JNetReflectedCore
-- uid: MASES.JNetReflector.JNetReflectedCore`1.CommandLineArguments
+  fullName: MASES.JNetReflector.JNetReflectorCore<T>.JNetReflectorCore
+  fullName.vb: MASES.JNetReflector.JNetReflectorCore(Of T).JNetReflectorCore
+  nameWithType: JNetReflectorCore<T>.JNetReflectorCore
+  nameWithType.vb: JNetReflectorCore(Of T).JNetReflectorCore
+- uid: MASES.JNetReflector.JNetReflectorCore`1.CommandLineArguments
   name: CommandLineArguments
-  href: api/MASES.JNetReflector.JNetReflectedCore-1.html#MASES_JNetReflector_JNetReflectedCore_1_CommandLineArguments
-  commentId: P:MASES.JNetReflector.JNetReflectedCore`1.CommandLineArguments
-  fullName: MASES.JNetReflector.JNetReflectedCore<T>.CommandLineArguments
-  fullName.vb: MASES.JNetReflector.JNetReflectedCore(Of T).CommandLineArguments
-  nameWithType: JNetReflectedCore<T>.CommandLineArguments
-  nameWithType.vb: JNetReflectedCore(Of T).CommandLineArguments
-- uid: MASES.JNetReflector.JNetReflectedCore`1.CommandLineArguments*
+  href: api/MASES.JNetReflector.JNetReflectorCore-1.html#MASES_JNetReflector_JNetReflectorCore_1_CommandLineArguments
+  commentId: P:MASES.JNetReflector.JNetReflectorCore`1.CommandLineArguments
+  fullName: MASES.JNetReflector.JNetReflectorCore<T>.CommandLineArguments
+  fullName.vb: MASES.JNetReflector.JNetReflectorCore(Of T).CommandLineArguments
+  nameWithType: JNetReflectorCore<T>.CommandLineArguments
+  nameWithType.vb: JNetReflectorCore(Of T).CommandLineArguments
+- uid: MASES.JNetReflector.JNetReflectorCore`1.CommandLineArguments*
   name: CommandLineArguments
-  href: api/MASES.JNetReflector.JNetReflectedCore-1.html#MASES_JNetReflector_JNetReflectedCore_1_CommandLineArguments_
-  commentId: Overload:MASES.JNetReflector.JNetReflectedCore`1.CommandLineArguments
+  href: api/MASES.JNetReflector.JNetReflectorCore-1.html#MASES_JNetReflector_JNetReflectorCore_1_CommandLineArguments_
+  commentId: Overload:MASES.JNetReflector.JNetReflectorCore`1.CommandLineArguments
   isSpec: "True"
-  fullName: MASES.JNetReflector.JNetReflectedCore<T>.CommandLineArguments
-  fullName.vb: MASES.JNetReflector.JNetReflectedCore(Of T).CommandLineArguments
-  nameWithType: JNetReflectedCore<T>.CommandLineArguments
-  nameWithType.vb: JNetReflectedCore(Of T).CommandLineArguments
-- uid: MASES.JNetReflector.JNetReflectedCore`1.DestinationRootPath
+  fullName: MASES.JNetReflector.JNetReflectorCore<T>.CommandLineArguments
+  fullName.vb: MASES.JNetReflector.JNetReflectorCore(Of T).CommandLineArguments
+  nameWithType: JNetReflectorCore<T>.CommandLineArguments
+  nameWithType.vb: JNetReflectorCore(Of T).CommandLineArguments
+- uid: MASES.JNetReflector.JNetReflectorCore`1.DestinationRootPath
   name: DestinationRootPath
-  href: api/MASES.JNetReflector.JNetReflectedCore-1.html#MASES_JNetReflector_JNetReflectedCore_1_DestinationRootPath
-  commentId: P:MASES.JNetReflector.JNetReflectedCore`1.DestinationRootPath
-  fullName: MASES.JNetReflector.JNetReflectedCore<T>.DestinationRootPath
-  fullName.vb: MASES.JNetReflector.JNetReflectedCore(Of T).DestinationRootPath
-  nameWithType: JNetReflectedCore<T>.DestinationRootPath
-  nameWithType.vb: JNetReflectedCore(Of T).DestinationRootPath
-- uid: MASES.JNetReflector.JNetReflectedCore`1.DestinationRootPath*
+  href: api/MASES.JNetReflector.JNetReflectorCore-1.html#MASES_JNetReflector_JNetReflectorCore_1_DestinationRootPath
+  commentId: P:MASES.JNetReflector.JNetReflectorCore`1.DestinationRootPath
+  fullName: MASES.JNetReflector.JNetReflectorCore<T>.DestinationRootPath
+  fullName.vb: MASES.JNetReflector.JNetReflectorCore(Of T).DestinationRootPath
+  nameWithType: JNetReflectorCore<T>.DestinationRootPath
+  nameWithType.vb: JNetReflectorCore(Of T).DestinationRootPath
+- uid: MASES.JNetReflector.JNetReflectorCore`1.DestinationRootPath*
   name: DestinationRootPath
-  href: api/MASES.JNetReflector.JNetReflectedCore-1.html#MASES_JNetReflector_JNetReflectedCore_1_DestinationRootPath_
-  commentId: Overload:MASES.JNetReflector.JNetReflectedCore`1.DestinationRootPath
+  href: api/MASES.JNetReflector.JNetReflectorCore-1.html#MASES_JNetReflector_JNetReflectorCore_1_DestinationRootPath_
+  commentId: Overload:MASES.JNetReflector.JNetReflectorCore`1.DestinationRootPath
   isSpec: "True"
-  fullName: MASES.JNetReflector.JNetReflectedCore<T>.DestinationRootPath
-  fullName.vb: MASES.JNetReflector.JNetReflectedCore(Of T).DestinationRootPath
-  nameWithType: JNetReflectedCore<T>.DestinationRootPath
-  nameWithType.vb: JNetReflectedCore(Of T).DestinationRootPath
-- uid: MASES.JNetReflector.JNetReflectedCore`1.DryRun
+  fullName: MASES.JNetReflector.JNetReflectorCore<T>.DestinationRootPath
+  fullName.vb: MASES.JNetReflector.JNetReflectorCore(Of T).DestinationRootPath
+  nameWithType: JNetReflectorCore<T>.DestinationRootPath
+  nameWithType.vb: JNetReflectorCore(Of T).DestinationRootPath
+- uid: MASES.JNetReflector.JNetReflectorCore`1.DryRun
   name: DryRun
-  href: api/MASES.JNetReflector.JNetReflectedCore-1.html#MASES_JNetReflector_JNetReflectedCore_1_DryRun
-  commentId: P:MASES.JNetReflector.JNetReflectedCore`1.DryRun
-  fullName: MASES.JNetReflector.JNetReflectedCore<T>.DryRun
-  fullName.vb: MASES.JNetReflector.JNetReflectedCore(Of T).DryRun
-  nameWithType: JNetReflectedCore<T>.DryRun
-  nameWithType.vb: JNetReflectedCore(Of T).DryRun
-- uid: MASES.JNetReflector.JNetReflectedCore`1.DryRun*
+  href: api/MASES.JNetReflector.JNetReflectorCore-1.html#MASES_JNetReflector_JNetReflectorCore_1_DryRun
+  commentId: P:MASES.JNetReflector.JNetReflectorCore`1.DryRun
+  fullName: MASES.JNetReflector.JNetReflectorCore<T>.DryRun
+  fullName.vb: MASES.JNetReflector.JNetReflectorCore(Of T).DryRun
+  nameWithType: JNetReflectorCore<T>.DryRun
+  nameWithType.vb: JNetReflectorCore(Of T).DryRun
+- uid: MASES.JNetReflector.JNetReflectorCore`1.DryRun*
   name: DryRun
-  href: api/MASES.JNetReflector.JNetReflectedCore-1.html#MASES_JNetReflector_JNetReflectedCore_1_DryRun_
-  commentId: Overload:MASES.JNetReflector.JNetReflectedCore`1.DryRun
+  href: api/MASES.JNetReflector.JNetReflectorCore-1.html#MASES_JNetReflector_JNetReflectorCore_1_DryRun_
+  commentId: Overload:MASES.JNetReflector.JNetReflectorCore`1.DryRun
   isSpec: "True"
-  fullName: MASES.JNetReflector.JNetReflectedCore<T>.DryRun
-  fullName.vb: MASES.JNetReflector.JNetReflectedCore(Of T).DryRun
-  nameWithType: JNetReflectedCore<T>.DryRun
-  nameWithType.vb: JNetReflectedCore(Of T).DryRun
-- uid: MASES.JNetReflector.JNetReflectedCore`1.JarsToAnaylyze
+  fullName: MASES.JNetReflector.JNetReflectorCore<T>.DryRun
+  fullName.vb: MASES.JNetReflector.JNetReflectorCore(Of T).DryRun
+  nameWithType: JNetReflectorCore<T>.DryRun
+  nameWithType.vb: JNetReflectorCore(Of T).DryRun
+- uid: MASES.JNetReflector.JNetReflectorCore`1.JarsToAnaylyze
   name: JarsToAnaylyze
-  href: api/MASES.JNetReflector.JNetReflectedCore-1.html#MASES_JNetReflector_JNetReflectedCore_1_JarsToAnaylyze
-  commentId: P:MASES.JNetReflector.JNetReflectedCore`1.JarsToAnaylyze
-  fullName: MASES.JNetReflector.JNetReflectedCore<T>.JarsToAnaylyze
-  fullName.vb: MASES.JNetReflector.JNetReflectedCore(Of T).JarsToAnaylyze
-  nameWithType: JNetReflectedCore<T>.JarsToAnaylyze
-  nameWithType.vb: JNetReflectedCore(Of T).JarsToAnaylyze
-- uid: MASES.JNetReflector.JNetReflectedCore`1.JarsToAnaylyze*
+  href: api/MASES.JNetReflector.JNetReflectorCore-1.html#MASES_JNetReflector_JNetReflectorCore_1_JarsToAnaylyze
+  commentId: P:MASES.JNetReflector.JNetReflectorCore`1.JarsToAnaylyze
+  fullName: MASES.JNetReflector.JNetReflectorCore<T>.JarsToAnaylyze
+  fullName.vb: MASES.JNetReflector.JNetReflectorCore(Of T).JarsToAnaylyze
+  nameWithType: JNetReflectorCore<T>.JarsToAnaylyze
+  nameWithType.vb: JNetReflectorCore(Of T).JarsToAnaylyze
+- uid: MASES.JNetReflector.JNetReflectorCore`1.JarsToAnaylyze*
   name: JarsToAnaylyze
-  href: api/MASES.JNetReflector.JNetReflectedCore-1.html#MASES_JNetReflector_JNetReflectedCore_1_JarsToAnaylyze_
-  commentId: Overload:MASES.JNetReflector.JNetReflectedCore`1.JarsToAnaylyze
+  href: api/MASES.JNetReflector.JNetReflectorCore-1.html#MASES_JNetReflector_JNetReflectorCore_1_JarsToAnaylyze_
+  commentId: Overload:MASES.JNetReflector.JNetReflectorCore`1.JarsToAnaylyze
   isSpec: "True"
-  fullName: MASES.JNetReflector.JNetReflectedCore<T>.JarsToAnaylyze
-  fullName.vb: MASES.JNetReflector.JNetReflectedCore(Of T).JarsToAnaylyze
-  nameWithType: JNetReflectedCore<T>.JarsToAnaylyze
-  nameWithType.vb: JNetReflectedCore(Of T).JarsToAnaylyze
-- uid: MASES.JNetReflector.JNetReflectedCore`1.JavadocVersion
+  fullName: MASES.JNetReflector.JNetReflectorCore<T>.JarsToAnaylyze
+  fullName.vb: MASES.JNetReflector.JNetReflectorCore(Of T).JarsToAnaylyze
+  nameWithType: JNetReflectorCore<T>.JarsToAnaylyze
+  nameWithType.vb: JNetReflectorCore(Of T).JarsToAnaylyze
+- uid: MASES.JNetReflector.JNetReflectorCore`1.JavadocVersion
   name: JavadocVersion
-  href: api/MASES.JNetReflector.JNetReflectedCore-1.html#MASES_JNetReflector_JNetReflectedCore_1_JavadocVersion
-  commentId: P:MASES.JNetReflector.JNetReflectedCore`1.JavadocVersion
-  fullName: MASES.JNetReflector.JNetReflectedCore<T>.JavadocVersion
-  fullName.vb: MASES.JNetReflector.JNetReflectedCore(Of T).JavadocVersion
-  nameWithType: JNetReflectedCore<T>.JavadocVersion
-  nameWithType.vb: JNetReflectedCore(Of T).JavadocVersion
-- uid: MASES.JNetReflector.JNetReflectedCore`1.JavadocVersion*
+  href: api/MASES.JNetReflector.JNetReflectorCore-1.html#MASES_JNetReflector_JNetReflectorCore_1_JavadocVersion
+  commentId: P:MASES.JNetReflector.JNetReflectorCore`1.JavadocVersion
+  fullName: MASES.JNetReflector.JNetReflectorCore<T>.JavadocVersion
+  fullName.vb: MASES.JNetReflector.JNetReflectorCore(Of T).JavadocVersion
+  nameWithType: JNetReflectorCore<T>.JavadocVersion
+  nameWithType.vb: JNetReflectorCore(Of T).JavadocVersion
+- uid: MASES.JNetReflector.JNetReflectorCore`1.JavadocVersion*
   name: JavadocVersion
-  href: api/MASES.JNetReflector.JNetReflectedCore-1.html#MASES_JNetReflector_JNetReflectedCore_1_JavadocVersion_
-  commentId: Overload:MASES.JNetReflector.JNetReflectedCore`1.JavadocVersion
+  href: api/MASES.JNetReflector.JNetReflectorCore-1.html#MASES_JNetReflector_JNetReflectorCore_1_JavadocVersion_
+  commentId: Overload:MASES.JNetReflector.JNetReflectorCore`1.JavadocVersion
   isSpec: "True"
-  fullName: MASES.JNetReflector.JNetReflectedCore<T>.JavadocVersion
-  fullName.vb: MASES.JNetReflector.JNetReflectedCore(Of T).JavadocVersion
-  nameWithType: JNetReflectedCore<T>.JavadocVersion
-  nameWithType.vb: JNetReflectedCore(Of T).JavadocVersion
-- uid: MASES.JNetReflector.JNetReflectedCore`1.NamespacesToAvoid
+  fullName: MASES.JNetReflector.JNetReflectorCore<T>.JavadocVersion
+  fullName.vb: MASES.JNetReflector.JNetReflectorCore(Of T).JavadocVersion
+  nameWithType: JNetReflectorCore<T>.JavadocVersion
+  nameWithType.vb: JNetReflectorCore(Of T).JavadocVersion
+- uid: MASES.JNetReflector.JNetReflectorCore`1.NamespacesToAvoid
   name: NamespacesToAvoid
-  href: api/MASES.JNetReflector.JNetReflectedCore-1.html#MASES_JNetReflector_JNetReflectedCore_1_NamespacesToAvoid
-  commentId: P:MASES.JNetReflector.JNetReflectedCore`1.NamespacesToAvoid
-  fullName: MASES.JNetReflector.JNetReflectedCore<T>.NamespacesToAvoid
-  fullName.vb: MASES.JNetReflector.JNetReflectedCore(Of T).NamespacesToAvoid
-  nameWithType: JNetReflectedCore<T>.NamespacesToAvoid
-  nameWithType.vb: JNetReflectedCore(Of T).NamespacesToAvoid
-- uid: MASES.JNetReflector.JNetReflectedCore`1.NamespacesToAvoid*
+  href: api/MASES.JNetReflector.JNetReflectorCore-1.html#MASES_JNetReflector_JNetReflectorCore_1_NamespacesToAvoid
+  commentId: P:MASES.JNetReflector.JNetReflectorCore`1.NamespacesToAvoid
+  fullName: MASES.JNetReflector.JNetReflectorCore<T>.NamespacesToAvoid
+  fullName.vb: MASES.JNetReflector.JNetReflectorCore(Of T).NamespacesToAvoid
+  nameWithType: JNetReflectorCore<T>.NamespacesToAvoid
+  nameWithType.vb: JNetReflectorCore(Of T).NamespacesToAvoid
+- uid: MASES.JNetReflector.JNetReflectorCore`1.NamespacesToAvoid*
   name: NamespacesToAvoid
-  href: api/MASES.JNetReflector.JNetReflectedCore-1.html#MASES_JNetReflector_JNetReflectedCore_1_NamespacesToAvoid_
-  commentId: Overload:MASES.JNetReflector.JNetReflectedCore`1.NamespacesToAvoid
+  href: api/MASES.JNetReflector.JNetReflectorCore-1.html#MASES_JNetReflector_JNetReflectorCore_1_NamespacesToAvoid_
+  commentId: Overload:MASES.JNetReflector.JNetReflectorCore`1.NamespacesToAvoid
   isSpec: "True"
-  fullName: MASES.JNetReflector.JNetReflectedCore<T>.NamespacesToAvoid
-  fullName.vb: MASES.JNetReflector.JNetReflectedCore(Of T).NamespacesToAvoid
-  nameWithType: JNetReflectedCore<T>.NamespacesToAvoid
-  nameWithType.vb: JNetReflectedCore(Of T).NamespacesToAvoid
-- uid: MASES.JNetReflector.JNetReflectedCore`1.Options
+  fullName: MASES.JNetReflector.JNetReflectorCore<T>.NamespacesToAvoid
+  fullName.vb: MASES.JNetReflector.JNetReflectorCore(Of T).NamespacesToAvoid
+  nameWithType: JNetReflectorCore<T>.NamespacesToAvoid
+  nameWithType.vb: JNetReflectorCore(Of T).NamespacesToAvoid
+- uid: MASES.JNetReflector.JNetReflectorCore`1.Options
   name: Options
-  href: api/MASES.JNetReflector.JNetReflectedCore-1.html#MASES_JNetReflector_JNetReflectedCore_1_Options
-  commentId: P:MASES.JNetReflector.JNetReflectedCore`1.Options
-  fullName: MASES.JNetReflector.JNetReflectedCore<T>.Options
-  fullName.vb: MASES.JNetReflector.JNetReflectedCore(Of T).Options
-  nameWithType: JNetReflectedCore<T>.Options
-  nameWithType.vb: JNetReflectedCore(Of T).Options
-- uid: MASES.JNetReflector.JNetReflectedCore`1.Options*
+  href: api/MASES.JNetReflector.JNetReflectorCore-1.html#MASES_JNetReflector_JNetReflectorCore_1_Options
+  commentId: P:MASES.JNetReflector.JNetReflectorCore`1.Options
+  fullName: MASES.JNetReflector.JNetReflectorCore<T>.Options
+  fullName.vb: MASES.JNetReflector.JNetReflectorCore(Of T).Options
+  nameWithType: JNetReflectorCore<T>.Options
+  nameWithType.vb: JNetReflectorCore(Of T).Options
+- uid: MASES.JNetReflector.JNetReflectorCore`1.Options*
   name: Options
-  href: api/MASES.JNetReflector.JNetReflectedCore-1.html#MASES_JNetReflector_JNetReflectedCore_1_Options_
-  commentId: Overload:MASES.JNetReflector.JNetReflectedCore`1.Options
+  href: api/MASES.JNetReflector.JNetReflectorCore-1.html#MASES_JNetReflector_JNetReflectorCore_1_Options_
+  commentId: Overload:MASES.JNetReflector.JNetReflectorCore`1.Options
   isSpec: "True"
-  fullName: MASES.JNetReflector.JNetReflectedCore<T>.Options
-  fullName.vb: MASES.JNetReflector.JNetReflectedCore(Of T).Options
-  nameWithType: JNetReflectedCore<T>.Options
-  nameWithType.vb: JNetReflectedCore(Of T).Options
-- uid: MASES.JNetReflector.JNetReflectedCore`1.OriginJavadocUrl
+  fullName: MASES.JNetReflector.JNetReflectorCore<T>.Options
+  fullName.vb: MASES.JNetReflector.JNetReflectorCore(Of T).Options
+  nameWithType: JNetReflectorCore<T>.Options
+  nameWithType.vb: JNetReflectorCore(Of T).Options
+- uid: MASES.JNetReflector.JNetReflectorCore`1.OriginJavadocUrl
   name: OriginJavadocUrl
-  href: api/MASES.JNetReflector.JNetReflectedCore-1.html#MASES_JNetReflector_JNetReflectedCore_1_OriginJavadocUrl
-  commentId: P:MASES.JNetReflector.JNetReflectedCore`1.OriginJavadocUrl
-  fullName: MASES.JNetReflector.JNetReflectedCore<T>.OriginJavadocUrl
-  fullName.vb: MASES.JNetReflector.JNetReflectedCore(Of T).OriginJavadocUrl
-  nameWithType: JNetReflectedCore<T>.OriginJavadocUrl
-  nameWithType.vb: JNetReflectedCore(Of T).OriginJavadocUrl
-- uid: MASES.JNetReflector.JNetReflectedCore`1.OriginJavadocUrl*
+  href: api/MASES.JNetReflector.JNetReflectorCore-1.html#MASES_JNetReflector_JNetReflectorCore_1_OriginJavadocUrl
+  commentId: P:MASES.JNetReflector.JNetReflectorCore`1.OriginJavadocUrl
+  fullName: MASES.JNetReflector.JNetReflectorCore<T>.OriginJavadocUrl
+  fullName.vb: MASES.JNetReflector.JNetReflectorCore(Of T).OriginJavadocUrl
+  nameWithType: JNetReflectorCore<T>.OriginJavadocUrl
+  nameWithType.vb: JNetReflectorCore(Of T).OriginJavadocUrl
+- uid: MASES.JNetReflector.JNetReflectorCore`1.OriginJavadocUrl*
   name: OriginJavadocUrl
-  href: api/MASES.JNetReflector.JNetReflectedCore-1.html#MASES_JNetReflector_JNetReflectedCore_1_OriginJavadocUrl_
-  commentId: Overload:MASES.JNetReflector.JNetReflectedCore`1.OriginJavadocUrl
+  href: api/MASES.JNetReflector.JNetReflectorCore-1.html#MASES_JNetReflector_JNetReflectorCore_1_OriginJavadocUrl_
+  commentId: Overload:MASES.JNetReflector.JNetReflectorCore`1.OriginJavadocUrl
   isSpec: "True"
-  fullName: MASES.JNetReflector.JNetReflectedCore<T>.OriginJavadocUrl
-  fullName.vb: MASES.JNetReflector.JNetReflectedCore(Of T).OriginJavadocUrl
-  nameWithType: JNetReflectedCore<T>.OriginJavadocUrl
-  nameWithType.vb: JNetReflectedCore(Of T).OriginJavadocUrl
-- uid: MASES.JNetReflector.JNetReflectedCore`1.OriginRootPath
+  fullName: MASES.JNetReflector.JNetReflectorCore<T>.OriginJavadocUrl
+  fullName.vb: MASES.JNetReflector.JNetReflectorCore(Of T).OriginJavadocUrl
+  nameWithType: JNetReflectorCore<T>.OriginJavadocUrl
+  nameWithType.vb: JNetReflectorCore(Of T).OriginJavadocUrl
+- uid: MASES.JNetReflector.JNetReflectorCore`1.OriginRootPath
   name: OriginRootPath
-  href: api/MASES.JNetReflector.JNetReflectedCore-1.html#MASES_JNetReflector_JNetReflectedCore_1_OriginRootPath
-  commentId: P:MASES.JNetReflector.JNetReflectedCore`1.OriginRootPath
-  fullName: MASES.JNetReflector.JNetReflectedCore<T>.OriginRootPath
-  fullName.vb: MASES.JNetReflector.JNetReflectedCore(Of T).OriginRootPath
-  nameWithType: JNetReflectedCore<T>.OriginRootPath
-  nameWithType.vb: JNetReflectedCore(Of T).OriginRootPath
-- uid: MASES.JNetReflector.JNetReflectedCore`1.OriginRootPath*
+  href: api/MASES.JNetReflector.JNetReflectorCore-1.html#MASES_JNetReflector_JNetReflectorCore_1_OriginRootPath
+  commentId: P:MASES.JNetReflector.JNetReflectorCore`1.OriginRootPath
+  fullName: MASES.JNetReflector.JNetReflectorCore<T>.OriginRootPath
+  fullName.vb: MASES.JNetReflector.JNetReflectorCore(Of T).OriginRootPath
+  nameWithType: JNetReflectorCore<T>.OriginRootPath
+  nameWithType.vb: JNetReflectorCore(Of T).OriginRootPath
+- uid: MASES.JNetReflector.JNetReflectorCore`1.OriginRootPath*
   name: OriginRootPath
-  href: api/MASES.JNetReflector.JNetReflectedCore-1.html#MASES_JNetReflector_JNetReflectedCore_1_OriginRootPath_
-  commentId: Overload:MASES.JNetReflector.JNetReflectedCore`1.OriginRootPath
+  href: api/MASES.JNetReflector.JNetReflectorCore-1.html#MASES_JNetReflector_JNetReflectorCore_1_OriginRootPath_
+  commentId: Overload:MASES.JNetReflector.JNetReflectorCore`1.OriginRootPath
   isSpec: "True"
-  fullName: MASES.JNetReflector.JNetReflectedCore<T>.OriginRootPath
-  fullName.vb: MASES.JNetReflector.JNetReflectedCore(Of T).OriginRootPath
-  nameWithType: JNetReflectedCore<T>.OriginRootPath
-  nameWithType.vb: JNetReflectedCore(Of T).OriginRootPath
-- uid: MASES.JNetReflector.JNetReflectedCore`1.PathToParse
+  fullName: MASES.JNetReflector.JNetReflectorCore<T>.OriginRootPath
+  fullName.vb: MASES.JNetReflector.JNetReflectorCore(Of T).OriginRootPath
+  nameWithType: JNetReflectorCore<T>.OriginRootPath
+  nameWithType.vb: JNetReflectorCore(Of T).OriginRootPath
+- uid: MASES.JNetReflector.JNetReflectorCore`1.PathToParse
   name: PathToParse
-  href: api/MASES.JNetReflector.JNetReflectedCore-1.html#MASES_JNetReflector_JNetReflectedCore_1_PathToParse
-  commentId: P:MASES.JNetReflector.JNetReflectedCore`1.PathToParse
-  fullName: MASES.JNetReflector.JNetReflectedCore<T>.PathToParse
-  fullName.vb: MASES.JNetReflector.JNetReflectedCore(Of T).PathToParse
-  nameWithType: JNetReflectedCore<T>.PathToParse
-  nameWithType.vb: JNetReflectedCore(Of T).PathToParse
-- uid: MASES.JNetReflector.JNetReflectedCore`1.PathToParse*
+  href: api/MASES.JNetReflector.JNetReflectorCore-1.html#MASES_JNetReflector_JNetReflectorCore_1_PathToParse
+  commentId: P:MASES.JNetReflector.JNetReflectorCore`1.PathToParse
+  fullName: MASES.JNetReflector.JNetReflectorCore<T>.PathToParse
+  fullName.vb: MASES.JNetReflector.JNetReflectorCore(Of T).PathToParse
+  nameWithType: JNetReflectorCore<T>.PathToParse
+  nameWithType.vb: JNetReflectorCore(Of T).PathToParse
+- uid: MASES.JNetReflector.JNetReflectorCore`1.PathToParse*
   name: PathToParse
-  href: api/MASES.JNetReflector.JNetReflectedCore-1.html#MASES_JNetReflector_JNetReflectedCore_1_PathToParse_
-  commentId: Overload:MASES.JNetReflector.JNetReflectedCore`1.PathToParse
+  href: api/MASES.JNetReflector.JNetReflectorCore-1.html#MASES_JNetReflector_JNetReflectorCore_1_PathToParse_
+  commentId: Overload:MASES.JNetReflector.JNetReflectorCore`1.PathToParse
   isSpec: "True"
-  fullName: MASES.JNetReflector.JNetReflectedCore<T>.PathToParse
-  fullName.vb: MASES.JNetReflector.JNetReflectedCore(Of T).PathToParse
-  nameWithType: JNetReflectedCore<T>.PathToParse
-  nameWithType.vb: JNetReflectedCore(Of T).PathToParse
-- uid: MASES.JNetReflector.JNetReflectedCore`1.ProcessCommandLine
+  fullName: MASES.JNetReflector.JNetReflectorCore<T>.PathToParse
+  fullName.vb: MASES.JNetReflector.JNetReflectorCore(Of T).PathToParse
+  nameWithType: JNetReflectorCore<T>.PathToParse
+  nameWithType.vb: JNetReflectorCore(Of T).PathToParse
+- uid: MASES.JNetReflector.JNetReflectorCore`1.ProcessCommandLine
   name: ProcessCommandLine()
-  href: api/MASES.JNetReflector.JNetReflectedCore-1.html#MASES_JNetReflector_JNetReflectedCore_1_ProcessCommandLine
-  commentId: M:MASES.JNetReflector.JNetReflectedCore`1.ProcessCommandLine
-  fullName: MASES.JNetReflector.JNetReflectedCore<T>.ProcessCommandLine()
-  fullName.vb: MASES.JNetReflector.JNetReflectedCore(Of T).ProcessCommandLine()
-  nameWithType: JNetReflectedCore<T>.ProcessCommandLine()
-  nameWithType.vb: JNetReflectedCore(Of T).ProcessCommandLine()
-- uid: MASES.JNetReflector.JNetReflectedCore`1.ProcessCommandLine*
+  href: api/MASES.JNetReflector.JNetReflectorCore-1.html#MASES_JNetReflector_JNetReflectorCore_1_ProcessCommandLine
+  commentId: M:MASES.JNetReflector.JNetReflectorCore`1.ProcessCommandLine
+  fullName: MASES.JNetReflector.JNetReflectorCore<T>.ProcessCommandLine()
+  fullName.vb: MASES.JNetReflector.JNetReflectorCore(Of T).ProcessCommandLine()
+  nameWithType: JNetReflectorCore<T>.ProcessCommandLine()
+  nameWithType.vb: JNetReflectorCore(Of T).ProcessCommandLine()
+- uid: MASES.JNetReflector.JNetReflectorCore`1.ProcessCommandLine*
   name: ProcessCommandLine
-  href: api/MASES.JNetReflector.JNetReflectedCore-1.html#MASES_JNetReflector_JNetReflectedCore_1_ProcessCommandLine_
-  commentId: Overload:MASES.JNetReflector.JNetReflectedCore`1.ProcessCommandLine
+  href: api/MASES.JNetReflector.JNetReflectorCore-1.html#MASES_JNetReflector_JNetReflectorCore_1_ProcessCommandLine_
+  commentId: Overload:MASES.JNetReflector.JNetReflectorCore`1.ProcessCommandLine
   isSpec: "True"
-  fullName: MASES.JNetReflector.JNetReflectedCore<T>.ProcessCommandLine
-  fullName.vb: MASES.JNetReflector.JNetReflectedCore(Of T).ProcessCommandLine
-  nameWithType: JNetReflectedCore<T>.ProcessCommandLine
-  nameWithType.vb: JNetReflectedCore(Of T).ProcessCommandLine
-- uid: MASES.JNetReflector.JNetReflectedCore`1.ReflectDeprecated
+  fullName: MASES.JNetReflector.JNetReflectorCore<T>.ProcessCommandLine
+  fullName.vb: MASES.JNetReflector.JNetReflectorCore(Of T).ProcessCommandLine
+  nameWithType: JNetReflectorCore<T>.ProcessCommandLine
+  nameWithType.vb: JNetReflectorCore(Of T).ProcessCommandLine
+- uid: MASES.JNetReflector.JNetReflectorCore`1.ReflectDeprecated
   name: ReflectDeprecated
-  href: api/MASES.JNetReflector.JNetReflectedCore-1.html#MASES_JNetReflector_JNetReflectedCore_1_ReflectDeprecated
-  commentId: P:MASES.JNetReflector.JNetReflectedCore`1.ReflectDeprecated
-  fullName: MASES.JNetReflector.JNetReflectedCore<T>.ReflectDeprecated
-  fullName.vb: MASES.JNetReflector.JNetReflectedCore(Of T).ReflectDeprecated
-  nameWithType: JNetReflectedCore<T>.ReflectDeprecated
-  nameWithType.vb: JNetReflectedCore(Of T).ReflectDeprecated
-- uid: MASES.JNetReflector.JNetReflectedCore`1.ReflectDeprecated*
+  href: api/MASES.JNetReflector.JNetReflectorCore-1.html#MASES_JNetReflector_JNetReflectorCore_1_ReflectDeprecated
+  commentId: P:MASES.JNetReflector.JNetReflectorCore`1.ReflectDeprecated
+  fullName: MASES.JNetReflector.JNetReflectorCore<T>.ReflectDeprecated
+  fullName.vb: MASES.JNetReflector.JNetReflectorCore(Of T).ReflectDeprecated
+  nameWithType: JNetReflectorCore<T>.ReflectDeprecated
+  nameWithType.vb: JNetReflectorCore(Of T).ReflectDeprecated
+- uid: MASES.JNetReflector.JNetReflectorCore`1.ReflectDeprecated*
   name: ReflectDeprecated
-  href: api/MASES.JNetReflector.JNetReflectedCore-1.html#MASES_JNetReflector_JNetReflectedCore_1_ReflectDeprecated_
-  commentId: Overload:MASES.JNetReflector.JNetReflectedCore`1.ReflectDeprecated
+  href: api/MASES.JNetReflector.JNetReflectorCore-1.html#MASES_JNetReflector_JNetReflectorCore_1_ReflectDeprecated_
+  commentId: Overload:MASES.JNetReflector.JNetReflectorCore`1.ReflectDeprecated
   isSpec: "True"
-  fullName: MASES.JNetReflector.JNetReflectedCore<T>.ReflectDeprecated
-  fullName.vb: MASES.JNetReflector.JNetReflectedCore(Of T).ReflectDeprecated
-  nameWithType: JNetReflectedCore<T>.ReflectDeprecated
-  nameWithType.vb: JNetReflectedCore(Of T).ReflectDeprecated
-- uid: MASES.JNetReflector.JNetReflectedCore`1.TraceLevel
+  fullName: MASES.JNetReflector.JNetReflectorCore<T>.ReflectDeprecated
+  fullName.vb: MASES.JNetReflector.JNetReflectorCore(Of T).ReflectDeprecated
+  nameWithType: JNetReflectorCore<T>.ReflectDeprecated
+  nameWithType.vb: JNetReflectorCore(Of T).ReflectDeprecated
+- uid: MASES.JNetReflector.JNetReflectorCore`1.TraceLevel
   name: TraceLevel
-  href: api/MASES.JNetReflector.JNetReflectedCore-1.html#MASES_JNetReflector_JNetReflectedCore_1_TraceLevel
-  commentId: P:MASES.JNetReflector.JNetReflectedCore`1.TraceLevel
-  fullName: MASES.JNetReflector.JNetReflectedCore<T>.TraceLevel
-  fullName.vb: MASES.JNetReflector.JNetReflectedCore(Of T).TraceLevel
-  nameWithType: JNetReflectedCore<T>.TraceLevel
-  nameWithType.vb: JNetReflectedCore(Of T).TraceLevel
-- uid: MASES.JNetReflector.JNetReflectedCore`1.TraceLevel*
+  href: api/MASES.JNetReflector.JNetReflectorCore-1.html#MASES_JNetReflector_JNetReflectorCore_1_TraceLevel
+  commentId: P:MASES.JNetReflector.JNetReflectorCore`1.TraceLevel
+  fullName: MASES.JNetReflector.JNetReflectorCore<T>.TraceLevel
+  fullName.vb: MASES.JNetReflector.JNetReflectorCore(Of T).TraceLevel
+  nameWithType: JNetReflectorCore<T>.TraceLevel
+  nameWithType.vb: JNetReflectorCore(Of T).TraceLevel
+- uid: MASES.JNetReflector.JNetReflectorCore`1.TraceLevel*
   name: TraceLevel
-  href: api/MASES.JNetReflector.JNetReflectedCore-1.html#MASES_JNetReflector_JNetReflectedCore_1_TraceLevel_
-  commentId: Overload:MASES.JNetReflector.JNetReflectedCore`1.TraceLevel
+  href: api/MASES.JNetReflector.JNetReflectorCore-1.html#MASES_JNetReflector_JNetReflectorCore_1_TraceLevel_
+  commentId: Overload:MASES.JNetReflector.JNetReflectorCore`1.TraceLevel
   isSpec: "True"
-  fullName: MASES.JNetReflector.JNetReflectedCore<T>.TraceLevel
-  fullName.vb: MASES.JNetReflector.JNetReflectedCore(Of T).TraceLevel
-  nameWithType: JNetReflectedCore<T>.TraceLevel
-  nameWithType.vb: JNetReflectedCore(Of T).TraceLevel
-- uid: MASES.JNetReflector.JNetReflectedCore`1.TraceTo
+  fullName: MASES.JNetReflector.JNetReflectorCore<T>.TraceLevel
+  fullName.vb: MASES.JNetReflector.JNetReflectorCore(Of T).TraceLevel
+  nameWithType: JNetReflectorCore<T>.TraceLevel
+  nameWithType.vb: JNetReflectorCore(Of T).TraceLevel
+- uid: MASES.JNetReflector.JNetReflectorCore`1.TraceTo
   name: TraceTo
-  href: api/MASES.JNetReflector.JNetReflectedCore-1.html#MASES_JNetReflector_JNetReflectedCore_1_TraceTo
-  commentId: P:MASES.JNetReflector.JNetReflectedCore`1.TraceTo
-  fullName: MASES.JNetReflector.JNetReflectedCore<T>.TraceTo
-  fullName.vb: MASES.JNetReflector.JNetReflectedCore(Of T).TraceTo
-  nameWithType: JNetReflectedCore<T>.TraceTo
-  nameWithType.vb: JNetReflectedCore(Of T).TraceTo
-- uid: MASES.JNetReflector.JNetReflectedCore`1.TraceTo*
+  href: api/MASES.JNetReflector.JNetReflectorCore-1.html#MASES_JNetReflector_JNetReflectorCore_1_TraceTo
+  commentId: P:MASES.JNetReflector.JNetReflectorCore`1.TraceTo
+  fullName: MASES.JNetReflector.JNetReflectorCore<T>.TraceTo
+  fullName.vb: MASES.JNetReflector.JNetReflectorCore(Of T).TraceTo
+  nameWithType: JNetReflectorCore<T>.TraceTo
+  nameWithType.vb: JNetReflectorCore(Of T).TraceTo
+- uid: MASES.JNetReflector.JNetReflectorCore`1.TraceTo*
   name: TraceTo
-  href: api/MASES.JNetReflector.JNetReflectedCore-1.html#MASES_JNetReflector_JNetReflectedCore_1_TraceTo_
-  commentId: Overload:MASES.JNetReflector.JNetReflectedCore`1.TraceTo
+  href: api/MASES.JNetReflector.JNetReflectorCore-1.html#MASES_JNetReflector_JNetReflectorCore_1_TraceTo_
+  commentId: Overload:MASES.JNetReflector.JNetReflectorCore`1.TraceTo
   isSpec: "True"
-  fullName: MASES.JNetReflector.JNetReflectedCore<T>.TraceTo
-  fullName.vb: MASES.JNetReflector.JNetReflectedCore(Of T).TraceTo
-  nameWithType: JNetReflectedCore<T>.TraceTo
-  nameWithType.vb: JNetReflectedCore(Of T).TraceTo
+  fullName: MASES.JNetReflector.JNetReflectorCore<T>.TraceTo
+  fullName.vb: MASES.JNetReflector.JNetReflectorCore(Of T).TraceTo
+  nameWithType: JNetReflectorCore<T>.TraceTo
+  nameWithType.vb: JNetReflectorCore(Of T).TraceTo
 - uid: MASES.JNetReflector.SpecialNames
   name: SpecialNames
   href: api/MASES.JNetReflector.SpecialNames.html
