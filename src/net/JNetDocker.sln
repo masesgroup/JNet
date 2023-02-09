@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JNet", "JNet\JNet.csproj", "{4F5B925E-7E21-4971-AE00-9D0C5DBC25E8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JNetCLI", "JNetCLI\JNetCLI.csproj", "{9179A73E-9425-4745-A07B-45C34945961B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4F5B925E-7E21-4971-AE00-9D0C5DBC25E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F5B925E-7E21-4971-AE00-9D0C5DBC25E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F5B925E-7E21-4971-AE00-9D0C5DBC25E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F5B925E-7E21-4971-AE00-9D0C5DBC25E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9179A73E-9425-4745-A07B-45C34945961B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9179A73E-9425-4745-A07B-45C34945961B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9179A73E-9425-4745-A07B-45C34945961B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9179A73E-9425-4745-A07B-45C34945961B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {337100A8-DBCD-4838-B9C7-74EC0DE78755}
+	EndGlobalSection
+EndGlobal
