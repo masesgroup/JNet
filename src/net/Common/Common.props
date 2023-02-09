@@ -7,7 +7,6 @@
 		<Version>1.5.0.0</Version>
 		<LangVersion>latest</LangVersion>
 		<GenerateAssemblyInfo>true</GenerateAssemblyInfo>
-		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
 		<PackageProjectUrl>https://github.com/masesgroup/JNet/</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/masesgroup/JNet</RepositoryUrl>
@@ -21,13 +20,17 @@
 		<AssemblyOriginatorKeyFile>..\Common\JNet.snk</AssemblyOriginatorKeyFile>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(JNET_DOCKER_BUILD_ACTIONS)' != 'true'">
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<TargetFrameworks>net462;net6.0;net7.0</TargetFrameworks>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(JNET_DOCKER_BUILD_ACTIONS)' == 'true'">
+		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
 		<TargetFramework>net6.0</TargetFramework>
 	</PropertyGroup>
-	<ItemGroup>
+	<ItemGroup Condition="'$(JNET_DOCKER_BUILD_ACTIONS)' != 'true'">
 		<None Include="..\..\..\LICENSE" Pack="true" PackagePath="" />
+	</ItemGroup>
+	<ItemGroup>
 		<None Include="..\Common\JCOB128x128.png" Pack="true" PackagePath="" />
 		<None Include="..\Common\JNet.snk" Link="JNet.snk" />
 	</ItemGroup>
