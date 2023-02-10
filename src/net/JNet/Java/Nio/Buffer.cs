@@ -44,11 +44,11 @@ namespace Java.Nio
         /// Clears this buffer.
         /// </summary>
         /// <returns>This <see cref="Buffer"/></returns>
-        public Buffer Clear()=>IExecute<Buffer>("clear");
+        public Buffer Clear() => IExecute<Buffer>("clear");
         /// <summary>
         /// Flips this buffer.
         /// </summary>
-        Buffer Flip() => IExecute<Buffer>("flip");
+        public Buffer Flip() => IExecute<Buffer>("flip");
         /// <summary>
         /// Tells whether or not this buffer is backed by an accessible array.
         /// </summary>
@@ -80,7 +80,7 @@ namespace Java.Nio
         /// <summary>
         /// Returns this buffer's position.
         /// </summary>
-        int position() => IExecute<int>("position");
+        public int Position() => IExecute<int>("position");
         /// <summary>
         /// Sets this buffer's position.
         /// </summary>

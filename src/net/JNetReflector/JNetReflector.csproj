@@ -27,6 +27,7 @@
     <None Remove="Templates\SingleProperty.template" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\JNet\Java\Io\InputStream.cs" Link="Java\Io\InputStream.cs" />
     <Compile Include="..\JNet\Java\Lang\AbstractMethodError.cs" Link="Java\Lang\AbstractMethodError.cs" />
     <Compile Include="..\JNet\Java\Lang\Annotation\Annotation.cs" Link="Java\Lang\Annotation\Annotation.cs" />
     <Compile Include="..\JNet\Java\Lang\ArithmeticException.cs" Link="Java\Lang\ArithmeticException.cs" />
@@ -100,6 +101,11 @@
     <Compile Include="..\JNet\Java\Lang\UnsupportedOperationException.cs" Link="Java\Lang\UnsupportedOperationException.cs" />
     <Compile Include="..\JNet\Java\Lang\VerifyError.cs" Link="Java\Lang\VerifyError.cs" />
     <Compile Include="..\JNet\Java\Lang\VirtualMachineError.cs" Link="Java\Lang\VirtualMachineError.cs" />
+    <Compile Include="..\JNet\Java\Net\Proxy.cs" Link="Java\Net\Proxy.cs" />
+    <Compile Include="..\JNet\Java\Net\URI.cs" Link="Java\Net\URI.cs" />
+    <Compile Include="..\JNet\Java\Net\URL.cs" Link="Java\Net\URL.cs" />
+    <Compile Include="..\JNet\Java\Net\URLConnection.cs" Link="Java\Net\URLConnection.cs" />
+    <Compile Include="..\JNet\Java\Util\Enumeration.cs" Link="Java\Util\Enumeration.cs" />
     <Compile Include="..\JNet\JNetCoreBase.cs" Link="JNetCoreBase.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -126,5 +132,8 @@
   <ItemGroup>
     <Folder Include="Java\Lang\Annotation\" />
     <Folder Include="Java\Lang\Reflect\" />
+    <Folder Include="Java\Net\" />
+    <Folder Include="Java\Io\" />
+    <Folder Include="Java\Util\" />
   </ItemGroup>
 </Project>
