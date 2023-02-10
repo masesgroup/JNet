@@ -80,6 +80,12 @@ namespace MASES.JNetReflector
                     },
                     new ArgumentMetadata<object>()
                     {
+                        Name = CLIParam.DoNotAddJarsInClasspath,
+                        Type = ArgumentType.Single,
+                        Help = "The option inform the tool to not add the Jars in classpath",
+                    },
+                    new ArgumentMetadata<object>()
+                    {
                         Name = CLIParam.ReflectDeprecated,
                         Type = ArgumentType.Single,
                         Help = "The option forces the tool to write any constructor, method or field marked as deprecated, default is to avoid deprecated",
@@ -134,6 +140,9 @@ namespace MASES.JNetReflector
         static IEnumerable<string> _NamespacesToAvoid;
         public static IEnumerable<string> NamespacesToAvoid => _NamespacesToAvoid;
 
+        static bool _DoNotAddJarsInClasspath;
+        public static bool DoNotAddJarsInClasspath => _DoNotAddJarsInClasspath;
+
         static bool _ReflectDeprecated;
         public static bool ReflectDeprecated => _ReflectDeprecated;
 
@@ -187,6 +196,7 @@ namespace MASES.JNetReflector
             _OriginJavadocUrl = ParsedArgs.Get<string>(CLIParam.OriginJavadocUrl);
             _JavadocVersion = ParsedArgs.Get<int>(CLIParam.JavadocVersion);
 
+            _DoNotAddJarsInClasspath = ParsedArgs.Exist(CLIParam.DoNotAddJarsInClasspath);
             _ReflectDeprecated = ParsedArgs.Exist(CLIParam.ReflectDeprecated);
             _DryRun = ParsedArgs.Exist(CLIParam.DryRun);
             _TraceLevel = ParsedArgs.Get<int>(CLIParam.TraceLevel);
@@ -202,6 +212,7 @@ namespace MASES.JNetReflector
         {
             get
             {
+                if (DoNotAddJarsInClasspath) return base.PathToParse;
                 var lst = base.PathToParse;
                 foreach (var item in _JarsToAnaylyze)
                 {
