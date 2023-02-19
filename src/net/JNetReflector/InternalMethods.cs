@@ -90,7 +90,7 @@ namespace MASES.JNetReflector
             {
                 AnalyzeJars();
             }
-            else if (JNetReflectorCore.NamespacesToParse != null)
+            else if (JNetReflectorCore.ModulesToParse != null)
             {
                 AnalyzeNamespaces();
             }
@@ -162,7 +162,7 @@ namespace MASES.JNetReflector
         public static void AnalyzeNamespaces()
         {
             Dictionary<string, IDictionary<string, IList<string>>> resultingArguments = new Dictionary<string, IDictionary<string, IList<string>>>();
-            foreach (var ns in JNetReflectorCore.NamespacesToParse)
+            foreach (var ns in JNetReflectorCore.ModulesToParse)
             {
                 AnalyzeNamespace(resultingArguments, ns, JNetReflectorCore.DestinationRootPath);
             }

@@ -73,9 +73,9 @@ namespace MASES.JNetReflector
                     },
                     new ArgumentMetadata<string>()
                     {
-                        Name = CLIParam.NamespacesToParse,
+                        Name = CLIParam.ModulesToParse,
                         Type = ArgumentType.Double,
-                        Help = "A CSV list of namespace patterns to be parsed during analysis, it avoids the usage of OriginRootPath",
+                        Help = "A CSV list of module patterns to be parsed during analysis, it avoids the usage of OriginRootPath",
                     },
                     new ArgumentMetadata<string>()
                     {
@@ -143,8 +143,8 @@ namespace MASES.JNetReflector
         static IEnumerable<string> _JarsToAnaylyze;
         public static IEnumerable<string> JarsToAnaylyze => _JarsToAnaylyze;
 
-        static IEnumerable<string> _NamespacesToParse;
-        public static IEnumerable<string> NamespacesToParse => _NamespacesToParse;
+        static IEnumerable<string> _ModulesToParse;
+        public static IEnumerable<string> ModulesToParse => _ModulesToParse;
 
         static IEnumerable<string> _NamespacesToAvoid;
         public static IEnumerable<string> NamespacesToAvoid => _NamespacesToAvoid;
@@ -190,16 +190,16 @@ namespace MASES.JNetReflector
                 _JarsToAnaylyze = jarsToAnaylyze;
             }
 
-            List<string> namespacesToParse = new List<string>();
-            if (ParsedArgs.Exist(CLIParam.NamespacesToParse))
+            List<string> modulesToParse = new List<string>();
+            if (ParsedArgs.Exist(CLIParam.ModulesToParse))
             {
-                var namespaces = ParsedArgs.Get<string>(CLIParam.NamespacesToParse).Split(',', ';');
+                var namespaces = ParsedArgs.Get<string>(CLIParam.ModulesToParse).Split(',', ';');
                 foreach (var item in namespaces.Select((o) => o.Replace(SpecialNames.JNISeparator, SpecialNames.NamespaceSeparator)))
                 {
-                    if (!namespacesToParse.Contains(item)) namespacesToParse.Add(item);
+                    if (!modulesToParse.Contains(item)) modulesToParse.Add(item);
                 }
             }
-            _NamespacesToParse = namespacesToParse;
+            _ModulesToParse = modulesToParse;
 
             List<string> namespacesToAvoid = new List<string>();
             if (ParsedArgs.Exist(CLIParam.NamespacesToAvoid))
