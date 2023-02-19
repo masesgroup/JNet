@@ -17,10 +17,10 @@
 */
 
 using Java.Util;
-using JavaX.Security.Auth;
+using Javax.Security.Auth;
 using MASES.JCOBridge.C2JBridge;
 
-namespace JavaX.Management.Remote
+namespace Javax.Management.Remote
 {
     public class JMXConnector : JVMBridgeBase<JMXConnector>
     {

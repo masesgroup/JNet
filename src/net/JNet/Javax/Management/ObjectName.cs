@@ -19,7 +19,7 @@
 using Java.Util;
 using MASES.JCOBridge.C2JBridge;
 
-namespace JavaX.Management
+namespace Javax.Management
 {
     public class ObjectName : JVMBridgeBase<ObjectName>
     {

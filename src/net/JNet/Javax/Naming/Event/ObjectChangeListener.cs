@@ -19,7 +19,7 @@
 using MASES.JCOBridge.C2JBridge;
 using System;
 
-namespace JavaX.Naming.Event
+namespace Javax.Naming.Event
 {
     public interface IObjectChangeListener : IJVMBridgeBase
     {

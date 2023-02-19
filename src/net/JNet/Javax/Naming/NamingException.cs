@@ -18,7 +18,7 @@
 
 using MASES.JCOBridge.C2JBridge;
 
-namespace JavaX.Naming
+namespace Javax.Naming
 {
     public class NamingException : JVMBridgeException<NamingException>
     {

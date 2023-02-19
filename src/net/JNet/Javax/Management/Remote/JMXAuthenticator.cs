@@ -16,10 +16,10 @@
 *  Refer to LICENSE for more information.
 */
 
-using JavaX.Security.Auth;
+using Javax.Security.Auth;
 using MASES.JCOBridge.C2JBridge;
 
-namespace JavaX.Management.Remote
+namespace Javax.Management.Remote
 {
     public class JMXAuthenticator : JVMBridgeBase<JMXAuthenticator>
     {

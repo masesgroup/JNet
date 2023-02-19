@@ -18,7 +18,7 @@
 
 using MASES.JCOBridge.C2JBridge;
 
-namespace JavaX.Management.Remote
+namespace Javax.Management.Remote
 {
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/remote/JMXProviderException.html"/>

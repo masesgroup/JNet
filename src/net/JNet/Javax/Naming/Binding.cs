@@ -16,7 +16,7 @@
 *  Refer to LICENSE for more information.
 */
 
-namespace JavaX.Naming
+namespace Javax.Naming
 {
     public class Binding : NameClassPair
     {

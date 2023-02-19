@@ -16,7 +16,7 @@
 *  Refer to LICENSE for more information.
 */
 
-namespace JavaX.Swing
+namespace Javax.Swing
 {
     public class JLabel : JComponent
     {

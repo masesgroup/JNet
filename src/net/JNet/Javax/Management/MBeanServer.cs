@@ -17,9 +17,9 @@
 */
 
 using Java.Lang;
-using JavaX.Management.Loading;
+using Javax.Management.Loading;
 
-namespace JavaX.Management
+namespace Javax.Management
 {
     public class MBeanServer : MBeanServerConnection
     {

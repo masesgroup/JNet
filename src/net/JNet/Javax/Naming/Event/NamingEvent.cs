@@ -19,7 +19,7 @@
 using Java.Lang;
 using Java.Util;
 
-namespace JavaX.Naming.Event
+namespace Javax.Naming.Event
 {
     public class NamingEvent : EventObject
     {

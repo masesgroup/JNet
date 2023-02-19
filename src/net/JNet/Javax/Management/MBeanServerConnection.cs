@@ -20,7 +20,7 @@ using Java.Util;
 using MASES.JCOBridge.C2JBridge;
 using System;
 
-namespace JavaX.Management
+namespace Javax.Management
 {
     public class MBeanServerConnection : JVMBridgeBase<MBeanServerConnection>
     {

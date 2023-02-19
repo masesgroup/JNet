@@ -18,7 +18,7 @@
 
 using MASES.JCOBridge.C2JBridge;
 
-namespace JavaX.Security.Auth
+namespace Javax.Security.Auth
 {
     public class Subject : JVMBridgeBase<Subject>
     {

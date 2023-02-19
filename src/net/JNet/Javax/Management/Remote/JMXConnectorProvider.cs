@@ -19,7 +19,7 @@
 using Java.Util;
 using MASES.JCOBridge.C2JBridge;
 
-namespace JavaX.Management.Remote
+namespace Javax.Management.Remote
 {
     public class JMXConnectorProvider : JVMBridgeBase<JMXConnectorProvider>
     {

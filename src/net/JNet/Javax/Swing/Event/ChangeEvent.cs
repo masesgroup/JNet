@@ -18,7 +18,7 @@
 
 using Java.Util;
 
-namespace JavaX.Swing.Event
+namespace Javax.Swing.Event
 {
     public class ChangeEvent : EventObject
     {

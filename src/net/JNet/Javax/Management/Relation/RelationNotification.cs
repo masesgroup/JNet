@@ -18,7 +18,7 @@
 
 using Java.Util;
 
-namespace JavaX.Management.Relation
+namespace Javax.Management.Relation
 {
     public class RelationNotification : Notification
     {

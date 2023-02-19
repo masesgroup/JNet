@@ -16,7 +16,7 @@
 *  Refer to LICENSE for more information.
 */
 
-namespace JavaX.Management
+namespace Javax.Management
 {
     public class MBeanConstructorInfo : MBeanFeatureInfo
     {

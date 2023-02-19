@@ -16,7 +16,7 @@
 *  Refer to LICENSE for more information.
 */
 
-namespace JavaX.Swing.Text
+namespace Javax.Swing.Text
 {
     public class JTextComponent : JComponent
     {

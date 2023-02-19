@@ -16,7 +16,7 @@
 *  Refer to LICENSE for more information.
 */
 
-namespace JavaX.Management.Monitor
+namespace Javax.Management.Monitor
 {
     public class MonitorNotification : Notification
     {

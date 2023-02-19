@@ -18,7 +18,7 @@
 
 using Java.Lang;
 
-namespace JavaX.Swing
+namespace Javax.Swing
 {
     public class SpinnerNumberModel : AbstractSpinnerModel
     {

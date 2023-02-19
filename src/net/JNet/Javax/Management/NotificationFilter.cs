@@ -19,7 +19,7 @@
 using MASES.JCOBridge.C2JBridge;
 using System;
 
-namespace JavaX.Management
+namespace Javax.Management
 {
     public interface INotificationFilter : IJVMBridgeBase
     {

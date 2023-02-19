@@ -16,7 +16,7 @@
 *  Refer to LICENSE for more information.
 */
 
-namespace JavaX.Management.Remote
+namespace Javax.Management.Remote
 {
     public class JMXConnectionNotification : Notification
     {

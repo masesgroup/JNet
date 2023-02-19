@@ -18,7 +18,7 @@
 
 using Java.Awt;
 
-namespace JavaX.Swing
+namespace Javax.Swing
 {
     public class JComponent : Container
     {

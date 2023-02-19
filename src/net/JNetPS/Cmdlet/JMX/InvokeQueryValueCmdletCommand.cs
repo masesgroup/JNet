@@ -16,7 +16,7 @@
 *  Refer to LICENSE for more information.
 */
 
-using JavaX.Management;
+using Javax.Management;
 using MASES.JNetPSCore.Cmdlet;
 using System;
 using System.Management.Automation;

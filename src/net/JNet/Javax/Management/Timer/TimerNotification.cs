@@ -16,7 +16,7 @@
 *  Refer to LICENSE for more information.
 */
 
-namespace JavaX.Management.Timer
+namespace Javax.Management.Timer
 {
     public class TimerNotification : Notification
     {

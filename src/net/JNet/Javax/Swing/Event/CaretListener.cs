@@ -19,7 +19,7 @@
 using MASES.JCOBridge.C2JBridge;
 using System;
 
-namespace JavaX.Swing.Event
+namespace Javax.Swing.Event
 {
     public interface ICaretListener : IJVMBridgeBase
     {

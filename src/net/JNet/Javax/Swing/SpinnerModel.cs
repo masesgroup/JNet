@@ -16,10 +16,10 @@
 *  Refer to LICENSE for more information.
 */
 
-using JavaX.Swing.Event;
+using Javax.Swing.Event;
 using MASES.JCOBridge.C2JBridge;
 
-namespace JavaX.Swing
+namespace Javax.Swing
 {
     public class SpinnerModel : JVMBridgeBase<SpinnerModel>
     {

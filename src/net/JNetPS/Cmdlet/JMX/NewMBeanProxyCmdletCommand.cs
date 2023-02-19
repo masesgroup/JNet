@@ -17,8 +17,8 @@
 */
 
 using Java.Lang;
-using JavaX.Management;
-using JavaX.Management.Remote;
+using Javax.Management;
+using Javax.Management.Remote;
 using MASES.JNetPSCore.Cmdlet;
 using System;
 using System.Management.Automation;

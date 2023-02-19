@@ -21,7 +21,7 @@ using Java.Util;
 using MASES.JCOBridge.C2JBridge;
 using MASES.JCOBridge.C2JBridge.JVMInterop;
 
-namespace JavaX.Sql
+namespace Javax.Sql
 {
     public class ConnectionEvent : EventObject
     {

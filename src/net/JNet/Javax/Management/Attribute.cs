@@ -18,7 +18,7 @@
 
 using MASES.JCOBridge.C2JBridge;
 
-namespace JavaX.Management
+namespace Javax.Management
 {
     public class Attribute : JVMBridgeBase<Attribute>
     {

@@ -19,7 +19,7 @@
 using Java.Lang;
 using MASES.JCOBridge.C2JBridge;
 
-namespace JavaX.Management.Loading
+namespace Javax.Management.Loading
 {
     public class ClassLoaderRepository : JVMBridgeBase<ClassLoaderRepository>
     {

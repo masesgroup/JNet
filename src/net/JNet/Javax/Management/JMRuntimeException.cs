@@ -18,7 +18,7 @@
 
 using MASES.JCOBridge.C2JBridge;
 
-namespace JavaX.Management
+namespace Javax.Management
 {
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/JMRuntimeException.html"/>

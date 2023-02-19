@@ -18,7 +18,7 @@
 
 using Java.Util;
 
-namespace JavaX.Management
+namespace Javax.Management
 {
     public class AttributeList : Java.Util.ArrayList<object>
     {

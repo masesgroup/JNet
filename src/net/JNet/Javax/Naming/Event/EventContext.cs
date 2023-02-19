@@ -18,7 +18,7 @@
 
 using MASES.JCOBridge.C2JBridge;
 
-namespace JavaX.Naming.Event
+namespace Javax.Naming.Event
 {
     public class EventContext : JVMBridgeBase<EventContext>
     {

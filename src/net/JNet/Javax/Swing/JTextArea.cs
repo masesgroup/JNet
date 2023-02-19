@@ -16,9 +16,9 @@
 *  Refer to LICENSE for more information.
 */
 
-using JavaX.Swing.Text;
+using Javax.Swing.Text;
 
-namespace JavaX.Swing
+namespace Javax.Swing
 {
     public class JTextArea : JTextComponent
     {

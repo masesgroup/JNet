@@ -19,7 +19,7 @@
 using Java.Awt;
 using MASES.JCOBridge.C2JBridge;
 
-namespace JavaX.Swing
+namespace Javax.Swing
 {
     public class BoxLayout : JVMBridgeBase<BoxLayout>
     {
