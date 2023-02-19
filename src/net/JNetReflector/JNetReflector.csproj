@@ -28,7 +28,9 @@
     <None Remove="AllPackageClassesStubClass.template" />
     <None Remove="AllPackageClassesStubNestedClass.template" />
     <None Remove="SingleClass.template" />
+    <None Remove="Templates\AllPackageClassesStubClassListener.template" />
     <None Remove="Templates\AllPackageClassesStubException.template" />
+    <None Remove="Templates\AllPackageClassesStubNestedClassListener.template" />
     <None Remove="Templates\AllPackageClassesStubNestedException.template" />
     <None Remove="Templates\SingleConstructor.template" />
     <None Remove="Templates\SingleField.template" />
@@ -115,7 +117,9 @@
     <Compile Include="..\JNet\JNetCoreBase.cs" Link="JNetCoreBase.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Templates\AllPackageClassesStubClassListener.template" />
     <EmbeddedResource Include="Templates\AllPackageClassesStubException.template" />
+    <EmbeddedResource Include="Templates\AllPackageClassesStubNestedClassListener.template" />
     <EmbeddedResource Include="Templates\AllPackageClassesStubNestedException.template" />
     <EmbeddedResource Include="Templates\SingleConstructor.template" />
     <EmbeddedResource Include="Templates\SingleField.template" />

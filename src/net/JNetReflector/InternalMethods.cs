@@ -220,8 +220,10 @@ namespace MASES.JNetReflector
 
             bool mainClassDone = false;
             var allPackageStubNestedClass = Template.GetTemplate(Template.AllPackageClassesStubNestedClassTemplate);
+            var allPackageStubNestedClassListener = Template.GetTemplate(Template.AllPackageClassesStubNestedClassListenerTemplate);
             var allPackageStubNestedException = Template.GetTemplate(Template.AllPackageClassesStubNestedExceptionTemplate);
             var allPackageStubClass = Template.GetTemplate(Template.AllPackageClassesStubClassTemplate);
+            var allPackageStubClassListener = Template.GetTemplate(Template.AllPackageClassesStubClassListenerTemplate);
             var allPackageStubException = Template.GetTemplate(Template.AllPackageClassesStubExceptionTemplate);
             var singleClassTemplate = Template.GetTemplate(Template.SingleClassTemplate);
             var singleNestedClassTemplate = Template.GetTemplate(Template.SingleNestedClassTemplate);
@@ -259,7 +261,7 @@ namespace MASES.JNetReflector
                     }
 
                     bool jSubClassIsOrFromGeneric = jSubClass.IsOrInheritFromJVMGenericClass();
-
+                    bool jSubClassIsListener = jSubClass.IsJVMListenerClass();
                     string nestedClassBlock;
 
                     ReportTrace(ReflectionTraceLevel.Info, "Preparing nested class {0}", jSubClass.GenericString);
@@ -269,7 +271,7 @@ namespace MASES.JNetReflector
                         nestedClassBlock = allPackageStubNestedException.Replace(AllPackageClasses.ClassStub.NestedClassStub.JAVACLASS, jSubClass.JVMFullClassName())
                                                                         .Replace(AllPackageClasses.ClassStub.NestedClassStub.CLASS, jSubClass.JVMNestedClassName())
                                                                         .Replace(AllPackageClasses.ClassStub.NestedClassStub.HELP, jSubClass.JavadocUrl())
-                                                                        .Replace(AllPackageClasses.ClassStub.NestedClassStub.BASECLASS, jSubClass.JVMBaseClassName());
+                                                                        .Replace(AllPackageClasses.ClassStub.NestedClassStub.BASECLASS, jSubClass.JVMBaseClassName(false));
                     }
                     else
                     {
@@ -278,43 +280,50 @@ namespace MASES.JNetReflector
                         bool isSubClassInterface = jSubClass.IsInterface();
                         bool isSubClassStatic = jSubClass.IsStatic();
 
-                        nestedClassBlock = allPackageStubNestedClass.Replace(AllPackageClasses.ClassStub.NestedClassStub.JAVACLASS, jSubClass.JVMFullClassName())
-                                                                    .Replace(AllPackageClasses.ClassStub.NestedClassStub.CLASS, jSubClass.JVMNestedClassName())
-                                                                    .Replace(AllPackageClasses.ClassStub.NestedClassStub.HELP, jSubClass.JavadocUrl())
-                                                                    .Replace(AllPackageClasses.ClassStub.NestedClassStub.BASECLASS, jSubClass.JVMBaseClassName())
-                                                                    .Replace(AllPackageClasses.ClassStub.NestedClassStub.ISABSTRACT, isSubClassAbstract ? "true" : "false")
-                                                                    .Replace(AllPackageClasses.ClassStub.NestedClassStub.ISCLOSEABLE, isSubClassCloseable ? "true" : "false")
-                                                                    .Replace(AllPackageClasses.ClassStub.NestedClassStub.ISINTERFACE, isSubClassInterface ? "true" : "false")
-                                                                    .Replace(AllPackageClasses.ClassStub.NestedClassStub.ISSTATIC, isSubClassStatic ? "true" : "false");
+                        string nestedTemplate = jSubClassIsListener ? allPackageStubNestedClassListener : allPackageStubNestedClass;
 
-                        nestedConstructorBlock = jSubClass.AnalyzeConstructors(classDefinitions).AddTabLevel(2);
-                        nestedFieldBlock = jSubClass.AnalyzeFields(classDefinitions).AddTabLevel(2);
-                        nestedStaticMethodBlock = jSubClass.AnalyzeMethods(classDefinitions, true).AddTabLevel(2);
-                        nestedMethodBlock = jSubClass.AnalyzeMethods(classDefinitions, false).AddTabLevel(2);
+                        nestedClassBlock = nestedTemplate.Replace(AllPackageClasses.ClassStub.NestedClassStub.JAVACLASS, jSubClass.JVMFullClassName())
+                                                         .Replace(AllPackageClasses.ClassStub.NestedClassStub.CLASS, jSubClass.JVMNestedClassName())
+                                                         .Replace(AllPackageClasses.ClassStub.NestedClassStub.HELP, jSubClass.JavadocUrl())
+                                                         .Replace(AllPackageClasses.ClassStub.NestedClassStub.BASECLASS, jSubClass.JVMBaseClassName(jSubClassIsListener))
+                                                         .Replace(AllPackageClasses.ClassStub.NestedClassStub.ISABSTRACT, isSubClassAbstract ? "true" : "false")
+                                                         .Replace(AllPackageClasses.ClassStub.NestedClassStub.ISCLOSEABLE, isSubClassCloseable ? "true" : "false")
+                                                         .Replace(AllPackageClasses.ClassStub.NestedClassStub.ISINTERFACE, isSubClassInterface ? "true" : "false")
+                                                         .Replace(AllPackageClasses.ClassStub.NestedClassStub.ISSTATIC, isSubClassStatic ? "true" : "false");
+
+                        if (!jSubClassIsListener)
+                        {
+                            nestedConstructorBlock = jSubClass.AnalyzeConstructors(classDefinitions).AddTabLevel(2);
+                            nestedFieldBlock = jSubClass.AnalyzeFields(classDefinitions).AddTabLevel(2);
+                            nestedStaticMethodBlock = jSubClass.AnalyzeMethods(classDefinitions, true).AddTabLevel(2);
+                            nestedMethodBlock = jSubClass.AnalyzeMethods(classDefinitions, false).AddTabLevel(2);
+                        }
                     }
 
                     subClassBlock.AppendLine(nestedClassBlock);
                     subClassBlock.AppendLine();
 
-                    StringBuilder jSubClassDecoration = new StringBuilder(AllPackageClasses.ClassStub.NestedClassStub.DEFAULT_DECORATION);
-                    if (jSubClassIsDepracated)
+                    if (!jSubClassIsListener)
                     {
-                        jSubClassDecoration.AppendLine();
-                        jSubClassDecoration.Append(AllPackageClasses.ClassStub.NestedClassStub.OBSOLETE_DECORATION);
+                        StringBuilder jSubClassDecoration = new StringBuilder(AllPackageClasses.ClassStub.NestedClassStub.DEFAULT_DECORATION);
+                        if (jSubClassIsDepracated)
+                        {
+                            jSubClassDecoration.AppendLine();
+                            jSubClassDecoration.Append(AllPackageClasses.ClassStub.NestedClassStub.OBSOLETE_DECORATION);
+                        }
+
+                        var singleNestedClassStr = singleNestedClassTemplate.Replace(AllPackageClasses.ClassStub.NestedClassStub.DECORATION, jSubClassDecoration.ToString())
+                                                                            .Replace(AllPackageClasses.ClassStub.NestedClassStub.CLASS, jSubClass.JVMNestedClassName())
+                                                                            .Replace(AllPackageClasses.ClassStub.NestedClassStub.CONSTRUCTORS, nestedConstructorBlock)
+                                                                            .Replace(AllPackageClasses.ClassStub.NestedClassStub.FIELDS, nestedFieldBlock)
+                                                                            .Replace(AllPackageClasses.ClassStub.NestedClassStub.STATICMETHODS, nestedStaticMethodBlock)
+                                                                            .Replace(AllPackageClasses.ClassStub.NestedClassStub.METHODS, nestedMethodBlock);
+
+                        subClassAutonoumous.AppendLine(singleNestedClassStr);
+                        subClassAutonoumous.AppendLine();
                     }
-
-                    var singleNestedClassStr = singleNestedClassTemplate.Replace(AllPackageClasses.ClassStub.NestedClassStub.DECORATION, jSubClassDecoration.ToString())
-                                                                        .Replace(AllPackageClasses.ClassStub.NestedClassStub.CLASS, jSubClass.JVMNestedClassName())
-                                                                        .Replace(AllPackageClasses.ClassStub.NestedClassStub.CONSTRUCTORS, nestedConstructorBlock)
-                                                                        .Replace(AllPackageClasses.ClassStub.NestedClassStub.FIELDS, nestedFieldBlock)
-                                                                        .Replace(AllPackageClasses.ClassStub.NestedClassStub.STATICMETHODS, nestedStaticMethodBlock)
-                                                                        .Replace(AllPackageClasses.ClassStub.NestedClassStub.METHODS, nestedMethodBlock);
-
-                    subClassAutonoumous.AppendLine(singleNestedClassStr);
-                    subClassAutonoumous.AppendLine();
                 }
-
-                if (entry.IsJVMClass())
+                else if (entry.IsJVMClass())
                 {
                     if (mainClassDone) throw new InvalidOperationException("Too many main class");
                     mainClassDone = true;
@@ -330,6 +339,7 @@ namespace MASES.JNetReflector
                 return string.Empty;
             }
             bool jClassIsDepracated = jClass.IsDeprecated();
+            bool jClassIsListener = jClass.IsJVMListenerClass();
             if (!JNetReflectorCore.ReflectDeprecated && jClassIsDepracated)
             {
                 ReportTrace(ReflectionTraceLevel.Info, "Discarded deprecated main class {0}", jClass.GenericString);
@@ -349,7 +359,7 @@ namespace MASES.JNetReflector
                 classBlock = allPackageStubException.Replace(AllPackageClasses.ClassStub.JAVACLASS, jClass.JVMFullClassName())
                                                     .Replace(AllPackageClasses.ClassStub.CLASS, jClass.JVMSimpleClassName())
                                                     .Replace(AllPackageClasses.ClassStub.HELP, jClass.JavadocUrl())
-                                                    .Replace(AllPackageClasses.ClassStub.BASECLASS, jClass.JVMBaseClassName());
+                                                    .Replace(AllPackageClasses.ClassStub.BASECLASS, jClass.JVMBaseClassName(false));
             }
             else
             {
@@ -357,41 +367,50 @@ namespace MASES.JNetReflector
                 bool isClassAbstract = jClass.IsAbstract();
                 bool isClassInterface = jClass.IsInterface();
                 bool isClassStatic = jClass.IsStatic();
-                classBlock = allPackageStubClass.Replace(AllPackageClasses.ClassStub.JAVACLASS, jClass.JVMFullClassName())
-                                                .Replace(AllPackageClasses.ClassStub.CLASS, jClass.JVMSimpleClassName())
-                                                .Replace(AllPackageClasses.ClassStub.HELP, jClass.JavadocUrl())
-                                                .Replace(AllPackageClasses.ClassStub.BASECLASS, jClass.JVMBaseClassName())
-                                                .Replace(AllPackageClasses.ClassStub.ISABSTRACT, isClassAbstract ? "true" : "false")
-                                                .Replace(AllPackageClasses.ClassStub.ISCLOSEABLE, isClassCloseable ? "true" : "false")
-                                                .Replace(AllPackageClasses.ClassStub.ISINTERFACE, isClassInterface ? "true" : "false")
-                                                .Replace(AllPackageClasses.ClassStub.ISSTATIC, isClassStatic ? "true" : "false");
 
-                constructorBlock = jClass.AnalyzeConstructors(classDefinitions).AddTabLevel(1);
-                fieldBlock = jClass.AnalyzeFields(classDefinitions).AddTabLevel(1);
-                staticMethodBlock = jClass.AnalyzeMethods(classDefinitions, true).AddTabLevel(1);
-                methodBlock = jClass.AnalyzeMethods(classDefinitions, false).AddTabLevel(1);
+                string template = jClassIsListener ? allPackageStubClassListener : allPackageStubClass;
+
+                classBlock = template.Replace(AllPackageClasses.ClassStub.JAVACLASS, jClass.JVMFullClassName())
+                                     .Replace(AllPackageClasses.ClassStub.CLASS, jClass.JVMSimpleClassName())
+                                     .Replace(AllPackageClasses.ClassStub.HELP, jClass.JavadocUrl())
+                                     .Replace(AllPackageClasses.ClassStub.BASECLASS, jClass.JVMBaseClassName(jClassIsListener))
+                                     .Replace(AllPackageClasses.ClassStub.ISABSTRACT, isClassAbstract ? "true" : "false")
+                                     .Replace(AllPackageClasses.ClassStub.ISCLOSEABLE, isClassCloseable ? "true" : "false")
+                                     .Replace(AllPackageClasses.ClassStub.ISINTERFACE, isClassInterface ? "true" : "false")
+                                     .Replace(AllPackageClasses.ClassStub.ISSTATIC, isClassStatic ? "true" : "false");
+
+                if (!jClassIsListener)
+                {
+                    constructorBlock = jClass.AnalyzeConstructors(classDefinitions).AddTabLevel(1);
+                    fieldBlock = jClass.AnalyzeFields(classDefinitions).AddTabLevel(1);
+                    staticMethodBlock = jClass.AnalyzeMethods(classDefinitions, true).AddTabLevel(1);
+                    methodBlock = jClass.AnalyzeMethods(classDefinitions, false).AddTabLevel(1);
+                }
             }
 
-            StringBuilder jClassDecoration = new StringBuilder(AllPackageClasses.ClassStub.DEFAULT_DECORATION);
-            if (jClassIsDepracated)
+            if (!jClassIsListener)
             {
-                jClassDecoration.AppendLine();
-                jClassDecoration.Append(AllPackageClasses.ClassStub.OBSOLETE_DECORATION);
+                StringBuilder jClassDecoration = new StringBuilder(AllPackageClasses.ClassStub.DEFAULT_DECORATION);
+                if (jClassIsDepracated)
+                {
+                    jClassDecoration.AppendLine();
+                    jClassDecoration.Append(AllPackageClasses.ClassStub.OBSOLETE_DECORATION);
+                }
+
+                var singleClassStr = singleClassTemplate.Replace(AllPackageClasses.VERSION, SpecialNames.VersionPlaceHolder())
+                                                        .Replace(AllPackageClasses.JAR, jarOrModuleName)
+                                                        .Replace(AllPackageClasses.NAMESPACE, jClass.Namespace())
+                                                        .Replace(AllPackageClasses.ClassStub.DECORATION, jClassDecoration.ToString())
+                                                        .Replace(AllPackageClasses.ClassStub.CLASS, jClass.JVMSimpleClassName())
+                                                        .Replace(AllPackageClasses.ClassStub.CONSTRUCTORS, constructorBlock)
+                                                        .Replace(AllPackageClasses.ClassStub.FIELDS, fieldBlock)
+                                                        .Replace(AllPackageClasses.ClassStub.STATICMETHODS, staticMethodBlock)
+                                                        .Replace(AllPackageClasses.ClassStub.METHODS, methodBlock)
+                                                        .Replace(AllPackageClasses.ClassStub.NESTED_CLASSES, subClassAutonoumous.ToString());
+
+                var classPath = Path.Combine(rootDesinationFolder, jClass.Namespace().Replace(SpecialNames.NamespaceSeparator, Path.DirectorySeparatorChar), $"{jClass.JVMSimpleClassName()}.cs");
+                WriteFile(classPath, singleClassStr);
             }
-
-            var singleClassStr = singleClassTemplate.Replace(AllPackageClasses.VERSION, SpecialNames.VersionPlaceHolder())
-                                                    .Replace(AllPackageClasses.JAR, jarOrModuleName)
-                                                    .Replace(AllPackageClasses.NAMESPACE, jClass.Namespace())
-                                                    .Replace(AllPackageClasses.ClassStub.DECORATION, jClassDecoration.ToString())
-                                                    .Replace(AllPackageClasses.ClassStub.CLASS, jClass.JVMSimpleClassName())
-                                                    .Replace(AllPackageClasses.ClassStub.CONSTRUCTORS, constructorBlock)
-                                                    .Replace(AllPackageClasses.ClassStub.FIELDS, fieldBlock)
-                                                    .Replace(AllPackageClasses.ClassStub.STATICMETHODS, staticMethodBlock)
-                                                    .Replace(AllPackageClasses.ClassStub.METHODS, methodBlock)
-                                                    .Replace(AllPackageClasses.ClassStub.NESTED_CLASSES, subClassAutonoumous.ToString());
-
-            var classPath = Path.Combine(rootDesinationFolder, jClass.Namespace().Replace(SpecialNames.NamespaceSeparator, Path.DirectorySeparatorChar), $"{jClass.JVMSimpleClassName()}.cs");
-            WriteFile(classPath, singleClassStr);
 
             var subClassStr = subClassBlock.ToString();
             classBlock = classBlock.Replace(AllPackageClasses.ClassStub.NESTED_CLASSES, subClassStr.Length != 0 ? subClassStr : string.Empty);

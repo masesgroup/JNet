@@ -192,6 +192,12 @@ namespace MASES.JNetReflector
 
         #region Class extension
 
+        public static bool IsJVMListenerClass(this Class entry)
+        {
+            if (entry.Name.EndsWith(SpecialNames.JavaLangListener)) return true;
+            return false;
+        }
+
         public static bool IsJVMNestedClass(this Class entry)
         {
             if (entry.Name.Contains(SpecialNames.NestedClassSeparator)) return true;
@@ -228,8 +234,9 @@ namespace MASES.JNetReflector
             return name.Replace(SpecialNames.JNISeparator, SpecialNames.NamespaceSeparator);
         }
 
-        public static string JVMBaseClassName(this Class entry)
+        public static string JVMBaseClassName(this Class entry, bool isListener)
         {
+            if (isListener) return "MASES.JCOBridge.C2JBridge.JVMBridgeListener";
             try
             {
                 if (entry.SuperClass == null || entry.SuperClass.Name == SpecialNames.JavaLangObject)

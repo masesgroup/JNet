@@ -56,6 +56,7 @@ namespace MASES.JNetReflector
         public const char NamespaceSeparator = '.';
         public const char NestedClassSeparator = '$';
         public const string JavaLangObject = "java.lang.Object";
+        public const string JavaLangListener = "Listener";
 
         public static bool IsJavaLangException(string canonicalName)
         {
