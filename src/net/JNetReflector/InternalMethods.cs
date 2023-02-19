@@ -177,6 +177,7 @@ namespace MASES.JNetReflector
             {
                 ReportTrace(ReflectionTraceLevel.Debug, "Entry {0}", entry.Name);
                 if (entry.IsSpecialClass()) continue; // do not reflect this classes
+                if (entry.IsNamespaceToAvoid()) continue; // do not reflect this classes
                 if (entry.IsJVMClass() || entry.IsJVMNestedClass())
                 {
                     AddItem(data, entry);
@@ -268,6 +269,7 @@ namespace MASES.JNetReflector
 
                     if (jSubClass.IsJVMException())
                     {
+                        if (jSubClass.IsJavaLangException()) continue;
                         nestedClassBlock = allPackageStubNestedException.Replace(AllPackageClasses.ClassStub.NestedClassStub.JAVACLASS, jSubClass.JVMFullClassName())
                                                                         .Replace(AllPackageClasses.ClassStub.NestedClassStub.CLASS, jSubClass.JVMNestedClassName())
                                                                         .Replace(AllPackageClasses.ClassStub.NestedClassStub.HELP, jSubClass.JavadocUrl())
@@ -293,10 +295,10 @@ namespace MASES.JNetReflector
 
                         if (!jSubClassIsListener)
                         {
-                            nestedConstructorBlock = jSubClass.AnalyzeConstructors(classDefinitions).AddTabLevel(2);
+                            nestedConstructorBlock = jSubClass.AnalyzeConstructors(true, classDefinitions).AddTabLevel(2);
                             nestedFieldBlock = jSubClass.AnalyzeFields(classDefinitions).AddTabLevel(2);
-                            nestedStaticMethodBlock = jSubClass.AnalyzeMethods(classDefinitions, true).AddTabLevel(2);
-                            nestedMethodBlock = jSubClass.AnalyzeMethods(classDefinitions, false).AddTabLevel(2);
+                            nestedStaticMethodBlock = jSubClass.AnalyzeMethods(true, classDefinitions, true).AddTabLevel(2);
+                            nestedMethodBlock = jSubClass.AnalyzeMethods(true, classDefinitions, false).AddTabLevel(2);
                         }
                     }
 
@@ -338,6 +340,11 @@ namespace MASES.JNetReflector
                 ReportTrace(ReflectionTraceLevel.Error, "Main Class Entry returned a null class");
                 return string.Empty;
             }
+            if (jClass.IsJavaLangException())
+            {
+                ReportTrace(ReflectionTraceLevel.Error, "Main Class Entry is a base Exception class managed direcly from JNet");
+                return string.Empty;
+            }
             bool jClassIsDepracated = jClass.IsDeprecated();
             bool jClassIsListener = jClass.IsJVMListenerClass();
             if (!JNetReflectorCore.ReflectDeprecated && jClassIsDepracated)
@@ -354,10 +361,13 @@ namespace MASES.JNetReflector
             string fieldBlock = string.Empty;
             string staticMethodBlock = string.Empty;
             string methodBlock = string.Empty;
+            string fullClassName = jClass.JVMFullClassName();
+            string className = jClass.JVMSimpleClassName();
+
             if (jClass.IsJVMException())
             {
-                classBlock = allPackageStubException.Replace(AllPackageClasses.ClassStub.JAVACLASS, jClass.JVMFullClassName())
-                                                    .Replace(AllPackageClasses.ClassStub.CLASS, jClass.JVMSimpleClassName())
+                classBlock = allPackageStubException.Replace(AllPackageClasses.ClassStub.JAVACLASS, fullClassName)
+                                                    .Replace(AllPackageClasses.ClassStub.CLASS, className)
                                                     .Replace(AllPackageClasses.ClassStub.HELP, jClass.JavadocUrl())
                                                     .Replace(AllPackageClasses.ClassStub.BASECLASS, jClass.JVMBaseClassName(false));
             }
@@ -370,8 +380,8 @@ namespace MASES.JNetReflector
 
                 string template = jClassIsListener ? allPackageStubClassListener : allPackageStubClass;
 
-                classBlock = template.Replace(AllPackageClasses.ClassStub.JAVACLASS, jClass.JVMFullClassName())
-                                     .Replace(AllPackageClasses.ClassStub.CLASS, jClass.JVMSimpleClassName())
+                classBlock = template.Replace(AllPackageClasses.ClassStub.JAVACLASS, fullClassName)
+                                     .Replace(AllPackageClasses.ClassStub.CLASS, className)
                                      .Replace(AllPackageClasses.ClassStub.HELP, jClass.JavadocUrl())
                                      .Replace(AllPackageClasses.ClassStub.BASECLASS, jClass.JVMBaseClassName(jClassIsListener))
                                      .Replace(AllPackageClasses.ClassStub.ISABSTRACT, isClassAbstract ? "true" : "false")
@@ -381,10 +391,10 @@ namespace MASES.JNetReflector
 
                 if (!jClassIsListener)
                 {
-                    constructorBlock = jClass.AnalyzeConstructors(classDefinitions).AddTabLevel(1);
+                    constructorBlock = jClass.AnalyzeConstructors(false, classDefinitions).AddTabLevel(1);
                     fieldBlock = jClass.AnalyzeFields(classDefinitions).AddTabLevel(1);
-                    staticMethodBlock = jClass.AnalyzeMethods(classDefinitions, true).AddTabLevel(1);
-                    methodBlock = jClass.AnalyzeMethods(classDefinitions, false).AddTabLevel(1);
+                    staticMethodBlock = jClass.AnalyzeMethods(false, classDefinitions, true).AddTabLevel(1);
+                    methodBlock = jClass.AnalyzeMethods(false, classDefinitions, false).AddTabLevel(1);
                 }
             }
 
@@ -401,14 +411,14 @@ namespace MASES.JNetReflector
                                                         .Replace(AllPackageClasses.JAR, jarOrModuleName)
                                                         .Replace(AllPackageClasses.NAMESPACE, jClass.Namespace())
                                                         .Replace(AllPackageClasses.ClassStub.DECORATION, jClassDecoration.ToString())
-                                                        .Replace(AllPackageClasses.ClassStub.CLASS, jClass.JVMSimpleClassName())
+                                                        .Replace(AllPackageClasses.ClassStub.CLASS, className)
                                                         .Replace(AllPackageClasses.ClassStub.CONSTRUCTORS, constructorBlock)
                                                         .Replace(AllPackageClasses.ClassStub.FIELDS, fieldBlock)
                                                         .Replace(AllPackageClasses.ClassStub.STATICMETHODS, staticMethodBlock)
                                                         .Replace(AllPackageClasses.ClassStub.METHODS, methodBlock)
                                                         .Replace(AllPackageClasses.ClassStub.NESTED_CLASSES, subClassAutonoumous.ToString());
 
-                var classPath = Path.Combine(rootDesinationFolder, jClass.Namespace().Replace(SpecialNames.NamespaceSeparator, Path.DirectorySeparatorChar), $"{jClass.JVMSimpleClassName()}.cs");
+                var classPath = Path.Combine(rootDesinationFolder, jClass.Namespace().Replace(SpecialNames.NamespaceSeparator, Path.DirectorySeparatorChar), $"{className}.cs");
                 WriteFile(classPath, singleClassStr);
             }
 
@@ -418,7 +428,7 @@ namespace MASES.JNetReflector
             return classBlock;
         }
 
-        static string AnalyzeConstructors(this Class classDefinition, IList<string> classDefinitions)
+        static string AnalyzeConstructors(this Class classDefinition, bool isNested, IList<string> classDefinitions)
         {
             ReportTrace(ReflectionTraceLevel.Info, "******************* Analyze Constructors of {0} *******************", classDefinition.GenericString);
 
@@ -445,14 +455,15 @@ namespace MASES.JNetReflector
                 if (!constructor.IsPublic()) continue; // avoid not public methods
                 string modifier = constructor.IsStatic() ? " static" : string.Empty;
                 string constructorName = constructor.Name();
-                bool hasGeneric = false;
+                bool bypass = false;
                 bool hasVarArg = false;
                 Parameter varArg = null;
                 StringBuilder methodParamsBuilder = new StringBuilder();
                 StringBuilder methodExecutionParamsBuilder = new StringBuilder();
                 foreach (var parameter in constructor.Parameters)
                 {
-                    if (parameter.Type.IsOrInheritFromJVMGenericClass()) { hasGeneric = true; break; }
+                    if (parameter.Type.IsOrInheritFromJVMGenericClass()) { bypass = true; break; }
+                    if (parameter.Type() == "object[]") { bypass = true; break; }
                     if (!parameter.IsVarArgs)
                     {
                         methodParamsBuilder.AppendFormat($"{parameter.Type()} {parameter.Name}, ");
@@ -465,7 +476,7 @@ namespace MASES.JNetReflector
                     }
                 }
 
-                if (hasGeneric)
+                if (bypass)
                 {
                     ReportTrace(ReflectionTraceLevel.Info, "Discarded constructor {0}", constructor.GenericString);
                     continue;
@@ -506,7 +517,7 @@ namespace MASES.JNetReflector
             return subClassBlock.ToString();
         }
 
-        static string AnalyzeMethods(this Class classDefinition, IList<string> classDefinitions, bool staticMethods)
+        static string AnalyzeMethods(this Class classDefinition, bool isNested, IList<string> classDefinitions, bool staticMethods)
         {
             ReportTrace(ReflectionTraceLevel.Info, "******************* Analyze Methods of {0} with static {1} *******************", classDefinition.GenericString, staticMethods);
 
@@ -524,7 +535,7 @@ namespace MASES.JNetReflector
                 var methodNameOrigin = method.Name;
 
                 if (paramCount == 0 &&
-                    (methodNameOrigin == "toString" || methodNameOrigin == "hashCode" 
+                    (methodNameOrigin == "toString" || methodNameOrigin == "hashCode"
                     || methodNameOrigin == "notify" || methodNameOrigin == "notifyAll" || methodNameOrigin == " wait")
                    ) continue; // special methods managed from JCOBridge
 
@@ -539,6 +550,12 @@ namespace MASES.JNetReflector
                 if (!JNetReflectorCore.ReflectDeprecated && method.IsDeprecated())
                 {
                     ReportTrace(ReflectionTraceLevel.Debug, "Discarded deprecated method {0}", genString);
+                    continue;
+                }
+
+                if (method.IsFromSuperInterface())
+                {
+                    ReportTrace(ReflectionTraceLevel.Debug, "Discarded IsFromSuperInterface method {0}", genString);
                     continue; // this is very time consuming, anyway seems the only way to identify if a method was defined in the super abstract class
                 }
 
@@ -558,7 +575,8 @@ namespace MASES.JNetReflector
                 if (method.IsProperty())
                 {
                     var propertyName = method.PropertyName(classDefinitions);
-                    if (propertyName.IsReservedName())
+                    if (propertyName.IsReservedName()
+                        || propertyName.CollapseWithClassOrNestedClass(classDefinitions))
                     {
                         methods.Add(genString, method);
                     }
@@ -633,10 +651,10 @@ namespace MASES.JNetReflector
                 }
 
                 bool isArrayReturnType = false;
-                if (returnType.EndsWith("[]"))
+                if (returnType.EndsWith(SpecialNames.ArrayTypeTrailer))
                 {
                     isArrayReturnType = true;
-                    returnType = returnType.Substring(0, returnType.IndexOf("[]"));
+                    returnType = returnType.Substring(0, returnType.IndexOf(SpecialNames.ArrayTypeTrailer));
                 }
 
                 if (getMethod == null && setMethod != null)
@@ -655,9 +673,18 @@ namespace MASES.JNetReflector
                     string execStub = getMethod.IsStatic() ? "SExecute" : "IExecute";
                     if (isArrayReturnType) execStub += "Array";
                     if (JNetReflectorCore.ReflectDeprecated) isGetDeprecated = getMethod.IsDeprecated();
-                    executionStub.AppendFormat(AllPackageClasses.ClassStub.PropertyStub.GET_EXECUTION_FORMAT, execStub,
-                                                                                                              getMethod.IsVoid() || getMethod.IsObjectReturnType() ? string.Empty : $"<{returnType}>",
-                                                                                                              getMethod.Name);
+                    if (getMethod.IsReturnTypeAnException())
+                    {
+                        executionStub.AppendFormat(AllPackageClasses.ClassStub.PropertyStub.GET_EXECUTION_FORMAT_EXCEPTION, execStub,
+                                                                                                                            returnType,
+                                                                                                                            getMethod.Name);
+                    }
+                    else
+                    {
+                        executionStub.AppendFormat(AllPackageClasses.ClassStub.PropertyStub.GET_EXECUTION_FORMAT, execStub,
+                                                                                                                  getMethod.IsVoid() || getMethod.IsObjectReturnType() ? string.Empty : $"<{returnType}>",
+                                                                                                                  getMethod.Name);
+                    }
                 }
 
                 if (setMethod != null)
@@ -678,7 +705,7 @@ namespace MASES.JNetReflector
 
                 var singleProperty = singlePropertyTemplate.Replace(AllPackageClasses.ClassStub.PropertyStub.DECORATION, jPropDecoration.ToString())
                                                            .Replace(AllPackageClasses.ClassStub.PropertyStub.MODIFIER, modifier)
-                                                           .Replace(AllPackageClasses.ClassStub.PropertyStub.TYPE, returnType)
+                                                           .Replace(AllPackageClasses.ClassStub.PropertyStub.TYPE, isArrayReturnType ? returnType + SpecialNames.ArrayTypeTrailer : returnType)
                                                            .Replace(AllPackageClasses.ClassStub.PropertyStub.NAME, methodName)
                                                            .Replace(AllPackageClasses.ClassStub.PropertyStub.EXECUTION, executionStub.ToString())
                                                            .Replace(AllPackageClasses.ClassStub.PropertyStub.GET_HELP, getMethod != null ? getMethod.JavadocUrl() : string.Empty)
@@ -697,6 +724,13 @@ namespace MASES.JNetReflector
                 string modifier = method.IsStatic() ? " static" : string.Empty;
                 string returnType = method.ReturnType();
                 string methodName = method.Name(classDefinitions);
+                if (methodName.IsReservedName() || methodName.CollapseWithClassOrNestedClass(classDefinitions))
+                {
+                    methodName += "Method";
+                }
+
+                if (methodName == "Clone" && returnType == "object") continue;
+
                 bool hasGeneric = false;
                 bool hasVarArg = false;
                 Parameter varArg = null;
@@ -735,28 +769,53 @@ namespace MASES.JNetReflector
                     if (executionParamsString.EndsWith(", ")) executionParamsString = executionParamsString.Substring(0, executionParamsString.Length - 2); // remove last occurrence of ", "
                 }
 
+                bool isArrayReturnType = false;
                 string execStub = method.IsStatic() ? "SExecute" : "IExecute";
-                if (returnType.EndsWith("[]"))
+                if (returnType.EndsWith(SpecialNames.ArrayTypeTrailer))
                 {
-                    returnType = returnType.Substring(0, returnType.IndexOf("[]"));
+                    returnType = returnType.Substring(0, returnType.IndexOf(SpecialNames.ArrayTypeTrailer));
                     execStub += "Array";
+                    isArrayReturnType = true;
                 }
 
-                string executionStub = string.Format(AllPackageClasses.ClassStub.MethodStub.EXECUTION_FORMAT, method.IsVoid() ? string.Empty : "return ",
-                                                                                                              execStub,
-                                                                                                              method.IsVoid() || method.IsObjectReturnType() ? string.Empty : $"<{returnType}>",
-                                                                                                              methodNameOrigin,
-                                                                                                              executionParamsString.Length == 0 ? string.Empty : ", " + executionParamsString); ; ;
+                bool isReturnTypeException = method.IsReturnTypeAnException();
+                string executionStub = string.Empty;
+                if (isReturnTypeException)
+                {
+                    executionStub = string.Format(AllPackageClasses.ClassStub.MethodStub.EXECUTION_FORMAT_EXCEPTION, execStub,
+                                                                                                                     methodNameOrigin,
+                                                                                                                     executionParamsString.Length == 0 ? string.Empty : ", " + executionParamsString,
+                                                                                                                     returnType);
+                }
+                else
+                {
+                    executionStub = string.Format(AllPackageClasses.ClassStub.MethodStub.EXECUTION_FORMAT, method.IsVoid() ? string.Empty : "return ",
+                                                                                                           execStub,
+                                                                                                           method.IsVoid() || method.IsObjectReturnType() ? string.Empty : $"<{returnType}>",
+                                                                                                           methodNameOrigin,
+                                                                                                           executionParamsString.Length == 0 ? string.Empty : ", " + executionParamsString); ; ;
+                }
 
                 if (hasVarArg)
                 {
-                    string executionStubWithVarArg = string.Format(AllPackageClasses.ClassStub.MethodStub.EXECUTION_FORMAT, method.IsVoid() ? string.Empty : "return ",
+                    string executionStubWithVarArg;
+                    if (isReturnTypeException)
+                    {
+                        executionStubWithVarArg = string.Format(AllPackageClasses.ClassStub.MethodStub.EXECUTION_FORMAT_EXCEPTION, execStub,
+                                                                                                                                   methodNameOrigin,
+                                                                                                                                   (executionParamsString.Length == 0 ? string.Empty : ", ")
+                                                                                                                                   + executionParamsString + ", " + varArg.Name,
+                                                                                                                                   returnType);
+                    }
+                    else
+                    {
+                        executionStubWithVarArg = string.Format(AllPackageClasses.ClassStub.MethodStub.EXECUTION_FORMAT, method.IsVoid() ? string.Empty : "return ",
                                                                                                                             execStub,
                                                                                                                             method.IsVoid() || method.IsObjectReturnType() ? string.Empty : $"<{returnType}>",
                                                                                                                             methodNameOrigin,
                                                                                                                             (executionParamsString.Length == 0 ? string.Empty : ", ")
                                                                                                                             + executionParamsString + ", " + varArg.Name);
-
+                    }
                     executionStub = $"if ({varArg.Name}.Length == 0) {executionStub} else {executionStubWithVarArg}";
                 }
 
@@ -771,7 +830,7 @@ namespace MASES.JNetReflector
 
                 var singleMethod = singleMethodTemplate.Replace(AllPackageClasses.ClassStub.MethodStub.DECORATION, jDecoration.ToString())
                                                        .Replace(AllPackageClasses.ClassStub.MethodStub.MODIFIER, modifier)
-                                                       .Replace(AllPackageClasses.ClassStub.MethodStub.RETURNTYPE, returnType)
+                                                       .Replace(AllPackageClasses.ClassStub.MethodStub.RETURNTYPE, isArrayReturnType ? returnType + SpecialNames.ArrayTypeTrailer : returnType)
                                                        .Replace(AllPackageClasses.ClassStub.MethodStub.NAME, methodName)
                                                        .Replace(AllPackageClasses.ClassStub.MethodStub.PARAMETERS, paramsString)
                                                        .Replace(AllPackageClasses.ClassStub.MethodStub.EXECUTION, executionStub)
@@ -809,7 +868,12 @@ namespace MASES.JNetReflector
                     //  modifier += field.IsFinal() ? " readonly" : string.Empty; // avoid till now because seems not compile the test project
                 }
                 string fieldType = field.Type();
-                string fieldName = field.Name();
+                string fieldName = field.Name(false);
+
+                if (fieldName.IsReservedName() || fieldName.CollapseWithClassOrNestedClass(classDefinitions))
+                {
+                    fieldName += "Field";
+                }
 
                 ReportTrace(ReflectionTraceLevel.Info, "Preparing field {0}", field.GenericString);
 

@@ -41,9 +41,35 @@ namespace MASES.JNetReflector
 
         #region string extension
 
+        public static bool IsJVMNestedClass(this string entry)
+        {
+            if (entry.Contains(SpecialNames.NestedClassSeparator)) return true;
+            return false;
+        }
+
         public static bool IsReservedName(this string entry)
         {
+            if (SpecialNames.ReservedLanguageNames.Any((n) => entry.Equals(n))) return true;
             if (SpecialNames.ReservedJNetNames.Any((n) => entry.Equals(n))) return true;
+            if (SpecialNames.NumberStartNames.Any((n) => entry.StartsWith(n))) return true;
+            return false;
+        }
+
+        public static bool CollapseWithClassOrNestedClass(this string entry, IList<string> classDefinitions)
+        {
+            foreach (var classDefinition in classDefinitions)
+            {
+                bool collpase = false;
+                if (classDefinition.IsJVMNestedClass())
+                {
+                    collpase = entry == classDefinition.JVMNestedClassName();
+                }
+                else
+                {
+                    collpase = entry == classDefinition.JVMSimpleClassName();
+                }
+                if (collpase) return true;
+            }
             return false;
         }
 
@@ -62,6 +88,12 @@ namespace MASES.JNetReflector
         public static string JVMNestedClassName(this string entry)
         {
             return entry.Substring(entry.LastIndexOf(SpecialNames.NestedClassSeparator) + 1);
+        }
+
+        public static string JVMSimpleClassName(this string entry)
+        {
+            var cName = entry.Remove(0, entry.LastIndexOf(SpecialNames.NamespaceSeparator) + 1);
+            return cName.Contains(SpecialNames.NestedClassSeparator) ? cName.Substring(0, cName.LastIndexOf(SpecialNames.NestedClassSeparator)) : cName;
         }
 
         public static string Namespace(string fullName, bool camel = true)
@@ -239,7 +271,9 @@ namespace MASES.JNetReflector
             if (isListener) return "MASES.JCOBridge.C2JBridge.JVMBridgeListener";
             try
             {
-                if (entry.SuperClass == null || entry.SuperClass.Name == SpecialNames.JavaLangObject)
+                if (entry.SuperClass == null
+                    || !entry.SuperClass.IsPublic()
+                    || entry.SuperClass.Name == SpecialNames.JavaLangObject)
                 {
                     string innerName = entry.IsJVMNestedClass() ? entry.JVMNestedClassName() : entry.JVMSimpleClassName();
                     return string.Format("MASES.JCOBridge.C2JBridge.JVMBridgeBase<{0}>", innerName);
@@ -255,6 +289,12 @@ namespace MASES.JNetReflector
                 string className = entry.IsJVMNestedClass() ? entry.JVMNestedClassName() : entry.JVMSimpleClassName();
                 return string.Format("MASES.JCOBridge.C2JBridge.JVMBridgeBase<{0}>", className);
             }
+        }
+
+        public static bool IsNamespaceToAvoid(this Class entry)
+        {
+            if (JNetReflectorCore.NamespacesToAvoid.Any((n) => entry.Namespace(false).StartsWith(n))) return true;
+            return false;
         }
 
         public static bool IsSpecialClass(this Class entry)
@@ -274,7 +314,7 @@ namespace MASES.JNetReflector
 
         public static bool IsDeprecatedAnnotation(this Class entry)
         {
-            if (entry == null) throw new ArgumentNullException(nameof(entry));       
+            if (entry == null) throw new ArgumentNullException(nameof(entry));
             return entry.IsInterface() && entry.Name == "java.lang.Deprecated";
         }
 
@@ -321,10 +361,17 @@ namespace MASES.JNetReflector
             return Modifier.IsStatic(entry.Modifiers);
         }
 
-        public static bool IsJVMException(this Class entry)
+        public static bool IsJavaLangException(this Class entry)
         {
             if (entry == null) return false;
             if (SpecialNames.IsJavaLangException(entry.Name)) return true;
+            return false;
+        }
+
+        public static bool IsJVMException(this Class entry)
+        {
+            if (entry == null) return false;
+            if (entry.IsJavaLangException()) return true;
             return IsJVMException(entry.SuperClass);
         }
 
@@ -397,7 +444,7 @@ namespace MASES.JNetReflector
 
         public static string ToNetType(string typeName, bool camel = true)
         {
-            if (typeName.EndsWith("[]")) return ToNetType(typeName.Remove(typeName.LastIndexOf("[]")), camel) + "[]";
+            if (typeName.EndsWith(SpecialNames.ArrayTypeTrailer)) return ToNetType(typeName.Remove(typeName.LastIndexOf(SpecialNames.ArrayTypeTrailer)), camel) + SpecialNames.ArrayTypeTrailer;
 
             switch (typeName)
             {
@@ -468,7 +515,7 @@ namespace MASES.JNetReflector
                         newURl += name + "/";
                     }
                 }
-                
+
                 newURl += entry.TypeName.Replace('.', '/').Replace('$', '.') + ".html";
 
                 return newURl;
@@ -477,9 +524,9 @@ namespace MASES.JNetReflector
             return entry.Name;
         }
 
-#endregion
+        #endregion
 
-#region Constructor extension
+        #region Constructor extension
 
         public static bool IsDeprecated(this Constructor entry)
         {
@@ -529,7 +576,7 @@ namespace MASES.JNetReflector
             if (entry == null) throw new ArgumentNullException(nameof(entry));
             var constructorName = entry.Name;
             if (constructorName.Contains(SpecialNames.NamespaceSeparator)) constructorName = constructorName.Substring(constructorName.LastIndexOf(SpecialNames.NamespaceSeparator) + 1);
-            return constructorName.Contains(SpecialNames.NestedClassSeparator) ? constructorName.Substring(0, constructorName.LastIndexOf(SpecialNames.NestedClassSeparator)) : constructorName;
+            return constructorName.Contains(SpecialNames.NestedClassSeparator) ? constructorName.Remove(0, constructorName.LastIndexOf(SpecialNames.NestedClassSeparator) + 1) : constructorName;
         }
 
         public static string JavadocUrl(this Constructor entry)
@@ -561,9 +608,9 @@ namespace MASES.JNetReflector
             return entry.Name;
         }
 
-#endregion
+        #endregion
 
-#region Method extension
+        #region Method extension
 
         public static bool IsDeprecated(this Method entry)
         {
@@ -675,6 +722,12 @@ namespace MASES.JNetReflector
             return camel ? Camel(methodName) : methodName;
         }
 
+        public static bool IsReturnTypeAnException(this Method entry)
+        {
+            if (entry == null) throw new ArgumentNullException(nameof(entry));
+            return entry.ReturnType.IsJVMException();
+        }
+
         public static string ReturnType(this Method entry, bool camel = true)
         {
             if (entry == null) throw new ArgumentNullException(nameof(entry));
@@ -705,6 +758,26 @@ namespace MASES.JNetReflector
             }
         }
 
+        public static bool IsFromSuperInterface(this Method entry)
+        {
+            // to be optimized: very time consuming method
+            if (entry == null) throw new ArgumentNullException(nameof(entry));
+            foreach (var interfaceToCheck in entry.DeclaringClass.Interfaces)
+            {
+                try
+                {
+                    Method method = interfaceToCheck.GetMethod(entry.Name, entry.ParameterTypes);
+                    if (!method.ReturnType.Equals(entry.ReturnType))
+                    {
+                        return true;
+                    }
+                }
+                catch (NoSuchMethodException) { }
+            }
+
+            return false;
+        }
+
         public static string JavadocUrl(this Method entry)
         {
             var newURl = entry.DeclaringClass.JavadocUrl();
@@ -728,9 +801,9 @@ namespace MASES.JNetReflector
             return entry.Name;
         }
 
-#endregion
+        #endregion
 
-#region Field extension
+        #region Field extension
 
         public static bool IsDeprecated(this Field entry)
         {
@@ -812,9 +885,9 @@ namespace MASES.JNetReflector
             return entry.Name;
         }
 
-#endregion
+        #endregion
 
-#region Parameter extension
+        #region Parameter extension
 
         public static bool IsDeprecated(this Parameter entry)
         {
@@ -871,7 +944,7 @@ namespace MASES.JNetReflector
             return entry.Type.ToNetType(camel) == "object";
         }
 
-#endregion
+        #endregion
 
         public static string ToFolderName(this System.Reflection.AssemblyName assName)
         {

@@ -57,6 +57,7 @@ namespace MASES.JNetReflector
         public const char NestedClassSeparator = '$';
         public const string JavaLangObject = "java.lang.Object";
         public const string JavaLangListener = "Listener";
+        public const string ArrayTypeTrailer = "[]";
 
         public static bool IsJavaLangException(string canonicalName)
         {
@@ -130,6 +131,17 @@ namespace MASES.JNetReflector
             return lst;
         }
 
+        public static IEnumerable<string> ReservedLanguageNames = CreateReservedLanguageNames();
+
+        static IEnumerable<string> CreateReservedLanguageNames()
+        {
+            List<string> lst = new List<string>();
+            lst.Add("in");
+            lst.Add("out");
+            lst.Add("base");
+            return lst;
+        }
+
         public static IEnumerable<string> ReservedJNetNames = CreateReservedJNetNames();
 
         static IEnumerable<string> CreateReservedJNetNames()
@@ -140,6 +152,18 @@ namespace MASES.JNetReflector
             lst.Add("IsCloseable");
             lst.Add("IsInterface");
             lst.Add("IsStatic");
+            return lst;
+        }
+
+        public static IEnumerable<string> NumberStartNames = CreateNumberStartNames();
+
+        static IEnumerable<string> CreateNumberStartNames()
+        {
+            List<string> lst = new List<string>();
+            for (int i = 0; i < 10; i++)
+            {
+                lst.Add(i.ToString());
+            }
             return lst;
         }
     }
