@@ -41,6 +41,12 @@ namespace MASES.JNetReflector
 
         #region string extension
 
+        public static bool IsReservedName(this string entry)
+        {
+            if (SpecialNames.ReservedJNetNames.Any((n) => entry.Equals(n))) return true;
+            return false;
+        }
+
         public static Class JVMClass(this string entry)
         {
             try

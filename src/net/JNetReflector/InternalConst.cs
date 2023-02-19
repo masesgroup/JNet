@@ -128,6 +128,19 @@ namespace MASES.JNetReflector
             }
             return lst;
         }
+
+        public static IEnumerable<string> ReservedJNetNames = CreateReservedJNetNames();
+
+        static IEnumerable<string> CreateReservedJNetNames()
+        {
+            List<string> lst = new List<string>();
+            lst.Add("ClassName");
+            lst.Add("IsAbstract");
+            lst.Add("IsCloseable");
+            lst.Add("IsInterface");
+            lst.Add("IsStatic");
+            return lst;
+        }
     }
 
     public static class FileNameAndDirectory

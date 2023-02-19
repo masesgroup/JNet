@@ -539,14 +539,21 @@ namespace MASES.JNetReflector
                 if (method.IsProperty())
                 {
                     var propertyName = method.PropertyName(classDefinitions);
-                    IList<Method> propertyMethods;
-                    if (!properties.TryGetValue(propertyName, out propertyMethods))
+                    if (propertyName.IsReservedName())
                     {
-                        propertyMethods = new List<Method>();
-                        properties.Add(propertyName, propertyMethods);
+                        methods.Add(genString, method);
                     }
+                    else
+                    {
+                        IList<Method> propertyMethods;
+                        if (!properties.TryGetValue(propertyName, out propertyMethods))
+                        {
+                            propertyMethods = new List<Method>();
+                            properties.Add(propertyName, propertyMethods);
+                        }
 
-                    propertyMethods.Add(method);
+                        propertyMethods.Add(method);
+                    }
                 }
                 else
                 {
@@ -603,7 +610,7 @@ namespace MASES.JNetReflector
                 foreach (var item in propToCheck)
                 {
                     if (item.IsGetProperty()) { getMethod = item; modifier = item.IsStatic() ? " static" : string.Empty; returnType = item.ReturnType(); }
-                    if (item.IsSetProperty()) { setMethod = item; modifier = item.IsStatic() ? " static" : string.Empty; returnType = item.ReturnType(); }
+                    if (item.IsSetProperty()) { setMethod = item; }
                 }
 
                 bool isArrayReturnType = false;
