@@ -37,8 +37,8 @@
         </developer>
     </developers>
     <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
         <classpathfile>${basedir}/classpathfile.classpath</classpathfile>
 		<jnetversion>1.5.1.0</jnetversion>
 		<jcobridgeversion>2.5.2</jcobridgeversion>
@@ -135,6 +135,8 @@
                         <arg>-cp</arg>
                         <arg>${originalClassPath}${path.separator}${basedir}/../../../bin/net6.0/JCOBridge.jar</arg>
                     </compilerArgs>
+                    <source>11</source>
+                    <target>11</target>
                 </configuration>
             </plugin>
             <plugin>
@@ -229,5 +231,10 @@
             <version>4.13.1</version>
             <scope>test</scope>
         </dependency>
+		<dependency>
+			<groupId>org.burningwave</groupId>
+			<artifactId>core</artifactId>
+			<version>12.62.5</version>
+		</dependency>
     </dependencies>
 </project>
