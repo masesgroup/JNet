@@ -40,7 +40,7 @@
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <classpathfile>${basedir}/classpathfile.classpath</classpathfile>
-		<jnetversion>1.5.1.0</jnetversion>
+		<jnetversion>1.5.2.0</jnetversion>
 		<jcobridgeversion>2.5.3</jcobridgeversion>
     </properties>
     <distributionManagement>
