@@ -71,13 +71,10 @@ namespace Java.Lang
         /// Find a package by name in the callers ClassLoader instance.
         /// </summary>
         public static Package GetPackage(string name) => SExecute<Package>("getPackage", name);
-
-#warning commented because JCOBridge has an error in method visibility
-
         ///// <summary>
         ///// Get all the packages currently known for the caller's ClassLoader instance.
         ///// </summary>
-        //public static Package[] Packages => SExecuteArray<Package>("getPackages");
+        public static Package[] Packages => SExecuteArray<Package>("getPackages");
         /// <summary>
         /// Return the title of the specification that this package implements.
         /// </summary>
@@ -102,9 +99,11 @@ namespace Java.Lang
         /// Returns true if this package is sealed.
         /// </summary>
         public bool IsSealed() => IExecute<bool>("isSealed");
+#if !JNETREFLECTOR
         /// <summary>
         /// Returns true if this package is sealed with respect to the specified code source url.
         /// </summary>
-        public bool IsSealed(Net.URL url) => IExecute<bool>("isSealed", url);      
+        public bool IsSealed(Net.URL url) => IExecute<bool>("isSealed", url);
+#endif
     }
 }

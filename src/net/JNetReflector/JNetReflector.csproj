@@ -6,13 +6,23 @@
     <AssemblyName>MASES.JNetReflector</AssemblyName>
     <RootNamespace>MASES.JNetReflector</RootNamespace>
     <Title>JNetReflector - JNet class reflection utility command line interface</Title>
-    <Description>JNetCLI - JNet class reflection utility command line interface</Description>
+    <Description>JNetReflector - JNet class reflection utility command line interface</Description>
     <Product>JNetReflector</Product>
     <OutputPath>..\..\..\binReflector\</OutputPath>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <PackageTags>jnet cli reflection utility dotnet clr netcore net6 java jvm</PackageTags>
     <PackageId>MASES.JNetReflector</PackageId>
+	<DefineConstants>$(DefineConstants)TRACE;JNETREFLECTOR</DefineConstants>
   </PropertyGroup>
+  <ItemGroup>
+    <jnetreflector_jars Include="$(ProjectDir)\..\..\..\jars\*.*" />
+  </ItemGroup>
+  <Target Name="CopyCustomContent" AfterTargets="AfterBuild">
+    <Copy SourceFiles="@(jnetreflector_jars)" DestinationFolder="$(OutDir)\jars" />
+  </Target>
+  <Target Name="CopyCustomContentOnPublish" AfterTargets="Publish">
+    <Copy SourceFiles="@(jnetreflector_jars)" DestinationFolder="$(PublishDir)\jars" />
+  </Target>
   <ItemGroup>
     <None Remove="AllPackageClasses.template" />
     <None Remove="AllPackageClassesStubClass.template" />
@@ -27,7 +37,6 @@
     <None Remove="Templates\SingleProperty.template" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\JNet\Java\Io\InputStream.cs" Link="Java\Io\InputStream.cs" />
     <Compile Include="..\JNet\Java\Lang\AbstractMethodError.cs" Link="Java\Lang\AbstractMethodError.cs" />
     <Compile Include="..\JNet\Java\Lang\Annotation\Annotation.cs" Link="Java\Lang\Annotation\Annotation.cs" />
     <Compile Include="..\JNet\Java\Lang\ArithmeticException.cs" Link="Java\Lang\ArithmeticException.cs" />
@@ -60,6 +69,7 @@
     <Compile Include="..\JNet\Java\Lang\InternalError.cs" Link="Java\Lang\InternalError.cs" />
     <Compile Include="..\JNet\Java\Lang\InterruptedException.cs" Link="Java\Lang\InterruptedException.cs" />
     <Compile Include="..\JNet\Java\Lang\LinkageError.cs" Link="Java\Lang\LinkageError.cs" />
+    <Compile Include="..\JNet\Java\Lang\Module.cs" Link="Java\Lang\Module.cs" />
     <Compile Include="..\JNet\Java\Lang\NegativeArraySizeException.cs" Link="Java\Lang\NegativeArraySizeException.cs" />
     <Compile Include="..\JNet\Java\Lang\NoClassDefFoundError.cs" Link="Java\Lang\NoClassDefFoundError.cs" />
     <Compile Include="..\JNet\Java\Lang\NoSuchFieldError.cs" Link="Java\Lang\NoSuchFieldError.cs" />
@@ -101,11 +111,7 @@
     <Compile Include="..\JNet\Java\Lang\UnsupportedOperationException.cs" Link="Java\Lang\UnsupportedOperationException.cs" />
     <Compile Include="..\JNet\Java\Lang\VerifyError.cs" Link="Java\Lang\VerifyError.cs" />
     <Compile Include="..\JNet\Java\Lang\VirtualMachineError.cs" Link="Java\Lang\VirtualMachineError.cs" />
-    <Compile Include="..\JNet\Java\Net\Proxy.cs" Link="Java\Net\Proxy.cs" />
-    <Compile Include="..\JNet\Java\Net\URI.cs" Link="Java\Net\URI.cs" />
-    <Compile Include="..\JNet\Java\Net\URL.cs" Link="Java\Net\URL.cs" />
-    <Compile Include="..\JNet\Java\Net\URLConnection.cs" Link="Java\Net\URLConnection.cs" />
-    <Compile Include="..\JNet\Java\Util\Enumeration.cs" Link="Java\Util\Enumeration.cs" />
+    <Compile Include="..\JNet\Java\Util\Collection.cs" Link="Java\Util\Collection.cs" />
     <Compile Include="..\JNet\JNetCoreBase.cs" Link="JNetCoreBase.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -123,7 +129,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MASES.CLIParser" Version="3.1.2" />
-	<PackageReference Include="MASES.JCOBridge" Version="2.5.2">
+	<PackageReference Include="MASES.JCOBridge" Version="2.5.3">
 		<IncludeAssets>All</IncludeAssets>
 		<PrivateAssets>None</PrivateAssets>
 	</PackageReference>
@@ -132,8 +138,6 @@
   <ItemGroup>
     <Folder Include="Java\Lang\Annotation\" />
     <Folder Include="Java\Lang\Reflect\" />
-    <Folder Include="Java\Net\" />
-    <Folder Include="Java\Io\" />
     <Folder Include="Java\Util\" />
   </ItemGroup>
 </Project>

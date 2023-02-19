@@ -201,6 +201,10 @@ namespace Java.Lang
         /// </summary>
         public int Modifiers => IExecute<int>("getModifiers");
         /// <summary>
+        /// Returns the module that this class or interface is a member of.
+        /// </summary>
+        public Module Module => IExecute<Module>("getModule");
+        /// <summary>
         /// Returns the name of the entity (class, interface, array class, primitive type, or void) represented by this <see cref="Class"/> object, as a <see cref="string"/>.
         /// </summary>
         public string Name => IExecute<string>("getName");

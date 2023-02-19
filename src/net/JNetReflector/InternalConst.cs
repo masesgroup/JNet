@@ -32,6 +32,7 @@ namespace MASES.JNetReflector
         public const string JavadocVersion = "JavadocVersion";
         public const string DestinationRootPath = "DestinationRootPath";
         public const string JarList = "JarList";
+        public const string NamespacesToParse = "NamespacesToParse";
         public const string NamespacesToAvoid = "NamespacesToAvoid";
         public const string DoNotAddJarsInClasspath = "DoNotAddJarsInClasspath";
         public const string ReflectDeprecated = "ReflectDeprecated";

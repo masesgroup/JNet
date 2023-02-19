@@ -157,7 +157,7 @@ namespace MASES.JNetReflector.Templates
                 public const string NAME = "PROPERTY_STUB_PROPERTY_NAME_PLACEHOLDER";
                 public const string EXECUTION = "PROPERTY_STUB_EXECUTION_PLACEHOLDER";
                 public const string GET_EXECUTION_FORMAT = "get {{ return {0}{1}(\"{2}\"); }}";
-                public const string SET_EXECUTION_FORMAT = "set {{ {0}(\"{1}\", value); }}";
+                public const string SET_EXECUTION_FORMAT = " set {{ {0}(\"{1}\", value); }}";
 
                 public static readonly string DEFAULT_DECORATION = "/// <summary>" + Environment.NewLine
                                                                  + "/// PROPERTY_STUB_GET_PROPERTY_HELP_PLACEHOLDER PROPERTY_STUB_SET_PROPERTY_HELP_PLACEHOLDER" + Environment.NewLine

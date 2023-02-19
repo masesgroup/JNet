@@ -41,6 +41,23 @@ namespace MASES.JNetReflector
 
         #region string extension
 
+        public static Class JVMClass(this string entry)
+        {
+            try
+            {
+                return Class.ForName(entry, true, SystemClassLoader);
+            }
+            catch
+            {
+                return null;
+            }
+        }
+
+        public static string JVMNestedClassName(this string entry)
+        {
+            return entry.Substring(entry.LastIndexOf(SpecialNames.NestedClassSeparator) + 1);
+        }
+
         public static string Namespace(string fullName, bool camel = true)
         {
             if (fullName.EndsWith(SpecialNames.ClassExtension))
@@ -92,7 +109,10 @@ namespace MASES.JNetReflector
         {
             var name = entry.FullName.ToLowerInvariant();
             if (name.Contains(FileNameAndDirectory.METAINF.ToLowerInvariant())
-                || JNetReflectorCore.NamespacesToAvoid.Contains(entry.Namespace(false))) return true;
+                || JNetReflectorCore.NamespacesToAvoid.Any((n) => entry.Namespace(false).StartsWith(n)))
+            {
+                return true;
+            }
             return false;
         }
 
@@ -143,50 +163,10 @@ namespace MASES.JNetReflector
             return cName.Substring(cName.LastIndexOf(SpecialNames.NestedClassSeparator) + 1);
         }
 
-        public static string JVMFullClassName(this ZipArchiveEntry entry)
-        {
-            var name = entry.FullName.Substring(0, entry.FullName.LastIndexOf(SpecialNames.NamespaceSeparator + FileNameAndDirectory.JavaClassExtension));
-            return name.Replace(SpecialNames.JNISeparator, SpecialNames.NamespaceSeparator);
-        }
-
         public static string JVMFullQualifiedClassName(this ZipArchiveEntry entry)
         {
             var cName = entry.FullName.Substring(0, entry.FullName.LastIndexOf(SpecialNames.ClassExtension));
             return cName.Replace(SpecialNames.JNISeparator, SpecialNames.NamespaceSeparator);
-        }
-
-        public static string JVMBaseClassName(this ZipArchiveEntry entry)
-        {
-            try
-            {
-                var jType = Class.ForName(entry.JVMFullQualifiedClassName(), true, SystemClassLoader);
-
-                if (jType == null || jType.SuperClass == null || jType.SuperClass.CanonicalName == SpecialNames.JavaLangObject)
-                {
-                    string innerName = entry.IsJVMNestedClass() ? entry.JVMNestedClassName() : entry.JVMClassName();
-                    return string.Format("MASES.JCOBridge.C2JBridge.JVMBridgeBase<{0}>", innerName);
-                }
-                else if (jType == null || jType.SuperClass == null || SpecialNames.IsJavaLangException(jType.SuperClass.CanonicalName))
-                {
-                    return ToFullQualifiedClassName(jType.SuperClass.CanonicalName);
-                }
-                //else if (jType == null || jType.SuperClass == null || jType.SuperClass.CanonicalName == SpecialNames.JavaLangException)
-                //{
-                //    string innerName = entry.IsJVMNestedClass() ? entry.JVMNestedClassName() : entry.JVMClassName();
-                //    return string.Format("MASES.JCOBridge.C2JBridge.JVMBridgeException<{0}>", innerName);
-                //}
-                //else if (jType == null || jType.SuperClass == null || jType.SuperClass.CanonicalName == SpecialNames.JavaLangError)
-                //{
-                //    return "Java.Lang.Error";
-                //}
-
-                return ToFullQualifiedClassName(jType.SuperClass.CanonicalName);
-            }
-            catch
-            {
-                string className = entry.IsJVMNestedClass() ? entry.JVMNestedClassName() : entry.JVMClassName();
-                return string.Format("MASES.JCOBridge.C2JBridge.JVMBridgeBase<{0}>", className);
-            }
         }
 
         public static Class JVMClass(this ZipArchiveEntry entry)
@@ -202,28 +182,87 @@ namespace MASES.JNetReflector
             }
         }
 
-        public static string JavadocUrl(this ZipArchiveEntry entry)
-        {
-            var newURl = JNetReflectorCore.OriginJavadocUrl;
-            if (newURl != null)
-            {
-                if (!newURl.EndsWith("/"))
-                    newURl += '/';
-                newURl += Path.ChangeExtension(entry.FullName, ".html");
-                return newURl;
-            }
-
-            return entry.JVMClassName();
-        }
-
         #endregion
 
         #region Class extension
 
+        public static bool IsJVMNestedClass(this Class entry)
+        {
+            if (entry.Name.Contains(SpecialNames.NestedClassSeparator)) return true;
+            return false;
+        }
+
+        public static bool IsJVMClass(this Class entry)
+        {
+            if (!entry.Name.Contains(SpecialNames.NestedClassSeparator)) return true;
+            return false;
+        }
+
+        public static string JVMSimpleClassName(this Class entry)
+        {
+            var cName = entry.SimpleName;
+            return cName.Contains(SpecialNames.NestedClassSeparator) ? cName.Substring(0, cName.LastIndexOf(SpecialNames.NestedClassSeparator)) : cName;
+        }
+
+        public static string JVMClassName(this Class entry)
+        {
+            var cName = entry.Name;
+            return cName.Contains(SpecialNames.NestedClassSeparator) ? cName.Substring(0, cName.LastIndexOf(SpecialNames.NestedClassSeparator)) : cName;
+        }
+
+        public static string JVMNestedClassName(this Class entry)
+        {
+            var cName = entry.Name;
+            return cName.Substring(cName.LastIndexOf(SpecialNames.NestedClassSeparator) + 1);
+        }
+
+        public static string JVMFullClassName(this Class entry)
+        {
+            var name = entry.Name;
+            return name.Replace(SpecialNames.JNISeparator, SpecialNames.NamespaceSeparator);
+        }
+
+        public static string JVMBaseClassName(this Class entry)
+        {
+            try
+            {
+                if (entry.SuperClass == null || entry.SuperClass.Name == SpecialNames.JavaLangObject)
+                {
+                    string innerName = entry.IsJVMNestedClass() ? entry.JVMNestedClassName() : entry.JVMSimpleClassName();
+                    return string.Format("MASES.JCOBridge.C2JBridge.JVMBridgeBase<{0}>", innerName);
+                }
+                else if (entry.SuperClass == null || SpecialNames.IsJavaLangException(entry.SuperClass.Name))
+                {
+                    return ToFullQualifiedClassName(entry.SuperClass.Name);
+                }
+                return ToFullQualifiedClassName(entry.SuperClass.Name);
+            }
+            catch
+            {
+                string className = entry.IsJVMNestedClass() ? entry.JVMNestedClassName() : entry.JVMSimpleClassName();
+                return string.Format("MASES.JCOBridge.C2JBridge.JVMBridgeBase<{0}>", className);
+            }
+        }
+
+        public static bool IsSpecialClass(this Class entry)
+        {
+            if (!entry.IsJVMNestedClass()) return false;
+            string className = entry.JVMNestedClassName();
+
+            if (entry.IsJVMNestedClass()
+                && SpecialNames.SpecialNumberedNames.Any((o) => className.StartsWith(o))) return true;
+            return false;
+        }
+
+        public static string Namespace(this Class entry, bool camel = true)
+        {
+            return Namespace(entry.Name, camel);
+        }
+
         public static bool IsDeprecatedAnnotation(this Class entry)
         {
             if (entry == null) throw new ArgumentNullException(nameof(entry));       
-            return entry.IsInterface() && entry.CanonicalName == "java.lang.Deprecated";
+            return entry.IsInterface() && entry.Name == "java.lang.Deprecated";
         }
 
         public static bool IsDeprecated(this Class entry)
@@ -272,7 +311,7 @@ namespace MASES.JNetReflector
         public static bool IsJVMException(this Class entry)
         {
             if (entry == null) return false;
-            if (SpecialNames.IsJavaLangException(entry.CanonicalName)) return true;
+            if (SpecialNames.IsJavaLangException(entry.Name)) return true;
             return IsJVMException(entry.SuperClass);
         }
 
@@ -389,23 +428,45 @@ namespace MASES.JNetReflector
 
         public static string JavadocUrl(this Class entry)
         {
+            if (entry == null) throw new ArgumentNullException(nameof(entry));
+
             var newURl = JNetReflectorCore.OriginJavadocUrl;
             if (newURl != null)
             {
                 if (!newURl.EndsWith("/"))
                     newURl += '/';
 
+                if (JNetReflectorCore.JavadocVersion > 9)
+                {
+                    var module = entry.Module;
+#if USE_MODULEINFO
+                    try
+                    {
+                        if (module.IsNamed)
+                        {
+                            newURl += module.Name + "/";
+                        }
+                    }
+                    catch (System.Exception e)
+#endif
+                    {
+                        var name = module.ToString();
+                        name = name.Remove(0, "module ".Length);
+                        newURl += name + "/";
+                    }
+                }
+                
                 newURl += entry.TypeName.Replace('.', '/').Replace('$', '.') + ".html";
 
                 return newURl;
             }
 
-            return entry.CanonicalName;
+            return entry.Name;
         }
 
-        #endregion
+#endregion
 
-        #region Constructor extension
+#region Constructor extension
 
         public static bool IsDeprecated(this Constructor entry)
         {
@@ -487,9 +548,9 @@ namespace MASES.JNetReflector
             return entry.Name;
         }
 
-        #endregion
+#endregion
 
-        #region Method extension
+#region Method extension
 
         public static bool IsDeprecated(this Method entry)
         {
@@ -563,7 +624,7 @@ namespace MASES.JNetReflector
             return false;
         }
 
-        public static string PropertyName(this Method entry, IList<ZipArchiveEntry> classDefinitions, bool camel = true)
+        public static string PropertyName(this Method entry, IList<string> classDefinitions, bool camel = true)
         {
             if (entry == null) throw new ArgumentNullException(nameof(entry));
             var methodName = entry.Name;
@@ -583,7 +644,7 @@ namespace MASES.JNetReflector
             return camel ? Camel(methodName) : methodName;
         }
 
-        public static string Name(this Method entry, IList<ZipArchiveEntry> classDefinitions, bool camel = true)
+        public static string Name(this Method entry, IList<string> classDefinitions, bool camel = true)
         {
             if (entry == null) throw new ArgumentNullException(nameof(entry));
             var methodName = entry.Name;
@@ -621,7 +682,7 @@ namespace MASES.JNetReflector
             {
                 var superClass = entry.DeclaringClass.SuperClass;
                 if (superClass == null) return false;
-                if (superClass.CanonicalName == "java.lang.Object") return false;
+                if (superClass.Name == "java.lang.Object") return false;
                 Method method = superClass.GetMethod(entry.Name, entry.ParameterTypes);
                 return true;
             }
@@ -654,9 +715,9 @@ namespace MASES.JNetReflector
             return entry.Name;
         }
 
-        #endregion
+#endregion
 
-        #region Field extension
+#region Field extension
 
         public static bool IsDeprecated(this Field entry)
         {
@@ -738,9 +799,9 @@ namespace MASES.JNetReflector
             return entry.Name;
         }
 
-        #endregion
+#endregion
 
-        #region Parameter extension
+#region Parameter extension
 
         public static bool IsDeprecated(this Parameter entry)
         {
@@ -797,7 +858,7 @@ namespace MASES.JNetReflector
             return entry.Type.ToNetType(camel) == "object";
         }
 
-        #endregion
+#endregion
 
         public static string ToFolderName(this System.Reflection.AssemblyName assName)
         {

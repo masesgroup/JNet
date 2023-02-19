@@ -15,10 +15,11 @@
 *
 *  Refer to LICENSE for more information.
 */
-
+#if !JNETREFLECTOR
 using Java.Io;
 using Java.Net;
 using Java.Util;
+#endif
 using MASES.JCOBridge.C2JBridge;
 using System.Xml.Linq;
 
@@ -31,6 +32,7 @@ namespace Java.Lang
     {
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "java.lang.ClassLoader";
+#if !JNETREFLECTOR
         /// <summary>
         /// Sets the default assertion status for this class loader to false and discards any package defaults or class assertion status settings associated with the class loader.
         /// </summary>
@@ -51,10 +53,12 @@ namespace Java.Lang
         /// Finds all the resources with the given name.
         /// </summary>
         public Enumeration<URL> GetResources(string name) => IExecute<Enumeration<URL>>("getResources", name);
+#endif
         /// <summary>
         /// Returns the system class loader for delegation.
         /// </summary>
         public static ClassLoader SystemClassLoader => SExecute<ClassLoader>("getSystemClassLoader");
+#if !JNETREFLECTOR
         /// <summary>
         /// Find a resource of the specified name from the search path used to load classes.
         /// </summary>
@@ -83,5 +87,6 @@ namespace Java.Lang
         /// Sets the package default assertion status for the named package.
         /// </summary>
         public void SetPackageAssertionStatus(string packageName, bool enabled) => IExecute<Class>("setDefaultAssertionStatus", packageName, enabled);
+#endif
     }
 }
