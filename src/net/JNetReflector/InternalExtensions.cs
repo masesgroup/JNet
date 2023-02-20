@@ -73,6 +73,18 @@ namespace MASES.JNetReflector
             return false;
         }
 
+        public static bool CollapseWithOtherMethods(this string entry, IList<Method> methodToBeReflected, IList<string> classDefinitions)
+        {
+            foreach (var method in methodToBeReflected)
+            {
+                if (entry == method.MethodName(classDefinitions))
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
         public static Class JVMClass(this string entry)
         {
             try
@@ -684,6 +696,24 @@ namespace MASES.JNetReflector
             return false;
         }
 
+        public static string Name(this Method entry, IList<string> classDefinitions, bool camel = true)
+        {
+            if (entry == null) throw new ArgumentNullException(nameof(entry));
+            var methodName = entry.Name;
+            if (classDefinitions != null)
+            {
+                foreach (var classDefinition in classDefinitions)
+                {
+                    if (classDefinition.JVMNestedClassName() == entry.Name(null))
+                    {
+                        methodName += "Method";
+                        break;
+                    }
+                }
+            }
+            return camel ? Camel(methodName) : methodName;
+        }
+
         public static string PropertyName(this Method entry, IList<string> classDefinitions, bool camel = true)
         {
             if (entry == null) throw new ArgumentNullException(nameof(entry));
@@ -704,22 +734,14 @@ namespace MASES.JNetReflector
             return camel ? Camel(methodName) : methodName;
         }
 
-        public static string Name(this Method entry, IList<string> classDefinitions, bool camel = true)
+        public static string MethodName(this Method entry, IList<string> classDefinitions, bool camel = true)
         {
-            if (entry == null) throw new ArgumentNullException(nameof(entry));
-            var methodName = entry.Name;
-            if (classDefinitions != null)
+            string nameToReport = entry.Name(classDefinitions, camel);
+            if (nameToReport.IsReservedName() || nameToReport.CollapseWithClassOrNestedClass(classDefinitions))
             {
-                foreach (var classDefinition in classDefinitions)
-                {
-                    if (classDefinition.JVMNestedClassName() == entry.Name(null))
-                    {
-                        methodName += "Method";
-                        break;
-                    }
-                }
+                nameToReport += "Method";
             }
-            return camel ? Camel(methodName) : methodName;
+            return nameToReport;
         }
 
         public static bool IsReturnTypeAnException(this Method entry)

@@ -143,7 +143,7 @@ namespace MASES.JNetReflector
                     if (entry.IsFolder())
                     {
                         var path = Path.Combine(rootDesinationFolder, entry.Namespace().Replace(SpecialNames.NamespaceSeparator, Path.DirectorySeparatorChar));
-                        ReportTrace(ReflectionTraceLevel.Info, "Create path {0}", path);
+                        ReportTrace(ReflectionTraceLevel.Debug, "Create path {0}", path);
                         if (!JNetReflectorCore.DryRun && !Directory.Exists(path)) Directory.CreateDirectory(path);
                     }
                     if (entry.IsJVMClass() || entry.IsJVMNestedClass())
@@ -194,6 +194,7 @@ namespace MASES.JNetReflector
 
             foreach (var item in items)
             {
+                ReportTrace(ReflectionTraceLevel.Info, "Starting analysis for package {0}", item.Key);
                 StringBuilder sb = new StringBuilder();
                 foreach (var entry in item.Value)
                 {
@@ -249,6 +250,7 @@ namespace MASES.JNetReflector
                 if (entry.IsJVMNestedClass())
                 {
                     string nestedConstructorBlock = string.Empty;
+                    string nestedOperatorBlock = string.Empty;
                     string nestedFieldBlock = string.Empty;
                     string nestedStaticMethodBlock = string.Empty;
                     string nestedMethodBlock = string.Empty;
@@ -265,7 +267,7 @@ namespace MASES.JNetReflector
                     bool jSubClassIsListener = jSubClass.IsJVMListenerClass();
                     string nestedClassBlock;
 
-                    ReportTrace(ReflectionTraceLevel.Info, "Preparing nested class {0}", jSubClass.GenericString);
+                    ReportTrace(ReflectionTraceLevel.Debug, "Preparing nested class {0}", jSubClass.GenericString);
 
                     if (jSubClass.IsJVMException())
                     {
@@ -317,6 +319,7 @@ namespace MASES.JNetReflector
                         var singleNestedClassStr = singleNestedClassTemplate.Replace(AllPackageClasses.ClassStub.NestedClassStub.DECORATION, jSubClassDecoration.ToString())
                                                                             .Replace(AllPackageClasses.ClassStub.NestedClassStub.CLASS, jSubClass.JVMNestedClassName())
                                                                             .Replace(AllPackageClasses.ClassStub.NestedClassStub.CONSTRUCTORS, nestedConstructorBlock)
+                                                                            .Replace(AllPackageClasses.ClassStub.NestedClassStub.OPERATORS, nestedOperatorBlock)
                                                                             .Replace(AllPackageClasses.ClassStub.NestedClassStub.FIELDS, nestedFieldBlock)
                                                                             .Replace(AllPackageClasses.ClassStub.NestedClassStub.STATICMETHODS, nestedStaticMethodBlock)
                                                                             .Replace(AllPackageClasses.ClassStub.NestedClassStub.METHODS, nestedMethodBlock);
@@ -330,7 +333,7 @@ namespace MASES.JNetReflector
                     if (mainClassDone) throw new InvalidOperationException("Too many main class");
                     mainClassDone = true;
                     jClass = entry;
-                    ReportTrace(ReflectionTraceLevel.Info, "Identified main class {0}", jClass.CanonicalName);
+                    ReportTrace(ReflectionTraceLevel.Debug, "Identified main class {0}", jClass.CanonicalName);
                 }
             }
 
@@ -349,15 +352,16 @@ namespace MASES.JNetReflector
             bool jClassIsListener = jClass.IsJVMListenerClass();
             if (!JNetReflectorCore.ReflectDeprecated && jClassIsDepracated)
             {
-                ReportTrace(ReflectionTraceLevel.Info, "Discarded deprecated main class {0}", jClass.GenericString);
+                ReportTrace(ReflectionTraceLevel.Debug, "Discarded deprecated main class {0}", jClass.GenericString);
                 return string.Empty;
             }
             bool jClassIsOrFromGeneric = jClass.IsOrInheritFromJVMGenericClass();
 
-            ReportTrace(ReflectionTraceLevel.Info, "Preparing main class {0}", jClass.GenericString);
+            ReportTrace(ReflectionTraceLevel.Debug, "Preparing main class {0}", jClass.GenericString);
 
             string classBlock;
             string constructorBlock = string.Empty;
+            string operatorBlock = string.Empty;
             string fieldBlock = string.Empty;
             string staticMethodBlock = string.Empty;
             string methodBlock = string.Empty;
@@ -413,6 +417,7 @@ namespace MASES.JNetReflector
                                                         .Replace(AllPackageClasses.ClassStub.DECORATION, jClassDecoration.ToString())
                                                         .Replace(AllPackageClasses.ClassStub.CLASS, className)
                                                         .Replace(AllPackageClasses.ClassStub.CONSTRUCTORS, constructorBlock)
+                                                        .Replace(AllPackageClasses.ClassStub.OPERATORS, operatorBlock)
                                                         .Replace(AllPackageClasses.ClassStub.FIELDS, fieldBlock)
                                                         .Replace(AllPackageClasses.ClassStub.STATICMETHODS, staticMethodBlock)
                                                         .Replace(AllPackageClasses.ClassStub.METHODS, methodBlock)
@@ -444,12 +449,12 @@ namespace MASES.JNetReflector
                 bool isDeprecated = constructor.IsDeprecated();
                 if (!JNetReflectorCore.ReflectDeprecated && isDeprecated)
                 {
-                    ReportTrace(ReflectionTraceLevel.Info, "Discarded deprecated constructor {0}", constructor.GenericString);
+                    ReportTrace(ReflectionTraceLevel.Debug, "Discarded deprecated constructor {0}", constructor.GenericString);
                     continue;
                 }
                 if (constructor.IsStatic())
                 {
-                    ReportTrace(ReflectionTraceLevel.Info, "Discarded static constructor {0}", constructor.GenericString);
+                    ReportTrace(ReflectionTraceLevel.Debug, "Discarded static constructor {0}", constructor.GenericString);
                     continue;
                 }
                 if (!constructor.IsPublic()) continue; // avoid not public methods
@@ -478,7 +483,7 @@ namespace MASES.JNetReflector
 
                 if (bypass)
                 {
-                    ReportTrace(ReflectionTraceLevel.Info, "Discarded constructor {0}", constructor.GenericString);
+                    ReportTrace(ReflectionTraceLevel.Debug, "Discarded constructor {0}", constructor.GenericString);
                     continue;
                 }
                 if (hasVarArg && paramCount == 1 && varArg.IsObjectType()) continue; // this kinf of constructor is managed from AllClasses template as default for any JCOBridge reflected class
@@ -487,7 +492,7 @@ namespace MASES.JNetReflector
                     methodParamsBuilder.AppendFormat($"params {varArg.Type()} {varArg.Name}, ");
                 }
 
-                ReportTrace(ReflectionTraceLevel.Info, "Preparing constructor {0}", constructor.GenericString);
+                ReportTrace(ReflectionTraceLevel.Debug, "Preparing constructor {0}", constructor.GenericString);
 
                 string paramsString = methodParamsBuilder.ToString();
                 string executionParamsString = methodExecutionParamsBuilder.ToString();
@@ -525,6 +530,7 @@ namespace MASES.JNetReflector
             var singlePropertyTemplate = Template.GetTemplate(Template.SinglePropertyTemplate);
 
             StringBuilder subClassBlock = new StringBuilder();
+            List<Method> prefilteredMethods = new List<Method>();
             SortedDictionary<string, Method> methods = new SortedDictionary<string, Method>();
             SortedDictionary<string, IList<Method>> properties = new SortedDictionary<string, IList<Method>>();
 
@@ -572,11 +578,22 @@ namespace MASES.JNetReflector
                     ReportTrace(ReflectionTraceLevel.Debug, "Discarded IsOrInheritFromJVMGenericClass method {0}", genString);
                     continue; // avoid generics till now
                 }
+
+                prefilteredMethods.Add(method);
+            }
+
+            foreach (var method in prefilteredMethods.ToArray())
+            {
+                var genString = method.GenericString;
+                var paramCount = method.ParameterCount;
+                var methodNameOrigin = method.Name;
+
                 if (method.IsProperty())
                 {
                     var propertyName = method.PropertyName(classDefinitions);
                     if (propertyName.IsReservedName()
-                        || propertyName.CollapseWithClassOrNestedClass(classDefinitions))
+                        || propertyName.CollapseWithClassOrNestedClass(classDefinitions)
+                        || propertyName.CollapseWithOtherMethods(prefilteredMethods, classDefinitions))
                     {
                         methods.Add(genString, method);
                     }
@@ -694,7 +711,7 @@ namespace MASES.JNetReflector
                                                                                                               setMethod.Name);
                 }
 
-                ReportTrace(ReflectionTraceLevel.Info, "Preparing properties of {0}", prop.Key);
+                ReportTrace(ReflectionTraceLevel.Debug, "Preparing properties of {0}", prop.Key);
 
                 StringBuilder jPropDecoration = new StringBuilder(AllPackageClasses.ClassStub.PropertyStub.DEFAULT_DECORATION);
                 if (isGetDeprecated || isSetDeprecated)
@@ -723,11 +740,7 @@ namespace MASES.JNetReflector
 
                 string modifier = method.IsStatic() ? " static" : string.Empty;
                 string returnType = method.ReturnType();
-                string methodName = method.Name(classDefinitions);
-                if (methodName.IsReservedName() || methodName.CollapseWithClassOrNestedClass(classDefinitions))
-                {
-                    methodName += "Method";
-                }
+                string methodName = method.MethodName(classDefinitions);
 
                 if (methodName == "Clone" && returnType == "object") continue;
 
@@ -819,7 +832,7 @@ namespace MASES.JNetReflector
                     executionStub = $"if ({varArg.Name}.Length == 0) {executionStub} else {executionStubWithVarArg}";
                 }
 
-                ReportTrace(ReflectionTraceLevel.Info, "Preparing method {0}", genString);
+                ReportTrace(ReflectionTraceLevel.Debug, "Preparing method {0}", genString);
 
                 StringBuilder jDecoration = new StringBuilder(AllPackageClasses.ClassStub.MethodStub.DEFAULT_DECORATION);
                 if (JNetReflectorCore.ReflectDeprecated && method.IsDeprecated())
@@ -875,7 +888,7 @@ namespace MASES.JNetReflector
                     fieldName += "Field";
                 }
 
-                ReportTrace(ReflectionTraceLevel.Info, "Preparing field {0}", field.GenericString);
+                ReportTrace(ReflectionTraceLevel.Debug, "Preparing field {0}", field.GenericString);
 
                 string executionStub = string.Format(AllPackageClasses.ClassStub.FieldStub.EXECUTION_FORMAT, field.IsStatic() ? "Clazz" : "Instance",
                                                                                                              field.IsObjectReturnType() ? string.Empty : $"<{fieldType}>",

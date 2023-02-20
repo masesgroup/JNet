@@ -30,6 +30,10 @@ ALLPACKAGE_CLASSES_STUB_CLASS_DECORATION_PLACEHOLDER
 // ALLPACKAGE_CLASSES_STUB_CONSTRUCTORS_PLACEHOLDER
         #endregion
 
+        #region Class/Interface conversion operators
+// ALLPACKAGE_CLASSES_STUB_OPERATORS_PLACEHOLDER
+        #endregion
+
         #region Fields
 // ALLPACKAGE_CLASSES_STUB_FIELDS_PLACEHOLDER
         #endregion
