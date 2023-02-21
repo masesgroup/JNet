@@ -33,7 +33,7 @@ namespace MASES.JNetReflector
         public const string DestinationRootPath = "DestinationRootPath";
         public const string JarList = "JarList";
         public const string ModulesToParse = "ModulesToParse";
-        public const string ClassToBeListener = "ClassToBeListener";
+        public const string ClassesToBeListener = "ClassesToBeListener";
         public const string NamespacesInConflict = "NamespacesInConflict";
         public const string NamespacesToAvoid = "NamespacesToAvoid";
         public const string ClassesToAvoid = "ClassesToAvoid";

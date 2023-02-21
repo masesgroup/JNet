@@ -79,7 +79,7 @@ namespace MASES.JNetReflector
                     },
                     new ArgumentMetadata<string>()
                     {
-                        Name = CLIParam.ClassToBeListener,
+                        Name = CLIParam.ClassesToBeListener,
                         Type = ArgumentType.Double,
                         Help = "A CSV list of class names to be treated as Listener",
                     },
@@ -164,8 +164,8 @@ namespace MASES.JNetReflector
         static IEnumerable<string> _ModulesToParse;
         public static IEnumerable<string> ModulesToParse => _ModulesToParse;
 
-        static IEnumerable<string> _ClassToBeListener;
-        public static IEnumerable<string> ClassToBeListener => _ClassToBeListener;
+        static IEnumerable<string> _ClassesToBeListener;
+        public static IEnumerable<string> ClassesToBeListener => _ClassesToBeListener;
 
         static IEnumerable<string> _NamespacesInConflict;
         public static IEnumerable<string> NamespacesInConflict => _NamespacesInConflict;
@@ -228,16 +228,16 @@ namespace MASES.JNetReflector
             }
             _ModulesToParse = modulesToParse;
 
-            List<string> classToBeListener = new List<string>();
-            if (ParsedArgs.Exist(CLIParam.ClassToBeListener))
+            List<string> classesToBeListener = new List<string>();
+            if (ParsedArgs.Exist(CLIParam.ClassesToBeListener))
             {
-                var classes = ParsedArgs.Get<string>(CLIParam.ClassToBeListener).Split(',', ';');
+                var classes = ParsedArgs.Get<string>(CLIParam.ClassesToBeListener).Split(',', ';');
                 foreach (var item in classes)
                 {
-                    if (!classToBeListener.Contains(item)) classToBeListener.Add(item);
+                    if (!classesToBeListener.Contains(item)) classesToBeListener.Add(item);
                 }
             }
-            _ClassToBeListener = classToBeListener;
+            _ClassesToBeListener = classesToBeListener;
 
             List<string> namespacesInConflict = new List<string>();
             if (ParsedArgs.Exist(CLIParam.NamespacesInConflict))

@@ -249,7 +249,7 @@ namespace MASES.JNetReflector
         {
             if (entry.TypeName.EndsWith(SpecialNames.JavaLangListener)) return true;
             if (entry.TypeName.EndsWith(SpecialNames.JavaLangAdapter)) return true;
-            if (JNetReflectorCore.ClassToBeListener.Any((o) => entry.TypeName == o)) return true;
+            if (JNetReflectorCore.ClassesToBeListener.Any((o) => entry.TypeName == o)) return true;
             return false;
         }
 
