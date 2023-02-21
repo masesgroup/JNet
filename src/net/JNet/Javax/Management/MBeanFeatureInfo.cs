@@ -16,36 +16,11 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.JCOBridge.C2JBridge;
-
 namespace Javax.Management
 {
-    public class MBeanFeatureInfo : JVMBridgeBase<MBeanFeatureInfo>
+    public partial class MBeanFeatureInfo
     {
-        public override string ClassName => "javax.management.MBeanFeatureInfo";
+        // can be extended with methods not reflected or not available in Java;
 
-        public MBeanFeatureInfo() { }
-
-        protected MBeanFeatureInfo(params object[] args) : base(args) { }
-        /// <summary>
-        /// Constructs an <see cref="MBeanFeatureInfo"/> object.
-        /// </summary>
-        public MBeanFeatureInfo(string name, string description) : base(name, description) { }
-        /// <summary>
-        /// Constructs an <see cref="MBeanFeatureInfo"/> object.
-        /// </summary>
-        public MBeanFeatureInfo(string name, string description, Descriptor descriptor) : base(name, description, descriptor) { }
-        /// <summary>
-        /// Returns the human-readable description of the feature.
-        /// </summary>
-        public string Description => IExecute<string>("getDescription");
-        /// <summary>
-        /// Returns the descriptor for the feature.
-        /// </summary>
-        public Descriptor Descriptor => IExecute<Descriptor>("getDescriptor");
-        /// <summary>
-        /// Returns a <see cref="string"/> containing the name of the attribute.
-        /// </summary>
-        public string Name => IExecute<string>("getName");
     }
 }

@@ -18,68 +18,9 @@
 
 namespace Javax.Management.Monitor
 {
-    public class MonitorNotification : Notification
+    public partial class MonitorNotification
     {
-        public override string ClassName => "javax.management.monitor.MonitorNotification";
+        // can be extended with methods not reflected or not available in Java;
 
-        public MonitorNotification() { }
-
-        protected MonitorNotification(params object[] args) : base(args) { }
-        /// <summary>
-        /// Notification type denoting that the observed attribute is not contained in the observed object.
-        /// </summary>
-        public static string OBSERVED_ATTRIBUTE_ERROR => Clazz.GetField<string>("OBSERVED_ATTRIBUTE_ERROR");
-        /// <summary>
-        /// Notification type denoting that the type of the observed attribute is not correct.
-        /// </summary>
-        public static string OBSERVED_ATTRIBUTE_TYPE_ERROR => Clazz.GetField<string>("OBSERVED_ATTRIBUTE_TYPE_ERROR");
-        /// <summary>
-        /// Notification type denoting that the observed object is not registered in the MBean server.
-        /// </summary>
-        public static string OBSERVED_OBJECT_ERROR => Clazz.GetField<string>("OBSERVED_OBJECT_ERROR");
-        /// <summary>
-        /// Notification type denoting that a non-predefined error type has occurred when trying to get the value of the observed attribute.
-        /// </summary>
-        public static string RUNTIME_ERROR => Clazz.GetField<string>("RUNTIME_ERROR");
-        /// <summary>
-        /// Notification type denoting that the observed attribute has differed from the "string to compare" value.
-        /// </summary>
-        public static string STRING_TO_COMPARE_VALUE_DIFFERED => Clazz.GetField<string>("STRING_TO_COMPARE_VALUE_DIFFERED");
-        /// <summary>
-        /// Notification type denoting that the observed attribute has matched the "string to compare" value.
-        /// </summary>
-        public static string STRING_TO_COMPARE_VALUE_MATCHED => Clazz.GetField<string>("STRING_TO_COMPARE_VALUE_MATCHED");
-        /// <summary>
-        /// Notification type denoting that the type of the thresholds, offset or modulus is not correct.
-        /// </summary>
-        public static string THRESHOLD_ERROR => Clazz.GetField<string>("THRESHOLD_ERROR");
-        /// <summary>
-        /// Notification type denoting that the observed attribute has exceeded the threshold high value.
-        /// </summary>
-        public static string THRESHOLD_HIGH_VALUE_EXCEEDED => Clazz.GetField<string>("THRESHOLD_HIGH_VALUE_EXCEEDED");
-        /// <summary>
-        /// Notification type denoting that the observed attribute has exceeded the threshold low value.
-        /// </summary>
-        public static string THRESHOLD_LOW_VALUE_EXCEEDED => Clazz.GetField<string>("THRESHOLD_LOW_VALUE_EXCEEDED");
-        /// <summary>
-        /// Notification type denoting that the observed attribute has reached the threshold value.
-        /// </summary>
-        public static string THRESHOLD_VALUE_EXCEEDED => Clazz.GetField<string>("THRESHOLD_VALUE_EXCEEDED");
-        /// <summary>
-        /// Gets the derived gauge of this monitor notification.
-        /// </summary>
-        public object DerivedGauge => IExecute<object>("getDerivedGauge");
-        /// <summary>
-        /// Gets the observed attribute of this monitor notification.
-        /// </summary>
-        public string ObservedAttribute => IExecute<string>("getObservedAttribute");
-        /// <summary>
-        /// Gets the observed object of this monitor notification.
-        /// </summary>
-        public ObjectName ObservedObject => IExecute<ObjectName>("getObservedObject");
-        /// <summary>
-        /// Gets the threshold/string (depending on the monitor type) that triggered off this monitor notification.
-        /// </summary>
-        public object Trigger => IExecute<object>("getTrigger");
     }
 }

@@ -16,22 +16,10 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.JCOBridge.C2JBridge;
-
 namespace Java.Awt
 {
-    public class Component : JVMBridgeBase<Component>
+    public partial class Component
     {
-        public override string ClassName => "java.awt.Component";
-
-        public Component()
-        {
-        }
-
-        protected Component(params object[] args) : base(args)
-        {
-        }
-
-        // TODO: complete the class
+        // can be extended with methods not reflected or not available in Java;
     }
 }

@@ -16,21 +16,10 @@
 *  Refer to LICENSE for more information.
 */
 
-using Java.Awt;
-using MASES.JCOBridge.C2JBridge;
-
 namespace Javax.Swing
 {
-    public class BoxLayout : JVMBridgeBase<BoxLayout>
+    public partial class BoxLayout
     {
-        public override string ClassName => "javax.swing.BoxLayout";
-
-        public BoxLayout()
-        {
-        }
-
-        public BoxLayout(Container target, int axis) : base(target, axis)
-        {
-        }
+        // can be extended with methods not reflected or not available in Java;
     }
 }

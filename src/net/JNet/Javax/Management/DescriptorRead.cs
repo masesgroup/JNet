@@ -16,18 +16,11 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.JCOBridge.C2JBridge;
-
 namespace Javax.Management
 {
-    public class DescriptorRead : JVMBridgeBase<DescriptorRead>
+    public partial class DescriptorRead
     {
-        public override bool IsInterface => true;
+        // can be extended with methods not reflected or not available in Java;
 
-        public override string ClassName => "javax.management.DescriptorRead";
-        /// <summary>
-        /// Returns a copy of <see cref="Descriptor"/>.
-        /// </summary>
-        public Descriptor Descriptor => IExecute<Descriptor>("getDescriptor");
     }
 }

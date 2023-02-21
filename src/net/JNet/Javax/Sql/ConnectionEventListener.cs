@@ -32,7 +32,7 @@ namespace Javax.Sql
     /// Listener for ConnectionEventListener. Extends <see cref="JVMBridgeListener"/>, implements <see cref="IConnectionEventListener"/>
     /// </summary>
     /// <remarks>Remember to Dispose the object otherwise there is a resource leak, the object contains a reference to the the corresponding JVM object</remarks>
-    public class ConnectionEventListener : JVMBridgeListener, IConnectionEventListener
+    public partial class ConnectionEventListener : IConnectionEventListener
     {
         /// <inheritdoc cref="JVMBridgeListener.ClassName"/>
         public sealed override string ClassName => "org.mases.jnet.sql.JNetConnectionEventListener";

@@ -16,23 +16,11 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.JCOBridge.C2JBridge;
-
 namespace Javax.Management
 {
-    public class ValueExp : JVMBridgeBase<ValueExp>
+    public partial class ValueExp
     {
-        public override bool IsInterface => true;
+        // can be extended with methods not reflected or not available in Java;
 
-        public override string ClassName => "javax.management.ValueExp";
-
-        public ValueExp() { }
-
-        protected ValueExp(params object[] args) : base(args) { }
-
-        /// <summary>
-        /// Applies the ValueExp on a MBean.
-        /// </summary>
-        public ValueExp Apply(ObjectName name) => IExecute<ValueExp>("apply", name);
     }
 }

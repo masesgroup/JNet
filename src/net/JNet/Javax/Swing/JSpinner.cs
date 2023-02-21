@@ -18,16 +18,8 @@
 
 namespace Javax.Swing
 {
-    public class JSpinner : JComponent
+    public partial class JSpinner
     {
-        public override string ClassName => "javax.swing.JSpinner";
-
-        public JSpinner()
-        {
-        }
-
-        public JSpinner(SpinnerModel model) : base(model)
-        {
-        }
+        // can be extended with methods not reflected or not available in Java;
     }
 }

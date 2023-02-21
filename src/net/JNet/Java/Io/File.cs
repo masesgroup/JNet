@@ -16,12 +16,10 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.JCOBridge.C2JBridge;
-
 namespace Java.Io
 {
-    public class File : JVMBridgeBase<File>
+    public partial class File
     {
-        public override string ClassName => "java.io.File";
+        // can be extended with methods not reflected or not available in Java;
     }
 }

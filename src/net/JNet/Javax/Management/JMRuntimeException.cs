@@ -16,16 +16,13 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.JCOBridge.C2JBridge;
-
 namespace Javax.Management
 {
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/JMRuntimeException.html"/>
     /// </summary>
-    public class JMRuntimeException : Java.Lang.RuntimeException
+    public partial class JMRuntimeException
     {
-        /// <inheritdoc cref="JVMBridgeException.ClassName"/>
-        public override string ClassName => "javax.management.JMRuntimeException";
+        // can be extended with methods not reflected or not available in Java;
     }
 }

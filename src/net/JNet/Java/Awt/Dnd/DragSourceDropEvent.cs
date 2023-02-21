@@ -18,16 +18,8 @@
 
 namespace Java.Awt.Dnd
 {
-    public class DragSourceDropEvent : DragSourceEvent
+    public partial class DragSourceDropEvent
     {
-        public override string ClassName => "java.awt.dnd.DragSourceDropEvent";
-        /// <summary>
-        /// This method returns the logical intersection of the target drop action and the set of drop actions supported by the drag source.
-        /// </summary>
-        public int DropAction => IExecute<int>("getDropAction");
-        /// <summary>
-        /// This method returns a boolean indicating if the drop was successful.
-        /// </summary>
-        public bool DropSuccess => IExecute<bool>("getDropSuccess");
+        // can be extended with methods not reflected or not available in Java;
     }
 }

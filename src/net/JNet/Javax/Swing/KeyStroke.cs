@@ -16,13 +16,11 @@
 *  Refer to LICENSE for more information.
 */
 
-using Java.Awt;
-
 namespace Javax.Swing
 {
-    public class KeyStroke : AWTKeyStroke
+    public partial class KeyStroke
     {
-        public override string ClassName => "javax.swing.KeyStroke";
+        // can be extended with methods not reflected or not available in Java;
 
     }
 }

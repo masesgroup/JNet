@@ -20,28 +20,9 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management
 {
-    public class ObjectInstance : JVMBridgeBase<ObjectInstance>
+    public partial class ObjectInstance
     {
-        public override string ClassName => "javax.management.ObjectInstance";
+        // can be extended with methods not reflected or not available in Java;
 
-        public ObjectInstance() { }
-
-        protected ObjectInstance(params object[] args) : base(args) { }
-        /// <summary>
-        /// Allows an object instance to be created given a string representation of an object name and the full class name, including the package name.
-        /// </summary>
-        public ObjectInstance(string objectName, string className) : base(objectName, className) { }
-        /// <summary>
-        /// Allows an object instance to be created given an object name and the full class name, including the package name.
-        /// </summary>
-        public ObjectInstance(ObjectName objectName, string className) :base(objectName, className) { }
-        /// <summary>
-        /// Returns the class part.
-        /// </summary>
-        public string ClassNameJMX => IExecute<string>("getClassName");
-        /// <summary>
-        /// Returns the object name part.
-        /// </summary>
-        public ObjectName ObjectName => IExecute<ObjectName>("getObjectName");
     }
 }

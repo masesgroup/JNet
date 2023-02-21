@@ -16,12 +16,10 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.JCOBridge.C2JBridge;
-
 namespace Javax.Naming
 {
-    public class NamingException : JVMBridgeException<NamingException>
+    public partial class NamingException
     {
-        public override string ClassName => "javax.naming.NamingException";
+        // can be extended with methods not reflected or not available in Java;
     }
 }

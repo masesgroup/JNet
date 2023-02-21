@@ -23,21 +23,17 @@ namespace Java.Lang.Reflect
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Parameter.html"/>
     /// </summary>
+#if JNETREFLECTOR
     public class Parameter : AnnotatedElement
     {
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "java.lang.reflect.Parameter";
-
         /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
         public override bool IsInterface => false;
         /// <summary>
         /// Returns an <see cref="AnnotatedType"/> object that represents the use of a type to specify the type of the formal parameter represented by this <see cref="Parameter"/>.
         /// </summary>
         public AnnotatedType AnnotatedType => IExecute<AnnotatedType>("getAnnotatedType");
-        /// <summary>
-        /// Return the <see cref="Executable"/> which declares this parameter.
-        /// </summary>
-        public Executable DeclaringExecutable => IExecute<Executable>("getDeclaringExecutable");
         /// <summary>
         /// Get the modifier flags for this the parameter represented by this <see cref="Parameter"/> object.
         /// </summary>
@@ -69,6 +65,11 @@ namespace Java.Lang.Reflect
         /// <summary>
         /// Returns <see langword="true"/> if this parameter represents a variable argument list; returns <see langword="false"/> otherwise.
         /// </summary>
-        public bool IsVarArgs => IExecute<bool>("isVarArgs");     
+        public bool IsVarArgs => IExecute<bool>("isVarArgs");
+#else
+    public partial class Parameter
+    {
+
+#endif
     }
 }

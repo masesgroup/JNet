@@ -20,30 +20,10 @@ using Java.Util;
 
 namespace Javax.Management.Relation
 {
-    public class MBeanServerNotificationFilter : NotificationFilterSupport
+    public partial class MBeanServerNotificationFilter
     {
-        public override string ClassName => "javax.management.relation.MBeanServerNotificationFilter";
+        // can be extended with methods not reflected or not available in Java;
 
-        public MBeanServerNotificationFilter() { }
-
-        protected MBeanServerNotificationFilter(params object[] args) : base(args) { }
-
-        /// <summary>
-        /// Disables any <see cref="MBeanServerNotification"/>s(all <see cref="ObjectName"/>s are deselected).
-        /// </summary>
-        public void DisableAllObjectNames() => IExecute("disableAllObjectNames");
-        /// <summary>
-        /// Disables <see cref="MBeanServerNotification"/>s concerning given <see cref="ObjectName"/>.
-        /// </summary>
-        public void DisableObjectName(ObjectName objectName) => IExecute("disableObjectName", objectName);
-        /// <summary>
-        /// Enables all <see cref="MBeanServerNotification"/>s(all <see cref="ObjectName"/>s are selected).
-        /// </summary>
-        public void EnableAllObjectNames() => IExecute("enableAllObjectNames");
-        /// <summary>
-        /// Enables <see cref="MBeanServerNotification"/>s concerning given <see cref="ObjectName"/>.
-        /// </summary>
-        public void EnableObjectName(ObjectName objectName) => IExecute("enableObjectName", objectName);
         /// <summary>
         /// Gets all the <see cref="ObjectName"/>s disabled.
         /// </summary>

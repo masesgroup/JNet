@@ -76,7 +76,7 @@ namespace MASES.JNet.Extensions
         public static System.Collections.Generic.Dictionary<K, V> ToDictiony<K, V>(this Map<K, V> map)
         {
             System.Collections.Generic.Dictionary<K, V> dictionary = new();
-            if (map.IsEmpty) return dictionary;
+            if (map.IsEmpty()) return dictionary;
             foreach (var item in map.EntrySet)
             {
                 dictionary.Add(item.Key, item.Value);

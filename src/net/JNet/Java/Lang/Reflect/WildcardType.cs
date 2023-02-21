@@ -24,6 +24,7 @@ namespace Java.Lang.Reflect
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/WildcardType.html"/>
     /// </summary>
+#if JNETREFLECTOR
     public class WildcardType : Type
     {
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
@@ -36,5 +37,10 @@ namespace Java.Lang.Reflect
         /// Returns an array of <see cref="Type"/> objects representing the upper bound(s) of this type variable.
         /// </summary>
         public Type[] UpperBounds => IExecuteArray<Type>("getUpperBounds");
-    }
+#else
+    public partial class WildcardType
+    {
+
+#endif
+}
 }

@@ -16,12 +16,10 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.JCOBridge.C2JBridge;
-
 namespace Java.Net
 {
-    public sealed class URLConnection : JVMBridgeBase<URLConnection>
+    public partial class URLConnection
     {
-        public override string ClassName => "java.net.URLConnection";
+        // can be extended with methods not reflected or not available in Java;
     }
 }

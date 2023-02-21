@@ -16,47 +16,11 @@
 *  Refer to LICENSE for more information.
 */
 
-using Java.Lang;
-using Javax.Management.Loading;
-
 namespace Javax.Management
 {
-    public class MBeanServer : MBeanServerConnection
+    public partial class MBeanServer
     {
-        public override bool IsInterface => true;
+        // can be extended with methods not reflected or not available in Java;
 
-        public override string ClassName => "javax.management.MBeanServer";
-        /// <summary>
-        /// Return the named ClassLoader.
-        /// </summary>
-        public ClassLoader GetClassLoader(ObjectName loaderName) => IExecute<ClassLoader>("getClassLoader", loaderName);
-        /// <summary>
-        /// Return the ClassLoader that was used for loading the class of the named MBean.
-        /// </summary>
-        public ClassLoader GetClassLoaderFor(ObjectName mbeanName) => IExecute<ClassLoader>("getClassLoaderFor", mbeanName);
-        /// <summary>
-        /// Return the ClassLoaderRepository for this MBeanServer.
-        /// </summary>
-        public ClassLoaderRepository ClassLoaderRepository => IExecute<ClassLoaderRepository>("getClassLoaderRepository");
-        /// <summary>
-        /// Instantiates an object using the list of all class loaders registered in the MBean server's Class Loader Repository.
-        /// </summary>
-        public object Instantiate(string className) => IExecute<object>("instantiate", className);
-        /// <summary>
-        /// Instantiates an object using the list of all class loaders registered in the MBean server Class Loader Repository.
-        /// </summary>
-        public object Instantiate(string className, object[] parameters, string[] signature) => IExecute<object>("instantiate", className, parameters, signature);
-        /// <summary>
-        /// Instantiates an object using the class Loader specified by its ObjectName.
-        /// </summary>
-        public object Instantiate(string className, ObjectName loaderName) => IExecute<object>("instantiate", className, loaderName);
-        /// <summary>
-        /// Instantiates an object.
-        /// </summary>
-        public object Instantiate(string className, ObjectName loaderName, object[] parameters, string[] signature) => IExecute<object>("instantiate", className, loaderName, parameters, signature);
-        /// <summary>
-        /// Registers a pre-existing object as an MBean with the MBean server.
-        /// </summary>
-        public ObjectInstance RegisterMBean(object o, ObjectName name) => IExecute<ObjectInstance>("registerMBean", o, name);
     }
 }

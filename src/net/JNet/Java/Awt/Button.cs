@@ -18,18 +18,8 @@
 
 namespace Java.Awt
 {
-    public class Button : Component
+    public partial class Button
     {
-        public override string ClassName => "java.awt.Button";
-
-        public Button()
-        {
-        }
-
-        public Button(string label) : base(label)
-        {
-        }
-
-        // TODO: complete the class
+        // can be extended with methods not reflected or not available in Java;
     }
 }

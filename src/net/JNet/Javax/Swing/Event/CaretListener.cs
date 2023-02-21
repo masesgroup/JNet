@@ -30,7 +30,7 @@ namespace Javax.Swing.Event
     /// Listener for CaretListener. Extends <see cref="JVMBridgeListener"/>, implements <see cref="ICaretListener"/>
     /// </summary>
     /// <remarks>Remember to Dispose the object otherwise there is a resource leak, the object contains a reference to the the corresponding JVM object</remarks>
-    public class CaretListener : JVMBridgeListener, ICaretListener
+    public partial class CaretListener : ICaretListener
     {
         /// <inheritdoc cref="JVMBridgeListener.ClassName"/>
         public sealed override string ClassName => "org.mases.jnet.swing.event.JNetCaretListener";

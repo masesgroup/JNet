@@ -18,37 +18,9 @@
 
 namespace Javax.Management.Remote
 {
-    public class JMXConnectionNotification : Notification
+    public partial class JMXConnectionNotification
     {
-        public override string ClassName => "javax.management.remote.JMXConnectionNotification";
+        // can be extended with methods not reflected or not available in Java;
 
-        public JMXConnectionNotification() { }
-
-        protected JMXConnectionNotification(params object[] args) : base(args) { }
-        /// <summary>
-        /// Constructs a new connection notification.
-        /// </summary>
-        public JMXConnectionNotification(string type, object source, string connectionId, long sequenceNumber, string message, object userData)
-            : base(type, source, connectionId, sequenceNumber, message, userData) { }
-        /// <summary>
-        /// Notification type string for a connection-closed notification.
-        /// </summary>
-        public static string CLOSED => Clazz.GetField<string>("CLOSED");
-        /// <summary>
-        /// Notification type string for a connection-failed notification.
-        /// </summary>
-        public static string FAILED => Clazz.GetField<string>("FAILED");
-        /// <summary>
-        /// Notification type string for a connection that has possibly lost notifications.
-        /// </summary>
-        public static string NOTIFS_LOST => Clazz.GetField<string>("NOTIFS_LOST");
-        /// <summary>
-        /// Notification type string for a connection-opened notification.
-        /// </summary>
-        public static string OPENED => Clazz.GetField<string>("OPENED");
-        /// <summary>
-        /// The connection ID to which this notification pertains.
-        /// </summary>
-        public string ConnectionId => IExecute<string>("getConnectionId");
     }
 }

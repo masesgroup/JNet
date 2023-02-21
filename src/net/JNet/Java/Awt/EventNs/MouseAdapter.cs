@@ -19,7 +19,7 @@
 using MASES.JCOBridge.C2JBridge;
 using System;
 
-namespace Java.Awt.Event
+namespace Java.Awt.EventNs
 {
     public interface IMouseAdapter : IJVMBridgeBase
     {
@@ -44,10 +44,10 @@ namespace Java.Awt.Event
     /// Listener for MouseAdapter. Extends <see cref="JVMBridgeListener"/>, implements <see cref="IMouseAdapter"/>
     /// </summary>
     /// <remarks>Remember to Dispose the object otherwise there is a resource leak, the object contains a reference to the the corresponding JVM object</remarks>
-    public class MouseAdapter : JVMBridgeListener, IMouseAdapter
+    public partial class MouseAdapter : IMouseAdapter
     {
         /// <inheritdoc cref="JVMBridgeListener.ClassName"/>
-        public sealed override string ClassName => "org.mases.jnet.awt.event.JNetMouseAdapter";
+        public override string ClassName => "org.mases.jnet.awt.event.JNetMouseAdapter";
 
         readonly Action<MouseEvent> MouseClickedFunction = null;
         readonly Action<MouseEvent> MouseEnteredFunction = null;

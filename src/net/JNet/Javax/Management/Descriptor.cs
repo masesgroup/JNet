@@ -20,42 +20,9 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management
 {
-    public class Descriptor : JVMBridgeBase<Descriptor>
+    public partial class Descriptor
     {
-        public override bool IsInterface => true;
+        // can be extended with methods not reflected or not available in Java;
 
-        public override string ClassName => "javax.management.Descriptor";
-        /// <summary>
-        /// Returns all the field names in the descriptor.
-        /// </summary>
-        public string[] FieldNames => IExecuteArray<string>("getFieldNames");
-        /// <summary>
-        /// Returns all of the fields contained in this descriptor as a string array.
-        /// </summary>
-        public string[] Fields => IExecuteArray<string>("getFields");
-        /// <summary>
-        /// Returns the value for a specific field name, or null if no value is present for that name.
-        /// </summary>
-        public object GetFieldValue(string fieldName) => IExecute("getFieldValue", fieldName);
-        /// <summary>
-        /// Returns all the field values in the descriptor as an array of Objects.
-        /// </summary>
-        public object[] GetFieldValues(params string[] fieldNames) => fieldNames.Length == 0 ? IExecuteArray<object>("getFieldValues") : IExecuteArray<object>("getFieldValues", fieldNames);
-        /// <summary>
-        /// Returns true if all of the fields have legal values given their names.
-        /// </summary>
-        public bool IsValid => IExecute<bool>("isValid");
-        /// <summary>
-        /// Removes a field from the descriptor.
-        /// </summary>
-        public void RemoveField(string fieldName) => IExecute("removeField", fieldName);
-        /// <summary>
-        /// Sets the value for a specific field name.
-        /// </summary>
-        public void SetField(string fieldName, object fieldValue) => IExecute("setField", fieldName, fieldValue);
-        /// <summary>
-        /// Sets all fields in the field names array to the new value with the same index in the field values array.
-        /// </summary>
-        public void SetFields(string[] fieldNames, object[] fieldValues) => IExecute("setFields", fieldNames, fieldValues);
     }
 }

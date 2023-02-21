@@ -18,30 +18,8 @@
 
 namespace Java.Awt
 {
-    public class TextArea : TextComponent
+    public partial class TextArea
     {
-        public override string ClassName => "java.awt.TextArea";
-
-        public TextArea()
-        {
-        }
-
-        public TextArea(int rows, int columns) : base(rows, columns)
-        {
-        }
-
-        public TextArea(string text) : base(text)
-        {
-        }
-
-        public TextArea(string text, int rows, int columns) : base(text, rows, columns)
-        {
-        }
-
-        public TextArea(string text, int rows, int columns, int scrollbars) : base(text, rows, columns, scrollbars)
-        {
-        }
-
-        // TODO: complete the class
+        // can be extended with methods not reflected or not available in Java;
     }
 }

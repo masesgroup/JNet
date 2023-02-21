@@ -16,26 +16,10 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.JCOBridge.C2JBridge;
-
 namespace Java.Awt
 {
-    public class GridLayout : JVMBridgeBase<GridLayout>
+    public partial class GridLayout
     {
-        public override string ClassName => "java.awt.GridLayout";
-
-        public GridLayout()
-        {
-        }
-
-        public GridLayout(int rows, int cols) : base(rows, cols)
-        {
-        }
-
-        public GridLayout(int rows, int cols, int hgap, int vgap) : base(rows, cols, hgap, vgap)
-        {
-        }
-
-        // TODO: complete the class
+        // can be extended with methods not reflected or not available in Java;
     }
 }

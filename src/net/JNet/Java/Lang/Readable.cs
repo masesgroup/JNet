@@ -16,24 +16,23 @@
 *  Refer to LICENSE for more information.
 */
 
-using Java.Lang;
+using Java.Nio;
+using MASES.JCOBridge.C2JBridge;
 
-namespace Java.Awt.Event
+namespace Java.Lang
 {
-    public class ItemEvent : AWTEvent
+    /// <summary>
+    /// .NET implementations of <see href="https://docs.oracle.com/javase/11/docs/api/java.base/java/lang/Readable.html"/>
+    /// </summary>
+    public class Readable : JVMBridgeBase<Readable>
     {
-        public override string ClassName => "java.awt.event.ItemEvent";
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.lang.Readable";
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
         /// <summary>
-        /// Returns the item affected by the event.
+        /// Attempts to read characters into the specified character buffer.
         /// </summary>
-        public Object Item => IExecute<Object>("getItem");
-        /// <summary>
-        /// Returns the originator of the event.
-        /// </summary>
-        public ItemSelectable ItemSelectable => IExecute<ItemSelectable>("getItemSelectable");
-        /// <summary>
-        /// Returns the type of state change(selected or deselected).
-        /// </summary>
-        public int StateChange => IExecute<int>("getStateChange");
+        public int Read​(CharBuffer cb) => IExecute<int>("read​", cb);
     }
 }

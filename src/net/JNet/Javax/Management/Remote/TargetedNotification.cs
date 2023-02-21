@@ -16,27 +16,11 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.JCOBridge.C2JBridge;
-
 namespace Javax.Management.Remote
 {
-    public class TargetedNotification : JVMBridgeBase<TargetedNotification>
+    public partial class TargetedNotification
     {
-        public override string ClassName => "javax.management.remote.TargetedNotification";
+        // can be extended with methods not reflected or not available in Java;
 
-        public TargetedNotification() { }
-        /// <summary>
-        /// Constructs a <see cref="TargetedNotification"/> object.
-        /// </summary>
-        public TargetedNotification(Notification notification, int listenerID)
-            : base(notification, listenerID) { }
-        /// <summary>
-        /// The ID of the listener to which the notification is targeted.
-        /// </summary>
-        public int ListenerID => IExecute<int>("getListenerID");
-        /// <summary>
-        /// The emitted notification.
-        /// </summary>
-        public Notification Notification => IExecute<Notification>("getNotification");
     }
 }

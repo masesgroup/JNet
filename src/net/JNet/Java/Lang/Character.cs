@@ -23,7 +23,7 @@ namespace Java.Lang
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Character.html"/>
     /// </summary>
-    public sealed class Character : JVMBridgeBase<Character>
+    public class Character : JVMBridgeBase<Character>
     {
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "java.lang.Character";
@@ -33,6 +33,10 @@ namespace Java.Lang
         public Character()
         {
         }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public Character(params object[] args) : base(args) { }
         /// <summary>
         /// Constructs a newly allocated <see cref="Character"/> object that represents the specified char value.
         /// </summary>
@@ -45,20 +49,36 @@ namespace Java.Lang
         /// <summary>
         /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Character.Subset.html"/>
         /// </summary>
-        public sealed class Subset : JVMBridgeBase<Subset>
+        public class Subset : JVMBridgeBase<Subset>
         {
             /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
             public override string ClassName => "java.lang.Character.Subset";
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public Subset() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public Subset(params object[] args) : base(args) { }
         }
         /// <summary>
         /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Character.UnicodeBlock.html"/>
         /// </summary>
-        public sealed class UnicodeBlock : JVMBridgeBase<UnicodeBlock>
+        public class UnicodeBlock : JVMBridgeBase<UnicodeBlock>
         {
             /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
             public override string ClassName => "java.lang.Character.UnicodeBlock";
             /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
             public override bool IsStatic => true;
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public UnicodeBlock() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public UnicodeBlock(params object[] args) : base(args) { }
         }
     }
 }

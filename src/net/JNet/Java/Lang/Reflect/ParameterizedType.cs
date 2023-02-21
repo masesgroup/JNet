@@ -24,6 +24,7 @@ namespace Java.Lang.Reflect
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/ParameterizedType.html"/>
     /// </summary>
+#if JNETREFLECTOR
     public class ParameterizedType : Type
     {
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
@@ -40,5 +41,10 @@ namespace Java.Lang.Reflect
         /// Returns the <see cref="Type"/> object representing the class or interface that declared this type.
         /// </summary>
         public Type RawType => IExecute<Type>("getOwnerType");
+#else
+    public partial class ParameterizedType
+    {
+
+#endif
     }
 }

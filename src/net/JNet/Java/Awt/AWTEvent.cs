@@ -16,29 +16,10 @@
 *  Refer to LICENSE for more information.
 */
 
-using Java.Lang;
-using Java.Util;
-
 namespace Java.Awt
 {
-    public class AWTEvent : EventObject
+    public partial class AWTEvent
     {
-        public override string ClassName => "java.awt.AWTEvent";
-        /// <summary>
-        /// Returns the event type.
-        /// </summary>
-        /// <value>Returns the event type.</value>
-        public int ID => IExecute<int>("getID");
-        /// <summary>
-        /// Returns a string representing the state of this Event. This method is intended to be used only for debugging purposes, and the content and format of the returned string may vary between implementations. The returned string may be empty but may not be null.
-        /// </summary>
-        /// <value>A string representation of this event.</value>
-        public string ParamString => IExecute<string>("paramString");
-        /// <summary>
-        /// Retargets an event to a new source. This method is typically used to retarget an event to a lightweight child <see cref="Component"/> of the original heavyweight source. 
-        /// </summary>
-        /// <remarks>This method is intended to be used only by event targeting subsystems, such as client-defined KeyboardFocusManagers. It is not for general client use.</remarks>
-        /// <param name="newSource">The new Object to which the event should be dispatched</param>
-        public void SetSource(Object newSource) { IExecute("setSource", newSource); }
+        // can be extended with methods not reflected or not available in Java;
     }
 }

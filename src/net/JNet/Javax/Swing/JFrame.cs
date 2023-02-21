@@ -16,30 +16,10 @@
 *  Refer to LICENSE for more information.
 */
 
-using Java.Awt;
-
 namespace Javax.Swing
 {
-    public class JFrame : Frame
+    public partial class JFrame
     {
-        public override string ClassName => "javax.swing.JFrame";
-
-        public JFrame()
-        {
-        }
-
-        public JFrame(GraphicsConfiguration gc) : base(gc)
-        {
-        }
-
-        public JFrame(string title) : base(title)
-        {
-        }
-
-        public JFrame(string title, GraphicsConfiguration gc) : base(title, gc)
-        {
-        }
-
-        public static void SetDefaultLookAndFeelDecorated(bool defaultLookAndFeelDecorated) => SExecute("setDefaultLookAndFeelDecorated​", defaultLookAndFeelDecorated);
+        // can be extended with methods not reflected or not available in Java;
     }
 }

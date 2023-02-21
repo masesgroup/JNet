@@ -16,14 +16,10 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.JCOBridge.C2JBridge;
-
 namespace Java.Util
 {
-    public sealed class UUID : JVMBridgeBase<UUID>
+    public partial class UUID
     {
-        public override bool IsStatic => true;
-
-        public override string ClassName => "java.util.UUID";
+        // can be extended with methods not reflected or not available in Java;
     }
 }

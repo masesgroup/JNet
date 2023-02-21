@@ -23,6 +23,7 @@ namespace Java.Lang.Reflect
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Type.html"/>
     /// </summary>
+#if JNETREFLECTOR
     public class Type : JVMBridgeBase<Type>
     {
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
@@ -31,5 +32,10 @@ namespace Java.Lang.Reflect
         /// Returns a string describing this type, including information about any type parameters.
         /// </summary>
         public string TypeName => IExecute<string>("getTypeName");
-    }
+#else
+    public partial class Type
+    {
+
+#endif
+}
 }

@@ -16,12 +16,10 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.JCOBridge.C2JBridge;
-
-namespace Java.Awt.Font
+namespace Java.Awt.EventNs
 {
-    public class TextHitInfo : JVMBridgeBase<TextHitInfo>
+    public partial class FocusEvent
     {
-        public override string ClassName => "java.awt.font.TextHitInfo";
+        // can be extended with methods not reflected or not available in Java;
     }
 }

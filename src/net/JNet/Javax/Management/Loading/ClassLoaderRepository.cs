@@ -21,10 +21,9 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Loading
 {
-    public class ClassLoaderRepository : JVMBridgeBase<ClassLoaderRepository>
+    public partial class ClassLoaderRepository
     {
-        public override bool IsInterface => true;
-        public override string ClassName => "javax.management.loading.ClassLoaderRepository";
+        // can be extended with methods not reflected or not available in Java;
         /// <summary>
         /// Load the given class name through the list of class loaders.
         /// </summary>

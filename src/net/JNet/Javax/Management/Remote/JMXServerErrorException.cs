@@ -23,9 +23,8 @@ namespace Javax.Management.Remote
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/remote/JMXServerErrorException.html"/>
     /// </summary>
-    public class JMXServerErrorException : Java.Io.IOException
+    public partial class JMXServerErrorException
     {
-        /// <inheritdoc cref="JVMBridgeException.ClassName"/>
-        public override string ClassName => "javax.management.remote.JMXServerErrorException";
+        // can be extended with methods not reflected or not available in Java;
     }
 }

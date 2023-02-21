@@ -30,7 +30,7 @@ namespace Javax.Naming.Event
     /// Listener for ObjectChangeListener. Extends <see cref="JVMBridgeListener"/>, implements <see cref="IObjectChangeListener"/>
     /// </summary>
     /// <remarks>Remember to Dispose the object otherwise there is a resource leak, the object contains a reference to the the corresponding JVM object</remarks>
-    public class ObjectChangeListener : JVMBridgeListener, IObjectChangeListener
+    public partial class ObjectChangeListener : IObjectChangeListener
     {
         /// <inheritdoc cref="JVMBridgeListener.ClassName"/>
         public sealed override string ClassName => "org.mases.jnet.naming.event.JNetObjectChangeListener";

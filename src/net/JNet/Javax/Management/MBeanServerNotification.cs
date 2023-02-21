@@ -18,29 +18,9 @@
 
 namespace Javax.Management
 {
-    public class MBeanServerNotification : Notification
+    public partial class MBeanServerNotification
     {
-        public override string ClassName => "javax.management.MBeanServerNotification";
+        // can be extended with methods not reflected or not available in Java;
 
-        public MBeanServerNotification() { }
-
-        protected MBeanServerNotification(params object[] args) : base(args) { }
-        /// <summary>
-        /// Creates an <see cref="MBeanServerNotification"/> object specifying object names of the MBeans that caused the notification and the specified notification type.
-        /// </summary>
-        public MBeanServerNotification(string type, object source, long sequenceNumber, ObjectName objectName)
-            : base(type, source, sequenceNumber, objectName) { }
-        /// <summary>
-        /// Notification type denoting that an MBean has been registered.
-        /// </summary>
-        public static string REGISTRATION_NOTIFICATION => Clazz.GetField<string>("REGISTRATION_NOTIFICATION");
-        /// <summary>
-        /// Notification type denoting that an MBean has been unregistered.
-        /// </summary>
-        public static string UNREGISTRATION_NOTIFICATION => Clazz.GetField<string>("UNREGISTRATION_NOTIFICATION");
-        /// <summary>
-        /// Returns the object name of the MBean that caused the notification.
-        /// </summary>
-        public ObjectName MBeanName => IExecute<ObjectName>("getMBeanName");
     }
 }

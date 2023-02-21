@@ -18,16 +18,8 @@
 
 namespace Javax.Swing
 {
-    public class AbstractButton : JComponent
+    public partial class AbstractButton
     {
-        public override string ClassName => "javax.swing.AbstractButton";
-
-        public AbstractButton()
-        {
-        }
-
-        protected AbstractButton(params object[] args) : base(args)
-        {
-        }
+        // can be extended with methods not reflected or not available in Java;
     }
 }

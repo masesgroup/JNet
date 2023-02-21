@@ -23,9 +23,8 @@ namespace Javax.Management
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/OperationsException.html"/>
     /// </summary>
-    public class OperationsException : JMException
+    public partial class OperationsException
     {
-        /// <inheritdoc cref="JVMBridgeException.ClassName"/>
-        public override string ClassName => "javax.management.OperationsException";
+        // can be extended with methods not reflected or not available in Java;
     }
 }

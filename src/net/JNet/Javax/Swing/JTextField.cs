@@ -20,28 +20,8 @@ using Javax.Swing.Text;
 
 namespace Javax.Swing
 {
-    public class JTextField : JTextComponent
+    public partial class JTextField
     {
-        public override string ClassName => "javax.swing.JTextField";
-
-        public JTextField()
-        {
-        }
-
-        //public JTextField(Document doc, string text, int columns) : base(doc, text, columns)
-        //{
-        //}
-
-        public JTextField(int columns) : base(columns)
-        {
-        }
-
-        public JTextField(string text) : base(text)
-        {
-        }
-
-        public JTextField(string text, int columns) : base(text, columns)
-        {
-        }
+        // can be extended with methods not reflected or not available in Java;
     }
 }

@@ -16,16 +16,13 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.JCOBridge.C2JBridge;
-
 namespace Javax.Management
 {
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/BadAttributeValueExpException.html"/>
     /// </summary>
-    public class BadAttributeValueExpException : Java.Lang.Exception
+    public partial class BadAttributeValueExpException
     {
-        /// <inheritdoc cref="JVMBridgeException.ClassName"/>
-        public override string ClassName => "javax.management.BadAttributeValueExpException";
+        // can be extended with methods not reflected or not available in Java;
     }
 }

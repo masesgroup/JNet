@@ -20,8 +20,8 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    public class Random : JVMBridgeBase<Random>
+    public partial class Random
     {
-        public override string ClassName => "java.util.Random";
+        // can be extended with methods not reflected or not available in Java;
     }
 }

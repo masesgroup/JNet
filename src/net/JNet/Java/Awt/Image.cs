@@ -16,14 +16,10 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.JCOBridge.C2JBridge;
-
 namespace Java.Awt
 {
-    public class Image : JVMBridgeBase<Image>
+    public partial class Image
     {
-        public override string ClassName => "java.awt.Image";
-
-        // TODO: complete the class
+        // can be extended with methods not reflected or not available in Java;
     }
 }

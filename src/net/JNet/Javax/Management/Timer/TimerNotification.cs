@@ -18,21 +18,9 @@
 
 namespace Javax.Management.Timer
 {
-    public class TimerNotification : Notification
+    public partial class TimerNotification
     {
-        public override string ClassName => "javax.management.timer.TimerNotification";
+        // can be extended with methods not reflected or not available in Java;
 
-        public TimerNotification() { }
-
-        protected TimerNotification(params object[] args) : base(args) { }
-        /// <summary>
-        /// Creates a timer notification object.
-        /// </summary>
-        public TimerNotification(string type, object source, long sequenceNumber, long timeStamp, string msg, int id)
-            : base(type, source, sequenceNumber, timeStamp, msg, id) { }
-        /// <summary>
-        /// Gets the identifier of this timer notification.
-        /// </summary>
-        public int NotificationID => IExecute<int>("getNotificationID");
     }
 }

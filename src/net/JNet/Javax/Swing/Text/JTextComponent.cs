@@ -18,16 +18,8 @@
 
 namespace Javax.Swing.Text
 {
-    public class JTextComponent : JComponent
+    public partial class JTextComponent
     {
-        public override string ClassName => "javax.swing.text.JTextComponent";
-
-        public JTextComponent()
-        {
-        }
-
-        protected JTextComponent(params object[] args) : base(args)
-        {
-        }
+        // can be extended with methods not reflected or not available in Java;
     }
 }

@@ -16,16 +16,13 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.JCOBridge.C2JBridge;
-
 namespace Javax.Management
 {
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/InstanceNotFoundException.html"/>
     /// </summary>
-    public class InstanceNotFoundException : OperationsException
+    public partial class InstanceNotFoundException
     {
-        /// <inheritdoc cref="JVMBridgeException.ClassName"/>
-        public override string ClassName => "javax.management.InstanceNotFoundException";
+        // can be extended with methods not reflected or not available in Java;
     }
 }

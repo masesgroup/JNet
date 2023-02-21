@@ -20,15 +20,8 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Regex
 {
-    public sealed class Pattern : JVMBridgeBase<Pattern>
+    public partial class Pattern
     {
-        public override string ClassName => "java.util.regex.Pattern";
-
-        // to be extended
-
-        public static Pattern Compile(string regex)
-        {
-            return SExecute<Pattern>("compile", regex);
-        }
+        // can be extended with methods not reflected or not available in Java;
     }
 }

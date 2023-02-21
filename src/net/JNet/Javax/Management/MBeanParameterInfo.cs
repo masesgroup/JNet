@@ -18,26 +18,9 @@
 
 namespace Javax.Management
 {
-    public class MBeanParameterInfo : MBeanFeatureInfo
+    public partial class MBeanParameterInfo
     {
-        public override string ClassName => "javax.management.MBeanParameterInfo";
+        // can be extended with methods not reflected or not available in Java;
 
-        public MBeanParameterInfo() { }
-
-        protected MBeanParameterInfo(params object[] args) : base(args) { }
-        /// <summary>
-        /// Constructs an <see cref="MBeanParameterInfo"/> object.
-        /// </summary>
-        public MBeanParameterInfo(string name, string type, string description)
-            : base(name, type, description) { }
-        /// <summary>
-        /// Constructs an <see cref="MBeanParameterInfo"/> object.
-        /// </summary>
-        public MBeanParameterInfo(string name, string type, string description, Descriptor descriptor)
-            : base(name, type, description, descriptor) { }
-        /// <summary>
-        /// Returns the type or class name of the data.
-        /// </summary>
-        public string Type => IExecute<string>("getType");
     }
 }

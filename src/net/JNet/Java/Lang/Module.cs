@@ -75,7 +75,7 @@ namespace Java.Lang
         /// <summary>
         /// Returns the module descriptor for this module or null if this module is an unnamed module.
         /// </summary>
-        public Lang.module.ModuleDescriptor Descriptor => IExecute<Lang.module.ModuleDescriptor>("getDescriptor​​​​​​");
+        public Lang.ModuleNs.ModuleDescriptor Descriptor => IExecute<Lang.ModuleNs.ModuleDescriptor>("getDescriptor​​​​​​");
         /// <summary>
         /// Returns the module layer that contains this module or null if this module is not in a module layer.
         /// </summary>

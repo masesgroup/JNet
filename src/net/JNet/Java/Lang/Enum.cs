@@ -29,6 +29,14 @@ namespace Java.Lang
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "java.lang.Enum";
         /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public Enum() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public Enum(params object[] args) : base(args) { }
+        /// <summary>
         /// Returns the name of this enum constant, exactly as declared in its enum declaration.
         /// </summary>
         public string Name => IExecute<string>("name");

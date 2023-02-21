@@ -21,24 +21,8 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing
 {
-    public class SpinnerModel : JVMBridgeBase<SpinnerModel>
+    public partial class SpinnerModel
     {
-        public override bool IsInterface => true;
-
-        public override string ClassName => "javax.swing.SpinnerModel";
-
-        public void AddChangeListener(ChangeListener l) => IExecute("addChangeListener", l);
-
-        public object NextValue => IExecute("getNextValue");
-
-        public object PreviousValue => IExecute("getPreviousValue");
-
-        public object Value
-        {
-            get { return IExecute("getValue"); }
-            set { IExecute("setValue", value); }
-        }
-
-        public void RemoveChangeListener(ChangeListener l) => IExecute("removeChangeListener", l);
+        // can be extended with methods not reflected or not available in Java;
     }
 }

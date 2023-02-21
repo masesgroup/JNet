@@ -18,44 +18,9 @@
 
 namespace Javax.Management
 {
-    public class MBeanAttributeInfo : MBeanFeatureInfo
+    public partial class MBeanAttributeInfo
     {
-        public override string ClassName => "javax.management.MBeanAttributeInfo";
+        // can be extended with methods not reflected or not available in Java;
 
-        public MBeanAttributeInfo() { }
-
-        protected MBeanAttributeInfo(params object[] args) : base(args) { }
-        /// <summary>
-        /// This constructor takes the name of a simple attribute, and Method objects for reading and writing the attribute.
-        /// </summary>
-        public MBeanAttributeInfo(string name, string description, Java.Lang.Reflect.Method getter, Java.Lang.Reflect.Method setter)
-            : base(name, description, getter, setter) { }
-
-        /// <summary>
-        /// Constructs an <see cref="MBeanAttributeInfo"/> object.
-        /// </summary>
-        public MBeanAttributeInfo(string name, string type, string description, bool isReadable, bool isWritable, bool isIs)
-            : base(name, type, description, isReadable, isWritable, isIs) { }
-        /// <summary>
-        /// Constructs an <see cref="MBeanAttributeInfo"/> object.
-        /// </summary>
-        public MBeanAttributeInfo(string name, string type, string description, bool isReadable, bool isWritable, bool isIs, Descriptor descriptor)
-            : base(name, type, description, isReadable, isWritable, isIs, descriptor) { }
-        /// <summary>
-        /// Returns the class name of the attribute.
-        /// </summary>
-        public string Type => IExecute<string>("getType");
-        /// <summary>
-        /// Indicates if this attribute has an "is" getter.
-        /// </summary>
-        public bool IsIs => IExecute<bool>("isIs");
-        /// <summary>
-        /// Whether the value of the attribute can be read.
-        /// </summary>
-        public bool IsReadable => IExecute<bool>("isReadable");
-        /// <summary>
-        /// Whether new values can be written to the attribute.
-        /// </summary>
-        public bool IsWritable => IExecute<bool>("isWritable");
     }
 }

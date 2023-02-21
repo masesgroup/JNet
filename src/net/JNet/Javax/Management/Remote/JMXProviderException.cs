@@ -23,9 +23,8 @@ namespace Javax.Management.Remote
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/remote/JMXProviderException.html"/>
     /// </summary>
-    public class JMXProviderException : Java.Io.IOException
+    public partial class JMXProviderException
     {
-        /// <inheritdoc cref="JVMBridgeException.ClassName"/>
-        public override string ClassName => "javax.management.remote.JMXProviderException";
+        // can be extended with methods not reflected or not available in Java;
     }
 }

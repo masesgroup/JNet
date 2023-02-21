@@ -19,7 +19,7 @@
 using MASES.JCOBridge.C2JBridge;
 using System;
 
-namespace Java.Awt.Event
+namespace Java.Awt.EventNs
 {
     public interface IFocusListener : IJVMBridgeBase
     {
@@ -32,7 +32,7 @@ namespace Java.Awt.Event
     /// Listener for FocusListener. Extends <see cref="JVMBridgeListener"/>, implements <see cref="IFocusListener"/>
     /// </summary>
     /// <remarks>Remember to Dispose the object otherwise there is a resource leak, the object contains a reference to the the corresponding JVM object</remarks>
-    public class FocusListener : JVMBridgeListener, IFocusListener
+    public partial class FocusListener : IFocusListener
     {
         /// <inheritdoc cref="JVMBridgeListener.ClassName"/>
         public sealed override string ClassName => "org.mases.jnet.awt.event.JNetFocusListener";

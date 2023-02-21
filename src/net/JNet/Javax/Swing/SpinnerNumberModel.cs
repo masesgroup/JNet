@@ -20,24 +20,8 @@ using Java.Lang;
 
 namespace Javax.Swing
 {
-    public class SpinnerNumberModel : AbstractSpinnerModel
+    public partial class SpinnerNumberModel
     {
-        public override string ClassName => "javax.swing.SpinnerNumberModel";
-
-        public SpinnerNumberModel()
-        {
-        }
-
-        public SpinnerNumberModel(double value, double minimum, double maximum, double stepSize) : base(value, minimum, maximum, stepSize)
-        {
-        }
-
-        public SpinnerNumberModel(int value, int minimum, int maximum, int stepSize) : base(value, minimum, maximum, stepSize)
-        {
-        }
-
-        public SpinnerNumberModel(Number value, Comparable minimum, Comparable maximum, Number stepSize) : base(value, minimum, maximum, stepSize)
-        {
-        }
+        // can be extended with methods not reflected or not available in Java;
     }
 }

@@ -18,55 +18,9 @@
 
 namespace Javax.Management
 {
-    public class MBeanOperationInfo : MBeanFeatureInfo
+    public partial class MBeanOperationInfo
     {
-        public override string ClassName => "javax.management.MBeanOperationInfo";
+        // can be extended with methods not reflected or not available in Java;
 
-        public MBeanOperationInfo() { }
-
-        protected MBeanOperationInfo(params object[] args) : base(args) { }
-        /// <summary>
-        /// Constructs an <see cref="MBeanOperationInfo"/> object.
-        /// </summary>
-        public MBeanOperationInfo(string description, Java.Lang.Reflect.Method method) : base(description, method) { }
-        /// <summary>
-        /// Constructs an <see cref="MBeanOperationInfo"/> object.
-        /// </summary>
-        public MBeanOperationInfo(string name, string description, MBeanParameterInfo[] signature, string type, int impact)
-            : base(name, description, signature, type, impact) { }
-        /// <summary>
-        /// Constructs an <see cref="MBeanOperationInfo"/> object.
-        /// </summary>
-        public MBeanOperationInfo(string name, string description, MBeanParameterInfo[] signature, string type, int impact, Descriptor descriptor)
-            : base(name, description, signature, type, impact, descriptor) { }
-
-        /// <summary>
-        /// Indicates that the operation is write-like: it has an effect but does not return any information from the MBean.
-        /// </summary>
-        public static int ACTION => Clazz.GetField<int>("ACTION");
-        /// <summary>
-        /// Indicates that the operation is both read-like and write-like: it has an effect, and it also returns information from the MBean.
-        /// </summary>
-        public static int ACTION_INFO => Clazz.GetField<int>("ACTION_INFO");
-        /// <summary>
-        /// Indicates that the operation is read-like: it returns information but does not change any state.
-        /// </summary>
-        public static int INFO => Clazz.GetField<int>("INFO");
-        /// <summary>
-        /// Indicates that the impact of the operation is unknown or cannot be expressed using one of the other values.
-        /// </summary>
-        public static int UNKNOWN => Clazz.GetField<int>("UNKNOWN");
-        /// <summary>
-        /// Returns the impact of the method, one of <see cref="INFO"/>, <see cref="ACTION"/>, <see cref="ACTION_INFO"/>, <see cref="UNKNOWN"/>.
-        /// </summary>
-        public int Impact => IExecute<int>("getImpact");
-        /// <summary>
-        /// Returns the type of the method's return value.
-        /// </summary>
-        public string ReturnType => IExecute<string>("getReturnType");
-        /// <summary>
-        /// Returns the list of parameters for this constructor.
-        /// </summary>
-        public MBeanParameterInfo[] Signature => IExecuteArray<MBeanParameterInfo>("getSignature");
     }
 }

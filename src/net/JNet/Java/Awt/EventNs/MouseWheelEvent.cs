@@ -16,10 +16,10 @@
 *  Refer to LICENSE for more information.
 */
 
-namespace Java.Awt.Event
+namespace Java.Awt.EventNs
 {
-    public class TextEvent : AWTEvent
+    public partial class MouseWheelEvent
     {
-        public override string ClassName => "java.awt.event.TextEvent";
+        // can be extended with methods not reflected or not available in Java;
     }
 }

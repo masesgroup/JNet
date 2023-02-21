@@ -16,14 +16,10 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.JCOBridge.C2JBridge;
-
 namespace Javax.Naming.Event
 {
-    public class EventContext : JVMBridgeBase<EventContext>
+    public partial class EventContext
     {
-        public override string ClassName => "javax.naming.event.EventContext";
-
-        // TODO: complete the class
+        // can be extended with methods not reflected or not available in Java;
     }
 }

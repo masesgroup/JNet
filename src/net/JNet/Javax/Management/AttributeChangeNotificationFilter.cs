@@ -20,25 +20,10 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management
 {
-    public class AttributeChangeNotificationFilter : JVMBridgeBase<AttributeChangeNotificationFilter>
+    public partial class AttributeChangeNotificationFilter
     {
-        public override string ClassName => "javax.management.AttributeChangeNotificationFilter";
+        // can be extended with methods not reflected or not available in Java;
 
-        public AttributeChangeNotificationFilter() { }
-
-        protected AttributeChangeNotificationFilter(params object[] args) : base(args) { }
-        /// <summary>
-        /// Disables all the attribute names.
-        /// </summary>
-        public void DisableAllAttributes() => IExecute("disableAllAttributes");
-        /// <summary>
-        /// Disables all the attribute change notifications the attribute name of which equals the specified attribute name to be sent to the listener.
-        /// </summary>
-        public void DisableAttribute(string name) => IExecute("disableAttribute", name);
-        /// <summary>
-        /// Enables all the attribute change notifications the attribute name of which equals the specified name to be sent to the listener.
-        /// </summary>
-        public void EnableAttribute(string name) => IExecute("enableAttribute", name);
         /// <summary>
         /// Gets all the enabled attribute names for this filter.
         /// </summary>

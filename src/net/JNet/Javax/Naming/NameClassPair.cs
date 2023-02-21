@@ -16,14 +16,10 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.JCOBridge.C2JBridge;
-
 namespace Javax.Naming
 {
-    public class NameClassPair : JVMBridgeBase<NameClassPair>
+    public partial class NameClassPair
     {
-        public override string ClassName => "javax.naming.NameClassPair";
-
-        // TODO: complete the class
+        // can be extended with methods not reflected or not available in Java;
     }
 }

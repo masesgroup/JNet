@@ -16,20 +16,10 @@
 *  Refer to LICENSE for more information.
 */
 
-using Java.Util;
-
 namespace Javax.Swing.Event
 {
-    public class CaretEvent : EventObject
+    public partial class CaretEvent
     {
-        public override string ClassName => "javax.swing.event.CaretEvent";
-        /// <summary>
-        /// Fetches the location of the caret.
-        /// </summary>
-        public int Dot => IExecute<int>("getDot"); 
-        /// <summary>
-        /// Fetches the location of other end of a logical selection.
-        /// </summary>
-        public int Mark => IExecute<int>("getMark");
+        // can be extended with methods not reflected or not available in Java;
     }
 }

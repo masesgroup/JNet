@@ -18,10 +18,8 @@
 
 namespace Javax.Naming
 {
-    public class Binding : NameClassPair
+    public partial class Binding
     {
-        public override string ClassName => "javax.naming.Binding";
-
-        // TODO: complete the class
+        // can be extended with methods not reflected or not available in Java;
     }
 }

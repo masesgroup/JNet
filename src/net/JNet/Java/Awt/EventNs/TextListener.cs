@@ -19,7 +19,7 @@
 using MASES.JCOBridge.C2JBridge;
 using System;
 
-namespace Java.Awt.Event
+namespace Java.Awt.EventNs
 {
     public interface ITextListener : IJVMBridgeBase
     {
@@ -30,7 +30,7 @@ namespace Java.Awt.Event
     /// Listener for TextListener. Extends <see cref="JVMBridgeListener"/>, implements <see cref="ITextListener"/>
     /// </summary>
     /// <remarks>Remember to Dispose the object otherwise there is a resource leak, the object contains a reference to the the corresponding JVM object</remarks>
-    public class TextListener : JVMBridgeListener, ITextListener
+    public partial class TextListener : ITextListener
     {
         /// <inheritdoc cref="JVMBridgeListener.ClassName"/>
         public sealed override string ClassName => "org.mases.jnet.awt.event.JNetTextListener";

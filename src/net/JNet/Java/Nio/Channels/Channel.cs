@@ -16,19 +16,10 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.JCOBridge.C2JBridge;
-
-namespace Java.Lang.module // this namespace was changed because it is in conflict with Java.Lang.Module class
+namespace Java.Nio
 {
-    /// <summary>
-    /// .NET implementations of <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.html"/>
-    /// </summary>
-    public sealed class ModuleDescriptor : JVMBridgeBase<ModuleDescriptor>
+    public partial class Channel 
     {
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.lang.module.ModuleDescriptor";
-  
-
-        // to be completed
+        // can be extended with methods not reflected or not available in Java;
     }
 }

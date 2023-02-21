@@ -32,6 +32,14 @@ namespace Java.Lang
     {
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "java.lang.ClassLoader";
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public ClassLoader() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public ClassLoader(params object[] args) : base(args) { }
 #if !JNETREFLECTOR
         /// <summary>
         /// Sets the default assertion status for this class loader to false and discards any package defaults or class assertion status settings associated with the class loader.

@@ -20,14 +20,8 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    public class EventObject : JVMBridgeBase<EventObject>
+    public partial class EventObject
     {
-        public override string ClassName => "java.util.EventObject";
-
-        public EventObject() { }
-
-        protected EventObject(params object[] args) : base(args) { }
-
-        public virtual object Source => IExecute("getSource");
+        // can be extended with methods not reflected or not available in Java;
     }
 }

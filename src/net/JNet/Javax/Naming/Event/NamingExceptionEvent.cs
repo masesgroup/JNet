@@ -23,21 +23,8 @@ using MASES.JCOBridge.C2JBridge.JVMInterop;
 
 namespace Javax.Naming.Event
 {
-    public class NamingExceptionEvent : EventObject
+    public partial class NamingExceptionEvent
     {
-        public override string ClassName => "javax.naming.event.NamingExceptionEvent";
-        /// <summary>
-        /// Invokes the namingExceptionThrown() method on a listener using this event.
-        /// </summary>
-        /// <param name="listener">The non-null naming listener on which to invoke the method.</param>
-        public void Dispatch(NamingListener listener) => IExecute("dispatch", listener);
-        /// <summary>
-        /// Retrieves the EventContext that fired this event.
-        /// </summary>
-        public EventContext EventContext => IExecute<EventContext>("getEventContext");
-        /// <summary>
-        /// Retrieves the exception that was thrown.
-        /// </summary>
-        public NamingException Exception { get { var obj = IExecute<IJavaObject>("getException"); return JVMBridgeException.New(obj) as NamingException; } }
+        // can be extended with methods not reflected or not available in Java;
     }
 }

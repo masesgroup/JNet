@@ -16,39 +16,10 @@
 *  Refer to LICENSE for more information.
 */
 
-using Java.Lang;
-using Java.Util;
-
 namespace Javax.Naming.Event
 {
-    public class NamingEvent : EventObject
+    public partial class NamingEvent
     {
-        public override string ClassName => "javax.naming.event.NamingEvent";
-        /// <summary>
-        /// Invokes the appropriate listener method on this event. The default implementation of this method handles the following event types: OBJECT_ADDED, OBJECT_REMOVED, OBJECT_RENAMED, OBJECT_CHANGED.
-        /// </summary>
-        /// <param name="listener">The nonnull listener.</param>
-        /// <remarks>The listener method is executed in the same thread as this method. See the package description for more information on threading issues.</remarks>
-        public void Dispatch(NamingListener listener) => IExecute("dispatch", listener);
-        /// <summary>
-        /// Retrieves the change information for this event.
-        /// </summary>
-        public Object ChangeInfo => IExecute<Object>("getChangeInfo");
-        /// <summary>
-        /// Retrieves the event source that fired this event.
-        /// </summary>
-        public EventContext EventContext => IExecute<EventContext>("getEventContext");
-        /// <summary>
-        /// Retrieves the binding of the object after the change.
-        /// </summary>
-        public Binding NewBinding => IExecute<Binding>("getNewBinding");
-        /// <summary>
-        /// Retrieves the binding of the object before the change.
-        /// </summary>
-        public Binding OldBinding => IExecute<Binding>("getOldBinding");
-        /// <summary>
-        /// Returns the type of this event.
-        /// </summary>
-        public int Type => IExecute<int>("getType");
+        // can be extended with methods not reflected or not available in Java;
     }
 }

@@ -17,29 +17,13 @@
 */
 
 using Java.Util;
-using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Remote
 {
-    public class JMXConnectorFactory : JVMBridgeBase<JMXConnectorFactory>
+    public partial class JMXConnectorFactory
     {
-        public override string ClassName => "javax.management.remote.JMXConnectorFactory";
-        /// <summary>
-        /// Name of the attribute that specifies the default class loader.
-        /// </summary>
-        public static string DEFAULT_CLASS_LOADER => Clazz.GetField<string>("DEFAULT_CLASS_LOADER");
-        /// <summary>
-        /// Name of the attribute that specifies the class loader for loading protocol providers.
-        /// </summary>
-        public static string PROTOCOL_PROVIDER_CLASS_LOADER => Clazz.GetField<string>("PROTOCOL_PROVIDER_CLASS_LOADER");
-        /// <summary>
-        /// Name of the attribute that specifies the provider packages that are consulted when looking for the handler for a protocol.
-        /// </summary>
-        public static string PROTOCOL_PROVIDER_PACKAGES => Clazz.GetField<string>("PROTOCOL_PROVIDER_PACKAGES");
-        /// <summary>
-        /// Creates a connection to the connector server at the given address.
-        /// </summary>
-        public static JMXConnector Connect(JMXServiceURL serviceURL) => SExecute<JMXConnector>("connect", serviceURL);
+        // can be extended with methods not reflected or not available in Java;
+
         /// <summary>
         /// Creates a connection to the connector server at the given address.
         /// </summary>

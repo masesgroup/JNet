@@ -20,11 +20,8 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    public class Collections : JVMBridgeBase<Collections>
+    public partial class Collections
     {
-        public override bool IsStatic => true;
-        public override string ClassName => "java.util.Collections";
-
         public static Set<E> Singleton<E>(E element)
         {
             return SExecute<Set<E>>("singleton", element);

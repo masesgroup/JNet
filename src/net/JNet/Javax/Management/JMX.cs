@@ -20,45 +20,10 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management
 {
-    public class JMX : JVMBridgeBase<JMX>
+    public partial class JMX
     {
-        public override string ClassName => "javax.management.JMX";
-        /// <summary>
-        /// The name of the defaultValue field.
-        /// </summary>
-        public static string DEFAULT_VALUE_FIELD => Clazz.GetField<string>("DEFAULT_VALUE_FIELD");
-        /// <summary>
-        /// The name of the immutableInfo field.
-        /// </summary>
-        public static string IMMUTABLE_INFO_FIELD => Clazz.GetField<string>("IMMUTABLE_INFO_FIELD");
-        /// <summary>
-        /// The name of the interfaceClassName field.
-        /// </summary>
-        public static string INTERFACE_CLASS_NAME_FIELD => Clazz.GetField<string>("INTERFACE_CLASS_NAME_FIELD");
-        /// <summary>
-        /// The name of the legalValues field.
-        /// </summary>
-        public static string LEGAL_VALUES_FIELD => Clazz.GetField<string>("LEGAL_VALUES_FIELD");
-        /// <summary>
-        /// The name of the maxValue field.
-        /// </summary>
-        public static string MAX_VALUE_FIELD => Clazz.GetField<string>("MAX_VALUE_FIELD");
-        /// <summary>
-        /// The name of the minValue field.
-        /// </summary>
-        public static string MIN_VALUE_FIELD => Clazz.GetField<string>("MIN_VALUE_FIELD");
-        /// <summary>
-        /// The name of the mxbean field.
-        /// </summary>
-        public static string MXBEAN_FIELD => Clazz.GetField<string>("MXBEAN_FIELD");
-        /// <summary>
-        /// The name of the openType field.
-        /// </summary>
-        public static string OPEN_TYPE_FIELD => Clazz.GetField<string>("OPEN_TYPE_FIELD");
-        /// <summary>
-        /// The name of the originalType field.
-        /// </summary>
-        public static string ORIGINAL_TYPE_FIELD => Clazz.GetField<string>("ORIGINAL_TYPE_FIELD");
+        // can be extended with methods not reflected or not available in Java;
+
         /// <summary>
         /// Test whether an interface is an MXBean interface.
         /// </summary>

@@ -23,15 +23,11 @@ namespace Java.Lang.Reflect
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Method.html"/>
     /// </summary>
+#if JNETREFLECTOR
     public class Method : Executable
     {
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "java.lang.reflect.Method";
-
-        /// <summary>
-        /// Returns the default value for the annotation member represented by this <see cref="Method"/> instance.
-        /// </summary>
-        public object DefaultValue => IExecute("getDefaultValue");
         /// <summary>
         /// Returns a <see cref="Type"/> object that represents the formal return type of the method represented by this <see cref="Method"/> object.
         /// </summary>
@@ -41,16 +37,16 @@ namespace Java.Lang.Reflect
         /// </summary>
         public Class ReturnType => IExecute<Class>("getReturnType");
         /// <summary>
-        /// Invokes the underlying method represented by this Method object, on the specified object with the specified parameters.
-        /// </summary>
-        public object Invoke(object obj, params object[] args) => args.Length == 0 ? IExecute("invoke", obj) : IExecute("invoke", obj, args);
-        /// <summary>
-        /// Returns <see langword="true"/> if this method is a bridge method; returns <see langword="false"/> otherwise.
-        /// </summary>
-        public bool IsBridge => IExecute<bool>("isBridge");
-        /// <summary>
         /// Returns <see langword="true"/> if this method is a default method; returns <see langword="false"/> otherwise.
         /// </summary>
         public bool IsDefault => IExecute<bool>("isDefault");
+#else
+    public partial class Method
+    {
+        /// <summary>
+        /// Returns a <see cref="Class"/> object that represents the formal return type of the method represented by this <see cref="Method"/> object.
+        /// </summary>
+        public Class ReturnType => IExecute<Class>("getReturnType");
+#endif
     }
 }

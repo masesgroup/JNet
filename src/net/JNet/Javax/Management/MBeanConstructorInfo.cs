@@ -18,31 +18,9 @@
 
 namespace Javax.Management
 {
-    public class MBeanConstructorInfo : MBeanFeatureInfo
+    public partial class MBeanConstructorInfo
     {
-        public override string ClassName => "javax.management.MBeanConstructorInfo";
-
-        public MBeanConstructorInfo() { }
-
-        protected MBeanConstructorInfo(params object[] args) : base(args) { }
-        /// <summary>
-        /// Constructs an <see cref="MBeanConstructorInfo"/> object.
-        /// </summary>
-        public MBeanConstructorInfo(string description, Java.Lang.Reflect.Constructor constructor)
-            : base(description, constructor) { }
-        /// <summary>
-        /// Constructs an <see cref="MBeanConstructorInfo"/> object.
-        /// </summary>
-        public MBeanConstructorInfo(string name, string description, MBeanParameterInfo[] signature)
-            : base(name, description, signature) { }
-        /// <summary>
-        /// Constructs an <see cref="MBeanConstructorInfo"/> object.
-        /// </summary>
-        public MBeanConstructorInfo(string name, string description, MBeanParameterInfo[] signature, Descriptor descriptor)
-            : base(name, description, signature, descriptor) { }
-        /// <summary>
-        /// Returns the list of parameters for this constructor.
-        /// </summary>
-        public MBeanParameterInfo[] Signature => IExecuteArray<MBeanParameterInfo>("getSignature");
+        // can be extended with methods not reflected or not available in Java;
+        
     }
 }

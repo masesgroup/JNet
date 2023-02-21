@@ -16,12 +16,10 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.JCOBridge.C2JBridge;
-
 namespace Java.Net
 {
-    public sealed class Proxy : JVMBridgeBase<Proxy>
+    public partial class Proxy
     {
-        public override string ClassName => "java.net.Proxy";
+        // can be extended with methods not reflected or not available in Java;
     }
 }

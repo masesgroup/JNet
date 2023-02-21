@@ -18,29 +18,8 @@
 
 namespace Javax.Swing
 {
-    public class JButton : AbstractButton
+    public partial class JButton
     {
-        public override string ClassName => "javax.swing.JButton";
-
-        public JButton()
-        {
-
-        }
-
-        //public Button(Action a) : base(a)
-        //{
-        //}
-
-        //public JButton(Icon icon) : base(icon)
-        //{
-        //}
-
-        public JButton(string text) : base(text)
-        {
-        }
-
-        //public JButton(string text, Icon icon): base(text, icon)
-        //{
-        //}
+        // can be extended with methods not reflected or not available in Java;
     }
 }

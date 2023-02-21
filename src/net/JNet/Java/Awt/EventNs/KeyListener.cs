@@ -19,7 +19,7 @@
 using MASES.JCOBridge.C2JBridge;
 using System;
 
-namespace Java.Awt.Event
+namespace Java.Awt.EventNs
 {
     public interface IKeyListener : IJVMBridgeBase
     {
@@ -34,7 +34,7 @@ namespace Java.Awt.Event
     /// Listener for KeyListener. Extends <see cref="JVMBridgeListener"/>, implements <see cref="IKeyListener"/>
     /// </summary>
     /// <remarks>Remember to Dispose the object otherwise there is a resource leak, the object contains a reference to the the corresponding JVM object</remarks>
-    public class KeyListener : JVMBridgeListener, IKeyListener
+    public partial class KeyListener : IKeyListener
     {
         /// <inheritdoc cref="JVMBridgeListener.ClassName"/>
         public sealed override string ClassName => "org.mases.jnet.awt.event.JNetKeyListener";

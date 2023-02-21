@@ -14,6 +14,62 @@
   <ItemGroup>
     <None Include="mases.jnet.targets" Pack="true" PackagePath="build" />
     <None Include="..\..\..\jars\*.jar" Pack="true" PackagePath="build\jars" />
+    <Compile Remove="JavaGenerated\Java\Util\Function\**" />
+    <EmbeddedResource Remove="JavaGenerated\Java\Util\Function\**" />
+    <None Remove="JavaGenerated\Java\Util\Function\**" />
+    <Compile Remove="JavaGenerated\Java\Lang\AllPackageClasses.cs" />
+    <Compile Remove="JavaGenerated\Java\Lang\Appendable.cs" />
+    <Compile Remove="JavaGenerated\Java\Lang\AutoCloseable.cs" />
+    <Compile Remove="JavaGenerated\Java\Lang\Boolean.cs" />
+    <Compile Remove="JavaGenerated\Java\Lang\Byte.cs" />
+    <Compile Remove="JavaGenerated\Java\Lang\Character.cs" />
+    <Compile Remove="JavaGenerated\Java\Lang\CharSequence.cs" />
+    <Compile Remove="JavaGenerated\Java\Lang\Class.cs" />
+    <Compile Remove="JavaGenerated\Java\Lang\ClassLoader.cs" />
+    <Compile Remove="JavaGenerated\Java\Lang\ClassValue.cs" />
+    <Compile Remove="JavaGenerated\Java\Lang\Cloneable.cs" />
+    <Compile Remove="JavaGenerated\Java\Lang\Comparable.cs" />
+    <Compile Remove="JavaGenerated\Java\Lang\Deprecated.cs" />
+    <Compile Remove="JavaGenerated\Java\Lang\Double.cs" />
+    <Compile Remove="JavaGenerated\Java\Lang\Enum.cs" />
+    <Compile Remove="JavaGenerated\Java\Lang\Float.cs" />
+    <Compile Remove="JavaGenerated\Java\Lang\FunctionalInterface.cs" />
+    <Compile Remove="JavaGenerated\Java\Lang\IllegalCallerException.cs" />
+    <Compile Remove="JavaGenerated\Java\Lang\InheritableThreadLocal.cs" />
+    <Compile Remove="JavaGenerated\Java\Lang\Integer.cs" />
+    <Compile Remove="JavaGenerated\Java\Lang\Iterable.cs" />
+    <Compile Remove="JavaGenerated\Java\Lang\LayerInstantiationException.cs" />
+    <Compile Remove="JavaGenerated\Java\Lang\Long.cs" />
+    <Compile Remove="JavaGenerated\Java\Lang\Math.cs" />
+    <Compile Remove="JavaGenerated\Java\Lang\Module.cs" />
+    <Compile Remove="JavaGenerated\Java\Lang\ModuleLayer.cs" />
+    <Compile Remove="JavaGenerated\Java\Lang\Number.cs" />
+    <Compile Remove="JavaGenerated\Java\Lang\Object.cs" />
+    <Compile Remove="JavaGenerated\Java\Lang\Override.cs" />
+    <Compile Remove="JavaGenerated\Java\Lang\Package.cs" />
+    <Compile Remove="JavaGenerated\Java\Lang\Process.cs" />
+    <Compile Remove="JavaGenerated\Java\Lang\ProcessBuilder.cs" />
+    <Compile Remove="JavaGenerated\Java\Lang\ProcessHandle.cs" />
+    <Compile Remove="JavaGenerated\Java\Lang\Readable.cs" />
+    <Compile Remove="JavaGenerated\Java\Lang\Runnable.cs" />
+    <Compile Remove="JavaGenerated\Java\Lang\Runtime.cs" />
+    <Compile Remove="JavaGenerated\Java\Lang\RuntimePermission.cs" />
+    <Compile Remove="JavaGenerated\Java\Lang\SafeVarargs.cs" />
+    <Compile Remove="JavaGenerated\Java\Lang\SecurityManager.cs" />
+    <Compile Remove="JavaGenerated\Java\Lang\Short.cs" />
+    <Compile Remove="JavaGenerated\Java\Lang\StackTraceElement.cs" />
+    <Compile Remove="JavaGenerated\Java\Lang\StackWalker.cs" />
+    <Compile Remove="JavaGenerated\Java\Lang\StrictMath.cs" />
+    <Compile Remove="JavaGenerated\Java\Lang\String.cs" />
+    <Compile Remove="JavaGenerated\Java\Lang\StringBuffer.cs" />
+    <Compile Remove="JavaGenerated\Java\Lang\StringBuilder.cs" />
+    <Compile Remove="JavaGenerated\Java\Lang\SuppressWarnings.cs" />
+    <Compile Remove="JavaGenerated\Java\Lang\System.cs" />
+    <Compile Remove="JavaGenerated\Java\Lang\Thread.cs" />
+    <Compile Remove="JavaGenerated\Java\Lang\ThreadDeath.cs" />
+    <Compile Remove="JavaGenerated\Java\Lang\ThreadGroup.cs" />
+    <Compile Remove="JavaGenerated\Java\Lang\ThreadLocal.cs" />
+    <Compile Remove="JavaGenerated\Java\Lang\Void.cs" />
     <None Include="..\Documentation\articles\usage.md" Pack="true" PackagePath="\" />
   </ItemGroup>
   <ItemGroup>

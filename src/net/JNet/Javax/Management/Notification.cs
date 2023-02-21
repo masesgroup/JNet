@@ -20,70 +20,9 @@ using Java.Util;
 
 namespace Javax.Management
 {
-    public class Notification : EventObject
+    public partial class Notification
     {
-        public override string ClassName => "javax.management.Notification";
+        // can be extended with methods not reflected or not available in Java;
 
-        public Notification() { }
-
-        protected Notification(params object[] args) : base(args) { }
-
-        /// <summary>
-        /// Creates a <see cref="Notification"/> object.
-        /// </summary>
-        public Notification(string type, object source, long sequenceNumber) : base(type, source, sequenceNumber) { }
-        /// <summary>
-        /// Creates a <see cref="Notification"/> object.
-        /// </summary>
-        public Notification(string type, object source, long sequenceNumber, long timeStamp) : base(type, source, sequenceNumber, timeStamp) { }
-        /// <summary>
-        /// Creates a <see cref="Notification"/> object.
-        /// </summary>
-        public Notification(string type, object source, long sequenceNumber, long timeStamp, string message) : base(type, source, sequenceNumber, timeStamp, message) { }
-        /// <summary>
-        /// Creates a <see cref="Notification"/> object.
-        /// </summary>
-        public Notification(string type, object source, long sequenceNumber, string message) : base(type, source, sequenceNumber, message) { }
-        /// <summary>
-        /// Get the notification message.
-        /// </summary>
-        public string Message => IExecute<string>("getMessage");
-        /// <summary>
-        /// The notification sequence number.
-        /// </summary>
-        public long SequenceNumber
-        {
-            get { return IExecute<long>("getSequenceNumber"); }
-            set { IExecute("setSequenceNumber", value); }
-        }
-        /// <summary>
-        /// The notification timestamp.
-        /// </summary>
-        public long TimeStamp
-        {
-            get { return IExecute<long>("getTimeStamp"); }
-            set { IExecute("setTimeStamp", value); }
-        }
-        /// <summary>
-        /// Get the notification type.
-        /// </summary>
-        public string Type => IExecute<string>("getType");
-        /// <summary>
-        /// The user data.
-        /// </summary>
-        /// <returns></returns>
-        public object UserData
-        {
-            get { return IExecute<long>("getUserData"); }
-            set { IExecute("setUserData", value); }
-        }
-        /// <summary>
-        /// The source.
-        /// </summary>
-        public new object Source
-        {
-            get { return IExecute("getSource"); }
-            set { IExecute("setSource", value); }
-        }
     }
 }

@@ -20,24 +20,8 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management
 {
-    public class Attribute : JVMBridgeBase<Attribute>
+    public partial class Attribute
     {
-        public override string ClassName => "javax.management.Attribute";
-
-        public Attribute() { }
-
-        protected Attribute(params object[] args) : base(args) { }
-        /// <summary>
-        /// Constructs an <see cref="Attribute"/> object which associates the given attribute name with the given value.
-        /// </summary>
-        public Attribute(string name, object value) : base(name, value) { }
-        /// <summary>
-        /// Returns a <see cref="string"/> containing the name of the attribute.
-        /// </summary>
-        public string Name => IExecute<string>("getName");
-        /// <summary>
-        /// Returns an <see cref="object"/> that is the value of this attribute.
-        /// </summary>
-        public object Value => IExecute("getValue");
+        // can be extended with methods not reflected or not available in Java;
     }
 }

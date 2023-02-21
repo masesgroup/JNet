@@ -16,15 +16,12 @@
 *  Refer to LICENSE for more information.
 */
 
-namespace Java.Awt.Event
+using Java.Lang;
+
+namespace Java.Awt.EventNs
 {
-    public class ComponentEvent : AWTEvent
+    public partial class ItemEvent
     {
-        public override string ClassName => "java.awt.event.ComponentEvent";
-        /// <summary>
-        /// Returns the originator of the event.
-        /// </summary>
-        /// <value>The <see cref="Component"/> object that originated the event, or null if the object is not a <see cref="Component"/>.</value>
-        public Component Component => IExecute<Component>("getComponent");
+        // can be extended with methods not reflected or not available in Java;
     }
 }

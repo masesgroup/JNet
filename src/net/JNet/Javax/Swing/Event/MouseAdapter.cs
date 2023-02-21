@@ -16,7 +16,7 @@
 *  Refer to LICENSE for more information.
 */
 
-using Java.Awt.Event;
+using Java.Awt.EventNs;
 using MASES.JCOBridge.C2JBridge;
 using System;
 
@@ -45,10 +45,10 @@ namespace Javax.Swing.Event
     /// Listener for MouseInputAdapter. Extends <see cref="JVMBridgeListener"/>, implements <see cref="IMouseInputAdapter"/>
     /// </summary>
     /// <remarks>Remember to Dispose the object otherwise there is a resource leak, the object contains a reference to the the corresponding JVM object</remarks>
-    public class MouseInputAdapter : JVMBridgeListener, IMouseInputAdapter
+    public partial class MouseInputAdapter : IMouseInputAdapter
     {
         /// <inheritdoc cref="JVMBridgeListener.ClassName"/>
-        public sealed override string ClassName => "org.mases.jnet.awt.event.JNetMouseInputAdapter";
+        public override string ClassName => "org.mases.jnet.awt.event.JNetMouseInputAdapter";
 
         readonly Action<MouseEvent> MouseClickedFunction = null;
         readonly Action<MouseEvent> MouseEnteredFunction = null;

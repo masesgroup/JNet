@@ -16,19 +16,10 @@
 *  Refer to LICENSE for more information.
 */
 
-using Java.Sql;
-using Java.Util;
-using MASES.JCOBridge.C2JBridge;
-using MASES.JCOBridge.C2JBridge.JVMInterop;
-
 namespace Javax.Sql
 {
-    public class ConnectionEvent : EventObject
+    public partial class ConnectionEvent
     {
-        public override string ClassName => "javax.sql.ConnectionEvent";
-        /// <summary>
-        /// Retrieves the SQLException for this ConnectionEvent object.
-        /// </summary>
-        public SQLException SQLException { get { var obj = IExecute<IJavaObject>("getSQLException"); return JVMBridgeException.New(obj) as SQLException; } }
+        // can be extended with methods not reflected or not available in Java;
     }
 }

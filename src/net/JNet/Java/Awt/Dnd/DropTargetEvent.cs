@@ -20,12 +20,8 @@ using Java.Util;
 
 namespace Java.Awt.Dnd
 {
-    public class DropTargetEvent : EventObject
+    public partial class DropTargetEvent
     {
-        public override string ClassName => "java.awt.dnd.DropTargetEvent";
-        /// <summary>
-        /// This method returns the <see cref="DropTargetContext"/> associated with this <see cref="DropTargetEvent"/>.
-        /// </summary>
-        public DropTargetContext DropTargetContext => IExecute<DropTargetContext>("getDropTargetContext");
+        // can be extended with methods not reflected or not available in Java;
     }
 }

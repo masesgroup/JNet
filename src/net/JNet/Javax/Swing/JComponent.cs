@@ -20,16 +20,8 @@ using Java.Awt;
 
 namespace Javax.Swing
 {
-    public class JComponent : Container
+    public partial class JComponent
     {
-        public override string ClassName => "javax.swing.JComponent";
-
-        public JComponent()
-        {
-        }
-
-        protected JComponent(params object[] args) : base(args)
-        {
-        }
+        // can be extended with methods not reflected or not available in Java;
     }
 }

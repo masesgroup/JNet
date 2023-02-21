@@ -29,7 +29,7 @@ namespace Javax.Management
         bool IsNotificationEnabled(Notification notification);
     }
 
-    public class NotificationFilter : JVMBridgeListener, INotificationFilter
+    public partial class NotificationFilter : INotificationFilter
     {
         public override bool IsInterface => true;
 

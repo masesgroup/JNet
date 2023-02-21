@@ -18,32 +18,8 @@
 
 namespace Javax.Swing
 {
-    public class JLabel : JComponent
+    public partial class JLabel
     {
-        public override string ClassName => "javax.swing.JLabel";
-
-        public JLabel()
-        {
-        }
-
-        //public JLabel(Icon image) : base(image)
-        //{
-        //}
-
-        //public JLabel(Icon image, int horizontalAlignment) : base(image, horizontalAlignment)
-        //{
-        //}
-
-        public JLabel(string text) : base(text)
-        {
-        }
-
-        //public JLabel(string text, Icon icon, int horizontalAlignment) : base(text, icon, horizontalAlignment)
-        //{
-        //}
-
-        public JLabel(string text, int horizontalAlignment) : base(text, horizontalAlignment)
-        {
-        }
+        // can be extended with methods not reflected or not available in Java;
     }
 }

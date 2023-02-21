@@ -30,6 +30,14 @@ namespace Java.Lang
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
         /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public Number() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public Number(params object[] args) : base(args) { }
+        /// <summary>
         /// Returns the value of the specified number as a <see cref="byte"/>, which may involve rounding or truncation.
         /// </summary>
         public byte ByteValue => IExecute<byte>("byteValue");

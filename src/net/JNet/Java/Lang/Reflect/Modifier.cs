@@ -24,58 +24,11 @@ namespace Java.Lang.Reflect
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Modifier.html"/>
     /// </summary>
+#if JNETREFLECTOR
     public class Modifier : JVMBridgeBase<Modifier>
     {
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "java.lang.reflect.Modifier";
-        /// <summary>
-        /// The <see cref="int"/> value representing the abstract modifier.
-        /// </summary>
-        public static int ABSTRACT = Clazz.GetField<int>("ABSTRACT");
-        /// <summary>
-        /// The <see cref="int"/> value representing the final modifier.
-        /// </summary>
-        public static int FINAL = Clazz.GetField<int>("FINAL");
-        /// <summary>
-        /// The <see cref="int"/> value representing the interface modifier.
-        /// </summary>
-        public static int INTERFACE = Clazz.GetField<int>("INTERFACE");
-        /// <summary>
-        /// The <see cref="int"/> value representing the native modifier.
-        /// </summary>
-        public static int NATIVE = Clazz.GetField<int>("NATIVE");
-        /// <summary>
-        /// The <see cref="int"/> value representing the private modifier.
-        /// </summary>
-        public static int PRIVATE = Clazz.GetField<int>("PRIVATE");
-        /// <summary>
-        /// The <see cref="int"/> value representing the protected modifier.
-        /// </summary>
-        public static int PROTECTED = Clazz.GetField<int>("PROTECTED");
-        /// <summary>
-        /// The <see cref="int"/> value representing the public modifier.
-        /// </summary>
-        public static int PUBLIC = Clazz.GetField<int>("PUBLIC");
-        /// <summary>
-        /// The <see cref="int"/> value representing the static modifier.
-        /// </summary>
-        public static int STATIC = Clazz.GetField<int>("STATIC");
-        /// <summary>
-        /// The <see cref="int"/> value representing the strictfp modifier.
-        /// </summary>
-        public static int STRICT = Clazz.GetField<int>("STRICT");
-        /// <summary>
-        /// The <see cref="int"/> value representing the synchronized modifier.
-        /// </summary>
-        public static int SYNCHRONIZED = Clazz.GetField<int>("SYNCHRONIZED");
-        /// <summary>
-        /// The <see cref="int"/> value representing the transient modifier.
-        /// </summary>
-        public static int TRANSIENT = Clazz.GetField<int>("TRANSIENT");
-        /// <summary>
-        /// The <see cref="int"/> value representing the volatile modifier.
-        /// </summary>
-        public static int VOLATILE = Clazz.GetField<int>("VOLATILE");
         /// <summary>
         /// Return an <see cref="int"/> value OR-ing together the source language modifiers that can be applied to a class.
         /// </summary>
@@ -148,5 +101,10 @@ namespace Java.Lang.Reflect
         /// Return <see langword="true"/> if the integer argument includes the volatile modifier, <see langword="false"/> otherwise.
         /// </summary>
         public static bool IsVolatile(int mod) => SExecute<bool>("isVolatile", mod);
+#else
+    public partial class Modifier
+    {
+
+#endif
     }
 }

@@ -20,50 +20,9 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management
 {
-    public class MBeanInfo : JVMBridgeBase<MBeanInfo>
+    public partial class MBeanInfo
     {
-        public override string ClassName => "javax.management.MBeanInfo";
+        // can be extended with methods not reflected or not available in Java;
 
-        public MBeanInfo() { }
-
-        protected MBeanInfo(params object[] args) : base(args) { }
-        /// <summary>
-        /// Constructs an <see cref="MBeanInfo"/>.
-        /// </summary>
-        public MBeanInfo(string className, string description, MBeanAttributeInfo[] attributes, MBeanConstructorInfo[] constructors, MBeanOperationInfo[] operations, MBeanNotificationInfo[] notifications)
-            : base(className, description, attributes, constructors, operations, notifications) { }
-        /// <summary>
-        /// Constructs an <see cref="MBeanInfo"/>.
-        /// </summary>
-        public MBeanInfo(string className, string description, MBeanAttributeInfo[] attributes, MBeanConstructorInfo[] constructors, MBeanOperationInfo[] operations, MBeanNotificationInfo[] notifications, Descriptor descriptor)
-            : base(className, description, attributes, constructors, operations, notifications, descriptor) { }
-        /// <summary>
-        /// Returns the list of attributes exposed for management.
-        /// </summary>
-        public MBeanAttributeInfo[] Attributes => IExecuteArray<MBeanAttributeInfo>("getAttributes");
-        /// <summary>
-        /// Returns the name of the Java class of the MBean described by this <see cref="MBeanInfo"/>.
-        /// </summary>
-        public string ClassNameJMX => IExecute<string>("getClassName");
-        /// <summary>
-        /// Returns the list of the public constructors of the MBean.
-        /// </summary>
-        public MBeanConstructorInfo[] Constructors => IExecuteArray<MBeanConstructorInfo>("getConstructors");
-        /// <summary>
-        /// Returns a human readable description of the MBean.
-        /// </summary>
-        public string Description => IExecute<string>("getDescription");
-        /// <summary>
-        /// Get the descriptor of this <see cref="MBeanInfo"/>.
-        /// </summary>
-        public Descriptor Descriptor => IExecute<Descriptor>("getDescriptor");
-        /// <summary>
-        /// Returns the list of the notifications emitted by the MBean.
-        /// </summary>
-        public MBeanNotificationInfo[] Notifications => IExecuteArray<MBeanNotificationInfo>("getNotifications");
-        /// <summary>
-        /// Returns the list of operations of the MBean.
-        /// </summary>
-        public MBeanOperationInfo[] Operations => IExecuteArray<MBeanOperationInfo>("getOperations");
     }
 }

@@ -20,25 +20,10 @@ using Java.Util;
 
 namespace Javax.Management
 {
-    public class AttributeList : Java.Util.ArrayList<object>
+    public partial class AttributeList
     {
-        public override string ClassName => "javax.management.AttributeList";
+        // can be extended with methods not reflected or not available in Java;
 
-        public AttributeList() { }
-
-        protected AttributeList(params object[] args) : base(args) { }
-        /// <summary>
-        /// Constructs an empty <see cref="AttributeList"/> with the initial capacity specified.
-        /// </summary>
-        public AttributeList(int initialCapacity) :base(initialCapacity) { }
-        /// <summary>
-        /// Constructs an <see cref="AttributeList"/> containing the elements of the List specified, in the order in which they are returned by the List's iterator.
-        /// </summary>
-        public AttributeList(List<Attribute> list) : base(list) { }
-        /// <summary>
-        /// Constructs an <see cref="AttributeList"/> containing the elements of the <see cref="AttributeList"/> specified, in the order in which they are returned by the <see cref="AttributeList"/>'s iterator.
-        /// </summary>
-        public AttributeList(AttributeList list) :base(list) { }
         /// <summary>
         /// Return a view of this list as a <see cref="List{Attribute}"/>.
         /// </summary>

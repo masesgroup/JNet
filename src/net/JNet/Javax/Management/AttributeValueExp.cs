@@ -18,21 +18,9 @@
 
 namespace Javax.Management
 {
-    public class AttributeValueExp : ValueExp
+    public partial class AttributeValueExp
     {
-        public override bool IsInterface => false;
+        // can be extended with methods not reflected or not available in Java;
 
-        public override string ClassName => "javax.management.AttributeValueExp";
-
-        public AttributeValueExp() { }
-        /// <summary>
-        /// Creates a new <see cref="AttributeValueExp"/> representing the specified object attribute, named attr.
-        /// </summary>
-        /// <param name="attr"></param>
-        public AttributeValueExp(string attr) : base(attr) { }
-        /// <summary>
-        /// Returns a string representation of the name of the attribute.
-        /// </summary>
-        public string AttributeName => IExecute<string>("getAttributeName");
     }
 }

@@ -20,32 +20,8 @@ using Javax.Swing.Text;
 
 namespace Javax.Swing
 {
-    public class JTextArea : JTextComponent
+    public partial class JTextArea
     {
-        public override string ClassName => "javax.swing.JTextArea";
-
-        public JTextArea()
-        {
-        }
-
-        //public JTextArea(Document doc) : base(doc)
-        //{
-        //}
-
-        //public JTextArea(Document doc, string text, int rows, int columns) : base(doc, text, rows, columns)
-        //{
-        //}
-
-        public JTextArea(int rows, int columns) : base(rows, columns)
-        {
-        }
-
-        public JTextArea(string text) : base(text)
-        {
-        }
-
-        public JTextArea(string text, int rows, int columns) : base(text, rows, columns)
-        {
-        }
+        // can be extended with methods not reflected or not available in Java;
     }
 }

@@ -16,12 +16,10 @@
 *  Refer to LICENSE for more information.
 */
 
-using Java.Util;
-
 namespace Javax.Swing.Event
 {
-    public class ChangeEvent : EventObject
+    public partial class ChangeEvent
     {
-        public override string ClassName => "javax.swing.event.ChangeEvent";
+        // can be extended with methods not reflected or not available in Java;
     }
 }

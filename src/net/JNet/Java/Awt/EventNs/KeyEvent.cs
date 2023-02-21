@@ -16,19 +16,10 @@
 *  Refer to LICENSE for more information.
 */
 
-namespace Java.Awt.Event
+namespace Java.Awt.EventNs
 {
-    public class FocusEvent : ComponentEvent
+    public partial class KeyEvent
     {
-        public override string ClassName => "java.awt.event.FocusEvent";
-
-        /// <summary>
-        /// Returns the other <see cref="Component"/> involved in this focus change.
-        /// </summary>
-        public Component OppositeComponent => IExecute<Component>("getOppositeComponent");
-        /// <summary>
-        /// Identifies the focus change event as temporary or permanent.
-        /// </summary>
-        public bool IsTemporary => IExecute<bool>("isTemporary");
+        // can be extended with methods not reflected or not available in Java;
     }
 }

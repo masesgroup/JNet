@@ -18,9 +18,9 @@
 
 namespace Javax.Swing
 {
-    public class JPanel : JComponent
+    public partial class JPanel
     {
-        public override string ClassName => "javax.swing.JPanel";
+        // can be extended with methods not reflected or not available in Java;
 
     }
 }

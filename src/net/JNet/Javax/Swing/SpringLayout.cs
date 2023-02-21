@@ -20,8 +20,8 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing
 {
-    public class SpringLayout : JVMBridgeBase<SpringLayout>
+    public partial class SpringLayout
     {
-        public override string ClassName => "javax.swing.SpringLayout";
+        // can be extended with methods not reflected or not available in Java;
     }
 }

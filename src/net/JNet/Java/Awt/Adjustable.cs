@@ -16,31 +16,10 @@
 *  Refer to LICENSE for more information.
 */
 
-using Java.Awt.Event;
-using MASES.JCOBridge.C2JBridge;
-
 namespace Java.Awt
 {
-    public class Adjustable : JVMBridgeBase<Adjustable>
+    public partial class Adjustable
     {
-        public override string ClassName => "java.awt.Adjustable";
-
-        public void AddAdjustmentListener(AdjustmentListener l) { IExecute("addAdjustmentListener", l); }
-
-        public void RemoveAdjustmentListener(AdjustmentListener l) { IExecute("removeAdjustmentListener", l); }
-
-        public int BlockIncrement { get { return IExecute<int>("getBlockIncrement"); } set { IExecute("setBlockIncrement", value); } }
-
-        public int Maximum { get { return IExecute<int>("getMaximum"); } set { IExecute("setMaximum", value); } }
-
-        public int Minimum { get { return IExecute<int>("getMinimum"); } set { IExecute("setMinimum", value); } }
-
-        public int Orientation { get { return IExecute<int>("getOrientation"); } }
-
-        public int UnitIncrement { get { return IExecute<int>("getUnitIncrement"); } set { IExecute("setUnitIncrement", value); } }
-
-        public int Value { get { return IExecute<int>("getValue"); } set { IExecute("setValue", value); } }
-
-        public int VisibleAmount { get { return IExecute<int>("getVisibleAmount"); } set { IExecute("setVisibleAmount", value); } }
+        // can be extended with methods not reflected or not available in Java;
     }
 }

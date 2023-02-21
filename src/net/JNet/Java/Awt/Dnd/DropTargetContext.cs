@@ -16,14 +16,10 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.JCOBridge.C2JBridge;
-
 namespace Java.Awt.Dnd
 {
-    public class DropTargetContext : JVMBridgeBase<DropTargetContext>
+    public partial class DropTargetContext
     {
-        public override string ClassName => "java.awt.dnd.DropTargetContext";
-
-        // TODO: complete the class
+        // can be extended with methods not reflected or not available in Java;
     }
 }

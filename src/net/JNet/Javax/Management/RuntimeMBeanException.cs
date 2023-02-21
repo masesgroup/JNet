@@ -23,10 +23,10 @@ namespace Javax.Management
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/RuntimeMBeanException.html"/>
     /// </summary>
-    public class RuntimeMBeanException : JMRuntimeException
+    public partial class RuntimeMBeanException
     {
-        /// <inheritdoc cref="JVMBridgeException.ClassName"/>
-        public override string ClassName => "javax.management.RuntimeMBeanException";
+        // can be extended with methods not reflected or not available in Java;
+
         /// <summary>
         /// Return the actual <see cref="Java.Lang.RuntimeException"/> thrown.
         /// </summary>

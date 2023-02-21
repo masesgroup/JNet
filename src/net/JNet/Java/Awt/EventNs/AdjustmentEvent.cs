@@ -16,13 +16,10 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.JCOBridge.C2JBridge;
-
-namespace Java.Nio
+namespace Java.Awt.EventNs
 {
-    public class Channel : JVMBridgeBase<Channel>
+    public partial class AdjustmentEvent
     {
-        public override bool IsInterface => true;
-        public override string ClassName => "java.nio.Channel";
+        // can be extended with methods not reflected or not available in Java;
     }
 }

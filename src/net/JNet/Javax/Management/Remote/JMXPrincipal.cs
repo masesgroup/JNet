@@ -20,18 +20,8 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Remote
 {
-    public class JMXPrincipal : JVMBridgeBase<JMXPrincipal>
+    public partial class JMXPrincipal
     {
-        public override string ClassName => "javax.management.remote.JMXPrincipal";
-
-        public JMXPrincipal() { }
-        /// <summary>
-        /// Creates a <see cref="JMXPrincipal"/> for a given identity.
-        /// </summary>
-        public JMXPrincipal(string name) : base(name) { }
-        /// <summary>
-        /// Returns the name of this principal.
-        /// </summary>
-        public string Name => IExecute<string>("getName");
+        // can be extended with methods not reflected or not available in Java;
     }
 }

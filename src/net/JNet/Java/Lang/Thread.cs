@@ -33,6 +33,10 @@ namespace Java.Lang
         /// </summary>
         public Thread() { }
         /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public Thread(params object[] args) : base(args) { }
+        /// <summary>
         /// Allocates a new Thread object.
         /// </summary>
         /// <param name="target">the object whose run method is invoked when this thread is started. If null, this classes run method does nothing.</param>

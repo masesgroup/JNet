@@ -18,18 +18,8 @@
 
 namespace Java.Awt
 {
-    public class Window : Container
+    public partial class Window
     {
-        public override string ClassName => "java.awt.Window";
-
-        public Window()
-        {
-        }
-
-        protected Window(params object[] args) : base(args)
-        {
-        }
-
-        // TODO: complete the class
+        // can be extended with methods not reflected or not available in Java;
     }
 }

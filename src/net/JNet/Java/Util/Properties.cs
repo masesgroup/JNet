@@ -18,8 +18,8 @@
 
 namespace Java.Util
 {
-    public class Properties : Hashtable<object, object>
+    public partial class Properties
     {
-        public override string ClassName => "java.util.Properties";
+        // can be extended with methods not reflected or not available in Java;
     }
 }

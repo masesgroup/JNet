@@ -16,17 +16,15 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.JCOBridge.C2JBridge;
-
 namespace Javax.Management
 {
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/MBeanException.html"/>
     /// </summary>
-    public class MBeanException: JMException
+    public partial class MBeanException
     {
-        /// <inheritdoc cref="JVMBridgeException.ClassName"/>
-        public override string ClassName => "javax.management.MBeanException";
+        // can be extended with methods not reflected or not available in Java;
+
         /// <summary>
         /// Return the actual <see cref="Java.Lang.Exception"/> thrown.
         /// </summary>

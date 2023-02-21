@@ -16,16 +16,13 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.JCOBridge.C2JBridge;
-
 namespace Javax.Management
 {
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/BadBinaryOpValueExpException.html"/>
     /// </summary>
-    public class BadBinaryOpValueExpException : Java.Lang.Exception
+    public partial class BadBinaryOpValueExpException
     {
-        /// <inheritdoc cref="JVMBridgeException.ClassName"/>
-        public override string ClassName => "javax.management.BadBinaryOpValueExpException";
+        // can be extended with methods not reflected or not available in Java;
     }
 }

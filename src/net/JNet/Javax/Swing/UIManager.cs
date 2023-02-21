@@ -20,8 +20,8 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Swing
 {
-    public class UIManager : JVMBridgeBase<UIManager>
+    public partial class UIManager
     {
-        public override string ClassName => "javax.swing.UIManager";
+        // can be extended with methods not reflected or not available in Java;
     }
 }

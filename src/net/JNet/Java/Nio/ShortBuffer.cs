@@ -21,14 +21,10 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio
 {
-    public class ShortBuffer : Buffer
+    public partial class ShortBuffer
     {
-        public override string ClassName => "java.nio.ShortBuffer";
+        // can be extended with methods not reflected or not available in Java;
 
         public static implicit operator Comparable<ShortBuffer>(ShortBuffer buffer) => buffer.Cast<Comparable<ShortBuffer>>();
-
-        public static ShortBuffer Allocate(int capacity) => SExecute<ShortBuffer>("allocate", capacity);
-
-        public short[] Array => IExecute<short[]>("array");
     }
 }

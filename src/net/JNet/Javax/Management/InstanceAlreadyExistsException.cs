@@ -16,16 +16,13 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.JCOBridge.C2JBridge;
-
 namespace Javax.Management
 {
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/InstanceAlreadyExistsException.html"/>
     /// </summary>
-    public class InstanceAlreadyExistsException : OperationsException
+    public partial class InstanceAlreadyExistsException
     {
-        /// <inheritdoc cref="JVMBridgeException.ClassName"/>
-        public override string ClassName => "javax.management.InstanceAlreadyExistsException";
+        // can be extended with methods not reflected or not available in Java;
     }
 }

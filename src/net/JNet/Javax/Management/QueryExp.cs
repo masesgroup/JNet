@@ -20,19 +20,9 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management
 {
-    public class QueryExp : JVMBridgeBase<QueryExp>
+    public partial class QueryExp
     {
-        public override bool IsInterface => true;
+        // can be extended with methods not reflected or not available in Java;
 
-        public override string ClassName => "javax.management.QueryExp";
-
-        /// <summary>
-        /// Test whether this ObjectName, which may be a pattern, matches another ObjectName.
-        /// </summary>
-        public bool Apply(ObjectName name) => IExecute<bool>("apply", name);
-        /// <summary>
-        /// Sets the MBean server on which the query is to be performed.
-        /// </summary>
-        public void SetMBeanServer(MBeanServer mbs) => IExecute<bool>("setMBeanServer", mbs);
     }
 }

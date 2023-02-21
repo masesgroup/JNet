@@ -16,12 +16,10 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.JCOBridge.C2JBridge;
-
 namespace Java.Text
 {
-    public class AttributedCharacterIterator : JVMBridgeBase<AttributedCharacterIterator>
+    public partial class AttributedCharacterIterator
     {
-        public override string ClassName => "java.text.AttributedCharacterIterator";
+        // can be extended with methods not reflected or not available in Java;
     }
 }

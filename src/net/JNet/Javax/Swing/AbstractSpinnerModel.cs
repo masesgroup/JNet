@@ -16,22 +16,10 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.JCOBridge.C2JBridge;
-
 namespace Javax.Swing
 {
-    public class AbstractSpinnerModel : JVMBridgeBase<AbstractSpinnerModel>
+    public partial class AbstractSpinnerModel
     {
-        public override string ClassName => "javax.swing.AbstractSpinnerModel";
-
-        public static implicit operator SpinnerModel(AbstractSpinnerModel model) { return model.Cast<SpinnerModel>(); }
-
-        public AbstractSpinnerModel()
-        {
-        }
-
-        protected AbstractSpinnerModel(params object[] args) : base(args)
-        {
-        }
+        // can be extended with methods not reflected or not available in Java;
     }
 }

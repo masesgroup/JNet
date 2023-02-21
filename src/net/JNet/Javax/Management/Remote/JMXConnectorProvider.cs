@@ -21,10 +21,10 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management.Remote
 {
-    public class JMXConnectorProvider : JVMBridgeBase<JMXConnectorProvider>
+    public partial class JMXConnectorProvider
     {
-        public override bool IsInterface => true;
-        public override string ClassName => "javax.management.remote.JMXConnectorProvider";
+        // can be extended with methods not reflected or not available in Java;
+
         /// <summary>
         /// Creates a new connector client that is ready to connect to the connector server at the given address. Each successful call to this method produces a different <see cref="JMXConnector"/> object.
         /// </summary>

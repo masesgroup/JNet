@@ -20,10 +20,8 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Security.Auth
 {
-    public class Subject : JVMBridgeBase<Subject>
+    public partial class Subject
     {
-        public override string ClassName => "javax.security.auth.Subject";
-
-        // TODO: complete the class
+        // can be extended with methods not reflected or not available in Java;
     }
 }

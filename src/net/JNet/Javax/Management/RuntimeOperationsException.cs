@@ -23,10 +23,10 @@ namespace Javax.Management
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/RuntimeOperationsException.html"/>
     /// </summary>
-    public class RuntimeOperationsException : JMRuntimeException
+    public partial class RuntimeOperationsException
     {
-        /// <inheritdoc cref="JVMBridgeException.ClassName"/>
-        public override string ClassName => "javax.management.RuntimeOperationsException";
+        // can be extended with methods not reflected or not available in Java;
+
         /// <summary>
         /// Return the actual <see cref="Java.Lang.RuntimeException"/> thrown.
         /// </summary>

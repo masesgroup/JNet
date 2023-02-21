@@ -19,7 +19,7 @@
 using MASES.JCOBridge.C2JBridge;
 using System;
 
-namespace Java.Awt.Event
+namespace Java.Awt.EventNs
 {
     public interface IInputMethodListener : IJVMBridgeBase
     {
@@ -32,7 +32,7 @@ namespace Java.Awt.Event
     /// Listener for InputMethodListener. Extends <see cref="JVMBridgeListener"/>, implements <see cref="IInputMethodListener"/>
     /// </summary>
     /// <remarks>Remember to Dispose the object otherwise there is a resource leak, the object contains a reference to the the corresponding JVM object</remarks>
-    public class InputMethodListener : JVMBridgeListener, IInputMethodListener
+    public partial class InputMethodListener : IInputMethodListener
     {
         /// <inheritdoc cref="JVMBridgeListener.ClassName"/>
         public sealed override string ClassName => "org.mases.jnet.awt.event.JNetInputMethodListener";

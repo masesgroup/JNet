@@ -38,7 +38,7 @@ namespace Java.Awt.Dnd
     /// Listener for DragSourceListener. Extends <see cref="JVMBridgeListener"/>, implements <see cref="IDragSourceListener"/>
     /// </summary>
     /// <remarks>Remember to Dispose the object otherwise there is a resource leak, the object contains a reference to the the corresponding JVM object</remarks>
-    public class DragSourceListener : JVMBridgeListener, IDragSourceListener
+    public partial class DragSourceListener : IDragSourceListener
     {
         /// <inheritdoc cref="JVMBridgeListener.ClassName"/>
         public sealed override string ClassName => "org.mases.jnet.awt.dnd.JNetDragSourceAdapter"; // <-- the implementing class is this one

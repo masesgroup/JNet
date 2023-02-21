@@ -23,6 +23,7 @@ namespace Java.Lang.Reflect
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/AnnotatedType.html"/>
     /// </summary>
+#if JNETREFLECTOR
     public class AnnotatedType : AnnotatedElement
     {
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
@@ -30,5 +31,9 @@ namespace Java.Lang.Reflect
 
         /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
         public override bool IsInterface => true;
-    }
+#else
+    public partial class AnnotatedType
+    {
+#endif
+}
 }

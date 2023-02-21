@@ -18,26 +18,8 @@
 
 namespace Java.Awt
 {
-    public class Frame : Window
+    public partial class Frame
     {
-        public override string ClassName => "java.awt.Frame";
-
-        public Frame()
-        {
-        }
-
-        public Frame(GraphicsConfiguration gc) : base(gc)
-        {
-        }
-
-        public Frame(string title) : base(title)
-        {
-        }
-
-        public Frame(string title, GraphicsConfiguration gc) : base(title, gc)
-        {
-        }
-
-        // TODO: complete the class
+        // can be extended with methods not reflected or not available in Java;
     }
 }

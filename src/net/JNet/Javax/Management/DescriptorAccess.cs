@@ -18,15 +18,9 @@
 
 namespace Javax.Management
 {
-    public class DescriptorAccess : DescriptorRead
+    public partial class DescriptorAccess
     {
-        public override bool IsInterface => true;
+        // can be extended with methods not reflected or not available in Java;
 
-        public override string ClassName => "javax.management.DescriptorAccess";
-
-        /// <summary>
-        /// Sets <see cref="Descriptor"/> (full replace).
-        /// </summary>
-        public void SetDescriptor(Descriptor inDescriptor) => IExecute("setDescriptor", inDescriptor);
     }
 }

@@ -20,25 +20,10 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Javax.Management
 {
-    public class NotificationFilterSupport : JVMBridgeBase<NotificationFilterSupport>
+    public partial class NotificationFilterSupport
     {
-        public override string ClassName => "javax.management.NotificationFilterSupport";
+        // can be extended with methods not reflected or not available in Java;
 
-        public NotificationFilterSupport() { }
-
-        protected NotificationFilterSupport(params object[] args) : base(args) { }
-        /// <summary>
-        /// Disables all notification types.
-        /// </summary>
-        public void DisableAllTypes() => IExecute("disableAllTypes");
-        /// <summary>
-        /// Removes the given prefix from the prefix list.
-        /// </summary>
-        public void DisableType(string name) => IExecute("disableType", name);
-        /// <summary>
-        /// Enables all the notifications the type of which starts with the specified prefix to be sent to the listener.
-        /// </summary>
-        public void EnableType(string name) => IExecute("enableType", name);
         /// <summary>
         /// Gets all the enabled notification types for this filter.
         /// </summary>

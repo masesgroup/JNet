@@ -16,16 +16,13 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.JCOBridge.C2JBridge;
-
 namespace Javax.Management
 {
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/javax/management/InvalidApplicationException.html"/>
     /// </summary>
-    public class InvalidApplicationException : Java.Lang.Exception
+    public partial class InvalidApplicationException
     {
-        /// <inheritdoc cref="JVMBridgeException.ClassName"/>
-        public override string ClassName => "javax.management.InvalidApplicationException";
+        // can be extended with methods not reflected or not available in Java;
     }
 }

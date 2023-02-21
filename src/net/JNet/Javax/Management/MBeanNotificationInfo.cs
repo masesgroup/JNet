@@ -18,26 +18,10 @@
 
 namespace Javax.Management
 {
-    public class MBeanNotificationInfo : MBeanFeatureInfo
+    public partial class MBeanNotificationInfo
     {
-        public override string ClassName => "javax.management.MBeanNotificationInfo";
+        // can be extended with methods not reflected or not available in Java;
 
-        public MBeanNotificationInfo() { }
 
-        protected MBeanNotificationInfo(params object[] args) : base(args) { }
-        /// <summary>
-        /// Constructs an <see cref="MBeanNotificationInfo"/> object.
-        /// </summary>
-        public MBeanNotificationInfo(string[] notifTypes, string name, string description)
-            : base(notifTypes, name, description) { }
-        /// <summary>
-        /// Constructs an <see cref="MBeanNotificationInfo"/> object.
-        /// </summary>
-        public MBeanNotificationInfo(string[] notifTypes, string name, string description, Descriptor descriptor)
-            : base(notifTypes, name, description, descriptor) { }
-        /// <summary>
-        /// Returns the array of strings(in dot notation) containing the notification types that the MBean may emit.
-        /// </summary>
-        public string[] NotifTypes => IExecuteArray<string>("getNotifTypes");
     }
 }

@@ -29,7 +29,7 @@ namespace Javax.Management
         void HandleNotification(Notification notification, object handback);
     }
 
-    public class NotificationListener : JVMBridgeListener, INotificationListener
+    public partial class NotificationListener : INotificationListener
     {
         public override bool IsInterface => true;
 

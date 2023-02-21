@@ -22,19 +22,9 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    public class List : JVMBridgeBase<List>
+    public partial class List
     {
-        public override string ClassName => "java.util.List";
-
-        public void Clear() => IExecute("clear");
-
-        public bool Contains​(object o) => IExecute<bool>("contains​", o);
-
-        public int IndexOf​(object o) => IExecute<int>("indexOf​", o);
-
-        public int LastIndexOf​(object o) => IExecute<int>("lastIndexOf​​", o);
-
-        public bool Remove​(object o) => IExecute<bool>("remove​", o);
+        // can be extended with methods not reflected or not available in Java;
     }
 
     public class List<E> : List
@@ -55,9 +45,9 @@ namespace Java.Util
 
         public static List<E> CopyOf​<ExtendsE>(Collection<ExtendsE> coll) => SExecute<List<E>>("copyOf​", coll);
 
-        public E Get​(int index) => IExecute<E>("get", index);
+        public new E Get​(int index) => IExecute<E>("get", index);
 
-        public bool IsEmpty => IExecute<bool>("isEmpty");
+        public new bool IsEmpty => IExecute<bool>("isEmpty");
 
         public Iterator<E> Iterator => IExecute<Iterator<E>>("iterator");
 
@@ -89,7 +79,7 @@ namespace Java.Util
 
         public static List<E> Of(E e1, E e2, E e3, E e4, E e5, E e6, E e7, E e8, E e9, E e10) => SExecute<List<E>>("of", e1, e2, e3, e4, e5, e6, e7, e8, e9, e10);
 
-        public E Remove​(int index) => IExecute<E>("remove​", index);
+        public new E Remove​(int index) => IExecute<E>("remove​", index);
 
         public bool RemoveAll​<T>(Collection<T> c) => IExecute<bool>("removeAll​", c);
 
@@ -99,7 +89,7 @@ namespace Java.Util
 
         public E Set​(int index, E element) => IExecute<E>("set", index, element);
 
-        public int Size => IExecute<int>("size");
+        public new int Size => IExecute<int>("size");
 
         public void Sort<SuperE>(Comparator<SuperE> c) where SuperE : E => IExecute("sort", c);
 

@@ -18,10 +18,8 @@
 
 namespace Javax.Swing
 {
-    public class JTable : JComponent
+    public partial class JTable
     {
-        public override string ClassName => "javax.swing.JTable";
-
-        // TODO: complete the class
+        // can be extended with methods not reflected or not available in Java;
     }
 }

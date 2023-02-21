@@ -16,12 +16,9 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.JCOBridge.C2JBridge;
-
 namespace Java.Sql
 {
-    public class SQLException : JVMBridgeException<SQLException>
+    public partial class SQLException
     {
-        public override string ClassName => "java.sql.SQLException";
     }
 }

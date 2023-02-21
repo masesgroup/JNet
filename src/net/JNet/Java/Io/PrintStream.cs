@@ -16,12 +16,10 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.JCOBridge.C2JBridge;
-
 namespace Java.Io
 {
-    public class PrintStream : JVMBridgeBase<PrintStream>
+    public partial class PrintStream
     {
-        public override string ClassName => "java.io.PrintStream";
+        // can be extended with methods not reflected or not available in Java;
     }
 }

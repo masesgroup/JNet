@@ -16,17 +16,10 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.JCOBridge.C2JBridge;
-
 namespace Javax.Management.Remote
 {
-    public class JMXAddressable : JVMBridgeBase<JMXAddressable>
+    public partial class JMXAddressable
     {
-        public override bool IsInterface => true;
-        public override string ClassName => "javax.management.remote.JMXAddressable";
-        /// <summary>
-        /// The address of this object.
-        /// </summary>
-        public JMXServiceURL Address => IExecute<JMXServiceURL>("getAddress");
+        // can be extended with methods not reflected or not available in Java;
     }
 }
