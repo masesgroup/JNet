@@ -23,58 +23,23 @@
 
 namespace Java.Beans
 {
-    #region DefaultPersistenceDelegate
+    #region Transient
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/DefaultPersistenceDelegate.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Transient.html
     /// </summary>
-    public partial class DefaultPersistenceDelegate : Java.Beans.PersistenceDelegate
+    public partial class Transient : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Transient>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public DefaultPersistenceDelegate() { }
+        public Transient() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public DefaultPersistenceDelegate(params object[] args) : base(args) { }
+        public Transient(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.beans.DefaultPersistenceDelegate";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region BeanInfo
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanInfo.html
-    /// </summary>
-    public partial class BeanInfo : MASES.JCOBridge.C2JBridge.JVMBridgeBase<BeanInfo>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public BeanInfo() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public BeanInfo(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.beans.BeanInfo";
+        public override string ClassName => "java.beans.Transient";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -93,23 +58,23 @@ namespace Java.Beans
     }
     #endregion
 
-    #region IndexedPropertyChangeEvent
+    #region PropertyChangeSupport
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/IndexedPropertyChangeEvent.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyChangeSupport.html
     /// </summary>
-    public partial class IndexedPropertyChangeEvent : Java.Beans.PropertyChangeEvent
+    public partial class PropertyChangeSupport : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PropertyChangeSupport>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public IndexedPropertyChangeEvent() { }
+        public PropertyChangeSupport() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public IndexedPropertyChangeEvent(params object[] args) : base(args) { }
+        public PropertyChangeSupport(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.beans.IndexedPropertyChangeEvent";
+        public override string ClassName => "java.beans.PropertyChangeSupport";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -128,128 +93,23 @@ namespace Java.Beans
     }
     #endregion
 
-    #region BeanDescriptor
+    #region XMLEncoder
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanDescriptor.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLEncoder.html
     /// </summary>
-    public partial class BeanDescriptor : Java.Beans.FeatureDescriptor
+    public partial class XMLEncoder : Java.Beans.Encoder
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public BeanDescriptor() { }
+        public XMLEncoder() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public BeanDescriptor(params object[] args) : base(args) { }
+        public XMLEncoder(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.beans.BeanDescriptor";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region VetoableChangeSupport
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/VetoableChangeSupport.html
-    /// </summary>
-    public partial class VetoableChangeSupport : MASES.JCOBridge.C2JBridge.JVMBridgeBase<VetoableChangeSupport>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public VetoableChangeSupport() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public VetoableChangeSupport(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.beans.VetoableChangeSupport";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region PropertyChangeEvent
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyChangeEvent.html
-    /// </summary>
-    public partial class PropertyChangeEvent : Java.Util.EventObject
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public PropertyChangeEvent() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public PropertyChangeEvent(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.beans.PropertyChangeEvent";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region Statement
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Statement.html
-    /// </summary>
-    public partial class Statement : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Statement>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public Statement() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public Statement(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.beans.Statement";
+        public override string ClassName => "java.beans.XMLEncoder";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -303,6 +163,124 @@ namespace Java.Beans
     }
     #endregion
 
+    #region SimpleBeanInfo
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/SimpleBeanInfo.html
+    /// </summary>
+    public partial class SimpleBeanInfo : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SimpleBeanInfo>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public SimpleBeanInfo() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public SimpleBeanInfo(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.beans.SimpleBeanInfo";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region VetoableChangeSupport
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/VetoableChangeSupport.html
+    /// </summary>
+    public partial class VetoableChangeSupport : MASES.JCOBridge.C2JBridge.JVMBridgeBase<VetoableChangeSupport>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public VetoableChangeSupport() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public VetoableChangeSupport(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.beans.VetoableChangeSupport";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region ConstructorProperties
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/ConstructorProperties.html
+    /// </summary>
+    public partial class ConstructorProperties : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ConstructorProperties>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public ConstructorProperties() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public ConstructorProperties(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.beans.ConstructorProperties";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region VetoableChangeListener
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/VetoableChangeListener.html
+    /// </summary>
+    public partial class VetoableChangeListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    {
+#warning Remember to build the body class for event listener
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region PropertyEditorManager
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditorManager.html
@@ -338,23 +316,58 @@ namespace Java.Beans
     }
     #endregion
 
-    #region Encoder
+    #region PersistenceDelegate
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Encoder.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PersistenceDelegate.html
     /// </summary>
-    public partial class Encoder : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Encoder>
+    public partial class PersistenceDelegate : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PersistenceDelegate>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public Encoder() { }
+        public PersistenceDelegate() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public Encoder(params object[] args) : base(args) { }
+        public PersistenceDelegate(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.beans.Encoder";
+        public override string ClassName => "java.beans.PersistenceDelegate";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region IndexedPropertyChangeEvent
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/IndexedPropertyChangeEvent.html
+    /// </summary>
+    public partial class IndexedPropertyChangeEvent : Java.Beans.PropertyChangeEvent
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public IndexedPropertyChangeEvent() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public IndexedPropertyChangeEvent(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.beans.IndexedPropertyChangeEvent";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -373,32 +386,32 @@ namespace Java.Beans
     }
     #endregion
 
-    #region Visibility
+    #region PropertyDescriptor
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Visibility.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyDescriptor.html
     /// </summary>
-    public partial class Visibility : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Visibility>
+    public partial class PropertyDescriptor : Java.Beans.FeatureDescriptor
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public Visibility() { }
+        public PropertyDescriptor() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public Visibility(params object[] args) : base(args) { }
+        public PropertyDescriptor(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.beans.Visibility";
+        public override string ClassName => "java.beans.PropertyDescriptor";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
+        public override bool IsAbstract => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
         public override bool IsCloseable => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
+        public override bool IsInterface => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;
@@ -408,71 +421,23 @@ namespace Java.Beans
     }
     #endregion
 
-    #region DesignMode
+    #region ParameterDescriptor
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/DesignMode.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/ParameterDescriptor.html
     /// </summary>
-    public partial class DesignMode : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DesignMode>
+    public partial class ParameterDescriptor : Java.Beans.FeatureDescriptor
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public DesignMode() { }
+        public ParameterDescriptor() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public DesignMode(params object[] args) : base(args) { }
+        public ParameterDescriptor(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.beans.DesignMode";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region ExceptionListener
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/ExceptionListener.html
-    /// </summary>
-    public partial class ExceptionListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
-    {
-#warning Remember to build the body class for event listener
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region SimpleBeanInfo
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/SimpleBeanInfo.html
-    /// </summary>
-    public partial class SimpleBeanInfo : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SimpleBeanInfo>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public SimpleBeanInfo() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public SimpleBeanInfo(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.beans.SimpleBeanInfo";
+        public override string ClassName => "java.beans.ParameterDescriptor";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -526,23 +491,23 @@ namespace Java.Beans
     }
     #endregion
 
-    #region Transient
+    #region BeanInfo
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Transient.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanInfo.html
     /// </summary>
-    public partial class Transient : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Transient>
+    public partial class BeanInfo : MASES.JCOBridge.C2JBridge.JVMBridgeBase<BeanInfo>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public Transient() { }
+        public BeanInfo() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public Transient(params object[] args) : base(args) { }
+        public BeanInfo(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.beans.Transient";
+        public override string ClassName => "java.beans.BeanInfo";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -552,6 +517,251 @@ namespace Java.Beans
 
         /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
         public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region IndexedPropertyDescriptor
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/IndexedPropertyDescriptor.html
+    /// </summary>
+    public partial class IndexedPropertyDescriptor : Java.Beans.PropertyDescriptor
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public IndexedPropertyDescriptor() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public IndexedPropertyDescriptor(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.beans.IndexedPropertyDescriptor";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region Expression
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Expression.html
+    /// </summary>
+    public partial class Expression : Java.Beans.Statement
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public Expression() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public Expression(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.beans.Expression";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region DefaultPersistenceDelegate
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/DefaultPersistenceDelegate.html
+    /// </summary>
+    public partial class DefaultPersistenceDelegate : Java.Beans.PersistenceDelegate
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public DefaultPersistenceDelegate() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public DefaultPersistenceDelegate(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.beans.DefaultPersistenceDelegate";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region MethodDescriptor
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/MethodDescriptor.html
+    /// </summary>
+    public partial class MethodDescriptor : Java.Beans.FeatureDescriptor
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public MethodDescriptor() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public MethodDescriptor(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.beans.MethodDescriptor";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region EventSetDescriptor
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/EventSetDescriptor.html
+    /// </summary>
+    public partial class EventSetDescriptor : Java.Beans.FeatureDescriptor
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public EventSetDescriptor() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public EventSetDescriptor(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.beans.EventSetDescriptor";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region BeanDescriptor
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/BeanDescriptor.html
+    /// </summary>
+    public partial class BeanDescriptor : Java.Beans.FeatureDescriptor
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public BeanDescriptor() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public BeanDescriptor(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.beans.BeanDescriptor";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region PropertyChangeEvent
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyChangeEvent.html
+    /// </summary>
+    public partial class PropertyChangeEvent : Java.Util.EventObject
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public PropertyChangeEvent() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public PropertyChangeEvent(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.beans.PropertyChangeEvent";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;
@@ -596,23 +806,144 @@ namespace Java.Beans
     }
     #endregion
 
-    #region Beans
+    #region PropertyEditor
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Beans.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditor.html
     /// </summary>
-    public partial class Beans : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Beans>
+    public partial class PropertyEditor : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PropertyEditor>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public Beans() { }
+        public PropertyEditor() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public Beans(params object[] args) : base(args) { }
+        public PropertyEditor(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.beans.Beans";
+        public override string ClassName => "java.beans.PropertyEditor";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region DesignMode
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/DesignMode.html
+    /// </summary>
+    public partial class DesignMode : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DesignMode>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public DesignMode() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public DesignMode(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.beans.DesignMode";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region IntrospectionException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/IntrospectionException.html
+    /// </summary>
+    public partial class IntrospectionException : Java.Lang.Exception
+    {
+        public IntrospectionException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.beans.IntrospectionException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region JavaBean
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/JavaBean.html
+    /// </summary>
+    public partial class JavaBean : MASES.JCOBridge.C2JBridge.JVMBridgeBase<JavaBean>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public JavaBean() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public JavaBean(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.beans.JavaBean";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region EventHandler
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/EventHandler.html
+    /// </summary>
+    public partial class EventHandler : MASES.JCOBridge.C2JBridge.JVMBridgeBase<EventHandler>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public EventHandler() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public EventHandler(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.beans.EventHandler";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -631,23 +962,36 @@ namespace Java.Beans
     }
     #endregion
 
-    #region PropertyChangeSupport
+    #region PropertyChangeListener
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyChangeSupport.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyChangeListener.html
     /// </summary>
-    public partial class PropertyChangeSupport : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PropertyChangeSupport>
+    public partial class PropertyChangeListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    {
+#warning Remember to build the body class for event listener
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region Encoder
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Encoder.html
+    /// </summary>
+    public partial class Encoder : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Encoder>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public PropertyChangeSupport() { }
+        public Encoder() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public PropertyChangeSupport(params object[] args) : base(args) { }
+        public Encoder(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.beans.PropertyChangeSupport";
+        public override string ClassName => "java.beans.Encoder";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -666,23 +1010,23 @@ namespace Java.Beans
     }
     #endregion
 
-    #region ParameterDescriptor
+    #region FeatureDescriptor
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/ParameterDescriptor.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/FeatureDescriptor.html
     /// </summary>
-    public partial class ParameterDescriptor : Java.Beans.FeatureDescriptor
+    public partial class FeatureDescriptor : MASES.JCOBridge.C2JBridge.JVMBridgeBase<FeatureDescriptor>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ParameterDescriptor() { }
+        public FeatureDescriptor() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public ParameterDescriptor(params object[] args) : base(args) { }
+        public FeatureDescriptor(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.beans.ParameterDescriptor";
+        public override string ClassName => "java.beans.FeatureDescriptor";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -692,6 +1036,105 @@ namespace Java.Beans
 
         /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
         public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region ExceptionListener
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/ExceptionListener.html
+    /// </summary>
+    public partial class ExceptionListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    {
+#warning Remember to build the body class for event listener
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region PropertyVetoException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyVetoException.html
+    /// </summary>
+    public partial class PropertyVetoException : Java.Lang.Exception
+    {
+        public PropertyVetoException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.beans.PropertyVetoException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region Visibility
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Visibility.html
+    /// </summary>
+    public partial class Visibility : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Visibility>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public Visibility() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public Visibility(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.beans.Visibility";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region Customizer
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Customizer.html
+    /// </summary>
+    public partial class Customizer : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Customizer>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public Customizer() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public Customizer(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.beans.Customizer";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;
@@ -771,71 +1214,23 @@ namespace Java.Beans
     }
     #endregion
 
-    #region ConstructorProperties
+    #region Statement
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/ConstructorProperties.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Statement.html
     /// </summary>
-    public partial class ConstructorProperties : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ConstructorProperties>
+    public partial class Statement : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Statement>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ConstructorProperties() { }
+        public Statement() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public ConstructorProperties(params object[] args) : base(args) { }
+        public Statement(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.beans.ConstructorProperties";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region VetoableChangeListener
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/VetoableChangeListener.html
-    /// </summary>
-    public partial class VetoableChangeListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
-    {
-#warning Remember to build the body class for event listener
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region XMLEncoder
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLEncoder.html
-    /// </summary>
-    public partial class XMLEncoder : Java.Beans.Encoder
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public XMLEncoder() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public XMLEncoder(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.beans.XMLEncoder";
+        public override string ClassName => "java.beans.Statement";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -854,402 +1249,23 @@ namespace Java.Beans
     }
     #endregion
 
-    #region FeatureDescriptor
+    #region Beans
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/FeatureDescriptor.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Beans.html
     /// </summary>
-    public partial class FeatureDescriptor : MASES.JCOBridge.C2JBridge.JVMBridgeBase<FeatureDescriptor>
+    public partial class Beans : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Beans>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public FeatureDescriptor() { }
+        public Beans() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public FeatureDescriptor(params object[] args) : base(args) { }
+        public Beans(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.beans.FeatureDescriptor";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region JavaBean
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/JavaBean.html
-    /// </summary>
-    public partial class JavaBean : MASES.JCOBridge.C2JBridge.JVMBridgeBase<JavaBean>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public JavaBean() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public JavaBean(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.beans.JavaBean";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region Customizer
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Customizer.html
-    /// </summary>
-    public partial class Customizer : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Customizer>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public Customizer() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public Customizer(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.beans.Customizer";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region PropertyVetoException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyVetoException.html
-    /// </summary>
-    public partial class PropertyVetoException : Java.Lang.Exception
-    {
-        public PropertyVetoException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.beans.PropertyVetoException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region PersistenceDelegate
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PersistenceDelegate.html
-    /// </summary>
-    public partial class PersistenceDelegate : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PersistenceDelegate>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public PersistenceDelegate() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public PersistenceDelegate(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.beans.PersistenceDelegate";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region PropertyEditor
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditor.html
-    /// </summary>
-    public partial class PropertyEditor : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PropertyEditor>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public PropertyEditor() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public PropertyEditor(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.beans.PropertyEditor";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region EventSetDescriptor
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/EventSetDescriptor.html
-    /// </summary>
-    public partial class EventSetDescriptor : Java.Beans.FeatureDescriptor
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public EventSetDescriptor() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public EventSetDescriptor(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.beans.EventSetDescriptor";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region MethodDescriptor
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/MethodDescriptor.html
-    /// </summary>
-    public partial class MethodDescriptor : Java.Beans.FeatureDescriptor
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public MethodDescriptor() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public MethodDescriptor(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.beans.MethodDescriptor";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region IndexedPropertyDescriptor
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/IndexedPropertyDescriptor.html
-    /// </summary>
-    public partial class IndexedPropertyDescriptor : Java.Beans.PropertyDescriptor
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public IndexedPropertyDescriptor() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public IndexedPropertyDescriptor(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.beans.IndexedPropertyDescriptor";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region PropertyDescriptor
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyDescriptor.html
-    /// </summary>
-    public partial class PropertyDescriptor : Java.Beans.FeatureDescriptor
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public PropertyDescriptor() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public PropertyDescriptor(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.beans.PropertyDescriptor";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region Expression
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Expression.html
-    /// </summary>
-    public partial class Expression : Java.Beans.Statement
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public Expression() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public Expression(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.beans.Expression";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region PropertyChangeListener
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyChangeListener.html
-    /// </summary>
-    public partial class PropertyChangeListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
-    {
-#warning Remember to build the body class for event listener
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region EventHandler
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/EventHandler.html
-    /// </summary>
-    public partial class EventHandler : MASES.JCOBridge.C2JBridge.JVMBridgeBase<EventHandler>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public EventHandler() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public EventHandler(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.beans.EventHandler";
+        public override string ClassName => "java.beans.Beans";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -1297,22 +1313,6 @@ namespace Java.Beans
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region IntrospectionException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/IntrospectionException.html
-    /// </summary>
-    public partial class IntrospectionException : Java.Lang.Exception
-    {
-        public IntrospectionException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.beans.IntrospectionException";
 
         // TODO: complete the class
 

@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Awt.Geom
 {
     #region Dimension2D
@@ -31,7 +33,8 @@ namespace Java.Awt.Geom
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Lang.Cloneable(Java.Awt.Geom.Dimension2D t) => t.Cast<Java.Lang.Cloneable>();
+        
         #endregion
 
         #region Fields

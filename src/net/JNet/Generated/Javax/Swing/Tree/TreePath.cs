@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing.Tree
 {
     #region TreePath
@@ -38,7 +40,8 @@ namespace Javax.Swing.Tree
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Io.Serializable(Javax.Swing.Tree.TreePath t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields

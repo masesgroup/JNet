@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Nio.File
 {
     #region StandardOpenOption
@@ -31,7 +33,8 @@ namespace Java.Nio.File
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Nio.File.OpenOption(Java.Nio.File.StandardOpenOption t) => t.Cast<Java.Nio.File.OpenOption>();
+        
         #endregion
 
         #region Fields

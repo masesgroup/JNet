@@ -23,319 +23,23 @@
 
 namespace Javax.Annotation.Processing
 {
-    #region Completions
+    #region Processor
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Completions.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Processor.html
     /// </summary>
-    public partial class Completions : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Completions>
+    public partial class Processor : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Processor>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public Completions() { }
+        public Processor() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public Completions(params object[] args) : base(args) { }
+        public Processor(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.annotation.processing.Completions";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region ProcessingEnvironment
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/ProcessingEnvironment.html
-    /// </summary>
-    public partial class ProcessingEnvironment : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ProcessingEnvironment>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public ProcessingEnvironment() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public ProcessingEnvironment(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.annotation.processing.ProcessingEnvironment";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region SupportedAnnotationTypes
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/SupportedAnnotationTypes.html
-    /// </summary>
-    public partial class SupportedAnnotationTypes : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SupportedAnnotationTypes>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public SupportedAnnotationTypes() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public SupportedAnnotationTypes(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.annotation.processing.SupportedAnnotationTypes";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region FilerException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/FilerException.html
-    /// </summary>
-    public partial class FilerException : Java.Io.IOException
-    {
-        public FilerException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.annotation.processing.FilerException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region SupportedOptions
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/SupportedOptions.html
-    /// </summary>
-    public partial class SupportedOptions : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SupportedOptions>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public SupportedOptions() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public SupportedOptions(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.annotation.processing.SupportedOptions";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region SupportedSourceVersion
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/SupportedSourceVersion.html
-    /// </summary>
-    public partial class SupportedSourceVersion : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SupportedSourceVersion>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public SupportedSourceVersion() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public SupportedSourceVersion(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.annotation.processing.SupportedSourceVersion";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region AbstractProcessor
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/AbstractProcessor.html
-    /// </summary>
-    public partial class AbstractProcessor : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AbstractProcessor>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public AbstractProcessor() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public AbstractProcessor(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.annotation.processing.AbstractProcessor";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region Messager
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Messager.html
-    /// </summary>
-    public partial class Messager : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Messager>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public Messager() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public Messager(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.annotation.processing.Messager";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region Generated
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Generated.html
-    /// </summary>
-    public partial class Generated : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Generated>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public Generated() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public Generated(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.annotation.processing.Generated";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region Completion
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Completion.html
-    /// </summary>
-    public partial class Completion : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Completion>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public Completion() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public Completion(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.annotation.processing.Completion";
+        public override string ClassName => "javax.annotation.processing.Processor";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -389,6 +93,127 @@ namespace Javax.Annotation.Processing
     }
     #endregion
 
+    #region Completion
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Completion.html
+    /// </summary>
+    public partial class Completion : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Completion>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public Completion() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public Completion(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.annotation.processing.Completion";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region SupportedOptions
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/SupportedOptions.html
+    /// </summary>
+    public partial class SupportedOptions : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SupportedOptions>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public SupportedOptions() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public SupportedOptions(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.annotation.processing.SupportedOptions";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region FilerException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/FilerException.html
+    /// </summary>
+    public partial class FilerException : Java.Io.IOException
+    {
+        public FilerException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.annotation.processing.FilerException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region SupportedAnnotationTypes
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/SupportedAnnotationTypes.html
+    /// </summary>
+    public partial class SupportedAnnotationTypes : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SupportedAnnotationTypes>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public SupportedAnnotationTypes() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public SupportedAnnotationTypes(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.annotation.processing.SupportedAnnotationTypes";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region RoundEnvironment
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/RoundEnvironment.html
@@ -424,23 +249,58 @@ namespace Javax.Annotation.Processing
     }
     #endregion
 
-    #region Processor
+    #region Completions
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Processor.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Completions.html
     /// </summary>
-    public partial class Processor : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Processor>
+    public partial class Completions : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Completions>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public Processor() { }
+        public Completions() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public Processor(params object[] args) : base(args) { }
+        public Completions(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.annotation.processing.Processor";
+        public override string ClassName => "javax.annotation.processing.Completions";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region SupportedSourceVersion
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/SupportedSourceVersion.html
+    /// </summary>
+    public partial class SupportedSourceVersion : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SupportedSourceVersion>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public SupportedSourceVersion() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public SupportedSourceVersion(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.annotation.processing.SupportedSourceVersion";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -450,6 +310,146 @@ namespace Javax.Annotation.Processing
 
         /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
         public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region Messager
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Messager.html
+    /// </summary>
+    public partial class Messager : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Messager>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public Messager() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public Messager(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.annotation.processing.Messager";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region ProcessingEnvironment
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/ProcessingEnvironment.html
+    /// </summary>
+    public partial class ProcessingEnvironment : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ProcessingEnvironment>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public ProcessingEnvironment() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public ProcessingEnvironment(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.annotation.processing.ProcessingEnvironment";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region Generated
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Generated.html
+    /// </summary>
+    public partial class Generated : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Generated>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public Generated() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public Generated(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.annotation.processing.Generated";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region AbstractProcessor
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/AbstractProcessor.html
+    /// </summary>
+    public partial class AbstractProcessor : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AbstractProcessor>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public AbstractProcessor() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public AbstractProcessor(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.annotation.processing.AbstractProcessor";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;

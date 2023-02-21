@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Sql.Rowset.Serial
 {
     #region SQLInputImpl
@@ -31,7 +33,8 @@ namespace Javax.Sql.Rowset.Serial
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Sql.SQLInput(Javax.Sql.Rowset.Serial.SQLInputImpl t) => t.Cast<Java.Sql.SQLInput>();
+        
         #endregion
 
         #region Fields

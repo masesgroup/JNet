@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Lang
 {
     #region Class
@@ -31,7 +33,11 @@ namespace Java.Lang
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Io.Serializable(Java.Lang.Class t) => t.Cast<Java.Io.Serializable>();
+        public static implicit operator Java.Lang.Reflect.GenericDeclaration(Java.Lang.Class t) => t.Cast<Java.Lang.Reflect.GenericDeclaration>();
+        public static implicit operator Java.Lang.Reflect.Type(Java.Lang.Class t) => t.Cast<Java.Lang.Reflect.Type>();
+        public static implicit operator Java.Lang.Reflect.AnnotatedElement(Java.Lang.Class t) => t.Cast<Java.Lang.Reflect.AnnotatedElement>();
+        
         #endregion
 
         #region Fields

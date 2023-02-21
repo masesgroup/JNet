@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Management.Openmbean
 {
     #region CompositeDataSupport
@@ -31,7 +33,9 @@ namespace Javax.Management.Openmbean
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Management.Openmbean.CompositeData(Javax.Management.Openmbean.CompositeDataSupport t) => t.Cast<Javax.Management.Openmbean.CompositeData>();
+        public static implicit operator Java.Io.Serializable(Javax.Management.Openmbean.CompositeDataSupport t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields

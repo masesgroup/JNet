@@ -21,12 +21,21 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Util
 {
     #region Formatter
     public partial class Formatter
     {
         #region Constructors
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#<init>(java.io.File) throws java.io.FileNotFoundException
+        /// </summary>
+        public Formatter(Java.Io.File arg0)
+            : base(arg0)
+        {
+        }
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#<init>(java.io.File,java.lang.String) throws java.io.FileNotFoundException,java.io.UnsupportedEncodingException
         /// </summary>
@@ -35,10 +44,10 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#<init>(java.io.File) throws java.io.FileNotFoundException
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#<init>(java.io.File,java.lang.String,java.util.Locale) throws java.io.FileNotFoundException,java.io.UnsupportedEncodingException
         /// </summary>
-        public Formatter(Java.Io.File arg0)
-            : base(arg0)
+        public Formatter(Java.Io.File arg0, string arg1, Java.Util.Locale arg2)
+            : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
@@ -56,10 +65,10 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#<init>(java.lang.String,java.lang.String) throws java.io.FileNotFoundException,java.io.UnsupportedEncodingException
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#<init>(java.io.OutputStream,java.lang.String,java.util.Locale) throws java.io.UnsupportedEncodingException
         /// </summary>
-        public Formatter(string arg0, string arg1)
-            : base(arg0, arg1)
+        public Formatter(Java.Io.OutputStream arg0, string arg1, Java.Util.Locale arg2)
+            : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
@@ -70,9 +79,9 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#<init>(java.io.OutputStream,java.lang.String,java.util.Locale) throws java.io.UnsupportedEncodingException
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#<init>(java.io.OutputStream,java.nio.charset.Charset,java.util.Locale)
         /// </summary>
-        public Formatter(Java.Io.OutputStream arg0, string arg1, Java.Util.Locale arg2)
+        public Formatter(Java.Io.OutputStream arg0, Java.Nio.Charset.Charset arg1, Java.Util.Locale arg2)
             : base(arg0, arg1, arg2)
         {
         }
@@ -91,17 +100,10 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#<init>(java.io.File,java.lang.String,java.util.Locale) throws java.io.FileNotFoundException,java.io.UnsupportedEncodingException
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#<init>(java.lang.Appendable)
         /// </summary>
-        public Formatter(Java.Io.File arg0, string arg1, Java.Util.Locale arg2)
-            : base(arg0, arg1, arg2)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#<init>(java.io.OutputStream,java.nio.charset.Charset,java.util.Locale)
-        /// </summary>
-        public Formatter(Java.Io.OutputStream arg0, Java.Nio.Charset.Charset arg1, Java.Util.Locale arg2)
-            : base(arg0, arg1, arg2)
+        public Formatter(Java.Lang.Appendable arg0)
+            : base(arg0)
         {
         }
         /// <summary>
@@ -109,6 +111,13 @@ namespace Java.Util
         /// </summary>
         public Formatter(Java.Io.OutputStream arg0)
             : base(arg0)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#<init>(java.lang.String,java.lang.String) throws java.io.FileNotFoundException,java.io.UnsupportedEncodingException
+        /// </summary>
+        public Formatter(string arg0, string arg1)
+            : base(arg0, arg1)
         {
         }
         /// <summary>
@@ -132,18 +141,13 @@ namespace Java.Util
             : base(arg0)
         {
         }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#<init>(java.lang.Appendable)
-        /// </summary>
-        public Formatter(Java.Lang.Appendable arg0)
-            : base(arg0)
-        {
-        }
         
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Io.Closeable(Java.Util.Formatter t) => t.Cast<Java.Io.Closeable>();
+        public static implicit operator Java.Io.Flushable(Java.Util.Formatter t) => t.Cast<Java.Io.Flushable>();
+        
         #endregion
 
         #region Fields

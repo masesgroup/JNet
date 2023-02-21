@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Util.Concurrent
 {
     #region ExecutorService
@@ -31,7 +33,8 @@ namespace Java.Util.Concurrent
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Util.Concurrent.Executor(Java.Util.Concurrent.ExecutorService t) => t.Cast<Java.Util.Concurrent.Executor>();
+        
         #endregion
 
         #region Fields

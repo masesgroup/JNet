@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing
 {
     #region JPopupMenu
@@ -38,7 +40,9 @@ namespace Javax.Swing
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.JPopupMenu t) => t.Cast<Javax.Accessibility.Accessible>();
+        public static implicit operator Javax.Swing.MenuElement(Javax.Swing.JPopupMenu t) => t.Cast<Javax.Swing.MenuElement>();
+        
         #endregion
 
         #region Fields

@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Imageio.Stream
 {
     #region ImageInputStream
@@ -31,7 +33,9 @@ namespace Javax.Imageio.Stream
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Io.DataInput(Javax.Imageio.Stream.ImageInputStream t) => t.Cast<Java.Io.DataInput>();
+        public static implicit operator Java.Io.Closeable(Javax.Imageio.Stream.ImageInputStream t) => t.Cast<Java.Io.Closeable>();
+        
         #endregion
 
         #region Fields

@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Awt
 {
     #region BorderLayout
@@ -38,7 +40,9 @@ namespace Java.Awt
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Awt.LayoutManager2(Java.Awt.BorderLayout t) => t.Cast<Java.Awt.LayoutManager2>();
+        public static implicit operator Java.Io.Serializable(Java.Awt.BorderLayout t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields

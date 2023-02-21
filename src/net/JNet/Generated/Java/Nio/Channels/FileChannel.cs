@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Nio.Channels
 {
     #region FileChannel
@@ -31,7 +33,10 @@ namespace Java.Nio.Channels
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Nio.Channels.SeekableByteChannel(Java.Nio.Channels.FileChannel t) => t.Cast<Java.Nio.Channels.SeekableByteChannel>();
+        public static implicit operator Java.Nio.Channels.GatheringByteChannel(Java.Nio.Channels.FileChannel t) => t.Cast<Java.Nio.Channels.GatheringByteChannel>();
+        public static implicit operator Java.Nio.Channels.ScatteringByteChannel(Java.Nio.Channels.FileChannel t) => t.Cast<Java.Nio.Channels.ScatteringByteChannel>();
+        
         #endregion
 
         #region Fields

@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing.Text
 {
     #region WrappedPlainView
@@ -45,7 +47,8 @@ namespace Javax.Swing.Text
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Swing.Text.TabExpander(Javax.Swing.Text.WrappedPlainView t) => t.Cast<Javax.Swing.Text.TabExpander>();
+        
         #endregion
 
         #region Fields

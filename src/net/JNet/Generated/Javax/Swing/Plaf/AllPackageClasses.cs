@@ -23,41 +23,6 @@
 
 namespace Javax.Swing.Plaf
 {
-    #region OptionPaneUI
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/OptionPaneUI.html
-    /// </summary>
-    public partial class OptionPaneUI : Javax.Swing.Plaf.ComponentUI
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public OptionPaneUI() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public OptionPaneUI(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.swing.plaf.OptionPaneUI";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
     #region BorderUIResource
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.html
@@ -89,108 +54,6 @@ namespace Javax.Swing.Plaf
         public override bool IsStatic => false;
 
         // TODO: complete the class
-        #region LineBorderUIResource
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.LineBorderUIResource.html
-        /// </summary>
-        public partial class LineBorderUIResource : Javax.Swing.Border.LineBorder
-        {
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public LineBorderUIResource() { }
-            /// <summary>
-            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-            /// </summary>
-            public LineBorderUIResource(params object[] args) : base(args) { }
-
-            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-            public override string ClassName => "javax.swing.plaf.BorderUIResource$LineBorderUIResource";
-
-            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-            public override bool IsAbstract => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-            public override bool IsCloseable => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-            public override bool IsInterface => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-            public override bool IsStatic => true;
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region CompoundBorderUIResource
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.CompoundBorderUIResource.html
-        /// </summary>
-        public partial class CompoundBorderUIResource : Javax.Swing.Border.CompoundBorder
-        {
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public CompoundBorderUIResource() { }
-            /// <summary>
-            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-            /// </summary>
-            public CompoundBorderUIResource(params object[] args) : base(args) { }
-
-            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-            public override string ClassName => "javax.swing.plaf.BorderUIResource$CompoundBorderUIResource";
-
-            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-            public override bool IsAbstract => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-            public override bool IsCloseable => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-            public override bool IsInterface => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-            public override bool IsStatic => true;
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region EmptyBorderUIResource
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.EmptyBorderUIResource.html
-        /// </summary>
-        public partial class EmptyBorderUIResource : Javax.Swing.Border.EmptyBorder
-        {
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public EmptyBorderUIResource() { }
-            /// <summary>
-            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-            /// </summary>
-            public EmptyBorderUIResource(params object[] args) : base(args) { }
-
-            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-            public override string ClassName => "javax.swing.plaf.BorderUIResource$EmptyBorderUIResource";
-
-            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-            public override bool IsAbstract => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-            public override bool IsCloseable => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-            public override bool IsInterface => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-            public override bool IsStatic => true;
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region BevelBorderUIResource
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.BevelBorderUIResource.html
@@ -208,6 +71,40 @@ namespace Javax.Swing.Plaf
 
             /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
             public override string ClassName => "javax.swing.plaf.BorderUIResource$BevelBorderUIResource";
+
+            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+            public override bool IsAbstract => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+            public override bool IsCloseable => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+            public override bool IsInterface => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+            public override bool IsStatic => true;
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region LineBorderUIResource
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.LineBorderUIResource.html
+        /// </summary>
+        public partial class LineBorderUIResource : Javax.Swing.Border.LineBorder
+        {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public LineBorderUIResource() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public LineBorderUIResource(params object[] args) : base(args) { }
+
+            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+            public override string ClassName => "javax.swing.plaf.BorderUIResource$LineBorderUIResource";
 
             /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
             public override bool IsAbstract => false;
@@ -259,23 +156,23 @@ namespace Javax.Swing.Plaf
         }
         #endregion
 
-        #region TitledBorderUIResource
+        #region EmptyBorderUIResource
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.TitledBorderUIResource.html
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.EmptyBorderUIResource.html
         /// </summary>
-        public partial class TitledBorderUIResource : Javax.Swing.Border.TitledBorder
+        public partial class EmptyBorderUIResource : Javax.Swing.Border.EmptyBorder
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            public TitledBorderUIResource() { }
+            public EmptyBorderUIResource() { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
-            public TitledBorderUIResource(params object[] args) : base(args) { }
+            public EmptyBorderUIResource(params object[] args) : base(args) { }
 
             /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-            public override string ClassName => "javax.swing.plaf.BorderUIResource$TitledBorderUIResource";
+            public override string ClassName => "javax.swing.plaf.BorderUIResource$EmptyBorderUIResource";
 
             /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
             public override bool IsAbstract => false;
@@ -327,167 +224,95 @@ namespace Javax.Swing.Plaf
         }
         #endregion
 
+        #region TitledBorderUIResource
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.TitledBorderUIResource.html
+        /// </summary>
+        public partial class TitledBorderUIResource : Javax.Swing.Border.TitledBorder
+        {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public TitledBorderUIResource() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public TitledBorderUIResource(params object[] args) : base(args) { }
+
+            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+            public override string ClassName => "javax.swing.plaf.BorderUIResource$TitledBorderUIResource";
+
+            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+            public override bool IsAbstract => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+            public override bool IsCloseable => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+            public override bool IsInterface => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+            public override bool IsStatic => true;
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region CompoundBorderUIResource
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.CompoundBorderUIResource.html
+        /// </summary>
+        public partial class CompoundBorderUIResource : Javax.Swing.Border.CompoundBorder
+        {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public CompoundBorderUIResource() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public CompoundBorderUIResource(params object[] args) : base(args) { }
+
+            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+            public override string ClassName => "javax.swing.plaf.BorderUIResource$CompoundBorderUIResource";
+
+            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+            public override bool IsAbstract => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+            public override bool IsCloseable => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+            public override bool IsInterface => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+            public override bool IsStatic => true;
+
+            // TODO: complete the class
+        }
+        #endregion
+
 
     }
     #endregion
 
-    #region TableHeaderUI
+    #region TableUI
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TableHeaderUI.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TableUI.html
     /// </summary>
-    public partial class TableHeaderUI : Javax.Swing.Plaf.ComponentUI
+    public partial class TableUI : Javax.Swing.Plaf.ComponentUI
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public TableHeaderUI() { }
+        public TableUI() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public TableHeaderUI(params object[] args) : base(args) { }
+        public TableUI(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.swing.plaf.TableHeaderUI";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region LabelUI
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/LabelUI.html
-    /// </summary>
-    public partial class LabelUI : Javax.Swing.Plaf.ComponentUI
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public LabelUI() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public LabelUI(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.swing.plaf.LabelUI";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region TextUI
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TextUI.html
-    /// </summary>
-    public partial class TextUI : Javax.Swing.Plaf.ComponentUI
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public TextUI() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public TextUI(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.swing.plaf.TextUI";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region ActionMapUIResource
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/ActionMapUIResource.html
-    /// </summary>
-    public partial class ActionMapUIResource : Javax.Swing.ActionMap
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public ActionMapUIResource() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public ActionMapUIResource(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.swing.plaf.ActionMapUIResource";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region ColorChooserUI
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/ColorChooserUI.html
-    /// </summary>
-    public partial class ColorChooserUI : Javax.Swing.Plaf.ComponentUI
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public ColorChooserUI() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public ColorChooserUI(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.swing.plaf.ColorChooserUI";
+        public override string ClassName => "javax.swing.plaf.TableUI";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -541,303 +366,23 @@ namespace Javax.Swing.Plaf
     }
     #endregion
 
-    #region ComponentUI
+    #region PopupMenuUI
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/ComponentUI.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/PopupMenuUI.html
     /// </summary>
-    public partial class ComponentUI : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ComponentUI>
+    public partial class PopupMenuUI : Javax.Swing.Plaf.ComponentUI
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ComponentUI() { }
+        public PopupMenuUI() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public ComponentUI(params object[] args) : base(args) { }
+        public PopupMenuUI(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.swing.plaf.ComponentUI";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region ListUI
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/ListUI.html
-    /// </summary>
-    public partial class ListUI : Javax.Swing.Plaf.ComponentUI
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public ListUI() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public ListUI(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.swing.plaf.ListUI";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region IconUIResource
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/IconUIResource.html
-    /// </summary>
-    public partial class IconUIResource : MASES.JCOBridge.C2JBridge.JVMBridgeBase<IconUIResource>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public IconUIResource() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public IconUIResource(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.swing.plaf.IconUIResource";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region InputMapUIResource
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/InputMapUIResource.html
-    /// </summary>
-    public partial class InputMapUIResource : Javax.Swing.InputMap
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public InputMapUIResource() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public InputMapUIResource(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.swing.plaf.InputMapUIResource";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region FileChooserUI
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/FileChooserUI.html
-    /// </summary>
-    public partial class FileChooserUI : Javax.Swing.Plaf.ComponentUI
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public FileChooserUI() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public FileChooserUI(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.swing.plaf.FileChooserUI";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region LayerUI
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/LayerUI.html
-    /// </summary>
-    public partial class LayerUI : Javax.Swing.Plaf.ComponentUI
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public LayerUI() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public LayerUI(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.swing.plaf.LayerUI";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region SplitPaneUI
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/SplitPaneUI.html
-    /// </summary>
-    public partial class SplitPaneUI : Javax.Swing.Plaf.ComponentUI
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public SplitPaneUI() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public SplitPaneUI(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.swing.plaf.SplitPaneUI";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region PanelUI
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/PanelUI.html
-    /// </summary>
-    public partial class PanelUI : Javax.Swing.Plaf.ComponentUI
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public PanelUI() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public PanelUI(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.swing.plaf.PanelUI";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region TableUI
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TableUI.html
-    /// </summary>
-    public partial class TableUI : Javax.Swing.Plaf.ComponentUI
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public TableUI() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public TableUI(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.swing.plaf.TableUI";
+        public override string ClassName => "javax.swing.plaf.PopupMenuUI";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -891,6 +436,251 @@ namespace Javax.Swing.Plaf
     }
     #endregion
 
+    #region InputMapUIResource
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/InputMapUIResource.html
+    /// </summary>
+    public partial class InputMapUIResource : Javax.Swing.InputMap
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public InputMapUIResource() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public InputMapUIResource(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.swing.plaf.InputMapUIResource";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region TextUI
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TextUI.html
+    /// </summary>
+    public partial class TextUI : Javax.Swing.Plaf.ComponentUI
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public TextUI() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public TextUI(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.swing.plaf.TextUI";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region MenuBarUI
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/MenuBarUI.html
+    /// </summary>
+    public partial class MenuBarUI : Javax.Swing.Plaf.ComponentUI
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public MenuBarUI() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public MenuBarUI(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.swing.plaf.MenuBarUI";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region SplitPaneUI
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/SplitPaneUI.html
+    /// </summary>
+    public partial class SplitPaneUI : Javax.Swing.Plaf.ComponentUI
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public SplitPaneUI() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public SplitPaneUI(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.swing.plaf.SplitPaneUI";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region ColorChooserUI
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/ColorChooserUI.html
+    /// </summary>
+    public partial class ColorChooserUI : Javax.Swing.Plaf.ComponentUI
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public ColorChooserUI() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public ColorChooserUI(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.swing.plaf.ColorChooserUI";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region PanelUI
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/PanelUI.html
+    /// </summary>
+    public partial class PanelUI : Javax.Swing.Plaf.ComponentUI
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public PanelUI() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public PanelUI(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.swing.plaf.PanelUI";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region InternalFrameUI
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/InternalFrameUI.html
+    /// </summary>
+    public partial class InternalFrameUI : Javax.Swing.Plaf.ComponentUI
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public InternalFrameUI() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public InternalFrameUI(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.swing.plaf.InternalFrameUI";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region SliderUI
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/SliderUI.html
@@ -926,23 +716,23 @@ namespace Javax.Swing.Plaf
     }
     #endregion
 
-    #region DesktopPaneUI
+    #region ProgressBarUI
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/DesktopPaneUI.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/ProgressBarUI.html
     /// </summary>
-    public partial class DesktopPaneUI : Javax.Swing.Plaf.ComponentUI
+    public partial class ProgressBarUI : Javax.Swing.Plaf.ComponentUI
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public DesktopPaneUI() { }
+        public ProgressBarUI() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public DesktopPaneUI(params object[] args) : base(args) { }
+        public ProgressBarUI(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.swing.plaf.DesktopPaneUI";
+        public override string ClassName => "javax.swing.plaf.ProgressBarUI";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -961,58 +751,23 @@ namespace Javax.Swing.Plaf
     }
     #endregion
 
-    #region PopupMenuUI
+    #region LayerUI
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/PopupMenuUI.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/LayerUI.html
     /// </summary>
-    public partial class PopupMenuUI : Javax.Swing.Plaf.ComponentUI
+    public partial class LayerUI : Javax.Swing.Plaf.ComponentUI
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public PopupMenuUI() { }
+        public LayerUI() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public PopupMenuUI(params object[] args) : base(args) { }
+        public LayerUI(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.swing.plaf.PopupMenuUI";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region InsetsUIResource
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/InsetsUIResource.html
-    /// </summary>
-    public partial class InsetsUIResource : Java.Awt.Insets
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public InsetsUIResource() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public InsetsUIResource(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.swing.plaf.InsetsUIResource";
+        public override string ClassName => "javax.swing.plaf.LayerUI";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -1031,23 +786,23 @@ namespace Javax.Swing.Plaf
     }
     #endregion
 
-    #region MenuBarUI
+    #region OptionPaneUI
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/MenuBarUI.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/OptionPaneUI.html
     /// </summary>
-    public partial class MenuBarUI : Javax.Swing.Plaf.ComponentUI
+    public partial class OptionPaneUI : Javax.Swing.Plaf.ComponentUI
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public MenuBarUI() { }
+        public OptionPaneUI() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public MenuBarUI(params object[] args) : base(args) { }
+        public OptionPaneUI(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.swing.plaf.MenuBarUI";
+        public override string ClassName => "javax.swing.plaf.OptionPaneUI";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -1101,23 +856,408 @@ namespace Javax.Swing.Plaf
     }
     #endregion
 
-    #region TreeUI
+    #region ToolTipUI
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TreeUI.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/ToolTipUI.html
     /// </summary>
-    public partial class TreeUI : Javax.Swing.Plaf.ComponentUI
+    public partial class ToolTipUI : Javax.Swing.Plaf.ComponentUI
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public TreeUI() { }
+        public ToolTipUI() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public TreeUI(params object[] args) : base(args) { }
+        public ToolTipUI(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.swing.plaf.TreeUI";
+        public override string ClassName => "javax.swing.plaf.ToolTipUI";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region ButtonUI
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/ButtonUI.html
+    /// </summary>
+    public partial class ButtonUI : Javax.Swing.Plaf.ComponentUI
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public ButtonUI() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public ButtonUI(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.swing.plaf.ButtonUI";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region DesktopPaneUI
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/DesktopPaneUI.html
+    /// </summary>
+    public partial class DesktopPaneUI : Javax.Swing.Plaf.ComponentUI
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public DesktopPaneUI() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public DesktopPaneUI(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.swing.plaf.DesktopPaneUI";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region ListUI
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/ListUI.html
+    /// </summary>
+    public partial class ListUI : Javax.Swing.Plaf.ComponentUI
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public ListUI() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public ListUI(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.swing.plaf.ListUI";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region UIResource
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/UIResource.html
+    /// </summary>
+    public partial class UIResource : MASES.JCOBridge.C2JBridge.JVMBridgeBase<UIResource>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public UIResource() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public UIResource(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.swing.plaf.UIResource";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region InsetsUIResource
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/InsetsUIResource.html
+    /// </summary>
+    public partial class InsetsUIResource : Java.Awt.Insets
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public InsetsUIResource() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public InsetsUIResource(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.swing.plaf.InsetsUIResource";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region SpinnerUI
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/SpinnerUI.html
+    /// </summary>
+    public partial class SpinnerUI : Javax.Swing.Plaf.ComponentUI
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public SpinnerUI() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public SpinnerUI(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.swing.plaf.SpinnerUI";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region LabelUI
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/LabelUI.html
+    /// </summary>
+    public partial class LabelUI : Javax.Swing.Plaf.ComponentUI
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public LabelUI() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public LabelUI(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.swing.plaf.LabelUI";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region ToolBarUI
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/ToolBarUI.html
+    /// </summary>
+    public partial class ToolBarUI : Javax.Swing.Plaf.ComponentUI
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public ToolBarUI() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public ToolBarUI(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.swing.plaf.ToolBarUI";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region TableHeaderUI
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TableHeaderUI.html
+    /// </summary>
+    public partial class TableHeaderUI : Javax.Swing.Plaf.ComponentUI
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public TableHeaderUI() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public TableHeaderUI(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.swing.plaf.TableHeaderUI";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region DesktopIconUI
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/DesktopIconUI.html
+    /// </summary>
+    public partial class DesktopIconUI : Javax.Swing.Plaf.ComponentUI
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public DesktopIconUI() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public DesktopIconUI(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.swing.plaf.DesktopIconUI";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region MenuItemUI
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/MenuItemUI.html
+    /// </summary>
+    public partial class MenuItemUI : Javax.Swing.Plaf.ButtonUI
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public MenuItemUI() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public MenuItemUI(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.swing.plaf.MenuItemUI";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -1206,23 +1346,23 @@ namespace Javax.Swing.Plaf
     }
     #endregion
 
-    #region ToolBarUI
+    #region TabbedPaneUI
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/ToolBarUI.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TabbedPaneUI.html
     /// </summary>
-    public partial class ToolBarUI : Javax.Swing.Plaf.ComponentUI
+    public partial class TabbedPaneUI : Javax.Swing.Plaf.ComponentUI
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ToolBarUI() { }
+        public TabbedPaneUI() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public ToolBarUI(params object[] args) : base(args) { }
+        public TabbedPaneUI(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.swing.plaf.ToolBarUI";
+        public override string ClassName => "javax.swing.plaf.TabbedPaneUI";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -1241,23 +1381,23 @@ namespace Javax.Swing.Plaf
     }
     #endregion
 
-    #region MenuItemUI
+    #region FileChooserUI
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/MenuItemUI.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/FileChooserUI.html
     /// </summary>
-    public partial class MenuItemUI : Javax.Swing.Plaf.ButtonUI
+    public partial class FileChooserUI : Javax.Swing.Plaf.ComponentUI
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public MenuItemUI() { }
+        public FileChooserUI() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public MenuItemUI(params object[] args) : base(args) { }
+        public FileChooserUI(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.swing.plaf.MenuItemUI";
+        public override string ClassName => "javax.swing.plaf.FileChooserUI";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -1276,23 +1416,128 @@ namespace Javax.Swing.Plaf
     }
     #endregion
 
-    #region UIResource
+    #region DimensionUIResource
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/UIResource.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/DimensionUIResource.html
     /// </summary>
-    public partial class UIResource : MASES.JCOBridge.C2JBridge.JVMBridgeBase<UIResource>
+    public partial class DimensionUIResource : Java.Awt.Dimension
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public UIResource() { }
+        public DimensionUIResource() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public UIResource(params object[] args) : base(args) { }
+        public DimensionUIResource(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.swing.plaf.UIResource";
+        public override string ClassName => "javax.swing.plaf.DimensionUIResource";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region ComponentInputMapUIResource
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/ComponentInputMapUIResource.html
+    /// </summary>
+    public partial class ComponentInputMapUIResource : Javax.Swing.ComponentInputMap
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public ComponentInputMapUIResource() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public ComponentInputMapUIResource(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.swing.plaf.ComponentInputMapUIResource";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region IconUIResource
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/IconUIResource.html
+    /// </summary>
+    public partial class IconUIResource : MASES.JCOBridge.C2JBridge.JVMBridgeBase<IconUIResource>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public IconUIResource() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public IconUIResource(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.swing.plaf.IconUIResource";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region ComponentUI
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/ComponentUI.html
+    /// </summary>
+    public partial class ComponentUI : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ComponentUI>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public ComponentUI() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public ComponentUI(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.swing.plaf.ComponentUI";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -1301,7 +1546,42 @@ namespace Javax.Swing.Plaf
         public override bool IsCloseable => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region ActionMapUIResource
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/ActionMapUIResource.html
+    /// </summary>
+    public partial class ActionMapUIResource : Javax.Swing.ActionMap
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public ActionMapUIResource() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public ActionMapUIResource(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.swing.plaf.ActionMapUIResource";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;
@@ -1346,128 +1626,23 @@ namespace Javax.Swing.Plaf
     }
     #endregion
 
-    #region SpinnerUI
+    #region TreeUI
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/SpinnerUI.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TreeUI.html
     /// </summary>
-    public partial class SpinnerUI : Javax.Swing.Plaf.ComponentUI
+    public partial class TreeUI : Javax.Swing.Plaf.ComponentUI
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public SpinnerUI() { }
+        public TreeUI() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public SpinnerUI(params object[] args) : base(args) { }
+        public TreeUI(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.swing.plaf.SpinnerUI";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region ToolTipUI
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/ToolTipUI.html
-    /// </summary>
-    public partial class ToolTipUI : Javax.Swing.Plaf.ComponentUI
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public ToolTipUI() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public ToolTipUI(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.swing.plaf.ToolTipUI";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region ButtonUI
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/ButtonUI.html
-    /// </summary>
-    public partial class ButtonUI : Javax.Swing.Plaf.ComponentUI
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public ButtonUI() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public ButtonUI(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.swing.plaf.ButtonUI";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region InternalFrameUI
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/InternalFrameUI.html
-    /// </summary>
-    public partial class InternalFrameUI : Javax.Swing.Plaf.ComponentUI
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public InternalFrameUI() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public InternalFrameUI(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.swing.plaf.InternalFrameUI";
+        public override string ClassName => "javax.swing.plaf.TreeUI";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -1521,41 +1696,6 @@ namespace Javax.Swing.Plaf
     }
     #endregion
 
-    #region DesktopIconUI
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/DesktopIconUI.html
-    /// </summary>
-    public partial class DesktopIconUI : Javax.Swing.Plaf.ComponentUI
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public DesktopIconUI() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public DesktopIconUI(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.swing.plaf.DesktopIconUI";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
     #region RootPaneUI
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/RootPaneUI.html
@@ -1576,146 +1716,6 @@ namespace Javax.Swing.Plaf
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region ProgressBarUI
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/ProgressBarUI.html
-    /// </summary>
-    public partial class ProgressBarUI : Javax.Swing.Plaf.ComponentUI
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public ProgressBarUI() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public ProgressBarUI(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.swing.plaf.ProgressBarUI";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region TabbedPaneUI
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TabbedPaneUI.html
-    /// </summary>
-    public partial class TabbedPaneUI : Javax.Swing.Plaf.ComponentUI
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public TabbedPaneUI() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public TabbedPaneUI(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.swing.plaf.TabbedPaneUI";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region ComponentInputMapUIResource
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/ComponentInputMapUIResource.html
-    /// </summary>
-    public partial class ComponentInputMapUIResource : Javax.Swing.ComponentInputMap
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public ComponentInputMapUIResource() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public ComponentInputMapUIResource(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.swing.plaf.ComponentInputMapUIResource";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region DimensionUIResource
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/DimensionUIResource.html
-    /// </summary>
-    public partial class DimensionUIResource : Java.Awt.Dimension
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public DimensionUIResource() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public DimensionUIResource(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.swing.plaf.DimensionUIResource";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
         public override bool IsCloseable => false;

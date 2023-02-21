@@ -23,19 +23,6 @@
 
 namespace Java.Awt.Dnd
 {
-    #region DragSourceAdapter
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceAdapter.html
-    /// </summary>
-    public partial class DragSourceAdapter : MASES.JCOBridge.C2JBridge.JVMBridgeListener
-    {
-#warning Remember to build the body class for event listener
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
     #region DropTarget
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTarget.html
@@ -71,54 +58,6 @@ namespace Java.Awt.Dnd
     }
     #endregion
 
-    #region DragSourceMotionListener
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceMotionListener.html
-    /// </summary>
-    public partial class DragSourceMotionListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
-    {
-#warning Remember to build the body class for event listener
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region MouseDragGestureRecognizer
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/MouseDragGestureRecognizer.html
-    /// </summary>
-    public partial class MouseDragGestureRecognizer : Java.Awt.Dnd.DragGestureRecognizer
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public MouseDragGestureRecognizer() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public MouseDragGestureRecognizer(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.awt.dnd.MouseDragGestureRecognizer";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
     #region DropTargetListener
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetListener.html
@@ -126,111 +65,6 @@ namespace Java.Awt.Dnd
     public partial class DropTargetListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
 #warning Remember to build the body class for event listener
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region DropTargetContext
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetContext.html
-    /// </summary>
-    public partial class DropTargetContext : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DropTargetContext>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public DropTargetContext() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public DropTargetContext(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.awt.dnd.DropTargetContext";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region DragSourceDragEvent
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceDragEvent.html
-    /// </summary>
-    public partial class DragSourceDragEvent : Java.Awt.Dnd.DragSourceEvent
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public DragSourceDragEvent() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public DragSourceDragEvent(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.awt.dnd.DragSourceDragEvent";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region Autoscroll
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/Autoscroll.html
-    /// </summary>
-    public partial class Autoscroll : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Autoscroll>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public Autoscroll() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public Autoscroll(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.awt.dnd.Autoscroll";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
 
         // TODO: complete the class
 
@@ -272,259 +106,23 @@ namespace Java.Awt.Dnd
     }
     #endregion
 
-    #region DragGestureEvent
+    #region DropTargetContext
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureEvent.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetContext.html
     /// </summary>
-    public partial class DragGestureEvent : Java.Util.EventObject
+    public partial class DropTargetContext : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DropTargetContext>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public DragGestureEvent() { }
+        public DropTargetContext() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public DragGestureEvent(params object[] args) : base(args) { }
+        public DropTargetContext(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.awt.dnd.DragGestureEvent";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region DragSourceListener
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceListener.html
-    /// </summary>
-    public partial class DragSourceListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
-    {
-#warning Remember to build the body class for event listener
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region DragSourceContext
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceContext.html
-    /// </summary>
-    public partial class DragSourceContext : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DragSourceContext>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public DragSourceContext() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public DragSourceContext(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.awt.dnd.DragSourceContext";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region DragGestureRecognizer
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureRecognizer.html
-    /// </summary>
-    public partial class DragGestureRecognizer : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DragGestureRecognizer>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public DragGestureRecognizer() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public DragGestureRecognizer(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.awt.dnd.DragGestureRecognizer";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region DropTargetEvent
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetEvent.html
-    /// </summary>
-    public partial class DropTargetEvent : Java.Util.EventObject
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public DropTargetEvent() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public DropTargetEvent(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.awt.dnd.DropTargetEvent";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region DragSourceEvent
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceEvent.html
-    /// </summary>
-    public partial class DragSourceEvent : Java.Util.EventObject
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public DragSourceEvent() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public DragSourceEvent(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.awt.dnd.DragSourceEvent";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region DragGestureListener
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureListener.html
-    /// </summary>
-    public partial class DragGestureListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
-    {
-#warning Remember to build the body class for event listener
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region DropTargetDragEvent
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetDragEvent.html
-    /// </summary>
-    public partial class DropTargetDragEvent : Java.Awt.Dnd.DropTargetEvent
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public DropTargetDragEvent() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public DropTargetDragEvent(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.awt.dnd.DropTargetDragEvent";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region DropTargetDropEvent
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetDropEvent.html
-    /// </summary>
-    public partial class DropTargetDropEvent : Java.Awt.Dnd.DropTargetEvent
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public DropTargetDropEvent() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public DropTargetDropEvent(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.awt.dnd.DropTargetDropEvent";
+        public override string ClassName => "java.awt.dnd.DropTargetContext";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -563,6 +161,41 @@ namespace Java.Awt.Dnd
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region DragGestureRecognizer
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureRecognizer.html
+    /// </summary>
+    public partial class DragGestureRecognizer : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DragGestureRecognizer>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public DragGestureRecognizer() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public DragGestureRecognizer(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.awt.dnd.DragGestureRecognizer";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
 
         /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
         public override bool IsCloseable => false;
@@ -626,6 +259,185 @@ namespace Java.Awt.Dnd
     }
     #endregion
 
+    #region DragSourceListener
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceListener.html
+    /// </summary>
+    public partial class DragSourceListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    {
+#warning Remember to build the body class for event listener
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region DragGestureListener
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureListener.html
+    /// </summary>
+    public partial class DragGestureListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    {
+#warning Remember to build the body class for event listener
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region DragSourceEvent
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceEvent.html
+    /// </summary>
+    public partial class DragSourceEvent : Java.Util.EventObject
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public DragSourceEvent() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public DragSourceEvent(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.awt.dnd.DragSourceEvent";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region DropTargetDropEvent
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetDropEvent.html
+    /// </summary>
+    public partial class DropTargetDropEvent : Java.Awt.Dnd.DropTargetEvent
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public DropTargetDropEvent() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public DropTargetDropEvent(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.awt.dnd.DropTargetDropEvent";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region Autoscroll
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/Autoscroll.html
+    /// </summary>
+    public partial class Autoscroll : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Autoscroll>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public Autoscroll() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public Autoscroll(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.awt.dnd.Autoscroll";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region DragSourceAdapter
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceAdapter.html
+    /// </summary>
+    public partial class DragSourceAdapter : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    {
+#warning Remember to build the body class for event listener
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region DropTargetEvent
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetEvent.html
+    /// </summary>
+    public partial class DropTargetEvent : Java.Util.EventObject
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public DropTargetEvent() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public DropTargetEvent(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.awt.dnd.DropTargetEvent";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region InvalidDnDOperationException
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/InvalidDnDOperationException.html
@@ -636,6 +448,194 @@ namespace Java.Awt.Dnd
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "java.awt.dnd.InvalidDnDOperationException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region DragSourceMotionListener
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceMotionListener.html
+    /// </summary>
+    public partial class DragSourceMotionListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    {
+#warning Remember to build the body class for event listener
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region DragSourceContext
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceContext.html
+    /// </summary>
+    public partial class DragSourceContext : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DragSourceContext>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public DragSourceContext() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public DragSourceContext(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.awt.dnd.DragSourceContext";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region MouseDragGestureRecognizer
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/MouseDragGestureRecognizer.html
+    /// </summary>
+    public partial class MouseDragGestureRecognizer : Java.Awt.Dnd.DragGestureRecognizer
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public MouseDragGestureRecognizer() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public MouseDragGestureRecognizer(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.awt.dnd.MouseDragGestureRecognizer";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region DropTargetDragEvent
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetDragEvent.html
+    /// </summary>
+    public partial class DropTargetDragEvent : Java.Awt.Dnd.DropTargetEvent
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public DropTargetDragEvent() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public DropTargetDragEvent(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.awt.dnd.DropTargetDragEvent";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region DragGestureEvent
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureEvent.html
+    /// </summary>
+    public partial class DragGestureEvent : Java.Util.EventObject
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public DragGestureEvent() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public DragGestureEvent(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.awt.dnd.DragGestureEvent";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region DragSourceDragEvent
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceDragEvent.html
+    /// </summary>
+    public partial class DragSourceDragEvent : Java.Awt.Dnd.DragSourceEvent
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public DragSourceDragEvent() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public DragSourceDragEvent(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.awt.dnd.DragSourceDragEvent";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
 
         // TODO: complete the class
 

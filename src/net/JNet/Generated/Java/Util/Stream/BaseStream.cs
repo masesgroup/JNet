@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Util.Stream
 {
     #region BaseStream
@@ -31,7 +33,8 @@ namespace Java.Util.Stream
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Lang.AutoCloseable(Java.Util.Stream.BaseStream t) => t.Cast<Java.Lang.AutoCloseable>();
+        
         #endregion
 
         #region Fields

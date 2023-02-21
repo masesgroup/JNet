@@ -23,23 +23,23 @@
 
 namespace Javax.Rmi.Ssl
 {
-    #region SslRMIClientSocketFactory
+    #region SslRMIServerSocketFactory
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/javax/rmi/ssl/SslRMIClientSocketFactory.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/javax/rmi/ssl/SslRMIServerSocketFactory.html
     /// </summary>
-    public partial class SslRMIClientSocketFactory : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SslRMIClientSocketFactory>
+    public partial class SslRMIServerSocketFactory : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SslRMIServerSocketFactory>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public SslRMIClientSocketFactory() { }
+        public SslRMIServerSocketFactory() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public SslRMIClientSocketFactory(params object[] args) : base(args) { }
+        public SslRMIServerSocketFactory(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.rmi.ssl.SslRMIClientSocketFactory";
+        public override string ClassName => "javax.rmi.ssl.SslRMIServerSocketFactory";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -58,23 +58,23 @@ namespace Javax.Rmi.Ssl
     }
     #endregion
 
-    #region SslRMIServerSocketFactory
+    #region SslRMIClientSocketFactory
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/javax/rmi/ssl/SslRMIServerSocketFactory.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/javax/rmi/ssl/SslRMIClientSocketFactory.html
     /// </summary>
-    public partial class SslRMIServerSocketFactory : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SslRMIServerSocketFactory>
+    public partial class SslRMIClientSocketFactory : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SslRMIClientSocketFactory>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public SslRMIServerSocketFactory() { }
+        public SslRMIClientSocketFactory() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public SslRMIServerSocketFactory(params object[] args) : base(args) { }
+        public SslRMIClientSocketFactory(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.rmi.ssl.SslRMIServerSocketFactory";
+        public override string ClassName => "javax.rmi.ssl.SslRMIClientSocketFactory";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;

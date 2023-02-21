@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Management.Modelmbean
 {
     #region DescriptorSupport
@@ -59,7 +61,8 @@ namespace Javax.Management.Modelmbean
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Management.Descriptor(Javax.Management.Modelmbean.DescriptorSupport t) => t.Cast<Javax.Management.Descriptor>();
+        
         #endregion
 
         #region Fields

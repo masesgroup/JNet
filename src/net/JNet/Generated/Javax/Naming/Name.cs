@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Naming
 {
     #region Name
@@ -31,7 +33,9 @@ namespace Javax.Naming
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Lang.Cloneable(Javax.Naming.Name t) => t.Cast<Java.Lang.Cloneable>();
+        public static implicit operator Java.Io.Serializable(Javax.Naming.Name t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields

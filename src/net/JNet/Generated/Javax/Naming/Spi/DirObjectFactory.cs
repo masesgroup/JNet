@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Naming.Spi
 {
     #region DirObjectFactory
@@ -31,7 +33,8 @@ namespace Javax.Naming.Spi
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Naming.Spi.ObjectFactory(Javax.Naming.Spi.DirObjectFactory t) => t.Cast<Javax.Naming.Spi.ObjectFactory>();
+        
         #endregion
 
         #region Fields

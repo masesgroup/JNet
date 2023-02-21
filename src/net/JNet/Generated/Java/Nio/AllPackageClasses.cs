@@ -23,6 +23,76 @@
 
 namespace Java.Nio
 {
+    #region DoubleBuffer
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/DoubleBuffer.html
+    /// </summary>
+    public partial class DoubleBuffer : Java.Nio.Buffer
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public DoubleBuffer() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public DoubleBuffer(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.nio.DoubleBuffer";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region FloatBuffer
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/FloatBuffer.html
+    /// </summary>
+    public partial class FloatBuffer : Java.Nio.Buffer
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public FloatBuffer() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public FloatBuffer(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.nio.FloatBuffer";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region ByteOrder
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteOrder.html
@@ -93,6 +163,22 @@ namespace Java.Nio
     }
     #endregion
 
+    #region BufferUnderflowException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/BufferUnderflowException.html
+    /// </summary>
+    public partial class BufferUnderflowException : Java.Lang.RuntimeException
+    {
+        public BufferUnderflowException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.nio.BufferUnderflowException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region MappedByteBuffer
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/MappedByteBuffer.html
@@ -110,6 +196,41 @@ namespace Java.Nio
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "java.nio.MappedByteBuffer";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region ShortBuffer
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ShortBuffer.html
+    /// </summary>
+    public partial class ShortBuffer : Java.Nio.Buffer
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public ShortBuffer() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public ShortBuffer(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.nio.ShortBuffer";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -163,22 +284,6 @@ namespace Java.Nio
     }
     #endregion
 
-    #region BufferUnderflowException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/BufferUnderflowException.html
-    /// </summary>
-    public partial class BufferUnderflowException : Java.Lang.RuntimeException
-    {
-        public BufferUnderflowException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.BufferUnderflowException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
     #region IntBuffer
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/IntBuffer.html
@@ -196,41 +301,6 @@ namespace Java.Nio
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "java.nio.IntBuffer";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region FloatBuffer
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/FloatBuffer.html
-    /// </summary>
-    public partial class FloatBuffer : Java.Nio.Buffer
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public FloatBuffer() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public FloatBuffer(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.FloatBuffer";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -300,22 +370,6 @@ namespace Java.Nio
     }
     #endregion
 
-    #region BufferOverflowException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/BufferOverflowException.html
-    /// </summary>
-    public partial class BufferOverflowException : Java.Lang.RuntimeException
-    {
-        public BufferOverflowException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.BufferOverflowException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
     #region Buffer
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/Buffer.html
@@ -351,35 +405,16 @@ namespace Java.Nio
     }
     #endregion
 
-    #region DoubleBuffer
+    #region BufferOverflowException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/DoubleBuffer.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/BufferOverflowException.html
     /// </summary>
-    public partial class DoubleBuffer : Java.Nio.Buffer
+    public partial class BufferOverflowException : Java.Lang.RuntimeException
     {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public DoubleBuffer() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public DoubleBuffer(params object[] args) : base(args) { }
+        public BufferOverflowException() { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.DoubleBuffer";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
+        public override string ClassName => "java.nio.BufferOverflowException";
 
         // TODO: complete the class
 
@@ -396,41 +431,6 @@ namespace Java.Nio
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "java.nio.InvalidMarkException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region ShortBuffer
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ShortBuffer.html
-    /// </summary>
-    public partial class ShortBuffer : Java.Nio.Buffer
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public ShortBuffer() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public ShortBuffer(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.ShortBuffer";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
 
         // TODO: complete the class
 

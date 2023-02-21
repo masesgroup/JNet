@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Org.Xml.Sax
 {
     #region XMLFilter
@@ -31,7 +33,8 @@ namespace Org.Xml.Sax
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Org.Xml.Sax.XMLReader(Org.Xml.Sax.XMLFilter t) => t.Cast<Org.Xml.Sax.XMLReader>();
+        
         #endregion
 
         #region Fields

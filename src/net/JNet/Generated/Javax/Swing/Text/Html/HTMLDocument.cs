@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing.Text.Html
 {
     #region HTMLDocument
@@ -184,40 +186,6 @@ namespace Javax.Swing.Text.Html
         #endregion
 
         #region Nested classes
-        #region BlockElement
-        public partial class BlockElement
-        {
-            #region Constructors
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.BlockElement.html#<init>(javax.swing.text.html.HTMLDocument,javax.swing.text.Element,javax.swing.text.AttributeSet)
-            /// </summary>
-            public BlockElement(Javax.Swing.Text.Html.HTMLDocument arg0, Javax.Swing.Text.Element arg1, Javax.Swing.Text.AttributeSet arg2)
-                : base(arg0, arg1, arg2)
-            {
-            }
-            
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region Iterator
         public partial class Iterator
         {
@@ -337,6 +305,40 @@ namespace Javax.Swing.Text.Html
             /// </summary>
             public HTMLReader(Javax.Swing.Text.Html.HTMLDocument arg0, int arg1)
                 : base(arg0, arg1)
+            {
+            }
+            
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region BlockElement
+        public partial class BlockElement
+        {
+            #region Constructors
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.BlockElement.html#<init>(javax.swing.text.html.HTMLDocument,javax.swing.text.Element,javax.swing.text.AttributeSet)
+            /// </summary>
+            public BlockElement(Javax.Swing.Text.Html.HTMLDocument arg0, Javax.Swing.Text.Element arg1, Javax.Swing.Text.AttributeSet arg2)
+                : base(arg0, arg1, arg2)
             {
             }
             

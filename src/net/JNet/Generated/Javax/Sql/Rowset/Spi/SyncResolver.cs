@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Sql.Rowset.Spi
 {
     #region SyncResolver
@@ -31,7 +33,8 @@ namespace Javax.Sql.Rowset.Spi
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Sql.RowSet(Javax.Sql.Rowset.Spi.SyncResolver t) => t.Cast<Javax.Sql.RowSet>();
+        
         #endregion
 
         #region Fields

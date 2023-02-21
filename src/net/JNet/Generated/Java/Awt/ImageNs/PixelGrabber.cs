@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Awt.ImageNs
 {
     #region PixelGrabber
@@ -52,7 +54,8 @@ namespace Java.Awt.ImageNs
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Awt.ImageNs.ImageConsumer(Java.Awt.ImageNs.PixelGrabber t) => t.Cast<Java.Awt.ImageNs.ImageConsumer>();
+        
         #endregion
 
         #region Fields

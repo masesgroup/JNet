@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing.Plaf.Basic
 {
     #region DefaultMenuLayout
@@ -38,7 +40,8 @@ namespace Javax.Swing.Plaf.Basic
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.Basic.DefaultMenuLayout t) => t.Cast<Javax.Swing.Plaf.UIResource>();
+        
         #endregion
 
         #region Fields

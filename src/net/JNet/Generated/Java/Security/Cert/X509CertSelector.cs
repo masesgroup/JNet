@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Security.Cert
 {
     #region X509CertSelector
@@ -31,7 +33,8 @@ namespace Java.Security.Cert
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Security.Cert.CertSelector(Java.Security.Cert.X509CertSelector t) => t.Cast<Java.Security.Cert.CertSelector>();
+        
         #endregion
 
         #region Fields

@@ -23,58 +23,39 @@
 
 namespace Org.W3c.Dom
 {
-    #region Document
+    #region DOMException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMException.html
     /// </summary>
-    public partial class Document : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Document>
+    public partial class DOMException : Java.Lang.RuntimeException
     {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public Document() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public Document(params object[] args) : base(args) { }
+        public DOMException() { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "org.w3c.dom.Document";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
+        public override string ClassName => "org.w3c.dom.DOMException";
 
         // TODO: complete the class
 
     }
     #endregion
 
-    #region Attr
+    #region Text
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Attr.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Text.html
     /// </summary>
-    public partial class Attr : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Attr>
+    public partial class Text : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Text>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public Attr() { }
+        public Text() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public Attr(params object[] args) : base(args) { }
+        public Text(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "org.w3c.dom.Attr";
+        public override string ClassName => "org.w3c.dom.Text";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -128,23 +109,23 @@ namespace Org.W3c.Dom
     }
     #endregion
 
-    #region DocumentFragment
+    #region DOMImplementationSource
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DocumentFragment.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMImplementationSource.html
     /// </summary>
-    public partial class DocumentFragment : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DocumentFragment>
+    public partial class DOMImplementationSource : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DOMImplementationSource>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public DocumentFragment() { }
+        public DOMImplementationSource() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public DocumentFragment(params object[] args) : base(args) { }
+        public DOMImplementationSource(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "org.w3c.dom.DocumentFragment";
+        public override string ClassName => "org.w3c.dom.DOMImplementationSource";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -163,23 +144,23 @@ namespace Org.W3c.Dom
     }
     #endregion
 
-    #region Notation
+    #region DOMError
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Notation.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMError.html
     /// </summary>
-    public partial class Notation : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Notation>
+    public partial class DOMError : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DOMError>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public Notation() { }
+        public DOMError() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public Notation(params object[] args) : base(args) { }
+        public DOMError(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "org.w3c.dom.Notation";
+        public override string ClassName => "org.w3c.dom.DOMError";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -198,23 +179,23 @@ namespace Org.W3c.Dom
     }
     #endregion
 
-    #region ElementTraversal
+    #region DOMStringList
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ElementTraversal.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMStringList.html
     /// </summary>
-    public partial class ElementTraversal : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ElementTraversal>
+    public partial class DOMStringList : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DOMStringList>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ElementTraversal() { }
+        public DOMStringList() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public ElementTraversal(params object[] args) : base(args) { }
+        public DOMStringList(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "org.w3c.dom.ElementTraversal";
+        public override string ClassName => "org.w3c.dom.DOMStringList";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -268,23 +249,23 @@ namespace Org.W3c.Dom
     }
     #endregion
 
-    #region CDATASection
+    #region ProcessingInstruction
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/CDATASection.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ProcessingInstruction.html
     /// </summary>
-    public partial class CDATASection : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CDATASection>
+    public partial class ProcessingInstruction : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ProcessingInstruction>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public CDATASection() { }
+        public ProcessingInstruction() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public CDATASection(params object[] args) : base(args) { }
+        public ProcessingInstruction(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "org.w3c.dom.CDATASection";
+        public override string ClassName => "org.w3c.dom.ProcessingInstruction";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -303,39 +284,23 @@ namespace Org.W3c.Dom
     }
     #endregion
 
-    #region DOMException
+    #region DOMImplementation
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMException.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMImplementation.html
     /// </summary>
-    public partial class DOMException : Java.Lang.RuntimeException
-    {
-        public DOMException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "org.w3c.dom.DOMException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region DOMImplementationSource
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMImplementationSource.html
-    /// </summary>
-    public partial class DOMImplementationSource : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DOMImplementationSource>
+    public partial class DOMImplementation : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DOMImplementation>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public DOMImplementationSource() { }
+        public DOMImplementation() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public DOMImplementationSource(params object[] args) : base(args) { }
+        public DOMImplementation(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "org.w3c.dom.DOMImplementationSource";
+        public override string ClassName => "org.w3c.dom.DOMImplementation";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -354,23 +319,23 @@ namespace Org.W3c.Dom
     }
     #endregion
 
-    #region Text
+    #region Entity
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Text.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Entity.html
     /// </summary>
-    public partial class Text : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Text>
+    public partial class Entity : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Entity>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public Text() { }
+        public Entity() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public Text(params object[] args) : base(args) { }
+        public Entity(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "org.w3c.dom.Text";
+        public override string ClassName => "org.w3c.dom.Entity";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -389,23 +354,23 @@ namespace Org.W3c.Dom
     }
     #endregion
 
-    #region CharacterData
+    #region DOMConfiguration
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/CharacterData.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMConfiguration.html
     /// </summary>
-    public partial class CharacterData : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CharacterData>
+    public partial class DOMConfiguration : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DOMConfiguration>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public CharacterData() { }
+        public DOMConfiguration() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public CharacterData(params object[] args) : base(args) { }
+        public DOMConfiguration(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "org.w3c.dom.CharacterData";
+        public override string ClassName => "org.w3c.dom.DOMConfiguration";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -424,23 +389,93 @@ namespace Org.W3c.Dom
     }
     #endregion
 
-    #region Comment
+    #region Document
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Comment.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Document.html
     /// </summary>
-    public partial class Comment : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Comment>
+    public partial class Document : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Document>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public Comment() { }
+        public Document() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public Comment(params object[] args) : base(args) { }
+        public Document(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "org.w3c.dom.Comment";
+        public override string ClassName => "org.w3c.dom.Document";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region DocumentFragment
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DocumentFragment.html
+    /// </summary>
+    public partial class DocumentFragment : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DocumentFragment>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public DocumentFragment() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public DocumentFragment(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "org.w3c.dom.DocumentFragment";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region EntityReference
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/EntityReference.html
+    /// </summary>
+    public partial class EntityReference : MASES.JCOBridge.C2JBridge.JVMBridgeBase<EntityReference>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public EntityReference() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public EntityReference(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "org.w3c.dom.EntityReference";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -494,6 +529,216 @@ namespace Org.W3c.Dom
     }
     #endregion
 
+    #region Attr
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Attr.html
+    /// </summary>
+    public partial class Attr : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Attr>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public Attr() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public Attr(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "org.w3c.dom.Attr";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region CharacterData
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/CharacterData.html
+    /// </summary>
+    public partial class CharacterData : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CharacterData>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public CharacterData() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public CharacterData(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "org.w3c.dom.CharacterData";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region UserDataHandler
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/UserDataHandler.html
+    /// </summary>
+    public partial class UserDataHandler : MASES.JCOBridge.C2JBridge.JVMBridgeBase<UserDataHandler>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public UserDataHandler() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public UserDataHandler(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "org.w3c.dom.UserDataHandler";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region DOMImplementationList
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMImplementationList.html
+    /// </summary>
+    public partial class DOMImplementationList : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DOMImplementationList>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public DOMImplementationList() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public DOMImplementationList(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "org.w3c.dom.DOMImplementationList";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region Comment
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Comment.html
+    /// </summary>
+    public partial class Comment : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Comment>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public Comment() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public Comment(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "org.w3c.dom.Comment";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region ElementTraversal
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ElementTraversal.html
+    /// </summary>
+    public partial class ElementTraversal : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ElementTraversal>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public ElementTraversal() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public ElementTraversal(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "org.w3c.dom.ElementTraversal";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region TypeInfo
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/TypeInfo.html
@@ -511,6 +756,111 @@ namespace Org.W3c.Dom
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "org.w3c.dom.TypeInfo";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region DocumentType
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DocumentType.html
+    /// </summary>
+    public partial class DocumentType : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DocumentType>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public DocumentType() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public DocumentType(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "org.w3c.dom.DocumentType";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region Notation
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Notation.html
+    /// </summary>
+    public partial class Notation : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Notation>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public Notation() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public Notation(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "org.w3c.dom.Notation";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region NamedNodeMap
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/NamedNodeMap.html
+    /// </summary>
+    public partial class NamedNodeMap : MASES.JCOBridge.C2JBridge.JVMBridgeBase<NamedNodeMap>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public NamedNodeMap() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public NamedNodeMap(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "org.w3c.dom.NamedNodeMap";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -599,93 +949,23 @@ namespace Org.W3c.Dom
     }
     #endregion
 
-    #region EntityReference
+    #region CDATASection
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/EntityReference.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/CDATASection.html
     /// </summary>
-    public partial class EntityReference : MASES.JCOBridge.C2JBridge.JVMBridgeBase<EntityReference>
+    public partial class CDATASection : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CDATASection>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public EntityReference() { }
+        public CDATASection() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public EntityReference(params object[] args) : base(args) { }
+        public CDATASection(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "org.w3c.dom.EntityReference";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region NamedNodeMap
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/NamedNodeMap.html
-    /// </summary>
-    public partial class NamedNodeMap : MASES.JCOBridge.C2JBridge.JVMBridgeBase<NamedNodeMap>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public NamedNodeMap() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public NamedNodeMap(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "org.w3c.dom.NamedNodeMap";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region DOMError
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMError.html
-    /// </summary>
-    public partial class DOMError : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DOMError>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public DOMError() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public DOMError(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "org.w3c.dom.DOMError";
+        public override string ClassName => "org.w3c.dom.CDATASection";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -721,286 +1001,6 @@ namespace Org.W3c.Dom
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "org.w3c.dom.DOMErrorHandler";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region DOMImplementation
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMImplementation.html
-    /// </summary>
-    public partial class DOMImplementation : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DOMImplementation>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public DOMImplementation() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public DOMImplementation(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "org.w3c.dom.DOMImplementation";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region ProcessingInstruction
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ProcessingInstruction.html
-    /// </summary>
-    public partial class ProcessingInstruction : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ProcessingInstruction>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public ProcessingInstruction() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public ProcessingInstruction(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "org.w3c.dom.ProcessingInstruction";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region UserDataHandler
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/UserDataHandler.html
-    /// </summary>
-    public partial class UserDataHandler : MASES.JCOBridge.C2JBridge.JVMBridgeBase<UserDataHandler>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public UserDataHandler() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public UserDataHandler(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "org.w3c.dom.UserDataHandler";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region Entity
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Entity.html
-    /// </summary>
-    public partial class Entity : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Entity>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public Entity() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public Entity(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "org.w3c.dom.Entity";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region DOMStringList
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMStringList.html
-    /// </summary>
-    public partial class DOMStringList : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DOMStringList>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public DOMStringList() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public DOMStringList(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "org.w3c.dom.DOMStringList";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region DOMConfiguration
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMConfiguration.html
-    /// </summary>
-    public partial class DOMConfiguration : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DOMConfiguration>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public DOMConfiguration() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public DOMConfiguration(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "org.w3c.dom.DOMConfiguration";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region DOMImplementationList
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMImplementationList.html
-    /// </summary>
-    public partial class DOMImplementationList : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DOMImplementationList>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public DOMImplementationList() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public DOMImplementationList(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "org.w3c.dom.DOMImplementationList";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region DocumentType
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DocumentType.html
-    /// </summary>
-    public partial class DocumentType : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DocumentType>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public DocumentType() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public DocumentType(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "org.w3c.dom.DocumentType";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;

@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing.Tree
 {
     #region DefaultTreeCellEditor
@@ -45,7 +47,10 @@ namespace Javax.Swing.Tree
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Awt.EventNs.ActionListener(Javax.Swing.Tree.DefaultTreeCellEditor t) => t.Cast<Java.Awt.EventNs.ActionListener>();
+        public static implicit operator Javax.Swing.Tree.TreeCellEditor(Javax.Swing.Tree.DefaultTreeCellEditor t) => t.Cast<Javax.Swing.Tree.TreeCellEditor>();
+        public static implicit operator Javax.Swing.Event.TreeSelectionListener(Javax.Swing.Tree.DefaultTreeCellEditor t) => t.Cast<Javax.Swing.Event.TreeSelectionListener>();
+        
         #endregion
 
         #region Fields
@@ -152,40 +157,6 @@ namespace Javax.Swing.Tree
         #endregion
 
         #region Nested classes
-        #region DefaultTextField
-        public partial class DefaultTextField
-        {
-            #region Constructors
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.DefaultTextField.html#<init>(javax.swing.tree.DefaultTreeCellEditor,javax.swing.border.Border)
-            /// </summary>
-            public DefaultTextField(Javax.Swing.Tree.DefaultTreeCellEditor arg0, Javax.Swing.Border.Border arg1)
-                : base(arg0, arg1)
-            {
-            }
-            
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region EditorContainer
         public partial class EditorContainer
         {
@@ -221,6 +192,40 @@ namespace Javax.Swing.Tree
                 IExecute("EditorContainer");
             }
             
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region DefaultTextField
+        public partial class DefaultTextField
+        {
+            #region Constructors
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.DefaultTextField.html#<init>(javax.swing.tree.DefaultTreeCellEditor,javax.swing.border.Border)
+            /// </summary>
+            public DefaultTextField(Javax.Swing.Tree.DefaultTreeCellEditor arg0, Javax.Swing.Border.Border arg1)
+                : base(arg0, arg1)
+            {
+            }
+            
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
             #endregion
 
             // TODO: complete the class

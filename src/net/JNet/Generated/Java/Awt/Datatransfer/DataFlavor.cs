@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Awt.Datatransfer
 {
     #region DataFlavor
@@ -52,7 +54,9 @@ namespace Java.Awt.Datatransfer
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Io.Externalizable(Java.Awt.Datatransfer.DataFlavor t) => t.Cast<Java.Io.Externalizable>();
+        public static implicit operator Java.Lang.Cloneable(Java.Awt.Datatransfer.DataFlavor t) => t.Cast<Java.Lang.Cloneable>();
+        
         #endregion
 
         #region Fields

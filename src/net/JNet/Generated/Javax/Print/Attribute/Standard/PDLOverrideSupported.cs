@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Print.Attribute.Standard
 {
     #region PDLOverrideSupported
@@ -31,7 +33,8 @@ namespace Javax.Print.Attribute.Standard
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Print.Attribute.PrintServiceAttribute(Javax.Print.Attribute.Standard.PDLOverrideSupported t) => t.Cast<Javax.Print.Attribute.PrintServiceAttribute>();
+        
         #endregion
 
         #region Fields

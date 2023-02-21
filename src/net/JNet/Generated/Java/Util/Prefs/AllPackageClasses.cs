@@ -23,6 +23,22 @@
 
 namespace Java.Util.Prefs
 {
+    #region InvalidPreferencesFormatException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/InvalidPreferencesFormatException.html
+    /// </summary>
+    public partial class InvalidPreferencesFormatException : Java.Lang.Exception
+    {
+        public InvalidPreferencesFormatException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.util.prefs.InvalidPreferencesFormatException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region PreferenceChangeListener
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/PreferenceChangeListener.html
@@ -36,51 +52,13 @@ namespace Java.Util.Prefs
     }
     #endregion
 
-    #region NodeChangeEvent
+    #region NodeChangeListener
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/NodeChangeEvent.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/NodeChangeListener.html
     /// </summary>
-    public partial class NodeChangeEvent : Java.Util.EventObject
+    public partial class NodeChangeListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public NodeChangeEvent() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public NodeChangeEvent(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.util.prefs.NodeChangeEvent";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region BackingStoreException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/BackingStoreException.html
-    /// </summary>
-    public partial class BackingStoreException : Java.Lang.Exception
-    {
-        public BackingStoreException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.util.prefs.BackingStoreException";
+#warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -104,41 +82,6 @@ namespace Java.Util.Prefs
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "java.util.prefs.AbstractPreferences";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region Preferences
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html
-    /// </summary>
-    public partial class Preferences : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Preferences>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public Preferences() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public Preferences(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.util.prefs.Preferences";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -192,29 +135,86 @@ namespace Java.Util.Prefs
     }
     #endregion
 
-    #region InvalidPreferencesFormatException
+    #region BackingStoreException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/InvalidPreferencesFormatException.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/BackingStoreException.html
     /// </summary>
-    public partial class InvalidPreferencesFormatException : Java.Lang.Exception
+    public partial class BackingStoreException : Java.Lang.Exception
     {
-        public InvalidPreferencesFormatException() { }
+        public BackingStoreException() { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.util.prefs.InvalidPreferencesFormatException";
+        public override string ClassName => "java.util.prefs.BackingStoreException";
 
         // TODO: complete the class
 
     }
     #endregion
 
-    #region NodeChangeListener
+    #region NodeChangeEvent
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/NodeChangeListener.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/NodeChangeEvent.html
     /// </summary>
-    public partial class NodeChangeListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class NodeChangeEvent : Java.Util.EventObject
     {
-#warning Remember to build the body class for event listener
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public NodeChangeEvent() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public NodeChangeEvent(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.util.prefs.NodeChangeEvent";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region Preferences
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html
+    /// </summary>
+    public partial class Preferences : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Preferences>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public Preferences() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public Preferences(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.util.prefs.Preferences";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
 
         // TODO: complete the class
 

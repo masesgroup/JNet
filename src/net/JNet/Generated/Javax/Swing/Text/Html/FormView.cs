@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing.Text.Html
 {
     #region FormView
@@ -38,7 +40,8 @@ namespace Javax.Swing.Text.Html
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Awt.EventNs.ActionListener(Javax.Swing.Text.Html.FormView t) => t.Cast<Java.Awt.EventNs.ActionListener>();
+        
         #endregion
 
         #region Fields

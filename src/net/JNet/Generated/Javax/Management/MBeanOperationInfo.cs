@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Management
 {
     #region MBeanOperationInfo
@@ -52,7 +54,8 @@ namespace Javax.Management
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Lang.Cloneable(Javax.Management.MBeanOperationInfo t) => t.Cast<Java.Lang.Cloneable>();
+        
         #endregion
 
         #region Fields

@@ -21,12 +21,21 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Io
 {
     #region InputStreamReader
     public partial class InputStreamReader
     {
         #region Constructors
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStreamReader.html#<init>(java.io.InputStream)
+        /// </summary>
+        public InputStreamReader(Java.Io.InputStream arg0)
+            : base(arg0)
+        {
+        }
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStreamReader.html#<init>(java.io.InputStream,java.nio.charset.CharsetDecoder)
         /// </summary>
@@ -46,13 +55,6 @@ namespace Java.Io
         /// </summary>
         public InputStreamReader(Java.Io.InputStream arg0, string arg1)
             : base(arg0, arg1)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStreamReader.html#<init>(java.io.InputStream)
-        /// </summary>
-        public InputStreamReader(Java.Io.InputStream arg0)
-            : base(arg0)
         {
         }
         

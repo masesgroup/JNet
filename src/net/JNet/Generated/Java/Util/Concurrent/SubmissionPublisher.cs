@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Util.Concurrent
 {
     #region SubmissionPublisher
@@ -38,7 +40,8 @@ namespace Java.Util.Concurrent
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Lang.AutoCloseable(Java.Util.Concurrent.SubmissionPublisher t) => t.Cast<Java.Lang.AutoCloseable>();
+        
         #endregion
 
         #region Fields

@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Naming.Directory
 {
     #region InitialDirContext
@@ -31,7 +33,8 @@ namespace Javax.Naming.Directory
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Naming.Directory.DirContext(Javax.Naming.Directory.InitialDirContext t) => t.Cast<Javax.Naming.Directory.DirContext>();
+        
         #endregion
 
         #region Fields

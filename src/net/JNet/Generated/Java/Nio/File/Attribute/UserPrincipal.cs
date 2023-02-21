@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Nio.File.Attribute
 {
     #region UserPrincipal
@@ -31,7 +33,8 @@ namespace Java.Nio.File.Attribute
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Security.Principal(Java.Nio.File.Attribute.UserPrincipal t) => t.Cast<Java.Security.Principal>();
+        
         #endregion
 
         #region Fields

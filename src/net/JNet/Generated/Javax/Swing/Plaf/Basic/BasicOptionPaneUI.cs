@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing.Plaf.Basic
 {
     #region BasicOptionPaneUI
@@ -62,47 +64,6 @@ namespace Javax.Swing.Plaf.Basic
         #endregion
 
         #region Nested classes
-        #region PropertyChangeHandler
-        public partial class PropertyChangeHandler
-        {
-            #region Constructors
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicOptionPaneUI.PropertyChangeHandler.html#<init>(javax.swing.plaf.basic.BasicOptionPaneUI)
-            /// </summary>
-            public PropertyChangeHandler(Javax.Swing.Plaf.Basic.BasicOptionPaneUI arg0)
-                : base(arg0)
-            {
-            }
-            
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicOptionPaneUI.PropertyChangeHandler.html#propertyChange(java.beans.PropertyChangeEvent)
-            /// </summary>
-            public void PropertyChange(Java.Beans.PropertyChangeEvent arg0)
-            {
-                IExecute("propertyChange", arg0);
-            }
-            
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region ButtonAreaLayout
         public partial class ButtonAreaLayout
         {
@@ -118,7 +79,8 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Class/Interface conversion operators
-
+            public static implicit operator Java.Awt.LayoutManager(Javax.Swing.Plaf.Basic.BasicOptionPaneUI.ButtonAreaLayout t) => t.Cast<Java.Awt.LayoutManager>();
+            
             #endregion
 
             #region Fields
@@ -185,6 +147,48 @@ namespace Javax.Swing.Plaf.Basic
             public void RemoveLayoutComponent(Java.Awt.Component arg0)
             {
                 IExecute("removeLayoutComponent", arg0);
+            }
+            
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region PropertyChangeHandler
+        public partial class PropertyChangeHandler
+        {
+            #region Constructors
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicOptionPaneUI.PropertyChangeHandler.html#<init>(javax.swing.plaf.basic.BasicOptionPaneUI)
+            /// </summary>
+            public PropertyChangeHandler(Javax.Swing.Plaf.Basic.BasicOptionPaneUI arg0)
+                : base(arg0)
+            {
+            }
+            
+            #endregion
+
+            #region Class/Interface conversion operators
+            public static implicit operator Java.Beans.PropertyChangeListener(Javax.Swing.Plaf.Basic.BasicOptionPaneUI.PropertyChangeHandler t) => t.Cast<Java.Beans.PropertyChangeListener>();
+            
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicOptionPaneUI.PropertyChangeHandler.html#propertyChange(java.beans.PropertyChangeEvent)
+            /// </summary>
+            public void PropertyChange(Java.Beans.PropertyChangeEvent arg0)
+            {
+                IExecute("propertyChange", arg0);
             }
             
             #endregion

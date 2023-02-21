@@ -23,32 +23,45 @@
 
 namespace Javax.Naming.Event
 {
-    #region EventDirContext
+    #region NamespaceChangeListener
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/EventDirContext.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamespaceChangeListener.html
     /// </summary>
-    public partial class EventDirContext : MASES.JCOBridge.C2JBridge.JVMBridgeBase<EventDirContext>
+    public partial class NamespaceChangeListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    {
+#warning Remember to build the body class for event listener
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region NamingExceptionEvent
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingExceptionEvent.html
+    /// </summary>
+    public partial class NamingExceptionEvent : Java.Util.EventObject
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public EventDirContext() { }
+        public NamingExceptionEvent() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public EventDirContext(params object[] args) : base(args) { }
+        public NamingExceptionEvent(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.event.EventDirContext";
+        public override string ClassName => "javax.naming.event.NamingExceptionEvent";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
+        public override bool IsAbstract => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
         public override bool IsCloseable => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
+        public override bool IsInterface => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;
@@ -141,6 +154,41 @@ namespace Javax.Naming.Event
     }
     #endregion
 
+    #region EventDirContext
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/EventDirContext.html
+    /// </summary>
+    public partial class EventDirContext : MASES.JCOBridge.C2JBridge.JVMBridgeBase<EventDirContext>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public EventDirContext() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public EventDirContext(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.naming.event.EventDirContext";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region ObjectChangeListener
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/ObjectChangeListener.html
@@ -148,54 +196,6 @@ namespace Javax.Naming.Event
     public partial class ObjectChangeListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
 #warning Remember to build the body class for event listener
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region NamespaceChangeListener
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamespaceChangeListener.html
-    /// </summary>
-    public partial class NamespaceChangeListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
-    {
-#warning Remember to build the body class for event listener
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region NamingExceptionEvent
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingExceptionEvent.html
-    /// </summary>
-    public partial class NamingExceptionEvent : Java.Util.EventObject
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public NamingExceptionEvent() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public NamingExceptionEvent(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.event.NamingExceptionEvent";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
 
         // TODO: complete the class
 

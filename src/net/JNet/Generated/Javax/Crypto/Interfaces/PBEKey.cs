@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Crypto.Interfaces
 {
     #region PBEKey
@@ -31,7 +33,8 @@ namespace Javax.Crypto.Interfaces
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Crypto.SecretKey(Javax.Crypto.Interfaces.PBEKey t) => t.Cast<Javax.Crypto.SecretKey>();
+        
         #endregion
 
         #region Fields

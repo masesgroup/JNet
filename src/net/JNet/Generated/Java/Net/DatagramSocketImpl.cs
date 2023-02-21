@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Net
 {
     #region DatagramSocketImpl
@@ -31,7 +33,8 @@ namespace Java.Net
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Net.SocketOptions(Java.Net.DatagramSocketImpl t) => t.Cast<Java.Net.SocketOptions>();
+        
         #endregion
 
         #region Fields

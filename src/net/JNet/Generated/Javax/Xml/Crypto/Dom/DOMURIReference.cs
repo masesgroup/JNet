@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Xml.Crypto.Dom
 {
     #region DOMURIReference
@@ -31,7 +33,8 @@ namespace Javax.Xml.Crypto.Dom
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Xml.Crypto.URIReference(Javax.Xml.Crypto.Dom.DOMURIReference t) => t.Cast<Javax.Xml.Crypto.URIReference>();
+        
         #endregion
 
         #region Fields

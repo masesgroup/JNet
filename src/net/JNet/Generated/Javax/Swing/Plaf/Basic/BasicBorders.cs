@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing.Plaf.Basic
 {
     #region BasicBorders
@@ -110,40 +112,6 @@ namespace Javax.Swing.Plaf.Basic
         #endregion
 
         #region Nested classes
-        #region RolloverButtonBorder
-        public partial class RolloverButtonBorder
-        {
-            #region Constructors
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.RolloverButtonBorder.html#<init>(java.awt.Color,java.awt.Color,java.awt.Color,java.awt.Color)
-            /// </summary>
-            public RolloverButtonBorder(Java.Awt.Color arg0, Java.Awt.Color arg1, Java.Awt.Color arg2, Java.Awt.Color arg3)
-                : base(arg0, arg1, arg2, arg3)
-            {
-            }
-            
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region FieldBorder
         public partial class FieldBorder
         {
@@ -159,89 +127,8 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region SplitPaneBorder
-        public partial class SplitPaneBorder
-        {
-            #region Constructors
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.SplitPaneBorder.html#<init>(java.awt.Color,java.awt.Color)
-            /// </summary>
-            public SplitPaneBorder(Java.Awt.Color arg0, Java.Awt.Color arg1)
-                : base(arg0, arg1)
-            {
-            }
+            public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.Basic.BasicBorders.FieldBorder t) => t.Cast<Javax.Swing.Plaf.UIResource>();
             
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.SplitPaneBorder.html#isBorderOpaque()
-            /// </summary>
-            public bool IsBorderOpaque()
-            {
-                return IExecute<bool>("isBorderOpaque");
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.SplitPaneBorder.html#getBorderInsets(java.awt.Component)
-            /// </summary>
-            public Java.Awt.Insets GetBorderInsets(Java.Awt.Component arg0)
-            {
-                return IExecute<Java.Awt.Insets>("getBorderInsets", arg0);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.SplitPaneBorder.html#paintBorder(java.awt.Component,java.awt.Graphics,int,int,int,int)
-            /// </summary>
-            public void PaintBorder(Java.Awt.Component arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
-            {
-                IExecute("paintBorder", arg0, arg1, arg2, arg3, arg4, arg5);
-            }
-            
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region MarginBorder
-        public partial class MarginBorder
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
             #endregion
 
             #region Fields
@@ -328,15 +215,135 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region MenuBarBorder
-        public partial class MenuBarBorder
+        #region SplitPaneBorder
+        public partial class SplitPaneBorder
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.MenuBarBorder.html#<init>(java.awt.Color,java.awt.Color)
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.SplitPaneBorder.html#<init>(java.awt.Color,java.awt.Color)
             /// </summary>
-            public MenuBarBorder(Java.Awt.Color arg0, Java.Awt.Color arg1)
+            public SplitPaneBorder(Java.Awt.Color arg0, Java.Awt.Color arg1)
                 : base(arg0, arg1)
+            {
+            }
+            
+            #endregion
+
+            #region Class/Interface conversion operators
+            public static implicit operator Javax.Swing.Border.Border(Javax.Swing.Plaf.Basic.BasicBorders.SplitPaneBorder t) => t.Cast<Javax.Swing.Border.Border>();
+            public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.Basic.BasicBorders.SplitPaneBorder t) => t.Cast<Javax.Swing.Plaf.UIResource>();
+            
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.SplitPaneBorder.html#isBorderOpaque()
+            /// </summary>
+            public bool IsBorderOpaque()
+            {
+                return IExecute<bool>("isBorderOpaque");
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.SplitPaneBorder.html#getBorderInsets(java.awt.Component)
+            /// </summary>
+            public Java.Awt.Insets GetBorderInsets(Java.Awt.Component arg0)
+            {
+                return IExecute<Java.Awt.Insets>("getBorderInsets", arg0);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.SplitPaneBorder.html#paintBorder(java.awt.Component,java.awt.Graphics,int,int,int,int)
+            /// </summary>
+            public void PaintBorder(Java.Awt.Component arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
+            {
+                IExecute("paintBorder", arg0, arg1, arg2, arg3, arg4, arg5);
+            }
+            
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region ButtonBorder
+        public partial class ButtonBorder
+        {
+            #region Constructors
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.ButtonBorder.html#<init>(java.awt.Color,java.awt.Color,java.awt.Color,java.awt.Color)
+            /// </summary>
+            public ButtonBorder(Java.Awt.Color arg0, Java.Awt.Color arg1, Java.Awt.Color arg2, Java.Awt.Color arg3)
+                : base(arg0, arg1, arg2, arg3)
+            {
+            }
+            
+            #endregion
+
+            #region Class/Interface conversion operators
+            public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.Basic.BasicBorders.ButtonBorder t) => t.Cast<Javax.Swing.Plaf.UIResource>();
+            
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region MarginBorder
+        public partial class MarginBorder
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+            public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.Basic.BasicBorders.MarginBorder t) => t.Cast<Javax.Swing.Plaf.UIResource>();
+            
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region RolloverButtonBorder
+        public partial class RolloverButtonBorder
+        {
+            #region Constructors
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.RolloverButtonBorder.html#<init>(java.awt.Color,java.awt.Color,java.awt.Color,java.awt.Color)
+            /// </summary>
+            public RolloverButtonBorder(Java.Awt.Color arg0, Java.Awt.Color arg1, Java.Awt.Color arg2, Java.Awt.Color arg3)
+                : base(arg0, arg1, arg2, arg3)
             {
             }
             
@@ -362,22 +369,23 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region ButtonBorder
-        public partial class ButtonBorder
+        #region MenuBarBorder
+        public partial class MenuBarBorder
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.ButtonBorder.html#<init>(java.awt.Color,java.awt.Color,java.awt.Color,java.awt.Color)
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicBorders.MenuBarBorder.html#<init>(java.awt.Color,java.awt.Color)
             /// </summary>
-            public ButtonBorder(Java.Awt.Color arg0, Java.Awt.Color arg1, Java.Awt.Color arg2, Java.Awt.Color arg3)
-                : base(arg0, arg1, arg2, arg3)
+            public MenuBarBorder(Java.Awt.Color arg0, Java.Awt.Color arg1)
+                : base(arg0, arg1)
             {
             }
             
             #endregion
 
             #region Class/Interface conversion operators
-
+            public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.Basic.BasicBorders.MenuBarBorder t) => t.Cast<Javax.Swing.Plaf.UIResource>();
+            
             #endregion
 
             #region Fields

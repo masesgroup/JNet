@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Xml.Validation
 {
     #region ValidatorHandler
@@ -31,7 +33,8 @@ namespace Javax.Xml.Validation
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Org.Xml.Sax.ContentHandler(Javax.Xml.Validation.ValidatorHandler t) => t.Cast<Org.Xml.Sax.ContentHandler>();
+        
         #endregion
 
         #region Fields

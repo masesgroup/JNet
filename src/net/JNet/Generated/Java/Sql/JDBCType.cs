@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Sql
 {
     #region JDBCType
@@ -31,7 +33,8 @@ namespace Java.Sql
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Sql.SQLType(Java.Sql.JDBCType t) => t.Cast<Java.Sql.SQLType>();
+        
         #endregion
 
         #region Fields

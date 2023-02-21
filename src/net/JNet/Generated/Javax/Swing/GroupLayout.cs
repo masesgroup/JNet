@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing
 {
     #region GroupLayout
@@ -38,7 +40,8 @@ namespace Javax.Swing
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Awt.LayoutManager2(Javax.Swing.GroupLayout t) => t.Cast<Java.Awt.LayoutManager2>();
+        
         #endregion
 
         #region Fields
@@ -223,95 +226,6 @@ namespace Javax.Swing
         #endregion
 
         #region Nested classes
-        #region Group
-        public partial class Group
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.Group.html#addComponent(java.awt.Component,int,int,int)
-            /// </summary>
-            public Javax.Swing.GroupLayout.Group AddComponent(Java.Awt.Component arg0, int arg1, int arg2, int arg3)
-            {
-                return IExecute<Javax.Swing.GroupLayout.Group>("addComponent", arg0, arg1, arg2, arg3);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.Group.html#addComponent(java.awt.Component)
-            /// </summary>
-            public Javax.Swing.GroupLayout.Group AddComponent(Java.Awt.Component arg0)
-            {
-                return IExecute<Javax.Swing.GroupLayout.Group>("addComponent", arg0);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.Group.html#addGap(int,int,int)
-            /// </summary>
-            public Javax.Swing.GroupLayout.Group AddGap(int arg0, int arg1, int arg2)
-            {
-                return IExecute<Javax.Swing.GroupLayout.Group>("addGap", arg0, arg1, arg2);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.Group.html#addGap(int)
-            /// </summary>
-            public Javax.Swing.GroupLayout.Group AddGap(int arg0)
-            {
-                return IExecute<Javax.Swing.GroupLayout.Group>("addGap", arg0);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.Group.html#addGroup(javax.swing.GroupLayout$Group)
-            /// </summary>
-            public Javax.Swing.GroupLayout.Group AddGroup(Javax.Swing.GroupLayout.Group arg0)
-            {
-                return IExecute<Javax.Swing.GroupLayout.Group>("addGroup", arg0);
-            }
-            
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region ParallelGroup
-        public partial class ParallelGroup
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region SequentialGroup
         public partial class SequentialGroup
         {
@@ -414,6 +328,95 @@ namespace Javax.Swing
                 return SExecuteArray<Javax.Swing.GroupLayout.Alignment>("values");
             }
             
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region Group
+        public partial class Group
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.Group.html#addComponent(java.awt.Component,int,int,int)
+            /// </summary>
+            public Javax.Swing.GroupLayout.Group AddComponent(Java.Awt.Component arg0, int arg1, int arg2, int arg3)
+            {
+                return IExecute<Javax.Swing.GroupLayout.Group>("addComponent", arg0, arg1, arg2, arg3);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.Group.html#addComponent(java.awt.Component)
+            /// </summary>
+            public Javax.Swing.GroupLayout.Group AddComponent(Java.Awt.Component arg0)
+            {
+                return IExecute<Javax.Swing.GroupLayout.Group>("addComponent", arg0);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.Group.html#addGap(int,int,int)
+            /// </summary>
+            public Javax.Swing.GroupLayout.Group AddGap(int arg0, int arg1, int arg2)
+            {
+                return IExecute<Javax.Swing.GroupLayout.Group>("addGap", arg0, arg1, arg2);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.Group.html#addGap(int)
+            /// </summary>
+            public Javax.Swing.GroupLayout.Group AddGap(int arg0)
+            {
+                return IExecute<Javax.Swing.GroupLayout.Group>("addGap", arg0);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.Group.html#addGroup(javax.swing.GroupLayout$Group)
+            /// </summary>
+            public Javax.Swing.GroupLayout.Group AddGroup(Javax.Swing.GroupLayout.Group arg0)
+            {
+                return IExecute<Javax.Swing.GroupLayout.Group>("addGroup", arg0);
+            }
+            
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region ParallelGroup
+        public partial class ParallelGroup
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
             #endregion
 
             #region Instance methods

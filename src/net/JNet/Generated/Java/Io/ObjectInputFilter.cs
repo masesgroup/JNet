@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Io
 {
     #region ObjectInputFilter
@@ -47,8 +49,8 @@ namespace Java.Io
         #endregion
 
         #region Nested classes
-        #region Config
-        public partial class Config
+        #region FilterInfo
+        public partial class FilterInfo
         {
             #region Constructors
 
@@ -63,25 +65,39 @@ namespace Java.Io
             #endregion
 
             #region Static methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.Config.html#getSerialFilter() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.Config.html#setSerialFilter(java.io.ObjectInputFilter)
-            /// </summary>
-            public static Java.Io.ObjectInputFilter SerialFilter
-            {
-                get { return SExecute<Java.Io.ObjectInputFilter>("getSerialFilter"); } set { SExecute("setSerialFilter", value); }
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.Config.html#createFilter(java.lang.String)
-            /// </summary>
-            public static Java.Io.ObjectInputFilter CreateFilter(string arg0)
-            {
-                return SExecute<Java.Io.ObjectInputFilter>("createFilter", arg0);
-            }
-            
+
             #endregion
 
             #region Instance methods
-
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.FilterInfo.html#arrayLength()
+            /// </summary>
+            public long ArrayLength()
+            {
+                return IExecute<long>("arrayLength");
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.FilterInfo.html#depth()
+            /// </summary>
+            public long Depth()
+            {
+                return IExecute<long>("depth");
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.FilterInfo.html#references()
+            /// </summary>
+            public long References()
+            {
+                return IExecute<long>("references");
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.FilterInfo.html#streamBytes()
+            /// </summary>
+            public long StreamBytes()
+            {
+                return IExecute<long>("streamBytes");
+            }
+            
             #endregion
 
             // TODO: complete the class
@@ -134,8 +150,8 @@ namespace Java.Io
         }
         #endregion
 
-        #region FilterInfo
-        public partial class FilterInfo
+        #region Config
+        public partial class Config
         {
             #region Constructors
 
@@ -150,39 +166,25 @@ namespace Java.Io
             #endregion
 
             #region Static methods
-
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.Config.html#getSerialFilter() https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.Config.html#setSerialFilter(java.io.ObjectInputFilter)
+            /// </summary>
+            public static Java.Io.ObjectInputFilter SerialFilter
+            {
+                get { return SExecute<Java.Io.ObjectInputFilter>("getSerialFilter"); } set { SExecute("setSerialFilter", value); }
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.Config.html#createFilter(java.lang.String)
+            /// </summary>
+            public static Java.Io.ObjectInputFilter CreateFilter(string arg0)
+            {
+                return SExecute<Java.Io.ObjectInputFilter>("createFilter", arg0);
+            }
+            
             #endregion
 
             #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.FilterInfo.html#arrayLength()
-            /// </summary>
-            public long ArrayLength()
-            {
-                return IExecute<long>("arrayLength");
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.FilterInfo.html#depth()
-            /// </summary>
-            public long Depth()
-            {
-                return IExecute<long>("depth");
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.FilterInfo.html#references()
-            /// </summary>
-            public long References()
-            {
-                return IExecute<long>("references");
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.FilterInfo.html#streamBytes()
-            /// </summary>
-            public long StreamBytes()
-            {
-                return IExecute<long>("streamBytes");
-            }
-            
+
             #endregion
 
             // TODO: complete the class

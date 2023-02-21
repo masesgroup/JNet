@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing.Plaf.Basic
 {
     #region BasicScrollPaneUI
@@ -31,7 +33,8 @@ namespace Javax.Swing.Plaf.Basic
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Swing.ScrollPaneConstants(Javax.Swing.Plaf.Basic.BasicScrollPaneUI t) => t.Cast<Javax.Swing.ScrollPaneConstants>();
+        
         #endregion
 
         #region Fields
@@ -62,7 +65,8 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Class/Interface conversion operators
-
+            public static implicit operator Java.Beans.PropertyChangeListener(Javax.Swing.Plaf.Basic.BasicScrollPaneUI.PropertyChangeHandler t) => t.Cast<Java.Beans.PropertyChangeListener>();
+            
             #endregion
 
             #region Fields
@@ -103,7 +107,8 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Class/Interface conversion operators
-
+            public static implicit operator Javax.Swing.Event.ChangeListener(Javax.Swing.Plaf.Basic.BasicScrollPaneUI.ViewportChangeHandler t) => t.Cast<Javax.Swing.Event.ChangeListener>();
+            
             #endregion
 
             #region Fields

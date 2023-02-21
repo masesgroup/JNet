@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Util.Concurrent.Locks
 {
     #region AbstractOwnableSynchronizer
@@ -31,7 +33,8 @@ namespace Java.Util.Concurrent.Locks
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Io.Serializable(Java.Util.Concurrent.Locks.AbstractOwnableSynchronizer t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields

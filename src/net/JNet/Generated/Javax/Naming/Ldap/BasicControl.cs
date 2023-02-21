@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Naming.Ldap
 {
     #region BasicControl
@@ -45,7 +47,8 @@ namespace Javax.Naming.Ldap
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Naming.Ldap.Control(Javax.Naming.Ldap.BasicControl t) => t.Cast<Javax.Naming.Ldap.Control>();
+        
         #endregion
 
         #region Fields

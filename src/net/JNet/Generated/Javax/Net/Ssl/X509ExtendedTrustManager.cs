@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Net.Ssl
 {
     #region X509ExtendedTrustManager
@@ -31,7 +33,8 @@ namespace Javax.Net.Ssl
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Net.Ssl.X509TrustManager(Javax.Net.Ssl.X509ExtendedTrustManager t) => t.Cast<Javax.Net.Ssl.X509TrustManager>();
+        
         #endregion
 
         #region Fields

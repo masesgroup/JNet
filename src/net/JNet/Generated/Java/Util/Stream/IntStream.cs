@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Util.Stream
 {
     #region IntStream
@@ -328,7 +330,8 @@ namespace Java.Util.Stream
             #endregion
 
             #region Class/Interface conversion operators
-
+            public static implicit operator Java.Util.Function.IntConsumer(Java.Util.Stream.IntStream.Builder t) => t.Cast<Java.Util.Function.IntConsumer>();
+            
             #endregion
 
             #region Fields

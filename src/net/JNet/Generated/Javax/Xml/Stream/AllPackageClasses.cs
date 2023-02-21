@@ -58,23 +58,58 @@ namespace Javax.Xml.Stream
     }
     #endregion
 
-    #region XMLStreamWriter
+    #region XMLResolver
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLResolver.html
     /// </summary>
-    public partial class XMLStreamWriter : MASES.JCOBridge.C2JBridge.JVMBridgeBase<XMLStreamWriter>
+    public partial class XMLResolver : MASES.JCOBridge.C2JBridge.JVMBridgeBase<XMLResolver>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public XMLStreamWriter() { }
+        public XMLResolver() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public XMLStreamWriter(params object[] args) : base(args) { }
+        public XMLResolver(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.xml.stream.XMLStreamWriter";
+        public override string ClassName => "javax.xml.stream.XMLResolver";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region StreamFilter
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/StreamFilter.html
+    /// </summary>
+    public partial class StreamFilter : MASES.JCOBridge.C2JBridge.JVMBridgeBase<StreamFilter>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public StreamFilter() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public StreamFilter(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.xml.stream.StreamFilter";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -128,92 +163,6 @@ namespace Javax.Xml.Stream
     }
     #endregion
 
-    #region Location
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/Location.html
-    /// </summary>
-    public partial class Location : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Location>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public Location() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public Location(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.xml.stream.Location";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region XMLStreamException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamException.html
-    /// </summary>
-    public partial class XMLStreamException : Java.Lang.Exception
-    {
-        public XMLStreamException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.xml.stream.XMLStreamException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region XMLStreamConstants
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamConstants.html
-    /// </summary>
-    public partial class XMLStreamConstants : MASES.JCOBridge.C2JBridge.JVMBridgeBase<XMLStreamConstants>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public XMLStreamConstants() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public XMLStreamConstants(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.xml.stream.XMLStreamConstants";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
     #region EventFilter
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/EventFilter.html
@@ -249,39 +198,23 @@ namespace Javax.Xml.Stream
     }
     #endregion
 
-    #region FactoryConfigurationError
+    #region XMLInputFactory
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/FactoryConfigurationError.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLInputFactory.html
     /// </summary>
-    public partial class FactoryConfigurationError : Java.Lang.Error
-    {
-        public FactoryConfigurationError() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.xml.stream.FactoryConfigurationError";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region StreamFilter
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/StreamFilter.html
-    /// </summary>
-    public partial class StreamFilter : MASES.JCOBridge.C2JBridge.JVMBridgeBase<StreamFilter>
+    public partial class XMLInputFactory : MASES.JCOBridge.C2JBridge.JVMBridgeBase<XMLInputFactory>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public StreamFilter() { }
+        public XMLInputFactory() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public StreamFilter(params object[] args) : base(args) { }
+        public XMLInputFactory(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.xml.stream.StreamFilter";
+        public override string ClassName => "javax.xml.stream.XMLInputFactory";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -290,7 +223,7 @@ namespace Javax.Xml.Stream
         public override bool IsCloseable => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
+        public override bool IsInterface => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;
@@ -335,6 +268,22 @@ namespace Javax.Xml.Stream
     }
     #endregion
 
+    #region XMLStreamException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamException.html
+    /// </summary>
+    public partial class XMLStreamException : Java.Lang.Exception
+    {
+        public XMLStreamException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.xml.stream.XMLStreamException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region XMLEventFactory
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLEventFactory.html
@@ -370,23 +319,93 @@ namespace Javax.Xml.Stream
     }
     #endregion
 
-    #region XMLResolver
+    #region XMLStreamConstants
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLResolver.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamConstants.html
     /// </summary>
-    public partial class XMLResolver : MASES.JCOBridge.C2JBridge.JVMBridgeBase<XMLResolver>
+    public partial class XMLStreamConstants : MASES.JCOBridge.C2JBridge.JVMBridgeBase<XMLStreamConstants>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public XMLResolver() { }
+        public XMLStreamConstants() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public XMLResolver(params object[] args) : base(args) { }
+        public XMLStreamConstants(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.xml.stream.XMLResolver";
+        public override string ClassName => "javax.xml.stream.XMLStreamConstants";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region XMLStreamWriter
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamWriter.html
+    /// </summary>
+    public partial class XMLStreamWriter : MASES.JCOBridge.C2JBridge.JVMBridgeBase<XMLStreamWriter>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public XMLStreamWriter() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public XMLStreamWriter(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.xml.stream.XMLStreamWriter";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region Location
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/Location.html
+    /// </summary>
+    public partial class Location : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Location>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public Location() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public Location(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.xml.stream.Location";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -475,35 +494,16 @@ namespace Javax.Xml.Stream
     }
     #endregion
 
-    #region XMLInputFactory
+    #region FactoryConfigurationError
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLInputFactory.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/FactoryConfigurationError.html
     /// </summary>
-    public partial class XMLInputFactory : MASES.JCOBridge.C2JBridge.JVMBridgeBase<XMLInputFactory>
+    public partial class FactoryConfigurationError : Java.Lang.Error
     {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public XMLInputFactory() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public XMLInputFactory(params object[] args) : base(args) { }
+        public FactoryConfigurationError() { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.xml.stream.XMLInputFactory";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
+        public override string ClassName => "javax.xml.stream.FactoryConfigurationError";
 
         // TODO: complete the class
 

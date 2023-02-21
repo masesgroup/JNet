@@ -23,6 +23,41 @@
 
 namespace Javax.Xml.Crypto.Dsig.Keyinfo
 {
+    #region PGPData
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/PGPData.html
+    /// </summary>
+    public partial class PGPData : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PGPData>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public PGPData() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public PGPData(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.xml.crypto.dsig.keyinfo.PGPData";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region KeyInfoFactory
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyInfoFactory.html
@@ -58,58 +93,23 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
     }
     #endregion
 
-    #region RetrievalMethod
+    #region KeyValue
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/RetrievalMethod.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyValue.html
     /// </summary>
-    public partial class RetrievalMethod : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RetrievalMethod>
+    public partial class KeyValue : MASES.JCOBridge.C2JBridge.JVMBridgeBase<KeyValue>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public RetrievalMethod() { }
+        public KeyValue() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public RetrievalMethod(params object[] args) : base(args) { }
+        public KeyValue(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.xml.crypto.dsig.keyinfo.RetrievalMethod";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region X509Data
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/X509Data.html
-    /// </summary>
-    public partial class X509Data : MASES.JCOBridge.C2JBridge.JVMBridgeBase<X509Data>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public X509Data() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public X509Data(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.xml.crypto.dsig.keyinfo.X509Data";
+        public override string ClassName => "javax.xml.crypto.dsig.keyinfo.KeyValue";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -163,23 +163,23 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
     }
     #endregion
 
-    #region PGPData
+    #region X509IssuerSerial
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/PGPData.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/X509IssuerSerial.html
     /// </summary>
-    public partial class PGPData : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PGPData>
+    public partial class X509IssuerSerial : MASES.JCOBridge.C2JBridge.JVMBridgeBase<X509IssuerSerial>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public PGPData() { }
+        public X509IssuerSerial() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public PGPData(params object[] args) : base(args) { }
+        public X509IssuerSerial(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.xml.crypto.dsig.keyinfo.PGPData";
+        public override string ClassName => "javax.xml.crypto.dsig.keyinfo.X509IssuerSerial";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -198,23 +198,23 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
     }
     #endregion
 
-    #region X509IssuerSerial
+    #region X509Data
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/X509IssuerSerial.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/X509Data.html
     /// </summary>
-    public partial class X509IssuerSerial : MASES.JCOBridge.C2JBridge.JVMBridgeBase<X509IssuerSerial>
+    public partial class X509Data : MASES.JCOBridge.C2JBridge.JVMBridgeBase<X509Data>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public X509IssuerSerial() { }
+        public X509Data() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public X509IssuerSerial(params object[] args) : base(args) { }
+        public X509Data(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.xml.crypto.dsig.keyinfo.X509IssuerSerial";
+        public override string ClassName => "javax.xml.crypto.dsig.keyinfo.X509Data";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -268,23 +268,23 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
     }
     #endregion
 
-    #region KeyValue
+    #region RetrievalMethod
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyValue.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/RetrievalMethod.html
     /// </summary>
-    public partial class KeyValue : MASES.JCOBridge.C2JBridge.JVMBridgeBase<KeyValue>
+    public partial class RetrievalMethod : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RetrievalMethod>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public KeyValue() { }
+        public RetrievalMethod() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public KeyValue(params object[] args) : base(args) { }
+        public RetrievalMethod(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.xml.crypto.dsig.keyinfo.KeyValue";
+        public override string ClassName => "javax.xml.crypto.dsig.keyinfo.RetrievalMethod";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;

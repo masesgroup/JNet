@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing.Text
 {
     #region StyledDocument
@@ -31,7 +33,8 @@ namespace Javax.Swing.Text
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Swing.Text.Document(Javax.Swing.Text.StyledDocument t) => t.Cast<Javax.Swing.Text.Document>();
+        
         #endregion
 
         #region Fields

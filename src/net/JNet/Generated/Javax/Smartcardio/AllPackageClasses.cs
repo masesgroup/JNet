@@ -23,127 +23,6 @@
 
 namespace Javax.Smartcardio
 {
-    #region Card
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/Card.html
-    /// </summary>
-    public partial class Card : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Card>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public Card() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public Card(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.smartcardio.Card";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region TerminalFactory
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/TerminalFactory.html
-    /// </summary>
-    public partial class TerminalFactory : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TerminalFactory>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public TerminalFactory() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public TerminalFactory(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.smartcardio.TerminalFactory";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region CardException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardException.html
-    /// </summary>
-    public partial class CardException : Java.Lang.Exception
-    {
-        public CardException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.smartcardio.CardException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region CardChannel
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardChannel.html
-    /// </summary>
-    public partial class CardChannel : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CardChannel>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public CardChannel() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public CardChannel(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.smartcardio.CardChannel";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
     #region CardTerminals
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminals.html
@@ -213,23 +92,23 @@ namespace Javax.Smartcardio
     }
     #endregion
 
-    #region CommandAPDU
+    #region TerminalFactory
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CommandAPDU.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/TerminalFactory.html
     /// </summary>
-    public partial class CommandAPDU : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CommandAPDU>
+    public partial class TerminalFactory : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TerminalFactory>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public CommandAPDU() { }
+        public TerminalFactory() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public CommandAPDU(params object[] args) : base(args) { }
+        public TerminalFactory(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.smartcardio.CommandAPDU";
+        public override string ClassName => "javax.smartcardio.TerminalFactory";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -248,26 +127,61 @@ namespace Javax.Smartcardio
     }
     #endregion
 
-    #region CardPermission
+    #region Card
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardPermission.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/Card.html
     /// </summary>
-    public partial class CardPermission : Java.Security.Permission
+    public partial class Card : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Card>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public CardPermission() { }
+        public Card() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public CardPermission(params object[] args) : base(args) { }
+        public Card(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.smartcardio.CardPermission";
+        public override string ClassName => "javax.smartcardio.Card";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region CardTerminal
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminal.html
+    /// </summary>
+    public partial class CardTerminal : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CardTerminal>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public CardTerminal() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public CardTerminal(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.smartcardio.CardTerminal";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
 
         /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
         public override bool IsCloseable => false;
@@ -318,6 +232,143 @@ namespace Javax.Smartcardio
     }
     #endregion
 
+    #region CardNotPresentException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardNotPresentException.html
+    /// </summary>
+    public partial class CardNotPresentException : Javax.Smartcardio.CardException
+    {
+        public CardNotPresentException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.smartcardio.CardNotPresentException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region CardPermission
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardPermission.html
+    /// </summary>
+    public partial class CardPermission : Java.Security.Permission
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public CardPermission() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public CardPermission(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.smartcardio.CardPermission";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region CommandAPDU
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CommandAPDU.html
+    /// </summary>
+    public partial class CommandAPDU : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CommandAPDU>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public CommandAPDU() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public CommandAPDU(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.smartcardio.CommandAPDU";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region CardChannel
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardChannel.html
+    /// </summary>
+    public partial class CardChannel : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CardChannel>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public CardChannel() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public CardChannel(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.smartcardio.CardChannel";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region CardException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardException.html
+    /// </summary>
+    public partial class CardException : Java.Lang.Exception
+    {
+        public CardException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.smartcardio.CardException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region TerminalFactorySpi
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/TerminalFactorySpi.html
@@ -353,22 +404,6 @@ namespace Javax.Smartcardio
     }
     #endregion
 
-    #region CardNotPresentException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardNotPresentException.html
-    /// </summary>
-    public partial class CardNotPresentException : Javax.Smartcardio.CardException
-    {
-        public CardNotPresentException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.smartcardio.CardNotPresentException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
     #region ATR
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/ATR.html
@@ -389,41 +424,6 @@ namespace Javax.Smartcardio
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region CardTerminal
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminal.html
-    /// </summary>
-    public partial class CardTerminal : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CardTerminal>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public CardTerminal() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public CardTerminal(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.smartcardio.CardTerminal";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
 
         /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
         public override bool IsCloseable => false;

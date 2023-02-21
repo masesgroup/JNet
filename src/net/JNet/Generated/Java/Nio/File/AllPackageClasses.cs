@@ -39,58 +39,23 @@ namespace Java.Nio.File
     }
     #endregion
 
-    #region WatchKey
+    #region FileVisitOption
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchKey.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileVisitOption.html
     /// </summary>
-    public partial class WatchKey : MASES.JCOBridge.C2JBridge.JVMBridgeBase<WatchKey>
+    public partial class FileVisitOption : Java.Lang.Enum
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public WatchKey() { }
+        public FileVisitOption() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public WatchKey(params object[] args) : base(args) { }
+        public FileVisitOption(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.file.WatchKey";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region StandardWatchEventKinds
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardWatchEventKinds.html
-    /// </summary>
-    public partial class StandardWatchEventKinds : MASES.JCOBridge.C2JBridge.JVMBridgeBase<StandardWatchEventKinds>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public StandardWatchEventKinds() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public StandardWatchEventKinds(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.file.StandardWatchEventKinds";
+        public override string ClassName => "java.nio.file.FileVisitOption";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -109,64 +74,32 @@ namespace Java.Nio.File
     }
     #endregion
 
-    #region DirectoryIteratorException
+    #region FileSystemException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/DirectoryIteratorException.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystemException.html
     /// </summary>
-    public partial class DirectoryIteratorException : Java.Util.ConcurrentModificationException
+    public partial class FileSystemException : Java.Io.IOException
     {
-        public DirectoryIteratorException() { }
+        public FileSystemException() { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.file.DirectoryIteratorException";
+        public override string ClassName => "java.nio.file.FileSystemException";
 
         // TODO: complete the class
 
     }
     #endregion
 
-    #region ProviderMismatchException
+    #region ClosedDirectoryStreamException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/ProviderMismatchException.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/ClosedDirectoryStreamException.html
     /// </summary>
-    public partial class ProviderMismatchException : Java.Lang.IllegalArgumentException
+    public partial class ClosedDirectoryStreamException : Java.Lang.IllegalStateException
     {
-        public ProviderMismatchException() { }
+        public ClosedDirectoryStreamException() { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.file.ProviderMismatchException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region DirectoryNotEmptyException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/DirectoryNotEmptyException.html
-    /// </summary>
-    public partial class DirectoryNotEmptyException : Java.Nio.File.FileSystemException
-    {
-        public DirectoryNotEmptyException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.file.DirectoryNotEmptyException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region FileSystemNotFoundException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystemNotFoundException.html
-    /// </summary>
-    public partial class FileSystemNotFoundException : Java.Lang.RuntimeException
-    {
-        public FileSystemNotFoundException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.file.FileSystemNotFoundException";
+        public override string ClassName => "java.nio.file.ClosedDirectoryStreamException";
 
         // TODO: complete the class
 
@@ -208,87 +141,242 @@ namespace Java.Nio.File
     }
     #endregion
 
-    #region FileSystemLoopException
+    #region FileSystemNotFoundException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystemLoopException.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystemNotFoundException.html
     /// </summary>
-    public partial class FileSystemLoopException : Java.Nio.File.FileSystemException
+    public partial class FileSystemNotFoundException : Java.Lang.RuntimeException
     {
-        public FileSystemLoopException() { }
+        public FileSystemNotFoundException() { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.file.FileSystemLoopException";
+        public override string ClassName => "java.nio.file.FileSystemNotFoundException";
 
         // TODO: complete the class
 
     }
     #endregion
 
-    #region ClosedFileSystemException
+    #region CopyOption
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/ClosedFileSystemException.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/CopyOption.html
     /// </summary>
-    public partial class ClosedFileSystemException : Java.Lang.IllegalStateException
-    {
-        public ClosedFileSystemException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.file.ClosedFileSystemException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region AtomicMoveNotSupportedException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/AtomicMoveNotSupportedException.html
-    /// </summary>
-    public partial class AtomicMoveNotSupportedException : Java.Nio.File.FileSystemException
-    {
-        public AtomicMoveNotSupportedException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.file.AtomicMoveNotSupportedException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region NotLinkException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/NotLinkException.html
-    /// </summary>
-    public partial class NotLinkException : Java.Nio.File.FileSystemException
-    {
-        public NotLinkException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.file.NotLinkException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region StandardCopyOption
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardCopyOption.html
-    /// </summary>
-    public partial class StandardCopyOption : Java.Lang.Enum
+    public partial class CopyOption : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CopyOption>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public StandardCopyOption() { }
+        public CopyOption() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public StandardCopyOption(params object[] args) : base(args) { }
+        public CopyOption(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.file.StandardCopyOption";
+        public override string ClassName => "java.nio.file.CopyOption";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region FileAlreadyExistsException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileAlreadyExistsException.html
+    /// </summary>
+    public partial class FileAlreadyExistsException : Java.Nio.File.FileSystemException
+    {
+        public FileAlreadyExistsException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.nio.file.FileAlreadyExistsException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region ProviderNotFoundException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/ProviderNotFoundException.html
+    /// </summary>
+    public partial class ProviderNotFoundException : Java.Lang.RuntimeException
+    {
+        public ProviderNotFoundException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.nio.file.ProviderNotFoundException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region SecureDirectoryStream
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/SecureDirectoryStream.html
+    /// </summary>
+    public partial class SecureDirectoryStream : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SecureDirectoryStream>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public SecureDirectoryStream() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public SecureDirectoryStream(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.nio.file.SecureDirectoryStream";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region DirectoryNotEmptyException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/DirectoryNotEmptyException.html
+    /// </summary>
+    public partial class DirectoryNotEmptyException : Java.Nio.File.FileSystemException
+    {
+        public DirectoryNotEmptyException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.nio.file.DirectoryNotEmptyException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region DirectoryStream
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/DirectoryStream.html
+    /// </summary>
+    public partial class DirectoryStream : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DirectoryStream>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public DirectoryStream() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public DirectoryStream(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.nio.file.DirectoryStream";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+        #region Filter
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/DirectoryStream.Filter.html
+        /// </summary>
+        public partial class Filter : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Filter>
+        {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public Filter() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public Filter(params object[] args) : base(args) { }
+
+            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+            public override string ClassName => "java.nio.file.DirectoryStream$Filter";
+
+            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+            public override bool IsAbstract => true;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+            public override bool IsCloseable => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+            public override bool IsInterface => true;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+            public override bool IsStatic => true;
+
+            // TODO: complete the class
+        }
+        #endregion
+
+
+    }
+    #endregion
+
+    #region FileSystemAlreadyExistsException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystemAlreadyExistsException.html
+    /// </summary>
+    public partial class FileSystemAlreadyExistsException : Java.Lang.RuntimeException
+    {
+        public FileSystemAlreadyExistsException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.nio.file.FileSystemAlreadyExistsException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region StandardOpenOption
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardOpenOption.html
+    /// </summary>
+    public partial class StandardOpenOption : Java.Lang.Enum
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public StandardOpenOption() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public StandardOpenOption(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.nio.file.StandardOpenOption";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -298,6 +386,76 @@ namespace Java.Nio.File
 
         /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
         public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region OpenOption
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/OpenOption.html
+    /// </summary>
+    public partial class OpenOption : MASES.JCOBridge.C2JBridge.JVMBridgeBase<OpenOption>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public OpenOption() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public OpenOption(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.nio.file.OpenOption";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region FileVisitor
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileVisitor.html
+    /// </summary>
+    public partial class FileVisitor : MASES.JCOBridge.C2JBridge.JVMBridgeBase<FileVisitor>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public FileVisitor() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public FileVisitor(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.nio.file.FileVisitor";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;
@@ -410,298 +568,6 @@ namespace Java.Nio.File
     }
     #endregion
 
-    #region ClosedWatchServiceException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/ClosedWatchServiceException.html
-    /// </summary>
-    public partial class ClosedWatchServiceException : Java.Lang.IllegalStateException
-    {
-        public ClosedWatchServiceException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.file.ClosedWatchServiceException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region DirectoryStream
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/DirectoryStream.html
-    /// </summary>
-    public partial class DirectoryStream : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DirectoryStream>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public DirectoryStream() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public DirectoryStream(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.file.DirectoryStream";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-        #region Filter
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/DirectoryStream.Filter.html
-        /// </summary>
-        public partial class Filter : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Filter>
-        {
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public Filter() { }
-            /// <summary>
-            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-            /// </summary>
-            public Filter(params object[] args) : base(args) { }
-
-            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-            public override string ClassName => "java.nio.file.DirectoryStream$Filter";
-
-            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-            public override bool IsAbstract => true;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-            public override bool IsCloseable => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-            public override bool IsInterface => true;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-            public override bool IsStatic => true;
-
-            // TODO: complete the class
-        }
-        #endregion
-
-
-    }
-    #endregion
-
-    #region SimpleFileVisitor
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/SimpleFileVisitor.html
-    /// </summary>
-    public partial class SimpleFileVisitor : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SimpleFileVisitor>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public SimpleFileVisitor() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public SimpleFileVisitor(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.file.SimpleFileVisitor";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region StandardOpenOption
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardOpenOption.html
-    /// </summary>
-    public partial class StandardOpenOption : Java.Lang.Enum
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public StandardOpenOption() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public StandardOpenOption(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.file.StandardOpenOption";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region FileVisitor
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileVisitor.html
-    /// </summary>
-    public partial class FileVisitor : MASES.JCOBridge.C2JBridge.JVMBridgeBase<FileVisitor>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public FileVisitor() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public FileVisitor(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.file.FileVisitor";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region FileSystemException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystemException.html
-    /// </summary>
-    public partial class FileSystemException : Java.Io.IOException
-    {
-        public FileSystemException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.file.FileSystemException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region InvalidPathException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/InvalidPathException.html
-    /// </summary>
-    public partial class InvalidPathException : Java.Lang.IllegalArgumentException
-    {
-        public InvalidPathException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.file.InvalidPathException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region OpenOption
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/OpenOption.html
-    /// </summary>
-    public partial class OpenOption : MASES.JCOBridge.C2JBridge.JVMBridgeBase<OpenOption>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public OpenOption() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public OpenOption(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.file.OpenOption";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region CopyOption
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/CopyOption.html
-    /// </summary>
-    public partial class CopyOption : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CopyOption>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public CopyOption() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public CopyOption(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.file.CopyOption";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
     #region FileSystem
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystem.html
@@ -722,178 +588,6 @@ namespace Java.Nio.File
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region FileStore
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileStore.html
-    /// </summary>
-    public partial class FileStore : MASES.JCOBridge.C2JBridge.JVMBridgeBase<FileStore>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public FileStore() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public FileStore(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.file.FileStore";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region LinkOption
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/LinkOption.html
-    /// </summary>
-    public partial class LinkOption : Java.Lang.Enum
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public LinkOption() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public LinkOption(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.file.LinkOption";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region NotDirectoryException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/NotDirectoryException.html
-    /// </summary>
-    public partial class NotDirectoryException : Java.Nio.File.FileSystemException
-    {
-        public NotDirectoryException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.file.NotDirectoryException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region Files
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html
-    /// </summary>
-    public partial class Files : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Files>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public Files() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public Files(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.file.Files";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region ProviderNotFoundException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/ProviderNotFoundException.html
-    /// </summary>
-    public partial class ProviderNotFoundException : Java.Lang.RuntimeException
-    {
-        public ProviderNotFoundException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.file.ProviderNotFoundException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region Paths
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Paths.html
-    /// </summary>
-    public partial class Paths : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Paths>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public Paths() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public Paths(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.file.Paths";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
         public override bool IsCloseable => false;
@@ -944,6 +638,159 @@ namespace Java.Nio.File
     }
     #endregion
 
+    #region AccessDeniedException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/AccessDeniedException.html
+    /// </summary>
+    public partial class AccessDeniedException : Java.Nio.File.FileSystemException
+    {
+        public AccessDeniedException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.nio.file.AccessDeniedException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region ClosedFileSystemException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/ClosedFileSystemException.html
+    /// </summary>
+    public partial class ClosedFileSystemException : Java.Lang.IllegalStateException
+    {
+        public ClosedFileSystemException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.nio.file.ClosedFileSystemException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region FileStore
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileStore.html
+    /// </summary>
+    public partial class FileStore : MASES.JCOBridge.C2JBridge.JVMBridgeBase<FileStore>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public FileStore() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public FileStore(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.nio.file.FileStore";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region Files
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html
+    /// </summary>
+    public partial class Files : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Files>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public Files() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public Files(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.nio.file.Files";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region StandardWatchEventKinds
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardWatchEventKinds.html
+    /// </summary>
+    public partial class StandardWatchEventKinds : MASES.JCOBridge.C2JBridge.JVMBridgeBase<StandardWatchEventKinds>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public StandardWatchEventKinds() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public StandardWatchEventKinds(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.nio.file.StandardWatchEventKinds";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region FileSystemLoopException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystemLoopException.html
+    /// </summary>
+    public partial class FileSystemLoopException : Java.Nio.File.FileSystemException
+    {
+        public FileSystemLoopException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.nio.file.FileSystemLoopException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region PathMatcher
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/PathMatcher.html
@@ -979,48 +826,137 @@ namespace Java.Nio.File
     }
     #endregion
 
-    #region FileAlreadyExistsException
+    #region Paths
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileAlreadyExistsException.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Paths.html
     /// </summary>
-    public partial class FileAlreadyExistsException : Java.Nio.File.FileSystemException
+    public partial class Paths : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Paths>
     {
-        public FileAlreadyExistsException() { }
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public Paths() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public Paths(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.file.FileAlreadyExistsException";
+        public override string ClassName => "java.nio.file.Paths";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
 
         // TODO: complete the class
 
     }
     #endregion
 
-    #region ClosedDirectoryStreamException
+    #region LinkOption
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/ClosedDirectoryStreamException.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/LinkOption.html
     /// </summary>
-    public partial class ClosedDirectoryStreamException : Java.Lang.IllegalStateException
+    public partial class LinkOption : Java.Lang.Enum
     {
-        public ClosedDirectoryStreamException() { }
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public LinkOption() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public LinkOption(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.file.ClosedDirectoryStreamException";
+        public override string ClassName => "java.nio.file.LinkOption";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
 
         // TODO: complete the class
 
     }
     #endregion
 
-    #region FileSystemAlreadyExistsException
+    #region InvalidPathException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystemAlreadyExistsException.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/InvalidPathException.html
     /// </summary>
-    public partial class FileSystemAlreadyExistsException : Java.Lang.RuntimeException
+    public partial class InvalidPathException : Java.Lang.IllegalArgumentException
     {
-        public FileSystemAlreadyExistsException() { }
+        public InvalidPathException() { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.file.FileSystemAlreadyExistsException";
+        public override string ClassName => "java.nio.file.InvalidPathException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region NotLinkException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/NotLinkException.html
+    /// </summary>
+    public partial class NotLinkException : Java.Nio.File.FileSystemException
+    {
+        public NotLinkException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.nio.file.NotLinkException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region WatchKey
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchKey.html
+    /// </summary>
+    public partial class WatchKey : MASES.JCOBridge.C2JBridge.JVMBridgeBase<WatchKey>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public WatchKey() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public WatchKey(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.nio.file.WatchKey";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
 
         // TODO: complete the class
 
@@ -1053,6 +989,57 @@ namespace Java.Nio.File
 
         /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
         public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region NotDirectoryException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/NotDirectoryException.html
+    /// </summary>
+    public partial class NotDirectoryException : Java.Nio.File.FileSystemException
+    {
+        public NotDirectoryException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.nio.file.NotDirectoryException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region FileVisitResult
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileVisitResult.html
+    /// </summary>
+    public partial class FileVisitResult : Java.Lang.Enum
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public FileVisitResult() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public FileVisitResult(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.nio.file.FileVisitResult";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;
@@ -1097,39 +1084,23 @@ namespace Java.Nio.File
     }
     #endregion
 
-    #region AccessDeniedException
+    #region StandardCopyOption
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/AccessDeniedException.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/StandardCopyOption.html
     /// </summary>
-    public partial class AccessDeniedException : Java.Nio.File.FileSystemException
-    {
-        public AccessDeniedException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.file.AccessDeniedException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region AccessMode
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/AccessMode.html
-    /// </summary>
-    public partial class AccessMode : Java.Lang.Enum
+    public partial class StandardCopyOption : Java.Lang.Enum
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public AccessMode() { }
+        public StandardCopyOption() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public AccessMode(params object[] args) : base(args) { }
+        public StandardCopyOption(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.file.AccessMode";
+        public override string ClassName => "java.nio.file.StandardCopyOption";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -1142,6 +1113,121 @@ namespace Java.Nio.File
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region DirectoryIteratorException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/DirectoryIteratorException.html
+    /// </summary>
+    public partial class DirectoryIteratorException : Java.Util.ConcurrentModificationException
+    {
+        public DirectoryIteratorException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.nio.file.DirectoryIteratorException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region ProviderMismatchException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/ProviderMismatchException.html
+    /// </summary>
+    public partial class ProviderMismatchException : Java.Lang.IllegalArgumentException
+    {
+        public ProviderMismatchException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.nio.file.ProviderMismatchException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region ClosedWatchServiceException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/ClosedWatchServiceException.html
+    /// </summary>
+    public partial class ClosedWatchServiceException : Java.Lang.IllegalStateException
+    {
+        public ClosedWatchServiceException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.nio.file.ClosedWatchServiceException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region AtomicMoveNotSupportedException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/AtomicMoveNotSupportedException.html
+    /// </summary>
+    public partial class AtomicMoveNotSupportedException : Java.Nio.File.FileSystemException
+    {
+        public AtomicMoveNotSupportedException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.nio.file.AtomicMoveNotSupportedException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region SimpleFileVisitor
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/SimpleFileVisitor.html
+    /// </summary>
+    public partial class SimpleFileVisitor : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SimpleFileVisitor>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public SimpleFileVisitor() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public SimpleFileVisitor(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.nio.file.SimpleFileVisitor";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region NoSuchFileException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/NoSuchFileException.html
+    /// </summary>
+    public partial class NoSuchFileException : Java.Nio.File.FileSystemException
+    {
+        public NoSuchFileException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.nio.file.NoSuchFileException";
 
         // TODO: complete the class
 
@@ -1183,109 +1269,23 @@ namespace Java.Nio.File
     }
     #endregion
 
-    #region FileVisitResult
+    #region AccessMode
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileVisitResult.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/AccessMode.html
     /// </summary>
-    public partial class FileVisitResult : Java.Lang.Enum
+    public partial class AccessMode : Java.Lang.Enum
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public FileVisitResult() { }
+        public AccessMode() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public FileVisitResult(params object[] args) : base(args) { }
+        public AccessMode(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.file.FileVisitResult";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region NoSuchFileException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/NoSuchFileException.html
-    /// </summary>
-    public partial class NoSuchFileException : Java.Nio.File.FileSystemException
-    {
-        public NoSuchFileException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.file.NoSuchFileException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region SecureDirectoryStream
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/SecureDirectoryStream.html
-    /// </summary>
-    public partial class SecureDirectoryStream : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SecureDirectoryStream>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public SecureDirectoryStream() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public SecureDirectoryStream(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.file.SecureDirectoryStream";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region FileVisitOption
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileVisitOption.html
-    /// </summary>
-    public partial class FileVisitOption : Java.Lang.Enum
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public FileVisitOption() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public FileVisitOption(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.file.FileVisitOption";
+        public override string ClassName => "java.nio.file.AccessMode";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;

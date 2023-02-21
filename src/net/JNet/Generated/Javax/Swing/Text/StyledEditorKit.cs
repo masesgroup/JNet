@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing.Text
 {
     #region StyledEditorKit
@@ -61,11 +63,18 @@ namespace Javax.Swing.Text
         #endregion
 
         #region Nested classes
-        #region BoldAction
-        public partial class BoldAction
+        #region AlignmentAction
+        public partial class AlignmentAction
         {
             #region Constructors
-
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyledEditorKit.AlignmentAction.html#<init>(java.lang.String,int)
+            /// </summary>
+            public AlignmentAction(string arg0, int arg1)
+                : base(arg0, arg1)
+            {
+            }
+            
             #endregion
 
             #region Class/Interface conversion operators
@@ -122,11 +131,18 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region ItalicAction
-        public partial class ItalicAction
+        #region FontSizeAction
+        public partial class FontSizeAction
         {
             #region Constructors
-
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyledEditorKit.FontSizeAction.html#<init>(java.lang.String,int)
+            /// </summary>
+            public FontSizeAction(string arg0, int arg1)
+                : base(arg0, arg1)
+            {
+            }
+            
             #endregion
 
             #region Class/Interface conversion operators
@@ -217,6 +233,33 @@ namespace Javax.Swing.Text
         }
         #endregion
 
+        #region ItalicAction
+        public partial class ItalicAction
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region UnderlineAction
         public partial class UnderlineAction
         {
@@ -244,52 +287,11 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region FontSizeAction
-        public partial class FontSizeAction
+        #region BoldAction
+        public partial class BoldAction
         {
             #region Constructors
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyledEditorKit.FontSizeAction.html#<init>(java.lang.String,int)
-            /// </summary>
-            public FontSizeAction(string arg0, int arg1)
-                : base(arg0, arg1)
-            {
-            }
-            
-            #endregion
 
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region AlignmentAction
-        public partial class AlignmentAction
-        {
-            #region Constructors
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyledEditorKit.AlignmentAction.html#<init>(java.lang.String,int)
-            /// </summary>
-            public AlignmentAction(string arg0, int arg1)
-                : base(arg0, arg1)
-            {
-            }
-            
             #endregion
 
             #region Class/Interface conversion operators

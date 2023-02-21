@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing
 {
     #region DefaultCellEditor
@@ -45,7 +47,9 @@ namespace Javax.Swing
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Swing.Table.TableCellEditor(Javax.Swing.DefaultCellEditor t) => t.Cast<Javax.Swing.Table.TableCellEditor>();
+        public static implicit operator Javax.Swing.Tree.TreeCellEditor(Javax.Swing.DefaultCellEditor t) => t.Cast<Javax.Swing.Tree.TreeCellEditor>();
+        
         #endregion
 
         #region Fields

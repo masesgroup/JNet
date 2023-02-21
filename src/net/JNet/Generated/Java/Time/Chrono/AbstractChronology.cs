@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Time.Chrono
 {
     #region AbstractChronology
@@ -31,7 +33,8 @@ namespace Java.Time.Chrono
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Time.Chrono.Chronology(Java.Time.Chrono.AbstractChronology t) => t.Cast<Java.Time.Chrono.Chronology>();
+        
         #endregion
 
         #region Fields

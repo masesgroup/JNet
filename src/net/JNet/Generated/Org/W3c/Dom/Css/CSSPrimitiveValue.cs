@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Org.W3c.Dom.Css
 {
     #region CSSPrimitiveValue
@@ -31,7 +33,8 @@ namespace Org.W3c.Dom.Css
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Org.W3c.Dom.Css.CSSValue(Org.W3c.Dom.Css.CSSPrimitiveValue t) => t.Cast<Org.W3c.Dom.Css.CSSValue>();
+        
         #endregion
 
         #region Fields

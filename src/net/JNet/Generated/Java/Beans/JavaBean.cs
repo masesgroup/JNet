@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Beans
 {
     #region JavaBean
@@ -31,7 +33,8 @@ namespace Java.Beans
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Lang.Annotation.Annotation(Java.Beans.JavaBean t) => t.Cast<Java.Lang.Annotation.Annotation>();
+        
         #endregion
 
         #region Fields

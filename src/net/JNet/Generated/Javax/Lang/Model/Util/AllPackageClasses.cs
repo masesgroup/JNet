@@ -23,23 +23,23 @@
 
 namespace Javax.Lang.Model.Util
 {
-    #region SimpleAnnotationValueVisitor6
+    #region ElementFilter
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/SimpleAnnotationValueVisitor6.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementFilter.html
     /// </summary>
-    public partial class SimpleAnnotationValueVisitor6 : Javax.Lang.Model.Util.AbstractAnnotationValueVisitor6
+    public partial class ElementFilter : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ElementFilter>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public SimpleAnnotationValueVisitor6() { }
+        public ElementFilter() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public SimpleAnnotationValueVisitor6(params object[] args) : base(args) { }
+        public ElementFilter(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.lang.model.util.SimpleAnnotationValueVisitor6";
+        public override string ClassName => "javax.lang.model.util.ElementFilter";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -58,26 +58,551 @@ namespace Javax.Lang.Model.Util
     }
     #endregion
 
-    #region AbstractElementVisitor7
+    #region ElementScanner6
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractElementVisitor7.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementScanner6.html
     /// </summary>
-    public partial class AbstractElementVisitor7 : Javax.Lang.Model.Util.AbstractElementVisitor6
+    public partial class ElementScanner6 : Javax.Lang.Model.Util.AbstractElementVisitor6
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public AbstractElementVisitor7() { }
+        public ElementScanner6() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public AbstractElementVisitor7(params object[] args) : base(args) { }
+        public ElementScanner6(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.lang.model.util.AbstractElementVisitor7";
+        public override string ClassName => "javax.lang.model.util.ElementScanner6";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region AbstractElementVisitor8
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractElementVisitor8.html
+    /// </summary>
+    public partial class AbstractElementVisitor8 : Javax.Lang.Model.Util.AbstractElementVisitor7
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public AbstractElementVisitor8() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public AbstractElementVisitor8(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.lang.model.util.AbstractElementVisitor8";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region SimpleTypeVisitor8
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/SimpleTypeVisitor8.html
+    /// </summary>
+    public partial class SimpleTypeVisitor8 : Javax.Lang.Model.Util.SimpleTypeVisitor7
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public SimpleTypeVisitor8() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public SimpleTypeVisitor8(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.lang.model.util.SimpleTypeVisitor8";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region ElementKindVisitor9
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementKindVisitor9.html
+    /// </summary>
+    public partial class ElementKindVisitor9 : Javax.Lang.Model.Util.ElementKindVisitor8
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public ElementKindVisitor9() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public ElementKindVisitor9(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.lang.model.util.ElementKindVisitor9";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region ElementKindVisitor8
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementKindVisitor8.html
+    /// </summary>
+    public partial class ElementKindVisitor8 : Javax.Lang.Model.Util.ElementKindVisitor7
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public ElementKindVisitor8() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public ElementKindVisitor8(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.lang.model.util.ElementKindVisitor8";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region AbstractAnnotationValueVisitor7
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractAnnotationValueVisitor7.html
+    /// </summary>
+    public partial class AbstractAnnotationValueVisitor7 : Javax.Lang.Model.Util.AbstractAnnotationValueVisitor6
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public AbstractAnnotationValueVisitor7() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public AbstractAnnotationValueVisitor7(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.lang.model.util.AbstractAnnotationValueVisitor7";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region TypeKindVisitor6
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor6.html
+    /// </summary>
+    public partial class TypeKindVisitor6 : Javax.Lang.Model.Util.SimpleTypeVisitor6
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public TypeKindVisitor6() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public TypeKindVisitor6(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.lang.model.util.TypeKindVisitor6";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region AbstractTypeVisitor8
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractTypeVisitor8.html
+    /// </summary>
+    public partial class AbstractTypeVisitor8 : Javax.Lang.Model.Util.AbstractTypeVisitor7
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public AbstractTypeVisitor8() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public AbstractTypeVisitor8(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.lang.model.util.AbstractTypeVisitor8";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region AbstractElementVisitor6
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractElementVisitor6.html
+    /// </summary>
+    public partial class AbstractElementVisitor6 : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AbstractElementVisitor6>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public AbstractElementVisitor6() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public AbstractElementVisitor6(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.lang.model.util.AbstractElementVisitor6";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region AbstractAnnotationValueVisitor6
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractAnnotationValueVisitor6.html
+    /// </summary>
+    public partial class AbstractAnnotationValueVisitor6 : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AbstractAnnotationValueVisitor6>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public AbstractAnnotationValueVisitor6() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public AbstractAnnotationValueVisitor6(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.lang.model.util.AbstractAnnotationValueVisitor6";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region TypeKindVisitor9
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor9.html
+    /// </summary>
+    public partial class TypeKindVisitor9 : Javax.Lang.Model.Util.TypeKindVisitor8
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public TypeKindVisitor9() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public TypeKindVisitor9(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.lang.model.util.TypeKindVisitor9";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region SimpleElementVisitor7
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/SimpleElementVisitor7.html
+    /// </summary>
+    public partial class SimpleElementVisitor7 : Javax.Lang.Model.Util.SimpleElementVisitor6
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public SimpleElementVisitor7() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public SimpleElementVisitor7(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.lang.model.util.SimpleElementVisitor7";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region AbstractAnnotationValueVisitor9
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractAnnotationValueVisitor9.html
+    /// </summary>
+    public partial class AbstractAnnotationValueVisitor9 : Javax.Lang.Model.Util.AbstractAnnotationValueVisitor8
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public AbstractAnnotationValueVisitor9() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public AbstractAnnotationValueVisitor9(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.lang.model.util.AbstractAnnotationValueVisitor9";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region AbstractTypeVisitor9
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractTypeVisitor9.html
+    /// </summary>
+    public partial class AbstractTypeVisitor9 : Javax.Lang.Model.Util.AbstractTypeVisitor8
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public AbstractTypeVisitor9() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public AbstractTypeVisitor9(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.lang.model.util.AbstractTypeVisitor9";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region AbstractTypeVisitor6
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractTypeVisitor6.html
+    /// </summary>
+    public partial class AbstractTypeVisitor6 : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AbstractTypeVisitor6>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public AbstractTypeVisitor6() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public AbstractTypeVisitor6(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.lang.model.util.AbstractTypeVisitor6";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region ElementScanner9
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementScanner9.html
+    /// </summary>
+    public partial class ElementScanner9 : Javax.Lang.Model.Util.ElementScanner8
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public ElementScanner9() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public ElementScanner9(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.lang.model.util.ElementScanner9";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
         public override bool IsCloseable => false;
@@ -162,23 +687,23 @@ namespace Javax.Lang.Model.Util
     }
     #endregion
 
-    #region SimpleTypeVisitor6
+    #region SimpleElementVisitor8
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/SimpleTypeVisitor6.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/SimpleElementVisitor8.html
     /// </summary>
-    public partial class SimpleTypeVisitor6 : Javax.Lang.Model.Util.AbstractTypeVisitor6
+    public partial class SimpleElementVisitor8 : Javax.Lang.Model.Util.SimpleElementVisitor7
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public SimpleTypeVisitor6() { }
+        public SimpleElementVisitor8() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public SimpleTypeVisitor6(params object[] args) : base(args) { }
+        public SimpleElementVisitor8(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.lang.model.util.SimpleTypeVisitor6";
+        public override string ClassName => "javax.lang.model.util.SimpleElementVisitor8";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -267,551 +792,26 @@ namespace Javax.Lang.Model.Util
     }
     #endregion
 
-    #region SimpleTypeVisitor8
+    #region ElementKindVisitor7
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/SimpleTypeVisitor8.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementKindVisitor7.html
     /// </summary>
-    public partial class SimpleTypeVisitor8 : Javax.Lang.Model.Util.SimpleTypeVisitor7
+    public partial class ElementKindVisitor7 : Javax.Lang.Model.Util.ElementKindVisitor6
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public SimpleTypeVisitor8() { }
+        public ElementKindVisitor7() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public SimpleTypeVisitor8(params object[] args) : base(args) { }
+        public ElementKindVisitor7(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.lang.model.util.SimpleTypeVisitor8";
+        public override string ClassName => "javax.lang.model.util.ElementKindVisitor7";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region SimpleElementVisitor9
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/SimpleElementVisitor9.html
-    /// </summary>
-    public partial class SimpleElementVisitor9 : Javax.Lang.Model.Util.SimpleElementVisitor8
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public SimpleElementVisitor9() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public SimpleElementVisitor9(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.lang.model.util.SimpleElementVisitor9";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region AbstractTypeVisitor8
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractTypeVisitor8.html
-    /// </summary>
-    public partial class AbstractTypeVisitor8 : Javax.Lang.Model.Util.AbstractTypeVisitor7
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public AbstractTypeVisitor8() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public AbstractTypeVisitor8(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.lang.model.util.AbstractTypeVisitor8";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region ElementScanner7
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementScanner7.html
-    /// </summary>
-    public partial class ElementScanner7 : Javax.Lang.Model.Util.ElementScanner6
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public ElementScanner7() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public ElementScanner7(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.lang.model.util.ElementScanner7";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region ElementScanner9
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementScanner9.html
-    /// </summary>
-    public partial class ElementScanner9 : Javax.Lang.Model.Util.ElementScanner8
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public ElementScanner9() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public ElementScanner9(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.lang.model.util.ElementScanner9";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region AbstractElementVisitor6
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractElementVisitor6.html
-    /// </summary>
-    public partial class AbstractElementVisitor6 : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AbstractElementVisitor6>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public AbstractElementVisitor6() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public AbstractElementVisitor6(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.lang.model.util.AbstractElementVisitor6";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region Types
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Types.html
-    /// </summary>
-    public partial class Types : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Types>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public Types() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public Types(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.lang.model.util.Types";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region ElementScanner6
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementScanner6.html
-    /// </summary>
-    public partial class ElementScanner6 : Javax.Lang.Model.Util.AbstractElementVisitor6
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public ElementScanner6() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public ElementScanner6(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.lang.model.util.ElementScanner6";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region TypeKindVisitor9
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor9.html
-    /// </summary>
-    public partial class TypeKindVisitor9 : Javax.Lang.Model.Util.TypeKindVisitor8
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public TypeKindVisitor9() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public TypeKindVisitor9(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.lang.model.util.TypeKindVisitor9";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region ElementKindVisitor8
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementKindVisitor8.html
-    /// </summary>
-    public partial class ElementKindVisitor8 : Javax.Lang.Model.Util.ElementKindVisitor7
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public ElementKindVisitor8() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public ElementKindVisitor8(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.lang.model.util.ElementKindVisitor8";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region SimpleElementVisitor7
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/SimpleElementVisitor7.html
-    /// </summary>
-    public partial class SimpleElementVisitor7 : Javax.Lang.Model.Util.SimpleElementVisitor6
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public SimpleElementVisitor7() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public SimpleElementVisitor7(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.lang.model.util.SimpleElementVisitor7";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region SimpleElementVisitor6
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/SimpleElementVisitor6.html
-    /// </summary>
-    public partial class SimpleElementVisitor6 : Javax.Lang.Model.Util.AbstractElementVisitor6
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public SimpleElementVisitor6() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public SimpleElementVisitor6(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.lang.model.util.SimpleElementVisitor6";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region AbstractElementVisitor9
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractElementVisitor9.html
-    /// </summary>
-    public partial class AbstractElementVisitor9 : Javax.Lang.Model.Util.AbstractElementVisitor8
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public AbstractElementVisitor9() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public AbstractElementVisitor9(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.lang.model.util.AbstractElementVisitor9";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region AbstractAnnotationValueVisitor6
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractAnnotationValueVisitor6.html
-    /// </summary>
-    public partial class AbstractAnnotationValueVisitor6 : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AbstractAnnotationValueVisitor6>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public AbstractAnnotationValueVisitor6() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public AbstractAnnotationValueVisitor6(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.lang.model.util.AbstractAnnotationValueVisitor6";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region SimpleElementVisitor8
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/SimpleElementVisitor8.html
-    /// </summary>
-    public partial class SimpleElementVisitor8 : Javax.Lang.Model.Util.SimpleElementVisitor7
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public SimpleElementVisitor8() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public SimpleElementVisitor8(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.lang.model.util.SimpleElementVisitor8";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region AbstractAnnotationValueVisitor8
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractAnnotationValueVisitor8.html
-    /// </summary>
-    public partial class AbstractAnnotationValueVisitor8 : Javax.Lang.Model.Util.AbstractAnnotationValueVisitor7
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public AbstractAnnotationValueVisitor8() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public AbstractAnnotationValueVisitor8(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.lang.model.util.AbstractAnnotationValueVisitor8";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
 
         /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
         public override bool IsCloseable => false;
@@ -862,58 +862,23 @@ namespace Javax.Lang.Model.Util
     }
     #endregion
 
-    #region AbstractTypeVisitor9
+    #region SimpleTypeVisitor9
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractTypeVisitor9.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/SimpleTypeVisitor9.html
     /// </summary>
-    public partial class AbstractTypeVisitor9 : Javax.Lang.Model.Util.AbstractTypeVisitor8
+    public partial class SimpleTypeVisitor9 : Javax.Lang.Model.Util.SimpleTypeVisitor8
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public AbstractTypeVisitor9() { }
+        public SimpleTypeVisitor9() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public AbstractTypeVisitor9(params object[] args) : base(args) { }
+        public SimpleTypeVisitor9(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.lang.model.util.AbstractTypeVisitor9";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region SimpleAnnotationValueVisitor7
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/SimpleAnnotationValueVisitor7.html
-    /// </summary>
-    public partial class SimpleAnnotationValueVisitor7 : Javax.Lang.Model.Util.SimpleAnnotationValueVisitor6
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public SimpleAnnotationValueVisitor7() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public SimpleAnnotationValueVisitor7(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.lang.model.util.SimpleAnnotationValueVisitor7";
+        public override string ClassName => "javax.lang.model.util.SimpleTypeVisitor9";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -967,23 +932,23 @@ namespace Javax.Lang.Model.Util
     }
     #endregion
 
-    #region AbstractTypeVisitor7
+    #region AbstractElementVisitor7
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractTypeVisitor7.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractElementVisitor7.html
     /// </summary>
-    public partial class AbstractTypeVisitor7 : Javax.Lang.Model.Util.AbstractTypeVisitor6
+    public partial class AbstractElementVisitor7 : Javax.Lang.Model.Util.AbstractElementVisitor6
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public AbstractTypeVisitor7() { }
+        public AbstractElementVisitor7() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public AbstractTypeVisitor7(params object[] args) : base(args) { }
+        public AbstractElementVisitor7(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.lang.model.util.AbstractTypeVisitor7";
+        public override string ClassName => "javax.lang.model.util.AbstractElementVisitor7";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -1002,128 +967,23 @@ namespace Javax.Lang.Model.Util
     }
     #endregion
 
-    #region ElementKindVisitor9
+    #region AbstractAnnotationValueVisitor8
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementKindVisitor9.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractAnnotationValueVisitor8.html
     /// </summary>
-    public partial class ElementKindVisitor9 : Javax.Lang.Model.Util.ElementKindVisitor8
+    public partial class AbstractAnnotationValueVisitor8 : Javax.Lang.Model.Util.AbstractAnnotationValueVisitor7
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ElementKindVisitor9() { }
+        public AbstractAnnotationValueVisitor8() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public ElementKindVisitor9(params object[] args) : base(args) { }
+        public AbstractAnnotationValueVisitor8(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.lang.model.util.ElementKindVisitor9";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region ElementKindVisitor7
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementKindVisitor7.html
-    /// </summary>
-    public partial class ElementKindVisitor7 : Javax.Lang.Model.Util.ElementKindVisitor6
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public ElementKindVisitor7() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public ElementKindVisitor7(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.lang.model.util.ElementKindVisitor7";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region ElementFilter
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementFilter.html
-    /// </summary>
-    public partial class ElementFilter : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ElementFilter>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public ElementFilter() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public ElementFilter(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.lang.model.util.ElementFilter";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region AbstractTypeVisitor6
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractTypeVisitor6.html
-    /// </summary>
-    public partial class AbstractTypeVisitor6 : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AbstractTypeVisitor6>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public AbstractTypeVisitor6() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public AbstractTypeVisitor6(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.lang.model.util.AbstractTypeVisitor6";
+        public override string ClassName => "javax.lang.model.util.AbstractAnnotationValueVisitor8";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -1133,6 +993,76 @@ namespace Javax.Lang.Model.Util
 
         /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
         public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region SimpleElementVisitor6
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/SimpleElementVisitor6.html
+    /// </summary>
+    public partial class SimpleElementVisitor6 : Javax.Lang.Model.Util.AbstractElementVisitor6
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public SimpleElementVisitor6() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public SimpleElementVisitor6(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.lang.model.util.SimpleElementVisitor6";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region Types
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Types.html
+    /// </summary>
+    public partial class Types : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Types>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public Types() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public Types(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.lang.model.util.Types";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;
@@ -1177,23 +1107,23 @@ namespace Javax.Lang.Model.Util
     }
     #endregion
 
-    #region AbstractElementVisitor8
+    #region AbstractElementVisitor9
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractElementVisitor8.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractElementVisitor9.html
     /// </summary>
-    public partial class AbstractElementVisitor8 : Javax.Lang.Model.Util.AbstractElementVisitor7
+    public partial class AbstractElementVisitor9 : Javax.Lang.Model.Util.AbstractElementVisitor8
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public AbstractElementVisitor8() { }
+        public AbstractElementVisitor9() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public AbstractElementVisitor8(params object[] args) : base(args) { }
+        public AbstractElementVisitor9(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.lang.model.util.AbstractElementVisitor8";
+        public override string ClassName => "javax.lang.model.util.AbstractElementVisitor9";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -1212,23 +1142,23 @@ namespace Javax.Lang.Model.Util
     }
     #endregion
 
-    #region SimpleTypeVisitor9
+    #region SimpleAnnotationValueVisitor7
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/SimpleTypeVisitor9.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/SimpleAnnotationValueVisitor7.html
     /// </summary>
-    public partial class SimpleTypeVisitor9 : Javax.Lang.Model.Util.SimpleTypeVisitor8
+    public partial class SimpleAnnotationValueVisitor7 : Javax.Lang.Model.Util.SimpleAnnotationValueVisitor6
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public SimpleTypeVisitor9() { }
+        public SimpleAnnotationValueVisitor7() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public SimpleTypeVisitor9(params object[] args) : base(args) { }
+        public SimpleAnnotationValueVisitor7(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.lang.model.util.SimpleTypeVisitor9";
+        public override string ClassName => "javax.lang.model.util.SimpleAnnotationValueVisitor7";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -1247,23 +1177,23 @@ namespace Javax.Lang.Model.Util
     }
     #endregion
 
-    #region SimpleAnnotationValueVisitor8
+    #region SimpleTypeVisitor6
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/SimpleAnnotationValueVisitor8.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/SimpleTypeVisitor6.html
     /// </summary>
-    public partial class SimpleAnnotationValueVisitor8 : Javax.Lang.Model.Util.SimpleAnnotationValueVisitor7
+    public partial class SimpleTypeVisitor6 : Javax.Lang.Model.Util.AbstractTypeVisitor6
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public SimpleAnnotationValueVisitor8() { }
+        public SimpleTypeVisitor6() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public SimpleAnnotationValueVisitor8(params object[] args) : base(args) { }
+        public SimpleTypeVisitor6(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.lang.model.util.SimpleAnnotationValueVisitor8";
+        public override string ClassName => "javax.lang.model.util.SimpleTypeVisitor6";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -1282,58 +1212,23 @@ namespace Javax.Lang.Model.Util
     }
     #endregion
 
-    #region TypeKindVisitor6
+    #region AbstractTypeVisitor7
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/TypeKindVisitor6.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractTypeVisitor7.html
     /// </summary>
-    public partial class TypeKindVisitor6 : Javax.Lang.Model.Util.SimpleTypeVisitor6
+    public partial class AbstractTypeVisitor7 : Javax.Lang.Model.Util.AbstractTypeVisitor6
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public TypeKindVisitor6() { }
+        public AbstractTypeVisitor7() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public TypeKindVisitor6(params object[] args) : base(args) { }
+        public AbstractTypeVisitor7(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.lang.model.util.TypeKindVisitor6";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region AbstractAnnotationValueVisitor7
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractAnnotationValueVisitor7.html
-    /// </summary>
-    public partial class AbstractAnnotationValueVisitor7 : Javax.Lang.Model.Util.AbstractAnnotationValueVisitor6
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public AbstractAnnotationValueVisitor7() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public AbstractAnnotationValueVisitor7(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.lang.model.util.AbstractAnnotationValueVisitor7";
+        public override string ClassName => "javax.lang.model.util.AbstractTypeVisitor7";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -1387,26 +1282,131 @@ namespace Javax.Lang.Model.Util
     }
     #endregion
 
-    #region AbstractAnnotationValueVisitor9
+    #region SimpleAnnotationValueVisitor8
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractAnnotationValueVisitor9.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/SimpleAnnotationValueVisitor8.html
     /// </summary>
-    public partial class AbstractAnnotationValueVisitor9 : Javax.Lang.Model.Util.AbstractAnnotationValueVisitor8
+    public partial class SimpleAnnotationValueVisitor8 : Javax.Lang.Model.Util.SimpleAnnotationValueVisitor7
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public AbstractAnnotationValueVisitor9() { }
+        public SimpleAnnotationValueVisitor8() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public AbstractAnnotationValueVisitor9(params object[] args) : base(args) { }
+        public SimpleAnnotationValueVisitor8(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.lang.model.util.AbstractAnnotationValueVisitor9";
+        public override string ClassName => "javax.lang.model.util.SimpleAnnotationValueVisitor8";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region SimpleAnnotationValueVisitor6
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/SimpleAnnotationValueVisitor6.html
+    /// </summary>
+    public partial class SimpleAnnotationValueVisitor6 : Javax.Lang.Model.Util.AbstractAnnotationValueVisitor6
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public SimpleAnnotationValueVisitor6() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public SimpleAnnotationValueVisitor6(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.lang.model.util.SimpleAnnotationValueVisitor6";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region SimpleElementVisitor9
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/SimpleElementVisitor9.html
+    /// </summary>
+    public partial class SimpleElementVisitor9 : Javax.Lang.Model.Util.SimpleElementVisitor8
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public SimpleElementVisitor9() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public SimpleElementVisitor9(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.lang.model.util.SimpleElementVisitor9";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region ElementScanner7
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementScanner7.html
+    /// </summary>
+    public partial class ElementScanner7 : Javax.Lang.Model.Util.ElementScanner6
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public ElementScanner7() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public ElementScanner7(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.lang.model.util.ElementScanner7";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
         public override bool IsCloseable => false;

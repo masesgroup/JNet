@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing.Text
 {
     #region DefaultFormatter
@@ -31,7 +33,9 @@ namespace Javax.Swing.Text
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Lang.Cloneable(Javax.Swing.Text.DefaultFormatter t) => t.Cast<Java.Lang.Cloneable>();
+        public static implicit operator Java.Io.Serializable(Javax.Swing.Text.DefaultFormatter t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields

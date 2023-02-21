@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Security.Interfaces
 {
     #region XECPrivateKey
@@ -31,7 +33,9 @@ namespace Java.Security.Interfaces
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Security.Interfaces.XECKey(Java.Security.Interfaces.XECPrivateKey t) => t.Cast<Java.Security.Interfaces.XECKey>();
+        public static implicit operator Java.Security.PrivateKey(Java.Security.Interfaces.XECPrivateKey t) => t.Cast<Java.Security.PrivateKey>();
+        
         #endregion
 
         #region Fields

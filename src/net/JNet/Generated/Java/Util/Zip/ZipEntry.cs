@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Util.Zip
 {
     #region ZipEntry
@@ -28,16 +30,16 @@ namespace Java.Util.Zip
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#<init>(java.util.zip.ZipEntry)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#<init>(java.lang.String)
         /// </summary>
-        public ZipEntry(Java.Util.Zip.ZipEntry arg0)
+        public ZipEntry(string arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#<init>(java.lang.String)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#<init>(java.util.zip.ZipEntry)
         /// </summary>
-        public ZipEntry(string arg0)
+        public ZipEntry(Java.Util.Zip.ZipEntry arg0)
             : base(arg0)
         {
         }
@@ -45,7 +47,8 @@ namespace Java.Util.Zip
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Lang.Cloneable(Java.Util.Zip.ZipEntry t) => t.Cast<Java.Lang.Cloneable>();
+        
         #endregion
 
         #region Fields

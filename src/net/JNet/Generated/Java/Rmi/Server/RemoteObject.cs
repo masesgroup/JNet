@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Rmi.Server
 {
     #region RemoteObject
@@ -31,7 +33,9 @@ namespace Java.Rmi.Server
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Rmi.Remote(Java.Rmi.Server.RemoteObject t) => t.Cast<Java.Rmi.Remote>();
+        public static implicit operator Java.Io.Serializable(Java.Rmi.Server.RemoteObject t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields

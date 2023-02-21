@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing.Undo
 {
     #region UndoManager
@@ -31,7 +33,8 @@ namespace Javax.Swing.Undo
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Swing.Event.UndoableEditListener(Javax.Swing.Undo.UndoManager t) => t.Cast<Javax.Swing.Event.UndoableEditListener>();
+        
         #endregion
 
         #region Fields

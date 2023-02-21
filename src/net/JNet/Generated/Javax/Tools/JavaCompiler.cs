@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Tools
 {
     #region JavaCompiler
@@ -31,7 +33,9 @@ namespace Javax.Tools
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Tools.Tool(Javax.Tools.JavaCompiler t) => t.Cast<Javax.Tools.Tool>();
+        public static implicit operator Javax.Tools.OptionChecker(Javax.Tools.JavaCompiler t) => t.Cast<Javax.Tools.OptionChecker>();
+        
         #endregion
 
         #region Fields

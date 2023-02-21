@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Security.Interfaces
 {
     #region ECPublicKey
@@ -31,7 +33,9 @@ namespace Java.Security.Interfaces
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Security.PublicKey(Java.Security.Interfaces.ECPublicKey t) => t.Cast<Java.Security.PublicKey>();
+        public static implicit operator Java.Security.Interfaces.ECKey(Java.Security.Interfaces.ECPublicKey t) => t.Cast<Java.Security.Interfaces.ECKey>();
+        
         #endregion
 
         #region Fields

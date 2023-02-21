@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Nio.Channels
 {
     #region AsynchronousSocketChannel
@@ -31,7 +33,9 @@ namespace Java.Nio.Channels
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Nio.Channels.AsynchronousByteChannel(Java.Nio.Channels.AsynchronousSocketChannel t) => t.Cast<Java.Nio.Channels.AsynchronousByteChannel>();
+        public static implicit operator Java.Nio.Channels.NetworkChannel(Java.Nio.Channels.AsynchronousSocketChannel t) => t.Cast<Java.Nio.Channels.NetworkChannel>();
+        
         #endregion
 
         #region Fields

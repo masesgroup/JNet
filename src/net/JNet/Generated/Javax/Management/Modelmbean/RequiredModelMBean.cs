@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Management.Modelmbean
 {
     #region RequiredModelMBean
@@ -38,7 +40,10 @@ namespace Javax.Management.Modelmbean
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Management.Modelmbean.ModelMBean(Javax.Management.Modelmbean.RequiredModelMBean t) => t.Cast<Javax.Management.Modelmbean.ModelMBean>();
+        public static implicit operator Javax.Management.MBeanRegistration(Javax.Management.Modelmbean.RequiredModelMBean t) => t.Cast<Javax.Management.MBeanRegistration>();
+        public static implicit operator Javax.Management.NotificationEmitter(Javax.Management.Modelmbean.RequiredModelMBean t) => t.Cast<Javax.Management.NotificationEmitter>();
+        
         #endregion
 
         #region Fields

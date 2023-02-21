@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Sql.Rowset
 {
     #region FilteredRowSet
@@ -31,7 +33,8 @@ namespace Javax.Sql.Rowset
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Sql.Rowset.WebRowSet(Javax.Sql.Rowset.FilteredRowSet t) => t.Cast<Javax.Sql.Rowset.WebRowSet>();
+        
         #endregion
 
         #region Fields

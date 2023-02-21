@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Security.Auth
 {
     #region Subject
@@ -31,7 +33,8 @@ namespace Javax.Security.Auth
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Io.Serializable(Javax.Security.Auth.Subject t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields

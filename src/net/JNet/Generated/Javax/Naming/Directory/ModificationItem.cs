@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Naming.Directory
 {
     #region ModificationItem
@@ -38,7 +40,8 @@ namespace Javax.Naming.Directory
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Io.Serializable(Javax.Naming.Directory.ModificationItem t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields

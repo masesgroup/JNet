@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Rmi.Server
 {
     #region RMISocketFactory
@@ -31,7 +33,9 @@ namespace Java.Rmi.Server
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Rmi.Server.RMIClientSocketFactory(Java.Rmi.Server.RMISocketFactory t) => t.Cast<Java.Rmi.Server.RMIClientSocketFactory>();
+        public static implicit operator Java.Rmi.Server.RMIServerSocketFactory(Java.Rmi.Server.RMISocketFactory t) => t.Cast<Java.Rmi.Server.RMIServerSocketFactory>();
+        
         #endregion
 
         #region Fields

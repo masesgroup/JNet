@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Security.Spec
 {
     #region ECFieldF2m
@@ -52,7 +54,8 @@ namespace Java.Security.Spec
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Security.Spec.ECField(Java.Security.Spec.ECFieldF2m t) => t.Cast<Java.Security.Spec.ECField>();
+        
         #endregion
 
         #region Fields

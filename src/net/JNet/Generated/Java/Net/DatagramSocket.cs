@@ -21,19 +21,14 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Net
 {
     #region DatagramSocket
     public partial class DatagramSocket
     {
         #region Constructors
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#<init>(int) throws java.net.SocketException
-        /// </summary>
-        public DatagramSocket(int arg0)
-            : base(arg0)
-        {
-        }
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#<init>(int,java.net.InetAddress) throws java.net.SocketException
         /// </summary>
@@ -48,11 +43,19 @@ namespace Java.Net
             : base(arg0)
         {
         }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#<init>(int) throws java.net.SocketException
+        /// </summary>
+        public DatagramSocket(int arg0)
+            : base(arg0)
+        {
+        }
         
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Io.Closeable(Java.Net.DatagramSocket t) => t.Cast<Java.Io.Closeable>();
+        
         #endregion
 
         #region Fields

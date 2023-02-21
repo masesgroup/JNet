@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Net.Ssl
 {
     #region ExtendedSSLSession
@@ -31,7 +33,8 @@ namespace Javax.Net.Ssl
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Net.Ssl.SSLSession(Javax.Net.Ssl.ExtendedSSLSession t) => t.Cast<Javax.Net.Ssl.SSLSession>();
+        
         #endregion
 
         #region Fields

@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing
 {
     #region JColorChooser
@@ -28,16 +30,16 @@ namespace Javax.Swing
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#<init>(javax.swing.colorchooser.ColorSelectionModel)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#<init>(java.awt.Color)
         /// </summary>
-        public JColorChooser(Javax.Swing.Colorchooser.ColorSelectionModel arg0)
+        public JColorChooser(Java.Awt.Color arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#<init>(java.awt.Color)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#<init>(javax.swing.colorchooser.ColorSelectionModel)
         /// </summary>
-        public JColorChooser(Java.Awt.Color arg0)
+        public JColorChooser(Javax.Swing.Colorchooser.ColorSelectionModel arg0)
             : base(arg0)
         {
         }
@@ -45,7 +47,8 @@ namespace Javax.Swing
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.JColorChooser t) => t.Cast<Javax.Accessibility.Accessible>();
+        
         #endregion
 
         #region Fields

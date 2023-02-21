@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Management.Monitor
 {
     #region StringMonitor
@@ -31,7 +33,8 @@ namespace Javax.Management.Monitor
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Management.Monitor.StringMonitorMBean(Javax.Management.Monitor.StringMonitor t) => t.Cast<Javax.Management.Monitor.StringMonitorMBean>();
+        
         #endregion
 
         #region Fields

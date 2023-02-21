@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Security
 {
     #region CodeSource
@@ -45,7 +47,8 @@ namespace Java.Security
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Io.Serializable(Java.Security.CodeSource t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields

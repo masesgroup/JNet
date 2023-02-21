@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Security.Auth.Kerberos
 {
     #region EncryptionKey
@@ -38,7 +40,8 @@ namespace Javax.Security.Auth.Kerberos
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Crypto.SecretKey(Javax.Security.Auth.Kerberos.EncryptionKey t) => t.Cast<Javax.Crypto.SecretKey>();
+        
         #endregion
 
         #region Fields

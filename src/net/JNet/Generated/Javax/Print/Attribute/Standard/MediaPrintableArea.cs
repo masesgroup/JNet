@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Print.Attribute.Standard
 {
     #region MediaPrintableArea
@@ -45,7 +47,10 @@ namespace Javax.Print.Attribute.Standard
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Print.Attribute.DocAttribute(Javax.Print.Attribute.Standard.MediaPrintableArea t) => t.Cast<Javax.Print.Attribute.DocAttribute>();
+        public static implicit operator Javax.Print.Attribute.PrintRequestAttribute(Javax.Print.Attribute.Standard.MediaPrintableArea t) => t.Cast<Javax.Print.Attribute.PrintRequestAttribute>();
+        public static implicit operator Javax.Print.Attribute.PrintJobAttribute(Javax.Print.Attribute.Standard.MediaPrintableArea t) => t.Cast<Javax.Print.Attribute.PrintJobAttribute>();
+        
         #endregion
 
         #region Fields

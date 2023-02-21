@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Management.Remote
 {
     #region MBeanServerForwarder
@@ -31,7 +33,8 @@ namespace Javax.Management.Remote
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Management.MBeanServer(Javax.Management.Remote.MBeanServerForwarder t) => t.Cast<Javax.Management.MBeanServer>();
+        
         #endregion
 
         #region Fields

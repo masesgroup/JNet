@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Awt
 {
     #region GridBagConstraints
@@ -38,7 +40,9 @@ namespace Java.Awt
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Lang.Cloneable(Java.Awt.GridBagConstraints t) => t.Cast<Java.Lang.Cloneable>();
+        public static implicit operator Java.Io.Serializable(Java.Awt.GridBagConstraints t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields

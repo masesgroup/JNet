@@ -21,19 +21,14 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Util
 {
     #region LinkedHashMap
     public partial class LinkedHashMap
     {
         #region Constructors
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedHashMap.html#<init>(int,float,boolean)
-        /// </summary>
-        public LinkedHashMap(int arg0, float arg1, bool arg2)
-            : base(arg0, arg1, arg2)
-        {
-        }
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedHashMap.html#<init>(int)
         /// </summary>
@@ -46,6 +41,13 @@ namespace Java.Util
         /// </summary>
         public LinkedHashMap(int arg0, float arg1)
             : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedHashMap.html#<init>(int,float,boolean)
+        /// </summary>
+        public LinkedHashMap(int arg0, float arg1, bool arg2)
+            : base(arg0, arg1, arg2)
         {
         }
         

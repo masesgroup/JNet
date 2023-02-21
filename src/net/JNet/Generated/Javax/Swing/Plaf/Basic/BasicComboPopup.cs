@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing.Plaf.Basic
 {
     #region BasicComboPopup
@@ -31,7 +33,8 @@ namespace Javax.Swing.Plaf.Basic
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Swing.Plaf.Basic.ComboPopup(Javax.Swing.Plaf.Basic.BasicComboPopup t) => t.Cast<Javax.Swing.Plaf.Basic.ComboPopup>();
+        
         #endregion
 
         #region Fields
@@ -90,7 +93,8 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Class/Interface conversion operators
-
+            public static implicit operator Javax.Swing.Event.ListDataListener(Javax.Swing.Plaf.Basic.BasicComboPopup.ListDataHandler t) => t.Cast<Javax.Swing.Event.ListDataListener>();
+            
             #endregion
 
             #region Fields

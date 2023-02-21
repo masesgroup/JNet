@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Lang.Annotation
 {
     #region Retention
@@ -31,7 +33,8 @@ namespace Java.Lang.Annotation
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Lang.Annotation.Annotation(Java.Lang.Annotation.Retention t) => t.Cast<Java.Lang.Annotation.Annotation>();
+        
         #endregion
 
         #region Fields

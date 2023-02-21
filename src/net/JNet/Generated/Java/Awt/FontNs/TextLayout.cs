@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Awt.FontNs
 {
     #region TextLayout
@@ -45,7 +47,8 @@ namespace Java.Awt.FontNs
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Lang.Cloneable(Java.Awt.FontNs.TextLayout t) => t.Cast<Java.Lang.Cloneable>();
+        
         #endregion
 
         #region Fields

@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Xml.Transform.Sax
 {
     #region SAXSource
@@ -45,7 +47,8 @@ namespace Javax.Xml.Transform.Sax
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Xml.Transform.Source(Javax.Xml.Transform.Sax.SAXSource t) => t.Cast<Javax.Xml.Transform.Source>();
+        
         #endregion
 
         #region Fields

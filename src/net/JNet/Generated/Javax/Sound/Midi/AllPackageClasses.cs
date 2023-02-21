@@ -23,23 +23,23 @@
 
 namespace Javax.Sound.Midi
 {
-    #region MidiEvent
+    #region MidiSystem
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiEvent.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiSystem.html
     /// </summary>
-    public partial class MidiEvent : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MidiEvent>
+    public partial class MidiSystem : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MidiSystem>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public MidiEvent() { }
+        public MidiSystem() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public MidiEvent(params object[] args) : base(args) { }
+        public MidiSystem(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.sound.midi.MidiEvent";
+        public override string ClassName => "javax.sound.midi.MidiSystem";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -127,246 +127,23 @@ namespace Javax.Sound.Midi
     }
     #endregion
 
-    #region MidiDeviceTransmitter
+    #region ShortMessage
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiDeviceTransmitter.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/ShortMessage.html
     /// </summary>
-    public partial class MidiDeviceTransmitter : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MidiDeviceTransmitter>
+    public partial class ShortMessage : Javax.Sound.Midi.MidiMessage
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public MidiDeviceTransmitter() { }
+        public ShortMessage() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public MidiDeviceTransmitter(params object[] args) : base(args) { }
+        public ShortMessage(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.sound.midi.MidiDeviceTransmitter";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region MidiMessage
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiMessage.html
-    /// </summary>
-    public partial class MidiMessage : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MidiMessage>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public MidiMessage() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public MidiMessage(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.sound.midi.MidiMessage";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region MetaEventListener
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MetaEventListener.html
-    /// </summary>
-    public partial class MetaEventListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
-    {
-#warning Remember to build the body class for event listener
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region VoiceStatus
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/VoiceStatus.html
-    /// </summary>
-    public partial class VoiceStatus : MASES.JCOBridge.C2JBridge.JVMBridgeBase<VoiceStatus>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public VoiceStatus() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public VoiceStatus(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.sound.midi.VoiceStatus";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region MidiFileFormat
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiFileFormat.html
-    /// </summary>
-    public partial class MidiFileFormat : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MidiFileFormat>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public MidiFileFormat() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public MidiFileFormat(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.sound.midi.MidiFileFormat";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region MidiChannel
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiChannel.html
-    /// </summary>
-    public partial class MidiChannel : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MidiChannel>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public MidiChannel() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public MidiChannel(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.sound.midi.MidiChannel";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region Transmitter
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Transmitter.html
-    /// </summary>
-    public partial class Transmitter : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Transmitter>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public Transmitter() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public Transmitter(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.sound.midi.Transmitter";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region SysexMessage
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/SysexMessage.html
-    /// </summary>
-    public partial class SysexMessage : Javax.Sound.Midi.MidiMessage
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public SysexMessage() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public SysexMessage(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.sound.midi.SysexMessage";
+        public override string ClassName => "javax.sound.midi.ShortMessage";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -420,23 +197,23 @@ namespace Javax.Sound.Midi
     }
     #endregion
 
-    #region Track
+    #region Patch
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Track.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Patch.html
     /// </summary>
-    public partial class Track : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Track>
+    public partial class Patch : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Patch>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public Track() { }
+        public Patch() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public Track(params object[] args) : base(args) { }
+        public Patch(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.sound.midi.Track";
+        public override string ClassName => "javax.sound.midi.Patch";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -455,23 +232,179 @@ namespace Javax.Sound.Midi
     }
     #endregion
 
-    #region Soundbank
+    #region Receiver
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Soundbank.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Receiver.html
     /// </summary>
-    public partial class Soundbank : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Soundbank>
+    public partial class Receiver : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Receiver>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public Soundbank() { }
+        public Receiver() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public Soundbank(params object[] args) : base(args) { }
+        public Receiver(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.sound.midi.Soundbank";
+        public override string ClassName => "javax.sound.midi.Receiver";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region Transmitter
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Transmitter.html
+    /// </summary>
+    public partial class Transmitter : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Transmitter>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public Transmitter() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public Transmitter(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.sound.midi.Transmitter";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region SoundbankResource
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/SoundbankResource.html
+    /// </summary>
+    public partial class SoundbankResource : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SoundbankResource>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public SoundbankResource() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public SoundbankResource(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.sound.midi.SoundbankResource";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region InvalidMidiDataException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/InvalidMidiDataException.html
+    /// </summary>
+    public partial class InvalidMidiDataException : Java.Lang.Exception
+    {
+        public InvalidMidiDataException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.sound.midi.InvalidMidiDataException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region Sequence
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequence.html
+    /// </summary>
+    public partial class Sequence : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Sequence>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public Sequence() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public Sequence(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.sound.midi.Sequence";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region Synthesizer
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Synthesizer.html
+    /// </summary>
+    public partial class Synthesizer : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Synthesizer>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public Synthesizer() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public Synthesizer(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.sound.midi.Synthesizer";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -519,6 +452,140 @@ namespace Javax.Sound.Midi
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region MidiUnavailableException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiUnavailableException.html
+    /// </summary>
+    public partial class MidiUnavailableException : Java.Lang.Exception
+    {
+        public MidiUnavailableException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.sound.midi.MidiUnavailableException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region VoiceStatus
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/VoiceStatus.html
+    /// </summary>
+    public partial class VoiceStatus : MASES.JCOBridge.C2JBridge.JVMBridgeBase<VoiceStatus>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public VoiceStatus() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public VoiceStatus(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.sound.midi.VoiceStatus";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region MidiChannel
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiChannel.html
+    /// </summary>
+    public partial class MidiChannel : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MidiChannel>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public MidiChannel() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public MidiChannel(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.sound.midi.MidiChannel";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region SysexMessage
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/SysexMessage.html
+    /// </summary>
+    public partial class SysexMessage : Javax.Sound.Midi.MidiMessage
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public SysexMessage() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public SysexMessage(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.sound.midi.SysexMessage";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region MetaEventListener
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MetaEventListener.html
+    /// </summary>
+    public partial class MetaEventListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    {
+#warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -594,55 +661,23 @@ namespace Javax.Sound.Midi
     }
     #endregion
 
-    #region MidiUnavailableException
+    #region MidiEvent
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiUnavailableException.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiEvent.html
     /// </summary>
-    public partial class MidiUnavailableException : Java.Lang.Exception
-    {
-        public MidiUnavailableException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.sound.midi.MidiUnavailableException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region InvalidMidiDataException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/InvalidMidiDataException.html
-    /// </summary>
-    public partial class InvalidMidiDataException : Java.Lang.Exception
-    {
-        public InvalidMidiDataException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.sound.midi.InvalidMidiDataException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region Sequence
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequence.html
-    /// </summary>
-    public partial class Sequence : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Sequence>
+    public partial class MidiEvent : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MidiEvent>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public Sequence() { }
+        public MidiEvent() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public Sequence(params object[] args) : base(args) { }
+        public MidiEvent(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.sound.midi.Sequence";
+        public override string ClassName => "javax.sound.midi.MidiEvent";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -661,23 +696,36 @@ namespace Javax.Sound.Midi
     }
     #endregion
 
-    #region Patch
+    #region ControllerEventListener
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Patch.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/ControllerEventListener.html
     /// </summary>
-    public partial class Patch : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Patch>
+    public partial class ControllerEventListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    {
+#warning Remember to build the body class for event listener
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region MidiFileFormat
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiFileFormat.html
+    /// </summary>
+    public partial class MidiFileFormat : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MidiFileFormat>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public Patch() { }
+        public MidiFileFormat() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public Patch(params object[] args) : base(args) { }
+        public MidiFileFormat(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.sound.midi.Patch";
+        public override string ClassName => "javax.sound.midi.MidiFileFormat";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -696,26 +744,26 @@ namespace Javax.Sound.Midi
     }
     #endregion
 
-    #region ShortMessage
+    #region MidiMessage
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/ShortMessage.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiMessage.html
     /// </summary>
-    public partial class ShortMessage : Javax.Sound.Midi.MidiMessage
+    public partial class MidiMessage : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MidiMessage>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ShortMessage() { }
+        public MidiMessage() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public ShortMessage(params object[] args) : base(args) { }
+        public MidiMessage(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.sound.midi.ShortMessage";
+        public override string ClassName => "javax.sound.midi.MidiMessage";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
+        public override bool IsAbstract => true;
 
         /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
         public override bool IsCloseable => false;
@@ -731,23 +779,93 @@ namespace Javax.Sound.Midi
     }
     #endregion
 
-    #region MidiSystem
+    #region Soundbank
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiSystem.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Soundbank.html
     /// </summary>
-    public partial class MidiSystem : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MidiSystem>
+    public partial class Soundbank : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Soundbank>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public MidiSystem() { }
+        public Soundbank() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public MidiSystem(params object[] args) : base(args) { }
+        public Soundbank(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.sound.midi.MidiSystem";
+        public override string ClassName => "javax.sound.midi.Soundbank";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region MidiDeviceTransmitter
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiDeviceTransmitter.html
+    /// </summary>
+    public partial class MidiDeviceTransmitter : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MidiDeviceTransmitter>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public MidiDeviceTransmitter() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public MidiDeviceTransmitter(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.sound.midi.MidiDeviceTransmitter";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region Track
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Track.html
+    /// </summary>
+    public partial class Track : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Track>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public Track() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public Track(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.sound.midi.Track";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -792,124 +910,6 @@ namespace Javax.Sound.Midi
 
         /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
         public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region ControllerEventListener
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/ControllerEventListener.html
-    /// </summary>
-    public partial class ControllerEventListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
-    {
-#warning Remember to build the body class for event listener
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region SoundbankResource
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/SoundbankResource.html
-    /// </summary>
-    public partial class SoundbankResource : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SoundbankResource>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public SoundbankResource() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public SoundbankResource(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.sound.midi.SoundbankResource";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region Receiver
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Receiver.html
-    /// </summary>
-    public partial class Receiver : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Receiver>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public Receiver() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public Receiver(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.sound.midi.Receiver";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region Synthesizer
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Synthesizer.html
-    /// </summary>
-    public partial class Synthesizer : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Synthesizer>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public Synthesizer() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public Synthesizer(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.sound.midi.Synthesizer";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;

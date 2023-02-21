@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Management
 {
     #region StandardEmitterMBean
@@ -31,7 +33,8 @@ namespace Javax.Management
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Management.NotificationEmitter(Javax.Management.StandardEmitterMBean t) => t.Cast<Javax.Management.NotificationEmitter>();
+        
         #endregion
 
         #region Fields

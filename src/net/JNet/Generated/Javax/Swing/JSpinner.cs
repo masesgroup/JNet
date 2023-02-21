@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing
 {
     #region JSpinner
@@ -38,7 +40,8 @@ namespace Javax.Swing
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.JSpinner t) => t.Cast<Javax.Accessibility.Accessible>();
+        
         #endregion
 
         #region Fields
@@ -124,172 +127,6 @@ namespace Javax.Swing
         #endregion
 
         #region Nested classes
-        #region DateEditor
-        public partial class DateEditor
-        {
-            #region Constructors
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.DateEditor.html#<init>(javax.swing.JSpinner,java.lang.String)
-            /// </summary>
-            public DateEditor(Javax.Swing.JSpinner arg0, string arg1)
-                : base(arg0, arg1)
-            {
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.DateEditor.html#<init>(javax.swing.JSpinner)
-            /// </summary>
-            public DateEditor(Javax.Swing.JSpinner arg0)
-                : base(arg0)
-            {
-            }
-            
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.DateEditor.html#getFormat() 
-            /// </summary>
-            public Java.Text.SimpleDateFormat Format
-            {
-                get { return IExecute<Java.Text.SimpleDateFormat>("getFormat"); }
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.DateEditor.html#getModel() 
-            /// </summary>
-            public Javax.Swing.SpinnerDateModel Model
-            {
-                get { return IExecute<Javax.Swing.SpinnerDateModel>("getModel"); }
-            }
-            
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region DefaultEditor
-        public partial class DefaultEditor
-        {
-            #region Constructors
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.DefaultEditor.html#<init>(javax.swing.JSpinner)
-            /// </summary>
-            public DefaultEditor(Javax.Swing.JSpinner arg0)
-                : base(arg0)
-            {
-            }
-            
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.DefaultEditor.html#getSpinner() 
-            /// </summary>
-            public Javax.Swing.JSpinner Spinner
-            {
-                get { return IExecute<Javax.Swing.JSpinner>("getSpinner"); }
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.DefaultEditor.html#getTextField() 
-            /// </summary>
-            public Javax.Swing.JFormattedTextField TextField
-            {
-                get { return IExecute<Javax.Swing.JFormattedTextField>("getTextField"); }
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.DefaultEditor.html#minimumLayoutSize(java.awt.Container)
-            /// </summary>
-            public Java.Awt.Dimension MinimumLayoutSize(Java.Awt.Container arg0)
-            {
-                return IExecute<Java.Awt.Dimension>("minimumLayoutSize", arg0);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.DefaultEditor.html#preferredLayoutSize(java.awt.Container)
-            /// </summary>
-            public Java.Awt.Dimension PreferredLayoutSize(Java.Awt.Container arg0)
-            {
-                return IExecute<Java.Awt.Dimension>("preferredLayoutSize", arg0);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.DefaultEditor.html#addLayoutComponent(java.lang.String,java.awt.Component)
-            /// </summary>
-            public void AddLayoutComponent(string arg0, Java.Awt.Component arg1)
-            {
-                IExecute("addLayoutComponent", arg0, arg1);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.DefaultEditor.html#commitEdit() throws java.text.ParseException
-            /// </summary>
-            public void CommitEdit()
-            {
-                IExecute("commitEdit");
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.DefaultEditor.html#dismiss(javax.swing.JSpinner)
-            /// </summary>
-            public void Dismiss(Javax.Swing.JSpinner arg0)
-            {
-                IExecute("dismiss", arg0);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.DefaultEditor.html#layoutContainer(java.awt.Container)
-            /// </summary>
-            public void LayoutContainer(Java.Awt.Container arg0)
-            {
-                IExecute("layoutContainer", arg0);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.DefaultEditor.html#propertyChange(java.beans.PropertyChangeEvent)
-            /// </summary>
-            public void PropertyChange(Java.Beans.PropertyChangeEvent arg0)
-            {
-                IExecute("propertyChange", arg0);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.DefaultEditor.html#removeLayoutComponent(java.awt.Component)
-            /// </summary>
-            public void RemoveLayoutComponent(Java.Awt.Component arg0)
-            {
-                IExecute("removeLayoutComponent", arg0);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.DefaultEditor.html#stateChanged(javax.swing.event.ChangeEvent)
-            /// </summary>
-            public void StateChanged(Javax.Swing.Event.ChangeEvent arg0)
-            {
-                IExecute("stateChanged", arg0);
-            }
-            
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region ListEditor
         public partial class ListEditor
         {
@@ -378,6 +215,175 @@ namespace Javax.Swing
             public Javax.Swing.SpinnerNumberModel Model
             {
                 get { return IExecute<Javax.Swing.SpinnerNumberModel>("getModel"); }
+            }
+            
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region DateEditor
+        public partial class DateEditor
+        {
+            #region Constructors
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.DateEditor.html#<init>(javax.swing.JSpinner,java.lang.String)
+            /// </summary>
+            public DateEditor(Javax.Swing.JSpinner arg0, string arg1)
+                : base(arg0, arg1)
+            {
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.DateEditor.html#<init>(javax.swing.JSpinner)
+            /// </summary>
+            public DateEditor(Javax.Swing.JSpinner arg0)
+                : base(arg0)
+            {
+            }
+            
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.DateEditor.html#getFormat() 
+            /// </summary>
+            public Java.Text.SimpleDateFormat Format
+            {
+                get { return IExecute<Java.Text.SimpleDateFormat>("getFormat"); }
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.DateEditor.html#getModel() 
+            /// </summary>
+            public Javax.Swing.SpinnerDateModel Model
+            {
+                get { return IExecute<Javax.Swing.SpinnerDateModel>("getModel"); }
+            }
+            
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region DefaultEditor
+        public partial class DefaultEditor
+        {
+            #region Constructors
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.DefaultEditor.html#<init>(javax.swing.JSpinner)
+            /// </summary>
+            public DefaultEditor(Javax.Swing.JSpinner arg0)
+                : base(arg0)
+            {
+            }
+            
+            #endregion
+
+            #region Class/Interface conversion operators
+            public static implicit operator Javax.Swing.Event.ChangeListener(Javax.Swing.JSpinner.DefaultEditor t) => t.Cast<Javax.Swing.Event.ChangeListener>();
+            public static implicit operator Java.Beans.PropertyChangeListener(Javax.Swing.JSpinner.DefaultEditor t) => t.Cast<Java.Beans.PropertyChangeListener>();
+            public static implicit operator Java.Awt.LayoutManager(Javax.Swing.JSpinner.DefaultEditor t) => t.Cast<Java.Awt.LayoutManager>();
+            
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.DefaultEditor.html#getSpinner() 
+            /// </summary>
+            public Javax.Swing.JSpinner Spinner
+            {
+                get { return IExecute<Javax.Swing.JSpinner>("getSpinner"); }
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.DefaultEditor.html#getTextField() 
+            /// </summary>
+            public Javax.Swing.JFormattedTextField TextField
+            {
+                get { return IExecute<Javax.Swing.JFormattedTextField>("getTextField"); }
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.DefaultEditor.html#minimumLayoutSize(java.awt.Container)
+            /// </summary>
+            public Java.Awt.Dimension MinimumLayoutSize(Java.Awt.Container arg0)
+            {
+                return IExecute<Java.Awt.Dimension>("minimumLayoutSize", arg0);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.DefaultEditor.html#preferredLayoutSize(java.awt.Container)
+            /// </summary>
+            public Java.Awt.Dimension PreferredLayoutSize(Java.Awt.Container arg0)
+            {
+                return IExecute<Java.Awt.Dimension>("preferredLayoutSize", arg0);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.DefaultEditor.html#addLayoutComponent(java.lang.String,java.awt.Component)
+            /// </summary>
+            public void AddLayoutComponent(string arg0, Java.Awt.Component arg1)
+            {
+                IExecute("addLayoutComponent", arg0, arg1);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.DefaultEditor.html#commitEdit() throws java.text.ParseException
+            /// </summary>
+            public void CommitEdit()
+            {
+                IExecute("commitEdit");
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.DefaultEditor.html#dismiss(javax.swing.JSpinner)
+            /// </summary>
+            public void Dismiss(Javax.Swing.JSpinner arg0)
+            {
+                IExecute("dismiss", arg0);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.DefaultEditor.html#layoutContainer(java.awt.Container)
+            /// </summary>
+            public void LayoutContainer(Java.Awt.Container arg0)
+            {
+                IExecute("layoutContainer", arg0);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.DefaultEditor.html#propertyChange(java.beans.PropertyChangeEvent)
+            /// </summary>
+            public void PropertyChange(Java.Beans.PropertyChangeEvent arg0)
+            {
+                IExecute("propertyChange", arg0);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.DefaultEditor.html#removeLayoutComponent(java.awt.Component)
+            /// </summary>
+            public void RemoveLayoutComponent(Java.Awt.Component arg0)
+            {
+                IExecute("removeLayoutComponent", arg0);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.DefaultEditor.html#stateChanged(javax.swing.event.ChangeEvent)
+            /// </summary>
+            public void StateChanged(Javax.Swing.Event.ChangeEvent arg0)
+            {
+                IExecute("stateChanged", arg0);
             }
             
             #endregion

@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Xml.Stream.Events
 {
     #region XMLEvent
@@ -31,7 +33,8 @@ namespace Javax.Xml.Stream.Events
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Xml.Stream.XMLStreamConstants(Javax.Xml.Stream.Events.XMLEvent t) => t.Cast<Javax.Xml.Stream.XMLStreamConstants>();
+        
         #endregion
 
         #region Fields

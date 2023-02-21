@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Text
 {
     #region StringCharacterIterator
@@ -52,7 +54,8 @@ namespace Java.Text
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Text.CharacterIterator(Java.Text.StringCharacterIterator t) => t.Cast<Java.Text.CharacterIterator>();
+        
         #endregion
 
         #region Fields

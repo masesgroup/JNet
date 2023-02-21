@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Nio
 {
     #region CharBuffer
@@ -31,7 +33,10 @@ namespace Java.Nio
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Lang.Appendable(Java.Nio.CharBuffer t) => t.Cast<Java.Lang.Appendable>();
+        public static implicit operator Java.Lang.CharSequence(Java.Nio.CharBuffer t) => t.Cast<Java.Lang.CharSequence>();
+        public static implicit operator Java.Lang.Readable(Java.Nio.CharBuffer t) => t.Cast<Java.Lang.Readable>();
+        
         #endregion
 
         #region Fields

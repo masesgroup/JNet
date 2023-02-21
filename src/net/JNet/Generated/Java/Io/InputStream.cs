@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Io
 {
     #region InputStream
@@ -31,7 +33,8 @@ namespace Java.Io
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Io.Closeable(Java.Io.InputStream t) => t.Cast<Java.Io.Closeable>();
+        
         #endregion
 
         #region Fields

@@ -23,23 +23,23 @@
 
 namespace Javax.Management.Remote.Rmi
 {
-    #region RMIJRMPServerImpl
+    #region RMIConnector
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIJRMPServerImpl.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnector.html
     /// </summary>
-    public partial class RMIJRMPServerImpl : Javax.Management.Remote.Rmi.RMIServerImpl
+    public partial class RMIConnector : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RMIConnector>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public RMIJRMPServerImpl() { }
+        public RMIConnector() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public RMIJRMPServerImpl(params object[] args) : base(args) { }
+        public RMIConnector(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.management.remote.rmi.RMIJRMPServerImpl";
+        public override string ClassName => "javax.management.remote.rmi.RMIConnector";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -58,26 +58,26 @@ namespace Javax.Management.Remote.Rmi
     }
     #endregion
 
-    #region RMIServerImpl_Stub
+    #region RMIServerImpl
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIServerImpl_Stub.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIServerImpl.html
     /// </summary>
-    public partial class RMIServerImpl_Stub : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RMIServerImpl_Stub>
+    public partial class RMIServerImpl : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RMIServerImpl>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public RMIServerImpl_Stub() { }
+        public RMIServerImpl() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public RMIServerImpl_Stub(params object[] args) : base(args) { }
+        public RMIServerImpl(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.management.remote.rmi.RMIServerImpl_Stub";
+        public override string ClassName => "javax.management.remote.rmi.RMIServerImpl";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
+        public override bool IsAbstract => true;
 
         /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
         public override bool IsCloseable => false;
@@ -110,41 +110,6 @@ namespace Javax.Management.Remote.Rmi
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "javax.management.remote.rmi.RMIConnectionImpl";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region RMIConnector
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnector.html
-    /// </summary>
-    public partial class RMIConnector : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RMIConnector>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public RMIConnector() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public RMIConnector(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.management.remote.rmi.RMIConnector";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -233,26 +198,61 @@ namespace Javax.Management.Remote.Rmi
     }
     #endregion
 
-    #region RMIServerImpl
+    #region RMIConnectionImpl_Stub
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIServerImpl.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl_Stub.html
     /// </summary>
-    public partial class RMIServerImpl : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RMIServerImpl>
+    public partial class RMIConnectionImpl_Stub : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RMIConnectionImpl_Stub>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public RMIServerImpl() { }
+        public RMIConnectionImpl_Stub() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public RMIServerImpl(params object[] args) : base(args) { }
+        public RMIConnectionImpl_Stub(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.management.remote.rmi.RMIServerImpl";
+        public override string ClassName => "javax.management.remote.rmi.RMIConnectionImpl_Stub";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region RMIJRMPServerImpl
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIJRMPServerImpl.html
+    /// </summary>
+    public partial class RMIJRMPServerImpl : Javax.Management.Remote.Rmi.RMIServerImpl
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public RMIJRMPServerImpl() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public RMIJRMPServerImpl(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.management.remote.rmi.RMIJRMPServerImpl";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
         public override bool IsCloseable => false;
@@ -303,23 +303,23 @@ namespace Javax.Management.Remote.Rmi
     }
     #endregion
 
-    #region RMIConnectionImpl_Stub
+    #region RMIServerImpl_Stub
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl_Stub.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIServerImpl_Stub.html
     /// </summary>
-    public partial class RMIConnectionImpl_Stub : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RMIConnectionImpl_Stub>
+    public partial class RMIServerImpl_Stub : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RMIServerImpl_Stub>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public RMIConnectionImpl_Stub() { }
+        public RMIServerImpl_Stub() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public RMIConnectionImpl_Stub(params object[] args) : base(args) { }
+        public RMIServerImpl_Stub(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.management.remote.rmi.RMIConnectionImpl_Stub";
+        public override string ClassName => "javax.management.remote.rmi.RMIServerImpl_Stub";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;

@@ -23,26 +23,96 @@
 
 namespace Javax.Naming.Ldap
 {
-    #region StartTlsResponse
+    #region StartTlsRequest
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/StartTlsResponse.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/StartTlsRequest.html
     /// </summary>
-    public partial class StartTlsResponse : MASES.JCOBridge.C2JBridge.JVMBridgeBase<StartTlsResponse>
+    public partial class StartTlsRequest : MASES.JCOBridge.C2JBridge.JVMBridgeBase<StartTlsRequest>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public StartTlsResponse() { }
+        public StartTlsRequest() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public StartTlsResponse(params object[] args) : base(args) { }
+        public StartTlsRequest(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.ldap.StartTlsResponse";
+        public override string ClassName => "javax.naming.ldap.StartTlsRequest";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region Rdn
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Rdn.html
+    /// </summary>
+    public partial class Rdn : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Rdn>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public Rdn() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public Rdn(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.naming.ldap.Rdn";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region ManageReferralControl
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/ManageReferralControl.html
+    /// </summary>
+    public partial class ManageReferralControl : Javax.Naming.Ldap.BasicControl
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public ManageReferralControl() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public ManageReferralControl(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.naming.ldap.ManageReferralControl";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
         public override bool IsCloseable => false;
@@ -128,23 +198,58 @@ namespace Javax.Naming.Ldap
     }
     #endregion
 
-    #region Rdn
+    #region LdapContext
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Rdn.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapContext.html
     /// </summary>
-    public partial class Rdn : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Rdn>
+    public partial class LdapContext : MASES.JCOBridge.C2JBridge.JVMBridgeBase<LdapContext>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public Rdn() { }
+        public LdapContext() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public Rdn(params object[] args) : base(args) { }
+        public LdapContext(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.ldap.Rdn";
+        public override string ClassName => "javax.naming.ldap.LdapContext";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region PagedResultsControl
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/PagedResultsControl.html
+    /// </summary>
+    public partial class PagedResultsControl : Javax.Naming.Ldap.BasicControl
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public PagedResultsControl() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public PagedResultsControl(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.naming.ldap.PagedResultsControl";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -198,26 +303,42 @@ namespace Javax.Naming.Ldap
     }
     #endregion
 
-    #region SortKey
+    #region LdapReferralException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/SortKey.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapReferralException.html
     /// </summary>
-    public partial class SortKey : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SortKey>
+    public partial class LdapReferralException : Javax.Naming.ReferralException
+    {
+        public LdapReferralException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.naming.ldap.LdapReferralException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region StartTlsResponse
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/StartTlsResponse.html
+    /// </summary>
+    public partial class StartTlsResponse : MASES.JCOBridge.C2JBridge.JVMBridgeBase<StartTlsResponse>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public SortKey() { }
+        public StartTlsResponse() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public SortKey(params object[] args) : base(args) { }
+        public StartTlsResponse(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.ldap.SortKey";
+        public override string ClassName => "javax.naming.ldap.StartTlsResponse";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
+        public override bool IsAbstract => true;
 
         /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
         public override bool IsCloseable => false;
@@ -233,140 +354,13 @@ namespace Javax.Naming.Ldap
     }
     #endregion
 
-    #region StartTlsRequest
+    #region UnsolicitedNotificationListener
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/StartTlsRequest.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/UnsolicitedNotificationListener.html
     /// </summary>
-    public partial class StartTlsRequest : MASES.JCOBridge.C2JBridge.JVMBridgeBase<StartTlsRequest>
+    public partial class UnsolicitedNotificationListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public StartTlsRequest() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public StartTlsRequest(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.ldap.StartTlsRequest";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region LdapContext
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapContext.html
-    /// </summary>
-    public partial class LdapContext : MASES.JCOBridge.C2JBridge.JVMBridgeBase<LdapContext>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public LdapContext() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public LdapContext(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.ldap.LdapContext";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region Control
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Control.html
-    /// </summary>
-    public partial class Control : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Control>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public Control() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public Control(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.ldap.Control";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region HasControls
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/HasControls.html
-    /// </summary>
-    public partial class HasControls : MASES.JCOBridge.C2JBridge.JVMBridgeBase<HasControls>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public HasControls() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public HasControls(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.ldap.HasControls";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
+#warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -443,23 +437,58 @@ namespace Javax.Naming.Ldap
     }
     #endregion
 
-    #region ExtendedRequest
+    #region SortKey
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/ExtendedRequest.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/SortKey.html
     /// </summary>
-    public partial class ExtendedRequest : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ExtendedRequest>
+    public partial class SortKey : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SortKey>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ExtendedRequest() { }
+        public SortKey() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public ExtendedRequest(params object[] args) : base(args) { }
+        public SortKey(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.ldap.ExtendedRequest";
+        public override string ClassName => "javax.naming.ldap.SortKey";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region HasControls
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/HasControls.html
+    /// </summary>
+    public partial class HasControls : MASES.JCOBridge.C2JBridge.JVMBridgeBase<HasControls>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public HasControls() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public HasControls(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.naming.ldap.HasControls";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -469,175 +498,6 @@ namespace Javax.Naming.Ldap
 
         /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
         public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region SortControl
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/SortControl.html
-    /// </summary>
-    public partial class SortControl : Javax.Naming.Ldap.BasicControl
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public SortControl() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public SortControl(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.ldap.SortControl";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region BasicControl
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/BasicControl.html
-    /// </summary>
-    public partial class BasicControl : MASES.JCOBridge.C2JBridge.JVMBridgeBase<BasicControl>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public BasicControl() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public BasicControl(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.ldap.BasicControl";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region ExtendedResponse
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/ExtendedResponse.html
-    /// </summary>
-    public partial class ExtendedResponse : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ExtendedResponse>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public ExtendedResponse() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public ExtendedResponse(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.ldap.ExtendedResponse";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region LdapReferralException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapReferralException.html
-    /// </summary>
-    public partial class LdapReferralException : Javax.Naming.ReferralException
-    {
-        public LdapReferralException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.ldap.LdapReferralException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region UnsolicitedNotificationListener
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/UnsolicitedNotificationListener.html
-    /// </summary>
-    public partial class UnsolicitedNotificationListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
-    {
-#warning Remember to build the body class for event listener
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region PagedResultsControl
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/PagedResultsControl.html
-    /// </summary>
-    public partial class PagedResultsControl : Javax.Naming.Ldap.BasicControl
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public PagedResultsControl() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public PagedResultsControl(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.ldap.PagedResultsControl";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;
@@ -717,23 +577,93 @@ namespace Javax.Naming.Ldap
     }
     #endregion
 
-    #region ManageReferralControl
+    #region ExtendedResponse
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/ManageReferralControl.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/ExtendedResponse.html
     /// </summary>
-    public partial class ManageReferralControl : Javax.Naming.Ldap.BasicControl
+    public partial class ExtendedResponse : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ExtendedResponse>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ManageReferralControl() { }
+        public ExtendedResponse() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public ManageReferralControl(params object[] args) : base(args) { }
+        public ExtendedResponse(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.ldap.ManageReferralControl";
+        public override string ClassName => "javax.naming.ldap.ExtendedResponse";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region Control
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Control.html
+    /// </summary>
+    public partial class Control : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Control>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public Control() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public Control(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.naming.ldap.Control";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region BasicControl
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/BasicControl.html
+    /// </summary>
+    public partial class BasicControl : MASES.JCOBridge.C2JBridge.JVMBridgeBase<BasicControl>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public BasicControl() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public BasicControl(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.naming.ldap.BasicControl";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -743,6 +673,76 @@ namespace Javax.Naming.Ldap
 
         /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
         public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region SortControl
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/SortControl.html
+    /// </summary>
+    public partial class SortControl : Javax.Naming.Ldap.BasicControl
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public SortControl() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public SortControl(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.naming.ldap.SortControl";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region ExtendedRequest
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/ExtendedRequest.html
+    /// </summary>
+    public partial class ExtendedRequest : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ExtendedRequest>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public ExtendedRequest() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public ExtendedRequest(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.naming.ldap.ExtendedRequest";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;

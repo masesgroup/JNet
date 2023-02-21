@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Util
 {
     #region Calendar
@@ -31,7 +33,9 @@ namespace Java.Util
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Io.Serializable(Java.Util.Calendar t) => t.Cast<Java.Io.Serializable>();
+        public static implicit operator Java.Lang.Cloneable(Java.Util.Calendar t) => t.Cast<Java.Lang.Cloneable>();
+        
         #endregion
 
         #region Fields

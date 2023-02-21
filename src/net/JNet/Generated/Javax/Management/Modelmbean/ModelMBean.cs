@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Management.Modelmbean
 {
     #region ModelMBean
@@ -31,7 +33,10 @@ namespace Javax.Management.Modelmbean
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Management.DynamicMBean(Javax.Management.Modelmbean.ModelMBean t) => t.Cast<Javax.Management.DynamicMBean>();
+        public static implicit operator Javax.Management.PersistentMBean(Javax.Management.Modelmbean.ModelMBean t) => t.Cast<Javax.Management.PersistentMBean>();
+        public static implicit operator Javax.Management.Modelmbean.ModelMBeanNotificationBroadcaster(Javax.Management.Modelmbean.ModelMBean t) => t.Cast<Javax.Management.Modelmbean.ModelMBeanNotificationBroadcaster>();
+        
         #endregion
 
         #region Fields

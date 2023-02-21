@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Util
 {
     #region DoubleSummaryStatistics
@@ -38,7 +40,8 @@ namespace Java.Util
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Util.Function.DoubleConsumer(Java.Util.DoubleSummaryStatistics t) => t.Cast<Java.Util.Function.DoubleConsumer>();
+        
         #endregion
 
         #region Fields

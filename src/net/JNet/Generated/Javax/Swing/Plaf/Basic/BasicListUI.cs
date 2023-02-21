@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing.Plaf.Basic
 {
     #region BasicListUI
@@ -47,14 +49,14 @@ namespace Javax.Swing.Plaf.Basic
         #endregion
 
         #region Nested classes
-        #region ListSelectionHandler
-        public partial class ListSelectionHandler
+        #region ListDataHandler
+        public partial class ListDataHandler
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.ListSelectionHandler.html#<init>(javax.swing.plaf.basic.BasicListUI)
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.ListDataHandler.html#<init>(javax.swing.plaf.basic.BasicListUI)
             /// </summary>
-            public ListSelectionHandler(Javax.Swing.Plaf.Basic.BasicListUI arg0)
+            public ListDataHandler(Javax.Swing.Plaf.Basic.BasicListUI arg0)
                 : base(arg0)
             {
             }
@@ -62,7 +64,8 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Class/Interface conversion operators
-
+            public static implicit operator Javax.Swing.Event.ListDataListener(Javax.Swing.Plaf.Basic.BasicListUI.ListDataHandler t) => t.Cast<Javax.Swing.Event.ListDataListener>();
+            
             #endregion
 
             #region Fields
@@ -75,11 +78,25 @@ namespace Javax.Swing.Plaf.Basic
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.ListSelectionHandler.html#valueChanged(javax.swing.event.ListSelectionEvent)
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.ListDataHandler.html#contentsChanged(javax.swing.event.ListDataEvent)
             /// </summary>
-            public void ValueChanged(Javax.Swing.Event.ListSelectionEvent arg0)
+            public void ContentsChanged(Javax.Swing.Event.ListDataEvent arg0)
             {
-                IExecute("valueChanged", arg0);
+                IExecute("contentsChanged", arg0);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.ListDataHandler.html#intervalAdded(javax.swing.event.ListDataEvent)
+            /// </summary>
+            public void IntervalAdded(Javax.Swing.Event.ListDataEvent arg0)
+            {
+                IExecute("intervalAdded", arg0);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.ListDataHandler.html#intervalRemoved(javax.swing.event.ListDataEvent)
+            /// </summary>
+            public void IntervalRemoved(Javax.Swing.Event.ListDataEvent arg0)
+            {
+                IExecute("intervalRemoved", arg0);
             }
             
             #endregion
@@ -103,7 +120,8 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Class/Interface conversion operators
-
+            public static implicit operator Javax.Swing.Event.MouseInputListener(Javax.Swing.Plaf.Basic.BasicListUI.MouseInputHandler t) => t.Cast<Javax.Swing.Event.MouseInputListener>();
+            
             #endregion
 
             #region Fields
@@ -186,7 +204,8 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Class/Interface conversion operators
-
+            public static implicit operator Java.Awt.EventNs.FocusListener(Javax.Swing.Plaf.Basic.BasicListUI.FocusHandler t) => t.Cast<Java.Awt.EventNs.FocusListener>();
+            
             #endregion
 
             #region Fields
@@ -219,14 +238,14 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region ListDataHandler
-        public partial class ListDataHandler
+        #region ListSelectionHandler
+        public partial class ListSelectionHandler
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.ListDataHandler.html#<init>(javax.swing.plaf.basic.BasicListUI)
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.ListSelectionHandler.html#<init>(javax.swing.plaf.basic.BasicListUI)
             /// </summary>
-            public ListDataHandler(Javax.Swing.Plaf.Basic.BasicListUI arg0)
+            public ListSelectionHandler(Javax.Swing.Plaf.Basic.BasicListUI arg0)
                 : base(arg0)
             {
             }
@@ -234,7 +253,8 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Class/Interface conversion operators
-
+            public static implicit operator Javax.Swing.Event.ListSelectionListener(Javax.Swing.Plaf.Basic.BasicListUI.ListSelectionHandler t) => t.Cast<Javax.Swing.Event.ListSelectionListener>();
+            
             #endregion
 
             #region Fields
@@ -247,25 +267,11 @@ namespace Javax.Swing.Plaf.Basic
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.ListDataHandler.html#contentsChanged(javax.swing.event.ListDataEvent)
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.ListSelectionHandler.html#valueChanged(javax.swing.event.ListSelectionEvent)
             /// </summary>
-            public void ContentsChanged(Javax.Swing.Event.ListDataEvent arg0)
+            public void ValueChanged(Javax.Swing.Event.ListSelectionEvent arg0)
             {
-                IExecute("contentsChanged", arg0);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.ListDataHandler.html#intervalAdded(javax.swing.event.ListDataEvent)
-            /// </summary>
-            public void IntervalAdded(Javax.Swing.Event.ListDataEvent arg0)
-            {
-                IExecute("intervalAdded", arg0);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.ListDataHandler.html#intervalRemoved(javax.swing.event.ListDataEvent)
-            /// </summary>
-            public void IntervalRemoved(Javax.Swing.Event.ListDataEvent arg0)
-            {
-                IExecute("intervalRemoved", arg0);
+                IExecute("valueChanged", arg0);
             }
             
             #endregion
@@ -289,7 +295,8 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Class/Interface conversion operators
-
+            public static implicit operator Java.Beans.PropertyChangeListener(Javax.Swing.Plaf.Basic.BasicListUI.PropertyChangeHandler t) => t.Cast<Java.Beans.PropertyChangeListener>();
+            
             #endregion
 
             #region Fields

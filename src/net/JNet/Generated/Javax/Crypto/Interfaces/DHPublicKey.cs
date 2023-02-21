@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Crypto.Interfaces
 {
     #region DHPublicKey
@@ -31,7 +33,9 @@ namespace Javax.Crypto.Interfaces
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Crypto.Interfaces.DHKey(Javax.Crypto.Interfaces.DHPublicKey t) => t.Cast<Javax.Crypto.Interfaces.DHKey>();
+        public static implicit operator Java.Security.PublicKey(Javax.Crypto.Interfaces.DHPublicKey t) => t.Cast<Java.Security.PublicKey>();
+        
         #endregion
 
         #region Fields

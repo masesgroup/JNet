@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Lang.Model.Type
 {
     #region ExecutableType
@@ -31,7 +33,8 @@ namespace Javax.Lang.Model.Type
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Lang.Model.Type.TypeMirror(Javax.Lang.Model.Type.ExecutableType t) => t.Cast<Javax.Lang.Model.Type.TypeMirror>();
+        
         #endregion
 
         #region Fields

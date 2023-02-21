@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing.Plaf.Basic
 {
     #region BasicScrollBarUI
@@ -31,7 +33,9 @@ namespace Javax.Swing.Plaf.Basic
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Awt.LayoutManager(Javax.Swing.Plaf.Basic.BasicScrollBarUI t) => t.Cast<Java.Awt.LayoutManager>();
+        public static implicit operator Javax.Swing.SwingConstants(Javax.Swing.Plaf.Basic.BasicScrollBarUI t) => t.Cast<Javax.Swing.SwingConstants>();
+        
         #endregion
 
         #region Fields
@@ -111,7 +115,8 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Class/Interface conversion operators
-
+            public static implicit operator Java.Beans.PropertyChangeListener(Javax.Swing.Plaf.Basic.BasicScrollBarUI.PropertyChangeHandler t) => t.Cast<Java.Beans.PropertyChangeListener>();
+            
             #endregion
 
             #region Fields

@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing.Plaf.Synth
 {
     #region SynthEditorPaneUI
@@ -31,7 +33,8 @@ namespace Javax.Swing.Plaf.Synth
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Swing.Plaf.Synth.SynthUI(Javax.Swing.Plaf.Synth.SynthEditorPaneUI t) => t.Cast<Javax.Swing.Plaf.Synth.SynthUI>();
+        
         #endregion
 
         #region Fields

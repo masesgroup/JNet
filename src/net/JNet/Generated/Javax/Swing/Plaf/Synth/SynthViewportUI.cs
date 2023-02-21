@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing.Plaf.Synth
 {
     #region SynthViewportUI
@@ -31,7 +33,9 @@ namespace Javax.Swing.Plaf.Synth
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Beans.PropertyChangeListener(Javax.Swing.Plaf.Synth.SynthViewportUI t) => t.Cast<Java.Beans.PropertyChangeListener>();
+        public static implicit operator Javax.Swing.Plaf.Synth.SynthUI(Javax.Swing.Plaf.Synth.SynthViewportUI t) => t.Cast<Javax.Swing.Plaf.Synth.SynthUI>();
+        
         #endregion
 
         #region Fields

@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Sql
 {
     #region XAConnection
@@ -31,7 +33,8 @@ namespace Javax.Sql
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Sql.PooledConnection(Javax.Sql.XAConnection t) => t.Cast<Javax.Sql.PooledConnection>();
+        
         #endregion
 
         #region Fields

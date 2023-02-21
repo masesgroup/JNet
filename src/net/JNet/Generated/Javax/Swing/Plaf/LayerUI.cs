@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing.Plaf
 {
     #region LayerUI
@@ -31,7 +33,8 @@ namespace Javax.Swing.Plaf
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Io.Serializable(Javax.Swing.Plaf.LayerUI t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields

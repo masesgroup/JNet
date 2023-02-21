@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Imageio
 {
     #region ImageWriter
@@ -31,7 +33,8 @@ namespace Javax.Imageio
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Imageio.ImageTranscoder(Javax.Imageio.ImageWriter t) => t.Cast<Javax.Imageio.ImageTranscoder>();
+        
         #endregion
 
         #region Fields

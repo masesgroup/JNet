@@ -58,23 +58,23 @@ namespace Java.Awt.Im
     }
     #endregion
 
-    #region InputContext
+    #region InputMethodHighlight
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputContext.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodHighlight.html
     /// </summary>
-    public partial class InputContext : MASES.JCOBridge.C2JBridge.JVMBridgeBase<InputContext>
+    public partial class InputMethodHighlight : MASES.JCOBridge.C2JBridge.JVMBridgeBase<InputMethodHighlight>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public InputContext() { }
+        public InputMethodHighlight() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public InputContext(params object[] args) : base(args) { }
+        public InputMethodHighlight(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.awt.im.InputContext";
+        public override string ClassName => "java.awt.im.InputMethodHighlight";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -93,23 +93,23 @@ namespace Java.Awt.Im
     }
     #endregion
 
-    #region InputMethodHighlight
+    #region InputContext
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodHighlight.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputContext.html
     /// </summary>
-    public partial class InputMethodHighlight : MASES.JCOBridge.C2JBridge.JVMBridgeBase<InputMethodHighlight>
+    public partial class InputContext : MASES.JCOBridge.C2JBridge.JVMBridgeBase<InputContext>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public InputMethodHighlight() { }
+        public InputContext() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public InputMethodHighlight(params object[] args) : base(args) { }
+        public InputContext(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.awt.im.InputMethodHighlight";
+        public override string ClassName => "java.awt.im.InputContext";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;

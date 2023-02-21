@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Xml.Crypto.Dsig.Keyinfo
 {
     #region PGPData
@@ -31,7 +33,8 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Xml.Crypto.XMLStructure(Javax.Xml.Crypto.Dsig.Keyinfo.PGPData t) => t.Cast<Javax.Xml.Crypto.XMLStructure>();
+        
         #endregion
 
         #region Fields

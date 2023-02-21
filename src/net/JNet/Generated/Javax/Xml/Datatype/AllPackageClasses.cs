@@ -23,23 +23,23 @@
 
 namespace Javax.Xml.Datatype
 {
-    #region XMLGregorianCalendar
+    #region Duration
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/XMLGregorianCalendar.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/Duration.html
     /// </summary>
-    public partial class XMLGregorianCalendar : MASES.JCOBridge.C2JBridge.JVMBridgeBase<XMLGregorianCalendar>
+    public partial class Duration : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Duration>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public XMLGregorianCalendar() { }
+        public Duration() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public XMLGregorianCalendar(params object[] args) : base(args) { }
+        public Duration(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.xml.datatype.XMLGregorianCalendar";
+        public override string ClassName => "javax.xml.datatype.Duration";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -162,23 +162,39 @@ namespace Javax.Xml.Datatype
     }
     #endregion
 
-    #region Duration
+    #region DatatypeConfigurationException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/Duration.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConfigurationException.html
     /// </summary>
-    public partial class Duration : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Duration>
+    public partial class DatatypeConfigurationException : Java.Lang.Exception
+    {
+        public DatatypeConfigurationException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.xml.datatype.DatatypeConfigurationException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region XMLGregorianCalendar
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/XMLGregorianCalendar.html
+    /// </summary>
+    public partial class XMLGregorianCalendar : MASES.JCOBridge.C2JBridge.JVMBridgeBase<XMLGregorianCalendar>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public Duration() { }
+        public XMLGregorianCalendar() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public Duration(params object[] args) : base(args) { }
+        public XMLGregorianCalendar(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.xml.datatype.Duration";
+        public override string ClassName => "javax.xml.datatype.XMLGregorianCalendar";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -191,22 +207,6 @@ namespace Javax.Xml.Datatype
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region DatatypeConfigurationException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeConfigurationException.html
-    /// </summary>
-    public partial class DatatypeConfigurationException : Java.Lang.Exception
-    {
-        public DatatypeConfigurationException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.xml.datatype.DatatypeConfigurationException";
 
         // TODO: complete the class
 

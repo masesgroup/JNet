@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Awt.Geom
 {
     #region Path2D
@@ -31,7 +33,9 @@ namespace Java.Awt.Geom
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Awt.Shape(Java.Awt.Geom.Path2D t) => t.Cast<Java.Awt.Shape>();
+        public static implicit operator Java.Lang.Cloneable(Java.Awt.Geom.Path2D t) => t.Cast<Java.Lang.Cloneable>();
+        
         #endregion
 
         #region Fields
@@ -244,61 +248,6 @@ namespace Java.Awt.Geom
         #endregion
 
         #region Nested classes
-        #region Double
-        public partial class Double
-        {
-            #region Constructors
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.Double.html#<init>(java.awt.Shape,java.awt.geom.AffineTransform)
-            /// </summary>
-            public Double(Java.Awt.Shape arg0, Java.Awt.Geom.AffineTransform arg1)
-                : base(arg0, arg1)
-            {
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.Double.html#<init>(java.awt.Shape)
-            /// </summary>
-            public Double(Java.Awt.Shape arg0)
-                : base(arg0)
-            {
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.Double.html#<init>(int,int)
-            /// </summary>
-            public Double(int arg0, int arg1)
-                : base(arg0, arg1)
-            {
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.Double.html#<init>(int)
-            /// </summary>
-            public Double(int arg0)
-                : base(arg0)
-            {
-            }
-            
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region Float
         public partial class Float
         {
@@ -335,7 +284,8 @@ namespace Java.Awt.Geom
             #endregion
 
             #region Class/Interface conversion operators
-
+            public static implicit operator Java.Io.Serializable(Java.Awt.Geom.Path2D.Float t) => t.Cast<Java.Io.Serializable>();
+            
             #endregion
 
             #region Fields
@@ -376,6 +326,62 @@ namespace Java.Awt.Geom
                 IExecute("quadTo", arg0, arg1, arg2, arg3);
             }
             
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region Double
+        public partial class Double
+        {
+            #region Constructors
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.Double.html#<init>(java.awt.Shape,java.awt.geom.AffineTransform)
+            /// </summary>
+            public Double(Java.Awt.Shape arg0, Java.Awt.Geom.AffineTransform arg1)
+                : base(arg0, arg1)
+            {
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.Double.html#<init>(java.awt.Shape)
+            /// </summary>
+            public Double(Java.Awt.Shape arg0)
+                : base(arg0)
+            {
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.Double.html#<init>(int,int)
+            /// </summary>
+            public Double(int arg0, int arg1)
+                : base(arg0, arg1)
+            {
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Path2D.Double.html#<init>(int)
+            /// </summary>
+            public Double(int arg0)
+                : base(arg0)
+            {
+            }
+            
+            #endregion
+
+            #region Class/Interface conversion operators
+            public static implicit operator Java.Io.Serializable(Java.Awt.Geom.Path2D.Double t) => t.Cast<Java.Io.Serializable>();
+            
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
             #endregion
 
             // TODO: complete the class

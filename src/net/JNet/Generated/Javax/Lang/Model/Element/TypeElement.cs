@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Lang.Model.Element
 {
     #region TypeElement
@@ -31,7 +33,10 @@ namespace Javax.Lang.Model.Element
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Lang.Model.Element.Element(Javax.Lang.Model.Element.TypeElement t) => t.Cast<Javax.Lang.Model.Element.Element>();
+        public static implicit operator Javax.Lang.Model.Element.Parameterizable(Javax.Lang.Model.Element.TypeElement t) => t.Cast<Javax.Lang.Model.Element.Parameterizable>();
+        public static implicit operator Javax.Lang.Model.Element.QualifiedNameable(Javax.Lang.Model.Element.TypeElement t) => t.Cast<Javax.Lang.Model.Element.QualifiedNameable>();
+        
         #endregion
 
         #region Fields

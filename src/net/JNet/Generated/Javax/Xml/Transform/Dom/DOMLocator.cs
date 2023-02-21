@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Xml.Transform.Dom
 {
     #region DOMLocator
@@ -31,7 +33,8 @@ namespace Javax.Xml.Transform.Dom
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Xml.Transform.SourceLocator(Javax.Xml.Transform.Dom.DOMLocator t) => t.Cast<Javax.Xml.Transform.SourceLocator>();
+        
         #endregion
 
         #region Fields

@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing
 {
     #region JFormattedTextField
@@ -182,7 +184,8 @@ namespace Javax.Swing
             #endregion
 
             #region Class/Interface conversion operators
-
+            public static implicit operator Java.Io.Serializable(Javax.Swing.JFormattedTextField.AbstractFormatter t) => t.Cast<Java.Io.Serializable>();
+            
             #endregion
 
             #region Fields

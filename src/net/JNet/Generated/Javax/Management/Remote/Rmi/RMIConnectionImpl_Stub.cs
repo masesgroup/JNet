@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Management.Remote.Rmi
 {
     #region RMIConnectionImpl_Stub
@@ -38,7 +40,8 @@ namespace Javax.Management.Remote.Rmi
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Management.Remote.Rmi.RMIConnection(Javax.Management.Remote.Rmi.RMIConnectionImpl_Stub t) => t.Cast<Javax.Management.Remote.Rmi.RMIConnection>();
+        
         #endregion
 
         #region Fields

@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing.Text.Html
 {
     #region Option
@@ -38,7 +40,8 @@ namespace Javax.Swing.Text.Html
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Io.Serializable(Javax.Swing.Text.Html.Option t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields

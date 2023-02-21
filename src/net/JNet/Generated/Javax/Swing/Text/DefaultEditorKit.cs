@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing.Text
 {
     #region DefaultEditorKit
@@ -243,8 +245,35 @@ namespace Javax.Swing.Text
         #endregion
 
         #region Nested classes
-        #region InsertBreakAction
-        public partial class InsertBreakAction
+        #region CopyAction
+        public partial class CopyAction
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region InsertTabAction
+        public partial class InsertTabAction
         {
             #region Constructors
 
@@ -272,6 +301,60 @@ namespace Javax.Swing.Text
 
         #region DefaultKeyTypedAction
         public partial class DefaultKeyTypedAction
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region CutAction
+        public partial class CutAction
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region InsertContentAction
+        public partial class InsertContentAction
         {
             #region Constructors
 
@@ -351,89 +434,8 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region CopyAction
-        public partial class CopyAction
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region CutAction
-        public partial class CutAction
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region InsertTabAction
-        public partial class InsertTabAction
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region InsertContentAction
-        public partial class InsertContentAction
+        #region InsertBreakAction
+        public partial class InsertBreakAction
         {
             #region Constructors
 

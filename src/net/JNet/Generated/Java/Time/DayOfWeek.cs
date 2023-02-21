@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Time
 {
     #region DayOfWeek
@@ -31,7 +33,9 @@ namespace Java.Time
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Time.Temporal.TemporalAccessor(Java.Time.DayOfWeek t) => t.Cast<Java.Time.Temporal.TemporalAccessor>();
+        public static implicit operator Java.Time.Temporal.TemporalAdjuster(Java.Time.DayOfWeek t) => t.Cast<Java.Time.Temporal.TemporalAdjuster>();
+        
         #endregion
 
         #region Fields

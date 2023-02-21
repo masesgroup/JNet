@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Print.Attribute
 {
     #region HashDocAttributeSet
@@ -52,7 +54,9 @@ namespace Javax.Print.Attribute
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Print.Attribute.DocAttributeSet(Javax.Print.Attribute.HashDocAttributeSet t) => t.Cast<Javax.Print.Attribute.DocAttributeSet>();
+        public static implicit operator Java.Io.Serializable(Javax.Print.Attribute.HashDocAttributeSet t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields

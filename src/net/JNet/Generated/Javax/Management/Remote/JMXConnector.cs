@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Management.Remote
 {
     #region JMXConnector
@@ -31,7 +33,8 @@ namespace Javax.Management.Remote
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Io.Closeable(Javax.Management.Remote.JMXConnector t) => t.Cast<Java.Io.Closeable>();
+        
         #endregion
 
         #region Fields

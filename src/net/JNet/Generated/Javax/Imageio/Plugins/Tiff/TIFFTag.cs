@@ -21,12 +21,21 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Imageio.Plugins.Tiff
 {
     #region TIFFTag
     public partial class TIFFTag
     {
         #region Constructors
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTag.html#<init>(java.lang.String,int,int,int)
+        /// </summary>
+        public TIFFTag(string arg0, int arg1, int arg2, int arg3)
+            : base(arg0, arg1, arg2, arg3)
+        {
+        }
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTag.html#<init>(java.lang.String,int,int)
         /// </summary>
@@ -39,13 +48,6 @@ namespace Javax.Imageio.Plugins.Tiff
         /// </summary>
         public TIFFTag(string arg0, int arg1, Javax.Imageio.Plugins.Tiff.TIFFTagSet arg2)
             : base(arg0, arg1, arg2)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTag.html#<init>(java.lang.String,int,int,int)
-        /// </summary>
-        public TIFFTag(string arg0, int arg1, int arg2, int arg3)
-            : base(arg0, arg1, arg2, arg3)
         {
         }
         

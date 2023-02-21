@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Util
 {
     #region TimerTask
@@ -31,7 +33,8 @@ namespace Java.Util
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Lang.Runnable(Java.Util.TimerTask t) => t.Cast<Java.Lang.Runnable>();
+        
         #endregion
 
         #region Fields

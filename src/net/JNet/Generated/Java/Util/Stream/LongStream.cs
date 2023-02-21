@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Util.Stream
 {
     #region LongStream
@@ -321,7 +323,8 @@ namespace Java.Util.Stream
             #endregion
 
             #region Class/Interface conversion operators
-
+            public static implicit operator Java.Util.Function.LongConsumer(Java.Util.Stream.LongStream.Builder t) => t.Cast<Java.Util.Function.LongConsumer>();
+            
             #endregion
 
             #region Fields

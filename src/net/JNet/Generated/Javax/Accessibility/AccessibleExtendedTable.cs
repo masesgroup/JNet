@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Accessibility
 {
     #region AccessibleExtendedTable
@@ -31,7 +33,8 @@ namespace Javax.Accessibility
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Accessibility.AccessibleTable(Javax.Accessibility.AccessibleExtendedTable t) => t.Cast<Javax.Accessibility.AccessibleTable>();
+        
         #endregion
 
         #region Fields

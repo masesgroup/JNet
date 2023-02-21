@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Management.Openmbean
 {
     #region OpenType
@@ -31,7 +33,8 @@ namespace Javax.Management.Openmbean
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Io.Serializable(Javax.Management.Openmbean.OpenType t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields

@@ -23,23 +23,23 @@
 
 namespace Javax.Xml.Transform.Stream
 {
-    #region StreamResult
+    #region StreamSource
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamResult.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html
     /// </summary>
-    public partial class StreamResult : MASES.JCOBridge.C2JBridge.JVMBridgeBase<StreamResult>
+    public partial class StreamSource : MASES.JCOBridge.C2JBridge.JVMBridgeBase<StreamSource>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public StreamResult() { }
+        public StreamSource() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public StreamResult(params object[] args) : base(args) { }
+        public StreamSource(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.xml.transform.stream.StreamResult";
+        public override string ClassName => "javax.xml.transform.stream.StreamSource";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -58,23 +58,23 @@ namespace Javax.Xml.Transform.Stream
     }
     #endregion
 
-    #region StreamSource
+    #region StreamResult
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamResult.html
     /// </summary>
-    public partial class StreamSource : MASES.JCOBridge.C2JBridge.JVMBridgeBase<StreamSource>
+    public partial class StreamResult : MASES.JCOBridge.C2JBridge.JVMBridgeBase<StreamResult>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public StreamSource() { }
+        public StreamResult() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public StreamSource(params object[] args) : base(args) { }
+        public StreamResult(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.xml.transform.stream.StreamSource";
+        public override string ClassName => "javax.xml.transform.stream.StreamResult";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;

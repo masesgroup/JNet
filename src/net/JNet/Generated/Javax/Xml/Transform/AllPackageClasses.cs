@@ -23,51 +23,51 @@
 
 namespace Javax.Xml.Transform
 {
-    #region URIResolver
+    #region TransformerException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/URIResolver.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/TransformerException.html
     /// </summary>
-    public partial class URIResolver : MASES.JCOBridge.C2JBridge.JVMBridgeBase<URIResolver>
+    public partial class TransformerException : Java.Lang.Exception
     {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public URIResolver() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public URIResolver(params object[] args) : base(args) { }
+        public TransformerException() { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.xml.transform.URIResolver";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
+        public override string ClassName => "javax.xml.transform.TransformerException";
 
         // TODO: complete the class
 
     }
     #endregion
 
-    #region TransformerFactoryConfigurationError
+    #region OutputKeys
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/TransformerFactoryConfigurationError.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/OutputKeys.html
     /// </summary>
-    public partial class TransformerFactoryConfigurationError : Java.Lang.Error
+    public partial class OutputKeys : MASES.JCOBridge.C2JBridge.JVMBridgeBase<OutputKeys>
     {
-        public TransformerFactoryConfigurationError() { }
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public OutputKeys() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public OutputKeys(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.xml.transform.TransformerFactoryConfigurationError";
+        public override string ClassName => "javax.xml.transform.OutputKeys";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
 
         // TODO: complete the class
 
@@ -144,6 +144,108 @@ namespace Javax.Xml.Transform
     }
     #endregion
 
+    #region Transformer
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Transformer.html
+    /// </summary>
+    public partial class Transformer : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Transformer>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public Transformer() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public Transformer(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.xml.transform.Transformer";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region TransformerConfigurationException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/TransformerConfigurationException.html
+    /// </summary>
+    public partial class TransformerConfigurationException : Javax.Xml.Transform.TransformerException
+    {
+        public TransformerConfigurationException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.xml.transform.TransformerConfigurationException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region SourceLocator
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/SourceLocator.html
+    /// </summary>
+    public partial class SourceLocator : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SourceLocator>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public SourceLocator() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public SourceLocator(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.xml.transform.SourceLocator";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region TransformerFactoryConfigurationError
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/TransformerFactoryConfigurationError.html
+    /// </summary>
+    public partial class TransformerFactoryConfigurationError : Java.Lang.Error
+    {
+        public TransformerFactoryConfigurationError() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.xml.transform.TransformerFactoryConfigurationError";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region Result
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Result.html
@@ -161,6 +263,41 @@ namespace Javax.Xml.Transform
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "javax.xml.transform.Result";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region URIResolver
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/URIResolver.html
+    /// </summary>
+    public partial class URIResolver : MASES.JCOBridge.C2JBridge.JVMBridgeBase<URIResolver>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public URIResolver() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public URIResolver(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.xml.transform.URIResolver";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -214,76 +351,6 @@ namespace Javax.Xml.Transform
     }
     #endregion
 
-    #region OutputKeys
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/OutputKeys.html
-    /// </summary>
-    public partial class OutputKeys : MASES.JCOBridge.C2JBridge.JVMBridgeBase<OutputKeys>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public OutputKeys() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public OutputKeys(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.xml.transform.OutputKeys";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region Transformer
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/Transformer.html
-    /// </summary>
-    public partial class Transformer : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Transformer>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public Transformer() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public Transformer(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.xml.transform.Transformer";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
     #region ErrorListener
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/ErrorListener.html
@@ -291,73 +358,6 @@ namespace Javax.Xml.Transform
     public partial class ErrorListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
 #warning Remember to build the body class for event listener
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region TransformerException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/TransformerException.html
-    /// </summary>
-    public partial class TransformerException : Java.Lang.Exception
-    {
-        public TransformerException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.xml.transform.TransformerException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region SourceLocator
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/SourceLocator.html
-    /// </summary>
-    public partial class SourceLocator : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SourceLocator>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public SourceLocator() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public SourceLocator(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.xml.transform.SourceLocator";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region TransformerConfigurationException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/TransformerConfigurationException.html
-    /// </summary>
-    public partial class TransformerConfigurationException : Javax.Xml.Transform.TransformerException
-    {
-        public TransformerConfigurationException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.xml.transform.TransformerConfigurationException";
 
         // TODO: complete the class
 

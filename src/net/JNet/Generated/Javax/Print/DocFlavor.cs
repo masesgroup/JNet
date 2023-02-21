@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Print
 {
     #region DocFlavor
@@ -38,7 +40,9 @@ namespace Javax.Print
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Io.Serializable(Javax.Print.DocFlavor t) => t.Cast<Java.Io.Serializable>();
+        public static implicit operator Java.Lang.Cloneable(Javax.Print.DocFlavor t) => t.Cast<Java.Lang.Cloneable>();
+        
         #endregion
 
         #region Fields
@@ -93,226 +97,6 @@ namespace Javax.Print
         #endregion
 
         #region Nested classes
-        #region INPUT_STREAM
-        public partial class INPUT_STREAM
-        {
-            #region Constructors
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.INPUT_STREAM.html#<init>(java.lang.String)
-            /// </summary>
-            public INPUT_STREAM(string arg0)
-                : base(arg0)
-            {
-            }
-            
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.INPUT_STREAM.html#TEXT_PLAIN_HOST
-            /// </summary>
-            public static Javax.Print.DocFlavor.INPUT_STREAM TEXT_PLAIN_HOST => Clazz.GetField<Javax.Print.DocFlavor.INPUT_STREAM>("TEXT_PLAIN_HOST");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.INPUT_STREAM.html#TEXT_PLAIN_UTF_8
-            /// </summary>
-            public static Javax.Print.DocFlavor.INPUT_STREAM TEXT_PLAIN_UTF_8 => Clazz.GetField<Javax.Print.DocFlavor.INPUT_STREAM>("TEXT_PLAIN_UTF_8");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.INPUT_STREAM.html#TEXT_PLAIN_UTF_16
-            /// </summary>
-            public static Javax.Print.DocFlavor.INPUT_STREAM TEXT_PLAIN_UTF_16 => Clazz.GetField<Javax.Print.DocFlavor.INPUT_STREAM>("TEXT_PLAIN_UTF_16");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.INPUT_STREAM.html#TEXT_PLAIN_UTF_16BE
-            /// </summary>
-            public static Javax.Print.DocFlavor.INPUT_STREAM TEXT_PLAIN_UTF_16BE => Clazz.GetField<Javax.Print.DocFlavor.INPUT_STREAM>("TEXT_PLAIN_UTF_16BE");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.INPUT_STREAM.html#TEXT_PLAIN_UTF_16LE
-            /// </summary>
-            public static Javax.Print.DocFlavor.INPUT_STREAM TEXT_PLAIN_UTF_16LE => Clazz.GetField<Javax.Print.DocFlavor.INPUT_STREAM>("TEXT_PLAIN_UTF_16LE");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.INPUT_STREAM.html#TEXT_PLAIN_US_ASCII
-            /// </summary>
-            public static Javax.Print.DocFlavor.INPUT_STREAM TEXT_PLAIN_US_ASCII => Clazz.GetField<Javax.Print.DocFlavor.INPUT_STREAM>("TEXT_PLAIN_US_ASCII");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.INPUT_STREAM.html#TEXT_HTML_HOST
-            /// </summary>
-            public static Javax.Print.DocFlavor.INPUT_STREAM TEXT_HTML_HOST => Clazz.GetField<Javax.Print.DocFlavor.INPUT_STREAM>("TEXT_HTML_HOST");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.INPUT_STREAM.html#TEXT_HTML_UTF_8
-            /// </summary>
-            public static Javax.Print.DocFlavor.INPUT_STREAM TEXT_HTML_UTF_8 => Clazz.GetField<Javax.Print.DocFlavor.INPUT_STREAM>("TEXT_HTML_UTF_8");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.INPUT_STREAM.html#TEXT_HTML_UTF_16
-            /// </summary>
-            public static Javax.Print.DocFlavor.INPUT_STREAM TEXT_HTML_UTF_16 => Clazz.GetField<Javax.Print.DocFlavor.INPUT_STREAM>("TEXT_HTML_UTF_16");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.INPUT_STREAM.html#TEXT_HTML_UTF_16BE
-            /// </summary>
-            public static Javax.Print.DocFlavor.INPUT_STREAM TEXT_HTML_UTF_16BE => Clazz.GetField<Javax.Print.DocFlavor.INPUT_STREAM>("TEXT_HTML_UTF_16BE");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.INPUT_STREAM.html#TEXT_HTML_UTF_16LE
-            /// </summary>
-            public static Javax.Print.DocFlavor.INPUT_STREAM TEXT_HTML_UTF_16LE => Clazz.GetField<Javax.Print.DocFlavor.INPUT_STREAM>("TEXT_HTML_UTF_16LE");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.INPUT_STREAM.html#TEXT_HTML_US_ASCII
-            /// </summary>
-            public static Javax.Print.DocFlavor.INPUT_STREAM TEXT_HTML_US_ASCII => Clazz.GetField<Javax.Print.DocFlavor.INPUT_STREAM>("TEXT_HTML_US_ASCII");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.INPUT_STREAM.html#PDF
-            /// </summary>
-            public static Javax.Print.DocFlavor.INPUT_STREAM PDF => Clazz.GetField<Javax.Print.DocFlavor.INPUT_STREAM>("PDF");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.INPUT_STREAM.html#POSTSCRIPT
-            /// </summary>
-            public static Javax.Print.DocFlavor.INPUT_STREAM POSTSCRIPT => Clazz.GetField<Javax.Print.DocFlavor.INPUT_STREAM>("POSTSCRIPT");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.INPUT_STREAM.html#PCL
-            /// </summary>
-            public static Javax.Print.DocFlavor.INPUT_STREAM PCL => Clazz.GetField<Javax.Print.DocFlavor.INPUT_STREAM>("PCL");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.INPUT_STREAM.html#GIF
-            /// </summary>
-            public static Javax.Print.DocFlavor.INPUT_STREAM GIF => Clazz.GetField<Javax.Print.DocFlavor.INPUT_STREAM>("GIF");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.INPUT_STREAM.html#JPEG
-            /// </summary>
-            public static Javax.Print.DocFlavor.INPUT_STREAM JPEG => Clazz.GetField<Javax.Print.DocFlavor.INPUT_STREAM>("JPEG");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.INPUT_STREAM.html#PNG
-            /// </summary>
-            public static Javax.Print.DocFlavor.INPUT_STREAM PNG => Clazz.GetField<Javax.Print.DocFlavor.INPUT_STREAM>("PNG");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.INPUT_STREAM.html#AUTOSENSE
-            /// </summary>
-            public static Javax.Print.DocFlavor.INPUT_STREAM AUTOSENSE => Clazz.GetField<Javax.Print.DocFlavor.INPUT_STREAM>("AUTOSENSE");
-            
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region BYTE_ARRAY
-        public partial class BYTE_ARRAY
-        {
-            #region Constructors
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.BYTE_ARRAY.html#<init>(java.lang.String)
-            /// </summary>
-            public BYTE_ARRAY(string arg0)
-                : base(arg0)
-            {
-            }
-            
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.BYTE_ARRAY.html#TEXT_PLAIN_HOST
-            /// </summary>
-            public static Javax.Print.DocFlavor.BYTE_ARRAY TEXT_PLAIN_HOST => Clazz.GetField<Javax.Print.DocFlavor.BYTE_ARRAY>("TEXT_PLAIN_HOST");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.BYTE_ARRAY.html#TEXT_PLAIN_UTF_8
-            /// </summary>
-            public static Javax.Print.DocFlavor.BYTE_ARRAY TEXT_PLAIN_UTF_8 => Clazz.GetField<Javax.Print.DocFlavor.BYTE_ARRAY>("TEXT_PLAIN_UTF_8");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.BYTE_ARRAY.html#TEXT_PLAIN_UTF_16
-            /// </summary>
-            public static Javax.Print.DocFlavor.BYTE_ARRAY TEXT_PLAIN_UTF_16 => Clazz.GetField<Javax.Print.DocFlavor.BYTE_ARRAY>("TEXT_PLAIN_UTF_16");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.BYTE_ARRAY.html#TEXT_PLAIN_UTF_16BE
-            /// </summary>
-            public static Javax.Print.DocFlavor.BYTE_ARRAY TEXT_PLAIN_UTF_16BE => Clazz.GetField<Javax.Print.DocFlavor.BYTE_ARRAY>("TEXT_PLAIN_UTF_16BE");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.BYTE_ARRAY.html#TEXT_PLAIN_UTF_16LE
-            /// </summary>
-            public static Javax.Print.DocFlavor.BYTE_ARRAY TEXT_PLAIN_UTF_16LE => Clazz.GetField<Javax.Print.DocFlavor.BYTE_ARRAY>("TEXT_PLAIN_UTF_16LE");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.BYTE_ARRAY.html#TEXT_PLAIN_US_ASCII
-            /// </summary>
-            public static Javax.Print.DocFlavor.BYTE_ARRAY TEXT_PLAIN_US_ASCII => Clazz.GetField<Javax.Print.DocFlavor.BYTE_ARRAY>("TEXT_PLAIN_US_ASCII");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.BYTE_ARRAY.html#TEXT_HTML_HOST
-            /// </summary>
-            public static Javax.Print.DocFlavor.BYTE_ARRAY TEXT_HTML_HOST => Clazz.GetField<Javax.Print.DocFlavor.BYTE_ARRAY>("TEXT_HTML_HOST");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.BYTE_ARRAY.html#TEXT_HTML_UTF_8
-            /// </summary>
-            public static Javax.Print.DocFlavor.BYTE_ARRAY TEXT_HTML_UTF_8 => Clazz.GetField<Javax.Print.DocFlavor.BYTE_ARRAY>("TEXT_HTML_UTF_8");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.BYTE_ARRAY.html#TEXT_HTML_UTF_16
-            /// </summary>
-            public static Javax.Print.DocFlavor.BYTE_ARRAY TEXT_HTML_UTF_16 => Clazz.GetField<Javax.Print.DocFlavor.BYTE_ARRAY>("TEXT_HTML_UTF_16");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.BYTE_ARRAY.html#TEXT_HTML_UTF_16BE
-            /// </summary>
-            public static Javax.Print.DocFlavor.BYTE_ARRAY TEXT_HTML_UTF_16BE => Clazz.GetField<Javax.Print.DocFlavor.BYTE_ARRAY>("TEXT_HTML_UTF_16BE");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.BYTE_ARRAY.html#TEXT_HTML_UTF_16LE
-            /// </summary>
-            public static Javax.Print.DocFlavor.BYTE_ARRAY TEXT_HTML_UTF_16LE => Clazz.GetField<Javax.Print.DocFlavor.BYTE_ARRAY>("TEXT_HTML_UTF_16LE");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.BYTE_ARRAY.html#TEXT_HTML_US_ASCII
-            /// </summary>
-            public static Javax.Print.DocFlavor.BYTE_ARRAY TEXT_HTML_US_ASCII => Clazz.GetField<Javax.Print.DocFlavor.BYTE_ARRAY>("TEXT_HTML_US_ASCII");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.BYTE_ARRAY.html#PDF
-            /// </summary>
-            public static Javax.Print.DocFlavor.BYTE_ARRAY PDF => Clazz.GetField<Javax.Print.DocFlavor.BYTE_ARRAY>("PDF");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.BYTE_ARRAY.html#POSTSCRIPT
-            /// </summary>
-            public static Javax.Print.DocFlavor.BYTE_ARRAY POSTSCRIPT => Clazz.GetField<Javax.Print.DocFlavor.BYTE_ARRAY>("POSTSCRIPT");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.BYTE_ARRAY.html#PCL
-            /// </summary>
-            public static Javax.Print.DocFlavor.BYTE_ARRAY PCL => Clazz.GetField<Javax.Print.DocFlavor.BYTE_ARRAY>("PCL");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.BYTE_ARRAY.html#GIF
-            /// </summary>
-            public static Javax.Print.DocFlavor.BYTE_ARRAY GIF => Clazz.GetField<Javax.Print.DocFlavor.BYTE_ARRAY>("GIF");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.BYTE_ARRAY.html#JPEG
-            /// </summary>
-            public static Javax.Print.DocFlavor.BYTE_ARRAY JPEG => Clazz.GetField<Javax.Print.DocFlavor.BYTE_ARRAY>("JPEG");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.BYTE_ARRAY.html#PNG
-            /// </summary>
-            public static Javax.Print.DocFlavor.BYTE_ARRAY PNG => Clazz.GetField<Javax.Print.DocFlavor.BYTE_ARRAY>("PNG");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.BYTE_ARRAY.html#AUTOSENSE
-            /// </summary>
-            public static Javax.Print.DocFlavor.BYTE_ARRAY AUTOSENSE => Clazz.GetField<Javax.Print.DocFlavor.BYTE_ARRAY>("AUTOSENSE");
-            
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region URL
         public partial class URL
         {
@@ -423,48 +207,6 @@ namespace Javax.Print
         }
         #endregion
 
-        #region READER
-        public partial class READER
-        {
-            #region Constructors
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.READER.html#<init>(java.lang.String)
-            /// </summary>
-            public READER(string arg0)
-                : base(arg0)
-            {
-            }
-            
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.READER.html#TEXT_PLAIN
-            /// </summary>
-            public static Javax.Print.DocFlavor.READER TEXT_PLAIN => Clazz.GetField<Javax.Print.DocFlavor.READER>("TEXT_PLAIN");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.READER.html#TEXT_HTML
-            /// </summary>
-            public static Javax.Print.DocFlavor.READER TEXT_HTML => Clazz.GetField<Javax.Print.DocFlavor.READER>("TEXT_HTML");
-            
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region STRING
         public partial class STRING
         {
@@ -507,6 +249,116 @@ namespace Javax.Print
         }
         #endregion
 
+        #region INPUT_STREAM
+        public partial class INPUT_STREAM
+        {
+            #region Constructors
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.INPUT_STREAM.html#<init>(java.lang.String)
+            /// </summary>
+            public INPUT_STREAM(string arg0)
+                : base(arg0)
+            {
+            }
+            
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.INPUT_STREAM.html#TEXT_PLAIN_HOST
+            /// </summary>
+            public static Javax.Print.DocFlavor.INPUT_STREAM TEXT_PLAIN_HOST => Clazz.GetField<Javax.Print.DocFlavor.INPUT_STREAM>("TEXT_PLAIN_HOST");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.INPUT_STREAM.html#TEXT_PLAIN_UTF_8
+            /// </summary>
+            public static Javax.Print.DocFlavor.INPUT_STREAM TEXT_PLAIN_UTF_8 => Clazz.GetField<Javax.Print.DocFlavor.INPUT_STREAM>("TEXT_PLAIN_UTF_8");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.INPUT_STREAM.html#TEXT_PLAIN_UTF_16
+            /// </summary>
+            public static Javax.Print.DocFlavor.INPUT_STREAM TEXT_PLAIN_UTF_16 => Clazz.GetField<Javax.Print.DocFlavor.INPUT_STREAM>("TEXT_PLAIN_UTF_16");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.INPUT_STREAM.html#TEXT_PLAIN_UTF_16BE
+            /// </summary>
+            public static Javax.Print.DocFlavor.INPUT_STREAM TEXT_PLAIN_UTF_16BE => Clazz.GetField<Javax.Print.DocFlavor.INPUT_STREAM>("TEXT_PLAIN_UTF_16BE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.INPUT_STREAM.html#TEXT_PLAIN_UTF_16LE
+            /// </summary>
+            public static Javax.Print.DocFlavor.INPUT_STREAM TEXT_PLAIN_UTF_16LE => Clazz.GetField<Javax.Print.DocFlavor.INPUT_STREAM>("TEXT_PLAIN_UTF_16LE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.INPUT_STREAM.html#TEXT_PLAIN_US_ASCII
+            /// </summary>
+            public static Javax.Print.DocFlavor.INPUT_STREAM TEXT_PLAIN_US_ASCII => Clazz.GetField<Javax.Print.DocFlavor.INPUT_STREAM>("TEXT_PLAIN_US_ASCII");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.INPUT_STREAM.html#TEXT_HTML_HOST
+            /// </summary>
+            public static Javax.Print.DocFlavor.INPUT_STREAM TEXT_HTML_HOST => Clazz.GetField<Javax.Print.DocFlavor.INPUT_STREAM>("TEXT_HTML_HOST");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.INPUT_STREAM.html#TEXT_HTML_UTF_8
+            /// </summary>
+            public static Javax.Print.DocFlavor.INPUT_STREAM TEXT_HTML_UTF_8 => Clazz.GetField<Javax.Print.DocFlavor.INPUT_STREAM>("TEXT_HTML_UTF_8");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.INPUT_STREAM.html#TEXT_HTML_UTF_16
+            /// </summary>
+            public static Javax.Print.DocFlavor.INPUT_STREAM TEXT_HTML_UTF_16 => Clazz.GetField<Javax.Print.DocFlavor.INPUT_STREAM>("TEXT_HTML_UTF_16");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.INPUT_STREAM.html#TEXT_HTML_UTF_16BE
+            /// </summary>
+            public static Javax.Print.DocFlavor.INPUT_STREAM TEXT_HTML_UTF_16BE => Clazz.GetField<Javax.Print.DocFlavor.INPUT_STREAM>("TEXT_HTML_UTF_16BE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.INPUT_STREAM.html#TEXT_HTML_UTF_16LE
+            /// </summary>
+            public static Javax.Print.DocFlavor.INPUT_STREAM TEXT_HTML_UTF_16LE => Clazz.GetField<Javax.Print.DocFlavor.INPUT_STREAM>("TEXT_HTML_UTF_16LE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.INPUT_STREAM.html#TEXT_HTML_US_ASCII
+            /// </summary>
+            public static Javax.Print.DocFlavor.INPUT_STREAM TEXT_HTML_US_ASCII => Clazz.GetField<Javax.Print.DocFlavor.INPUT_STREAM>("TEXT_HTML_US_ASCII");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.INPUT_STREAM.html#PDF
+            /// </summary>
+            public static Javax.Print.DocFlavor.INPUT_STREAM PDF => Clazz.GetField<Javax.Print.DocFlavor.INPUT_STREAM>("PDF");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.INPUT_STREAM.html#POSTSCRIPT
+            /// </summary>
+            public static Javax.Print.DocFlavor.INPUT_STREAM POSTSCRIPT => Clazz.GetField<Javax.Print.DocFlavor.INPUT_STREAM>("POSTSCRIPT");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.INPUT_STREAM.html#PCL
+            /// </summary>
+            public static Javax.Print.DocFlavor.INPUT_STREAM PCL => Clazz.GetField<Javax.Print.DocFlavor.INPUT_STREAM>("PCL");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.INPUT_STREAM.html#GIF
+            /// </summary>
+            public static Javax.Print.DocFlavor.INPUT_STREAM GIF => Clazz.GetField<Javax.Print.DocFlavor.INPUT_STREAM>("GIF");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.INPUT_STREAM.html#JPEG
+            /// </summary>
+            public static Javax.Print.DocFlavor.INPUT_STREAM JPEG => Clazz.GetField<Javax.Print.DocFlavor.INPUT_STREAM>("JPEG");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.INPUT_STREAM.html#PNG
+            /// </summary>
+            public static Javax.Print.DocFlavor.INPUT_STREAM PNG => Clazz.GetField<Javax.Print.DocFlavor.INPUT_STREAM>("PNG");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.INPUT_STREAM.html#AUTOSENSE
+            /// </summary>
+            public static Javax.Print.DocFlavor.INPUT_STREAM AUTOSENSE => Clazz.GetField<Javax.Print.DocFlavor.INPUT_STREAM>("AUTOSENSE");
+            
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region CHAR_ARRAY
         public partial class CHAR_ARRAY
         {
@@ -534,6 +386,158 @@ namespace Javax.Print
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.CHAR_ARRAY.html#TEXT_HTML
             /// </summary>
             public static Javax.Print.DocFlavor.CHAR_ARRAY TEXT_HTML => Clazz.GetField<Javax.Print.DocFlavor.CHAR_ARRAY>("TEXT_HTML");
+            
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region READER
+        public partial class READER
+        {
+            #region Constructors
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.READER.html#<init>(java.lang.String)
+            /// </summary>
+            public READER(string arg0)
+                : base(arg0)
+            {
+            }
+            
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.READER.html#TEXT_PLAIN
+            /// </summary>
+            public static Javax.Print.DocFlavor.READER TEXT_PLAIN => Clazz.GetField<Javax.Print.DocFlavor.READER>("TEXT_PLAIN");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.READER.html#TEXT_HTML
+            /// </summary>
+            public static Javax.Print.DocFlavor.READER TEXT_HTML => Clazz.GetField<Javax.Print.DocFlavor.READER>("TEXT_HTML");
+            
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region BYTE_ARRAY
+        public partial class BYTE_ARRAY
+        {
+            #region Constructors
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.BYTE_ARRAY.html#<init>(java.lang.String)
+            /// </summary>
+            public BYTE_ARRAY(string arg0)
+                : base(arg0)
+            {
+            }
+            
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.BYTE_ARRAY.html#TEXT_PLAIN_HOST
+            /// </summary>
+            public static Javax.Print.DocFlavor.BYTE_ARRAY TEXT_PLAIN_HOST => Clazz.GetField<Javax.Print.DocFlavor.BYTE_ARRAY>("TEXT_PLAIN_HOST");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.BYTE_ARRAY.html#TEXT_PLAIN_UTF_8
+            /// </summary>
+            public static Javax.Print.DocFlavor.BYTE_ARRAY TEXT_PLAIN_UTF_8 => Clazz.GetField<Javax.Print.DocFlavor.BYTE_ARRAY>("TEXT_PLAIN_UTF_8");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.BYTE_ARRAY.html#TEXT_PLAIN_UTF_16
+            /// </summary>
+            public static Javax.Print.DocFlavor.BYTE_ARRAY TEXT_PLAIN_UTF_16 => Clazz.GetField<Javax.Print.DocFlavor.BYTE_ARRAY>("TEXT_PLAIN_UTF_16");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.BYTE_ARRAY.html#TEXT_PLAIN_UTF_16BE
+            /// </summary>
+            public static Javax.Print.DocFlavor.BYTE_ARRAY TEXT_PLAIN_UTF_16BE => Clazz.GetField<Javax.Print.DocFlavor.BYTE_ARRAY>("TEXT_PLAIN_UTF_16BE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.BYTE_ARRAY.html#TEXT_PLAIN_UTF_16LE
+            /// </summary>
+            public static Javax.Print.DocFlavor.BYTE_ARRAY TEXT_PLAIN_UTF_16LE => Clazz.GetField<Javax.Print.DocFlavor.BYTE_ARRAY>("TEXT_PLAIN_UTF_16LE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.BYTE_ARRAY.html#TEXT_PLAIN_US_ASCII
+            /// </summary>
+            public static Javax.Print.DocFlavor.BYTE_ARRAY TEXT_PLAIN_US_ASCII => Clazz.GetField<Javax.Print.DocFlavor.BYTE_ARRAY>("TEXT_PLAIN_US_ASCII");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.BYTE_ARRAY.html#TEXT_HTML_HOST
+            /// </summary>
+            public static Javax.Print.DocFlavor.BYTE_ARRAY TEXT_HTML_HOST => Clazz.GetField<Javax.Print.DocFlavor.BYTE_ARRAY>("TEXT_HTML_HOST");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.BYTE_ARRAY.html#TEXT_HTML_UTF_8
+            /// </summary>
+            public static Javax.Print.DocFlavor.BYTE_ARRAY TEXT_HTML_UTF_8 => Clazz.GetField<Javax.Print.DocFlavor.BYTE_ARRAY>("TEXT_HTML_UTF_8");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.BYTE_ARRAY.html#TEXT_HTML_UTF_16
+            /// </summary>
+            public static Javax.Print.DocFlavor.BYTE_ARRAY TEXT_HTML_UTF_16 => Clazz.GetField<Javax.Print.DocFlavor.BYTE_ARRAY>("TEXT_HTML_UTF_16");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.BYTE_ARRAY.html#TEXT_HTML_UTF_16BE
+            /// </summary>
+            public static Javax.Print.DocFlavor.BYTE_ARRAY TEXT_HTML_UTF_16BE => Clazz.GetField<Javax.Print.DocFlavor.BYTE_ARRAY>("TEXT_HTML_UTF_16BE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.BYTE_ARRAY.html#TEXT_HTML_UTF_16LE
+            /// </summary>
+            public static Javax.Print.DocFlavor.BYTE_ARRAY TEXT_HTML_UTF_16LE => Clazz.GetField<Javax.Print.DocFlavor.BYTE_ARRAY>("TEXT_HTML_UTF_16LE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.BYTE_ARRAY.html#TEXT_HTML_US_ASCII
+            /// </summary>
+            public static Javax.Print.DocFlavor.BYTE_ARRAY TEXT_HTML_US_ASCII => Clazz.GetField<Javax.Print.DocFlavor.BYTE_ARRAY>("TEXT_HTML_US_ASCII");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.BYTE_ARRAY.html#PDF
+            /// </summary>
+            public static Javax.Print.DocFlavor.BYTE_ARRAY PDF => Clazz.GetField<Javax.Print.DocFlavor.BYTE_ARRAY>("PDF");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.BYTE_ARRAY.html#POSTSCRIPT
+            /// </summary>
+            public static Javax.Print.DocFlavor.BYTE_ARRAY POSTSCRIPT => Clazz.GetField<Javax.Print.DocFlavor.BYTE_ARRAY>("POSTSCRIPT");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.BYTE_ARRAY.html#PCL
+            /// </summary>
+            public static Javax.Print.DocFlavor.BYTE_ARRAY PCL => Clazz.GetField<Javax.Print.DocFlavor.BYTE_ARRAY>("PCL");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.BYTE_ARRAY.html#GIF
+            /// </summary>
+            public static Javax.Print.DocFlavor.BYTE_ARRAY GIF => Clazz.GetField<Javax.Print.DocFlavor.BYTE_ARRAY>("GIF");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.BYTE_ARRAY.html#JPEG
+            /// </summary>
+            public static Javax.Print.DocFlavor.BYTE_ARRAY JPEG => Clazz.GetField<Javax.Print.DocFlavor.BYTE_ARRAY>("JPEG");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.BYTE_ARRAY.html#PNG
+            /// </summary>
+            public static Javax.Print.DocFlavor.BYTE_ARRAY PNG => Clazz.GetField<Javax.Print.DocFlavor.BYTE_ARRAY>("PNG");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/DocFlavor.BYTE_ARRAY.html#AUTOSENSE
+            /// </summary>
+            public static Javax.Print.DocFlavor.BYTE_ARRAY AUTOSENSE => Clazz.GetField<Javax.Print.DocFlavor.BYTE_ARRAY>("AUTOSENSE");
             
             #endregion
 

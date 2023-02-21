@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Imageio.Metadata
 {
     #region IIOMetadataNode
@@ -38,7 +40,9 @@ namespace Javax.Imageio.Metadata
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Org.W3c.Dom.Element(Javax.Imageio.Metadata.IIOMetadataNode t) => t.Cast<Org.W3c.Dom.Element>();
+        public static implicit operator Org.W3c.Dom.NodeList(Javax.Imageio.Metadata.IIOMetadataNode t) => t.Cast<Org.W3c.Dom.NodeList>();
+        
         #endregion
 
         #region Fields

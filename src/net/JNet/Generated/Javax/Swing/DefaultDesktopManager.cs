@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing
 {
     #region DefaultDesktopManager
@@ -31,7 +33,9 @@ namespace Javax.Swing
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Swing.DesktopManager(Javax.Swing.DefaultDesktopManager t) => t.Cast<Javax.Swing.DesktopManager>();
+        public static implicit operator Java.Io.Serializable(Javax.Swing.DefaultDesktopManager t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields

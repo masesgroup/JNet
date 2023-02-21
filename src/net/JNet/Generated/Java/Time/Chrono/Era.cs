@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Time.Chrono
 {
     #region Era
@@ -31,7 +33,9 @@ namespace Java.Time.Chrono
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Time.Temporal.TemporalAccessor(Java.Time.Chrono.Era t) => t.Cast<Java.Time.Temporal.TemporalAccessor>();
+        public static implicit operator Java.Time.Temporal.TemporalAdjuster(Java.Time.Chrono.Era t) => t.Cast<Java.Time.Temporal.TemporalAdjuster>();
+        
         #endregion
 
         #region Fields

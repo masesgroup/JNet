@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Net.Ssl
 {
     #region KeyStoreBuilderParameters
@@ -38,7 +40,8 @@ namespace Javax.Net.Ssl
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Net.Ssl.ManagerFactoryParameters(Javax.Net.Ssl.KeyStoreBuilderParameters t) => t.Cast<Javax.Net.Ssl.ManagerFactoryParameters>();
+        
         #endregion
 
         #region Fields

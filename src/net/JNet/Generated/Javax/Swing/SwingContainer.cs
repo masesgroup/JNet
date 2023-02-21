@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing
 {
     #region SwingContainer
@@ -31,7 +33,8 @@ namespace Javax.Swing
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Lang.Annotation.Annotation(Javax.Swing.SwingContainer t) => t.Cast<Java.Lang.Annotation.Annotation>();
+        
         #endregion
 
         #region Fields

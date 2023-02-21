@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Beans
 {
     #region VetoableChangeListenerProxy
@@ -38,7 +40,8 @@ namespace Java.Beans
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Beans.VetoableChangeListener(Java.Beans.VetoableChangeListenerProxy t) => t.Cast<Java.Beans.VetoableChangeListener>();
+        
         #endregion
 
         #region Fields

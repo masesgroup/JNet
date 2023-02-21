@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing
 {
     #region ViewportLayout
@@ -31,7 +33,9 @@ namespace Javax.Swing
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Awt.LayoutManager(Javax.Swing.ViewportLayout t) => t.Cast<Java.Awt.LayoutManager>();
+        public static implicit operator Java.Io.Serializable(Javax.Swing.ViewportLayout t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields

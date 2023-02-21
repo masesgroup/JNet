@@ -23,41 +23,6 @@
 
 namespace Java.Lang.Invoke
 {
-    #region SwitchPoint
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/SwitchPoint.html
-    /// </summary>
-    public partial class SwitchPoint : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SwitchPoint>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public SwitchPoint() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public SwitchPoint(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.lang.invoke.SwitchPoint";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
     #region MethodHandleProxies
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleProxies.html
@@ -162,23 +127,23 @@ namespace Java.Lang.Invoke
     }
     #endregion
 
-    #region StringConcatFactory
+    #region MutableCallSite
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/StringConcatFactory.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MutableCallSite.html
     /// </summary>
-    public partial class StringConcatFactory : MASES.JCOBridge.C2JBridge.JVMBridgeBase<StringConcatFactory>
+    public partial class MutableCallSite : Java.Lang.Invoke.CallSite
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public StringConcatFactory() { }
+        public MutableCallSite() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public StringConcatFactory(params object[] args) : base(args) { }
+        public MutableCallSite(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.lang.invoke.StringConcatFactory";
+        public override string ClassName => "java.lang.invoke.MutableCallSite";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -191,6 +156,22 @@ namespace Java.Lang.Invoke
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region LambdaConversionException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/LambdaConversionException.html
+    /// </summary>
+    public partial class LambdaConversionException : Java.Lang.Exception
+    {
+        public LambdaConversionException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.lang.invoke.LambdaConversionException";
 
         // TODO: complete the class
 
@@ -214,6 +195,41 @@ namespace Java.Lang.Invoke
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "java.lang.invoke.ConstantCallSite";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region SwitchPoint
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/SwitchPoint.html
+    /// </summary>
+    public partial class SwitchPoint : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SwitchPoint>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public SwitchPoint() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public SwitchPoint(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.lang.invoke.SwitchPoint";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -267,32 +283,35 @@ namespace Java.Lang.Invoke
     }
     #endregion
 
-    #region WrongMethodTypeException
+    #region StringConcatFactory
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/WrongMethodTypeException.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/StringConcatFactory.html
     /// </summary>
-    public partial class WrongMethodTypeException : Java.Lang.RuntimeException
+    public partial class StringConcatFactory : MASES.JCOBridge.C2JBridge.JVMBridgeBase<StringConcatFactory>
     {
-        public WrongMethodTypeException() { }
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public StringConcatFactory() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public StringConcatFactory(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.lang.invoke.WrongMethodTypeException";
+        public override string ClassName => "java.lang.invoke.StringConcatFactory";
 
-        // TODO: complete the class
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
 
-    }
-    #endregion
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
 
-    #region LambdaConversionException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/LambdaConversionException.html
-    /// </summary>
-    public partial class LambdaConversionException : Java.Lang.Exception
-    {
-        public LambdaConversionException() { }
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.lang.invoke.LambdaConversionException";
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
 
         // TODO: complete the class
 
@@ -319,6 +338,73 @@ namespace Java.Lang.Invoke
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region WrongMethodTypeException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/WrongMethodTypeException.html
+    /// </summary>
+    public partial class WrongMethodTypeException : Java.Lang.RuntimeException
+    {
+        public WrongMethodTypeException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.lang.invoke.WrongMethodTypeException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region StringConcatException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/StringConcatException.html
+    /// </summary>
+    public partial class StringConcatException : Java.Lang.Exception
+    {
+        public StringConcatException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.lang.invoke.StringConcatException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region LambdaMetafactory
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/LambdaMetafactory.html
+    /// </summary>
+    public partial class LambdaMetafactory : MASES.JCOBridge.C2JBridge.JVMBridgeBase<LambdaMetafactory>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public LambdaMetafactory() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public LambdaMetafactory(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.lang.invoke.LambdaMetafactory";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
         public override bool IsCloseable => false;
@@ -404,127 +490,6 @@ namespace Java.Lang.Invoke
     }
     #endregion
 
-    #region ConstantBootstraps
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/ConstantBootstraps.html
-    /// </summary>
-    public partial class ConstantBootstraps : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ConstantBootstraps>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public ConstantBootstraps() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public ConstantBootstraps(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.lang.invoke.ConstantBootstraps";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region LambdaMetafactory
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/LambdaMetafactory.html
-    /// </summary>
-    public partial class LambdaMetafactory : MASES.JCOBridge.C2JBridge.JVMBridgeBase<LambdaMetafactory>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public LambdaMetafactory() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public LambdaMetafactory(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.lang.invoke.LambdaMetafactory";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region SerializedLambda
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/SerializedLambda.html
-    /// </summary>
-    public partial class SerializedLambda : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SerializedLambda>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public SerializedLambda() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public SerializedLambda(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.lang.invoke.SerializedLambda";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region StringConcatException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/StringConcatException.html
-    /// </summary>
-    public partial class StringConcatException : Java.Lang.Exception
-    {
-        public StringConcatException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.lang.invoke.StringConcatException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
     #region MethodHandleInfo
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html
@@ -560,23 +525,23 @@ namespace Java.Lang.Invoke
     }
     #endregion
 
-    #region MutableCallSite
+    #region ConstantBootstraps
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MutableCallSite.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/ConstantBootstraps.html
     /// </summary>
-    public partial class MutableCallSite : Java.Lang.Invoke.CallSite
+    public partial class ConstantBootstraps : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ConstantBootstraps>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public MutableCallSite() { }
+        public ConstantBootstraps() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public MutableCallSite(params object[] args) : base(args) { }
+        public ConstantBootstraps(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.lang.invoke.MutableCallSite";
+        public override string ClassName => "java.lang.invoke.ConstantBootstraps";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -660,6 +625,41 @@ namespace Java.Lang.Invoke
         }
         #endregion
 
+
+    }
+    #endregion
+
+    #region SerializedLambda
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/SerializedLambda.html
+    /// </summary>
+    public partial class SerializedLambda : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SerializedLambda>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public SerializedLambda() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public SerializedLambda(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.lang.invoke.SerializedLambda";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
 
     }
     #endregion

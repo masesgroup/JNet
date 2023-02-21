@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Xml.Crypto
 {
     #region OctetStreamData
@@ -45,7 +47,8 @@ namespace Javax.Xml.Crypto
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Xml.Crypto.Data(Javax.Xml.Crypto.OctetStreamData t) => t.Cast<Javax.Xml.Crypto.Data>();
+        
         #endregion
 
         #region Fields

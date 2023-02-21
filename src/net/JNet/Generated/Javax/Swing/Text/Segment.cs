@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing.Text
 {
     #region Segment
@@ -38,7 +40,10 @@ namespace Javax.Swing.Text
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Lang.Cloneable(Javax.Swing.Text.Segment t) => t.Cast<Java.Lang.Cloneable>();
+        public static implicit operator Java.Text.CharacterIterator(Javax.Swing.Text.Segment t) => t.Cast<Java.Text.CharacterIterator>();
+        public static implicit operator Java.Lang.CharSequence(Javax.Swing.Text.Segment t) => t.Cast<Java.Lang.CharSequence>();
+        
         #endregion
 
         #region Fields

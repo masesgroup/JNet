@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Awt.Geom
 {
     #region Arc2D
@@ -171,78 +173,6 @@ namespace Java.Awt.Geom
         #endregion
 
         #region Nested classes
-        #region Float
-        public partial class Float
-        {
-            #region Constructors
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Float.html#<init>(java.awt.geom.Rectangle2D,float,float,int)
-            /// </summary>
-            public Float(Java.Awt.Geom.Rectangle2D arg0, float arg1, float arg2, int arg3)
-                : base(arg0, arg1, arg2, arg3)
-            {
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Float.html#<init>(float,float,float,float,float,float,int)
-            /// </summary>
-            public Float(float arg0, float arg1, float arg2, float arg3, float arg4, float arg5, int arg6)
-                : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
-            {
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Float.html#<init>(int)
-            /// </summary>
-            public Float(int arg0)
-                : base(arg0)
-            {
-            }
-            
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Float.html#x
-            /// </summary>
-            public float x => Instance.GetField<float>("x");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Float.html#y
-            /// </summary>
-            public float y => Instance.GetField<float>("y");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Float.html#width
-            /// </summary>
-            public float width => Instance.GetField<float>("width");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Float.html#height
-            /// </summary>
-            public float height => Instance.GetField<float>("height");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Float.html#start
-            /// </summary>
-            public float start => Instance.GetField<float>("start");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Float.html#extent
-            /// </summary>
-            public float extent => Instance.GetField<float>("extent");
-            
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region Double
         public partial class Double
         {
@@ -272,7 +202,8 @@ namespace Java.Awt.Geom
             #endregion
 
             #region Class/Interface conversion operators
-
+            public static implicit operator Java.Io.Serializable(Java.Awt.Geom.Arc2D.Double t) => t.Cast<Java.Io.Serializable>();
+            
             #endregion
 
             #region Fields
@@ -300,6 +231,79 @@ namespace Java.Awt.Geom
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Double.html#extent
             /// </summary>
             public double extent => Instance.GetField<double>("extent");
+            
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region Float
+        public partial class Float
+        {
+            #region Constructors
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Float.html#<init>(java.awt.geom.Rectangle2D,float,float,int)
+            /// </summary>
+            public Float(Java.Awt.Geom.Rectangle2D arg0, float arg1, float arg2, int arg3)
+                : base(arg0, arg1, arg2, arg3)
+            {
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Float.html#<init>(float,float,float,float,float,float,int)
+            /// </summary>
+            public Float(float arg0, float arg1, float arg2, float arg3, float arg4, float arg5, int arg6)
+                : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
+            {
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Float.html#<init>(int)
+            /// </summary>
+            public Float(int arg0)
+                : base(arg0)
+            {
+            }
+            
+            #endregion
+
+            #region Class/Interface conversion operators
+            public static implicit operator Java.Io.Serializable(Java.Awt.Geom.Arc2D.Float t) => t.Cast<Java.Io.Serializable>();
+            
+            #endregion
+
+            #region Fields
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Float.html#x
+            /// </summary>
+            public float x => Instance.GetField<float>("x");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Float.html#y
+            /// </summary>
+            public float y => Instance.GetField<float>("y");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Float.html#width
+            /// </summary>
+            public float width => Instance.GetField<float>("width");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Float.html#height
+            /// </summary>
+            public float height => Instance.GetField<float>("height");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Float.html#start
+            /// </summary>
+            public float start => Instance.GetField<float>("start");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Float.html#extent
+            /// </summary>
+            public float extent => Instance.GetField<float>("extent");
             
             #endregion
 

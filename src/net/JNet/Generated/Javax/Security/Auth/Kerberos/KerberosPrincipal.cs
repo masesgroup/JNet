@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Security.Auth.Kerberos
 {
     #region KerberosPrincipal
@@ -45,7 +47,9 @@ namespace Javax.Security.Auth.Kerberos
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Security.Principal(Javax.Security.Auth.Kerberos.KerberosPrincipal t) => t.Cast<Java.Security.Principal>();
+        public static implicit operator Java.Io.Serializable(Javax.Security.Auth.Kerberos.KerberosPrincipal t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields

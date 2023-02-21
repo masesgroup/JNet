@@ -58,93 +58,23 @@ namespace Java.Awt.ImageNs.Renderable
     }
     #endregion
 
-    #region RenderedImageFactory
+    #region ParameterBlock
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderedImageFactory.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html
     /// </summary>
-    public partial class RenderedImageFactory : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RenderedImageFactory>
+    public partial class ParameterBlock : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ParameterBlock>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public RenderedImageFactory() { }
+        public ParameterBlock() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public RenderedImageFactory(params object[] args) : base(args) { }
+        public ParameterBlock(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.awt.image.renderable.RenderedImageFactory";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region RenderableImage
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html
-    /// </summary>
-    public partial class RenderableImage : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RenderableImage>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public RenderableImage() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public RenderableImage(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.awt.image.renderable.RenderableImage";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region RenderContext
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderContext.html
-    /// </summary>
-    public partial class RenderContext : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RenderContext>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public RenderContext() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public RenderContext(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.awt.image.renderable.RenderContext";
+        public override string ClassName => "java.awt.image.renderable.ParameterBlock";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -198,6 +128,76 @@ namespace Java.Awt.ImageNs.Renderable
     }
     #endregion
 
+    #region RenderableImage
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderableImage.html
+    /// </summary>
+    public partial class RenderableImage : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RenderableImage>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public RenderableImage() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public RenderableImage(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.awt.image.renderable.RenderableImage";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region RenderedImageFactory
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderedImageFactory.html
+    /// </summary>
+    public partial class RenderedImageFactory : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RenderedImageFactory>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public RenderedImageFactory() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public RenderedImageFactory(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.awt.image.renderable.RenderedImageFactory";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region ContextualRenderedImageFactory
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ContextualRenderedImageFactory.html
@@ -233,23 +233,23 @@ namespace Java.Awt.ImageNs.Renderable
     }
     #endregion
 
-    #region ParameterBlock
+    #region RenderContext
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderContext.html
     /// </summary>
-    public partial class ParameterBlock : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ParameterBlock>
+    public partial class RenderContext : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RenderContext>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ParameterBlock() { }
+        public RenderContext() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public ParameterBlock(params object[] args) : base(args) { }
+        public RenderContext(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.awt.image.renderable.ParameterBlock";
+        public override string ClassName => "java.awt.image.renderable.RenderContext";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;

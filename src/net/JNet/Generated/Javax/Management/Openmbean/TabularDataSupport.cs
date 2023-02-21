@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Management.Openmbean
 {
     #region TabularDataSupport
@@ -31,7 +33,10 @@ namespace Javax.Management.Openmbean
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Management.Openmbean.TabularData(Javax.Management.Openmbean.TabularDataSupport t) => t.Cast<Javax.Management.Openmbean.TabularData>();
+        public static implicit operator Java.Lang.Cloneable(Javax.Management.Openmbean.TabularDataSupport t) => t.Cast<Java.Lang.Cloneable>();
+        public static implicit operator Java.Io.Serializable(Javax.Management.Openmbean.TabularDataSupport t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields

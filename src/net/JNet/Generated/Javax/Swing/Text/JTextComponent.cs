@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing.Text
 {
     #region JTextComponent
@@ -31,7 +33,9 @@ namespace Javax.Swing.Text
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Swing.Scrollable(Javax.Swing.Text.JTextComponent t) => t.Cast<Javax.Swing.Scrollable>();
+        public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.Text.JTextComponent t) => t.Cast<Javax.Accessibility.Accessible>();
+        
         #endregion
 
         #region Fields
@@ -420,7 +424,13 @@ namespace Javax.Swing.Text
             #endregion
 
             #region Class/Interface conversion operators
-
+            public static implicit operator Javax.Accessibility.AccessibleText(Javax.Swing.Text.JTextComponent.AccessibleJTextComponent t) => t.Cast<Javax.Accessibility.AccessibleText>();
+            public static implicit operator Javax.Swing.Event.CaretListener(Javax.Swing.Text.JTextComponent.AccessibleJTextComponent t) => t.Cast<Javax.Swing.Event.CaretListener>();
+            public static implicit operator Javax.Swing.Event.DocumentListener(Javax.Swing.Text.JTextComponent.AccessibleJTextComponent t) => t.Cast<Javax.Swing.Event.DocumentListener>();
+            public static implicit operator Javax.Accessibility.AccessibleAction(Javax.Swing.Text.JTextComponent.AccessibleJTextComponent t) => t.Cast<Javax.Accessibility.AccessibleAction>();
+            public static implicit operator Javax.Accessibility.AccessibleEditableText(Javax.Swing.Text.JTextComponent.AccessibleJTextComponent t) => t.Cast<Javax.Accessibility.AccessibleEditableText>();
+            public static implicit operator Javax.Accessibility.AccessibleExtendedText(Javax.Swing.Text.JTextComponent.AccessibleJTextComponent t) => t.Cast<Javax.Accessibility.AccessibleExtendedText>();
+            
             #endregion
 
             #region Fields

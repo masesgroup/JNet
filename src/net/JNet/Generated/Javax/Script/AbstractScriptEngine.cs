@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Script
 {
     #region AbstractScriptEngine
@@ -38,7 +40,8 @@ namespace Javax.Script
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Script.ScriptEngine(Javax.Script.AbstractScriptEngine t) => t.Cast<Javax.Script.ScriptEngine>();
+        
         #endregion
 
         #region Fields

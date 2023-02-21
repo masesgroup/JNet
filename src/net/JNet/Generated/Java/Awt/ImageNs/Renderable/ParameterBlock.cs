@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Awt.ImageNs.Renderable
 {
     #region ParameterBlock
@@ -31,7 +33,9 @@ namespace Java.Awt.ImageNs.Renderable
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Lang.Cloneable(Java.Awt.ImageNs.Renderable.ParameterBlock t) => t.Cast<Java.Lang.Cloneable>();
+        public static implicit operator Java.Io.Serializable(Java.Awt.ImageNs.Renderable.ParameterBlock t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields

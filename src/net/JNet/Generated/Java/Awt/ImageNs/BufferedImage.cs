@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Awt.ImageNs
 {
     #region BufferedImage
@@ -45,7 +47,9 @@ namespace Java.Awt.ImageNs
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Awt.ImageNs.WritableRenderedImage(Java.Awt.ImageNs.BufferedImage t) => t.Cast<Java.Awt.ImageNs.WritableRenderedImage>();
+        public static implicit operator Java.Awt.Transparency(Java.Awt.ImageNs.BufferedImage t) => t.Cast<Java.Awt.Transparency>();
+        
         #endregion
 
         #region Fields

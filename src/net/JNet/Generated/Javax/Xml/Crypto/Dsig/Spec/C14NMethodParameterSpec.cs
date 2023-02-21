@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Xml.Crypto.Dsig.Spec
 {
     #region C14NMethodParameterSpec
@@ -31,7 +33,8 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Xml.Crypto.Dsig.Spec.TransformParameterSpec(Javax.Xml.Crypto.Dsig.Spec.C14NMethodParameterSpec t) => t.Cast<Javax.Xml.Crypto.Dsig.Spec.TransformParameterSpec>();
+        
         #endregion
 
         #region Fields

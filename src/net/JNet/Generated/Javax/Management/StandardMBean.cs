@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Management
 {
     #region StandardMBean
@@ -31,7 +33,9 @@ namespace Javax.Management
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Management.DynamicMBean(Javax.Management.StandardMBean t) => t.Cast<Javax.Management.DynamicMBean>();
+        public static implicit operator Javax.Management.MBeanRegistration(Javax.Management.StandardMBean t) => t.Cast<Javax.Management.MBeanRegistration>();
+        
         #endregion
 
         #region Fields

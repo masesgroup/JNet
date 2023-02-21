@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Util.Zip
 {
     #region ZipFile
@@ -73,7 +75,8 @@ namespace Java.Util.Zip
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Io.Closeable(Java.Util.Zip.ZipFile t) => t.Cast<Java.Io.Closeable>();
+        
         #endregion
 
         #region Fields

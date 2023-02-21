@@ -23,39 +23,23 @@
 
 namespace Java.Net.Http
 {
-    #region HttpTimeoutException
+    #region HttpRequest
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpTimeoutException.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.html
     /// </summary>
-    public partial class HttpTimeoutException : Java.Io.IOException
-    {
-        public HttpTimeoutException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.net.http.HttpTimeoutException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region WebSocket
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html
-    /// </summary>
-    public partial class WebSocket : MASES.JCOBridge.C2JBridge.JVMBridgeBase<WebSocket>
+    public partial class HttpRequest : MASES.JCOBridge.C2JBridge.JVMBridgeBase<HttpRequest>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public WebSocket() { }
+        public HttpRequest() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public WebSocket(params object[] args) : base(args) { }
+        public HttpRequest(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.net.http.WebSocket";
+        public override string ClassName => "java.net.http.HttpRequest";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -64,7 +48,7 @@ namespace Java.Net.Http
         public override bool IsCloseable => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
+        public override bool IsInterface => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;
@@ -72,7 +56,7 @@ namespace Java.Net.Http
         // TODO: complete the class
         #region Builder
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Builder.html
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html
         /// </summary>
         public partial class Builder : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Builder>
         {
@@ -86,7 +70,7 @@ namespace Java.Net.Http
             public Builder(params object[] args) : base(args) { }
 
             /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-            public override string ClassName => "java.net.http.WebSocket$Builder";
+            public override string ClassName => "java.net.http.HttpRequest$Builder";
 
             /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
             public override bool IsAbstract => true;
@@ -104,103 +88,23 @@ namespace Java.Net.Http
         }
         #endregion
 
-        #region Listener
+        #region BodyPublisher
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublisher.html
         /// </summary>
-        public partial class Listener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
-        {
-#warning Remember to build the body class for event listener
-        }
-        #endregion
-
-
-    }
-    #endregion
-
-    #region HttpHeaders
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpHeaders.html
-    /// </summary>
-    public partial class HttpHeaders : MASES.JCOBridge.C2JBridge.JVMBridgeBase<HttpHeaders>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public HttpHeaders() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public HttpHeaders(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.net.http.HttpHeaders";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region HttpResponse
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.html
-    /// </summary>
-    public partial class HttpResponse : MASES.JCOBridge.C2JBridge.JVMBridgeBase<HttpResponse>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public HttpResponse() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public HttpResponse(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.net.http.HttpResponse";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-        #region BodyHandler
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandler.html
-        /// </summary>
-        public partial class BodyHandler : MASES.JCOBridge.C2JBridge.JVMBridgeBase<BodyHandler>
+        public partial class BodyPublisher : MASES.JCOBridge.C2JBridge.JVMBridgeBase<BodyPublisher>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            public BodyHandler() { }
+            public BodyPublisher() { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
-            public BodyHandler(params object[] args) : base(args) { }
+            public BodyPublisher(params object[] args) : base(args) { }
 
             /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-            public override string ClassName => "java.net.http.HttpResponse$BodyHandler";
+            public override string ClassName => "java.net.http.HttpRequest$BodyPublisher";
 
             /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
             public override bool IsAbstract => true;
@@ -218,23 +122,23 @@ namespace Java.Net.Http
         }
         #endregion
 
-        #region BodyHandlers
+        #region BodyPublishers
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html
         /// </summary>
-        public partial class BodyHandlers : MASES.JCOBridge.C2JBridge.JVMBridgeBase<BodyHandlers>
+        public partial class BodyPublishers : MASES.JCOBridge.C2JBridge.JVMBridgeBase<BodyPublishers>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            public BodyHandlers() { }
+            public BodyPublishers() { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
-            public BodyHandlers(params object[] args) : base(args) { }
+            public BodyPublishers(params object[] args) : base(args) { }
 
             /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-            public override string ClassName => "java.net.http.HttpResponse$BodyHandlers";
+            public override string ClassName => "java.net.http.HttpRequest$BodyPublishers";
 
             /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
             public override bool IsAbstract => false;
@@ -244,142 +148,6 @@ namespace Java.Net.Http
             
             /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
             public override bool IsInterface => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-            public override bool IsStatic => true;
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region PushPromiseHandler
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.PushPromiseHandler.html
-        /// </summary>
-        public partial class PushPromiseHandler : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PushPromiseHandler>
-        {
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public PushPromiseHandler() { }
-            /// <summary>
-            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-            /// </summary>
-            public PushPromiseHandler(params object[] args) : base(args) { }
-
-            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-            public override string ClassName => "java.net.http.HttpResponse$PushPromiseHandler";
-
-            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-            public override bool IsAbstract => true;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-            public override bool IsCloseable => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-            public override bool IsInterface => true;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-            public override bool IsStatic => true;
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region BodySubscribers
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscribers.html
-        /// </summary>
-        public partial class BodySubscribers : MASES.JCOBridge.C2JBridge.JVMBridgeBase<BodySubscribers>
-        {
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public BodySubscribers() { }
-            /// <summary>
-            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-            /// </summary>
-            public BodySubscribers(params object[] args) : base(args) { }
-
-            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-            public override string ClassName => "java.net.http.HttpResponse$BodySubscribers";
-
-            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-            public override bool IsAbstract => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-            public override bool IsCloseable => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-            public override bool IsInterface => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-            public override bool IsStatic => true;
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region ResponseInfo
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.ResponseInfo.html
-        /// </summary>
-        public partial class ResponseInfo : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ResponseInfo>
-        {
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public ResponseInfo() { }
-            /// <summary>
-            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-            /// </summary>
-            public ResponseInfo(params object[] args) : base(args) { }
-
-            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-            public override string ClassName => "java.net.http.HttpResponse$ResponseInfo";
-
-            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-            public override bool IsAbstract => true;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-            public override bool IsCloseable => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-            public override bool IsInterface => true;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-            public override bool IsStatic => true;
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region BodySubscriber
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscriber.html
-        /// </summary>
-        public partial class BodySubscriber : MASES.JCOBridge.C2JBridge.JVMBridgeBase<BodySubscriber>
-        {
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public BodySubscriber() { }
-            /// <summary>
-            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-            /// </summary>
-            public BodySubscriber(params object[] args) : base(args) { }
-
-            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-            public override string ClassName => "java.net.http.HttpResponse$BodySubscriber";
-
-            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-            public override bool IsAbstract => true;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-            public override bool IsCloseable => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-            public override bool IsInterface => true;
             
             /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
             public override bool IsStatic => true;
@@ -529,23 +297,39 @@ namespace Java.Net.Http
     }
     #endregion
 
-    #region HttpRequest
+    #region HttpConnectTimeoutException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpConnectTimeoutException.html
     /// </summary>
-    public partial class HttpRequest : MASES.JCOBridge.C2JBridge.JVMBridgeBase<HttpRequest>
+    public partial class HttpConnectTimeoutException : Java.Net.Http.HttpTimeoutException
+    {
+        public HttpConnectTimeoutException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.net.http.HttpConnectTimeoutException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region HttpResponse
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.html
+    /// </summary>
+    public partial class HttpResponse : MASES.JCOBridge.C2JBridge.JVMBridgeBase<HttpResponse>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public HttpRequest() { }
+        public HttpResponse() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public HttpRequest(params object[] args) : base(args) { }
+        public HttpResponse(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.net.http.HttpRequest";
+        public override string ClassName => "java.net.http.HttpResponse";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -554,29 +338,29 @@ namespace Java.Net.Http
         public override bool IsCloseable => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
+        public override bool IsInterface => true;
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;
 
         // TODO: complete the class
-        #region Builder
+        #region ResponseInfo
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.ResponseInfo.html
         /// </summary>
-        public partial class Builder : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Builder>
+        public partial class ResponseInfo : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ResponseInfo>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            public Builder() { }
+            public ResponseInfo() { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
-            public Builder(params object[] args) : base(args) { }
+            public ResponseInfo(params object[] args) : base(args) { }
 
             /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-            public override string ClassName => "java.net.http.HttpRequest$Builder";
+            public override string ClassName => "java.net.http.HttpResponse$ResponseInfo";
 
             /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
             public override bool IsAbstract => true;
@@ -594,23 +378,57 @@ namespace Java.Net.Http
         }
         #endregion
 
-        #region BodyPublisher
+        #region BodySubscribers
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublisher.html
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscribers.html
         /// </summary>
-        public partial class BodyPublisher : MASES.JCOBridge.C2JBridge.JVMBridgeBase<BodyPublisher>
+        public partial class BodySubscribers : MASES.JCOBridge.C2JBridge.JVMBridgeBase<BodySubscribers>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            public BodyPublisher() { }
+            public BodySubscribers() { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
-            public BodyPublisher(params object[] args) : base(args) { }
+            public BodySubscribers(params object[] args) : base(args) { }
 
             /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-            public override string ClassName => "java.net.http.HttpRequest$BodyPublisher";
+            public override string ClassName => "java.net.http.HttpResponse$BodySubscribers";
+
+            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+            public override bool IsAbstract => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+            public override bool IsCloseable => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+            public override bool IsInterface => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+            public override bool IsStatic => true;
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region PushPromiseHandler
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.PushPromiseHandler.html
+        /// </summary>
+        public partial class PushPromiseHandler : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PushPromiseHandler>
+        {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public PushPromiseHandler() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public PushPromiseHandler(params object[] args) : base(args) { }
+
+            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+            public override string ClassName => "java.net.http.HttpResponse$PushPromiseHandler";
 
             /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
             public override bool IsAbstract => true;
@@ -628,23 +446,91 @@ namespace Java.Net.Http
         }
         #endregion
 
-        #region BodyPublishers
+        #region BodyHandler
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandler.html
         /// </summary>
-        public partial class BodyPublishers : MASES.JCOBridge.C2JBridge.JVMBridgeBase<BodyPublishers>
+        public partial class BodyHandler : MASES.JCOBridge.C2JBridge.JVMBridgeBase<BodyHandler>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            public BodyPublishers() { }
+            public BodyHandler() { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
-            public BodyPublishers(params object[] args) : base(args) { }
+            public BodyHandler(params object[] args) : base(args) { }
 
             /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-            public override string ClassName => "java.net.http.HttpRequest$BodyPublishers";
+            public override string ClassName => "java.net.http.HttpResponse$BodyHandler";
+
+            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+            public override bool IsAbstract => true;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+            public override bool IsCloseable => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+            public override bool IsInterface => true;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+            public override bool IsStatic => true;
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region BodySubscriber
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscriber.html
+        /// </summary>
+        public partial class BodySubscriber : MASES.JCOBridge.C2JBridge.JVMBridgeBase<BodySubscriber>
+        {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public BodySubscriber() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public BodySubscriber(params object[] args) : base(args) { }
+
+            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+            public override string ClassName => "java.net.http.HttpResponse$BodySubscriber";
+
+            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+            public override bool IsAbstract => true;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+            public override bool IsCloseable => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+            public override bool IsInterface => true;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+            public override bool IsStatic => true;
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region BodyHandlers
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html
+        /// </summary>
+        public partial class BodyHandlers : MASES.JCOBridge.C2JBridge.JVMBridgeBase<BodyHandlers>
+        {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public BodyHandlers() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public BodyHandlers(params object[] args) : base(args) { }
+
+            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+            public override string ClassName => "java.net.http.HttpResponse$BodyHandlers";
 
             /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
             public override bool IsAbstract => false;
@@ -666,16 +552,130 @@ namespace Java.Net.Http
     }
     #endregion
 
-    #region HttpConnectTimeoutException
+    #region HttpTimeoutException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpConnectTimeoutException.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpTimeoutException.html
     /// </summary>
-    public partial class HttpConnectTimeoutException : Java.Net.Http.HttpTimeoutException
+    public partial class HttpTimeoutException : Java.Io.IOException
     {
-        public HttpConnectTimeoutException() { }
+        public HttpTimeoutException() { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.net.http.HttpConnectTimeoutException";
+        public override string ClassName => "java.net.http.HttpTimeoutException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region WebSocket
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html
+    /// </summary>
+    public partial class WebSocket : MASES.JCOBridge.C2JBridge.JVMBridgeBase<WebSocket>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public WebSocket() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public WebSocket(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.net.http.WebSocket";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+        #region Builder
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Builder.html
+        /// </summary>
+        public partial class Builder : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Builder>
+        {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public Builder() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public Builder(params object[] args) : base(args) { }
+
+            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+            public override string ClassName => "java.net.http.WebSocket$Builder";
+
+            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+            public override bool IsAbstract => true;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+            public override bool IsCloseable => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+            public override bool IsInterface => true;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+            public override bool IsStatic => true;
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region Listener
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html
+        /// </summary>
+        public partial class Listener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+        {
+#warning Remember to build the body class for event listener
+        }
+        #endregion
+
+
+    }
+    #endregion
+
+    #region HttpHeaders
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpHeaders.html
+    /// </summary>
+    public partial class HttpHeaders : MASES.JCOBridge.C2JBridge.JVMBridgeBase<HttpHeaders>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public HttpHeaders() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public HttpHeaders(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.net.http.HttpHeaders";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
 
         // TODO: complete the class
 

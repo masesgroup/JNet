@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing
 {
     #region AbstractAction
@@ -45,7 +47,10 @@ namespace Javax.Swing
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Swing.Action(Javax.Swing.AbstractAction t) => t.Cast<Javax.Swing.Action>();
+        public static implicit operator Java.Lang.Cloneable(Javax.Swing.AbstractAction t) => t.Cast<Java.Lang.Cloneable>();
+        public static implicit operator Java.Io.Serializable(Javax.Swing.AbstractAction t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields

@@ -23,13 +23,35 @@
 
 namespace Org.Xml.Sax.Helpers
 {
-    #region ParserAdapter
+    #region DefaultHandler
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/ParserAdapter.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/DefaultHandler.html
     /// </summary>
-    public partial class ParserAdapter : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class DefaultHandler : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DefaultHandler>
     {
-#warning Remember to build the body class for event listener
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public DefaultHandler() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public DefaultHandler(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "org.xml.sax.helpers.DefaultHandler";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
 
         // TODO: complete the class
 
@@ -71,35 +93,13 @@ namespace Org.Xml.Sax.Helpers
     }
     #endregion
 
-    #region DefaultHandler
+    #region XMLReaderAdapter
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/DefaultHandler.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html
     /// </summary>
-    public partial class DefaultHandler : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DefaultHandler>
+    public partial class XMLReaderAdapter : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public DefaultHandler() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public DefaultHandler(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "org.xml.sax.helpers.DefaultHandler";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
+#warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
@@ -141,11 +141,11 @@ namespace Org.Xml.Sax.Helpers
     }
     #endregion
 
-    #region XMLReaderAdapter
+    #region ParserAdapter
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/XMLReaderAdapter.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/ParserAdapter.html
     /// </summary>
-    public partial class XMLReaderAdapter : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class ParserAdapter : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
 #warning Remember to build the body class for event listener
 

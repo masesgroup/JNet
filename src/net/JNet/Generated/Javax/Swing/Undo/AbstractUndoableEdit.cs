@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing.Undo
 {
     #region AbstractUndoableEdit
@@ -31,7 +33,9 @@ namespace Javax.Swing.Undo
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Swing.Undo.UndoableEdit(Javax.Swing.Undo.AbstractUndoableEdit t) => t.Cast<Javax.Swing.Undo.UndoableEdit>();
+        public static implicit operator Java.Io.Serializable(Javax.Swing.Undo.AbstractUndoableEdit t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields

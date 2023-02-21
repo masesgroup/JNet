@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing.Plaf.Basic
 {
     #region BasicSliderUI
@@ -168,6 +170,55 @@ namespace Javax.Swing.Plaf.Basic
         #endregion
 
         #region Nested classes
+        #region FocusHandler
+        public partial class FocusHandler
+        {
+            #region Constructors
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.FocusHandler.html#<init>(javax.swing.plaf.basic.BasicSliderUI)
+            /// </summary>
+            public FocusHandler(Javax.Swing.Plaf.Basic.BasicSliderUI arg0)
+                : base(arg0)
+            {
+            }
+            
+            #endregion
+
+            #region Class/Interface conversion operators
+            public static implicit operator Java.Awt.EventNs.FocusListener(Javax.Swing.Plaf.Basic.BasicSliderUI.FocusHandler t) => t.Cast<Java.Awt.EventNs.FocusListener>();
+            
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.FocusHandler.html#focusGained(java.awt.event.FocusEvent)
+            /// </summary>
+            public void FocusGained(Java.Awt.EventNs.FocusEvent arg0)
+            {
+                IExecute("focusGained", arg0);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.FocusHandler.html#focusLost(java.awt.event.FocusEvent)
+            /// </summary>
+            public void FocusLost(Java.Awt.EventNs.FocusEvent arg0)
+            {
+                IExecute("focusLost", arg0);
+            }
+            
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region ChangeHandler
         public partial class ChangeHandler
         {
@@ -183,7 +234,8 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Class/Interface conversion operators
-
+            public static implicit operator Javax.Swing.Event.ChangeListener(Javax.Swing.Plaf.Basic.BasicSliderUI.ChangeHandler t) => t.Cast<Javax.Swing.Event.ChangeListener>();
+            
             #endregion
 
             #region Fields
@@ -201,6 +253,48 @@ namespace Javax.Swing.Plaf.Basic
             public void StateChanged(Javax.Swing.Event.ChangeEvent arg0)
             {
                 IExecute("stateChanged", arg0);
+            }
+            
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region PropertyChangeHandler
+        public partial class PropertyChangeHandler
+        {
+            #region Constructors
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.PropertyChangeHandler.html#<init>(javax.swing.plaf.basic.BasicSliderUI)
+            /// </summary>
+            public PropertyChangeHandler(Javax.Swing.Plaf.Basic.BasicSliderUI arg0)
+                : base(arg0)
+            {
+            }
+            
+            #endregion
+
+            #region Class/Interface conversion operators
+            public static implicit operator Java.Beans.PropertyChangeListener(Javax.Swing.Plaf.Basic.BasicSliderUI.PropertyChangeHandler t) => t.Cast<Java.Beans.PropertyChangeListener>();
+            
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.PropertyChangeHandler.html#propertyChange(java.beans.PropertyChangeEvent)
+            /// </summary>
+            public void PropertyChange(Java.Beans.PropertyChangeEvent arg0)
+            {
+                IExecute("propertyChange", arg0);
             }
             
             #endregion
@@ -237,95 +331,6 @@ namespace Javax.Swing.Plaf.Basic
 
             #region Instance methods
 
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region FocusHandler
-        public partial class FocusHandler
-        {
-            #region Constructors
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.FocusHandler.html#<init>(javax.swing.plaf.basic.BasicSliderUI)
-            /// </summary>
-            public FocusHandler(Javax.Swing.Plaf.Basic.BasicSliderUI arg0)
-                : base(arg0)
-            {
-            }
-            
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.FocusHandler.html#focusGained(java.awt.event.FocusEvent)
-            /// </summary>
-            public void FocusGained(Java.Awt.EventNs.FocusEvent arg0)
-            {
-                IExecute("focusGained", arg0);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.FocusHandler.html#focusLost(java.awt.event.FocusEvent)
-            /// </summary>
-            public void FocusLost(Java.Awt.EventNs.FocusEvent arg0)
-            {
-                IExecute("focusLost", arg0);
-            }
-            
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region PropertyChangeHandler
-        public partial class PropertyChangeHandler
-        {
-            #region Constructors
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.PropertyChangeHandler.html#<init>(javax.swing.plaf.basic.BasicSliderUI)
-            /// </summary>
-            public PropertyChangeHandler(Javax.Swing.Plaf.Basic.BasicSliderUI arg0)
-                : base(arg0)
-            {
-            }
-            
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.PropertyChangeHandler.html#propertyChange(java.beans.PropertyChangeEvent)
-            /// </summary>
-            public void PropertyChange(Java.Beans.PropertyChangeEvent arg0)
-            {
-                IExecute("propertyChange", arg0);
-            }
-            
             #endregion
 
             // TODO: complete the class

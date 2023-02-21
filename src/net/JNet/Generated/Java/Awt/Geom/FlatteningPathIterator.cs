@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Awt.Geom
 {
     #region FlatteningPathIterator
@@ -45,7 +47,8 @@ namespace Java.Awt.Geom
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Awt.Geom.PathIterator(Java.Awt.Geom.FlatteningPathIterator t) => t.Cast<Java.Awt.Geom.PathIterator>();
+        
         #endregion
 
         #region Fields

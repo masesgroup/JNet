@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Awt
 {
     #region AlphaComposite
@@ -31,7 +33,8 @@ namespace Java.Awt
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Awt.Composite(Java.Awt.AlphaComposite t) => t.Cast<Java.Awt.Composite>();
+        
         #endregion
 
         #region Fields

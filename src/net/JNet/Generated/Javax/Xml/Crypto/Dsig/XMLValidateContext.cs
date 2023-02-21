@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Xml.Crypto.Dsig
 {
     #region XMLValidateContext
@@ -31,7 +33,8 @@ namespace Javax.Xml.Crypto.Dsig
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Xml.Crypto.XMLCryptoContext(Javax.Xml.Crypto.Dsig.XMLValidateContext t) => t.Cast<Javax.Xml.Crypto.XMLCryptoContext>();
+        
         #endregion
 
         #region Fields

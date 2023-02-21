@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Org.Xml.Sax.Ext
 {
     #region Attributes2
@@ -31,7 +33,8 @@ namespace Org.Xml.Sax.Ext
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Org.Xml.Sax.Attributes(Org.Xml.Sax.Ext.Attributes2 t) => t.Cast<Org.Xml.Sax.Attributes>();
+        
         #endregion
 
         #region Fields

@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Management
 {
     #region ObjectInstance
@@ -45,7 +47,8 @@ namespace Javax.Management
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Io.Serializable(Javax.Management.ObjectInstance t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields

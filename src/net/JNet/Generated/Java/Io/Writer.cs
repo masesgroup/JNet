@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Io
 {
     #region Writer
@@ -31,7 +33,10 @@ namespace Java.Io
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Lang.Appendable(Java.Io.Writer t) => t.Cast<Java.Lang.Appendable>();
+        public static implicit operator Java.Io.Closeable(Java.Io.Writer t) => t.Cast<Java.Io.Closeable>();
+        public static implicit operator Java.Io.Flushable(Java.Io.Writer t) => t.Cast<Java.Io.Flushable>();
+        
         #endregion
 
         #region Fields

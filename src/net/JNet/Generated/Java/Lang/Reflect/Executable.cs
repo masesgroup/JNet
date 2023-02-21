@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Lang.Reflect
 {
     #region Executable
@@ -31,7 +33,9 @@ namespace Java.Lang.Reflect
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Lang.Reflect.Member(Java.Lang.Reflect.Executable t) => t.Cast<Java.Lang.Reflect.Member>();
+        public static implicit operator Java.Lang.Reflect.GenericDeclaration(Java.Lang.Reflect.Executable t) => t.Cast<Java.Lang.Reflect.GenericDeclaration>();
+        
         #endregion
 
         #region Fields

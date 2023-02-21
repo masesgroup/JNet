@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing
 {
     #region SpringLayout
@@ -31,7 +33,8 @@ namespace Javax.Swing
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Awt.LayoutManager2(Javax.Swing.SpringLayout t) => t.Cast<Java.Awt.LayoutManager2>();
+        
         #endregion
 
         #region Fields

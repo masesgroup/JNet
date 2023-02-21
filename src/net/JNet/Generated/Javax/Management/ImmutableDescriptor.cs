@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Management
 {
     #region ImmutableDescriptor
@@ -38,7 +40,8 @@ namespace Javax.Management
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Management.Descriptor(Javax.Management.ImmutableDescriptor t) => t.Cast<Javax.Management.Descriptor>();
+        
         #endregion
 
         #region Fields

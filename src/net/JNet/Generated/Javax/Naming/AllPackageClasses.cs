@@ -23,83 +23,16 @@
 
 namespace Javax.Naming
 {
-    #region Binding
+    #region InterruptedNamingException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Binding.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/InterruptedNamingException.html
     /// </summary>
-    public partial class Binding : Javax.Naming.NameClassPair
+    public partial class InterruptedNamingException : Javax.Naming.NamingException
     {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public Binding() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public Binding(params object[] args) : base(args) { }
+        public InterruptedNamingException() { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.Binding";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region CannotProceedException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/CannotProceedException.html
-    /// </summary>
-    public partial class CannotProceedException : Javax.Naming.NamingException
-    {
-        public CannotProceedException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.CannotProceedException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region InsufficientResourcesException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/InsufficientResourcesException.html
-    /// </summary>
-    public partial class InsufficientResourcesException : Javax.Naming.NamingException
-    {
-        public InsufficientResourcesException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.InsufficientResourcesException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region NameNotFoundException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NameNotFoundException.html
-    /// </summary>
-    public partial class NameNotFoundException : Javax.Naming.NamingException
-    {
-        public NameNotFoundException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.NameNotFoundException";
+        public override string ClassName => "javax.naming.InterruptedNamingException";
 
         // TODO: complete the class
 
@@ -122,23 +55,93 @@ namespace Javax.Naming
     }
     #endregion
 
-    #region CompoundName
+    #region Context
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/CompoundName.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html
     /// </summary>
-    public partial class CompoundName : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CompoundName>
+    public partial class Context : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Context>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public CompoundName() { }
+        public Context() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public CompoundName(params object[] args) : base(args) { }
+        public Context(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.CompoundName";
+        public override string ClassName => "javax.naming.Context";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region NamingEnumeration
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NamingEnumeration.html
+    /// </summary>
+    public partial class NamingEnumeration : MASES.JCOBridge.C2JBridge.JVMBridgeBase<NamingEnumeration>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public NamingEnumeration() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public NamingEnumeration(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.naming.NamingEnumeration";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region LinkRef
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/LinkRef.html
+    /// </summary>
+    public partial class LinkRef : Javax.Naming.Reference
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public LinkRef() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public LinkRef(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.naming.LinkRef";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -157,147 +160,32 @@ namespace Javax.Naming
     }
     #endregion
 
-    #region CommunicationException
+    #region NotContextException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/CommunicationException.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NotContextException.html
     /// </summary>
-    public partial class CommunicationException : Javax.Naming.NamingException
+    public partial class NotContextException : Javax.Naming.NamingException
     {
-        public CommunicationException() { }
+        public NotContextException() { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.CommunicationException";
+        public override string ClassName => "javax.naming.NotContextException";
 
         // TODO: complete the class
 
     }
     #endregion
 
-    #region ConfigurationException
+    #region LimitExceededException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ConfigurationException.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/LimitExceededException.html
     /// </summary>
-    public partial class ConfigurationException : Javax.Naming.NamingException
+    public partial class LimitExceededException : Javax.Naming.NamingException
     {
-        public ConfigurationException() { }
+        public LimitExceededException() { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.ConfigurationException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region LinkException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/LinkException.html
-    /// </summary>
-    public partial class LinkException : Javax.Naming.NamingException
-    {
-        public LinkException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.LinkException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region OperationNotSupportedException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/OperationNotSupportedException.html
-    /// </summary>
-    public partial class OperationNotSupportedException : Javax.Naming.NamingException
-    {
-        public OperationNotSupportedException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.OperationNotSupportedException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region ServiceUnavailableException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ServiceUnavailableException.html
-    /// </summary>
-    public partial class ServiceUnavailableException : Javax.Naming.NamingException
-    {
-        public ServiceUnavailableException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.ServiceUnavailableException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region Reference
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Reference.html
-    /// </summary>
-    public partial class Reference : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Reference>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public Reference() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public Reference(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.Reference";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region NoPermissionException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NoPermissionException.html
-    /// </summary>
-    public partial class NoPermissionException : Javax.Naming.NamingSecurityException
-    {
-        public NoPermissionException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.NoPermissionException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region NameAlreadyBoundException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NameAlreadyBoundException.html
-    /// </summary>
-    public partial class NameAlreadyBoundException : Javax.Naming.NamingException
-    {
-        public NameAlreadyBoundException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.NameAlreadyBoundException";
+        public override string ClassName => "javax.naming.LimitExceededException";
 
         // TODO: complete the class
 
@@ -339,39 +227,371 @@ namespace Javax.Naming
     }
     #endregion
 
-    #region NamingSecurityException
+    #region LinkException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NamingSecurityException.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/LinkException.html
     /// </summary>
-    public partial class NamingSecurityException : Javax.Naming.NamingException
+    public partial class LinkException : Javax.Naming.NamingException
     {
-        public NamingSecurityException() { }
+        public LinkException() { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.NamingSecurityException";
+        public override string ClassName => "javax.naming.LinkException";
 
         // TODO: complete the class
 
     }
     #endregion
 
-    #region LinkRef
+    #region CompoundName
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/LinkRef.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/CompoundName.html
     /// </summary>
-    public partial class LinkRef : Javax.Naming.Reference
+    public partial class CompoundName : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CompoundName>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public LinkRef() { }
+        public CompoundName() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public LinkRef(params object[] args) : base(args) { }
+        public CompoundName(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.LinkRef";
+        public override string ClassName => "javax.naming.CompoundName";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region LinkLoopException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/LinkLoopException.html
+    /// </summary>
+    public partial class LinkLoopException : Javax.Naming.LinkException
+    {
+        public LinkLoopException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.naming.LinkLoopException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region ServiceUnavailableException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ServiceUnavailableException.html
+    /// </summary>
+    public partial class ServiceUnavailableException : Javax.Naming.NamingException
+    {
+        public ServiceUnavailableException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.naming.ServiceUnavailableException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region PartialResultException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/PartialResultException.html
+    /// </summary>
+    public partial class PartialResultException : Javax.Naming.NamingException
+    {
+        public PartialResultException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.naming.PartialResultException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region NamingException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NamingException.html
+    /// </summary>
+    public partial class NamingException : Java.Lang.Exception
+    {
+        public NamingException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.naming.NamingException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region NameNotFoundException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NameNotFoundException.html
+    /// </summary>
+    public partial class NameNotFoundException : Javax.Naming.NamingException
+    {
+        public NameNotFoundException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.naming.NameNotFoundException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region Reference
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Reference.html
+    /// </summary>
+    public partial class Reference : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Reference>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public Reference() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public Reference(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.naming.Reference";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region TimeLimitExceededException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/TimeLimitExceededException.html
+    /// </summary>
+    public partial class TimeLimitExceededException : Javax.Naming.LimitExceededException
+    {
+        public TimeLimitExceededException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.naming.TimeLimitExceededException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region ConfigurationException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ConfigurationException.html
+    /// </summary>
+    public partial class ConfigurationException : Javax.Naming.NamingException
+    {
+        public ConfigurationException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.naming.ConfigurationException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region NoPermissionException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NoPermissionException.html
+    /// </summary>
+    public partial class NoPermissionException : Javax.Naming.NamingSecurityException
+    {
+        public NoPermissionException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.naming.NoPermissionException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region NoInitialContextException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NoInitialContextException.html
+    /// </summary>
+    public partial class NoInitialContextException : Javax.Naming.NamingException
+    {
+        public NoInitialContextException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.naming.NoInitialContextException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region ReferralException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ReferralException.html
+    /// </summary>
+    public partial class ReferralException : Javax.Naming.NamingException
+    {
+        public ReferralException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.naming.ReferralException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region Name
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Name.html
+    /// </summary>
+    public partial class Name : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Name>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public Name() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public Name(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.naming.Name";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region SizeLimitExceededException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/SizeLimitExceededException.html
+    /// </summary>
+    public partial class SizeLimitExceededException : Javax.Naming.LimitExceededException
+    {
+        public SizeLimitExceededException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.naming.SizeLimitExceededException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region OperationNotSupportedException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/OperationNotSupportedException.html
+    /// </summary>
+    public partial class OperationNotSupportedException : Javax.Naming.NamingException
+    {
+        public OperationNotSupportedException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.naming.OperationNotSupportedException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region Referenceable
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Referenceable.html
+    /// </summary>
+    public partial class Referenceable : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Referenceable>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public Referenceable() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public Referenceable(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.naming.Referenceable";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region Binding
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Binding.html
+    /// </summary>
+    public partial class Binding : Javax.Naming.NameClassPair
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public Binding() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public Binding(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.naming.Binding";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -425,338 +645,16 @@ namespace Javax.Naming
     }
     #endregion
 
-    #region MalformedLinkException
+    #region NamingSecurityException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/MalformedLinkException.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NamingSecurityException.html
     /// </summary>
-    public partial class MalformedLinkException : Javax.Naming.LinkException
+    public partial class NamingSecurityException : Javax.Naming.NamingException
     {
-        public MalformedLinkException() { }
+        public NamingSecurityException() { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.MalformedLinkException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region NameParser
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NameParser.html
-    /// </summary>
-    public partial class NameParser : MASES.JCOBridge.C2JBridge.JVMBridgeBase<NameParser>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public NameParser() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public NameParser(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.NameParser";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region AuthenticationNotSupportedException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/AuthenticationNotSupportedException.html
-    /// </summary>
-    public partial class AuthenticationNotSupportedException : Javax.Naming.NamingSecurityException
-    {
-        public AuthenticationNotSupportedException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.AuthenticationNotSupportedException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region ContextNotEmptyException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ContextNotEmptyException.html
-    /// </summary>
-    public partial class ContextNotEmptyException : Javax.Naming.NamingException
-    {
-        public ContextNotEmptyException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.ContextNotEmptyException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region SizeLimitExceededException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/SizeLimitExceededException.html
-    /// </summary>
-    public partial class SizeLimitExceededException : Javax.Naming.LimitExceededException
-    {
-        public SizeLimitExceededException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.SizeLimitExceededException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region NamingException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NamingException.html
-    /// </summary>
-    public partial class NamingException : Java.Lang.Exception
-    {
-        public NamingException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.NamingException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region TimeLimitExceededException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/TimeLimitExceededException.html
-    /// </summary>
-    public partial class TimeLimitExceededException : Javax.Naming.LimitExceededException
-    {
-        public TimeLimitExceededException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.TimeLimitExceededException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region InitialContext
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/InitialContext.html
-    /// </summary>
-    public partial class InitialContext : MASES.JCOBridge.C2JBridge.JVMBridgeBase<InitialContext>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public InitialContext() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public InitialContext(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.InitialContext";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region Referenceable
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Referenceable.html
-    /// </summary>
-    public partial class Referenceable : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Referenceable>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public Referenceable() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public Referenceable(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.Referenceable";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region Context
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html
-    /// </summary>
-    public partial class Context : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Context>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public Context() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public Context(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.Context";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region Name
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Name.html
-    /// </summary>
-    public partial class Name : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Name>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public Name() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public Name(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.Name";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region LinkLoopException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/LinkLoopException.html
-    /// </summary>
-    public partial class LinkLoopException : Javax.Naming.LinkException
-    {
-        public LinkLoopException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.LinkLoopException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region NamingEnumeration
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NamingEnumeration.html
-    /// </summary>
-    public partial class NamingEnumeration : MASES.JCOBridge.C2JBridge.JVMBridgeBase<NamingEnumeration>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public NamingEnumeration() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public NamingEnumeration(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.NamingEnumeration";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region NoInitialContextException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NoInitialContextException.html
-    /// </summary>
-    public partial class NoInitialContextException : Javax.Naming.NamingException
-    {
-        public NoInitialContextException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.NoInitialContextException";
+        public override string ClassName => "javax.naming.NamingSecurityException";
 
         // TODO: complete the class
 
@@ -849,6 +747,38 @@ namespace Javax.Naming
     }
     #endregion
 
+    #region MalformedLinkException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/MalformedLinkException.html
+    /// </summary>
+    public partial class MalformedLinkException : Javax.Naming.LinkException
+    {
+        public MalformedLinkException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.naming.MalformedLinkException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region ContextNotEmptyException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ContextNotEmptyException.html
+    /// </summary>
+    public partial class ContextNotEmptyException : Javax.Naming.NamingException
+    {
+        public ContextNotEmptyException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.naming.ContextNotEmptyException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region CompositeName
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/CompositeName.html
@@ -884,80 +814,150 @@ namespace Javax.Naming
     }
     #endregion
 
-    #region PartialResultException
+    #region NameParser
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/PartialResultException.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NameParser.html
     /// </summary>
-    public partial class PartialResultException : Javax.Naming.NamingException
+    public partial class NameParser : MASES.JCOBridge.C2JBridge.JVMBridgeBase<NameParser>
     {
-        public PartialResultException() { }
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public NameParser() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public NameParser(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.PartialResultException";
+        public override string ClassName => "javax.naming.NameParser";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
 
         // TODO: complete the class
 
     }
     #endregion
 
-    #region NotContextException
+    #region InsufficientResourcesException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NotContextException.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/InsufficientResourcesException.html
     /// </summary>
-    public partial class NotContextException : Javax.Naming.NamingException
+    public partial class InsufficientResourcesException : Javax.Naming.NamingException
     {
-        public NotContextException() { }
+        public InsufficientResourcesException() { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.NotContextException";
+        public override string ClassName => "javax.naming.InsufficientResourcesException";
 
         // TODO: complete the class
 
     }
     #endregion
 
-    #region InterruptedNamingException
+    #region NameAlreadyBoundException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/InterruptedNamingException.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/NameAlreadyBoundException.html
     /// </summary>
-    public partial class InterruptedNamingException : Javax.Naming.NamingException
+    public partial class NameAlreadyBoundException : Javax.Naming.NamingException
     {
-        public InterruptedNamingException() { }
+        public NameAlreadyBoundException() { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.InterruptedNamingException";
+        public override string ClassName => "javax.naming.NameAlreadyBoundException";
 
         // TODO: complete the class
 
     }
     #endregion
 
-    #region ReferralException
+    #region CommunicationException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ReferralException.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/CommunicationException.html
     /// </summary>
-    public partial class ReferralException : Javax.Naming.NamingException
+    public partial class CommunicationException : Javax.Naming.NamingException
     {
-        public ReferralException() { }
+        public CommunicationException() { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.ReferralException";
+        public override string ClassName => "javax.naming.CommunicationException";
 
         // TODO: complete the class
 
     }
     #endregion
 
-    #region LimitExceededException
+    #region InitialContext
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/LimitExceededException.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/InitialContext.html
     /// </summary>
-    public partial class LimitExceededException : Javax.Naming.NamingException
+    public partial class InitialContext : MASES.JCOBridge.C2JBridge.JVMBridgeBase<InitialContext>
     {
-        public LimitExceededException() { }
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public InitialContext() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public InitialContext(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.LimitExceededException";
+        public override string ClassName => "javax.naming.InitialContext";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region AuthenticationNotSupportedException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/AuthenticationNotSupportedException.html
+    /// </summary>
+    public partial class AuthenticationNotSupportedException : Javax.Naming.NamingSecurityException
+    {
+        public AuthenticationNotSupportedException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.naming.AuthenticationNotSupportedException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region CannotProceedException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/CannotProceedException.html
+    /// </summary>
+    public partial class CannotProceedException : Javax.Naming.NamingException
+    {
+        public CannotProceedException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.naming.CannotProceedException";
 
         // TODO: complete the class
 

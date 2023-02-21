@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Script
 {
     #region SimpleScriptContext
@@ -31,7 +33,8 @@ namespace Javax.Script
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Script.ScriptContext(Javax.Script.SimpleScriptContext t) => t.Cast<Javax.Script.ScriptContext>();
+        
         #endregion
 
         #region Fields

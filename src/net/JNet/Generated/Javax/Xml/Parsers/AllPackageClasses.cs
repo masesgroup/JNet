@@ -23,6 +23,38 @@
 
 namespace Javax.Xml.Parsers
 {
+    #region ParserConfigurationException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/ParserConfigurationException.html
+    /// </summary>
+    public partial class ParserConfigurationException : Java.Lang.Exception
+    {
+        public ParserConfigurationException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.xml.parsers.ParserConfigurationException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region FactoryConfigurationError
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/FactoryConfigurationError.html
+    /// </summary>
+    public partial class FactoryConfigurationError : Java.Lang.Error
+    {
+        public FactoryConfigurationError() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.xml.parsers.FactoryConfigurationError";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region DocumentBuilderFactory
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html
@@ -52,22 +84,6 @@ namespace Javax.Xml.Parsers
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region ParserConfigurationException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/ParserConfigurationException.html
-    /// </summary>
-    public partial class ParserConfigurationException : Java.Lang.Exception
-    {
-        public ParserConfigurationException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.xml.parsers.ParserConfigurationException";
 
         // TODO: complete the class
 
@@ -109,16 +125,35 @@ namespace Javax.Xml.Parsers
     }
     #endregion
 
-    #region FactoryConfigurationError
+    #region DocumentBuilder
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/FactoryConfigurationError.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html
     /// </summary>
-    public partial class FactoryConfigurationError : Java.Lang.Error
+    public partial class DocumentBuilder : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DocumentBuilder>
     {
-        public FactoryConfigurationError() { }
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public DocumentBuilder() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public DocumentBuilder(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.xml.parsers.FactoryConfigurationError";
+        public override string ClassName => "javax.xml.parsers.DocumentBuilder";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
 
         // TODO: complete the class
 
@@ -142,41 +177,6 @@ namespace Javax.Xml.Parsers
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "javax.xml.parsers.SAXParser";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region DocumentBuilder
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html
-    /// </summary>
-    public partial class DocumentBuilder : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DocumentBuilder>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public DocumentBuilder() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public DocumentBuilder(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.xml.parsers.DocumentBuilder";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;

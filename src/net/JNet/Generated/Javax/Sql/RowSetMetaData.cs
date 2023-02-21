@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Sql
 {
     #region RowSetMetaData
@@ -31,7 +33,8 @@ namespace Javax.Sql
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Sql.ResultSetMetaData(Javax.Sql.RowSetMetaData t) => t.Cast<Java.Sql.ResultSetMetaData>();
+        
         #endregion
 
         #region Fields

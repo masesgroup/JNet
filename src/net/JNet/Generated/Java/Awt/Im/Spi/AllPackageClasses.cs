@@ -23,23 +23,23 @@
 
 namespace Java.Awt.Im.Spi
 {
-    #region InputMethod
+    #region InputMethodContext
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/spi/InputMethod.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/spi/InputMethodContext.html
     /// </summary>
-    public partial class InputMethod : MASES.JCOBridge.C2JBridge.JVMBridgeBase<InputMethod>
+    public partial class InputMethodContext : MASES.JCOBridge.C2JBridge.JVMBridgeBase<InputMethodContext>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public InputMethod() { }
+        public InputMethodContext() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public InputMethod(params object[] args) : base(args) { }
+        public InputMethodContext(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.awt.im.spi.InputMethod";
+        public override string ClassName => "java.awt.im.spi.InputMethodContext";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -93,23 +93,23 @@ namespace Java.Awt.Im.Spi
     }
     #endregion
 
-    #region InputMethodContext
+    #region InputMethod
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/spi/InputMethodContext.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/spi/InputMethod.html
     /// </summary>
-    public partial class InputMethodContext : MASES.JCOBridge.C2JBridge.JVMBridgeBase<InputMethodContext>
+    public partial class InputMethod : MASES.JCOBridge.C2JBridge.JVMBridgeBase<InputMethod>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public InputMethodContext() { }
+        public InputMethod() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public InputMethodContext(params object[] args) : base(args) { }
+        public InputMethod(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.awt.im.spi.InputMethodContext";
+        public override string ClassName => "java.awt.im.spi.InputMethod";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;

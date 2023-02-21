@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Security.Cert
 {
     #region PKIXCertPathChecker
@@ -31,7 +33,9 @@ namespace Java.Security.Cert
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Security.Cert.CertPathChecker(Java.Security.Cert.PKIXCertPathChecker t) => t.Cast<Java.Security.Cert.CertPathChecker>();
+        public static implicit operator Java.Lang.Cloneable(Java.Security.Cert.PKIXCertPathChecker t) => t.Cast<Java.Lang.Cloneable>();
+        
         #endregion
 
         #region Fields

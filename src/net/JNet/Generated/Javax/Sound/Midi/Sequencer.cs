@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Sound.Midi
 {
     #region Sequencer
@@ -31,7 +33,8 @@ namespace Javax.Sound.Midi
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Sound.Midi.MidiDevice(Javax.Sound.Midi.Sequencer t) => t.Cast<Javax.Sound.Midi.MidiDevice>();
+        
         #endregion
 
         #region Fields

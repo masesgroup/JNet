@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing
 {
     #region JScrollPane
@@ -52,7 +54,9 @@ namespace Javax.Swing
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Swing.ScrollPaneConstants(Javax.Swing.JScrollPane t) => t.Cast<Javax.Swing.ScrollPaneConstants>();
+        public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.JScrollPane t) => t.Cast<Javax.Accessibility.Accessible>();
+        
         #endregion
 
         #region Fields

@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Awt.ImageNs
 {
     #region ConvolveOp
@@ -45,7 +47,9 @@ namespace Java.Awt.ImageNs
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Awt.ImageNs.BufferedImageOp(Java.Awt.ImageNs.ConvolveOp t) => t.Cast<Java.Awt.ImageNs.BufferedImageOp>();
+        public static implicit operator Java.Awt.ImageNs.RasterOp(Java.Awt.ImageNs.ConvolveOp t) => t.Cast<Java.Awt.ImageNs.RasterOp>();
+        
         #endregion
 
         #region Fields

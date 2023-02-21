@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Io
 {
     #region Reader
@@ -31,7 +33,9 @@ namespace Java.Io
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Lang.Readable(Java.Io.Reader t) => t.Cast<Java.Lang.Readable>();
+        public static implicit operator Java.Io.Closeable(Java.Io.Reader t) => t.Cast<Java.Io.Closeable>();
+        
         #endregion
 
         #region Fields

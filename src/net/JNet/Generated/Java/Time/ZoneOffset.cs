@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Time
 {
     #region ZoneOffset
@@ -31,7 +33,10 @@ namespace Java.Time
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Time.Temporal.TemporalAccessor(Java.Time.ZoneOffset t) => t.Cast<Java.Time.Temporal.TemporalAccessor>();
+        public static implicit operator Java.Time.Temporal.TemporalAdjuster(Java.Time.ZoneOffset t) => t.Cast<Java.Time.Temporal.TemporalAdjuster>();
+        public static implicit operator Java.Io.Serializable(Java.Time.ZoneOffset t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields

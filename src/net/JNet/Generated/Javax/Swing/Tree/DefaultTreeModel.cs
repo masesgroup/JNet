@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing.Tree
 {
     #region DefaultTreeModel
@@ -45,7 +47,9 @@ namespace Javax.Swing.Tree
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Io.Serializable(Javax.Swing.Tree.DefaultTreeModel t) => t.Cast<Java.Io.Serializable>();
+        public static implicit operator Javax.Swing.Tree.TreeModel(Javax.Swing.Tree.DefaultTreeModel t) => t.Cast<Javax.Swing.Tree.TreeModel>();
+        
         #endregion
 
         #region Fields

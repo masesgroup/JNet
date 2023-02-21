@@ -23,23 +23,23 @@
 
 namespace Java.Awt.Dnd.Peer
 {
-    #region DropTargetPeer
+    #region DropTargetContextPeer
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DropTargetPeer.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DropTargetContextPeer.html
     /// </summary>
-    public partial class DropTargetPeer : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DropTargetPeer>
+    public partial class DropTargetContextPeer : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DropTargetContextPeer>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public DropTargetPeer() { }
+        public DropTargetContextPeer() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public DropTargetPeer(params object[] args) : base(args) { }
+        public DropTargetContextPeer(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.awt.dnd.peer.DropTargetPeer";
+        public override string ClassName => "java.awt.dnd.peer.DropTargetContextPeer";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -93,23 +93,23 @@ namespace Java.Awt.Dnd.Peer
     }
     #endregion
 
-    #region DropTargetContextPeer
+    #region DropTargetPeer
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DropTargetContextPeer.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/peer/DropTargetPeer.html
     /// </summary>
-    public partial class DropTargetContextPeer : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DropTargetContextPeer>
+    public partial class DropTargetPeer : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DropTargetPeer>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public DropTargetContextPeer() { }
+        public DropTargetPeer() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public DropTargetContextPeer(params object[] args) : base(args) { }
+        public DropTargetPeer(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.awt.dnd.peer.DropTargetContextPeer";
+        public override string ClassName => "java.awt.dnd.peer.DropTargetPeer";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;

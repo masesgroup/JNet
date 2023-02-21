@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Print.Attribute.Standard
 {
     #region CopiesSupported
@@ -45,7 +47,8 @@ namespace Javax.Print.Attribute.Standard
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Print.Attribute.SupportedValuesAttribute(Javax.Print.Attribute.Standard.CopiesSupported t) => t.Cast<Javax.Print.Attribute.SupportedValuesAttribute>();
+        
         #endregion
 
         #region Fields

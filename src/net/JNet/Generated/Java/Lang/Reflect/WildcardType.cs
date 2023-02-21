@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Lang.Reflect
 {
     #region WildcardType
@@ -31,7 +33,8 @@ namespace Java.Lang.Reflect
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Lang.Reflect.Type(Java.Lang.Reflect.WildcardType t) => t.Cast<Java.Lang.Reflect.Type>();
+        
         #endregion
 
         #region Fields

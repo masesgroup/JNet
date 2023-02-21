@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Time
 {
     #region Year
@@ -31,7 +33,10 @@ namespace Java.Time
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Time.Temporal.Temporal(Java.Time.Year t) => t.Cast<Java.Time.Temporal.Temporal>();
+        public static implicit operator Java.Time.Temporal.TemporalAdjuster(Java.Time.Year t) => t.Cast<Java.Time.Temporal.TemporalAdjuster>();
+        public static implicit operator Java.Io.Serializable(Java.Time.Year t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields

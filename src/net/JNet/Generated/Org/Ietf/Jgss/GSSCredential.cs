@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Org.Ietf.Jgss
 {
     #region GSSCredential
@@ -31,7 +33,8 @@ namespace Org.Ietf.Jgss
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Lang.Cloneable(Org.Ietf.Jgss.GSSCredential t) => t.Cast<Java.Lang.Cloneable>();
+        
         #endregion
 
         #region Fields

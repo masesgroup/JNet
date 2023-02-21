@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Time.Temporal
 {
     #region WeekFields
@@ -31,7 +33,8 @@ namespace Java.Time.Temporal
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Io.Serializable(Java.Time.Temporal.WeekFields t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields

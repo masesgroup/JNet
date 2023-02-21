@@ -23,6 +23,73 @@
 
 namespace Java.Lang.Annotation
 {
+    #region AnnotationTypeMismatchException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/AnnotationTypeMismatchException.html
+    /// </summary>
+    public partial class AnnotationTypeMismatchException : Java.Lang.RuntimeException
+    {
+        public AnnotationTypeMismatchException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.lang.annotation.AnnotationTypeMismatchException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region Inherited
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/Inherited.html
+    /// </summary>
+    public partial class Inherited : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Inherited>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public Inherited() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public Inherited(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.lang.annotation.Inherited";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region IncompleteAnnotationException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/IncompleteAnnotationException.html
+    /// </summary>
+    public partial class IncompleteAnnotationException : Java.Lang.RuntimeException
+    {
+        public IncompleteAnnotationException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.lang.annotation.IncompleteAnnotationException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region ElementType
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/ElementType.html
@@ -58,144 +125,23 @@ namespace Java.Lang.Annotation
     }
     #endregion
 
-    #region RetentionPolicy
+    #region Native
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/RetentionPolicy.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/Native.html
     /// </summary>
-    public partial class RetentionPolicy : Java.Lang.Enum
+    public partial class Native : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Native>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public RetentionPolicy() { }
+        public Native() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public RetentionPolicy(params object[] args) : base(args) { }
+        public Native(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.lang.annotation.RetentionPolicy";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region AnnotationFormatError
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/AnnotationFormatError.html
-    /// </summary>
-    public partial class AnnotationFormatError : Java.Lang.Error
-    {
-        public AnnotationFormatError() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.lang.annotation.AnnotationFormatError";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region Annotation
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/Annotation.html
-    /// </summary>
-    public partial class Annotation : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Annotation>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public Annotation() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public Annotation(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.lang.annotation.Annotation";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region Target
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/Target.html
-    /// </summary>
-    public partial class Target : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Target>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public Target() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public Target(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.lang.annotation.Target";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region Retention
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/Retention.html
-    /// </summary>
-    public partial class Retention : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Retention>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public Retention() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public Retention(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.lang.annotation.Retention";
+        public override string ClassName => "java.lang.annotation.Native";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -249,39 +195,58 @@ namespace Java.Lang.Annotation
     }
     #endregion
 
-    #region IncompleteAnnotationException
+    #region RetentionPolicy
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/IncompleteAnnotationException.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/RetentionPolicy.html
     /// </summary>
-    public partial class IncompleteAnnotationException : Java.Lang.RuntimeException
+    public partial class RetentionPolicy : Java.Lang.Enum
     {
-        public IncompleteAnnotationException() { }
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public RetentionPolicy() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public RetentionPolicy(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.lang.annotation.IncompleteAnnotationException";
+        public override string ClassName => "java.lang.annotation.RetentionPolicy";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
 
         // TODO: complete the class
 
     }
     #endregion
 
-    #region Native
+    #region Retention
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/Native.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/Retention.html
     /// </summary>
-    public partial class Native : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Native>
+    public partial class Retention : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Retention>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public Native() { }
+        public Retention() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public Native(params object[] args) : base(args) { }
+        public Retention(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.lang.annotation.Native";
+        public override string ClassName => "java.lang.annotation.Retention";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -300,23 +265,23 @@ namespace Java.Lang.Annotation
     }
     #endregion
 
-    #region Inherited
+    #region Annotation
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/Inherited.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/Annotation.html
     /// </summary>
-    public partial class Inherited : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Inherited>
+    public partial class Annotation : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Annotation>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public Inherited() { }
+        public Annotation() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public Inherited(params object[] args) : base(args) { }
+        public Annotation(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.lang.annotation.Inherited";
+        public override string ClassName => "java.lang.annotation.Annotation";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -370,16 +335,51 @@ namespace Java.Lang.Annotation
     }
     #endregion
 
-    #region AnnotationTypeMismatchException
+    #region AnnotationFormatError
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/AnnotationTypeMismatchException.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/AnnotationFormatError.html
     /// </summary>
-    public partial class AnnotationTypeMismatchException : Java.Lang.RuntimeException
+    public partial class AnnotationFormatError : Java.Lang.Error
     {
-        public AnnotationTypeMismatchException() { }
+        public AnnotationFormatError() { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.lang.annotation.AnnotationTypeMismatchException";
+        public override string ClassName => "java.lang.annotation.AnnotationFormatError";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region Target
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/Target.html
+    /// </summary>
+    public partial class Target : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Target>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public Target() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public Target(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.lang.annotation.Target";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
 
         // TODO: complete the class
 

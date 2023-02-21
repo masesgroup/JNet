@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Beans
 {
     #region EventHandler
@@ -38,7 +40,8 @@ namespace Java.Beans
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Lang.Reflect.InvocationHandler(Java.Beans.EventHandler t) => t.Cast<Java.Lang.Reflect.InvocationHandler>();
+        
         #endregion
 
         #region Fields

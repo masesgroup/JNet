@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Management
 {
     #region MBeanFeatureInfo
@@ -45,7 +47,9 @@ namespace Javax.Management
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Io.Serializable(Javax.Management.MBeanFeatureInfo t) => t.Cast<Java.Io.Serializable>();
+        public static implicit operator Javax.Management.DescriptorRead(Javax.Management.MBeanFeatureInfo t) => t.Cast<Javax.Management.DescriptorRead>();
+        
         #endregion
 
         #region Fields

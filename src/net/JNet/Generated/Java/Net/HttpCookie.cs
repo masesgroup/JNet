@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Net
 {
     #region HttpCookie
@@ -38,7 +40,8 @@ namespace Java.Net
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Lang.Cloneable(Java.Net.HttpCookie t) => t.Cast<Java.Lang.Cloneable>();
+        
         #endregion
 
         #region Fields

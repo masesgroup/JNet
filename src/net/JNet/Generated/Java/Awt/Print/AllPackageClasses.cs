@@ -23,23 +23,23 @@
 
 namespace Java.Awt.Print
 {
-    #region PrinterGraphics
+    #region Pageable
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterGraphics.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Pageable.html
     /// </summary>
-    public partial class PrinterGraphics : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PrinterGraphics>
+    public partial class Pageable : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Pageable>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public PrinterGraphics() { }
+        public Pageable() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public PrinterGraphics(params object[] args) : base(args) { }
+        public Pageable(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.awt.print.PrinterGraphics";
+        public override string ClassName => "java.awt.print.Pageable";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -52,6 +52,22 @@ namespace Java.Awt.Print
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region PrinterException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterException.html
+    /// </summary>
+    public partial class PrinterException : Java.Lang.Exception
+    {
+        public PrinterException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.awt.print.PrinterException";
 
         // TODO: complete the class
 
@@ -93,6 +109,38 @@ namespace Java.Awt.Print
     }
     #endregion
 
+    #region PrinterIOException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterIOException.html
+    /// </summary>
+    public partial class PrinterIOException : Java.Awt.Print.PrinterException
+    {
+        public PrinterIOException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.awt.print.PrinterIOException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region PrinterAbortException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterAbortException.html
+    /// </summary>
+    public partial class PrinterAbortException : Java.Awt.Print.PrinterException
+    {
+        public PrinterAbortException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.awt.print.PrinterAbortException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region Book
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Book.html
@@ -128,39 +176,23 @@ namespace Java.Awt.Print
     }
     #endregion
 
-    #region PrinterAbortException
+    #region PrinterGraphics
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterAbortException.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterGraphics.html
     /// </summary>
-    public partial class PrinterAbortException : Java.Awt.Print.PrinterException
-    {
-        public PrinterAbortException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.awt.print.PrinterAbortException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region PrinterJob
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html
-    /// </summary>
-    public partial class PrinterJob : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PrinterJob>
+    public partial class PrinterGraphics : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PrinterGraphics>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public PrinterJob() { }
+        public PrinterGraphics() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public PrinterJob(params object[] args) : base(args) { }
+        public PrinterGraphics(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.awt.print.PrinterJob";
+        public override string ClassName => "java.awt.print.PrinterGraphics";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -169,7 +201,7 @@ namespace Java.Awt.Print
         public override bool IsCloseable => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
+        public override bool IsInterface => true;
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;
@@ -214,23 +246,23 @@ namespace Java.Awt.Print
     }
     #endregion
 
-    #region Pageable
+    #region PrinterJob
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Pageable.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html
     /// </summary>
-    public partial class Pageable : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Pageable>
+    public partial class PrinterJob : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PrinterJob>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public Pageable() { }
+        public PrinterJob() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public Pageable(params object[] args) : base(args) { }
+        public PrinterJob(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.awt.print.Pageable";
+        public override string ClassName => "java.awt.print.PrinterJob";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -239,7 +271,7 @@ namespace Java.Awt.Print
         public override bool IsCloseable => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
+        public override bool IsInterface => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;
@@ -278,38 +310,6 @@ namespace Java.Awt.Print
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region PrinterException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterException.html
-    /// </summary>
-    public partial class PrinterException : Java.Lang.Exception
-    {
-        public PrinterException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.awt.print.PrinterException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region PrinterIOException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterIOException.html
-    /// </summary>
-    public partial class PrinterIOException : Java.Awt.Print.PrinterException
-    {
-        public PrinterIOException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.awt.print.PrinterIOException";
 
         // TODO: complete the class
 

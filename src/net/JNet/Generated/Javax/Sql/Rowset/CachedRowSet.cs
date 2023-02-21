@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Sql.Rowset
 {
     #region CachedRowSet
@@ -31,7 +33,9 @@ namespace Javax.Sql.Rowset
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Sql.RowSet(Javax.Sql.Rowset.CachedRowSet t) => t.Cast<Javax.Sql.RowSet>();
+        public static implicit operator Javax.Sql.Rowset.Joinable(Javax.Sql.Rowset.CachedRowSet t) => t.Cast<Javax.Sql.Rowset.Joinable>();
+        
         #endregion
 
         #region Fields

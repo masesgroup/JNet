@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Lang
 {
     #region StackTraceElement
@@ -45,7 +47,8 @@ namespace Java.Lang
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Io.Serializable(Java.Lang.StackTraceElement t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields

@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Text
 {
     #region AttributedCharacterIterator
@@ -31,7 +33,8 @@ namespace Java.Text
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Text.CharacterIterator(Java.Text.AttributedCharacterIterator t) => t.Cast<Java.Text.CharacterIterator>();
+        
         #endregion
 
         #region Fields
@@ -90,7 +93,8 @@ namespace Java.Text
             #endregion
 
             #region Class/Interface conversion operators
-
+            public static implicit operator Java.Io.Serializable(Java.Text.AttributedCharacterIterator.Attribute t) => t.Cast<Java.Io.Serializable>();
+            
             #endregion
 
             #region Fields

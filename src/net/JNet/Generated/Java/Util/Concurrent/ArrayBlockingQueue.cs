@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Util.Concurrent
 {
     #region ArrayBlockingQueue
@@ -28,24 +30,25 @@ namespace Java.Util.Concurrent
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ArrayBlockingQueue.html#<init>(int)
-        /// </summary>
-        public ArrayBlockingQueue(int arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ArrayBlockingQueue.html#<init>(int,boolean)
         /// </summary>
         public ArrayBlockingQueue(int arg0, bool arg1)
             : base(arg0, arg1)
         {
         }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ArrayBlockingQueue.html#<init>(int)
+        /// </summary>
+        public ArrayBlockingQueue(int arg0)
+            : base(arg0)
+        {
+        }
         
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Io.Serializable(Java.Util.Concurrent.ArrayBlockingQueue t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields

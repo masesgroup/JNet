@@ -23,41 +23,6 @@
 
 namespace Java.Time.Temporal
 {
-    #region TemporalQueries
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalQueries.html
-    /// </summary>
-    public partial class TemporalQueries : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TemporalQueries>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public TemporalQueries() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public TemporalQueries(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.time.temporal.TemporalQueries";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
     #region ChronoField
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/ChronoField.html
@@ -93,23 +58,39 @@ namespace Java.Time.Temporal
     }
     #endregion
 
-    #region IsoFields
+    #region UnsupportedTemporalTypeException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/IsoFields.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/UnsupportedTemporalTypeException.html
     /// </summary>
-    public partial class IsoFields : MASES.JCOBridge.C2JBridge.JVMBridgeBase<IsoFields>
+    public partial class UnsupportedTemporalTypeException : Java.Time.DateTimeException
+    {
+        public UnsupportedTemporalTypeException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.time.temporal.UnsupportedTemporalTypeException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region WeekFields
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/WeekFields.html
+    /// </summary>
+    public partial class WeekFields : MASES.JCOBridge.C2JBridge.JVMBridgeBase<WeekFields>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public IsoFields() { }
+        public WeekFields() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public IsoFields(params object[] args) : base(args) { }
+        public WeekFields(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.time.temporal.IsoFields";
+        public override string ClassName => "java.time.temporal.WeekFields";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -198,6 +179,76 @@ namespace Java.Time.Temporal
     }
     #endregion
 
+    #region IsoFields
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/IsoFields.html
+    /// </summary>
+    public partial class IsoFields : MASES.JCOBridge.C2JBridge.JVMBridgeBase<IsoFields>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public IsoFields() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public IsoFields(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.time.temporal.IsoFields";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region TemporalQuery
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalQuery.html
+    /// </summary>
+    public partial class TemporalQuery : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TemporalQuery>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public TemporalQuery() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public TemporalQuery(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.time.temporal.TemporalQuery";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region TemporalAdjuster
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalAdjuster.html
@@ -268,41 +319,6 @@ namespace Java.Time.Temporal
     }
     #endregion
 
-    #region TemporalQuery
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalQuery.html
-    /// </summary>
-    public partial class TemporalQuery : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TemporalQuery>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public TemporalQuery() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public TemporalQuery(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.time.temporal.TemporalQuery";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
     #region TemporalAccessor
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalAccessor.html
@@ -338,23 +354,23 @@ namespace Java.Time.Temporal
     }
     #endregion
 
-    #region WeekFields
+    #region TemporalQueries
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/WeekFields.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalQueries.html
     /// </summary>
-    public partial class WeekFields : MASES.JCOBridge.C2JBridge.JVMBridgeBase<WeekFields>
+    public partial class TemporalQueries : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TemporalQueries>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public WeekFields() { }
+        public TemporalQueries() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public WeekFields(params object[] args) : base(args) { }
+        public TemporalQueries(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.time.temporal.WeekFields";
+        public override string ClassName => "java.time.temporal.TemporalQueries";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -390,41 +406,6 @@ namespace Java.Time.Temporal
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "java.time.temporal.ChronoUnit";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region TemporalAdjusters
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalAdjusters.html
-    /// </summary>
-    public partial class TemporalAdjusters : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TemporalAdjusters>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public TemporalAdjusters() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public TemporalAdjusters(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.time.temporal.TemporalAdjusters";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -548,16 +529,35 @@ namespace Java.Time.Temporal
     }
     #endregion
 
-    #region UnsupportedTemporalTypeException
+    #region TemporalAdjusters
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/UnsupportedTemporalTypeException.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalAdjusters.html
     /// </summary>
-    public partial class UnsupportedTemporalTypeException : Java.Time.DateTimeException
+    public partial class TemporalAdjusters : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TemporalAdjusters>
     {
-        public UnsupportedTemporalTypeException() { }
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public TemporalAdjusters() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public TemporalAdjusters(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.time.temporal.UnsupportedTemporalTypeException";
+        public override string ClassName => "java.time.temporal.TemporalAdjusters";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
 
         // TODO: complete the class
 

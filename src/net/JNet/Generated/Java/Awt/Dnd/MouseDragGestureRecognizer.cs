@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Awt.Dnd
 {
     #region MouseDragGestureRecognizer
@@ -31,7 +33,9 @@ namespace Java.Awt.Dnd
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Awt.EventNs.MouseListener(Java.Awt.Dnd.MouseDragGestureRecognizer t) => t.Cast<Java.Awt.EventNs.MouseListener>();
+        public static implicit operator Java.Awt.EventNs.MouseMotionListener(Java.Awt.Dnd.MouseDragGestureRecognizer t) => t.Cast<Java.Awt.EventNs.MouseMotionListener>();
+        
         #endregion
 
         #region Fields

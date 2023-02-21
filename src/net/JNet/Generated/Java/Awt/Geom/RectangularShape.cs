@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Awt.Geom
 {
     #region RectangularShape
@@ -31,7 +33,9 @@ namespace Java.Awt.Geom
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Awt.Shape(Java.Awt.Geom.RectangularShape t) => t.Cast<Java.Awt.Shape>();
+        public static implicit operator Java.Lang.Cloneable(Java.Awt.Geom.RectangularShape t) => t.Cast<Java.Lang.Cloneable>();
+        
         #endregion
 
         #region Fields

@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing
 {
     #region ScrollPaneLayout
@@ -31,7 +33,10 @@ namespace Javax.Swing
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Awt.LayoutManager(Javax.Swing.ScrollPaneLayout t) => t.Cast<Java.Awt.LayoutManager>();
+        public static implicit operator Javax.Swing.ScrollPaneConstants(Javax.Swing.ScrollPaneLayout t) => t.Cast<Javax.Swing.ScrollPaneConstants>();
+        public static implicit operator Java.Io.Serializable(Javax.Swing.ScrollPaneLayout t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields
@@ -153,7 +158,8 @@ namespace Javax.Swing
             #endregion
 
             #region Class/Interface conversion operators
-
+            public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.ScrollPaneLayout.UIResource t) => t.Cast<Javax.Swing.Plaf.UIResource>();
+            
             #endregion
 
             #region Fields

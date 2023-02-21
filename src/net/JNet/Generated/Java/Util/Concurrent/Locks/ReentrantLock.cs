@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Util.Concurrent.Locks
 {
     #region ReentrantLock
@@ -38,7 +40,9 @@ namespace Java.Util.Concurrent.Locks
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Util.Concurrent.Locks.Lock(Java.Util.Concurrent.Locks.ReentrantLock t) => t.Cast<Java.Util.Concurrent.Locks.Lock>();
+        public static implicit operator Java.Io.Serializable(Java.Util.Concurrent.Locks.ReentrantLock t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields

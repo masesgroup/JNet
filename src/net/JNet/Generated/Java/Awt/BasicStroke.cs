@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Awt
 {
     #region BasicStroke
@@ -59,7 +61,8 @@ namespace Java.Awt
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Awt.Stroke(Java.Awt.BasicStroke t) => t.Cast<Java.Awt.Stroke>();
+        
         #endregion
 
         #region Fields

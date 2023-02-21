@@ -23,127 +23,6 @@
 
 namespace Org.Xml.Sax
 {
-    #region DTDHandler
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/DTDHandler.html
-    /// </summary>
-    public partial class DTDHandler : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DTDHandler>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public DTDHandler() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public DTDHandler(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "org.xml.sax.DTDHandler";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region XMLReader
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/XMLReader.html
-    /// </summary>
-    public partial class XMLReader : MASES.JCOBridge.C2JBridge.JVMBridgeBase<XMLReader>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public XMLReader() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public XMLReader(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "org.xml.sax.XMLReader";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region SAXParseException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/SAXParseException.html
-    /// </summary>
-    public partial class SAXParseException : Org.Xml.Sax.SAXException
-    {
-        public SAXParseException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "org.xml.sax.SAXParseException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region Attributes
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/Attributes.html
-    /// </summary>
-    public partial class Attributes : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Attributes>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public Attributes() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public Attributes(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "org.xml.sax.Attributes";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
     #region SAXNotRecognizedException
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/SAXNotRecognizedException.html
@@ -154,76 +33,6 @@ namespace Org.Xml.Sax
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "org.xml.sax.SAXNotRecognizedException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region InputSource
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/InputSource.html
-    /// </summary>
-    public partial class InputSource : MASES.JCOBridge.C2JBridge.JVMBridgeBase<InputSource>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public InputSource() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public InputSource(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "org.xml.sax.InputSource";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region ErrorHandler
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ErrorHandler.html
-    /// </summary>
-    public partial class ErrorHandler : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ErrorHandler>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public ErrorHandler() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public ErrorHandler(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "org.xml.sax.ErrorHandler";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
 
         // TODO: complete the class
 
@@ -259,73 +68,6 @@ namespace Org.Xml.Sax
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region SAXNotSupportedException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/SAXNotSupportedException.html
-    /// </summary>
-    public partial class SAXNotSupportedException : Org.Xml.Sax.SAXException
-    {
-        public SAXNotSupportedException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "org.xml.sax.SAXNotSupportedException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region XMLFilter
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/XMLFilter.html
-    /// </summary>
-    public partial class XMLFilter : MASES.JCOBridge.C2JBridge.JVMBridgeBase<XMLFilter>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public XMLFilter() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public XMLFilter(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "org.xml.sax.XMLFilter";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region SAXException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/SAXException.html
-    /// </summary>
-    public partial class SAXException : Java.Lang.Exception
-    {
-        public SAXException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "org.xml.sax.SAXException";
 
         // TODO: complete the class
 
@@ -393,6 +135,264 @@ namespace Org.Xml.Sax
 
         /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
         public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region SAXParseException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/SAXParseException.html
+    /// </summary>
+    public partial class SAXParseException : Org.Xml.Sax.SAXException
+    {
+        public SAXParseException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "org.xml.sax.SAXParseException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region SAXException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/SAXException.html
+    /// </summary>
+    public partial class SAXException : Java.Lang.Exception
+    {
+        public SAXException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "org.xml.sax.SAXException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region XMLFilter
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/XMLFilter.html
+    /// </summary>
+    public partial class XMLFilter : MASES.JCOBridge.C2JBridge.JVMBridgeBase<XMLFilter>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public XMLFilter() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public XMLFilter(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "org.xml.sax.XMLFilter";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region XMLReader
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/XMLReader.html
+    /// </summary>
+    public partial class XMLReader : MASES.JCOBridge.C2JBridge.JVMBridgeBase<XMLReader>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public XMLReader() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public XMLReader(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "org.xml.sax.XMLReader";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region SAXNotSupportedException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/SAXNotSupportedException.html
+    /// </summary>
+    public partial class SAXNotSupportedException : Org.Xml.Sax.SAXException
+    {
+        public SAXNotSupportedException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "org.xml.sax.SAXNotSupportedException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region Attributes
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/Attributes.html
+    /// </summary>
+    public partial class Attributes : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Attributes>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public Attributes() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public Attributes(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "org.xml.sax.Attributes";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region ErrorHandler
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ErrorHandler.html
+    /// </summary>
+    public partial class ErrorHandler : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ErrorHandler>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public ErrorHandler() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public ErrorHandler(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "org.xml.sax.ErrorHandler";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region DTDHandler
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/DTDHandler.html
+    /// </summary>
+    public partial class DTDHandler : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DTDHandler>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public DTDHandler() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public DTDHandler(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "org.xml.sax.DTDHandler";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region InputSource
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/InputSource.html
+    /// </summary>
+    public partial class InputSource : MASES.JCOBridge.C2JBridge.JVMBridgeBase<InputSource>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public InputSource() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public InputSource(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "org.xml.sax.InputSource";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;

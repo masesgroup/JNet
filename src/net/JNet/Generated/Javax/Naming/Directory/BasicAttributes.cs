@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Naming.Directory
 {
     #region BasicAttributes
@@ -52,7 +54,8 @@ namespace Javax.Naming.Directory
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Naming.Directory.Attributes(Javax.Naming.Directory.BasicAttributes t) => t.Cast<Javax.Naming.Directory.Attributes>();
+        
         #endregion
 
         #region Fields

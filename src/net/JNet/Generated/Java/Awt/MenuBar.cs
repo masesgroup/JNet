@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Awt
 {
     #region MenuBar
@@ -31,7 +33,9 @@ namespace Java.Awt
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Awt.MenuContainer(Java.Awt.MenuBar t) => t.Cast<Java.Awt.MenuContainer>();
+        public static implicit operator Javax.Accessibility.Accessible(Java.Awt.MenuBar t) => t.Cast<Javax.Accessibility.Accessible>();
+        
         #endregion
 
         #region Fields

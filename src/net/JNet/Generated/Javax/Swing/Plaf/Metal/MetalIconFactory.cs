@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing.Plaf.Metal
 {
     #region MetalIconFactory
@@ -31,7 +33,8 @@ namespace Javax.Swing.Plaf.Metal
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Io.Serializable(Javax.Swing.Plaf.Metal.MetalIconFactory t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields
@@ -230,33 +233,6 @@ namespace Javax.Swing.Plaf.Metal
         #endregion
 
         #region Nested classes
-        #region TreeLeafIcon
-        public partial class TreeLeafIcon
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region FolderIcon16
         public partial class FolderIcon16
         {
@@ -265,7 +241,9 @@ namespace Javax.Swing.Plaf.Metal
             #endregion
 
             #region Class/Interface conversion operators
-
+            public static implicit operator Javax.Swing.Icon(Javax.Swing.Plaf.Metal.MetalIconFactory.FolderIcon16 t) => t.Cast<Javax.Swing.Icon>();
+            public static implicit operator Java.Io.Serializable(Javax.Swing.Plaf.Metal.MetalIconFactory.FolderIcon16 t) => t.Cast<Java.Io.Serializable>();
+            
             #endregion
 
             #region Fields
@@ -319,68 +297,6 @@ namespace Javax.Swing.Plaf.Metal
         }
         #endregion
 
-        #region TreeControlIcon
-        public partial class TreeControlIcon
-        {
-            #region Constructors
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.TreeControlIcon.html#<init>(boolean)
-            /// </summary>
-            public TreeControlIcon(bool arg0)
-                : base(arg0)
-            {
-            }
-            
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.TreeControlIcon.html#getIconHeight() 
-            /// </summary>
-            public int IconHeight
-            {
-                get { return IExecute<int>("getIconHeight"); }
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.TreeControlIcon.html#getIconWidth() 
-            /// </summary>
-            public int IconWidth
-            {
-                get { return IExecute<int>("getIconWidth"); }
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.TreeControlIcon.html#paintIcon(java.awt.Component,java.awt.Graphics,int,int)
-            /// </summary>
-            public void PaintIcon(Java.Awt.Component arg0, Java.Awt.Graphics arg1, int arg2, int arg3)
-            {
-                IExecute("paintIcon", arg0, arg1, arg2, arg3);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.TreeControlIcon.html#paintMe(java.awt.Component,java.awt.Graphics,int,int)
-            /// </summary>
-            public void PaintMe(Java.Awt.Component arg0, Java.Awt.Graphics arg1, int arg2, int arg3)
-            {
-                IExecute("paintMe", arg0, arg1, arg2, arg3);
-            }
-            
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region FileIcon16
         public partial class FileIcon16
         {
@@ -389,7 +305,9 @@ namespace Javax.Swing.Plaf.Metal
             #endregion
 
             #region Class/Interface conversion operators
-
+            public static implicit operator Javax.Swing.Icon(Javax.Swing.Plaf.Metal.MetalIconFactory.FileIcon16 t) => t.Cast<Javax.Swing.Icon>();
+            public static implicit operator Java.Io.Serializable(Javax.Swing.Plaf.Metal.MetalIconFactory.FileIcon16 t) => t.Cast<Java.Io.Serializable>();
+            
             #endregion
 
             #region Fields
@@ -443,33 +361,6 @@ namespace Javax.Swing.Plaf.Metal
         }
         #endregion
 
-        #region TreeFolderIcon
-        public partial class TreeFolderIcon
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region PaletteCloseIcon
         public partial class PaletteCloseIcon
         {
@@ -478,7 +369,10 @@ namespace Javax.Swing.Plaf.Metal
             #endregion
 
             #region Class/Interface conversion operators
-
+            public static implicit operator Javax.Swing.Icon(Javax.Swing.Plaf.Metal.MetalIconFactory.PaletteCloseIcon t) => t.Cast<Javax.Swing.Icon>();
+            public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.Metal.MetalIconFactory.PaletteCloseIcon t) => t.Cast<Javax.Swing.Plaf.UIResource>();
+            public static implicit operator Java.Io.Serializable(Javax.Swing.Plaf.Metal.MetalIconFactory.PaletteCloseIcon t) => t.Cast<Java.Io.Serializable>();
+            
             #endregion
 
             #region Fields
@@ -512,6 +406,124 @@ namespace Javax.Swing.Plaf.Metal
                 IExecute("paintIcon", arg0, arg1, arg2, arg3);
             }
             
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region TreeControlIcon
+        public partial class TreeControlIcon
+        {
+            #region Constructors
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.TreeControlIcon.html#<init>(boolean)
+            /// </summary>
+            public TreeControlIcon(bool arg0)
+                : base(arg0)
+            {
+            }
+            
+            #endregion
+
+            #region Class/Interface conversion operators
+            public static implicit operator Javax.Swing.Icon(Javax.Swing.Plaf.Metal.MetalIconFactory.TreeControlIcon t) => t.Cast<Javax.Swing.Icon>();
+            public static implicit operator Java.Io.Serializable(Javax.Swing.Plaf.Metal.MetalIconFactory.TreeControlIcon t) => t.Cast<Java.Io.Serializable>();
+            
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.TreeControlIcon.html#getIconHeight() 
+            /// </summary>
+            public int IconHeight
+            {
+                get { return IExecute<int>("getIconHeight"); }
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.TreeControlIcon.html#getIconWidth() 
+            /// </summary>
+            public int IconWidth
+            {
+                get { return IExecute<int>("getIconWidth"); }
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.TreeControlIcon.html#paintIcon(java.awt.Component,java.awt.Graphics,int,int)
+            /// </summary>
+            public void PaintIcon(Java.Awt.Component arg0, Java.Awt.Graphics arg1, int arg2, int arg3)
+            {
+                IExecute("paintIcon", arg0, arg1, arg2, arg3);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.TreeControlIcon.html#paintMe(java.awt.Component,java.awt.Graphics,int,int)
+            /// </summary>
+            public void PaintMe(Java.Awt.Component arg0, Java.Awt.Graphics arg1, int arg2, int arg3)
+            {
+                IExecute("paintMe", arg0, arg1, arg2, arg3);
+            }
+            
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region TreeLeafIcon
+        public partial class TreeLeafIcon
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region TreeFolderIcon
+        public partial class TreeFolderIcon
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
             #endregion
 
             // TODO: complete the class

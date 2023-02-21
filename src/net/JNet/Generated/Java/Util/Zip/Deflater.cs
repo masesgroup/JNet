@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Util.Zip
 {
     #region Deflater
@@ -214,9 +216,9 @@ namespace Java.Util.Zip
             IExecute("setDictionary", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#setDictionary(java.nio.ByteBuffer)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#setDictionary(byte[])
         /// </summary>
-        public void SetDictionary(Java.Nio.ByteBuffer arg0)
+        public void SetDictionary(byte[] arg0)
         {
             IExecute("setDictionary", arg0);
         }

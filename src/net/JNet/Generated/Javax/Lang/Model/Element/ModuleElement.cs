@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Lang.Model.Element
 {
     #region ModuleElement
@@ -31,7 +33,9 @@ namespace Javax.Lang.Model.Element
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Lang.Model.Element.Element(Javax.Lang.Model.Element.ModuleElement t) => t.Cast<Javax.Lang.Model.Element.Element>();
+        public static implicit operator Javax.Lang.Model.Element.QualifiedNameable(Javax.Lang.Model.Element.ModuleElement t) => t.Cast<Javax.Lang.Model.Element.QualifiedNameable>();
+        
         #endregion
 
         #region Fields
@@ -82,8 +86,8 @@ namespace Javax.Lang.Model.Element
         #endregion
 
         #region Nested classes
-        #region ProvidesDirective
-        public partial class ProvidesDirective
+        #region ExportsDirective
+        public partial class ExportsDirective
         {
             #region Constructors
 
@@ -103,11 +107,11 @@ namespace Javax.Lang.Model.Element
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.ProvidesDirective.html#getService() 
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.ExportsDirective.html#getPackage() 
             /// </summary>
-            public Javax.Lang.Model.Element.TypeElement Service
+            public Javax.Lang.Model.Element.PackageElement Package
             {
-                get { return IExecute<Javax.Lang.Model.Element.TypeElement>("getService"); }
+                get { return IExecute<Javax.Lang.Model.Element.PackageElement>("getPackage"); }
             }
             
             #endregion
@@ -199,40 +203,6 @@ namespace Javax.Lang.Model.Element
         }
         #endregion
 
-        #region OpensDirective
-        public partial class OpensDirective
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.OpensDirective.html#getPackage() 
-            /// </summary>
-            public Javax.Lang.Model.Element.PackageElement Package
-            {
-                get { return IExecute<Javax.Lang.Model.Element.PackageElement>("getPackage"); }
-            }
-            
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region UsesDirective
         public partial class UsesDirective
         {
@@ -255,6 +225,40 @@ namespace Javax.Lang.Model.Element
             #region Instance methods
             /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.UsesDirective.html#getService() 
+            /// </summary>
+            public Javax.Lang.Model.Element.TypeElement Service
+            {
+                get { return IExecute<Javax.Lang.Model.Element.TypeElement>("getService"); }
+            }
+            
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region ProvidesDirective
+        public partial class ProvidesDirective
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.ProvidesDirective.html#getService() 
             /// </summary>
             public Javax.Lang.Model.Element.TypeElement Service
             {
@@ -307,6 +311,40 @@ namespace Javax.Lang.Model.Element
             public bool IsTransitive()
             {
                 return IExecute<bool>("isTransitive");
+            }
+            
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region OpensDirective
+        public partial class OpensDirective
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.OpensDirective.html#getPackage() 
+            /// </summary>
+            public Javax.Lang.Model.Element.PackageElement Package
+            {
+                get { return IExecute<Javax.Lang.Model.Element.PackageElement>("getPackage"); }
             }
             
             #endregion
@@ -390,40 +428,6 @@ namespace Javax.Lang.Model.Element
 
             #region Instance methods
 
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region ExportsDirective
-        public partial class ExportsDirective
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.ExportsDirective.html#getPackage() 
-            /// </summary>
-            public Javax.Lang.Model.Element.PackageElement Package
-            {
-                get { return IExecute<Javax.Lang.Model.Element.PackageElement>("getPackage"); }
-            }
-            
             #endregion
 
             // TODO: complete the class

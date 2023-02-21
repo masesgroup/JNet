@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Xml.Transform.Stream
 {
     #region StreamResult
@@ -59,7 +61,8 @@ namespace Javax.Xml.Transform.Stream
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Xml.Transform.Result(Javax.Xml.Transform.Stream.StreamResult t) => t.Cast<Javax.Xml.Transform.Result>();
+        
         #endregion
 
         #region Fields

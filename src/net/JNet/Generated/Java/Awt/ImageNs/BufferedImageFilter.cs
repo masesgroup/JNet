@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Awt.ImageNs
 {
     #region BufferedImageFilter
@@ -38,7 +40,8 @@ namespace Java.Awt.ImageNs
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Lang.Cloneable(Java.Awt.ImageNs.BufferedImageFilter t) => t.Cast<Java.Lang.Cloneable>();
+        
         #endregion
 
         #region Fields

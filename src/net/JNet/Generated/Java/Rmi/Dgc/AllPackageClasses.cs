@@ -23,32 +23,32 @@
 
 namespace Java.Rmi.Dgc
 {
-    #region VMID
+    #region DGC
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/dgc/VMID.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/dgc/DGC.html
     /// </summary>
-    public partial class VMID : MASES.JCOBridge.C2JBridge.JVMBridgeBase<VMID>
+    public partial class DGC : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DGC>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public VMID() { }
+        public DGC() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public VMID(params object[] args) : base(args) { }
+        public DGC(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.rmi.dgc.VMID";
+        public override string ClassName => "java.rmi.dgc.DGC";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
+        public override bool IsAbstract => true;
 
         /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
         public override bool IsCloseable => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
+        public override bool IsInterface => true;
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;
@@ -93,32 +93,32 @@ namespace Java.Rmi.Dgc
     }
     #endregion
 
-    #region DGC
+    #region VMID
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/dgc/DGC.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/dgc/VMID.html
     /// </summary>
-    public partial class DGC : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DGC>
+    public partial class VMID : MASES.JCOBridge.C2JBridge.JVMBridgeBase<VMID>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public DGC() { }
+        public VMID() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public DGC(params object[] args) : base(args) { }
+        public VMID(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.rmi.dgc.DGC";
+        public override string ClassName => "java.rmi.dgc.VMID";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
+        public override bool IsAbstract => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
         public override bool IsCloseable => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
+        public override bool IsInterface => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;

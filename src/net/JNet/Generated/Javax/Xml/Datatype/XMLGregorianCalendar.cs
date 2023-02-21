@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Xml.Datatype
 {
     #region XMLGregorianCalendar
@@ -31,7 +33,8 @@ namespace Javax.Xml.Datatype
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Lang.Cloneable(Javax.Xml.Datatype.XMLGregorianCalendar t) => t.Cast<Java.Lang.Cloneable>();
+        
         #endregion
 
         #region Fields

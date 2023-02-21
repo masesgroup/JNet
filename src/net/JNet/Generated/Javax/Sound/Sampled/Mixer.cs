@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Sound.Sampled
 {
     #region Mixer
@@ -31,7 +33,8 @@ namespace Javax.Sound.Sampled
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Sound.Sampled.Line(Javax.Sound.Sampled.Mixer t) => t.Cast<Javax.Sound.Sampled.Line>();
+        
         #endregion
 
         #region Fields

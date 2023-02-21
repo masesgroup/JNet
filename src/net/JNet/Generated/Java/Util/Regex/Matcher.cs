@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Util.Regex
 {
     #region Matcher
@@ -31,7 +33,8 @@ namespace Java.Util.Regex
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Util.Regex.MatchResult(Java.Util.Regex.Matcher t) => t.Cast<Java.Util.Regex.MatchResult>();
+        
         #endregion
 
         #region Fields

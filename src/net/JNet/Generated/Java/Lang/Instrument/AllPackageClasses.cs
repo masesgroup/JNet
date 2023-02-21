@@ -23,38 +23,6 @@
 
 namespace Java.Lang.Instrument
 {
-    #region UnmodifiableClassException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/UnmodifiableClassException.html
-    /// </summary>
-    public partial class UnmodifiableClassException : Java.Lang.Exception
-    {
-        public UnmodifiableClassException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.lang.instrument.UnmodifiableClassException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region IllegalClassFormatException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/IllegalClassFormatException.html
-    /// </summary>
-    public partial class IllegalClassFormatException : Java.Lang.Exception
-    {
-        public IllegalClassFormatException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.lang.instrument.IllegalClassFormatException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
     #region ClassDefinition
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/ClassDefinition.html
@@ -125,16 +93,16 @@ namespace Java.Lang.Instrument
     }
     #endregion
 
-    #region UnmodifiableModuleException
+    #region UnmodifiableClassException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/UnmodifiableModuleException.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/UnmodifiableClassException.html
     /// </summary>
-    public partial class UnmodifiableModuleException : Java.Lang.RuntimeException
+    public partial class UnmodifiableClassException : Java.Lang.Exception
     {
-        public UnmodifiableModuleException() { }
+        public UnmodifiableClassException() { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.lang.instrument.UnmodifiableModuleException";
+        public override string ClassName => "java.lang.instrument.UnmodifiableClassException";
 
         // TODO: complete the class
 
@@ -170,6 +138,38 @@ namespace Java.Lang.Instrument
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region UnmodifiableModuleException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/UnmodifiableModuleException.html
+    /// </summary>
+    public partial class UnmodifiableModuleException : Java.Lang.RuntimeException
+    {
+        public UnmodifiableModuleException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.lang.instrument.UnmodifiableModuleException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region IllegalClassFormatException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/IllegalClassFormatException.html
+    /// </summary>
+    public partial class IllegalClassFormatException : Java.Lang.Exception
+    {
+        public IllegalClassFormatException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.lang.instrument.IllegalClassFormatException";
 
         // TODO: complete the class
 

@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Util.Concurrent
 {
     #region ConcurrentSkipListSet
@@ -31,7 +33,9 @@ namespace Java.Util.Concurrent
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Lang.Cloneable(Java.Util.Concurrent.ConcurrentSkipListSet t) => t.Cast<Java.Lang.Cloneable>();
+        public static implicit operator Java.Io.Serializable(Java.Util.Concurrent.ConcurrentSkipListSet t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields

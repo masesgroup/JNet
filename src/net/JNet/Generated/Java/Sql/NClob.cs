@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Sql
 {
     #region NClob
@@ -31,7 +33,8 @@ namespace Java.Sql
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Sql.Clob(Java.Sql.NClob t) => t.Cast<Java.Sql.Clob>();
+        
         #endregion
 
         #region Fields

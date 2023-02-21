@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Org.W3c.Dom
 {
     #region Text
@@ -31,7 +33,8 @@ namespace Org.W3c.Dom
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Org.W3c.Dom.CharacterData(Org.W3c.Dom.Text t) => t.Cast<Org.W3c.Dom.CharacterData>();
+        
         #endregion
 
         #region Fields

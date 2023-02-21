@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing.Text
 {
     #region AttributeSet
@@ -111,33 +113,6 @@ namespace Javax.Swing.Text
         #endregion
 
         #region Nested classes
-        #region ColorAttribute
-        public partial class ColorAttribute
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region ParagraphAttribute
         public partial class ParagraphAttribute
         {
@@ -165,8 +140,8 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region FontAttribute
-        public partial class FontAttribute
+        #region CharacterAttribute
+        public partial class CharacterAttribute
         {
             #region Constructors
 
@@ -192,8 +167,35 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region CharacterAttribute
-        public partial class CharacterAttribute
+        #region ColorAttribute
+        public partial class ColorAttribute
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region FontAttribute
+        public partial class FontAttribute
         {
             #region Constructors
 

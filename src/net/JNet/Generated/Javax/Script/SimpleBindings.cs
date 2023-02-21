@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Script
 {
     #region SimpleBindings
@@ -31,7 +33,8 @@ namespace Javax.Script
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Script.Bindings(Javax.Script.SimpleBindings t) => t.Cast<Javax.Script.Bindings>();
+        
         #endregion
 
         #region Fields

@@ -23,41 +23,6 @@
 
 namespace Java.Security.Interfaces
 {
-    #region ECPublicKey
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/ECPublicKey.html
-    /// </summary>
-    public partial class ECPublicKey : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ECPublicKey>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public ECPublicKey() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public ECPublicKey(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.security.interfaces.ECPublicKey";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
     #region RSAPublicKey
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAPublicKey.html
@@ -75,181 +40,6 @@ namespace Java.Security.Interfaces
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "java.security.interfaces.RSAPublicKey";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region DSAParams
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/DSAParams.html
-    /// </summary>
-    public partial class DSAParams : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DSAParams>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public DSAParams() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public DSAParams(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.security.interfaces.DSAParams";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region DSAPrivateKey
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/DSAPrivateKey.html
-    /// </summary>
-    public partial class DSAPrivateKey : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DSAPrivateKey>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public DSAPrivateKey() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public DSAPrivateKey(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.security.interfaces.DSAPrivateKey";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region XECPrivateKey
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/XECPrivateKey.html
-    /// </summary>
-    public partial class XECPrivateKey : MASES.JCOBridge.C2JBridge.JVMBridgeBase<XECPrivateKey>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public XECPrivateKey() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public XECPrivateKey(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.security.interfaces.XECPrivateKey";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region DSAKeyPairGenerator
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/DSAKeyPairGenerator.html
-    /// </summary>
-    public partial class DSAKeyPairGenerator : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DSAKeyPairGenerator>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public DSAKeyPairGenerator() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public DSAKeyPairGenerator(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.security.interfaces.DSAKeyPairGenerator";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region DSAPublicKey
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/DSAPublicKey.html
-    /// </summary>
-    public partial class DSAPublicKey : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DSAPublicKey>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public DSAPublicKey() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public DSAPublicKey(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.security.interfaces.DSAPublicKey";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -303,41 +93,6 @@ namespace Java.Security.Interfaces
     }
     #endregion
 
-    #region ECPrivateKey
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/ECPrivateKey.html
-    /// </summary>
-    public partial class ECPrivateKey : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ECPrivateKey>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public ECPrivateKey() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public ECPrivateKey(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.security.interfaces.ECPrivateKey";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
     #region RSAKey
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAKey.html
@@ -373,23 +128,23 @@ namespace Java.Security.Interfaces
     }
     #endregion
 
-    #region RSAMultiPrimePrivateCrtKey
+    #region DSAPrivateKey
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAMultiPrimePrivateCrtKey.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/DSAPrivateKey.html
     /// </summary>
-    public partial class RSAMultiPrimePrivateCrtKey : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RSAMultiPrimePrivateCrtKey>
+    public partial class DSAPrivateKey : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DSAPrivateKey>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public RSAMultiPrimePrivateCrtKey() { }
+        public DSAPrivateKey() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public RSAMultiPrimePrivateCrtKey(params object[] args) : base(args) { }
+        public DSAPrivateKey(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.security.interfaces.RSAMultiPrimePrivateCrtKey";
+        public override string ClassName => "java.security.interfaces.DSAPrivateKey";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -408,23 +163,23 @@ namespace Java.Security.Interfaces
     }
     #endregion
 
-    #region ECKey
+    #region DSAKeyPairGenerator
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/ECKey.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/DSAKeyPairGenerator.html
     /// </summary>
-    public partial class ECKey : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ECKey>
+    public partial class DSAKeyPairGenerator : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DSAKeyPairGenerator>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ECKey() { }
+        public DSAKeyPairGenerator() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public ECKey(params object[] args) : base(args) { }
+        public DSAKeyPairGenerator(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.security.interfaces.ECKey";
+        public override string ClassName => "java.security.interfaces.DSAKeyPairGenerator";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -443,23 +198,23 @@ namespace Java.Security.Interfaces
     }
     #endregion
 
-    #region RSAPrivateCrtKey
+    #region XECKey
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAPrivateCrtKey.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/XECKey.html
     /// </summary>
-    public partial class RSAPrivateCrtKey : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RSAPrivateCrtKey>
+    public partial class XECKey : MASES.JCOBridge.C2JBridge.JVMBridgeBase<XECKey>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public RSAPrivateCrtKey() { }
+        public XECKey() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public RSAPrivateCrtKey(params object[] args) : base(args) { }
+        public XECKey(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.security.interfaces.RSAPrivateCrtKey";
+        public override string ClassName => "java.security.interfaces.XECKey";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -513,6 +268,146 @@ namespace Java.Security.Interfaces
     }
     #endregion
 
+    #region XECPrivateKey
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/XECPrivateKey.html
+    /// </summary>
+    public partial class XECPrivateKey : MASES.JCOBridge.C2JBridge.JVMBridgeBase<XECPrivateKey>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public XECPrivateKey() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public XECPrivateKey(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.security.interfaces.XECPrivateKey";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region DSAParams
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/DSAParams.html
+    /// </summary>
+    public partial class DSAParams : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DSAParams>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public DSAParams() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public DSAParams(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.security.interfaces.DSAParams";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region ECPublicKey
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/ECPublicKey.html
+    /// </summary>
+    public partial class ECPublicKey : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ECPublicKey>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public ECPublicKey() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public ECPublicKey(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.security.interfaces.ECPublicKey";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region ECPrivateKey
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/ECPrivateKey.html
+    /// </summary>
+    public partial class ECPrivateKey : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ECPrivateKey>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public ECPrivateKey() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public ECPrivateKey(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.security.interfaces.ECPrivateKey";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region XECPublicKey
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/XECPublicKey.html
@@ -548,23 +443,128 @@ namespace Java.Security.Interfaces
     }
     #endregion
 
-    #region XECKey
+    #region DSAPublicKey
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/XECKey.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/DSAPublicKey.html
     /// </summary>
-    public partial class XECKey : MASES.JCOBridge.C2JBridge.JVMBridgeBase<XECKey>
+    public partial class DSAPublicKey : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DSAPublicKey>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public XECKey() { }
+        public DSAPublicKey() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public XECKey(params object[] args) : base(args) { }
+        public DSAPublicKey(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.security.interfaces.XECKey";
+        public override string ClassName => "java.security.interfaces.DSAPublicKey";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region RSAPrivateCrtKey
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAPrivateCrtKey.html
+    /// </summary>
+    public partial class RSAPrivateCrtKey : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RSAPrivateCrtKey>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public RSAPrivateCrtKey() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public RSAPrivateCrtKey(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.security.interfaces.RSAPrivateCrtKey";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region ECKey
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/ECKey.html
+    /// </summary>
+    public partial class ECKey : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ECKey>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public ECKey() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public ECKey(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.security.interfaces.ECKey";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region RSAMultiPrimePrivateCrtKey
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/interfaces/RSAMultiPrimePrivateCrtKey.html
+    /// </summary>
+    public partial class RSAMultiPrimePrivateCrtKey : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RSAMultiPrimePrivateCrtKey>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public RSAMultiPrimePrivateCrtKey() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public RSAMultiPrimePrivateCrtKey(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.security.interfaces.RSAMultiPrimePrivateCrtKey";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;

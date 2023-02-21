@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing.Plaf.Basic
 {
     #region BasicTextUI
@@ -31,7 +33,8 @@ namespace Javax.Swing.Plaf.Basic
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Swing.Text.ViewFactory(Javax.Swing.Plaf.Basic.BasicTextUI t) => t.Cast<Javax.Swing.Text.ViewFactory>();
+        
         #endregion
 
         #region Fields
@@ -69,7 +72,8 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Class/Interface conversion operators
-
+            public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.Basic.BasicTextUI.BasicHighlighter t) => t.Cast<Javax.Swing.Plaf.UIResource>();
+            
             #endregion
 
             #region Fields
@@ -96,7 +100,8 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Class/Interface conversion operators
-
+            public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.Basic.BasicTextUI.BasicCaret t) => t.Cast<Javax.Swing.Plaf.UIResource>();
+            
             #endregion
 
             #region Fields

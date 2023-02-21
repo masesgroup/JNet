@@ -23,41 +23,6 @@
 
 namespace Java.Awt.Datatransfer
 {
-    #region StringSelection
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/StringSelection.html
-    /// </summary>
-    public partial class StringSelection : MASES.JCOBridge.C2JBridge.JVMBridgeBase<StringSelection>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public StringSelection() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public StringSelection(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.awt.datatransfer.StringSelection";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
     #region SystemFlavorMap
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/SystemFlavorMap.html
@@ -93,67 +58,35 @@ namespace Java.Awt.Datatransfer
     }
     #endregion
 
-    #region FlavorMap
+    #region DataFlavor
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/FlavorMap.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html
     /// </summary>
-    public partial class FlavorMap : MASES.JCOBridge.C2JBridge.JVMBridgeBase<FlavorMap>
+    public partial class DataFlavor : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DataFlavor>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public FlavorMap() { }
+        public DataFlavor() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public FlavorMap(params object[] args) : base(args) { }
+        public DataFlavor(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.awt.datatransfer.FlavorMap";
+        public override string ClassName => "java.awt.datatransfer.DataFlavor";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
+        public override bool IsAbstract => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
         public override bool IsCloseable => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
+        public override bool IsInterface => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region UnsupportedFlavorException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/UnsupportedFlavorException.html
-    /// </summary>
-    public partial class UnsupportedFlavorException : Java.Lang.Exception
-    {
-        public UnsupportedFlavorException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.awt.datatransfer.UnsupportedFlavorException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region MimeTypeParseException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/MimeTypeParseException.html
-    /// </summary>
-    public partial class MimeTypeParseException : Java.Lang.Exception
-    {
-        public MimeTypeParseException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.awt.datatransfer.MimeTypeParseException";
 
         // TODO: complete the class
 
@@ -189,6 +122,57 @@ namespace Java.Awt.Datatransfer
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region ClipboardOwner
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/ClipboardOwner.html
+    /// </summary>
+    public partial class ClipboardOwner : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ClipboardOwner>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public ClipboardOwner() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public ClipboardOwner(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.awt.datatransfer.ClipboardOwner";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region MimeTypeParseException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/MimeTypeParseException.html
+    /// </summary>
+    public partial class MimeTypeParseException : Java.Lang.Exception
+    {
+        public MimeTypeParseException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.awt.datatransfer.MimeTypeParseException";
 
         // TODO: complete the class
 
@@ -265,23 +249,58 @@ namespace Java.Awt.Datatransfer
     }
     #endregion
 
-    #region ClipboardOwner
+    #region StringSelection
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/ClipboardOwner.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/StringSelection.html
     /// </summary>
-    public partial class ClipboardOwner : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ClipboardOwner>
+    public partial class StringSelection : MASES.JCOBridge.C2JBridge.JVMBridgeBase<StringSelection>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ClipboardOwner() { }
+        public StringSelection() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public ClipboardOwner(params object[] args) : base(args) { }
+        public StringSelection(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.awt.datatransfer.ClipboardOwner";
+        public override string ClassName => "java.awt.datatransfer.StringSelection";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region FlavorMap
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/FlavorMap.html
+    /// </summary>
+    public partial class FlavorMap : MASES.JCOBridge.C2JBridge.JVMBridgeBase<FlavorMap>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public FlavorMap() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public FlavorMap(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.awt.datatransfer.FlavorMap";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -335,35 +354,16 @@ namespace Java.Awt.Datatransfer
     }
     #endregion
 
-    #region DataFlavor
+    #region UnsupportedFlavorException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/UnsupportedFlavorException.html
     /// </summary>
-    public partial class DataFlavor : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DataFlavor>
+    public partial class UnsupportedFlavorException : Java.Lang.Exception
     {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public DataFlavor() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public DataFlavor(params object[] args) : base(args) { }
+        public UnsupportedFlavorException() { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.awt.datatransfer.DataFlavor";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
+        public override string ClassName => "java.awt.datatransfer.UnsupportedFlavorException";
 
         // TODO: complete the class
 

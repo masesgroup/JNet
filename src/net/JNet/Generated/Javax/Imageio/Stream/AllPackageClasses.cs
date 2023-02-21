@@ -23,23 +23,23 @@
 
 namespace Javax.Imageio.Stream
 {
-    #region FileImageOutputStream
+    #region FileCacheImageInputStream
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/FileImageOutputStream.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/FileCacheImageInputStream.html
     /// </summary>
-    public partial class FileImageOutputStream : Javax.Imageio.Stream.ImageOutputStreamImpl
+    public partial class FileCacheImageInputStream : Javax.Imageio.Stream.ImageInputStreamImpl
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public FileImageOutputStream() { }
+        public FileCacheImageInputStream() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public FileImageOutputStream(params object[] args) : base(args) { }
+        public FileCacheImageInputStream(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.imageio.stream.FileImageOutputStream";
+        public override string ClassName => "javax.imageio.stream.FileCacheImageInputStream";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -58,26 +58,26 @@ namespace Javax.Imageio.Stream
     }
     #endregion
 
-    #region FileCacheImageOutputStream
+    #region ImageInputStreamImpl
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/FileCacheImageOutputStream.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStreamImpl.html
     /// </summary>
-    public partial class FileCacheImageOutputStream : Javax.Imageio.Stream.ImageOutputStreamImpl
+    public partial class ImageInputStreamImpl : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ImageInputStreamImpl>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public FileCacheImageOutputStream() { }
+        public ImageInputStreamImpl() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public FileCacheImageOutputStream(params object[] args) : base(args) { }
+        public ImageInputStreamImpl(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.imageio.stream.FileCacheImageOutputStream";
+        public override string ClassName => "javax.imageio.stream.ImageInputStreamImpl";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
+        public override bool IsAbstract => true;
 
         /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
         public override bool IsCloseable => false;
@@ -163,23 +163,23 @@ namespace Javax.Imageio.Stream
     }
     #endregion
 
-    #region IIOByteBuffer
+    #region FileImageOutputStream
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/IIOByteBuffer.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/FileImageOutputStream.html
     /// </summary>
-    public partial class IIOByteBuffer : MASES.JCOBridge.C2JBridge.JVMBridgeBase<IIOByteBuffer>
+    public partial class FileImageOutputStream : Javax.Imageio.Stream.ImageOutputStreamImpl
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public IIOByteBuffer() { }
+        public FileImageOutputStream() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public IIOByteBuffer(params object[] args) : base(args) { }
+        public FileImageOutputStream(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.imageio.stream.IIOByteBuffer";
+        public override string ClassName => "javax.imageio.stream.FileImageOutputStream";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -198,23 +198,23 @@ namespace Javax.Imageio.Stream
     }
     #endregion
 
-    #region FileCacheImageInputStream
+    #region IIOByteBuffer
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/FileCacheImageInputStream.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/IIOByteBuffer.html
     /// </summary>
-    public partial class FileCacheImageInputStream : Javax.Imageio.Stream.ImageInputStreamImpl
+    public partial class IIOByteBuffer : MASES.JCOBridge.C2JBridge.JVMBridgeBase<IIOByteBuffer>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public FileCacheImageInputStream() { }
+        public IIOByteBuffer() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public FileCacheImageInputStream(params object[] args) : base(args) { }
+        public IIOByteBuffer(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.imageio.stream.FileCacheImageInputStream";
+        public override string ClassName => "javax.imageio.stream.IIOByteBuffer";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -268,6 +268,41 @@ namespace Javax.Imageio.Stream
     }
     #endregion
 
+    #region FileCacheImageOutputStream
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/FileCacheImageOutputStream.html
+    /// </summary>
+    public partial class FileCacheImageOutputStream : Javax.Imageio.Stream.ImageOutputStreamImpl
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public FileCacheImageOutputStream() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public FileCacheImageOutputStream(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.imageio.stream.FileCacheImageOutputStream";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region FileImageInputStream
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/FileImageInputStream.html
@@ -285,6 +320,41 @@ namespace Javax.Imageio.Stream
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "javax.imageio.stream.FileImageInputStream";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region MemoryCacheImageOutputStream
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/MemoryCacheImageOutputStream.html
+    /// </summary>
+    public partial class MemoryCacheImageOutputStream : Javax.Imageio.Stream.ImageOutputStreamImpl
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public MemoryCacheImageOutputStream() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public MemoryCacheImageOutputStream(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.imageio.stream.MemoryCacheImageOutputStream";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -329,76 +399,6 @@ namespace Javax.Imageio.Stream
 
         /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
         public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region ImageInputStreamImpl
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStreamImpl.html
-    /// </summary>
-    public partial class ImageInputStreamImpl : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ImageInputStreamImpl>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public ImageInputStreamImpl() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public ImageInputStreamImpl(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.imageio.stream.ImageInputStreamImpl";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region MemoryCacheImageOutputStream
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/MemoryCacheImageOutputStream.html
-    /// </summary>
-    public partial class MemoryCacheImageOutputStream : Javax.Imageio.Stream.ImageOutputStreamImpl
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public MemoryCacheImageOutputStream() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public MemoryCacheImageOutputStream(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.imageio.stream.MemoryCacheImageOutputStream";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;

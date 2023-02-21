@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Sql.Rowset
 {
     #region BaseRowSet
@@ -31,7 +33,9 @@ namespace Javax.Sql.Rowset
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Io.Serializable(Javax.Sql.Rowset.BaseRowSet t) => t.Cast<Java.Io.Serializable>();
+        public static implicit operator Java.Lang.Cloneable(Javax.Sql.Rowset.BaseRowSet t) => t.Cast<Java.Lang.Cloneable>();
+        
         #endregion
 
         #region Fields

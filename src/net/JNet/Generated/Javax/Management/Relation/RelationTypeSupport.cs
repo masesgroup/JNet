@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Management.Relation
 {
     #region RelationTypeSupport
@@ -38,7 +40,8 @@ namespace Javax.Management.Relation
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Management.Relation.RelationType(Javax.Management.Relation.RelationTypeSupport t) => t.Cast<Javax.Management.Relation.RelationType>();
+        
         #endregion
 
         #region Fields

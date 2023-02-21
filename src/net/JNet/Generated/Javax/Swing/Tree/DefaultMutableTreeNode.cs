@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing.Tree
 {
     #region DefaultMutableTreeNode
@@ -45,7 +47,10 @@ namespace Javax.Swing.Tree
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Lang.Cloneable(Javax.Swing.Tree.DefaultMutableTreeNode t) => t.Cast<Java.Lang.Cloneable>();
+        public static implicit operator Javax.Swing.Tree.MutableTreeNode(Javax.Swing.Tree.DefaultMutableTreeNode t) => t.Cast<Javax.Swing.Tree.MutableTreeNode>();
+        public static implicit operator Java.Io.Serializable(Javax.Swing.Tree.DefaultMutableTreeNode t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields

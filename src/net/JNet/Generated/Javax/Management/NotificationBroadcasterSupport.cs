@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Management
 {
     #region NotificationBroadcasterSupport
@@ -52,7 +54,8 @@ namespace Javax.Management
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Management.NotificationEmitter(Javax.Management.NotificationBroadcasterSupport t) => t.Cast<Javax.Management.NotificationEmitter>();
+        
         #endregion
 
         #region Fields

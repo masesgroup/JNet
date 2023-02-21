@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Tools
 {
     #region DocumentationTool
@@ -31,7 +33,9 @@ namespace Javax.Tools
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Tools.Tool(Javax.Tools.DocumentationTool t) => t.Cast<Javax.Tools.Tool>();
+        public static implicit operator Javax.Tools.OptionChecker(Javax.Tools.DocumentationTool t) => t.Cast<Javax.Tools.OptionChecker>();
+        
         #endregion
 
         #region Fields
@@ -47,6 +51,47 @@ namespace Javax.Tools
         #endregion
 
         #region Nested classes
+        #region DocumentationTask
+        public partial class DocumentationTask
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DocumentationTool.DocumentationTask.html#setLocale(java.util.Locale)
+            /// </summary>
+            public void SetLocale(Java.Util.Locale arg0)
+            {
+                IExecute("setLocale", arg0);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DocumentationTool.DocumentationTask.html#call() throws java.lang.Exception
+            /// </summary>
+            public object Call()
+            {
+                return IExecute("call");
+            }
+            
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region Location
         public partial class Location
         {
@@ -99,47 +144,6 @@ namespace Javax.Tools
             public bool IsOutputLocation()
             {
                 return IExecute<bool>("isOutputLocation");
-            }
-            
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region DocumentationTask
-        public partial class DocumentationTask
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DocumentationTool.DocumentationTask.html#setLocale(java.util.Locale)
-            /// </summary>
-            public void SetLocale(Java.Util.Locale arg0)
-            {
-                IExecute("setLocale", arg0);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DocumentationTool.DocumentationTask.html#call() throws java.lang.Exception
-            /// </summary>
-            public object Call()
-            {
-                return IExecute("call");
             }
             
             #endregion

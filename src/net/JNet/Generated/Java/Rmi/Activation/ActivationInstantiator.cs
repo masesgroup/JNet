@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Rmi.Activation
 {
     #region ActivationInstantiator
@@ -31,7 +33,8 @@ namespace Java.Rmi.Activation
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Rmi.Remote(Java.Rmi.Activation.ActivationInstantiator t) => t.Cast<Java.Rmi.Remote>();
+        
         #endregion
 
         #region Fields

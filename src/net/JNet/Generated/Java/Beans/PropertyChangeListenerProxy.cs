@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Beans
 {
     #region PropertyChangeListenerProxy
@@ -38,7 +40,8 @@ namespace Java.Beans
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Beans.PropertyChangeListener(Java.Beans.PropertyChangeListenerProxy t) => t.Cast<Java.Beans.PropertyChangeListener>();
+        
         #endregion
 
         #region Fields

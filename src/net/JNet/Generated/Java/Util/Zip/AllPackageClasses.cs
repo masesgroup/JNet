@@ -93,144 +93,55 @@ namespace Java.Util.Zip
     }
     #endregion
 
-    #region ZipError
+    #region ZipException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipError.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipException.html
     /// </summary>
-    public partial class ZipError : Java.Lang.InternalError
+    public partial class ZipException : Java.Io.IOException
     {
-        public ZipError() { }
+        public ZipException() { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.util.zip.ZipError";
+        public override string ClassName => "java.util.zip.ZipException";
 
         // TODO: complete the class
 
     }
     #endregion
 
-    #region DeflaterOutputStream
+    #region DataFormatException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/DeflaterOutputStream.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/DataFormatException.html
     /// </summary>
-    public partial class DeflaterOutputStream : Java.Io.FilterOutputStream
+    public partial class DataFormatException : Java.Lang.Exception
     {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public DeflaterOutputStream() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public DeflaterOutputStream(params object[] args) : base(args) { }
+        public DataFormatException() { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.util.zip.DeflaterOutputStream";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
+        public override string ClassName => "java.util.zip.DataFormatException";
 
         // TODO: complete the class
 
     }
     #endregion
 
-    #region CRC32C
+    #region Deflater
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/CRC32C.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html
     /// </summary>
-    public partial class CRC32C : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CRC32C>
+    public partial class Deflater : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Deflater>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public CRC32C() { }
+        public Deflater() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public CRC32C(params object[] args) : base(args) { }
+        public Deflater(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.util.zip.CRC32C";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region ZipInputStream
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipInputStream.html
-    /// </summary>
-    public partial class ZipInputStream : Java.Util.Zip.InflaterInputStream
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public ZipInputStream() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public ZipInputStream(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.util.zip.ZipInputStream";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region ZipOutputStream
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipOutputStream.html
-    /// </summary>
-    public partial class ZipOutputStream : Java.Util.Zip.DeflaterOutputStream
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public ZipOutputStream() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public ZipOutputStream(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.util.zip.ZipOutputStream";
+        public override string ClassName => "java.util.zip.Deflater";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -319,23 +230,23 @@ namespace Java.Util.Zip
     }
     #endregion
 
-    #region CheckedOutputStream
+    #region CheckedInputStream
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/CheckedOutputStream.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/CheckedInputStream.html
     /// </summary>
-    public partial class CheckedOutputStream : Java.Io.FilterOutputStream
+    public partial class CheckedInputStream : Java.Io.FilterInputStream
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public CheckedOutputStream() { }
+        public CheckedInputStream() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public CheckedOutputStream(params object[] args) : base(args) { }
+        public CheckedInputStream(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.util.zip.CheckedOutputStream";
+        public override string ClassName => "java.util.zip.CheckedInputStream";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -389,6 +300,127 @@ namespace Java.Util.Zip
     }
     #endregion
 
+    #region DeflaterOutputStream
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/DeflaterOutputStream.html
+    /// </summary>
+    public partial class DeflaterOutputStream : Java.Io.FilterOutputStream
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public DeflaterOutputStream() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public DeflaterOutputStream(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.util.zip.DeflaterOutputStream";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region ZipInputStream
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipInputStream.html
+    /// </summary>
+    public partial class ZipInputStream : Java.Util.Zip.InflaterInputStream
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public ZipInputStream() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public ZipInputStream(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.util.zip.ZipInputStream";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region ZipOutputStream
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipOutputStream.html
+    /// </summary>
+    public partial class ZipOutputStream : Java.Util.Zip.DeflaterOutputStream
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public ZipOutputStream() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public ZipOutputStream(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.util.zip.ZipOutputStream";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region ZipError
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipError.html
+    /// </summary>
+    public partial class ZipError : Java.Lang.InternalError
+    {
+        public ZipError() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.util.zip.ZipError";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region Checksum
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Checksum.html
@@ -415,41 +447,6 @@ namespace Java.Util.Zip
 
         /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
         public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region GZIPOutputStream
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/GZIPOutputStream.html
-    /// </summary>
-    public partial class GZIPOutputStream : Java.Util.Zip.DeflaterOutputStream
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public GZIPOutputStream() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public GZIPOutputStream(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.util.zip.GZIPOutputStream";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;
@@ -494,39 +491,23 @@ namespace Java.Util.Zip
     }
     #endregion
 
-    #region ZipException
+    #region InflaterOutputStream
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipException.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/InflaterOutputStream.html
     /// </summary>
-    public partial class ZipException : Java.Io.IOException
-    {
-        public ZipException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.util.zip.ZipException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region Deflater
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html
-    /// </summary>
-    public partial class Deflater : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Deflater>
+    public partial class InflaterOutputStream : Java.Io.FilterOutputStream
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public Deflater() { }
+        public InflaterOutputStream() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public Deflater(params object[] args) : base(args) { }
+        public InflaterOutputStream(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.util.zip.Deflater";
+        public override string ClassName => "java.util.zip.InflaterOutputStream";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -580,23 +561,58 @@ namespace Java.Util.Zip
     }
     #endregion
 
-    #region CheckedInputStream
+    #region GZIPOutputStream
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/CheckedInputStream.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/GZIPOutputStream.html
     /// </summary>
-    public partial class CheckedInputStream : Java.Io.FilterInputStream
+    public partial class GZIPOutputStream : Java.Util.Zip.DeflaterOutputStream
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public CheckedInputStream() { }
+        public GZIPOutputStream() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public CheckedInputStream(params object[] args) : base(args) { }
+        public GZIPOutputStream(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.util.zip.CheckedInputStream";
+        public override string ClassName => "java.util.zip.GZIPOutputStream";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region CheckedOutputStream
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/CheckedOutputStream.html
+    /// </summary>
+    public partial class CheckedOutputStream : Java.Io.FilterOutputStream
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public CheckedOutputStream() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public CheckedOutputStream(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.util.zip.CheckedOutputStream";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -650,39 +666,23 @@ namespace Java.Util.Zip
     }
     #endregion
 
-    #region DataFormatException
+    #region CRC32C
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/DataFormatException.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/CRC32C.html
     /// </summary>
-    public partial class DataFormatException : Java.Lang.Exception
-    {
-        public DataFormatException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.util.zip.DataFormatException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region InflaterOutputStream
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/InflaterOutputStream.html
-    /// </summary>
-    public partial class InflaterOutputStream : Java.Io.FilterOutputStream
+    public partial class CRC32C : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CRC32C>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public InflaterOutputStream() { }
+        public CRC32C() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public InflaterOutputStream(params object[] args) : base(args) { }
+        public CRC32C(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.util.zip.InflaterOutputStream";
+        public override string ClassName => "java.util.zip.CRC32C";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;

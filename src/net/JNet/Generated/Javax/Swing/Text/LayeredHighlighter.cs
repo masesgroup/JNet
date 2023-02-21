@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing.Text
 {
     #region LayeredHighlighter
@@ -31,7 +33,8 @@ namespace Javax.Swing.Text
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Swing.Text.Highlighter(Javax.Swing.Text.LayeredHighlighter t) => t.Cast<Javax.Swing.Text.Highlighter>();
+        
         #endregion
 
         #region Fields

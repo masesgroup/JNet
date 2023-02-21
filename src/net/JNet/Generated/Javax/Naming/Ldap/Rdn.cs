@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Naming.Ldap
 {
     #region Rdn
@@ -59,7 +61,8 @@ namespace Javax.Naming.Ldap
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Io.Serializable(Javax.Naming.Ldap.Rdn t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields

@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing.Text.Html
 {
     #region StyleSheet
@@ -202,7 +204,8 @@ namespace Javax.Swing.Text.Html
             #endregion
 
             #region Class/Interface conversion operators
-
+            public static implicit operator Java.Io.Serializable(Javax.Swing.Text.Html.StyleSheet.BoxPainter t) => t.Cast<Java.Io.Serializable>();
+            
             #endregion
 
             #region Fields
@@ -243,7 +246,8 @@ namespace Javax.Swing.Text.Html
             #endregion
 
             #region Class/Interface conversion operators
-
+            public static implicit operator Java.Io.Serializable(Javax.Swing.Text.Html.StyleSheet.ListPainter t) => t.Cast<Java.Io.Serializable>();
+            
             #endregion
 
             #region Fields

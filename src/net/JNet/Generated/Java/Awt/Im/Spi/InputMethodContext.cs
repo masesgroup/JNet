@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Awt.Im.Spi
 {
     #region InputMethodContext
@@ -31,7 +33,8 @@ namespace Java.Awt.Im.Spi
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Awt.Im.InputMethodRequests(Java.Awt.Im.Spi.InputMethodContext t) => t.Cast<Java.Awt.Im.InputMethodRequests>();
+        
         #endregion
 
         #region Fields

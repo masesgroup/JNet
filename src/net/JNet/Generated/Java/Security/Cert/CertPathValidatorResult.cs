@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Security.Cert
 {
     #region CertPathValidatorResult
@@ -31,7 +33,8 @@ namespace Java.Security.Cert
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Lang.Cloneable(Java.Security.Cert.CertPathValidatorResult t) => t.Cast<Java.Lang.Cloneable>();
+        
         #endregion
 
         #region Fields

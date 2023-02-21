@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Xml.Namespace
 {
     #region QName
@@ -52,7 +54,8 @@ namespace Javax.Xml.Namespace
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Io.Serializable(Javax.Xml.Namespace.QName t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields

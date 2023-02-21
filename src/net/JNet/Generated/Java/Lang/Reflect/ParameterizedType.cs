@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Lang.Reflect
 {
     #region ParameterizedType
@@ -31,7 +33,8 @@ namespace Java.Lang.Reflect
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Lang.Reflect.Type(Java.Lang.Reflect.ParameterizedType t) => t.Cast<Java.Lang.Reflect.Type>();
+        
         #endregion
 
         #region Fields

@@ -23,6 +23,127 @@
 
 namespace Javax.Naming.Directory
 {
+    #region InitialDirContext
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/InitialDirContext.html
+    /// </summary>
+    public partial class InitialDirContext : Javax.Naming.InitialContext
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public InitialDirContext() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public InitialDirContext(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.naming.directory.InitialDirContext";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region ModificationItem
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/ModificationItem.html
+    /// </summary>
+    public partial class ModificationItem : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ModificationItem>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public ModificationItem() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public ModificationItem(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.naming.directory.ModificationItem";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region BasicAttributes
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttributes.html
+    /// </summary>
+    public partial class BasicAttributes : MASES.JCOBridge.C2JBridge.JVMBridgeBase<BasicAttributes>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public BasicAttributes() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public BasicAttributes(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.naming.directory.BasicAttributes";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region InvalidAttributeIdentifierException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/InvalidAttributeIdentifierException.html
+    /// </summary>
+    public partial class InvalidAttributeIdentifierException : Javax.Naming.NamingException
+    {
+        public InvalidAttributeIdentifierException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.naming.directory.InvalidAttributeIdentifierException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region BasicAttribute
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttribute.html
@@ -52,57 +173,6 @@ namespace Javax.Naming.Directory
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region SearchControls
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/SearchControls.html
-    /// </summary>
-    public partial class SearchControls : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SearchControls>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public SearchControls() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public SearchControls(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.directory.SearchControls";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region InvalidAttributesException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/InvalidAttributesException.html
-    /// </summary>
-    public partial class InvalidAttributesException : Javax.Naming.NamingException
-    {
-        public InvalidAttributesException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.directory.InvalidAttributesException";
 
         // TODO: complete the class
 
@@ -160,191 +230,6 @@ namespace Javax.Naming.Directory
     }
     #endregion
 
-    #region SchemaViolationException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/SchemaViolationException.html
-    /// </summary>
-    public partial class SchemaViolationException : Javax.Naming.NamingException
-    {
-        public SchemaViolationException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.directory.SchemaViolationException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region InvalidSearchFilterException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/InvalidSearchFilterException.html
-    /// </summary>
-    public partial class InvalidSearchFilterException : Javax.Naming.NamingException
-    {
-        public InvalidSearchFilterException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.directory.InvalidSearchFilterException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region BasicAttributes
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttributes.html
-    /// </summary>
-    public partial class BasicAttributes : MASES.JCOBridge.C2JBridge.JVMBridgeBase<BasicAttributes>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public BasicAttributes() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public BasicAttributes(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.directory.BasicAttributes";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region NoSuchAttributeException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/NoSuchAttributeException.html
-    /// </summary>
-    public partial class NoSuchAttributeException : Javax.Naming.NamingException
-    {
-        public NoSuchAttributeException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.directory.NoSuchAttributeException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region InitialDirContext
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/InitialDirContext.html
-    /// </summary>
-    public partial class InitialDirContext : Javax.Naming.InitialContext
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public InitialDirContext() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public InitialDirContext(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.directory.InitialDirContext";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region SearchResult
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/SearchResult.html
-    /// </summary>
-    public partial class SearchResult : Javax.Naming.Binding
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public SearchResult() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public SearchResult(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.directory.SearchResult";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region AttributeModificationException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/AttributeModificationException.html
-    /// </summary>
-    public partial class AttributeModificationException : Javax.Naming.NamingException
-    {
-        public AttributeModificationException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.directory.AttributeModificationException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region AttributeInUseException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/AttributeInUseException.html
-    /// </summary>
-    public partial class AttributeInUseException : Javax.Naming.NamingException
-    {
-        public AttributeInUseException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.directory.AttributeInUseException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
     #region InvalidAttributeValueException
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/InvalidAttributeValueException.html
@@ -355,57 +240,6 @@ namespace Javax.Naming.Directory
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "javax.naming.directory.InvalidAttributeValueException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region InvalidAttributeIdentifierException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/InvalidAttributeIdentifierException.html
-    /// </summary>
-    public partial class InvalidAttributeIdentifierException : Javax.Naming.NamingException
-    {
-        public InvalidAttributeIdentifierException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.directory.InvalidAttributeIdentifierException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region DirContext
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/DirContext.html
-    /// </summary>
-    public partial class DirContext : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DirContext>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public DirContext() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public DirContext(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.directory.DirContext";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
 
         // TODO: complete the class
 
@@ -447,23 +281,189 @@ namespace Javax.Naming.Directory
     }
     #endregion
 
-    #region ModificationItem
+    #region AttributeInUseException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/ModificationItem.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/AttributeInUseException.html
     /// </summary>
-    public partial class ModificationItem : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ModificationItem>
+    public partial class AttributeInUseException : Javax.Naming.NamingException
+    {
+        public AttributeInUseException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.naming.directory.AttributeInUseException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region InvalidSearchFilterException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/InvalidSearchFilterException.html
+    /// </summary>
+    public partial class InvalidSearchFilterException : Javax.Naming.NamingException
+    {
+        public InvalidSearchFilterException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.naming.directory.InvalidSearchFilterException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region SearchControls
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/SearchControls.html
+    /// </summary>
+    public partial class SearchControls : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SearchControls>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ModificationItem() { }
+        public SearchControls() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public ModificationItem(params object[] args) : base(args) { }
+        public SearchControls(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.directory.ModificationItem";
+        public override string ClassName => "javax.naming.directory.SearchControls";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region DirContext
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/DirContext.html
+    /// </summary>
+    public partial class DirContext : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DirContext>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public DirContext() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public DirContext(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.naming.directory.DirContext";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region NoSuchAttributeException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/NoSuchAttributeException.html
+    /// </summary>
+    public partial class NoSuchAttributeException : Javax.Naming.NamingException
+    {
+        public NoSuchAttributeException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.naming.directory.NoSuchAttributeException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region AttributeModificationException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/AttributeModificationException.html
+    /// </summary>
+    public partial class AttributeModificationException : Javax.Naming.NamingException
+    {
+        public AttributeModificationException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.naming.directory.AttributeModificationException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region InvalidAttributesException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/InvalidAttributesException.html
+    /// </summary>
+    public partial class InvalidAttributesException : Javax.Naming.NamingException
+    {
+        public InvalidAttributesException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.naming.directory.InvalidAttributesException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region SchemaViolationException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/SchemaViolationException.html
+    /// </summary>
+    public partial class SchemaViolationException : Javax.Naming.NamingException
+    {
+        public SchemaViolationException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.naming.directory.SchemaViolationException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region SearchResult
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/SearchResult.html
+    /// </summary>
+    public partial class SearchResult : Javax.Naming.Binding
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public SearchResult() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public SearchResult(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.naming.directory.SearchResult";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;

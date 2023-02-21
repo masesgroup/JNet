@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Lang.Reflect
 {
     #region Proxy
@@ -31,7 +33,8 @@ namespace Java.Lang.Reflect
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Io.Serializable(Java.Lang.Reflect.Proxy t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields

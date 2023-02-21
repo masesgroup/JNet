@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Io
 {
     #region ObjectInput
@@ -31,7 +33,9 @@ namespace Java.Io
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Io.DataInput(Java.Io.ObjectInput t) => t.Cast<Java.Io.DataInput>();
+        public static implicit operator Java.Lang.AutoCloseable(Java.Io.ObjectInput t) => t.Cast<Java.Lang.AutoCloseable>();
+        
         #endregion
 
         #region Fields

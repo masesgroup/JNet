@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Management.Openmbean
 {
     #region OpenMBeanAttributeInfoSupport
@@ -31,7 +33,8 @@ namespace Javax.Management.Openmbean
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Management.Openmbean.OpenMBeanAttributeInfo(Javax.Management.Openmbean.OpenMBeanAttributeInfoSupport t) => t.Cast<Javax.Management.Openmbean.OpenMBeanAttributeInfo>();
+        
         #endregion
 
         #region Fields

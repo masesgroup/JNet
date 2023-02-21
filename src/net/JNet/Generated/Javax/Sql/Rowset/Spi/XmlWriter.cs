@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Sql.Rowset.Spi
 {
     #region XmlWriter
@@ -31,7 +33,8 @@ namespace Javax.Sql.Rowset.Spi
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Sql.RowSetWriter(Javax.Sql.Rowset.Spi.XmlWriter t) => t.Cast<Javax.Sql.RowSetWriter>();
+        
         #endregion
 
         #region Fields

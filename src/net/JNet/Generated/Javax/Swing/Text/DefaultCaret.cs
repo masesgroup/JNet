@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing.Text
 {
     #region DefaultCaret
@@ -31,7 +33,11 @@ namespace Javax.Swing.Text
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Swing.Text.Caret(Javax.Swing.Text.DefaultCaret t) => t.Cast<Javax.Swing.Text.Caret>();
+        public static implicit operator Java.Awt.EventNs.FocusListener(Javax.Swing.Text.DefaultCaret t) => t.Cast<Java.Awt.EventNs.FocusListener>();
+        public static implicit operator Java.Awt.EventNs.MouseListener(Javax.Swing.Text.DefaultCaret t) => t.Cast<Java.Awt.EventNs.MouseListener>();
+        public static implicit operator Java.Awt.EventNs.MouseMotionListener(Javax.Swing.Text.DefaultCaret t) => t.Cast<Java.Awt.EventNs.MouseMotionListener>();
+        
         #endregion
 
         #region Fields

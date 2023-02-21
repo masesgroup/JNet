@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Awt.ImageNs
 {
     #region BandCombineOp
@@ -38,7 +40,8 @@ namespace Java.Awt.ImageNs
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Awt.ImageNs.RasterOp(Java.Awt.ImageNs.BandCombineOp t) => t.Cast<Java.Awt.ImageNs.RasterOp>();
+        
         #endregion
 
         #region Fields

@@ -23,41 +23,6 @@
 
 namespace Org.W3c.Dom.Xpath
 {
-    #region XPathNamespace
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathNamespace.html
-    /// </summary>
-    public partial class XPathNamespace : MASES.JCOBridge.C2JBridge.JVMBridgeBase<XPathNamespace>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public XPathNamespace() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public XPathNamespace(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "org.w3c.dom.xpath.XPathNamespace";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
     #region XPathNSResolver
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathNSResolver.html
@@ -93,22 +58,6 @@ namespace Org.W3c.Dom.Xpath
     }
     #endregion
 
-    #region XPathException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathException.html
-    /// </summary>
-    public partial class XPathException : Java.Lang.RuntimeException
-    {
-        public XPathException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "org.w3c.dom.xpath.XPathException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
     #region XPathEvaluator
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathEvaluator.html
@@ -138,6 +87,22 @@ namespace Org.W3c.Dom.Xpath
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region XPathException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathException.html
+    /// </summary>
+    public partial class XPathException : Java.Lang.RuntimeException
+    {
+        public XPathException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "org.w3c.dom.xpath.XPathException";
 
         // TODO: complete the class
 
@@ -196,6 +161,41 @@ namespace Org.W3c.Dom.Xpath
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "org.w3c.dom.xpath.XPathExpression";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region XPathNamespace
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/xpath/XPathNamespace.html
+    /// </summary>
+    public partial class XPathNamespace : MASES.JCOBridge.C2JBridge.JVMBridgeBase<XPathNamespace>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public XPathNamespace() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public XPathNamespace(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "org.w3c.dom.xpath.XPathNamespace";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;

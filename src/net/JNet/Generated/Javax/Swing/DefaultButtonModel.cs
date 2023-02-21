@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing
 {
     #region DefaultButtonModel
@@ -31,7 +33,9 @@ namespace Javax.Swing
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Swing.ButtonModel(Javax.Swing.DefaultButtonModel t) => t.Cast<Javax.Swing.ButtonModel>();
+        public static implicit operator Java.Io.Serializable(Javax.Swing.DefaultButtonModel t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields

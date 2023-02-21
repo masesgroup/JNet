@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Security.Auth.X500
 {
     #region X500PrivateCredential
@@ -45,7 +47,8 @@ namespace Javax.Security.Auth.X500
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Security.Auth.Destroyable(Javax.Security.Auth.X500.X500PrivateCredential t) => t.Cast<Javax.Security.Auth.Destroyable>();
+        
         #endregion
 
         #region Fields

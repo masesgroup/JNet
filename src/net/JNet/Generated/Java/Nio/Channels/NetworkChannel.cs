@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Nio.Channels
 {
     #region NetworkChannel
@@ -31,7 +33,8 @@ namespace Java.Nio.Channels
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Nio.Channels.Channel(Java.Nio.Channels.NetworkChannel t) => t.Cast<Java.Nio.Channels.Channel>();
+        
         #endregion
 
         #region Fields

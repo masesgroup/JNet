@@ -23,76 +23,6 @@
 
 namespace Java.Nio.Channels.Spi
 {
-    #region AbstractSelectableChannel
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/spi/AbstractSelectableChannel.html
-    /// </summary>
-    public partial class AbstractSelectableChannel : Java.Nio.Channels.SelectableChannel
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public AbstractSelectableChannel() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public AbstractSelectableChannel(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.channels.spi.AbstractSelectableChannel";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region AbstractInterruptibleChannel
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/spi/AbstractInterruptibleChannel.html
-    /// </summary>
-    public partial class AbstractInterruptibleChannel : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AbstractInterruptibleChannel>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public AbstractInterruptibleChannel() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public AbstractInterruptibleChannel(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.channels.spi.AbstractInterruptibleChannel";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
     #region SelectorProvider
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/spi/SelectorProvider.html
@@ -128,23 +58,58 @@ namespace Java.Nio.Channels.Spi
     }
     #endregion
 
-    #region AbstractSelectionKey
+    #region AbstractSelectableChannel
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/spi/AbstractSelectionKey.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/spi/AbstractSelectableChannel.html
     /// </summary>
-    public partial class AbstractSelectionKey : Java.Nio.Channels.SelectionKey
+    public partial class AbstractSelectableChannel : Java.Nio.Channels.SelectableChannel
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public AbstractSelectionKey() { }
+        public AbstractSelectableChannel() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public AbstractSelectionKey(params object[] args) : base(args) { }
+        public AbstractSelectableChannel(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.channels.spi.AbstractSelectionKey";
+        public override string ClassName => "java.nio.channels.spi.AbstractSelectableChannel";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region AbstractSelector
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/spi/AbstractSelector.html
+    /// </summary>
+    public partial class AbstractSelector : Java.Nio.Channels.Selector
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public AbstractSelector() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public AbstractSelector(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.nio.channels.spi.AbstractSelector";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -198,23 +163,58 @@ namespace Java.Nio.Channels.Spi
     }
     #endregion
 
-    #region AbstractSelector
+    #region AbstractSelectionKey
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/spi/AbstractSelector.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/spi/AbstractSelectionKey.html
     /// </summary>
-    public partial class AbstractSelector : Java.Nio.Channels.Selector
+    public partial class AbstractSelectionKey : Java.Nio.Channels.SelectionKey
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public AbstractSelector() { }
+        public AbstractSelectionKey() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public AbstractSelector(params object[] args) : base(args) { }
+        public AbstractSelectionKey(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.channels.spi.AbstractSelector";
+        public override string ClassName => "java.nio.channels.spi.AbstractSelectionKey";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region AbstractInterruptibleChannel
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/spi/AbstractInterruptibleChannel.html
+    /// </summary>
+    public partial class AbstractInterruptibleChannel : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AbstractInterruptibleChannel>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public AbstractInterruptibleChannel() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public AbstractInterruptibleChannel(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.nio.channels.spi.AbstractInterruptibleChannel";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;

@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Util
 {
     #region IntSummaryStatistics
@@ -38,7 +40,8 @@ namespace Java.Util
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Util.Function.IntConsumer(Java.Util.IntSummaryStatistics t) => t.Cast<Java.Util.Function.IntConsumer>();
+        
         #endregion
 
         #region Fields

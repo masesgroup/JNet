@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Print.Attribute
 {
     #region ResolutionSyntax
@@ -38,7 +40,9 @@ namespace Javax.Print.Attribute
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Io.Serializable(Javax.Print.Attribute.ResolutionSyntax t) => t.Cast<Java.Io.Serializable>();
+        public static implicit operator Java.Lang.Cloneable(Javax.Print.Attribute.ResolutionSyntax t) => t.Cast<Java.Lang.Cloneable>();
+        
         #endregion
 
         #region Fields

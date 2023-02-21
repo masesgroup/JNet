@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Security.Auth.Kerberos
 {
     #region KerberosTicket
@@ -38,7 +40,10 @@ namespace Javax.Security.Auth.Kerberos
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Security.Auth.Destroyable(Javax.Security.Auth.Kerberos.KerberosTicket t) => t.Cast<Javax.Security.Auth.Destroyable>();
+        public static implicit operator Javax.Security.Auth.Refreshable(Javax.Security.Auth.Kerberos.KerberosTicket t) => t.Cast<Javax.Security.Auth.Refreshable>();
+        public static implicit operator Java.Io.Serializable(Javax.Security.Auth.Kerberos.KerberosTicket t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields

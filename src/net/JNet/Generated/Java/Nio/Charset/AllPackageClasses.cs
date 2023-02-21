@@ -23,35 +23,16 @@
 
 namespace Java.Nio.Charset
 {
-    #region CoderResult
+    #region CharacterCodingException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CoderResult.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharacterCodingException.html
     /// </summary>
-    public partial class CoderResult : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CoderResult>
+    public partial class CharacterCodingException : Java.Io.IOException
     {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public CoderResult() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public CoderResult(params object[] args) : base(args) { }
+        public CharacterCodingException() { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.charset.CoderResult";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
+        public override string ClassName => "java.nio.charset.CharacterCodingException";
 
         // TODO: complete the class
 
@@ -109,22 +90,6 @@ namespace Java.Nio.Charset
     }
     #endregion
 
-    #region CharacterCodingException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharacterCodingException.html
-    /// </summary>
-    public partial class CharacterCodingException : Java.Io.IOException
-    {
-        public CharacterCodingException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.charset.CharacterCodingException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
     #region CharsetEncoder
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetEncoder.html
@@ -160,6 +125,22 @@ namespace Java.Nio.Charset
     }
     #endregion
 
+    #region MalformedInputException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/MalformedInputException.html
+    /// </summary>
+    public partial class MalformedInputException : Java.Nio.Charset.CharacterCodingException
+    {
+        public MalformedInputException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.nio.charset.MalformedInputException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region CoderMalfunctionError
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CoderMalfunctionError.html
@@ -176,16 +157,16 @@ namespace Java.Nio.Charset
     }
     #endregion
 
-    #region MalformedInputException
+    #region UnsupportedCharsetException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/MalformedInputException.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/UnsupportedCharsetException.html
     /// </summary>
-    public partial class MalformedInputException : Java.Nio.Charset.CharacterCodingException
+    public partial class UnsupportedCharsetException : Java.Lang.IllegalArgumentException
     {
-        public MalformedInputException() { }
+        public UnsupportedCharsetException() { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.charset.MalformedInputException";
+        public override string ClassName => "java.nio.charset.UnsupportedCharsetException";
 
         // TODO: complete the class
 
@@ -212,6 +193,41 @@ namespace Java.Nio.Charset
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region CoderResult
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CoderResult.html
+    /// </summary>
+    public partial class CoderResult : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CoderResult>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public CoderResult() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public CoderResult(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.nio.charset.CoderResult";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
         public override bool IsCloseable => false;
@@ -272,22 +288,6 @@ namespace Java.Nio.Charset
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "java.nio.charset.IllegalCharsetNameException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region UnsupportedCharsetException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/UnsupportedCharsetException.html
-    /// </summary>
-    public partial class UnsupportedCharsetException : Java.Lang.IllegalArgumentException
-    {
-        public UnsupportedCharsetException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.charset.UnsupportedCharsetException";
 
         // TODO: complete the class
 

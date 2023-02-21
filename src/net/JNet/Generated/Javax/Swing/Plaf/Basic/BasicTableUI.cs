@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing.Plaf.Basic
 {
     #region BasicTableUI
@@ -47,61 +49,6 @@ namespace Javax.Swing.Plaf.Basic
         #endregion
 
         #region Nested classes
-        #region KeyHandler
-        public partial class KeyHandler
-        {
-            #region Constructors
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableUI.KeyHandler.html#<init>(javax.swing.plaf.basic.BasicTableUI)
-            /// </summary>
-            public KeyHandler(Javax.Swing.Plaf.Basic.BasicTableUI arg0)
-                : base(arg0)
-            {
-            }
-            
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableUI.KeyHandler.html#keyPressed(java.awt.event.KeyEvent)
-            /// </summary>
-            public void KeyPressed(Java.Awt.EventNs.KeyEvent arg0)
-            {
-                IExecute("keyPressed", arg0);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableUI.KeyHandler.html#keyReleased(java.awt.event.KeyEvent)
-            /// </summary>
-            public void KeyReleased(Java.Awt.EventNs.KeyEvent arg0)
-            {
-                IExecute("keyReleased", arg0);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableUI.KeyHandler.html#keyTyped(java.awt.event.KeyEvent)
-            /// </summary>
-            public void KeyTyped(Java.Awt.EventNs.KeyEvent arg0)
-            {
-                IExecute("keyTyped", arg0);
-            }
-            
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region MouseInputHandler
         public partial class MouseInputHandler
         {
@@ -117,7 +64,8 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Class/Interface conversion operators
-
+            public static implicit operator Javax.Swing.Event.MouseInputListener(Javax.Swing.Plaf.Basic.BasicTableUI.MouseInputHandler t) => t.Cast<Javax.Swing.Event.MouseInputListener>();
+            
             #endregion
 
             #region Fields
@@ -200,7 +148,8 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Class/Interface conversion operators
-
+            public static implicit operator Java.Awt.EventNs.FocusListener(Javax.Swing.Plaf.Basic.BasicTableUI.FocusHandler t) => t.Cast<Java.Awt.EventNs.FocusListener>();
+            
             #endregion
 
             #region Fields
@@ -225,6 +174,62 @@ namespace Javax.Swing.Plaf.Basic
             public void FocusLost(Java.Awt.EventNs.FocusEvent arg0)
             {
                 IExecute("focusLost", arg0);
+            }
+            
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region KeyHandler
+        public partial class KeyHandler
+        {
+            #region Constructors
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableUI.KeyHandler.html#<init>(javax.swing.plaf.basic.BasicTableUI)
+            /// </summary>
+            public KeyHandler(Javax.Swing.Plaf.Basic.BasicTableUI arg0)
+                : base(arg0)
+            {
+            }
+            
+            #endregion
+
+            #region Class/Interface conversion operators
+            public static implicit operator Java.Awt.EventNs.KeyListener(Javax.Swing.Plaf.Basic.BasicTableUI.KeyHandler t) => t.Cast<Java.Awt.EventNs.KeyListener>();
+            
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableUI.KeyHandler.html#keyPressed(java.awt.event.KeyEvent)
+            /// </summary>
+            public void KeyPressed(Java.Awt.EventNs.KeyEvent arg0)
+            {
+                IExecute("keyPressed", arg0);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableUI.KeyHandler.html#keyReleased(java.awt.event.KeyEvent)
+            /// </summary>
+            public void KeyReleased(Java.Awt.EventNs.KeyEvent arg0)
+            {
+                IExecute("keyReleased", arg0);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableUI.KeyHandler.html#keyTyped(java.awt.event.KeyEvent)
+            /// </summary>
+            public void KeyTyped(Java.Awt.EventNs.KeyEvent arg0)
+            {
+                IExecute("keyTyped", arg0);
             }
             
             #endregion

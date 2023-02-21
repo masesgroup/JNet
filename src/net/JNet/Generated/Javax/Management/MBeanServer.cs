@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Management
 {
     #region MBeanServer
@@ -31,7 +33,8 @@ namespace Javax.Management
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Management.MBeanServerConnection(Javax.Management.MBeanServer t) => t.Cast<Javax.Management.MBeanServerConnection>();
+        
         #endregion
 
         #region Fields

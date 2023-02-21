@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Lang.Management
 {
     #region MemoryPoolMXBean
@@ -31,7 +33,8 @@ namespace Java.Lang.Management
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Lang.Management.PlatformManagedObject(Java.Lang.Management.MemoryPoolMXBean t) => t.Cast<Java.Lang.Management.PlatformManagedObject>();
+        
         #endregion
 
         #region Fields

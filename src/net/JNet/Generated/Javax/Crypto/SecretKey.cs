@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Crypto
 {
     #region SecretKey
@@ -31,7 +33,9 @@ namespace Javax.Crypto
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Security.Key(Javax.Crypto.SecretKey t) => t.Cast<Java.Security.Key>();
+        public static implicit operator Javax.Security.Auth.Destroyable(Javax.Crypto.SecretKey t) => t.Cast<Javax.Security.Auth.Destroyable>();
+        
         #endregion
 
         #region Fields

@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Annotation.Processing
 {
     #region AbstractProcessor
@@ -31,7 +33,8 @@ namespace Javax.Annotation.Processing
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Annotation.Processing.Processor(Javax.Annotation.Processing.AbstractProcessor t) => t.Cast<Javax.Annotation.Processing.Processor>();
+        
         #endregion
 
         #region Fields

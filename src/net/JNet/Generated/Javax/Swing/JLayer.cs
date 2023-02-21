@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing
 {
     #region JLayer
@@ -38,7 +40,10 @@ namespace Javax.Swing
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Swing.Scrollable(Javax.Swing.JLayer t) => t.Cast<Javax.Swing.Scrollable>();
+        public static implicit operator Java.Beans.PropertyChangeListener(Javax.Swing.JLayer t) => t.Cast<Java.Beans.PropertyChangeListener>();
+        public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.JLayer t) => t.Cast<Javax.Accessibility.Accessible>();
+        
         #endregion
 
         #region Fields

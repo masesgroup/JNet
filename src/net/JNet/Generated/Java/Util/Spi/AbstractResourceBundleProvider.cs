@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Util.Spi
 {
     #region AbstractResourceBundleProvider
@@ -31,7 +33,8 @@ namespace Java.Util.Spi
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Util.Spi.ResourceBundleProvider(Java.Util.Spi.AbstractResourceBundleProvider t) => t.Cast<Java.Util.Spi.ResourceBundleProvider>();
+        
         #endregion
 
         #region Fields

@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Security.Auth.Kerberos
 {
     #region KerberosCredMessage
@@ -38,7 +40,8 @@ namespace Javax.Security.Auth.Kerberos
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Security.Auth.Destroyable(Javax.Security.Auth.Kerberos.KerberosCredMessage t) => t.Cast<Javax.Security.Auth.Destroyable>();
+        
         #endregion
 
         #region Fields

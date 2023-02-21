@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Util
 {
     #region Random
@@ -38,7 +40,8 @@ namespace Java.Util
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Io.Serializable(Java.Util.Random t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields

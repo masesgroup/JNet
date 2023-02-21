@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Management
 {
     #region MBeanServerDelegate
@@ -31,7 +33,9 @@ namespace Javax.Management
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Management.MBeanServerDelegateMBean(Javax.Management.MBeanServerDelegate t) => t.Cast<Javax.Management.MBeanServerDelegateMBean>();
+        public static implicit operator Javax.Management.NotificationEmitter(Javax.Management.MBeanServerDelegate t) => t.Cast<Javax.Management.NotificationEmitter>();
+        
         #endregion
 
         #region Fields

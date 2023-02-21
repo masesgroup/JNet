@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Awt
 {
     #region PageAttributes
@@ -45,7 +47,8 @@ namespace Java.Awt
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Lang.Cloneable(Java.Awt.PageAttributes t) => t.Cast<Java.Lang.Cloneable>();
+        
         #endregion
 
         #region Fields
@@ -180,6 +183,41 @@ namespace Java.Awt
         #endregion
 
         #region Nested classes
+        #region ColorType
+        public partial class ColorType
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.ColorType.html#COLOR
+            /// </summary>
+            public static Java.Awt.PageAttributes.ColorType COLOR => Clazz.GetField<Java.Awt.PageAttributes.ColorType>("COLOR");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.ColorType.html#MONOCHROME
+            /// </summary>
+            public static Java.Awt.PageAttributes.ColorType MONOCHROME => Clazz.GetField<Java.Awt.PageAttributes.ColorType>("MONOCHROME");
+            
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region PrintQualityType
         public partial class PrintQualityType
         {
@@ -204,6 +242,41 @@ namespace Java.Awt
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.PrintQualityType.html#DRAFT
             /// </summary>
             public static Java.Awt.PageAttributes.PrintQualityType DRAFT => Clazz.GetField<Java.Awt.PageAttributes.PrintQualityType>("DRAFT");
+            
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region OrientationRequestedType
+        public partial class OrientationRequestedType
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.OrientationRequestedType.html#PORTRAIT
+            /// </summary>
+            public static Java.Awt.PageAttributes.OrientationRequestedType PORTRAIT => Clazz.GetField<Java.Awt.PageAttributes.OrientationRequestedType>("PORTRAIT");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.OrientationRequestedType.html#LANDSCAPE
+            /// </summary>
+            public static Java.Awt.PageAttributes.OrientationRequestedType LANDSCAPE => Clazz.GetField<Java.Awt.PageAttributes.OrientationRequestedType>("LANDSCAPE");
             
             #endregion
 
@@ -819,76 +892,6 @@ namespace Java.Awt
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#PERSONAL
             /// </summary>
             public static Java.Awt.PageAttributes.MediaType PERSONAL => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("PERSONAL");
-            
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region ColorType
-        public partial class ColorType
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.ColorType.html#COLOR
-            /// </summary>
-            public static Java.Awt.PageAttributes.ColorType COLOR => Clazz.GetField<Java.Awt.PageAttributes.ColorType>("COLOR");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.ColorType.html#MONOCHROME
-            /// </summary>
-            public static Java.Awt.PageAttributes.ColorType MONOCHROME => Clazz.GetField<Java.Awt.PageAttributes.ColorType>("MONOCHROME");
-            
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region OrientationRequestedType
-        public partial class OrientationRequestedType
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.OrientationRequestedType.html#PORTRAIT
-            /// </summary>
-            public static Java.Awt.PageAttributes.OrientationRequestedType PORTRAIT => Clazz.GetField<Java.Awt.PageAttributes.OrientationRequestedType>("PORTRAIT");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.OrientationRequestedType.html#LANDSCAPE
-            /// </summary>
-            public static Java.Awt.PageAttributes.OrientationRequestedType LANDSCAPE => Clazz.GetField<Java.Awt.PageAttributes.OrientationRequestedType>("LANDSCAPE");
             
             #endregion
 

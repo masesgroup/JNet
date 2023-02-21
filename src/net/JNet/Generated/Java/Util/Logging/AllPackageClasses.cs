@@ -58,58 +58,23 @@ namespace Java.Util.Logging
     }
     #endregion
 
-    #region FileHandler
+    #region ConsoleHandler
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/FileHandler.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/ConsoleHandler.html
     /// </summary>
-    public partial class FileHandler : Java.Util.Logging.StreamHandler
+    public partial class ConsoleHandler : Java.Util.Logging.StreamHandler
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public FileHandler() { }
+        public ConsoleHandler() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public FileHandler(params object[] args) : base(args) { }
+        public ConsoleHandler(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.util.logging.FileHandler";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region StreamHandler
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/StreamHandler.html
-    /// </summary>
-    public partial class StreamHandler : Java.Util.Logging.Handler
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public StreamHandler() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public StreamHandler(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.util.logging.StreamHandler";
+        public override string ClassName => "java.util.logging.ConsoleHandler";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -198,23 +163,23 @@ namespace Java.Util.Logging
     }
     #endregion
 
-    #region LogRecord
+    #region LoggingPermission
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogRecord.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LoggingPermission.html
     /// </summary>
-    public partial class LogRecord : MASES.JCOBridge.C2JBridge.JVMBridgeBase<LogRecord>
+    public partial class LoggingPermission : Java.Security.BasicPermission
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public LogRecord() { }
+        public LoggingPermission() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public LogRecord(params object[] args) : base(args) { }
+        public LoggingPermission(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.util.logging.LogRecord";
+        public override string ClassName => "java.util.logging.LoggingPermission";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -268,23 +233,58 @@ namespace Java.Util.Logging
     }
     #endregion
 
-    #region SimpleFormatter
+    #region Formatter
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/SimpleFormatter.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Formatter.html
     /// </summary>
-    public partial class SimpleFormatter : Java.Util.Logging.Formatter
+    public partial class Formatter : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Formatter>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public SimpleFormatter() { }
+        public Formatter() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public SimpleFormatter(params object[] args) : base(args) { }
+        public Formatter(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.util.logging.SimpleFormatter";
+        public override string ClassName => "java.util.logging.Formatter";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region LogRecord
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LogRecord.html
+    /// </summary>
+    public partial class LogRecord : MASES.JCOBridge.C2JBridge.JVMBridgeBase<LogRecord>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public LogRecord() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public LogRecord(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.util.logging.LogRecord";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -373,76 +373,6 @@ namespace Java.Util.Logging
     }
     #endregion
 
-    #region Formatter
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Formatter.html
-    /// </summary>
-    public partial class Formatter : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Formatter>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public Formatter() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public Formatter(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.util.logging.Formatter";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region Handler
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html
-    /// </summary>
-    public partial class Handler : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Handler>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public Handler() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public Handler(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.util.logging.Handler";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
     #region MemoryHandler
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/MemoryHandler.html
@@ -460,6 +390,41 @@ namespace Java.Util.Logging
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "java.util.logging.MemoryHandler";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region FileHandler
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/FileHandler.html
+    /// </summary>
+    public partial class FileHandler : Java.Util.Logging.StreamHandler
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public FileHandler() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public FileHandler(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.util.logging.FileHandler";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -513,23 +478,23 @@ namespace Java.Util.Logging
     }
     #endregion
 
-    #region LoggingPermission
+    #region StreamHandler
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/LoggingPermission.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/StreamHandler.html
     /// </summary>
-    public partial class LoggingPermission : Java.Security.BasicPermission
+    public partial class StreamHandler : Java.Util.Logging.Handler
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public LoggingPermission() { }
+        public StreamHandler() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public LoggingPermission(params object[] args) : base(args) { }
+        public StreamHandler(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.util.logging.LoggingPermission";
+        public override string ClassName => "java.util.logging.StreamHandler";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -548,23 +513,58 @@ namespace Java.Util.Logging
     }
     #endregion
 
-    #region ConsoleHandler
+    #region Handler
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/ConsoleHandler.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Handler.html
     /// </summary>
-    public partial class ConsoleHandler : Java.Util.Logging.StreamHandler
+    public partial class Handler : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Handler>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ConsoleHandler() { }
+        public Handler() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public ConsoleHandler(params object[] args) : base(args) { }
+        public Handler(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.util.logging.ConsoleHandler";
+        public override string ClassName => "java.util.logging.Handler";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region SimpleFormatter
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/SimpleFormatter.html
+    /// </summary>
+    public partial class SimpleFormatter : Java.Util.Logging.Formatter
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public SimpleFormatter() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public SimpleFormatter(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.util.logging.SimpleFormatter";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;

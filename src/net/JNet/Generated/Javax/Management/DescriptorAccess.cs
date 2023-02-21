@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Management
 {
     #region DescriptorAccess
@@ -31,7 +33,8 @@ namespace Javax.Management
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Management.DescriptorRead(Javax.Management.DescriptorAccess t) => t.Cast<Javax.Management.DescriptorRead>();
+        
         #endregion
 
         #region Fields

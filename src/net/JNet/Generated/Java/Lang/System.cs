@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Lang
 {
     #region System
@@ -227,6 +229,40 @@ namespace Java.Lang
         #endregion
 
         #region Nested classes
+        #region Logger
+        public partial class Logger
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.html#getName() 
+            /// </summary>
+            public string Name
+            {
+                get { return IExecute<string>("getName"); }
+            }
+            
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region LoggerFinder
         public partial class LoggerFinder
         {
@@ -267,40 +303,6 @@ namespace Java.Lang
             public Java.Lang.System.Logger GetLocalizedLogger(string arg0, Java.Util.ResourceBundle arg1, Java.Lang.Module arg2)
             {
                 return IExecute<Java.Lang.System.Logger>("getLocalizedLogger", arg0, arg1, arg2);
-            }
-            
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region Logger
-        public partial class Logger
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.html#getName() 
-            /// </summary>
-            public string Name
-            {
-                get { return IExecute<string>("getName"); }
             }
             
             #endregion

@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing
 {
     #region Action
@@ -31,7 +33,8 @@ namespace Javax.Swing
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Awt.EventNs.ActionListener(Javax.Swing.Action t) => t.Cast<Java.Awt.EventNs.ActionListener>();
+        
         #endregion
 
         #region Fields

@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing.Plaf.Basic
 {
     #region BasicComboBoxEditor
@@ -31,7 +33,9 @@ namespace Javax.Swing.Plaf.Basic
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Swing.ComboBoxEditor(Javax.Swing.Plaf.Basic.BasicComboBoxEditor t) => t.Cast<Javax.Swing.ComboBoxEditor>();
+        public static implicit operator Java.Awt.EventNs.FocusListener(Javax.Swing.Plaf.Basic.BasicComboBoxEditor t) => t.Cast<Java.Awt.EventNs.FocusListener>();
+        
         #endregion
 
         #region Fields
@@ -104,7 +108,8 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Class/Interface conversion operators
-
+            public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.Basic.BasicComboBoxEditor.UIResource t) => t.Cast<Javax.Swing.Plaf.UIResource>();
+            
             #endregion
 
             #region Fields

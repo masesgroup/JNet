@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Print.Attribute.Standard
 {
     #region MediaSize
@@ -59,7 +61,8 @@ namespace Javax.Print.Attribute.Standard
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Print.Attribute.Attribute(Javax.Print.Attribute.Standard.MediaSize t) => t.Cast<Javax.Print.Attribute.Attribute>();
+        
         #endregion
 
         #region Fields
@@ -103,8 +106,8 @@ namespace Javax.Print.Attribute.Standard
         #endregion
 
         #region Nested classes
-        #region ISO
-        public partial class ISO
+        #region Other
+        public partial class Other
         {
             #region Constructors
 
@@ -116,160 +119,49 @@ namespace Javax.Print.Attribute.Standard
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.ISO.html#A0
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.Other.html#EXECUTIVE
             /// </summary>
-            public static Javax.Print.Attribute.Standard.MediaSize A0 => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("A0");
+            public static Javax.Print.Attribute.Standard.MediaSize EXECUTIVE => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("EXECUTIVE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.ISO.html#A1
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.Other.html#LEDGER
             /// </summary>
-            public static Javax.Print.Attribute.Standard.MediaSize A1 => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("A1");
+            public static Javax.Print.Attribute.Standard.MediaSize LEDGER => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("LEDGER");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.ISO.html#A2
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.Other.html#TABLOID
             /// </summary>
-            public static Javax.Print.Attribute.Standard.MediaSize A2 => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("A2");
+            public static Javax.Print.Attribute.Standard.MediaSize TABLOID => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("TABLOID");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.ISO.html#A3
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.Other.html#INVOICE
             /// </summary>
-            public static Javax.Print.Attribute.Standard.MediaSize A3 => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("A3");
+            public static Javax.Print.Attribute.Standard.MediaSize INVOICE => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("INVOICE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.ISO.html#A4
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.Other.html#FOLIO
             /// </summary>
-            public static Javax.Print.Attribute.Standard.MediaSize A4 => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("A4");
+            public static Javax.Print.Attribute.Standard.MediaSize FOLIO => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("FOLIO");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.ISO.html#A5
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.Other.html#QUARTO
             /// </summary>
-            public static Javax.Print.Attribute.Standard.MediaSize A5 => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("A5");
+            public static Javax.Print.Attribute.Standard.MediaSize QUARTO => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("QUARTO");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.ISO.html#A6
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.Other.html#ITALY_ENVELOPE
             /// </summary>
-            public static Javax.Print.Attribute.Standard.MediaSize A6 => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("A6");
+            public static Javax.Print.Attribute.Standard.MediaSize ITALY_ENVELOPE => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("ITALY_ENVELOPE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.ISO.html#A7
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.Other.html#MONARCH_ENVELOPE
             /// </summary>
-            public static Javax.Print.Attribute.Standard.MediaSize A7 => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("A7");
+            public static Javax.Print.Attribute.Standard.MediaSize MONARCH_ENVELOPE => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("MONARCH_ENVELOPE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.ISO.html#A8
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.Other.html#PERSONAL_ENVELOPE
             /// </summary>
-            public static Javax.Print.Attribute.Standard.MediaSize A8 => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("A8");
+            public static Javax.Print.Attribute.Standard.MediaSize PERSONAL_ENVELOPE => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("PERSONAL_ENVELOPE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.ISO.html#A9
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.Other.html#JAPANESE_POSTCARD
             /// </summary>
-            public static Javax.Print.Attribute.Standard.MediaSize A9 => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("A9");
+            public static Javax.Print.Attribute.Standard.MediaSize JAPANESE_POSTCARD => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("JAPANESE_POSTCARD");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.ISO.html#A10
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.Other.html#JAPANESE_DOUBLE_POSTCARD
             /// </summary>
-            public static Javax.Print.Attribute.Standard.MediaSize A10 => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("A10");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.ISO.html#B0
-            /// </summary>
-            public static Javax.Print.Attribute.Standard.MediaSize B0 => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("B0");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.ISO.html#B1
-            /// </summary>
-            public static Javax.Print.Attribute.Standard.MediaSize B1 => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("B1");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.ISO.html#B2
-            /// </summary>
-            public static Javax.Print.Attribute.Standard.MediaSize B2 => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("B2");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.ISO.html#B3
-            /// </summary>
-            public static Javax.Print.Attribute.Standard.MediaSize B3 => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("B3");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.ISO.html#B4
-            /// </summary>
-            public static Javax.Print.Attribute.Standard.MediaSize B4 => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("B4");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.ISO.html#B5
-            /// </summary>
-            public static Javax.Print.Attribute.Standard.MediaSize B5 => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("B5");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.ISO.html#B6
-            /// </summary>
-            public static Javax.Print.Attribute.Standard.MediaSize B6 => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("B6");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.ISO.html#B7
-            /// </summary>
-            public static Javax.Print.Attribute.Standard.MediaSize B7 => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("B7");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.ISO.html#B8
-            /// </summary>
-            public static Javax.Print.Attribute.Standard.MediaSize B8 => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("B8");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.ISO.html#B9
-            /// </summary>
-            public static Javax.Print.Attribute.Standard.MediaSize B9 => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("B9");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.ISO.html#B10
-            /// </summary>
-            public static Javax.Print.Attribute.Standard.MediaSize B10 => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("B10");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.ISO.html#C3
-            /// </summary>
-            public static Javax.Print.Attribute.Standard.MediaSize C3 => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("C3");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.ISO.html#C4
-            /// </summary>
-            public static Javax.Print.Attribute.Standard.MediaSize C4 => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("C4");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.ISO.html#C5
-            /// </summary>
-            public static Javax.Print.Attribute.Standard.MediaSize C5 => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("C5");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.ISO.html#C6
-            /// </summary>
-            public static Javax.Print.Attribute.Standard.MediaSize C6 => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("C6");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.ISO.html#DESIGNATED_LONG
-            /// </summary>
-            public static Javax.Print.Attribute.Standard.MediaSize DESIGNATED_LONG => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("DESIGNATED_LONG");
-            
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region Engineering
-        public partial class Engineering
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.Engineering.html#A
-            /// </summary>
-            public static Javax.Print.Attribute.Standard.MediaSize A => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("A");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.Engineering.html#B
-            /// </summary>
-            public static Javax.Print.Attribute.Standard.MediaSize B => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("B");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.Engineering.html#C
-            /// </summary>
-            public static Javax.Print.Attribute.Standard.MediaSize C => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("C");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.Engineering.html#D
-            /// </summary>
-            public static Javax.Print.Attribute.Standard.MediaSize D => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("D");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.Engineering.html#E
-            /// </summary>
-            public static Javax.Print.Attribute.Standard.MediaSize E => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("E");
+            public static Javax.Print.Attribute.Standard.MediaSize JAPANESE_DOUBLE_POSTCARD => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("JAPANESE_DOUBLE_POSTCARD");
             
             #endregion
 
@@ -452,8 +344,8 @@ namespace Javax.Print.Attribute.Standard
         }
         #endregion
 
-        #region Other
-        public partial class Other
+        #region Engineering
+        public partial class Engineering
         {
             #region Constructors
 
@@ -465,49 +357,160 @@ namespace Javax.Print.Attribute.Standard
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.Other.html#EXECUTIVE
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.Engineering.html#A
             /// </summary>
-            public static Javax.Print.Attribute.Standard.MediaSize EXECUTIVE => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("EXECUTIVE");
+            public static Javax.Print.Attribute.Standard.MediaSize A => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("A");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.Other.html#LEDGER
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.Engineering.html#B
             /// </summary>
-            public static Javax.Print.Attribute.Standard.MediaSize LEDGER => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("LEDGER");
+            public static Javax.Print.Attribute.Standard.MediaSize B => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("B");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.Other.html#TABLOID
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.Engineering.html#C
             /// </summary>
-            public static Javax.Print.Attribute.Standard.MediaSize TABLOID => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("TABLOID");
+            public static Javax.Print.Attribute.Standard.MediaSize C => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("C");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.Other.html#INVOICE
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.Engineering.html#D
             /// </summary>
-            public static Javax.Print.Attribute.Standard.MediaSize INVOICE => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("INVOICE");
+            public static Javax.Print.Attribute.Standard.MediaSize D => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("D");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.Other.html#FOLIO
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.Engineering.html#E
             /// </summary>
-            public static Javax.Print.Attribute.Standard.MediaSize FOLIO => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("FOLIO");
+            public static Javax.Print.Attribute.Standard.MediaSize E => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("E");
+            
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region ISO
+        public partial class ISO
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.Other.html#QUARTO
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.ISO.html#A0
             /// </summary>
-            public static Javax.Print.Attribute.Standard.MediaSize QUARTO => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("QUARTO");
+            public static Javax.Print.Attribute.Standard.MediaSize A0 => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("A0");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.Other.html#ITALY_ENVELOPE
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.ISO.html#A1
             /// </summary>
-            public static Javax.Print.Attribute.Standard.MediaSize ITALY_ENVELOPE => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("ITALY_ENVELOPE");
+            public static Javax.Print.Attribute.Standard.MediaSize A1 => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("A1");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.Other.html#MONARCH_ENVELOPE
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.ISO.html#A2
             /// </summary>
-            public static Javax.Print.Attribute.Standard.MediaSize MONARCH_ENVELOPE => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("MONARCH_ENVELOPE");
+            public static Javax.Print.Attribute.Standard.MediaSize A2 => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("A2");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.Other.html#PERSONAL_ENVELOPE
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.ISO.html#A3
             /// </summary>
-            public static Javax.Print.Attribute.Standard.MediaSize PERSONAL_ENVELOPE => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("PERSONAL_ENVELOPE");
+            public static Javax.Print.Attribute.Standard.MediaSize A3 => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("A3");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.Other.html#JAPANESE_POSTCARD
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.ISO.html#A4
             /// </summary>
-            public static Javax.Print.Attribute.Standard.MediaSize JAPANESE_POSTCARD => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("JAPANESE_POSTCARD");
+            public static Javax.Print.Attribute.Standard.MediaSize A4 => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("A4");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.Other.html#JAPANESE_DOUBLE_POSTCARD
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.ISO.html#A5
             /// </summary>
-            public static Javax.Print.Attribute.Standard.MediaSize JAPANESE_DOUBLE_POSTCARD => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("JAPANESE_DOUBLE_POSTCARD");
+            public static Javax.Print.Attribute.Standard.MediaSize A5 => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("A5");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.ISO.html#A6
+            /// </summary>
+            public static Javax.Print.Attribute.Standard.MediaSize A6 => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("A6");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.ISO.html#A7
+            /// </summary>
+            public static Javax.Print.Attribute.Standard.MediaSize A7 => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("A7");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.ISO.html#A8
+            /// </summary>
+            public static Javax.Print.Attribute.Standard.MediaSize A8 => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("A8");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.ISO.html#A9
+            /// </summary>
+            public static Javax.Print.Attribute.Standard.MediaSize A9 => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("A9");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.ISO.html#A10
+            /// </summary>
+            public static Javax.Print.Attribute.Standard.MediaSize A10 => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("A10");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.ISO.html#B0
+            /// </summary>
+            public static Javax.Print.Attribute.Standard.MediaSize B0 => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("B0");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.ISO.html#B1
+            /// </summary>
+            public static Javax.Print.Attribute.Standard.MediaSize B1 => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("B1");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.ISO.html#B2
+            /// </summary>
+            public static Javax.Print.Attribute.Standard.MediaSize B2 => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("B2");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.ISO.html#B3
+            /// </summary>
+            public static Javax.Print.Attribute.Standard.MediaSize B3 => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("B3");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.ISO.html#B4
+            /// </summary>
+            public static Javax.Print.Attribute.Standard.MediaSize B4 => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("B4");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.ISO.html#B5
+            /// </summary>
+            public static Javax.Print.Attribute.Standard.MediaSize B5 => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("B5");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.ISO.html#B6
+            /// </summary>
+            public static Javax.Print.Attribute.Standard.MediaSize B6 => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("B6");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.ISO.html#B7
+            /// </summary>
+            public static Javax.Print.Attribute.Standard.MediaSize B7 => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("B7");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.ISO.html#B8
+            /// </summary>
+            public static Javax.Print.Attribute.Standard.MediaSize B8 => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("B8");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.ISO.html#B9
+            /// </summary>
+            public static Javax.Print.Attribute.Standard.MediaSize B9 => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("B9");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.ISO.html#B10
+            /// </summary>
+            public static Javax.Print.Attribute.Standard.MediaSize B10 => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("B10");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.ISO.html#C3
+            /// </summary>
+            public static Javax.Print.Attribute.Standard.MediaSize C3 => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("C3");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.ISO.html#C4
+            /// </summary>
+            public static Javax.Print.Attribute.Standard.MediaSize C4 => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("C4");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.ISO.html#C5
+            /// </summary>
+            public static Javax.Print.Attribute.Standard.MediaSize C5 => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("C5");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.ISO.html#C6
+            /// </summary>
+            public static Javax.Print.Attribute.Standard.MediaSize C6 => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("C6");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaSize.ISO.html#DESIGNATED_LONG
+            /// </summary>
+            public static Javax.Print.Attribute.Standard.MediaSize DESIGNATED_LONG => Clazz.GetField<Javax.Print.Attribute.Standard.MediaSize>("DESIGNATED_LONG");
             
             #endregion
 

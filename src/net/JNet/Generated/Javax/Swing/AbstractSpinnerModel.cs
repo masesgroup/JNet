@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing
 {
     #region AbstractSpinnerModel
@@ -31,7 +33,9 @@ namespace Javax.Swing
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Swing.SpinnerModel(Javax.Swing.AbstractSpinnerModel t) => t.Cast<Javax.Swing.SpinnerModel>();
+        public static implicit operator Java.Io.Serializable(Javax.Swing.AbstractSpinnerModel t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields

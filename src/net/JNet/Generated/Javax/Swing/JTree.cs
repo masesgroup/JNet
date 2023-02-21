@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing
 {
     #region JTree
@@ -35,16 +37,16 @@ namespace Javax.Swing
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#<init>(javax.swing.tree.TreeNode)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#<init>(javax.swing.tree.TreeModel)
         /// </summary>
-        public JTree(Javax.Swing.Tree.TreeNode arg0)
+        public JTree(Javax.Swing.Tree.TreeModel arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#<init>(javax.swing.tree.TreeModel)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#<init>(javax.swing.tree.TreeNode)
         /// </summary>
-        public JTree(Javax.Swing.Tree.TreeModel arg0)
+        public JTree(Javax.Swing.Tree.TreeNode arg0)
             : base(arg0)
         {
         }
@@ -52,7 +54,9 @@ namespace Javax.Swing
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Swing.Scrollable(Javax.Swing.JTree t) => t.Cast<Javax.Swing.Scrollable>();
+        public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.JTree t) => t.Cast<Javax.Accessibility.Accessible>();
+        
         #endregion
 
         #region Fields

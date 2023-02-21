@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing.Plaf
 {
     #region ComponentInputMapUIResource
@@ -38,7 +40,8 @@ namespace Javax.Swing.Plaf
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.ComponentInputMapUIResource t) => t.Cast<Javax.Swing.Plaf.UIResource>();
+        
         #endregion
 
         #region Fields

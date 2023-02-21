@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Awt.FontNs
 {
     #region NumericShaper
@@ -31,7 +33,8 @@ namespace Java.Awt.FontNs
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Io.Serializable(Java.Awt.FontNs.NumericShaper t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields

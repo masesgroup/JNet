@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Util
 {
     #region Locale
@@ -52,7 +54,9 @@ namespace Java.Util
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Lang.Cloneable(Java.Util.Locale t) => t.Cast<Java.Lang.Cloneable>();
+        public static implicit operator Java.Io.Serializable(Java.Util.Locale t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields
@@ -346,6 +350,111 @@ namespace Java.Util
         #endregion
 
         #region Nested classes
+        #region Category
+        public partial class Category
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.Category.html#DISPLAY
+            /// </summary>
+            public static Java.Util.Locale.Category DISPLAY => Clazz.GetField<Java.Util.Locale.Category>("DISPLAY");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.Category.html#FORMAT
+            /// </summary>
+            public static Java.Util.Locale.Category FORMAT => Clazz.GetField<Java.Util.Locale.Category>("FORMAT");
+            
+            #endregion
+
+            #region Static methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.Category.html#values()
+            /// </summary>
+            public static Java.Util.Locale.Category[] Values()
+            {
+                return SExecuteArray<Java.Util.Locale.Category>("values");
+            }
+            
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region LanguageRange
+        public partial class LanguageRange
+        {
+            #region Constructors
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.LanguageRange.html#<init>(java.lang.String)
+            /// </summary>
+            public LanguageRange(string arg0)
+                : base(arg0)
+            {
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.LanguageRange.html#<init>(java.lang.String,double)
+            /// </summary>
+            public LanguageRange(string arg0, double arg1)
+                : base(arg0, arg1)
+            {
+            }
+            
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.LanguageRange.html#MAX_WEIGHT
+            /// </summary>
+            public static double MAX_WEIGHT => Clazz.GetField<double>("MAX_WEIGHT");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.LanguageRange.html#MIN_WEIGHT
+            /// </summary>
+            public static double MIN_WEIGHT => Clazz.GetField<double>("MIN_WEIGHT");
+            
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.LanguageRange.html#getRange() 
+            /// </summary>
+            public string Range
+            {
+                get { return IExecute<string>("getRange"); }
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.LanguageRange.html#getWeight() 
+            /// </summary>
+            public double Weight
+            {
+                get { return IExecute<double>("getWeight"); }
+            }
+            
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region Builder
         public partial class Builder
         {
@@ -456,111 +565,6 @@ namespace Java.Util
             public Java.Util.Locale.Builder SetVariant(string arg0)
             {
                 return IExecute<Java.Util.Locale.Builder>("setVariant", arg0);
-            }
-            
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region Category
-        public partial class Category
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.Category.html#DISPLAY
-            /// </summary>
-            public static Java.Util.Locale.Category DISPLAY => Clazz.GetField<Java.Util.Locale.Category>("DISPLAY");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.Category.html#FORMAT
-            /// </summary>
-            public static Java.Util.Locale.Category FORMAT => Clazz.GetField<Java.Util.Locale.Category>("FORMAT");
-            
-            #endregion
-
-            #region Static methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.Category.html#values()
-            /// </summary>
-            public static Java.Util.Locale.Category[] Values()
-            {
-                return SExecuteArray<Java.Util.Locale.Category>("values");
-            }
-            
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region LanguageRange
-        public partial class LanguageRange
-        {
-            #region Constructors
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.LanguageRange.html#<init>(java.lang.String)
-            /// </summary>
-            public LanguageRange(string arg0)
-                : base(arg0)
-            {
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.LanguageRange.html#<init>(java.lang.String,double)
-            /// </summary>
-            public LanguageRange(string arg0, double arg1)
-                : base(arg0, arg1)
-            {
-            }
-            
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.LanguageRange.html#MAX_WEIGHT
-            /// </summary>
-            public static double MAX_WEIGHT => Clazz.GetField<double>("MAX_WEIGHT");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.LanguageRange.html#MIN_WEIGHT
-            /// </summary>
-            public static double MIN_WEIGHT => Clazz.GetField<double>("MIN_WEIGHT");
-            
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.LanguageRange.html#getRange() 
-            /// </summary>
-            public string Range
-            {
-                get { return IExecute<string>("getRange"); }
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.LanguageRange.html#getWeight() 
-            /// </summary>
-            public double Weight
-            {
-                get { return IExecute<double>("getWeight"); }
             }
             
             #endregion

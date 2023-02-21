@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing
 {
     #region JComboBox
@@ -31,7 +33,11 @@ namespace Javax.Swing
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Awt.ItemSelectable(Javax.Swing.JComboBox t) => t.Cast<Java.Awt.ItemSelectable>();
+        public static implicit operator Javax.Swing.Event.ListDataListener(Javax.Swing.JComboBox t) => t.Cast<Javax.Swing.Event.ListDataListener>();
+        public static implicit operator Java.Awt.EventNs.ActionListener(Javax.Swing.JComboBox t) => t.Cast<Java.Awt.EventNs.ActionListener>();
+        public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.JComboBox t) => t.Cast<Javax.Accessibility.Accessible>();
+        
         #endregion
 
         #region Fields

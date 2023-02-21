@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Security.Cert
 {
     #region PKIXParameters
@@ -38,7 +40,8 @@ namespace Java.Security.Cert
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Security.Cert.CertPathParameters(Java.Security.Cert.PKIXParameters t) => t.Cast<Java.Security.Cert.CertPathParameters>();
+        
         #endregion
 
         #region Fields

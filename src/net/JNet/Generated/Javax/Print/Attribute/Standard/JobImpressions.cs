@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Print.Attribute.Standard
 {
     #region JobImpressions
@@ -38,7 +40,9 @@ namespace Javax.Print.Attribute.Standard
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Print.Attribute.PrintRequestAttribute(Javax.Print.Attribute.Standard.JobImpressions t) => t.Cast<Javax.Print.Attribute.PrintRequestAttribute>();
+        public static implicit operator Javax.Print.Attribute.PrintJobAttribute(Javax.Print.Attribute.Standard.JobImpressions t) => t.Cast<Javax.Print.Attribute.PrintJobAttribute>();
+        
         #endregion
 
         #region Fields

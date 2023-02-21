@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Security.Auth.Callback
 {
     #region NameCallback
@@ -45,7 +47,9 @@ namespace Javax.Security.Auth.Callback
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Security.Auth.Callback.Callback(Javax.Security.Auth.Callback.NameCallback t) => t.Cast<Javax.Security.Auth.Callback.Callback>();
+        public static implicit operator Java.Io.Serializable(Javax.Security.Auth.Callback.NameCallback t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields

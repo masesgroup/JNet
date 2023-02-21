@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Io
 {
     #region ObjectOutputStream
@@ -38,7 +40,9 @@ namespace Java.Io
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Io.ObjectOutput(Java.Io.ObjectOutputStream t) => t.Cast<Java.Io.ObjectOutput>();
+        public static implicit operator Java.Io.ObjectStreamConstants(Java.Io.ObjectOutputStream t) => t.Cast<Java.Io.ObjectStreamConstants>();
+        
         #endregion
 
         #region Fields

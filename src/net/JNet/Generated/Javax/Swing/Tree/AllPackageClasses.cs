@@ -23,23 +23,58 @@
 
 namespace Javax.Swing.Tree
 {
-    #region TreeCellRenderer
+    #region RowMapper
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeCellRenderer.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/RowMapper.html
     /// </summary>
-    public partial class TreeCellRenderer : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TreeCellRenderer>
+    public partial class RowMapper : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RowMapper>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public TreeCellRenderer() { }
+        public RowMapper() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public TreeCellRenderer(params object[] args) : base(args) { }
+        public RowMapper(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.swing.tree.TreeCellRenderer";
+        public override string ClassName => "javax.swing.tree.RowMapper";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region TreeSelectionModel
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeSelectionModel.html
+    /// </summary>
+    public partial class TreeSelectionModel : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TreeSelectionModel>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public TreeSelectionModel() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public TreeSelectionModel(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.swing.tree.TreeSelectionModel";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -89,40 +124,6 @@ namespace Javax.Swing.Tree
         public override bool IsStatic => false;
 
         // TODO: complete the class
-        #region DefaultTextField
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.DefaultTextField.html
-        /// </summary>
-        public partial class DefaultTextField : Javax.Swing.JTextField
-        {
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public DefaultTextField() { }
-            /// <summary>
-            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-            /// </summary>
-            public DefaultTextField(params object[] args) : base(args) { }
-
-            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-            public override string ClassName => "javax.swing.tree.DefaultTreeCellEditor$DefaultTextField";
-
-            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-            public override bool IsAbstract => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-            public override bool IsCloseable => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-            public override bool IsInterface => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-            public override bool IsStatic => false;
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region EditorContainer
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.EditorContainer.html
@@ -157,36 +158,70 @@ namespace Javax.Swing.Tree
         }
         #endregion
 
+        #region DefaultTextField
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.DefaultTextField.html
+        /// </summary>
+        public partial class DefaultTextField : Javax.Swing.JTextField
+        {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public DefaultTextField() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public DefaultTextField(params object[] args) : base(args) { }
+
+            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+            public override string ClassName => "javax.swing.tree.DefaultTreeCellEditor$DefaultTextField";
+
+            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+            public override bool IsAbstract => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+            public override bool IsCloseable => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+            public override bool IsInterface => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+            public override bool IsStatic => false;
+
+            // TODO: complete the class
+        }
+        #endregion
+
 
     }
     #endregion
 
-    #region DefaultMutableTreeNode
+    #region TreeCellEditor
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultMutableTreeNode.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeCellEditor.html
     /// </summary>
-    public partial class DefaultMutableTreeNode : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DefaultMutableTreeNode>
+    public partial class TreeCellEditor : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TreeCellEditor>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public DefaultMutableTreeNode() { }
+        public TreeCellEditor() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public DefaultMutableTreeNode(params object[] args) : base(args) { }
+        public TreeCellEditor(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.swing.tree.DefaultMutableTreeNode";
+        public override string ClassName => "javax.swing.tree.TreeCellEditor";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
+        public override bool IsAbstract => true;
 
         /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
         public override bool IsCloseable => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
+        public override bool IsInterface => true;
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;
@@ -196,23 +231,23 @@ namespace Javax.Swing.Tree
     }
     #endregion
 
-    #region FixedHeightLayoutCache
+    #region DefaultTreeCellRenderer
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/FixedHeightLayoutCache.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellRenderer.html
     /// </summary>
-    public partial class FixedHeightLayoutCache : Javax.Swing.Tree.AbstractLayoutCache
+    public partial class DefaultTreeCellRenderer : Javax.Swing.JLabel
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public FixedHeightLayoutCache() { }
+        public DefaultTreeCellRenderer() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public FixedHeightLayoutCache(params object[] args) : base(args) { }
+        public DefaultTreeCellRenderer(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.swing.tree.FixedHeightLayoutCache";
+        public override string ClassName => "javax.swing.tree.DefaultTreeCellRenderer";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -300,23 +335,23 @@ namespace Javax.Swing.Tree
     }
     #endregion
 
-    #region TreePath
+    #region FixedHeightLayoutCache
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreePath.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/FixedHeightLayoutCache.html
     /// </summary>
-    public partial class TreePath : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TreePath>
+    public partial class FixedHeightLayoutCache : Javax.Swing.Tree.AbstractLayoutCache
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public TreePath() { }
+        public FixedHeightLayoutCache() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public TreePath(params object[] args) : base(args) { }
+        public FixedHeightLayoutCache(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.swing.tree.TreePath";
+        public override string ClassName => "javax.swing.tree.FixedHeightLayoutCache";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -335,23 +370,23 @@ namespace Javax.Swing.Tree
     }
     #endregion
 
-    #region TreeModel
+    #region TreeCellRenderer
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeModel.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeCellRenderer.html
     /// </summary>
-    public partial class TreeModel : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TreeModel>
+    public partial class TreeCellRenderer : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TreeCellRenderer>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public TreeModel() { }
+        public TreeCellRenderer() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public TreeModel(params object[] args) : base(args) { }
+        public TreeCellRenderer(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.swing.tree.TreeModel";
+        public override string ClassName => "javax.swing.tree.TreeCellRenderer";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -370,93 +405,23 @@ namespace Javax.Swing.Tree
     }
     #endregion
 
-    #region RowMapper
+    #region DefaultMutableTreeNode
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/RowMapper.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultMutableTreeNode.html
     /// </summary>
-    public partial class RowMapper : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RowMapper>
+    public partial class DefaultMutableTreeNode : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DefaultMutableTreeNode>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public RowMapper() { }
+        public DefaultMutableTreeNode() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public RowMapper(params object[] args) : base(args) { }
+        public DefaultMutableTreeNode(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.swing.tree.RowMapper";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region TreeSelectionModel
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeSelectionModel.html
-    /// </summary>
-    public partial class TreeSelectionModel : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TreeSelectionModel>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public TreeSelectionModel() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public TreeSelectionModel(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.swing.tree.TreeSelectionModel";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region DefaultTreeSelectionModel
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeSelectionModel.html
-    /// </summary>
-    public partial class DefaultTreeSelectionModel : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DefaultTreeSelectionModel>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public DefaultTreeSelectionModel() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public DefaultTreeSelectionModel(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.swing.tree.DefaultTreeSelectionModel";
+        public override string ClassName => "javax.swing.tree.DefaultMutableTreeNode";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -526,23 +491,23 @@ namespace Javax.Swing.Tree
     }
     #endregion
 
-    #region DefaultTreeCellRenderer
+    #region TreePath
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellRenderer.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreePath.html
     /// </summary>
-    public partial class DefaultTreeCellRenderer : Javax.Swing.JLabel
+    public partial class TreePath : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TreePath>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public DefaultTreeCellRenderer() { }
+        public TreePath() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public DefaultTreeCellRenderer(params object[] args) : base(args) { }
+        public TreePath(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.swing.tree.DefaultTreeCellRenderer";
+        public override string ClassName => "javax.swing.tree.TreePath";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -552,76 +517,6 @@ namespace Javax.Swing.Tree
 
         /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
         public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region DefaultTreeModel
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeModel.html
-    /// </summary>
-    public partial class DefaultTreeModel : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DefaultTreeModel>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public DefaultTreeModel() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public DefaultTreeModel(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.swing.tree.DefaultTreeModel";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region TreeNode
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeNode.html
-    /// </summary>
-    public partial class TreeNode : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TreeNode>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public TreeNode() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public TreeNode(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.swing.tree.TreeNode";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;
@@ -666,23 +561,128 @@ namespace Javax.Swing.Tree
     }
     #endregion
 
-    #region TreeCellEditor
+    #region DefaultTreeModel
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeCellEditor.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeModel.html
     /// </summary>
-    public partial class TreeCellEditor : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TreeCellEditor>
+    public partial class DefaultTreeModel : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DefaultTreeModel>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public TreeCellEditor() { }
+        public DefaultTreeModel() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public TreeCellEditor(params object[] args) : base(args) { }
+        public DefaultTreeModel(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.swing.tree.TreeCellEditor";
+        public override string ClassName => "javax.swing.tree.DefaultTreeModel";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region DefaultTreeSelectionModel
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeSelectionModel.html
+    /// </summary>
+    public partial class DefaultTreeSelectionModel : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DefaultTreeSelectionModel>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public DefaultTreeSelectionModel() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public DefaultTreeSelectionModel(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.swing.tree.DefaultTreeSelectionModel";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region TreeModel
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeModel.html
+    /// </summary>
+    public partial class TreeModel : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TreeModel>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public TreeModel() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public TreeModel(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.swing.tree.TreeModel";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region TreeNode
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeNode.html
+    /// </summary>
+    public partial class TreeNode : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TreeNode>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public TreeNode() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public TreeNode(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.swing.tree.TreeNode";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;

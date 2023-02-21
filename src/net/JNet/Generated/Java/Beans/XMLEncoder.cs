@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Beans
 {
     #region XMLEncoder
@@ -45,7 +47,8 @@ namespace Java.Beans
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Lang.AutoCloseable(Java.Beans.XMLEncoder t) => t.Cast<Java.Lang.AutoCloseable>();
+        
         #endregion
 
         #region Fields

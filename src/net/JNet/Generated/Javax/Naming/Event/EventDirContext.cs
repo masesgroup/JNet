@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Naming.Event
 {
     #region EventDirContext
@@ -31,7 +33,9 @@ namespace Javax.Naming.Event
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Naming.Event.EventContext(Javax.Naming.Event.EventDirContext t) => t.Cast<Javax.Naming.Event.EventContext>();
+        public static implicit operator Javax.Naming.Directory.DirContext(Javax.Naming.Event.EventDirContext t) => t.Cast<Javax.Naming.Directory.DirContext>();
+        
         #endregion
 
         #region Fields

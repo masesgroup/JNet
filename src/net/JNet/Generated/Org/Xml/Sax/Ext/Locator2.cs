@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Org.Xml.Sax.Ext
 {
     #region Locator2
@@ -31,7 +33,8 @@ namespace Org.Xml.Sax.Ext
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Org.Xml.Sax.Locator(Org.Xml.Sax.Ext.Locator2 t) => t.Cast<Org.Xml.Sax.Locator>();
+        
         #endregion
 
         #region Fields

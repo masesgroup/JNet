@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing.Text
 {
     #region GlyphView
@@ -38,7 +40,9 @@ namespace Javax.Swing.Text
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Swing.Text.TabableView(Javax.Swing.Text.GlyphView t) => t.Cast<Javax.Swing.Text.TabableView>();
+        public static implicit operator Java.Lang.Cloneable(Javax.Swing.Text.GlyphView t) => t.Cast<Java.Lang.Cloneable>();
+        
         #endregion
 
         #region Fields

@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Awt
 {
     #region TexturePaint
@@ -38,7 +40,8 @@ namespace Java.Awt
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Awt.Paint(Java.Awt.TexturePaint t) => t.Cast<Java.Awt.Paint>();
+        
         #endregion
 
         #region Fields

@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing.Text.Html.Parser
 {
     #region ContentModel
@@ -52,7 +54,8 @@ namespace Javax.Swing.Text.Html.Parser
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Io.Serializable(Javax.Swing.Text.Html.Parser.ContentModel t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields

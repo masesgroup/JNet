@@ -23,41 +23,6 @@
 
 namespace Javax.Imageio.Plugins.Tiff
 {
-    #region ExifGPSTagSet
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifGPSTagSet.html
-    /// </summary>
-    public partial class ExifGPSTagSet : Javax.Imageio.Plugins.Tiff.TIFFTagSet
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public ExifGPSTagSet() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public ExifGPSTagSet(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.imageio.plugins.tiff.ExifGPSTagSet";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
     #region ExifTIFFTagSet
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifTIFFTagSet.html
@@ -93,23 +58,23 @@ namespace Javax.Imageio.Plugins.Tiff
     }
     #endregion
 
-    #region FaxTIFFTagSet
+    #region BaselineTIFFTagSet
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/FaxTIFFTagSet.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html
     /// </summary>
-    public partial class FaxTIFFTagSet : Javax.Imageio.Plugins.Tiff.TIFFTagSet
+    public partial class BaselineTIFFTagSet : Javax.Imageio.Plugins.Tiff.TIFFTagSet
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public FaxTIFFTagSet() { }
+        public BaselineTIFFTagSet() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public FaxTIFFTagSet(params object[] args) : base(args) { }
+        public BaselineTIFFTagSet(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.imageio.plugins.tiff.FaxTIFFTagSet";
+        public override string ClassName => "javax.imageio.plugins.tiff.BaselineTIFFTagSet";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -128,23 +93,128 @@ namespace Javax.Imageio.Plugins.Tiff
     }
     #endregion
 
-    #region BaselineTIFFTagSet
+    #region ExifGPSTagSet
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/BaselineTIFFTagSet.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifGPSTagSet.html
     /// </summary>
-    public partial class BaselineTIFFTagSet : Javax.Imageio.Plugins.Tiff.TIFFTagSet
+    public partial class ExifGPSTagSet : Javax.Imageio.Plugins.Tiff.TIFFTagSet
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public BaselineTIFFTagSet() { }
+        public ExifGPSTagSet() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public BaselineTIFFTagSet(params object[] args) : base(args) { }
+        public ExifGPSTagSet(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.imageio.plugins.tiff.BaselineTIFFTagSet";
+        public override string ClassName => "javax.imageio.plugins.tiff.ExifGPSTagSet";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region GeoTIFFTagSet
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/GeoTIFFTagSet.html
+    /// </summary>
+    public partial class GeoTIFFTagSet : Javax.Imageio.Plugins.Tiff.TIFFTagSet
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public GeoTIFFTagSet() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public GeoTIFFTagSet(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.imageio.plugins.tiff.GeoTIFFTagSet";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region TIFFTagSet
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTagSet.html
+    /// </summary>
+    public partial class TIFFTagSet : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TIFFTagSet>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public TIFFTagSet() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public TIFFTagSet(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.imageio.plugins.tiff.TIFFTagSet";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region FaxTIFFTagSet
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/FaxTIFFTagSet.html
+    /// </summary>
+    public partial class FaxTIFFTagSet : Javax.Imageio.Plugins.Tiff.TIFFTagSet
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public FaxTIFFTagSet() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public FaxTIFFTagSet(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.imageio.plugins.tiff.FaxTIFFTagSet";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -233,23 +303,23 @@ namespace Javax.Imageio.Plugins.Tiff
     }
     #endregion
 
-    #region ExifInteroperabilityTagSet
+    #region TIFFTag
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifInteroperabilityTagSet.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTag.html
     /// </summary>
-    public partial class ExifInteroperabilityTagSet : Javax.Imageio.Plugins.Tiff.TIFFTagSet
+    public partial class TIFFTag : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TIFFTag>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ExifInteroperabilityTagSet() { }
+        public TIFFTag() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public ExifInteroperabilityTagSet(params object[] args) : base(args) { }
+        public TIFFTag(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.imageio.plugins.tiff.ExifInteroperabilityTagSet";
+        public override string ClassName => "javax.imageio.plugins.tiff.TIFFTag";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -303,76 +373,6 @@ namespace Javax.Imageio.Plugins.Tiff
     }
     #endregion
 
-    #region GeoTIFFTagSet
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/GeoTIFFTagSet.html
-    /// </summary>
-    public partial class GeoTIFFTagSet : Javax.Imageio.Plugins.Tiff.TIFFTagSet
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public GeoTIFFTagSet() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public GeoTIFFTagSet(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.imageio.plugins.tiff.GeoTIFFTagSet";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region TIFFTag
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTag.html
-    /// </summary>
-    public partial class TIFFTag : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TIFFTag>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public TIFFTag() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public TIFFTag(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.imageio.plugins.tiff.TIFFTag";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
     #region TIFFDirectory
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFDirectory.html
@@ -408,23 +408,23 @@ namespace Javax.Imageio.Plugins.Tiff
     }
     #endregion
 
-    #region TIFFTagSet
+    #region ExifInteroperabilityTagSet
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFTagSet.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/ExifInteroperabilityTagSet.html
     /// </summary>
-    public partial class TIFFTagSet : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TIFFTagSet>
+    public partial class ExifInteroperabilityTagSet : Javax.Imageio.Plugins.Tiff.TIFFTagSet
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public TIFFTagSet() { }
+        public ExifInteroperabilityTagSet() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public TIFFTagSet(params object[] args) : base(args) { }
+        public ExifInteroperabilityTagSet(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.imageio.plugins.tiff.TIFFTagSet";
+        public override string ClassName => "javax.imageio.plugins.tiff.ExifInteroperabilityTagSet";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;

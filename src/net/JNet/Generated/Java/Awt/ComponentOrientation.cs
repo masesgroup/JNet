@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Awt
 {
     #region ComponentOrientation
@@ -31,7 +33,8 @@ namespace Java.Awt
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Io.Serializable(Java.Awt.ComponentOrientation t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields

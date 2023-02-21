@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Print.Attribute
 {
     #region Attribute
@@ -31,7 +33,8 @@ namespace Javax.Print.Attribute
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Io.Serializable(Javax.Print.Attribute.Attribute t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields

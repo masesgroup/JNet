@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing.Table
 {
     #region JTableHeader
@@ -38,7 +40,9 @@ namespace Javax.Swing.Table
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Swing.Event.TableColumnModelListener(Javax.Swing.Table.JTableHeader t) => t.Cast<Javax.Swing.Event.TableColumnModelListener>();
+        public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.Table.JTableHeader t) => t.Cast<Javax.Accessibility.Accessible>();
+        
         #endregion
 
         #region Fields

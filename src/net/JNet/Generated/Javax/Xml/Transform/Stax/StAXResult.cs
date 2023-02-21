@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Xml.Transform.Stax
 {
     #region StAXResult
@@ -45,7 +47,8 @@ namespace Javax.Xml.Transform.Stax
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Xml.Transform.Result(Javax.Xml.Transform.Stax.StAXResult t) => t.Cast<Javax.Xml.Transform.Result>();
+        
         #endregion
 
         #region Fields

@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Awt.Geom
 {
     #region Rectangle2D
@@ -169,7 +171,8 @@ namespace Java.Awt.Geom
             #endregion
 
             #region Class/Interface conversion operators
-
+            public static implicit operator Java.Io.Serializable(Java.Awt.Geom.Rectangle2D.Float t) => t.Cast<Java.Io.Serializable>();
+            
             #endregion
 
             #region Fields
@@ -226,7 +229,8 @@ namespace Java.Awt.Geom
             #endregion
 
             #region Class/Interface conversion operators
-
+            public static implicit operator Java.Io.Serializable(Java.Awt.Geom.Rectangle2D.Double t) => t.Cast<Java.Io.Serializable>();
+            
             #endregion
 
             #region Fields

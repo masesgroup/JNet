@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Lang.Model.Element
 {
     #region Name
@@ -31,7 +33,8 @@ namespace Javax.Lang.Model.Element
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Lang.CharSequence(Javax.Lang.Model.Element.Name t) => t.Cast<Java.Lang.CharSequence>();
+        
         #endregion
 
         #region Fields

@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Text
 {
     #region BreakIterator
@@ -31,7 +33,8 @@ namespace Java.Text
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Lang.Cloneable(Java.Text.BreakIterator t) => t.Cast<Java.Lang.Cloneable>();
+        
         #endregion
 
         #region Fields

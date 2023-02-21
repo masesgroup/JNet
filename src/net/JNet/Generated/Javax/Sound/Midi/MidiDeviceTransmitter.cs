@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Sound.Midi
 {
     #region MidiDeviceTransmitter
@@ -31,7 +33,8 @@ namespace Javax.Sound.Midi
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Sound.Midi.Transmitter(Javax.Sound.Midi.MidiDeviceTransmitter t) => t.Cast<Javax.Sound.Midi.Transmitter>();
+        
         #endregion
 
         #region Fields

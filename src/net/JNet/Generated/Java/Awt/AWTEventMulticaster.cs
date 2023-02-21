@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Awt
 {
     #region AWTEventMulticaster
@@ -31,7 +33,24 @@ namespace Java.Awt
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Awt.EventNs.ComponentListener(Java.Awt.AWTEventMulticaster t) => t.Cast<Java.Awt.EventNs.ComponentListener>();
+        public static implicit operator Java.Awt.EventNs.ContainerListener(Java.Awt.AWTEventMulticaster t) => t.Cast<Java.Awt.EventNs.ContainerListener>();
+        public static implicit operator Java.Awt.EventNs.FocusListener(Java.Awt.AWTEventMulticaster t) => t.Cast<Java.Awt.EventNs.FocusListener>();
+        public static implicit operator Java.Awt.EventNs.KeyListener(Java.Awt.AWTEventMulticaster t) => t.Cast<Java.Awt.EventNs.KeyListener>();
+        public static implicit operator Java.Awt.EventNs.MouseListener(Java.Awt.AWTEventMulticaster t) => t.Cast<Java.Awt.EventNs.MouseListener>();
+        public static implicit operator Java.Awt.EventNs.MouseMotionListener(Java.Awt.AWTEventMulticaster t) => t.Cast<Java.Awt.EventNs.MouseMotionListener>();
+        public static implicit operator Java.Awt.EventNs.WindowListener(Java.Awt.AWTEventMulticaster t) => t.Cast<Java.Awt.EventNs.WindowListener>();
+        public static implicit operator Java.Awt.EventNs.WindowFocusListener(Java.Awt.AWTEventMulticaster t) => t.Cast<Java.Awt.EventNs.WindowFocusListener>();
+        public static implicit operator Java.Awt.EventNs.WindowStateListener(Java.Awt.AWTEventMulticaster t) => t.Cast<Java.Awt.EventNs.WindowStateListener>();
+        public static implicit operator Java.Awt.EventNs.ActionListener(Java.Awt.AWTEventMulticaster t) => t.Cast<Java.Awt.EventNs.ActionListener>();
+        public static implicit operator Java.Awt.EventNs.ItemListener(Java.Awt.AWTEventMulticaster t) => t.Cast<Java.Awt.EventNs.ItemListener>();
+        public static implicit operator Java.Awt.EventNs.AdjustmentListener(Java.Awt.AWTEventMulticaster t) => t.Cast<Java.Awt.EventNs.AdjustmentListener>();
+        public static implicit operator Java.Awt.EventNs.TextListener(Java.Awt.AWTEventMulticaster t) => t.Cast<Java.Awt.EventNs.TextListener>();
+        public static implicit operator Java.Awt.EventNs.InputMethodListener(Java.Awt.AWTEventMulticaster t) => t.Cast<Java.Awt.EventNs.InputMethodListener>();
+        public static implicit operator Java.Awt.EventNs.HierarchyListener(Java.Awt.AWTEventMulticaster t) => t.Cast<Java.Awt.EventNs.HierarchyListener>();
+        public static implicit operator Java.Awt.EventNs.HierarchyBoundsListener(Java.Awt.AWTEventMulticaster t) => t.Cast<Java.Awt.EventNs.HierarchyBoundsListener>();
+        public static implicit operator Java.Awt.EventNs.MouseWheelListener(Java.Awt.AWTEventMulticaster t) => t.Cast<Java.Awt.EventNs.MouseWheelListener>();
+        
         #endregion
 
         #region Fields

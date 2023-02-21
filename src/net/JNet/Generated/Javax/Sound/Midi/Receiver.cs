@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Sound.Midi
 {
     #region Receiver
@@ -31,7 +33,8 @@ namespace Javax.Sound.Midi
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Lang.AutoCloseable(Javax.Sound.Midi.Receiver t) => t.Cast<Java.Lang.AutoCloseable>();
+        
         #endregion
 
         #region Fields

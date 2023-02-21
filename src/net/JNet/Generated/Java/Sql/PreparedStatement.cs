@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Sql
 {
     #region PreparedStatement
@@ -31,7 +33,8 @@ namespace Java.Sql
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Sql.Statement(Java.Sql.PreparedStatement t) => t.Cast<Java.Sql.Statement>();
+        
         #endregion
 
         #region Fields

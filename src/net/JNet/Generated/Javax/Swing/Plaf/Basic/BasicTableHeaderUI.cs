@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing.Plaf.Basic
 {
     #region BasicTableHeaderUI
@@ -62,7 +64,8 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Class/Interface conversion operators
-
+            public static implicit operator Javax.Swing.Event.MouseInputListener(Javax.Swing.Plaf.Basic.BasicTableHeaderUI.MouseInputHandler t) => t.Cast<Javax.Swing.Event.MouseInputListener>();
+            
             #endregion
 
             #region Fields

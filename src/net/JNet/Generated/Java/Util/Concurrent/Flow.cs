@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Util.Concurrent
 {
     #region Flow
@@ -54,6 +56,33 @@ namespace Java.Util.Concurrent
         #endregion
 
         #region Nested classes
+        #region Processor
+        public partial class Processor
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region Subscriber
         public partial class Subscriber
         {
@@ -109,8 +138,8 @@ namespace Java.Util.Concurrent
         }
         #endregion
 
-        #region Processor
-        public partial class Processor
+        #region Publisher
+        public partial class Publisher
         {
             #region Constructors
 
@@ -171,33 +200,6 @@ namespace Java.Util.Concurrent
                 IExecute("request", arg0);
             }
             
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region Publisher
-        public partial class Publisher
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
             #endregion
 
             // TODO: complete the class

@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing.Table
 {
     #region DefaultTableModel
@@ -38,7 +40,8 @@ namespace Javax.Swing.Table
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Io.Serializable(Javax.Swing.Table.DefaultTableModel t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields
@@ -119,6 +122,13 @@ namespace Javax.Swing.Table
         public void SetColumnCount(int arg0)
         {
             IExecute("setColumnCount", arg0);
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableModel.html#setColumnIdentifiers(java.lang.Object[])
+        /// </summary>
+        public void SetColumnIdentifiers(object[] arg0)
+        {
+            IExecute("setColumnIdentifiers", arg0);
         }
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableModel.html#setDataVector(java.lang.Object[][],java.lang.Object[])

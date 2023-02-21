@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Security.Auth.X500
 {
     #region X500Principal
@@ -52,7 +54,9 @@ namespace Javax.Security.Auth.X500
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Security.Principal(Javax.Security.Auth.X500.X500Principal t) => t.Cast<Java.Security.Principal>();
+        public static implicit operator Java.Io.Serializable(Javax.Security.Auth.X500.X500Principal t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields

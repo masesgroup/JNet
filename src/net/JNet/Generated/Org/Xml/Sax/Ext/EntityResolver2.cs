@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Org.Xml.Sax.Ext
 {
     #region EntityResolver2
@@ -31,7 +33,8 @@ namespace Org.Xml.Sax.Ext
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Org.Xml.Sax.EntityResolver(Org.Xml.Sax.Ext.EntityResolver2 t) => t.Cast<Org.Xml.Sax.EntityResolver>();
+        
         #endregion
 
         #region Fields

@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Util.Concurrent.Locks
 {
     #region AbstractQueuedLongSynchronizer
@@ -31,7 +33,8 @@ namespace Java.Util.Concurrent.Locks
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Io.Serializable(Java.Util.Concurrent.Locks.AbstractQueuedLongSynchronizer t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields
@@ -181,7 +184,9 @@ namespace Java.Util.Concurrent.Locks
             #endregion
 
             #region Class/Interface conversion operators
-
+            public static implicit operator Java.Util.Concurrent.Locks.Condition(Java.Util.Concurrent.Locks.AbstractQueuedLongSynchronizer.ConditionObject t) => t.Cast<Java.Util.Concurrent.Locks.Condition>();
+            public static implicit operator Java.Io.Serializable(Java.Util.Concurrent.Locks.AbstractQueuedLongSynchronizer.ConditionObject t) => t.Cast<Java.Io.Serializable>();
+            
             #endregion
 
             #region Fields

@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Org.W3c.Dom.Events
 {
     #region MutationEvent
@@ -31,7 +33,8 @@ namespace Org.W3c.Dom.Events
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Org.W3c.Dom.Events.Event(Org.W3c.Dom.Events.MutationEvent t) => t.Cast<Org.W3c.Dom.Events.Event>();
+        
         #endregion
 
         #region Fields

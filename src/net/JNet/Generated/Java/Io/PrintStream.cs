@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Io
 {
     #region PrintStream
@@ -101,7 +103,9 @@ namespace Java.Io
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Lang.Appendable(Java.Io.PrintStream t) => t.Cast<Java.Lang.Appendable>();
+        public static implicit operator Java.Io.Closeable(Java.Io.PrintStream t) => t.Cast<Java.Io.Closeable>();
+        
         #endregion
 
         #region Fields

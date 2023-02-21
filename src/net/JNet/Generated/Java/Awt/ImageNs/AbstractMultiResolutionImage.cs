@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Awt.ImageNs
 {
     #region AbstractMultiResolutionImage
@@ -31,7 +33,8 @@ namespace Java.Awt.ImageNs
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Awt.ImageNs.MultiResolutionImage(Java.Awt.ImageNs.AbstractMultiResolutionImage t) => t.Cast<Java.Awt.ImageNs.MultiResolutionImage>();
+        
         #endregion
 
         #region Fields

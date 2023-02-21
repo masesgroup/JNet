@@ -23,6 +23,41 @@
 
 namespace Javax.Xml.Validation
 {
+    #region SchemaFactoryLoader
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/SchemaFactoryLoader.html
+    /// </summary>
+    public partial class SchemaFactoryLoader : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SchemaFactoryLoader>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public SchemaFactoryLoader() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public SchemaFactoryLoader(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.xml.validation.SchemaFactoryLoader";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region SchemaFactory
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/SchemaFactory.html
@@ -58,23 +93,39 @@ namespace Javax.Xml.Validation
     }
     #endregion
 
-    #region TypeInfoProvider
+    #region SchemaFactoryConfigurationError
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/TypeInfoProvider.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/SchemaFactoryConfigurationError.html
     /// </summary>
-    public partial class TypeInfoProvider : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TypeInfoProvider>
+    public partial class SchemaFactoryConfigurationError : Java.Lang.Error
+    {
+        public SchemaFactoryConfigurationError() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.xml.validation.SchemaFactoryConfigurationError";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region ValidatorHandler
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/ValidatorHandler.html
+    /// </summary>
+    public partial class ValidatorHandler : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ValidatorHandler>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public TypeInfoProvider() { }
+        public ValidatorHandler() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public TypeInfoProvider(params object[] args) : base(args) { }
+        public ValidatorHandler(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.xml.validation.TypeInfoProvider";
+        public override string ClassName => "javax.xml.validation.ValidatorHandler";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -93,23 +144,23 @@ namespace Javax.Xml.Validation
     }
     #endregion
 
-    #region SchemaFactoryLoader
+    #region TypeInfoProvider
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/SchemaFactoryLoader.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/TypeInfoProvider.html
     /// </summary>
-    public partial class SchemaFactoryLoader : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SchemaFactoryLoader>
+    public partial class TypeInfoProvider : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TypeInfoProvider>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public SchemaFactoryLoader() { }
+        public TypeInfoProvider() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public SchemaFactoryLoader(params object[] args) : base(args) { }
+        public TypeInfoProvider(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.xml.validation.SchemaFactoryLoader";
+        public override string ClassName => "javax.xml.validation.TypeInfoProvider";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -192,57 +243,6 @@ namespace Javax.Xml.Validation
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region ValidatorHandler
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/ValidatorHandler.html
-    /// </summary>
-    public partial class ValidatorHandler : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ValidatorHandler>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public ValidatorHandler() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public ValidatorHandler(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.xml.validation.ValidatorHandler";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region SchemaFactoryConfigurationError
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/SchemaFactoryConfigurationError.html
-    /// </summary>
-    public partial class SchemaFactoryConfigurationError : Java.Lang.Error
-    {
-        public SchemaFactoryConfigurationError() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.xml.validation.SchemaFactoryConfigurationError";
 
         // TODO: complete the class
 

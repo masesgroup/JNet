@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Management.Loading
 {
     #region PrivateMLet
@@ -52,7 +54,8 @@ namespace Javax.Management.Loading
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Management.Loading.PrivateClassLoader(Javax.Management.Loading.PrivateMLet t) => t.Cast<Javax.Management.Loading.PrivateClassLoader>();
+        
         #endregion
 
         #region Fields

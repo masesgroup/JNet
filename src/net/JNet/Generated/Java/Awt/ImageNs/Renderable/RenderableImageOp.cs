@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Awt.ImageNs.Renderable
 {
     #region RenderableImageOp
@@ -38,7 +40,8 @@ namespace Java.Awt.ImageNs.Renderable
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Awt.ImageNs.Renderable.RenderableImage(Java.Awt.ImageNs.Renderable.RenderableImageOp t) => t.Cast<Java.Awt.ImageNs.Renderable.RenderableImage>();
+        
         #endregion
 
         #region Fields

@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Nio.Channels.Spi
 {
     #region AbstractInterruptibleChannel
@@ -31,7 +33,9 @@ namespace Java.Nio.Channels.Spi
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Nio.Channels.Channel(Java.Nio.Channels.Spi.AbstractInterruptibleChannel t) => t.Cast<Java.Nio.Channels.Channel>();
+        public static implicit operator Java.Nio.Channels.InterruptibleChannel(Java.Nio.Channels.Spi.AbstractInterruptibleChannel t) => t.Cast<Java.Nio.Channels.InterruptibleChannel>();
+        
         #endregion
 
         #region Fields

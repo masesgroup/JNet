@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Sql
 {
     #region Statement
@@ -31,7 +33,9 @@ namespace Java.Sql
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Sql.Wrapper(Java.Sql.Statement t) => t.Cast<Java.Sql.Wrapper>();
+        public static implicit operator Java.Lang.AutoCloseable(Java.Sql.Statement t) => t.Cast<Java.Lang.AutoCloseable>();
+        
         #endregion
 
         #region Fields

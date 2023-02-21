@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Org.Xml.Sax.Ext
 {
     #region DefaultHandler2
@@ -31,7 +33,10 @@ namespace Org.Xml.Sax.Ext
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Org.Xml.Sax.Ext.LexicalHandler(Org.Xml.Sax.Ext.DefaultHandler2 t) => t.Cast<Org.Xml.Sax.Ext.LexicalHandler>();
+        public static implicit operator Org.Xml.Sax.Ext.DeclHandler(Org.Xml.Sax.Ext.DefaultHandler2 t) => t.Cast<Org.Xml.Sax.Ext.DeclHandler>();
+        public static implicit operator Org.Xml.Sax.Ext.EntityResolver2(Org.Xml.Sax.Ext.DefaultHandler2 t) => t.Cast<Org.Xml.Sax.Ext.EntityResolver2>();
+        
         #endregion
 
         #region Fields

@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Security.Spec
 {
     #region ECPublicKeySpec
@@ -38,7 +40,8 @@ namespace Java.Security.Spec
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Security.Spec.KeySpec(Java.Security.Spec.ECPublicKeySpec t) => t.Cast<Java.Security.Spec.KeySpec>();
+        
         #endregion
 
         #region Fields

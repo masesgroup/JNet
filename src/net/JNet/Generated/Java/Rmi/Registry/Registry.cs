@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Rmi.Registry
 {
     #region Registry
@@ -31,7 +33,8 @@ namespace Java.Rmi.Registry
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Rmi.Remote(Java.Rmi.Registry.Registry t) => t.Cast<Java.Rmi.Remote>();
+        
         #endregion
 
         #region Fields

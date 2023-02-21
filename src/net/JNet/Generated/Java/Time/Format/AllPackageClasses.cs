@@ -58,6 +58,41 @@ namespace Java.Time.Format
     }
     #endregion
 
+    #region DecimalStyle
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DecimalStyle.html
+    /// </summary>
+    public partial class DecimalStyle : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DecimalStyle>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public DecimalStyle() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public DecimalStyle(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.time.format.DecimalStyle";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region DateTimeFormatter
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html
@@ -163,23 +198,23 @@ namespace Java.Time.Format
     }
     #endregion
 
-    #region DecimalStyle
+    #region SignStyle
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DecimalStyle.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/SignStyle.html
     /// </summary>
-    public partial class DecimalStyle : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DecimalStyle>
+    public partial class SignStyle : Java.Lang.Enum
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public DecimalStyle() { }
+        public SignStyle() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public DecimalStyle(params object[] args) : base(args) { }
+        public SignStyle(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.time.format.DecimalStyle";
+        public override string ClassName => "java.time.format.SignStyle";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -192,22 +227,6 @@ namespace Java.Time.Format
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region DateTimeParseException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeParseException.html
-    /// </summary>
-    public partial class DateTimeParseException : Java.Time.DateTimeException
-    {
-        public DateTimeParseException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.time.format.DateTimeParseException";
 
         // TODO: complete the class
 
@@ -249,35 +268,16 @@ namespace Java.Time.Format
     }
     #endregion
 
-    #region SignStyle
+    #region DateTimeParseException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/SignStyle.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeParseException.html
     /// </summary>
-    public partial class SignStyle : Java.Lang.Enum
+    public partial class DateTimeParseException : Java.Time.DateTimeException
     {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public SignStyle() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public SignStyle(params object[] args) : base(args) { }
+        public DateTimeParseException() { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.time.format.SignStyle";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
+        public override string ClassName => "java.time.format.DateTimeParseException";
 
         // TODO: complete the class
 

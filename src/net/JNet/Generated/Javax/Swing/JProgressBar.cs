@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing
 {
     #region JProgressBar
@@ -59,7 +61,9 @@ namespace Javax.Swing
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Swing.SwingConstants(Javax.Swing.JProgressBar t) => t.Cast<Javax.Swing.SwingConstants>();
+        public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.JProgressBar t) => t.Cast<Javax.Accessibility.Accessible>();
+        
         #endregion
 
         #region Fields

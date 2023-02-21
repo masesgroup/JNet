@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing
 {
     #region UIDefaults
@@ -243,25 +245,38 @@ namespace Javax.Swing
         #endregion
 
         #region Nested classes
-        #region ProxyLazyValue
-        public partial class ProxyLazyValue
+        #region LazyValue
+        public partial class LazyValue
         {
             #region Constructors
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.ProxyLazyValue.html#<init>(java.lang.String,java.lang.String)
-            /// </summary>
-            public ProxyLazyValue(string arg0, string arg1)
-                : base(arg0, arg1)
-            {
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.ProxyLazyValue.html#<init>(java.lang.String)
-            /// </summary>
-            public ProxyLazyValue(string arg0)
-                : base(arg0)
-            {
-            }
-            
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region LazyInputMap
+        public partial class LazyInputMap
+        {
+            #region Constructors
+
             #endregion
 
             #region Class/Interface conversion operators
@@ -311,38 +326,25 @@ namespace Javax.Swing
         }
         #endregion
 
-        #region LazyValue
-        public partial class LazyValue
+        #region ProxyLazyValue
+        public partial class ProxyLazyValue
         {
             #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region LazyInputMap
-        public partial class LazyInputMap
-        {
-            #region Constructors
-
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.ProxyLazyValue.html#<init>(java.lang.String,java.lang.String)
+            /// </summary>
+            public ProxyLazyValue(string arg0, string arg1)
+                : base(arg0, arg1)
+            {
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.ProxyLazyValue.html#<init>(java.lang.String)
+            /// </summary>
+            public ProxyLazyValue(string arg0)
+                : base(arg0)
+            {
+            }
+            
             #endregion
 
             #region Class/Interface conversion operators

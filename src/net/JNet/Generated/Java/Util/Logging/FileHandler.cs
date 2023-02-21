@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Util.Logging
 {
     #region FileHandler
@@ -42,17 +44,17 @@ namespace Java.Util.Logging
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/FileHandler.html#<init>(java.lang.String) throws java.io.IOException,java.lang.SecurityException
-        /// </summary>
-        public FileHandler(string arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/FileHandler.html#<init>(java.lang.String,long,int,boolean) throws java.io.IOException
         /// </summary>
         public FileHandler(string arg0, long arg1, int arg2, bool arg3)
             : base(arg0, arg1, arg2, arg3)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/FileHandler.html#<init>(java.lang.String) throws java.io.IOException,java.lang.SecurityException
+        /// </summary>
+        public FileHandler(string arg0)
+            : base(arg0)
         {
         }
         /// <summary>

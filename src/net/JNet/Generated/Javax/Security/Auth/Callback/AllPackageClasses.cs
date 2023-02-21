@@ -23,6 +23,57 @@
 
 namespace Javax.Security.Auth.Callback
 {
+    #region UnsupportedCallbackException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/UnsupportedCallbackException.html
+    /// </summary>
+    public partial class UnsupportedCallbackException : Java.Lang.Exception
+    {
+        public UnsupportedCallbackException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.security.auth.callback.UnsupportedCallbackException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region PasswordCallback
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/PasswordCallback.html
+    /// </summary>
+    public partial class PasswordCallback : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PasswordCallback>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public PasswordCallback() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public PasswordCallback(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.security.auth.callback.PasswordCallback";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region LanguageCallback
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/LanguageCallback.html
@@ -49,41 +100,6 @@ namespace Javax.Security.Auth.Callback
 
         /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
         public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region Callback
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/Callback.html
-    /// </summary>
-    public partial class Callback : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Callback>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public Callback() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public Callback(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.security.auth.callback.Callback";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;
@@ -128,39 +144,128 @@ namespace Javax.Security.Auth.Callback
     }
     #endregion
 
-    #region UnsupportedCallbackException
+    #region CallbackHandler
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/UnsupportedCallbackException.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/CallbackHandler.html
     /// </summary>
-    public partial class UnsupportedCallbackException : Java.Lang.Exception
+    public partial class CallbackHandler : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CallbackHandler>
     {
-        public UnsupportedCallbackException() { }
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public CallbackHandler() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public CallbackHandler(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.security.auth.callback.UnsupportedCallbackException";
+        public override string ClassName => "javax.security.auth.callback.CallbackHandler";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
 
         // TODO: complete the class
 
     }
     #endregion
 
-    #region PasswordCallback
+    #region Callback
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/PasswordCallback.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/Callback.html
     /// </summary>
-    public partial class PasswordCallback : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PasswordCallback>
+    public partial class Callback : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Callback>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public PasswordCallback() { }
+        public Callback() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public PasswordCallback(params object[] args) : base(args) { }
+        public Callback(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.security.auth.callback.PasswordCallback";
+        public override string ClassName => "javax.security.auth.callback.Callback";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region TextInputCallback
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/TextInputCallback.html
+    /// </summary>
+    public partial class TextInputCallback : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TextInputCallback>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public TextInputCallback() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public TextInputCallback(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.security.auth.callback.TextInputCallback";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region TextOutputCallback
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/TextOutputCallback.html
+    /// </summary>
+    public partial class TextOutputCallback : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TextOutputCallback>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public TextOutputCallback() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public TextOutputCallback(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.security.auth.callback.TextOutputCallback";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -231,111 +336,6 @@ namespace Javax.Security.Auth.Callback
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "javax.security.auth.callback.ConfirmationCallback";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region TextInputCallback
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/TextInputCallback.html
-    /// </summary>
-    public partial class TextInputCallback : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TextInputCallback>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public TextInputCallback() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public TextInputCallback(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.security.auth.callback.TextInputCallback";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region CallbackHandler
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/CallbackHandler.html
-    /// </summary>
-    public partial class CallbackHandler : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CallbackHandler>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public CallbackHandler() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public CallbackHandler(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.security.auth.callback.CallbackHandler";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region TextOutputCallback
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/TextOutputCallback.html
-    /// </summary>
-    public partial class TextOutputCallback : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TextOutputCallback>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public TextOutputCallback() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public TextOutputCallback(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.security.auth.callback.TextOutputCallback";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;

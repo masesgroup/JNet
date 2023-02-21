@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Rmi.Ssl
 {
     #region SslRMIServerSocketFactory
@@ -45,7 +47,8 @@ namespace Javax.Rmi.Ssl
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Rmi.Server.RMIServerSocketFactory(Javax.Rmi.Ssl.SslRMIServerSocketFactory t) => t.Cast<Java.Rmi.Server.RMIServerSocketFactory>();
+        
         #endregion
 
         #region Fields

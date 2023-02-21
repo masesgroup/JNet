@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing.Plaf.Basic
 {
     #region BasicToolBarUI
@@ -31,7 +33,8 @@ namespace Javax.Swing.Plaf.Basic
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Swing.SwingConstants(Javax.Swing.Plaf.Basic.BasicToolBarUI t) => t.Cast<Javax.Swing.SwingConstants>();
+        
         #endregion
 
         #region Fields

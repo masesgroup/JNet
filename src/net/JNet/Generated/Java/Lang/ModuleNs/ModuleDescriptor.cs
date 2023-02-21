@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Lang.ModuleNs
 {
     #region ModuleDescriptor
@@ -164,6 +166,117 @@ namespace Java.Lang.ModuleNs
             public string Name()
             {
                 return IExecute<string>("name");
+            }
+            
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region Builder
+        public partial class Builder
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Builder.html#build()
+            /// </summary>
+            public Java.Lang.ModuleNs.ModuleDescriptor Build()
+            {
+                return IExecute<Java.Lang.ModuleNs.ModuleDescriptor>("build");
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Builder.html#exports(java.lang.module.ModuleDescriptor$Exports)
+            /// </summary>
+            public Java.Lang.ModuleNs.ModuleDescriptor.Builder ExportsMethod(Java.Lang.ModuleNs.ModuleDescriptor.Exports arg0)
+            {
+                return IExecute<Java.Lang.ModuleNs.ModuleDescriptor.Builder>("exports", arg0);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Builder.html#exports(java.lang.String)
+            /// </summary>
+            public Java.Lang.ModuleNs.ModuleDescriptor.Builder ExportsMethod(string arg0)
+            {
+                return IExecute<Java.Lang.ModuleNs.ModuleDescriptor.Builder>("exports", arg0);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Builder.html#mainClass(java.lang.String)
+            /// </summary>
+            public Java.Lang.ModuleNs.ModuleDescriptor.Builder MainClass(string arg0)
+            {
+                return IExecute<Java.Lang.ModuleNs.ModuleDescriptor.Builder>("mainClass", arg0);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Builder.html#opens(java.lang.module.ModuleDescriptor$Opens)
+            /// </summary>
+            public Java.Lang.ModuleNs.ModuleDescriptor.Builder OpensMethod(Java.Lang.ModuleNs.ModuleDescriptor.Opens arg0)
+            {
+                return IExecute<Java.Lang.ModuleNs.ModuleDescriptor.Builder>("opens", arg0);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Builder.html#opens(java.lang.String)
+            /// </summary>
+            public Java.Lang.ModuleNs.ModuleDescriptor.Builder OpensMethod(string arg0)
+            {
+                return IExecute<Java.Lang.ModuleNs.ModuleDescriptor.Builder>("opens", arg0);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Builder.html#provides(java.lang.module.ModuleDescriptor$Provides)
+            /// </summary>
+            public Java.Lang.ModuleNs.ModuleDescriptor.Builder ProvidesMethod(Java.Lang.ModuleNs.ModuleDescriptor.Provides arg0)
+            {
+                return IExecute<Java.Lang.ModuleNs.ModuleDescriptor.Builder>("provides", arg0);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Builder.html#requires(java.lang.module.ModuleDescriptor$Requires)
+            /// </summary>
+            public Java.Lang.ModuleNs.ModuleDescriptor.Builder RequiresMethod(Java.Lang.ModuleNs.ModuleDescriptor.Requires arg0)
+            {
+                return IExecute<Java.Lang.ModuleNs.ModuleDescriptor.Builder>("requires", arg0);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Builder.html#requires(java.lang.String)
+            /// </summary>
+            public Java.Lang.ModuleNs.ModuleDescriptor.Builder RequiresMethod(string arg0)
+            {
+                return IExecute<Java.Lang.ModuleNs.ModuleDescriptor.Builder>("requires", arg0);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Builder.html#uses(java.lang.String)
+            /// </summary>
+            public Java.Lang.ModuleNs.ModuleDescriptor.Builder Uses(string arg0)
+            {
+                return IExecute<Java.Lang.ModuleNs.ModuleDescriptor.Builder>("uses", arg0);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Builder.html#version(java.lang.module.ModuleDescriptor$Version)
+            /// </summary>
+            public Java.Lang.ModuleNs.ModuleDescriptor.Builder VersionMethod(Java.Lang.ModuleNs.ModuleDescriptor.Version arg0)
+            {
+                return IExecute<Java.Lang.ModuleNs.ModuleDescriptor.Builder>("version", arg0);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Builder.html#version(java.lang.String)
+            /// </summary>
+            public Java.Lang.ModuleNs.ModuleDescriptor.Builder VersionMethod(string arg0)
+            {
+                return IExecute<Java.Lang.ModuleNs.ModuleDescriptor.Builder>("version", arg0);
             }
             
             #endregion
@@ -322,117 +435,6 @@ namespace Java.Lang.ModuleNs
             public string Source()
             {
                 return IExecute<string>("source");
-            }
-            
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region Builder
-        public partial class Builder
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Builder.html#build()
-            /// </summary>
-            public Java.Lang.ModuleNs.ModuleDescriptor Build()
-            {
-                return IExecute<Java.Lang.ModuleNs.ModuleDescriptor>("build");
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Builder.html#exports(java.lang.module.ModuleDescriptor$Exports)
-            /// </summary>
-            public Java.Lang.ModuleNs.ModuleDescriptor.Builder ExportsMethod(Java.Lang.ModuleNs.ModuleDescriptor.Exports arg0)
-            {
-                return IExecute<Java.Lang.ModuleNs.ModuleDescriptor.Builder>("exports", arg0);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Builder.html#exports(java.lang.String)
-            /// </summary>
-            public Java.Lang.ModuleNs.ModuleDescriptor.Builder ExportsMethod(string arg0)
-            {
-                return IExecute<Java.Lang.ModuleNs.ModuleDescriptor.Builder>("exports", arg0);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Builder.html#mainClass(java.lang.String)
-            /// </summary>
-            public Java.Lang.ModuleNs.ModuleDescriptor.Builder MainClass(string arg0)
-            {
-                return IExecute<Java.Lang.ModuleNs.ModuleDescriptor.Builder>("mainClass", arg0);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Builder.html#opens(java.lang.module.ModuleDescriptor$Opens)
-            /// </summary>
-            public Java.Lang.ModuleNs.ModuleDescriptor.Builder OpensMethod(Java.Lang.ModuleNs.ModuleDescriptor.Opens arg0)
-            {
-                return IExecute<Java.Lang.ModuleNs.ModuleDescriptor.Builder>("opens", arg0);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Builder.html#opens(java.lang.String)
-            /// </summary>
-            public Java.Lang.ModuleNs.ModuleDescriptor.Builder OpensMethod(string arg0)
-            {
-                return IExecute<Java.Lang.ModuleNs.ModuleDescriptor.Builder>("opens", arg0);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Builder.html#provides(java.lang.module.ModuleDescriptor$Provides)
-            /// </summary>
-            public Java.Lang.ModuleNs.ModuleDescriptor.Builder ProvidesMethod(Java.Lang.ModuleNs.ModuleDescriptor.Provides arg0)
-            {
-                return IExecute<Java.Lang.ModuleNs.ModuleDescriptor.Builder>("provides", arg0);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Builder.html#requires(java.lang.module.ModuleDescriptor$Requires)
-            /// </summary>
-            public Java.Lang.ModuleNs.ModuleDescriptor.Builder RequiresMethod(Java.Lang.ModuleNs.ModuleDescriptor.Requires arg0)
-            {
-                return IExecute<Java.Lang.ModuleNs.ModuleDescriptor.Builder>("requires", arg0);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Builder.html#requires(java.lang.String)
-            /// </summary>
-            public Java.Lang.ModuleNs.ModuleDescriptor.Builder RequiresMethod(string arg0)
-            {
-                return IExecute<Java.Lang.ModuleNs.ModuleDescriptor.Builder>("requires", arg0);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Builder.html#uses(java.lang.String)
-            /// </summary>
-            public Java.Lang.ModuleNs.ModuleDescriptor.Builder Uses(string arg0)
-            {
-                return IExecute<Java.Lang.ModuleNs.ModuleDescriptor.Builder>("uses", arg0);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Builder.html#version(java.lang.module.ModuleDescriptor$Version)
-            /// </summary>
-            public Java.Lang.ModuleNs.ModuleDescriptor.Builder VersionMethod(Java.Lang.ModuleNs.ModuleDescriptor.Version arg0)
-            {
-                return IExecute<Java.Lang.ModuleNs.ModuleDescriptor.Builder>("version", arg0);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Builder.html#version(java.lang.String)
-            /// </summary>
-            public Java.Lang.ModuleNs.ModuleDescriptor.Builder VersionMethod(string arg0)
-            {
-                return IExecute<Java.Lang.ModuleNs.ModuleDescriptor.Builder>("version", arg0);
             }
             
             #endregion

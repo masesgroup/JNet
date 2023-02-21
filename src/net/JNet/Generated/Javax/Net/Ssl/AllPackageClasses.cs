@@ -23,6 +23,414 @@
 
 namespace Javax.Net.Ssl
 {
+    #region KeyManagerFactory
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/KeyManagerFactory.html
+    /// </summary>
+    public partial class KeyManagerFactory : MASES.JCOBridge.C2JBridge.JVMBridgeBase<KeyManagerFactory>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public KeyManagerFactory() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public KeyManagerFactory(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.net.ssl.KeyManagerFactory";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region HostnameVerifier
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HostnameVerifier.html
+    /// </summary>
+    public partial class HostnameVerifier : MASES.JCOBridge.C2JBridge.JVMBridgeBase<HostnameVerifier>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public HostnameVerifier() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public HostnameVerifier(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.net.ssl.HostnameVerifier";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region ExtendedSSLSession
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/ExtendedSSLSession.html
+    /// </summary>
+    public partial class ExtendedSSLSession : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ExtendedSSLSession>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public ExtendedSSLSession() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public ExtendedSSLSession(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.net.ssl.ExtendedSSLSession";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region X509TrustManager
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/X509TrustManager.html
+    /// </summary>
+    public partial class X509TrustManager : MASES.JCOBridge.C2JBridge.JVMBridgeBase<X509TrustManager>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public X509TrustManager() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public X509TrustManager(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.net.ssl.X509TrustManager";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region SSLParameters
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLParameters.html
+    /// </summary>
+    public partial class SSLParameters : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SSLParameters>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public SSLParameters() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public SSLParameters(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.net.ssl.SSLParameters";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region SSLHandshakeException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLHandshakeException.html
+    /// </summary>
+    public partial class SSLHandshakeException : Javax.Net.Ssl.SSLException
+    {
+        public SSLHandshakeException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.net.ssl.SSLHandshakeException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region SSLSession
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSession.html
+    /// </summary>
+    public partial class SSLSession : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SSLSession>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public SSLSession() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public SSLSession(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.net.ssl.SSLSession";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region SSLPeerUnverifiedException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLPeerUnverifiedException.html
+    /// </summary>
+    public partial class SSLPeerUnverifiedException : Javax.Net.Ssl.SSLException
+    {
+        public SSLPeerUnverifiedException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.net.ssl.SSLPeerUnverifiedException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region X509KeyManager
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/X509KeyManager.html
+    /// </summary>
+    public partial class X509KeyManager : MASES.JCOBridge.C2JBridge.JVMBridgeBase<X509KeyManager>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public X509KeyManager() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public X509KeyManager(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.net.ssl.X509KeyManager";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region SSLSessionBindingListener
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSessionBindingListener.html
+    /// </summary>
+    public partial class SSLSessionBindingListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    {
+#warning Remember to build the body class for event listener
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region HandshakeCompletedListener
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HandshakeCompletedListener.html
+    /// </summary>
+    public partial class HandshakeCompletedListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    {
+#warning Remember to build the body class for event listener
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region ManagerFactoryParameters
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/ManagerFactoryParameters.html
+    /// </summary>
+    public partial class ManagerFactoryParameters : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ManagerFactoryParameters>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public ManagerFactoryParameters() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public ManagerFactoryParameters(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.net.ssl.ManagerFactoryParameters";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region HandshakeCompletedEvent
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HandshakeCompletedEvent.html
+    /// </summary>
+    public partial class HandshakeCompletedEvent : Java.Util.EventObject
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public HandshakeCompletedEvent() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public HandshakeCompletedEvent(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.net.ssl.HandshakeCompletedEvent";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region KeyStoreBuilderParameters
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/KeyStoreBuilderParameters.html
+    /// </summary>
+    public partial class KeyStoreBuilderParameters : MASES.JCOBridge.C2JBridge.JVMBridgeBase<KeyStoreBuilderParameters>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public KeyStoreBuilderParameters() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public KeyStoreBuilderParameters(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.net.ssl.KeyStoreBuilderParameters";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region SSLEngineResult
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.html
@@ -126,127 +534,6 @@ namespace Javax.Net.Ssl
     }
     #endregion
 
-    #region SSLHandshakeException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLHandshakeException.html
-    /// </summary>
-    public partial class SSLHandshakeException : Javax.Net.Ssl.SSLException
-    {
-        public SSLHandshakeException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.net.ssl.SSLHandshakeException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region SSLEngine
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html
-    /// </summary>
-    public partial class SSLEngine : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SSLEngine>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public SSLEngine() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public SSLEngine(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.net.ssl.SSLEngine";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region TrustManagerFactorySpi
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/TrustManagerFactorySpi.html
-    /// </summary>
-    public partial class TrustManagerFactorySpi : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TrustManagerFactorySpi>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public TrustManagerFactorySpi() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public TrustManagerFactorySpi(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.net.ssl.TrustManagerFactorySpi";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region CertPathTrustManagerParameters
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/CertPathTrustManagerParameters.html
-    /// </summary>
-    public partial class CertPathTrustManagerParameters : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CertPathTrustManagerParameters>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public CertPathTrustManagerParameters() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public CertPathTrustManagerParameters(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.net.ssl.CertPathTrustManagerParameters";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
     #region SSLContext
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLContext.html
@@ -282,39 +569,23 @@ namespace Javax.Net.Ssl
     }
     #endregion
 
-    #region SSLPeerUnverifiedException
+    #region X509ExtendedTrustManager
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLPeerUnverifiedException.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/X509ExtendedTrustManager.html
     /// </summary>
-    public partial class SSLPeerUnverifiedException : Javax.Net.Ssl.SSLException
-    {
-        public SSLPeerUnverifiedException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.net.ssl.SSLPeerUnverifiedException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region SSLServerSocket
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLServerSocket.html
-    /// </summary>
-    public partial class SSLServerSocket : Java.Net.ServerSocket
+    public partial class X509ExtendedTrustManager : MASES.JCOBridge.C2JBridge.JVMBridgeBase<X509ExtendedTrustManager>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public SSLServerSocket() { }
+        public X509ExtendedTrustManager() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public SSLServerSocket(params object[] args) : base(args) { }
+        public X509ExtendedTrustManager(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.net.ssl.SSLServerSocket";
+        public override string ClassName => "javax.net.ssl.X509ExtendedTrustManager";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -327,414 +598,6 @@ namespace Javax.Net.Ssl
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region SSLSessionBindingListener
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSessionBindingListener.html
-    /// </summary>
-    public partial class SSLSessionBindingListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
-    {
-#warning Remember to build the body class for event listener
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region SSLSessionBindingEvent
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSessionBindingEvent.html
-    /// </summary>
-    public partial class SSLSessionBindingEvent : Java.Util.EventObject
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public SSLSessionBindingEvent() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public SSLSessionBindingEvent(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.net.ssl.SSLSessionBindingEvent";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region SSLException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLException.html
-    /// </summary>
-    public partial class SSLException : Java.Io.IOException
-    {
-        public SSLException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.net.ssl.SSLException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region HandshakeCompletedListener
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HandshakeCompletedListener.html
-    /// </summary>
-    public partial class HandshakeCompletedListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
-    {
-#warning Remember to build the body class for event listener
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region TrustManager
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/TrustManager.html
-    /// </summary>
-    public partial class TrustManager : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TrustManager>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public TrustManager() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public TrustManager(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.net.ssl.TrustManager";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region X509KeyManager
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/X509KeyManager.html
-    /// </summary>
-    public partial class X509KeyManager : MASES.JCOBridge.C2JBridge.JVMBridgeBase<X509KeyManager>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public X509KeyManager() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public X509KeyManager(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.net.ssl.X509KeyManager";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region SNIServerName
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SNIServerName.html
-    /// </summary>
-    public partial class SNIServerName : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SNIServerName>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public SNIServerName() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public SNIServerName(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.net.ssl.SNIServerName";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region SSLPermission
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLPermission.html
-    /// </summary>
-    public partial class SSLPermission : Java.Security.BasicPermission
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public SSLPermission() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public SSLPermission(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.net.ssl.SSLPermission";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region X509TrustManager
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/X509TrustManager.html
-    /// </summary>
-    public partial class X509TrustManager : MASES.JCOBridge.C2JBridge.JVMBridgeBase<X509TrustManager>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public X509TrustManager() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public X509TrustManager(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.net.ssl.X509TrustManager";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region KeyManagerFactorySpi
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/KeyManagerFactorySpi.html
-    /// </summary>
-    public partial class KeyManagerFactorySpi : MASES.JCOBridge.C2JBridge.JVMBridgeBase<KeyManagerFactorySpi>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public KeyManagerFactorySpi() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public KeyManagerFactorySpi(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.net.ssl.KeyManagerFactorySpi";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region StandardConstants
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/StandardConstants.html
-    /// </summary>
-    public partial class StandardConstants : MASES.JCOBridge.C2JBridge.JVMBridgeBase<StandardConstants>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public StandardConstants() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public StandardConstants(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.net.ssl.StandardConstants";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region SNIHostName
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SNIHostName.html
-    /// </summary>
-    public partial class SNIHostName : Javax.Net.Ssl.SNIServerName
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public SNIHostName() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public SNIHostName(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.net.ssl.SNIHostName";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region SSLContextSpi
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLContextSpi.html
-    /// </summary>
-    public partial class SSLContextSpi : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SSLContextSpi>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public SSLContextSpi() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public SSLContextSpi(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.net.ssl.SSLContextSpi";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region SSLProtocolException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLProtocolException.html
-    /// </summary>
-    public partial class SSLProtocolException : Javax.Net.Ssl.SSLException
-    {
-        public SSLProtocolException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.net.ssl.SSLProtocolException";
 
         // TODO: complete the class
 
@@ -776,163 +639,39 @@ namespace Javax.Net.Ssl
     }
     #endregion
 
-    #region HostnameVerifier
+    #region SSLKeyException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HostnameVerifier.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLKeyException.html
     /// </summary>
-    public partial class HostnameVerifier : MASES.JCOBridge.C2JBridge.JVMBridgeBase<HostnameVerifier>
+    public partial class SSLKeyException : Javax.Net.Ssl.SSLException
     {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public HostnameVerifier() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public HostnameVerifier(params object[] args) : base(args) { }
+        public SSLKeyException() { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.net.ssl.HostnameVerifier";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
+        public override string ClassName => "javax.net.ssl.SSLKeyException";
 
         // TODO: complete the class
 
     }
     #endregion
 
-    #region SSLServerSocketFactory
+    #region SSLSocketFactory
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLServerSocketFactory.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSocketFactory.html
     /// </summary>
-    public partial class SSLServerSocketFactory : Javax.Net.ServerSocketFactory
+    public partial class SSLSocketFactory : Javax.Net.SocketFactory
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public SSLServerSocketFactory() { }
+        public SSLSocketFactory() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public SSLServerSocketFactory(params object[] args) : base(args) { }
+        public SSLSocketFactory(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.net.ssl.SSLServerSocketFactory";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region HttpsURLConnection
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HttpsURLConnection.html
-    /// </summary>
-    public partial class HttpsURLConnection : Java.Net.HttpURLConnection
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public HttpsURLConnection() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public HttpsURLConnection(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.net.ssl.HttpsURLConnection";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region KeyManagerFactory
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/KeyManagerFactory.html
-    /// </summary>
-    public partial class KeyManagerFactory : MASES.JCOBridge.C2JBridge.JVMBridgeBase<KeyManagerFactory>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public KeyManagerFactory() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public KeyManagerFactory(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.net.ssl.KeyManagerFactory";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region SNIMatcher
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SNIMatcher.html
-    /// </summary>
-    public partial class SNIMatcher : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SNIMatcher>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public SNIMatcher() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public SNIMatcher(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.net.ssl.SNIMatcher";
+        public override string ClassName => "javax.net.ssl.SSLSocketFactory";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -986,23 +725,23 @@ namespace Javax.Net.Ssl
     }
     #endregion
 
-    #region ManagerFactoryParameters
+    #region KeyManager
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/ManagerFactoryParameters.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/KeyManager.html
     /// </summary>
-    public partial class ManagerFactoryParameters : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ManagerFactoryParameters>
+    public partial class KeyManager : MASES.JCOBridge.C2JBridge.JVMBridgeBase<KeyManager>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ManagerFactoryParameters() { }
+        public KeyManager() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public ManagerFactoryParameters(params object[] args) : base(args) { }
+        public KeyManager(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.net.ssl.ManagerFactoryParameters";
+        public override string ClassName => "javax.net.ssl.KeyManager";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -1021,23 +760,58 @@ namespace Javax.Net.Ssl
     }
     #endregion
 
-    #region ExtendedSSLSession
+    #region TrustManager
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/ExtendedSSLSession.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/TrustManager.html
     /// </summary>
-    public partial class ExtendedSSLSession : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ExtendedSSLSession>
+    public partial class TrustManager : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TrustManager>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ExtendedSSLSession() { }
+        public TrustManager() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public ExtendedSSLSession(params object[] args) : base(args) { }
+        public TrustManager(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.net.ssl.ExtendedSSLSession";
+        public override string ClassName => "javax.net.ssl.TrustManager";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region SNIServerName
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SNIServerName.html
+    /// </summary>
+    public partial class SNIServerName : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SNIServerName>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public SNIServerName() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public SNIServerName(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.net.ssl.SNIServerName";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -1056,26 +830,112 @@ namespace Javax.Net.Ssl
     }
     #endregion
 
-    #region KeyStoreBuilderParameters
+    #region SSLEngine
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/KeyStoreBuilderParameters.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngine.html
     /// </summary>
-    public partial class KeyStoreBuilderParameters : MASES.JCOBridge.C2JBridge.JVMBridgeBase<KeyStoreBuilderParameters>
+    public partial class SSLEngine : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SSLEngine>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public KeyStoreBuilderParameters() { }
+        public SSLEngine() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public KeyStoreBuilderParameters(params object[] args) : base(args) { }
+        public SSLEngine(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.net.ssl.KeyStoreBuilderParameters";
+        public override string ClassName => "javax.net.ssl.SSLEngine";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region SNIHostName
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SNIHostName.html
+    /// </summary>
+    public partial class SNIHostName : Javax.Net.Ssl.SNIServerName
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public SNIHostName() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public SNIHostName(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.net.ssl.SNIHostName";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region SSLProtocolException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLProtocolException.html
+    /// </summary>
+    public partial class SSLProtocolException : Javax.Net.Ssl.SSLException
+    {
+        public SSLProtocolException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.net.ssl.SSLProtocolException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region TrustManagerFactorySpi
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/TrustManagerFactorySpi.html
+    /// </summary>
+    public partial class TrustManagerFactorySpi : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TrustManagerFactorySpi>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public TrustManagerFactorySpi() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public TrustManagerFactorySpi(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.net.ssl.TrustManagerFactorySpi";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
 
         /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
         public override bool IsCloseable => false;
@@ -1126,39 +986,23 @@ namespace Javax.Net.Ssl
     }
     #endregion
 
-    #region SSLKeyException
+    #region SSLPermission
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLKeyException.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLPermission.html
     /// </summary>
-    public partial class SSLKeyException : Javax.Net.Ssl.SSLException
-    {
-        public SSLKeyException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.net.ssl.SSLKeyException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region SSLParameters
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLParameters.html
-    /// </summary>
-    public partial class SSLParameters : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SSLParameters>
+    public partial class SSLPermission : Java.Security.BasicPermission
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public SSLParameters() { }
+        public SSLPermission() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public SSLParameters(params object[] args) : base(args) { }
+        public SSLPermission(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.net.ssl.SSLParameters";
+        public override string ClassName => "javax.net.ssl.SSLPermission";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -1177,23 +1021,23 @@ namespace Javax.Net.Ssl
     }
     #endregion
 
-    #region SSLSocketFactory
+    #region SSLServerSocketFactory
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSocketFactory.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLServerSocketFactory.html
     /// </summary>
-    public partial class SSLSocketFactory : Javax.Net.SocketFactory
+    public partial class SSLServerSocketFactory : Javax.Net.ServerSocketFactory
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public SSLSocketFactory() { }
+        public SSLServerSocketFactory() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public SSLSocketFactory(params object[] args) : base(args) { }
+        public SSLServerSocketFactory(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.net.ssl.SSLSocketFactory";
+        public override string ClassName => "javax.net.ssl.SSLServerSocketFactory";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -1212,23 +1056,23 @@ namespace Javax.Net.Ssl
     }
     #endregion
 
-    #region X509ExtendedTrustManager
+    #region SNIMatcher
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/X509ExtendedTrustManager.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SNIMatcher.html
     /// </summary>
-    public partial class X509ExtendedTrustManager : MASES.JCOBridge.C2JBridge.JVMBridgeBase<X509ExtendedTrustManager>
+    public partial class SNIMatcher : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SNIMatcher>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public X509ExtendedTrustManager() { }
+        public SNIMatcher() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public X509ExtendedTrustManager(params object[] args) : base(args) { }
+        public SNIMatcher(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.net.ssl.X509ExtendedTrustManager";
+        public override string ClassName => "javax.net.ssl.SNIMatcher";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -1247,23 +1091,23 @@ namespace Javax.Net.Ssl
     }
     #endregion
 
-    #region KeyManager
+    #region SSLContextSpi
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/KeyManager.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLContextSpi.html
     /// </summary>
-    public partial class KeyManager : MASES.JCOBridge.C2JBridge.JVMBridgeBase<KeyManager>
+    public partial class SSLContextSpi : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SSLContextSpi>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public KeyManager() { }
+        public SSLContextSpi() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public KeyManager(params object[] args) : base(args) { }
+        public SSLContextSpi(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.net.ssl.KeyManager";
+        public override string ClassName => "javax.net.ssl.SSLContextSpi";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -1272,7 +1116,163 @@ namespace Javax.Net.Ssl
         public override bool IsCloseable => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region SSLServerSocket
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLServerSocket.html
+    /// </summary>
+    public partial class SSLServerSocket : Java.Net.ServerSocket
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public SSLServerSocket() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public SSLServerSocket(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.net.ssl.SSLServerSocket";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region HttpsURLConnection
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HttpsURLConnection.html
+    /// </summary>
+    public partial class HttpsURLConnection : Java.Net.HttpURLConnection
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public HttpsURLConnection() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public HttpsURLConnection(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.net.ssl.HttpsURLConnection";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region SSLException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLException.html
+    /// </summary>
+    public partial class SSLException : Java.Io.IOException
+    {
+        public SSLException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.net.ssl.SSLException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region StandardConstants
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/StandardConstants.html
+    /// </summary>
+    public partial class StandardConstants : MASES.JCOBridge.C2JBridge.JVMBridgeBase<StandardConstants>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public StandardConstants() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public StandardConstants(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.net.ssl.StandardConstants";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region CertPathTrustManagerParameters
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/CertPathTrustManagerParameters.html
+    /// </summary>
+    public partial class CertPathTrustManagerParameters : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CertPathTrustManagerParameters>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public CertPathTrustManagerParameters() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public CertPathTrustManagerParameters(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.net.ssl.CertPathTrustManagerParameters";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;
@@ -1317,32 +1317,32 @@ namespace Javax.Net.Ssl
     }
     #endregion
 
-    #region SSLSession
+    #region SSLSessionBindingEvent
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSession.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLSessionBindingEvent.html
     /// </summary>
-    public partial class SSLSession : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SSLSession>
+    public partial class SSLSessionBindingEvent : Java.Util.EventObject
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public SSLSession() { }
+        public SSLSessionBindingEvent() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public SSLSession(params object[] args) : base(args) { }
+        public SSLSessionBindingEvent(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.net.ssl.SSLSession";
+        public override string ClassName => "javax.net.ssl.SSLSessionBindingEvent";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
+        public override bool IsAbstract => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
         public override bool IsCloseable => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
+        public override bool IsInterface => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;
@@ -1352,26 +1352,26 @@ namespace Javax.Net.Ssl
     }
     #endregion
 
-    #region HandshakeCompletedEvent
+    #region KeyManagerFactorySpi
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/HandshakeCompletedEvent.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/KeyManagerFactorySpi.html
     /// </summary>
-    public partial class HandshakeCompletedEvent : Java.Util.EventObject
+    public partial class KeyManagerFactorySpi : MASES.JCOBridge.C2JBridge.JVMBridgeBase<KeyManagerFactorySpi>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public HandshakeCompletedEvent() { }
+        public KeyManagerFactorySpi() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public HandshakeCompletedEvent(params object[] args) : base(args) { }
+        public KeyManagerFactorySpi(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.net.ssl.HandshakeCompletedEvent";
+        public override string ClassName => "javax.net.ssl.KeyManagerFactorySpi";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
+        public override bool IsAbstract => true;
 
         /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
         public override bool IsCloseable => false;

@@ -93,6 +93,22 @@ namespace Java.Util.Jar
     }
     #endregion
 
+    #region JarException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarException.html
+    /// </summary>
+    public partial class JarException : Java.Util.Zip.ZipException
+    {
+        public JarException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.util.jar.JarException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region Attributes
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.html
@@ -261,22 +277,6 @@ namespace Java.Util.Jar
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region JarException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarException.html
-    /// </summary>
-    public partial class JarException : Java.Util.Zip.ZipException
-    {
-        public JarException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.util.jar.JarException";
 
         // TODO: complete the class
 

@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing
 {
     #region DefaultListCellRenderer
@@ -31,7 +33,8 @@ namespace Javax.Swing
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Io.Serializable(Javax.Swing.DefaultListCellRenderer t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields
@@ -55,7 +58,8 @@ namespace Javax.Swing
             #endregion
 
             #region Class/Interface conversion operators
-
+            public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.DefaultListCellRenderer.UIResource t) => t.Cast<Javax.Swing.Plaf.UIResource>();
+            
             #endregion
 
             #region Fields

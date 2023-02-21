@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Beans
 {
     #region PropertyEditorSupport
@@ -38,7 +40,8 @@ namespace Java.Beans
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Beans.PropertyEditor(Java.Beans.PropertyEditorSupport t) => t.Cast<Java.Beans.PropertyEditor>();
+        
         #endregion
 
         #region Fields

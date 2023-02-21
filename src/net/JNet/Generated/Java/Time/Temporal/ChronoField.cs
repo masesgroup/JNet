@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Time.Temporal
 {
     #region ChronoField
@@ -31,7 +33,8 @@ namespace Java.Time.Temporal
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Time.Temporal.TemporalField(Java.Time.Temporal.ChronoField t) => t.Cast<Java.Time.Temporal.TemporalField>();
+        
         #endregion
 
         #region Fields

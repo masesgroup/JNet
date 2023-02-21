@@ -21,12 +21,21 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Io
 {
     #region OutputStreamWriter
     public partial class OutputStreamWriter
     {
         #region Constructors
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/OutputStreamWriter.html#<init>(java.io.OutputStream,java.lang.String) throws java.io.UnsupportedEncodingException
+        /// </summary>
+        public OutputStreamWriter(Java.Io.OutputStream arg0, string arg1)
+            : base(arg0, arg1)
+        {
+        }
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/OutputStreamWriter.html#<init>(java.io.OutputStream,java.nio.charset.CharsetEncoder)
         /// </summary>
@@ -46,13 +55,6 @@ namespace Java.Io
         /// </summary>
         public OutputStreamWriter(Java.Io.OutputStream arg0)
             : base(arg0)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/OutputStreamWriter.html#<init>(java.io.OutputStream,java.lang.String) throws java.io.UnsupportedEncodingException
-        /// </summary>
-        public OutputStreamWriter(Java.Io.OutputStream arg0, string arg1)
-            : base(arg0, arg1)
         {
         }
         

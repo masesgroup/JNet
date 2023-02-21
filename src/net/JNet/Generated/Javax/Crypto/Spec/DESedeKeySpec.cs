@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Crypto.Spec
 {
     #region DESedeKeySpec
@@ -45,7 +47,8 @@ namespace Javax.Crypto.Spec
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Security.Spec.KeySpec(Javax.Crypto.Spec.DESedeKeySpec t) => t.Cast<Java.Security.Spec.KeySpec>();
+        
         #endregion
 
         #region Fields

@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing
 {
     #region AbstractButton
@@ -31,7 +33,9 @@ namespace Javax.Swing
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Awt.ItemSelectable(Javax.Swing.AbstractButton t) => t.Cast<Java.Awt.ItemSelectable>();
+        public static implicit operator Javax.Swing.SwingConstants(Javax.Swing.AbstractButton t) => t.Cast<Javax.Swing.SwingConstants>();
+        
         #endregion
 
         #region Fields

@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing.Table
 {
     #region TableColumn
@@ -52,7 +54,8 @@ namespace Javax.Swing.Table
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Io.Serializable(Javax.Swing.Table.TableColumn t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields

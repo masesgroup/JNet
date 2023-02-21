@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Print.Attribute.Standard
 {
     #region DocumentName
@@ -38,7 +40,8 @@ namespace Javax.Print.Attribute.Standard
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Print.Attribute.DocAttribute(Javax.Print.Attribute.Standard.DocumentName t) => t.Cast<Javax.Print.Attribute.DocAttribute>();
+        
         #endregion
 
         #region Fields

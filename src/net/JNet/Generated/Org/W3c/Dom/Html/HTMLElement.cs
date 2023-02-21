@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Org.W3c.Dom.Html
 {
     #region HTMLElement
@@ -31,7 +33,8 @@ namespace Org.W3c.Dom.Html
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Org.W3c.Dom.Element(Org.W3c.Dom.Html.HTMLElement t) => t.Cast<Org.W3c.Dom.Element>();
+        
         #endregion
 
         #region Fields

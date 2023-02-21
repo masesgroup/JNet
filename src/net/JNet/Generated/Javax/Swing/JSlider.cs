@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing
 {
     #region JSlider
@@ -28,10 +30,10 @@ namespace Javax.Swing
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSlider.html#<init>(javax.swing.BoundedRangeModel)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSlider.html#<init>(int,int,int,int)
         /// </summary>
-        public JSlider(Javax.Swing.BoundedRangeModel arg0)
-            : base(arg0)
+        public JSlider(int arg0, int arg1, int arg2, int arg3)
+            : base(arg0, arg1, arg2, arg3)
         {
         }
         /// <summary>
@@ -49,24 +51,26 @@ namespace Javax.Swing
         {
         }
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSlider.html#<init>(javax.swing.BoundedRangeModel)
+        /// </summary>
+        public JSlider(Javax.Swing.BoundedRangeModel arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSlider.html#<init>(int)
         /// </summary>
         public JSlider(int arg0)
             : base(arg0)
         {
         }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSlider.html#<init>(int,int,int,int)
-        /// </summary>
-        public JSlider(int arg0, int arg1, int arg2, int arg3)
-            : base(arg0, arg1, arg2, arg3)
-        {
-        }
         
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Swing.SwingConstants(Javax.Swing.JSlider t) => t.Cast<Javax.Swing.SwingConstants>();
+        public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.JSlider t) => t.Cast<Javax.Accessibility.Accessible>();
+        
         #endregion
 
         #region Fields

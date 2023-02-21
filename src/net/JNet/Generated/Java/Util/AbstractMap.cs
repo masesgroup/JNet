@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Util
 {
     #region AbstractMap
@@ -118,7 +120,8 @@ namespace Java.Util
             #endregion
 
             #region Class/Interface conversion operators
-
+            public static implicit operator Java.Io.Serializable(Java.Util.AbstractMap.SimpleImmutableEntry t) => t.Cast<Java.Io.Serializable>();
+            
             #endregion
 
             #region Fields
@@ -173,7 +176,8 @@ namespace Java.Util
             #endregion
 
             #region Class/Interface conversion operators
-
+            public static implicit operator Java.Io.Serializable(Java.Util.AbstractMap.SimpleEntry t) => t.Cast<Java.Io.Serializable>();
+            
             #endregion
 
             #region Fields

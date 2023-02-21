@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing.Table
 {
     #region TableCellEditor
@@ -31,7 +33,8 @@ namespace Javax.Swing.Table
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Swing.CellEditor(Javax.Swing.Table.TableCellEditor t) => t.Cast<Javax.Swing.CellEditor>();
+        
         #endregion
 
         #region Fields

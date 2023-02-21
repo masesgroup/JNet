@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Management.Modelmbean
 {
     #region ModelMBeanInfoSupport
@@ -52,7 +54,8 @@ namespace Javax.Management.Modelmbean
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Management.Modelmbean.ModelMBeanInfo(Javax.Management.Modelmbean.ModelMBeanInfoSupport t) => t.Cast<Javax.Management.Modelmbean.ModelMBeanInfo>();
+        
         #endregion
 
         #region Fields

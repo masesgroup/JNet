@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Time.Chrono
 {
     #region HijrahChronology
@@ -31,7 +33,8 @@ namespace Java.Time.Chrono
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Io.Serializable(Java.Time.Chrono.HijrahChronology t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields

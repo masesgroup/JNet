@@ -58,67 +58,32 @@ namespace Javax.Script
     }
     #endregion
 
-    #region Invocable
+    #region SimpleScriptContext
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/Invocable.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/SimpleScriptContext.html
     /// </summary>
-    public partial class Invocable : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Invocable>
+    public partial class SimpleScriptContext : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SimpleScriptContext>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public Invocable() { }
+        public SimpleScriptContext() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public Invocable(params object[] args) : base(args) { }
+        public SimpleScriptContext(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.script.Invocable";
+        public override string ClassName => "javax.script.SimpleScriptContext";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
+        public override bool IsAbstract => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
         public override bool IsCloseable => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region ScriptEngineFactory
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html
-    /// </summary>
-    public partial class ScriptEngineFactory : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ScriptEngineFactory>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public ScriptEngineFactory() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public ScriptEngineFactory(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.script.ScriptEngineFactory";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
+        public override bool IsInterface => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;
@@ -154,41 +119,6 @@ namespace Javax.Script
 
         /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
         public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region SimpleBindings
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/SimpleBindings.html
-    /// </summary>
-    public partial class SimpleBindings : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SimpleBindings>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public SimpleBindings() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public SimpleBindings(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.script.SimpleBindings";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;
@@ -284,6 +214,76 @@ namespace Javax.Script
     }
     #endregion
 
+    #region ScriptEngineManager
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineManager.html
+    /// </summary>
+    public partial class ScriptEngineManager : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ScriptEngineManager>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public ScriptEngineManager() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public ScriptEngineManager(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.script.ScriptEngineManager";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region ScriptEngineFactory
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html
+    /// </summary>
+    public partial class ScriptEngineFactory : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ScriptEngineFactory>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public ScriptEngineFactory() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public ScriptEngineFactory(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.script.ScriptEngineFactory";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region Compilable
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/Compilable.html
@@ -319,23 +319,23 @@ namespace Javax.Script
     }
     #endregion
 
-    #region SimpleScriptContext
+    #region SimpleBindings
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/SimpleScriptContext.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/SimpleBindings.html
     /// </summary>
-    public partial class SimpleScriptContext : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SimpleScriptContext>
+    public partial class SimpleBindings : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SimpleBindings>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public SimpleScriptContext() { }
+        public SimpleBindings() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public SimpleScriptContext(params object[] args) : base(args) { }
+        public SimpleBindings(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.script.SimpleScriptContext";
+        public override string ClassName => "javax.script.SimpleBindings";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -389,32 +389,32 @@ namespace Javax.Script
     }
     #endregion
 
-    #region ScriptEngineManager
+    #region Invocable
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineManager.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/Invocable.html
     /// </summary>
-    public partial class ScriptEngineManager : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ScriptEngineManager>
+    public partial class Invocable : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Invocable>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ScriptEngineManager() { }
+        public Invocable() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public ScriptEngineManager(params object[] args) : base(args) { }
+        public Invocable(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.script.ScriptEngineManager";
+        public override string ClassName => "javax.script.Invocable";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
+        public override bool IsAbstract => true;
 
         /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
         public override bool IsCloseable => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
+        public override bool IsInterface => true;
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;

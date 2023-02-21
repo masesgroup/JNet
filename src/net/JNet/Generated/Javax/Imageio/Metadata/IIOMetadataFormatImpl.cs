@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Imageio.Metadata
 {
     #region IIOMetadataFormatImpl
@@ -45,7 +47,8 @@ namespace Javax.Imageio.Metadata
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Imageio.Metadata.IIOMetadataFormat(Javax.Imageio.Metadata.IIOMetadataFormatImpl t) => t.Cast<Javax.Imageio.Metadata.IIOMetadataFormat>();
+        
         #endregion
 
         #region Fields

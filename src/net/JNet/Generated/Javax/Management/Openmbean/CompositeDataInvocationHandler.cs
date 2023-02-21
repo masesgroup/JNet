@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Management.Openmbean
 {
     #region CompositeDataInvocationHandler
@@ -38,7 +40,8 @@ namespace Javax.Management.Openmbean
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Lang.Reflect.InvocationHandler(Javax.Management.Openmbean.CompositeDataInvocationHandler t) => t.Cast<Java.Lang.Reflect.InvocationHandler>();
+        
         #endregion
 
         #region Fields

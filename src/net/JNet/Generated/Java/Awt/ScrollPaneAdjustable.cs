@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Awt
 {
     #region ScrollPaneAdjustable
@@ -31,7 +33,9 @@ namespace Java.Awt
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Awt.Adjustable(Java.Awt.ScrollPaneAdjustable t) => t.Cast<Java.Awt.Adjustable>();
+        public static implicit operator Java.Io.Serializable(Java.Awt.ScrollPaneAdjustable t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields

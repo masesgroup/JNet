@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Awt.ImageNs.Renderable
 {
     #region ContextualRenderedImageFactory
@@ -31,7 +33,8 @@ namespace Java.Awt.ImageNs.Renderable
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Awt.ImageNs.Renderable.RenderedImageFactory(Java.Awt.ImageNs.Renderable.ContextualRenderedImageFactory t) => t.Cast<Java.Awt.ImageNs.Renderable.RenderedImageFactory>();
+        
         #endregion
 
         #region Fields

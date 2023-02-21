@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Sound.Sampled
 {
     #region Line
@@ -31,7 +33,8 @@ namespace Javax.Sound.Sampled
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Lang.AutoCloseable(Javax.Sound.Sampled.Line t) => t.Cast<Java.Lang.AutoCloseable>();
+        
         #endregion
 
         #region Fields

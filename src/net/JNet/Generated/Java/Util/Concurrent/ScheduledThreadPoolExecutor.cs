@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Util.Concurrent
 {
     #region ScheduledThreadPoolExecutor
@@ -28,10 +30,10 @@ namespace Java.Util.Concurrent
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ScheduledThreadPoolExecutor.html#<init>(int,java.util.concurrent.ThreadFactory)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ScheduledThreadPoolExecutor.html#<init>(int)
         /// </summary>
-        public ScheduledThreadPoolExecutor(int arg0, Java.Util.Concurrent.ThreadFactory arg1)
-            : base(arg0, arg1)
+        public ScheduledThreadPoolExecutor(int arg0)
+            : base(arg0)
         {
         }
         /// <summary>
@@ -49,17 +51,18 @@ namespace Java.Util.Concurrent
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ScheduledThreadPoolExecutor.html#<init>(int)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ScheduledThreadPoolExecutor.html#<init>(int,java.util.concurrent.ThreadFactory)
         /// </summary>
-        public ScheduledThreadPoolExecutor(int arg0)
-            : base(arg0)
+        public ScheduledThreadPoolExecutor(int arg0, Java.Util.Concurrent.ThreadFactory arg1)
+            : base(arg0, arg1)
         {
         }
         
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Util.Concurrent.ScheduledExecutorService(Java.Util.Concurrent.ScheduledThreadPoolExecutor t) => t.Cast<Java.Util.Concurrent.ScheduledExecutorService>();
+        
         #endregion
 
         #region Fields

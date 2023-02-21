@@ -23,26 +23,236 @@
 
 namespace Javax.Management.Remote
 {
-    #region JMXConnectorServer
+    #region JMXConnectorServerProvider
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServer.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServerProvider.html
     /// </summary>
-    public partial class JMXConnectorServer : Javax.Management.NotificationBroadcasterSupport
+    public partial class JMXConnectorServerProvider : MASES.JCOBridge.C2JBridge.JVMBridgeBase<JMXConnectorServerProvider>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public JMXConnectorServer() { }
+        public JMXConnectorServerProvider() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public JMXConnectorServer(params object[] args) : base(args) { }
+        public JMXConnectorServerProvider(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.management.remote.JMXConnectorServer";
+        public override string ClassName => "javax.management.remote.JMXConnectorServerProvider";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region NotificationResult
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/NotificationResult.html
+    /// </summary>
+    public partial class NotificationResult : MASES.JCOBridge.C2JBridge.JVMBridgeBase<NotificationResult>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public NotificationResult() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public NotificationResult(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.management.remote.NotificationResult";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region JMXServiceURL
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXServiceURL.html
+    /// </summary>
+    public partial class JMXServiceURL : MASES.JCOBridge.C2JBridge.JVMBridgeBase<JMXServiceURL>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public JMXServiceURL() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public JMXServiceURL(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.management.remote.JMXServiceURL";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region JMXConnectorProvider
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorProvider.html
+    /// </summary>
+    public partial class JMXConnectorProvider : MASES.JCOBridge.C2JBridge.JVMBridgeBase<JMXConnectorProvider>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public JMXConnectorProvider() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public JMXConnectorProvider(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.management.remote.JMXConnectorProvider";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region JMXConnectorFactory
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorFactory.html
+    /// </summary>
+    public partial class JMXConnectorFactory : MASES.JCOBridge.C2JBridge.JVMBridgeBase<JMXConnectorFactory>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public JMXConnectorFactory() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public JMXConnectorFactory(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.management.remote.JMXConnectorFactory";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region MBeanServerForwarder
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/MBeanServerForwarder.html
+    /// </summary>
+    public partial class MBeanServerForwarder : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MBeanServerForwarder>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public MBeanServerForwarder() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public MBeanServerForwarder(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.management.remote.MBeanServerForwarder";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region JMXConnectorServerFactory
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServerFactory.html
+    /// </summary>
+    public partial class JMXConnectorServerFactory : MASES.JCOBridge.C2JBridge.JVMBridgeBase<JMXConnectorServerFactory>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public JMXConnectorServerFactory() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public JMXConnectorServerFactory(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.management.remote.JMXConnectorServerFactory";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
         public override bool IsCloseable => false;
@@ -109,35 +319,16 @@ namespace Javax.Management.Remote
     }
     #endregion
 
-    #region JMXConnectionNotification
+    #region JMXProviderException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectionNotification.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXProviderException.html
     /// </summary>
-    public partial class JMXConnectionNotification : Javax.Management.Notification
+    public partial class JMXProviderException : Java.Io.IOException
     {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public JMXConnectionNotification() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public JMXConnectionNotification(params object[] args) : base(args) { }
+        public JMXProviderException() { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.management.remote.JMXConnectionNotification";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
+        public override string ClassName => "javax.management.remote.JMXProviderException";
 
         // TODO: complete the class
 
@@ -179,23 +370,23 @@ namespace Javax.Management.Remote
     }
     #endregion
 
-    #region JMXConnectorFactory
+    #region TargetedNotification
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorFactory.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/TargetedNotification.html
     /// </summary>
-    public partial class JMXConnectorFactory : MASES.JCOBridge.C2JBridge.JVMBridgeBase<JMXConnectorFactory>
+    public partial class TargetedNotification : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TargetedNotification>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public JMXConnectorFactory() { }
+        public TargetedNotification() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public JMXConnectorFactory(params object[] args) : base(args) { }
+        public TargetedNotification(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.management.remote.JMXConnectorFactory";
+        public override string ClassName => "javax.management.remote.TargetedNotification";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -214,96 +405,26 @@ namespace Javax.Management.Remote
     }
     #endregion
 
-    #region JMXAuthenticator
+    #region JMXConnectorServer
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXAuthenticator.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServer.html
     /// </summary>
-    public partial class JMXAuthenticator : MASES.JCOBridge.C2JBridge.JVMBridgeBase<JMXAuthenticator>
+    public partial class JMXConnectorServer : Javax.Management.NotificationBroadcasterSupport
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public JMXAuthenticator() { }
+        public JMXConnectorServer() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public JMXAuthenticator(params object[] args) : base(args) { }
+        public JMXConnectorServer(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.management.remote.JMXAuthenticator";
+        public override string ClassName => "javax.management.remote.JMXConnectorServer";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region JMXConnectorServerFactory
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServerFactory.html
-    /// </summary>
-    public partial class JMXConnectorServerFactory : MASES.JCOBridge.C2JBridge.JVMBridgeBase<JMXConnectorServerFactory>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public JMXConnectorServerFactory() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public JMXConnectorServerFactory(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.management.remote.JMXConnectorServerFactory";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region JMXServiceURL
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXServiceURL.html
-    /// </summary>
-    public partial class JMXServiceURL : MASES.JCOBridge.C2JBridge.JVMBridgeBase<JMXServiceURL>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public JMXServiceURL() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public JMXServiceURL(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.management.remote.JMXServiceURL";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
         public override bool IsCloseable => false;
@@ -336,111 +457,6 @@ namespace Javax.Management.Remote
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "javax.management.remote.JMXAddressable";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region NotificationResult
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/NotificationResult.html
-    /// </summary>
-    public partial class NotificationResult : MASES.JCOBridge.C2JBridge.JVMBridgeBase<NotificationResult>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public NotificationResult() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public NotificationResult(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.management.remote.NotificationResult";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region MBeanServerForwarder
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/MBeanServerForwarder.html
-    /// </summary>
-    public partial class MBeanServerForwarder : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MBeanServerForwarder>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public MBeanServerForwarder() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public MBeanServerForwarder(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.management.remote.MBeanServerForwarder";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region JMXConnectorServerMBean
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServerMBean.html
-    /// </summary>
-    public partial class JMXConnectorServerMBean : MASES.JCOBridge.C2JBridge.JVMBridgeBase<JMXConnectorServerMBean>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public JMXConnectorServerMBean() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public JMXConnectorServerMBean(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.management.remote.JMXConnectorServerMBean";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -494,23 +510,23 @@ namespace Javax.Management.Remote
     }
     #endregion
 
-    #region JMXConnectorServerProvider
+    #region JMXConnectorServerMBean
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServerProvider.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServerMBean.html
     /// </summary>
-    public partial class JMXConnectorServerProvider : MASES.JCOBridge.C2JBridge.JVMBridgeBase<JMXConnectorServerProvider>
+    public partial class JMXConnectorServerMBean : MASES.JCOBridge.C2JBridge.JVMBridgeBase<JMXConnectorServerMBean>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public JMXConnectorServerProvider() { }
+        public JMXConnectorServerMBean() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public JMXConnectorServerProvider(params object[] args) : base(args) { }
+        public JMXConnectorServerMBean(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.management.remote.JMXConnectorServerProvider";
+        public override string ClassName => "javax.management.remote.JMXConnectorServerMBean";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -529,23 +545,23 @@ namespace Javax.Management.Remote
     }
     #endregion
 
-    #region JMXConnectorProvider
+    #region JMXAuthenticator
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorProvider.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXAuthenticator.html
     /// </summary>
-    public partial class JMXConnectorProvider : MASES.JCOBridge.C2JBridge.JVMBridgeBase<JMXConnectorProvider>
+    public partial class JMXAuthenticator : MASES.JCOBridge.C2JBridge.JVMBridgeBase<JMXAuthenticator>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public JMXConnectorProvider() { }
+        public JMXAuthenticator() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public JMXConnectorProvider(params object[] args) : base(args) { }
+        public JMXAuthenticator(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.management.remote.JMXConnectorProvider";
+        public override string ClassName => "javax.management.remote.JMXAuthenticator";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -564,39 +580,23 @@ namespace Javax.Management.Remote
     }
     #endregion
 
-    #region JMXProviderException
+    #region JMXConnectionNotification
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXProviderException.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectionNotification.html
     /// </summary>
-    public partial class JMXProviderException : Java.Io.IOException
-    {
-        public JMXProviderException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.management.remote.JMXProviderException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region TargetedNotification
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/TargetedNotification.html
-    /// </summary>
-    public partial class TargetedNotification : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TargetedNotification>
+    public partial class JMXConnectionNotification : Javax.Management.Notification
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public TargetedNotification() { }
+        public JMXConnectionNotification() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public TargetedNotification(params object[] args) : base(args) { }
+        public JMXConnectionNotification(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.management.remote.TargetedNotification";
+        public override string ClassName => "javax.management.remote.JMXConnectionNotification";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;

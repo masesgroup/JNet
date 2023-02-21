@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Management.Loading
 {
     #region MLet
@@ -73,7 +75,10 @@ namespace Javax.Management.Loading
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Management.Loading.MLetMBean(Javax.Management.Loading.MLet t) => t.Cast<Javax.Management.Loading.MLetMBean>();
+        public static implicit operator Javax.Management.MBeanRegistration(Javax.Management.Loading.MLet t) => t.Cast<Javax.Management.MBeanRegistration>();
+        public static implicit operator Java.Io.Externalizable(Javax.Management.Loading.MLet t) => t.Cast<Java.Io.Externalizable>();
+        
         #endregion
 
         #region Fields

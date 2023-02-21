@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Naming.Ldap
 {
     #region InitialLdapContext
@@ -31,7 +33,8 @@ namespace Javax.Naming.Ldap
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Naming.Ldap.LdapContext(Javax.Naming.Ldap.InitialLdapContext t) => t.Cast<Javax.Naming.Ldap.LdapContext>();
+        
         #endregion
 
         #region Fields

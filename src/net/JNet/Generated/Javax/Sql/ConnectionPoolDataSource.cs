@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Sql
 {
     #region ConnectionPoolDataSource
@@ -31,7 +33,8 @@ namespace Javax.Sql
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Sql.CommonDataSource(Javax.Sql.ConnectionPoolDataSource t) => t.Cast<Javax.Sql.CommonDataSource>();
+        
         #endregion
 
         #region Fields

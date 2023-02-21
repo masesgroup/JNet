@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Nio.Channels
 {
     #region DatagramChannel
@@ -31,7 +33,11 @@ namespace Java.Nio.Channels
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Nio.Channels.ByteChannel(Java.Nio.Channels.DatagramChannel t) => t.Cast<Java.Nio.Channels.ByteChannel>();
+        public static implicit operator Java.Nio.Channels.ScatteringByteChannel(Java.Nio.Channels.DatagramChannel t) => t.Cast<Java.Nio.Channels.ScatteringByteChannel>();
+        public static implicit operator Java.Nio.Channels.GatheringByteChannel(Java.Nio.Channels.DatagramChannel t) => t.Cast<Java.Nio.Channels.GatheringByteChannel>();
+        public static implicit operator Java.Nio.Channels.MulticastChannel(Java.Nio.Channels.DatagramChannel t) => t.Cast<Java.Nio.Channels.MulticastChannel>();
+        
         #endregion
 
         #region Fields

@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Awt
 {
     #region Frame
@@ -52,7 +54,8 @@ namespace Java.Awt
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Awt.MenuContainer(Java.Awt.Frame t) => t.Cast<Java.Awt.MenuContainer>();
+        
         #endregion
 
         #region Fields

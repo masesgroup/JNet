@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Awt
 {
     #region Color
@@ -80,7 +82,9 @@ namespace Java.Awt
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Awt.Paint(Java.Awt.Color t) => t.Cast<Java.Awt.Paint>();
+        public static implicit operator Java.Io.Serializable(Java.Awt.Color t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields

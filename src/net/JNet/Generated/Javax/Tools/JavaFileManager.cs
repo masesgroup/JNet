@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Tools
 {
     #region JavaFileManager
@@ -31,7 +33,10 @@ namespace Javax.Tools
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Io.Closeable(Javax.Tools.JavaFileManager t) => t.Cast<Java.Io.Closeable>();
+        public static implicit operator Java.Io.Flushable(Javax.Tools.JavaFileManager t) => t.Cast<Java.Io.Flushable>();
+        public static implicit operator Javax.Tools.OptionChecker(Javax.Tools.JavaFileManager t) => t.Cast<Javax.Tools.OptionChecker>();
+        
         #endregion
 
         #region Fields

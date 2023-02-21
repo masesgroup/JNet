@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Awt.ColorNs
 {
     #region ColorSpace
@@ -31,7 +33,8 @@ namespace Java.Awt.ColorNs
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Io.Serializable(Java.Awt.ColorNs.ColorSpace t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields

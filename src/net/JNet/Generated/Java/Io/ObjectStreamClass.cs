@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Io
 {
     #region ObjectStreamClass
@@ -31,7 +33,8 @@ namespace Java.Io
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Io.Serializable(Java.Io.ObjectStreamClass t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields

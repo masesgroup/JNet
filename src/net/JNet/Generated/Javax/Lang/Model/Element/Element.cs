@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Lang.Model.Element
 {
     #region Element
@@ -31,7 +33,8 @@ namespace Javax.Lang.Model.Element
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Lang.Model.AnnotatedConstruct(Javax.Lang.Model.Element.Element t) => t.Cast<Javax.Lang.Model.AnnotatedConstruct>();
+        
         #endregion
 
         #region Fields

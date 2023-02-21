@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Io
 {
     #region RandomAccessFile
@@ -28,16 +30,16 @@ namespace Java.Io
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#<init>(java.io.File,java.lang.String) throws java.io.FileNotFoundException
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#<init>(java.lang.String,java.lang.String) throws java.io.FileNotFoundException
         /// </summary>
-        public RandomAccessFile(Java.Io.File arg0, string arg1)
+        public RandomAccessFile(string arg0, string arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#<init>(java.lang.String,java.lang.String) throws java.io.FileNotFoundException
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#<init>(java.io.File,java.lang.String) throws java.io.FileNotFoundException
         /// </summary>
-        public RandomAccessFile(string arg0, string arg1)
+        public RandomAccessFile(Java.Io.File arg0, string arg1)
             : base(arg0, arg1)
         {
         }
@@ -45,7 +47,10 @@ namespace Java.Io
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Io.DataOutput(Java.Io.RandomAccessFile t) => t.Cast<Java.Io.DataOutput>();
+        public static implicit operator Java.Io.DataInput(Java.Io.RandomAccessFile t) => t.Cast<Java.Io.DataInput>();
+        public static implicit operator Java.Io.Closeable(Java.Io.RandomAccessFile t) => t.Cast<Java.Io.Closeable>();
+        
         #endregion
 
         #region Fields

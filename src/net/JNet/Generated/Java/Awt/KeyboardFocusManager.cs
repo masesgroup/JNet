@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Awt
 {
     #region KeyboardFocusManager
@@ -31,7 +33,9 @@ namespace Java.Awt
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Awt.KeyEventDispatcher(Java.Awt.KeyboardFocusManager t) => t.Cast<Java.Awt.KeyEventDispatcher>();
+        public static implicit operator Java.Awt.KeyEventPostProcessor(Java.Awt.KeyboardFocusManager t) => t.Cast<Java.Awt.KeyEventPostProcessor>();
+        
         #endregion
 
         #region Fields

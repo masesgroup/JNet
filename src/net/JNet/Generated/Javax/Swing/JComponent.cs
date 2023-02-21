@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing
 {
     #region JComponent
@@ -31,7 +33,8 @@ namespace Javax.Swing
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Io.Serializable(Javax.Swing.JComponent t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields
@@ -488,7 +491,8 @@ namespace Javax.Swing
             #endregion
 
             #region Class/Interface conversion operators
-
+            public static implicit operator Javax.Accessibility.AccessibleExtendedComponent(Javax.Swing.JComponent.AccessibleJComponent t) => t.Cast<Javax.Accessibility.AccessibleExtendedComponent>();
+            
             #endregion
 
             #region Fields

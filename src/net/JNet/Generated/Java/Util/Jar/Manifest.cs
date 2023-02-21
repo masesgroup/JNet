@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Util.Jar
 {
     #region Manifest
@@ -45,7 +47,8 @@ namespace Java.Util.Jar
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Lang.Cloneable(Java.Util.Jar.Manifest t) => t.Cast<Java.Lang.Cloneable>();
+        
         #endregion
 
         #region Fields

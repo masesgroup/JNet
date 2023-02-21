@@ -23,23 +23,58 @@
 
 namespace Org.W3c.Dom.Traversal
 {
-    #region NodeIterator
+    #region DocumentTraversal
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeIterator.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/DocumentTraversal.html
     /// </summary>
-    public partial class NodeIterator : MASES.JCOBridge.C2JBridge.JVMBridgeBase<NodeIterator>
+    public partial class DocumentTraversal : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DocumentTraversal>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public NodeIterator() { }
+        public DocumentTraversal() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public NodeIterator(params object[] args) : base(args) { }
+        public DocumentTraversal(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "org.w3c.dom.traversal.NodeIterator";
+        public override string ClassName => "org.w3c.dom.traversal.DocumentTraversal";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region TreeWalker
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/TreeWalker.html
+    /// </summary>
+    public partial class TreeWalker : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TreeWalker>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public TreeWalker() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public TreeWalker(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "org.w3c.dom.traversal.TreeWalker";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -93,58 +128,23 @@ namespace Org.W3c.Dom.Traversal
     }
     #endregion
 
-    #region DocumentTraversal
+    #region NodeIterator
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/DocumentTraversal.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeIterator.html
     /// </summary>
-    public partial class DocumentTraversal : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DocumentTraversal>
+    public partial class NodeIterator : MASES.JCOBridge.C2JBridge.JVMBridgeBase<NodeIterator>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public DocumentTraversal() { }
+        public NodeIterator() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public DocumentTraversal(params object[] args) : base(args) { }
+        public NodeIterator(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "org.w3c.dom.traversal.DocumentTraversal";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region TreeWalker
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/TreeWalker.html
-    /// </summary>
-    public partial class TreeWalker : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TreeWalker>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public TreeWalker() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public TreeWalker(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "org.w3c.dom.traversal.TreeWalker";
+        public override string ClassName => "org.w3c.dom.traversal.NodeIterator";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;

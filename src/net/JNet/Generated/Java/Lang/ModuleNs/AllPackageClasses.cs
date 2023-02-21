@@ -58,22 +58,6 @@ namespace Java.Lang.ModuleNs
     }
     #endregion
 
-    #region ResolutionException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ResolutionException.html
-    /// </summary>
-    public partial class ResolutionException : Java.Lang.RuntimeException
-    {
-        public ResolutionException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.lang.module.ResolutionException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
     #region ModuleDescriptor
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.html
@@ -122,6 +106,40 @@ namespace Java.Lang.ModuleNs
 
             /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
             public override string ClassName => "java.lang.module.ModuleDescriptor$Requires";
+
+            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+            public override bool IsAbstract => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+            public override bool IsCloseable => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+            public override bool IsInterface => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+            public override bool IsStatic => true;
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region Builder
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Builder.html
+        /// </summary>
+        public partial class Builder : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Builder>
+        {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public Builder() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public Builder(params object[] args) : base(args) { }
+
+            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+            public override string ClassName => "java.lang.module.ModuleDescriptor$Builder";
 
             /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
             public override bool IsAbstract => false;
@@ -224,40 +242,6 @@ namespace Java.Lang.ModuleNs
 
             /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
             public override string ClassName => "java.lang.module.ModuleDescriptor$Exports";
-
-            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-            public override bool IsAbstract => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-            public override bool IsCloseable => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-            public override bool IsInterface => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-            public override bool IsStatic => true;
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region Builder
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Builder.html
-        /// </summary>
-        public partial class Builder : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Builder>
-        {
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public Builder() { }
-            /// <summary>
-            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-            /// </summary>
-            public Builder(params object[] args) : base(args) { }
-
-            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-            public override string ClassName => "java.lang.module.ModuleDescriptor$Builder";
 
             /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
             public override bool IsAbstract => false;
@@ -398,6 +382,22 @@ namespace Java.Lang.ModuleNs
     }
     #endregion
 
+    #region InvalidModuleDescriptorException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/InvalidModuleDescriptorException.html
+    /// </summary>
+    public partial class InvalidModuleDescriptorException : Java.Lang.RuntimeException
+    {
+        public InvalidModuleDescriptorException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.lang.module.InvalidModuleDescriptorException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region Configuration
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/Configuration.html
@@ -503,16 +503,16 @@ namespace Java.Lang.ModuleNs
     }
     #endregion
 
-    #region InvalidModuleDescriptorException
+    #region ResolutionException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/InvalidModuleDescriptorException.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ResolutionException.html
     /// </summary>
-    public partial class InvalidModuleDescriptorException : Java.Lang.RuntimeException
+    public partial class ResolutionException : Java.Lang.RuntimeException
     {
-        public InvalidModuleDescriptorException() { }
+        public ResolutionException() { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.lang.module.InvalidModuleDescriptorException";
+        public override string ClassName => "java.lang.module.ResolutionException";
 
         // TODO: complete the class
 

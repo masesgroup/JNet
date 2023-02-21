@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing.Text
 {
     #region StyleContext
@@ -31,7 +33,8 @@ namespace Javax.Swing.Text
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Io.Serializable(Javax.Swing.Text.StyleContext t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields
@@ -241,7 +244,8 @@ namespace Javax.Swing.Text
             #endregion
 
             #region Class/Interface conversion operators
-
+            public static implicit operator Javax.Swing.Text.AttributeSet(Javax.Swing.Text.StyleContext.SmallAttributeSet t) => t.Cast<Javax.Swing.Text.AttributeSet>();
+            
             #endregion
 
             #region Fields
@@ -345,7 +349,9 @@ namespace Javax.Swing.Text
             #endregion
 
             #region Class/Interface conversion operators
-
+            public static implicit operator Javax.Swing.Text.Style(Javax.Swing.Text.StyleContext.NamedStyle t) => t.Cast<Javax.Swing.Text.Style>();
+            public static implicit operator Java.Io.Serializable(Javax.Swing.Text.StyleContext.NamedStyle t) => t.Cast<Java.Io.Serializable>();
+            
             #endregion
 
             #region Fields

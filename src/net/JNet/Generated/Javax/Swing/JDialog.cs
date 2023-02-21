@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing
 {
     #region JDialog
@@ -115,7 +117,10 @@ namespace Javax.Swing
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Swing.WindowConstants(Javax.Swing.JDialog t) => t.Cast<Javax.Swing.WindowConstants>();
+        public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.JDialog t) => t.Cast<Javax.Accessibility.Accessible>();
+        public static implicit operator Javax.Swing.RootPaneContainer(Javax.Swing.JDialog t) => t.Cast<Javax.Swing.RootPaneContainer>();
+        
         #endregion
 
         #region Fields

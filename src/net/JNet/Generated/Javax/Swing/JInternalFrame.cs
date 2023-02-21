@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing
 {
     #region JInternalFrame
@@ -28,10 +30,10 @@ namespace Javax.Swing
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#<init>(java.lang.String,boolean,boolean,boolean)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#<init>(java.lang.String)
         /// </summary>
-        public JInternalFrame(string arg0, bool arg1, bool arg2, bool arg3)
-            : base(arg0, arg1, arg2, arg3)
+        public JInternalFrame(string arg0)
+            : base(arg0)
         {
         }
         /// <summary>
@@ -42,10 +44,17 @@ namespace Javax.Swing
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#<init>(java.lang.String)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#<init>(java.lang.String,boolean,boolean)
         /// </summary>
-        public JInternalFrame(string arg0)
-            : base(arg0)
+        public JInternalFrame(string arg0, bool arg1, bool arg2)
+            : base(arg0, arg1, arg2)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#<init>(java.lang.String,boolean,boolean,boolean)
+        /// </summary>
+        public JInternalFrame(string arg0, bool arg1, bool arg2, bool arg3)
+            : base(arg0, arg1, arg2, arg3)
         {
         }
         /// <summary>
@@ -55,18 +64,14 @@ namespace Javax.Swing
             : base(arg0, arg1, arg2, arg3, arg4)
         {
         }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#<init>(java.lang.String,boolean,boolean)
-        /// </summary>
-        public JInternalFrame(string arg0, bool arg1, bool arg2)
-            : base(arg0, arg1, arg2)
-        {
-        }
         
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.JInternalFrame t) => t.Cast<Javax.Accessibility.Accessible>();
+        public static implicit operator Javax.Swing.WindowConstants(Javax.Swing.JInternalFrame t) => t.Cast<Javax.Swing.WindowConstants>();
+        public static implicit operator Javax.Swing.RootPaneContainer(Javax.Swing.JInternalFrame t) => t.Cast<Javax.Swing.RootPaneContainer>();
+        
         #endregion
 
         #region Fields
@@ -457,7 +462,8 @@ namespace Javax.Swing
             #endregion
 
             #region Class/Interface conversion operators
-
+            public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.JInternalFrame.JDesktopIcon t) => t.Cast<Javax.Accessibility.Accessible>();
+            
             #endregion
 
             #region Fields

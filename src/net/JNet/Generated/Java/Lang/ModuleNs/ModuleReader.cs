@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Lang.ModuleNs
 {
     #region ModuleReader
@@ -31,7 +33,8 @@ namespace Java.Lang.ModuleNs
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Io.Closeable(Java.Lang.ModuleNs.ModuleReader t) => t.Cast<Java.Io.Closeable>();
+        
         #endregion
 
         #region Fields

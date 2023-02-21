@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Management.Modelmbean
 {
     #region ModelMBeanNotificationBroadcaster
@@ -31,7 +33,8 @@ namespace Javax.Management.Modelmbean
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Management.NotificationBroadcaster(Javax.Management.Modelmbean.ModelMBeanNotificationBroadcaster t) => t.Cast<Javax.Management.NotificationBroadcaster>();
+        
         #endregion
 
         #region Fields

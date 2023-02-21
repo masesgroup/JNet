@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Util
 {
     #region Spliterators
@@ -47,8 +49,8 @@ namespace Java.Util
         #endregion
 
         #region Nested classes
-        #region AbstractIntSpliterator
-        public partial class AbstractIntSpliterator
+        #region AbstractLongSpliterator
+        public partial class AbstractLongSpliterator
         {
             #region Constructors
 
@@ -68,55 +70,14 @@ namespace Java.Util
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.AbstractIntSpliterator.html#characteristics()
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.AbstractLongSpliterator.html#characteristics()
             /// </summary>
             public int Characteristics()
             {
                 return IExecute<int>("characteristics");
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.AbstractIntSpliterator.html#estimateSize()
-            /// </summary>
-            public long EstimateSize()
-            {
-                return IExecute<long>("estimateSize");
-            }
-            
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region AbstractDoubleSpliterator
-        public partial class AbstractDoubleSpliterator
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.AbstractDoubleSpliterator.html#characteristics()
-            /// </summary>
-            public int Characteristics()
-            {
-                return IExecute<int>("characteristics");
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.AbstractDoubleSpliterator.html#estimateSize()
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.AbstractLongSpliterator.html#estimateSize()
             /// </summary>
             public long EstimateSize()
             {
@@ -170,8 +131,8 @@ namespace Java.Util
         }
         #endregion
 
-        #region AbstractLongSpliterator
-        public partial class AbstractLongSpliterator
+        #region AbstractDoubleSpliterator
+        public partial class AbstractDoubleSpliterator
         {
             #region Constructors
 
@@ -191,14 +152,55 @@ namespace Java.Util
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.AbstractLongSpliterator.html#characteristics()
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.AbstractDoubleSpliterator.html#characteristics()
             /// </summary>
             public int Characteristics()
             {
                 return IExecute<int>("characteristics");
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.AbstractLongSpliterator.html#estimateSize()
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.AbstractDoubleSpliterator.html#estimateSize()
+            /// </summary>
+            public long EstimateSize()
+            {
+                return IExecute<long>("estimateSize");
+            }
+            
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region AbstractIntSpliterator
+        public partial class AbstractIntSpliterator
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.AbstractIntSpliterator.html#characteristics()
+            /// </summary>
+            public int Characteristics()
+            {
+                return IExecute<int>("characteristics");
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.AbstractIntSpliterator.html#estimateSize()
             /// </summary>
             public long EstimateSize()
             {

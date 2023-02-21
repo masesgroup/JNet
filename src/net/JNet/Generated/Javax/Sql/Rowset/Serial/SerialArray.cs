@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Sql.Rowset.Serial
 {
     #region SerialArray
@@ -38,7 +40,10 @@ namespace Javax.Sql.Rowset.Serial
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Sql.Array(Javax.Sql.Rowset.Serial.SerialArray t) => t.Cast<Java.Sql.Array>();
+        public static implicit operator Java.Io.Serializable(Javax.Sql.Rowset.Serial.SerialArray t) => t.Cast<Java.Io.Serializable>();
+        public static implicit operator Java.Lang.Cloneable(Javax.Sql.Rowset.Serial.SerialArray t) => t.Cast<Java.Lang.Cloneable>();
+        
         #endregion
 
         #region Fields

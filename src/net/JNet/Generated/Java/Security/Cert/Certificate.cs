@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Security.Cert
 {
     #region Certificate
@@ -31,7 +33,8 @@ namespace Java.Security.Cert
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Io.Serializable(Java.Security.Cert.Certificate t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields

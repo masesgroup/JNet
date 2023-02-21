@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Nio.File
 {
     #region StandardCopyOption
@@ -31,7 +33,8 @@ namespace Java.Nio.File
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Nio.File.CopyOption(Java.Nio.File.StandardCopyOption t) => t.Cast<Java.Nio.File.CopyOption>();
+        
         #endregion
 
         #region Fields

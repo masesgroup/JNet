@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing
 {
     #region ImageIcon
@@ -49,17 +51,17 @@ namespace Javax.Swing
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ImageIcon.html#<init>(byte[])
-        /// </summary>
-        public ImageIcon(byte[] arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ImageIcon.html#<init>(byte[],java.lang.String)
         /// </summary>
         public ImageIcon(byte[] arg0, string arg1)
             : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ImageIcon.html#<init>(byte[])
+        /// </summary>
+        public ImageIcon(byte[] arg0)
+            : base(arg0)
         {
         }
         /// <summary>
@@ -87,7 +89,10 @@ namespace Javax.Swing
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Swing.Icon(Javax.Swing.ImageIcon t) => t.Cast<Javax.Swing.Icon>();
+        public static implicit operator Java.Io.Serializable(Javax.Swing.ImageIcon t) => t.Cast<Java.Io.Serializable>();
+        public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.ImageIcon t) => t.Cast<Javax.Accessibility.Accessible>();
+        
         #endregion
 
         #region Fields

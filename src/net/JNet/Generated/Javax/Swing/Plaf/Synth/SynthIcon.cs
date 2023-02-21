@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing.Plaf.Synth
 {
     #region SynthIcon
@@ -31,7 +33,8 @@ namespace Javax.Swing.Plaf.Synth
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Swing.Icon(Javax.Swing.Plaf.Synth.SynthIcon t) => t.Cast<Javax.Swing.Icon>();
+        
         #endregion
 
         #region Fields

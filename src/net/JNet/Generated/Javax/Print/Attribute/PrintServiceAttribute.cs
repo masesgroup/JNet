@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Print.Attribute
 {
     #region PrintServiceAttribute
@@ -31,7 +33,8 @@ namespace Javax.Print.Attribute
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Print.Attribute.Attribute(Javax.Print.Attribute.PrintServiceAttribute t) => t.Cast<Javax.Print.Attribute.Attribute>();
+        
         #endregion
 
         #region Fields

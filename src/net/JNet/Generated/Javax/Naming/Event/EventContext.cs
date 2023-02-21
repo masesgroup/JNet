@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Naming.Event
 {
     #region EventContext
@@ -31,7 +33,8 @@ namespace Javax.Naming.Event
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Naming.Context(Javax.Naming.Event.EventContext t) => t.Cast<Javax.Naming.Context>();
+        
         #endregion
 
         #region Fields

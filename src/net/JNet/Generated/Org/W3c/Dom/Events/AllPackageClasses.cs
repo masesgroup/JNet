@@ -23,54 +23,6 @@
 
 namespace Org.W3c.Dom.Events
 {
-    #region EventListener
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/EventListener.html
-    /// </summary>
-    public partial class EventListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
-    {
-#warning Remember to build the body class for event listener
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region DocumentEvent
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/DocumentEvent.html
-    /// </summary>
-    public partial class DocumentEvent : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DocumentEvent>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public DocumentEvent() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public DocumentEvent(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "org.w3c.dom.events.DocumentEvent";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
     #region MutationEvent
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/MutationEvent.html
@@ -100,6 +52,35 @@ namespace Org.W3c.Dom.Events
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region EventListener
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/EventListener.html
+    /// </summary>
+    public partial class EventListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    {
+#warning Remember to build the body class for event listener
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region EventException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/EventException.html
+    /// </summary>
+    public partial class EventException : Java.Lang.RuntimeException
+    {
+        public EventException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "org.w3c.dom.events.EventException";
 
         // TODO: complete the class
 
@@ -158,6 +139,41 @@ namespace Org.W3c.Dom.Events
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "org.w3c.dom.events.UIEvent";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region DocumentEvent
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/DocumentEvent.html
+    /// </summary>
+    public partial class DocumentEvent : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DocumentEvent>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public DocumentEvent() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public DocumentEvent(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "org.w3c.dom.events.DocumentEvent";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -240,22 +256,6 @@ namespace Org.W3c.Dom.Events
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region EventException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/EventException.html
-    /// </summary>
-    public partial class EventException : Java.Lang.RuntimeException
-    {
-        public EventException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "org.w3c.dom.events.EventException";
 
         // TODO: complete the class
 

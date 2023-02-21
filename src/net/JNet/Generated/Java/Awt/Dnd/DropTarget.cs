@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Awt.Dnd
 {
     #region DropTarget
@@ -59,7 +61,9 @@ namespace Java.Awt.Dnd
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Awt.Dnd.DropTargetListener(Java.Awt.Dnd.DropTarget t) => t.Cast<Java.Awt.Dnd.DropTargetListener>();
+        public static implicit operator Java.Io.Serializable(Java.Awt.Dnd.DropTarget t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields

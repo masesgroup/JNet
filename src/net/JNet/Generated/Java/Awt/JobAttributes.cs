@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Awt
 {
     #region JobAttributes
@@ -45,7 +47,8 @@ namespace Java.Awt
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Lang.Cloneable(Java.Awt.JobAttributes t) => t.Cast<Java.Lang.Cloneable>();
+        
         #endregion
 
         #region Fields
@@ -215,45 +218,6 @@ namespace Java.Awt
         }
         #endregion
 
-        #region DefaultSelectionType
-        public partial class DefaultSelectionType
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.DefaultSelectionType.html#ALL
-            /// </summary>
-            public static Java.Awt.JobAttributes.DefaultSelectionType ALL => Clazz.GetField<Java.Awt.JobAttributes.DefaultSelectionType>("ALL");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.DefaultSelectionType.html#RANGE
-            /// </summary>
-            public static Java.Awt.JobAttributes.DefaultSelectionType RANGE => Clazz.GetField<Java.Awt.JobAttributes.DefaultSelectionType>("RANGE");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.DefaultSelectionType.html#SELECTION
-            /// </summary>
-            public static Java.Awt.JobAttributes.DefaultSelectionType SELECTION => Clazz.GetField<Java.Awt.JobAttributes.DefaultSelectionType>("SELECTION");
-            
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region DestinationType
         public partial class DestinationType
         {
@@ -352,6 +316,45 @@ namespace Java.Awt
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.DialogType.html#NONE
             /// </summary>
             public static Java.Awt.JobAttributes.DialogType NONE => Clazz.GetField<Java.Awt.JobAttributes.DialogType>("NONE");
+            
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region DefaultSelectionType
+        public partial class DefaultSelectionType
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.DefaultSelectionType.html#ALL
+            /// </summary>
+            public static Java.Awt.JobAttributes.DefaultSelectionType ALL => Clazz.GetField<Java.Awt.JobAttributes.DefaultSelectionType>("ALL");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.DefaultSelectionType.html#RANGE
+            /// </summary>
+            public static Java.Awt.JobAttributes.DefaultSelectionType RANGE => Clazz.GetField<Java.Awt.JobAttributes.DefaultSelectionType>("RANGE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.DefaultSelectionType.html#SELECTION
+            /// </summary>
+            public static Java.Awt.JobAttributes.DefaultSelectionType SELECTION => Clazz.GetField<Java.Awt.JobAttributes.DefaultSelectionType>("SELECTION");
             
             #endregion
 

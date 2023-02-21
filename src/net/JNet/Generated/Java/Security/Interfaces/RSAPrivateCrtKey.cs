@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Security.Interfaces
 {
     #region RSAPrivateCrtKey
@@ -31,7 +33,8 @@ namespace Java.Security.Interfaces
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Security.Interfaces.RSAPrivateKey(Java.Security.Interfaces.RSAPrivateCrtKey t) => t.Cast<Java.Security.Interfaces.RSAPrivateKey>();
+        
         #endregion
 
         #region Fields

@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Naming.Ldap
 {
     #region UnsolicitedNotification
@@ -31,7 +33,9 @@ namespace Javax.Naming.Ldap
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Naming.Ldap.ExtendedResponse(Javax.Naming.Ldap.UnsolicitedNotification t) => t.Cast<Javax.Naming.Ldap.ExtendedResponse>();
+        public static implicit operator Javax.Naming.Ldap.HasControls(Javax.Naming.Ldap.UnsolicitedNotification t) => t.Cast<Javax.Naming.Ldap.HasControls>();
+        
         #endregion
 
         #region Fields

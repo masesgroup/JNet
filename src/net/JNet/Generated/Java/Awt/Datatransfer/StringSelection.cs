@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Awt.Datatransfer
 {
     #region StringSelection
@@ -38,7 +40,9 @@ namespace Java.Awt.Datatransfer
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Awt.Datatransfer.Transferable(Java.Awt.Datatransfer.StringSelection t) => t.Cast<Java.Awt.Datatransfer.Transferable>();
+        public static implicit operator Java.Awt.Datatransfer.ClipboardOwner(Java.Awt.Datatransfer.StringSelection t) => t.Cast<Java.Awt.Datatransfer.ClipboardOwner>();
+        
         #endregion
 
         #region Fields

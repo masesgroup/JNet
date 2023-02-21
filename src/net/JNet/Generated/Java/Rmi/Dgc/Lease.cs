@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Rmi.Dgc
 {
     #region Lease
@@ -38,7 +40,8 @@ namespace Java.Rmi.Dgc
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Io.Serializable(Java.Rmi.Dgc.Lease t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields

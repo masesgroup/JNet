@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Time.Chrono
 {
     #region ThaiBuddhistEra
@@ -31,7 +33,8 @@ namespace Java.Time.Chrono
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Time.Chrono.Era(Java.Time.Chrono.ThaiBuddhistEra t) => t.Cast<Java.Time.Chrono.Era>();
+        
         #endregion
 
         #region Fields

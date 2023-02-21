@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Lang.Management
 {
     #region GarbageCollectorMXBean
@@ -31,7 +33,8 @@ namespace Java.Lang.Management
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Lang.Management.MemoryManagerMXBean(Java.Lang.Management.GarbageCollectorMXBean t) => t.Cast<Java.Lang.Management.MemoryManagerMXBean>();
+        
         #endregion
 
         #region Fields

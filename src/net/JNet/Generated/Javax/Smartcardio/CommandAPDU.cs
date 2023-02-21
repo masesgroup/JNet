@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Smartcardio
 {
     #region CommandAPDU
@@ -28,10 +30,10 @@ namespace Javax.Smartcardio
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CommandAPDU.html#<init>(int,int,int,int,int)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CommandAPDU.html#<init>(int,int,int,int,byte[],int,int)
         /// </summary>
-        public CommandAPDU(int arg0, int arg1, int arg2, int arg3, int arg4)
-            : base(arg0, arg1, arg2, arg3, arg4)
+        public CommandAPDU(int arg0, int arg1, int arg2, int arg3, byte[] arg4, int arg5, int arg6)
+            : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
         {
         }
         /// <summary>
@@ -42,10 +44,10 @@ namespace Javax.Smartcardio
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CommandAPDU.html#<init>(int,int,int,int,byte[],int,int)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CommandAPDU.html#<init>(int,int,int,int,int)
         /// </summary>
-        public CommandAPDU(int arg0, int arg1, int arg2, int arg3, byte[] arg4, int arg5, int arg6)
-            : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
+        public CommandAPDU(int arg0, int arg1, int arg2, int arg3, int arg4)
+            : base(arg0, arg1, arg2, arg3, arg4)
         {
         }
         /// <summary>
@@ -63,17 +65,17 @@ namespace Javax.Smartcardio
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CommandAPDU.html#<init>(byte[],int,int)
-        /// </summary>
-        public CommandAPDU(byte[] arg0, int arg1, int arg2)
-            : base(arg0, arg1, arg2)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CommandAPDU.html#<init>(byte[])
         /// </summary>
         public CommandAPDU(byte[] arg0)
             : base(arg0)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CommandAPDU.html#<init>(byte[],int,int)
+        /// </summary>
+        public CommandAPDU(byte[] arg0, int arg1, int arg2)
+            : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
@@ -94,7 +96,8 @@ namespace Javax.Smartcardio
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Io.Serializable(Javax.Smartcardio.CommandAPDU t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields

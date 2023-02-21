@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Net
 {
     #region URI
@@ -28,10 +30,10 @@ namespace Java.Net
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#<init>(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.net.URISyntaxException
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#<init>(java.lang.String,java.lang.String,java.lang.String) throws java.net.URISyntaxException
         /// </summary>
-        public URI(string arg0, string arg1, string arg2, string arg3, string arg4)
-            : base(arg0, arg1, arg2, arg3, arg4)
+        public URI(string arg0, string arg1, string arg2)
+            : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
@@ -42,10 +44,10 @@ namespace Java.Net
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#<init>(java.lang.String,java.lang.String,java.lang.String) throws java.net.URISyntaxException
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#<init>(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.net.URISyntaxException
         /// </summary>
-        public URI(string arg0, string arg1, string arg2)
-            : base(arg0, arg1, arg2)
+        public URI(string arg0, string arg1, string arg2, string arg3, string arg4)
+            : base(arg0, arg1, arg2, arg3, arg4)
         {
         }
         /// <summary>
@@ -66,7 +68,8 @@ namespace Java.Net
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Io.Serializable(Java.Net.URI t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields

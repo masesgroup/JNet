@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Io
 {
     #region DataInputStream
@@ -38,7 +40,8 @@ namespace Java.Io
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Io.DataInput(Java.Io.DataInputStream t) => t.Cast<Java.Io.DataInput>();
+        
         #endregion
 
         #region Fields

@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Lang
 {
     #region String
@@ -115,7 +117,9 @@ namespace Java.Lang
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Io.Serializable(string t) => t.Cast<Java.Io.Serializable>();
+        public static implicit operator Java.Lang.CharSequence(string t) => t.Cast<Java.Lang.CharSequence>();
+        
         #endregion
 
         #region Fields

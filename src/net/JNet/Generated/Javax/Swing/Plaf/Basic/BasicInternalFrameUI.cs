@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing.Plaf.Basic
 {
     #region BasicInternalFrameUI
@@ -104,7 +106,8 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Class/Interface conversion operators
-
+            public static implicit operator Java.Awt.LayoutManager(Javax.Swing.Plaf.Basic.BasicInternalFrameUI.InternalFrameLayout t) => t.Cast<Java.Awt.LayoutManager>();
+            
             #endregion
 
             #region Fields

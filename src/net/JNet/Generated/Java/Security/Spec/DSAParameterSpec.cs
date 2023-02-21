@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Security.Spec
 {
     #region DSAParameterSpec
@@ -38,7 +40,9 @@ namespace Java.Security.Spec
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Security.Spec.AlgorithmParameterSpec(Java.Security.Spec.DSAParameterSpec t) => t.Cast<Java.Security.Spec.AlgorithmParameterSpec>();
+        public static implicit operator Java.Security.Interfaces.DSAParams(Java.Security.Spec.DSAParameterSpec t) => t.Cast<Java.Security.Interfaces.DSAParams>();
+        
         #endregion
 
         #region Fields

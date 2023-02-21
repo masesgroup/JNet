@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Tools
 {
     #region StandardJavaFileManager
@@ -31,7 +33,8 @@ namespace Javax.Tools
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Tools.JavaFileManager(Javax.Tools.StandardJavaFileManager t) => t.Cast<Javax.Tools.JavaFileManager>();
+        
         #endregion
 
         #region Fields

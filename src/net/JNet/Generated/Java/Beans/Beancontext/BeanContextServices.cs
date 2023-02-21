@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Beans.Beancontext
 {
     #region BeanContextServices
@@ -31,7 +33,9 @@ namespace Java.Beans.Beancontext
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Beans.Beancontext.BeanContext(Java.Beans.Beancontext.BeanContextServices t) => t.Cast<Java.Beans.Beancontext.BeanContext>();
+        public static implicit operator Java.Beans.Beancontext.BeanContextServicesListener(Java.Beans.Beancontext.BeanContextServices t) => t.Cast<Java.Beans.Beancontext.BeanContextServicesListener>();
+        
         #endregion
 
         #region Fields

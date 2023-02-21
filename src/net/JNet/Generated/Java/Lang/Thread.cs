@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Lang
 {
     #region Thread
@@ -87,7 +89,8 @@ namespace Java.Lang
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Lang.Runnable(Java.Lang.Thread t) => t.Cast<Java.Lang.Runnable>();
+        
         #endregion
 
         #region Fields

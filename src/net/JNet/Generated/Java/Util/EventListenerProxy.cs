@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Util
 {
     #region EventListenerProxy
@@ -38,7 +40,8 @@ namespace Java.Util
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Util.EventListener(Java.Util.EventListenerProxy t) => t.Cast<Java.Util.EventListener>();
+        
         #endregion
 
         #region Fields

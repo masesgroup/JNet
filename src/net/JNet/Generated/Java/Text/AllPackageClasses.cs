@@ -161,57 +161,6 @@ namespace Java.Text
     }
     #endregion
 
-    #region ParseException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/ParseException.html
-    /// </summary>
-    public partial class ParseException : Java.Lang.Exception
-    {
-        public ParseException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.text.ParseException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region Bidi
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html
-    /// </summary>
-    public partial class Bidi : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Bidi>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public Bidi() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public Bidi(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.text.Bidi";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
     #region Format
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Format.html
@@ -281,35 +230,16 @@ namespace Java.Text
     }
     #endregion
 
-    #region BreakIterator
+    #region ParseException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/ParseException.html
     /// </summary>
-    public partial class BreakIterator : MASES.JCOBridge.C2JBridge.JVMBridgeBase<BreakIterator>
+    public partial class ParseException : Java.Lang.Exception
     {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public BreakIterator() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public BreakIterator(params object[] args) : base(args) { }
+        public ParseException() { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.text.BreakIterator";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
+        public override string ClassName => "java.text.ParseException";
 
         // TODO: complete the class
 
@@ -351,23 +281,23 @@ namespace Java.Text
     }
     #endregion
 
-    #region RuleBasedCollator
+    #region AttributedString
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/RuleBasedCollator.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedString.html
     /// </summary>
-    public partial class RuleBasedCollator : Java.Text.Collator
+    public partial class AttributedString : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AttributedString>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public RuleBasedCollator() { }
+        public AttributedString() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public RuleBasedCollator(params object[] args) : base(args) { }
+        public AttributedString(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.text.RuleBasedCollator";
+        public override string ClassName => "java.text.AttributedString";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -382,6 +312,180 @@ namespace Java.Text
         public override bool IsStatic => false;
 
         // TODO: complete the class
+
+    }
+    #endregion
+
+    #region ChoiceFormat
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/ChoiceFormat.html
+    /// </summary>
+    public partial class ChoiceFormat : Java.Text.NumberFormat
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public ChoiceFormat() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public ChoiceFormat(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.text.ChoiceFormat";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region Bidi
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html
+    /// </summary>
+    public partial class Bidi : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Bidi>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public Bidi() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public Bidi(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.text.Bidi";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region CollationKey
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CollationKey.html
+    /// </summary>
+    public partial class CollationKey : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CollationKey>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public CollationKey() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public CollationKey(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.text.CollationKey";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region MessageFormat
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html
+    /// </summary>
+    public partial class MessageFormat : Java.Text.Format
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public MessageFormat() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public MessageFormat(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.text.MessageFormat";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+        #region Field
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.Field.html
+        /// </summary>
+        public partial class Field : Java.Text.Format.Field
+        {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public Field() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public Field(params object[] args) : base(args) { }
+
+            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+            public override string ClassName => "java.text.MessageFormat$Field";
+
+            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+            public override bool IsAbstract => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+            public override bool IsCloseable => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+            public override bool IsInterface => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+            public override bool IsStatic => true;
+
+            // TODO: complete the class
+        }
+        #endregion
+
 
     }
     #endregion
@@ -490,23 +594,23 @@ namespace Java.Text
     }
     #endregion
 
-    #region AttributedString
+    #region CollationElementIterator
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedString.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CollationElementIterator.html
     /// </summary>
-    public partial class AttributedString : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AttributedString>
+    public partial class CollationElementIterator : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CollationElementIterator>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public AttributedString() { }
+        public CollationElementIterator() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public AttributedString(params object[] args) : base(args) { }
+        public CollationElementIterator(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.text.AttributedString";
+        public override string ClassName => "java.text.CollationElementIterator";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -525,26 +629,26 @@ namespace Java.Text
     }
     #endregion
 
-    #region MessageFormat
+    #region BreakIterator
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/BreakIterator.html
     /// </summary>
-    public partial class MessageFormat : Java.Text.Format
+    public partial class BreakIterator : MASES.JCOBridge.C2JBridge.JVMBridgeBase<BreakIterator>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public MessageFormat() { }
+        public BreakIterator() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public MessageFormat(params object[] args) : base(args) { }
+        public BreakIterator(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.text.MessageFormat";
+        public override string ClassName => "java.text.BreakIterator";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
+        public override bool IsAbstract => true;
 
         /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
         public override bool IsCloseable => false;
@@ -556,40 +660,6 @@ namespace Java.Text
         public override bool IsStatic => false;
 
         // TODO: complete the class
-        #region Field
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.Field.html
-        /// </summary>
-        public partial class Field : Java.Text.Format.Field
-        {
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public Field() { }
-            /// <summary>
-            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-            /// </summary>
-            public Field(params object[] args) : base(args) { }
-
-            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-            public override string ClassName => "java.text.MessageFormat$Field";
-
-            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-            public override bool IsAbstract => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-            public override bool IsCloseable => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-            public override bool IsInterface => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-            public override bool IsStatic => true;
-
-            // TODO: complete the class
-        }
-        #endregion
-
 
     }
     #endregion
@@ -629,23 +699,23 @@ namespace Java.Text
     }
     #endregion
 
-    #region CollationElementIterator
+    #region Annotation
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CollationElementIterator.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Annotation.html
     /// </summary>
-    public partial class CollationElementIterator : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CollationElementIterator>
+    public partial class Annotation : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Annotation>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public CollationElementIterator() { }
+        public Annotation() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public CollationElementIterator(params object[] args) : base(args) { }
+        public Annotation(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.text.CollationElementIterator";
+        public override string ClassName => "java.text.Annotation";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -838,23 +908,23 @@ namespace Java.Text
     }
     #endregion
 
-    #region StringCharacterIterator
+    #region RuleBasedCollator
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/StringCharacterIterator.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/RuleBasedCollator.html
     /// </summary>
-    public partial class StringCharacterIterator : MASES.JCOBridge.C2JBridge.JVMBridgeBase<StringCharacterIterator>
+    public partial class RuleBasedCollator : Java.Text.Collator
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public StringCharacterIterator() { }
+        public RuleBasedCollator() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public StringCharacterIterator(params object[] args) : base(args) { }
+        public RuleBasedCollator(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.text.StringCharacterIterator";
+        public override string ClassName => "java.text.RuleBasedCollator";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -873,58 +943,23 @@ namespace Java.Text
     }
     #endregion
 
-    #region CollationKey
+    #region StringCharacterIterator
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/CollationKey.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/StringCharacterIterator.html
     /// </summary>
-    public partial class CollationKey : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CollationKey>
+    public partial class StringCharacterIterator : MASES.JCOBridge.C2JBridge.JVMBridgeBase<StringCharacterIterator>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public CollationKey() { }
+        public StringCharacterIterator() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public CollationKey(params object[] args) : base(args) { }
+        public StringCharacterIterator(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.text.CollationKey";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region Annotation
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Annotation.html
-    /// </summary>
-    public partial class Annotation : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Annotation>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public Annotation() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public Annotation(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.text.Annotation";
+        public override string ClassName => "java.text.StringCharacterIterator";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -995,41 +1030,6 @@ namespace Java.Text
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "java.text.ParsePosition";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region ChoiceFormat
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/ChoiceFormat.html
-    /// </summary>
-    public partial class ChoiceFormat : Java.Text.NumberFormat
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public ChoiceFormat() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public ChoiceFormat(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.text.ChoiceFormat";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;

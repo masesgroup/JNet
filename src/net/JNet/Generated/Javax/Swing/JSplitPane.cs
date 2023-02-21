@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing
 {
     #region JSplitPane
@@ -59,7 +61,8 @@ namespace Javax.Swing
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.JSplitPane t) => t.Cast<Javax.Accessibility.Accessible>();
+        
         #endregion
 
         #region Fields

@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Management.Timer
 {
     #region Timer
@@ -31,7 +33,9 @@ namespace Javax.Management.Timer
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Management.Timer.TimerMBean(Javax.Management.Timer.Timer t) => t.Cast<Javax.Management.Timer.TimerMBean>();
+        public static implicit operator Javax.Management.MBeanRegistration(Javax.Management.Timer.Timer t) => t.Cast<Javax.Management.MBeanRegistration>();
+        
         #endregion
 
         #region Fields

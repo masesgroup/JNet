@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Nio.Channels
 {
     #region FileLock
@@ -31,7 +33,8 @@ namespace Java.Nio.Channels
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Lang.AutoCloseable(Java.Nio.Channels.FileLock t) => t.Cast<Java.Lang.AutoCloseable>();
+        
         #endregion
 
         #region Fields

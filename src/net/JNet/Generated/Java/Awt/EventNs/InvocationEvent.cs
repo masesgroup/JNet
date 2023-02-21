@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Awt.EventNs
 {
     #region InvocationEvent
@@ -52,7 +54,8 @@ namespace Java.Awt.EventNs
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Awt.ActiveEvent(Java.Awt.EventNs.InvocationEvent t) => t.Cast<Java.Awt.ActiveEvent>();
+        
         #endregion
 
         #region Fields

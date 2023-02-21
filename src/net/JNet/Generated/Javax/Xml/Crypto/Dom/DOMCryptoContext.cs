@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Xml.Crypto.Dom
 {
     #region DOMCryptoContext
@@ -31,7 +33,8 @@ namespace Javax.Xml.Crypto.Dom
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Xml.Crypto.XMLCryptoContext(Javax.Xml.Crypto.Dom.DOMCryptoContext t) => t.Cast<Javax.Xml.Crypto.XMLCryptoContext>();
+        
         #endregion
 
         #region Fields

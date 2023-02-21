@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Nio.File
 {
     #region FileSystem
@@ -31,7 +33,8 @@ namespace Java.Nio.File
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Io.Closeable(Java.Nio.File.FileSystem t) => t.Cast<Java.Io.Closeable>();
+        
         #endregion
 
         #region Fields

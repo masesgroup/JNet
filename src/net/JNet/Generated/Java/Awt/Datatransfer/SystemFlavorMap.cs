@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Awt.Datatransfer
 {
     #region SystemFlavorMap
@@ -31,7 +33,9 @@ namespace Java.Awt.Datatransfer
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Awt.Datatransfer.FlavorMap(Java.Awt.Datatransfer.SystemFlavorMap t) => t.Cast<Java.Awt.Datatransfer.FlavorMap>();
+        public static implicit operator Java.Awt.Datatransfer.FlavorTable(Java.Awt.Datatransfer.SystemFlavorMap t) => t.Cast<Java.Awt.Datatransfer.FlavorTable>();
+        
         #endregion
 
         #region Fields

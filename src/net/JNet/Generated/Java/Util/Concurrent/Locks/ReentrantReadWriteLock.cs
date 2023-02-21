@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Util.Concurrent.Locks
 {
     #region ReentrantReadWriteLock
@@ -38,7 +40,9 @@ namespace Java.Util.Concurrent.Locks
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Util.Concurrent.Locks.ReadWriteLock(Java.Util.Concurrent.Locks.ReentrantReadWriteLock t) => t.Cast<Java.Util.Concurrent.Locks.ReadWriteLock>();
+        public static implicit operator Java.Io.Serializable(Java.Util.Concurrent.Locks.ReentrantReadWriteLock t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields
@@ -145,6 +149,70 @@ namespace Java.Util.Concurrent.Locks
         #endregion
 
         #region Nested classes
+        #region ReadLock
+        public partial class ReadLock
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+            public static implicit operator Java.Util.Concurrent.Locks.Lock(Java.Util.Concurrent.Locks.ReentrantReadWriteLock.ReadLock t) => t.Cast<Java.Util.Concurrent.Locks.Lock>();
+            public static implicit operator Java.Io.Serializable(Java.Util.Concurrent.Locks.ReentrantReadWriteLock.ReadLock t) => t.Cast<Java.Io.Serializable>();
+            
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.ReadLock.html#tryLock()
+            /// </summary>
+            public bool TryLock()
+            {
+                return IExecute<bool>("tryLock");
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.ReadLock.html#newCondition()
+            /// </summary>
+            public Java.Util.Concurrent.Locks.Condition NewCondition()
+            {
+                return IExecute<Java.Util.Concurrent.Locks.Condition>("newCondition");
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.ReadLock.html#locks.ReentrantReadWriteLock$ReadLock.lock()
+            /// </summary>
+            public void Lock()
+            {
+                IExecute("lock");
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.ReadLock.html#lockInterruptibly() throws java.lang.InterruptedException
+            /// </summary>
+            public void LockInterruptibly()
+            {
+                IExecute("lockInterruptibly");
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.ReadLock.html#unlock()
+            /// </summary>
+            public void Unlock()
+            {
+                IExecute("unlock");
+            }
+            
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region WriteLock
         public partial class WriteLock
         {
@@ -153,7 +221,9 @@ namespace Java.Util.Concurrent.Locks
             #endregion
 
             #region Class/Interface conversion operators
-
+            public static implicit operator Java.Util.Concurrent.Locks.Lock(Java.Util.Concurrent.Locks.ReentrantReadWriteLock.WriteLock t) => t.Cast<Java.Util.Concurrent.Locks.Lock>();
+            public static implicit operator Java.Io.Serializable(Java.Util.Concurrent.Locks.ReentrantReadWriteLock.WriteLock t) => t.Cast<Java.Io.Serializable>();
+            
             #endregion
 
             #region Fields
@@ -209,68 +279,6 @@ namespace Java.Util.Concurrent.Locks
             }
             /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.WriteLock.html#unlock()
-            /// </summary>
-            public void Unlock()
-            {
-                IExecute("unlock");
-            }
-            
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region ReadLock
-        public partial class ReadLock
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.ReadLock.html#tryLock()
-            /// </summary>
-            public bool TryLock()
-            {
-                return IExecute<bool>("tryLock");
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.ReadLock.html#newCondition()
-            /// </summary>
-            public Java.Util.Concurrent.Locks.Condition NewCondition()
-            {
-                return IExecute<Java.Util.Concurrent.Locks.Condition>("newCondition");
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.ReadLock.html#locks.ReentrantReadWriteLock$ReadLock.lock()
-            /// </summary>
-            public void Lock()
-            {
-                IExecute("lock");
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.ReadLock.html#lockInterruptibly() throws java.lang.InterruptedException
-            /// </summary>
-            public void LockInterruptibly()
-            {
-                IExecute("lockInterruptibly");
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.ReadLock.html#unlock()
             /// </summary>
             public void Unlock()
             {

@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Beans.Beancontext
 {
     #region BeanContext
@@ -31,7 +33,10 @@ namespace Java.Beans.Beancontext
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Beans.Beancontext.BeanContextChild(Java.Beans.Beancontext.BeanContext t) => t.Cast<Java.Beans.Beancontext.BeanContextChild>();
+        public static implicit operator Java.Beans.DesignMode(Java.Beans.Beancontext.BeanContext t) => t.Cast<Java.Beans.DesignMode>();
+        public static implicit operator Java.Beans.Visibility(Java.Beans.Beancontext.BeanContext t) => t.Cast<Java.Beans.Visibility>();
+        
         #endregion
 
         #region Fields

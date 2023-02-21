@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Lang.Reflect
 {
     #region AnnotatedArrayType
@@ -31,7 +33,8 @@ namespace Java.Lang.Reflect
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Lang.Reflect.AnnotatedType(Java.Lang.Reflect.AnnotatedArrayType t) => t.Cast<Java.Lang.Reflect.AnnotatedType>();
+        
         #endregion
 
         #region Fields

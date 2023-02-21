@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Awt.EventNs
 {
     #region AWTEventListenerProxy
@@ -38,7 +40,8 @@ namespace Java.Awt.EventNs
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Awt.EventNs.AWTEventListener(Java.Awt.EventNs.AWTEventListenerProxy t) => t.Cast<Java.Awt.EventNs.AWTEventListener>();
+        
         #endregion
 
         #region Fields

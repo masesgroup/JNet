@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Time
 {
     #region LocalDate
@@ -31,7 +33,11 @@ namespace Java.Time
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Time.Temporal.Temporal(Java.Time.LocalDate t) => t.Cast<Java.Time.Temporal.Temporal>();
+        public static implicit operator Java.Time.Temporal.TemporalAdjuster(Java.Time.LocalDate t) => t.Cast<Java.Time.Temporal.TemporalAdjuster>();
+        public static implicit operator Java.Time.Chrono.ChronoLocalDate(Java.Time.LocalDate t) => t.Cast<Java.Time.Chrono.ChronoLocalDate>();
+        public static implicit operator Java.Io.Serializable(Java.Time.LocalDate t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields

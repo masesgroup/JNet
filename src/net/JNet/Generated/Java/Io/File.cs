@@ -21,12 +21,21 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Io
 {
     #region File
     public partial class File
     {
         #region Constructors
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#<init>(java.lang.String)
+        /// </summary>
+        public File(string arg0)
+            : base(arg0)
+        {
+        }
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#<init>(java.lang.String,java.lang.String)
         /// </summary>
@@ -48,18 +57,12 @@ namespace Java.Io
             : base(arg0)
         {
         }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#<init>(java.lang.String)
-        /// </summary>
-        public File(string arg0)
-            : base(arg0)
-        {
-        }
         
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Io.Serializable(Java.Io.File t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields

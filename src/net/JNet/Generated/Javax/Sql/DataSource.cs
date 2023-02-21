@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Sql
 {
     #region DataSource
@@ -31,7 +33,9 @@ namespace Javax.Sql
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Sql.CommonDataSource(Javax.Sql.DataSource t) => t.Cast<Javax.Sql.CommonDataSource>();
+        public static implicit operator Java.Sql.Wrapper(Javax.Sql.DataSource t) => t.Cast<Java.Sql.Wrapper>();
+        
         #endregion
 
         #region Fields

@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Nio.File.Attribute
 {
     #region FileAttributeView
@@ -31,7 +33,8 @@ namespace Java.Nio.File.Attribute
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Nio.File.Attribute.AttributeView(Java.Nio.File.Attribute.FileAttributeView t) => t.Cast<Java.Nio.File.Attribute.AttributeView>();
+        
         #endregion
 
         #region Fields

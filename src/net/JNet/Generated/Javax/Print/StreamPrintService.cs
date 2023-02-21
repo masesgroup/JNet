@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Print
 {
     #region StreamPrintService
@@ -31,7 +33,8 @@ namespace Javax.Print
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Print.PrintService(Javax.Print.StreamPrintService t) => t.Cast<Javax.Print.PrintService>();
+        
         #endregion
 
         #region Fields

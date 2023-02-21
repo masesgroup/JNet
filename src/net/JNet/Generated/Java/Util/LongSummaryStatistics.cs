@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Util
 {
     #region LongSummaryStatistics
@@ -38,7 +40,9 @@ namespace Java.Util
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Util.Function.LongConsumer(Java.Util.LongSummaryStatistics t) => t.Cast<Java.Util.Function.LongConsumer>();
+        public static implicit operator Java.Util.Function.IntConsumer(Java.Util.LongSummaryStatistics t) => t.Cast<Java.Util.Function.IntConsumer>();
+        
         #endregion
 
         #region Fields

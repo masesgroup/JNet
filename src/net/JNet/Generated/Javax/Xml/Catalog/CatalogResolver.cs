@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Xml.Catalog
 {
     #region CatalogResolver
@@ -31,7 +33,11 @@ namespace Javax.Xml.Catalog
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Org.Xml.Sax.EntityResolver(Javax.Xml.Catalog.CatalogResolver t) => t.Cast<Org.Xml.Sax.EntityResolver>();
+        public static implicit operator Javax.Xml.Stream.XMLResolver(Javax.Xml.Catalog.CatalogResolver t) => t.Cast<Javax.Xml.Stream.XMLResolver>();
+        public static implicit operator Javax.Xml.Transform.URIResolver(Javax.Xml.Catalog.CatalogResolver t) => t.Cast<Javax.Xml.Transform.URIResolver>();
+        public static implicit operator Org.W3c.Dom.Ls.LSResourceResolver(Javax.Xml.Catalog.CatalogResolver t) => t.Cast<Org.W3c.Dom.Ls.LSResourceResolver>();
+        
         #endregion
 
         #region Fields

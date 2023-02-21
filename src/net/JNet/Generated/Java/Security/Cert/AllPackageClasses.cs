@@ -23,70 +23,16 @@
 
 namespace Java.Security.Cert
 {
-    #region CertStoreSpi
+    #region CertificateRevokedException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertStoreSpi.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateRevokedException.html
     /// </summary>
-    public partial class CertStoreSpi : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CertStoreSpi>
+    public partial class CertificateRevokedException : Java.Security.Cert.CertificateException
     {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public CertStoreSpi() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public CertStoreSpi(params object[] args) : base(args) { }
+        public CertificateRevokedException() { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.security.cert.CertStoreSpi";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region CRLSelector
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CRLSelector.html
-    /// </summary>
-    public partial class CRLSelector : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CRLSelector>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public CRLSelector() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public CRLSelector(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.security.cert.CRLSelector";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
+        public override string ClassName => "java.security.cert.CertificateRevokedException";
 
         // TODO: complete the class
 
@@ -128,35 +74,32 @@ namespace Java.Security.Cert
     }
     #endregion
 
-    #region PKIXParameters
+    #region CertificateNotYetValidException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateNotYetValidException.html
     /// </summary>
-    public partial class PKIXParameters : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PKIXParameters>
+    public partial class CertificateNotYetValidException : Java.Security.Cert.CertificateException
     {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public PKIXParameters() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public PKIXParameters(params object[] args) : base(args) { }
+        public CertificateNotYetValidException() { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.security.cert.PKIXParameters";
+        public override string ClassName => "java.security.cert.CertificateNotYetValidException";
 
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
+        // TODO: complete the class
 
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
+    }
+    #endregion
 
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
+    #region CertificateEncodingException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateEncodingException.html
+    /// </summary>
+    public partial class CertificateEncodingException : Java.Security.Cert.CertificateException
+    {
+        public CertificateEncodingException() { }
 
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.security.cert.CertificateEncodingException";
 
         // TODO: complete the class
 
@@ -189,76 +132,6 @@ namespace Java.Security.Cert
 
         /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
         public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region CertificateFactorySpi
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateFactorySpi.html
-    /// </summary>
-    public partial class CertificateFactorySpi : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CertificateFactorySpi>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public CertificateFactorySpi() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public CertificateFactorySpi(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.security.cert.CertificateFactorySpi";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region PolicyQualifierInfo
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PolicyQualifierInfo.html
-    /// </summary>
-    public partial class PolicyQualifierInfo : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PolicyQualifierInfo>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public PolicyQualifierInfo() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public PolicyQualifierInfo(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.security.cert.PolicyQualifierInfo";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;
@@ -337,26 +210,26 @@ namespace Java.Security.Cert
     }
     #endregion
 
-    #region CertPathValidatorSpi
+    #region CRLReason
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathValidatorSpi.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CRLReason.html
     /// </summary>
-    public partial class CertPathValidatorSpi : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CertPathValidatorSpi>
+    public partial class CRLReason : Java.Lang.Enum
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public CertPathValidatorSpi() { }
+        public CRLReason() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public CertPathValidatorSpi(params object[] args) : base(args) { }
+        public CRLReason(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.security.cert.CertPathValidatorSpi";
+        public override string ClassName => "java.security.cert.CRLReason";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
+        public override bool IsAbstract => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
         public override bool IsCloseable => false;
@@ -407,26 +280,61 @@ namespace Java.Security.Cert
     }
     #endregion
 
-    #region X509CRLSelector
+    #region CertificateFactorySpi
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLSelector.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateFactorySpi.html
     /// </summary>
-    public partial class X509CRLSelector : MASES.JCOBridge.C2JBridge.JVMBridgeBase<X509CRLSelector>
+    public partial class CertificateFactorySpi : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CertificateFactorySpi>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public X509CRLSelector() { }
+        public CertificateFactorySpi() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public X509CRLSelector(params object[] args) : base(args) { }
+        public CertificateFactorySpi(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.security.cert.X509CRLSelector";
+        public override string ClassName => "java.security.cert.CertificateFactorySpi";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region CertPath
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPath.html
+    /// </summary>
+    public partial class CertPath : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CertPath>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public CertPath() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public CertPath(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.security.cert.CertPath";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
 
         /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
         public override bool IsCloseable => false;
@@ -477,23 +385,23 @@ namespace Java.Security.Cert
     }
     #endregion
 
-    #region CRLReason
+    #region PolicyQualifierInfo
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CRLReason.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PolicyQualifierInfo.html
     /// </summary>
-    public partial class CRLReason : Java.Lang.Enum
+    public partial class PolicyQualifierInfo : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PolicyQualifierInfo>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public CRLReason() { }
+        public PolicyQualifierInfo() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public CRLReason(params object[] args) : base(args) { }
+        public PolicyQualifierInfo(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.security.cert.CRLReason";
+        public override string ClassName => "java.security.cert.PolicyQualifierInfo";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -512,23 +420,23 @@ namespace Java.Security.Cert
     }
     #endregion
 
-    #region CRL
+    #region CertPathValidatorSpi
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CRL.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathValidatorSpi.html
     /// </summary>
-    public partial class CRL : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CRL>
+    public partial class CertPathValidatorSpi : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CertPathValidatorSpi>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public CRL() { }
+        public CertPathValidatorSpi() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public CRL(params object[] args) : base(args) { }
+        public CertPathValidatorSpi(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.security.cert.CRL";
+        public override string ClassName => "java.security.cert.CertPathValidatorSpi";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -582,23 +490,74 @@ namespace Java.Security.Cert
     }
     #endregion
 
-    #region CertPathValidator
+    #region PKIXCertPathChecker
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathValidator.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXCertPathChecker.html
     /// </summary>
-    public partial class CertPathValidator : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CertPathValidator>
+    public partial class PKIXCertPathChecker : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PKIXCertPathChecker>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public CertPathValidator() { }
+        public PKIXCertPathChecker() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public CertPathValidator(params object[] args) : base(args) { }
+        public PKIXCertPathChecker(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.security.cert.CertPathValidator";
+        public override string ClassName => "java.security.cert.PKIXCertPathChecker";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region CertificateParsingException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateParsingException.html
+    /// </summary>
+    public partial class CertificateParsingException : Java.Security.Cert.CertificateException
+    {
+        public CertificateParsingException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.security.cert.CertificateParsingException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region CollectionCertStoreParameters
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CollectionCertStoreParameters.html
+    /// </summary>
+    public partial class CollectionCertStoreParameters : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CollectionCertStoreParameters>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public CollectionCertStoreParameters() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public CollectionCertStoreParameters(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.security.cert.CollectionCertStoreParameters";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -617,112 +576,26 @@ namespace Java.Security.Cert
     }
     #endregion
 
-    #region CertPath
+    #region PKIXParameters
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPath.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXParameters.html
     /// </summary>
-    public partial class CertPath : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CertPath>
+    public partial class PKIXParameters : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PKIXParameters>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public CertPath() { }
+        public PKIXParameters() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public CertPath(params object[] args) : base(args) { }
+        public PKIXParameters(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.security.cert.CertPath";
+        public override string ClassName => "java.security.cert.PKIXParameters";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region PolicyNode
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PolicyNode.html
-    /// </summary>
-    public partial class PolicyNode : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PolicyNode>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public PolicyNode() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public PolicyNode(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.security.cert.PolicyNode";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region CertificateEncodingException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateEncodingException.html
-    /// </summary>
-    public partial class CertificateEncodingException : Java.Security.Cert.CertificateException
-    {
-        public CertificateEncodingException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.security.cert.CertificateEncodingException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region CertPathBuilderSpi
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathBuilderSpi.html
-    /// </summary>
-    public partial class CertPathBuilderSpi : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CertPathBuilderSpi>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public CertPathBuilderSpi() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public CertPathBuilderSpi(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.security.cert.CertPathBuilderSpi";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
+        public override bool IsAbstract => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
         public override bool IsCloseable => false;
@@ -773,48 +646,121 @@ namespace Java.Security.Cert
     }
     #endregion
 
-    #region CertStoreException
+    #region CertPathParameters
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertStoreException.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathParameters.html
     /// </summary>
-    public partial class CertStoreException : Java.Security.GeneralSecurityException
+    public partial class CertPathParameters : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CertPathParameters>
     {
-        public CertStoreException() { }
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public CertPathParameters() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public CertPathParameters(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.security.cert.CertStoreException";
+        public override string ClassName => "java.security.cert.CertPathParameters";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
 
         // TODO: complete the class
 
     }
     #endregion
 
-    #region CertificateExpiredException
+    #region CertPathBuilderResult
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateExpiredException.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathBuilderResult.html
     /// </summary>
-    public partial class CertificateExpiredException : Java.Security.Cert.CertificateException
+    public partial class CertPathBuilderResult : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CertPathBuilderResult>
     {
-        public CertificateExpiredException() { }
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public CertPathBuilderResult() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public CertPathBuilderResult(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.security.cert.CertificateExpiredException";
+        public override string ClassName => "java.security.cert.CertPathBuilderResult";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
 
         // TODO: complete the class
 
     }
     #endregion
 
-    #region CertificateNotYetValidException
+    #region LDAPCertStoreParameters
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateNotYetValidException.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/LDAPCertStoreParameters.html
     /// </summary>
-    public partial class CertificateNotYetValidException : Java.Security.Cert.CertificateException
+    public partial class LDAPCertStoreParameters : MASES.JCOBridge.C2JBridge.JVMBridgeBase<LDAPCertStoreParameters>
     {
-        public CertificateNotYetValidException() { }
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public LDAPCertStoreParameters() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public LDAPCertStoreParameters(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.security.cert.CertificateNotYetValidException";
+        public override string ClassName => "java.security.cert.LDAPCertStoreParameters";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region CertPathBuilderException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathBuilderException.html
+    /// </summary>
+    public partial class CertPathBuilderException : Java.Security.GeneralSecurityException
+    {
+        public CertPathBuilderException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.security.cert.CertPathBuilderException";
 
         // TODO: complete the class
 
@@ -856,23 +802,128 @@ namespace Java.Security.Cert
     }
     #endregion
 
-    #region CollectionCertStoreParameters
+    #region CertStoreSpi
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CollectionCertStoreParameters.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertStoreSpi.html
     /// </summary>
-    public partial class CollectionCertStoreParameters : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CollectionCertStoreParameters>
+    public partial class CertStoreSpi : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CertStoreSpi>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public CollectionCertStoreParameters() { }
+        public CertStoreSpi() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public CollectionCertStoreParameters(params object[] args) : base(args) { }
+        public CertStoreSpi(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.security.cert.CollectionCertStoreParameters";
+        public override string ClassName => "java.security.cert.CertStoreSpi";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region CertPathBuilderSpi
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathBuilderSpi.html
+    /// </summary>
+    public partial class CertPathBuilderSpi : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CertPathBuilderSpi>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public CertPathBuilderSpi() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public CertPathBuilderSpi(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.security.cert.CertPathBuilderSpi";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region CertStoreParameters
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertStoreParameters.html
+    /// </summary>
+    public partial class CertStoreParameters : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CertStoreParameters>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public CertStoreParameters() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public CertStoreParameters(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.security.cert.CertStoreParameters";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region CertPathBuilder
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathBuilder.html
+    /// </summary>
+    public partial class CertPathBuilder : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CertPathBuilder>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public CertPathBuilder() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public CertPathBuilder(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.security.cert.CertPathBuilder";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -891,23 +942,93 @@ namespace Java.Security.Cert
     }
     #endregion
 
-    #region PKIXCertPathValidatorResult
+    #region CertPathValidatorResult
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXCertPathValidatorResult.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathValidatorResult.html
     /// </summary>
-    public partial class PKIXCertPathValidatorResult : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PKIXCertPathValidatorResult>
+    public partial class CertPathValidatorResult : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CertPathValidatorResult>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public PKIXCertPathValidatorResult() { }
+        public CertPathValidatorResult() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public PKIXCertPathValidatorResult(params object[] args) : base(args) { }
+        public CertPathValidatorResult(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.security.cert.PKIXCertPathValidatorResult";
+        public override string ClassName => "java.security.cert.CertPathValidatorResult";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region X509CertSelector
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html
+    /// </summary>
+    public partial class X509CertSelector : MASES.JCOBridge.C2JBridge.JVMBridgeBase<X509CertSelector>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public X509CertSelector() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public X509CertSelector(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.security.cert.X509CertSelector";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region X509CRLSelector
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CRLSelector.html
+    /// </summary>
+    public partial class X509CRLSelector : MASES.JCOBridge.C2JBridge.JVMBridgeBase<X509CRLSelector>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public X509CRLSelector() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public X509CRLSelector(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.security.cert.X509CRLSelector";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -1010,16 +1131,70 @@ namespace Java.Security.Cert
     }
     #endregion
 
-    #region CertificateRevokedException
+    #region CertificateFactory
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateRevokedException.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateFactory.html
     /// </summary>
-    public partial class CertificateRevokedException : Java.Security.Cert.CertificateException
+    public partial class CertificateFactory : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CertificateFactory>
     {
-        public CertificateRevokedException() { }
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public CertificateFactory() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public CertificateFactory(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.security.cert.CertificateRevokedException";
+        public override string ClassName => "java.security.cert.CertificateFactory";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region PKIXReason
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXReason.html
+    /// </summary>
+    public partial class PKIXReason : Java.Lang.Enum
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public PKIXReason() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public PKIXReason(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.security.cert.PKIXReason";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
 
         // TODO: complete the class
 
@@ -1077,23 +1252,23 @@ namespace Java.Security.Cert
     }
     #endregion
 
-    #region CertificateFactory
+    #region PKIXCertPathValidatorResult
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateFactory.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXCertPathValidatorResult.html
     /// </summary>
-    public partial class CertificateFactory : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CertificateFactory>
+    public partial class PKIXCertPathValidatorResult : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PKIXCertPathValidatorResult>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public CertificateFactory() { }
+        public PKIXCertPathValidatorResult() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public CertificateFactory(params object[] args) : base(args) { }
+        public PKIXCertPathValidatorResult(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.security.cert.CertificateFactory";
+        public override string ClassName => "java.security.cert.PKIXCertPathValidatorResult";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -1106,22 +1281,6 @@ namespace Java.Security.Cert
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region CertificateParsingException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateParsingException.html
-    /// </summary>
-    public partial class CertificateParsingException : Java.Security.Cert.CertificateException
-    {
-        public CertificateParsingException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.security.cert.CertificateParsingException";
 
         // TODO: complete the class
 
@@ -1163,23 +1322,23 @@ namespace Java.Security.Cert
     }
     #endregion
 
-    #region PKIXCertPathChecker
+    #region CertSelector
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXCertPathChecker.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertSelector.html
     /// </summary>
-    public partial class PKIXCertPathChecker : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PKIXCertPathChecker>
+    public partial class CertSelector : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CertSelector>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public PKIXCertPathChecker() { }
+        public CertSelector() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public PKIXCertPathChecker(params object[] args) : base(args) { }
+        public CertSelector(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.security.cert.PKIXCertPathChecker";
+        public override string ClassName => "java.security.cert.CertSelector";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -1188,77 +1347,7 @@ namespace Java.Security.Cert
         public override bool IsCloseable => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region PKIXReason
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXReason.html
-    /// </summary>
-    public partial class PKIXReason : Java.Lang.Enum
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public PKIXReason() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public PKIXReason(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.security.cert.PKIXReason";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region LDAPCertStoreParameters
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/LDAPCertStoreParameters.html
-    /// </summary>
-    public partial class LDAPCertStoreParameters : MASES.JCOBridge.C2JBridge.JVMBridgeBase<LDAPCertStoreParameters>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public LDAPCertStoreParameters() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public LDAPCertStoreParameters(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.security.cert.LDAPCertStoreParameters";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
+        public override bool IsInterface => true;
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;
@@ -1303,39 +1392,55 @@ namespace Java.Security.Cert
     }
     #endregion
 
-    #region CRLException
+    #region CertStoreException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CRLException.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertStoreException.html
     /// </summary>
-    public partial class CRLException : Java.Security.GeneralSecurityException
+    public partial class CertStoreException : Java.Security.GeneralSecurityException
     {
-        public CRLException() { }
+        public CertStoreException() { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.security.cert.CRLException";
+        public override string ClassName => "java.security.cert.CertStoreException";
 
         // TODO: complete the class
 
     }
     #endregion
 
-    #region CertSelector
+    #region CertificateExpiredException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertSelector.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateExpiredException.html
     /// </summary>
-    public partial class CertSelector : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CertSelector>
+    public partial class CertificateExpiredException : Java.Security.Cert.CertificateException
+    {
+        public CertificateExpiredException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.security.cert.CertificateExpiredException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region CRLSelector
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CRLSelector.html
+    /// </summary>
+    public partial class CRLSelector : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CRLSelector>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public CertSelector() { }
+        public CRLSelector() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public CertSelector(params object[] args) : base(args) { }
+        public CRLSelector(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.security.cert.CertSelector";
+        public override string ClassName => "java.security.cert.CRLSelector";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -1354,23 +1459,74 @@ namespace Java.Security.Cert
     }
     #endregion
 
-    #region CertPathValidatorResult
+    #region CRLException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathValidatorResult.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CRLException.html
     /// </summary>
-    public partial class CertPathValidatorResult : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CertPathValidatorResult>
+    public partial class CRLException : Java.Security.GeneralSecurityException
+    {
+        public CRLException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.security.cert.CRLException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region CRL
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CRL.html
+    /// </summary>
+    public partial class CRL : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CRL>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public CertPathValidatorResult() { }
+        public CRL() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public CertPathValidatorResult(params object[] args) : base(args) { }
+        public CRL(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.security.cert.CertPathValidatorResult";
+        public override string ClassName => "java.security.cert.CRL";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region PolicyNode
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PolicyNode.html
+    /// </summary>
+    public partial class PolicyNode : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PolicyNode>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public PolicyNode() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public PolicyNode(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.security.cert.PolicyNode";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -1424,58 +1580,23 @@ namespace Java.Security.Cert
     }
     #endregion
 
-    #region CertPathParameters
+    #region CertPathValidator
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathParameters.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathValidator.html
     /// </summary>
-    public partial class CertPathParameters : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CertPathParameters>
+    public partial class CertPathValidator : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CertPathValidator>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public CertPathParameters() { }
+        public CertPathValidator() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public CertPathParameters(params object[] args) : base(args) { }
+        public CertPathValidator(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.security.cert.CertPathParameters";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region CertPathBuilder
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathBuilder.html
-    /// </summary>
-    public partial class CertPathBuilder : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CertPathBuilder>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public CertPathBuilder() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public CertPathBuilder(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.security.cert.CertPathBuilder";
+        public override string ClassName => "java.security.cert.CertPathValidator";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -1485,127 +1606,6 @@ namespace Java.Security.Cert
 
         /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
         public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region CertPathBuilderException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathBuilderException.html
-    /// </summary>
-    public partial class CertPathBuilderException : Java.Security.GeneralSecurityException
-    {
-        public CertPathBuilderException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.security.cert.CertPathBuilderException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region X509CertSelector
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509CertSelector.html
-    /// </summary>
-    public partial class X509CertSelector : MASES.JCOBridge.C2JBridge.JVMBridgeBase<X509CertSelector>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public X509CertSelector() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public X509CertSelector(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.security.cert.X509CertSelector";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region CertStoreParameters
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertStoreParameters.html
-    /// </summary>
-    public partial class CertStoreParameters : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CertStoreParameters>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public CertStoreParameters() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public CertStoreParameters(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.security.cert.CertStoreParameters";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region CertPathBuilderResult
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathBuilderResult.html
-    /// </summary>
-    public partial class CertPathBuilderResult : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CertPathBuilderResult>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public CertPathBuilderResult() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public CertPathBuilderResult(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.security.cert.CertPathBuilderResult";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;

@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Org.W3c.Dom.Ls
 {
     #region LSSerializerFilter
@@ -31,7 +33,8 @@ namespace Org.W3c.Dom.Ls
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Org.W3c.Dom.Traversal.NodeFilter(Org.W3c.Dom.Ls.LSSerializerFilter t) => t.Cast<Org.W3c.Dom.Traversal.NodeFilter>();
+        
         #endregion
 
         #region Fields

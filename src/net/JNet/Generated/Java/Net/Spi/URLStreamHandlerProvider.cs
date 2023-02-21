@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Net.Spi
 {
     #region URLStreamHandlerProvider
@@ -31,7 +33,8 @@ namespace Java.Net.Spi
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Net.URLStreamHandlerFactory(Java.Net.Spi.URLStreamHandlerProvider t) => t.Cast<Java.Net.URLStreamHandlerFactory>();
+        
         #endregion
 
         #region Fields

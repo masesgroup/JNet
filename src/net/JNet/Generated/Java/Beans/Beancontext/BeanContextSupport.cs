@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Beans.Beancontext
 {
     #region BeanContextSupport
@@ -59,7 +61,11 @@ namespace Java.Beans.Beancontext
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Beans.Beancontext.BeanContext(Java.Beans.Beancontext.BeanContextSupport t) => t.Cast<Java.Beans.Beancontext.BeanContext>();
+        public static implicit operator Java.Io.Serializable(Java.Beans.Beancontext.BeanContextSupport t) => t.Cast<Java.Io.Serializable>();
+        public static implicit operator Java.Beans.PropertyChangeListener(Java.Beans.Beancontext.BeanContextSupport t) => t.Cast<Java.Beans.PropertyChangeListener>();
+        public static implicit operator Java.Beans.VetoableChangeListener(Java.Beans.Beancontext.BeanContextSupport t) => t.Cast<Java.Beans.VetoableChangeListener>();
+        
         #endregion
 
         #region Fields

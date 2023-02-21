@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Management
 {
     #region AttributeChangeNotificationFilter
@@ -31,7 +33,8 @@ namespace Javax.Management
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Management.NotificationFilter(Javax.Management.AttributeChangeNotificationFilter t) => t.Cast<Javax.Management.NotificationFilter>();
+        
         #endregion
 
         #region Fields

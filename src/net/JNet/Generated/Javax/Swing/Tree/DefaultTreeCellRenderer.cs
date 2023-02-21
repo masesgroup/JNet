@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing.Tree
 {
     #region DefaultTreeCellRenderer
@@ -31,7 +33,8 @@ namespace Javax.Swing.Tree
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Swing.Tree.TreeCellRenderer(Javax.Swing.Tree.DefaultTreeCellRenderer t) => t.Cast<Javax.Swing.Tree.TreeCellRenderer>();
+        
         #endregion
 
         #region Fields

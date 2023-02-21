@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing.Text.Html
 {
     #region HTMLEditorKit
@@ -31,7 +33,8 @@ namespace Javax.Swing.Text.Html
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.Text.Html.HTMLEditorKit t) => t.Cast<Javax.Accessibility.Accessible>();
+        
         #endregion
 
         #region Fields
@@ -148,81 +151,6 @@ namespace Javax.Swing.Text.Html
         #endregion
 
         #region Nested classes
-        #region HTMLFactory
-        public partial class HTMLFactory
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.HTMLFactory.html#create(javax.swing.text.Element)
-            /// </summary>
-            public Javax.Swing.Text.View Create(Javax.Swing.Text.Element arg0)
-            {
-                return IExecute<Javax.Swing.Text.View>("create", arg0);
-            }
-            
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region InsertHTMLTextAction
-        public partial class InsertHTMLTextAction
-        {
-            #region Constructors
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.InsertHTMLTextAction.html#<init>(java.lang.String,java.lang.String,javax.swing.text.html.HTML$Tag,javax.swing.text.html.HTML$Tag,javax.swing.text.html.HTML$Tag,javax.swing.text.html.HTML$Tag)
-            /// </summary>
-            public InsertHTMLTextAction(string arg0, string arg1, Javax.Swing.Text.Html.HTML.Tag arg2, Javax.Swing.Text.Html.HTML.Tag arg3, Javax.Swing.Text.Html.HTML.Tag arg4, Javax.Swing.Text.Html.HTML.Tag arg5)
-                : base(arg0, arg1, arg2, arg3, arg4, arg5)
-            {
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.InsertHTMLTextAction.html#<init>(java.lang.String,java.lang.String,javax.swing.text.html.HTML$Tag,javax.swing.text.html.HTML$Tag)
-            /// </summary>
-            public InsertHTMLTextAction(string arg0, string arg1, Javax.Swing.Text.Html.HTML.Tag arg2, Javax.Swing.Text.Html.HTML.Tag arg3)
-                : base(arg0, arg1, arg2, arg3)
-            {
-            }
-            
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region ParserCallback
         public partial class ParserCallback
         {
@@ -310,15 +238,22 @@ namespace Javax.Swing.Text.Html
         }
         #endregion
 
-        #region HTMLTextAction
-        public partial class HTMLTextAction
+        #region InsertHTMLTextAction
+        public partial class InsertHTMLTextAction
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.HTMLTextAction.html#<init>(java.lang.String)
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.InsertHTMLTextAction.html#<init>(java.lang.String,java.lang.String,javax.swing.text.html.HTML$Tag,javax.swing.text.html.HTML$Tag,javax.swing.text.html.HTML$Tag,javax.swing.text.html.HTML$Tag)
             /// </summary>
-            public HTMLTextAction(string arg0)
-                : base(arg0)
+            public InsertHTMLTextAction(string arg0, string arg1, Javax.Swing.Text.Html.HTML.Tag arg2, Javax.Swing.Text.Html.HTML.Tag arg3, Javax.Swing.Text.Html.HTML.Tag arg4, Javax.Swing.Text.Html.HTML.Tag arg5)
+                : base(arg0, arg1, arg2, arg3, arg4, arg5)
+            {
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.InsertHTMLTextAction.html#<init>(java.lang.String,java.lang.String,javax.swing.text.html.HTML$Tag,javax.swing.text.html.HTML$Tag)
+            /// </summary>
+            public InsertHTMLTextAction(string arg0, string arg1, Javax.Swing.Text.Html.HTML.Tag arg2, Javax.Swing.Text.Html.HTML.Tag arg3)
+                : base(arg0, arg1, arg2, arg3)
             {
             }
             
@@ -372,6 +307,75 @@ namespace Javax.Swing.Text.Html
                 IExecute("parse", arg0, arg1, arg2);
             }
             
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region HTMLFactory
+        public partial class HTMLFactory
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+            public static implicit operator Javax.Swing.Text.ViewFactory(Javax.Swing.Text.Html.HTMLEditorKit.HTMLFactory t) => t.Cast<Javax.Swing.Text.ViewFactory>();
+            
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.HTMLFactory.html#create(javax.swing.text.Element)
+            /// </summary>
+            public Javax.Swing.Text.View Create(Javax.Swing.Text.Element arg0)
+            {
+                return IExecute<Javax.Swing.Text.View>("create", arg0);
+            }
+            
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region HTMLTextAction
+        public partial class HTMLTextAction
+        {
+            #region Constructors
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.HTMLTextAction.html#<init>(java.lang.String)
+            /// </summary>
+            public HTMLTextAction(string arg0)
+                : base(arg0)
+            {
+            }
+            
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
             #endregion
 
             // TODO: complete the class

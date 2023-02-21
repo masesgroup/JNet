@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Awt
 {
     #region Checkbox
@@ -59,7 +61,9 @@ namespace Java.Awt
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Awt.ItemSelectable(Java.Awt.Checkbox t) => t.Cast<Java.Awt.ItemSelectable>();
+        public static implicit operator Javax.Accessibility.Accessible(Java.Awt.Checkbox t) => t.Cast<Javax.Accessibility.Accessible>();
+        
         #endregion
 
         #region Fields

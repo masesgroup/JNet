@@ -58,32 +58,83 @@ namespace Java.Lang.Reflect
     }
     #endregion
 
-    #region Proxy
+    #region AnnotatedType
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Proxy.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AnnotatedType.html
     /// </summary>
-    public partial class Proxy : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Proxy>
+    public partial class AnnotatedType : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AnnotatedType>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public Proxy() { }
+        public AnnotatedType() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public Proxy(params object[] args) : base(args) { }
+        public AnnotatedType(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.lang.reflect.Proxy";
+        public override string ClassName => "java.lang.reflect.AnnotatedType";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
+        public override bool IsAbstract => true;
 
         /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
         public override bool IsCloseable => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region MalformedParametersException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/MalformedParametersException.html
+    /// </summary>
+    public partial class MalformedParametersException : Java.Lang.RuntimeException
+    {
+        public MalformedParametersException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.lang.reflect.MalformedParametersException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region WildcardType
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/WildcardType.html
+    /// </summary>
+    public partial class WildcardType : MASES.JCOBridge.C2JBridge.JVMBridgeBase<WildcardType>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public WildcardType() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public WildcardType(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.lang.reflect.WildcardType";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;
@@ -103,22 +154,6 @@ namespace Java.Lang.Reflect
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "java.lang.reflect.GenericSignatureFormatError";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region InaccessibleObjectException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/InaccessibleObjectException.html
-    /// </summary>
-    public partial class InaccessibleObjectException : Java.Lang.RuntimeException
-    {
-        public InaccessibleObjectException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.lang.reflect.InaccessibleObjectException";
 
         // TODO: complete the class
 
@@ -195,6 +230,22 @@ namespace Java.Lang.Reflect
     }
     #endregion
 
+    #region UndeclaredThrowableException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/UndeclaredThrowableException.html
+    /// </summary>
+    public partial class UndeclaredThrowableException : Java.Lang.RuntimeException
+    {
+        public UndeclaredThrowableException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.lang.reflect.UndeclaredThrowableException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region ReflectPermission
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/ReflectPermission.html
@@ -230,39 +281,23 @@ namespace Java.Lang.Reflect
     }
     #endregion
 
-    #region MalformedParameterizedTypeException
+    #region AnnotatedWildcardType
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/MalformedParameterizedTypeException.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AnnotatedWildcardType.html
     /// </summary>
-    public partial class MalformedParameterizedTypeException : Java.Lang.RuntimeException
-    {
-        public MalformedParameterizedTypeException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.lang.reflect.MalformedParameterizedTypeException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region AnnotatedTypeVariable
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AnnotatedTypeVariable.html
-    /// </summary>
-    public partial class AnnotatedTypeVariable : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AnnotatedTypeVariable>
+    public partial class AnnotatedWildcardType : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AnnotatedWildcardType>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public AnnotatedTypeVariable() { }
+        public AnnotatedWildcardType() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public AnnotatedTypeVariable(params object[] args) : base(args) { }
+        public AnnotatedWildcardType(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.lang.reflect.AnnotatedTypeVariable";
+        public override string ClassName => "java.lang.reflect.AnnotatedWildcardType";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -316,23 +351,23 @@ namespace Java.Lang.Reflect
     }
     #endregion
 
-    #region AnnotatedParameterizedType
+    #region ParameterizedType
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AnnotatedParameterizedType.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/ParameterizedType.html
     /// </summary>
-    public partial class AnnotatedParameterizedType : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AnnotatedParameterizedType>
+    public partial class ParameterizedType : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ParameterizedType>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public AnnotatedParameterizedType() { }
+        public ParameterizedType() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public AnnotatedParameterizedType(params object[] args) : base(args) { }
+        public ParameterizedType(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.lang.reflect.AnnotatedParameterizedType";
+        public override string ClassName => "java.lang.reflect.ParameterizedType";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -351,16 +386,86 @@ namespace Java.Lang.Reflect
     }
     #endregion
 
-    #region MalformedParametersException
+    #region GenericArrayType
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/MalformedParametersException.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/GenericArrayType.html
     /// </summary>
-    public partial class MalformedParametersException : Java.Lang.RuntimeException
+    public partial class GenericArrayType : MASES.JCOBridge.C2JBridge.JVMBridgeBase<GenericArrayType>
     {
-        public MalformedParametersException() { }
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public GenericArrayType() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public GenericArrayType(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.lang.reflect.MalformedParametersException";
+        public override string ClassName => "java.lang.reflect.GenericArrayType";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region InaccessibleObjectException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/InaccessibleObjectException.html
+    /// </summary>
+    public partial class InaccessibleObjectException : Java.Lang.RuntimeException
+    {
+        public InaccessibleObjectException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.lang.reflect.InaccessibleObjectException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region AnnotatedTypeVariable
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AnnotatedTypeVariable.html
+    /// </summary>
+    public partial class AnnotatedTypeVariable : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AnnotatedTypeVariable>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public AnnotatedTypeVariable() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public AnnotatedTypeVariable(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.lang.reflect.AnnotatedTypeVariable";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
 
         // TODO: complete the class
 
@@ -402,51 +507,35 @@ namespace Java.Lang.Reflect
     }
     #endregion
 
-    #region AnnotatedType
+    #region Proxy
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AnnotatedType.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Proxy.html
     /// </summary>
-    public partial class AnnotatedType : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AnnotatedType>
+    public partial class Proxy : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Proxy>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public AnnotatedType() { }
+        public Proxy() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public AnnotatedType(params object[] args) : base(args) { }
+        public Proxy(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.lang.reflect.AnnotatedType";
+        public override string ClassName => "java.lang.reflect.Proxy";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
+        public override bool IsAbstract => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
         public override bool IsCloseable => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
+        public override bool IsInterface => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region UndeclaredThrowableException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/UndeclaredThrowableException.html
-    /// </summary>
-    public partial class UndeclaredThrowableException : Java.Lang.RuntimeException
-    {
-        public UndeclaredThrowableException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.lang.reflect.UndeclaredThrowableException";
 
         // TODO: complete the class
 
@@ -558,93 +647,39 @@ namespace Java.Lang.Reflect
     }
     #endregion
 
-    #region AnnotatedWildcardType
+    #region InvocationTargetException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AnnotatedWildcardType.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/InvocationTargetException.html
     /// </summary>
-    public partial class AnnotatedWildcardType : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AnnotatedWildcardType>
+    public partial class InvocationTargetException : Java.Lang.ReflectiveOperationException
     {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public AnnotatedWildcardType() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public AnnotatedWildcardType(params object[] args) : base(args) { }
+        public InvocationTargetException() { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.lang.reflect.AnnotatedWildcardType";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
+        public override string ClassName => "java.lang.reflect.InvocationTargetException";
 
         // TODO: complete the class
 
     }
     #endregion
 
-    #region ParameterizedType
+    #region AnnotatedParameterizedType
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/ParameterizedType.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/AnnotatedParameterizedType.html
     /// </summary>
-    public partial class ParameterizedType : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ParameterizedType>
+    public partial class AnnotatedParameterizedType : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AnnotatedParameterizedType>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ParameterizedType() { }
+        public AnnotatedParameterizedType() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public ParameterizedType(params object[] args) : base(args) { }
+        public AnnotatedParameterizedType(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.lang.reflect.ParameterizedType";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region GenericArrayType
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/GenericArrayType.html
-    /// </summary>
-    public partial class GenericArrayType : MASES.JCOBridge.C2JBridge.JVMBridgeBase<GenericArrayType>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public GenericArrayType() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public GenericArrayType(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.lang.reflect.GenericArrayType";
+        public override string ClassName => "java.lang.reflect.AnnotatedParameterizedType";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -733,32 +768,32 @@ namespace Java.Lang.Reflect
     }
     #endregion
 
-    #region TypeVariable
+    #region Method
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/TypeVariable.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Method.html
     /// </summary>
-    public partial class TypeVariable : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TypeVariable>
+    public partial class Method : Java.Lang.Reflect.Executable
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public TypeVariable() { }
+        public Method() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public TypeVariable(params object[] args) : base(args) { }
+        public Method(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.lang.reflect.TypeVariable";
+        public override string ClassName => "java.lang.reflect.Method";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
+        public override bool IsAbstract => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
         public override bool IsCloseable => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
+        public override bool IsInterface => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;
@@ -803,58 +838,23 @@ namespace Java.Lang.Reflect
     }
     #endregion
 
-    #region Method
+    #region TypeVariable
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Method.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/TypeVariable.html
     /// </summary>
-    public partial class Method : Java.Lang.Reflect.Executable
+    public partial class TypeVariable : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TypeVariable>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public Method() { }
+        public TypeVariable() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public Method(params object[] args) : base(args) { }
+        public TypeVariable(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.lang.reflect.Method";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region WildcardType
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/WildcardType.html
-    /// </summary>
-    public partial class WildcardType : MASES.JCOBridge.C2JBridge.JVMBridgeBase<WildcardType>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public WildcardType() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public WildcardType(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.lang.reflect.WildcardType";
+        public override string ClassName => "java.lang.reflect.TypeVariable";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -867,22 +867,6 @@ namespace Java.Lang.Reflect
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region InvocationTargetException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/InvocationTargetException.html
-    /// </summary>
-    public partial class InvocationTargetException : Java.Lang.ReflectiveOperationException
-    {
-        public InvocationTargetException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.lang.reflect.InvocationTargetException";
 
         // TODO: complete the class
 
@@ -918,6 +902,22 @@ namespace Java.Lang.Reflect
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region MalformedParameterizedTypeException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/MalformedParameterizedTypeException.html
+    /// </summary>
+    public partial class MalformedParameterizedTypeException : Java.Lang.RuntimeException
+    {
+        public MalformedParameterizedTypeException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.lang.reflect.MalformedParameterizedTypeException";
 
         // TODO: complete the class
 

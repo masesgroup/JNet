@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Security.Auth.Kerberos
 {
     #region DelegationPermission
@@ -45,7 +47,8 @@ namespace Javax.Security.Auth.Kerberos
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Io.Serializable(Javax.Security.Auth.Kerberos.DelegationPermission t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields

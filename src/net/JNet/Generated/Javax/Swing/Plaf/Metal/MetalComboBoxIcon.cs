@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing.Plaf.Metal
 {
     #region MetalComboBoxIcon
@@ -31,7 +33,9 @@ namespace Javax.Swing.Plaf.Metal
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Swing.Icon(Javax.Swing.Plaf.Metal.MetalComboBoxIcon t) => t.Cast<Javax.Swing.Icon>();
+        public static implicit operator Java.Io.Serializable(Javax.Swing.Plaf.Metal.MetalComboBoxIcon t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields

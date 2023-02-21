@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing.Text
 {
     #region SimpleAttributeSet
@@ -38,7 +40,10 @@ namespace Javax.Swing.Text
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Swing.Text.MutableAttributeSet(Javax.Swing.Text.SimpleAttributeSet t) => t.Cast<Javax.Swing.Text.MutableAttributeSet>();
+        public static implicit operator Java.Io.Serializable(Javax.Swing.Text.SimpleAttributeSet t) => t.Cast<Java.Io.Serializable>();
+        public static implicit operator Java.Lang.Cloneable(Javax.Swing.Text.SimpleAttributeSet t) => t.Cast<Java.Lang.Cloneable>();
+        
         #endregion
 
         #region Fields

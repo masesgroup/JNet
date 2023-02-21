@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Time
 {
     #region Duration
@@ -31,7 +33,9 @@ namespace Java.Time
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Time.Temporal.TemporalAmount(Java.Time.Duration t) => t.Cast<Java.Time.Temporal.TemporalAmount>();
+        public static implicit operator Java.Io.Serializable(Java.Time.Duration t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields

@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Awt.ImageNs.Renderable
 {
     #region RenderContext
@@ -59,7 +61,8 @@ namespace Java.Awt.ImageNs.Renderable
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Lang.Cloneable(Java.Awt.ImageNs.Renderable.RenderContext t) => t.Cast<Java.Lang.Cloneable>();
+        
         #endregion
 
         #region Fields

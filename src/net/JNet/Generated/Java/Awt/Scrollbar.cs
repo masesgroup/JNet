@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Awt
 {
     #region Scrollbar
@@ -45,7 +47,9 @@ namespace Java.Awt
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Awt.Adjustable(Java.Awt.Scrollbar t) => t.Cast<Java.Awt.Adjustable>();
+        public static implicit operator Javax.Accessibility.Accessible(Java.Awt.Scrollbar t) => t.Cast<Javax.Accessibility.Accessible>();
+        
         #endregion
 
         #region Fields

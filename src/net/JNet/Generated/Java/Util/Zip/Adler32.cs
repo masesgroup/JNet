@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Util.Zip
 {
     #region Adler32
@@ -31,7 +33,8 @@ namespace Java.Util.Zip
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Util.Zip.Checksum(Java.Util.Zip.Adler32 t) => t.Cast<Java.Util.Zip.Checksum>();
+        
         #endregion
 
         #region Fields

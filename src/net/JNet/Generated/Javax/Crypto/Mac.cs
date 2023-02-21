@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Crypto
 {
     #region Mac
@@ -31,7 +33,8 @@ namespace Javax.Crypto
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Lang.Cloneable(Javax.Crypto.Mac t) => t.Cast<Java.Lang.Cloneable>();
+        
         #endregion
 
         #region Fields

@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Awt.Print
 {
     #region Book
@@ -31,7 +33,8 @@ namespace Java.Awt.Print
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Awt.Print.Pageable(Java.Awt.Print.Book t) => t.Cast<Java.Awt.Print.Pageable>();
+        
         #endregion
 
         #region Fields

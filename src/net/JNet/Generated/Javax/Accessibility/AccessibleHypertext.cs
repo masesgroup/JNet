@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Accessibility
 {
     #region AccessibleHypertext
@@ -31,7 +33,8 @@ namespace Javax.Accessibility
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Accessibility.AccessibleText(Javax.Accessibility.AccessibleHypertext t) => t.Cast<Javax.Accessibility.AccessibleText>();
+        
         #endregion
 
         #region Fields

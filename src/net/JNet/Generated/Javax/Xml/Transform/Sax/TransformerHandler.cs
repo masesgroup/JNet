@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Xml.Transform.Sax
 {
     #region TransformerHandler
@@ -31,7 +33,10 @@ namespace Javax.Xml.Transform.Sax
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Org.Xml.Sax.ContentHandler(Javax.Xml.Transform.Sax.TransformerHandler t) => t.Cast<Org.Xml.Sax.ContentHandler>();
+        public static implicit operator Org.Xml.Sax.Ext.LexicalHandler(Javax.Xml.Transform.Sax.TransformerHandler t) => t.Cast<Org.Xml.Sax.Ext.LexicalHandler>();
+        public static implicit operator Org.Xml.Sax.DTDHandler(Javax.Xml.Transform.Sax.TransformerHandler t) => t.Cast<Org.Xml.Sax.DTDHandler>();
+        
         #endregion
 
         #region Fields

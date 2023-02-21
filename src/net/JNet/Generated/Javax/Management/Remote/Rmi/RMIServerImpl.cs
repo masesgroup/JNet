@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Management.Remote.Rmi
 {
     #region RMIServerImpl
@@ -31,7 +33,9 @@ namespace Javax.Management.Remote.Rmi
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Io.Closeable(Javax.Management.Remote.Rmi.RMIServerImpl t) => t.Cast<Java.Io.Closeable>();
+        public static implicit operator Javax.Management.Remote.Rmi.RMIServer(Javax.Management.Remote.Rmi.RMIServerImpl t) => t.Cast<Javax.Management.Remote.Rmi.RMIServer>();
+        
         #endregion
 
         #region Fields

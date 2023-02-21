@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing.Text
 {
     #region AsyncBoxView
@@ -96,6 +98,68 @@ namespace Javax.Swing.Text
         #endregion
 
         #region Nested classes
+        #region ChildLocator
+        public partial class ChildLocator
+        {
+            #region Constructors
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildLocator.html#<init>(javax.swing.text.AsyncBoxView)
+            /// </summary>
+            public ChildLocator(Javax.Swing.Text.AsyncBoxView arg0)
+                : base(arg0)
+            {
+            }
+            
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildLocator.html#getViewIndexAtPoint(float,float,java.awt.Shape)
+            /// </summary>
+            public int GetViewIndexAtPoint(float arg0, float arg1, Java.Awt.Shape arg2)
+            {
+                return IExecute<int>("getViewIndexAtPoint", arg0, arg1, arg2);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildLocator.html#getChildAllocation(int,java.awt.Shape)
+            /// </summary>
+            public Java.Awt.Shape GetChildAllocation(int arg0, Java.Awt.Shape arg1)
+            {
+                return IExecute<Java.Awt.Shape>("getChildAllocation", arg0, arg1);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildLocator.html#childChanged(javax.swing.text.AsyncBoxView$ChildState)
+            /// </summary>
+            public void ChildChanged(Javax.Swing.Text.AsyncBoxView.ChildState arg0)
+            {
+                IExecute("childChanged", arg0);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildLocator.html#paintChildren(java.awt.Graphics)
+            /// </summary>
+            public void PaintChildren(Java.Awt.Graphics arg0)
+            {
+                IExecute("paintChildren", arg0);
+            }
+            
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region ChildState
         public partial class ChildState
         {
@@ -111,7 +175,8 @@ namespace Javax.Swing.Text
             #endregion
 
             #region Class/Interface conversion operators
-
+            public static implicit operator Java.Lang.Runnable(Javax.Swing.Text.AsyncBoxView.ChildState t) => t.Cast<Java.Lang.Runnable>();
+            
             #endregion
 
             #region Fields
@@ -178,68 +243,6 @@ namespace Javax.Swing.Text
             public void Run()
             {
                 IExecute("run");
-            }
-            
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region ChildLocator
-        public partial class ChildLocator
-        {
-            #region Constructors
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildLocator.html#<init>(javax.swing.text.AsyncBoxView)
-            /// </summary>
-            public ChildLocator(Javax.Swing.Text.AsyncBoxView arg0)
-                : base(arg0)
-            {
-            }
-            
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildLocator.html#getViewIndexAtPoint(float,float,java.awt.Shape)
-            /// </summary>
-            public int GetViewIndexAtPoint(float arg0, float arg1, Java.Awt.Shape arg2)
-            {
-                return IExecute<int>("getViewIndexAtPoint", arg0, arg1, arg2);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildLocator.html#getChildAllocation(int,java.awt.Shape)
-            /// </summary>
-            public Java.Awt.Shape GetChildAllocation(int arg0, Java.Awt.Shape arg1)
-            {
-                return IExecute<Java.Awt.Shape>("getChildAllocation", arg0, arg1);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildLocator.html#childChanged(javax.swing.text.AsyncBoxView$ChildState)
-            /// </summary>
-            public void ChildChanged(Javax.Swing.Text.AsyncBoxView.ChildState arg0)
-            {
-                IExecute("childChanged", arg0);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildLocator.html#paintChildren(java.awt.Graphics)
-            /// </summary>
-            public void PaintChildren(Java.Awt.Graphics arg0)
-            {
-                IExecute("paintChildren", arg0);
             }
             
             #endregion

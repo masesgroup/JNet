@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Imageio.Spi
 {
     #region IIOServiceProvider
@@ -38,7 +40,8 @@ namespace Javax.Imageio.Spi
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Imageio.Spi.RegisterableService(Javax.Imageio.Spi.IIOServiceProvider t) => t.Cast<Javax.Imageio.Spi.RegisterableService>();
+        
         #endregion
 
         #region Fields

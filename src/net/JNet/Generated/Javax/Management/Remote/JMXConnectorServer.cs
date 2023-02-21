@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Management.Remote
 {
     #region JMXConnectorServer
@@ -38,7 +40,10 @@ namespace Javax.Management.Remote
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Management.Remote.JMXConnectorServerMBean(Javax.Management.Remote.JMXConnectorServer t) => t.Cast<Javax.Management.Remote.JMXConnectorServerMBean>();
+        public static implicit operator Javax.Management.MBeanRegistration(Javax.Management.Remote.JMXConnectorServer t) => t.Cast<Javax.Management.MBeanRegistration>();
+        public static implicit operator Javax.Management.Remote.JMXAddressable(Javax.Management.Remote.JMXConnectorServer t) => t.Cast<Javax.Management.Remote.JMXAddressable>();
+        
         #endregion
 
         #region Fields

@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing
 {
     #region JTable
@@ -59,7 +61,14 @@ namespace Javax.Swing
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Swing.Event.TableModelListener(Javax.Swing.JTable t) => t.Cast<Javax.Swing.Event.TableModelListener>();
+        public static implicit operator Javax.Swing.Scrollable(Javax.Swing.JTable t) => t.Cast<Javax.Swing.Scrollable>();
+        public static implicit operator Javax.Swing.Event.TableColumnModelListener(Javax.Swing.JTable t) => t.Cast<Javax.Swing.Event.TableColumnModelListener>();
+        public static implicit operator Javax.Swing.Event.ListSelectionListener(Javax.Swing.JTable t) => t.Cast<Javax.Swing.Event.ListSelectionListener>();
+        public static implicit operator Javax.Swing.Event.CellEditorListener(Javax.Swing.JTable t) => t.Cast<Javax.Swing.Event.CellEditorListener>();
+        public static implicit operator Javax.Accessibility.Accessible(Javax.Swing.JTable t) => t.Cast<Javax.Accessibility.Accessible>();
+        public static implicit operator Javax.Swing.Event.RowSorterListener(Javax.Swing.JTable t) => t.Cast<Javax.Swing.Event.RowSorterListener>();
+        
         #endregion
 
         #region Fields
@@ -746,6 +755,48 @@ namespace Javax.Swing
         #endregion
 
         #region Nested classes
+        #region PrintMode
+        public partial class PrintMode
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.PrintMode.html#NORMAL
+            /// </summary>
+            public static Javax.Swing.JTable.PrintMode NORMAL => Clazz.GetField<Javax.Swing.JTable.PrintMode>("NORMAL");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.PrintMode.html#FIT_WIDTH
+            /// </summary>
+            public static Javax.Swing.JTable.PrintMode FIT_WIDTH => Clazz.GetField<Javax.Swing.JTable.PrintMode>("FIT_WIDTH");
+            
+            #endregion
+
+            #region Static methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.PrintMode.html#values()
+            /// </summary>
+            public static Javax.Swing.JTable.PrintMode[] Values()
+            {
+                return SExecuteArray<Javax.Swing.JTable.PrintMode>("values");
+            }
+            
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region DropLocation
         public partial class DropLocation
         {
@@ -795,48 +846,6 @@ namespace Javax.Swing
                 return IExecute<bool>("isInsertRow");
             }
             
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region PrintMode
-        public partial class PrintMode
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.PrintMode.html#NORMAL
-            /// </summary>
-            public static Javax.Swing.JTable.PrintMode NORMAL => Clazz.GetField<Javax.Swing.JTable.PrintMode>("NORMAL");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.PrintMode.html#FIT_WIDTH
-            /// </summary>
-            public static Javax.Swing.JTable.PrintMode FIT_WIDTH => Clazz.GetField<Javax.Swing.JTable.PrintMode>("FIT_WIDTH");
-            
-            #endregion
-
-            #region Static methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.PrintMode.html#values()
-            /// </summary>
-            public static Javax.Swing.JTable.PrintMode[] Values()
-            {
-                return SExecuteArray<Javax.Swing.JTable.PrintMode>("values");
-            }
-            
-            #endregion
-
-            #region Instance methods
-
             #endregion
 
             // TODO: complete the class

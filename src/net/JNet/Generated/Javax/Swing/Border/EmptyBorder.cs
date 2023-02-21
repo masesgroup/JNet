@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing.Border
 {
     #region EmptyBorder
@@ -45,7 +47,8 @@ namespace Javax.Swing.Border
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Java.Io.Serializable(Javax.Swing.Border.EmptyBorder t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields

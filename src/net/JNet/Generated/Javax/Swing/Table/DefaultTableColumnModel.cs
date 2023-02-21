@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Swing.Table
 {
     #region DefaultTableColumnModel
@@ -31,7 +33,11 @@ namespace Javax.Swing.Table
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Swing.Table.TableColumnModel(Javax.Swing.Table.DefaultTableColumnModel t) => t.Cast<Javax.Swing.Table.TableColumnModel>();
+        public static implicit operator Java.Beans.PropertyChangeListener(Javax.Swing.Table.DefaultTableColumnModel t) => t.Cast<Java.Beans.PropertyChangeListener>();
+        public static implicit operator Javax.Swing.Event.ListSelectionListener(Javax.Swing.Table.DefaultTableColumnModel t) => t.Cast<Javax.Swing.Event.ListSelectionListener>();
+        public static implicit operator Java.Io.Serializable(Javax.Swing.Table.DefaultTableColumnModel t) => t.Cast<Java.Io.Serializable>();
+        
         #endregion
 
         #region Fields

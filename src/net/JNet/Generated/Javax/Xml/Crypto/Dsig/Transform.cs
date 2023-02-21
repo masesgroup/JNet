@@ -21,6 +21,8 @@
 *  using java.* as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Javax.Xml.Crypto.Dsig
 {
     #region Transform
@@ -31,7 +33,9 @@ namespace Javax.Xml.Crypto.Dsig
         #endregion
 
         #region Class/Interface conversion operators
-
+        public static implicit operator Javax.Xml.Crypto.XMLStructure(Javax.Xml.Crypto.Dsig.Transform t) => t.Cast<Javax.Xml.Crypto.XMLStructure>();
+        public static implicit operator Javax.Xml.Crypto.AlgorithmMethod(Javax.Xml.Crypto.Dsig.Transform t) => t.Cast<Javax.Xml.Crypto.AlgorithmMethod>();
+        
         #endregion
 
         #region Fields
