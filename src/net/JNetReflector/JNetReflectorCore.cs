@@ -79,9 +79,27 @@ namespace MASES.JNetReflector
                     },
                     new ArgumentMetadata<string>()
                     {
+                        Name = CLIParam.ClassToBeListener,
+                        Type = ArgumentType.Double,
+                        Help = "A CSV list of class names to be treated as Listener",
+                    },
+                    new ArgumentMetadata<string>()
+                    {
+                        Name = CLIParam.NamespacesInConflict,
+                        Type = ArgumentType.Double,
+                        Help = "A CSV list of namespaces in conflict with class name: to this one will be added an \"Ns\" at the end",
+                    },
+                    new ArgumentMetadata<string>()
+                    {
                         Name = CLIParam.NamespacesToAvoid,
                         Type = ArgumentType.Double,
                         Help = "A CSV list of namespaces to be removed during analysis",
+                    },
+                    new ArgumentMetadata<string>()
+                    {
+                        Name = CLIParam.ClassesToAvoid,
+                        Type = ArgumentType.Double,
+                        Help = "A CSV list of classes to be removed during analysis",
                     },
                     new ArgumentMetadata<object>()
                     {
@@ -146,8 +164,17 @@ namespace MASES.JNetReflector
         static IEnumerable<string> _ModulesToParse;
         public static IEnumerable<string> ModulesToParse => _ModulesToParse;
 
+        static IEnumerable<string> _ClassToBeListener;
+        public static IEnumerable<string> ClassToBeListener => _ClassToBeListener;
+
+        static IEnumerable<string> _NamespacesInConflict;
+        public static IEnumerable<string> NamespacesInConflict => _NamespacesInConflict;
+
         static IEnumerable<string> _NamespacesToAvoid;
         public static IEnumerable<string> NamespacesToAvoid => _NamespacesToAvoid;
+
+        static IEnumerable<string> _ClassesToAvoid;
+        public static IEnumerable<string> ClassesToAvoid => _ClassesToAvoid;
 
         static bool _DoNotAddJarsInClasspath;
         public static bool DoNotAddJarsInClasspath => _DoNotAddJarsInClasspath;
@@ -201,6 +228,28 @@ namespace MASES.JNetReflector
             }
             _ModulesToParse = modulesToParse;
 
+            List<string> classToBeListener = new List<string>();
+            if (ParsedArgs.Exist(CLIParam.ClassToBeListener))
+            {
+                var classes = ParsedArgs.Get<string>(CLIParam.ClassToBeListener).Split(',', ';');
+                foreach (var item in classes)
+                {
+                    if (!classToBeListener.Contains(item)) classToBeListener.Add(item);
+                }
+            }
+            _ClassToBeListener = classToBeListener;
+
+            List<string> namespacesInConflict = new List<string>();
+            if (ParsedArgs.Exist(CLIParam.NamespacesInConflict))
+            {
+                var namespaces = ParsedArgs.Get<string>(CLIParam.NamespacesInConflict).Split(',', ';');
+                foreach (var item in namespaces.Select((o) => o.Replace(SpecialNames.JNISeparator, SpecialNames.NamespaceSeparator)))
+                {
+                    if (!namespacesInConflict.Contains(item)) namespacesInConflict.Add(item);
+                }
+            }
+            _NamespacesInConflict = namespacesInConflict;
+
             List<string> namespacesToAvoid = new List<string>();
             if (ParsedArgs.Exist(CLIParam.NamespacesToAvoid))
             {
@@ -211,6 +260,17 @@ namespace MASES.JNetReflector
                 }
             }
             _NamespacesToAvoid = namespacesToAvoid;
+
+            List<string> classesToAvoid = new List<string>();
+            if (ParsedArgs.Exist(CLIParam.ClassesToAvoid))
+            {
+                var classes = ParsedArgs.Get<string>(CLIParam.ClassesToAvoid).Split(',', ';');
+                foreach (var item in classes.Select((o) => o.Replace(SpecialNames.JNISeparator, SpecialNames.NamespaceSeparator)))
+                {
+                    if (!classesToAvoid.Contains(item)) classesToAvoid.Add(item);
+                }
+            }
+            _ClassesToAvoid = classesToAvoid;
 
             var destinationFolder = Path.GetFullPath(ParsedArgs.Get<string>(CLIParam.DestinationRootPath));
             _DestinationRootPath = Path.GetFullPath(destinationFolder);

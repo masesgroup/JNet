@@ -140,12 +140,6 @@ namespace MASES.JNetReflector
                     ReportTrace(ReflectionTraceLevel.Debug, "Entry {0}", entry.ToString());
                     if (entry.IsSpecialFolder()) continue; // do not reflect this folders
                     if (entry.IsSpecialClass()) continue; // do not reflect this classes
-                    if (entry.IsFolder())
-                    {
-                        var path = Path.Combine(rootDesinationFolder, entry.Namespace().Replace(SpecialNames.NamespaceSeparator, Path.DirectorySeparatorChar));
-                        ReportTrace(ReflectionTraceLevel.Debug, "Create path {0}", path);
-                        if (!JNetReflectorCore.DryRun && !Directory.Exists(path)) Directory.CreateDirectory(path);
-                    }
                     if (entry.IsJVMClass() || entry.IsJVMNestedClass())
                     {
                         var jClass = entry.JVMClass();
@@ -242,9 +236,9 @@ namespace MASES.JNetReflector
                     ReportTrace(ReflectionTraceLevel.Error, "Class Entry {0} returned a null Class", classDefinition);
                     continue;
                 }
-                if (!entry.IsPublic())
+                if (entry.MustBeAvoided())
                 {
-                    ReportTrace(ReflectionTraceLevel.Debug, "Discarding non public class {0}", entry.GenericString);
+                    ReportTrace(ReflectionTraceLevel.Debug, "Discarding avoided class {0}", entry.GenericString);
                     continue;
                 }
                 if (entry.IsJVMNestedClass())
@@ -297,10 +291,10 @@ namespace MASES.JNetReflector
 
                         if (!jSubClassIsListener)
                         {
-                            nestedConstructorBlock = jSubClass.AnalyzeConstructors(true, classDefinitions).AddTabLevel(2);
-                            nestedFieldBlock = jSubClass.AnalyzeFields(classDefinitions).AddTabLevel(2);
-                            nestedStaticMethodBlock = jSubClass.AnalyzeMethods(true, classDefinitions, true).AddTabLevel(2);
-                            nestedMethodBlock = jSubClass.AnalyzeMethods(true, classDefinitions, false).AddTabLevel(2);
+                            nestedConstructorBlock = jSubClass.AnalyzeConstructors(true, classDefinitions).AddTabLevel(3);
+                            nestedFieldBlock = jSubClass.AnalyzeFields(classDefinitions).AddTabLevel(3);
+                            nestedStaticMethodBlock = jSubClass.AnalyzeMethods(true, classDefinitions, true).AddTabLevel(3);
+                            nestedMethodBlock = jSubClass.AnalyzeMethods(true, classDefinitions, false).AddTabLevel(3);
                         }
                     }
 
@@ -395,10 +389,10 @@ namespace MASES.JNetReflector
 
                 if (!jClassIsListener)
                 {
-                    constructorBlock = jClass.AnalyzeConstructors(false, classDefinitions).AddTabLevel(1);
-                    fieldBlock = jClass.AnalyzeFields(classDefinitions).AddTabLevel(1);
-                    staticMethodBlock = jClass.AnalyzeMethods(false, classDefinitions, true).AddTabLevel(1);
-                    methodBlock = jClass.AnalyzeMethods(false, classDefinitions, false).AddTabLevel(1);
+                    constructorBlock = jClass.AnalyzeConstructors(false, classDefinitions).AddTabLevel(2);
+                    fieldBlock = jClass.AnalyzeFields(classDefinitions).AddTabLevel(2);
+                    staticMethodBlock = jClass.AnalyzeMethods(false, classDefinitions, true).AddTabLevel(2);
+                    methodBlock = jClass.AnalyzeMethods(false, classDefinitions, false).AddTabLevel(2);
                 }
             }
 
@@ -468,6 +462,7 @@ namespace MASES.JNetReflector
                 foreach (var parameter in constructor.Parameters)
                 {
                     if (parameter.Type.IsOrInheritFromJVMGenericClass()) { bypass = true; break; }
+                    if (parameter.Type.MustBeAvoided()) { bypass = true; break; }
                     if (parameter.Type() == "object[]") { bypass = true; break; }
                     if (!parameter.IsVarArgs)
                     {
@@ -578,6 +573,12 @@ namespace MASES.JNetReflector
                     ReportTrace(ReflectionTraceLevel.Debug, "Discarded IsOrInheritFromJVMGenericClass method {0}", genString);
                     continue; // avoid generics till now
                 }
+                if (method.ReturnType.MustBeAvoided())
+                {
+                    ReportTrace(ReflectionTraceLevel.Debug, "Discarded MustBeAvoided method for ReturnType {0}", genString);
+                    continue; // avoid generics till now
+                }
+
 
                 prefilteredMethods.Add(method);
             }
@@ -744,14 +745,15 @@ namespace MASES.JNetReflector
 
                 if (methodName == "Clone" && returnType == "object") continue;
 
-                bool hasGeneric = false;
+                bool bypass = false;
                 bool hasVarArg = false;
                 Parameter varArg = null;
                 StringBuilder methodParamsBuilder = new StringBuilder();
                 StringBuilder methodExecutionParamsBuilder = new StringBuilder();
                 foreach (var parameter in method.Parameters)
                 {
-                    if (parameter.Type.IsOrInheritFromJVMGenericClass()) { hasGeneric = true; break; }
+                    if (parameter.Type.IsOrInheritFromJVMGenericClass()) { bypass = true; break; }
+                    if (parameter.Type.MustBeAvoided()) { bypass = true; break; }
                     if (!parameter.IsVarArgs)
                     {
                         methodParamsBuilder.AppendFormat($"{parameter.Type()} {parameter.Name}, ");
@@ -764,7 +766,7 @@ namespace MASES.JNetReflector
                     }
                 }
 
-                if (hasGeneric)
+                if (bypass)
                 {
                     ReportTrace(ReflectionTraceLevel.Debug, "Discarded method {0}", genString);
                     continue;
@@ -865,6 +867,7 @@ namespace MASES.JNetReflector
             foreach (var field in classDefinition.Fields)
             {
                 if (!field.DeclaringClass.Equals(classDefinition)) continue;
+                if (field.Type.MustBeAvoided()) continue;
                 if (!field.IsPublic()) continue; // avoid not public methods
                 bool isDeprecated = field.IsDeprecated();
                 if (!JNetReflectorCore.ReflectDeprecated && isDeprecated)

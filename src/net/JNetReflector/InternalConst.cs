@@ -33,7 +33,10 @@ namespace MASES.JNetReflector
         public const string DestinationRootPath = "DestinationRootPath";
         public const string JarList = "JarList";
         public const string ModulesToParse = "ModulesToParse";
+        public const string ClassToBeListener = "ClassToBeListener";
+        public const string NamespacesInConflict = "NamespacesInConflict";
         public const string NamespacesToAvoid = "NamespacesToAvoid";
+        public const string ClassesToAvoid = "ClassesToAvoid";
         public const string DoNotAddJarsInClasspath = "DoNotAddJarsInClasspath";
         public const string ReflectDeprecated = "ReflectDeprecated";
         public const string DryRun = "DryRun";
@@ -57,7 +60,11 @@ namespace MASES.JNetReflector
         public const char NestedClassSeparator = '$';
         public const string JavaLangObject = "java.lang.Object";
         public const string JavaLangListener = "Listener";
+        public const string JavaLangAdapter = "Adapter";
         public const string ArrayTypeTrailer = "[]";
+        public const string PropertySuffix = "Property";
+        public const string MethodSuffix = "Method";
+        public const string NamespaceSuffix = "Ns";
 
         public static bool IsJavaLangException(string canonicalName)
         {
@@ -147,6 +154,7 @@ namespace MASES.JNetReflector
         static IEnumerable<string> CreateReservedJNetNames()
         {
             List<string> lst = new List<string>();
+            lst.Add("Instance");
             lst.Add("ClassName");
             lst.Add("IsAbstract");
             lst.Add("IsCloseable");
