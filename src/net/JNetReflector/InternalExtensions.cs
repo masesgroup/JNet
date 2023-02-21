@@ -24,7 +24,6 @@ using System.Collections.Generic;
 using Java.Lang;
 using Java.Lang.Reflect;
 using System.Text;
-using Microsoft.VisualBasic;
 
 namespace MASES.JNetReflector
 {
@@ -135,10 +134,10 @@ namespace MASES.JNetReflector
             else return char.ToUpper(str[0]) + str.Substring(1);
         }
 
-        public static string ToFullQualifiedClassName(string canonicalName)
+        public static string ToFullQualifiedClassName(string canonicalName, bool camel = true)
         {
             string className = canonicalName.Substring(canonicalName.LastIndexOf(SpecialNames.NamespaceSeparator) + 1);
-            className = Namespace(canonicalName) + SpecialNames.NamespaceSeparator + className.Replace(SpecialNames.NestedClassSeparator, SpecialNames.NamespaceSeparator);
+            className = Namespace(canonicalName, camel) + SpecialNames.NamespaceSeparator + className.Replace(SpecialNames.NestedClassSeparator, SpecialNames.NamespaceSeparator);
             return className;
         }
 
@@ -487,12 +486,12 @@ namespace MASES.JNetReflector
         public static string ToNetType(this Class type, bool camel = true)
         {
             if (type == null) throw new ArgumentNullException(nameof(type));
-            return ToNetType(type.TypeName);
+            return ToNetType(type.TypeName, false, camel);
         }
 
-        public static string ToNetType(string typeName, bool camel = true)
+        public static string ToNetType(string typeName, bool isFromArray, bool camel = true)
         {
-            if (typeName.EndsWith(SpecialNames.ArrayTypeTrailer)) return ToNetType(typeName.Remove(typeName.LastIndexOf(SpecialNames.ArrayTypeTrailer)), camel) + SpecialNames.ArrayTypeTrailer;
+            if (typeName.EndsWith(SpecialNames.ArrayTypeTrailer)) return ToNetType(typeName.Remove(typeName.LastIndexOf(SpecialNames.ArrayTypeTrailer)), true, camel) + SpecialNames.ArrayTypeTrailer;
 
             switch (typeName)
             {
@@ -500,29 +499,37 @@ namespace MASES.JNetReflector
                 case "java.lang.Void":
                     return "void";
                 case "boolean":
-                case "java.lang.Boolean":
                     return "bool";
+                case "java.lang.Boolean":
+                    return isFromArray ? "bool" : "bool?";
                 case "byte":
-                case "java.lang.Byte":
                     return "byte";
+                case "java.lang.Byte":
+                    return isFromArray ? "byte" : "byte?";
                 case "char":
-                case "java.lang.Character":
                     return "char";
+                case "java.lang.Character":
+                    return isFromArray ? "char" : "char?";
                 case "short":
-                case "java.lang.Short":
                     return "short";
+                case "java.lang.Short":
+                    return isFromArray ? "short" : "short?";
                 case "int":
-                case "java.lang.Integer":
                     return "int";
+                case "java.lang.Integer":
+                    return isFromArray ? "int" : "int?";
                 case "long":
-                case "java.lang.Long":
                     return "long";
+                case "java.lang.Long":
+                    return isFromArray ? "long" : "long?";
                 case "float":
-                case "java.lang.Float":
                     return "float";
+                case "java.lang.Float":
+                    return isFromArray ? "float" : "float?";
                 case "double":
-                case "java.lang.Double":
                     return "double";
+                case "java.lang.Double":
+                    return isFromArray ? "double" : "double?";
                 case "java.lang.String":
                     return "string";
                 case "java.lang.Object":
@@ -530,7 +537,7 @@ namespace MASES.JNetReflector
                 default:
                     //var splitted = typeName.Split(SpecialNames.NamespaceSeparator, SpecialNames.NestedClassSeparator);
                     //typeName = string.Join(SpecialNames.NamespaceSeparator.ToString(), splitted.Select((o) => camel ? Camel(o) : o));
-                    return ToFullQualifiedClassName(typeName);
+                    return ToFullQualifiedClassName(typeName, camel);
             }
         }
 
