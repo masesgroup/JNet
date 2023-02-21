@@ -19,7 +19,7 @@
 using System;
 using System.Windows.Forms;
 using MASES.JNetTest.GraphicCommon;
-using Java.Awt.Event;
+using Java.Awt.EventNs;
 
 namespace MASES.JNetWinFormsTest
 {

@@ -19,7 +19,7 @@
 using System;
 using System.Windows;
 using MASES.JNetTest.GraphicCommon;
-using Java.Awt.Event;
+using Java.Awt.EventNs;
 using System.ComponentModel;
 using MASES.JNetTest.Common;
 

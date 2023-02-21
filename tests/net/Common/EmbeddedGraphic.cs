@@ -17,8 +17,8 @@
 */
 
 using Java.Awt;
-using Java.Awt.Event;
-using JavaX.Swing;
+using Java.Awt.EventNs;
+using Javax.Swing;
 using MASES.JCOBridge.C2JBridge;
 using MASES.JNetTest.Common;
 using System;

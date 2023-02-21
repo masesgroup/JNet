@@ -1,6 +1,6 @@
 ﻿using System;
 using Java.Awt;
-using Java.Awt.Event;
+using Java.Awt.EventNs;
 using MASES.JNet;
 
 /*
