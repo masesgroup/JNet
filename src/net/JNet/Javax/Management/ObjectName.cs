@@ -27,8 +27,6 @@ namespace Javax.Management
 
         public static explicit operator Java.Lang.Comparable<ObjectName>(ObjectName o) => o.Cast<Java.Lang.Comparable<ObjectName>>();
 
-        public static explicit operator QueryExp(ObjectName o) => o.Cast<QueryExp>();
-
         /// <summary>
         /// Return an instance of ObjectName that can be used anywhere an object obtained with new ObjectName(domain, table) can be used.
         /// </summary>

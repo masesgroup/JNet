@@ -47,7 +47,6 @@ namespace Java.Lang.Reflect
 #else
     public partial class TypeVariable
     {
-        public static implicit operator Type(TypeVariable t) => t.Cast<Type>();
 
 
 #endif
