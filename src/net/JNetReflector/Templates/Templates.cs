@@ -135,6 +135,11 @@ namespace MASES.JNetReflector.Templates
                 public const string OBSOLETE_DECORATION = "[System.Obsolete()]";
             }
 
+            public class OperatorStub
+            {
+                public const string IMPLICIT_EXECUTION_FORMAT = "public static implicit operator {0}({1} t) => t.Cast<{0}>();";
+            }
+
             public class MethodStub
             {
                 public const string DECORATION = "METHOD_STUB_METHOD_DECORATION_PLACEHOLDER";

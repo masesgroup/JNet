@@ -292,6 +292,7 @@ namespace MASES.JNetReflector
                         if (!jSubClassIsListener)
                         {
                             nestedConstructorBlock = jSubClass.AnalyzeConstructors(true, classDefinitions).AddTabLevel(3);
+                            nestedOperatorBlock = jSubClass.AnalyzeOperators(true, classDefinitions).AddTabLevel(3);
                             nestedFieldBlock = jSubClass.AnalyzeFields(classDefinitions).AddTabLevel(3);
                             nestedStaticMethodBlock = jSubClass.AnalyzeMethods(true, classDefinitions, true).AddTabLevel(3);
                             nestedMethodBlock = jSubClass.AnalyzeMethods(true, classDefinitions, false).AddTabLevel(3);
@@ -390,6 +391,7 @@ namespace MASES.JNetReflector
                 if (!jClassIsListener)
                 {
                     constructorBlock = jClass.AnalyzeConstructors(false, classDefinitions).AddTabLevel(2);
+                    operatorBlock = jClass.AnalyzeOperators(true, classDefinitions).AddTabLevel(2);
                     fieldBlock = jClass.AnalyzeFields(classDefinitions).AddTabLevel(2);
                     staticMethodBlock = jClass.AnalyzeMethods(false, classDefinitions, true).AddTabLevel(2);
                     methodBlock = jClass.AnalyzeMethods(false, classDefinitions, false).AddTabLevel(2);
@@ -515,6 +517,38 @@ namespace MASES.JNetReflector
             }
 
             return subClassBlock.ToString();
+        }
+
+        static string AnalyzeOperators(this Class classDefinition, bool isNested, IList<string> classDefinitions)
+        {
+            ReportTrace(ReflectionTraceLevel.Info, "******************* Analyze Operators of {0} *******************", classDefinition.GenericString);
+
+            StringBuilder subOperatorBlock = new StringBuilder();
+            foreach (var implementedInterface in classDefinition.Interfaces)
+            {
+                if (implementedInterface.MustBeAvoided())
+                {
+                    ReportTrace(ReflectionTraceLevel.Debug, "Discarded avoided {0}", implementedInterface.GenericString);
+                    continue;
+                }
+                if (implementedInterface.IsStatic())
+                {
+                    ReportTrace(ReflectionTraceLevel.Debug, "Discarded static operator {0}", implementedInterface.GenericString);
+                    continue;
+                }
+                if (implementedInterface.IsOrInheritFromJVMGenericClass())
+                {
+                    ReportTrace(ReflectionTraceLevel.Debug, "Discarded generic operator {0}", implementedInterface.GenericString);
+                    continue;
+                }
+
+                var singleOperator = string.Format(AllPackageClasses.ClassStub.OperatorStub.IMPLICIT_EXECUTION_FORMAT, implementedInterface.ToNetType(),
+                                                                                                                       classDefinition.ToNetType());
+
+                subOperatorBlock.AppendLine(singleOperator);
+            }
+
+            return subOperatorBlock.ToString();
         }
 
         static string AnalyzeMethods(this Class classDefinition, bool isNested, IList<string> classDefinitions, bool staticMethods)
