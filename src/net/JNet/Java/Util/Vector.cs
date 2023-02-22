@@ -20,8 +20,13 @@ using Java.Util.Function;
 
 namespace Java.Util
 {
+    /// <summary>
+    /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Vector.html"/>
+    /// </summary>
     public class Vector<E> : AbstractList<E>
     {
+        public override bool IsAbstract => false;
+
         public override string ClassName => "java.util.Vector";
         /// <summary>
         /// Constructs an empty vector so that its internal data array has size 10 and its standard capacity increment is zero.

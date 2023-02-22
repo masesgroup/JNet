@@ -18,8 +18,13 @@
 
 namespace Java.Util
 {
+    /// <summary>
+    /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html"/>
+    /// </summary>
     public class HashMap<K, V> : AbstractMap<K, V>
     {
+        public override bool IsAbstract => false;
+
         public override string ClassName => "java.util.HashMap";
 
         public HashMap()

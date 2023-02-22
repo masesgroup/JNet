@@ -18,6 +18,9 @@
 
 namespace Java.Util
 {
+    /// <summary>
+    /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html"/>
+    /// </summary>
     public class Set<E> : Collection<E>
     {
         public override string ClassName => "java.util.Set";

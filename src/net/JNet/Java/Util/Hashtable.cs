@@ -18,8 +18,13 @@
 
 namespace Java.Util
 {
+    /// <summary>
+    /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Hashtable.html"/>
+    /// </summary>
     public class Hashtable<K, V> : Dictionary<K, V>
     {
+        public override bool IsAbstract => false;
+
         public override string ClassName => "java.util.Hashtable";
 
         public static implicit operator Map<K, V>(Hashtable<K, V> table) { return Wraps<Map<K, V>>(table.Instance); }

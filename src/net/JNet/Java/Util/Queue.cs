@@ -18,6 +18,9 @@
 
 namespace Java.Util
 {
+    /// <summary>
+    /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Queue.html"/>
+    /// </summary>
     public class Queue<E> : Collection<E>
     {
         public override string ClassName => "java.util.Queue";

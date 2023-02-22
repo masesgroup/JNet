@@ -18,8 +18,14 @@
 
 namespace Java.Util
 {
+    /// <summary>
+    /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/util/AbstractMap.html"/>
+    /// </summary>
     public class AbstractMap<K, V> : Map<K, V>
     {
+        public override bool IsInterface => false;
+        public override bool IsAbstract => true;
+
         public override string ClassName => "java.util.AbstractMap";
 
         public AbstractMap()
