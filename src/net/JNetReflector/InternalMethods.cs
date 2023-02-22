@@ -116,7 +116,7 @@ namespace MASES.JNetReflector
             IDictionary<string, IList<string>> entries;
             if (!data.TryGetValue(package, out entries))
             {
-                entries = new Dictionary<string, IList<string>>();
+                entries = new SortedDictionary<string, IList<string>>();
                 data.Add(package, entries);
             }
             IList<string> subEntries;
@@ -133,7 +133,7 @@ namespace MASES.JNetReflector
             ReportTrace(ReflectionTraceLevel.Info, "******************* Analyze Jar {0} *******************", pathToJar);
             using (ZipArchive archive = ZipFile.OpenRead(pathToJar))
             {
-                Dictionary<string, IDictionary<string, IList<string>>> resultingArguments = new Dictionary<string, IDictionary<string, IList<string>>>();
+                SortedDictionary<string, IDictionary<string, IList<string>>> resultingArguments = new SortedDictionary<string, IDictionary<string, IList<string>>>();
 
                 foreach (var entry in archive.Entries)
                 {
@@ -155,7 +155,7 @@ namespace MASES.JNetReflector
 
         public static void AnalyzeNamespaces()
         {
-            Dictionary<string, IDictionary<string, IList<string>>> resultingArguments = new Dictionary<string, IDictionary<string, IList<string>>>();
+            SortedDictionary<string, IDictionary<string, IList<string>>> resultingArguments = new SortedDictionary<string, IDictionary<string, IList<string>>>();
             foreach (var ns in JNetReflectorCore.ModulesToParse)
             {
                 AnalyzeNamespace(resultingArguments, ns, JNetReflectorCore.DestinationRootPath);
@@ -294,8 +294,9 @@ namespace MASES.JNetReflector
                             nestedConstructorBlock = jSubClass.AnalyzeConstructors(true, classDefinitions).AddTabLevel(3);
                             nestedOperatorBlock = jSubClass.AnalyzeOperators(true, classDefinitions).AddTabLevel(3);
                             nestedFieldBlock = jSubClass.AnalyzeFields(classDefinitions).AddTabLevel(3);
-                            nestedStaticMethodBlock = jSubClass.AnalyzeMethods(true, classDefinitions, true).AddTabLevel(3);
-                            nestedMethodBlock = jSubClass.AnalyzeMethods(true, classDefinitions, false).AddTabLevel(3);
+                            var nestedPrefilter = jSubClass.PrefilterMethods();
+                            nestedStaticMethodBlock = jSubClass.AnalyzeMethods(nestedPrefilter, true, classDefinitions, true).AddTabLevel(3);
+                            nestedMethodBlock = jSubClass.AnalyzeMethods(nestedPrefilter, true, classDefinitions, false).AddTabLevel(3);
                         }
                     }
 
@@ -393,8 +394,9 @@ namespace MASES.JNetReflector
                     constructorBlock = jClass.AnalyzeConstructors(false, classDefinitions).AddTabLevel(2);
                     operatorBlock = jClass.AnalyzeOperators(true, classDefinitions).AddTabLevel(2);
                     fieldBlock = jClass.AnalyzeFields(classDefinitions).AddTabLevel(2);
-                    staticMethodBlock = jClass.AnalyzeMethods(false, classDefinitions, true).AddTabLevel(2);
-                    methodBlock = jClass.AnalyzeMethods(false, classDefinitions, false).AddTabLevel(2);
+                    var prefilter = jClass.PrefilterMethods();
+                    staticMethodBlock = jClass.AnalyzeMethods(prefilter, false, classDefinitions, true).AddTabLevel(2);
+                    methodBlock = jClass.AnalyzeMethods(prefilter, false, classDefinitions, false).AddTabLevel(2);
                 }
             }
 
@@ -435,7 +437,8 @@ namespace MASES.JNetReflector
 
             var singleConstructorTemplate = Template.GetTemplate(Template.SingleConstructorTemplate);
 
-            StringBuilder subClassBlock = new StringBuilder();
+            SortedDictionary<string, Constructor> sortedFilteredCtors = new SortedDictionary<string, Constructor>();
+
             foreach (var constructor in classDefinition.DeclaredConstructors)
             {
                 var paramCount = constructor.ParameterCount;
@@ -454,6 +457,17 @@ namespace MASES.JNetReflector
                     continue;
                 }
                 if (!constructor.IsPublic()) continue; // avoid not public methods
+
+                sortedFilteredCtors.Add(constructor.GenericString, constructor);
+            }
+
+            StringBuilder subClassBlock = new StringBuilder();
+            foreach (var constructor in sortedFilteredCtors.Values)
+            {
+                var paramCount = constructor.ParameterCount;
+                var methodNameOrigin = constructor.Name;
+
+                bool isDeprecated = constructor.IsDeprecated();
                 string modifier = constructor.IsStatic() ? " static" : string.Empty;
                 string constructorName = constructor.Name();
                 bool bypass = false;
@@ -551,18 +565,11 @@ namespace MASES.JNetReflector
             return subOperatorBlock.ToString();
         }
 
-        static string AnalyzeMethods(this Class classDefinition, bool isNested, IList<string> classDefinitions, bool staticMethods)
+        static IList<Method> PrefilterMethods(this Class classDefinition)
         {
-            ReportTrace(ReflectionTraceLevel.Info, "******************* Analyze Methods of {0} with static {1} *******************", classDefinition.GenericString, staticMethods);
+            ReportTrace(ReflectionTraceLevel.Info, "******************* Prefilter Methods of {0} *******************", classDefinition.GenericString);
 
-            var singleMethodTemplate = Template.GetTemplate(Template.SingleMethodTemplate);
-            var singlePropertyTemplate = Template.GetTemplate(Template.SinglePropertyTemplate);
-
-            StringBuilder subClassBlock = new StringBuilder();
             List<Method> prefilteredMethods = new List<Method>();
-            SortedDictionary<string, Method> methods = new SortedDictionary<string, Method>();
-            SortedDictionary<string, IList<Method>> properties = new SortedDictionary<string, IList<Method>>();
-
             foreach (var method in classDefinition.DeclaredMethods)
             {
                 var genString = method.GenericString;
@@ -600,7 +607,6 @@ namespace MASES.JNetReflector
                     continue; // this is very time consuming, anyway seems the only way to identify if a method was defined in the super abstract class
                 }
 
-                if (staticMethods ^ method.IsStatic()) continue;
                 if (!method.IsPublic()) continue; // avoid not public methods
                 if (method.ReturnType.IsOrInheritFromJVMGenericClass())
                 {
@@ -613,12 +619,27 @@ namespace MASES.JNetReflector
                     continue; // avoid generics till now
                 }
 
-
                 prefilteredMethods.Add(method);
             }
 
+            return prefilteredMethods;
+        }
+
+        static string AnalyzeMethods(this Class classDefinition, IList<Method> prefilteredMethods, bool isNested, IList<string> classDefinitions, bool staticMethods)
+        {
+            ReportTrace(ReflectionTraceLevel.Info, "******************* Analyze Methods of {0} with static {1} *******************", classDefinition.GenericString, staticMethods);
+
+            var singleMethodTemplate = Template.GetTemplate(Template.SingleMethodTemplate);
+            var singlePropertyTemplate = Template.GetTemplate(Template.SinglePropertyTemplate);
+
+            StringBuilder subClassBlock = new StringBuilder();
+            SortedDictionary<string, Method> methods = new SortedDictionary<string, Method>();
+            SortedDictionary<string, IList<Method>> properties = new SortedDictionary<string, IList<Method>>();
+
             foreach (var method in prefilteredMethods.ToArray())
             {
+                if (staticMethods ^ method.IsStatic()) continue;
+
                 var genString = method.GenericString;
                 var paramCount = method.ParameterCount;
                 var methodNameOrigin = method.Name;
@@ -897,7 +918,8 @@ namespace MASES.JNetReflector
 
             var singleFieldTemplate = Template.GetTemplate(Template.SingleFieldTemplate);
 
-            StringBuilder subClassBlock = new StringBuilder();
+            SortedDictionary<string, Field> sortedFilteredFields = new SortedDictionary<string, Field>();
+
             foreach (var field in classDefinition.Fields)
             {
                 if (!field.DeclaringClass.Equals(classDefinition)) continue;
@@ -909,6 +931,14 @@ namespace MASES.JNetReflector
                     ReportTrace(ReflectionTraceLevel.Debug, "Discarded deprecated field {0}", field.GenericString);
                     continue; // avoid generics till now
                 }
+
+                sortedFilteredFields.Add(field.GenericString, field);
+            }
+
+            StringBuilder subClassBlock = new StringBuilder();
+            foreach (var field in sortedFilteredFields.Values)
+            {
+                bool isDeprecated = field.IsDeprecated();
 
                 bool isFieldGeneric = field.Type.IsOrInheritFromJVMGenericClass();
 
