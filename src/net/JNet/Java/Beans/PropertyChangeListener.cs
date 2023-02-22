@@ -30,7 +30,7 @@ namespace Java.Beans
     /// Listener for PropertyChangeListener. Extends <see cref="JVMBridgeListener"/>, implements <see cref="IPropertyChangeListener"/>
     /// </summary>
     /// <remarks>Remember to Dispose the object otherwise there is a resource leak, the object contains a reference to the the corresponding JVM object</remarks>
-    public class PropertyChangeListener : JVMBridgeListener, IPropertyChangeListener
+    public partial class PropertyChangeListener : IPropertyChangeListener
     {
         /// <inheritdoc cref="JVMBridgeListener.ClassName"/>
         public sealed override string ClassName => "org.mases.jnet.beans.JNetPropertyChangeListener";

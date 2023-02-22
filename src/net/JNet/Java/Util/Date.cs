@@ -20,8 +20,8 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    public class Date : JVMBridgeBase<Date>
+    public partial class Date
     {
-        public override string ClassName => "java.util.Date";
+        // can be extended with methods not reflected or not available in Java;
     }
 }

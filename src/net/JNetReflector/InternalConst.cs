@@ -32,7 +32,12 @@ namespace MASES.JNetReflector
         public const string JavadocVersion = "JavadocVersion";
         public const string DestinationRootPath = "DestinationRootPath";
         public const string JarList = "JarList";
+        public const string ModulesToParse = "ModulesToParse";
+        public const string ClassesToBeListener = "ClassesToBeListener";
+        public const string NamespacesInConflict = "NamespacesInConflict";
         public const string NamespacesToAvoid = "NamespacesToAvoid";
+        public const string ClassesToAvoid = "ClassesToAvoid";
+        public const string DoNotAddJarsInClasspath = "DoNotAddJarsInClasspath";
         public const string ReflectDeprecated = "ReflectDeprecated";
         public const string DryRun = "DryRun";
         public const string TraceLevel = "TraceLevel";
@@ -54,6 +59,12 @@ namespace MASES.JNetReflector
         public const char NamespaceSeparator = '.';
         public const char NestedClassSeparator = '$';
         public const string JavaLangObject = "java.lang.Object";
+        public const string JavaLangListener = "Listener";
+        public const string JavaLangAdapter = "Adapter";
+        public const string ArrayTypeTrailer = "[]";
+        public const string PropertySuffix = "Property";
+        public const string MethodSuffix = "Method";
+        public const string NamespaceSuffix = "Ns";
 
         public static bool IsJavaLangException(string canonicalName)
         {
@@ -121,6 +132,43 @@ namespace MASES.JNetReflector
         {
             List<string> lst = new List<string>();
             for (int i = 0; i < 100; i++)
+            {
+                lst.Add(i.ToString());
+            }
+            return lst;
+        }
+
+        public static IEnumerable<string> ReservedLanguageNames = CreateReservedLanguageNames();
+
+        static IEnumerable<string> CreateReservedLanguageNames()
+        {
+            List<string> lst = new List<string>();
+            lst.Add("in");
+            lst.Add("out");
+            lst.Add("base");
+            return lst;
+        }
+
+        public static IEnumerable<string> ReservedJNetNames = CreateReservedJNetNames();
+
+        static IEnumerable<string> CreateReservedJNetNames()
+        {
+            List<string> lst = new List<string>();
+            lst.Add("Instance");
+            lst.Add("ClassName");
+            lst.Add("IsAbstract");
+            lst.Add("IsCloseable");
+            lst.Add("IsInterface");
+            lst.Add("IsStatic");
+            return lst;
+        }
+
+        public static IEnumerable<string> NumberStartNames = CreateNumberStartNames();
+
+        static IEnumerable<string> CreateNumberStartNames()
+        {
+            List<string> lst = new List<string>();
+            for (int i = 0; i < 10; i++)
             {
                 lst.Add(i.ToString());
             }

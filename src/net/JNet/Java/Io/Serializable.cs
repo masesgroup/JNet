@@ -16,15 +16,10 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.JCOBridge.C2JBridge;
-
 namespace Java.Io
 {
-    public class Serializable : JVMBridgeBase<Serializable>
+    public partial class Serializable
     {
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.io.Serializable";
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
+        // can be extended with methods not reflected or not available in Java;
     }
 }

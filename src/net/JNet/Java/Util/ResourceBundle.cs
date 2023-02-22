@@ -20,8 +20,8 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    public class ResourceBundle : JVMBridgeBase<ResourceBundle>
+    public partial class ResourceBundle
     {
-        public override string ClassName => "java.util.ResourceBundle";
+        // can be extended with methods not reflected or not available in Java;
     }
 }

@@ -10,7 +10,7 @@
 ModuleToProcess = 'MASES.JNetPS.dll'
 
 # Version number of this module.
-ModuleVersion = '1.5.1'
+ModuleVersion = '1.5.2'
 
 # ID used to uniquely identify this module
 GUID = 'AD7117B7-AC1A-4769-80FC-BF63A11D2B92'

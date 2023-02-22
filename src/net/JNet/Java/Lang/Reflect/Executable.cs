@@ -28,10 +28,15 @@ namespace Java.Lang.Reflect
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Executable.html"/>
     /// </summary>
+#if JNETREFLECTOR
     public class Executable : AccessibleObject
     {
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "java.lang.reflect.Executable";
+        /// <summary>
+        /// Returns an <see cref="AnnotatedType"/> object that represents the use of a type to specify the return type of the method/constructor represented by this <see cref="Executable"/>.
+        /// </summary>
+        public AnnotatedType AnnotatedReturnType => IExecute<AnnotatedType>("getAnnotatedReturnType");
         /// <summary>
         /// Returns an array of <see cref="AnnotatedType"/> objects that represent the use of types to specify the declared exceptions of the method/constructor represented by this <see cref="Executable"/>.
         /// </summary>
@@ -44,10 +49,6 @@ namespace Java.Lang.Reflect
         ///  Returns an <see cref="AnnotatedType"/> object that represents the use of a type to specify the receiver type of the method/constructor represented by this <see cref="Executable"/> object.
         /// </summary>
         public AnnotatedType AnnotatedReceiverType => IExecute<AnnotatedType>("getAnnotatedReceiverType");
-        /// <summary>
-        /// Returns an <see cref="AnnotatedType"/> object that represents the use of a type to specify the return type of the method/constructor represented by this <see cref="Executable"/>.
-        /// </summary>
-        public AnnotatedType AnnotatedReturnType => IExecute<AnnotatedType>("getAnnotatedReturnType");
         /// <summary>
         /// Returns the <see cref="Class"/> object representing the class or interface that declares the executable represented by this object.
         /// </summary>
@@ -72,10 +73,6 @@ namespace Java.Lang.Reflect
         ///  Returns the name of the executable represented by this object.
         /// </summary>
         public string Name => IExecute<string>("getName");
-
-        //abstract Annotation[][] getParameterAnnotations()
-        //Returns an array of arrays of Annotations that represent the annotations on the formal parameters, in declaration order, of the Executable represented by this object.
-
         /// <summary>
         /// Returns the number of formal parameters(whether explicitly declared or implicitly declared or neither) for the executable represented by this object.
         /// </summary>
@@ -89,6 +86,11 @@ namespace Java.Lang.Reflect
         /// </summary>
         public Class[] ParameterTypes => IExecuteArray<Class>("getParameterTypes");
         /// <summary>
+        /// Returns a <see langword="string"/> describing this <see cref="Executable"/>, including any type parameters.
+        /// </summary>
+        /// <returns></returns>
+        public string GenericString => IExecute<string>("toGenericString");
+        /// <summary>
         /// Returns an array of <see cref="TypeVariable"/> objects that represent the type variables declared by the generic declaration represented by this GenericDeclaration object, in declaration order.
         /// </summary>
         public TypeVariable[] TypeParameters => IExecuteArray<TypeVariable>("getTypeParameters");
@@ -100,10 +102,22 @@ namespace Java.Lang.Reflect
         /// Returns <see langword="true"/> if this executable was declared to take a variable number of arguments; returns <see langword="false"/> otherwise.
         /// </summary>
         public bool IsVarArgs => IExecute<bool>("isVarArgs");
+#else
+    public partial class Executable
+    {
+        /// <summary>
+        /// Returns the <see cref="Class"/> object representing the class or interface that declares the executable represented by this object.
+        /// </summary>
+        public Class DeclaringClass => IExecute<Class>("getDeclaringClass");
+
+        //abstract Annotation[][] getParameterAnnotations()
+        //Returns an array of arrays of Annotations that represent the annotations on the formal parameters, in declaration order, of the Executable represented by this object.
+        
         /// <summary>
         /// Returns a <see langword="string"/> describing this <see cref="Executable"/>, including any type parameters.
         /// </summary>
         /// <returns></returns>
         public string GenericString => IExecute<string>("toGenericString");
+#endif
     }
 }

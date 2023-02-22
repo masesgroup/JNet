@@ -24,12 +24,11 @@ namespace Java.Lang.Reflect
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/TypeVariable.html"/>
     /// </summary>
+#if JNETREFLECTOR
     public class TypeVariable : AnnotatedElement
     {
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "java.lang.reflect.TypeVariable";
-
-        public static implicit operator Type(TypeVariable t) => t.Cast<Type>();
 
         /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
         public override bool IsInterface => true;
@@ -45,6 +44,12 @@ namespace Java.Lang.Reflect
         /// Returns the name of this type variable, as it occurs in the source code.
         /// </summary>
         public string Name => IExecute<string>("getName");
+#else
+    public partial class TypeVariable
+    {
+
+
+#endif
     }
 
     /// <summary>

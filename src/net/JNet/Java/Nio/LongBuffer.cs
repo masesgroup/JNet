@@ -21,14 +21,10 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio
 {
-    public class LongBuffer : Buffer
+    public partial class LongBuffer
     {
-        public override string ClassName => "java.nio.LongBuffer";
+        // can be extended with methods not reflected or not available in Java;
 
         public static implicit operator Comparable<LongBuffer>(LongBuffer buffer) => buffer.Cast<Comparable<LongBuffer>>();
-
-        public static LongBuffer Allocate(int capacity) => SExecute<LongBuffer>("allocate", capacity);
-
-        public long[] Array => IExecute<long[]>("array");
     }
 }

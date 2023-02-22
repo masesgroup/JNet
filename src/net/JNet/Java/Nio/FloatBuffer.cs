@@ -21,14 +21,10 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio
 {
-    public class FloatBuffer : Buffer
+    public partial class FloatBuffer
     {
-        public override string ClassName => "java.nio.FloatBuffer";
+        // can be extended with methods not reflected or not available in Java;
 
         public static implicit operator Comparable<FloatBuffer>(FloatBuffer buffer) => buffer.Cast<Comparable<FloatBuffer>>();
-
-        public static FloatBuffer Allocate(int capacity) => SExecute<FloatBuffer>("allocate", capacity);
-
-        public float[] Array => IExecute<float[]>("array");
     }
 }

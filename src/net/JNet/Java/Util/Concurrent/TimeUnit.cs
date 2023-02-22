@@ -16,20 +16,10 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.JCOBridge.C2JBridge;
-
 namespace Java.Util.Concurrent
 {
-    public class TimeUnit : JVMBridgeBase<TimeUnit>
+    public partial class TimeUnit
     {
-        public override string ClassName => "java.util.concurrent.TimeUnit";
-
-        public static TimeUnit DAYS => SExecute<TimeUnit>("valueOf", "DAYS");
-        public static TimeUnit HOURS => SExecute<TimeUnit>("valueOf", "HOURS");
-        public static TimeUnit MICROSECONDS => SExecute<TimeUnit>("valueOf", "MICROSECONDS");
-        public static TimeUnit MILLISECONDS => SExecute<TimeUnit>("valueOf", "MILLISECONDS");
-        public static TimeUnit MINUTES => SExecute<TimeUnit>("valueOf", "MINUTES");
-        public static TimeUnit NANOSECONDS => SExecute<TimeUnit>("valueOf", "NANOSECONDS");
-        public static TimeUnit SECONDS => SExecute<TimeUnit>("valueOf", "SECONDS");
+        // can be extended with methods not reflected or not available in Java;
     }
 }

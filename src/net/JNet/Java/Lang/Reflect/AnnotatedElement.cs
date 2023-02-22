@@ -24,6 +24,7 @@ namespace Java.Lang.Reflect
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/AnnotatedElement.html"/>
     /// </summary>
+#if JNETREFLECTOR
     public class AnnotatedElement : JVMBridgeBase<AnnotatedElement>
     {
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
@@ -32,13 +33,20 @@ namespace Java.Lang.Reflect
         /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
         public override bool IsInterface => true;
         /// <summary>
-        /// Returns this element's annotation for the specified type if such an annotation is present, else null.
-        /// </summary>
-        public T GetAnnotation<T>(Class<T> annotationClass) where T : Annotation.Annotation => IExecute<T>("getAnnotation", annotationClass);
-        /// <summary>
         /// Returns annotations that are present on this element.
         /// </summary>
         public Annotation.Annotation[] Annotations => IExecuteArray<Annotation.Annotation>("getAnnotations");
+        /// <summary>
+        /// Returns annotations that are directly present on this element.
+        /// </summary>
+        public Annotation.Annotation[] DeclaredAnnotations => IExecuteArray<Annotation.Annotation>("getDeclaredAnnotations");
+#else
+    public partial class AnnotatedElement
+    {
+        /// <summary>
+        /// Returns this element's annotation for the specified type if such an annotation is present, else null.
+        /// </summary>
+        public T GetAnnotation<T>(Class<T> annotationClass) where T : Annotation.Annotation => IExecute<T>("getAnnotation", annotationClass);
         /// <summary>
         /// Returns annotations that are associated with this element.
         /// </summary>
@@ -48,10 +56,6 @@ namespace Java.Lang.Reflect
         /// </summary>
         public T GetDeclaredAnnotation<T>(Class<T> annotationClass) where T : Annotation.Annotation => IExecute<T>("getDeclaredAnnotation", annotationClass);
         /// <summary>
-        /// Returns annotations that are directly present on this element.
-        /// </summary>
-        public Annotation.Annotation[] DeclaredAnnotations => IExecuteArray<Annotation.Annotation>("getDeclaredAnnotations");
-        /// <summary>
         /// Returns this element's annotation(s) for the specified type if such annotations are either directly present or indirectly present.
         /// </summary>
         public T[] GetDeclaredAnnotationsByType<T>(Class<T> annotationClass) where T : Annotation.Annotation => IExecuteArray<T>("getDeclaredAnnotationsByType", annotationClass);
@@ -59,5 +63,6 @@ namespace Java.Lang.Reflect
         /// Returns <see langword="true"/> if an annotation for the specified type is present on this element, else <see langword="false"/>.
         /// </summary>
         public bool IsAnnotationPresent<T>(Class<T> annotationClass) where T : Annotation.Annotation => this.IExecute<bool>("isAnnotationPresent", annotationClass);
+#endif
     }
 }

@@ -18,23 +18,8 @@
 
 namespace Java.Nio
 {
-    public class MappedByteBuffer : ByteBuffer
+    public partial class MappedByteBuffer
     {
-        public override string ClassName => "java.nio.MappedByteBuffer";
-
-        /// <summary>
-        /// Forces any changes made to this buffer's content to be written to the storage device containing the mapped file.
-        /// </summary>
-        public MappedByteBuffer Force() => IExecute<MappedByteBuffer>("force");
-
-        /// <summary>
-        /// Tells whether or not this buffer's content is resident in physical memory.
-        /// </summary>
-        public bool IsLoaded => IExecute<bool>("isLoaded");
-
-        /// <summary>
-        /// Loads this buffer's content into physical memory.
-        /// </summary>
-        public MappedByteBuffer Load() => IExecute<MappedByteBuffer>("load");
+        // can be extended with methods not reflected or not available in Java;
     }
 }

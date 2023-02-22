@@ -23,6 +23,7 @@ namespace Java.Lang.Reflect
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/GenericArrayType.html"/>
     /// </summary>
+#if JNETREFLECTOR
     public class GenericArrayType : Type
     {
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
@@ -31,5 +32,10 @@ namespace Java.Lang.Reflect
         /// Returns a <see cref="Type"/> object representing the component type of this array.
         /// </summary>
         public Type GenericComponentType => IExecute<Type>("getGenericComponentType");
+#else
+    public partial class GenericArrayType
+    {
+#endif
+
     }
 }

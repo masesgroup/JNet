@@ -16,12 +16,10 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.JCOBridge.C2JBridge;
-
 namespace Java.Math
 {
-    public class BigDecimal : JVMBridgeBase<BigDecimal>
+    public partial class BigDecimal
     {
-        public override string ClassName => "java.math.BigDecimal";
+        // can be extended with methods not reflected or not available in Java;
     }
 }

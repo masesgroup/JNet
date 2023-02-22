@@ -29,8 +29,10 @@ namespace MASES.JNetReflector.Templates
         {
                 AllPackageClassesTemplate,
                 AllPackageClassesStubClassTemplate,
+                AllPackageClassesStubClassListenerTemplate,
                 AllPackageClassesStubExceptionTemplate,
                 AllPackageClassesStubNestedClassTemplate,
+                AllPackageClassesStubNestedClassListenerTemplate,
                 AllPackageClassesStubNestedExceptionTemplate,
 
                 SingleClassTemplate,
@@ -70,8 +72,10 @@ namespace MASES.JNetReflector.Templates
 
         public const string AllPackageClassesTemplate = "AllPackageClasses.template";
         public const string AllPackageClassesStubClassTemplate = "AllPackageClassesStubClass.template";
+        public const string AllPackageClassesStubClassListenerTemplate = "AllPackageClassesStubClassListener.template";
         public const string AllPackageClassesStubExceptionTemplate = "AllPackageClassesStubException.template";
         public const string AllPackageClassesStubNestedClassTemplate = "AllPackageClassesStubNestedClass.template";
+        public const string AllPackageClassesStubNestedClassListenerTemplate = "AllPackageClassesStubNestedClassListener.template";
         public const string AllPackageClassesStubNestedExceptionTemplate = "AllPackageClassesStubNestedException.template";
 
         public const string SingleClassTemplate = "SingleClass.template";
@@ -102,6 +106,7 @@ namespace MASES.JNetReflector.Templates
             public const string BASECLASS = "ALLPACKAGE_CLASSES_STUB_BASECLASS_PLACEHOLDER";
             public const string JAVACLASS = "ALLPACKAGE_CLASSES_STUB_JAVACLASS_PLACEHOLDER";
             public const string CONSTRUCTORS = "// ALLPACKAGE_CLASSES_STUB_CONSTRUCTORS_PLACEHOLDER";
+            public const string OPERATORS = "// ALLPACKAGE_CLASSES_STUB_OPERATORS_PLACEHOLDER";
             public const string FIELDS = "// ALLPACKAGE_CLASSES_STUB_FIELDS_PLACEHOLDER";
             public const string STATICMETHODS = "// ALLPACKAGE_CLASSES_STUB_STATIC_METHODS_PLACEHOLDER";
             public const string METHODS = "// ALLPACKAGE_CLASSES_STUB_METHODS_PLACEHOLDER";
@@ -130,6 +135,11 @@ namespace MASES.JNetReflector.Templates
                 public const string OBSOLETE_DECORATION = "[System.Obsolete()]";
             }
 
+            public class OperatorStub
+            {
+                public const string IMPLICIT_EXECUTION_FORMAT = "public static implicit operator {0}({1} t) => t.Cast<{0}>();";
+            }
+
             public class MethodStub
             {
                 public const string DECORATION = "METHOD_STUB_METHOD_DECORATION_PLACEHOLDER";
@@ -140,6 +150,7 @@ namespace MASES.JNetReflector.Templates
                 public const string PARAMETERS = "METHOD_STUB_PARAMETERS_PLACEHOLDER";
                 public const string EXECUTION = "METHOD_STUB_EXECUTION_PLACEHOLDER";
                 public const string EXECUTION_FORMAT = "{0}{1}{2}(\"{3}\"{4});";
+                public const string EXECUTION_FORMAT_EXCEPTION = "var obj = {0}<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>(\"{1}\"{2}); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<{3}>(obj);";
 
                 public static readonly string DEFAULT_DECORATION = "/// <summary>" + Environment.NewLine
                                                                  + "/// METHOD_STUB_METHOD_HELP_PLACEHOLDER" + Environment.NewLine
@@ -157,7 +168,8 @@ namespace MASES.JNetReflector.Templates
                 public const string NAME = "PROPERTY_STUB_PROPERTY_NAME_PLACEHOLDER";
                 public const string EXECUTION = "PROPERTY_STUB_EXECUTION_PLACEHOLDER";
                 public const string GET_EXECUTION_FORMAT = "get {{ return {0}{1}(\"{2}\"); }}";
-                public const string SET_EXECUTION_FORMAT = "set {{ {0}(\"{1}\", value); }}";
+                public const string SET_EXECUTION_FORMAT = " set {{ {0}(\"{1}\", value); }}";
+                public const string GET_EXECUTION_FORMAT_EXCEPTION = "get {{ var obj = {0}<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>(\"{2}\"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<{1}>(obj); }}";
 
                 public static readonly string DEFAULT_DECORATION = "/// <summary>" + Environment.NewLine
                                                                  + "/// PROPERTY_STUB_GET_PROPERTY_HELP_PLACEHOLDER PROPERTY_STUB_SET_PROPERTY_HELP_PLACEHOLDER" + Environment.NewLine
@@ -189,6 +201,7 @@ namespace MASES.JNetReflector.Templates
                 public const string BASECLASS = "ALLPACKAGE_CLASSES_STUB_NESTED_BASECLASS_PLACEHOLDER";
                 public const string JAVACLASS = "ALLPACKAGE_CLASSES_STUB_NESTED_JAVACLASS_PLACEHOLDER";
                 public const string CONSTRUCTORS = "// ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_CONSTRUCTORS_PLACEHOLDER";
+                public const string OPERATORS = "// ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_OPERATORS_PLACEHOLDER";
                 public const string FIELDS = "// ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_FIELDS_PLACEHOLDER";
                 public const string STATICMETHODS = "// ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_STATIC_METHODS_PLACEHOLDER";
                 public const string METHODS = "// ALLPACKAGE_CLASSES_STUB_NESTED_CLASS_METHODS_PLACEHOLDER";

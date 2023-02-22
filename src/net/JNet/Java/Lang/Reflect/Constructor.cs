@@ -23,11 +23,16 @@ namespace Java.Lang.Reflect
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Constructor.html"/>
     /// </summary>
+#if JNETREFLECTOR
     public class Constructor : Executable
     {
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "java.lang.reflect.Constructor";
-    }
+#else
+    public partial class Constructor
+    {
+#endif
+}
 
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Constructor.html"/>

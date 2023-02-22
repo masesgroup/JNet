@@ -21,6 +21,8 @@
 *  using ALLPACKAGE_JAR_PLACEHOLDER as reference
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace ALLPACKAGE_NAMESPACE_PLACEHOLDER
 {
 ALLPACKAGE_CLASSES_STUB_CLASS_DECORATION_PLACEHOLDER
@@ -28,6 +30,10 @@ ALLPACKAGE_CLASSES_STUB_CLASS_DECORATION_PLACEHOLDER
     {
         #region Constructors
 // ALLPACKAGE_CLASSES_STUB_CONSTRUCTORS_PLACEHOLDER
+        #endregion
+
+        #region Class/Interface conversion operators
+// ALLPACKAGE_CLASSES_STUB_OPERATORS_PLACEHOLDER
         #endregion
 
         #region Fields

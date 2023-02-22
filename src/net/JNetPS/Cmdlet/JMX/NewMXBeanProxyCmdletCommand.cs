@@ -17,8 +17,8 @@
 */
 
 using Java.Lang;
-using JavaX.Management;
-using JavaX.Management.Remote;
+using Javax.Management;
+using Javax.Management.Remote;
 using MASES.JNetPSCore.Cmdlet;
 using System;
 using System.Management.Automation;
@@ -70,22 +70,22 @@ namespace MASES.JNetPS.Cmdlet.JMX
             {
                 if (WithNotificationEmitter.IsPresent)
                 {
-                    result = JavaX.Management.JMX.NewMXBeanProxy(Connector.MBeanServerConnection, ObjectName, Class, true);
+                    result = Javax.Management.JMX.NewMXBeanProxy(Connector.MBeanServerConnection, ObjectName, Class, true);
                 }
                 else
                 {
-                    result = JavaX.Management.JMX.NewMXBeanProxy(Connector.MBeanServerConnection, ObjectName, Class);
+                    result = Javax.Management.JMX.NewMXBeanProxy(Connector.MBeanServerConnection, ObjectName, Class);
                 }
             }
             else if (InterfaceName != null)
             {
                 if (WithNotificationEmitter.IsPresent)
                 {
-                    result = JavaX.Management.JMX.NewMXBeanProxy(Connector.MBeanServerConnection, ObjectName, Java.Lang.Class.ForName(InterfaceName), true);
+                    result = Javax.Management.JMX.NewMXBeanProxy(Connector.MBeanServerConnection, ObjectName, Java.Lang.Class.ForName(InterfaceName), true);
                 }
                 else
                 {
-                    result = JavaX.Management.JMX.NewMXBeanProxy(Connector.MBeanServerConnection, ObjectName, Java.Lang.Class.ForName(InterfaceName));
+                    result = Javax.Management.JMX.NewMXBeanProxy(Connector.MBeanServerConnection, ObjectName, Java.Lang.Class.ForName(InterfaceName));
                 }
             }
             else throw new ArgumentException("Class or InterfaceName shall be set.");

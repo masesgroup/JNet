@@ -23,12 +23,16 @@ namespace Java.Lang.Annotation
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Annotation.html"/>
     /// </summary>
+#if JNETREFLECTOR
     public class Annotation : JVMBridgeBase<Annotation>
     {
-        public Annotation() { }
-
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "java.lang.annotation.Annotation";
+#else
+    public partial class Annotation
+    {
+
+#endif
         /// <summary>
         /// Returns the annotation type of this annotation.
         /// </summary>

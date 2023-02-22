@@ -16,7 +16,7 @@
 *  Refer to LICENSE for more information.
 */
 
-using JavaX.Management;
+using Javax.Management;
 using MASES.JCOBridge.C2JBridge;
 using MASES.JNet.Extensions;
 using MASES.JNetPSCore;

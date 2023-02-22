@@ -16,12 +16,10 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.JCOBridge.C2JBridge;
-
 namespace Java.Io
 {
-    public class Console : JVMBridgeBase<Console>
+    public partial class Console
     {
-        public override string ClassName => "java.io.Console";
+        // can be extended with methods not reflected or not available in Java;
     }
 }

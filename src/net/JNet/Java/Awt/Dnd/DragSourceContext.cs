@@ -16,14 +16,10 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.JCOBridge.C2JBridge;
-
 namespace Java.Awt.Dnd
 {
-    public class DragSourceContext : JVMBridgeBase<DragSourceContext>
+    public partial class DragSourceContext
     {
-        public override string ClassName => "java.awt.dnd.DragSourceContext";
-
-        // TODO: complete the class
+        // can be extended with methods not reflected or not available in Java;
     }
 }

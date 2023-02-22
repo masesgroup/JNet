@@ -16,16 +16,10 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.JCOBridge.C2JBridge;
-
 namespace Java.Awt
 {
-    public class GraphicsConfiguration : JVMBridgeBase<GraphicsConfiguration>
+    public partial class GraphicsConfiguration
     {
-        public override bool IsAbstract => true;
-
-        public override string ClassName => "java.awt.GraphicsConfiguration";
-
-        // TODO: complete the class
+        // can be extended with methods not reflected or not available in Java;
     }
 }

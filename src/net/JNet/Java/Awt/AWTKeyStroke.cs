@@ -16,22 +16,10 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.JCOBridge.C2JBridge;
-
 namespace Java.Awt
 {
-    public class AWTKeyStroke : JVMBridgeBase<AWTKeyStroke>
+    public partial class AWTKeyStroke
     {
-        public override string ClassName => "java.awt.AWTKeyStroke";
-
-        public AWTKeyStroke()
-        {
-        }
-
-        protected AWTKeyStroke(params object[] args) : base(args)
-        {
-        }
-
-        // TODO: complete the class
+        // can be extended with methods not reflected or not available in Java;
     }
 }

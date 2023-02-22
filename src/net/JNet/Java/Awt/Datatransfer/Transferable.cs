@@ -16,14 +16,10 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.JCOBridge.C2JBridge;
-
 namespace Java.Awt.Datatransfer
 {
-    public class Transferable : JVMBridgeBase<Transferable>
+    public partial class Transferable
     {
-        public override string ClassName => "java.awt.datatransfer.Transferable";
-
-        // TODO: complete the class
+        // can be extended with methods not reflected or not available in Java;
     }
 }

@@ -16,12 +16,10 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.JCOBridge.C2JBridge;
-
 namespace Java.Awt
 {
-    public class ItemSelectable : JVMBridgeBase<ItemSelectable>
+    public partial class ItemSelectable
     {
-        public override string ClassName => "java.awt.ItemSelectable";
+        // can be extended with methods not reflected or not available in Java;
     }
 }

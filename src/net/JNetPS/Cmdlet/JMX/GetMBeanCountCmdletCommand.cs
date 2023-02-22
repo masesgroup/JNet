@@ -16,14 +16,14 @@
 *  Refer to LICENSE for more information.
 */
 
-using JavaX.Management.Remote;
+using Javax.Management.Remote;
 using MASES.JNetPSCore.Cmdlet;
 using System.Management.Automation;
 
 namespace MASES.JNetPS.Cmdlet.JMX
 {
     [Cmdlet(VerbsCommon.Get, "MBeanCount")]
-    [OutputType(typeof(int))]
+    [OutputType(typeof(int?))]
     public class GetMBeanCountCmdletCommand : JNetPSCmdlet<JNetPSCore>
     {
         [Parameter(
@@ -36,7 +36,7 @@ namespace MASES.JNetPS.Cmdlet.JMX
         // This method will be called for each input received from the pipeline to this cmdlet; if no input is received, this method is not called
         protected override void ProcessCommand()
         {
-            int count = Connector.MBeanServerConnection.MBeanCount;
+            int? count = Connector.MBeanServerConnection.MBeanCount;
 
             WriteObject(count);
         }

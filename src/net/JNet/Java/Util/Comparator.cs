@@ -26,12 +26,8 @@ namespace Java.Util
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Comparator.html"/>
     /// </summary>
     /// <typeparam name="E"><see href="https://docs.oracle.com/javase/8/docs/api/java/util/Comparator.html"/></typeparam>
-    public class Comparator : JVMBridgeBase<Comparator>
+    public partial class Comparator
     {
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.util.Comparator";
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
         /// <summary>
         /// Accepts a function that extracts a Comparable sort key from a type T, and returns a <see cref="Comparator"/> that compares by that sort key.
         /// </summary>

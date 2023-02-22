@@ -16,21 +16,11 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.JCOBridge.C2JBridge;
-
 namespace Java.Util
 {
-    public class OptionalInt : JVMBridgeBase<OptionalInt>
+    public partial class OptionalInt
     {
-        public override string ClassName => "java.util.OptionalInt";
-
-        public static OptionalLong Empty => SExecute<OptionalLong>("empty");
-
-        public static OptionalInt Of(int value) => SExecute<OptionalInt>("of", value);
-
-        public bool IsPresent => IExecute<bool>("isPresent");
-
-        public virtual int GetAsInt() { return IExecute<int>("getAsInt"); }
+        // can be extended with methods not reflected or not available in Java;
     }
 }
 

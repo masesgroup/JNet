@@ -21,14 +21,10 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Nio
 {
-    public class DoubleBuffer : Buffer
+    public partial class DoubleBuffer
     {
-        public override string ClassName => "java.nio.DoubleBuffer";
+        // can be extended with methods not reflected or not available in Java;
 
         public static implicit operator Comparable<DoubleBuffer>(DoubleBuffer buffer) => buffer.Cast<Comparable<DoubleBuffer>>();
-
-        public static DoubleBuffer Allocate(int capacity) => SExecute<DoubleBuffer>("allocate", capacity);
-
-        public double[] Array => IExecute<double[]>("array");
     }
 }

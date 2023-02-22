@@ -16,21 +16,11 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.JCOBridge.C2JBridge;
-
 namespace Java.Util
 {
-    public class OptionalLong : JVMBridgeBase<OptionalLong>
+    public partial class OptionalLong
     {
-        public override string ClassName => "java.util.OptionalLong";
-
-        public static OptionalLong Empty => SExecute<OptionalLong>("empty");
-
-        public static OptionalLong Of(long value) => SExecute<OptionalLong>("of", value);
-
-        public bool IsPresent => IExecute<bool>("isPresent");
-
-        public virtual long GetAsLong() { return IExecute<long>("getAsLong"); }
+        // can be extended with methods not reflected or not available in Java;
     }
 }
 

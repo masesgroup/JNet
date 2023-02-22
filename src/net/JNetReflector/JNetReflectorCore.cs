@@ -42,7 +42,6 @@ namespace MASES.JNetReflector
                     {
                         Name = CLIParam.OriginRootPath,
                         Type = ArgumentType.Double,
-                        IsMandatory = true,
                         Help = "The origin path where Jars to be analyzed are stored",
                     },
                     new ArgumentMetadata<string>()
@@ -74,9 +73,39 @@ namespace MASES.JNetReflector
                     },
                     new ArgumentMetadata<string>()
                     {
+                        Name = CLIParam.ModulesToParse,
+                        Type = ArgumentType.Double,
+                        Help = "A CSV list of module patterns to be parsed during analysis, it avoids the usage of OriginRootPath",
+                    },
+                    new ArgumentMetadata<string>()
+                    {
+                        Name = CLIParam.ClassesToBeListener,
+                        Type = ArgumentType.Double,
+                        Help = "A CSV list of class names to be treated as Listener",
+                    },
+                    new ArgumentMetadata<string>()
+                    {
+                        Name = CLIParam.NamespacesInConflict,
+                        Type = ArgumentType.Double,
+                        Help = "A CSV list of namespaces in conflict with class name: to this one will be added an \"Ns\" at the end",
+                    },
+                    new ArgumentMetadata<string>()
+                    {
                         Name = CLIParam.NamespacesToAvoid,
                         Type = ArgumentType.Double,
-                        Help = "A CSV list of namespaces to be removed from analysis",
+                        Help = "A CSV list of namespaces to be removed during analysis",
+                    },
+                    new ArgumentMetadata<string>()
+                    {
+                        Name = CLIParam.ClassesToAvoid,
+                        Type = ArgumentType.Double,
+                        Help = "A CSV list of classes to be removed during analysis",
+                    },
+                    new ArgumentMetadata<object>()
+                    {
+                        Name = CLIParam.DoNotAddJarsInClasspath,
+                        Type = ArgumentType.Single,
+                        Help = "The option inform the tool to not add the Jars in classpath",
                     },
                     new ArgumentMetadata<object>()
                     {
@@ -114,6 +143,7 @@ namespace MASES.JNetReflector
         /// </summary>
         public JNetReflectorCore()
         {
+            JCOBridge.C2JBridge.JCOBridge.RegisterExceptions(typeof(JNetReflectorCore<>).Assembly);
         }
 
         static string _OriginRootPath;
@@ -131,8 +161,23 @@ namespace MASES.JNetReflector
         static IEnumerable<string> _JarsToAnaylyze;
         public static IEnumerable<string> JarsToAnaylyze => _JarsToAnaylyze;
 
+        static IEnumerable<string> _ModulesToParse;
+        public static IEnumerable<string> ModulesToParse => _ModulesToParse;
+
+        static IEnumerable<string> _ClassesToBeListener;
+        public static IEnumerable<string> ClassesToBeListener => _ClassesToBeListener;
+
+        static IEnumerable<string> _NamespacesInConflict;
+        public static IEnumerable<string> NamespacesInConflict => _NamespacesInConflict;
+
         static IEnumerable<string> _NamespacesToAvoid;
         public static IEnumerable<string> NamespacesToAvoid => _NamespacesToAvoid;
+
+        static IEnumerable<string> _ClassesToAvoid;
+        public static IEnumerable<string> ClassesToAvoid => _ClassesToAvoid;
+
+        static bool _DoNotAddJarsInClasspath;
+        public static bool DoNotAddJarsInClasspath => _DoNotAddJarsInClasspath;
 
         static bool _ReflectDeprecated;
         public static bool ReflectDeprecated => _ReflectDeprecated;
@@ -150,25 +195,60 @@ namespace MASES.JNetReflector
         protected override string[] ProcessCommandLine()
         {
             var result = base.ProcessCommandLine();
-
-            var originalRootPath = ParsedArgs.Get<string>(CLIParam.OriginRootPath);
-            _OriginRootPath = Path.GetFullPath(originalRootPath);
-            if (!Directory.Exists(_OriginRootPath)) throw new DirectoryNotFoundException($"{_OriginRootPath} not exist.");
-
-            List<string> jarsToAnaylyze = new List<string>();
-            if (ParsedArgs.Exist(CLIParam.JarList))
+            if (ParsedArgs.Exist(CLIParam.OriginRootPath))
             {
-                var jars = ParsedArgs.Get<string>(CLIParam.JarList).Split(',', ';');
-                foreach (var item in jars.Select((o) => Path.Combine(originalRootPath, o)))
+                var originalRootPath = ParsedArgs.Get<string>(CLIParam.OriginRootPath);
+                _OriginRootPath = Path.GetFullPath(originalRootPath);
+                if (!Directory.Exists(_OriginRootPath)) throw new DirectoryNotFoundException($"{_OriginRootPath} not exist.");
+
+                List<string> jarsToAnaylyze = new List<string>();
+                if (ParsedArgs.Exist(CLIParam.JarList))
                 {
-                    if (!jarsToAnaylyze.Contains(item)) jarsToAnaylyze.Add(item);
+                    var jars = ParsedArgs.Get<string>(CLIParam.JarList).Split(',', ';');
+                    foreach (var item in jars.Select((o) => Path.Combine(originalRootPath, o)))
+                    {
+                        if (!jarsToAnaylyze.Contains(item)) jarsToAnaylyze.Add(item);
+                    }
+                }
+                else
+                {
+                    jarsToAnaylyze.AddRange(Directory.EnumerateFiles(originalRootPath, "*.jar"));
+                }
+                _JarsToAnaylyze = jarsToAnaylyze;
+            }
+
+            List<string> modulesToParse = new List<string>();
+            if (ParsedArgs.Exist(CLIParam.ModulesToParse))
+            {
+                var namespaces = ParsedArgs.Get<string>(CLIParam.ModulesToParse).Split(',', ';');
+                foreach (var item in namespaces.Select((o) => o.Replace(SpecialNames.JNISeparator, SpecialNames.NamespaceSeparator)))
+                {
+                    if (!modulesToParse.Contains(item)) modulesToParse.Add(item);
                 }
             }
-            else
+            _ModulesToParse = modulesToParse;
+
+            List<string> classesToBeListener = new List<string>();
+            if (ParsedArgs.Exist(CLIParam.ClassesToBeListener))
             {
-                jarsToAnaylyze.AddRange(Directory.EnumerateFiles(originalRootPath, "*.jar"));
+                var classes = ParsedArgs.Get<string>(CLIParam.ClassesToBeListener).Split(',', ';');
+                foreach (var item in classes)
+                {
+                    if (!classesToBeListener.Contains(item)) classesToBeListener.Add(item);
+                }
             }
-            _JarsToAnaylyze = jarsToAnaylyze;
+            _ClassesToBeListener = classesToBeListener;
+
+            List<string> namespacesInConflict = new List<string>();
+            if (ParsedArgs.Exist(CLIParam.NamespacesInConflict))
+            {
+                var namespaces = ParsedArgs.Get<string>(CLIParam.NamespacesInConflict).Split(',', ';');
+                foreach (var item in namespaces.Select((o) => o.Replace(SpecialNames.JNISeparator, SpecialNames.NamespaceSeparator)))
+                {
+                    if (!namespacesInConflict.Contains(item)) namespacesInConflict.Add(item);
+                }
+            }
+            _NamespacesInConflict = namespacesInConflict;
 
             List<string> namespacesToAvoid = new List<string>();
             if (ParsedArgs.Exist(CLIParam.NamespacesToAvoid))
@@ -181,12 +261,24 @@ namespace MASES.JNetReflector
             }
             _NamespacesToAvoid = namespacesToAvoid;
 
+            List<string> classesToAvoid = new List<string>();
+            if (ParsedArgs.Exist(CLIParam.ClassesToAvoid))
+            {
+                var classes = ParsedArgs.Get<string>(CLIParam.ClassesToAvoid).Split(',', ';');
+                foreach (var item in classes.Select((o) => o.Replace(SpecialNames.JNISeparator, SpecialNames.NamespaceSeparator)))
+                {
+                    if (!classesToAvoid.Contains(item)) classesToAvoid.Add(item);
+                }
+            }
+            _ClassesToAvoid = classesToAvoid;
+
             var destinationFolder = Path.GetFullPath(ParsedArgs.Get<string>(CLIParam.DestinationRootPath));
             _DestinationRootPath = Path.GetFullPath(destinationFolder);
 
             _OriginJavadocUrl = ParsedArgs.Get<string>(CLIParam.OriginJavadocUrl);
             _JavadocVersion = ParsedArgs.Get<int>(CLIParam.JavadocVersion);
 
+            _DoNotAddJarsInClasspath = ParsedArgs.Exist(CLIParam.DoNotAddJarsInClasspath);
             _ReflectDeprecated = ParsedArgs.Exist(CLIParam.ReflectDeprecated);
             _DryRun = ParsedArgs.Exist(CLIParam.DryRun);
             _TraceLevel = ParsedArgs.Get<int>(CLIParam.TraceLevel);
@@ -203,10 +295,17 @@ namespace MASES.JNetReflector
             get
             {
                 var lst = base.PathToParse;
-                foreach (var item in _JarsToAnaylyze)
+                var assembly = typeof(JNetReflectorCore<>).Assembly;
+                var path = System.IO.Path.Combine(System.IO.Path.GetDirectoryName(assembly.Location), JARsSubFolder, $"*.jar");
+                lst.Add(path);
+                if (DoNotAddJarsInClasspath) return lst;
+                if (_JarsToAnaylyze != null)
                 {
-                    lst.Add(Path.GetFullPath(item));
-                }        
+                    foreach (var item in _JarsToAnaylyze)
+                    {
+                        lst.Add(Path.GetFullPath(item));
+                    }
+                }
                 return lst;
             }
         }

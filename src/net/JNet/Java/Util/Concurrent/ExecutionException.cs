@@ -20,8 +20,8 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Concurrent
 {
-    public class ExecutionException : JVMBridgeException<ExecutionException>
+    public partial class ExecutionException
     {
-        public override string ClassName => "java.util.concurrent.ExecutionException";
+        // can be extended with methods not reflected or not available in Java;
     }
 }

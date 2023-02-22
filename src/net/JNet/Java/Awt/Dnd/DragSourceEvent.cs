@@ -20,24 +20,8 @@ using Java.Util;
 
 namespace Java.Awt.Dnd
 {
-    public class DragSourceEvent : EventObject
+    public partial class DragSourceEvent
     {
-        public override string ClassName => "java.awt.dnd.DragSourceEvent";
-        /// <summary>
-        /// This method returns the <see cref="DragSourceContext"/> that originated the event.
-        /// </summary>
-        public DragSourceContext DragSourceContext => IExecute<DragSourceContext>("getDragSourceContext");
-        /// <summary>
-        /// This method returns a Point indicating the cursor location in screen coordinates at the moment this event occured, or null if the cursor location is not specified for this event.
-        /// </summary>
-        public Point Location => IExecute<Point>("getLocation");
-        /// <summary>
-        /// This method returns the horizontal coordinate of the cursor location in screen coordinates at the moment this event occured, or zero if the cursor location is not specified for this event.
-        /// </summary>
-        public int X => IExecute<int>("getX");
-        /// <summary>
-        /// This method returns the vertical coordinate of the cursor location in screen coordinates at the moment this event occured, or zero if the cursor location is not specified for this event.
-        /// </summary>
-        public int Y => IExecute<int>("getY");
+        // can be extended with methods not reflected or not available in Java;
     }
 }

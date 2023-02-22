@@ -21,31 +21,8 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
-    public class Map : JVMBridgeBase<Map>
+    public partial class Map
     {
-        public override string ClassName => "java.util.Map";
-
-        public Map()
-        {
-        }
-
-        protected Map(params object[] args)
-            : base(args)
-        {
-        }
-
-        public void Clear() => IExecute("clear");
-
-        public bool IsEmpty => IExecute<bool>("isEmpty");
-
-        public bool ContainsKey(object key) => IExecute<bool>("containsKey", key);
-
-        public bool ContainsValue(object value) => IExecute<bool>("containsValue", value);
-
-        public bool Remove(object key, object value) => IExecute<bool>("remove", key, value);
-
-        public int Size => IExecute<int>("size");
-
         public class Entry<K, V> : JVMBridgeBase<Entry<K, V>>
         {
             public override string ClassName => "java.util.Map$Entry";
@@ -114,7 +91,7 @@ namespace Java.Util
             return IExecute<V>("putIfAbsent", key, value);
         }
 
-        public V Remove(object key)
+        public new V Remove(object key)
         {
             return IExecute<V>("remove", key);
         }

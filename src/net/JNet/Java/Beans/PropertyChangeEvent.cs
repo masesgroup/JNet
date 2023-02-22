@@ -16,38 +16,10 @@
 *  Refer to LICENSE for more information.
 */
 
-using Java.Lang;
-using Java.Util;
-
 namespace Java.Beans
 {
-    public class PropertyChangeEvent : EventObject
+    public partial class PropertyChangeEvent
     {
-        public override string ClassName => "java.beans.PropertyChangeEvent";
-        /// <summary>
-        /// Gets the programmatic name of the property that was changed.
-        /// </summary>
-        /// <value>The programmatic name of the property that was changed. May be null if multiple properties have changed.</value>
-        public string PropertyName => IExecute<string>("getPropertyName");
-        /// <summary>
-        /// Gets the new value for the property, expressed as an <see cref="object"/>.
-        /// </summary>
-        /// <value>The new value for the property, expressed as an <see cref="object"/>. May be null if multiple properties have changed.</value>
-        public Object NewValue => IExecute<Object>("getNewValue");
-        /// <summary>
-        /// Gets the old value for the property, expressed as an <see cref="object"/>.
-        /// </summary>
-        /// <value>The old value for the property, expressed as an <see cref="object"/>. May be null if multiple properties have changed.</value>
-        public Object OldValue => IExecute<Object>("getOldValue");
-        /// <summary>
-        /// Gets/Sets the propagationId <see cref="object"/> for the event..
-        /// </summary>
-        /// <value>The propagationId <see cref="object"/> associated with a bound/constrained property update.</value>
-        /// <remarks>The "propagationId" field is reserved for future use. In Beans 1.0 the sole requirement is that if a listener catches a PropertyChangeEvent and then fires a PropertyChangeEvent of its own, then it should make sure that it propagates the propagationId field from its incoming event to its outgoing event.</remarks>
-        public Object PropagationId
-        {
-            get { return IExecute<Object>("getPropagationId"); }
-            set { IExecute<Object>("setPropagationId", value); }
-        }
+        // can be extended with methods not reflected or not available in Java;
     }
 }

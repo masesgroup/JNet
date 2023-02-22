@@ -16,21 +16,11 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.JCOBridge.C2JBridge;
-
 namespace Java.Util
 {
-    public class OptionalDouble : JVMBridgeBase<OptionalDouble>
+    public partial class OptionalDouble
     {
-        public override string ClassName => "java.util.OptionalDouble";
-
-        public static OptionalLong Empty => SExecute<OptionalLong>("empty");
-
-        public static OptionalDouble Of(double value) => SExecute<OptionalDouble>("of", value);
-
-        public bool IsPresent => IExecute<bool>("isPresent");
-
-        public virtual double GetAsDouble() { return IExecute<double>("getAsDouble"); }
+        // can be extended with methods not reflected or not available in Java;
     }
 }
 

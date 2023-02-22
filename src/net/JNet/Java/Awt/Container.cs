@@ -20,17 +20,9 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Awt
 {
-    public class Container : Component
+    public partial class Container
     {
-        public override string ClassName => "java.awt.Container";
-
-        public Container()
-        {
-        }
-
-        protected Container(params object[] args) : base(args)
-        {
-        }
+        // can be extended with methods not reflected or not available in Java;
 
         ~Container()
         {

@@ -18,22 +18,8 @@
 
 namespace Java.Awt
 {
-    public class TextComponent : Component
+    public partial class TextComponent
     {
-        public override string ClassName => "java.awt.TextComponent";
-
-        public TextComponent()
-        {
-        }
-
-        protected TextComponent(params object[] args) : base(args)
-        {
-        }
-
-        public TextComponent(string label) : base(label)
-        {
-        }
-
-        // TODO: complete the class
+        // can be extended with methods not reflected or not available in Java;
     }
 }

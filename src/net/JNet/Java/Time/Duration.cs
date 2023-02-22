@@ -16,15 +16,11 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.JCOBridge.C2JBridge;
-
 namespace Java.Time
 {
-    public sealed class Duration : JVMBridgeBase<Duration>
+    public partial class Duration
     {
-        public override string ClassName => "java.time.Duration";
-
-        // to be extended; add a single method related to TimeSpan of .NET: Duration and Timespan are similar
+        // can be extended with methods not reflected or not available in Java; add a single method related to TimeSpan of .NET: Duration and Timespan are similar
 
         public static implicit operator Duration(System.TimeSpan timespan)
         {

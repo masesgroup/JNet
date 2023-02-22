@@ -16,11 +16,11 @@
 *  Refer to LICENSE for more information.
 */
 
-using JavaX.Management;
-using JavaX.Management.Monitor;
-using JavaX.Management.Relation;
-using JavaX.Management.Remote;
-using JavaX.Management.Timer;
+using Javax.Management;
+using Javax.Management.Monitor;
+using Javax.Management.Relation;
+using Javax.Management.Remote;
+using Javax.Management.Timer;
 using MASES.JCOBridge.C2JBridge;
 using MASES.JNetPSCore.Cmdlet;
 using System;

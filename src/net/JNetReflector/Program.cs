@@ -30,7 +30,7 @@ namespace MASES.JNetReflector
         static void Main(string[] args)
         {
             try
-            {
+            {    
                 var assembly = typeof(Program).Assembly;
                 Console.WriteLine($"{assembly.GetName().Name} (ver. {assembly.GetName().Version}) - JNet class reflection utility command line interface");
                 Console.WriteLine();
@@ -43,11 +43,7 @@ namespace MASES.JNetReflector
                 }
 
                 ReflectionUtils.SetHandlerAndLevel(TraceReportHandler, JNetReflectorCore.TraceLevel);
-
-                foreach (var item in JNetReflectorCore.JarsToAnaylyze)
-                {
-                    ReflectionUtils.AnalyzeJar(item, JNetReflectorCore.DestinationRootPath, JNetReflectorCore.DryRun);
-                }
+                ReflectionUtils.Reflect();
             }
             catch (TargetInvocationException tie)
             {
@@ -104,7 +100,7 @@ namespace MASES.JNetReflector
 
             Console.WriteLine();
             Console.WriteLine("Examples: ");
-            Console.WriteLine("dotnet" + assembly.GetName().Name + ".dll -OriginRootPath C:\\myJars -OriginJavadocUrl \"https://thehost/javadoc/\" -DestinationRootPath c:\\ReflectionDestination ");
+            Console.WriteLine("dotnet " + assembly.GetName().Name + ".dll -OriginRootPath C:\\myJars -OriginJavadocUrl \"https://thehost/javadoc/\" -DestinationRootPath c:\\ReflectionDestination ");
         }
     }
 }

@@ -38,7 +38,7 @@ namespace Java.Awt.Dnd
     /// Listener for DropTargetListener. Extends <see cref="JVMBridgeListener"/>, implements <see cref="IDropTargetListener"/>
     /// </summary>
     /// <remarks>Remember to Dispose the object otherwise there is a resource leak, the object contains a reference to the the corresponding JVM object</remarks>
-    public class DropTargetListener : JVMBridgeListener, IDropTargetListener
+    public partial class DropTargetListener : IDropTargetListener
     {
         /// <inheritdoc cref="JVMBridgeListener.ClassName"/>
         public sealed override string ClassName => "org.mases.jnet.awt.dnd.JNetDropTargetListener";

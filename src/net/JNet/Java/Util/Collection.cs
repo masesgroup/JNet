@@ -15,8 +15,9 @@
 *
 *  Refer to LICENSE for more information.
 */
-
+#if !JNETREFLECTOR
 using Java.Util.Function;
+#endif
 using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
@@ -24,7 +25,7 @@ namespace Java.Util
     public class Collection<E> : JVMBridgeBaseEnumerable<Collection<E>, E>
     {
         public override string ClassName => "java.util.Collection";
-
+#if !JNETREFLECTOR
         public static implicit operator Lang.Iterable<E>(Collection<E> instance) => instance.Cast<Lang.Iterable<E>>();
 
         public bool Add(E e) => IExecute<bool>("add", e);
@@ -52,5 +53,6 @@ namespace Java.Util
         public int Size => IExecute<int>("size");
 
         public Spliterator<E> Spliterator() => IExecute<Spliterator<E>>("spliterator");
+#endif
     }
 }

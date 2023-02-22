@@ -18,10 +18,8 @@
 
 namespace Java.Awt
 {
-    public class Panel : Container
+    public partial class Panel
     {
-        public override string ClassName => "java.awt.Panel";
-
-        // TODO: complete the class
+        // can be extended with methods not reflected or not available in Java;
     }
 }

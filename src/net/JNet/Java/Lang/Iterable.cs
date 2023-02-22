@@ -23,6 +23,22 @@ namespace Java.Lang
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html"/>
     /// </summary>
+    public class Iterable : JVMBridgeBase<Iterable>
+    {
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.lang.Iterable";
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+        /// <summary>
+        /// Returns an iterator over elements of type <typeparamref name="T"/>.
+        /// </summary>
+        /// <returns>An <see cref="Util.Iterator{T}"/></returns>
+        public Util.Iterator Iterator => IExecute<Util.Iterator>("iterator");
+    }
+
+    /// <summary>
+    /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html"/>
+    /// </summary>
     /// <typeparam name="T"><see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html"/></typeparam>
     public class Iterable<T> : JVMBridgeBase<Iterable<T>>
     {

@@ -16,15 +16,11 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.JCOBridge.C2JBridge;
-
 namespace Java.Time
 {
-    public sealed class Instant : JVMBridgeBase<Instant>
+    public partial class Instant
     {
-        public override string ClassName => "java.time.Instant";
-
-        // to be extended; add a single method related to DateTime of .NET: Instant and DateTime are similar
+        // can be extended with methods not reflected or not available in Java; add a single method related to DateTime of .NET: Instant and DateTime are similar
 
         public static implicit operator Instant(System.DateTime dt)
         {
