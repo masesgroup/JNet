@@ -108,24 +108,24 @@ namespace MASES.JNetReflector
             }
         }
 
-        public static void AddItem(IDictionary<string, IDictionary<string, IList<string>>> data, Class cls)
+        public static void AddItem(IDictionary<string, IDictionary<string, IDictionary<string, string>>> data, Class cls)
         {
             if (cls == null) return;
             ReportTrace(ReflectionTraceLevel.Debug, "Adding entry {0}", cls.Name);
             var package = cls.Namespace();
-            IDictionary<string, IList<string>> entries;
+            IDictionary<string, IDictionary<string, string>> entries;
             if (!data.TryGetValue(package, out entries))
             {
-                entries = new SortedDictionary<string, IList<string>>();
+                entries = new SortedDictionary<string, IDictionary<string, string>>();
                 data.Add(package, entries);
             }
-            IList<string> subEntries;
+            IDictionary<string, string> subEntries;
             if (!entries.TryGetValue(cls.JVMClassName(), out subEntries))
             {
-                subEntries = new List<string>();
+                subEntries = new SortedDictionary<string, string>();
                 entries.Add(cls.JVMClassName(), subEntries);
             }
-            subEntries.Add(cls.Name);
+            subEntries.Add(cls.Name, cls.Name);
         }
 
         public static void AnalyzeJar(string pathToJar, string rootDesinationFolder)
@@ -133,7 +133,7 @@ namespace MASES.JNetReflector
             ReportTrace(ReflectionTraceLevel.Info, "******************* Analyze Jar {0} *******************", pathToJar);
             using (ZipArchive archive = ZipFile.OpenRead(pathToJar))
             {
-                SortedDictionary<string, IDictionary<string, IList<string>>> resultingArguments = new SortedDictionary<string, IDictionary<string, IList<string>>>();
+                SortedDictionary<string, IDictionary<string, IDictionary<string, string>>> resultingArguments = new SortedDictionary<string, IDictionary<string, IDictionary<string, string>>>();
 
                 foreach (var entry in archive.Entries)
                 {
@@ -155,14 +155,14 @@ namespace MASES.JNetReflector
 
         public static void AnalyzeNamespaces()
         {
-            SortedDictionary<string, IDictionary<string, IList<string>>> resultingArguments = new SortedDictionary<string, IDictionary<string, IList<string>>>();
+            SortedDictionary<string, IDictionary<string, IDictionary<string, string>>> resultingArguments = new SortedDictionary<string, IDictionary<string, IDictionary<string, string>>>();
             foreach (var ns in JNetReflectorCore.ModulesToParse)
             {
                 AnalyzeNamespace(resultingArguments, ns, JNetReflectorCore.DestinationRootPath);
             }
         }
 
-        public static void AnalyzeNamespace(IDictionary<string, IDictionary<string, IList<string>>> data, string ns, string rootDesinationFolder)
+        public static void AnalyzeNamespace(IDictionary<string, IDictionary<string, IDictionary<string, string>>> data, string ns, string rootDesinationFolder)
         {
             ReportTrace(ReflectionTraceLevel.Info, "******************* Analyze Namespace {0} *******************", ns);
             var classes = JNetReflectorHelper.Find(ns, false);
@@ -182,7 +182,7 @@ namespace MASES.JNetReflector
             AnalyzeItems(data, rootDesinationFolder, ns);
         }
 
-        static void AnalyzeItems(IDictionary<string, IDictionary<string, IList<string>>> items, string rootDesinationFolder, string jarOrModuleName)
+        static void AnalyzeItems(IDictionary<string, IDictionary<string, IDictionary<string, string>>> items, string rootDesinationFolder, string jarOrModuleName)
         {
             var allPackageClasses = Template.GetTemplate(Template.AllPackageClassesTemplate);
 
@@ -192,7 +192,7 @@ namespace MASES.JNetReflector
                 StringBuilder sb = new StringBuilder();
                 foreach (var entry in item.Value)
                 {
-                    var classContent = AnalyzeClass(jarOrModuleName, entry.Value, rootDesinationFolder);
+                    var classContent = AnalyzeClass(jarOrModuleName, entry.Value.Values, rootDesinationFolder);
                     if (!string.IsNullOrEmpty(classContent))
                     {
                         sb.AppendLine(classContent);
@@ -210,7 +210,7 @@ namespace MASES.JNetReflector
             }
         }
 
-        static string AnalyzeClass(string jarOrModuleName, IList<string> classDefinitions, string rootDesinationFolder)
+        static string AnalyzeClass(string jarOrModuleName, ICollection<string> classDefinitions, string rootDesinationFolder)
         {
             ReportTrace(ReflectionTraceLevel.Info, "******************* AnalyzeClass {0} *******************", jarOrModuleName);
 
@@ -431,7 +431,7 @@ namespace MASES.JNetReflector
             return classBlock;
         }
 
-        static string AnalyzeConstructors(this Class classDefinition, bool isNested, IList<string> classDefinitions)
+        static string AnalyzeConstructors(this Class classDefinition, bool isNested, ICollection<string> classDefinitions)
         {
             ReportTrace(ReflectionTraceLevel.Info, "******************* Analyze Constructors of {0} *******************", classDefinition.GenericString);
 
@@ -533,7 +533,7 @@ namespace MASES.JNetReflector
             return subClassBlock.ToString();
         }
 
-        static string AnalyzeOperators(this Class classDefinition, bool isNested, IList<string> classDefinitions)
+        static string AnalyzeOperators(this Class classDefinition, bool isNested, ICollection<string> classDefinitions)
         {
             ReportTrace(ReflectionTraceLevel.Info, "******************* Analyze Operators of {0} *******************", classDefinition.GenericString);
 
@@ -625,7 +625,7 @@ namespace MASES.JNetReflector
             return prefilteredMethods;
         }
 
-        static string AnalyzeMethods(this Class classDefinition, IList<Method> prefilteredMethods, bool isNested, IList<string> classDefinitions, bool staticMethods)
+        static string AnalyzeMethods(this Class classDefinition, IList<Method> prefilteredMethods, bool isNested, ICollection<string> classDefinitions, bool staticMethods)
         {
             ReportTrace(ReflectionTraceLevel.Info, "******************* Analyze Methods of {0} with static {1} *******************", classDefinition.GenericString, staticMethods);
 
@@ -912,7 +912,7 @@ namespace MASES.JNetReflector
             return subClassBlock.ToString();
         }
 
-        static string AnalyzeFields(this Class classDefinition, IList<string> classDefinitions)
+        static string AnalyzeFields(this Class classDefinition, ICollection<string> classDefinitions)
         {
             ReportTrace(ReflectionTraceLevel.Info, "******************* Analyze Fields of {0} *******************", classDefinition.GenericString);
 

@@ -55,7 +55,7 @@ namespace MASES.JNetReflector
             return false;
         }
 
-        public static bool CollapseWithClassOrNestedClass(this string entry, IList<string> classDefinitions)
+        public static bool CollapseWithClassOrNestedClass(this string entry, ICollection<string> classDefinitions)
         {
             foreach (var classDefinition in classDefinitions)
             {
@@ -73,7 +73,7 @@ namespace MASES.JNetReflector
             return false;
         }
 
-        public static bool CollapseWithOtherMethods(this string entry, IList<Method> methodToBeReflected, IList<string> classDefinitions)
+        public static bool CollapseWithOtherMethods(this string entry, ICollection<Method> methodToBeReflected, ICollection<string> classDefinitions)
         {
             foreach (var method in methodToBeReflected)
             {
@@ -739,7 +739,7 @@ namespace MASES.JNetReflector
             return false;
         }
 
-        public static string Name(this Method entry, IList<string> classDefinitions, bool camel = true)
+        public static string Name(this Method entry, ICollection<string> classDefinitions, bool camel = true)
         {
             if (entry == null) throw new ArgumentNullException(nameof(entry));
             var methodName = entry.Name;
@@ -757,7 +757,7 @@ namespace MASES.JNetReflector
             return camel ? Camel(methodName) : methodName;
         }
 
-        public static string PropertyName(this Method entry, IList<string> classDefinitions, bool camel = true)
+        public static string PropertyName(this Method entry, ICollection<string> classDefinitions, bool camel = true)
         {
             if (entry == null) throw new ArgumentNullException(nameof(entry));
             var methodName = entry.Name;
@@ -777,7 +777,7 @@ namespace MASES.JNetReflector
             return camel ? Camel(methodName) : methodName;
         }
 
-        public static string MethodName(this Method entry, IList<string> classDefinitions, bool camel = true)
+        public static string MethodName(this Method entry, ICollection<string> classDefinitions, bool camel = true)
         {
             string nameToReport = entry.Name(classDefinitions, camel);
             if (nameToReport.IsReservedName() || nameToReport.CollapseWithClassOrNestedClass(classDefinitions))
