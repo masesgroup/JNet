@@ -23,6 +23,535 @@
 
 namespace Java.Nio.Channels
 {
+    #region AcceptPendingException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AcceptPendingException.html
+    /// </summary>
+    public partial class AcceptPendingException : Java.Lang.IllegalStateException
+    {
+        public AcceptPendingException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.nio.channels.AcceptPendingException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region AlreadyBoundException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AlreadyBoundException.html
+    /// </summary>
+    public partial class AlreadyBoundException : Java.Lang.IllegalStateException
+    {
+        public AlreadyBoundException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.nio.channels.AlreadyBoundException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region AlreadyConnectedException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AlreadyConnectedException.html
+    /// </summary>
+    public partial class AlreadyConnectedException : Java.Lang.IllegalStateException
+    {
+        public AlreadyConnectedException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.nio.channels.AlreadyConnectedException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region AsynchronousByteChannel
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousByteChannel.html
+    /// </summary>
+    public partial class AsynchronousByteChannel : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AsynchronousByteChannel>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public AsynchronousByteChannel() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public AsynchronousByteChannel(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.nio.channels.AsynchronousByteChannel";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region AsynchronousChannel
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousChannel.html
+    /// </summary>
+    public partial class AsynchronousChannel : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AsynchronousChannel>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public AsynchronousChannel() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public AsynchronousChannel(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.nio.channels.AsynchronousChannel";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region AsynchronousChannelGroup
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousChannelGroup.html
+    /// </summary>
+    public partial class AsynchronousChannelGroup : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AsynchronousChannelGroup>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public AsynchronousChannelGroup() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public AsynchronousChannelGroup(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.nio.channels.AsynchronousChannelGroup";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region AsynchronousCloseException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousCloseException.html
+    /// </summary>
+    public partial class AsynchronousCloseException : Java.Nio.Channels.ClosedChannelException
+    {
+        public AsynchronousCloseException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.nio.channels.AsynchronousCloseException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region AsynchronousFileChannel
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousFileChannel.html
+    /// </summary>
+    public partial class AsynchronousFileChannel : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AsynchronousFileChannel>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public AsynchronousFileChannel() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public AsynchronousFileChannel(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.nio.channels.AsynchronousFileChannel";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region AsynchronousServerSocketChannel
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousServerSocketChannel.html
+    /// </summary>
+    public partial class AsynchronousServerSocketChannel : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AsynchronousServerSocketChannel>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public AsynchronousServerSocketChannel() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public AsynchronousServerSocketChannel(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.nio.channels.AsynchronousServerSocketChannel";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region AsynchronousSocketChannel
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousSocketChannel.html
+    /// </summary>
+    public partial class AsynchronousSocketChannel : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AsynchronousSocketChannel>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public AsynchronousSocketChannel() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public AsynchronousSocketChannel(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.nio.channels.AsynchronousSocketChannel";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region ByteChannel
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/ByteChannel.html
+    /// </summary>
+    public partial class ByteChannel : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ByteChannel>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public ByteChannel() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public ByteChannel(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.nio.channels.ByteChannel";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region CancelledKeyException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/CancelledKeyException.html
+    /// </summary>
+    public partial class CancelledKeyException : Java.Lang.IllegalStateException
+    {
+        public CancelledKeyException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.nio.channels.CancelledKeyException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region Channel
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Channel.html
+    /// </summary>
+    public partial class Channel : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Channel>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public Channel() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public Channel(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.nio.channels.Channel";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region Channels
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Channels.html
+    /// </summary>
+    public partial class Channels : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Channels>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public Channels() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public Channels(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.nio.channels.Channels";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region ClosedByInterruptException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/ClosedByInterruptException.html
+    /// </summary>
+    public partial class ClosedByInterruptException : Java.Nio.Channels.AsynchronousCloseException
+    {
+        public ClosedByInterruptException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.nio.channels.ClosedByInterruptException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region ClosedChannelException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/ClosedChannelException.html
+    /// </summary>
+    public partial class ClosedChannelException : Java.Io.IOException
+    {
+        public ClosedChannelException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.nio.channels.ClosedChannelException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region ClosedSelectorException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/ClosedSelectorException.html
+    /// </summary>
+    public partial class ClosedSelectorException : Java.Lang.IllegalStateException
+    {
+        public ClosedSelectorException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.nio.channels.ClosedSelectorException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region CompletionHandler
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/CompletionHandler.html
+    /// </summary>
+    public partial class CompletionHandler : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CompletionHandler>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public CompletionHandler() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public CompletionHandler(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.nio.channels.CompletionHandler";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region ConnectionPendingException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/ConnectionPendingException.html
+    /// </summary>
+    public partial class ConnectionPendingException : Java.Lang.IllegalStateException
+    {
+        public ConnectionPendingException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.nio.channels.ConnectionPendingException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region DatagramChannel
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/DatagramChannel.html
+    /// </summary>
+    public partial class DatagramChannel : Java.Nio.Channels.Spi.AbstractSelectableChannel
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public DatagramChannel() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public DatagramChannel(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.nio.channels.DatagramChannel";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region FileChannel
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileChannel.html
@@ -92,57 +621,6 @@ namespace Java.Nio.Channels
     }
     #endregion
 
-    #region ShutdownChannelGroupException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/ShutdownChannelGroupException.html
-    /// </summary>
-    public partial class ShutdownChannelGroupException : Java.Lang.IllegalStateException
-    {
-        public ShutdownChannelGroupException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.channels.ShutdownChannelGroupException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region AsynchronousSocketChannel
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousSocketChannel.html
-    /// </summary>
-    public partial class AsynchronousSocketChannel : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AsynchronousSocketChannel>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public AsynchronousSocketChannel() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public AsynchronousSocketChannel(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.channels.AsynchronousSocketChannel";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
     #region FileLock
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileLock.html
@@ -178,57 +656,6 @@ namespace Java.Nio.Channels
     }
     #endregion
 
-    #region IllegalSelectorException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/IllegalSelectorException.html
-    /// </summary>
-    public partial class IllegalSelectorException : Java.Lang.IllegalArgumentException
-    {
-        public IllegalSelectorException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.channels.IllegalSelectorException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region AsynchronousByteChannel
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousByteChannel.html
-    /// </summary>
-    public partial class AsynchronousByteChannel : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AsynchronousByteChannel>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public AsynchronousByteChannel() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public AsynchronousByteChannel(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.channels.AsynchronousByteChannel";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
     #region FileLockInterruptionException
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileLockInterruptionException.html
@@ -239,380 +666,6 @@ namespace Java.Nio.Channels
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "java.nio.channels.FileLockInterruptionException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region ByteChannel
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/ByteChannel.html
-    /// </summary>
-    public partial class ByteChannel : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ByteChannel>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public ByteChannel() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public ByteChannel(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.channels.ByteChannel";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region NotYetBoundException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/NotYetBoundException.html
-    /// </summary>
-    public partial class NotYetBoundException : Java.Lang.IllegalStateException
-    {
-        public NotYetBoundException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.channels.NotYetBoundException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region IllegalChannelGroupException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/IllegalChannelGroupException.html
-    /// </summary>
-    public partial class IllegalChannelGroupException : Java.Lang.IllegalArgumentException
-    {
-        public IllegalChannelGroupException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.channels.IllegalChannelGroupException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region CompletionHandler
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/CompletionHandler.html
-    /// </summary>
-    public partial class CompletionHandler : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CompletionHandler>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public CompletionHandler() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public CompletionHandler(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.channels.CompletionHandler";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region NoConnectionPendingException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/NoConnectionPendingException.html
-    /// </summary>
-    public partial class NoConnectionPendingException : Java.Lang.IllegalStateException
-    {
-        public NoConnectionPendingException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.channels.NoConnectionPendingException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region Pipe
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Pipe.html
-    /// </summary>
-    public partial class Pipe : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Pipe>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public Pipe() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public Pipe(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.channels.Pipe";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-        #region SinkChannel
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Pipe.SinkChannel.html
-        /// </summary>
-        public partial class SinkChannel : Java.Nio.Channels.Spi.AbstractSelectableChannel
-        {
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public SinkChannel() { }
-            /// <summary>
-            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-            /// </summary>
-            public SinkChannel(params object[] args) : base(args) { }
-
-            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-            public override string ClassName => "java.nio.channels.Pipe$SinkChannel";
-
-            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-            public override bool IsAbstract => true;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-            public override bool IsCloseable => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-            public override bool IsInterface => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-            public override bool IsStatic => true;
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region SourceChannel
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Pipe.SourceChannel.html
-        /// </summary>
-        public partial class SourceChannel : Java.Nio.Channels.Spi.AbstractSelectableChannel
-        {
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public SourceChannel() { }
-            /// <summary>
-            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-            /// </summary>
-            public SourceChannel(params object[] args) : base(args) { }
-
-            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-            public override string ClassName => "java.nio.channels.Pipe$SourceChannel";
-
-            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-            public override bool IsAbstract => true;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-            public override bool IsCloseable => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-            public override bool IsInterface => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-            public override bool IsStatic => true;
-
-            // TODO: complete the class
-        }
-        #endregion
-
-
-    }
-    #endregion
-
-    #region AsynchronousCloseException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousCloseException.html
-    /// </summary>
-    public partial class AsynchronousCloseException : Java.Nio.Channels.ClosedChannelException
-    {
-        public AsynchronousCloseException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.channels.AsynchronousCloseException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region NetworkChannel
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/NetworkChannel.html
-    /// </summary>
-    public partial class NetworkChannel : MASES.JCOBridge.C2JBridge.JVMBridgeBase<NetworkChannel>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public NetworkChannel() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public NetworkChannel(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.channels.NetworkChannel";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region SelectionKey
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectionKey.html
-    /// </summary>
-    public partial class SelectionKey : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SelectionKey>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public SelectionKey() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public SelectionKey(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.channels.SelectionKey";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region ClosedChannelException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/ClosedChannelException.html
-    /// </summary>
-    public partial class ClosedChannelException : Java.Io.IOException
-    {
-        public ClosedChannelException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.channels.ClosedChannelException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region MulticastChannel
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/MulticastChannel.html
-    /// </summary>
-    public partial class MulticastChannel : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MulticastChannel>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public MulticastChannel() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public MulticastChannel(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.channels.MulticastChannel";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region ReadPendingException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/ReadPendingException.html
-    /// </summary>
-    public partial class ReadPendingException : Java.Lang.IllegalStateException
-    {
-        public ReadPendingException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.channels.ReadPendingException";
 
         // TODO: complete the class
 
@@ -654,23 +707,122 @@ namespace Java.Nio.Channels
     }
     #endregion
 
-    #region AsynchronousFileChannel
+    #region IllegalBlockingModeException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousFileChannel.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/IllegalBlockingModeException.html
     /// </summary>
-    public partial class AsynchronousFileChannel : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AsynchronousFileChannel>
+    public partial class IllegalBlockingModeException : Java.Lang.IllegalStateException
+    {
+        public IllegalBlockingModeException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.nio.channels.IllegalBlockingModeException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region IllegalChannelGroupException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/IllegalChannelGroupException.html
+    /// </summary>
+    public partial class IllegalChannelGroupException : Java.Lang.IllegalArgumentException
+    {
+        public IllegalChannelGroupException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.nio.channels.IllegalChannelGroupException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region IllegalSelectorException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/IllegalSelectorException.html
+    /// </summary>
+    public partial class IllegalSelectorException : Java.Lang.IllegalArgumentException
+    {
+        public IllegalSelectorException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.nio.channels.IllegalSelectorException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region InterruptedByTimeoutException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/InterruptedByTimeoutException.html
+    /// </summary>
+    public partial class InterruptedByTimeoutException : Java.Io.IOException
+    {
+        public InterruptedByTimeoutException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.nio.channels.InterruptedByTimeoutException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region InterruptibleChannel
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/InterruptibleChannel.html
+    /// </summary>
+    public partial class InterruptibleChannel : MASES.JCOBridge.C2JBridge.JVMBridgeBase<InterruptibleChannel>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public AsynchronousFileChannel() { }
+        public InterruptibleChannel() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public AsynchronousFileChannel(params object[] args) : base(args) { }
+        public InterruptibleChannel(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.channels.AsynchronousFileChannel";
+        public override string ClassName => "java.nio.channels.InterruptibleChannel";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region MembershipKey
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/MembershipKey.html
+    /// </summary>
+    public partial class MembershipKey : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MembershipKey>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public MembershipKey() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public MembershipKey(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.nio.channels.MembershipKey";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -689,23 +841,23 @@ namespace Java.Nio.Channels
     }
     #endregion
 
-    #region Selector
+    #region MulticastChannel
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Selector.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/MulticastChannel.html
     /// </summary>
-    public partial class Selector : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Selector>
+    public partial class MulticastChannel : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MulticastChannel>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public Selector() { }
+        public MulticastChannel() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public Selector(params object[] args) : base(args) { }
+        public MulticastChannel(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.channels.Selector";
+        public override string ClassName => "java.nio.channels.MulticastChannel";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -714,7 +866,7 @@ namespace Java.Nio.Channels
         public override bool IsCloseable => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
+        public override bool IsInterface => true;
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;
@@ -724,39 +876,23 @@ namespace Java.Nio.Channels
     }
     #endregion
 
-    #region ClosedByInterruptException
+    #region NetworkChannel
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/ClosedByInterruptException.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/NetworkChannel.html
     /// </summary>
-    public partial class ClosedByInterruptException : Java.Nio.Channels.AsynchronousCloseException
-    {
-        public ClosedByInterruptException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.channels.ClosedByInterruptException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region DatagramChannel
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/DatagramChannel.html
-    /// </summary>
-    public partial class DatagramChannel : Java.Nio.Channels.Spi.AbstractSelectableChannel
+    public partial class NetworkChannel : MASES.JCOBridge.C2JBridge.JVMBridgeBase<NetworkChannel>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public DatagramChannel() { }
+        public NetworkChannel() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public DatagramChannel(params object[] args) : base(args) { }
+        public NetworkChannel(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.channels.DatagramChannel";
+        public override string ClassName => "java.nio.channels.NetworkChannel";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -765,7 +901,7 @@ namespace Java.Nio.Channels
         public override bool IsCloseable => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
+        public override bool IsInterface => true;
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;
@@ -775,51 +911,64 @@ namespace Java.Nio.Channels
     }
     #endregion
 
-    #region AsynchronousServerSocketChannel
+    #region NoConnectionPendingException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousServerSocketChannel.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/NoConnectionPendingException.html
     /// </summary>
-    public partial class AsynchronousServerSocketChannel : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AsynchronousServerSocketChannel>
+    public partial class NoConnectionPendingException : Java.Lang.IllegalStateException
     {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public AsynchronousServerSocketChannel() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public AsynchronousServerSocketChannel(params object[] args) : base(args) { }
+        public NoConnectionPendingException() { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.channels.AsynchronousServerSocketChannel";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
+        public override string ClassName => "java.nio.channels.NoConnectionPendingException";
 
         // TODO: complete the class
 
     }
     #endregion
 
-    #region UnresolvedAddressException
+    #region NonReadableChannelException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/UnresolvedAddressException.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/NonReadableChannelException.html
     /// </summary>
-    public partial class UnresolvedAddressException : Java.Lang.IllegalArgumentException
+    public partial class NonReadableChannelException : Java.Lang.IllegalStateException
     {
-        public UnresolvedAddressException() { }
+        public NonReadableChannelException() { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.channels.UnresolvedAddressException";
+        public override string ClassName => "java.nio.channels.NonReadableChannelException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region NonWritableChannelException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/NonWritableChannelException.html
+    /// </summary>
+    public partial class NonWritableChannelException : Java.Lang.IllegalStateException
+    {
+        public NonWritableChannelException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.nio.channels.NonWritableChannelException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region NotYetBoundException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/NotYetBoundException.html
+    /// </summary>
+    public partial class NotYetBoundException : Java.Lang.IllegalStateException
+    {
+        public NotYetBoundException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.nio.channels.NotYetBoundException";
 
         // TODO: complete the class
 
@@ -842,26 +991,42 @@ namespace Java.Nio.Channels
     }
     #endregion
 
-    #region Channels
+    #region OverlappingFileLockException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Channels.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/OverlappingFileLockException.html
     /// </summary>
-    public partial class Channels : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Channels>
+    public partial class OverlappingFileLockException : Java.Lang.IllegalStateException
+    {
+        public OverlappingFileLockException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.nio.channels.OverlappingFileLockException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region Pipe
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Pipe.html
+    /// </summary>
+    public partial class Pipe : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Pipe>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public Channels() { }
+        public Pipe() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public Channels(params object[] args) : base(args) { }
+        public Pipe(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.channels.Channels";
+        public override string ClassName => "java.nio.channels.Pipe";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
+        public override bool IsAbstract => true;
 
         /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
         public override bool IsCloseable => false;
@@ -873,6 +1038,74 @@ namespace Java.Nio.Channels
         public override bool IsStatic => false;
 
         // TODO: complete the class
+        #region SourceChannel
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Pipe.SourceChannel.html
+        /// </summary>
+        public partial class SourceChannel : Java.Nio.Channels.Spi.AbstractSelectableChannel
+        {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public SourceChannel() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public SourceChannel(params object[] args) : base(args) { }
+
+            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+            public override string ClassName => "java.nio.channels.Pipe$SourceChannel";
+
+            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+            public override bool IsAbstract => true;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+            public override bool IsCloseable => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+            public override bool IsInterface => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+            public override bool IsStatic => true;
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region SinkChannel
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Pipe.SinkChannel.html
+        /// </summary>
+        public partial class SinkChannel : Java.Nio.Channels.Spi.AbstractSelectableChannel
+        {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public SinkChannel() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public SinkChannel(params object[] args) : base(args) { }
+
+            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+            public override string ClassName => "java.nio.channels.Pipe$SinkChannel";
+
+            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+            public override bool IsAbstract => true;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+            public override bool IsCloseable => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+            public override bool IsInterface => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+            public override bool IsStatic => true;
+
+            // TODO: complete the class
+        }
+        #endregion
+
 
     }
     #endregion
@@ -912,55 +1145,39 @@ namespace Java.Nio.Channels
     }
     #endregion
 
-    #region NonWritableChannelException
+    #region ReadPendingException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/NonWritableChannelException.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/ReadPendingException.html
     /// </summary>
-    public partial class NonWritableChannelException : Java.Lang.IllegalStateException
+    public partial class ReadPendingException : Java.Lang.IllegalStateException
     {
-        public NonWritableChannelException() { }
+        public ReadPendingException() { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.channels.NonWritableChannelException";
+        public override string ClassName => "java.nio.channels.ReadPendingException";
 
         // TODO: complete the class
 
     }
     #endregion
 
-    #region AlreadyConnectedException
+    #region ScatteringByteChannel
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AlreadyConnectedException.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/ScatteringByteChannel.html
     /// </summary>
-    public partial class AlreadyConnectedException : Java.Lang.IllegalStateException
-    {
-        public AlreadyConnectedException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.channels.AlreadyConnectedException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region SocketChannel
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SocketChannel.html
-    /// </summary>
-    public partial class SocketChannel : Java.Nio.Channels.Spi.AbstractSelectableChannel
+    public partial class ScatteringByteChannel : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ScatteringByteChannel>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public SocketChannel() { }
+        public ScatteringByteChannel() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public SocketChannel(params object[] args) : base(args) { }
+        public ScatteringByteChannel(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.channels.SocketChannel";
+        public override string ClassName => "java.nio.channels.ScatteringByteChannel";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -969,7 +1186,7 @@ namespace Java.Nio.Channels
         public override bool IsCloseable => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
+        public override bool IsInterface => true;
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;
@@ -979,23 +1196,23 @@ namespace Java.Nio.Channels
     }
     #endregion
 
-    #region InterruptibleChannel
+    #region SeekableByteChannel
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/InterruptibleChannel.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SeekableByteChannel.html
     /// </summary>
-    public partial class InterruptibleChannel : MASES.JCOBridge.C2JBridge.JVMBridgeBase<InterruptibleChannel>
+    public partial class SeekableByteChannel : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SeekableByteChannel>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public InterruptibleChannel() { }
+        public SeekableByteChannel() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public InterruptibleChannel(params object[] args) : base(args) { }
+        public SeekableByteChannel(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.channels.InterruptibleChannel";
+        public override string ClassName => "java.nio.channels.SeekableByteChannel";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -1049,23 +1266,23 @@ namespace Java.Nio.Channels
     }
     #endregion
 
-    #region MembershipKey
+    #region SelectionKey
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/MembershipKey.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SelectionKey.html
     /// </summary>
-    public partial class MembershipKey : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MembershipKey>
+    public partial class SelectionKey : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SelectionKey>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public MembershipKey() { }
+        public SelectionKey() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public MembershipKey(params object[] args) : base(args) { }
+        public SelectionKey(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.channels.MembershipKey";
+        public override string ClassName => "java.nio.channels.SelectionKey";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -1084,23 +1301,23 @@ namespace Java.Nio.Channels
     }
     #endregion
 
-    #region SeekableByteChannel
+    #region Selector
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SeekableByteChannel.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Selector.html
     /// </summary>
-    public partial class SeekableByteChannel : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SeekableByteChannel>
+    public partial class Selector : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Selector>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public SeekableByteChannel() { }
+        public Selector() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public SeekableByteChannel(params object[] args) : base(args) { }
+        public Selector(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.channels.SeekableByteChannel";
+        public override string ClassName => "java.nio.channels.Selector";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -1109,74 +1326,10 @@ namespace Java.Nio.Channels
         public override bool IsCloseable => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
+        public override bool IsInterface => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region ClosedSelectorException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/ClosedSelectorException.html
-    /// </summary>
-    public partial class ClosedSelectorException : Java.Lang.IllegalStateException
-    {
-        public ClosedSelectorException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.channels.ClosedSelectorException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region WritePendingException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/WritePendingException.html
-    /// </summary>
-    public partial class WritePendingException : Java.Lang.IllegalStateException
-    {
-        public WritePendingException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.channels.WritePendingException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region AcceptPendingException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AcceptPendingException.html
-    /// </summary>
-    public partial class AcceptPendingException : Java.Lang.IllegalStateException
-    {
-        public AcceptPendingException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.channels.AcceptPendingException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region InterruptedByTimeoutException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/InterruptedByTimeoutException.html
-    /// </summary>
-    public partial class InterruptedByTimeoutException : Java.Io.IOException
-    {
-        public InterruptedByTimeoutException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.channels.InterruptedByTimeoutException";
 
         // TODO: complete the class
 
@@ -1218,189 +1371,39 @@ namespace Java.Nio.Channels
     }
     #endregion
 
-    #region OverlappingFileLockException
+    #region ShutdownChannelGroupException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/OverlappingFileLockException.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/ShutdownChannelGroupException.html
     /// </summary>
-    public partial class OverlappingFileLockException : Java.Lang.IllegalStateException
+    public partial class ShutdownChannelGroupException : Java.Lang.IllegalStateException
     {
-        public OverlappingFileLockException() { }
+        public ShutdownChannelGroupException() { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.channels.OverlappingFileLockException";
+        public override string ClassName => "java.nio.channels.ShutdownChannelGroupException";
 
         // TODO: complete the class
 
     }
     #endregion
 
-    #region IllegalBlockingModeException
+    #region SocketChannel
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/IllegalBlockingModeException.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/SocketChannel.html
     /// </summary>
-    public partial class IllegalBlockingModeException : Java.Lang.IllegalStateException
-    {
-        public IllegalBlockingModeException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.channels.IllegalBlockingModeException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region UnsupportedAddressTypeException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/UnsupportedAddressTypeException.html
-    /// </summary>
-    public partial class UnsupportedAddressTypeException : Java.Lang.IllegalArgumentException
-    {
-        public UnsupportedAddressTypeException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.channels.UnsupportedAddressTypeException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region CancelledKeyException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/CancelledKeyException.html
-    /// </summary>
-    public partial class CancelledKeyException : Java.Lang.IllegalStateException
-    {
-        public CancelledKeyException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.channels.CancelledKeyException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region ConnectionPendingException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/ConnectionPendingException.html
-    /// </summary>
-    public partial class ConnectionPendingException : Java.Lang.IllegalStateException
-    {
-        public ConnectionPendingException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.channels.ConnectionPendingException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region NonReadableChannelException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/NonReadableChannelException.html
-    /// </summary>
-    public partial class NonReadableChannelException : Java.Lang.IllegalStateException
-    {
-        public NonReadableChannelException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.channels.NonReadableChannelException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region AsynchronousChannel
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousChannel.html
-    /// </summary>
-    public partial class AsynchronousChannel : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AsynchronousChannel>
+    public partial class SocketChannel : Java.Nio.Channels.Spi.AbstractSelectableChannel
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public AsynchronousChannel() { }
+        public SocketChannel() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public AsynchronousChannel(params object[] args) : base(args) { }
+        public SocketChannel(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.channels.AsynchronousChannel";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region Channel
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Channel.html
-    /// </summary>
-    public partial class Channel : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Channel>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public Channel() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public Channel(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.channels.Channel";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region AsynchronousChannelGroup
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousChannelGroup.html
-    /// </summary>
-    public partial class AsynchronousChannelGroup : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AsynchronousChannelGroup>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public AsynchronousChannelGroup() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public AsynchronousChannelGroup(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.channels.AsynchronousChannelGroup";
+        public override string ClassName => "java.nio.channels.SocketChannel";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -1419,51 +1422,32 @@ namespace Java.Nio.Channels
     }
     #endregion
 
-    #region ScatteringByteChannel
+    #region UnresolvedAddressException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/ScatteringByteChannel.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/UnresolvedAddressException.html
     /// </summary>
-    public partial class ScatteringByteChannel : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ScatteringByteChannel>
+    public partial class UnresolvedAddressException : Java.Lang.IllegalArgumentException
     {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public ScatteringByteChannel() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public ScatteringByteChannel(params object[] args) : base(args) { }
+        public UnresolvedAddressException() { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.channels.ScatteringByteChannel";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
+        public override string ClassName => "java.nio.channels.UnresolvedAddressException";
 
         // TODO: complete the class
 
     }
     #endregion
 
-    #region AlreadyBoundException
+    #region UnsupportedAddressTypeException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AlreadyBoundException.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/UnsupportedAddressTypeException.html
     /// </summary>
-    public partial class AlreadyBoundException : Java.Lang.IllegalStateException
+    public partial class UnsupportedAddressTypeException : Java.Lang.IllegalArgumentException
     {
-        public AlreadyBoundException() { }
+        public UnsupportedAddressTypeException() { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.channels.AlreadyBoundException";
+        public override string ClassName => "java.nio.channels.UnsupportedAddressTypeException";
 
         // TODO: complete the class
 
@@ -1499,6 +1483,22 @@ namespace Java.Nio.Channels
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region WritePendingException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/WritePendingException.html
+    /// </summary>
+    public partial class WritePendingException : Java.Lang.IllegalStateException
+    {
+        public WritePendingException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.nio.channels.WritePendingException";
 
         // TODO: complete the class
 

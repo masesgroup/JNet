@@ -38,13 +38,13 @@ namespace Javax.Xml.Datatype
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeFactory.html#DATATYPEFACTORY_PROPERTY
-        /// </summary>
-        public static string DATATYPEFACTORY_PROPERTY => Clazz.GetField<string>("DATATYPEFACTORY_PROPERTY");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeFactory.html#DATATYPEFACTORY_IMPLEMENTATION_CLASS
         /// </summary>
         public static string DATATYPEFACTORY_IMPLEMENTATION_CLASS => Clazz.GetField<string>("DATATYPEFACTORY_IMPLEMENTATION_CLASS");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/DatatypeFactory.html#DATATYPEFACTORY_PROPERTY
+        /// </summary>
+        public static string DATATYPEFACTORY_PROPERTY => Clazz.GetField<string>("DATATYPEFACTORY_PROPERTY");
         
         #endregion
 

@@ -30,10 +30,10 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedHashMap.html#<init>(int)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedHashMap.html#<init>(int,float,boolean)
         /// </summary>
-        public LinkedHashMap(int arg0)
-            : base(arg0)
+        public LinkedHashMap(int arg0, float arg1, bool arg2)
+            : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
@@ -44,10 +44,10 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedHashMap.html#<init>(int,float,boolean)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedHashMap.html#<init>(int)
         /// </summary>
-        public LinkedHashMap(int arg0, float arg1, bool arg2)
-            : base(arg0, arg1, arg2)
+        public LinkedHashMap(int arg0)
+            : base(arg0)
         {
         }
         

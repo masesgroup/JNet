@@ -23,23 +23,23 @@
 
 namespace Java.Util.Spi
 {
-    #region TimeZoneNameProvider
+    #region AbstractResourceBundleProvider
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/TimeZoneNameProvider.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/AbstractResourceBundleProvider.html
     /// </summary>
-    public partial class TimeZoneNameProvider : Java.Util.Spi.LocaleServiceProvider
+    public partial class AbstractResourceBundleProvider : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AbstractResourceBundleProvider>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public TimeZoneNameProvider() { }
+        public AbstractResourceBundleProvider() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public TimeZoneNameProvider(params object[] args) : base(args) { }
+        public AbstractResourceBundleProvider(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.util.spi.TimeZoneNameProvider";
+        public override string ClassName => "java.util.spi.AbstractResourceBundleProvider";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -49,41 +49,6 @@ namespace Java.Util.Spi
 
         /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
         public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region ResourceBundleProvider
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/ResourceBundleProvider.html
-    /// </summary>
-    public partial class ResourceBundleProvider : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ResourceBundleProvider>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public ResourceBundleProvider() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public ResourceBundleProvider(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.util.spi.ResourceBundleProvider";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;
@@ -163,23 +128,23 @@ namespace Java.Util.Spi
     }
     #endregion
 
-    #region LocaleServiceProvider
+    #region CurrencyNameProvider
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/LocaleServiceProvider.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/CurrencyNameProvider.html
     /// </summary>
-    public partial class LocaleServiceProvider : MASES.JCOBridge.C2JBridge.JVMBridgeBase<LocaleServiceProvider>
+    public partial class CurrencyNameProvider : Java.Util.Spi.LocaleServiceProvider
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public LocaleServiceProvider() { }
+        public CurrencyNameProvider() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public LocaleServiceProvider(params object[] args) : base(args) { }
+        public CurrencyNameProvider(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.util.spi.LocaleServiceProvider";
+        public override string ClassName => "java.util.spi.CurrencyNameProvider";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -233,23 +198,23 @@ namespace Java.Util.Spi
     }
     #endregion
 
-    #region AbstractResourceBundleProvider
+    #region LocaleServiceProvider
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/AbstractResourceBundleProvider.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/LocaleServiceProvider.html
     /// </summary>
-    public partial class AbstractResourceBundleProvider : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AbstractResourceBundleProvider>
+    public partial class LocaleServiceProvider : MASES.JCOBridge.C2JBridge.JVMBridgeBase<LocaleServiceProvider>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public AbstractResourceBundleProvider() { }
+        public LocaleServiceProvider() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public AbstractResourceBundleProvider(params object[] args) : base(args) { }
+        public LocaleServiceProvider(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.util.spi.AbstractResourceBundleProvider";
+        public override string ClassName => "java.util.spi.LocaleServiceProvider";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -303,6 +268,76 @@ namespace Java.Util.Spi
     }
     #endregion
 
+    #region ResourceBundleProvider
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/ResourceBundleProvider.html
+    /// </summary>
+    public partial class ResourceBundleProvider : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ResourceBundleProvider>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public ResourceBundleProvider() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public ResourceBundleProvider(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.util.spi.ResourceBundleProvider";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region TimeZoneNameProvider
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/TimeZoneNameProvider.html
+    /// </summary>
+    public partial class TimeZoneNameProvider : Java.Util.Spi.LocaleServiceProvider
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public TimeZoneNameProvider() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public TimeZoneNameProvider(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.util.spi.TimeZoneNameProvider";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region ToolProvider
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/ToolProvider.html
@@ -329,41 +364,6 @@ namespace Java.Util.Spi
 
         /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
         public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region CurrencyNameProvider
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/CurrencyNameProvider.html
-    /// </summary>
-    public partial class CurrencyNameProvider : Java.Util.Spi.LocaleServiceProvider
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public CurrencyNameProvider() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public CurrencyNameProvider(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.util.spi.CurrencyNameProvider";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;

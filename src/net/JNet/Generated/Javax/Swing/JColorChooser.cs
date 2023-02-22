@@ -53,17 +53,17 @@ namespace Javax.Swing
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#SELECTION_MODEL_PROPERTY
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#CHOOSER_PANELS_PROPERTY
         /// </summary>
-        public static string SELECTION_MODEL_PROPERTY => Clazz.GetField<string>("SELECTION_MODEL_PROPERTY");
+        public static string CHOOSER_PANELS_PROPERTY => Clazz.GetField<string>("CHOOSER_PANELS_PROPERTY");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#PREVIEW_PANEL_PROPERTY
         /// </summary>
         public static string PREVIEW_PANEL_PROPERTY => Clazz.GetField<string>("PREVIEW_PANEL_PROPERTY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#CHOOSER_PANELS_PROPERTY
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JColorChooser.html#SELECTION_MODEL_PROPERTY
         /// </summary>
-        public static string CHOOSER_PANELS_PROPERTY => Clazz.GetField<string>("CHOOSER_PANELS_PROPERTY");
+        public static string SELECTION_MODEL_PROPERTY => Clazz.GetField<string>("SELECTION_MODEL_PROPERTY");
         
         #endregion
 

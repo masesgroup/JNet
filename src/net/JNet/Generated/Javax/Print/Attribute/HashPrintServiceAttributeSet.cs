@@ -30,9 +30,9 @@ namespace Javax.Print.Attribute
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/HashPrintServiceAttributeSet.html#<init>(javax.print.attribute.PrintServiceAttributeSet)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/HashPrintServiceAttributeSet.html#<init>(javax.print.attribute.PrintServiceAttribute)
         /// </summary>
-        public HashPrintServiceAttributeSet(Javax.Print.Attribute.PrintServiceAttributeSet arg0)
+        public HashPrintServiceAttributeSet(Javax.Print.Attribute.PrintServiceAttribute arg0)
             : base(arg0)
         {
         }
@@ -44,9 +44,9 @@ namespace Javax.Print.Attribute
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/HashPrintServiceAttributeSet.html#<init>(javax.print.attribute.PrintServiceAttribute)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/HashPrintServiceAttributeSet.html#<init>(javax.print.attribute.PrintServiceAttributeSet)
         /// </summary>
-        public HashPrintServiceAttributeSet(Javax.Print.Attribute.PrintServiceAttribute arg0)
+        public HashPrintServiceAttributeSet(Javax.Print.Attribute.PrintServiceAttributeSet arg0)
             : base(arg0)
         {
         }

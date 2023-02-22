@@ -38,17 +38,13 @@ namespace Javax.Xml.Stream
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamConstants.html#START_ELEMENT
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamConstants.html#ATTRIBUTE
         /// </summary>
-        public static int START_ELEMENT => Clazz.GetField<int>("START_ELEMENT");
+        public static int ATTRIBUTE => Clazz.GetField<int>("ATTRIBUTE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamConstants.html#END_ELEMENT
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamConstants.html#CDATA
         /// </summary>
-        public static int END_ELEMENT => Clazz.GetField<int>("END_ELEMENT");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamConstants.html#PROCESSING_INSTRUCTION
-        /// </summary>
-        public static int PROCESSING_INSTRUCTION => Clazz.GetField<int>("PROCESSING_INSTRUCTION");
+        public static int CDATA => Clazz.GetField<int>("CDATA");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamConstants.html#CHARACTERS
         /// </summary>
@@ -58,33 +54,25 @@ namespace Javax.Xml.Stream
         /// </summary>
         public static int COMMENT => Clazz.GetField<int>("COMMENT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamConstants.html#SPACE
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamConstants.html#DTD
         /// </summary>
-        public static int SPACE => Clazz.GetField<int>("SPACE");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamConstants.html#START_DOCUMENT
-        /// </summary>
-        public static int START_DOCUMENT => Clazz.GetField<int>("START_DOCUMENT");
+        public static int DTD => Clazz.GetField<int>("DTD");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamConstants.html#END_DOCUMENT
         /// </summary>
         public static int END_DOCUMENT => Clazz.GetField<int>("END_DOCUMENT");
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamConstants.html#END_ELEMENT
+        /// </summary>
+        public static int END_ELEMENT => Clazz.GetField<int>("END_ELEMENT");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamConstants.html#ENTITY_DECLARATION
+        /// </summary>
+        public static int ENTITY_DECLARATION => Clazz.GetField<int>("ENTITY_DECLARATION");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamConstants.html#ENTITY_REFERENCE
         /// </summary>
         public static int ENTITY_REFERENCE => Clazz.GetField<int>("ENTITY_REFERENCE");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamConstants.html#ATTRIBUTE
-        /// </summary>
-        public static int ATTRIBUTE => Clazz.GetField<int>("ATTRIBUTE");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamConstants.html#DTD
-        /// </summary>
-        public static int DTD => Clazz.GetField<int>("DTD");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamConstants.html#CDATA
-        /// </summary>
-        public static int CDATA => Clazz.GetField<int>("CDATA");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamConstants.html#NAMESPACE
         /// </summary>
@@ -94,9 +82,21 @@ namespace Javax.Xml.Stream
         /// </summary>
         public static int NOTATION_DECLARATION => Clazz.GetField<int>("NOTATION_DECLARATION");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamConstants.html#ENTITY_DECLARATION
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamConstants.html#PROCESSING_INSTRUCTION
         /// </summary>
-        public static int ENTITY_DECLARATION => Clazz.GetField<int>("ENTITY_DECLARATION");
+        public static int PROCESSING_INSTRUCTION => Clazz.GetField<int>("PROCESSING_INSTRUCTION");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamConstants.html#SPACE
+        /// </summary>
+        public static int SPACE => Clazz.GetField<int>("SPACE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamConstants.html#START_DOCUMENT
+        /// </summary>
+        public static int START_DOCUMENT => Clazz.GetField<int>("START_DOCUMENT");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLStreamConstants.html#START_ELEMENT
+        /// </summary>
+        public static int START_ELEMENT => Clazz.GetField<int>("START_ELEMENT");
         
         #endregion
 

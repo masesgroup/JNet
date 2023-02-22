@@ -43,6 +43,10 @@ namespace Javax.Sql.Rowset
         /// </summary>
         public static int CROSS_JOIN => Clazz.GetField<int>("CROSS_JOIN");
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#FULL_JOIN
+        /// </summary>
+        public static int FULL_JOIN => Clazz.GetField<int>("FULL_JOIN");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#INNER_JOIN
         /// </summary>
         public static int INNER_JOIN => Clazz.GetField<int>("INNER_JOIN");
@@ -54,10 +58,6 @@ namespace Javax.Sql.Rowset
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#RIGHT_OUTER_JOIN
         /// </summary>
         public static int RIGHT_OUTER_JOIN => Clazz.GetField<int>("RIGHT_OUTER_JOIN");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#FULL_JOIN
-        /// </summary>
-        public static int FULL_JOIN => Clazz.GetField<int>("FULL_JOIN");
         
         #endregion
 

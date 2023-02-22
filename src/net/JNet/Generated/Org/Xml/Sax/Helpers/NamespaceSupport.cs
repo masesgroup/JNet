@@ -38,13 +38,13 @@ namespace Org.Xml.Sax.Helpers
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/NamespaceSupport.html#XMLNS
-        /// </summary>
-        public static string XMLNS => Clazz.GetField<string>("XMLNS");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/NamespaceSupport.html#NSDECL
         /// </summary>
         public static string NSDECL => Clazz.GetField<string>("NSDECL");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/NamespaceSupport.html#XMLNS
+        /// </summary>
+        public static string XMLNS => Clazz.GetField<string>("XMLNS");
         
         #endregion
 

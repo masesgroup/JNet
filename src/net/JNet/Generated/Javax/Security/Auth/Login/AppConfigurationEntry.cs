@@ -76,6 +76,10 @@ namespace Javax.Security.Auth.Login
 
             #region Fields
             /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/AppConfigurationEntry.LoginModuleControlFlag.html#OPTIONAL
+            /// </summary>
+            public static Javax.Security.Auth.Login.AppConfigurationEntry.LoginModuleControlFlag OPTIONAL => Clazz.GetField<Javax.Security.Auth.Login.AppConfigurationEntry.LoginModuleControlFlag>("OPTIONAL");
+            /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/AppConfigurationEntry.LoginModuleControlFlag.html#REQUIRED
             /// </summary>
             public static Javax.Security.Auth.Login.AppConfigurationEntry.LoginModuleControlFlag REQUIRED => Clazz.GetField<Javax.Security.Auth.Login.AppConfigurationEntry.LoginModuleControlFlag>("REQUIRED");
@@ -87,10 +91,6 @@ namespace Javax.Security.Auth.Login
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/AppConfigurationEntry.LoginModuleControlFlag.html#SUFFICIENT
             /// </summary>
             public static Javax.Security.Auth.Login.AppConfigurationEntry.LoginModuleControlFlag SUFFICIENT => Clazz.GetField<Javax.Security.Auth.Login.AppConfigurationEntry.LoginModuleControlFlag>("SUFFICIENT");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/AppConfigurationEntry.LoginModuleControlFlag.html#OPTIONAL
-            /// </summary>
-            public static Javax.Security.Auth.Login.AppConfigurationEntry.LoginModuleControlFlag OPTIONAL => Clazz.GetField<Javax.Security.Auth.Login.AppConfigurationEntry.LoginModuleControlFlag>("OPTIONAL");
             
             #endregion
 

@@ -45,6 +45,10 @@ namespace Java.Awt.EventNs
 
         #region Fields
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/PaintEvent.html#PAINT
+        /// </summary>
+        public static int PAINT => Clazz.GetField<int>("PAINT");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/PaintEvent.html#PAINT_FIRST
         /// </summary>
         public static int PAINT_FIRST => Clazz.GetField<int>("PAINT_FIRST");
@@ -52,10 +56,6 @@ namespace Java.Awt.EventNs
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/PaintEvent.html#PAINT_LAST
         /// </summary>
         public static int PAINT_LAST => Clazz.GetField<int>("PAINT_LAST");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/PaintEvent.html#PAINT
-        /// </summary>
-        public static int PAINT => Clazz.GetField<int>("PAINT");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/PaintEvent.html#UPDATE
         /// </summary>

@@ -30,9 +30,9 @@ namespace Javax.Print.Attribute
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/HashPrintJobAttributeSet.html#<init>(javax.print.attribute.PrintJobAttributeSet)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/HashPrintJobAttributeSet.html#<init>(javax.print.attribute.PrintJobAttribute)
         /// </summary>
-        public HashPrintJobAttributeSet(Javax.Print.Attribute.PrintJobAttributeSet arg0)
+        public HashPrintJobAttributeSet(Javax.Print.Attribute.PrintJobAttribute arg0)
             : base(arg0)
         {
         }
@@ -44,9 +44,9 @@ namespace Javax.Print.Attribute
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/HashPrintJobAttributeSet.html#<init>(javax.print.attribute.PrintJobAttribute)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/HashPrintJobAttributeSet.html#<init>(javax.print.attribute.PrintJobAttributeSet)
         /// </summary>
-        public HashPrintJobAttributeSet(Javax.Print.Attribute.PrintJobAttribute arg0)
+        public HashPrintJobAttributeSet(Javax.Print.Attribute.PrintJobAttributeSet arg0)
             : base(arg0)
         {
         }

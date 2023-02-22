@@ -42,17 +42,17 @@ namespace Java.Time
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#MIN
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#EPOCH
         /// </summary>
-        public static Java.Time.LocalDate MIN => Clazz.GetField<Java.Time.LocalDate>("MIN");
+        public static Java.Time.LocalDate EPOCH => Clazz.GetField<Java.Time.LocalDate>("EPOCH");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#MAX
         /// </summary>
         public static Java.Time.LocalDate MAX => Clazz.GetField<Java.Time.LocalDate>("MAX");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#EPOCH
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html#MIN
         /// </summary>
-        public static Java.Time.LocalDate EPOCH => Clazz.GetField<Java.Time.LocalDate>("EPOCH");
+        public static Java.Time.LocalDate MIN => Clazz.GetField<Java.Time.LocalDate>("MIN");
         
         #endregion
 

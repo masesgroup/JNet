@@ -74,13 +74,13 @@ namespace Javax.Transaction.Xa
         /// </summary>
         public static int TMSUSPEND => Clazz.GetField<int>("TMSUSPEND");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#XA_RDONLY
-        /// </summary>
-        public static int XA_RDONLY => Clazz.GetField<int>("XA_RDONLY");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#XA_OK
         /// </summary>
         public static int XA_OK => Clazz.GetField<int>("XA_OK");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#XA_RDONLY
+        /// </summary>
+        public static int XA_RDONLY => Clazz.GetField<int>("XA_RDONLY");
         
         #endregion
 

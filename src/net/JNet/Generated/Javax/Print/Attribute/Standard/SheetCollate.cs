@@ -41,13 +41,13 @@ namespace Javax.Print.Attribute.Standard
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/SheetCollate.html#UNCOLLATED
-        /// </summary>
-        public static Javax.Print.Attribute.Standard.SheetCollate UNCOLLATED => Clazz.GetField<Javax.Print.Attribute.Standard.SheetCollate>("UNCOLLATED");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/SheetCollate.html#COLLATED
         /// </summary>
         public static Javax.Print.Attribute.Standard.SheetCollate COLLATED => Clazz.GetField<Javax.Print.Attribute.Standard.SheetCollate>("COLLATED");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/SheetCollate.html#UNCOLLATED
+        /// </summary>
+        public static Javax.Print.Attribute.Standard.SheetCollate UNCOLLATED => Clazz.GetField<Javax.Print.Attribute.Standard.SheetCollate>("UNCOLLATED");
         
         #endregion
 

@@ -37,17 +37,17 @@ namespace Java.Awt
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#<init>(java.awt.Window)
-        /// </summary>
-        public Window(Java.Awt.Window arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#<init>(java.awt.Window,java.awt.GraphicsConfiguration)
         /// </summary>
         public Window(Java.Awt.Window arg0, Java.Awt.GraphicsConfiguration arg1)
             : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.html#<init>(java.awt.Window)
+        /// </summary>
+        public Window(Java.Awt.Window arg0)
+            : base(arg0)
         {
         }
         
@@ -354,13 +354,13 @@ namespace Java.Awt
             /// </summary>
             public static Java.Awt.Window.Type NORMAL => Clazz.GetField<Java.Awt.Window.Type>("NORMAL");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.Type.html#UTILITY
-            /// </summary>
-            public static Java.Awt.Window.Type UTILITY => Clazz.GetField<Java.Awt.Window.Type>("UTILITY");
-            /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.Type.html#POPUP
             /// </summary>
             public static Java.Awt.Window.Type POPUP => Clazz.GetField<Java.Awt.Window.Type>("POPUP");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Window.Type.html#UTILITY
+            /// </summary>
+            public static Java.Awt.Window.Type UTILITY => Clazz.GetField<Java.Awt.Window.Type>("UTILITY");
             
             #endregion
 

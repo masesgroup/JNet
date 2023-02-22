@@ -154,6 +154,82 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
+        #region BasicVerticalLayoutManager
+        public partial class BasicVerticalLayoutManager
+        {
+            #region Constructors
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.BasicVerticalLayoutManager.html#<init>(javax.swing.plaf.basic.BasicSplitPaneUI)
+            /// </summary>
+            public BasicVerticalLayoutManager(Javax.Swing.Plaf.Basic.BasicSplitPaneUI arg0)
+                : base(arg0)
+            {
+            }
+            
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region KeyboardHomeHandler
+        public partial class KeyboardHomeHandler
+        {
+            #region Constructors
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.KeyboardHomeHandler.html#<init>(javax.swing.plaf.basic.BasicSplitPaneUI)
+            /// </summary>
+            public KeyboardHomeHandler(Javax.Swing.Plaf.Basic.BasicSplitPaneUI arg0)
+                : base(arg0)
+            {
+            }
+            
+            #endregion
+
+            #region Class/Interface conversion operators
+            public static implicit operator Java.Awt.EventNs.ActionListener(Javax.Swing.Plaf.Basic.BasicSplitPaneUI.KeyboardHomeHandler t) => t.Cast<Java.Awt.EventNs.ActionListener>();
+            
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.KeyboardHomeHandler.html#actionPerformed(java.awt.event.ActionEvent)
+            /// </summary>
+            public void ActionPerformed(Java.Awt.EventNs.ActionEvent arg0)
+            {
+                IExecute("actionPerformed", arg0);
+            }
+            
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region PropertyHandler
         public partial class PropertyHandler
         {
@@ -188,6 +264,132 @@ namespace Javax.Swing.Plaf.Basic
             public void PropertyChange(Java.Beans.PropertyChangeEvent arg0)
             {
                 IExecute("propertyChange", arg0);
+            }
+            
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region KeyboardEndHandler
+        public partial class KeyboardEndHandler
+        {
+            #region Constructors
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.KeyboardEndHandler.html#<init>(javax.swing.plaf.basic.BasicSplitPaneUI)
+            /// </summary>
+            public KeyboardEndHandler(Javax.Swing.Plaf.Basic.BasicSplitPaneUI arg0)
+                : base(arg0)
+            {
+            }
+            
+            #endregion
+
+            #region Class/Interface conversion operators
+            public static implicit operator Java.Awt.EventNs.ActionListener(Javax.Swing.Plaf.Basic.BasicSplitPaneUI.KeyboardEndHandler t) => t.Cast<Java.Awt.EventNs.ActionListener>();
+            
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.KeyboardEndHandler.html#actionPerformed(java.awt.event.ActionEvent)
+            /// </summary>
+            public void ActionPerformed(Java.Awt.EventNs.ActionEvent arg0)
+            {
+                IExecute("actionPerformed", arg0);
+            }
+            
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region KeyboardResizeToggleHandler
+        public partial class KeyboardResizeToggleHandler
+        {
+            #region Constructors
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.KeyboardResizeToggleHandler.html#<init>(javax.swing.plaf.basic.BasicSplitPaneUI)
+            /// </summary>
+            public KeyboardResizeToggleHandler(Javax.Swing.Plaf.Basic.BasicSplitPaneUI arg0)
+                : base(arg0)
+            {
+            }
+            
+            #endregion
+
+            #region Class/Interface conversion operators
+            public static implicit operator Java.Awt.EventNs.ActionListener(Javax.Swing.Plaf.Basic.BasicSplitPaneUI.KeyboardResizeToggleHandler t) => t.Cast<Java.Awt.EventNs.ActionListener>();
+            
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.KeyboardResizeToggleHandler.html#actionPerformed(java.awt.event.ActionEvent)
+            /// </summary>
+            public void ActionPerformed(Java.Awt.EventNs.ActionEvent arg0)
+            {
+                IExecute("actionPerformed", arg0);
+            }
+            
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region KeyboardDownRightHandler
+        public partial class KeyboardDownRightHandler
+        {
+            #region Constructors
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.KeyboardDownRightHandler.html#<init>(javax.swing.plaf.basic.BasicSplitPaneUI)
+            /// </summary>
+            public KeyboardDownRightHandler(Javax.Swing.Plaf.Basic.BasicSplitPaneUI arg0)
+                : base(arg0)
+            {
+            }
+            
+            #endregion
+
+            #region Class/Interface conversion operators
+            public static implicit operator Java.Awt.EventNs.ActionListener(Javax.Swing.Plaf.Basic.BasicSplitPaneUI.KeyboardDownRightHandler t) => t.Cast<Java.Awt.EventNs.ActionListener>();
+            
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.KeyboardDownRightHandler.html#actionPerformed(java.awt.event.ActionEvent)
+            /// </summary>
+            public void ActionPerformed(Java.Awt.EventNs.ActionEvent arg0)
+            {
+                IExecute("actionPerformed", arg0);
             }
             
             #endregion
@@ -293,208 +495,6 @@ namespace Javax.Swing.Plaf.Basic
             public void ResetToPreferredSizes()
             {
                 IExecute("resetToPreferredSizes");
-            }
-            
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region KeyboardHomeHandler
-        public partial class KeyboardHomeHandler
-        {
-            #region Constructors
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.KeyboardHomeHandler.html#<init>(javax.swing.plaf.basic.BasicSplitPaneUI)
-            /// </summary>
-            public KeyboardHomeHandler(Javax.Swing.Plaf.Basic.BasicSplitPaneUI arg0)
-                : base(arg0)
-            {
-            }
-            
-            #endregion
-
-            #region Class/Interface conversion operators
-            public static implicit operator Java.Awt.EventNs.ActionListener(Javax.Swing.Plaf.Basic.BasicSplitPaneUI.KeyboardHomeHandler t) => t.Cast<Java.Awt.EventNs.ActionListener>();
-            
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.KeyboardHomeHandler.html#actionPerformed(java.awt.event.ActionEvent)
-            /// </summary>
-            public void ActionPerformed(Java.Awt.EventNs.ActionEvent arg0)
-            {
-                IExecute("actionPerformed", arg0);
-            }
-            
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region KeyboardDownRightHandler
-        public partial class KeyboardDownRightHandler
-        {
-            #region Constructors
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.KeyboardDownRightHandler.html#<init>(javax.swing.plaf.basic.BasicSplitPaneUI)
-            /// </summary>
-            public KeyboardDownRightHandler(Javax.Swing.Plaf.Basic.BasicSplitPaneUI arg0)
-                : base(arg0)
-            {
-            }
-            
-            #endregion
-
-            #region Class/Interface conversion operators
-            public static implicit operator Java.Awt.EventNs.ActionListener(Javax.Swing.Plaf.Basic.BasicSplitPaneUI.KeyboardDownRightHandler t) => t.Cast<Java.Awt.EventNs.ActionListener>();
-            
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.KeyboardDownRightHandler.html#actionPerformed(java.awt.event.ActionEvent)
-            /// </summary>
-            public void ActionPerformed(Java.Awt.EventNs.ActionEvent arg0)
-            {
-                IExecute("actionPerformed", arg0);
-            }
-            
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region KeyboardResizeToggleHandler
-        public partial class KeyboardResizeToggleHandler
-        {
-            #region Constructors
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.KeyboardResizeToggleHandler.html#<init>(javax.swing.plaf.basic.BasicSplitPaneUI)
-            /// </summary>
-            public KeyboardResizeToggleHandler(Javax.Swing.Plaf.Basic.BasicSplitPaneUI arg0)
-                : base(arg0)
-            {
-            }
-            
-            #endregion
-
-            #region Class/Interface conversion operators
-            public static implicit operator Java.Awt.EventNs.ActionListener(Javax.Swing.Plaf.Basic.BasicSplitPaneUI.KeyboardResizeToggleHandler t) => t.Cast<Java.Awt.EventNs.ActionListener>();
-            
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.KeyboardResizeToggleHandler.html#actionPerformed(java.awt.event.ActionEvent)
-            /// </summary>
-            public void ActionPerformed(Java.Awt.EventNs.ActionEvent arg0)
-            {
-                IExecute("actionPerformed", arg0);
-            }
-            
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region BasicVerticalLayoutManager
-        public partial class BasicVerticalLayoutManager
-        {
-            #region Constructors
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.BasicVerticalLayoutManager.html#<init>(javax.swing.plaf.basic.BasicSplitPaneUI)
-            /// </summary>
-            public BasicVerticalLayoutManager(Javax.Swing.Plaf.Basic.BasicSplitPaneUI arg0)
-                : base(arg0)
-            {
-            }
-            
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region KeyboardEndHandler
-        public partial class KeyboardEndHandler
-        {
-            #region Constructors
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.KeyboardEndHandler.html#<init>(javax.swing.plaf.basic.BasicSplitPaneUI)
-            /// </summary>
-            public KeyboardEndHandler(Javax.Swing.Plaf.Basic.BasicSplitPaneUI arg0)
-                : base(arg0)
-            {
-            }
-            
-            #endregion
-
-            #region Class/Interface conversion operators
-            public static implicit operator Java.Awt.EventNs.ActionListener(Javax.Swing.Plaf.Basic.BasicSplitPaneUI.KeyboardEndHandler t) => t.Cast<Java.Awt.EventNs.ActionListener>();
-            
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSplitPaneUI.KeyboardEndHandler.html#actionPerformed(java.awt.event.ActionEvent)
-            /// </summary>
-            public void ActionPerformed(Java.Awt.EventNs.ActionEvent arg0)
-            {
-                IExecute("actionPerformed", arg0);
             }
             
             #endregion

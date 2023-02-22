@@ -38,25 +38,45 @@ namespace Javax.Security.Sasl
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/Sasl.html#QOP
-        /// </summary>
-        public static string QOP => Clazz.GetField<string>("QOP");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/Sasl.html#STRENGTH
-        /// </summary>
-        public static string STRENGTH => Clazz.GetField<string>("STRENGTH");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/Sasl.html#SERVER_AUTH
-        /// </summary>
-        public static string SERVER_AUTH => Clazz.GetField<string>("SERVER_AUTH");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/Sasl.html#BOUND_SERVER_NAME
         /// </summary>
         public static string BOUND_SERVER_NAME => Clazz.GetField<string>("BOUND_SERVER_NAME");
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/Sasl.html#CREDENTIALS
+        /// </summary>
+        public static string CREDENTIALS => Clazz.GetField<string>("CREDENTIALS");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/Sasl.html#MAX_BUFFER
         /// </summary>
         public static string MAX_BUFFER => Clazz.GetField<string>("MAX_BUFFER");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/Sasl.html#POLICY_FORWARD_SECRECY
+        /// </summary>
+        public static string POLICY_FORWARD_SECRECY => Clazz.GetField<string>("POLICY_FORWARD_SECRECY");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/Sasl.html#POLICY_NOACTIVE
+        /// </summary>
+        public static string POLICY_NOACTIVE => Clazz.GetField<string>("POLICY_NOACTIVE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/Sasl.html#POLICY_NOANONYMOUS
+        /// </summary>
+        public static string POLICY_NOANONYMOUS => Clazz.GetField<string>("POLICY_NOANONYMOUS");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/Sasl.html#POLICY_NODICTIONARY
+        /// </summary>
+        public static string POLICY_NODICTIONARY => Clazz.GetField<string>("POLICY_NODICTIONARY");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/Sasl.html#POLICY_NOPLAINTEXT
+        /// </summary>
+        public static string POLICY_NOPLAINTEXT => Clazz.GetField<string>("POLICY_NOPLAINTEXT");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/Sasl.html#POLICY_PASS_CREDENTIALS
+        /// </summary>
+        public static string POLICY_PASS_CREDENTIALS => Clazz.GetField<string>("POLICY_PASS_CREDENTIALS");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/Sasl.html#QOP
+        /// </summary>
+        public static string QOP => Clazz.GetField<string>("QOP");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/Sasl.html#RAW_SEND_SIZE
         /// </summary>
@@ -66,33 +86,13 @@ namespace Javax.Security.Sasl
         /// </summary>
         public static string REUSE => Clazz.GetField<string>("REUSE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/Sasl.html#POLICY_NOPLAINTEXT
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/Sasl.html#SERVER_AUTH
         /// </summary>
-        public static string POLICY_NOPLAINTEXT => Clazz.GetField<string>("POLICY_NOPLAINTEXT");
+        public static string SERVER_AUTH => Clazz.GetField<string>("SERVER_AUTH");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/Sasl.html#POLICY_NOACTIVE
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/Sasl.html#STRENGTH
         /// </summary>
-        public static string POLICY_NOACTIVE => Clazz.GetField<string>("POLICY_NOACTIVE");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/Sasl.html#POLICY_NODICTIONARY
-        /// </summary>
-        public static string POLICY_NODICTIONARY => Clazz.GetField<string>("POLICY_NODICTIONARY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/Sasl.html#POLICY_NOANONYMOUS
-        /// </summary>
-        public static string POLICY_NOANONYMOUS => Clazz.GetField<string>("POLICY_NOANONYMOUS");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/Sasl.html#POLICY_FORWARD_SECRECY
-        /// </summary>
-        public static string POLICY_FORWARD_SECRECY => Clazz.GetField<string>("POLICY_FORWARD_SECRECY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/Sasl.html#POLICY_PASS_CREDENTIALS
-        /// </summary>
-        public static string POLICY_PASS_CREDENTIALS => Clazz.GetField<string>("POLICY_PASS_CREDENTIALS");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/Sasl.html#CREDENTIALS
-        /// </summary>
-        public static string CREDENTIALS => Clazz.GetField<string>("CREDENTIALS");
+        public static string STRENGTH => Clazz.GetField<string>("STRENGTH");
         
         #endregion
 

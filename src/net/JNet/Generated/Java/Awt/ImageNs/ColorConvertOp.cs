@@ -30,13 +30,6 @@ namespace Java.Awt.ImageNs
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorConvertOp.html#<init>(java.awt.color.ICC_Profile[],java.awt.RenderingHints)
-        /// </summary>
-        public ColorConvertOp(Java.Awt.ColorNs.ICC_Profile[] arg0, Java.Awt.RenderingHints arg1)
-            : base(arg0, arg1)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorConvertOp.html#<init>(java.awt.color.ColorSpace,java.awt.color.ColorSpace,java.awt.RenderingHints)
         /// </summary>
         public ColorConvertOp(Java.Awt.ColorNs.ColorSpace arg0, Java.Awt.ColorNs.ColorSpace arg1, Java.Awt.RenderingHints arg2)
@@ -47,6 +40,13 @@ namespace Java.Awt.ImageNs
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorConvertOp.html#<init>(java.awt.color.ColorSpace,java.awt.RenderingHints)
         /// </summary>
         public ColorConvertOp(Java.Awt.ColorNs.ColorSpace arg0, Java.Awt.RenderingHints arg1)
+            : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorConvertOp.html#<init>(java.awt.color.ICC_Profile[],java.awt.RenderingHints)
+        /// </summary>
+        public ColorConvertOp(Java.Awt.ColorNs.ICC_Profile[] arg0, Java.Awt.RenderingHints arg1)
             : base(arg0, arg1)
         {
         }

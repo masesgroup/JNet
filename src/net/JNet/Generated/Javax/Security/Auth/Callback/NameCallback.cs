@@ -30,17 +30,17 @@ namespace Javax.Security.Auth.Callback
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/NameCallback.html#<init>(java.lang.String)
-        /// </summary>
-        public NameCallback(string arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/NameCallback.html#<init>(java.lang.String,java.lang.String)
         /// </summary>
         public NameCallback(string arg0, string arg1)
             : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/NameCallback.html#<init>(java.lang.String)
+        /// </summary>
+        public NameCallback(string arg0)
+            : base(arg0)
         {
         }
         

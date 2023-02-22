@@ -38,25 +38,25 @@ namespace Java.Lang
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#MIN_VALUE
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#BYTES
         /// </summary>
-        public static long MIN_VALUE => Clazz.GetField<long>("MIN_VALUE");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#MAX_VALUE
-        /// </summary>
-        public static long MAX_VALUE => Clazz.GetField<long>("MAX_VALUE");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#TYPE
-        /// </summary>
-        public static Java.Lang.Class TYPE => Clazz.GetField<Java.Lang.Class>("TYPE");
+        public static int BYTES => Clazz.GetField<int>("BYTES");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#SIZE
         /// </summary>
         public static int SIZE => Clazz.GetField<int>("SIZE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#BYTES
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#TYPE
         /// </summary>
-        public static int BYTES => Clazz.GetField<int>("BYTES");
+        public static Java.Lang.Class TYPE => Clazz.GetField<Java.Lang.Class>("TYPE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#MAX_VALUE
+        /// </summary>
+        public static long MAX_VALUE => Clazz.GetField<long>("MAX_VALUE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#MIN_VALUE
+        /// </summary>
+        public static long MIN_VALUE => Clazz.GetField<long>("MIN_VALUE");
         
         #endregion
 
@@ -113,51 +113,51 @@ namespace Java.Lang
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#decode(java.lang.String) throws java.lang.NumberFormatException
         /// </summary>
-        public static long Decode(string arg0)
+        public static long? Decode(string arg0)
         {
-            return SExecute<long>("decode", arg0);
+            return SExecute<long?>("decode", arg0);
         }
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#getLong(java.lang.String,java.lang.Long)
         /// </summary>
-        public static long GetLong(string arg0, long arg1)
+        public static long? GetLong(string arg0, long? arg1)
         {
-            return SExecute<long>("getLong", arg0, arg1);
+            return SExecute<long?>("getLong", arg0, arg1);
         }
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#getLong(java.lang.String,long)
         /// </summary>
-        public static long GetLong(string arg0, long arg1)
+        public static long? GetLong(string arg0, long arg1)
         {
-            return SExecute<long>("getLong", arg0, arg1);
+            return SExecute<long?>("getLong", arg0, arg1);
         }
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#getLong(java.lang.String)
         /// </summary>
-        public static long GetLong(string arg0)
+        public static long? GetLong(string arg0)
         {
-            return SExecute<long>("getLong", arg0);
+            return SExecute<long?>("getLong", arg0);
         }
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#valueOf(java.lang.String,int) throws java.lang.NumberFormatException
         /// </summary>
-        public static long ValueOf(string arg0, int arg1)
+        public static long? ValueOf(string arg0, int arg1)
         {
-            return SExecute<long>("valueOf", arg0, arg1);
+            return SExecute<long?>("valueOf", arg0, arg1);
         }
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#valueOf(java.lang.String) throws java.lang.NumberFormatException
         /// </summary>
-        public static long ValueOf(string arg0)
+        public static long? ValueOf(string arg0)
         {
-            return SExecute<long>("valueOf", arg0);
+            return SExecute<long?>("valueOf", arg0);
         }
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#valueOf(long)
         /// </summary>
-        public static long ValueOf(long arg0)
+        public static long? ValueOf(long arg0)
         {
-            return SExecute<long>("valueOf", arg0);
+            return SExecute<long?>("valueOf", arg0);
         }
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#toBinaryString(long)
@@ -334,7 +334,7 @@ namespace Java.Lang
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html#compareTo(java.lang.Long)
         /// </summary>
-        public int CompareTo(long arg0)
+        public int CompareTo(long? arg0)
         {
             return IExecute<int>("compareTo", arg0);
         }

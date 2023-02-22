@@ -42,21 +42,21 @@ namespace Javax.Sound.Midi
         /// </summary>
         public bool active => Instance.GetField<bool>("active");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/VoiceStatus.html#channel
-        /// </summary>
-        public int channel => Instance.GetField<int>("channel");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/VoiceStatus.html#bank
         /// </summary>
         public int bank => Instance.GetField<int>("bank");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/VoiceStatus.html#program
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/VoiceStatus.html#channel
         /// </summary>
-        public int program => Instance.GetField<int>("program");
+        public int channel => Instance.GetField<int>("channel");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/VoiceStatus.html#note
         /// </summary>
         public int note => Instance.GetField<int>("note");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/VoiceStatus.html#program
+        /// </summary>
+        public int program => Instance.GetField<int>("program");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/VoiceStatus.html#volume
         /// </summary>

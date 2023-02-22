@@ -30,17 +30,17 @@ namespace Java.Security.Spec
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/X509EncodedKeySpec.html#<init>(byte[])
-        /// </summary>
-        public X509EncodedKeySpec(byte[] arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/X509EncodedKeySpec.html#<init>(byte[],java.lang.String)
         /// </summary>
         public X509EncodedKeySpec(byte[] arg0, string arg1)
             : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/X509EncodedKeySpec.html#<init>(byte[])
+        /// </summary>
+        public X509EncodedKeySpec(byte[] arg0)
+            : base(arg0)
         {
         }
         

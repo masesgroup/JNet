@@ -30,13 +30,6 @@ namespace Javax.Swing
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#<init>(java.lang.String,javax.swing.filechooser.FileSystemView)
-        /// </summary>
-        public JFileChooser(string arg0, Javax.Swing.Filechooser.FileSystemView arg1)
-            : base(arg0, arg1)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#<init>(java.io.File,javax.swing.filechooser.FileSystemView)
         /// </summary>
         public JFileChooser(Java.Io.File arg0, Javax.Swing.Filechooser.FileSystemView arg1)
@@ -44,10 +37,17 @@ namespace Javax.Swing
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#<init>(javax.swing.filechooser.FileSystemView)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#<init>(java.io.File)
         /// </summary>
-        public JFileChooser(Javax.Swing.Filechooser.FileSystemView arg0)
+        public JFileChooser(Java.Io.File arg0)
             : base(arg0)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#<init>(java.lang.String,javax.swing.filechooser.FileSystemView)
+        /// </summary>
+        public JFileChooser(string arg0, Javax.Swing.Filechooser.FileSystemView arg1)
+            : base(arg0, arg1)
         {
         }
         /// <summary>
@@ -58,9 +58,9 @@ namespace Javax.Swing
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#<init>(java.io.File)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#<init>(javax.swing.filechooser.FileSystemView)
         /// </summary>
-        public JFileChooser(Java.Io.File arg0)
+        public JFileChooser(Javax.Swing.Filechooser.FileSystemView arg0)
             : base(arg0)
         {
         }
@@ -74,6 +74,34 @@ namespace Javax.Swing
 
         #region Fields
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#APPROVE_OPTION
+        /// </summary>
+        public static int APPROVE_OPTION => Clazz.GetField<int>("APPROVE_OPTION");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#CANCEL_OPTION
+        /// </summary>
+        public static int CANCEL_OPTION => Clazz.GetField<int>("CANCEL_OPTION");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#CUSTOM_DIALOG
+        /// </summary>
+        public static int CUSTOM_DIALOG => Clazz.GetField<int>("CUSTOM_DIALOG");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#DIRECTORIES_ONLY
+        /// </summary>
+        public static int DIRECTORIES_ONLY => Clazz.GetField<int>("DIRECTORIES_ONLY");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#ERROR_OPTION
+        /// </summary>
+        public static int ERROR_OPTION => Clazz.GetField<int>("ERROR_OPTION");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#FILES_AND_DIRECTORIES
+        /// </summary>
+        public static int FILES_AND_DIRECTORIES => Clazz.GetField<int>("FILES_AND_DIRECTORIES");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#FILES_ONLY
+        /// </summary>
+        public static int FILES_ONLY => Clazz.GetField<int>("FILES_ONLY");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#OPEN_DIALOG
         /// </summary>
         public static int OPEN_DIALOG => Clazz.GetField<int>("OPEN_DIALOG");
@@ -82,41 +110,17 @@ namespace Javax.Swing
         /// </summary>
         public static int SAVE_DIALOG => Clazz.GetField<int>("SAVE_DIALOG");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#CUSTOM_DIALOG
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#ACCEPT_ALL_FILE_FILTER_USED_CHANGED_PROPERTY
         /// </summary>
-        public static int CUSTOM_DIALOG => Clazz.GetField<int>("CUSTOM_DIALOG");
+        public static string ACCEPT_ALL_FILE_FILTER_USED_CHANGED_PROPERTY => Clazz.GetField<string>("ACCEPT_ALL_FILE_FILTER_USED_CHANGED_PROPERTY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#CANCEL_OPTION
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#ACCESSORY_CHANGED_PROPERTY
         /// </summary>
-        public static int CANCEL_OPTION => Clazz.GetField<int>("CANCEL_OPTION");
+        public static string ACCESSORY_CHANGED_PROPERTY => Clazz.GetField<string>("ACCESSORY_CHANGED_PROPERTY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#APPROVE_OPTION
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#APPROVE_BUTTON_MNEMONIC_CHANGED_PROPERTY
         /// </summary>
-        public static int APPROVE_OPTION => Clazz.GetField<int>("APPROVE_OPTION");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#ERROR_OPTION
-        /// </summary>
-        public static int ERROR_OPTION => Clazz.GetField<int>("ERROR_OPTION");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#FILES_ONLY
-        /// </summary>
-        public static int FILES_ONLY => Clazz.GetField<int>("FILES_ONLY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#DIRECTORIES_ONLY
-        /// </summary>
-        public static int DIRECTORIES_ONLY => Clazz.GetField<int>("DIRECTORIES_ONLY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#FILES_AND_DIRECTORIES
-        /// </summary>
-        public static int FILES_AND_DIRECTORIES => Clazz.GetField<int>("FILES_AND_DIRECTORIES");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#CANCEL_SELECTION
-        /// </summary>
-        public static string CANCEL_SELECTION => Clazz.GetField<string>("CANCEL_SELECTION");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#APPROVE_SELECTION
-        /// </summary>
-        public static string APPROVE_SELECTION => Clazz.GetField<string>("APPROVE_SELECTION");
+        public static string APPROVE_BUTTON_MNEMONIC_CHANGED_PROPERTY => Clazz.GetField<string>("APPROVE_BUTTON_MNEMONIC_CHANGED_PROPERTY");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#APPROVE_BUTTON_TEXT_CHANGED_PROPERTY
         /// </summary>
@@ -126,57 +130,21 @@ namespace Javax.Swing
         /// </summary>
         public static string APPROVE_BUTTON_TOOL_TIP_TEXT_CHANGED_PROPERTY => Clazz.GetField<string>("APPROVE_BUTTON_TOOL_TIP_TEXT_CHANGED_PROPERTY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#APPROVE_BUTTON_MNEMONIC_CHANGED_PROPERTY
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#APPROVE_SELECTION
         /// </summary>
-        public static string APPROVE_BUTTON_MNEMONIC_CHANGED_PROPERTY => Clazz.GetField<string>("APPROVE_BUTTON_MNEMONIC_CHANGED_PROPERTY");
+        public static string APPROVE_SELECTION => Clazz.GetField<string>("APPROVE_SELECTION");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#CANCEL_SELECTION
+        /// </summary>
+        public static string CANCEL_SELECTION => Clazz.GetField<string>("CANCEL_SELECTION");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#CHOOSABLE_FILE_FILTER_CHANGED_PROPERTY
+        /// </summary>
+        public static string CHOOSABLE_FILE_FILTER_CHANGED_PROPERTY => Clazz.GetField<string>("CHOOSABLE_FILE_FILTER_CHANGED_PROPERTY");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#CONTROL_BUTTONS_ARE_SHOWN_CHANGED_PROPERTY
         /// </summary>
         public static string CONTROL_BUTTONS_ARE_SHOWN_CHANGED_PROPERTY => Clazz.GetField<string>("CONTROL_BUTTONS_ARE_SHOWN_CHANGED_PROPERTY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#DIRECTORY_CHANGED_PROPERTY
-        /// </summary>
-        public static string DIRECTORY_CHANGED_PROPERTY => Clazz.GetField<string>("DIRECTORY_CHANGED_PROPERTY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#SELECTED_FILE_CHANGED_PROPERTY
-        /// </summary>
-        public static string SELECTED_FILE_CHANGED_PROPERTY => Clazz.GetField<string>("SELECTED_FILE_CHANGED_PROPERTY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#SELECTED_FILES_CHANGED_PROPERTY
-        /// </summary>
-        public static string SELECTED_FILES_CHANGED_PROPERTY => Clazz.GetField<string>("SELECTED_FILES_CHANGED_PROPERTY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#MULTI_SELECTION_ENABLED_CHANGED_PROPERTY
-        /// </summary>
-        public static string MULTI_SELECTION_ENABLED_CHANGED_PROPERTY => Clazz.GetField<string>("MULTI_SELECTION_ENABLED_CHANGED_PROPERTY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#FILE_SYSTEM_VIEW_CHANGED_PROPERTY
-        /// </summary>
-        public static string FILE_SYSTEM_VIEW_CHANGED_PROPERTY => Clazz.GetField<string>("FILE_SYSTEM_VIEW_CHANGED_PROPERTY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#FILE_VIEW_CHANGED_PROPERTY
-        /// </summary>
-        public static string FILE_VIEW_CHANGED_PROPERTY => Clazz.GetField<string>("FILE_VIEW_CHANGED_PROPERTY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#FILE_HIDING_CHANGED_PROPERTY
-        /// </summary>
-        public static string FILE_HIDING_CHANGED_PROPERTY => Clazz.GetField<string>("FILE_HIDING_CHANGED_PROPERTY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#FILE_FILTER_CHANGED_PROPERTY
-        /// </summary>
-        public static string FILE_FILTER_CHANGED_PROPERTY => Clazz.GetField<string>("FILE_FILTER_CHANGED_PROPERTY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#FILE_SELECTION_MODE_CHANGED_PROPERTY
-        /// </summary>
-        public static string FILE_SELECTION_MODE_CHANGED_PROPERTY => Clazz.GetField<string>("FILE_SELECTION_MODE_CHANGED_PROPERTY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#ACCESSORY_CHANGED_PROPERTY
-        /// </summary>
-        public static string ACCESSORY_CHANGED_PROPERTY => Clazz.GetField<string>("ACCESSORY_CHANGED_PROPERTY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#ACCEPT_ALL_FILE_FILTER_USED_CHANGED_PROPERTY
-        /// </summary>
-        public static string ACCEPT_ALL_FILE_FILTER_USED_CHANGED_PROPERTY => Clazz.GetField<string>("ACCEPT_ALL_FILE_FILTER_USED_CHANGED_PROPERTY");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#DIALOG_TITLE_CHANGED_PROPERTY
         /// </summary>
@@ -186,9 +154,41 @@ namespace Javax.Swing
         /// </summary>
         public static string DIALOG_TYPE_CHANGED_PROPERTY => Clazz.GetField<string>("DIALOG_TYPE_CHANGED_PROPERTY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#CHOOSABLE_FILE_FILTER_CHANGED_PROPERTY
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#DIRECTORY_CHANGED_PROPERTY
         /// </summary>
-        public static string CHOOSABLE_FILE_FILTER_CHANGED_PROPERTY => Clazz.GetField<string>("CHOOSABLE_FILE_FILTER_CHANGED_PROPERTY");
+        public static string DIRECTORY_CHANGED_PROPERTY => Clazz.GetField<string>("DIRECTORY_CHANGED_PROPERTY");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#FILE_FILTER_CHANGED_PROPERTY
+        /// </summary>
+        public static string FILE_FILTER_CHANGED_PROPERTY => Clazz.GetField<string>("FILE_FILTER_CHANGED_PROPERTY");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#FILE_HIDING_CHANGED_PROPERTY
+        /// </summary>
+        public static string FILE_HIDING_CHANGED_PROPERTY => Clazz.GetField<string>("FILE_HIDING_CHANGED_PROPERTY");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#FILE_SELECTION_MODE_CHANGED_PROPERTY
+        /// </summary>
+        public static string FILE_SELECTION_MODE_CHANGED_PROPERTY => Clazz.GetField<string>("FILE_SELECTION_MODE_CHANGED_PROPERTY");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#FILE_SYSTEM_VIEW_CHANGED_PROPERTY
+        /// </summary>
+        public static string FILE_SYSTEM_VIEW_CHANGED_PROPERTY => Clazz.GetField<string>("FILE_SYSTEM_VIEW_CHANGED_PROPERTY");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#FILE_VIEW_CHANGED_PROPERTY
+        /// </summary>
+        public static string FILE_VIEW_CHANGED_PROPERTY => Clazz.GetField<string>("FILE_VIEW_CHANGED_PROPERTY");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#MULTI_SELECTION_ENABLED_CHANGED_PROPERTY
+        /// </summary>
+        public static string MULTI_SELECTION_ENABLED_CHANGED_PROPERTY => Clazz.GetField<string>("MULTI_SELECTION_ENABLED_CHANGED_PROPERTY");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#SELECTED_FILE_CHANGED_PROPERTY
+        /// </summary>
+        public static string SELECTED_FILE_CHANGED_PROPERTY => Clazz.GetField<string>("SELECTED_FILE_CHANGED_PROPERTY");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFileChooser.html#SELECTED_FILES_CHANGED_PROPERTY
+        /// </summary>
+        public static string SELECTED_FILES_CHANGED_PROPERTY => Clazz.GetField<string>("SELECTED_FILES_CHANGED_PROPERTY");
         
         #endregion
 

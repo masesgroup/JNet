@@ -45,6 +45,18 @@ namespace Java.Awt
 
         #region Fields
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEvent.html#RESERVED_ID_MAX
+        /// </summary>
+        public static int RESERVED_ID_MAX => Clazz.GetField<int>("RESERVED_ID_MAX");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEvent.html#ACTION_EVENT_MASK
+        /// </summary>
+        public static long ACTION_EVENT_MASK => Clazz.GetField<long>("ACTION_EVENT_MASK");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEvent.html#ADJUSTMENT_EVENT_MASK
+        /// </summary>
+        public static long ADJUSTMENT_EVENT_MASK => Clazz.GetField<long>("ADJUSTMENT_EVENT_MASK");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEvent.html#COMPONENT_EVENT_MASK
         /// </summary>
         public static long COMPONENT_EVENT_MASK => Clazz.GetField<long>("COMPONENT_EVENT_MASK");
@@ -56,6 +68,26 @@ namespace Java.Awt
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEvent.html#FOCUS_EVENT_MASK
         /// </summary>
         public static long FOCUS_EVENT_MASK => Clazz.GetField<long>("FOCUS_EVENT_MASK");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEvent.html#HIERARCHY_BOUNDS_EVENT_MASK
+        /// </summary>
+        public static long HIERARCHY_BOUNDS_EVENT_MASK => Clazz.GetField<long>("HIERARCHY_BOUNDS_EVENT_MASK");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEvent.html#HIERARCHY_EVENT_MASK
+        /// </summary>
+        public static long HIERARCHY_EVENT_MASK => Clazz.GetField<long>("HIERARCHY_EVENT_MASK");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEvent.html#INPUT_METHOD_EVENT_MASK
+        /// </summary>
+        public static long INPUT_METHOD_EVENT_MASK => Clazz.GetField<long>("INPUT_METHOD_EVENT_MASK");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEvent.html#INVOCATION_EVENT_MASK
+        /// </summary>
+        public static long INVOCATION_EVENT_MASK => Clazz.GetField<long>("INVOCATION_EVENT_MASK");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEvent.html#ITEM_EVENT_MASK
+        /// </summary>
+        public static long ITEM_EVENT_MASK => Clazz.GetField<long>("ITEM_EVENT_MASK");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEvent.html#KEY_EVENT_MASK
         /// </summary>
@@ -69,61 +101,29 @@ namespace Java.Awt
         /// </summary>
         public static long MOUSE_MOTION_EVENT_MASK => Clazz.GetField<long>("MOUSE_MOTION_EVENT_MASK");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEvent.html#WINDOW_EVENT_MASK
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEvent.html#MOUSE_WHEEL_EVENT_MASK
         /// </summary>
-        public static long WINDOW_EVENT_MASK => Clazz.GetField<long>("WINDOW_EVENT_MASK");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEvent.html#ACTION_EVENT_MASK
-        /// </summary>
-        public static long ACTION_EVENT_MASK => Clazz.GetField<long>("ACTION_EVENT_MASK");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEvent.html#ADJUSTMENT_EVENT_MASK
-        /// </summary>
-        public static long ADJUSTMENT_EVENT_MASK => Clazz.GetField<long>("ADJUSTMENT_EVENT_MASK");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEvent.html#ITEM_EVENT_MASK
-        /// </summary>
-        public static long ITEM_EVENT_MASK => Clazz.GetField<long>("ITEM_EVENT_MASK");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEvent.html#TEXT_EVENT_MASK
-        /// </summary>
-        public static long TEXT_EVENT_MASK => Clazz.GetField<long>("TEXT_EVENT_MASK");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEvent.html#INPUT_METHOD_EVENT_MASK
-        /// </summary>
-        public static long INPUT_METHOD_EVENT_MASK => Clazz.GetField<long>("INPUT_METHOD_EVENT_MASK");
+        public static long MOUSE_WHEEL_EVENT_MASK => Clazz.GetField<long>("MOUSE_WHEEL_EVENT_MASK");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEvent.html#PAINT_EVENT_MASK
         /// </summary>
         public static long PAINT_EVENT_MASK => Clazz.GetField<long>("PAINT_EVENT_MASK");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEvent.html#INVOCATION_EVENT_MASK
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEvent.html#TEXT_EVENT_MASK
         /// </summary>
-        public static long INVOCATION_EVENT_MASK => Clazz.GetField<long>("INVOCATION_EVENT_MASK");
+        public static long TEXT_EVENT_MASK => Clazz.GetField<long>("TEXT_EVENT_MASK");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEvent.html#HIERARCHY_EVENT_MASK
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEvent.html#WINDOW_EVENT_MASK
         /// </summary>
-        public static long HIERARCHY_EVENT_MASK => Clazz.GetField<long>("HIERARCHY_EVENT_MASK");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEvent.html#HIERARCHY_BOUNDS_EVENT_MASK
-        /// </summary>
-        public static long HIERARCHY_BOUNDS_EVENT_MASK => Clazz.GetField<long>("HIERARCHY_BOUNDS_EVENT_MASK");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEvent.html#MOUSE_WHEEL_EVENT_MASK
-        /// </summary>
-        public static long MOUSE_WHEEL_EVENT_MASK => Clazz.GetField<long>("MOUSE_WHEEL_EVENT_MASK");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEvent.html#WINDOW_STATE_EVENT_MASK
-        /// </summary>
-        public static long WINDOW_STATE_EVENT_MASK => Clazz.GetField<long>("WINDOW_STATE_EVENT_MASK");
+        public static long WINDOW_EVENT_MASK => Clazz.GetField<long>("WINDOW_EVENT_MASK");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEvent.html#WINDOW_FOCUS_EVENT_MASK
         /// </summary>
         public static long WINDOW_FOCUS_EVENT_MASK => Clazz.GetField<long>("WINDOW_FOCUS_EVENT_MASK");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEvent.html#RESERVED_ID_MAX
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTEvent.html#WINDOW_STATE_EVENT_MASK
         /// </summary>
-        public static int RESERVED_ID_MAX => Clazz.GetField<int>("RESERVED_ID_MAX");
+        public static long WINDOW_STATE_EVENT_MASK => Clazz.GetField<long>("WINDOW_STATE_EVENT_MASK");
         
         #endregion
 

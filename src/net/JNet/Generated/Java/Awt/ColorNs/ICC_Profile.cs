@@ -39,161 +39,121 @@ namespace Java.Awt.ColorNs
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#CLASS_INPUT
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#CLASS_ABSTRACT
         /// </summary>
-        public static int CLASS_INPUT => Clazz.GetField<int>("CLASS_INPUT");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#CLASS_DISPLAY
-        /// </summary>
-        public static int CLASS_DISPLAY => Clazz.GetField<int>("CLASS_DISPLAY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#CLASS_OUTPUT
-        /// </summary>
-        public static int CLASS_OUTPUT => Clazz.GetField<int>("CLASS_OUTPUT");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#CLASS_DEVICELINK
-        /// </summary>
-        public static int CLASS_DEVICELINK => Clazz.GetField<int>("CLASS_DEVICELINK");
+        public static int CLASS_ABSTRACT => Clazz.GetField<int>("CLASS_ABSTRACT");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#CLASS_COLORSPACECONVERSION
         /// </summary>
         public static int CLASS_COLORSPACECONVERSION => Clazz.GetField<int>("CLASS_COLORSPACECONVERSION");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#CLASS_ABSTRACT
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#CLASS_DEVICELINK
         /// </summary>
-        public static int CLASS_ABSTRACT => Clazz.GetField<int>("CLASS_ABSTRACT");
+        public static int CLASS_DEVICELINK => Clazz.GetField<int>("CLASS_DEVICELINK");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#CLASS_DISPLAY
+        /// </summary>
+        public static int CLASS_DISPLAY => Clazz.GetField<int>("CLASS_DISPLAY");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#CLASS_INPUT
+        /// </summary>
+        public static int CLASS_INPUT => Clazz.GetField<int>("CLASS_INPUT");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#CLASS_NAMEDCOLOR
         /// </summary>
         public static int CLASS_NAMEDCOLOR => Clazz.GetField<int>("CLASS_NAMEDCOLOR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigXYZData
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#CLASS_OUTPUT
         /// </summary>
-        public static int icSigXYZData => Clazz.GetField<int>("icSigXYZData");
+        public static int CLASS_OUTPUT => Clazz.GetField<int>("CLASS_OUTPUT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigLabData
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icAbsoluteColorimetric
         /// </summary>
-        public static int icSigLabData => Clazz.GetField<int>("icSigLabData");
+        public static int icAbsoluteColorimetric => Clazz.GetField<int>("icAbsoluteColorimetric");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigLuvData
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icCurveCount
         /// </summary>
-        public static int icSigLuvData => Clazz.GetField<int>("icSigLuvData");
+        public static int icCurveCount => Clazz.GetField<int>("icCurveCount");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigYCbCrData
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icCurveData
         /// </summary>
-        public static int icSigYCbCrData => Clazz.GetField<int>("icSigYCbCrData");
+        public static int icCurveData => Clazz.GetField<int>("icCurveData");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigYxyData
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icHdrAttributes
         /// </summary>
-        public static int icSigYxyData => Clazz.GetField<int>("icSigYxyData");
+        public static int icHdrAttributes => Clazz.GetField<int>("icHdrAttributes");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigRgbData
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icHdrCmmId
         /// </summary>
-        public static int icSigRgbData => Clazz.GetField<int>("icSigRgbData");
+        public static int icHdrCmmId => Clazz.GetField<int>("icHdrCmmId");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigGrayData
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icHdrColorSpace
         /// </summary>
-        public static int icSigGrayData => Clazz.GetField<int>("icSigGrayData");
+        public static int icHdrColorSpace => Clazz.GetField<int>("icHdrColorSpace");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigHsvData
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icHdrCreator
         /// </summary>
-        public static int icSigHsvData => Clazz.GetField<int>("icSigHsvData");
+        public static int icHdrCreator => Clazz.GetField<int>("icHdrCreator");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigHlsData
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icHdrDate
         /// </summary>
-        public static int icSigHlsData => Clazz.GetField<int>("icSigHlsData");
+        public static int icHdrDate => Clazz.GetField<int>("icHdrDate");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigCmykData
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icHdrDeviceClass
         /// </summary>
-        public static int icSigCmykData => Clazz.GetField<int>("icSigCmykData");
+        public static int icHdrDeviceClass => Clazz.GetField<int>("icHdrDeviceClass");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigCmyData
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icHdrFlags
         /// </summary>
-        public static int icSigCmyData => Clazz.GetField<int>("icSigCmyData");
+        public static int icHdrFlags => Clazz.GetField<int>("icHdrFlags");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigSpace2CLR
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icHdrIlluminant
         /// </summary>
-        public static int icSigSpace2CLR => Clazz.GetField<int>("icSigSpace2CLR");
+        public static int icHdrIlluminant => Clazz.GetField<int>("icHdrIlluminant");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigSpace3CLR
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icHdrMagic
         /// </summary>
-        public static int icSigSpace3CLR => Clazz.GetField<int>("icSigSpace3CLR");
+        public static int icHdrMagic => Clazz.GetField<int>("icHdrMagic");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigSpace4CLR
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icHdrManufacturer
         /// </summary>
-        public static int icSigSpace4CLR => Clazz.GetField<int>("icSigSpace4CLR");
+        public static int icHdrManufacturer => Clazz.GetField<int>("icHdrManufacturer");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigSpace5CLR
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icHdrModel
         /// </summary>
-        public static int icSigSpace5CLR => Clazz.GetField<int>("icSigSpace5CLR");
+        public static int icHdrModel => Clazz.GetField<int>("icHdrModel");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigSpace6CLR
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icHdrPcs
         /// </summary>
-        public static int icSigSpace6CLR => Clazz.GetField<int>("icSigSpace6CLR");
+        public static int icHdrPcs => Clazz.GetField<int>("icHdrPcs");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigSpace7CLR
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icHdrPlatform
         /// </summary>
-        public static int icSigSpace7CLR => Clazz.GetField<int>("icSigSpace7CLR");
+        public static int icHdrPlatform => Clazz.GetField<int>("icHdrPlatform");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigSpace8CLR
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icHdrProfileID
         /// </summary>
-        public static int icSigSpace8CLR => Clazz.GetField<int>("icSigSpace8CLR");
+        public static int icHdrProfileID => Clazz.GetField<int>("icHdrProfileID");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigSpace9CLR
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icHdrRenderingIntent
         /// </summary>
-        public static int icSigSpace9CLR => Clazz.GetField<int>("icSigSpace9CLR");
+        public static int icHdrRenderingIntent => Clazz.GetField<int>("icHdrRenderingIntent");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigSpaceACLR
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icHdrSize
         /// </summary>
-        public static int icSigSpaceACLR => Clazz.GetField<int>("icSigSpaceACLR");
+        public static int icHdrSize => Clazz.GetField<int>("icHdrSize");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigSpaceBCLR
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icHdrVersion
         /// </summary>
-        public static int icSigSpaceBCLR => Clazz.GetField<int>("icSigSpaceBCLR");
+        public static int icHdrVersion => Clazz.GetField<int>("icHdrVersion");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigSpaceCCLR
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icICCAbsoluteColorimetric
         /// </summary>
-        public static int icSigSpaceCCLR => Clazz.GetField<int>("icSigSpaceCCLR");
+        public static int icICCAbsoluteColorimetric => Clazz.GetField<int>("icICCAbsoluteColorimetric");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigSpaceDCLR
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icMediaRelativeColorimetric
         /// </summary>
-        public static int icSigSpaceDCLR => Clazz.GetField<int>("icSigSpaceDCLR");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigSpaceECLR
-        /// </summary>
-        public static int icSigSpaceECLR => Clazz.GetField<int>("icSigSpaceECLR");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigSpaceFCLR
-        /// </summary>
-        public static int icSigSpaceFCLR => Clazz.GetField<int>("icSigSpaceFCLR");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigInputClass
-        /// </summary>
-        public static int icSigInputClass => Clazz.GetField<int>("icSigInputClass");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigDisplayClass
-        /// </summary>
-        public static int icSigDisplayClass => Clazz.GetField<int>("icSigDisplayClass");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigOutputClass
-        /// </summary>
-        public static int icSigOutputClass => Clazz.GetField<int>("icSigOutputClass");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigLinkClass
-        /// </summary>
-        public static int icSigLinkClass => Clazz.GetField<int>("icSigLinkClass");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigAbstractClass
-        /// </summary>
-        public static int icSigAbstractClass => Clazz.GetField<int>("icSigAbstractClass");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigColorSpaceClass
-        /// </summary>
-        public static int icSigColorSpaceClass => Clazz.GetField<int>("icSigColorSpaceClass");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigNamedColorClass
-        /// </summary>
-        public static int icSigNamedColorClass => Clazz.GetField<int>("icSigNamedColorClass");
+        public static int icMediaRelativeColorimetric => Clazz.GetField<int>("icMediaRelativeColorimetric");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icPerceptual
         /// </summary>
@@ -203,25 +163,13 @@ namespace Java.Awt.ColorNs
         /// </summary>
         public static int icRelativeColorimetric => Clazz.GetField<int>("icRelativeColorimetric");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icMediaRelativeColorimetric
-        /// </summary>
-        public static int icMediaRelativeColorimetric => Clazz.GetField<int>("icMediaRelativeColorimetric");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSaturation
         /// </summary>
         public static int icSaturation => Clazz.GetField<int>("icSaturation");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icAbsoluteColorimetric
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigAbstractClass
         /// </summary>
-        public static int icAbsoluteColorimetric => Clazz.GetField<int>("icAbsoluteColorimetric");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icICCAbsoluteColorimetric
-        /// </summary>
-        public static int icICCAbsoluteColorimetric => Clazz.GetField<int>("icICCAbsoluteColorimetric");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigHead
-        /// </summary>
-        public static int icSigHead => Clazz.GetField<int>("icSigHead");
+        public static int icSigAbstractClass => Clazz.GetField<int>("icSigAbstractClass");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigAToB0Tag
         /// </summary>
@@ -267,6 +215,34 @@ namespace Java.Awt.ColorNs
         /// </summary>
         public static int icSigCharTargetTag => Clazz.GetField<int>("icSigCharTargetTag");
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigChromaticAdaptationTag
+        /// </summary>
+        public static int icSigChromaticAdaptationTag => Clazz.GetField<int>("icSigChromaticAdaptationTag");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigChromaticityTag
+        /// </summary>
+        public static int icSigChromaticityTag => Clazz.GetField<int>("icSigChromaticityTag");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigCmyData
+        /// </summary>
+        public static int icSigCmyData => Clazz.GetField<int>("icSigCmyData");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigCmykData
+        /// </summary>
+        public static int icSigCmykData => Clazz.GetField<int>("icSigCmykData");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigColorantOrderTag
+        /// </summary>
+        public static int icSigColorantOrderTag => Clazz.GetField<int>("icSigColorantOrderTag");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigColorantTableTag
+        /// </summary>
+        public static int icSigColorantTableTag => Clazz.GetField<int>("icSigColorantTableTag");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigColorSpaceClass
+        /// </summary>
+        public static int icSigColorSpaceClass => Clazz.GetField<int>("icSigColorSpaceClass");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigCopyrightTag
         /// </summary>
         public static int icSigCopyrightTag => Clazz.GetField<int>("icSigCopyrightTag");
@@ -287,9 +263,17 @@ namespace Java.Awt.ColorNs
         /// </summary>
         public static int icSigDeviceSettingsTag => Clazz.GetField<int>("icSigDeviceSettingsTag");
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigDisplayClass
+        /// </summary>
+        public static int icSigDisplayClass => Clazz.GetField<int>("icSigDisplayClass");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigGamutTag
         /// </summary>
         public static int icSigGamutTag => Clazz.GetField<int>("icSigGamutTag");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigGrayData
+        /// </summary>
+        public static int icSigGrayData => Clazz.GetField<int>("icSigGrayData");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigGrayTRCTag
         /// </summary>
@@ -307,9 +291,37 @@ namespace Java.Awt.ColorNs
         /// </summary>
         public static int icSigGreenTRCTag => Clazz.GetField<int>("icSigGreenTRCTag");
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigHead
+        /// </summary>
+        public static int icSigHead => Clazz.GetField<int>("icSigHead");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigHlsData
+        /// </summary>
+        public static int icSigHlsData => Clazz.GetField<int>("icSigHlsData");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigHsvData
+        /// </summary>
+        public static int icSigHsvData => Clazz.GetField<int>("icSigHsvData");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigInputClass
+        /// </summary>
+        public static int icSigInputClass => Clazz.GetField<int>("icSigInputClass");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigLabData
+        /// </summary>
+        public static int icSigLabData => Clazz.GetField<int>("icSigLabData");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigLinkClass
+        /// </summary>
+        public static int icSigLinkClass => Clazz.GetField<int>("icSigLinkClass");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigLuminanceTag
         /// </summary>
         public static int icSigLuminanceTag => Clazz.GetField<int>("icSigLuminanceTag");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigLuvData
+        /// </summary>
+        public static int icSigLuvData => Clazz.GetField<int>("icSigLuvData");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigMeasurementTag
         /// </summary>
@@ -326,6 +338,14 @@ namespace Java.Awt.ColorNs
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigNamedColor2Tag
         /// </summary>
         public static int icSigNamedColor2Tag => Clazz.GetField<int>("icSigNamedColor2Tag");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigNamedColorClass
+        /// </summary>
+        public static int icSigNamedColorClass => Clazz.GetField<int>("icSigNamedColorClass");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigOutputClass
+        /// </summary>
+        public static int icSigOutputClass => Clazz.GetField<int>("icSigOutputClass");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigOutputResponseTag
         /// </summary>
@@ -387,6 +407,10 @@ namespace Java.Awt.ColorNs
         /// </summary>
         public static int icSigRedTRCTag => Clazz.GetField<int>("icSigRedTRCTag");
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigRgbData
+        /// </summary>
+        public static int icSigRgbData => Clazz.GetField<int>("icSigRgbData");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigScreeningDescTag
         /// </summary>
         public static int icSigScreeningDescTag => Clazz.GetField<int>("icSigScreeningDescTag");
@@ -394,6 +418,62 @@ namespace Java.Awt.ColorNs
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigScreeningTag
         /// </summary>
         public static int icSigScreeningTag => Clazz.GetField<int>("icSigScreeningTag");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigSpace2CLR
+        /// </summary>
+        public static int icSigSpace2CLR => Clazz.GetField<int>("icSigSpace2CLR");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigSpace3CLR
+        /// </summary>
+        public static int icSigSpace3CLR => Clazz.GetField<int>("icSigSpace3CLR");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigSpace4CLR
+        /// </summary>
+        public static int icSigSpace4CLR => Clazz.GetField<int>("icSigSpace4CLR");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigSpace5CLR
+        /// </summary>
+        public static int icSigSpace5CLR => Clazz.GetField<int>("icSigSpace5CLR");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigSpace6CLR
+        /// </summary>
+        public static int icSigSpace6CLR => Clazz.GetField<int>("icSigSpace6CLR");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigSpace7CLR
+        /// </summary>
+        public static int icSigSpace7CLR => Clazz.GetField<int>("icSigSpace7CLR");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigSpace8CLR
+        /// </summary>
+        public static int icSigSpace8CLR => Clazz.GetField<int>("icSigSpace8CLR");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigSpace9CLR
+        /// </summary>
+        public static int icSigSpace9CLR => Clazz.GetField<int>("icSigSpace9CLR");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigSpaceACLR
+        /// </summary>
+        public static int icSigSpaceACLR => Clazz.GetField<int>("icSigSpaceACLR");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigSpaceBCLR
+        /// </summary>
+        public static int icSigSpaceBCLR => Clazz.GetField<int>("icSigSpaceBCLR");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigSpaceCCLR
+        /// </summary>
+        public static int icSigSpaceCCLR => Clazz.GetField<int>("icSigSpaceCCLR");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigSpaceDCLR
+        /// </summary>
+        public static int icSigSpaceDCLR => Clazz.GetField<int>("icSigSpaceDCLR");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigSpaceECLR
+        /// </summary>
+        public static int icSigSpaceECLR => Clazz.GetField<int>("icSigSpaceECLR");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigSpaceFCLR
+        /// </summary>
+        public static int icSigSpaceFCLR => Clazz.GetField<int>("icSigSpaceFCLR");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigTechnologyTag
         /// </summary>
@@ -411,105 +491,25 @@ namespace Java.Awt.ColorNs
         /// </summary>
         public static int icSigViewingConditionsTag => Clazz.GetField<int>("icSigViewingConditionsTag");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigChromaticityTag
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigXYZData
         /// </summary>
-        public static int icSigChromaticityTag => Clazz.GetField<int>("icSigChromaticityTag");
+        public static int icSigXYZData => Clazz.GetField<int>("icSigXYZData");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigChromaticAdaptationTag
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigYCbCrData
         /// </summary>
-        public static int icSigChromaticAdaptationTag => Clazz.GetField<int>("icSigChromaticAdaptationTag");
+        public static int icSigYCbCrData => Clazz.GetField<int>("icSigYCbCrData");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigColorantOrderTag
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigYxyData
         /// </summary>
-        public static int icSigColorantOrderTag => Clazz.GetField<int>("icSigColorantOrderTag");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icSigColorantTableTag
-        /// </summary>
-        public static int icSigColorantTableTag => Clazz.GetField<int>("icSigColorantTableTag");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icHdrSize
-        /// </summary>
-        public static int icHdrSize => Clazz.GetField<int>("icHdrSize");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icHdrCmmId
-        /// </summary>
-        public static int icHdrCmmId => Clazz.GetField<int>("icHdrCmmId");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icHdrVersion
-        /// </summary>
-        public static int icHdrVersion => Clazz.GetField<int>("icHdrVersion");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icHdrDeviceClass
-        /// </summary>
-        public static int icHdrDeviceClass => Clazz.GetField<int>("icHdrDeviceClass");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icHdrColorSpace
-        /// </summary>
-        public static int icHdrColorSpace => Clazz.GetField<int>("icHdrColorSpace");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icHdrPcs
-        /// </summary>
-        public static int icHdrPcs => Clazz.GetField<int>("icHdrPcs");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icHdrDate
-        /// </summary>
-        public static int icHdrDate => Clazz.GetField<int>("icHdrDate");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icHdrMagic
-        /// </summary>
-        public static int icHdrMagic => Clazz.GetField<int>("icHdrMagic");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icHdrPlatform
-        /// </summary>
-        public static int icHdrPlatform => Clazz.GetField<int>("icHdrPlatform");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icHdrFlags
-        /// </summary>
-        public static int icHdrFlags => Clazz.GetField<int>("icHdrFlags");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icHdrManufacturer
-        /// </summary>
-        public static int icHdrManufacturer => Clazz.GetField<int>("icHdrManufacturer");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icHdrModel
-        /// </summary>
-        public static int icHdrModel => Clazz.GetField<int>("icHdrModel");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icHdrAttributes
-        /// </summary>
-        public static int icHdrAttributes => Clazz.GetField<int>("icHdrAttributes");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icHdrRenderingIntent
-        /// </summary>
-        public static int icHdrRenderingIntent => Clazz.GetField<int>("icHdrRenderingIntent");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icHdrIlluminant
-        /// </summary>
-        public static int icHdrIlluminant => Clazz.GetField<int>("icHdrIlluminant");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icHdrCreator
-        /// </summary>
-        public static int icHdrCreator => Clazz.GetField<int>("icHdrCreator");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icHdrProfileID
-        /// </summary>
-        public static int icHdrProfileID => Clazz.GetField<int>("icHdrProfileID");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icTagType
-        /// </summary>
-        public static int icTagType => Clazz.GetField<int>("icTagType");
+        public static int icSigYxyData => Clazz.GetField<int>("icSigYxyData");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icTagReserved
         /// </summary>
         public static int icTagReserved => Clazz.GetField<int>("icTagReserved");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icCurveCount
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icTagType
         /// </summary>
-        public static int icCurveCount => Clazz.GetField<int>("icCurveCount");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icCurveData
-        /// </summary>
-        public static int icCurveData => Clazz.GetField<int>("icCurveData");
+        public static int icTagType => Clazz.GetField<int>("icTagType");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#icXYZNumberX
         /// </summary>

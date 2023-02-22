@@ -23,23 +23,23 @@
 
 namespace Java.Text.Spi
 {
-    #region DateFormatProvider
+    #region BreakIteratorProvider
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/spi/DateFormatProvider.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/spi/BreakIteratorProvider.html
     /// </summary>
-    public partial class DateFormatProvider : Java.Util.Spi.LocaleServiceProvider
+    public partial class BreakIteratorProvider : Java.Util.Spi.LocaleServiceProvider
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public DateFormatProvider() { }
+        public BreakIteratorProvider() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public DateFormatProvider(params object[] args) : base(args) { }
+        public BreakIteratorProvider(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.text.spi.DateFormatProvider";
+        public override string ClassName => "java.text.spi.BreakIteratorProvider";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -58,23 +58,58 @@ namespace Java.Text.Spi
     }
     #endregion
 
-    #region DecimalFormatSymbolsProvider
+    #region CollatorProvider
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/spi/DecimalFormatSymbolsProvider.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/spi/CollatorProvider.html
     /// </summary>
-    public partial class DecimalFormatSymbolsProvider : Java.Util.Spi.LocaleServiceProvider
+    public partial class CollatorProvider : Java.Util.Spi.LocaleServiceProvider
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public DecimalFormatSymbolsProvider() { }
+        public CollatorProvider() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public DecimalFormatSymbolsProvider(params object[] args) : base(args) { }
+        public CollatorProvider(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.text.spi.DecimalFormatSymbolsProvider";
+        public override string ClassName => "java.text.spi.CollatorProvider";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region DateFormatProvider
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/spi/DateFormatProvider.html
+    /// </summary>
+    public partial class DateFormatProvider : Java.Util.Spi.LocaleServiceProvider
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public DateFormatProvider() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public DateFormatProvider(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.text.spi.DateFormatProvider";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -128,58 +163,23 @@ namespace Java.Text.Spi
     }
     #endregion
 
-    #region BreakIteratorProvider
+    #region DecimalFormatSymbolsProvider
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/spi/BreakIteratorProvider.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/spi/DecimalFormatSymbolsProvider.html
     /// </summary>
-    public partial class BreakIteratorProvider : Java.Util.Spi.LocaleServiceProvider
+    public partial class DecimalFormatSymbolsProvider : Java.Util.Spi.LocaleServiceProvider
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public BreakIteratorProvider() { }
+        public DecimalFormatSymbolsProvider() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public BreakIteratorProvider(params object[] args) : base(args) { }
+        public DecimalFormatSymbolsProvider(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.text.spi.BreakIteratorProvider";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region CollatorProvider
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/spi/CollatorProvider.html
-    /// </summary>
-    public partial class CollatorProvider : Java.Util.Spi.LocaleServiceProvider
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public CollatorProvider() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public CollatorProvider(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.text.spi.CollatorProvider";
+        public override string ClassName => "java.text.spi.DecimalFormatSymbolsProvider";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;

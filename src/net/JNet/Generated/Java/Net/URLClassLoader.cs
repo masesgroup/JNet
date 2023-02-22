@@ -30,10 +30,10 @@ namespace Java.Net
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLClassLoader.html#<init>(java.net.URL[],java.lang.ClassLoader,java.net.URLStreamHandlerFactory)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLClassLoader.html#<init>(java.lang.String,java.net.URL[],java.lang.ClassLoader,java.net.URLStreamHandlerFactory)
         /// </summary>
-        public URLClassLoader(Java.Net.URL[] arg0, Java.Lang.ClassLoader arg1, Java.Net.URLStreamHandlerFactory arg2)
-            : base(arg0, arg1, arg2)
+        public URLClassLoader(string arg0, Java.Net.URL[] arg1, Java.Lang.ClassLoader arg2, Java.Net.URLStreamHandlerFactory arg3)
+            : base(arg0, arg1, arg2, arg3)
         {
         }
         /// <summary>
@@ -44,10 +44,10 @@ namespace Java.Net
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLClassLoader.html#<init>(java.lang.String,java.net.URL[],java.lang.ClassLoader,java.net.URLStreamHandlerFactory)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLClassLoader.html#<init>(java.net.URL[],java.lang.ClassLoader,java.net.URLStreamHandlerFactory)
         /// </summary>
-        public URLClassLoader(string arg0, Java.Net.URL[] arg1, Java.Lang.ClassLoader arg2, Java.Net.URLStreamHandlerFactory arg3)
-            : base(arg0, arg1, arg2, arg3)
+        public URLClassLoader(Java.Net.URL[] arg0, Java.Lang.ClassLoader arg1, Java.Net.URLStreamHandlerFactory arg2)
+            : base(arg0, arg1, arg2)
         {
         }
         /// <summary>

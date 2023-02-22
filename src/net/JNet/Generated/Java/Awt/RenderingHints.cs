@@ -46,41 +46,89 @@ namespace Java.Awt
 
         #region Fields
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#KEY_ALPHA_INTERPOLATION
+        /// </summary>
+        public static Java.Awt.RenderingHints.Key KEY_ALPHA_INTERPOLATION => Clazz.GetField<Java.Awt.RenderingHints.Key>("KEY_ALPHA_INTERPOLATION");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#KEY_ANTIALIASING
         /// </summary>
         public static Java.Awt.RenderingHints.Key KEY_ANTIALIASING => Clazz.GetField<Java.Awt.RenderingHints.Key>("KEY_ANTIALIASING");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_ANTIALIAS_ON
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#KEY_COLOR_RENDERING
         /// </summary>
-        public static object VALUE_ANTIALIAS_ON => Clazz.GetField("VALUE_ANTIALIAS_ON");
+        public static Java.Awt.RenderingHints.Key KEY_COLOR_RENDERING => Clazz.GetField<Java.Awt.RenderingHints.Key>("KEY_COLOR_RENDERING");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_ANTIALIAS_OFF
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#KEY_DITHERING
         /// </summary>
-        public static object VALUE_ANTIALIAS_OFF => Clazz.GetField("VALUE_ANTIALIAS_OFF");
+        public static Java.Awt.RenderingHints.Key KEY_DITHERING => Clazz.GetField<Java.Awt.RenderingHints.Key>("KEY_DITHERING");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_ANTIALIAS_DEFAULT
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#KEY_FRACTIONALMETRICS
         /// </summary>
-        public static object VALUE_ANTIALIAS_DEFAULT => Clazz.GetField("VALUE_ANTIALIAS_DEFAULT");
+        public static Java.Awt.RenderingHints.Key KEY_FRACTIONALMETRICS => Clazz.GetField<Java.Awt.RenderingHints.Key>("KEY_FRACTIONALMETRICS");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#KEY_INTERPOLATION
+        /// </summary>
+        public static Java.Awt.RenderingHints.Key KEY_INTERPOLATION => Clazz.GetField<Java.Awt.RenderingHints.Key>("KEY_INTERPOLATION");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#KEY_RENDERING
         /// </summary>
         public static Java.Awt.RenderingHints.Key KEY_RENDERING => Clazz.GetField<Java.Awt.RenderingHints.Key>("KEY_RENDERING");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_RENDER_SPEED
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#KEY_RESOLUTION_VARIANT
         /// </summary>
-        public static object VALUE_RENDER_SPEED => Clazz.GetField("VALUE_RENDER_SPEED");
+        public static Java.Awt.RenderingHints.Key KEY_RESOLUTION_VARIANT => Clazz.GetField<Java.Awt.RenderingHints.Key>("KEY_RESOLUTION_VARIANT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_RENDER_QUALITY
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#KEY_STROKE_CONTROL
         /// </summary>
-        public static object VALUE_RENDER_QUALITY => Clazz.GetField("VALUE_RENDER_QUALITY");
+        public static Java.Awt.RenderingHints.Key KEY_STROKE_CONTROL => Clazz.GetField<Java.Awt.RenderingHints.Key>("KEY_STROKE_CONTROL");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_RENDER_DEFAULT
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#KEY_TEXT_ANTIALIASING
         /// </summary>
-        public static object VALUE_RENDER_DEFAULT => Clazz.GetField("VALUE_RENDER_DEFAULT");
+        public static Java.Awt.RenderingHints.Key KEY_TEXT_ANTIALIASING => Clazz.GetField<Java.Awt.RenderingHints.Key>("KEY_TEXT_ANTIALIASING");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#KEY_DITHERING
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#KEY_TEXT_LCD_CONTRAST
         /// </summary>
-        public static Java.Awt.RenderingHints.Key KEY_DITHERING => Clazz.GetField<Java.Awt.RenderingHints.Key>("KEY_DITHERING");
+        public static Java.Awt.RenderingHints.Key KEY_TEXT_LCD_CONTRAST => Clazz.GetField<Java.Awt.RenderingHints.Key>("KEY_TEXT_LCD_CONTRAST");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_ALPHA_INTERPOLATION_DEFAULT
+        /// </summary>
+        public static object VALUE_ALPHA_INTERPOLATION_DEFAULT => Clazz.GetField("VALUE_ALPHA_INTERPOLATION_DEFAULT");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_ALPHA_INTERPOLATION_QUALITY
+        /// </summary>
+        public static object VALUE_ALPHA_INTERPOLATION_QUALITY => Clazz.GetField("VALUE_ALPHA_INTERPOLATION_QUALITY");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_ALPHA_INTERPOLATION_SPEED
+        /// </summary>
+        public static object VALUE_ALPHA_INTERPOLATION_SPEED => Clazz.GetField("VALUE_ALPHA_INTERPOLATION_SPEED");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_ANTIALIAS_DEFAULT
+        /// </summary>
+        public static object VALUE_ANTIALIAS_DEFAULT => Clazz.GetField("VALUE_ANTIALIAS_DEFAULT");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_ANTIALIAS_OFF
+        /// </summary>
+        public static object VALUE_ANTIALIAS_OFF => Clazz.GetField("VALUE_ANTIALIAS_OFF");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_ANTIALIAS_ON
+        /// </summary>
+        public static object VALUE_ANTIALIAS_ON => Clazz.GetField("VALUE_ANTIALIAS_ON");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_COLOR_RENDER_DEFAULT
+        /// </summary>
+        public static object VALUE_COLOR_RENDER_DEFAULT => Clazz.GetField("VALUE_COLOR_RENDER_DEFAULT");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_COLOR_RENDER_QUALITY
+        /// </summary>
+        public static object VALUE_COLOR_RENDER_QUALITY => Clazz.GetField("VALUE_COLOR_RENDER_QUALITY");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_COLOR_RENDER_SPEED
+        /// </summary>
+        public static object VALUE_COLOR_RENDER_SPEED => Clazz.GetField("VALUE_COLOR_RENDER_SPEED");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_DITHER_DEFAULT
+        /// </summary>
+        public static object VALUE_DITHER_DEFAULT => Clazz.GetField("VALUE_DITHER_DEFAULT");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_DITHER_DISABLE
         /// </summary>
@@ -90,53 +138,9 @@ namespace Java.Awt
         /// </summary>
         public static object VALUE_DITHER_ENABLE => Clazz.GetField("VALUE_DITHER_ENABLE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_DITHER_DEFAULT
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_FRACTIONALMETRICS_DEFAULT
         /// </summary>
-        public static object VALUE_DITHER_DEFAULT => Clazz.GetField("VALUE_DITHER_DEFAULT");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#KEY_TEXT_ANTIALIASING
-        /// </summary>
-        public static Java.Awt.RenderingHints.Key KEY_TEXT_ANTIALIASING => Clazz.GetField<Java.Awt.RenderingHints.Key>("KEY_TEXT_ANTIALIASING");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_TEXT_ANTIALIAS_ON
-        /// </summary>
-        public static object VALUE_TEXT_ANTIALIAS_ON => Clazz.GetField("VALUE_TEXT_ANTIALIAS_ON");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_TEXT_ANTIALIAS_OFF
-        /// </summary>
-        public static object VALUE_TEXT_ANTIALIAS_OFF => Clazz.GetField("VALUE_TEXT_ANTIALIAS_OFF");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_TEXT_ANTIALIAS_DEFAULT
-        /// </summary>
-        public static object VALUE_TEXT_ANTIALIAS_DEFAULT => Clazz.GetField("VALUE_TEXT_ANTIALIAS_DEFAULT");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_TEXT_ANTIALIAS_GASP
-        /// </summary>
-        public static object VALUE_TEXT_ANTIALIAS_GASP => Clazz.GetField("VALUE_TEXT_ANTIALIAS_GASP");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_TEXT_ANTIALIAS_LCD_HRGB
-        /// </summary>
-        public static object VALUE_TEXT_ANTIALIAS_LCD_HRGB => Clazz.GetField("VALUE_TEXT_ANTIALIAS_LCD_HRGB");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_TEXT_ANTIALIAS_LCD_HBGR
-        /// </summary>
-        public static object VALUE_TEXT_ANTIALIAS_LCD_HBGR => Clazz.GetField("VALUE_TEXT_ANTIALIAS_LCD_HBGR");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_TEXT_ANTIALIAS_LCD_VRGB
-        /// </summary>
-        public static object VALUE_TEXT_ANTIALIAS_LCD_VRGB => Clazz.GetField("VALUE_TEXT_ANTIALIAS_LCD_VRGB");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_TEXT_ANTIALIAS_LCD_VBGR
-        /// </summary>
-        public static object VALUE_TEXT_ANTIALIAS_LCD_VBGR => Clazz.GetField("VALUE_TEXT_ANTIALIAS_LCD_VBGR");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#KEY_TEXT_LCD_CONTRAST
-        /// </summary>
-        public static Java.Awt.RenderingHints.Key KEY_TEXT_LCD_CONTRAST => Clazz.GetField<Java.Awt.RenderingHints.Key>("KEY_TEXT_LCD_CONTRAST");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#KEY_FRACTIONALMETRICS
-        /// </summary>
-        public static Java.Awt.RenderingHints.Key KEY_FRACTIONALMETRICS => Clazz.GetField<Java.Awt.RenderingHints.Key>("KEY_FRACTIONALMETRICS");
+        public static object VALUE_FRACTIONALMETRICS_DEFAULT => Clazz.GetField("VALUE_FRACTIONALMETRICS_DEFAULT");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_FRACTIONALMETRICS_OFF
         /// </summary>
@@ -146,61 +150,45 @@ namespace Java.Awt
         /// </summary>
         public static object VALUE_FRACTIONALMETRICS_ON => Clazz.GetField("VALUE_FRACTIONALMETRICS_ON");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_FRACTIONALMETRICS_DEFAULT
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_INTERPOLATION_BICUBIC
         /// </summary>
-        public static object VALUE_FRACTIONALMETRICS_DEFAULT => Clazz.GetField("VALUE_FRACTIONALMETRICS_DEFAULT");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#KEY_INTERPOLATION
-        /// </summary>
-        public static Java.Awt.RenderingHints.Key KEY_INTERPOLATION => Clazz.GetField<Java.Awt.RenderingHints.Key>("KEY_INTERPOLATION");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_INTERPOLATION_NEAREST_NEIGHBOR
-        /// </summary>
-        public static object VALUE_INTERPOLATION_NEAREST_NEIGHBOR => Clazz.GetField("VALUE_INTERPOLATION_NEAREST_NEIGHBOR");
+        public static object VALUE_INTERPOLATION_BICUBIC => Clazz.GetField("VALUE_INTERPOLATION_BICUBIC");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_INTERPOLATION_BILINEAR
         /// </summary>
         public static object VALUE_INTERPOLATION_BILINEAR => Clazz.GetField("VALUE_INTERPOLATION_BILINEAR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_INTERPOLATION_BICUBIC
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_INTERPOLATION_NEAREST_NEIGHBOR
         /// </summary>
-        public static object VALUE_INTERPOLATION_BICUBIC => Clazz.GetField("VALUE_INTERPOLATION_BICUBIC");
+        public static object VALUE_INTERPOLATION_NEAREST_NEIGHBOR => Clazz.GetField("VALUE_INTERPOLATION_NEAREST_NEIGHBOR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#KEY_ALPHA_INTERPOLATION
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_RENDER_DEFAULT
         /// </summary>
-        public static Java.Awt.RenderingHints.Key KEY_ALPHA_INTERPOLATION => Clazz.GetField<Java.Awt.RenderingHints.Key>("KEY_ALPHA_INTERPOLATION");
+        public static object VALUE_RENDER_DEFAULT => Clazz.GetField("VALUE_RENDER_DEFAULT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_ALPHA_INTERPOLATION_SPEED
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_RENDER_QUALITY
         /// </summary>
-        public static object VALUE_ALPHA_INTERPOLATION_SPEED => Clazz.GetField("VALUE_ALPHA_INTERPOLATION_SPEED");
+        public static object VALUE_RENDER_QUALITY => Clazz.GetField("VALUE_RENDER_QUALITY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_ALPHA_INTERPOLATION_QUALITY
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_RENDER_SPEED
         /// </summary>
-        public static object VALUE_ALPHA_INTERPOLATION_QUALITY => Clazz.GetField("VALUE_ALPHA_INTERPOLATION_QUALITY");
+        public static object VALUE_RENDER_SPEED => Clazz.GetField("VALUE_RENDER_SPEED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_ALPHA_INTERPOLATION_DEFAULT
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_RESOLUTION_VARIANT_BASE
         /// </summary>
-        public static object VALUE_ALPHA_INTERPOLATION_DEFAULT => Clazz.GetField("VALUE_ALPHA_INTERPOLATION_DEFAULT");
+        public static object VALUE_RESOLUTION_VARIANT_BASE => Clazz.GetField("VALUE_RESOLUTION_VARIANT_BASE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#KEY_COLOR_RENDERING
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_RESOLUTION_VARIANT_DEFAULT
         /// </summary>
-        public static Java.Awt.RenderingHints.Key KEY_COLOR_RENDERING => Clazz.GetField<Java.Awt.RenderingHints.Key>("KEY_COLOR_RENDERING");
+        public static object VALUE_RESOLUTION_VARIANT_DEFAULT => Clazz.GetField("VALUE_RESOLUTION_VARIANT_DEFAULT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_COLOR_RENDER_SPEED
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_RESOLUTION_VARIANT_DPI_FIT
         /// </summary>
-        public static object VALUE_COLOR_RENDER_SPEED => Clazz.GetField("VALUE_COLOR_RENDER_SPEED");
+        public static object VALUE_RESOLUTION_VARIANT_DPI_FIT => Clazz.GetField("VALUE_RESOLUTION_VARIANT_DPI_FIT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_COLOR_RENDER_QUALITY
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_RESOLUTION_VARIANT_SIZE_FIT
         /// </summary>
-        public static object VALUE_COLOR_RENDER_QUALITY => Clazz.GetField("VALUE_COLOR_RENDER_QUALITY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_COLOR_RENDER_DEFAULT
-        /// </summary>
-        public static object VALUE_COLOR_RENDER_DEFAULT => Clazz.GetField("VALUE_COLOR_RENDER_DEFAULT");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#KEY_STROKE_CONTROL
-        /// </summary>
-        public static Java.Awt.RenderingHints.Key KEY_STROKE_CONTROL => Clazz.GetField<Java.Awt.RenderingHints.Key>("KEY_STROKE_CONTROL");
+        public static object VALUE_RESOLUTION_VARIANT_SIZE_FIT => Clazz.GetField("VALUE_RESOLUTION_VARIANT_SIZE_FIT");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_STROKE_DEFAULT
         /// </summary>
@@ -214,25 +202,37 @@ namespace Java.Awt
         /// </summary>
         public static object VALUE_STROKE_PURE => Clazz.GetField("VALUE_STROKE_PURE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#KEY_RESOLUTION_VARIANT
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_TEXT_ANTIALIAS_DEFAULT
         /// </summary>
-        public static Java.Awt.RenderingHints.Key KEY_RESOLUTION_VARIANT => Clazz.GetField<Java.Awt.RenderingHints.Key>("KEY_RESOLUTION_VARIANT");
+        public static object VALUE_TEXT_ANTIALIAS_DEFAULT => Clazz.GetField("VALUE_TEXT_ANTIALIAS_DEFAULT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_RESOLUTION_VARIANT_DEFAULT
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_TEXT_ANTIALIAS_GASP
         /// </summary>
-        public static object VALUE_RESOLUTION_VARIANT_DEFAULT => Clazz.GetField("VALUE_RESOLUTION_VARIANT_DEFAULT");
+        public static object VALUE_TEXT_ANTIALIAS_GASP => Clazz.GetField("VALUE_TEXT_ANTIALIAS_GASP");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_RESOLUTION_VARIANT_BASE
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_TEXT_ANTIALIAS_LCD_HBGR
         /// </summary>
-        public static object VALUE_RESOLUTION_VARIANT_BASE => Clazz.GetField("VALUE_RESOLUTION_VARIANT_BASE");
+        public static object VALUE_TEXT_ANTIALIAS_LCD_HBGR => Clazz.GetField("VALUE_TEXT_ANTIALIAS_LCD_HBGR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_RESOLUTION_VARIANT_SIZE_FIT
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_TEXT_ANTIALIAS_LCD_HRGB
         /// </summary>
-        public static object VALUE_RESOLUTION_VARIANT_SIZE_FIT => Clazz.GetField("VALUE_RESOLUTION_VARIANT_SIZE_FIT");
+        public static object VALUE_TEXT_ANTIALIAS_LCD_HRGB => Clazz.GetField("VALUE_TEXT_ANTIALIAS_LCD_HRGB");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_RESOLUTION_VARIANT_DPI_FIT
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_TEXT_ANTIALIAS_LCD_VBGR
         /// </summary>
-        public static object VALUE_RESOLUTION_VARIANT_DPI_FIT => Clazz.GetField("VALUE_RESOLUTION_VARIANT_DPI_FIT");
+        public static object VALUE_TEXT_ANTIALIAS_LCD_VBGR => Clazz.GetField("VALUE_TEXT_ANTIALIAS_LCD_VBGR");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_TEXT_ANTIALIAS_LCD_VRGB
+        /// </summary>
+        public static object VALUE_TEXT_ANTIALIAS_LCD_VRGB => Clazz.GetField("VALUE_TEXT_ANTIALIAS_LCD_VRGB");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_TEXT_ANTIALIAS_OFF
+        /// </summary>
+        public static object VALUE_TEXT_ANTIALIAS_OFF => Clazz.GetField("VALUE_TEXT_ANTIALIAS_OFF");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/RenderingHints.html#VALUE_TEXT_ANTIALIAS_ON
+        /// </summary>
+        public static object VALUE_TEXT_ANTIALIAS_ON => Clazz.GetField("VALUE_TEXT_ANTIALIAS_ON");
         
         #endregion
 

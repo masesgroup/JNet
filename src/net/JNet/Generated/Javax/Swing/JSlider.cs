@@ -51,16 +51,16 @@ namespace Javax.Swing
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSlider.html#<init>(javax.swing.BoundedRangeModel)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSlider.html#<init>(int)
         /// </summary>
-        public JSlider(Javax.Swing.BoundedRangeModel arg0)
+        public JSlider(int arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSlider.html#<init>(int)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSlider.html#<init>(javax.swing.BoundedRangeModel)
         /// </summary>
-        public JSlider(int arg0)
+        public JSlider(Javax.Swing.BoundedRangeModel arg0)
             : base(arg0)
         {
         }

@@ -30,17 +30,17 @@ namespace Java.Security.Spec
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/RSAKeyGenParameterSpec.html#<init>(int,java.math.BigInteger)
-        /// </summary>
-        public RSAKeyGenParameterSpec(int arg0, Java.Math.BigInteger arg1)
-            : base(arg0, arg1)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/RSAKeyGenParameterSpec.html#<init>(int,java.math.BigInteger,java.security.spec.AlgorithmParameterSpec)
         /// </summary>
         public RSAKeyGenParameterSpec(int arg0, Java.Math.BigInteger arg1, Java.Security.Spec.AlgorithmParameterSpec arg2)
             : base(arg0, arg1, arg2)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/spec/RSAKeyGenParameterSpec.html#<init>(int,java.math.BigInteger)
+        /// </summary>
+        public RSAKeyGenParameterSpec(int arg0, Java.Math.BigInteger arg1)
+            : base(arg0, arg1)
         {
         }
         

@@ -308,17 +308,17 @@ namespace Java.Awt.Geom
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.Double.html#<init>(java.awt.geom.Point2D,java.awt.geom.Point2D)
-            /// </summary>
-            public Double(Java.Awt.Geom.Point2D arg0, Java.Awt.Geom.Point2D arg1)
-                : base(arg0, arg1)
-            {
-            }
-            /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.Double.html#<init>(double,double,double,double)
             /// </summary>
             public Double(double arg0, double arg1, double arg2, double arg3)
                 : base(arg0, arg1, arg2, arg3)
+            {
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.Double.html#<init>(java.awt.geom.Point2D,java.awt.geom.Point2D)
+            /// </summary>
+            public Double(Java.Awt.Geom.Point2D arg0, Java.Awt.Geom.Point2D arg1)
+                : base(arg0, arg1)
             {
             }
             
@@ -335,13 +335,13 @@ namespace Java.Awt.Geom
             /// </summary>
             public double x1 => Instance.GetField<double>("x1");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.Double.html#y1
-            /// </summary>
-            public double y1 => Instance.GetField<double>("y1");
-            /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.Double.html#x2
             /// </summary>
             public double x2 => Instance.GetField<double>("x2");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.Double.html#y1
+            /// </summary>
+            public double y1 => Instance.GetField<double>("y1");
             /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.Double.html#y2
             /// </summary>
@@ -366,17 +366,17 @@ namespace Java.Awt.Geom
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.Float.html#<init>(java.awt.geom.Point2D,java.awt.geom.Point2D)
-            /// </summary>
-            public Float(Java.Awt.Geom.Point2D arg0, Java.Awt.Geom.Point2D arg1)
-                : base(arg0, arg1)
-            {
-            }
-            /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.Float.html#<init>(float,float,float,float)
             /// </summary>
             public Float(float arg0, float arg1, float arg2, float arg3)
                 : base(arg0, arg1, arg2, arg3)
+            {
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.Float.html#<init>(java.awt.geom.Point2D,java.awt.geom.Point2D)
+            /// </summary>
+            public Float(Java.Awt.Geom.Point2D arg0, Java.Awt.Geom.Point2D arg1)
+                : base(arg0, arg1)
             {
             }
             
@@ -393,13 +393,13 @@ namespace Java.Awt.Geom
             /// </summary>
             public float x1 => Instance.GetField<float>("x1");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.Float.html#y1
-            /// </summary>
-            public float y1 => Instance.GetField<float>("y1");
-            /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.Float.html#x2
             /// </summary>
             public float x2 => Instance.GetField<float>("x2");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.Float.html#y1
+            /// </summary>
+            public float y1 => Instance.GetField<float>("y1");
             /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.Float.html#y2
             /// </summary>

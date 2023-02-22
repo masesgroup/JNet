@@ -38,6 +38,58 @@ namespace Org.W3c.Dom.Traversal
 
         #region Fields
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeFilter.html#SHOW_ALL
+        /// </summary>
+        public static int SHOW_ALL => Clazz.GetField<int>("SHOW_ALL");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeFilter.html#SHOW_ATTRIBUTE
+        /// </summary>
+        public static int SHOW_ATTRIBUTE => Clazz.GetField<int>("SHOW_ATTRIBUTE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeFilter.html#SHOW_CDATA_SECTION
+        /// </summary>
+        public static int SHOW_CDATA_SECTION => Clazz.GetField<int>("SHOW_CDATA_SECTION");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeFilter.html#SHOW_COMMENT
+        /// </summary>
+        public static int SHOW_COMMENT => Clazz.GetField<int>("SHOW_COMMENT");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeFilter.html#SHOW_DOCUMENT
+        /// </summary>
+        public static int SHOW_DOCUMENT => Clazz.GetField<int>("SHOW_DOCUMENT");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeFilter.html#SHOW_DOCUMENT_FRAGMENT
+        /// </summary>
+        public static int SHOW_DOCUMENT_FRAGMENT => Clazz.GetField<int>("SHOW_DOCUMENT_FRAGMENT");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeFilter.html#SHOW_DOCUMENT_TYPE
+        /// </summary>
+        public static int SHOW_DOCUMENT_TYPE => Clazz.GetField<int>("SHOW_DOCUMENT_TYPE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeFilter.html#SHOW_ELEMENT
+        /// </summary>
+        public static int SHOW_ELEMENT => Clazz.GetField<int>("SHOW_ELEMENT");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeFilter.html#SHOW_ENTITY
+        /// </summary>
+        public static int SHOW_ENTITY => Clazz.GetField<int>("SHOW_ENTITY");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeFilter.html#SHOW_ENTITY_REFERENCE
+        /// </summary>
+        public static int SHOW_ENTITY_REFERENCE => Clazz.GetField<int>("SHOW_ENTITY_REFERENCE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeFilter.html#SHOW_NOTATION
+        /// </summary>
+        public static int SHOW_NOTATION => Clazz.GetField<int>("SHOW_NOTATION");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeFilter.html#SHOW_PROCESSING_INSTRUCTION
+        /// </summary>
+        public static int SHOW_PROCESSING_INSTRUCTION => Clazz.GetField<int>("SHOW_PROCESSING_INSTRUCTION");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeFilter.html#SHOW_TEXT
+        /// </summary>
+        public static int SHOW_TEXT => Clazz.GetField<int>("SHOW_TEXT");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeFilter.html#FILTER_ACCEPT
         /// </summary>
         public static short FILTER_ACCEPT => Clazz.GetField<short>("FILTER_ACCEPT");
@@ -49,58 +101,6 @@ namespace Org.W3c.Dom.Traversal
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeFilter.html#FILTER_SKIP
         /// </summary>
         public static short FILTER_SKIP => Clazz.GetField<short>("FILTER_SKIP");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeFilter.html#SHOW_ALL
-        /// </summary>
-        public static int SHOW_ALL => Clazz.GetField<int>("SHOW_ALL");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeFilter.html#SHOW_ELEMENT
-        /// </summary>
-        public static int SHOW_ELEMENT => Clazz.GetField<int>("SHOW_ELEMENT");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeFilter.html#SHOW_ATTRIBUTE
-        /// </summary>
-        public static int SHOW_ATTRIBUTE => Clazz.GetField<int>("SHOW_ATTRIBUTE");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeFilter.html#SHOW_TEXT
-        /// </summary>
-        public static int SHOW_TEXT => Clazz.GetField<int>("SHOW_TEXT");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeFilter.html#SHOW_CDATA_SECTION
-        /// </summary>
-        public static int SHOW_CDATA_SECTION => Clazz.GetField<int>("SHOW_CDATA_SECTION");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeFilter.html#SHOW_ENTITY_REFERENCE
-        /// </summary>
-        public static int SHOW_ENTITY_REFERENCE => Clazz.GetField<int>("SHOW_ENTITY_REFERENCE");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeFilter.html#SHOW_ENTITY
-        /// </summary>
-        public static int SHOW_ENTITY => Clazz.GetField<int>("SHOW_ENTITY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeFilter.html#SHOW_PROCESSING_INSTRUCTION
-        /// </summary>
-        public static int SHOW_PROCESSING_INSTRUCTION => Clazz.GetField<int>("SHOW_PROCESSING_INSTRUCTION");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeFilter.html#SHOW_COMMENT
-        /// </summary>
-        public static int SHOW_COMMENT => Clazz.GetField<int>("SHOW_COMMENT");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeFilter.html#SHOW_DOCUMENT
-        /// </summary>
-        public static int SHOW_DOCUMENT => Clazz.GetField<int>("SHOW_DOCUMENT");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeFilter.html#SHOW_DOCUMENT_TYPE
-        /// </summary>
-        public static int SHOW_DOCUMENT_TYPE => Clazz.GetField<int>("SHOW_DOCUMENT_TYPE");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeFilter.html#SHOW_DOCUMENT_FRAGMENT
-        /// </summary>
-        public static int SHOW_DOCUMENT_FRAGMENT => Clazz.GetField<int>("SHOW_DOCUMENT_FRAGMENT");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/NodeFilter.html#SHOW_NOTATION
-        /// </summary>
-        public static int SHOW_NOTATION => Clazz.GetField<int>("SHOW_NOTATION");
         
         #endregion
 

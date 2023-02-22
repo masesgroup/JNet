@@ -54,13 +54,13 @@ namespace Java.Awt.ImageNs
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ConvolveOp.html#EDGE_ZERO_FILL
-        /// </summary>
-        public static int EDGE_ZERO_FILL => Clazz.GetField<int>("EDGE_ZERO_FILL");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ConvolveOp.html#EDGE_NO_OP
         /// </summary>
         public static int EDGE_NO_OP => Clazz.GetField<int>("EDGE_NO_OP");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ConvolveOp.html#EDGE_ZERO_FILL
+        /// </summary>
+        public static int EDGE_ZERO_FILL => Clazz.GetField<int>("EDGE_ZERO_FILL");
         
         #endregion
 

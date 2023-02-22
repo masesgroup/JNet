@@ -90,13 +90,13 @@ namespace Javax.Sound.Sampled
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/LineEvent.Type.html#OPEN
-            /// </summary>
-            public static Javax.Sound.Sampled.LineEvent.Type OPEN => Clazz.GetField<Javax.Sound.Sampled.LineEvent.Type>("OPEN");
-            /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/LineEvent.Type.html#CLOSE
             /// </summary>
             public static Javax.Sound.Sampled.LineEvent.Type CLOSE => Clazz.GetField<Javax.Sound.Sampled.LineEvent.Type>("CLOSE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/LineEvent.Type.html#OPEN
+            /// </summary>
+            public static Javax.Sound.Sampled.LineEvent.Type OPEN => Clazz.GetField<Javax.Sound.Sampled.LineEvent.Type>("OPEN");
             /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/LineEvent.Type.html#START
             /// </summary>

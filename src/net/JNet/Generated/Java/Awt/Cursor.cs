@@ -46,49 +46,17 @@ namespace Java.Awt
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#DEFAULT_CURSOR
-        /// </summary>
-        public static int DEFAULT_CURSOR => Clazz.GetField<int>("DEFAULT_CURSOR");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#CROSSHAIR_CURSOR
         /// </summary>
         public static int CROSSHAIR_CURSOR => Clazz.GetField<int>("CROSSHAIR_CURSOR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#TEXT_CURSOR
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#CUSTOM_CURSOR
         /// </summary>
-        public static int TEXT_CURSOR => Clazz.GetField<int>("TEXT_CURSOR");
+        public static int CUSTOM_CURSOR => Clazz.GetField<int>("CUSTOM_CURSOR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#WAIT_CURSOR
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#DEFAULT_CURSOR
         /// </summary>
-        public static int WAIT_CURSOR => Clazz.GetField<int>("WAIT_CURSOR");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#SW_RESIZE_CURSOR
-        /// </summary>
-        public static int SW_RESIZE_CURSOR => Clazz.GetField<int>("SW_RESIZE_CURSOR");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#SE_RESIZE_CURSOR
-        /// </summary>
-        public static int SE_RESIZE_CURSOR => Clazz.GetField<int>("SE_RESIZE_CURSOR");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#NW_RESIZE_CURSOR
-        /// </summary>
-        public static int NW_RESIZE_CURSOR => Clazz.GetField<int>("NW_RESIZE_CURSOR");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#NE_RESIZE_CURSOR
-        /// </summary>
-        public static int NE_RESIZE_CURSOR => Clazz.GetField<int>("NE_RESIZE_CURSOR");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#N_RESIZE_CURSOR
-        /// </summary>
-        public static int N_RESIZE_CURSOR => Clazz.GetField<int>("N_RESIZE_CURSOR");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#S_RESIZE_CURSOR
-        /// </summary>
-        public static int S_RESIZE_CURSOR => Clazz.GetField<int>("S_RESIZE_CURSOR");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#W_RESIZE_CURSOR
-        /// </summary>
-        public static int W_RESIZE_CURSOR => Clazz.GetField<int>("W_RESIZE_CURSOR");
+        public static int DEFAULT_CURSOR => Clazz.GetField<int>("DEFAULT_CURSOR");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#E_RESIZE_CURSOR
         /// </summary>
@@ -102,9 +70,41 @@ namespace Java.Awt
         /// </summary>
         public static int MOVE_CURSOR => Clazz.GetField<int>("MOVE_CURSOR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#CUSTOM_CURSOR
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#N_RESIZE_CURSOR
         /// </summary>
-        public static int CUSTOM_CURSOR => Clazz.GetField<int>("CUSTOM_CURSOR");
+        public static int N_RESIZE_CURSOR => Clazz.GetField<int>("N_RESIZE_CURSOR");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#NE_RESIZE_CURSOR
+        /// </summary>
+        public static int NE_RESIZE_CURSOR => Clazz.GetField<int>("NE_RESIZE_CURSOR");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#NW_RESIZE_CURSOR
+        /// </summary>
+        public static int NW_RESIZE_CURSOR => Clazz.GetField<int>("NW_RESIZE_CURSOR");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#S_RESIZE_CURSOR
+        /// </summary>
+        public static int S_RESIZE_CURSOR => Clazz.GetField<int>("S_RESIZE_CURSOR");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#SE_RESIZE_CURSOR
+        /// </summary>
+        public static int SE_RESIZE_CURSOR => Clazz.GetField<int>("SE_RESIZE_CURSOR");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#SW_RESIZE_CURSOR
+        /// </summary>
+        public static int SW_RESIZE_CURSOR => Clazz.GetField<int>("SW_RESIZE_CURSOR");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#TEXT_CURSOR
+        /// </summary>
+        public static int TEXT_CURSOR => Clazz.GetField<int>("TEXT_CURSOR");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#W_RESIZE_CURSOR
+        /// </summary>
+        public static int W_RESIZE_CURSOR => Clazz.GetField<int>("W_RESIZE_CURSOR");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Cursor.html#WAIT_CURSOR
+        /// </summary>
+        public static int WAIT_CURSOR => Clazz.GetField<int>("WAIT_CURSOR");
         
         #endregion
 

@@ -42,17 +42,17 @@ namespace Java.Nio.File
         /// </summary>
         public static Java.Nio.File.FileVisitResult CONTINUE => Clazz.GetField<Java.Nio.File.FileVisitResult>("CONTINUE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileVisitResult.html#TERMINATE
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileVisitResult.html#SKIP_SIBLINGS
         /// </summary>
-        public static Java.Nio.File.FileVisitResult TERMINATE => Clazz.GetField<Java.Nio.File.FileVisitResult>("TERMINATE");
+        public static Java.Nio.File.FileVisitResult SKIP_SIBLINGS => Clazz.GetField<Java.Nio.File.FileVisitResult>("SKIP_SIBLINGS");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileVisitResult.html#SKIP_SUBTREE
         /// </summary>
         public static Java.Nio.File.FileVisitResult SKIP_SUBTREE => Clazz.GetField<Java.Nio.File.FileVisitResult>("SKIP_SUBTREE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileVisitResult.html#SKIP_SIBLINGS
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileVisitResult.html#TERMINATE
         /// </summary>
-        public static Java.Nio.File.FileVisitResult SKIP_SIBLINGS => Clazz.GetField<Java.Nio.File.FileVisitResult>("SKIP_SIBLINGS");
+        public static Java.Nio.File.FileVisitResult TERMINATE => Clazz.GetField<Java.Nio.File.FileVisitResult>("TERMINATE");
         
         #endregion
 

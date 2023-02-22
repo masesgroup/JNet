@@ -30,13 +30,6 @@ namespace Javax.Management.Modelmbean
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanNotificationInfo.html#<init>(javax.management.modelmbean.ModelMBeanNotificationInfo)
-        /// </summary>
-        public ModelMBeanNotificationInfo(Javax.Management.Modelmbean.ModelMBeanNotificationInfo arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanNotificationInfo.html#<init>(java.lang.String[],java.lang.String,java.lang.String,javax.management.Descriptor)
         /// </summary>
         public ModelMBeanNotificationInfo(string[] arg0, string arg1, string arg2, Javax.Management.Descriptor arg3)
@@ -48,6 +41,13 @@ namespace Javax.Management.Modelmbean
         /// </summary>
         public ModelMBeanNotificationInfo(string[] arg0, string arg1, string arg2)
             : base(arg0, arg1, arg2)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanNotificationInfo.html#<init>(javax.management.modelmbean.ModelMBeanNotificationInfo)
+        /// </summary>
+        public ModelMBeanNotificationInfo(Javax.Management.Modelmbean.ModelMBeanNotificationInfo arg0)
+            : base(arg0)
         {
         }
         

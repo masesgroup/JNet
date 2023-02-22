@@ -38,22 +38,6 @@ namespace Javax.Print
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/ServiceUIFactory.html#JCOMPONENT_UI
-        /// </summary>
-        public static string JCOMPONENT_UI => Clazz.GetField<string>("JCOMPONENT_UI");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/ServiceUIFactory.html#PANEL_UI
-        /// </summary>
-        public static string PANEL_UI => Clazz.GetField<string>("PANEL_UI");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/ServiceUIFactory.html#DIALOG_UI
-        /// </summary>
-        public static string DIALOG_UI => Clazz.GetField<string>("DIALOG_UI");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/ServiceUIFactory.html#JDIALOG_UI
-        /// </summary>
-        public static string JDIALOG_UI => Clazz.GetField<string>("JDIALOG_UI");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/ServiceUIFactory.html#ABOUT_UIROLE
         /// </summary>
         public static int ABOUT_UIROLE => Clazz.GetField<int>("ABOUT_UIROLE");
@@ -69,6 +53,22 @@ namespace Javax.Print
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/ServiceUIFactory.html#RESERVED_UIROLE
         /// </summary>
         public static int RESERVED_UIROLE => Clazz.GetField<int>("RESERVED_UIROLE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/ServiceUIFactory.html#DIALOG_UI
+        /// </summary>
+        public static string DIALOG_UI => Clazz.GetField<string>("DIALOG_UI");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/ServiceUIFactory.html#JCOMPONENT_UI
+        /// </summary>
+        public static string JCOMPONENT_UI => Clazz.GetField<string>("JCOMPONENT_UI");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/ServiceUIFactory.html#JDIALOG_UI
+        /// </summary>
+        public static string JDIALOG_UI => Clazz.GetField<string>("JDIALOG_UI");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/ServiceUIFactory.html#PANEL_UI
+        /// </summary>
+        public static string PANEL_UI => Clazz.GetField<string>("PANEL_UI");
         
         #endregion
 

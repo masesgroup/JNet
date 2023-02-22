@@ -30,10 +30,10 @@ namespace Java.Io
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#<init>(java.lang.String)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#<init>(java.io.File,java.lang.String)
         /// </summary>
-        public File(string arg0)
-            : base(arg0)
+        public File(Java.Io.File arg0, string arg1)
+            : base(arg0, arg1)
         {
         }
         /// <summary>
@@ -44,10 +44,10 @@ namespace Java.Io
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#<init>(java.io.File,java.lang.String)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#<init>(java.lang.String)
         /// </summary>
-        public File(Java.Io.File arg0, string arg1)
-            : base(arg0, arg1)
+        public File(string arg0)
+            : base(arg0)
         {
         }
         /// <summary>
@@ -67,21 +67,21 @@ namespace Java.Io
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#separatorChar
-        /// </summary>
-        public static char separatorChar => Clazz.GetField<char>("separatorChar");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#separator
-        /// </summary>
-        public static string separator => Clazz.GetField<string>("separator");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#pathSeparatorChar
         /// </summary>
         public static char pathSeparatorChar => Clazz.GetField<char>("pathSeparatorChar");
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#separatorChar
+        /// </summary>
+        public static char separatorChar => Clazz.GetField<char>("separatorChar");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#pathSeparator
         /// </summary>
         public static string pathSeparator => Clazz.GetField<string>("pathSeparator");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#separator
+        /// </summary>
+        public static string separator => Clazz.GetField<string>("separator");
         
         #endregion
 

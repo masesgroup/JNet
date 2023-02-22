@@ -38,77 +38,77 @@ namespace Org.W3c.Dom
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#ELEMENT_NODE
-        /// </summary>
-        public static short ELEMENT_NODE => Clazz.GetField<short>("ELEMENT_NODE");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#ATTRIBUTE_NODE
         /// </summary>
         public static short ATTRIBUTE_NODE => Clazz.GetField<short>("ATTRIBUTE_NODE");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#TEXT_NODE
-        /// </summary>
-        public static short TEXT_NODE => Clazz.GetField<short>("TEXT_NODE");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#CDATA_SECTION_NODE
         /// </summary>
         public static short CDATA_SECTION_NODE => Clazz.GetField<short>("CDATA_SECTION_NODE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#ENTITY_REFERENCE_NODE
-        /// </summary>
-        public static short ENTITY_REFERENCE_NODE => Clazz.GetField<short>("ENTITY_REFERENCE_NODE");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#ENTITY_NODE
-        /// </summary>
-        public static short ENTITY_NODE => Clazz.GetField<short>("ENTITY_NODE");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#PROCESSING_INSTRUCTION_NODE
-        /// </summary>
-        public static short PROCESSING_INSTRUCTION_NODE => Clazz.GetField<short>("PROCESSING_INSTRUCTION_NODE");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#COMMENT_NODE
         /// </summary>
         public static short COMMENT_NODE => Clazz.GetField<short>("COMMENT_NODE");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#DOCUMENT_NODE
-        /// </summary>
-        public static short DOCUMENT_NODE => Clazz.GetField<short>("DOCUMENT_NODE");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#DOCUMENT_TYPE_NODE
-        /// </summary>
-        public static short DOCUMENT_TYPE_NODE => Clazz.GetField<short>("DOCUMENT_TYPE_NODE");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#DOCUMENT_FRAGMENT_NODE
         /// </summary>
         public static short DOCUMENT_FRAGMENT_NODE => Clazz.GetField<short>("DOCUMENT_FRAGMENT_NODE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#NOTATION_NODE
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#DOCUMENT_NODE
         /// </summary>
-        public static short NOTATION_NODE => Clazz.GetField<short>("NOTATION_NODE");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#DOCUMENT_POSITION_DISCONNECTED
-        /// </summary>
-        public static short DOCUMENT_POSITION_DISCONNECTED => Clazz.GetField<short>("DOCUMENT_POSITION_DISCONNECTED");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#DOCUMENT_POSITION_PRECEDING
-        /// </summary>
-        public static short DOCUMENT_POSITION_PRECEDING => Clazz.GetField<short>("DOCUMENT_POSITION_PRECEDING");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#DOCUMENT_POSITION_FOLLOWING
-        /// </summary>
-        public static short DOCUMENT_POSITION_FOLLOWING => Clazz.GetField<short>("DOCUMENT_POSITION_FOLLOWING");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#DOCUMENT_POSITION_CONTAINS
-        /// </summary>
-        public static short DOCUMENT_POSITION_CONTAINS => Clazz.GetField<short>("DOCUMENT_POSITION_CONTAINS");
+        public static short DOCUMENT_NODE => Clazz.GetField<short>("DOCUMENT_NODE");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#DOCUMENT_POSITION_CONTAINED_BY
         /// </summary>
         public static short DOCUMENT_POSITION_CONTAINED_BY => Clazz.GetField<short>("DOCUMENT_POSITION_CONTAINED_BY");
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#DOCUMENT_POSITION_CONTAINS
+        /// </summary>
+        public static short DOCUMENT_POSITION_CONTAINS => Clazz.GetField<short>("DOCUMENT_POSITION_CONTAINS");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#DOCUMENT_POSITION_DISCONNECTED
+        /// </summary>
+        public static short DOCUMENT_POSITION_DISCONNECTED => Clazz.GetField<short>("DOCUMENT_POSITION_DISCONNECTED");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#DOCUMENT_POSITION_FOLLOWING
+        /// </summary>
+        public static short DOCUMENT_POSITION_FOLLOWING => Clazz.GetField<short>("DOCUMENT_POSITION_FOLLOWING");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC
         /// </summary>
         public static short DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC => Clazz.GetField<short>("DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#DOCUMENT_POSITION_PRECEDING
+        /// </summary>
+        public static short DOCUMENT_POSITION_PRECEDING => Clazz.GetField<short>("DOCUMENT_POSITION_PRECEDING");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#DOCUMENT_TYPE_NODE
+        /// </summary>
+        public static short DOCUMENT_TYPE_NODE => Clazz.GetField<short>("DOCUMENT_TYPE_NODE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#ELEMENT_NODE
+        /// </summary>
+        public static short ELEMENT_NODE => Clazz.GetField<short>("ELEMENT_NODE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#ENTITY_NODE
+        /// </summary>
+        public static short ENTITY_NODE => Clazz.GetField<short>("ENTITY_NODE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#ENTITY_REFERENCE_NODE
+        /// </summary>
+        public static short ENTITY_REFERENCE_NODE => Clazz.GetField<short>("ENTITY_REFERENCE_NODE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#NOTATION_NODE
+        /// </summary>
+        public static short NOTATION_NODE => Clazz.GetField<short>("NOTATION_NODE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#PROCESSING_INSTRUCTION_NODE
+        /// </summary>
+        public static short PROCESSING_INSTRUCTION_NODE => Clazz.GetField<short>("PROCESSING_INSTRUCTION_NODE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Node.html#TEXT_NODE
+        /// </summary>
+        public static short TEXT_NODE => Clazz.GetField<short>("TEXT_NODE");
         
         #endregion
 

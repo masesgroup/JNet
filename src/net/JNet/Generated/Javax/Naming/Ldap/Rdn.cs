@@ -37,9 +37,9 @@ namespace Javax.Naming.Ldap
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Rdn.html#<init>(javax.naming.ldap.Rdn)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Rdn.html#<init>(java.lang.String) throws javax.naming.InvalidNameException
         /// </summary>
-        public Rdn(Javax.Naming.Ldap.Rdn arg0)
+        public Rdn(string arg0)
             : base(arg0)
         {
         }
@@ -51,9 +51,9 @@ namespace Javax.Naming.Ldap
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Rdn.html#<init>(java.lang.String) throws javax.naming.InvalidNameException
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Rdn.html#<init>(javax.naming.ldap.Rdn)
         /// </summary>
-        public Rdn(string arg0)
+        public Rdn(Javax.Naming.Ldap.Rdn arg0)
             : base(arg0)
         {
         }

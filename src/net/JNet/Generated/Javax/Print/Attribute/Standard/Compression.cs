@@ -39,9 +39,9 @@ namespace Javax.Print.Attribute.Standard
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Compression.html#NONE
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Compression.html#COMPRESS
         /// </summary>
-        public static Javax.Print.Attribute.Standard.Compression NONE => Clazz.GetField<Javax.Print.Attribute.Standard.Compression>("NONE");
+        public static Javax.Print.Attribute.Standard.Compression COMPRESS => Clazz.GetField<Javax.Print.Attribute.Standard.Compression>("COMPRESS");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Compression.html#DEFLATE
         /// </summary>
@@ -51,9 +51,9 @@ namespace Javax.Print.Attribute.Standard
         /// </summary>
         public static Javax.Print.Attribute.Standard.Compression GZIP => Clazz.GetField<Javax.Print.Attribute.Standard.Compression>("GZIP");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Compression.html#COMPRESS
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Compression.html#NONE
         /// </summary>
-        public static Javax.Print.Attribute.Standard.Compression COMPRESS => Clazz.GetField<Javax.Print.Attribute.Standard.Compression>("COMPRESS");
+        public static Javax.Print.Attribute.Standard.Compression NONE => Clazz.GetField<Javax.Print.Attribute.Standard.Compression>("NONE");
         
         #endregion
 

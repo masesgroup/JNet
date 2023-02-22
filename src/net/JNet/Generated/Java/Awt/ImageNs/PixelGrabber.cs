@@ -37,16 +37,16 @@ namespace Java.Awt.ImageNs
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#<init>(java.awt.image.ImageProducer,int,int,int,int,int[],int,int)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#<init>(java.awt.Image,int,int,int,int,int[],int,int)
         /// </summary>
-        public PixelGrabber(Java.Awt.ImageNs.ImageProducer arg0, int arg1, int arg2, int arg3, int arg4, int[] arg5, int arg6, int arg7)
+        public PixelGrabber(Java.Awt.Image arg0, int arg1, int arg2, int arg3, int arg4, int[] arg5, int arg6, int arg7)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#<init>(java.awt.Image,int,int,int,int,int[],int,int)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/PixelGrabber.html#<init>(java.awt.image.ImageProducer,int,int,int,int,int[],int,int)
         /// </summary>
-        public PixelGrabber(Java.Awt.Image arg0, int arg1, int arg2, int arg3, int arg4, int[] arg5, int arg6, int arg7)
+        public PixelGrabber(Java.Awt.ImageNs.ImageProducer arg0, int arg1, int arg2, int arg3, int arg4, int[] arg5, int arg6, int arg7)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7)
         {
         }

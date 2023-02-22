@@ -44,6 +44,13 @@ namespace Javax.Swing
         {
         }
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenuItem.html#<init>(java.lang.String)
+        /// </summary>
+        public JMenuItem(string arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenuItem.html#<init>(javax.swing.Action)
         /// </summary>
         public JMenuItem(Javax.Swing.Action arg0)
@@ -54,13 +61,6 @@ namespace Javax.Swing
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenuItem.html#<init>(javax.swing.Icon)
         /// </summary>
         public JMenuItem(Javax.Swing.Icon arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenuItem.html#<init>(java.lang.String)
-        /// </summary>
-        public JMenuItem(string arg0)
             : base(arg0)
         {
         }

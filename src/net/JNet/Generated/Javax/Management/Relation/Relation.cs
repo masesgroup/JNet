@@ -76,9 +76,9 @@ namespace Javax.Management.Relation
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/Relation.html#getRoleCardinality(java.lang.String) throws java.lang.IllegalArgumentException,javax.management.relation.RoleNotFoundException
         /// </summary>
-        public int GetRoleCardinality(string arg0)
+        public int? GetRoleCardinality(string arg0)
         {
-            return IExecute<int>("getRoleCardinality", arg0);
+            return IExecute<int?>("getRoleCardinality", arg0);
         }
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/Relation.html#getRoles(java.lang.String[]) throws java.lang.IllegalArgumentException,javax.management.relation.RelationServiceNotRegisteredException

@@ -30,9 +30,30 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#<init>(java.nio.file.Path,java.lang.String) throws java.io.IOException
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#<init>(java.io.File,java.lang.String) throws java.io.FileNotFoundException
         /// </summary>
-        public Scanner(Java.Nio.File.Path arg0, string arg1)
+        public Scanner(Java.Io.File arg0, string arg1)
+            : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#<init>(java.io.File,java.nio.charset.Charset) throws java.io.IOException
+        /// </summary>
+        public Scanner(Java.Io.File arg0, Java.Nio.Charset.Charset arg1)
+            : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#<init>(java.io.File) throws java.io.FileNotFoundException
+        /// </summary>
+        public Scanner(Java.Io.File arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#<init>(java.io.InputStream,java.lang.String)
+        /// </summary>
+        public Scanner(Java.Io.InputStream arg0, string arg1)
             : base(arg0, arg1)
         {
         }
@@ -51,37 +72,16 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#<init>(java.io.InputStream,java.lang.String)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#<init>(java.lang.Readable)
         /// </summary>
-        public Scanner(Java.Io.InputStream arg0, string arg1)
-            : base(arg0, arg1)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#<init>(java.io.File,java.lang.String) throws java.io.FileNotFoundException
-        /// </summary>
-        public Scanner(Java.Io.File arg0, string arg1)
-            : base(arg0, arg1)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#<init>(java.io.File) throws java.io.FileNotFoundException
-        /// </summary>
-        public Scanner(Java.Io.File arg0)
+        public Scanner(Java.Lang.Readable arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#<init>(java.nio.file.Path) throws java.io.IOException
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#<init>(java.lang.String)
         /// </summary>
-        public Scanner(Java.Nio.File.Path arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#<init>(java.nio.channels.ReadableByteChannel)
-        /// </summary>
-        public Scanner(Java.Nio.Channels.ReadableByteChannel arg0)
+        public Scanner(string arg0)
             : base(arg0)
         {
         }
@@ -100,17 +100,17 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#<init>(java.io.File,java.nio.charset.Charset) throws java.io.IOException
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#<init>(java.nio.channels.ReadableByteChannel)
         /// </summary>
-        public Scanner(Java.Io.File arg0, Java.Nio.Charset.Charset arg1)
-            : base(arg0, arg1)
+        public Scanner(Java.Nio.Channels.ReadableByteChannel arg0)
+            : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#<init>(java.lang.Readable)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#<init>(java.nio.file.Path,java.lang.String) throws java.io.IOException
         /// </summary>
-        public Scanner(Java.Lang.Readable arg0)
-            : base(arg0)
+        public Scanner(Java.Nio.File.Path arg0, string arg1)
+            : base(arg0, arg1)
         {
         }
         /// <summary>
@@ -121,9 +121,9 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#<init>(java.lang.String)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#<init>(java.nio.file.Path) throws java.io.IOException
         /// </summary>
-        public Scanner(string arg0)
+        public Scanner(Java.Nio.File.Path arg0)
             : base(arg0)
         {
         }

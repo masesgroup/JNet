@@ -111,25 +111,25 @@ namespace Javax.Sound.Sampled
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFileFormat.Type.html#WAVE
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFileFormat.Type.html#AIFC
             /// </summary>
-            public static Javax.Sound.Sampled.AudioFileFormat.Type WAVE => Clazz.GetField<Javax.Sound.Sampled.AudioFileFormat.Type>("WAVE");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFileFormat.Type.html#AU
-            /// </summary>
-            public static Javax.Sound.Sampled.AudioFileFormat.Type AU => Clazz.GetField<Javax.Sound.Sampled.AudioFileFormat.Type>("AU");
+            public static Javax.Sound.Sampled.AudioFileFormat.Type AIFC => Clazz.GetField<Javax.Sound.Sampled.AudioFileFormat.Type>("AIFC");
             /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFileFormat.Type.html#AIFF
             /// </summary>
             public static Javax.Sound.Sampled.AudioFileFormat.Type AIFF => Clazz.GetField<Javax.Sound.Sampled.AudioFileFormat.Type>("AIFF");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFileFormat.Type.html#AIFC
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFileFormat.Type.html#AU
             /// </summary>
-            public static Javax.Sound.Sampled.AudioFileFormat.Type AIFC => Clazz.GetField<Javax.Sound.Sampled.AudioFileFormat.Type>("AIFC");
+            public static Javax.Sound.Sampled.AudioFileFormat.Type AU => Clazz.GetField<Javax.Sound.Sampled.AudioFileFormat.Type>("AU");
             /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFileFormat.Type.html#SND
             /// </summary>
             public static Javax.Sound.Sampled.AudioFileFormat.Type SND => Clazz.GetField<Javax.Sound.Sampled.AudioFileFormat.Type>("SND");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFileFormat.Type.html#WAVE
+            /// </summary>
+            public static Javax.Sound.Sampled.AudioFileFormat.Type WAVE => Clazz.GetField<Javax.Sound.Sampled.AudioFileFormat.Type>("WAVE");
             
             #endregion
 

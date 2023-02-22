@@ -30,6 +30,13 @@ namespace Javax.Swing.Text.Html
     {
         #region Constructors
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLFrameHyperlinkEvent.html#<init>(java.lang.Object,javax.swing.event.HyperlinkEvent$EventType,java.net.URL,java.lang.String,java.lang.String)
+        /// </summary>
+        public HTMLFrameHyperlinkEvent(object arg0, Javax.Swing.Event.HyperlinkEvent.EventType arg1, Java.Net.URL arg2, string arg3, string arg4)
+            : base(arg0, arg1, arg2, arg3, arg4)
+        {
+        }
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLFrameHyperlinkEvent.html#<init>(java.lang.Object,javax.swing.event.HyperlinkEvent$EventType,java.net.URL,java.lang.String,javax.swing.text.Element,java.awt.event.InputEvent,java.lang.String)
         /// </summary>
         public HTMLFrameHyperlinkEvent(object arg0, Javax.Swing.Event.HyperlinkEvent.EventType arg1, Java.Net.URL arg2, string arg3, Javax.Swing.Text.Element arg4, Java.Awt.EventNs.InputEvent arg5, string arg6)
@@ -44,24 +51,17 @@ namespace Javax.Swing.Text.Html
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLFrameHyperlinkEvent.html#<init>(java.lang.Object,javax.swing.event.HyperlinkEvent$EventType,java.net.URL,javax.swing.text.Element,java.lang.String)
-        /// </summary>
-        public HTMLFrameHyperlinkEvent(object arg0, Javax.Swing.Event.HyperlinkEvent.EventType arg1, Java.Net.URL arg2, Javax.Swing.Text.Element arg3, string arg4)
-            : base(arg0, arg1, arg2, arg3, arg4)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLFrameHyperlinkEvent.html#<init>(java.lang.Object,javax.swing.event.HyperlinkEvent$EventType,java.net.URL,java.lang.String,java.lang.String)
-        /// </summary>
-        public HTMLFrameHyperlinkEvent(object arg0, Javax.Swing.Event.HyperlinkEvent.EventType arg1, Java.Net.URL arg2, string arg3, string arg4)
-            : base(arg0, arg1, arg2, arg3, arg4)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLFrameHyperlinkEvent.html#<init>(java.lang.Object,javax.swing.event.HyperlinkEvent$EventType,java.net.URL,java.lang.String)
         /// </summary>
         public HTMLFrameHyperlinkEvent(object arg0, Javax.Swing.Event.HyperlinkEvent.EventType arg1, Java.Net.URL arg2, string arg3)
             : base(arg0, arg1, arg2, arg3)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLFrameHyperlinkEvent.html#<init>(java.lang.Object,javax.swing.event.HyperlinkEvent$EventType,java.net.URL,javax.swing.text.Element,java.lang.String)
+        /// </summary>
+        public HTMLFrameHyperlinkEvent(object arg0, Javax.Swing.Event.HyperlinkEvent.EventType arg1, Java.Net.URL arg2, Javax.Swing.Text.Element arg3, string arg4)
+            : base(arg0, arg1, arg2, arg3, arg4)
         {
         }
         

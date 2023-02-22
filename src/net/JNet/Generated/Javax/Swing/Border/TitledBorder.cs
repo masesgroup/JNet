@@ -30,6 +30,13 @@ namespace Javax.Swing.Border
     {
         #region Constructors
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/TitledBorder.html#<init>(java.lang.String)
+        /// </summary>
+        public TitledBorder(string arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/TitledBorder.html#<init>(javax.swing.border.Border,java.lang.String,int,int,java.awt.Font,java.awt.Color)
         /// </summary>
         public TitledBorder(Javax.Swing.Border.Border arg0, string arg1, int arg2, int arg3, Java.Awt.Font arg4, Java.Awt.Color arg5)
@@ -51,10 +58,10 @@ namespace Javax.Swing.Border
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/TitledBorder.html#<init>(java.lang.String)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/TitledBorder.html#<init>(javax.swing.border.Border,java.lang.String)
         /// </summary>
-        public TitledBorder(string arg0)
-            : base(arg0)
+        public TitledBorder(Javax.Swing.Border.Border arg0, string arg1)
+            : base(arg0, arg1)
         {
         }
         /// <summary>
@@ -62,13 +69,6 @@ namespace Javax.Swing.Border
         /// </summary>
         public TitledBorder(Javax.Swing.Border.Border arg0)
             : base(arg0)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/TitledBorder.html#<init>(javax.swing.border.Border,java.lang.String)
-        /// </summary>
-        public TitledBorder(Javax.Swing.Border.Border arg0, string arg1)
-            : base(arg0, arg1)
         {
         }
         
@@ -80,53 +80,53 @@ namespace Javax.Swing.Border
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/TitledBorder.html#DEFAULT_POSITION
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/TitledBorder.html#ABOVE_BOTTOM
         /// </summary>
-        public static int DEFAULT_POSITION => Clazz.GetField<int>("DEFAULT_POSITION");
+        public static int ABOVE_BOTTOM => Clazz.GetField<int>("ABOVE_BOTTOM");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/TitledBorder.html#ABOVE_TOP
         /// </summary>
         public static int ABOVE_TOP => Clazz.GetField<int>("ABOVE_TOP");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/TitledBorder.html#TOP
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/TitledBorder.html#BELOW_BOTTOM
         /// </summary>
-        public static int TOP => Clazz.GetField<int>("TOP");
+        public static int BELOW_BOTTOM => Clazz.GetField<int>("BELOW_BOTTOM");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/TitledBorder.html#BELOW_TOP
         /// </summary>
         public static int BELOW_TOP => Clazz.GetField<int>("BELOW_TOP");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/TitledBorder.html#ABOVE_BOTTOM
-        /// </summary>
-        public static int ABOVE_BOTTOM => Clazz.GetField<int>("ABOVE_BOTTOM");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/TitledBorder.html#BOTTOM
         /// </summary>
         public static int BOTTOM => Clazz.GetField<int>("BOTTOM");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/TitledBorder.html#BELOW_BOTTOM
-        /// </summary>
-        public static int BELOW_BOTTOM => Clazz.GetField<int>("BELOW_BOTTOM");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/TitledBorder.html#DEFAULT_JUSTIFICATION
-        /// </summary>
-        public static int DEFAULT_JUSTIFICATION => Clazz.GetField<int>("DEFAULT_JUSTIFICATION");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/TitledBorder.html#LEFT
-        /// </summary>
-        public static int LEFT => Clazz.GetField<int>("LEFT");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/TitledBorder.html#CENTER
         /// </summary>
         public static int CENTER => Clazz.GetField<int>("CENTER");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/TitledBorder.html#RIGHT
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/TitledBorder.html#DEFAULT_JUSTIFICATION
         /// </summary>
-        public static int RIGHT => Clazz.GetField<int>("RIGHT");
+        public static int DEFAULT_JUSTIFICATION => Clazz.GetField<int>("DEFAULT_JUSTIFICATION");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/TitledBorder.html#DEFAULT_POSITION
+        /// </summary>
+        public static int DEFAULT_POSITION => Clazz.GetField<int>("DEFAULT_POSITION");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/TitledBorder.html#LEADING
         /// </summary>
         public static int LEADING => Clazz.GetField<int>("LEADING");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/TitledBorder.html#LEFT
+        /// </summary>
+        public static int LEFT => Clazz.GetField<int>("LEFT");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/TitledBorder.html#RIGHT
+        /// </summary>
+        public static int RIGHT => Clazz.GetField<int>("RIGHT");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/TitledBorder.html#TOP
+        /// </summary>
+        public static int TOP => Clazz.GetField<int>("TOP");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/TitledBorder.html#TRAILING
         /// </summary>

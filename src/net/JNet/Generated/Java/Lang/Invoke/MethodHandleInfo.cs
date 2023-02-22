@@ -46,6 +46,26 @@ namespace Java.Lang.Invoke
         /// </summary>
         public static int REF_getStatic => Clazz.GetField<int>("REF_getStatic");
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#REF_invokeInterface
+        /// </summary>
+        public static int REF_invokeInterface => Clazz.GetField<int>("REF_invokeInterface");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#REF_invokeSpecial
+        /// </summary>
+        public static int REF_invokeSpecial => Clazz.GetField<int>("REF_invokeSpecial");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#REF_invokeStatic
+        /// </summary>
+        public static int REF_invokeStatic => Clazz.GetField<int>("REF_invokeStatic");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#REF_invokeVirtual
+        /// </summary>
+        public static int REF_invokeVirtual => Clazz.GetField<int>("REF_invokeVirtual");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#REF_newInvokeSpecial
+        /// </summary>
+        public static int REF_newInvokeSpecial => Clazz.GetField<int>("REF_newInvokeSpecial");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#REF_putField
         /// </summary>
         public static int REF_putField => Clazz.GetField<int>("REF_putField");
@@ -53,26 +73,6 @@ namespace Java.Lang.Invoke
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#REF_putStatic
         /// </summary>
         public static int REF_putStatic => Clazz.GetField<int>("REF_putStatic");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#REF_invokeVirtual
-        /// </summary>
-        public static int REF_invokeVirtual => Clazz.GetField<int>("REF_invokeVirtual");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#REF_invokeStatic
-        /// </summary>
-        public static int REF_invokeStatic => Clazz.GetField<int>("REF_invokeStatic");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#REF_invokeSpecial
-        /// </summary>
-        public static int REF_invokeSpecial => Clazz.GetField<int>("REF_invokeSpecial");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#REF_newInvokeSpecial
-        /// </summary>
-        public static int REF_newInvokeSpecial => Clazz.GetField<int>("REF_newInvokeSpecial");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#REF_invokeInterface
-        /// </summary>
-        public static int REF_invokeInterface => Clazz.GetField<int>("REF_invokeInterface");
         
         #endregion
 

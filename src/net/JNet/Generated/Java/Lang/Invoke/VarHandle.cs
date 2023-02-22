@@ -314,42 +314,6 @@ namespace Java.Lang.Invoke
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET
-            /// </summary>
-            public static Java.Lang.Invoke.VarHandle.AccessMode GET => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("GET");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#SET
-            /// </summary>
-            public static Java.Lang.Invoke.VarHandle.AccessMode SET => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("SET");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_VOLATILE
-            /// </summary>
-            public static Java.Lang.Invoke.VarHandle.AccessMode GET_VOLATILE => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("GET_VOLATILE");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#SET_VOLATILE
-            /// </summary>
-            public static Java.Lang.Invoke.VarHandle.AccessMode SET_VOLATILE => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("SET_VOLATILE");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_ACQUIRE
-            /// </summary>
-            public static Java.Lang.Invoke.VarHandle.AccessMode GET_ACQUIRE => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("GET_ACQUIRE");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#SET_RELEASE
-            /// </summary>
-            public static Java.Lang.Invoke.VarHandle.AccessMode SET_RELEASE => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("SET_RELEASE");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_OPAQUE
-            /// </summary>
-            public static Java.Lang.Invoke.VarHandle.AccessMode GET_OPAQUE => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("GET_OPAQUE");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#SET_OPAQUE
-            /// </summary>
-            public static Java.Lang.Invoke.VarHandle.AccessMode SET_OPAQUE => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("SET_OPAQUE");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#COMPARE_AND_SET
-            /// </summary>
-            public static Java.Lang.Invoke.VarHandle.AccessMode COMPARE_AND_SET => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("COMPARE_AND_SET");
-            /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#COMPARE_AND_EXCHANGE
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode COMPARE_AND_EXCHANGE => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("COMPARE_AND_EXCHANGE");
@@ -362,33 +326,17 @@ namespace Java.Lang.Invoke
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode COMPARE_AND_EXCHANGE_RELEASE => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("COMPARE_AND_EXCHANGE_RELEASE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#WEAK_COMPARE_AND_SET_PLAIN
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#COMPARE_AND_SET
             /// </summary>
-            public static Java.Lang.Invoke.VarHandle.AccessMode WEAK_COMPARE_AND_SET_PLAIN => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("WEAK_COMPARE_AND_SET_PLAIN");
+            public static Java.Lang.Invoke.VarHandle.AccessMode COMPARE_AND_SET => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("COMPARE_AND_SET");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#WEAK_COMPARE_AND_SET
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET
             /// </summary>
-            public static Java.Lang.Invoke.VarHandle.AccessMode WEAK_COMPARE_AND_SET => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("WEAK_COMPARE_AND_SET");
+            public static Java.Lang.Invoke.VarHandle.AccessMode GET => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("GET");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#WEAK_COMPARE_AND_SET_ACQUIRE
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_ACQUIRE
             /// </summary>
-            public static Java.Lang.Invoke.VarHandle.AccessMode WEAK_COMPARE_AND_SET_ACQUIRE => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("WEAK_COMPARE_AND_SET_ACQUIRE");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#WEAK_COMPARE_AND_SET_RELEASE
-            /// </summary>
-            public static Java.Lang.Invoke.VarHandle.AccessMode WEAK_COMPARE_AND_SET_RELEASE => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("WEAK_COMPARE_AND_SET_RELEASE");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_SET
-            /// </summary>
-            public static Java.Lang.Invoke.VarHandle.AccessMode GET_AND_SET => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("GET_AND_SET");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_SET_ACQUIRE
-            /// </summary>
-            public static Java.Lang.Invoke.VarHandle.AccessMode GET_AND_SET_ACQUIRE => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("GET_AND_SET_ACQUIRE");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_SET_RELEASE
-            /// </summary>
-            public static Java.Lang.Invoke.VarHandle.AccessMode GET_AND_SET_RELEASE => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("GET_AND_SET_RELEASE");
+            public static Java.Lang.Invoke.VarHandle.AccessMode GET_ACQUIRE => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("GET_ACQUIRE");
             /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_ADD
             /// </summary>
@@ -402,41 +350,93 @@ namespace Java.Lang.Invoke
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode GET_AND_ADD_RELEASE => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("GET_AND_ADD_RELEASE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_BITWISE_OR
-            /// </summary>
-            public static Java.Lang.Invoke.VarHandle.AccessMode GET_AND_BITWISE_OR => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("GET_AND_BITWISE_OR");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_BITWISE_OR_RELEASE
-            /// </summary>
-            public static Java.Lang.Invoke.VarHandle.AccessMode GET_AND_BITWISE_OR_RELEASE => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("GET_AND_BITWISE_OR_RELEASE");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_BITWISE_OR_ACQUIRE
-            /// </summary>
-            public static Java.Lang.Invoke.VarHandle.AccessMode GET_AND_BITWISE_OR_ACQUIRE => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("GET_AND_BITWISE_OR_ACQUIRE");
-            /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_BITWISE_AND
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode GET_AND_BITWISE_AND => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("GET_AND_BITWISE_AND");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_BITWISE_AND_RELEASE
-            /// </summary>
-            public static Java.Lang.Invoke.VarHandle.AccessMode GET_AND_BITWISE_AND_RELEASE => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("GET_AND_BITWISE_AND_RELEASE");
             /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_BITWISE_AND_ACQUIRE
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode GET_AND_BITWISE_AND_ACQUIRE => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("GET_AND_BITWISE_AND_ACQUIRE");
             /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_BITWISE_AND_RELEASE
+            /// </summary>
+            public static Java.Lang.Invoke.VarHandle.AccessMode GET_AND_BITWISE_AND_RELEASE => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("GET_AND_BITWISE_AND_RELEASE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_BITWISE_OR
+            /// </summary>
+            public static Java.Lang.Invoke.VarHandle.AccessMode GET_AND_BITWISE_OR => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("GET_AND_BITWISE_OR");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_BITWISE_OR_ACQUIRE
+            /// </summary>
+            public static Java.Lang.Invoke.VarHandle.AccessMode GET_AND_BITWISE_OR_ACQUIRE => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("GET_AND_BITWISE_OR_ACQUIRE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_BITWISE_OR_RELEASE
+            /// </summary>
+            public static Java.Lang.Invoke.VarHandle.AccessMode GET_AND_BITWISE_OR_RELEASE => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("GET_AND_BITWISE_OR_RELEASE");
+            /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_BITWISE_XOR
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode GET_AND_BITWISE_XOR => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("GET_AND_BITWISE_XOR");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_BITWISE_XOR_ACQUIRE
+            /// </summary>
+            public static Java.Lang.Invoke.VarHandle.AccessMode GET_AND_BITWISE_XOR_ACQUIRE => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("GET_AND_BITWISE_XOR_ACQUIRE");
             /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_BITWISE_XOR_RELEASE
             /// </summary>
             public static Java.Lang.Invoke.VarHandle.AccessMode GET_AND_BITWISE_XOR_RELEASE => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("GET_AND_BITWISE_XOR_RELEASE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_BITWISE_XOR_ACQUIRE
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_SET
             /// </summary>
-            public static Java.Lang.Invoke.VarHandle.AccessMode GET_AND_BITWISE_XOR_ACQUIRE => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("GET_AND_BITWISE_XOR_ACQUIRE");
+            public static Java.Lang.Invoke.VarHandle.AccessMode GET_AND_SET => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("GET_AND_SET");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_SET_ACQUIRE
+            /// </summary>
+            public static Java.Lang.Invoke.VarHandle.AccessMode GET_AND_SET_ACQUIRE => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("GET_AND_SET_ACQUIRE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_AND_SET_RELEASE
+            /// </summary>
+            public static Java.Lang.Invoke.VarHandle.AccessMode GET_AND_SET_RELEASE => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("GET_AND_SET_RELEASE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_OPAQUE
+            /// </summary>
+            public static Java.Lang.Invoke.VarHandle.AccessMode GET_OPAQUE => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("GET_OPAQUE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#GET_VOLATILE
+            /// </summary>
+            public static Java.Lang.Invoke.VarHandle.AccessMode GET_VOLATILE => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("GET_VOLATILE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#SET
+            /// </summary>
+            public static Java.Lang.Invoke.VarHandle.AccessMode SET => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("SET");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#SET_OPAQUE
+            /// </summary>
+            public static Java.Lang.Invoke.VarHandle.AccessMode SET_OPAQUE => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("SET_OPAQUE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#SET_RELEASE
+            /// </summary>
+            public static Java.Lang.Invoke.VarHandle.AccessMode SET_RELEASE => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("SET_RELEASE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#SET_VOLATILE
+            /// </summary>
+            public static Java.Lang.Invoke.VarHandle.AccessMode SET_VOLATILE => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("SET_VOLATILE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#WEAK_COMPARE_AND_SET
+            /// </summary>
+            public static Java.Lang.Invoke.VarHandle.AccessMode WEAK_COMPARE_AND_SET => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("WEAK_COMPARE_AND_SET");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#WEAK_COMPARE_AND_SET_ACQUIRE
+            /// </summary>
+            public static Java.Lang.Invoke.VarHandle.AccessMode WEAK_COMPARE_AND_SET_ACQUIRE => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("WEAK_COMPARE_AND_SET_ACQUIRE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#WEAK_COMPARE_AND_SET_PLAIN
+            /// </summary>
+            public static Java.Lang.Invoke.VarHandle.AccessMode WEAK_COMPARE_AND_SET_PLAIN => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("WEAK_COMPARE_AND_SET_PLAIN");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VarHandle.AccessMode.html#WEAK_COMPARE_AND_SET_RELEASE
+            /// </summary>
+            public static Java.Lang.Invoke.VarHandle.AccessMode WEAK_COMPARE_AND_SET_RELEASE => Clazz.GetField<Java.Lang.Invoke.VarHandle.AccessMode>("WEAK_COMPARE_AND_SET_RELEASE");
             
             #endregion
 

@@ -30,17 +30,17 @@ namespace Java.Awt.ImageNs
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ComponentColorModel.html#<init>(java.awt.color.ColorSpace,int[],boolean,boolean,int,int)
-        /// </summary>
-        public ComponentColorModel(Java.Awt.ColorNs.ColorSpace arg0, int[] arg1, bool arg2, bool arg3, int arg4, int arg5)
-            : base(arg0, arg1, arg2, arg3, arg4, arg5)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ComponentColorModel.html#<init>(java.awt.color.ColorSpace,boolean,boolean,int,int)
         /// </summary>
         public ComponentColorModel(Java.Awt.ColorNs.ColorSpace arg0, bool arg1, bool arg2, int arg3, int arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ComponentColorModel.html#<init>(java.awt.color.ColorSpace,int[],boolean,boolean,int,int)
+        /// </summary>
+        public ComponentColorModel(Java.Awt.ColorNs.ColorSpace arg0, int[] arg1, bool arg2, bool arg3, int arg4, int arg5)
+            : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
         }
         

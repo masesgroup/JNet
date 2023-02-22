@@ -23,23 +23,23 @@
 
 namespace Javax.Net
 {
-    #region SocketFactory
+    #region ServerSocketFactory
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/SocketFactory.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ServerSocketFactory.html
     /// </summary>
-    public partial class SocketFactory : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SocketFactory>
+    public partial class ServerSocketFactory : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ServerSocketFactory>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public SocketFactory() { }
+        public ServerSocketFactory() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public SocketFactory(params object[] args) : base(args) { }
+        public ServerSocketFactory(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.net.SocketFactory";
+        public override string ClassName => "javax.net.ServerSocketFactory";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -58,23 +58,23 @@ namespace Javax.Net
     }
     #endregion
 
-    #region ServerSocketFactory
+    #region SocketFactory
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ServerSocketFactory.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/SocketFactory.html
     /// </summary>
-    public partial class ServerSocketFactory : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ServerSocketFactory>
+    public partial class SocketFactory : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SocketFactory>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ServerSocketFactory() { }
+        public SocketFactory() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public ServerSocketFactory(params object[] args) : base(args) { }
+        public SocketFactory(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.net.ServerSocketFactory";
+        public override string ClassName => "javax.net.SocketFactory";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;

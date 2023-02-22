@@ -30,17 +30,17 @@ namespace Javax.Management
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanNotificationInfo.html#<init>(java.lang.String[],java.lang.String,java.lang.String)
-        /// </summary>
-        public MBeanNotificationInfo(string[] arg0, string arg1, string arg2)
-            : base(arg0, arg1, arg2)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanNotificationInfo.html#<init>(java.lang.String[],java.lang.String,java.lang.String,javax.management.Descriptor)
         /// </summary>
         public MBeanNotificationInfo(string[] arg0, string arg1, string arg2, Javax.Management.Descriptor arg3)
             : base(arg0, arg1, arg2, arg3)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanNotificationInfo.html#<init>(java.lang.String[],java.lang.String,java.lang.String)
+        /// </summary>
+        public MBeanNotificationInfo(string[] arg0, string arg1, string arg2)
+            : base(arg0, arg1, arg2)
         {
         }
         

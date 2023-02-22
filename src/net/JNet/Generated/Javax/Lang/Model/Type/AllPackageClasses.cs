@@ -23,23 +23,23 @@
 
 namespace Javax.Lang.Model.Type
 {
-    #region TypeVisitor
+    #region ArrayType
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVisitor.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/ArrayType.html
     /// </summary>
-    public partial class TypeVisitor : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TypeVisitor>
+    public partial class ArrayType : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ArrayType>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public TypeVisitor() { }
+        public ArrayType() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public TypeVisitor(params object[] args) : base(args) { }
+        public ArrayType(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.lang.model.type.TypeVisitor";
+        public override string ClassName => "javax.lang.model.type.ArrayType";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -93,58 +93,23 @@ namespace Javax.Lang.Model.Type
     }
     #endregion
 
-    #region ArrayType
+    #region ErrorType
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/ArrayType.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/ErrorType.html
     /// </summary>
-    public partial class ArrayType : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ArrayType>
+    public partial class ErrorType : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ErrorType>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ArrayType() { }
+        public ErrorType() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public ArrayType(params object[] args) : base(args) { }
+        public ErrorType(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.lang.model.type.ArrayType";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region NoType
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/NoType.html
-    /// </summary>
-    public partial class NoType : MASES.JCOBridge.C2JBridge.JVMBridgeBase<NoType>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public NoType() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public NoType(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.lang.model.type.NoType";
+        public override string ClassName => "javax.lang.model.type.ErrorType";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -198,23 +163,23 @@ namespace Javax.Lang.Model.Type
     }
     #endregion
 
-    #region ReferenceType
+    #region IntersectionType
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/ReferenceType.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/IntersectionType.html
     /// </summary>
-    public partial class ReferenceType : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ReferenceType>
+    public partial class IntersectionType : MASES.JCOBridge.C2JBridge.JVMBridgeBase<IntersectionType>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ReferenceType() { }
+        public IntersectionType() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public ReferenceType(params object[] args) : base(args) { }
+        public IntersectionType(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.lang.model.type.ReferenceType";
+        public override string ClassName => "javax.lang.model.type.IntersectionType";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -233,23 +198,55 @@ namespace Javax.Lang.Model.Type
     }
     #endregion
 
-    #region IntersectionType
+    #region MirroredTypeException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/IntersectionType.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/MirroredTypeException.html
     /// </summary>
-    public partial class IntersectionType : MASES.JCOBridge.C2JBridge.JVMBridgeBase<IntersectionType>
+    public partial class MirroredTypeException : Javax.Lang.Model.Type.MirroredTypesException
+    {
+        public MirroredTypeException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.lang.model.type.MirroredTypeException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region MirroredTypesException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/MirroredTypesException.html
+    /// </summary>
+    public partial class MirroredTypesException : Java.Lang.RuntimeException
+    {
+        public MirroredTypesException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.lang.model.type.MirroredTypesException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region NoType
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/NoType.html
+    /// </summary>
+    public partial class NoType : MASES.JCOBridge.C2JBridge.JVMBridgeBase<NoType>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public IntersectionType() { }
+        public NoType() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public IntersectionType(params object[] args) : base(args) { }
+        public NoType(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.lang.model.type.IntersectionType";
+        public override string ClassName => "javax.lang.model.type.NoType";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -338,23 +335,23 @@ namespace Javax.Lang.Model.Type
     }
     #endregion
 
-    #region TypeMirror
+    #region ReferenceType
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeMirror.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/ReferenceType.html
     /// </summary>
-    public partial class TypeMirror : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TypeMirror>
+    public partial class ReferenceType : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ReferenceType>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public TypeMirror() { }
+        public ReferenceType() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public TypeMirror(params object[] args) : base(args) { }
+        public ReferenceType(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.lang.model.type.TypeMirror";
+        public override string ClassName => "javax.lang.model.type.ReferenceType";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -367,22 +364,6 @@ namespace Javax.Lang.Model.Type
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region UnknownTypeException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/UnknownTypeException.html
-    /// </summary>
-    public partial class UnknownTypeException : Javax.Lang.Model.UnknownEntityException
-    {
-        public UnknownTypeException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.lang.model.type.UnknownTypeException";
 
         // TODO: complete the class
 
@@ -424,39 +405,23 @@ namespace Javax.Lang.Model.Type
     }
     #endregion
 
-    #region MirroredTypeException
+    #region TypeMirror
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/MirroredTypeException.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeMirror.html
     /// </summary>
-    public partial class MirroredTypeException : Javax.Lang.Model.Type.MirroredTypesException
-    {
-        public MirroredTypeException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.lang.model.type.MirroredTypeException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region WildcardType
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/WildcardType.html
-    /// </summary>
-    public partial class WildcardType : MASES.JCOBridge.C2JBridge.JVMBridgeBase<WildcardType>
+    public partial class TypeMirror : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TypeMirror>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public WildcardType() { }
+        public TypeMirror() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public WildcardType(params object[] args) : base(args) { }
+        public TypeMirror(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.lang.model.type.WildcardType";
+        public override string ClassName => "javax.lang.model.type.TypeMirror";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -469,22 +434,6 @@ namespace Javax.Lang.Model.Type
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region MirroredTypesException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/MirroredTypesException.html
-    /// </summary>
-    public partial class MirroredTypesException : Java.Lang.RuntimeException
-    {
-        public MirroredTypesException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.lang.model.type.MirroredTypesException";
 
         // TODO: complete the class
 
@@ -508,6 +457,41 @@ namespace Javax.Lang.Model.Type
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "javax.lang.model.type.TypeVariable";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region TypeVisitor
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVisitor.html
+    /// </summary>
+    public partial class TypeVisitor : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TypeVisitor>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public TypeVisitor() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public TypeVisitor(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.lang.model.type.TypeVisitor";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -561,23 +545,39 @@ namespace Javax.Lang.Model.Type
     }
     #endregion
 
-    #region ErrorType
+    #region UnknownTypeException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/ErrorType.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/UnknownTypeException.html
     /// </summary>
-    public partial class ErrorType : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ErrorType>
+    public partial class UnknownTypeException : Javax.Lang.Model.UnknownEntityException
+    {
+        public UnknownTypeException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.lang.model.type.UnknownTypeException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region WildcardType
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/WildcardType.html
+    /// </summary>
+    public partial class WildcardType : MASES.JCOBridge.C2JBridge.JVMBridgeBase<WildcardType>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ErrorType() { }
+        public WildcardType() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public ErrorType(params object[] args) : base(args) { }
+        public WildcardType(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.lang.model.type.ErrorType";
+        public override string ClassName => "javax.lang.model.type.WildcardType";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;

@@ -30,16 +30,16 @@ namespace Java.Lang.Invoke
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VolatileCallSite.html#<init>(java.lang.invoke.MethodType)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VolatileCallSite.html#<init>(java.lang.invoke.MethodHandle)
         /// </summary>
-        public VolatileCallSite(Java.Lang.Invoke.MethodType arg0)
+        public VolatileCallSite(Java.Lang.Invoke.MethodHandle arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VolatileCallSite.html#<init>(java.lang.invoke.MethodHandle)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/VolatileCallSite.html#<init>(java.lang.invoke.MethodType)
         /// </summary>
-        public VolatileCallSite(Java.Lang.Invoke.MethodHandle arg0)
+        public VolatileCallSite(Java.Lang.Invoke.MethodType arg0)
             : base(arg0)
         {
         }

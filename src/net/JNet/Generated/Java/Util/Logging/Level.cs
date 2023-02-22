@@ -39,21 +39,9 @@ namespace Java.Util.Logging
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#OFF
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#ALL
         /// </summary>
-        public static Java.Util.Logging.Level OFF => Clazz.GetField<Java.Util.Logging.Level>("OFF");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#SEVERE
-        /// </summary>
-        public static Java.Util.Logging.Level SEVERE => Clazz.GetField<Java.Util.Logging.Level>("SEVERE");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#WARNING
-        /// </summary>
-        public static Java.Util.Logging.Level WARNING => Clazz.GetField<Java.Util.Logging.Level>("WARNING");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#INFO
-        /// </summary>
-        public static Java.Util.Logging.Level INFO => Clazz.GetField<Java.Util.Logging.Level>("INFO");
+        public static Java.Util.Logging.Level ALL => Clazz.GetField<Java.Util.Logging.Level>("ALL");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#CONFIG
         /// </summary>
@@ -71,9 +59,21 @@ namespace Java.Util.Logging
         /// </summary>
         public static Java.Util.Logging.Level FINEST => Clazz.GetField<Java.Util.Logging.Level>("FINEST");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#ALL
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#INFO
         /// </summary>
-        public static Java.Util.Logging.Level ALL => Clazz.GetField<Java.Util.Logging.Level>("ALL");
+        public static Java.Util.Logging.Level INFO => Clazz.GetField<Java.Util.Logging.Level>("INFO");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#OFF
+        /// </summary>
+        public static Java.Util.Logging.Level OFF => Clazz.GetField<Java.Util.Logging.Level>("OFF");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#SEVERE
+        /// </summary>
+        public static Java.Util.Logging.Level SEVERE => Clazz.GetField<Java.Util.Logging.Level>("SEVERE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/Level.html#WARNING
+        /// </summary>
+        public static Java.Util.Logging.Level WARNING => Clazz.GetField<Java.Util.Logging.Level>("WARNING");
         
         #endregion
 

@@ -30,17 +30,17 @@ namespace Java.Awt.Dnd
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetDropEvent.html#<init>(java.awt.dnd.DropTargetContext,java.awt.Point,int,int)
-        /// </summary>
-        public DropTargetDropEvent(Java.Awt.Dnd.DropTargetContext arg0, Java.Awt.Point arg1, int arg2, int arg3)
-            : base(arg0, arg1, arg2, arg3)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetDropEvent.html#<init>(java.awt.dnd.DropTargetContext,java.awt.Point,int,int,boolean)
         /// </summary>
         public DropTargetDropEvent(Java.Awt.Dnd.DropTargetContext arg0, Java.Awt.Point arg1, int arg2, int arg3, bool arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetDropEvent.html#<init>(java.awt.dnd.DropTargetContext,java.awt.Point,int,int)
+        /// </summary>
+        public DropTargetDropEvent(Java.Awt.Dnd.DropTargetContext arg0, Java.Awt.Point arg1, int arg2, int arg3)
+            : base(arg0, arg1, arg2, arg3)
         {
         }
         

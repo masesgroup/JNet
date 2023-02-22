@@ -86,8 +86,8 @@ namespace Javax.Lang.Model.Element
         #endregion
 
         #region Nested classes
-        #region ExportsDirective
-        public partial class ExportsDirective
+        #region Directive
+        public partial class Directive
         {
             #region Constructors
 
@@ -106,14 +106,7 @@ namespace Javax.Lang.Model.Element
             #endregion
 
             #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.ExportsDirective.html#getPackage() 
-            /// </summary>
-            public Javax.Lang.Model.Element.PackageElement Package
-            {
-                get { return IExecute<Javax.Lang.Model.Element.PackageElement>("getPackage"); }
-            }
-            
+
             #endregion
 
             // TODO: complete the class
@@ -237,6 +230,60 @@ namespace Javax.Lang.Model.Element
         }
         #endregion
 
+        #region DirectiveKind
+        public partial class DirectiveKind
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveKind.html#EXPORTS
+            /// </summary>
+            public static Javax.Lang.Model.Element.ModuleElement.DirectiveKind EXPORTS => Clazz.GetField<Javax.Lang.Model.Element.ModuleElement.DirectiveKind>("EXPORTS");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveKind.html#OPENS
+            /// </summary>
+            public static Javax.Lang.Model.Element.ModuleElement.DirectiveKind OPENS => Clazz.GetField<Javax.Lang.Model.Element.ModuleElement.DirectiveKind>("OPENS");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveKind.html#PROVIDES
+            /// </summary>
+            public static Javax.Lang.Model.Element.ModuleElement.DirectiveKind PROVIDES => Clazz.GetField<Javax.Lang.Model.Element.ModuleElement.DirectiveKind>("PROVIDES");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveKind.html#REQUIRES
+            /// </summary>
+            public static Javax.Lang.Model.Element.ModuleElement.DirectiveKind REQUIRES => Clazz.GetField<Javax.Lang.Model.Element.ModuleElement.DirectiveKind>("REQUIRES");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveKind.html#USES
+            /// </summary>
+            public static Javax.Lang.Model.Element.ModuleElement.DirectiveKind USES => Clazz.GetField<Javax.Lang.Model.Element.ModuleElement.DirectiveKind>("USES");
+            
+            #endregion
+
+            #region Static methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveKind.html#values()
+            /// </summary>
+            public static Javax.Lang.Model.Element.ModuleElement.DirectiveKind[] Values()
+            {
+                return SExecuteArray<Javax.Lang.Model.Element.ModuleElement.DirectiveKind>("values");
+            }
+            
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region ProvidesDirective
         public partial class ProvidesDirective
         {
@@ -263,6 +310,74 @@ namespace Javax.Lang.Model.Element
             public Javax.Lang.Model.Element.TypeElement Service
             {
                 get { return IExecute<Javax.Lang.Model.Element.TypeElement>("getService"); }
+            }
+            
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region ExportsDirective
+        public partial class ExportsDirective
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.ExportsDirective.html#getPackage() 
+            /// </summary>
+            public Javax.Lang.Model.Element.PackageElement Package
+            {
+                get { return IExecute<Javax.Lang.Model.Element.PackageElement>("getPackage"); }
+            }
+            
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region OpensDirective
+        public partial class OpensDirective
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.OpensDirective.html#getPackage() 
+            /// </summary>
+            public Javax.Lang.Model.Element.PackageElement Package
+            {
+                get { return IExecute<Javax.Lang.Model.Element.PackageElement>("getPackage"); }
             }
             
             #endregion
@@ -313,121 +428,6 @@ namespace Javax.Lang.Model.Element
                 return IExecute<bool>("isTransitive");
             }
             
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region OpensDirective
-        public partial class OpensDirective
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.OpensDirective.html#getPackage() 
-            /// </summary>
-            public Javax.Lang.Model.Element.PackageElement Package
-            {
-                get { return IExecute<Javax.Lang.Model.Element.PackageElement>("getPackage"); }
-            }
-            
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region Directive
-        public partial class Directive
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region DirectiveKind
-        public partial class DirectiveKind
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveKind.html#REQUIRES
-            /// </summary>
-            public static Javax.Lang.Model.Element.ModuleElement.DirectiveKind REQUIRES => Clazz.GetField<Javax.Lang.Model.Element.ModuleElement.DirectiveKind>("REQUIRES");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveKind.html#EXPORTS
-            /// </summary>
-            public static Javax.Lang.Model.Element.ModuleElement.DirectiveKind EXPORTS => Clazz.GetField<Javax.Lang.Model.Element.ModuleElement.DirectiveKind>("EXPORTS");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveKind.html#OPENS
-            /// </summary>
-            public static Javax.Lang.Model.Element.ModuleElement.DirectiveKind OPENS => Clazz.GetField<Javax.Lang.Model.Element.ModuleElement.DirectiveKind>("OPENS");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveKind.html#USES
-            /// </summary>
-            public static Javax.Lang.Model.Element.ModuleElement.DirectiveKind USES => Clazz.GetField<Javax.Lang.Model.Element.ModuleElement.DirectiveKind>("USES");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveKind.html#PROVIDES
-            /// </summary>
-            public static Javax.Lang.Model.Element.ModuleElement.DirectiveKind PROVIDES => Clazz.GetField<Javax.Lang.Model.Element.ModuleElement.DirectiveKind>("PROVIDES");
-            
-            #endregion
-
-            #region Static methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveKind.html#values()
-            /// </summary>
-            public static Javax.Lang.Model.Element.ModuleElement.DirectiveKind[] Values()
-            {
-                return SExecuteArray<Javax.Lang.Model.Element.ModuleElement.DirectiveKind>("values");
-            }
-            
-            #endregion
-
-            #region Instance methods
-
             #endregion
 
             // TODO: complete the class

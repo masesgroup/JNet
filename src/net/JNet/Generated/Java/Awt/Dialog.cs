@@ -30,20 +30,6 @@ namespace Java.Awt
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#<init>(java.awt.Window,java.lang.String)
-        /// </summary>
-        public Dialog(Java.Awt.Window arg0, string arg1)
-            : base(arg0, arg1)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#<init>(java.awt.Window)
-        /// </summary>
-        public Dialog(Java.Awt.Window arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#<init>(java.awt.Dialog,java.lang.String,boolean,java.awt.GraphicsConfiguration)
         /// </summary>
         public Dialog(Java.Awt.Dialog arg0, string arg1, bool arg2, Java.Awt.GraphicsConfiguration arg3)
@@ -55,34 +41,6 @@ namespace Java.Awt
         /// </summary>
         public Dialog(Java.Awt.Dialog arg0, string arg1, bool arg2)
             : base(arg0, arg1, arg2)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#<init>(java.awt.Frame,java.lang.String,boolean)
-        /// </summary>
-        public Dialog(Java.Awt.Frame arg0, string arg1, bool arg2)
-            : base(arg0, arg1, arg2)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#<init>(java.awt.Frame,java.lang.String)
-        /// </summary>
-        public Dialog(Java.Awt.Frame arg0, string arg1)
-            : base(arg0, arg1)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#<init>(java.awt.Frame,boolean)
-        /// </summary>
-        public Dialog(Java.Awt.Frame arg0, bool arg1)
-            : base(arg0, arg1)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#<init>(java.awt.Frame)
-        /// </summary>
-        public Dialog(Java.Awt.Frame arg0)
-            : base(arg0)
         {
         }
         /// <summary>
@@ -100,10 +58,52 @@ namespace Java.Awt
         {
         }
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#<init>(java.awt.Frame,boolean)
+        /// </summary>
+        public Dialog(Java.Awt.Frame arg0, bool arg1)
+            : base(arg0, arg1)
+        {
+        }
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#<init>(java.awt.Frame,java.lang.String,boolean,java.awt.GraphicsConfiguration)
         /// </summary>
         public Dialog(Java.Awt.Frame arg0, string arg1, bool arg2, Java.Awt.GraphicsConfiguration arg3)
             : base(arg0, arg1, arg2, arg3)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#<init>(java.awt.Frame,java.lang.String,boolean)
+        /// </summary>
+        public Dialog(Java.Awt.Frame arg0, string arg1, bool arg2)
+            : base(arg0, arg1, arg2)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#<init>(java.awt.Frame,java.lang.String)
+        /// </summary>
+        public Dialog(Java.Awt.Frame arg0, string arg1)
+            : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#<init>(java.awt.Frame)
+        /// </summary>
+        public Dialog(Java.Awt.Frame arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#<init>(java.awt.Window,java.lang.String)
+        /// </summary>
+        public Dialog(Java.Awt.Window arg0, string arg1)
+            : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.html#<init>(java.awt.Window)
+        /// </summary>
+        public Dialog(Java.Awt.Window arg0)
+            : base(arg0)
         {
         }
         
@@ -179,56 +179,6 @@ namespace Java.Awt
         #endregion
 
         #region Nested classes
-        #region ModalityType
-        public partial class ModalityType
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.ModalityType.html#MODELESS
-            /// </summary>
-            public static Java.Awt.Dialog.ModalityType MODELESS => Clazz.GetField<Java.Awt.Dialog.ModalityType>("MODELESS");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.ModalityType.html#DOCUMENT_MODAL
-            /// </summary>
-            public static Java.Awt.Dialog.ModalityType DOCUMENT_MODAL => Clazz.GetField<Java.Awt.Dialog.ModalityType>("DOCUMENT_MODAL");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.ModalityType.html#APPLICATION_MODAL
-            /// </summary>
-            public static Java.Awt.Dialog.ModalityType APPLICATION_MODAL => Clazz.GetField<Java.Awt.Dialog.ModalityType>("APPLICATION_MODAL");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.ModalityType.html#TOOLKIT_MODAL
-            /// </summary>
-            public static Java.Awt.Dialog.ModalityType TOOLKIT_MODAL => Clazz.GetField<Java.Awt.Dialog.ModalityType>("TOOLKIT_MODAL");
-            
-            #endregion
-
-            #region Static methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.ModalityType.html#values()
-            /// </summary>
-            public static Java.Awt.Dialog.ModalityType[] Values()
-            {
-                return SExecuteArray<Java.Awt.Dialog.ModalityType>("values");
-            }
-            
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region ModalExclusionType
         public partial class ModalExclusionType
         {
@@ -242,13 +192,13 @@ namespace Java.Awt
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.ModalExclusionType.html#NO_EXCLUDE
-            /// </summary>
-            public static Java.Awt.Dialog.ModalExclusionType NO_EXCLUDE => Clazz.GetField<Java.Awt.Dialog.ModalExclusionType>("NO_EXCLUDE");
-            /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.ModalExclusionType.html#APPLICATION_EXCLUDE
             /// </summary>
             public static Java.Awt.Dialog.ModalExclusionType APPLICATION_EXCLUDE => Clazz.GetField<Java.Awt.Dialog.ModalExclusionType>("APPLICATION_EXCLUDE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.ModalExclusionType.html#NO_EXCLUDE
+            /// </summary>
+            public static Java.Awt.Dialog.ModalExclusionType NO_EXCLUDE => Clazz.GetField<Java.Awt.Dialog.ModalExclusionType>("NO_EXCLUDE");
             /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.ModalExclusionType.html#TOOLKIT_EXCLUDE
             /// </summary>
@@ -263,6 +213,56 @@ namespace Java.Awt
             public static Java.Awt.Dialog.ModalExclusionType[] Values()
             {
                 return SExecuteArray<Java.Awt.Dialog.ModalExclusionType>("values");
+            }
+            
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region ModalityType
+        public partial class ModalityType
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.ModalityType.html#APPLICATION_MODAL
+            /// </summary>
+            public static Java.Awt.Dialog.ModalityType APPLICATION_MODAL => Clazz.GetField<Java.Awt.Dialog.ModalityType>("APPLICATION_MODAL");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.ModalityType.html#DOCUMENT_MODAL
+            /// </summary>
+            public static Java.Awt.Dialog.ModalityType DOCUMENT_MODAL => Clazz.GetField<Java.Awt.Dialog.ModalityType>("DOCUMENT_MODAL");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.ModalityType.html#MODELESS
+            /// </summary>
+            public static Java.Awt.Dialog.ModalityType MODELESS => Clazz.GetField<Java.Awt.Dialog.ModalityType>("MODELESS");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.ModalityType.html#TOOLKIT_MODAL
+            /// </summary>
+            public static Java.Awt.Dialog.ModalityType TOOLKIT_MODAL => Clazz.GetField<Java.Awt.Dialog.ModalityType>("TOOLKIT_MODAL");
+            
+            #endregion
+
+            #region Static methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dialog.ModalityType.html#values()
+            /// </summary>
+            public static Java.Awt.Dialog.ModalityType[] Values()
+            {
+                return SExecuteArray<Java.Awt.Dialog.ModalityType>("values");
             }
             
             #endregion

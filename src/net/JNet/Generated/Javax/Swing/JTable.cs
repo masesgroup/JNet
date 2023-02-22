@@ -30,6 +30,13 @@ namespace Javax.Swing
     {
         #region Constructors
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#<init>(int,int)
+        /// </summary>
+        public JTable(int arg0, int arg1)
+            : base(arg0, arg1)
+        {
+        }
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#<init>(javax.swing.table.TableModel,javax.swing.table.TableColumnModel,javax.swing.ListSelectionModel)
         /// </summary>
         public JTable(Javax.Swing.Table.TableModel arg0, Javax.Swing.Table.TableColumnModel arg1, Javax.Swing.ListSelectionModel arg2)
@@ -37,9 +44,9 @@ namespace Javax.Swing
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#<init>(int,int)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#<init>(javax.swing.table.TableModel,javax.swing.table.TableColumnModel)
         /// </summary>
-        public JTable(int arg0, int arg1)
+        public JTable(Javax.Swing.Table.TableModel arg0, Javax.Swing.Table.TableColumnModel arg1)
             : base(arg0, arg1)
         {
         }
@@ -48,13 +55,6 @@ namespace Javax.Swing
         /// </summary>
         public JTable(Javax.Swing.Table.TableModel arg0)
             : base(arg0)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#<init>(javax.swing.table.TableModel,javax.swing.table.TableColumnModel)
-        /// </summary>
-        public JTable(Javax.Swing.Table.TableModel arg0, Javax.Swing.Table.TableColumnModel arg1)
-            : base(arg0, arg1)
         {
         }
         
@@ -73,25 +73,25 @@ namespace Javax.Swing
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#AUTO_RESIZE_OFF
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#AUTO_RESIZE_ALL_COLUMNS
         /// </summary>
-        public static int AUTO_RESIZE_OFF => Clazz.GetField<int>("AUTO_RESIZE_OFF");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#AUTO_RESIZE_NEXT_COLUMN
-        /// </summary>
-        public static int AUTO_RESIZE_NEXT_COLUMN => Clazz.GetField<int>("AUTO_RESIZE_NEXT_COLUMN");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#AUTO_RESIZE_SUBSEQUENT_COLUMNS
-        /// </summary>
-        public static int AUTO_RESIZE_SUBSEQUENT_COLUMNS => Clazz.GetField<int>("AUTO_RESIZE_SUBSEQUENT_COLUMNS");
+        public static int AUTO_RESIZE_ALL_COLUMNS => Clazz.GetField<int>("AUTO_RESIZE_ALL_COLUMNS");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#AUTO_RESIZE_LAST_COLUMN
         /// </summary>
         public static int AUTO_RESIZE_LAST_COLUMN => Clazz.GetField<int>("AUTO_RESIZE_LAST_COLUMN");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#AUTO_RESIZE_ALL_COLUMNS
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#AUTO_RESIZE_NEXT_COLUMN
         /// </summary>
-        public static int AUTO_RESIZE_ALL_COLUMNS => Clazz.GetField<int>("AUTO_RESIZE_ALL_COLUMNS");
+        public static int AUTO_RESIZE_NEXT_COLUMN => Clazz.GetField<int>("AUTO_RESIZE_NEXT_COLUMN");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#AUTO_RESIZE_OFF
+        /// </summary>
+        public static int AUTO_RESIZE_OFF => Clazz.GetField<int>("AUTO_RESIZE_OFF");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#AUTO_RESIZE_SUBSEQUENT_COLUMNS
+        /// </summary>
+        public static int AUTO_RESIZE_SUBSEQUENT_COLUMNS => Clazz.GetField<int>("AUTO_RESIZE_SUBSEQUENT_COLUMNS");
         
         #endregion
 
@@ -768,13 +768,13 @@ namespace Javax.Swing
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.PrintMode.html#NORMAL
-            /// </summary>
-            public static Javax.Swing.JTable.PrintMode NORMAL => Clazz.GetField<Javax.Swing.JTable.PrintMode>("NORMAL");
-            /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.PrintMode.html#FIT_WIDTH
             /// </summary>
             public static Javax.Swing.JTable.PrintMode FIT_WIDTH => Clazz.GetField<Javax.Swing.JTable.PrintMode>("FIT_WIDTH");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.PrintMode.html#NORMAL
+            /// </summary>
+            public static Javax.Swing.JTable.PrintMode NORMAL => Clazz.GetField<Javax.Swing.JTable.PrintMode>("NORMAL");
             
             #endregion
 

@@ -38,25 +38,25 @@ namespace Javax.Management.Openmbean
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/SimpleType.html#VOID
-        /// </summary>
-        public static Javax.Management.Openmbean.SimpleType VOID => Clazz.GetField<Javax.Management.Openmbean.SimpleType>("VOID");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/SimpleType.html#BOOLEAN
         /// </summary>
         public static Javax.Management.Openmbean.SimpleType BOOLEAN => Clazz.GetField<Javax.Management.Openmbean.SimpleType>("BOOLEAN");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/SimpleType.html#CHARACTER
-        /// </summary>
-        public static Javax.Management.Openmbean.SimpleType CHARACTER => Clazz.GetField<Javax.Management.Openmbean.SimpleType>("CHARACTER");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/SimpleType.html#BYTE
         /// </summary>
         public static Javax.Management.Openmbean.SimpleType BYTE => Clazz.GetField<Javax.Management.Openmbean.SimpleType>("BYTE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/SimpleType.html#SHORT
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/SimpleType.html#CHARACTER
         /// </summary>
-        public static Javax.Management.Openmbean.SimpleType SHORT => Clazz.GetField<Javax.Management.Openmbean.SimpleType>("SHORT");
+        public static Javax.Management.Openmbean.SimpleType CHARACTER => Clazz.GetField<Javax.Management.Openmbean.SimpleType>("CHARACTER");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/SimpleType.html#DOUBLE
+        /// </summary>
+        public static Javax.Management.Openmbean.SimpleType DOUBLE => Clazz.GetField<Javax.Management.Openmbean.SimpleType>("DOUBLE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/SimpleType.html#FLOAT
+        /// </summary>
+        public static Javax.Management.Openmbean.SimpleType FLOAT => Clazz.GetField<Javax.Management.Openmbean.SimpleType>("FLOAT");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/SimpleType.html#INTEGER
         /// </summary>
@@ -66,17 +66,17 @@ namespace Javax.Management.Openmbean
         /// </summary>
         public static Javax.Management.Openmbean.SimpleType LONG => Clazz.GetField<Javax.Management.Openmbean.SimpleType>("LONG");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/SimpleType.html#FLOAT
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/SimpleType.html#SHORT
         /// </summary>
-        public static Javax.Management.Openmbean.SimpleType FLOAT => Clazz.GetField<Javax.Management.Openmbean.SimpleType>("FLOAT");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/SimpleType.html#DOUBLE
-        /// </summary>
-        public static Javax.Management.Openmbean.SimpleType DOUBLE => Clazz.GetField<Javax.Management.Openmbean.SimpleType>("DOUBLE");
+        public static Javax.Management.Openmbean.SimpleType SHORT => Clazz.GetField<Javax.Management.Openmbean.SimpleType>("SHORT");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/SimpleType.html#STRING
         /// </summary>
         public static Javax.Management.Openmbean.SimpleType STRING => Clazz.GetField<Javax.Management.Openmbean.SimpleType>("STRING");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/SimpleType.html#VOID
+        /// </summary>
+        public static Javax.Management.Openmbean.SimpleType VOID => Clazz.GetField<Javax.Management.Openmbean.SimpleType>("VOID");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/SimpleType.html#BIGDECIMAL
         /// </summary>

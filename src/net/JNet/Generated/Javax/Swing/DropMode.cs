@@ -38,37 +38,37 @@ namespace Javax.Swing
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DropMode.html#USE_SELECTION
-        /// </summary>
-        public static Javax.Swing.DropMode USE_SELECTION => Clazz.GetField<Javax.Swing.DropMode>("USE_SELECTION");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DropMode.html#ON
-        /// </summary>
-        public static Javax.Swing.DropMode ON => Clazz.GetField<Javax.Swing.DropMode>("ON");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DropMode.html#INSERT
         /// </summary>
         public static Javax.Swing.DropMode INSERT => Clazz.GetField<Javax.Swing.DropMode>("INSERT");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DropMode.html#INSERT_ROWS
-        /// </summary>
-        public static Javax.Swing.DropMode INSERT_ROWS => Clazz.GetField<Javax.Swing.DropMode>("INSERT_ROWS");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DropMode.html#INSERT_COLS
         /// </summary>
         public static Javax.Swing.DropMode INSERT_COLS => Clazz.GetField<Javax.Swing.DropMode>("INSERT_COLS");
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DropMode.html#INSERT_ROWS
+        /// </summary>
+        public static Javax.Swing.DropMode INSERT_ROWS => Clazz.GetField<Javax.Swing.DropMode>("INSERT_ROWS");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DropMode.html#ON
+        /// </summary>
+        public static Javax.Swing.DropMode ON => Clazz.GetField<Javax.Swing.DropMode>("ON");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DropMode.html#ON_OR_INSERT
         /// </summary>
         public static Javax.Swing.DropMode ON_OR_INSERT => Clazz.GetField<Javax.Swing.DropMode>("ON_OR_INSERT");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DropMode.html#ON_OR_INSERT_COLS
+        /// </summary>
+        public static Javax.Swing.DropMode ON_OR_INSERT_COLS => Clazz.GetField<Javax.Swing.DropMode>("ON_OR_INSERT_COLS");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DropMode.html#ON_OR_INSERT_ROWS
         /// </summary>
         public static Javax.Swing.DropMode ON_OR_INSERT_ROWS => Clazz.GetField<Javax.Swing.DropMode>("ON_OR_INSERT_ROWS");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DropMode.html#ON_OR_INSERT_COLS
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DropMode.html#USE_SELECTION
         /// </summary>
-        public static Javax.Swing.DropMode ON_OR_INSERT_COLS => Clazz.GetField<Javax.Swing.DropMode>("ON_OR_INSERT_COLS");
+        public static Javax.Swing.DropMode USE_SELECTION => Clazz.GetField<Javax.Swing.DropMode>("USE_SELECTION");
         
         #endregion
 

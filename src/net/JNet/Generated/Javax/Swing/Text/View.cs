@@ -50,10 +50,6 @@ namespace Javax.Swing.Text
         /// </summary>
         public static int BadBreakWeight => Clazz.GetField<int>("BadBreakWeight");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#GoodBreakWeight
-        /// </summary>
-        public static int GoodBreakWeight => Clazz.GetField<int>("GoodBreakWeight");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#ExcellentBreakWeight
         /// </summary>
         public static int ExcellentBreakWeight => Clazz.GetField<int>("ExcellentBreakWeight");
@@ -61,6 +57,10 @@ namespace Javax.Swing.Text
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#ForcedBreakWeight
         /// </summary>
         public static int ForcedBreakWeight => Clazz.GetField<int>("ForcedBreakWeight");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#GoodBreakWeight
+        /// </summary>
+        public static int GoodBreakWeight => Clazz.GetField<int>("GoodBreakWeight");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/View.html#X_AXIS
         /// </summary>

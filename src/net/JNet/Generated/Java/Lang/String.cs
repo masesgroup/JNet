@@ -30,31 +30,10 @@ namespace Java.Lang
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#<init>(byte[])
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#<init>(byte[],int,int,java.lang.String) throws java.io.UnsupportedEncodingException
         /// </summary>
-        public String(byte[] arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#<init>(byte[],int,int)
-        /// </summary>
-        public String(byte[] arg0, int arg1, int arg2)
-            : base(arg0, arg1, arg2)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#<init>(byte[],java.nio.charset.Charset)
-        /// </summary>
-        public String(byte[] arg0, Java.Nio.Charset.Charset arg1)
-            : base(arg0, arg1)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#<init>(byte[],java.lang.String) throws java.io.UnsupportedEncodingException
-        /// </summary>
-        public String(byte[] arg0, string arg1)
-            : base(arg0, arg1)
+        public String(byte[] arg0, int arg1, int arg2, string arg3)
+            : base(arg0, arg1, arg2, arg3)
         {
         }
         /// <summary>
@@ -65,16 +44,30 @@ namespace Java.Lang
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#<init>(java.lang.StringBuilder)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#<init>(byte[],int,int)
         /// </summary>
-        public String(Java.Lang.StringBuilder arg0)
-            : base(arg0)
+        public String(byte[] arg0, int arg1, int arg2)
+            : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#<init>(java.lang.StringBuffer)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#<init>(byte[],java.lang.String) throws java.io.UnsupportedEncodingException
         /// </summary>
-        public String(Java.Lang.StringBuffer arg0)
+        public String(byte[] arg0, string arg1)
+            : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#<init>(byte[],java.nio.charset.Charset)
+        /// </summary>
+        public String(byte[] arg0, Java.Nio.Charset.Charset arg1)
+            : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#<init>(byte[])
+        /// </summary>
+        public String(byte[] arg0)
             : base(arg0)
         {
         }
@@ -93,6 +86,13 @@ namespace Java.Lang
         {
         }
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#<init>(int[],int,int)
+        /// </summary>
+        public String(int[] arg0, int arg1, int arg2)
+            : base(arg0, arg1, arg2)
+        {
+        }
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#<init>(java.lang.String)
         /// </summary>
         public String(string arg0)
@@ -100,17 +100,17 @@ namespace Java.Lang
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#<init>(byte[],int,int,java.lang.String) throws java.io.UnsupportedEncodingException
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#<init>(java.lang.StringBuffer)
         /// </summary>
-        public String(byte[] arg0, int arg1, int arg2, string arg3)
-            : base(arg0, arg1, arg2, arg3)
+        public String(Java.Lang.StringBuffer arg0)
+            : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#<init>(int[],int,int)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html#<init>(java.lang.StringBuilder)
         /// </summary>
-        public String(int[] arg0, int arg1, int arg2)
-            : base(arg0, arg1, arg2)
+        public String(Java.Lang.StringBuilder arg0)
+            : base(arg0)
         {
         }
         

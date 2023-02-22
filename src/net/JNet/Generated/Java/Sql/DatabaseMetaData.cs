@@ -39,53 +39,29 @@ namespace Java.Sql
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#procedureResultUnknown
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#bestRowNotPseudo
         /// </summary>
-        public static int procedureResultUnknown => Clazz.GetField<int>("procedureResultUnknown");
+        public static int bestRowNotPseudo => Clazz.GetField<int>("bestRowNotPseudo");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#procedureNoResult
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#bestRowPseudo
         /// </summary>
-        public static int procedureNoResult => Clazz.GetField<int>("procedureNoResult");
+        public static int bestRowPseudo => Clazz.GetField<int>("bestRowPseudo");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#procedureReturnsResult
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#bestRowSession
         /// </summary>
-        public static int procedureReturnsResult => Clazz.GetField<int>("procedureReturnsResult");
+        public static int bestRowSession => Clazz.GetField<int>("bestRowSession");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#procedureColumnUnknown
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#bestRowTemporary
         /// </summary>
-        public static int procedureColumnUnknown => Clazz.GetField<int>("procedureColumnUnknown");
+        public static int bestRowTemporary => Clazz.GetField<int>("bestRowTemporary");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#procedureColumnIn
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#bestRowTransaction
         /// </summary>
-        public static int procedureColumnIn => Clazz.GetField<int>("procedureColumnIn");
+        public static int bestRowTransaction => Clazz.GetField<int>("bestRowTransaction");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#procedureColumnInOut
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#bestRowUnknown
         /// </summary>
-        public static int procedureColumnInOut => Clazz.GetField<int>("procedureColumnInOut");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#procedureColumnOut
-        /// </summary>
-        public static int procedureColumnOut => Clazz.GetField<int>("procedureColumnOut");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#procedureColumnReturn
-        /// </summary>
-        public static int procedureColumnReturn => Clazz.GetField<int>("procedureColumnReturn");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#procedureColumnResult
-        /// </summary>
-        public static int procedureColumnResult => Clazz.GetField<int>("procedureColumnResult");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#procedureNoNulls
-        /// </summary>
-        public static int procedureNoNulls => Clazz.GetField<int>("procedureNoNulls");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#procedureNullable
-        /// </summary>
-        public static int procedureNullable => Clazz.GetField<int>("procedureNullable");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#procedureNullableUnknown
-        /// </summary>
-        public static int procedureNullableUnknown => Clazz.GetField<int>("procedureNullableUnknown");
+        public static int bestRowUnknown => Clazz.GetField<int>("bestRowUnknown");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#columnNoNulls
         /// </summary>
@@ -99,146 +75,6 @@ namespace Java.Sql
         /// </summary>
         public static int columnNullableUnknown => Clazz.GetField<int>("columnNullableUnknown");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#bestRowTemporary
-        /// </summary>
-        public static int bestRowTemporary => Clazz.GetField<int>("bestRowTemporary");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#bestRowTransaction
-        /// </summary>
-        public static int bestRowTransaction => Clazz.GetField<int>("bestRowTransaction");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#bestRowSession
-        /// </summary>
-        public static int bestRowSession => Clazz.GetField<int>("bestRowSession");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#bestRowUnknown
-        /// </summary>
-        public static int bestRowUnknown => Clazz.GetField<int>("bestRowUnknown");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#bestRowNotPseudo
-        /// </summary>
-        public static int bestRowNotPseudo => Clazz.GetField<int>("bestRowNotPseudo");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#bestRowPseudo
-        /// </summary>
-        public static int bestRowPseudo => Clazz.GetField<int>("bestRowPseudo");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#versionColumnUnknown
-        /// </summary>
-        public static int versionColumnUnknown => Clazz.GetField<int>("versionColumnUnknown");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#versionColumnNotPseudo
-        /// </summary>
-        public static int versionColumnNotPseudo => Clazz.GetField<int>("versionColumnNotPseudo");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#versionColumnPseudo
-        /// </summary>
-        public static int versionColumnPseudo => Clazz.GetField<int>("versionColumnPseudo");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#importedKeyCascade
-        /// </summary>
-        public static int importedKeyCascade => Clazz.GetField<int>("importedKeyCascade");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#importedKeyRestrict
-        /// </summary>
-        public static int importedKeyRestrict => Clazz.GetField<int>("importedKeyRestrict");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#importedKeySetNull
-        /// </summary>
-        public static int importedKeySetNull => Clazz.GetField<int>("importedKeySetNull");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#importedKeyNoAction
-        /// </summary>
-        public static int importedKeyNoAction => Clazz.GetField<int>("importedKeyNoAction");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#importedKeySetDefault
-        /// </summary>
-        public static int importedKeySetDefault => Clazz.GetField<int>("importedKeySetDefault");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#importedKeyInitiallyDeferred
-        /// </summary>
-        public static int importedKeyInitiallyDeferred => Clazz.GetField<int>("importedKeyInitiallyDeferred");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#importedKeyInitiallyImmediate
-        /// </summary>
-        public static int importedKeyInitiallyImmediate => Clazz.GetField<int>("importedKeyInitiallyImmediate");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#importedKeyNotDeferrable
-        /// </summary>
-        public static int importedKeyNotDeferrable => Clazz.GetField<int>("importedKeyNotDeferrable");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#typeNoNulls
-        /// </summary>
-        public static int typeNoNulls => Clazz.GetField<int>("typeNoNulls");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#typeNullable
-        /// </summary>
-        public static int typeNullable => Clazz.GetField<int>("typeNullable");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#typeNullableUnknown
-        /// </summary>
-        public static int typeNullableUnknown => Clazz.GetField<int>("typeNullableUnknown");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#typePredNone
-        /// </summary>
-        public static int typePredNone => Clazz.GetField<int>("typePredNone");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#typePredChar
-        /// </summary>
-        public static int typePredChar => Clazz.GetField<int>("typePredChar");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#typePredBasic
-        /// </summary>
-        public static int typePredBasic => Clazz.GetField<int>("typePredBasic");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#typeSearchable
-        /// </summary>
-        public static int typeSearchable => Clazz.GetField<int>("typeSearchable");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#tableIndexStatistic
-        /// </summary>
-        public static short tableIndexStatistic => Clazz.GetField<short>("tableIndexStatistic");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#tableIndexClustered
-        /// </summary>
-        public static short tableIndexClustered => Clazz.GetField<short>("tableIndexClustered");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#tableIndexHashed
-        /// </summary>
-        public static short tableIndexHashed => Clazz.GetField<short>("tableIndexHashed");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#tableIndexOther
-        /// </summary>
-        public static short tableIndexOther => Clazz.GetField<short>("tableIndexOther");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#attributeNoNulls
-        /// </summary>
-        public static short attributeNoNulls => Clazz.GetField<short>("attributeNoNulls");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#attributeNullable
-        /// </summary>
-        public static short attributeNullable => Clazz.GetField<short>("attributeNullable");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#attributeNullableUnknown
-        /// </summary>
-        public static short attributeNullableUnknown => Clazz.GetField<short>("attributeNullableUnknown");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#sqlStateXOpen
-        /// </summary>
-        public static int sqlStateXOpen => Clazz.GetField<int>("sqlStateXOpen");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#sqlStateSQL
-        /// </summary>
-        public static int sqlStateSQL => Clazz.GetField<int>("sqlStateSQL");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#sqlStateSQL99
-        /// </summary>
-        public static int sqlStateSQL99 => Clazz.GetField<int>("sqlStateSQL99");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#functionColumnUnknown
-        /// </summary>
-        public static int functionColumnUnknown => Clazz.GetField<int>("functionColumnUnknown");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#functionColumnIn
         /// </summary>
         public static int functionColumnIn => Clazz.GetField<int>("functionColumnIn");
@@ -251,17 +87,21 @@ namespace Java.Sql
         /// </summary>
         public static int functionColumnOut => Clazz.GetField<int>("functionColumnOut");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#functionReturn
-        /// </summary>
-        public static int functionReturn => Clazz.GetField<int>("functionReturn");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#functionColumnResult
         /// </summary>
         public static int functionColumnResult => Clazz.GetField<int>("functionColumnResult");
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#functionColumnUnknown
+        /// </summary>
+        public static int functionColumnUnknown => Clazz.GetField<int>("functionColumnUnknown");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#functionNoNulls
         /// </summary>
         public static int functionNoNulls => Clazz.GetField<int>("functionNoNulls");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#functionNoTable
+        /// </summary>
+        public static int functionNoTable => Clazz.GetField<int>("functionNoTable");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#functionNullable
         /// </summary>
@@ -275,13 +115,173 @@ namespace Java.Sql
         /// </summary>
         public static int functionResultUnknown => Clazz.GetField<int>("functionResultUnknown");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#functionNoTable
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#functionReturn
         /// </summary>
-        public static int functionNoTable => Clazz.GetField<int>("functionNoTable");
+        public static int functionReturn => Clazz.GetField<int>("functionReturn");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#functionReturnsTable
         /// </summary>
         public static int functionReturnsTable => Clazz.GetField<int>("functionReturnsTable");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#importedKeyCascade
+        /// </summary>
+        public static int importedKeyCascade => Clazz.GetField<int>("importedKeyCascade");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#importedKeyInitiallyDeferred
+        /// </summary>
+        public static int importedKeyInitiallyDeferred => Clazz.GetField<int>("importedKeyInitiallyDeferred");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#importedKeyInitiallyImmediate
+        /// </summary>
+        public static int importedKeyInitiallyImmediate => Clazz.GetField<int>("importedKeyInitiallyImmediate");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#importedKeyNoAction
+        /// </summary>
+        public static int importedKeyNoAction => Clazz.GetField<int>("importedKeyNoAction");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#importedKeyNotDeferrable
+        /// </summary>
+        public static int importedKeyNotDeferrable => Clazz.GetField<int>("importedKeyNotDeferrable");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#importedKeyRestrict
+        /// </summary>
+        public static int importedKeyRestrict => Clazz.GetField<int>("importedKeyRestrict");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#importedKeySetDefault
+        /// </summary>
+        public static int importedKeySetDefault => Clazz.GetField<int>("importedKeySetDefault");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#importedKeySetNull
+        /// </summary>
+        public static int importedKeySetNull => Clazz.GetField<int>("importedKeySetNull");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#procedureColumnIn
+        /// </summary>
+        public static int procedureColumnIn => Clazz.GetField<int>("procedureColumnIn");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#procedureColumnInOut
+        /// </summary>
+        public static int procedureColumnInOut => Clazz.GetField<int>("procedureColumnInOut");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#procedureColumnOut
+        /// </summary>
+        public static int procedureColumnOut => Clazz.GetField<int>("procedureColumnOut");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#procedureColumnResult
+        /// </summary>
+        public static int procedureColumnResult => Clazz.GetField<int>("procedureColumnResult");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#procedureColumnReturn
+        /// </summary>
+        public static int procedureColumnReturn => Clazz.GetField<int>("procedureColumnReturn");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#procedureColumnUnknown
+        /// </summary>
+        public static int procedureColumnUnknown => Clazz.GetField<int>("procedureColumnUnknown");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#procedureNoNulls
+        /// </summary>
+        public static int procedureNoNulls => Clazz.GetField<int>("procedureNoNulls");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#procedureNoResult
+        /// </summary>
+        public static int procedureNoResult => Clazz.GetField<int>("procedureNoResult");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#procedureNullable
+        /// </summary>
+        public static int procedureNullable => Clazz.GetField<int>("procedureNullable");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#procedureNullableUnknown
+        /// </summary>
+        public static int procedureNullableUnknown => Clazz.GetField<int>("procedureNullableUnknown");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#procedureResultUnknown
+        /// </summary>
+        public static int procedureResultUnknown => Clazz.GetField<int>("procedureResultUnknown");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#procedureReturnsResult
+        /// </summary>
+        public static int procedureReturnsResult => Clazz.GetField<int>("procedureReturnsResult");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#sqlStateSQL
+        /// </summary>
+        public static int sqlStateSQL => Clazz.GetField<int>("sqlStateSQL");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#sqlStateSQL99
+        /// </summary>
+        public static int sqlStateSQL99 => Clazz.GetField<int>("sqlStateSQL99");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#sqlStateXOpen
+        /// </summary>
+        public static int sqlStateXOpen => Clazz.GetField<int>("sqlStateXOpen");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#typeNoNulls
+        /// </summary>
+        public static int typeNoNulls => Clazz.GetField<int>("typeNoNulls");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#typeNullable
+        /// </summary>
+        public static int typeNullable => Clazz.GetField<int>("typeNullable");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#typeNullableUnknown
+        /// </summary>
+        public static int typeNullableUnknown => Clazz.GetField<int>("typeNullableUnknown");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#typePredBasic
+        /// </summary>
+        public static int typePredBasic => Clazz.GetField<int>("typePredBasic");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#typePredChar
+        /// </summary>
+        public static int typePredChar => Clazz.GetField<int>("typePredChar");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#typePredNone
+        /// </summary>
+        public static int typePredNone => Clazz.GetField<int>("typePredNone");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#typeSearchable
+        /// </summary>
+        public static int typeSearchable => Clazz.GetField<int>("typeSearchable");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#versionColumnNotPseudo
+        /// </summary>
+        public static int versionColumnNotPseudo => Clazz.GetField<int>("versionColumnNotPseudo");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#versionColumnPseudo
+        /// </summary>
+        public static int versionColumnPseudo => Clazz.GetField<int>("versionColumnPseudo");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#versionColumnUnknown
+        /// </summary>
+        public static int versionColumnUnknown => Clazz.GetField<int>("versionColumnUnknown");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#attributeNoNulls
+        /// </summary>
+        public static short attributeNoNulls => Clazz.GetField<short>("attributeNoNulls");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#attributeNullable
+        /// </summary>
+        public static short attributeNullable => Clazz.GetField<short>("attributeNullable");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#attributeNullableUnknown
+        /// </summary>
+        public static short attributeNullableUnknown => Clazz.GetField<short>("attributeNullableUnknown");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#tableIndexClustered
+        /// </summary>
+        public static short tableIndexClustered => Clazz.GetField<short>("tableIndexClustered");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#tableIndexHashed
+        /// </summary>
+        public static short tableIndexHashed => Clazz.GetField<short>("tableIndexHashed");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#tableIndexOther
+        /// </summary>
+        public static short tableIndexOther => Clazz.GetField<short>("tableIndexOther");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#tableIndexStatistic
+        /// </summary>
+        public static short tableIndexStatistic => Clazz.GetField<short>("tableIndexStatistic");
         
         #endregion
 

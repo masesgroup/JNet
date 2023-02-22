@@ -41,9 +41,17 @@ namespace Javax.Print.Attribute.Standard
 
         #region Fields
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Sides.html#DUPLEX
+        /// </summary>
+        public static Javax.Print.Attribute.Standard.Sides DUPLEX => Clazz.GetField<Javax.Print.Attribute.Standard.Sides>("DUPLEX");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Sides.html#ONE_SIDED
         /// </summary>
         public static Javax.Print.Attribute.Standard.Sides ONE_SIDED => Clazz.GetField<Javax.Print.Attribute.Standard.Sides>("ONE_SIDED");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Sides.html#TUMBLE
+        /// </summary>
+        public static Javax.Print.Attribute.Standard.Sides TUMBLE => Clazz.GetField<Javax.Print.Attribute.Standard.Sides>("TUMBLE");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Sides.html#TWO_SIDED_LONG_EDGE
         /// </summary>
@@ -52,14 +60,6 @@ namespace Javax.Print.Attribute.Standard
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Sides.html#TWO_SIDED_SHORT_EDGE
         /// </summary>
         public static Javax.Print.Attribute.Standard.Sides TWO_SIDED_SHORT_EDGE => Clazz.GetField<Javax.Print.Attribute.Standard.Sides>("TWO_SIDED_SHORT_EDGE");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Sides.html#DUPLEX
-        /// </summary>
-        public static Javax.Print.Attribute.Standard.Sides DUPLEX => Clazz.GetField<Javax.Print.Attribute.Standard.Sides>("DUPLEX");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Sides.html#TUMBLE
-        /// </summary>
-        public static Javax.Print.Attribute.Standard.Sides TUMBLE => Clazz.GetField<Javax.Print.Attribute.Standard.Sides>("TUMBLE");
         
         #endregion
 

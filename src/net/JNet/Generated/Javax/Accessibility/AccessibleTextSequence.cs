@@ -45,13 +45,13 @@ namespace Javax.Accessibility
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleTextSequence.html#startIndex
-        /// </summary>
-        public int startIndex => Instance.GetField<int>("startIndex");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleTextSequence.html#endIndex
         /// </summary>
         public int endIndex => Instance.GetField<int>("endIndex");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleTextSequence.html#startIndex
+        /// </summary>
+        public int startIndex => Instance.GetField<int>("startIndex");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleTextSequence.html#text
         /// </summary>

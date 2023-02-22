@@ -77,9 +77,9 @@ namespace Javax.Management.Remote.Rmi
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl_Stub.html#getMBeanCount(javax.security.auth.Subject) throws java.io.IOException
         /// </summary>
-        public int GetMBeanCount(Javax.Security.Auth.Subject arg0)
+        public int? GetMBeanCount(Javax.Security.Auth.Subject arg0)
         {
-            return IExecute<int>("getMBeanCount", arg0);
+            return IExecute<int?>("getMBeanCount", arg0);
         }
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectionImpl_Stub.html#addNotificationListeners(javax.management.ObjectName[],java.rmi.MarshalledObject[],javax.security.auth.Subject[]) throws java.io.IOException,javax.management.InstanceNotFoundException

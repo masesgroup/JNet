@@ -39,25 +39,17 @@ namespace Javax.Swing.Text.Html
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.html#DEFAULT_CSS
-        /// </summary>
-        public static string DEFAULT_CSS => Clazz.GetField<string>("DEFAULT_CSS");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.html#BOLD_ACTION
         /// </summary>
         public static string BOLD_ACTION => Clazz.GetField<string>("BOLD_ACTION");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.html#ITALIC_ACTION
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.html#COLOR_ACTION
         /// </summary>
-        public static string ITALIC_ACTION => Clazz.GetField<string>("ITALIC_ACTION");
+        public static string COLOR_ACTION => Clazz.GetField<string>("COLOR_ACTION");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.html#PARA_INDENT_LEFT
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.html#DEFAULT_CSS
         /// </summary>
-        public static string PARA_INDENT_LEFT => Clazz.GetField<string>("PARA_INDENT_LEFT");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.html#PARA_INDENT_RIGHT
-        /// </summary>
-        public static string PARA_INDENT_RIGHT => Clazz.GetField<string>("PARA_INDENT_RIGHT");
+        public static string DEFAULT_CSS => Clazz.GetField<string>("DEFAULT_CSS");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.html#FONT_CHANGE_BIGGER
         /// </summary>
@@ -67,29 +59,37 @@ namespace Javax.Swing.Text.Html
         /// </summary>
         public static string FONT_CHANGE_SMALLER => Clazz.GetField<string>("FONT_CHANGE_SMALLER");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.html#COLOR_ACTION
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.html#IMG_ALIGN_BOTTOM
         /// </summary>
-        public static string COLOR_ACTION => Clazz.GetField<string>("COLOR_ACTION");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.html#LOGICAL_STYLE_ACTION
-        /// </summary>
-        public static string LOGICAL_STYLE_ACTION => Clazz.GetField<string>("LOGICAL_STYLE_ACTION");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.html#IMG_ALIGN_TOP
-        /// </summary>
-        public static string IMG_ALIGN_TOP => Clazz.GetField<string>("IMG_ALIGN_TOP");
+        public static string IMG_ALIGN_BOTTOM => Clazz.GetField<string>("IMG_ALIGN_BOTTOM");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.html#IMG_ALIGN_MIDDLE
         /// </summary>
         public static string IMG_ALIGN_MIDDLE => Clazz.GetField<string>("IMG_ALIGN_MIDDLE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.html#IMG_ALIGN_BOTTOM
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.html#IMG_ALIGN_TOP
         /// </summary>
-        public static string IMG_ALIGN_BOTTOM => Clazz.GetField<string>("IMG_ALIGN_BOTTOM");
+        public static string IMG_ALIGN_TOP => Clazz.GetField<string>("IMG_ALIGN_TOP");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.html#IMG_BORDER
         /// </summary>
         public static string IMG_BORDER => Clazz.GetField<string>("IMG_BORDER");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.html#ITALIC_ACTION
+        /// </summary>
+        public static string ITALIC_ACTION => Clazz.GetField<string>("ITALIC_ACTION");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.html#LOGICAL_STYLE_ACTION
+        /// </summary>
+        public static string LOGICAL_STYLE_ACTION => Clazz.GetField<string>("LOGICAL_STYLE_ACTION");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.html#PARA_INDENT_LEFT
+        /// </summary>
+        public static string PARA_INDENT_LEFT => Clazz.GetField<string>("PARA_INDENT_LEFT");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.html#PARA_INDENT_RIGHT
+        /// </summary>
+        public static string PARA_INDENT_RIGHT => Clazz.GetField<string>("PARA_INDENT_RIGHT");
         
         #endregion
 
@@ -151,6 +151,109 @@ namespace Javax.Swing.Text.Html
         #endregion
 
         #region Nested classes
+        #region HTMLFactory
+        public partial class HTMLFactory
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+            public static implicit operator Javax.Swing.Text.ViewFactory(Javax.Swing.Text.Html.HTMLEditorKit.HTMLFactory t) => t.Cast<Javax.Swing.Text.ViewFactory>();
+            
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.HTMLFactory.html#create(javax.swing.text.Element)
+            /// </summary>
+            public Javax.Swing.Text.View Create(Javax.Swing.Text.Element arg0)
+            {
+                return IExecute<Javax.Swing.Text.View>("create", arg0);
+            }
+            
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region HTMLTextAction
+        public partial class HTMLTextAction
+        {
+            #region Constructors
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.HTMLTextAction.html#<init>(java.lang.String)
+            /// </summary>
+            public HTMLTextAction(string arg0)
+                : base(arg0)
+            {
+            }
+            
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region Parser
+        public partial class Parser
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.Parser.html#parse(java.io.Reader,javax.swing.text.html.HTMLEditorKit$ParserCallback,boolean) throws java.io.IOException
+            /// </summary>
+            public void Parse(Java.Io.Reader arg0, Javax.Swing.Text.Html.HTMLEditorKit.ParserCallback arg1, bool arg2)
+            {
+                IExecute("parse", arg0, arg1, arg2);
+            }
+            
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region ParserCallback
         public partial class ParserCallback
         {
@@ -254,109 +357,6 @@ namespace Javax.Swing.Text.Html
             /// </summary>
             public InsertHTMLTextAction(string arg0, string arg1, Javax.Swing.Text.Html.HTML.Tag arg2, Javax.Swing.Text.Html.HTML.Tag arg3)
                 : base(arg0, arg1, arg2, arg3)
-            {
-            }
-            
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region Parser
-        public partial class Parser
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.Parser.html#parse(java.io.Reader,javax.swing.text.html.HTMLEditorKit$ParserCallback,boolean) throws java.io.IOException
-            /// </summary>
-            public void Parse(Java.Io.Reader arg0, Javax.Swing.Text.Html.HTMLEditorKit.ParserCallback arg1, bool arg2)
-            {
-                IExecute("parse", arg0, arg1, arg2);
-            }
-            
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region HTMLFactory
-        public partial class HTMLFactory
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-            public static implicit operator Javax.Swing.Text.ViewFactory(Javax.Swing.Text.Html.HTMLEditorKit.HTMLFactory t) => t.Cast<Javax.Swing.Text.ViewFactory>();
-            
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.HTMLFactory.html#create(javax.swing.text.Element)
-            /// </summary>
-            public Javax.Swing.Text.View Create(Javax.Swing.Text.Element arg0)
-            {
-                return IExecute<Javax.Swing.Text.View>("create", arg0);
-            }
-            
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region HTMLTextAction
-        public partial class HTMLTextAction
-        {
-            #region Constructors
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.HTMLTextAction.html#<init>(java.lang.String)
-            /// </summary>
-            public HTMLTextAction(string arg0)
-                : base(arg0)
             {
             }
             

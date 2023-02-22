@@ -45,21 +45,21 @@ namespace Javax.Swing.Plaf.Basic
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.html#POSITIVE_SCROLL
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.html#MAX_SCROLL
         /// </summary>
-        public static int POSITIVE_SCROLL => Clazz.GetField<int>("POSITIVE_SCROLL");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.html#NEGATIVE_SCROLL
-        /// </summary>
-        public static int NEGATIVE_SCROLL => Clazz.GetField<int>("NEGATIVE_SCROLL");
+        public static int MAX_SCROLL => Clazz.GetField<int>("MAX_SCROLL");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.html#MIN_SCROLL
         /// </summary>
         public static int MIN_SCROLL => Clazz.GetField<int>("MIN_SCROLL");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.html#MAX_SCROLL
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.html#NEGATIVE_SCROLL
         /// </summary>
-        public static int MAX_SCROLL => Clazz.GetField<int>("MAX_SCROLL");
+        public static int NEGATIVE_SCROLL => Clazz.GetField<int>("NEGATIVE_SCROLL");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.html#POSITIVE_SCROLL
+        /// </summary>
+        public static int POSITIVE_SCROLL => Clazz.GetField<int>("POSITIVE_SCROLL");
         
         #endregion
 
@@ -170,6 +170,40 @@ namespace Javax.Swing.Plaf.Basic
         #endregion
 
         #region Nested classes
+        #region ActionScroller
+        public partial class ActionScroller
+        {
+            #region Constructors
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.ActionScroller.html#<init>(javax.swing.plaf.basic.BasicSliderUI,javax.swing.JSlider,int,boolean)
+            /// </summary>
+            public ActionScroller(Javax.Swing.Plaf.Basic.BasicSliderUI arg0, Javax.Swing.JSlider arg1, int arg2, bool arg3)
+                : base(arg0, arg1, arg2, arg3)
+            {
+            }
+            
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region FocusHandler
         public partial class FocusHandler
         {
@@ -297,40 +331,6 @@ namespace Javax.Swing.Plaf.Basic
                 IExecute("propertyChange", arg0);
             }
             
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region ActionScroller
-        public partial class ActionScroller
-        {
-            #region Constructors
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicSliderUI.ActionScroller.html#<init>(javax.swing.plaf.basic.BasicSliderUI,javax.swing.JSlider,int,boolean)
-            /// </summary>
-            public ActionScroller(Javax.Swing.Plaf.Basic.BasicSliderUI arg0, Javax.Swing.JSlider arg1, int arg2, bool arg3)
-                : base(arg0, arg1, arg2, arg3)
-            {
-            }
-            
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
             #endregion
 
             // TODO: complete the class

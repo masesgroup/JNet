@@ -37,17 +37,17 @@ namespace Java.Awt
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextField.html#<init>(java.lang.String) throws java.awt.HeadlessException
-        /// </summary>
-        public TextField(string arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextField.html#<init>(java.lang.String,int) throws java.awt.HeadlessException
         /// </summary>
         public TextField(string arg0, int arg1)
             : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextField.html#<init>(java.lang.String) throws java.awt.HeadlessException
+        /// </summary>
+        public TextField(string arg0)
+            : base(arg0)
         {
         }
         

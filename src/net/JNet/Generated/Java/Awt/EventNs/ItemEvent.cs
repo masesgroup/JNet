@@ -45,6 +45,10 @@ namespace Java.Awt.EventNs
 
         #region Fields
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ItemEvent.html#DESELECTED
+        /// </summary>
+        public static int DESELECTED => Clazz.GetField<int>("DESELECTED");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ItemEvent.html#ITEM_FIRST
         /// </summary>
         public static int ITEM_FIRST => Clazz.GetField<int>("ITEM_FIRST");
@@ -60,10 +64,6 @@ namespace Java.Awt.EventNs
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ItemEvent.html#SELECTED
         /// </summary>
         public static int SELECTED => Clazz.GetField<int>("SELECTED");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ItemEvent.html#DESELECTED
-        /// </summary>
-        public static int DESELECTED => Clazz.GetField<int>("DESELECTED");
         
         #endregion
 

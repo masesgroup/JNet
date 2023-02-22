@@ -30,16 +30,16 @@ namespace Java.Awt.ImageNs
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ShortLookupTable.html#<init>(int,short[][])
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ShortLookupTable.html#<init>(int,short[])
         /// </summary>
-        public ShortLookupTable(int arg0, short[][] arg1)
+        public ShortLookupTable(int arg0, short[] arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ShortLookupTable.html#<init>(int,short[])
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ShortLookupTable.html#<init>(int,short[][])
         /// </summary>
-        public ShortLookupTable(int arg0, short[] arg1)
+        public ShortLookupTable(int arg0, short[][] arg1)
             : base(arg0, arg1)
         {
         }

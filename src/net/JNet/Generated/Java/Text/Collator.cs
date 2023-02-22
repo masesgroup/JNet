@@ -39,6 +39,22 @@ namespace Java.Text
 
         #region Fields
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#CANONICAL_DECOMPOSITION
+        /// </summary>
+        public static int CANONICAL_DECOMPOSITION => Clazz.GetField<int>("CANONICAL_DECOMPOSITION");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#FULL_DECOMPOSITION
+        /// </summary>
+        public static int FULL_DECOMPOSITION => Clazz.GetField<int>("FULL_DECOMPOSITION");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#IDENTICAL
+        /// </summary>
+        public static int IDENTICAL => Clazz.GetField<int>("IDENTICAL");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#NO_DECOMPOSITION
+        /// </summary>
+        public static int NO_DECOMPOSITION => Clazz.GetField<int>("NO_DECOMPOSITION");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#PRIMARY
         /// </summary>
         public static int PRIMARY => Clazz.GetField<int>("PRIMARY");
@@ -50,22 +66,6 @@ namespace Java.Text
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#TERTIARY
         /// </summary>
         public static int TERTIARY => Clazz.GetField<int>("TERTIARY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#IDENTICAL
-        /// </summary>
-        public static int IDENTICAL => Clazz.GetField<int>("IDENTICAL");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#NO_DECOMPOSITION
-        /// </summary>
-        public static int NO_DECOMPOSITION => Clazz.GetField<int>("NO_DECOMPOSITION");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#CANONICAL_DECOMPOSITION
-        /// </summary>
-        public static int CANONICAL_DECOMPOSITION => Clazz.GetField<int>("CANONICAL_DECOMPOSITION");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#FULL_DECOMPOSITION
-        /// </summary>
-        public static int FULL_DECOMPOSITION => Clazz.GetField<int>("FULL_DECOMPOSITION");
         
         #endregion
 

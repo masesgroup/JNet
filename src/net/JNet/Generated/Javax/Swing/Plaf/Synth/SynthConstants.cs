@@ -38,9 +38,21 @@ namespace Javax.Swing.Plaf.Synth
 
         #region Fields
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthConstants.html#DEFAULT
+        /// </summary>
+        public static int DEFAULT => Clazz.GetField<int>("DEFAULT");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthConstants.html#DISABLED
+        /// </summary>
+        public static int DISABLED => Clazz.GetField<int>("DISABLED");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthConstants.html#ENABLED
         /// </summary>
         public static int ENABLED => Clazz.GetField<int>("ENABLED");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthConstants.html#FOCUSED
+        /// </summary>
+        public static int FOCUSED => Clazz.GetField<int>("FOCUSED");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthConstants.html#MOUSE_OVER
         /// </summary>
@@ -50,21 +62,9 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         public static int PRESSED => Clazz.GetField<int>("PRESSED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthConstants.html#DISABLED
-        /// </summary>
-        public static int DISABLED => Clazz.GetField<int>("DISABLED");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthConstants.html#FOCUSED
-        /// </summary>
-        public static int FOCUSED => Clazz.GetField<int>("FOCUSED");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthConstants.html#SELECTED
         /// </summary>
         public static int SELECTED => Clazz.GetField<int>("SELECTED");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthConstants.html#DEFAULT
-        /// </summary>
-        public static int DEFAULT => Clazz.GetField<int>("DEFAULT");
         
         #endregion
 

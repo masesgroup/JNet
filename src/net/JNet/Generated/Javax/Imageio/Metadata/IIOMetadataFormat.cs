@@ -38,65 +38,57 @@ namespace Javax.Imageio.Metadata
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#CHILD_POLICY_EMPTY
-        /// </summary>
-        public static int CHILD_POLICY_EMPTY => Clazz.GetField<int>("CHILD_POLICY_EMPTY");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#CHILD_POLICY_ALL
         /// </summary>
         public static int CHILD_POLICY_ALL => Clazz.GetField<int>("CHILD_POLICY_ALL");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#CHILD_POLICY_SOME
-        /// </summary>
-        public static int CHILD_POLICY_SOME => Clazz.GetField<int>("CHILD_POLICY_SOME");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#CHILD_POLICY_CHOICE
         /// </summary>
         public static int CHILD_POLICY_CHOICE => Clazz.GetField<int>("CHILD_POLICY_CHOICE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#CHILD_POLICY_SEQUENCE
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#CHILD_POLICY_EMPTY
         /// </summary>
-        public static int CHILD_POLICY_SEQUENCE => Clazz.GetField<int>("CHILD_POLICY_SEQUENCE");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#CHILD_POLICY_REPEAT
-        /// </summary>
-        public static int CHILD_POLICY_REPEAT => Clazz.GetField<int>("CHILD_POLICY_REPEAT");
+        public static int CHILD_POLICY_EMPTY => Clazz.GetField<int>("CHILD_POLICY_EMPTY");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#CHILD_POLICY_MAX
         /// </summary>
         public static int CHILD_POLICY_MAX => Clazz.GetField<int>("CHILD_POLICY_MAX");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#VALUE_NONE
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#CHILD_POLICY_REPEAT
         /// </summary>
-        public static int VALUE_NONE => Clazz.GetField<int>("VALUE_NONE");
+        public static int CHILD_POLICY_REPEAT => Clazz.GetField<int>("CHILD_POLICY_REPEAT");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#CHILD_POLICY_SEQUENCE
+        /// </summary>
+        public static int CHILD_POLICY_SEQUENCE => Clazz.GetField<int>("CHILD_POLICY_SEQUENCE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#CHILD_POLICY_SOME
+        /// </summary>
+        public static int CHILD_POLICY_SOME => Clazz.GetField<int>("CHILD_POLICY_SOME");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#DATATYPE_BOOLEAN
+        /// </summary>
+        public static int DATATYPE_BOOLEAN => Clazz.GetField<int>("DATATYPE_BOOLEAN");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#DATATYPE_DOUBLE
+        /// </summary>
+        public static int DATATYPE_DOUBLE => Clazz.GetField<int>("DATATYPE_DOUBLE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#DATATYPE_FLOAT
+        /// </summary>
+        public static int DATATYPE_FLOAT => Clazz.GetField<int>("DATATYPE_FLOAT");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#DATATYPE_INTEGER
+        /// </summary>
+        public static int DATATYPE_INTEGER => Clazz.GetField<int>("DATATYPE_INTEGER");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#DATATYPE_STRING
+        /// </summary>
+        public static int DATATYPE_STRING => Clazz.GetField<int>("DATATYPE_STRING");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#VALUE_ARBITRARY
         /// </summary>
         public static int VALUE_ARBITRARY => Clazz.GetField<int>("VALUE_ARBITRARY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#VALUE_RANGE
-        /// </summary>
-        public static int VALUE_RANGE => Clazz.GetField<int>("VALUE_RANGE");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#VALUE_RANGE_MIN_INCLUSIVE_MASK
-        /// </summary>
-        public static int VALUE_RANGE_MIN_INCLUSIVE_MASK => Clazz.GetField<int>("VALUE_RANGE_MIN_INCLUSIVE_MASK");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#VALUE_RANGE_MAX_INCLUSIVE_MASK
-        /// </summary>
-        public static int VALUE_RANGE_MAX_INCLUSIVE_MASK => Clazz.GetField<int>("VALUE_RANGE_MAX_INCLUSIVE_MASK");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#VALUE_RANGE_MIN_INCLUSIVE
-        /// </summary>
-        public static int VALUE_RANGE_MIN_INCLUSIVE => Clazz.GetField<int>("VALUE_RANGE_MIN_INCLUSIVE");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#VALUE_RANGE_MAX_INCLUSIVE
-        /// </summary>
-        public static int VALUE_RANGE_MAX_INCLUSIVE => Clazz.GetField<int>("VALUE_RANGE_MAX_INCLUSIVE");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#VALUE_RANGE_MIN_MAX_INCLUSIVE
-        /// </summary>
-        public static int VALUE_RANGE_MIN_MAX_INCLUSIVE => Clazz.GetField<int>("VALUE_RANGE_MIN_MAX_INCLUSIVE");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#VALUE_ENUMERATION
         /// </summary>
@@ -106,25 +98,33 @@ namespace Javax.Imageio.Metadata
         /// </summary>
         public static int VALUE_LIST => Clazz.GetField<int>("VALUE_LIST");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#DATATYPE_STRING
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#VALUE_NONE
         /// </summary>
-        public static int DATATYPE_STRING => Clazz.GetField<int>("DATATYPE_STRING");
+        public static int VALUE_NONE => Clazz.GetField<int>("VALUE_NONE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#DATATYPE_BOOLEAN
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#VALUE_RANGE
         /// </summary>
-        public static int DATATYPE_BOOLEAN => Clazz.GetField<int>("DATATYPE_BOOLEAN");
+        public static int VALUE_RANGE => Clazz.GetField<int>("VALUE_RANGE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#DATATYPE_INTEGER
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#VALUE_RANGE_MAX_INCLUSIVE
         /// </summary>
-        public static int DATATYPE_INTEGER => Clazz.GetField<int>("DATATYPE_INTEGER");
+        public static int VALUE_RANGE_MAX_INCLUSIVE => Clazz.GetField<int>("VALUE_RANGE_MAX_INCLUSIVE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#DATATYPE_FLOAT
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#VALUE_RANGE_MAX_INCLUSIVE_MASK
         /// </summary>
-        public static int DATATYPE_FLOAT => Clazz.GetField<int>("DATATYPE_FLOAT");
+        public static int VALUE_RANGE_MAX_INCLUSIVE_MASK => Clazz.GetField<int>("VALUE_RANGE_MAX_INCLUSIVE_MASK");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#DATATYPE_DOUBLE
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#VALUE_RANGE_MIN_INCLUSIVE
         /// </summary>
-        public static int DATATYPE_DOUBLE => Clazz.GetField<int>("DATATYPE_DOUBLE");
+        public static int VALUE_RANGE_MIN_INCLUSIVE => Clazz.GetField<int>("VALUE_RANGE_MIN_INCLUSIVE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#VALUE_RANGE_MIN_INCLUSIVE_MASK
+        /// </summary>
+        public static int VALUE_RANGE_MIN_INCLUSIVE_MASK => Clazz.GetField<int>("VALUE_RANGE_MIN_INCLUSIVE_MASK");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormat.html#VALUE_RANGE_MIN_MAX_INCLUSIVE
+        /// </summary>
+        public static int VALUE_RANGE_MIN_MAX_INCLUSIVE => Clazz.GetField<int>("VALUE_RANGE_MIN_MAX_INCLUSIVE");
         
         #endregion
 

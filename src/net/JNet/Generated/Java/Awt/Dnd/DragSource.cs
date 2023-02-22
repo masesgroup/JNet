@@ -43,25 +43,25 @@ namespace Java.Awt.Dnd
         /// </summary>
         public static Java.Awt.Cursor DefaultCopyDrop => Clazz.GetField<Java.Awt.Cursor>("DefaultCopyDrop");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSource.html#DefaultMoveDrop
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSource.html#DefaultCopyNoDrop
         /// </summary>
-        public static Java.Awt.Cursor DefaultMoveDrop => Clazz.GetField<Java.Awt.Cursor>("DefaultMoveDrop");
+        public static Java.Awt.Cursor DefaultCopyNoDrop => Clazz.GetField<Java.Awt.Cursor>("DefaultCopyNoDrop");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSource.html#DefaultLinkDrop
         /// </summary>
         public static Java.Awt.Cursor DefaultLinkDrop => Clazz.GetField<Java.Awt.Cursor>("DefaultLinkDrop");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSource.html#DefaultCopyNoDrop
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSource.html#DefaultLinkNoDrop
         /// </summary>
-        public static Java.Awt.Cursor DefaultCopyNoDrop => Clazz.GetField<Java.Awt.Cursor>("DefaultCopyNoDrop");
+        public static Java.Awt.Cursor DefaultLinkNoDrop => Clazz.GetField<Java.Awt.Cursor>("DefaultLinkNoDrop");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSource.html#DefaultMoveDrop
+        /// </summary>
+        public static Java.Awt.Cursor DefaultMoveDrop => Clazz.GetField<Java.Awt.Cursor>("DefaultMoveDrop");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSource.html#DefaultMoveNoDrop
         /// </summary>
         public static Java.Awt.Cursor DefaultMoveNoDrop => Clazz.GetField<Java.Awt.Cursor>("DefaultMoveNoDrop");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSource.html#DefaultLinkNoDrop
-        /// </summary>
-        public static Java.Awt.Cursor DefaultLinkNoDrop => Clazz.GetField<Java.Awt.Cursor>("DefaultLinkNoDrop");
         
         #endregion
 

@@ -37,9 +37,9 @@ namespace Javax.Xml.Transform.Stream
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamResult.html#<init>(java.lang.String)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamResult.html#<init>(java.io.OutputStream)
         /// </summary>
-        public StreamResult(string arg0)
+        public StreamResult(Java.Io.OutputStream arg0)
             : base(arg0)
         {
         }
@@ -51,9 +51,9 @@ namespace Javax.Xml.Transform.Stream
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamResult.html#<init>(java.io.OutputStream)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamResult.html#<init>(java.lang.String)
         /// </summary>
-        public StreamResult(Java.Io.OutputStream arg0)
+        public StreamResult(string arg0)
             : base(arg0)
         {
         }

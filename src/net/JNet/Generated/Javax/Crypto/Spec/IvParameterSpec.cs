@@ -30,17 +30,17 @@ namespace Javax.Crypto.Spec
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/IvParameterSpec.html#<init>(byte[])
-        /// </summary>
-        public IvParameterSpec(byte[] arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/IvParameterSpec.html#<init>(byte[],int,int)
         /// </summary>
         public IvParameterSpec(byte[] arg0, int arg1, int arg2)
             : base(arg0, arg1, arg2)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/IvParameterSpec.html#<init>(byte[])
+        /// </summary>
+        public IvParameterSpec(byte[] arg0)
+            : base(arg0)
         {
         }
         

@@ -37,17 +37,17 @@ namespace Java.Text
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#<init>(java.text.AttributedCharacterIterator)
-        /// </summary>
-        public Bidi(Java.Text.AttributedCharacterIterator arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#<init>(java.lang.String,int)
         /// </summary>
         public Bidi(string arg0, int arg1)
             : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#<init>(java.text.AttributedCharacterIterator)
+        /// </summary>
+        public Bidi(Java.Text.AttributedCharacterIterator arg0)
+            : base(arg0)
         {
         }
         
@@ -59,14 +59,6 @@ namespace Java.Text
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#DIRECTION_LEFT_TO_RIGHT
-        /// </summary>
-        public static int DIRECTION_LEFT_TO_RIGHT => Clazz.GetField<int>("DIRECTION_LEFT_TO_RIGHT");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#DIRECTION_RIGHT_TO_LEFT
-        /// </summary>
-        public static int DIRECTION_RIGHT_TO_LEFT => Clazz.GetField<int>("DIRECTION_RIGHT_TO_LEFT");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#DIRECTION_DEFAULT_LEFT_TO_RIGHT
         /// </summary>
         public static int DIRECTION_DEFAULT_LEFT_TO_RIGHT => Clazz.GetField<int>("DIRECTION_DEFAULT_LEFT_TO_RIGHT");
@@ -74,6 +66,14 @@ namespace Java.Text
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#DIRECTION_DEFAULT_RIGHT_TO_LEFT
         /// </summary>
         public static int DIRECTION_DEFAULT_RIGHT_TO_LEFT => Clazz.GetField<int>("DIRECTION_DEFAULT_RIGHT_TO_LEFT");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#DIRECTION_LEFT_TO_RIGHT
+        /// </summary>
+        public static int DIRECTION_LEFT_TO_RIGHT => Clazz.GetField<int>("DIRECTION_LEFT_TO_RIGHT");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Bidi.html#DIRECTION_RIGHT_TO_LEFT
+        /// </summary>
+        public static int DIRECTION_RIGHT_TO_LEFT => Clazz.GetField<int>("DIRECTION_RIGHT_TO_LEFT");
         
         #endregion
 

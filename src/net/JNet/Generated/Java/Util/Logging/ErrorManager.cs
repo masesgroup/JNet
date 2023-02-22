@@ -38,29 +38,29 @@ namespace Java.Util.Logging
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/ErrorManager.html#GENERIC_FAILURE
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/ErrorManager.html#CLOSE_FAILURE
         /// </summary>
-        public static int GENERIC_FAILURE => Clazz.GetField<int>("GENERIC_FAILURE");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/ErrorManager.html#WRITE_FAILURE
-        /// </summary>
-        public static int WRITE_FAILURE => Clazz.GetField<int>("WRITE_FAILURE");
+        public static int CLOSE_FAILURE => Clazz.GetField<int>("CLOSE_FAILURE");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/ErrorManager.html#FLUSH_FAILURE
         /// </summary>
         public static int FLUSH_FAILURE => Clazz.GetField<int>("FLUSH_FAILURE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/ErrorManager.html#CLOSE_FAILURE
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/ErrorManager.html#FORMAT_FAILURE
         /// </summary>
-        public static int CLOSE_FAILURE => Clazz.GetField<int>("CLOSE_FAILURE");
+        public static int FORMAT_FAILURE => Clazz.GetField<int>("FORMAT_FAILURE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/ErrorManager.html#GENERIC_FAILURE
+        /// </summary>
+        public static int GENERIC_FAILURE => Clazz.GetField<int>("GENERIC_FAILURE");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/ErrorManager.html#OPEN_FAILURE
         /// </summary>
         public static int OPEN_FAILURE => Clazz.GetField<int>("OPEN_FAILURE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/ErrorManager.html#FORMAT_FAILURE
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/ErrorManager.html#WRITE_FAILURE
         /// </summary>
-        public static int FORMAT_FAILURE => Clazz.GetField<int>("FORMAT_FAILURE");
+        public static int WRITE_FAILURE => Clazz.GetField<int>("WRITE_FAILURE");
         
         #endregion
 

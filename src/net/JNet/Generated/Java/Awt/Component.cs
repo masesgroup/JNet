@@ -41,17 +41,13 @@ namespace Java.Awt
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#TOP_ALIGNMENT
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#BOTTOM_ALIGNMENT
         /// </summary>
-        public static float TOP_ALIGNMENT => Clazz.GetField<float>("TOP_ALIGNMENT");
+        public static float BOTTOM_ALIGNMENT => Clazz.GetField<float>("BOTTOM_ALIGNMENT");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#CENTER_ALIGNMENT
         /// </summary>
         public static float CENTER_ALIGNMENT => Clazz.GetField<float>("CENTER_ALIGNMENT");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#BOTTOM_ALIGNMENT
-        /// </summary>
-        public static float BOTTOM_ALIGNMENT => Clazz.GetField<float>("BOTTOM_ALIGNMENT");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#LEFT_ALIGNMENT
         /// </summary>
@@ -60,6 +56,10 @@ namespace Java.Awt
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#RIGHT_ALIGNMENT
         /// </summary>
         public static float RIGHT_ALIGNMENT => Clazz.GetField<float>("RIGHT_ALIGNMENT");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.html#TOP_ALIGNMENT
+        /// </summary>
+        public static float TOP_ALIGNMENT => Clazz.GetField<float>("TOP_ALIGNMENT");
         
         #endregion
 
@@ -1121,6 +1121,10 @@ namespace Java.Awt
 
             #region Fields
             /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.BaselineResizeBehavior.html#CENTER_OFFSET
+            /// </summary>
+            public static Java.Awt.Component.BaselineResizeBehavior CENTER_OFFSET => Clazz.GetField<Java.Awt.Component.BaselineResizeBehavior>("CENTER_OFFSET");
+            /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.BaselineResizeBehavior.html#CONSTANT_ASCENT
             /// </summary>
             public static Java.Awt.Component.BaselineResizeBehavior CONSTANT_ASCENT => Clazz.GetField<Java.Awt.Component.BaselineResizeBehavior>("CONSTANT_ASCENT");
@@ -1128,10 +1132,6 @@ namespace Java.Awt
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.BaselineResizeBehavior.html#CONSTANT_DESCENT
             /// </summary>
             public static Java.Awt.Component.BaselineResizeBehavior CONSTANT_DESCENT => Clazz.GetField<Java.Awt.Component.BaselineResizeBehavior>("CONSTANT_DESCENT");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.BaselineResizeBehavior.html#CENTER_OFFSET
-            /// </summary>
-            public static Java.Awt.Component.BaselineResizeBehavior CENTER_OFFSET => Clazz.GetField<Java.Awt.Component.BaselineResizeBehavior>("CENTER_OFFSET");
             /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Component.BaselineResizeBehavior.html#OTHER
             /// </summary>

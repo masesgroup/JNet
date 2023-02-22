@@ -38,21 +38,21 @@ namespace Javax.Accessibility
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleAction.html#TOGGLE_EXPAND
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleAction.html#CLICK
         /// </summary>
-        public static string TOGGLE_EXPAND => Clazz.GetField<string>("TOGGLE_EXPAND");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleAction.html#INCREMENT
-        /// </summary>
-        public static string INCREMENT => Clazz.GetField<string>("INCREMENT");
+        public static string CLICK => Clazz.GetField<string>("CLICK");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleAction.html#DECREMENT
         /// </summary>
         public static string DECREMENT => Clazz.GetField<string>("DECREMENT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleAction.html#CLICK
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleAction.html#INCREMENT
         /// </summary>
-        public static string CLICK => Clazz.GetField<string>("CLICK");
+        public static string INCREMENT => Clazz.GetField<string>("INCREMENT");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleAction.html#TOGGLE_EXPAND
+        /// </summary>
+        public static string TOGGLE_EXPAND => Clazz.GetField<string>("TOGGLE_EXPAND");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleAction.html#TOGGLE_POPUP
         /// </summary>

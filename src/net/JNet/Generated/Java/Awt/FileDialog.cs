@@ -37,6 +37,13 @@ namespace Java.Awt
         {
         }
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FileDialog.html#<init>(java.awt.Dialog,java.lang.String)
+        /// </summary>
+        public FileDialog(Java.Awt.Dialog arg0, string arg1)
+            : base(arg0, arg1)
+        {
+        }
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FileDialog.html#<init>(java.awt.Dialog)
         /// </summary>
         public FileDialog(Java.Awt.Dialog arg0)
@@ -62,13 +69,6 @@ namespace Java.Awt
         /// </summary>
         public FileDialog(Java.Awt.Frame arg0)
             : base(arg0)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FileDialog.html#<init>(java.awt.Dialog,java.lang.String)
-        /// </summary>
-        public FileDialog(Java.Awt.Dialog arg0, string arg1)
-            : base(arg0, arg1)
         {
         }
         

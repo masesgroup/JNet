@@ -39,25 +39,25 @@ namespace Java.Awt.FontNs
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphVector.html#FLAG_HAS_TRANSFORMS
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphVector.html#FLAG_COMPLEX_GLYPHS
         /// </summary>
-        public static int FLAG_HAS_TRANSFORMS => Clazz.GetField<int>("FLAG_HAS_TRANSFORMS");
+        public static int FLAG_COMPLEX_GLYPHS => Clazz.GetField<int>("FLAG_COMPLEX_GLYPHS");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphVector.html#FLAG_HAS_POSITION_ADJUSTMENTS
         /// </summary>
         public static int FLAG_HAS_POSITION_ADJUSTMENTS => Clazz.GetField<int>("FLAG_HAS_POSITION_ADJUSTMENTS");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphVector.html#FLAG_RUN_RTL
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphVector.html#FLAG_HAS_TRANSFORMS
         /// </summary>
-        public static int FLAG_RUN_RTL => Clazz.GetField<int>("FLAG_RUN_RTL");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphVector.html#FLAG_COMPLEX_GLYPHS
-        /// </summary>
-        public static int FLAG_COMPLEX_GLYPHS => Clazz.GetField<int>("FLAG_COMPLEX_GLYPHS");
+        public static int FLAG_HAS_TRANSFORMS => Clazz.GetField<int>("FLAG_HAS_TRANSFORMS");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphVector.html#FLAG_MASK
         /// </summary>
         public static int FLAG_MASK => Clazz.GetField<int>("FLAG_MASK");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphVector.html#FLAG_RUN_RTL
+        /// </summary>
+        public static int FLAG_RUN_RTL => Clazz.GetField<int>("FLAG_RUN_RTL");
         
         #endregion
 

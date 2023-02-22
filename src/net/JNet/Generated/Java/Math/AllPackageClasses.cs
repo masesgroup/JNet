@@ -23,41 +23,6 @@
 
 namespace Java.Math
 {
-    #region MathContext
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/MathContext.html
-    /// </summary>
-    public partial class MathContext : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MathContext>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public MathContext() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public MathContext(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.math.MathContext";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
     #region BigDecimal
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html
@@ -93,23 +58,23 @@ namespace Java.Math
     }
     #endregion
 
-    #region RoundingMode
+    #region BigInteger
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/RoundingMode.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html
     /// </summary>
-    public partial class RoundingMode : Java.Lang.Enum
+    public partial class BigInteger : Java.Lang.Number
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public RoundingMode() { }
+        public BigInteger() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public RoundingMode(params object[] args) : base(args) { }
+        public BigInteger(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.math.RoundingMode";
+        public override string ClassName => "java.math.BigInteger";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -128,23 +93,58 @@ namespace Java.Math
     }
     #endregion
 
-    #region BigInteger
+    #region MathContext
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/MathContext.html
     /// </summary>
-    public partial class BigInteger : Java.Lang.Number
+    public partial class MathContext : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MathContext>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public BigInteger() { }
+        public MathContext() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public BigInteger(params object[] args) : base(args) { }
+        public MathContext(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.math.BigInteger";
+        public override string ClassName => "java.math.MathContext";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region RoundingMode
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/RoundingMode.html
+    /// </summary>
+    public partial class RoundingMode : Java.Lang.Enum
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public RoundingMode() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public RoundingMode(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.math.RoundingMode";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;

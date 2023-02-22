@@ -223,25 +223,9 @@ namespace Java.Awt
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#OPEN
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_ABOUT
             /// </summary>
-            public static Java.Awt.Desktop.Action OPEN => Clazz.GetField<Java.Awt.Desktop.Action>("OPEN");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#EDIT
-            /// </summary>
-            public static Java.Awt.Desktop.Action EDIT => Clazz.GetField<Java.Awt.Desktop.Action>("EDIT");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#PRINT
-            /// </summary>
-            public static Java.Awt.Desktop.Action PRINT => Clazz.GetField<Java.Awt.Desktop.Action>("PRINT");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#MAIL
-            /// </summary>
-            public static Java.Awt.Desktop.Action MAIL => Clazz.GetField<Java.Awt.Desktop.Action>("MAIL");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#BROWSE
-            /// </summary>
-            public static Java.Awt.Desktop.Action BROWSE => Clazz.GetField<Java.Awt.Desktop.Action>("BROWSE");
+            public static Java.Awt.Desktop.Action APP_ABOUT => Clazz.GetField<Java.Awt.Desktop.Action>("APP_ABOUT");
             /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_EVENT_FOREGROUND
             /// </summary>
@@ -267,25 +251,29 @@ namespace Java.Awt
             /// </summary>
             public static Java.Awt.Desktop.Action APP_EVENT_USER_SESSION => Clazz.GetField<Java.Awt.Desktop.Action>("APP_EVENT_USER_SESSION");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_ABOUT
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_HELP_VIEWER
             /// </summary>
-            public static Java.Awt.Desktop.Action APP_ABOUT => Clazz.GetField<Java.Awt.Desktop.Action>("APP_ABOUT");
+            public static Java.Awt.Desktop.Action APP_HELP_VIEWER => Clazz.GetField<Java.Awt.Desktop.Action>("APP_HELP_VIEWER");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_PREFERENCES
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_MENU_BAR
             /// </summary>
-            public static Java.Awt.Desktop.Action APP_PREFERENCES => Clazz.GetField<Java.Awt.Desktop.Action>("APP_PREFERENCES");
+            public static Java.Awt.Desktop.Action APP_MENU_BAR => Clazz.GetField<Java.Awt.Desktop.Action>("APP_MENU_BAR");
             /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_OPEN_FILE
             /// </summary>
             public static Java.Awt.Desktop.Action APP_OPEN_FILE => Clazz.GetField<Java.Awt.Desktop.Action>("APP_OPEN_FILE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_PRINT_FILE
-            /// </summary>
-            public static Java.Awt.Desktop.Action APP_PRINT_FILE => Clazz.GetField<Java.Awt.Desktop.Action>("APP_PRINT_FILE");
-            /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_OPEN_URI
             /// </summary>
             public static Java.Awt.Desktop.Action APP_OPEN_URI => Clazz.GetField<Java.Awt.Desktop.Action>("APP_OPEN_URI");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_PREFERENCES
+            /// </summary>
+            public static Java.Awt.Desktop.Action APP_PREFERENCES => Clazz.GetField<Java.Awt.Desktop.Action>("APP_PREFERENCES");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_PRINT_FILE
+            /// </summary>
+            public static Java.Awt.Desktop.Action APP_PRINT_FILE => Clazz.GetField<Java.Awt.Desktop.Action>("APP_PRINT_FILE");
             /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_QUIT_HANDLER
             /// </summary>
@@ -295,29 +283,41 @@ namespace Java.Awt
             /// </summary>
             public static Java.Awt.Desktop.Action APP_QUIT_STRATEGY => Clazz.GetField<Java.Awt.Desktop.Action>("APP_QUIT_STRATEGY");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_SUDDEN_TERMINATION
-            /// </summary>
-            public static Java.Awt.Desktop.Action APP_SUDDEN_TERMINATION => Clazz.GetField<Java.Awt.Desktop.Action>("APP_SUDDEN_TERMINATION");
-            /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_REQUEST_FOREGROUND
             /// </summary>
             public static Java.Awt.Desktop.Action APP_REQUEST_FOREGROUND => Clazz.GetField<Java.Awt.Desktop.Action>("APP_REQUEST_FOREGROUND");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_HELP_VIEWER
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_SUDDEN_TERMINATION
             /// </summary>
-            public static Java.Awt.Desktop.Action APP_HELP_VIEWER => Clazz.GetField<Java.Awt.Desktop.Action>("APP_HELP_VIEWER");
+            public static Java.Awt.Desktop.Action APP_SUDDEN_TERMINATION => Clazz.GetField<Java.Awt.Desktop.Action>("APP_SUDDEN_TERMINATION");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#APP_MENU_BAR
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#BROWSE
             /// </summary>
-            public static Java.Awt.Desktop.Action APP_MENU_BAR => Clazz.GetField<Java.Awt.Desktop.Action>("APP_MENU_BAR");
+            public static Java.Awt.Desktop.Action BROWSE => Clazz.GetField<Java.Awt.Desktop.Action>("BROWSE");
             /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#BROWSE_FILE_DIR
             /// </summary>
             public static Java.Awt.Desktop.Action BROWSE_FILE_DIR => Clazz.GetField<Java.Awt.Desktop.Action>("BROWSE_FILE_DIR");
             /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#EDIT
+            /// </summary>
+            public static Java.Awt.Desktop.Action EDIT => Clazz.GetField<Java.Awt.Desktop.Action>("EDIT");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#MAIL
+            /// </summary>
+            public static Java.Awt.Desktop.Action MAIL => Clazz.GetField<Java.Awt.Desktop.Action>("MAIL");
+            /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#MOVE_TO_TRASH
             /// </summary>
             public static Java.Awt.Desktop.Action MOVE_TO_TRASH => Clazz.GetField<Java.Awt.Desktop.Action>("MOVE_TO_TRASH");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#OPEN
+            /// </summary>
+            public static Java.Awt.Desktop.Action OPEN => Clazz.GetField<Java.Awt.Desktop.Action>("OPEN");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Desktop.Action.html#PRINT
+            /// </summary>
+            public static Java.Awt.Desktop.Action PRINT => Clazz.GetField<Java.Awt.Desktop.Action>("PRINT");
             
             #endregion
 

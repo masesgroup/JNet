@@ -30,23 +30,9 @@ namespace Java.Lang
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#<init>(java.lang.ThreadGroup,java.lang.String)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#<init>(java.lang.Runnable,java.lang.String)
         /// </summary>
-        public Thread(Java.Lang.ThreadGroup arg0, string arg1)
-            : base(arg0, arg1)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#<init>(java.lang.String)
-        /// </summary>
-        public Thread(string arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#<init>(java.lang.ThreadGroup,java.lang.Runnable)
-        /// </summary>
-        public Thread(Java.Lang.ThreadGroup arg0, Java.Lang.Runnable arg1)
+        public Thread(Java.Lang.Runnable arg0, string arg1)
             : base(arg0, arg1)
         {
         }
@@ -54,6 +40,13 @@ namespace Java.Lang
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#<init>(java.lang.Runnable)
         /// </summary>
         public Thread(Java.Lang.Runnable arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#<init>(java.lang.String)
+        /// </summary>
+        public Thread(string arg0)
             : base(arg0)
         {
         }
@@ -79,9 +72,16 @@ namespace Java.Lang
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#<init>(java.lang.Runnable,java.lang.String)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#<init>(java.lang.ThreadGroup,java.lang.Runnable)
         /// </summary>
-        public Thread(Java.Lang.Runnable arg0, string arg1)
+        public Thread(Java.Lang.ThreadGroup arg0, Java.Lang.Runnable arg1)
+            : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#<init>(java.lang.ThreadGroup,java.lang.String)
+        /// </summary>
+        public Thread(Java.Lang.ThreadGroup arg0, string arg1)
             : base(arg0, arg1)
         {
         }
@@ -95,6 +95,10 @@ namespace Java.Lang
 
         #region Fields
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#MAX_PRIORITY
+        /// </summary>
+        public static int MAX_PRIORITY => Clazz.GetField<int>("MAX_PRIORITY");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#MIN_PRIORITY
         /// </summary>
         public static int MIN_PRIORITY => Clazz.GetField<int>("MIN_PRIORITY");
@@ -102,10 +106,6 @@ namespace Java.Lang
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#NORM_PRIORITY
         /// </summary>
         public static int NORM_PRIORITY => Clazz.GetField<int>("NORM_PRIORITY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#MAX_PRIORITY
-        /// </summary>
-        public static int MAX_PRIORITY => Clazz.GetField<int>("MAX_PRIORITY");
         
         #endregion
 
@@ -375,6 +375,10 @@ namespace Java.Lang
 
             #region Fields
             /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.State.html#BLOCKED
+            /// </summary>
+            public static Java.Lang.Thread.State BLOCKED => Clazz.GetField<Java.Lang.Thread.State>("BLOCKED");
+            /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.State.html#NEW
             /// </summary>
             public static Java.Lang.Thread.State NEW => Clazz.GetField<Java.Lang.Thread.State>("NEW");
@@ -383,21 +387,17 @@ namespace Java.Lang
             /// </summary>
             public static Java.Lang.Thread.State RUNNABLE => Clazz.GetField<Java.Lang.Thread.State>("RUNNABLE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.State.html#BLOCKED
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.State.html#TERMINATED
             /// </summary>
-            public static Java.Lang.Thread.State BLOCKED => Clazz.GetField<Java.Lang.Thread.State>("BLOCKED");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.State.html#WAITING
-            /// </summary>
-            public static Java.Lang.Thread.State WAITING => Clazz.GetField<Java.Lang.Thread.State>("WAITING");
+            public static Java.Lang.Thread.State TERMINATED => Clazz.GetField<Java.Lang.Thread.State>("TERMINATED");
             /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.State.html#TIMED_WAITING
             /// </summary>
             public static Java.Lang.Thread.State TIMED_WAITING => Clazz.GetField<Java.Lang.Thread.State>("TIMED_WAITING");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.State.html#TERMINATED
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.State.html#WAITING
             /// </summary>
-            public static Java.Lang.Thread.State TERMINATED => Clazz.GetField<Java.Lang.Thread.State>("TERMINATED");
+            public static Java.Lang.Thread.State WAITING => Clazz.GetField<Java.Lang.Thread.State>("WAITING");
             
             #endregion
 

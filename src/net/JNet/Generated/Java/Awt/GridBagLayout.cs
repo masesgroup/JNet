@@ -40,14 +40,6 @@ namespace Java.Awt
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagLayout.html#columnWidths
-        /// </summary>
-        public int[] columnWidths => Instance.GetField<int[]>("columnWidths");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagLayout.html#rowHeights
-        /// </summary>
-        public int[] rowHeights => Instance.GetField<int[]>("rowHeights");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagLayout.html#columnWeights
         /// </summary>
         public double[] columnWeights => Instance.GetField<double[]>("columnWeights");
@@ -55,6 +47,14 @@ namespace Java.Awt
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagLayout.html#rowWeights
         /// </summary>
         public double[] rowWeights => Instance.GetField<double[]>("rowWeights");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagLayout.html#columnWidths
+        /// </summary>
+        public int[] columnWidths => Instance.GetField<int[]>("columnWidths");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagLayout.html#rowHeights
+        /// </summary>
+        public int[] rowHeights => Instance.GetField<int[]>("rowHeights");
         
         #endregion
 

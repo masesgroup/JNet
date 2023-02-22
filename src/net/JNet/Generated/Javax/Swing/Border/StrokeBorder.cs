@@ -30,17 +30,17 @@ namespace Javax.Swing.Border
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/StrokeBorder.html#<init>(java.awt.BasicStroke)
-        /// </summary>
-        public StrokeBorder(Java.Awt.BasicStroke arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/StrokeBorder.html#<init>(java.awt.BasicStroke,java.awt.Paint)
         /// </summary>
         public StrokeBorder(Java.Awt.BasicStroke arg0, Java.Awt.Paint arg1)
             : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/StrokeBorder.html#<init>(java.awt.BasicStroke)
+        /// </summary>
+        public StrokeBorder(Java.Awt.BasicStroke arg0)
+            : base(arg0)
         {
         }
         

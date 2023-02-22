@@ -60,21 +60,21 @@ namespace Javax.Swing.Table
 
         #region Fields
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumn.html#CELL_RENDERER_PROPERTY
+        /// </summary>
+        public static string CELL_RENDERER_PROPERTY => Clazz.GetField<string>("CELL_RENDERER_PROPERTY");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumn.html#COLUMN_WIDTH_PROPERTY
         /// </summary>
         public static string COLUMN_WIDTH_PROPERTY => Clazz.GetField<string>("COLUMN_WIDTH_PROPERTY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumn.html#HEADER_VALUE_PROPERTY
-        /// </summary>
-        public static string HEADER_VALUE_PROPERTY => Clazz.GetField<string>("HEADER_VALUE_PROPERTY");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumn.html#HEADER_RENDERER_PROPERTY
         /// </summary>
         public static string HEADER_RENDERER_PROPERTY => Clazz.GetField<string>("HEADER_RENDERER_PROPERTY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumn.html#CELL_RENDERER_PROPERTY
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumn.html#HEADER_VALUE_PROPERTY
         /// </summary>
-        public static string CELL_RENDERER_PROPERTY => Clazz.GetField<string>("CELL_RENDERER_PROPERTY");
+        public static string HEADER_VALUE_PROPERTY => Clazz.GetField<string>("HEADER_VALUE_PROPERTY");
         
         #endregion
 

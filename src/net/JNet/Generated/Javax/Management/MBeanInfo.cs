@@ -30,17 +30,17 @@ namespace Javax.Management
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanInfo.html#<init>(java.lang.String,java.lang.String,javax.management.MBeanAttributeInfo[],javax.management.MBeanConstructorInfo[],javax.management.MBeanOperationInfo[],javax.management.MBeanNotificationInfo[]) throws java.lang.IllegalArgumentException
-        /// </summary>
-        public MBeanInfo(string arg0, string arg1, Javax.Management.MBeanAttributeInfo[] arg2, Javax.Management.MBeanConstructorInfo[] arg3, Javax.Management.MBeanOperationInfo[] arg4, Javax.Management.MBeanNotificationInfo[] arg5)
-            : base(arg0, arg1, arg2, arg3, arg4, arg5)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanInfo.html#<init>(java.lang.String,java.lang.String,javax.management.MBeanAttributeInfo[],javax.management.MBeanConstructorInfo[],javax.management.MBeanOperationInfo[],javax.management.MBeanNotificationInfo[],javax.management.Descriptor) throws java.lang.IllegalArgumentException
         /// </summary>
         public MBeanInfo(string arg0, string arg1, Javax.Management.MBeanAttributeInfo[] arg2, Javax.Management.MBeanConstructorInfo[] arg3, Javax.Management.MBeanOperationInfo[] arg4, Javax.Management.MBeanNotificationInfo[] arg5, Javax.Management.Descriptor arg6)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanInfo.html#<init>(java.lang.String,java.lang.String,javax.management.MBeanAttributeInfo[],javax.management.MBeanConstructorInfo[],javax.management.MBeanOperationInfo[],javax.management.MBeanNotificationInfo[]) throws java.lang.IllegalArgumentException
+        /// </summary>
+        public MBeanInfo(string arg0, string arg1, Javax.Management.MBeanAttributeInfo[] arg2, Javax.Management.MBeanConstructorInfo[] arg3, Javax.Management.MBeanOperationInfo[] arg4, Javax.Management.MBeanNotificationInfo[] arg5)
+            : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
         }
         

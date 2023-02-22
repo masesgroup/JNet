@@ -30,17 +30,17 @@ namespace Javax.Swing.Text.Html
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/MinimalHTMLWriter.html#<init>(java.io.Writer,javax.swing.text.StyledDocument)
-        /// </summary>
-        public MinimalHTMLWriter(Java.Io.Writer arg0, Javax.Swing.Text.StyledDocument arg1)
-            : base(arg0, arg1)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/MinimalHTMLWriter.html#<init>(java.io.Writer,javax.swing.text.StyledDocument,int,int)
         /// </summary>
         public MinimalHTMLWriter(Java.Io.Writer arg0, Javax.Swing.Text.StyledDocument arg1, int arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/MinimalHTMLWriter.html#<init>(java.io.Writer,javax.swing.text.StyledDocument)
+        /// </summary>
+        public MinimalHTMLWriter(Java.Io.Writer arg0, Javax.Swing.Text.StyledDocument arg1)
+            : base(arg0, arg1)
         {
         }
         

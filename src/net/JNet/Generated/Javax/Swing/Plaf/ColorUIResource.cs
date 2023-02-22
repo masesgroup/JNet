@@ -30,16 +30,16 @@ namespace Javax.Swing.Plaf
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/ColorUIResource.html#<init>(java.awt.Color)
-        /// </summary>
-        public ColorUIResource(Java.Awt.Color arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/ColorUIResource.html#<init>(float,float,float)
         /// </summary>
         public ColorUIResource(float arg0, float arg1, float arg2)
+            : base(arg0, arg1, arg2)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/ColorUIResource.html#<init>(int,int,int)
+        /// </summary>
+        public ColorUIResource(int arg0, int arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
         }
@@ -51,10 +51,10 @@ namespace Javax.Swing.Plaf
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/ColorUIResource.html#<init>(int,int,int)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/ColorUIResource.html#<init>(java.awt.Color)
         /// </summary>
-        public ColorUIResource(int arg0, int arg1, int arg2)
-            : base(arg0, arg1, arg2)
+        public ColorUIResource(Java.Awt.Color arg0)
+            : base(arg0)
         {
         }
         

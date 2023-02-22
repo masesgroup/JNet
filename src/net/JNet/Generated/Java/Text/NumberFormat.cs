@@ -38,13 +38,13 @@ namespace Java.Text
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#INTEGER_FIELD
-        /// </summary>
-        public static int INTEGER_FIELD => Clazz.GetField<int>("INTEGER_FIELD");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#FRACTION_FIELD
         /// </summary>
         public static int FRACTION_FIELD => Clazz.GetField<int>("FRACTION_FIELD");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.html#INTEGER_FIELD
+        /// </summary>
+        public static int INTEGER_FIELD => Clazz.GetField<int>("INTEGER_FIELD");
         
         #endregion
 
@@ -252,33 +252,37 @@ namespace Java.Text
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.Field.html#INTEGER
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.Field.html#CURRENCY
             /// </summary>
-            public static Java.Text.NumberFormat.Field INTEGER => Clazz.GetField<Java.Text.NumberFormat.Field>("INTEGER");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.Field.html#FRACTION
-            /// </summary>
-            public static Java.Text.NumberFormat.Field FRACTION => Clazz.GetField<Java.Text.NumberFormat.Field>("FRACTION");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.Field.html#EXPONENT
-            /// </summary>
-            public static Java.Text.NumberFormat.Field EXPONENT => Clazz.GetField<Java.Text.NumberFormat.Field>("EXPONENT");
+            public static Java.Text.NumberFormat.Field CURRENCY => Clazz.GetField<Java.Text.NumberFormat.Field>("CURRENCY");
             /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.Field.html#DECIMAL_SEPARATOR
             /// </summary>
             public static Java.Text.NumberFormat.Field DECIMAL_SEPARATOR => Clazz.GetField<Java.Text.NumberFormat.Field>("DECIMAL_SEPARATOR");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.Field.html#SIGN
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.Field.html#EXPONENT
             /// </summary>
-            public static Java.Text.NumberFormat.Field SIGN => Clazz.GetField<Java.Text.NumberFormat.Field>("SIGN");
+            public static Java.Text.NumberFormat.Field EXPONENT => Clazz.GetField<Java.Text.NumberFormat.Field>("EXPONENT");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.Field.html#EXPONENT_SIGN
+            /// </summary>
+            public static Java.Text.NumberFormat.Field EXPONENT_SIGN => Clazz.GetField<Java.Text.NumberFormat.Field>("EXPONENT_SIGN");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.Field.html#EXPONENT_SYMBOL
+            /// </summary>
+            public static Java.Text.NumberFormat.Field EXPONENT_SYMBOL => Clazz.GetField<Java.Text.NumberFormat.Field>("EXPONENT_SYMBOL");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.Field.html#FRACTION
+            /// </summary>
+            public static Java.Text.NumberFormat.Field FRACTION => Clazz.GetField<Java.Text.NumberFormat.Field>("FRACTION");
             /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.Field.html#GROUPING_SEPARATOR
             /// </summary>
             public static Java.Text.NumberFormat.Field GROUPING_SEPARATOR => Clazz.GetField<Java.Text.NumberFormat.Field>("GROUPING_SEPARATOR");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.Field.html#EXPONENT_SYMBOL
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.Field.html#INTEGER
             /// </summary>
-            public static Java.Text.NumberFormat.Field EXPONENT_SYMBOL => Clazz.GetField<Java.Text.NumberFormat.Field>("EXPONENT_SYMBOL");
+            public static Java.Text.NumberFormat.Field INTEGER => Clazz.GetField<Java.Text.NumberFormat.Field>("INTEGER");
             /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.Field.html#PERCENT
             /// </summary>
@@ -288,13 +292,9 @@ namespace Java.Text
             /// </summary>
             public static Java.Text.NumberFormat.Field PERMILLE => Clazz.GetField<Java.Text.NumberFormat.Field>("PERMILLE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.Field.html#CURRENCY
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.Field.html#SIGN
             /// </summary>
-            public static Java.Text.NumberFormat.Field CURRENCY => Clazz.GetField<Java.Text.NumberFormat.Field>("CURRENCY");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/NumberFormat.Field.html#EXPONENT_SIGN
-            /// </summary>
-            public static Java.Text.NumberFormat.Field EXPONENT_SIGN => Clazz.GetField<Java.Text.NumberFormat.Field>("EXPONENT_SIGN");
+            public static Java.Text.NumberFormat.Field SIGN => Clazz.GetField<Java.Text.NumberFormat.Field>("SIGN");
             
             #endregion
 

@@ -30,13 +30,6 @@ namespace Javax.Management.Loading
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#<init>(java.net.URL[],java.lang.ClassLoader,java.net.URLStreamHandlerFactory)
-        /// </summary>
-        public MLet(Java.Net.URL[] arg0, Java.Lang.ClassLoader arg1, Java.Net.URLStreamHandlerFactory arg2)
-            : base(arg0, arg1, arg2)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#<init>(java.net.URL[],boolean)
         /// </summary>
         public MLet(Java.Net.URL[] arg0, bool arg1)
@@ -58,10 +51,10 @@ namespace Javax.Management.Loading
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#<init>(java.net.URL[])
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#<init>(java.net.URL[],java.lang.ClassLoader,java.net.URLStreamHandlerFactory)
         /// </summary>
-        public MLet(Java.Net.URL[] arg0)
-            : base(arg0)
+        public MLet(Java.Net.URL[] arg0, Java.Lang.ClassLoader arg1, Java.Net.URLStreamHandlerFactory arg2)
+            : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
@@ -69,6 +62,13 @@ namespace Javax.Management.Loading
         /// </summary>
         public MLet(Java.Net.URL[] arg0, Java.Lang.ClassLoader arg1)
             : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#<init>(java.net.URL[])
+        /// </summary>
+        public MLet(Java.Net.URL[] arg0)
+            : base(arg0)
         {
         }
         
@@ -128,7 +128,7 @@ namespace Javax.Management.Loading
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/MLet.html#postRegister(java.lang.Boolean)
         /// </summary>
-        public void PostRegister(bool arg0)
+        public void PostRegister(bool? arg0)
         {
             IExecute("postRegister", arg0);
         }

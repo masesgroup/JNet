@@ -37,16 +37,16 @@ namespace Javax.Swing
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenu.html#<init>(javax.swing.Action)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenu.html#<init>(java.lang.String)
         /// </summary>
-        public JMenu(Javax.Swing.Action arg0)
+        public JMenu(string arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenu.html#<init>(java.lang.String)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenu.html#<init>(javax.swing.Action)
         /// </summary>
-        public JMenu(string arg0)
+        public JMenu(Javax.Swing.Action arg0)
             : base(arg0)
         {
         }

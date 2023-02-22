@@ -30,17 +30,17 @@ namespace Javax.Crypto.Spec
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/PBEParameterSpec.html#<init>(byte[],int)
-        /// </summary>
-        public PBEParameterSpec(byte[] arg0, int arg1)
-            : base(arg0, arg1)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/PBEParameterSpec.html#<init>(byte[],int,java.security.spec.AlgorithmParameterSpec)
         /// </summary>
         public PBEParameterSpec(byte[] arg0, int arg1, Java.Security.Spec.AlgorithmParameterSpec arg2)
             : base(arg0, arg1, arg2)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/PBEParameterSpec.html#<init>(byte[],int)
+        /// </summary>
+        public PBEParameterSpec(byte[] arg0, int arg1)
+            : base(arg0, arg1)
         {
         }
         

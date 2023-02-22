@@ -297,6 +297,33 @@ namespace Javax.Swing.Plaf.Metal
         }
         #endregion
 
+        #region TreeFolderIcon
+        public partial class TreeFolderIcon
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region FileIcon16
         public partial class FileIcon16
         {
@@ -412,6 +439,33 @@ namespace Javax.Swing.Plaf.Metal
         }
         #endregion
 
+        #region TreeLeafIcon
+        public partial class TreeLeafIcon
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region TreeControlIcon
         public partial class TreeControlIcon
         {
@@ -470,60 +524,6 @@ namespace Javax.Swing.Plaf.Metal
                 IExecute("paintMe", arg0, arg1, arg2, arg3);
             }
             
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region TreeLeafIcon
-        public partial class TreeLeafIcon
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region TreeFolderIcon
-        public partial class TreeFolderIcon
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
             #endregion
 
             // TODO: complete the class

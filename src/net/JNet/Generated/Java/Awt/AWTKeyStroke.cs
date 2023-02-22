@@ -66,7 +66,7 @@ namespace Java.Awt
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AWTKeyStroke.html#getAWTKeyStroke(java.lang.Character,int)
         /// </summary>
-        public static Java.Awt.AWTKeyStroke GetAWTKeyStroke(char arg0, int arg1)
+        public static Java.Awt.AWTKeyStroke GetAWTKeyStroke(char? arg0, int arg1)
         {
             return SExecute<Java.Awt.AWTKeyStroke>("getAWTKeyStroke", arg0, arg1);
         }

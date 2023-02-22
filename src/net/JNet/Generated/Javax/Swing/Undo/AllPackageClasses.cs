@@ -23,23 +23,23 @@
 
 namespace Javax.Swing.Undo
 {
-    #region UndoManager
+    #region AbstractUndoableEdit
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoManager.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/AbstractUndoableEdit.html
     /// </summary>
-    public partial class UndoManager : Javax.Swing.Undo.CompoundEdit
+    public partial class AbstractUndoableEdit : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AbstractUndoableEdit>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public UndoManager() { }
+        public AbstractUndoableEdit() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public UndoManager(params object[] args) : base(args) { }
+        public AbstractUndoableEdit(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.swing.undo.UndoManager";
+        public override string ClassName => "javax.swing.undo.AbstractUndoableEdit";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -58,23 +58,55 @@ namespace Javax.Swing.Undo
     }
     #endregion
 
-    #region UndoableEditSupport
+    #region CannotRedoException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoableEditSupport.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/CannotRedoException.html
     /// </summary>
-    public partial class UndoableEditSupport : MASES.JCOBridge.C2JBridge.JVMBridgeBase<UndoableEditSupport>
+    public partial class CannotRedoException : Java.Lang.RuntimeException
+    {
+        public CannotRedoException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.swing.undo.CannotRedoException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region CannotUndoException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/CannotUndoException.html
+    /// </summary>
+    public partial class CannotUndoException : Java.Lang.RuntimeException
+    {
+        public CannotUndoException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.swing.undo.CannotUndoException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region CompoundEdit
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/CompoundEdit.html
+    /// </summary>
+    public partial class CompoundEdit : Javax.Swing.Undo.AbstractUndoableEdit
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public UndoableEditSupport() { }
+        public CompoundEdit() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public UndoableEditSupport(params object[] args) : base(args) { }
+        public CompoundEdit(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.swing.undo.UndoableEditSupport";
+        public override string ClassName => "javax.swing.undo.CompoundEdit";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -128,73 +160,6 @@ namespace Javax.Swing.Undo
     }
     #endregion
 
-    #region CannotUndoException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/CannotUndoException.html
-    /// </summary>
-    public partial class CannotUndoException : Java.Lang.RuntimeException
-    {
-        public CannotUndoException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.swing.undo.CannotUndoException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region AbstractUndoableEdit
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/AbstractUndoableEdit.html
-    /// </summary>
-    public partial class AbstractUndoableEdit : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AbstractUndoableEdit>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public AbstractUndoableEdit() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public AbstractUndoableEdit(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.swing.undo.AbstractUndoableEdit";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region CannotRedoException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/CannotRedoException.html
-    /// </summary>
-    public partial class CannotRedoException : Java.Lang.RuntimeException
-    {
-        public CannotRedoException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.swing.undo.CannotRedoException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
     #region StateEditable
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/StateEditable.html
@@ -230,41 +195,6 @@ namespace Javax.Swing.Undo
     }
     #endregion
 
-    #region CompoundEdit
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/CompoundEdit.html
-    /// </summary>
-    public partial class CompoundEdit : Javax.Swing.Undo.AbstractUndoableEdit
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public CompoundEdit() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public CompoundEdit(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.swing.undo.CompoundEdit";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
     #region UndoableEdit
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoableEdit.html
@@ -291,6 +221,76 @@ namespace Javax.Swing.Undo
 
         /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
         public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region UndoableEditSupport
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoableEditSupport.html
+    /// </summary>
+    public partial class UndoableEditSupport : MASES.JCOBridge.C2JBridge.JVMBridgeBase<UndoableEditSupport>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public UndoableEditSupport() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public UndoableEditSupport(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.swing.undo.UndoableEditSupport";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region UndoManager
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/UndoManager.html
+    /// </summary>
+    public partial class UndoManager : Javax.Swing.Undo.CompoundEdit
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public UndoManager() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public UndoManager(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.swing.undo.UndoManager";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;

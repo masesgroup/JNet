@@ -30,13 +30,6 @@ namespace Java.Awt.ImageNs
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DirectColorModel.html#<init>(java.awt.color.ColorSpace,int,int,int,int,int,boolean,int)
-        /// </summary>
-        public DirectColorModel(Java.Awt.ColorNs.ColorSpace arg0, int arg1, int arg2, int arg3, int arg4, int arg5, bool arg6, int arg7)
-            : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DirectColorModel.html#<init>(int,int,int,int,int)
         /// </summary>
         public DirectColorModel(int arg0, int arg1, int arg2, int arg3, int arg4)
@@ -48,6 +41,13 @@ namespace Java.Awt.ImageNs
         /// </summary>
         public DirectColorModel(int arg0, int arg1, int arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DirectColorModel.html#<init>(java.awt.color.ColorSpace,int,int,int,int,int,boolean,int)
+        /// </summary>
+        public DirectColorModel(Java.Awt.ColorNs.ColorSpace arg0, int arg1, int arg2, int arg3, int arg4, int arg5, bool arg6, int arg7)
+            : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7)
         {
         }
         

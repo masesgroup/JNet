@@ -38,9 +38,21 @@ namespace Java.Lang.Reflect
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#PUBLIC
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#ABSTRACT
         /// </summary>
-        public static int PUBLIC => Clazz.GetField<int>("PUBLIC");
+        public static int ABSTRACT => Clazz.GetField<int>("ABSTRACT");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#FINAL
+        /// </summary>
+        public static int FINAL => Clazz.GetField<int>("FINAL");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#INTERFACE
+        /// </summary>
+        public static int INTERFACE => Clazz.GetField<int>("INTERFACE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#NATIVE
+        /// </summary>
+        public static int NATIVE => Clazz.GetField<int>("NATIVE");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#PRIVATE
         /// </summary>
@@ -50,41 +62,29 @@ namespace Java.Lang.Reflect
         /// </summary>
         public static int PROTECTED => Clazz.GetField<int>("PROTECTED");
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#PUBLIC
+        /// </summary>
+        public static int PUBLIC => Clazz.GetField<int>("PUBLIC");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#STATIC
         /// </summary>
         public static int STATIC => Clazz.GetField<int>("STATIC");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#FINAL
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#STRICT
         /// </summary>
-        public static int FINAL => Clazz.GetField<int>("FINAL");
+        public static int STRICT => Clazz.GetField<int>("STRICT");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#SYNCHRONIZED
         /// </summary>
         public static int SYNCHRONIZED => Clazz.GetField<int>("SYNCHRONIZED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#VOLATILE
-        /// </summary>
-        public static int VOLATILE => Clazz.GetField<int>("VOLATILE");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#TRANSIENT
         /// </summary>
         public static int TRANSIENT => Clazz.GetField<int>("TRANSIENT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#NATIVE
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#VOLATILE
         /// </summary>
-        public static int NATIVE => Clazz.GetField<int>("NATIVE");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#INTERFACE
-        /// </summary>
-        public static int INTERFACE => Clazz.GetField<int>("INTERFACE");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#ABSTRACT
-        /// </summary>
-        public static int ABSTRACT => Clazz.GetField<int>("ABSTRACT");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Modifier.html#STRICT
-        /// </summary>
-        public static int STRICT => Clazz.GetField<int>("STRICT");
+        public static int VOLATILE => Clazz.GetField<int>("VOLATILE");
         
         #endregion
 

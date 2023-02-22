@@ -42,29 +42,29 @@ namespace Java.Awt.ImageNs
         /// </summary>
         public static int TYPE_BYTE => Clazz.GetField<int>("TYPE_BYTE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBuffer.html#TYPE_USHORT
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBuffer.html#TYPE_DOUBLE
         /// </summary>
-        public static int TYPE_USHORT => Clazz.GetField<int>("TYPE_USHORT");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBuffer.html#TYPE_SHORT
-        /// </summary>
-        public static int TYPE_SHORT => Clazz.GetField<int>("TYPE_SHORT");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBuffer.html#TYPE_INT
-        /// </summary>
-        public static int TYPE_INT => Clazz.GetField<int>("TYPE_INT");
+        public static int TYPE_DOUBLE => Clazz.GetField<int>("TYPE_DOUBLE");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBuffer.html#TYPE_FLOAT
         /// </summary>
         public static int TYPE_FLOAT => Clazz.GetField<int>("TYPE_FLOAT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBuffer.html#TYPE_DOUBLE
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBuffer.html#TYPE_INT
         /// </summary>
-        public static int TYPE_DOUBLE => Clazz.GetField<int>("TYPE_DOUBLE");
+        public static int TYPE_INT => Clazz.GetField<int>("TYPE_INT");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBuffer.html#TYPE_SHORT
+        /// </summary>
+        public static int TYPE_SHORT => Clazz.GetField<int>("TYPE_SHORT");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBuffer.html#TYPE_UNDEFINED
         /// </summary>
         public static int TYPE_UNDEFINED => Clazz.GetField<int>("TYPE_UNDEFINED");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBuffer.html#TYPE_USHORT
+        /// </summary>
+        public static int TYPE_USHORT => Clazz.GetField<int>("TYPE_USHORT");
         
         #endregion
 

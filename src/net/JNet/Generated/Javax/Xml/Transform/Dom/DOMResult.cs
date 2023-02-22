@@ -30,6 +30,13 @@ namespace Javax.Xml.Transform.Dom
     {
         #region Constructors
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/dom/DOMResult.html#<init>(org.w3c.dom.Node,java.lang.String)
+        /// </summary>
+        public DOMResult(Org.W3c.Dom.Node arg0, string arg1)
+            : base(arg0, arg1)
+        {
+        }
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/dom/DOMResult.html#<init>(org.w3c.dom.Node,org.w3c.dom.Node,java.lang.String)
         /// </summary>
         public DOMResult(Org.W3c.Dom.Node arg0, Org.W3c.Dom.Node arg1, string arg2)
@@ -40,13 +47,6 @@ namespace Javax.Xml.Transform.Dom
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/dom/DOMResult.html#<init>(org.w3c.dom.Node,org.w3c.dom.Node)
         /// </summary>
         public DOMResult(Org.W3c.Dom.Node arg0, Org.W3c.Dom.Node arg1)
-            : base(arg0, arg1)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/dom/DOMResult.html#<init>(org.w3c.dom.Node,java.lang.String)
-        /// </summary>
-        public DOMResult(Org.W3c.Dom.Node arg0, string arg1)
             : base(arg0, arg1)
         {
         }

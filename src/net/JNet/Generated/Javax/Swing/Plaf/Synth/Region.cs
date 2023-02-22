@@ -62,13 +62,13 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         public static Javax.Swing.Plaf.Synth.Region COMBO_BOX => Clazz.GetField<Javax.Swing.Plaf.Synth.Region>("COMBO_BOX");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#DESKTOP_PANE
-        /// </summary>
-        public static Javax.Swing.Plaf.Synth.Region DESKTOP_PANE => Clazz.GetField<Javax.Swing.Plaf.Synth.Region>("DESKTOP_PANE");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#DESKTOP_ICON
         /// </summary>
         public static Javax.Swing.Plaf.Synth.Region DESKTOP_ICON => Clazz.GetField<Javax.Swing.Plaf.Synth.Region>("DESKTOP_ICON");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#DESKTOP_PANE
+        /// </summary>
+        public static Javax.Swing.Plaf.Synth.Region DESKTOP_PANE => Clazz.GetField<Javax.Swing.Plaf.Synth.Region>("DESKTOP_PANE");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#EDITOR_PANE
         /// </summary>
@@ -154,13 +154,13 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         public static Javax.Swing.Plaf.Synth.Region SCROLL_BAR => Clazz.GetField<Javax.Swing.Plaf.Synth.Region>("SCROLL_BAR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#SCROLL_BAR_TRACK
-        /// </summary>
-        public static Javax.Swing.Plaf.Synth.Region SCROLL_BAR_TRACK => Clazz.GetField<Javax.Swing.Plaf.Synth.Region>("SCROLL_BAR_TRACK");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#SCROLL_BAR_THUMB
         /// </summary>
         public static Javax.Swing.Plaf.Synth.Region SCROLL_BAR_THUMB => Clazz.GetField<Javax.Swing.Plaf.Synth.Region>("SCROLL_BAR_THUMB");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#SCROLL_BAR_TRACK
+        /// </summary>
+        public static Javax.Swing.Plaf.Synth.Region SCROLL_BAR_TRACK => Clazz.GetField<Javax.Swing.Plaf.Synth.Region>("SCROLL_BAR_TRACK");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#SCROLL_PANE
         /// </summary>
@@ -174,13 +174,13 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         public static Javax.Swing.Plaf.Synth.Region SLIDER => Clazz.GetField<Javax.Swing.Plaf.Synth.Region>("SLIDER");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#SLIDER_TRACK
-        /// </summary>
-        public static Javax.Swing.Plaf.Synth.Region SLIDER_TRACK => Clazz.GetField<Javax.Swing.Plaf.Synth.Region>("SLIDER_TRACK");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#SLIDER_THUMB
         /// </summary>
         public static Javax.Swing.Plaf.Synth.Region SLIDER_THUMB => Clazz.GetField<Javax.Swing.Plaf.Synth.Region>("SLIDER_THUMB");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#SLIDER_TRACK
+        /// </summary>
+        public static Javax.Swing.Plaf.Synth.Region SLIDER_TRACK => Clazz.GetField<Javax.Swing.Plaf.Synth.Region>("SLIDER_TRACK");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#SPINNER
         /// </summary>
@@ -198,6 +198,10 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         public static Javax.Swing.Plaf.Synth.Region TABBED_PANE => Clazz.GetField<Javax.Swing.Plaf.Synth.Region>("TABBED_PANE");
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#TABBED_PANE_CONTENT
+        /// </summary>
+        public static Javax.Swing.Plaf.Synth.Region TABBED_PANE_CONTENT => Clazz.GetField<Javax.Swing.Plaf.Synth.Region>("TABBED_PANE_CONTENT");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#TABBED_PANE_TAB
         /// </summary>
         public static Javax.Swing.Plaf.Synth.Region TABBED_PANE_TAB => Clazz.GetField<Javax.Swing.Plaf.Synth.Region>("TABBED_PANE_TAB");
@@ -205,10 +209,6 @@ namespace Javax.Swing.Plaf.Synth
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#TABBED_PANE_TAB_AREA
         /// </summary>
         public static Javax.Swing.Plaf.Synth.Region TABBED_PANE_TAB_AREA => Clazz.GetField<Javax.Swing.Plaf.Synth.Region>("TABBED_PANE_TAB_AREA");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#TABBED_PANE_CONTENT
-        /// </summary>
-        public static Javax.Swing.Plaf.Synth.Region TABBED_PANE_CONTENT => Clazz.GetField<Javax.Swing.Plaf.Synth.Region>("TABBED_PANE_CONTENT");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#TABLE
         /// </summary>
@@ -246,13 +246,13 @@ namespace Javax.Swing.Plaf.Synth
         /// </summary>
         public static Javax.Swing.Plaf.Synth.Region TOOL_BAR_DRAG_WINDOW => Clazz.GetField<Javax.Swing.Plaf.Synth.Region>("TOOL_BAR_DRAG_WINDOW");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#TOOL_TIP
-        /// </summary>
-        public static Javax.Swing.Plaf.Synth.Region TOOL_TIP => Clazz.GetField<Javax.Swing.Plaf.Synth.Region>("TOOL_TIP");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#TOOL_BAR_SEPARATOR
         /// </summary>
         public static Javax.Swing.Plaf.Synth.Region TOOL_BAR_SEPARATOR => Clazz.GetField<Javax.Swing.Plaf.Synth.Region>("TOOL_BAR_SEPARATOR");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#TOOL_TIP
+        /// </summary>
+        public static Javax.Swing.Plaf.Synth.Region TOOL_TIP => Clazz.GetField<Javax.Swing.Plaf.Synth.Region>("TOOL_TIP");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/Region.html#TREE
         /// </summary>

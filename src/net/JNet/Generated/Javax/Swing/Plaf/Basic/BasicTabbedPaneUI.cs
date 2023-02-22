@@ -50,6 +50,48 @@ namespace Javax.Swing.Plaf.Basic
         #endregion
 
         #region Nested classes
+        #region PropertyChangeHandler
+        public partial class PropertyChangeHandler
+        {
+            #region Constructors
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTabbedPaneUI.PropertyChangeHandler.html#<init>(javax.swing.plaf.basic.BasicTabbedPaneUI)
+            /// </summary>
+            public PropertyChangeHandler(Javax.Swing.Plaf.Basic.BasicTabbedPaneUI arg0)
+                : base(arg0)
+            {
+            }
+            
+            #endregion
+
+            #region Class/Interface conversion operators
+            public static implicit operator Java.Beans.PropertyChangeListener(Javax.Swing.Plaf.Basic.BasicTabbedPaneUI.PropertyChangeHandler t) => t.Cast<Java.Beans.PropertyChangeListener>();
+            
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTabbedPaneUI.PropertyChangeHandler.html#propertyChange(java.beans.PropertyChangeEvent)
+            /// </summary>
+            public void PropertyChange(Java.Beans.PropertyChangeEvent arg0)
+            {
+                IExecute("propertyChange", arg0);
+            }
+            
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region TabSelectionHandler
         public partial class TabSelectionHandler
         {
@@ -161,48 +203,6 @@ namespace Javax.Swing.Plaf.Basic
             public void RemoveLayoutComponent(Java.Awt.Component arg0)
             {
                 IExecute("removeLayoutComponent", arg0);
-            }
-            
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region PropertyChangeHandler
-        public partial class PropertyChangeHandler
-        {
-            #region Constructors
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTabbedPaneUI.PropertyChangeHandler.html#<init>(javax.swing.plaf.basic.BasicTabbedPaneUI)
-            /// </summary>
-            public PropertyChangeHandler(Javax.Swing.Plaf.Basic.BasicTabbedPaneUI arg0)
-                : base(arg0)
-            {
-            }
-            
-            #endregion
-
-            #region Class/Interface conversion operators
-            public static implicit operator Java.Beans.PropertyChangeListener(Javax.Swing.Plaf.Basic.BasicTabbedPaneUI.PropertyChangeHandler t) => t.Cast<Java.Beans.PropertyChangeListener>();
-            
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTabbedPaneUI.PropertyChangeHandler.html#propertyChange(java.beans.PropertyChangeEvent)
-            /// </summary>
-            public void PropertyChange(Java.Beans.PropertyChangeEvent arg0)
-            {
-                IExecute("propertyChange", arg0);
             }
             
             #endregion

@@ -37,16 +37,16 @@ namespace Java.Io
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/OutputStreamWriter.html#<init>(java.io.OutputStream,java.nio.charset.CharsetEncoder)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/OutputStreamWriter.html#<init>(java.io.OutputStream,java.nio.charset.Charset)
         /// </summary>
-        public OutputStreamWriter(Java.Io.OutputStream arg0, Java.Nio.Charset.CharsetEncoder arg1)
+        public OutputStreamWriter(Java.Io.OutputStream arg0, Java.Nio.Charset.Charset arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/OutputStreamWriter.html#<init>(java.io.OutputStream,java.nio.charset.Charset)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/OutputStreamWriter.html#<init>(java.io.OutputStream,java.nio.charset.CharsetEncoder)
         /// </summary>
-        public OutputStreamWriter(Java.Io.OutputStream arg0, Java.Nio.Charset.Charset arg1)
+        public OutputStreamWriter(Java.Io.OutputStream arg0, Java.Nio.Charset.CharsetEncoder arg1)
             : base(arg0, arg1)
         {
         }

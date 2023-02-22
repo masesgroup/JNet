@@ -30,16 +30,16 @@ namespace Java.Awt.ImageNs
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RescaleOp.html#<init>(float[],float[],java.awt.RenderingHints)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RescaleOp.html#<init>(float,float,java.awt.RenderingHints)
         /// </summary>
-        public RescaleOp(float[] arg0, float[] arg1, Java.Awt.RenderingHints arg2)
+        public RescaleOp(float arg0, float arg1, Java.Awt.RenderingHints arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RescaleOp.html#<init>(float,float,java.awt.RenderingHints)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RescaleOp.html#<init>(float[],float[],java.awt.RenderingHints)
         /// </summary>
-        public RescaleOp(float arg0, float arg1, Java.Awt.RenderingHints arg2)
+        public RescaleOp(float[] arg0, float[] arg1, Java.Awt.RenderingHints arg2)
             : base(arg0, arg1, arg2)
         {
         }

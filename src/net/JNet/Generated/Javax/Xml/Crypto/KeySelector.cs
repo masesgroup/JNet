@@ -76,6 +76,14 @@ namespace Javax.Xml.Crypto
 
             #region Fields
             /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/KeySelector.Purpose.html#DECRYPT
+            /// </summary>
+            public static Javax.Xml.Crypto.KeySelector.Purpose DECRYPT => Clazz.GetField<Javax.Xml.Crypto.KeySelector.Purpose>("DECRYPT");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/KeySelector.Purpose.html#ENCRYPT
+            /// </summary>
+            public static Javax.Xml.Crypto.KeySelector.Purpose ENCRYPT => Clazz.GetField<Javax.Xml.Crypto.KeySelector.Purpose>("ENCRYPT");
+            /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/KeySelector.Purpose.html#SIGN
             /// </summary>
             public static Javax.Xml.Crypto.KeySelector.Purpose SIGN => Clazz.GetField<Javax.Xml.Crypto.KeySelector.Purpose>("SIGN");
@@ -83,14 +91,6 @@ namespace Javax.Xml.Crypto
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/KeySelector.Purpose.html#VERIFY
             /// </summary>
             public static Javax.Xml.Crypto.KeySelector.Purpose VERIFY => Clazz.GetField<Javax.Xml.Crypto.KeySelector.Purpose>("VERIFY");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/KeySelector.Purpose.html#ENCRYPT
-            /// </summary>
-            public static Javax.Xml.Crypto.KeySelector.Purpose ENCRYPT => Clazz.GetField<Javax.Xml.Crypto.KeySelector.Purpose>("ENCRYPT");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/KeySelector.Purpose.html#DECRYPT
-            /// </summary>
-            public static Javax.Xml.Crypto.KeySelector.Purpose DECRYPT => Clazz.GetField<Javax.Xml.Crypto.KeySelector.Purpose>("DECRYPT");
             
             #endregion
 

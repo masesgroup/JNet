@@ -38,6 +38,10 @@ namespace Javax.Accessibility
 
         #region Fields
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleTableModelChange.html#DELETE
+        /// </summary>
+        public static int DELETE => Clazz.GetField<int>("DELETE");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleTableModelChange.html#INSERT
         /// </summary>
         public static int INSERT => Clazz.GetField<int>("INSERT");
@@ -45,10 +49,6 @@ namespace Javax.Accessibility
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleTableModelChange.html#UPDATE
         /// </summary>
         public static int UPDATE => Clazz.GetField<int>("UPDATE");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleTableModelChange.html#DELETE
-        /// </summary>
-        public static int DELETE => Clazz.GetField<int>("DELETE");
         
         #endregion
 

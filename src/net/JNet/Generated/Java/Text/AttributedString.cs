@@ -30,6 +30,13 @@ namespace Java.Text
     {
         #region Constructors
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedString.html#<init>(java.lang.String)
+        /// </summary>
+        public AttributedString(string arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedString.html#<init>(java.text.AttributedCharacterIterator,int,int,java.text.AttributedCharacterIterator$Attribute[])
         /// </summary>
         public AttributedString(Java.Text.AttributedCharacterIterator arg0, int arg1, int arg2, Java.Text.AttributedCharacterIterator.Attribute[] arg3)
@@ -47,13 +54,6 @@ namespace Java.Text
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedString.html#<init>(java.text.AttributedCharacterIterator)
         /// </summary>
         public AttributedString(Java.Text.AttributedCharacterIterator arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedString.html#<init>(java.lang.String)
-        /// </summary>
-        public AttributedString(string arg0)
             : base(arg0)
         {
         }

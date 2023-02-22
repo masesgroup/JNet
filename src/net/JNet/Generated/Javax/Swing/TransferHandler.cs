@@ -46,17 +46,9 @@ namespace Javax.Swing
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#NONE
-        /// </summary>
-        public static int NONE => Clazz.GetField<int>("NONE");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#COPY
         /// </summary>
         public static int COPY => Clazz.GetField<int>("COPY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#MOVE
-        /// </summary>
-        public static int MOVE => Clazz.GetField<int>("MOVE");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#COPY_OR_MOVE
         /// </summary>
@@ -65,6 +57,14 @@ namespace Javax.Swing
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#LINK
         /// </summary>
         public static int LINK => Clazz.GetField<int>("LINK");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#MOVE
+        /// </summary>
+        public static int MOVE => Clazz.GetField<int>("MOVE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#NONE
+        /// </summary>
+        public static int NONE => Clazz.GetField<int>("NONE");
         
         #endregion
 
@@ -168,40 +168,6 @@ namespace Javax.Swing
         #endregion
 
         #region Nested classes
-        #region DropLocation
-        public partial class DropLocation
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.DropLocation.html#getDropPoint() 
-            /// </summary>
-            public Java.Awt.Point DropPoint
-            {
-                get { return IExecute<Java.Awt.Point>("getDropPoint"); }
-            }
-            
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region TransferSupport
         public partial class TransferSupport
         {
@@ -298,6 +264,40 @@ namespace Javax.Swing
             public void SetShowDropLocation(bool arg0)
             {
                 IExecute("setShowDropLocation", arg0);
+            }
+            
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region DropLocation
+        public partial class DropLocation
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.DropLocation.html#getDropPoint() 
+            /// </summary>
+            public Java.Awt.Point DropPoint
+            {
+                get { return IExecute<Java.Awt.Point>("getDropPoint"); }
             }
             
             #endregion

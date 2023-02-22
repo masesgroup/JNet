@@ -38,17 +38,17 @@ namespace Javax.Xml.Stream
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLInputFactory.html#IS_NAMESPACE_AWARE
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLInputFactory.html#ALLOCATOR
         /// </summary>
-        public static string IS_NAMESPACE_AWARE => Clazz.GetField<string>("IS_NAMESPACE_AWARE");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLInputFactory.html#IS_VALIDATING
-        /// </summary>
-        public static string IS_VALIDATING => Clazz.GetField<string>("IS_VALIDATING");
+        public static string ALLOCATOR => Clazz.GetField<string>("ALLOCATOR");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLInputFactory.html#IS_COALESCING
         /// </summary>
         public static string IS_COALESCING => Clazz.GetField<string>("IS_COALESCING");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLInputFactory.html#IS_NAMESPACE_AWARE
+        /// </summary>
+        public static string IS_NAMESPACE_AWARE => Clazz.GetField<string>("IS_NAMESPACE_AWARE");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLInputFactory.html#IS_REPLACING_ENTITY_REFERENCES
         /// </summary>
@@ -58,9 +58,9 @@ namespace Javax.Xml.Stream
         /// </summary>
         public static string IS_SUPPORTING_EXTERNAL_ENTITIES => Clazz.GetField<string>("IS_SUPPORTING_EXTERNAL_ENTITIES");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLInputFactory.html#SUPPORT_DTD
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLInputFactory.html#IS_VALIDATING
         /// </summary>
-        public static string SUPPORT_DTD => Clazz.GetField<string>("SUPPORT_DTD");
+        public static string IS_VALIDATING => Clazz.GetField<string>("IS_VALIDATING");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLInputFactory.html#REPORTER
         /// </summary>
@@ -70,9 +70,9 @@ namespace Javax.Xml.Stream
         /// </summary>
         public static string RESOLVER => Clazz.GetField<string>("RESOLVER");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLInputFactory.html#ALLOCATOR
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLInputFactory.html#SUPPORT_DTD
         /// </summary>
-        public static string ALLOCATOR => Clazz.GetField<string>("ALLOCATOR");
+        public static string SUPPORT_DTD => Clazz.GetField<string>("SUPPORT_DTD");
         
         #endregion
 

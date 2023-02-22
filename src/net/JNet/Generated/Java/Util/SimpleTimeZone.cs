@@ -66,10 +66,6 @@ namespace Java.Util
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SimpleTimeZone.html#WALL_TIME
-        /// </summary>
-        public static int WALL_TIME => Clazz.GetField<int>("WALL_TIME");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SimpleTimeZone.html#STANDARD_TIME
         /// </summary>
         public static int STANDARD_TIME => Clazz.GetField<int>("STANDARD_TIME");
@@ -77,6 +73,10 @@ namespace Java.Util
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SimpleTimeZone.html#UTC_TIME
         /// </summary>
         public static int UTC_TIME => Clazz.GetField<int>("UTC_TIME");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SimpleTimeZone.html#WALL_TIME
+        /// </summary>
+        public static int WALL_TIME => Clazz.GetField<int>("WALL_TIME");
         
         #endregion
 

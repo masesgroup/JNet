@@ -30,16 +30,16 @@ namespace Java.Net
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/MulticastSocket.html#<init>(java.net.SocketAddress) throws java.io.IOException
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/MulticastSocket.html#<init>(int) throws java.io.IOException
         /// </summary>
-        public MulticastSocket(Java.Net.SocketAddress arg0)
+        public MulticastSocket(int arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/MulticastSocket.html#<init>(int) throws java.io.IOException
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/MulticastSocket.html#<init>(java.net.SocketAddress) throws java.io.IOException
         /// </summary>
-        public MulticastSocket(int arg0)
+        public MulticastSocket(Java.Net.SocketAddress arg0)
             : base(arg0)
         {
         }

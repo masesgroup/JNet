@@ -91,6 +91,75 @@ namespace Java.Net.Http
         #endregion
 
         #region Nested classes
+        #region BodyPublishers
+        public partial class BodyPublishers
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html#noBody()
+            /// </summary>
+            public static Java.Net.Http.HttpRequest.BodyPublisher NoBody()
+            {
+                return SExecute<Java.Net.Http.HttpRequest.BodyPublisher>("noBody");
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html#ofByteArray(byte[],int,int)
+            /// </summary>
+            public static Java.Net.Http.HttpRequest.BodyPublisher OfByteArray(byte[] arg0, int arg1, int arg2)
+            {
+                return SExecute<Java.Net.Http.HttpRequest.BodyPublisher>("ofByteArray", arg0, arg1, arg2);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html#ofByteArray(byte[])
+            /// </summary>
+            public static Java.Net.Http.HttpRequest.BodyPublisher OfByteArray(byte[] arg0)
+            {
+                return SExecute<Java.Net.Http.HttpRequest.BodyPublisher>("ofByteArray", arg0);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html#ofFile(java.nio.file.Path) throws java.io.FileNotFoundException
+            /// </summary>
+            public static Java.Net.Http.HttpRequest.BodyPublisher OfFile(Java.Nio.File.Path arg0)
+            {
+                return SExecute<Java.Net.Http.HttpRequest.BodyPublisher>("ofFile", arg0);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html#ofString(java.lang.String,java.nio.charset.Charset)
+            /// </summary>
+            public static Java.Net.Http.HttpRequest.BodyPublisher OfString(string arg0, Java.Nio.Charset.Charset arg1)
+            {
+                return SExecute<Java.Net.Http.HttpRequest.BodyPublisher>("ofString", arg0, arg1);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html#ofString(java.lang.String)
+            /// </summary>
+            public static Java.Net.Http.HttpRequest.BodyPublisher OfString(string arg0)
+            {
+                return SExecute<Java.Net.Http.HttpRequest.BodyPublisher>("ofString", arg0);
+            }
+            
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region Builder
         public partial class Builder
         {
@@ -237,75 +306,6 @@ namespace Java.Net.Http
                 return IExecute<long>("contentLength");
             }
             
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region BodyPublishers
-        public partial class BodyPublishers
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html#noBody()
-            /// </summary>
-            public static Java.Net.Http.HttpRequest.BodyPublisher NoBody()
-            {
-                return SExecute<Java.Net.Http.HttpRequest.BodyPublisher>("noBody");
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html#ofByteArray(byte[],int,int)
-            /// </summary>
-            public static Java.Net.Http.HttpRequest.BodyPublisher OfByteArray(byte[] arg0, int arg1, int arg2)
-            {
-                return SExecute<Java.Net.Http.HttpRequest.BodyPublisher>("ofByteArray", arg0, arg1, arg2);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html#ofByteArray(byte[])
-            /// </summary>
-            public static Java.Net.Http.HttpRequest.BodyPublisher OfByteArray(byte[] arg0)
-            {
-                return SExecute<Java.Net.Http.HttpRequest.BodyPublisher>("ofByteArray", arg0);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html#ofFile(java.nio.file.Path) throws java.io.FileNotFoundException
-            /// </summary>
-            public static Java.Net.Http.HttpRequest.BodyPublisher OfFile(Java.Nio.File.Path arg0)
-            {
-                return SExecute<Java.Net.Http.HttpRequest.BodyPublisher>("ofFile", arg0);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html#ofString(java.lang.String,java.nio.charset.Charset)
-            /// </summary>
-            public static Java.Net.Http.HttpRequest.BodyPublisher OfString(string arg0, Java.Nio.Charset.Charset arg1)
-            {
-                return SExecute<Java.Net.Http.HttpRequest.BodyPublisher>("ofString", arg0, arg1);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html#ofString(java.lang.String)
-            /// </summary>
-            public static Java.Net.Http.HttpRequest.BodyPublisher OfString(string arg0)
-            {
-                return SExecute<Java.Net.Http.HttpRequest.BodyPublisher>("ofString", arg0);
-            }
-            
-            #endregion
-
-            #region Instance methods
-
             #endregion
 
             // TODO: complete the class

@@ -40,6 +40,18 @@ namespace Java.Sql
 
         #region Fields
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#CLOSE_CURSORS_AT_COMMIT
+        /// </summary>
+        public static int CLOSE_CURSORS_AT_COMMIT => Clazz.GetField<int>("CLOSE_CURSORS_AT_COMMIT");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#CONCUR_READ_ONLY
+        /// </summary>
+        public static int CONCUR_READ_ONLY => Clazz.GetField<int>("CONCUR_READ_ONLY");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#CONCUR_UPDATABLE
+        /// </summary>
+        public static int CONCUR_UPDATABLE => Clazz.GetField<int>("CONCUR_UPDATABLE");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#FETCH_FORWARD
         /// </summary>
         public static int FETCH_FORWARD => Clazz.GetField<int>("FETCH_FORWARD");
@@ -52,6 +64,10 @@ namespace Java.Sql
         /// </summary>
         public static int FETCH_UNKNOWN => Clazz.GetField<int>("FETCH_UNKNOWN");
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#HOLD_CURSORS_OVER_COMMIT
+        /// </summary>
+        public static int HOLD_CURSORS_OVER_COMMIT => Clazz.GetField<int>("HOLD_CURSORS_OVER_COMMIT");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#TYPE_FORWARD_ONLY
         /// </summary>
         public static int TYPE_FORWARD_ONLY => Clazz.GetField<int>("TYPE_FORWARD_ONLY");
@@ -63,22 +79,6 @@ namespace Java.Sql
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#TYPE_SCROLL_SENSITIVE
         /// </summary>
         public static int TYPE_SCROLL_SENSITIVE => Clazz.GetField<int>("TYPE_SCROLL_SENSITIVE");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#CONCUR_READ_ONLY
-        /// </summary>
-        public static int CONCUR_READ_ONLY => Clazz.GetField<int>("CONCUR_READ_ONLY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#CONCUR_UPDATABLE
-        /// </summary>
-        public static int CONCUR_UPDATABLE => Clazz.GetField<int>("CONCUR_UPDATABLE");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#HOLD_CURSORS_OVER_COMMIT
-        /// </summary>
-        public static int HOLD_CURSORS_OVER_COMMIT => Clazz.GetField<int>("HOLD_CURSORS_OVER_COMMIT");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#CLOSE_CURSORS_AT_COMMIT
-        /// </summary>
-        public static int CLOSE_CURSORS_AT_COMMIT => Clazz.GetField<int>("CLOSE_CURSORS_AT_COMMIT");
         
         #endregion
 

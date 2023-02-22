@@ -30,17 +30,10 @@ namespace Javax.Security.Auth.Callback
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#<init>(java.lang.String,int,java.lang.String[],int)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#<init>(int,int,int)
         /// </summary>
-        public ConfirmationCallback(string arg0, int arg1, string[] arg2, int arg3)
-            : base(arg0, arg1, arg2, arg3)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#<init>(java.lang.String,int,int,int)
-        /// </summary>
-        public ConfirmationCallback(string arg0, int arg1, int arg2, int arg3)
-            : base(arg0, arg1, arg2, arg3)
+        public ConfirmationCallback(int arg0, int arg1, int arg2)
+            : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
@@ -51,10 +44,17 @@ namespace Javax.Security.Auth.Callback
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#<init>(int,int,int)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#<init>(java.lang.String,int,int,int)
         /// </summary>
-        public ConfirmationCallback(int arg0, int arg1, int arg2)
-            : base(arg0, arg1, arg2)
+        public ConfirmationCallback(string arg0, int arg1, int arg2, int arg3)
+            : base(arg0, arg1, arg2, arg3)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#<init>(java.lang.String,int,java.lang.String[],int)
+        /// </summary>
+        public ConfirmationCallback(string arg0, int arg1, string[] arg2, int arg3)
+            : base(arg0, arg1, arg2, arg3)
         {
         }
         
@@ -68,49 +68,49 @@ namespace Javax.Security.Auth.Callback
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#UNSPECIFIED_OPTION
-        /// </summary>
-        public static int UNSPECIFIED_OPTION => Clazz.GetField<int>("UNSPECIFIED_OPTION");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#YES_NO_OPTION
-        /// </summary>
-        public static int YES_NO_OPTION => Clazz.GetField<int>("YES_NO_OPTION");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#YES_NO_CANCEL_OPTION
-        /// </summary>
-        public static int YES_NO_CANCEL_OPTION => Clazz.GetField<int>("YES_NO_CANCEL_OPTION");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#OK_CANCEL_OPTION
-        /// </summary>
-        public static int OK_CANCEL_OPTION => Clazz.GetField<int>("OK_CANCEL_OPTION");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#YES
-        /// </summary>
-        public static int YES => Clazz.GetField<int>("YES");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#NO
-        /// </summary>
-        public static int NO => Clazz.GetField<int>("NO");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#CANCEL
         /// </summary>
         public static int CANCEL => Clazz.GetField<int>("CANCEL");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#OK
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#ERROR
         /// </summary>
-        public static int OK => Clazz.GetField<int>("OK");
+        public static int ERROR => Clazz.GetField<int>("ERROR");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#INFORMATION
         /// </summary>
         public static int INFORMATION => Clazz.GetField<int>("INFORMATION");
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#NO
+        /// </summary>
+        public static int NO => Clazz.GetField<int>("NO");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#OK
+        /// </summary>
+        public static int OK => Clazz.GetField<int>("OK");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#OK_CANCEL_OPTION
+        /// </summary>
+        public static int OK_CANCEL_OPTION => Clazz.GetField<int>("OK_CANCEL_OPTION");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#UNSPECIFIED_OPTION
+        /// </summary>
+        public static int UNSPECIFIED_OPTION => Clazz.GetField<int>("UNSPECIFIED_OPTION");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#WARNING
         /// </summary>
         public static int WARNING => Clazz.GetField<int>("WARNING");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#ERROR
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#YES
         /// </summary>
-        public static int ERROR => Clazz.GetField<int>("ERROR");
+        public static int YES => Clazz.GetField<int>("YES");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#YES_NO_CANCEL_OPTION
+        /// </summary>
+        public static int YES_NO_CANCEL_OPTION => Clazz.GetField<int>("YES_NO_CANCEL_OPTION");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/ConfirmationCallback.html#YES_NO_OPTION
+        /// </summary>
+        public static int YES_NO_OPTION => Clazz.GetField<int>("YES_NO_OPTION");
         
         #endregion
 

@@ -39,13 +39,13 @@ namespace Java.Awt
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsConfigTemplate.html#REQUIRED
-        /// </summary>
-        public static int REQUIRED => Clazz.GetField<int>("REQUIRED");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsConfigTemplate.html#PREFERRED
         /// </summary>
         public static int PREFERRED => Clazz.GetField<int>("PREFERRED");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsConfigTemplate.html#REQUIRED
+        /// </summary>
+        public static int REQUIRED => Clazz.GetField<int>("REQUIRED");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsConfigTemplate.html#UNNECESSARY
         /// </summary>

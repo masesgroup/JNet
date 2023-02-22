@@ -30,13 +30,6 @@ namespace Java.Awt.Dnd
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceDropEvent.html#<init>(java.awt.dnd.DragSourceContext)
-        /// </summary>
-        public DragSourceDropEvent(Java.Awt.Dnd.DragSourceContext arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceDropEvent.html#<init>(java.awt.dnd.DragSourceContext,int,boolean,int,int)
         /// </summary>
         public DragSourceDropEvent(Java.Awt.Dnd.DragSourceContext arg0, int arg1, bool arg2, int arg3, int arg4)
@@ -48,6 +41,13 @@ namespace Java.Awt.Dnd
         /// </summary>
         public DragSourceDropEvent(Java.Awt.Dnd.DragSourceContext arg0, int arg1, bool arg2)
             : base(arg0, arg1, arg2)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceDropEvent.html#<init>(java.awt.dnd.DragSourceContext)
+        /// </summary>
+        public DragSourceDropEvent(Java.Awt.Dnd.DragSourceContext arg0)
+            : base(arg0)
         {
         }
         

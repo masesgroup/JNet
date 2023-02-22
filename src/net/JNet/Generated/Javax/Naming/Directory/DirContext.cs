@@ -43,13 +43,13 @@ namespace Javax.Naming.Directory
         /// </summary>
         public static int ADD_ATTRIBUTE => Clazz.GetField<int>("ADD_ATTRIBUTE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/DirContext.html#REPLACE_ATTRIBUTE
-        /// </summary>
-        public static int REPLACE_ATTRIBUTE => Clazz.GetField<int>("REPLACE_ATTRIBUTE");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/DirContext.html#REMOVE_ATTRIBUTE
         /// </summary>
         public static int REMOVE_ATTRIBUTE => Clazz.GetField<int>("REMOVE_ATTRIBUTE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/DirContext.html#REPLACE_ATTRIBUTE
+        /// </summary>
+        public static int REPLACE_ATTRIBUTE => Clazz.GetField<int>("REPLACE_ATTRIBUTE");
         
         #endregion
 

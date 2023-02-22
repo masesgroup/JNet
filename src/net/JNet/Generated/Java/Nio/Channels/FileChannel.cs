@@ -212,6 +212,10 @@ namespace Java.Nio.Channels
 
             #region Fields
             /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileChannel.MapMode.html#PRIVATE
+            /// </summary>
+            public static Java.Nio.Channels.FileChannel.MapMode PRIVATE => Clazz.GetField<Java.Nio.Channels.FileChannel.MapMode>("PRIVATE");
+            /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileChannel.MapMode.html#READ_ONLY
             /// </summary>
             public static Java.Nio.Channels.FileChannel.MapMode READ_ONLY => Clazz.GetField<Java.Nio.Channels.FileChannel.MapMode>("READ_ONLY");
@@ -219,10 +223,6 @@ namespace Java.Nio.Channels
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileChannel.MapMode.html#READ_WRITE
             /// </summary>
             public static Java.Nio.Channels.FileChannel.MapMode READ_WRITE => Clazz.GetField<Java.Nio.Channels.FileChannel.MapMode>("READ_WRITE");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileChannel.MapMode.html#PRIVATE
-            /// </summary>
-            public static Java.Nio.Channels.FileChannel.MapMode PRIVATE => Clazz.GetField<Java.Nio.Channels.FileChannel.MapMode>("PRIVATE");
             
             #endregion
 

@@ -30,17 +30,17 @@ namespace Javax.Xml.Crypto
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/OctetStreamData.html#<init>(java.io.InputStream)
-        /// </summary>
-        public OctetStreamData(Java.Io.InputStream arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/OctetStreamData.html#<init>(java.io.InputStream,java.lang.String,java.lang.String)
         /// </summary>
         public OctetStreamData(Java.Io.InputStream arg0, string arg1, string arg2)
             : base(arg0, arg1, arg2)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/OctetStreamData.html#<init>(java.io.InputStream)
+        /// </summary>
+        public OctetStreamData(Java.Io.InputStream arg0)
+            : base(arg0)
         {
         }
         

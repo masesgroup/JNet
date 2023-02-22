@@ -23,32 +23,32 @@
 
 namespace Java.Awt.Im
 {
-    #region InputMethodRequests
+    #region InputContext
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodRequests.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputContext.html
     /// </summary>
-    public partial class InputMethodRequests : MASES.JCOBridge.C2JBridge.JVMBridgeBase<InputMethodRequests>
+    public partial class InputContext : MASES.JCOBridge.C2JBridge.JVMBridgeBase<InputContext>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public InputMethodRequests() { }
+        public InputContext() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public InputMethodRequests(params object[] args) : base(args) { }
+        public InputContext(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.awt.im.InputMethodRequests";
+        public override string ClassName => "java.awt.im.InputContext";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
+        public override bool IsAbstract => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
         public override bool IsCloseable => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
+        public override bool IsInterface => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;
@@ -93,32 +93,32 @@ namespace Java.Awt.Im
     }
     #endregion
 
-    #region InputContext
+    #region InputMethodRequests
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputContext.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodRequests.html
     /// </summary>
-    public partial class InputContext : MASES.JCOBridge.C2JBridge.JVMBridgeBase<InputContext>
+    public partial class InputMethodRequests : MASES.JCOBridge.C2JBridge.JVMBridgeBase<InputMethodRequests>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public InputContext() { }
+        public InputMethodRequests() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public InputContext(params object[] args) : base(args) { }
+        public InputMethodRequests(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.awt.im.InputContext";
+        public override string ClassName => "java.awt.im.InputMethodRequests";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
+        public override bool IsAbstract => true;
 
         /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
         public override bool IsCloseable => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
+        public override bool IsInterface => true;
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;

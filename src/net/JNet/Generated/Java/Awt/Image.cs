@@ -38,9 +38,9 @@ namespace Java.Awt
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#UndefinedProperty
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#SCALE_AREA_AVERAGING
         /// </summary>
-        public static object UndefinedProperty => Clazz.GetField("UndefinedProperty");
+        public static int SCALE_AREA_AVERAGING => Clazz.GetField<int>("SCALE_AREA_AVERAGING");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#SCALE_DEFAULT
         /// </summary>
@@ -50,17 +50,17 @@ namespace Java.Awt
         /// </summary>
         public static int SCALE_FAST => Clazz.GetField<int>("SCALE_FAST");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#SCALE_SMOOTH
-        /// </summary>
-        public static int SCALE_SMOOTH => Clazz.GetField<int>("SCALE_SMOOTH");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#SCALE_REPLICATE
         /// </summary>
         public static int SCALE_REPLICATE => Clazz.GetField<int>("SCALE_REPLICATE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#SCALE_AREA_AVERAGING
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#SCALE_SMOOTH
         /// </summary>
-        public static int SCALE_AREA_AVERAGING => Clazz.GetField<int>("SCALE_AREA_AVERAGING");
+        public static int SCALE_SMOOTH => Clazz.GetField<int>("SCALE_SMOOTH");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Image.html#UndefinedProperty
+        /// </summary>
+        public static object UndefinedProperty => Clazz.GetField("UndefinedProperty");
         
         #endregion
 

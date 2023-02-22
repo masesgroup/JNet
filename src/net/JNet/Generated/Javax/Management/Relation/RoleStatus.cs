@@ -38,18 +38,6 @@ namespace Javax.Management.Relation
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleStatus.html#NO_ROLE_WITH_NAME
-        /// </summary>
-        public static int NO_ROLE_WITH_NAME => Clazz.GetField<int>("NO_ROLE_WITH_NAME");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleStatus.html#ROLE_NOT_READABLE
-        /// </summary>
-        public static int ROLE_NOT_READABLE => Clazz.GetField<int>("ROLE_NOT_READABLE");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleStatus.html#ROLE_NOT_WRITABLE
-        /// </summary>
-        public static int ROLE_NOT_WRITABLE => Clazz.GetField<int>("ROLE_NOT_WRITABLE");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleStatus.html#LESS_THAN_MIN_ROLE_DEGREE
         /// </summary>
         public static int LESS_THAN_MIN_ROLE_DEGREE => Clazz.GetField<int>("LESS_THAN_MIN_ROLE_DEGREE");
@@ -58,13 +46,25 @@ namespace Javax.Management.Relation
         /// </summary>
         public static int MORE_THAN_MAX_ROLE_DEGREE => Clazz.GetField<int>("MORE_THAN_MAX_ROLE_DEGREE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleStatus.html#REF_MBEAN_OF_INCORRECT_CLASS
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleStatus.html#NO_ROLE_WITH_NAME
         /// </summary>
-        public static int REF_MBEAN_OF_INCORRECT_CLASS => Clazz.GetField<int>("REF_MBEAN_OF_INCORRECT_CLASS");
+        public static int NO_ROLE_WITH_NAME => Clazz.GetField<int>("NO_ROLE_WITH_NAME");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleStatus.html#REF_MBEAN_NOT_REGISTERED
         /// </summary>
         public static int REF_MBEAN_NOT_REGISTERED => Clazz.GetField<int>("REF_MBEAN_NOT_REGISTERED");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleStatus.html#REF_MBEAN_OF_INCORRECT_CLASS
+        /// </summary>
+        public static int REF_MBEAN_OF_INCORRECT_CLASS => Clazz.GetField<int>("REF_MBEAN_OF_INCORRECT_CLASS");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleStatus.html#ROLE_NOT_READABLE
+        /// </summary>
+        public static int ROLE_NOT_READABLE => Clazz.GetField<int>("ROLE_NOT_READABLE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleStatus.html#ROLE_NOT_WRITABLE
+        /// </summary>
+        public static int ROLE_NOT_WRITABLE => Clazz.GetField<int>("ROLE_NOT_WRITABLE");
         
         #endregion
 

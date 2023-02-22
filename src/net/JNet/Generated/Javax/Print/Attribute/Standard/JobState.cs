@@ -39,9 +39,17 @@ namespace Javax.Print.Attribute.Standard
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobState.html#UNKNOWN
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobState.html#ABORTED
         /// </summary>
-        public static Javax.Print.Attribute.Standard.JobState UNKNOWN => Clazz.GetField<Javax.Print.Attribute.Standard.JobState>("UNKNOWN");
+        public static Javax.Print.Attribute.Standard.JobState ABORTED => Clazz.GetField<Javax.Print.Attribute.Standard.JobState>("ABORTED");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobState.html#CANCELED
+        /// </summary>
+        public static Javax.Print.Attribute.Standard.JobState CANCELED => Clazz.GetField<Javax.Print.Attribute.Standard.JobState>("CANCELED");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobState.html#COMPLETED
+        /// </summary>
+        public static Javax.Print.Attribute.Standard.JobState COMPLETED => Clazz.GetField<Javax.Print.Attribute.Standard.JobState>("COMPLETED");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobState.html#PENDING
         /// </summary>
@@ -59,17 +67,9 @@ namespace Javax.Print.Attribute.Standard
         /// </summary>
         public static Javax.Print.Attribute.Standard.JobState PROCESSING_STOPPED => Clazz.GetField<Javax.Print.Attribute.Standard.JobState>("PROCESSING_STOPPED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobState.html#CANCELED
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobState.html#UNKNOWN
         /// </summary>
-        public static Javax.Print.Attribute.Standard.JobState CANCELED => Clazz.GetField<Javax.Print.Attribute.Standard.JobState>("CANCELED");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobState.html#ABORTED
-        /// </summary>
-        public static Javax.Print.Attribute.Standard.JobState ABORTED => Clazz.GetField<Javax.Print.Attribute.Standard.JobState>("ABORTED");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/JobState.html#COMPLETED
-        /// </summary>
-        public static Javax.Print.Attribute.Standard.JobState COMPLETED => Clazz.GetField<Javax.Print.Attribute.Standard.JobState>("COMPLETED");
+        public static Javax.Print.Attribute.Standard.JobState UNKNOWN => Clazz.GetField<Javax.Print.Attribute.Standard.JobState>("UNKNOWN");
         
         #endregion
 

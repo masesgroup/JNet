@@ -30,17 +30,17 @@ namespace Java.Awt.Dnd
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceEvent.html#<init>(java.awt.dnd.DragSourceContext)
-        /// </summary>
-        public DragSourceEvent(Java.Awt.Dnd.DragSourceContext arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceEvent.html#<init>(java.awt.dnd.DragSourceContext,int,int)
         /// </summary>
         public DragSourceEvent(Java.Awt.Dnd.DragSourceContext arg0, int arg1, int arg2)
             : base(arg0, arg1, arg2)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceEvent.html#<init>(java.awt.dnd.DragSourceContext)
+        /// </summary>
+        public DragSourceEvent(Java.Awt.Dnd.DragSourceContext arg0)
+            : base(arg0)
         {
         }
         

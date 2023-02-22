@@ -45,21 +45,21 @@ namespace Javax.Imageio.Plugins.Jpeg
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGHuffmanTable.html#StdDCLuminance
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGHuffmanTable.html#StdACChrominance
         /// </summary>
-        public static Javax.Imageio.Plugins.Jpeg.JPEGHuffmanTable StdDCLuminance => Clazz.GetField<Javax.Imageio.Plugins.Jpeg.JPEGHuffmanTable>("StdDCLuminance");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGHuffmanTable.html#StdDCChrominance
-        /// </summary>
-        public static Javax.Imageio.Plugins.Jpeg.JPEGHuffmanTable StdDCChrominance => Clazz.GetField<Javax.Imageio.Plugins.Jpeg.JPEGHuffmanTable>("StdDCChrominance");
+        public static Javax.Imageio.Plugins.Jpeg.JPEGHuffmanTable StdACChrominance => Clazz.GetField<Javax.Imageio.Plugins.Jpeg.JPEGHuffmanTable>("StdACChrominance");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGHuffmanTable.html#StdACLuminance
         /// </summary>
         public static Javax.Imageio.Plugins.Jpeg.JPEGHuffmanTable StdACLuminance => Clazz.GetField<Javax.Imageio.Plugins.Jpeg.JPEGHuffmanTable>("StdACLuminance");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGHuffmanTable.html#StdACChrominance
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGHuffmanTable.html#StdDCChrominance
         /// </summary>
-        public static Javax.Imageio.Plugins.Jpeg.JPEGHuffmanTable StdACChrominance => Clazz.GetField<Javax.Imageio.Plugins.Jpeg.JPEGHuffmanTable>("StdACChrominance");
+        public static Javax.Imageio.Plugins.Jpeg.JPEGHuffmanTable StdDCChrominance => Clazz.GetField<Javax.Imageio.Plugins.Jpeg.JPEGHuffmanTable>("StdDCChrominance");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGHuffmanTable.html#StdDCLuminance
+        /// </summary>
+        public static Javax.Imageio.Plugins.Jpeg.JPEGHuffmanTable StdDCLuminance => Clazz.GetField<Javax.Imageio.Plugins.Jpeg.JPEGHuffmanTable>("StdDCLuminance");
         
         #endregion
 

@@ -30,17 +30,17 @@ namespace Javax.Naming.Ldap
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/BasicControl.html#<init>(java.lang.String)
-        /// </summary>
-        public BasicControl(string arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/BasicControl.html#<init>(java.lang.String,boolean,byte[])
         /// </summary>
         public BasicControl(string arg0, bool arg1, byte[] arg2)
             : base(arg0, arg1, arg2)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/BasicControl.html#<init>(java.lang.String)
+        /// </summary>
+        public BasicControl(string arg0)
+            : base(arg0)
         {
         }
         

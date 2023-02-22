@@ -56,61 +56,6 @@ namespace Java.Util
         #endregion
 
         #region Nested classes
-        #region OfLong
-        public partial class OfLong
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfLong.html#nextLong()
-            /// </summary>
-            public long NextLong()
-            {
-                return IExecute<long>("nextLong");
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfLong.html#next()
-            /// </summary>
-            public object Next()
-            {
-                return IExecute("next");
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfLong.html#forEachRemaining(java.lang.Object)
-            /// </summary>
-            public void ForEachRemaining(object arg0)
-            {
-                IExecute("forEachRemaining", arg0);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfLong.html#forEachRemaining(java.util.function.LongConsumer)
-            /// </summary>
-            public void ForEachRemaining(Java.Util.Function.LongConsumer arg0)
-            {
-                IExecute("forEachRemaining", arg0);
-            }
-            
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region OfInt
         public partial class OfInt
         {
@@ -156,6 +101,61 @@ namespace Java.Util
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfInt.html#forEachRemaining(java.util.function.IntConsumer)
             /// </summary>
             public void ForEachRemaining(Java.Util.Function.IntConsumer arg0)
+            {
+                IExecute("forEachRemaining", arg0);
+            }
+            
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region OfLong
+        public partial class OfLong
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfLong.html#nextLong()
+            /// </summary>
+            public long NextLong()
+            {
+                return IExecute<long>("nextLong");
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfLong.html#next()
+            /// </summary>
+            public object Next()
+            {
+                return IExecute("next");
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfLong.html#forEachRemaining(java.lang.Object)
+            /// </summary>
+            public void ForEachRemaining(object arg0)
+            {
+                IExecute("forEachRemaining", arg0);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfLong.html#forEachRemaining(java.util.function.LongConsumer)
+            /// </summary>
+            public void ForEachRemaining(Java.Util.Function.LongConsumer arg0)
             {
                 IExecute("forEachRemaining", arg0);
             }

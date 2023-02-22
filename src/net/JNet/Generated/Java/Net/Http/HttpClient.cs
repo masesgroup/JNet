@@ -97,13 +97,13 @@ namespace Java.Net.Http
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Redirect.html#NEVER
-            /// </summary>
-            public static Java.Net.Http.HttpClient.Redirect NEVER => Clazz.GetField<Java.Net.Http.HttpClient.Redirect>("NEVER");
-            /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Redirect.html#ALWAYS
             /// </summary>
             public static Java.Net.Http.HttpClient.Redirect ALWAYS => Clazz.GetField<Java.Net.Http.HttpClient.Redirect>("ALWAYS");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Redirect.html#NEVER
+            /// </summary>
+            public static Java.Net.Http.HttpClient.Redirect NEVER => Clazz.GetField<Java.Net.Http.HttpClient.Redirect>("NEVER");
             /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Redirect.html#NORMAL
             /// </summary>

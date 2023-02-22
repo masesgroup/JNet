@@ -39,9 +39,17 @@ namespace Javax.Print.Attribute.Standard
 
         #region Fields
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/ReferenceUriSchemesSupported.html#FILE
+        /// </summary>
+        public static Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported FILE => Clazz.GetField<Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported>("FILE");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/ReferenceUriSchemesSupported.html#FTP
         /// </summary>
         public static Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported FTP => Clazz.GetField<Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported>("FTP");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/ReferenceUriSchemesSupported.html#GOPHER
+        /// </summary>
+        public static Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported GOPHER => Clazz.GetField<Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported>("GOPHER");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/ReferenceUriSchemesSupported.html#HTTP
         /// </summary>
@@ -50,10 +58,6 @@ namespace Javax.Print.Attribute.Standard
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/ReferenceUriSchemesSupported.html#HTTPS
         /// </summary>
         public static Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported HTTPS => Clazz.GetField<Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported>("HTTPS");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/ReferenceUriSchemesSupported.html#GOPHER
-        /// </summary>
-        public static Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported GOPHER => Clazz.GetField<Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported>("GOPHER");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/ReferenceUriSchemesSupported.html#NEWS
         /// </summary>
@@ -66,10 +70,6 @@ namespace Javax.Print.Attribute.Standard
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/ReferenceUriSchemesSupported.html#WAIS
         /// </summary>
         public static Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported WAIS => Clazz.GetField<Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported>("WAIS");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/ReferenceUriSchemesSupported.html#FILE
-        /// </summary>
-        public static Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported FILE => Clazz.GetField<Javax.Print.Attribute.Standard.ReferenceUriSchemesSupported>("FILE");
         
         #endregion
 

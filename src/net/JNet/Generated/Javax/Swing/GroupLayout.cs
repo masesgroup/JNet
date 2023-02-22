@@ -204,7 +204,7 @@ namespace Javax.Swing
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#setHonorsVisibility(java.awt.Component,java.lang.Boolean)
         /// </summary>
-        public void SetHonorsVisibility(Java.Awt.Component arg0, bool arg1)
+        public void SetHonorsVisibility(Java.Awt.Component arg0, bool? arg1)
         {
             IExecute("setHonorsVisibility", arg0, arg1);
         }
@@ -288,6 +288,33 @@ namespace Javax.Swing
         }
         #endregion
 
+        #region ParallelGroup
+        public partial class ParallelGroup
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region Alignment
         public partial class Alignment
         {
@@ -301,6 +328,14 @@ namespace Javax.Swing
 
             #region Fields
             /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.Alignment.html#BASELINE
+            /// </summary>
+            public static Javax.Swing.GroupLayout.Alignment BASELINE => Clazz.GetField<Javax.Swing.GroupLayout.Alignment>("BASELINE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.Alignment.html#CENTER
+            /// </summary>
+            public static Javax.Swing.GroupLayout.Alignment CENTER => Clazz.GetField<Javax.Swing.GroupLayout.Alignment>("CENTER");
+            /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.Alignment.html#LEADING
             /// </summary>
             public static Javax.Swing.GroupLayout.Alignment LEADING => Clazz.GetField<Javax.Swing.GroupLayout.Alignment>("LEADING");
@@ -308,14 +343,6 @@ namespace Javax.Swing
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.Alignment.html#TRAILING
             /// </summary>
             public static Javax.Swing.GroupLayout.Alignment TRAILING => Clazz.GetField<Javax.Swing.GroupLayout.Alignment>("TRAILING");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.Alignment.html#CENTER
-            /// </summary>
-            public static Javax.Swing.GroupLayout.Alignment CENTER => Clazz.GetField<Javax.Swing.GroupLayout.Alignment>("CENTER");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.Alignment.html#BASELINE
-            /// </summary>
-            public static Javax.Swing.GroupLayout.Alignment BASELINE => Clazz.GetField<Javax.Swing.GroupLayout.Alignment>("BASELINE");
             
             #endregion
 
@@ -394,33 +421,6 @@ namespace Javax.Swing
                 return IExecute<Javax.Swing.GroupLayout.Group>("addGroup", arg0);
             }
             
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region ParallelGroup
-        public partial class ParallelGroup
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
             #endregion
 
             // TODO: complete the class

@@ -41,10 +41,6 @@ namespace Java.Time
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalTime.html#MIN
-        /// </summary>
-        public static Java.Time.LocalTime MIN => Clazz.GetField<Java.Time.LocalTime>("MIN");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalTime.html#MAX
         /// </summary>
         public static Java.Time.LocalTime MAX => Clazz.GetField<Java.Time.LocalTime>("MAX");
@@ -52,6 +48,10 @@ namespace Java.Time
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalTime.html#MIDNIGHT
         /// </summary>
         public static Java.Time.LocalTime MIDNIGHT => Clazz.GetField<Java.Time.LocalTime>("MIDNIGHT");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalTime.html#MIN
+        /// </summary>
+        public static Java.Time.LocalTime MIN => Clazz.GetField<Java.Time.LocalTime>("MIN");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalTime.html#NOON
         /// </summary>

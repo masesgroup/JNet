@@ -105,13 +105,13 @@ namespace Javax.Tools
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DocumentationTool.Location.html#DOCUMENTATION_OUTPUT
-            /// </summary>
-            public static Javax.Tools.DocumentationTool.Location DOCUMENTATION_OUTPUT => Clazz.GetField<Javax.Tools.DocumentationTool.Location>("DOCUMENTATION_OUTPUT");
-            /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DocumentationTool.Location.html#DOCLET_PATH
             /// </summary>
             public static Javax.Tools.DocumentationTool.Location DOCLET_PATH => Clazz.GetField<Javax.Tools.DocumentationTool.Location>("DOCLET_PATH");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DocumentationTool.Location.html#DOCUMENTATION_OUTPUT
+            /// </summary>
+            public static Javax.Tools.DocumentationTool.Location DOCUMENTATION_OUTPUT => Clazz.GetField<Javax.Tools.DocumentationTool.Location>("DOCUMENTATION_OUTPUT");
             /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/DocumentationTool.Location.html#TAGLET_PATH
             /// </summary>

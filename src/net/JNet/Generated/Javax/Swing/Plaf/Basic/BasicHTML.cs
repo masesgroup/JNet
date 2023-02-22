@@ -38,13 +38,13 @@ namespace Javax.Swing.Plaf.Basic
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicHTML.html#propertyKey
-        /// </summary>
-        public static string propertyKey => Clazz.GetField<string>("propertyKey");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicHTML.html#documentBaseKey
         /// </summary>
         public static string documentBaseKey => Clazz.GetField<string>("documentBaseKey");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicHTML.html#propertyKey
+        /// </summary>
+        public static string propertyKey => Clazz.GetField<string>("propertyKey");
         
         #endregion
 

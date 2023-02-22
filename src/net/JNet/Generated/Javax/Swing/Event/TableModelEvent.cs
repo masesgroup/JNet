@@ -73,13 +73,9 @@ namespace Javax.Swing.Event
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableModelEvent.html#INSERT
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableModelEvent.html#ALL_COLUMNS
         /// </summary>
-        public static int INSERT => Clazz.GetField<int>("INSERT");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableModelEvent.html#UPDATE
-        /// </summary>
-        public static int UPDATE => Clazz.GetField<int>("UPDATE");
+        public static int ALL_COLUMNS => Clazz.GetField<int>("ALL_COLUMNS");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableModelEvent.html#DELETE
         /// </summary>
@@ -89,9 +85,13 @@ namespace Javax.Swing.Event
         /// </summary>
         public static int HEADER_ROW => Clazz.GetField<int>("HEADER_ROW");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableModelEvent.html#ALL_COLUMNS
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableModelEvent.html#INSERT
         /// </summary>
-        public static int ALL_COLUMNS => Clazz.GetField<int>("ALL_COLUMNS");
+        public static int INSERT => Clazz.GetField<int>("INSERT");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TableModelEvent.html#UPDATE
+        /// </summary>
+        public static int UPDATE => Clazz.GetField<int>("UPDATE");
         
         #endregion
 

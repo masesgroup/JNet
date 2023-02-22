@@ -38,10 +38,6 @@ namespace Javax.Swing.Tree
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeSelectionModel.html#SINGLE_TREE_SELECTION
-        /// </summary>
-        public static int SINGLE_TREE_SELECTION => Clazz.GetField<int>("SINGLE_TREE_SELECTION");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeSelectionModel.html#CONTIGUOUS_TREE_SELECTION
         /// </summary>
         public static int CONTIGUOUS_TREE_SELECTION => Clazz.GetField<int>("CONTIGUOUS_TREE_SELECTION");
@@ -49,6 +45,10 @@ namespace Javax.Swing.Tree
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeSelectionModel.html#DISCONTIGUOUS_TREE_SELECTION
         /// </summary>
         public static int DISCONTIGUOUS_TREE_SELECTION => Clazz.GetField<int>("DISCONTIGUOUS_TREE_SELECTION");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeSelectionModel.html#SINGLE_TREE_SELECTION
+        /// </summary>
+        public static int SINGLE_TREE_SELECTION => Clazz.GetField<int>("SINGLE_TREE_SELECTION");
         
         #endregion
 

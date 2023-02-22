@@ -37,13 +37,6 @@ namespace Javax.Naming.Directory
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttribute.html#<init>(java.lang.String)
-        /// </summary>
-        public BasicAttribute(string arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttribute.html#<init>(java.lang.String,java.lang.Object,boolean)
         /// </summary>
         public BasicAttribute(string arg0, object arg1, bool arg2)
@@ -55,6 +48,13 @@ namespace Javax.Naming.Directory
         /// </summary>
         public BasicAttribute(string arg0, object arg1)
             : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttribute.html#<init>(java.lang.String)
+        /// </summary>
+        public BasicAttribute(string arg0)
+            : base(arg0)
         {
         }
         

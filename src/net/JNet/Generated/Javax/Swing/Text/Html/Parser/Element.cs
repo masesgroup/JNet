@@ -40,45 +40,45 @@ namespace Javax.Swing.Text.Html.Parser
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Element.html#index
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Element.html#oEnd
         /// </summary>
-        public int index => Instance.GetField<int>("index");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Element.html#name
-        /// </summary>
-        public string name => Instance.GetField<string>("name");
+        public bool oEnd => Instance.GetField<bool>("oEnd");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Element.html#oStart
         /// </summary>
         public bool oStart => Instance.GetField<bool>("oStart");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Element.html#oEnd
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Element.html#index
         /// </summary>
-        public bool oEnd => Instance.GetField<bool>("oEnd");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Element.html#inclusions
-        /// </summary>
-        public Java.Util.BitSet inclusions => Instance.GetField<Java.Util.BitSet>("inclusions");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Element.html#exclusions
-        /// </summary>
-        public Java.Util.BitSet exclusions => Instance.GetField<Java.Util.BitSet>("exclusions");
+        public int index => Instance.GetField<int>("index");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Element.html#type
         /// </summary>
         public int type => Instance.GetField<int>("type");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Element.html#content
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Element.html#data
         /// </summary>
-        public Javax.Swing.Text.Html.Parser.ContentModel content => Instance.GetField<Javax.Swing.Text.Html.Parser.ContentModel>("content");
+        public object data => Instance.GetField("data");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Element.html#name
+        /// </summary>
+        public string name => Instance.GetField<string>("name");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Element.html#exclusions
+        /// </summary>
+        public Java.Util.BitSet exclusions => Instance.GetField<Java.Util.BitSet>("exclusions");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Element.html#inclusions
+        /// </summary>
+        public Java.Util.BitSet inclusions => Instance.GetField<Java.Util.BitSet>("inclusions");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Element.html#atts
         /// </summary>
         public Javax.Swing.Text.Html.Parser.AttributeList atts => Instance.GetField<Javax.Swing.Text.Html.Parser.AttributeList>("atts");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Element.html#data
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Element.html#content
         /// </summary>
-        public object data => Instance.GetField("data");
+        public Javax.Swing.Text.Html.Parser.ContentModel content => Instance.GetField<Javax.Swing.Text.Html.Parser.ContentModel>("content");
         
         #endregion
 

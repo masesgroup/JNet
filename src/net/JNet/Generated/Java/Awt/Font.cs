@@ -46,41 +46,9 @@ namespace Java.Awt
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#DIALOG
-        /// </summary>
-        public static string DIALOG => Clazz.GetField<string>("DIALOG");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#DIALOG_INPUT
-        /// </summary>
-        public static string DIALOG_INPUT => Clazz.GetField<string>("DIALOG_INPUT");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#SANS_SERIF
-        /// </summary>
-        public static string SANS_SERIF => Clazz.GetField<string>("SANS_SERIF");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#SERIF
-        /// </summary>
-        public static string SERIF => Clazz.GetField<string>("SERIF");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#MONOSPACED
-        /// </summary>
-        public static string MONOSPACED => Clazz.GetField<string>("MONOSPACED");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#PLAIN
-        /// </summary>
-        public static int PLAIN => Clazz.GetField<int>("PLAIN");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#BOLD
         /// </summary>
         public static int BOLD => Clazz.GetField<int>("BOLD");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#ITALIC
-        /// </summary>
-        public static int ITALIC => Clazz.GetField<int>("ITALIC");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#ROMAN_BASELINE
-        /// </summary>
-        public static int ROMAN_BASELINE => Clazz.GetField<int>("ROMAN_BASELINE");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#CENTER_BASELINE
         /// </summary>
@@ -90,6 +58,34 @@ namespace Java.Awt
         /// </summary>
         public static int HANGING_BASELINE => Clazz.GetField<int>("HANGING_BASELINE");
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#ITALIC
+        /// </summary>
+        public static int ITALIC => Clazz.GetField<int>("ITALIC");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#LAYOUT_LEFT_TO_RIGHT
+        /// </summary>
+        public static int LAYOUT_LEFT_TO_RIGHT => Clazz.GetField<int>("LAYOUT_LEFT_TO_RIGHT");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#LAYOUT_NO_LIMIT_CONTEXT
+        /// </summary>
+        public static int LAYOUT_NO_LIMIT_CONTEXT => Clazz.GetField<int>("LAYOUT_NO_LIMIT_CONTEXT");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#LAYOUT_NO_START_CONTEXT
+        /// </summary>
+        public static int LAYOUT_NO_START_CONTEXT => Clazz.GetField<int>("LAYOUT_NO_START_CONTEXT");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#LAYOUT_RIGHT_TO_LEFT
+        /// </summary>
+        public static int LAYOUT_RIGHT_TO_LEFT => Clazz.GetField<int>("LAYOUT_RIGHT_TO_LEFT");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#PLAIN
+        /// </summary>
+        public static int PLAIN => Clazz.GetField<int>("PLAIN");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#ROMAN_BASELINE
+        /// </summary>
+        public static int ROMAN_BASELINE => Clazz.GetField<int>("ROMAN_BASELINE");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#TRUETYPE_FONT
         /// </summary>
         public static int TRUETYPE_FONT => Clazz.GetField<int>("TRUETYPE_FONT");
@@ -98,21 +94,25 @@ namespace Java.Awt
         /// </summary>
         public static int TYPE1_FONT => Clazz.GetField<int>("TYPE1_FONT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#LAYOUT_LEFT_TO_RIGHT
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#DIALOG
         /// </summary>
-        public static int LAYOUT_LEFT_TO_RIGHT => Clazz.GetField<int>("LAYOUT_LEFT_TO_RIGHT");
+        public static string DIALOG => Clazz.GetField<string>("DIALOG");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#LAYOUT_RIGHT_TO_LEFT
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#DIALOG_INPUT
         /// </summary>
-        public static int LAYOUT_RIGHT_TO_LEFT => Clazz.GetField<int>("LAYOUT_RIGHT_TO_LEFT");
+        public static string DIALOG_INPUT => Clazz.GetField<string>("DIALOG_INPUT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#LAYOUT_NO_START_CONTEXT
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#MONOSPACED
         /// </summary>
-        public static int LAYOUT_NO_START_CONTEXT => Clazz.GetField<int>("LAYOUT_NO_START_CONTEXT");
+        public static string MONOSPACED => Clazz.GetField<string>("MONOSPACED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#LAYOUT_NO_LIMIT_CONTEXT
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#SANS_SERIF
         /// </summary>
-        public static int LAYOUT_NO_LIMIT_CONTEXT => Clazz.GetField<int>("LAYOUT_NO_LIMIT_CONTEXT");
+        public static string SANS_SERIF => Clazz.GetField<string>("SANS_SERIF");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#SERIF
+        /// </summary>
+        public static string SERIF => Clazz.GetField<string>("SERIF");
         
         #endregion
 

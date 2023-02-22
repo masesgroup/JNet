@@ -38,25 +38,25 @@ namespace Java.Lang
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#MIN_VALUE
-        /// </summary>
-        public static byte MIN_VALUE => Clazz.GetField<byte>("MIN_VALUE");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#MAX_VALUE
         /// </summary>
         public static byte MAX_VALUE => Clazz.GetField<byte>("MAX_VALUE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#TYPE
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#MIN_VALUE
         /// </summary>
-        public static Java.Lang.Class TYPE => Clazz.GetField<Java.Lang.Class>("TYPE");
+        public static byte MIN_VALUE => Clazz.GetField<byte>("MIN_VALUE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#BYTES
+        /// </summary>
+        public static int BYTES => Clazz.GetField<int>("BYTES");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#SIZE
         /// </summary>
         public static int SIZE => Clazz.GetField<int>("SIZE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#BYTES
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#TYPE
         /// </summary>
-        public static int BYTES => Clazz.GetField<int>("BYTES");
+        public static Java.Lang.Class TYPE => Clazz.GetField<Java.Lang.Class>("TYPE");
         
         #endregion
 
@@ -106,30 +106,30 @@ namespace Java.Lang
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#decode(java.lang.String) throws java.lang.NumberFormatException
         /// </summary>
-        public static byte Decode(string arg0)
+        public static byte? Decode(string arg0)
         {
-            return SExecute<byte>("decode", arg0);
+            return SExecute<byte?>("decode", arg0);
         }
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#valueOf(byte)
         /// </summary>
-        public static byte ValueOf(byte arg0)
+        public static byte? ValueOf(byte arg0)
         {
-            return SExecute<byte>("valueOf", arg0);
+            return SExecute<byte?>("valueOf", arg0);
         }
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#valueOf(java.lang.String,int) throws java.lang.NumberFormatException
         /// </summary>
-        public static byte ValueOf(string arg0, int arg1)
+        public static byte? ValueOf(string arg0, int arg1)
         {
-            return SExecute<byte>("valueOf", arg0, arg1);
+            return SExecute<byte?>("valueOf", arg0, arg1);
         }
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#valueOf(java.lang.String) throws java.lang.NumberFormatException
         /// </summary>
-        public static byte ValueOf(string arg0)
+        public static byte? ValueOf(string arg0)
         {
-            return SExecute<byte>("valueOf", arg0);
+            return SExecute<byte?>("valueOf", arg0);
         }
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#toString(byte)
@@ -152,7 +152,7 @@ namespace Java.Lang
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#compareTo(java.lang.Byte)
         /// </summary>
-        public int CompareTo(byte arg0)
+        public int CompareTo(byte? arg0)
         {
             return IExecute<int>("compareTo", arg0);
         }

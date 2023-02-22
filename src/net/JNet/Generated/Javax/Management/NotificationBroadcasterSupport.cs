@@ -37,17 +37,17 @@ namespace Javax.Management
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationBroadcasterSupport.html#<init>(javax.management.MBeanNotificationInfo...)
-        /// </summary>
-        public NotificationBroadcasterSupport(params Javax.Management.MBeanNotificationInfo[] arg0)
-            : base()
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationBroadcasterSupport.html#<init>(java.util.concurrent.Executor)
         /// </summary>
         public NotificationBroadcasterSupport(Java.Util.Concurrent.Executor arg0)
             : base(arg0)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationBroadcasterSupport.html#<init>(javax.management.MBeanNotificationInfo...)
+        /// </summary>
+        public NotificationBroadcasterSupport(params Javax.Management.MBeanNotificationInfo[] arg0)
+            : base()
         {
         }
         

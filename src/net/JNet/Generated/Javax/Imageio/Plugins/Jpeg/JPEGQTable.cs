@@ -45,13 +45,13 @@ namespace Javax.Imageio.Plugins.Jpeg
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGQTable.html#K1Luminance
-        /// </summary>
-        public static Javax.Imageio.Plugins.Jpeg.JPEGQTable K1Luminance => Clazz.GetField<Javax.Imageio.Plugins.Jpeg.JPEGQTable>("K1Luminance");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGQTable.html#K1Div2Luminance
         /// </summary>
         public static Javax.Imageio.Plugins.Jpeg.JPEGQTable K1Div2Luminance => Clazz.GetField<Javax.Imageio.Plugins.Jpeg.JPEGQTable>("K1Div2Luminance");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGQTable.html#K1Luminance
+        /// </summary>
+        public static Javax.Imageio.Plugins.Jpeg.JPEGQTable K1Luminance => Clazz.GetField<Javax.Imageio.Plugins.Jpeg.JPEGQTable>("K1Luminance");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGQTable.html#K2Chrominance
         /// </summary>

@@ -63,17 +63,17 @@ namespace Java.Security
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyRep.Type.html#SECRET
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyRep.Type.html#PRIVATE
             /// </summary>
-            public static Java.Security.KeyRep.Type SECRET => Clazz.GetField<Java.Security.KeyRep.Type>("SECRET");
+            public static Java.Security.KeyRep.Type PRIVATE => Clazz.GetField<Java.Security.KeyRep.Type>("PRIVATE");
             /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyRep.Type.html#PUBLIC
             /// </summary>
             public static Java.Security.KeyRep.Type PUBLIC => Clazz.GetField<Java.Security.KeyRep.Type>("PUBLIC");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyRep.Type.html#PRIVATE
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyRep.Type.html#SECRET
             /// </summary>
-            public static Java.Security.KeyRep.Type PRIVATE => Clazz.GetField<Java.Security.KeyRep.Type>("PRIVATE");
+            public static Java.Security.KeyRep.Type SECRET => Clazz.GetField<Java.Security.KeyRep.Type>("SECRET");
             
             #endregion
 

@@ -30,17 +30,17 @@ namespace Javax.Security.Auth.Kerberos
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/DelegationPermission.html#<init>(java.lang.String)
-        /// </summary>
-        public DelegationPermission(string arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/DelegationPermission.html#<init>(java.lang.String,java.lang.String)
         /// </summary>
         public DelegationPermission(string arg0, string arg1)
             : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/DelegationPermission.html#<init>(java.lang.String)
+        /// </summary>
+        public DelegationPermission(string arg0)
+            : base(arg0)
         {
         }
         

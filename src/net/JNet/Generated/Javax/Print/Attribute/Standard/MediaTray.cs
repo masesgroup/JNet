@@ -39,14 +39,6 @@ namespace Javax.Print.Attribute.Standard
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaTray.html#TOP
-        /// </summary>
-        public static Javax.Print.Attribute.Standard.MediaTray TOP => Clazz.GetField<Javax.Print.Attribute.Standard.MediaTray>("TOP");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaTray.html#MIDDLE
-        /// </summary>
-        public static Javax.Print.Attribute.Standard.MediaTray MIDDLE => Clazz.GetField<Javax.Print.Attribute.Standard.MediaTray>("MIDDLE");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaTray.html#BOTTOM
         /// </summary>
         public static Javax.Print.Attribute.Standard.MediaTray BOTTOM => Clazz.GetField<Javax.Print.Attribute.Standard.MediaTray>("BOTTOM");
@@ -54,10 +46,6 @@ namespace Javax.Print.Attribute.Standard
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaTray.html#ENVELOPE
         /// </summary>
         public static Javax.Print.Attribute.Standard.MediaTray ENVELOPE => Clazz.GetField<Javax.Print.Attribute.Standard.MediaTray>("ENVELOPE");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaTray.html#MANUAL
-        /// </summary>
-        public static Javax.Print.Attribute.Standard.MediaTray MANUAL => Clazz.GetField<Javax.Print.Attribute.Standard.MediaTray>("MANUAL");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaTray.html#LARGE_CAPACITY
         /// </summary>
@@ -67,9 +55,21 @@ namespace Javax.Print.Attribute.Standard
         /// </summary>
         public static Javax.Print.Attribute.Standard.MediaTray MAIN => Clazz.GetField<Javax.Print.Attribute.Standard.MediaTray>("MAIN");
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaTray.html#MANUAL
+        /// </summary>
+        public static Javax.Print.Attribute.Standard.MediaTray MANUAL => Clazz.GetField<Javax.Print.Attribute.Standard.MediaTray>("MANUAL");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaTray.html#MIDDLE
+        /// </summary>
+        public static Javax.Print.Attribute.Standard.MediaTray MIDDLE => Clazz.GetField<Javax.Print.Attribute.Standard.MediaTray>("MIDDLE");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaTray.html#SIDE
         /// </summary>
         public static Javax.Print.Attribute.Standard.MediaTray SIDE => Clazz.GetField<Javax.Print.Attribute.Standard.MediaTray>("SIDE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaTray.html#TOP
+        /// </summary>
+        public static Javax.Print.Attribute.Standard.MediaTray TOP => Clazz.GetField<Javax.Print.Attribute.Standard.MediaTray>("TOP");
         
         #endregion
 

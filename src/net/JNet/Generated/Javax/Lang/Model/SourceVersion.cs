@@ -46,6 +46,14 @@ namespace Javax.Lang.Model
         /// </summary>
         public static Javax.Lang.Model.SourceVersion RELEASE_1 => Clazz.GetField<Javax.Lang.Model.SourceVersion>("RELEASE_1");
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_10
+        /// </summary>
+        public static Javax.Lang.Model.SourceVersion RELEASE_10 => Clazz.GetField<Javax.Lang.Model.SourceVersion>("RELEASE_10");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_11
+        /// </summary>
+        public static Javax.Lang.Model.SourceVersion RELEASE_11 => Clazz.GetField<Javax.Lang.Model.SourceVersion>("RELEASE_11");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_2
         /// </summary>
         public static Javax.Lang.Model.SourceVersion RELEASE_2 => Clazz.GetField<Javax.Lang.Model.SourceVersion>("RELEASE_2");
@@ -77,14 +85,6 @@ namespace Javax.Lang.Model
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_9
         /// </summary>
         public static Javax.Lang.Model.SourceVersion RELEASE_9 => Clazz.GetField<Javax.Lang.Model.SourceVersion>("RELEASE_9");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_10
-        /// </summary>
-        public static Javax.Lang.Model.SourceVersion RELEASE_10 => Clazz.GetField<Javax.Lang.Model.SourceVersion>("RELEASE_10");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#RELEASE_11
-        /// </summary>
-        public static Javax.Lang.Model.SourceVersion RELEASE_11 => Clazz.GetField<Javax.Lang.Model.SourceVersion>("RELEASE_11");
         
         #endregion
 

@@ -38,6 +38,10 @@ namespace Javax.Management.Remote.Rmi
 
         #region Fields
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectorServer.html#CREDENTIALS_FILTER_PATTERN
+        /// </summary>
+        public static string CREDENTIALS_FILTER_PATTERN => Clazz.GetField<string>("CREDENTIALS_FILTER_PATTERN");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectorServer.html#JNDI_REBIND_ATTRIBUTE
         /// </summary>
         public static string JNDI_REBIND_ATTRIBUTE => Clazz.GetField<string>("JNDI_REBIND_ATTRIBUTE");
@@ -49,10 +53,6 @@ namespace Javax.Management.Remote.Rmi
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectorServer.html#RMI_SERVER_SOCKET_FACTORY_ATTRIBUTE
         /// </summary>
         public static string RMI_SERVER_SOCKET_FACTORY_ATTRIBUTE => Clazz.GetField<string>("RMI_SERVER_SOCKET_FACTORY_ATTRIBUTE");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectorServer.html#CREDENTIALS_FILTER_PATTERN
-        /// </summary>
-        public static string CREDENTIALS_FILTER_PATTERN => Clazz.GetField<string>("CREDENTIALS_FILTER_PATTERN");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management.rmi/javax/management/remote/rmi/RMIConnectorServer.html#SERIAL_FILTER_PATTERN
         /// </summary>

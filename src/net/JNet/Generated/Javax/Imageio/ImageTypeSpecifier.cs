@@ -30,17 +30,17 @@ namespace Javax.Imageio
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageTypeSpecifier.html#<init>(java.awt.image.RenderedImage)
-        /// </summary>
-        public ImageTypeSpecifier(Java.Awt.ImageNs.RenderedImage arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageTypeSpecifier.html#<init>(java.awt.image.ColorModel,java.awt.image.SampleModel)
         /// </summary>
         public ImageTypeSpecifier(Java.Awt.ImageNs.ColorModel arg0, Java.Awt.ImageNs.SampleModel arg1)
             : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageTypeSpecifier.html#<init>(java.awt.image.RenderedImage)
+        /// </summary>
+        public ImageTypeSpecifier(Java.Awt.ImageNs.RenderedImage arg0)
+            : base(arg0)
         {
         }
         

@@ -30,16 +30,16 @@ namespace Java.Io
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#<init>(java.lang.String,java.lang.String) throws java.io.FileNotFoundException
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#<init>(java.io.File,java.lang.String) throws java.io.FileNotFoundException
         /// </summary>
-        public RandomAccessFile(string arg0, string arg1)
+        public RandomAccessFile(Java.Io.File arg0, string arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#<init>(java.io.File,java.lang.String) throws java.io.FileNotFoundException
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/RandomAccessFile.html#<init>(java.lang.String,java.lang.String) throws java.io.FileNotFoundException
         /// </summary>
-        public RandomAccessFile(Java.Io.File arg0, string arg1)
+        public RandomAccessFile(string arg0, string arg1)
             : base(arg0, arg1)
         {
         }

@@ -30,16 +30,9 @@ namespace Javax.Swing
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLabel.html#<init>(javax.swing.Icon)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLabel.html#<init>(java.lang.String,int)
         /// </summary>
-        public JLabel(Javax.Swing.Icon arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLabel.html#<init>(javax.swing.Icon,int)
-        /// </summary>
-        public JLabel(Javax.Swing.Icon arg0, int arg1)
+        public JLabel(string arg0, int arg1)
             : base(arg0, arg1)
         {
         }
@@ -51,16 +44,23 @@ namespace Javax.Swing
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLabel.html#<init>(java.lang.String,int)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLabel.html#<init>(java.lang.String)
         /// </summary>
-        public JLabel(string arg0, int arg1)
+        public JLabel(string arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLabel.html#<init>(javax.swing.Icon,int)
+        /// </summary>
+        public JLabel(Javax.Swing.Icon arg0, int arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLabel.html#<init>(java.lang.String)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLabel.html#<init>(javax.swing.Icon)
         /// </summary>
-        public JLabel(string arg0)
+        public JLabel(Javax.Swing.Icon arg0)
             : base(arg0)
         {
         }

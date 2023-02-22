@@ -30,16 +30,16 @@ namespace Java.Awt.EventNs
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InvocationEvent.html#<init>(java.lang.Object,java.lang.Runnable,java.lang.Runnable,boolean)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InvocationEvent.html#<init>(java.lang.Object,java.lang.Runnable,java.lang.Object,boolean)
         /// </summary>
-        public InvocationEvent(object arg0, Java.Lang.Runnable arg1, Java.Lang.Runnable arg2, bool arg3)
+        public InvocationEvent(object arg0, Java.Lang.Runnable arg1, object arg2, bool arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InvocationEvent.html#<init>(java.lang.Object,java.lang.Runnable,java.lang.Object,boolean)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InvocationEvent.html#<init>(java.lang.Object,java.lang.Runnable,java.lang.Runnable,boolean)
         /// </summary>
-        public InvocationEvent(object arg0, Java.Lang.Runnable arg1, object arg2, bool arg3)
+        public InvocationEvent(object arg0, Java.Lang.Runnable arg1, Java.Lang.Runnable arg2, bool arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
@@ -60,13 +60,13 @@ namespace Java.Awt.EventNs
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InvocationEvent.html#INVOCATION_FIRST
-        /// </summary>
-        public static int INVOCATION_FIRST => Clazz.GetField<int>("INVOCATION_FIRST");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InvocationEvent.html#INVOCATION_DEFAULT
         /// </summary>
         public static int INVOCATION_DEFAULT => Clazz.GetField<int>("INVOCATION_DEFAULT");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InvocationEvent.html#INVOCATION_FIRST
+        /// </summary>
+        public static int INVOCATION_FIRST => Clazz.GetField<int>("INVOCATION_FIRST");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InvocationEvent.html#INVOCATION_LAST
         /// </summary>

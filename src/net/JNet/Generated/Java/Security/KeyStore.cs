@@ -224,6 +224,81 @@ namespace Java.Security
         #endregion
 
         #region Nested classes
+        #region LoadStoreParameter
+        public partial class LoadStoreParameter
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.LoadStoreParameter.html#getProtectionParameter()
+            /// </summary>
+            public Java.Security.KeyStore.ProtectionParameter GetProtectionParameter()
+            {
+                return IExecute<Java.Security.KeyStore.ProtectionParameter>("getProtectionParameter");
+            }
+            
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region TrustedCertificateEntry
+        public partial class TrustedCertificateEntry
+        {
+            #region Constructors
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.TrustedCertificateEntry.html#<init>(java.security.cert.Certificate)
+            /// </summary>
+            public TrustedCertificateEntry(Java.Security.Cert.Certificate arg0)
+                : base(arg0)
+            {
+            }
+            
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.TrustedCertificateEntry.html#getTrustedCertificate() 
+            /// </summary>
+            public Java.Security.Cert.Certificate TrustedCertificate
+            {
+                get { return IExecute<Java.Security.Cert.Certificate>("getTrustedCertificate"); }
+            }
+            
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region ProtectionParameter
         public partial class ProtectionParameter
         {
@@ -245,6 +320,61 @@ namespace Java.Security
 
             #region Instance methods
 
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region PrivateKeyEntry
+        public partial class PrivateKeyEntry
+        {
+            #region Constructors
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.PrivateKeyEntry.html#<init>(java.security.PrivateKey,java.security.cert.Certificate[])
+            /// </summary>
+            public PrivateKeyEntry(Java.Security.PrivateKey arg0, Java.Security.Cert.Certificate[] arg1)
+                : base(arg0, arg1)
+            {
+            }
+            
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.PrivateKeyEntry.html#getCertificate() 
+            /// </summary>
+            public Java.Security.Cert.Certificate Certificate
+            {
+                get { return IExecute<Java.Security.Cert.Certificate>("getCertificate"); }
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.PrivateKeyEntry.html#getCertificateChain() 
+            /// </summary>
+            public Java.Security.Cert.Certificate[] CertificateChain
+            {
+                get { return IExecuteArray<Java.Security.Cert.Certificate>("getCertificateChain"); }
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.PrivateKeyEntry.html#getPrivateKey() 
+            /// </summary>
+            public Java.Security.PrivateKey PrivateKey
+            {
+                get { return IExecute<Java.Security.PrivateKey>("getPrivateKey"); }
+            }
+            
             #endregion
 
             // TODO: complete the class
@@ -284,40 +414,6 @@ namespace Java.Security
             public Javax.Security.Auth.Callback.CallbackHandler CallbackHandler
             {
                 get { return IExecute<Javax.Security.Auth.Callback.CallbackHandler>("getCallbackHandler"); }
-            }
-            
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region LoadStoreParameter
-        public partial class LoadStoreParameter
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.LoadStoreParameter.html#getProtectionParameter()
-            /// </summary>
-            public Java.Security.KeyStore.ProtectionParameter GetProtectionParameter()
-            {
-                return IExecute<Java.Security.KeyStore.ProtectionParameter>("getProtectionParameter");
             }
             
             #endregion
@@ -399,17 +495,17 @@ namespace Java.Security
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.PasswordProtection.html#<init>(char[])
-            /// </summary>
-            public PasswordProtection(char[] arg0)
-                : base(arg0)
-            {
-            }
-            /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.PasswordProtection.html#<init>(char[],java.lang.String,java.security.spec.AlgorithmParameterSpec)
             /// </summary>
             public PasswordProtection(char[] arg0, string arg1, Java.Security.Spec.AlgorithmParameterSpec arg2)
                 : base(arg0, arg1, arg2)
+            {
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.PasswordProtection.html#<init>(char[])
+            /// </summary>
+            public PasswordProtection(char[] arg0)
+                : base(arg0)
             {
             }
             
@@ -518,102 +614,6 @@ namespace Java.Security
             public Java.Security.KeyStore.ProtectionParameter GetProtectionParameter(string arg0)
             {
                 return IExecute<Java.Security.KeyStore.ProtectionParameter>("getProtectionParameter", arg0);
-            }
-            
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region PrivateKeyEntry
-        public partial class PrivateKeyEntry
-        {
-            #region Constructors
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.PrivateKeyEntry.html#<init>(java.security.PrivateKey,java.security.cert.Certificate[])
-            /// </summary>
-            public PrivateKeyEntry(Java.Security.PrivateKey arg0, Java.Security.Cert.Certificate[] arg1)
-                : base(arg0, arg1)
-            {
-            }
-            
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.PrivateKeyEntry.html#getCertificate() 
-            /// </summary>
-            public Java.Security.Cert.Certificate Certificate
-            {
-                get { return IExecute<Java.Security.Cert.Certificate>("getCertificate"); }
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.PrivateKeyEntry.html#getCertificateChain() 
-            /// </summary>
-            public Java.Security.Cert.Certificate[] CertificateChain
-            {
-                get { return IExecuteArray<Java.Security.Cert.Certificate>("getCertificateChain"); }
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.PrivateKeyEntry.html#getPrivateKey() 
-            /// </summary>
-            public Java.Security.PrivateKey PrivateKey
-            {
-                get { return IExecute<Java.Security.PrivateKey>("getPrivateKey"); }
-            }
-            
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region TrustedCertificateEntry
-        public partial class TrustedCertificateEntry
-        {
-            #region Constructors
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.TrustedCertificateEntry.html#<init>(java.security.cert.Certificate)
-            /// </summary>
-            public TrustedCertificateEntry(Java.Security.Cert.Certificate arg0)
-                : base(arg0)
-            {
-            }
-            
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.TrustedCertificateEntry.html#getTrustedCertificate() 
-            /// </summary>
-            public Java.Security.Cert.Certificate TrustedCertificate
-            {
-                get { return IExecute<Java.Security.Cert.Certificate>("getTrustedCertificate"); }
             }
             
             #endregion

@@ -30,10 +30,10 @@ namespace Javax.Swing
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextField.html#<init>(javax.swing.text.Document,java.lang.String,int)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextField.html#<init>(int)
         /// </summary>
-        public JTextField(Javax.Swing.Text.Document arg0, string arg1, int arg2)
-            : base(arg0, arg1, arg2)
+        public JTextField(int arg0)
+            : base(arg0)
         {
         }
         /// <summary>
@@ -44,17 +44,17 @@ namespace Javax.Swing
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextField.html#<init>(int)
-        /// </summary>
-        public JTextField(int arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextField.html#<init>(java.lang.String)
         /// </summary>
         public JTextField(string arg0)
             : base(arg0)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextField.html#<init>(javax.swing.text.Document,java.lang.String,int)
+        /// </summary>
+        public JTextField(Javax.Swing.Text.Document arg0, string arg1, int arg2)
+            : base(arg0, arg1, arg2)
         {
         }
         

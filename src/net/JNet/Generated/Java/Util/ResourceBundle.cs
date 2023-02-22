@@ -174,13 +174,13 @@ namespace Java.Util
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.Control.html#FORMAT_DEFAULT
-            /// </summary>
-            public static Java.Util.List FORMAT_DEFAULT => Clazz.GetField<Java.Util.List>("FORMAT_DEFAULT");
-            /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.Control.html#FORMAT_CLASS
             /// </summary>
             public static Java.Util.List FORMAT_CLASS => Clazz.GetField<Java.Util.List>("FORMAT_CLASS");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.Control.html#FORMAT_DEFAULT
+            /// </summary>
+            public static Java.Util.List FORMAT_DEFAULT => Clazz.GetField<Java.Util.List>("FORMAT_DEFAULT");
             /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ResourceBundle.Control.html#FORMAT_PROPERTIES
             /// </summary>

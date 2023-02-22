@@ -30,10 +30,10 @@ namespace Java.Awt.Datatransfer
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#<init>(java.lang.String) throws java.lang.ClassNotFoundException
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#<init>(java.lang.String,java.lang.String,java.lang.ClassLoader) throws java.lang.ClassNotFoundException
         /// </summary>
-        public DataFlavor(string arg0)
-            : base(arg0)
+        public DataFlavor(string arg0, string arg1, Java.Lang.ClassLoader arg2)
+            : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
@@ -44,10 +44,10 @@ namespace Java.Awt.Datatransfer
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#<init>(java.lang.String,java.lang.String,java.lang.ClassLoader) throws java.lang.ClassNotFoundException
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#<init>(java.lang.String) throws java.lang.ClassNotFoundException
         /// </summary>
-        public DataFlavor(string arg0, string arg1, Java.Lang.ClassLoader arg2)
-            : base(arg0, arg1, arg2)
+        public DataFlavor(string arg0)
+            : base(arg0)
         {
         }
         
@@ -61,21 +61,17 @@ namespace Java.Awt.Datatransfer
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#stringFlavor
-        /// </summary>
-        public static Java.Awt.Datatransfer.DataFlavor stringFlavor => Clazz.GetField<Java.Awt.Datatransfer.DataFlavor>("stringFlavor");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#imageFlavor
         /// </summary>
         public static Java.Awt.Datatransfer.DataFlavor imageFlavor => Clazz.GetField<Java.Awt.Datatransfer.DataFlavor>("imageFlavor");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#javaSerializedObjectMimeType
-        /// </summary>
-        public static string javaSerializedObjectMimeType => Clazz.GetField<string>("javaSerializedObjectMimeType");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#javaFileListFlavor
         /// </summary>
         public static Java.Awt.Datatransfer.DataFlavor javaFileListFlavor => Clazz.GetField<Java.Awt.Datatransfer.DataFlavor>("javaFileListFlavor");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#stringFlavor
+        /// </summary>
+        public static Java.Awt.Datatransfer.DataFlavor stringFlavor => Clazz.GetField<Java.Awt.Datatransfer.DataFlavor>("stringFlavor");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#javaJVMLocalObjectMimeType
         /// </summary>
@@ -85,17 +81,21 @@ namespace Java.Awt.Datatransfer
         /// </summary>
         public static string javaRemoteObjectMimeType => Clazz.GetField<string>("javaRemoteObjectMimeType");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#selectionHtmlFlavor
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#javaSerializedObjectMimeType
         /// </summary>
-        public static Java.Awt.Datatransfer.DataFlavor selectionHtmlFlavor => Clazz.GetField<Java.Awt.Datatransfer.DataFlavor>("selectionHtmlFlavor");
+        public static string javaSerializedObjectMimeType => Clazz.GetField<string>("javaSerializedObjectMimeType");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#allHtmlFlavor
+        /// </summary>
+        public static Java.Awt.Datatransfer.DataFlavor allHtmlFlavor => Clazz.GetField<Java.Awt.Datatransfer.DataFlavor>("allHtmlFlavor");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#fragmentHtmlFlavor
         /// </summary>
         public static Java.Awt.Datatransfer.DataFlavor fragmentHtmlFlavor => Clazz.GetField<Java.Awt.Datatransfer.DataFlavor>("fragmentHtmlFlavor");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#allHtmlFlavor
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/DataFlavor.html#selectionHtmlFlavor
         /// </summary>
-        public static Java.Awt.Datatransfer.DataFlavor allHtmlFlavor => Clazz.GetField<Java.Awt.Datatransfer.DataFlavor>("allHtmlFlavor");
+        public static Java.Awt.Datatransfer.DataFlavor selectionHtmlFlavor => Clazz.GetField<Java.Awt.Datatransfer.DataFlavor>("selectionHtmlFlavor");
         
         #endregion
 

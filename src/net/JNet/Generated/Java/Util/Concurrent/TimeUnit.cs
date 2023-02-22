@@ -38,9 +38,13 @@ namespace Java.Util.Concurrent
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#NANOSECONDS
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#DAYS
         /// </summary>
-        public static Java.Util.Concurrent.TimeUnit NANOSECONDS => Clazz.GetField<Java.Util.Concurrent.TimeUnit>("NANOSECONDS");
+        public static Java.Util.Concurrent.TimeUnit DAYS => Clazz.GetField<Java.Util.Concurrent.TimeUnit>("DAYS");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#HOURS
+        /// </summary>
+        public static Java.Util.Concurrent.TimeUnit HOURS => Clazz.GetField<Java.Util.Concurrent.TimeUnit>("HOURS");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#MICROSECONDS
         /// </summary>
@@ -50,21 +54,17 @@ namespace Java.Util.Concurrent
         /// </summary>
         public static Java.Util.Concurrent.TimeUnit MILLISECONDS => Clazz.GetField<Java.Util.Concurrent.TimeUnit>("MILLISECONDS");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#SECONDS
-        /// </summary>
-        public static Java.Util.Concurrent.TimeUnit SECONDS => Clazz.GetField<Java.Util.Concurrent.TimeUnit>("SECONDS");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#MINUTES
         /// </summary>
         public static Java.Util.Concurrent.TimeUnit MINUTES => Clazz.GetField<Java.Util.Concurrent.TimeUnit>("MINUTES");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#HOURS
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#NANOSECONDS
         /// </summary>
-        public static Java.Util.Concurrent.TimeUnit HOURS => Clazz.GetField<Java.Util.Concurrent.TimeUnit>("HOURS");
+        public static Java.Util.Concurrent.TimeUnit NANOSECONDS => Clazz.GetField<Java.Util.Concurrent.TimeUnit>("NANOSECONDS");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#DAYS
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#SECONDS
         /// </summary>
-        public static Java.Util.Concurrent.TimeUnit DAYS => Clazz.GetField<Java.Util.Concurrent.TimeUnit>("DAYS");
+        public static Java.Util.Concurrent.TimeUnit SECONDS => Clazz.GetField<Java.Util.Concurrent.TimeUnit>("SECONDS");
         
         #endregion
 

@@ -30,6 +30,13 @@ namespace Java.Util.Jar
     {
         #region Constructors
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarEntry.html#<init>(java.lang.String)
+        /// </summary>
+        public JarEntry(string arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarEntry.html#<init>(java.util.jar.JarEntry)
         /// </summary>
         public JarEntry(Java.Util.Jar.JarEntry arg0)
@@ -40,13 +47,6 @@ namespace Java.Util.Jar
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarEntry.html#<init>(java.util.zip.ZipEntry)
         /// </summary>
         public JarEntry(Java.Util.Zip.ZipEntry arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarEntry.html#<init>(java.lang.String)
-        /// </summary>
-        public JarEntry(string arg0)
             : base(arg0)
         {
         }

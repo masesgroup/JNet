@@ -38,25 +38,25 @@ namespace Java.Time.Format
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/SignStyle.html#NORMAL
-        /// </summary>
-        public static Java.Time.Format.SignStyle NORMAL => Clazz.GetField<Java.Time.Format.SignStyle>("NORMAL");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/SignStyle.html#ALWAYS
         /// </summary>
         public static Java.Time.Format.SignStyle ALWAYS => Clazz.GetField<Java.Time.Format.SignStyle>("ALWAYS");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/SignStyle.html#EXCEEDS_PAD
+        /// </summary>
+        public static Java.Time.Format.SignStyle EXCEEDS_PAD => Clazz.GetField<Java.Time.Format.SignStyle>("EXCEEDS_PAD");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/SignStyle.html#NEVER
         /// </summary>
         public static Java.Time.Format.SignStyle NEVER => Clazz.GetField<Java.Time.Format.SignStyle>("NEVER");
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/SignStyle.html#NORMAL
+        /// </summary>
+        public static Java.Time.Format.SignStyle NORMAL => Clazz.GetField<Java.Time.Format.SignStyle>("NORMAL");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/SignStyle.html#NOT_NEGATIVE
         /// </summary>
         public static Java.Time.Format.SignStyle NOT_NEGATIVE => Clazz.GetField<Java.Time.Format.SignStyle>("NOT_NEGATIVE");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/SignStyle.html#EXCEEDS_PAD
-        /// </summary>
-        public static Java.Time.Format.SignStyle EXCEEDS_PAD => Clazz.GetField<Java.Time.Format.SignStyle>("EXCEEDS_PAD");
         
         #endregion
 

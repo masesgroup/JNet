@@ -23,58 +23,23 @@
 
 namespace Javax.Naming.Spi
 {
-    #region Resolver
+    #region DirectoryManager
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/Resolver.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/DirectoryManager.html
     /// </summary>
-    public partial class Resolver : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Resolver>
+    public partial class DirectoryManager : Javax.Naming.Spi.NamingManager
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public Resolver() { }
+        public DirectoryManager() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public Resolver(params object[] args) : base(args) { }
+        public DirectoryManager(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.spi.Resolver";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region NamingManager
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/NamingManager.html
-    /// </summary>
-    public partial class NamingManager : MASES.JCOBridge.C2JBridge.JVMBridgeBase<NamingManager>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public NamingManager() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public NamingManager(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.spi.NamingManager";
+        public override string ClassName => "javax.naming.spi.DirectoryManager";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -93,58 +58,23 @@ namespace Javax.Naming.Spi
     }
     #endregion
 
-    #region StateFactory
+    #region DirObjectFactory
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/StateFactory.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/DirObjectFactory.html
     /// </summary>
-    public partial class StateFactory : MASES.JCOBridge.C2JBridge.JVMBridgeBase<StateFactory>
+    public partial class DirObjectFactory : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DirObjectFactory>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public StateFactory() { }
+        public DirObjectFactory() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public StateFactory(params object[] args) : base(args) { }
+        public DirObjectFactory(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.spi.StateFactory";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region InitialContextFactory
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/InitialContextFactory.html
-    /// </summary>
-    public partial class InitialContextFactory : MASES.JCOBridge.C2JBridge.JVMBridgeBase<InitialContextFactory>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public InitialContextFactory() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public InitialContextFactory(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.spi.InitialContextFactory";
+        public override string ClassName => "javax.naming.spi.DirObjectFactory";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -232,23 +162,23 @@ namespace Javax.Naming.Spi
     }
     #endregion
 
-    #region ObjectFactoryBuilder
+    #region InitialContextFactory
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/ObjectFactoryBuilder.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/InitialContextFactory.html
     /// </summary>
-    public partial class ObjectFactoryBuilder : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ObjectFactoryBuilder>
+    public partial class InitialContextFactory : MASES.JCOBridge.C2JBridge.JVMBridgeBase<InitialContextFactory>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ObjectFactoryBuilder() { }
+        public InitialContextFactory() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public ObjectFactoryBuilder(params object[] args) : base(args) { }
+        public InitialContextFactory(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.spi.ObjectFactoryBuilder";
+        public override string ClassName => "javax.naming.spi.InitialContextFactory";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -302,6 +232,41 @@ namespace Javax.Naming.Spi
     }
     #endregion
 
+    #region NamingManager
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/NamingManager.html
+    /// </summary>
+    public partial class NamingManager : MASES.JCOBridge.C2JBridge.JVMBridgeBase<NamingManager>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public NamingManager() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public NamingManager(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.naming.spi.NamingManager";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region ObjectFactory
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/ObjectFactory.html
@@ -337,23 +302,23 @@ namespace Javax.Naming.Spi
     }
     #endregion
 
-    #region DirObjectFactory
+    #region ObjectFactoryBuilder
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/DirObjectFactory.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/ObjectFactoryBuilder.html
     /// </summary>
-    public partial class DirObjectFactory : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DirObjectFactory>
+    public partial class ObjectFactoryBuilder : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ObjectFactoryBuilder>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public DirObjectFactory() { }
+        public ObjectFactoryBuilder() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public DirObjectFactory(params object[] args) : base(args) { }
+        public ObjectFactoryBuilder(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.spi.DirObjectFactory";
+        public override string ClassName => "javax.naming.spi.ObjectFactoryBuilder";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -372,32 +337,32 @@ namespace Javax.Naming.Spi
     }
     #endregion
 
-    #region DirectoryManager
+    #region Resolver
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/DirectoryManager.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/Resolver.html
     /// </summary>
-    public partial class DirectoryManager : Javax.Naming.Spi.NamingManager
+    public partial class Resolver : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Resolver>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public DirectoryManager() { }
+        public Resolver() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public DirectoryManager(params object[] args) : base(args) { }
+        public Resolver(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.naming.spi.DirectoryManager";
+        public override string ClassName => "javax.naming.spi.Resolver";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
+        public override bool IsAbstract => true;
 
         /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
         public override bool IsCloseable => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
+        public override bool IsInterface => true;
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;
@@ -433,6 +398,41 @@ namespace Javax.Naming.Spi
 
         /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
         public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region StateFactory
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/StateFactory.html
+    /// </summary>
+    public partial class StateFactory : MASES.JCOBridge.C2JBridge.JVMBridgeBase<StateFactory>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public StateFactory() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public StateFactory(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.naming.spi.StateFactory";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;

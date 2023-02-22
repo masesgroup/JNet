@@ -54,21 +54,21 @@ namespace Java.Awt
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FlowLayout.html#LEFT
-        /// </summary>
-        public static int LEFT => Clazz.GetField<int>("LEFT");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FlowLayout.html#CENTER
         /// </summary>
         public static int CENTER => Clazz.GetField<int>("CENTER");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FlowLayout.html#RIGHT
-        /// </summary>
-        public static int RIGHT => Clazz.GetField<int>("RIGHT");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FlowLayout.html#LEADING
         /// </summary>
         public static int LEADING => Clazz.GetField<int>("LEADING");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FlowLayout.html#LEFT
+        /// </summary>
+        public static int LEFT => Clazz.GetField<int>("LEFT");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FlowLayout.html#RIGHT
+        /// </summary>
+        public static int RIGHT => Clazz.GetField<int>("RIGHT");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FlowLayout.html#TRAILING
         /// </summary>

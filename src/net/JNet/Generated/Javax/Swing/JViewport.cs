@@ -39,13 +39,13 @@ namespace Javax.Swing
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JViewport.html#BLIT_SCROLL_MODE
-        /// </summary>
-        public static int BLIT_SCROLL_MODE => Clazz.GetField<int>("BLIT_SCROLL_MODE");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JViewport.html#BACKINGSTORE_SCROLL_MODE
         /// </summary>
         public static int BACKINGSTORE_SCROLL_MODE => Clazz.GetField<int>("BACKINGSTORE_SCROLL_MODE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JViewport.html#BLIT_SCROLL_MODE
+        /// </summary>
+        public static int BLIT_SCROLL_MODE => Clazz.GetField<int>("BLIT_SCROLL_MODE");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JViewport.html#SIMPLE_SCROLL_MODE
         /// </summary>

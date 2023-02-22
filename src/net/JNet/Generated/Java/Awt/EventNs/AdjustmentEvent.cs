@@ -30,17 +30,17 @@ namespace Java.Awt.EventNs
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentEvent.html#<init>(java.awt.Adjustable,int,int,int)
-        /// </summary>
-        public AdjustmentEvent(Java.Awt.Adjustable arg0, int arg1, int arg2, int arg3)
-            : base(arg0, arg1, arg2, arg3)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentEvent.html#<init>(java.awt.Adjustable,int,int,int,boolean)
         /// </summary>
         public AdjustmentEvent(Java.Awt.Adjustable arg0, int arg1, int arg2, int arg3, bool arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentEvent.html#<init>(java.awt.Adjustable,int,int,int)
+        /// </summary>
+        public AdjustmentEvent(Java.Awt.Adjustable arg0, int arg1, int arg2, int arg3)
+            : base(arg0, arg1, arg2, arg3)
         {
         }
         
@@ -64,14 +64,6 @@ namespace Java.Awt.EventNs
         /// </summary>
         public static int ADJUSTMENT_VALUE_CHANGED => Clazz.GetField<int>("ADJUSTMENT_VALUE_CHANGED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentEvent.html#UNIT_INCREMENT
-        /// </summary>
-        public static int UNIT_INCREMENT => Clazz.GetField<int>("UNIT_INCREMENT");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentEvent.html#UNIT_DECREMENT
-        /// </summary>
-        public static int UNIT_DECREMENT => Clazz.GetField<int>("UNIT_DECREMENT");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentEvent.html#BLOCK_DECREMENT
         /// </summary>
         public static int BLOCK_DECREMENT => Clazz.GetField<int>("BLOCK_DECREMENT");
@@ -83,6 +75,14 @@ namespace Java.Awt.EventNs
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentEvent.html#TRACK
         /// </summary>
         public static int TRACK => Clazz.GetField<int>("TRACK");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentEvent.html#UNIT_DECREMENT
+        /// </summary>
+        public static int UNIT_DECREMENT => Clazz.GetField<int>("UNIT_DECREMENT");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AdjustmentEvent.html#UNIT_INCREMENT
+        /// </summary>
+        public static int UNIT_INCREMENT => Clazz.GetField<int>("UNIT_INCREMENT");
         
         #endregion
 

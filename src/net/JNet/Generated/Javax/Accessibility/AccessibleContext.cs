@@ -38,93 +38,93 @@ namespace Javax.Accessibility
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#ACCESSIBLE_NAME_PROPERTY
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#ACCESSIBLE_ACTION_PROPERTY
         /// </summary>
-        public static string ACCESSIBLE_NAME_PROPERTY => Clazz.GetField<string>("ACCESSIBLE_NAME_PROPERTY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#ACCESSIBLE_DESCRIPTION_PROPERTY
-        /// </summary>
-        public static string ACCESSIBLE_DESCRIPTION_PROPERTY => Clazz.GetField<string>("ACCESSIBLE_DESCRIPTION_PROPERTY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#ACCESSIBLE_STATE_PROPERTY
-        /// </summary>
-        public static string ACCESSIBLE_STATE_PROPERTY => Clazz.GetField<string>("ACCESSIBLE_STATE_PROPERTY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#ACCESSIBLE_VALUE_PROPERTY
-        /// </summary>
-        public static string ACCESSIBLE_VALUE_PROPERTY => Clazz.GetField<string>("ACCESSIBLE_VALUE_PROPERTY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#ACCESSIBLE_SELECTION_PROPERTY
-        /// </summary>
-        public static string ACCESSIBLE_SELECTION_PROPERTY => Clazz.GetField<string>("ACCESSIBLE_SELECTION_PROPERTY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#ACCESSIBLE_CARET_PROPERTY
-        /// </summary>
-        public static string ACCESSIBLE_CARET_PROPERTY => Clazz.GetField<string>("ACCESSIBLE_CARET_PROPERTY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#ACCESSIBLE_VISIBLE_DATA_PROPERTY
-        /// </summary>
-        public static string ACCESSIBLE_VISIBLE_DATA_PROPERTY => Clazz.GetField<string>("ACCESSIBLE_VISIBLE_DATA_PROPERTY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#ACCESSIBLE_CHILD_PROPERTY
-        /// </summary>
-        public static string ACCESSIBLE_CHILD_PROPERTY => Clazz.GetField<string>("ACCESSIBLE_CHILD_PROPERTY");
+        public static string ACCESSIBLE_ACTION_PROPERTY => Clazz.GetField<string>("ACCESSIBLE_ACTION_PROPERTY");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#ACCESSIBLE_ACTIVE_DESCENDANT_PROPERTY
         /// </summary>
         public static string ACCESSIBLE_ACTIVE_DESCENDANT_PROPERTY => Clazz.GetField<string>("ACCESSIBLE_ACTIVE_DESCENDANT_PROPERTY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#ACCESSIBLE_TABLE_CAPTION_CHANGED
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#ACCESSIBLE_CARET_PROPERTY
         /// </summary>
-        public static string ACCESSIBLE_TABLE_CAPTION_CHANGED => Clazz.GetField<string>("ACCESSIBLE_TABLE_CAPTION_CHANGED");
+        public static string ACCESSIBLE_CARET_PROPERTY => Clazz.GetField<string>("ACCESSIBLE_CARET_PROPERTY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#ACCESSIBLE_TABLE_SUMMARY_CHANGED
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#ACCESSIBLE_CHILD_PROPERTY
         /// </summary>
-        public static string ACCESSIBLE_TABLE_SUMMARY_CHANGED => Clazz.GetField<string>("ACCESSIBLE_TABLE_SUMMARY_CHANGED");
+        public static string ACCESSIBLE_CHILD_PROPERTY => Clazz.GetField<string>("ACCESSIBLE_CHILD_PROPERTY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#ACCESSIBLE_TABLE_MODEL_CHANGED
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#ACCESSIBLE_COMPONENT_BOUNDS_CHANGED
         /// </summary>
-        public static string ACCESSIBLE_TABLE_MODEL_CHANGED => Clazz.GetField<string>("ACCESSIBLE_TABLE_MODEL_CHANGED");
+        public static string ACCESSIBLE_COMPONENT_BOUNDS_CHANGED => Clazz.GetField<string>("ACCESSIBLE_COMPONENT_BOUNDS_CHANGED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#ACCESSIBLE_TABLE_ROW_HEADER_CHANGED
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#ACCESSIBLE_DESCRIPTION_PROPERTY
         /// </summary>
-        public static string ACCESSIBLE_TABLE_ROW_HEADER_CHANGED => Clazz.GetField<string>("ACCESSIBLE_TABLE_ROW_HEADER_CHANGED");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#ACCESSIBLE_TABLE_ROW_DESCRIPTION_CHANGED
-        /// </summary>
-        public static string ACCESSIBLE_TABLE_ROW_DESCRIPTION_CHANGED => Clazz.GetField<string>("ACCESSIBLE_TABLE_ROW_DESCRIPTION_CHANGED");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#ACCESSIBLE_TABLE_COLUMN_HEADER_CHANGED
-        /// </summary>
-        public static string ACCESSIBLE_TABLE_COLUMN_HEADER_CHANGED => Clazz.GetField<string>("ACCESSIBLE_TABLE_COLUMN_HEADER_CHANGED");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#ACCESSIBLE_TABLE_COLUMN_DESCRIPTION_CHANGED
-        /// </summary>
-        public static string ACCESSIBLE_TABLE_COLUMN_DESCRIPTION_CHANGED => Clazz.GetField<string>("ACCESSIBLE_TABLE_COLUMN_DESCRIPTION_CHANGED");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#ACCESSIBLE_ACTION_PROPERTY
-        /// </summary>
-        public static string ACCESSIBLE_ACTION_PROPERTY => Clazz.GetField<string>("ACCESSIBLE_ACTION_PROPERTY");
+        public static string ACCESSIBLE_DESCRIPTION_PROPERTY => Clazz.GetField<string>("ACCESSIBLE_DESCRIPTION_PROPERTY");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#ACCESSIBLE_HYPERTEXT_OFFSET
         /// </summary>
         public static string ACCESSIBLE_HYPERTEXT_OFFSET => Clazz.GetField<string>("ACCESSIBLE_HYPERTEXT_OFFSET");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#ACCESSIBLE_TEXT_PROPERTY
-        /// </summary>
-        public static string ACCESSIBLE_TEXT_PROPERTY => Clazz.GetField<string>("ACCESSIBLE_TEXT_PROPERTY");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#ACCESSIBLE_INVALIDATE_CHILDREN
         /// </summary>
         public static string ACCESSIBLE_INVALIDATE_CHILDREN => Clazz.GetField<string>("ACCESSIBLE_INVALIDATE_CHILDREN");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#ACCESSIBLE_NAME_PROPERTY
+        /// </summary>
+        public static string ACCESSIBLE_NAME_PROPERTY => Clazz.GetField<string>("ACCESSIBLE_NAME_PROPERTY");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#ACCESSIBLE_SELECTION_PROPERTY
+        /// </summary>
+        public static string ACCESSIBLE_SELECTION_PROPERTY => Clazz.GetField<string>("ACCESSIBLE_SELECTION_PROPERTY");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#ACCESSIBLE_STATE_PROPERTY
+        /// </summary>
+        public static string ACCESSIBLE_STATE_PROPERTY => Clazz.GetField<string>("ACCESSIBLE_STATE_PROPERTY");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#ACCESSIBLE_TABLE_CAPTION_CHANGED
+        /// </summary>
+        public static string ACCESSIBLE_TABLE_CAPTION_CHANGED => Clazz.GetField<string>("ACCESSIBLE_TABLE_CAPTION_CHANGED");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#ACCESSIBLE_TABLE_COLUMN_DESCRIPTION_CHANGED
+        /// </summary>
+        public static string ACCESSIBLE_TABLE_COLUMN_DESCRIPTION_CHANGED => Clazz.GetField<string>("ACCESSIBLE_TABLE_COLUMN_DESCRIPTION_CHANGED");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#ACCESSIBLE_TABLE_COLUMN_HEADER_CHANGED
+        /// </summary>
+        public static string ACCESSIBLE_TABLE_COLUMN_HEADER_CHANGED => Clazz.GetField<string>("ACCESSIBLE_TABLE_COLUMN_HEADER_CHANGED");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#ACCESSIBLE_TABLE_MODEL_CHANGED
+        /// </summary>
+        public static string ACCESSIBLE_TABLE_MODEL_CHANGED => Clazz.GetField<string>("ACCESSIBLE_TABLE_MODEL_CHANGED");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#ACCESSIBLE_TABLE_ROW_DESCRIPTION_CHANGED
+        /// </summary>
+        public static string ACCESSIBLE_TABLE_ROW_DESCRIPTION_CHANGED => Clazz.GetField<string>("ACCESSIBLE_TABLE_ROW_DESCRIPTION_CHANGED");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#ACCESSIBLE_TABLE_ROW_HEADER_CHANGED
+        /// </summary>
+        public static string ACCESSIBLE_TABLE_ROW_HEADER_CHANGED => Clazz.GetField<string>("ACCESSIBLE_TABLE_ROW_HEADER_CHANGED");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#ACCESSIBLE_TABLE_SUMMARY_CHANGED
+        /// </summary>
+        public static string ACCESSIBLE_TABLE_SUMMARY_CHANGED => Clazz.GetField<string>("ACCESSIBLE_TABLE_SUMMARY_CHANGED");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#ACCESSIBLE_TEXT_ATTRIBUTES_CHANGED
         /// </summary>
         public static string ACCESSIBLE_TEXT_ATTRIBUTES_CHANGED => Clazz.GetField<string>("ACCESSIBLE_TEXT_ATTRIBUTES_CHANGED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#ACCESSIBLE_COMPONENT_BOUNDS_CHANGED
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#ACCESSIBLE_TEXT_PROPERTY
         /// </summary>
-        public static string ACCESSIBLE_COMPONENT_BOUNDS_CHANGED => Clazz.GetField<string>("ACCESSIBLE_COMPONENT_BOUNDS_CHANGED");
+        public static string ACCESSIBLE_TEXT_PROPERTY => Clazz.GetField<string>("ACCESSIBLE_TEXT_PROPERTY");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#ACCESSIBLE_VALUE_PROPERTY
+        /// </summary>
+        public static string ACCESSIBLE_VALUE_PROPERTY => Clazz.GetField<string>("ACCESSIBLE_VALUE_PROPERTY");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#ACCESSIBLE_VISIBLE_DATA_PROPERTY
+        /// </summary>
+        public static string ACCESSIBLE_VISIBLE_DATA_PROPERTY => Clazz.GetField<string>("ACCESSIBLE_VISIBLE_DATA_PROPERTY");
         
         #endregion
 

@@ -33,19 +33,19 @@ namespace Java.Lang
         #endregion
 
         #region Class/Interface conversion operators
-        public static implicit operator Java.Io.Serializable(bool t) => t.Cast<Java.Io.Serializable>();
+        public static implicit operator Java.Io.Serializable(bool? t) => t.Cast<Java.Io.Serializable>();
         
         #endregion
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html#TRUE
-        /// </summary>
-        public static bool TRUE => Clazz.GetField<bool>("TRUE");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html#FALSE
         /// </summary>
-        public static bool FALSE => Clazz.GetField<bool>("FALSE");
+        public static bool? FALSE => Clazz.GetField<bool?>("FALSE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html#TRUE
+        /// </summary>
+        public static bool? TRUE => Clazz.GetField<bool?>("TRUE");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html#TYPE
         /// </summary>
@@ -106,16 +106,16 @@ namespace Java.Lang
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html#valueOf(boolean)
         /// </summary>
-        public static bool ValueOf(bool arg0)
+        public static bool? ValueOf(bool arg0)
         {
-            return SExecute<bool>("valueOf", arg0);
+            return SExecute<bool?>("valueOf", arg0);
         }
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html#valueOf(java.lang.String)
         /// </summary>
-        public static bool ValueOf(string arg0)
+        public static bool? ValueOf(string arg0)
         {
-            return SExecute<bool>("valueOf", arg0);
+            return SExecute<bool?>("valueOf", arg0);
         }
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html#toString(boolean)
@@ -138,7 +138,7 @@ namespace Java.Lang
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html#compareTo(java.lang.Boolean)
         /// </summary>
-        public int CompareTo(bool arg0)
+        public int CompareTo(bool? arg0)
         {
             return IExecute<int>("compareTo", arg0);
         }

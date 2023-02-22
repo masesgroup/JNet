@@ -30,10 +30,17 @@ namespace Javax.Management.Modelmbean
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanAttributeInfo.html#<init>(javax.management.modelmbean.ModelMBeanAttributeInfo)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanAttributeInfo.html#<init>(java.lang.String,java.lang.String,java.lang.reflect.Method,java.lang.reflect.Method,javax.management.Descriptor) throws javax.management.IntrospectionException
         /// </summary>
-        public ModelMBeanAttributeInfo(Javax.Management.Modelmbean.ModelMBeanAttributeInfo arg0)
-            : base(arg0)
+        public ModelMBeanAttributeInfo(string arg0, string arg1, Java.Lang.Reflect.Method arg2, Java.Lang.Reflect.Method arg3, Javax.Management.Descriptor arg4)
+            : base(arg0, arg1, arg2, arg3, arg4)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanAttributeInfo.html#<init>(java.lang.String,java.lang.String,java.lang.reflect.Method,java.lang.reflect.Method) throws javax.management.IntrospectionException
+        /// </summary>
+        public ModelMBeanAttributeInfo(string arg0, string arg1, Java.Lang.Reflect.Method arg2, Java.Lang.Reflect.Method arg3)
+            : base(arg0, arg1, arg2, arg3)
         {
         }
         /// <summary>
@@ -51,17 +58,10 @@ namespace Javax.Management.Modelmbean
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanAttributeInfo.html#<init>(java.lang.String,java.lang.String,java.lang.reflect.Method,java.lang.reflect.Method,javax.management.Descriptor) throws javax.management.IntrospectionException
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanAttributeInfo.html#<init>(javax.management.modelmbean.ModelMBeanAttributeInfo)
         /// </summary>
-        public ModelMBeanAttributeInfo(string arg0, string arg1, Java.Lang.Reflect.Method arg2, Java.Lang.Reflect.Method arg3, Javax.Management.Descriptor arg4)
-            : base(arg0, arg1, arg2, arg3, arg4)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanAttributeInfo.html#<init>(java.lang.String,java.lang.String,java.lang.reflect.Method,java.lang.reflect.Method) throws javax.management.IntrospectionException
-        /// </summary>
-        public ModelMBeanAttributeInfo(string arg0, string arg1, Java.Lang.Reflect.Method arg2, Java.Lang.Reflect.Method arg3)
-            : base(arg0, arg1, arg2, arg3)
+        public ModelMBeanAttributeInfo(Javax.Management.Modelmbean.ModelMBeanAttributeInfo arg0)
+            : base(arg0)
         {
         }
         

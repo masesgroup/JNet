@@ -30,9 +30,9 @@ namespace Javax.Security.Auth.Login
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/LoginContext.html#<init>(java.lang.String,javax.security.auth.Subject) throws javax.security.auth.login.LoginException
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/LoginContext.html#<init>(java.lang.String,javax.security.auth.callback.CallbackHandler) throws javax.security.auth.login.LoginException
         /// </summary>
-        public LoginContext(string arg0, Javax.Security.Auth.Subject arg1)
+        public LoginContext(string arg0, Javax.Security.Auth.Callback.CallbackHandler arg1)
             : base(arg0, arg1)
         {
         }
@@ -51,17 +51,17 @@ namespace Javax.Security.Auth.Login
         {
         }
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/LoginContext.html#<init>(java.lang.String,javax.security.auth.Subject) throws javax.security.auth.login.LoginException
+        /// </summary>
+        public LoginContext(string arg0, Javax.Security.Auth.Subject arg1)
+            : base(arg0, arg1)
+        {
+        }
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/LoginContext.html#<init>(java.lang.String) throws javax.security.auth.login.LoginException
         /// </summary>
         public LoginContext(string arg0)
             : base(arg0)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/LoginContext.html#<init>(java.lang.String,javax.security.auth.callback.CallbackHandler) throws javax.security.auth.login.LoginException
-        /// </summary>
-        public LoginContext(string arg0, Javax.Security.Auth.Callback.CallbackHandler arg1)
-            : base(arg0, arg1)
         {
         }
         

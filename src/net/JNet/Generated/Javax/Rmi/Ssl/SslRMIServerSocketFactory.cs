@@ -30,17 +30,17 @@ namespace Javax.Rmi.Ssl
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/javax/rmi/ssl/SslRMIServerSocketFactory.html#<init>(javax.net.ssl.SSLContext,java.lang.String[],java.lang.String[],boolean) throws java.lang.IllegalArgumentException
-        /// </summary>
-        public SslRMIServerSocketFactory(Javax.Net.Ssl.SSLContext arg0, string[] arg1, string[] arg2, bool arg3)
-            : base(arg0, arg1, arg2, arg3)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/javax/rmi/ssl/SslRMIServerSocketFactory.html#<init>(java.lang.String[],java.lang.String[],boolean) throws java.lang.IllegalArgumentException
         /// </summary>
         public SslRMIServerSocketFactory(string[] arg0, string[] arg1, bool arg2)
             : base(arg0, arg1, arg2)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/javax/rmi/ssl/SslRMIServerSocketFactory.html#<init>(javax.net.ssl.SSLContext,java.lang.String[],java.lang.String[],boolean) throws java.lang.IllegalArgumentException
+        /// </summary>
+        public SslRMIServerSocketFactory(Javax.Net.Ssl.SSLContext arg0, string[] arg1, string[] arg2, bool arg3)
+            : base(arg0, arg1, arg2, arg3)
         {
         }
         

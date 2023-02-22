@@ -62,21 +62,21 @@ namespace Java.Awt.DesktopNs
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/UserSessionEvent.Reason.html#UNSPECIFIED
-            /// </summary>
-            public static Java.Awt.DesktopNs.UserSessionEvent.Reason UNSPECIFIED => Clazz.GetField<Java.Awt.DesktopNs.UserSessionEvent.Reason>("UNSPECIFIED");
-            /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/UserSessionEvent.Reason.html#CONSOLE
             /// </summary>
             public static Java.Awt.DesktopNs.UserSessionEvent.Reason CONSOLE => Clazz.GetField<Java.Awt.DesktopNs.UserSessionEvent.Reason>("CONSOLE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/UserSessionEvent.Reason.html#LOCK
+            /// </summary>
+            public static Java.Awt.DesktopNs.UserSessionEvent.Reason LOCK => Clazz.GetField<Java.Awt.DesktopNs.UserSessionEvent.Reason>("LOCK");
             /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/UserSessionEvent.Reason.html#REMOTE
             /// </summary>
             public static Java.Awt.DesktopNs.UserSessionEvent.Reason REMOTE => Clazz.GetField<Java.Awt.DesktopNs.UserSessionEvent.Reason>("REMOTE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/UserSessionEvent.Reason.html#LOCK
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/UserSessionEvent.Reason.html#UNSPECIFIED
             /// </summary>
-            public static Java.Awt.DesktopNs.UserSessionEvent.Reason LOCK => Clazz.GetField<Java.Awt.DesktopNs.UserSessionEvent.Reason>("LOCK");
+            public static Java.Awt.DesktopNs.UserSessionEvent.Reason UNSPECIFIED => Clazz.GetField<Java.Awt.DesktopNs.UserSessionEvent.Reason>("UNSPECIFIED");
             
             #endregion
 

@@ -78,16 +78,16 @@ namespace Javax.Management.Relation
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupport.html#isInRelationService()
         /// </summary>
-        public bool IsInRelationService()
+        public bool? IsInRelationService()
         {
-            return IExecute<bool>("isInRelationService");
+            return IExecute<bool?>("isInRelationService");
         }
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupport.html#getRoleCardinality(java.lang.String) throws java.lang.IllegalArgumentException,javax.management.relation.RoleNotFoundException
         /// </summary>
-        public int GetRoleCardinality(string arg0)
+        public int? GetRoleCardinality(string arg0)
         {
-            return IExecute<int>("getRoleCardinality", arg0);
+            return IExecute<int?>("getRoleCardinality", arg0);
         }
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupport.html#preRegister(javax.management.MBeanServer,javax.management.ObjectName) throws java.lang.Exception
@@ -120,7 +120,7 @@ namespace Javax.Management.Relation
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupport.html#postRegister(java.lang.Boolean)
         /// </summary>
-        public void PostRegister(bool arg0)
+        public void PostRegister(bool? arg0)
         {
             IExecute("postRegister", arg0);
         }
@@ -134,7 +134,7 @@ namespace Javax.Management.Relation
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupport.html#setRelationServiceManagementFlag(java.lang.Boolean) throws java.lang.IllegalArgumentException
         /// </summary>
-        public void SetRelationServiceManagementFlag(bool arg0)
+        public void SetRelationServiceManagementFlag(bool? arg0)
         {
             IExecute("setRelationServiceManagementFlag", arg0);
         }

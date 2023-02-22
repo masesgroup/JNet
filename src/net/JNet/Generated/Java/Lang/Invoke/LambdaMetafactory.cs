@@ -38,17 +38,17 @@ namespace Java.Lang.Invoke
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/LambdaMetafactory.html#FLAG_SERIALIZABLE
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/LambdaMetafactory.html#FLAG_BRIDGES
         /// </summary>
-        public static int FLAG_SERIALIZABLE => Clazz.GetField<int>("FLAG_SERIALIZABLE");
+        public static int FLAG_BRIDGES => Clazz.GetField<int>("FLAG_BRIDGES");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/LambdaMetafactory.html#FLAG_MARKERS
         /// </summary>
         public static int FLAG_MARKERS => Clazz.GetField<int>("FLAG_MARKERS");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/LambdaMetafactory.html#FLAG_BRIDGES
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/LambdaMetafactory.html#FLAG_SERIALIZABLE
         /// </summary>
-        public static int FLAG_BRIDGES => Clazz.GetField<int>("FLAG_BRIDGES");
+        public static int FLAG_SERIALIZABLE => Clazz.GetField<int>("FLAG_SERIALIZABLE");
         
         #endregion
 

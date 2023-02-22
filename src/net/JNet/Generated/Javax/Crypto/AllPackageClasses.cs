@@ -23,23 +23,55 @@
 
 namespace Javax.Crypto
 {
-    #region NullCipher
+    #region AEADBadTagException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/NullCipher.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/AEADBadTagException.html
     /// </summary>
-    public partial class NullCipher : Javax.Crypto.Cipher
+    public partial class AEADBadTagException : Javax.Crypto.BadPaddingException
+    {
+        public AEADBadTagException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.crypto.AEADBadTagException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region BadPaddingException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/BadPaddingException.html
+    /// </summary>
+    public partial class BadPaddingException : Java.Security.GeneralSecurityException
+    {
+        public BadPaddingException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.crypto.BadPaddingException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region Cipher
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html
+    /// </summary>
+    public partial class Cipher : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Cipher>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public NullCipher() { }
+        public Cipher() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public NullCipher(params object[] args) : base(args) { }
+        public Cipher(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.crypto.NullCipher";
+        public override string ClassName => "javax.crypto.Cipher";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -93,122 +125,23 @@ namespace Javax.Crypto
     }
     #endregion
 
-    #region SealedObject
+    #region CipherOutputStream
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/SealedObject.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/CipherOutputStream.html
     /// </summary>
-    public partial class SealedObject : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SealedObject>
+    public partial class CipherOutputStream : Java.Io.FilterOutputStream
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public SealedObject() { }
+        public CipherOutputStream() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public SealedObject(params object[] args) : base(args) { }
+        public CipherOutputStream(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.crypto.SealedObject";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region BadPaddingException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/BadPaddingException.html
-    /// </summary>
-    public partial class BadPaddingException : Java.Security.GeneralSecurityException
-    {
-        public BadPaddingException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.crypto.BadPaddingException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region ShortBufferException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/ShortBufferException.html
-    /// </summary>
-    public partial class ShortBufferException : Java.Security.GeneralSecurityException
-    {
-        public ShortBufferException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.crypto.ShortBufferException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region NoSuchPaddingException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/NoSuchPaddingException.html
-    /// </summary>
-    public partial class NoSuchPaddingException : Java.Security.GeneralSecurityException
-    {
-        public NoSuchPaddingException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.crypto.NoSuchPaddingException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region AEADBadTagException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/AEADBadTagException.html
-    /// </summary>
-    public partial class AEADBadTagException : Javax.Crypto.BadPaddingException
-    {
-        public AEADBadTagException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.crypto.AEADBadTagException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region Mac
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Mac.html
-    /// </summary>
-    public partial class Mac : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Mac>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public Mac() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public Mac(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.crypto.Mac";
+        public override string ClassName => "javax.crypto.CipherOutputStream";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -262,6 +195,41 @@ namespace Javax.Crypto
     }
     #endregion
 
+    #region EncryptedPrivateKeyInfo
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/EncryptedPrivateKeyInfo.html
+    /// </summary>
+    public partial class EncryptedPrivateKeyInfo : MASES.JCOBridge.C2JBridge.JVMBridgeBase<EncryptedPrivateKeyInfo>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public EncryptedPrivateKeyInfo() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public EncryptedPrivateKeyInfo(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.crypto.EncryptedPrivateKeyInfo";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region ExemptionMechanism
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/ExemptionMechanism.html
@@ -297,23 +265,39 @@ namespace Javax.Crypto
     }
     #endregion
 
-    #region KeyGeneratorSpi
+    #region ExemptionMechanismException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/KeyGeneratorSpi.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/ExemptionMechanismException.html
     /// </summary>
-    public partial class KeyGeneratorSpi : MASES.JCOBridge.C2JBridge.JVMBridgeBase<KeyGeneratorSpi>
+    public partial class ExemptionMechanismException : Java.Security.GeneralSecurityException
+    {
+        public ExemptionMechanismException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.crypto.ExemptionMechanismException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region ExemptionMechanismSpi
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/ExemptionMechanismSpi.html
+    /// </summary>
+    public partial class ExemptionMechanismSpi : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ExemptionMechanismSpi>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public KeyGeneratorSpi() { }
+        public ExemptionMechanismSpi() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public KeyGeneratorSpi(params object[] args) : base(args) { }
+        public ExemptionMechanismSpi(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.crypto.KeyGeneratorSpi";
+        public override string ClassName => "javax.crypto.ExemptionMechanismSpi";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -332,23 +316,39 @@ namespace Javax.Crypto
     }
     #endregion
 
-    #region SecretKeyFactory
+    #region IllegalBlockSizeException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/SecretKeyFactory.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/IllegalBlockSizeException.html
     /// </summary>
-    public partial class SecretKeyFactory : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SecretKeyFactory>
+    public partial class IllegalBlockSizeException : Java.Security.GeneralSecurityException
+    {
+        public IllegalBlockSizeException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.crypto.IllegalBlockSizeException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region KeyAgreement
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/KeyAgreement.html
+    /// </summary>
+    public partial class KeyAgreement : MASES.JCOBridge.C2JBridge.JVMBridgeBase<KeyAgreement>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public SecretKeyFactory() { }
+        public KeyAgreement() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public SecretKeyFactory(params object[] args) : base(args) { }
+        public KeyAgreement(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.crypto.SecretKeyFactory";
+        public override string ClassName => "javax.crypto.KeyAgreement";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -437,23 +437,179 @@ namespace Javax.Crypto
     }
     #endregion
 
-    #region CipherOutputStream
+    #region KeyGeneratorSpi
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/CipherOutputStream.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/KeyGeneratorSpi.html
     /// </summary>
-    public partial class CipherOutputStream : Java.Io.FilterOutputStream
+    public partial class KeyGeneratorSpi : MASES.JCOBridge.C2JBridge.JVMBridgeBase<KeyGeneratorSpi>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public CipherOutputStream() { }
+        public KeyGeneratorSpi() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public CipherOutputStream(params object[] args) : base(args) { }
+        public KeyGeneratorSpi(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.crypto.CipherOutputStream";
+        public override string ClassName => "javax.crypto.KeyGeneratorSpi";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region Mac
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Mac.html
+    /// </summary>
+    public partial class Mac : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Mac>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public Mac() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public Mac(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.crypto.Mac";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region MacSpi
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/MacSpi.html
+    /// </summary>
+    public partial class MacSpi : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MacSpi>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public MacSpi() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public MacSpi(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.crypto.MacSpi";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region NoSuchPaddingException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/NoSuchPaddingException.html
+    /// </summary>
+    public partial class NoSuchPaddingException : Java.Security.GeneralSecurityException
+    {
+        public NoSuchPaddingException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.crypto.NoSuchPaddingException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region NullCipher
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/NullCipher.html
+    /// </summary>
+    public partial class NullCipher : Javax.Crypto.Cipher
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public NullCipher() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public NullCipher(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.crypto.NullCipher";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region SealedObject
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/SealedObject.html
+    /// </summary>
+    public partial class SealedObject : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SealedObject>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public SealedObject() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public SealedObject(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.crypto.SealedObject";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -507,74 +663,23 @@ namespace Javax.Crypto
     }
     #endregion
 
-    #region IllegalBlockSizeException
+    #region SecretKeyFactory
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/IllegalBlockSizeException.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/SecretKeyFactory.html
     /// </summary>
-    public partial class IllegalBlockSizeException : Java.Security.GeneralSecurityException
-    {
-        public IllegalBlockSizeException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.crypto.IllegalBlockSizeException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region MacSpi
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/MacSpi.html
-    /// </summary>
-    public partial class MacSpi : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MacSpi>
+    public partial class SecretKeyFactory : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SecretKeyFactory>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public MacSpi() { }
+        public SecretKeyFactory() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public MacSpi(params object[] args) : base(args) { }
+        public SecretKeyFactory(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.crypto.MacSpi";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region Cipher
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/Cipher.html
-    /// </summary>
-    public partial class Cipher : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Cipher>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public Cipher() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public Cipher(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.crypto.Cipher";
+        public override string ClassName => "javax.crypto.SecretKeyFactory";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -628,121 +733,16 @@ namespace Javax.Crypto
     }
     #endregion
 
-    #region EncryptedPrivateKeyInfo
+    #region ShortBufferException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/EncryptedPrivateKeyInfo.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/ShortBufferException.html
     /// </summary>
-    public partial class EncryptedPrivateKeyInfo : MASES.JCOBridge.C2JBridge.JVMBridgeBase<EncryptedPrivateKeyInfo>
+    public partial class ShortBufferException : Java.Security.GeneralSecurityException
     {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public EncryptedPrivateKeyInfo() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public EncryptedPrivateKeyInfo(params object[] args) : base(args) { }
+        public ShortBufferException() { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.crypto.EncryptedPrivateKeyInfo";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region ExemptionMechanismException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/ExemptionMechanismException.html
-    /// </summary>
-    public partial class ExemptionMechanismException : Java.Security.GeneralSecurityException
-    {
-        public ExemptionMechanismException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.crypto.ExemptionMechanismException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region KeyAgreement
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/KeyAgreement.html
-    /// </summary>
-    public partial class KeyAgreement : MASES.JCOBridge.C2JBridge.JVMBridgeBase<KeyAgreement>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public KeyAgreement() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public KeyAgreement(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.crypto.KeyAgreement";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region ExemptionMechanismSpi
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/ExemptionMechanismSpi.html
-    /// </summary>
-    public partial class ExemptionMechanismSpi : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ExemptionMechanismSpi>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public ExemptionMechanismSpi() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public ExemptionMechanismSpi(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.crypto.ExemptionMechanismSpi";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
+        public override string ClassName => "javax.crypto.ShortBufferException";
 
         // TODO: complete the class
 

@@ -30,16 +30,16 @@ namespace Java.Util.Jar
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Manifest.html#<init>(java.util.jar.Manifest)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Manifest.html#<init>(java.io.InputStream) throws java.io.IOException
         /// </summary>
-        public Manifest(Java.Util.Jar.Manifest arg0)
+        public Manifest(Java.Io.InputStream arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Manifest.html#<init>(java.io.InputStream) throws java.io.IOException
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Manifest.html#<init>(java.util.jar.Manifest)
         /// </summary>
-        public Manifest(Java.Io.InputStream arg0)
+        public Manifest(Java.Util.Jar.Manifest arg0)
             : base(arg0)
         {
         }

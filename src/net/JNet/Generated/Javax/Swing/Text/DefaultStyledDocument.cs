@@ -30,17 +30,17 @@ namespace Javax.Swing.Text
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.html#<init>(javax.swing.text.StyleContext)
-        /// </summary>
-        public DefaultStyledDocument(Javax.Swing.Text.StyleContext arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.html#<init>(javax.swing.text.AbstractDocument$Content,javax.swing.text.StyleContext)
         /// </summary>
         public DefaultStyledDocument(Javax.Swing.Text.AbstractDocument.Content arg0, Javax.Swing.Text.StyleContext arg1)
             : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.html#<init>(javax.swing.text.StyleContext)
+        /// </summary>
+        public DefaultStyledDocument(Javax.Swing.Text.StyleContext arg0)
+            : base(arg0)
         {
         }
         
@@ -152,6 +152,124 @@ namespace Javax.Swing.Text
         #endregion
 
         #region Nested classes
+        #region ElementSpec
+        public partial class ElementSpec
+        {
+            #region Constructors
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#<init>(javax.swing.text.AttributeSet,short,char[],int,int)
+            /// </summary>
+            public ElementSpec(Javax.Swing.Text.AttributeSet arg0, short arg1, char[] arg2, int arg3, int arg4)
+                : base(arg0, arg1, arg2, arg3, arg4)
+            {
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#<init>(javax.swing.text.AttributeSet,short,int)
+            /// </summary>
+            public ElementSpec(Javax.Swing.Text.AttributeSet arg0, short arg1, int arg2)
+                : base(arg0, arg1, arg2)
+            {
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#<init>(javax.swing.text.AttributeSet,short)
+            /// </summary>
+            public ElementSpec(Javax.Swing.Text.AttributeSet arg0, short arg1)
+                : base(arg0, arg1)
+            {
+            }
+            
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#ContentType
+            /// </summary>
+            public static short ContentType => Clazz.GetField<short>("ContentType");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#EndTagType
+            /// </summary>
+            public static short EndTagType => Clazz.GetField<short>("EndTagType");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#JoinFractureDirection
+            /// </summary>
+            public static short JoinFractureDirection => Clazz.GetField<short>("JoinFractureDirection");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#JoinNextDirection
+            /// </summary>
+            public static short JoinNextDirection => Clazz.GetField<short>("JoinNextDirection");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#JoinPreviousDirection
+            /// </summary>
+            public static short JoinPreviousDirection => Clazz.GetField<short>("JoinPreviousDirection");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#OriginateDirection
+            /// </summary>
+            public static short OriginateDirection => Clazz.GetField<short>("OriginateDirection");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#StartTagType
+            /// </summary>
+            public static short StartTagType => Clazz.GetField<short>("StartTagType");
+            
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#getArray() 
+            /// </summary>
+            public char[] Array
+            {
+                get { return IExecuteArray<char>("getArray"); }
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#getAttributes() 
+            /// </summary>
+            public Javax.Swing.Text.AttributeSet Attributes
+            {
+                get { return IExecute<Javax.Swing.Text.AttributeSet>("getAttributes"); }
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#getDirection() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#setDirection(short)
+            /// </summary>
+            public short Direction
+            {
+                get { return IExecute<short>("getDirection"); } set { IExecute("setDirection", value); }
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#getLength() 
+            /// </summary>
+            public int Length
+            {
+                get { return IExecute<int>("getLength"); }
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#getOffset() 
+            /// </summary>
+            public int Offset
+            {
+                get { return IExecute<int>("getOffset"); }
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#getType() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#setType(short)
+            /// </summary>
+            public short Type
+            {
+                get { return IExecute<short>("getType"); } set { IExecute("setType", value); }
+            }
+            
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region ElementBuffer
         public partial class ElementBuffer
         {
@@ -250,124 +368,6 @@ namespace Javax.Swing.Text
 
             #region Instance methods
 
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region ElementSpec
-        public partial class ElementSpec
-        {
-            #region Constructors
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#<init>(javax.swing.text.AttributeSet,short,char[],int,int)
-            /// </summary>
-            public ElementSpec(Javax.Swing.Text.AttributeSet arg0, short arg1, char[] arg2, int arg3, int arg4)
-                : base(arg0, arg1, arg2, arg3, arg4)
-            {
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#<init>(javax.swing.text.AttributeSet,short,int)
-            /// </summary>
-            public ElementSpec(Javax.Swing.Text.AttributeSet arg0, short arg1, int arg2)
-                : base(arg0, arg1, arg2)
-            {
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#<init>(javax.swing.text.AttributeSet,short)
-            /// </summary>
-            public ElementSpec(Javax.Swing.Text.AttributeSet arg0, short arg1)
-                : base(arg0, arg1)
-            {
-            }
-            
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#StartTagType
-            /// </summary>
-            public static short StartTagType => Clazz.GetField<short>("StartTagType");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#EndTagType
-            /// </summary>
-            public static short EndTagType => Clazz.GetField<short>("EndTagType");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#ContentType
-            /// </summary>
-            public static short ContentType => Clazz.GetField<short>("ContentType");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#JoinPreviousDirection
-            /// </summary>
-            public static short JoinPreviousDirection => Clazz.GetField<short>("JoinPreviousDirection");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#JoinNextDirection
-            /// </summary>
-            public static short JoinNextDirection => Clazz.GetField<short>("JoinNextDirection");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#OriginateDirection
-            /// </summary>
-            public static short OriginateDirection => Clazz.GetField<short>("OriginateDirection");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#JoinFractureDirection
-            /// </summary>
-            public static short JoinFractureDirection => Clazz.GetField<short>("JoinFractureDirection");
-            
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#getArray() 
-            /// </summary>
-            public char[] Array
-            {
-                get { return IExecuteArray<char>("getArray"); }
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#getAttributes() 
-            /// </summary>
-            public Javax.Swing.Text.AttributeSet Attributes
-            {
-                get { return IExecute<Javax.Swing.Text.AttributeSet>("getAttributes"); }
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#getDirection() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#setDirection(short)
-            /// </summary>
-            public short Direction
-            {
-                get { return IExecute<short>("getDirection"); } set { IExecute("setDirection", value); }
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#getLength() 
-            /// </summary>
-            public int Length
-            {
-                get { return IExecute<int>("getLength"); }
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#getOffset() 
-            /// </summary>
-            public int Offset
-            {
-                get { return IExecute<int>("getOffset"); }
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#getType() https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementSpec.html#setType(short)
-            /// </summary>
-            public short Type
-            {
-                get { return IExecute<short>("getType"); } set { IExecute("setType", value); }
-            }
-            
             #endregion
 
             // TODO: complete the class

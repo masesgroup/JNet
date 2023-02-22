@@ -325,10 +325,10 @@ namespace Javax.Swing.Text
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.NamedStyle.html#<init>(javax.swing.text.StyleContext)
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.NamedStyle.html#<init>(javax.swing.text.StyleContext,java.lang.String,javax.swing.text.Style)
             /// </summary>
-            public NamedStyle(Javax.Swing.Text.StyleContext arg0)
-                : base(arg0)
+            public NamedStyle(Javax.Swing.Text.StyleContext arg0, string arg1, Javax.Swing.Text.Style arg2)
+                : base(arg0, arg1, arg2)
             {
             }
             /// <summary>
@@ -339,10 +339,10 @@ namespace Javax.Swing.Text
             {
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.NamedStyle.html#<init>(javax.swing.text.StyleContext,java.lang.String,javax.swing.text.Style)
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.NamedStyle.html#<init>(javax.swing.text.StyleContext)
             /// </summary>
-            public NamedStyle(Javax.Swing.Text.StyleContext arg0, string arg1, Javax.Swing.Text.Style arg2)
-                : base(arg0, arg1, arg2)
+            public NamedStyle(Javax.Swing.Text.StyleContext arg0)
+                : base(arg0)
             {
             }
             

@@ -40,21 +40,21 @@ namespace Java.Time.Chrono
 
         #region Fields
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/JapaneseEra.html#HEISEI
+        /// </summary>
+        public static Java.Time.Chrono.JapaneseEra HEISEI => Clazz.GetField<Java.Time.Chrono.JapaneseEra>("HEISEI");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/JapaneseEra.html#MEIJI
         /// </summary>
         public static Java.Time.Chrono.JapaneseEra MEIJI => Clazz.GetField<Java.Time.Chrono.JapaneseEra>("MEIJI");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/JapaneseEra.html#TAISHO
-        /// </summary>
-        public static Java.Time.Chrono.JapaneseEra TAISHO => Clazz.GetField<Java.Time.Chrono.JapaneseEra>("TAISHO");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/JapaneseEra.html#SHOWA
         /// </summary>
         public static Java.Time.Chrono.JapaneseEra SHOWA => Clazz.GetField<Java.Time.Chrono.JapaneseEra>("SHOWA");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/JapaneseEra.html#HEISEI
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/JapaneseEra.html#TAISHO
         /// </summary>
-        public static Java.Time.Chrono.JapaneseEra HEISEI => Clazz.GetField<Java.Time.Chrono.JapaneseEra>("HEISEI");
+        public static Java.Time.Chrono.JapaneseEra TAISHO => Clazz.GetField<Java.Time.Chrono.JapaneseEra>("TAISHO");
         
         #endregion
 

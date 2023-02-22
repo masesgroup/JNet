@@ -30,17 +30,17 @@ namespace Java.Lang
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/RuntimePermission.html#<init>(java.lang.String)
-        /// </summary>
-        public RuntimePermission(string arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/RuntimePermission.html#<init>(java.lang.String,java.lang.String)
         /// </summary>
         public RuntimePermission(string arg0, string arg1)
             : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/RuntimePermission.html#<init>(java.lang.String)
+        /// </summary>
+        public RuntimePermission(string arg0)
+            : base(arg0)
         {
         }
         

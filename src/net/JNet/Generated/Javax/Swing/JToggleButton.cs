@@ -37,10 +37,10 @@ namespace Javax.Swing
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToggleButton.html#<init>(javax.swing.Action)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToggleButton.html#<init>(java.lang.String,javax.swing.Icon,boolean)
         /// </summary>
-        public JToggleButton(Javax.Swing.Action arg0)
-            : base(arg0)
+        public JToggleButton(string arg0, Javax.Swing.Icon arg1, bool arg2)
+            : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
@@ -51,16 +51,16 @@ namespace Javax.Swing
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToggleButton.html#<init>(java.lang.String,javax.swing.Icon,boolean)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToggleButton.html#<init>(java.lang.String)
         /// </summary>
-        public JToggleButton(string arg0, Javax.Swing.Icon arg1, bool arg2)
-            : base(arg0, arg1, arg2)
+        public JToggleButton(string arg0)
+            : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToggleButton.html#<init>(javax.swing.Icon)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToggleButton.html#<init>(javax.swing.Action)
         /// </summary>
-        public JToggleButton(Javax.Swing.Icon arg0)
+        public JToggleButton(Javax.Swing.Action arg0)
             : base(arg0)
         {
         }
@@ -72,9 +72,9 @@ namespace Javax.Swing
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToggleButton.html#<init>(java.lang.String)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToggleButton.html#<init>(javax.swing.Icon)
         /// </summary>
-        public JToggleButton(string arg0)
+        public JToggleButton(Javax.Swing.Icon arg0)
             : base(arg0)
         {
         }

@@ -23,23 +23,23 @@
 
 namespace Java.Nio.File.Spi
 {
-    #region FileTypeDetector
+    #region FileSystemProvider
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/spi/FileTypeDetector.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/spi/FileSystemProvider.html
     /// </summary>
-    public partial class FileTypeDetector : MASES.JCOBridge.C2JBridge.JVMBridgeBase<FileTypeDetector>
+    public partial class FileSystemProvider : MASES.JCOBridge.C2JBridge.JVMBridgeBase<FileSystemProvider>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public FileTypeDetector() { }
+        public FileSystemProvider() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public FileTypeDetector(params object[] args) : base(args) { }
+        public FileSystemProvider(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.file.spi.FileTypeDetector";
+        public override string ClassName => "java.nio.file.spi.FileSystemProvider";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -58,23 +58,23 @@ namespace Java.Nio.File.Spi
     }
     #endregion
 
-    #region FileSystemProvider
+    #region FileTypeDetector
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/spi/FileSystemProvider.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/spi/FileTypeDetector.html
     /// </summary>
-    public partial class FileSystemProvider : MASES.JCOBridge.C2JBridge.JVMBridgeBase<FileSystemProvider>
+    public partial class FileTypeDetector : MASES.JCOBridge.C2JBridge.JVMBridgeBase<FileTypeDetector>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public FileSystemProvider() { }
+        public FileTypeDetector() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public FileSystemProvider(params object[] args) : base(args) { }
+        public FileTypeDetector(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.nio.file.spi.FileSystemProvider";
+        public override string ClassName => "java.nio.file.spi.FileTypeDetector";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;

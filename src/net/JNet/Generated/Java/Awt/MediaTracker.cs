@@ -46,21 +46,21 @@ namespace Java.Awt
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MediaTracker.html#LOADING
-        /// </summary>
-        public static int LOADING => Clazz.GetField<int>("LOADING");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MediaTracker.html#ABORTED
         /// </summary>
         public static int ABORTED => Clazz.GetField<int>("ABORTED");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MediaTracker.html#COMPLETE
+        /// </summary>
+        public static int COMPLETE => Clazz.GetField<int>("COMPLETE");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MediaTracker.html#ERRORED
         /// </summary>
         public static int ERRORED => Clazz.GetField<int>("ERRORED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MediaTracker.html#COMPLETE
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MediaTracker.html#LOADING
         /// </summary>
-        public static int COMPLETE => Clazz.GetField<int>("COMPLETE");
+        public static int LOADING => Clazz.GetField<int>("LOADING");
         
         #endregion
 

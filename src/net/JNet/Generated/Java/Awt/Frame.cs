@@ -30,6 +30,13 @@ namespace Java.Awt
     {
         #region Constructors
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#<init>(java.awt.GraphicsConfiguration)
+        /// </summary>
+        public Frame(Java.Awt.GraphicsConfiguration arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#<init>(java.lang.String,java.awt.GraphicsConfiguration)
         /// </summary>
         public Frame(string arg0, Java.Awt.GraphicsConfiguration arg1)
@@ -43,13 +50,6 @@ namespace Java.Awt
             : base(arg0)
         {
         }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#<init>(java.awt.GraphicsConfiguration)
-        /// </summary>
-        public Frame(Java.Awt.GraphicsConfiguration arg0)
-            : base(arg0)
-        {
-        }
         
         #endregion
 
@@ -60,13 +60,13 @@ namespace Java.Awt
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#NORMAL
-        /// </summary>
-        public static int NORMAL => Clazz.GetField<int>("NORMAL");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#ICONIFIED
         /// </summary>
         public static int ICONIFIED => Clazz.GetField<int>("ICONIFIED");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#MAXIMIZED_BOTH
+        /// </summary>
+        public static int MAXIMIZED_BOTH => Clazz.GetField<int>("MAXIMIZED_BOTH");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#MAXIMIZED_HORIZ
         /// </summary>
@@ -76,9 +76,9 @@ namespace Java.Awt
         /// </summary>
         public static int MAXIMIZED_VERT => Clazz.GetField<int>("MAXIMIZED_VERT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#MAXIMIZED_BOTH
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Frame.html#NORMAL
         /// </summary>
-        public static int MAXIMIZED_BOTH => Clazz.GetField<int>("MAXIMIZED_BOTH");
+        public static int NORMAL => Clazz.GetField<int>("NORMAL");
         
         #endregion
 

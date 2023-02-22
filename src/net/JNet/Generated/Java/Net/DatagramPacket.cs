@@ -30,17 +30,10 @@ namespace Java.Net
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramPacket.html#<init>(byte[],int,java.net.SocketAddress)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramPacket.html#<init>(byte[],int,int,java.net.InetAddress,int)
         /// </summary>
-        public DatagramPacket(byte[] arg0, int arg1, Java.Net.SocketAddress arg2)
-            : base(arg0, arg1, arg2)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramPacket.html#<init>(byte[],int,java.net.InetAddress,int)
-        /// </summary>
-        public DatagramPacket(byte[] arg0, int arg1, Java.Net.InetAddress arg2, int arg3)
-            : base(arg0, arg1, arg2, arg3)
+        public DatagramPacket(byte[] arg0, int arg1, int arg2, Java.Net.InetAddress arg3, int arg4)
+            : base(arg0, arg1, arg2, arg3, arg4)
         {
         }
         /// <summary>
@@ -58,17 +51,24 @@ namespace Java.Net
         {
         }
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramPacket.html#<init>(byte[],int,java.net.InetAddress,int)
+        /// </summary>
+        public DatagramPacket(byte[] arg0, int arg1, Java.Net.InetAddress arg2, int arg3)
+            : base(arg0, arg1, arg2, arg3)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramPacket.html#<init>(byte[],int,java.net.SocketAddress)
+        /// </summary>
+        public DatagramPacket(byte[] arg0, int arg1, Java.Net.SocketAddress arg2)
+            : base(arg0, arg1, arg2)
+        {
+        }
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramPacket.html#<init>(byte[],int)
         /// </summary>
         public DatagramPacket(byte[] arg0, int arg1)
             : base(arg0, arg1)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramPacket.html#<init>(byte[],int,int,java.net.InetAddress,int)
-        /// </summary>
-        public DatagramPacket(byte[] arg0, int arg1, int arg2, Java.Net.InetAddress arg3, int arg4)
-            : base(arg0, arg1, arg2, arg3, arg4)
         {
         }
         

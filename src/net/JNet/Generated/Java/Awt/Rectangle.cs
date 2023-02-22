@@ -51,6 +51,13 @@ namespace Java.Awt
         {
         }
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Rectangle.html#<init>(java.awt.Point,java.awt.Dimension)
+        /// </summary>
+        public Rectangle(Java.Awt.Point arg0, Java.Awt.Dimension arg1)
+            : base(arg0, arg1)
+        {
+        }
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Rectangle.html#<init>(java.awt.Point)
         /// </summary>
         public Rectangle(Java.Awt.Point arg0)
@@ -64,13 +71,6 @@ namespace Java.Awt
             : base(arg0)
         {
         }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Rectangle.html#<init>(java.awt.Point,java.awt.Dimension)
-        /// </summary>
-        public Rectangle(Java.Awt.Point arg0, Java.Awt.Dimension arg1)
-            : base(arg0, arg1)
-        {
-        }
         
         #endregion
 
@@ -82,6 +82,14 @@ namespace Java.Awt
 
         #region Fields
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Rectangle.html#height
+        /// </summary>
+        public int height => Instance.GetField<int>("height");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Rectangle.html#width
+        /// </summary>
+        public int width => Instance.GetField<int>("width");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Rectangle.html#x
         /// </summary>
         public int x => Instance.GetField<int>("x");
@@ -89,14 +97,6 @@ namespace Java.Awt
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Rectangle.html#y
         /// </summary>
         public int y => Instance.GetField<int>("y");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Rectangle.html#width
-        /// </summary>
-        public int width => Instance.GetField<int>("width");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Rectangle.html#height
-        /// </summary>
-        public int height => Instance.GetField<int>("height");
         
         #endregion
 

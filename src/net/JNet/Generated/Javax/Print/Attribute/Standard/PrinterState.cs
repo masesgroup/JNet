@@ -39,10 +39,6 @@ namespace Javax.Print.Attribute.Standard
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterState.html#UNKNOWN
-        /// </summary>
-        public static Javax.Print.Attribute.Standard.PrinterState UNKNOWN => Clazz.GetField<Javax.Print.Attribute.Standard.PrinterState>("UNKNOWN");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterState.html#IDLE
         /// </summary>
         public static Javax.Print.Attribute.Standard.PrinterState IDLE => Clazz.GetField<Javax.Print.Attribute.Standard.PrinterState>("IDLE");
@@ -54,6 +50,10 @@ namespace Javax.Print.Attribute.Standard
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterState.html#STOPPED
         /// </summary>
         public static Javax.Print.Attribute.Standard.PrinterState STOPPED => Clazz.GetField<Javax.Print.Attribute.Standard.PrinterState>("STOPPED");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/PrinterState.html#UNKNOWN
+        /// </summary>
+        public static Javax.Print.Attribute.Standard.PrinterState UNKNOWN => Clazz.GetField<Javax.Print.Attribute.Standard.PrinterState>("UNKNOWN");
         
         #endregion
 

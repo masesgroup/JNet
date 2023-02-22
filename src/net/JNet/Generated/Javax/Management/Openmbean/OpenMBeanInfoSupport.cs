@@ -30,17 +30,17 @@ namespace Javax.Management.Openmbean
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanInfoSupport.html#<init>(java.lang.String,java.lang.String,javax.management.openmbean.OpenMBeanAttributeInfo[],javax.management.openmbean.OpenMBeanConstructorInfo[],javax.management.openmbean.OpenMBeanOperationInfo[],javax.management.MBeanNotificationInfo[])
-        /// </summary>
-        public OpenMBeanInfoSupport(string arg0, string arg1, Javax.Management.Openmbean.OpenMBeanAttributeInfo[] arg2, Javax.Management.Openmbean.OpenMBeanConstructorInfo[] arg3, Javax.Management.Openmbean.OpenMBeanOperationInfo[] arg4, Javax.Management.MBeanNotificationInfo[] arg5)
-            : base(arg0, arg1, arg2, arg3, arg4, arg5)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanInfoSupport.html#<init>(java.lang.String,java.lang.String,javax.management.openmbean.OpenMBeanAttributeInfo[],javax.management.openmbean.OpenMBeanConstructorInfo[],javax.management.openmbean.OpenMBeanOperationInfo[],javax.management.MBeanNotificationInfo[],javax.management.Descriptor)
         /// </summary>
         public OpenMBeanInfoSupport(string arg0, string arg1, Javax.Management.Openmbean.OpenMBeanAttributeInfo[] arg2, Javax.Management.Openmbean.OpenMBeanConstructorInfo[] arg3, Javax.Management.Openmbean.OpenMBeanOperationInfo[] arg4, Javax.Management.MBeanNotificationInfo[] arg5, Javax.Management.Descriptor arg6)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanInfoSupport.html#<init>(java.lang.String,java.lang.String,javax.management.openmbean.OpenMBeanAttributeInfo[],javax.management.openmbean.OpenMBeanConstructorInfo[],javax.management.openmbean.OpenMBeanOperationInfo[],javax.management.MBeanNotificationInfo[])
+        /// </summary>
+        public OpenMBeanInfoSupport(string arg0, string arg1, Javax.Management.Openmbean.OpenMBeanAttributeInfo[] arg2, Javax.Management.Openmbean.OpenMBeanConstructorInfo[] arg3, Javax.Management.Openmbean.OpenMBeanOperationInfo[] arg4, Javax.Management.MBeanNotificationInfo[] arg5)
+            : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
         }
         

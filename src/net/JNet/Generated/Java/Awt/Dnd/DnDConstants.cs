@@ -38,17 +38,9 @@ namespace Java.Awt.Dnd
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DnDConstants.html#ACTION_NONE
-        /// </summary>
-        public static int ACTION_NONE => Clazz.GetField<int>("ACTION_NONE");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DnDConstants.html#ACTION_COPY
         /// </summary>
         public static int ACTION_COPY => Clazz.GetField<int>("ACTION_COPY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DnDConstants.html#ACTION_MOVE
-        /// </summary>
-        public static int ACTION_MOVE => Clazz.GetField<int>("ACTION_MOVE");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DnDConstants.html#ACTION_COPY_OR_MOVE
         /// </summary>
@@ -57,6 +49,14 @@ namespace Java.Awt.Dnd
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DnDConstants.html#ACTION_LINK
         /// </summary>
         public static int ACTION_LINK => Clazz.GetField<int>("ACTION_LINK");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DnDConstants.html#ACTION_MOVE
+        /// </summary>
+        public static int ACTION_MOVE => Clazz.GetField<int>("ACTION_MOVE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DnDConstants.html#ACTION_NONE
+        /// </summary>
+        public static int ACTION_NONE => Clazz.GetField<int>("ACTION_NONE");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DnDConstants.html#ACTION_REFERENCE
         /// </summary>

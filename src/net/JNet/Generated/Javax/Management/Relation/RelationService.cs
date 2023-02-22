@@ -65,30 +65,30 @@ namespace Javax.Management.Relation
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationService.html#hasRelation(java.lang.String) throws java.lang.IllegalArgumentException
         /// </summary>
-        public bool HasRelation(string arg0)
+        public bool? HasRelation(string arg0)
         {
-            return IExecute<bool>("hasRelation", arg0);
+            return IExecute<bool?>("hasRelation", arg0);
         }
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationService.html#checkRoleReading(java.lang.String,java.lang.String) throws java.lang.IllegalArgumentException,javax.management.relation.RelationTypeNotFoundException
         /// </summary>
-        public int CheckRoleReading(string arg0, string arg1)
+        public int? CheckRoleReading(string arg0, string arg1)
         {
-            return IExecute<int>("checkRoleReading", arg0, arg1);
+            return IExecute<int?>("checkRoleReading", arg0, arg1);
         }
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationService.html#checkRoleWriting(javax.management.relation.Role,java.lang.String,java.lang.Boolean) throws java.lang.IllegalArgumentException,javax.management.relation.RelationTypeNotFoundException
         /// </summary>
-        public int CheckRoleWriting(Javax.Management.Relation.Role arg0, string arg1, bool arg2)
+        public int? CheckRoleWriting(Javax.Management.Relation.Role arg0, string arg1, bool? arg2)
         {
-            return IExecute<int>("checkRoleWriting", arg0, arg1, arg2);
+            return IExecute<int?>("checkRoleWriting", arg0, arg1, arg2);
         }
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationService.html#getRoleCardinality(java.lang.String,java.lang.String) throws java.lang.IllegalArgumentException,javax.management.relation.RelationNotFoundException,javax.management.relation.RoleNotFoundException
         /// </summary>
-        public int GetRoleCardinality(string arg0, string arg1)
+        public int? GetRoleCardinality(string arg0, string arg1)
         {
-            return IExecute<int>("getRoleCardinality", arg0, arg1);
+            return IExecute<int?>("getRoleCardinality", arg0, arg1);
         }
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationService.html#getRelationTypeName(java.lang.String) throws java.lang.IllegalArgumentException,javax.management.relation.RelationNotFoundException
@@ -184,7 +184,7 @@ namespace Javax.Management.Relation
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationService.html#postRegister(java.lang.Boolean)
         /// </summary>
-        public void PostRegister(bool arg0)
+        public void PostRegister(bool? arg0)
         {
             IExecute("postRegister", arg0);
         }

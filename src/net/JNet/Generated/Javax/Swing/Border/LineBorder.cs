@@ -37,17 +37,17 @@ namespace Javax.Swing.Border
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/LineBorder.html#<init>(java.awt.Color)
-        /// </summary>
-        public LineBorder(Java.Awt.Color arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/LineBorder.html#<init>(java.awt.Color,int)
         /// </summary>
         public LineBorder(Java.Awt.Color arg0, int arg1)
             : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/LineBorder.html#<init>(java.awt.Color)
+        /// </summary>
+        public LineBorder(Java.Awt.Color arg0)
+            : base(arg0)
         {
         }
         

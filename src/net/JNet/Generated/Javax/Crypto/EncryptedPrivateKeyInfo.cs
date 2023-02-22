@@ -30,10 +30,10 @@ namespace Javax.Crypto
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/EncryptedPrivateKeyInfo.html#<init>(java.security.AlgorithmParameters,byte[]) throws java.security.NoSuchAlgorithmException
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/EncryptedPrivateKeyInfo.html#<init>(byte[]) throws java.io.IOException
         /// </summary>
-        public EncryptedPrivateKeyInfo(Java.Security.AlgorithmParameters arg0, byte[] arg1)
-            : base(arg0, arg1)
+        public EncryptedPrivateKeyInfo(byte[] arg0)
+            : base(arg0)
         {
         }
         /// <summary>
@@ -44,10 +44,10 @@ namespace Javax.Crypto
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/EncryptedPrivateKeyInfo.html#<init>(byte[]) throws java.io.IOException
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/EncryptedPrivateKeyInfo.html#<init>(java.security.AlgorithmParameters,byte[]) throws java.security.NoSuchAlgorithmException
         /// </summary>
-        public EncryptedPrivateKeyInfo(byte[] arg0)
-            : base(arg0)
+        public EncryptedPrivateKeyInfo(Java.Security.AlgorithmParameters arg0, byte[] arg1)
+            : base(arg0, arg1)
         {
         }
         

@@ -38,13 +38,13 @@ namespace Javax.Accessibility
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleExtendedText.html#LINE
-        /// </summary>
-        public static int LINE => Clazz.GetField<int>("LINE");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleExtendedText.html#ATTRIBUTE_RUN
         /// </summary>
         public static int ATTRIBUTE_RUN => Clazz.GetField<int>("ATTRIBUTE_RUN");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleExtendedText.html#LINE
+        /// </summary>
+        public static int LINE => Clazz.GetField<int>("LINE");
         
         #endregion
 

@@ -30,6 +30,13 @@ namespace Javax.Naming.Directory
     {
         #region Constructors
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttributes.html#<init>(boolean)
+        /// </summary>
+        public BasicAttributes(bool arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttributes.html#<init>(java.lang.String,java.lang.Object,boolean)
         /// </summary>
         public BasicAttributes(string arg0, object arg1, bool arg2)
@@ -41,13 +48,6 @@ namespace Javax.Naming.Directory
         /// </summary>
         public BasicAttributes(string arg0, object arg1)
             : base(arg0, arg1)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttributes.html#<init>(boolean)
-        /// </summary>
-        public BasicAttributes(bool arg0)
-            : base(arg0)
         {
         }
         

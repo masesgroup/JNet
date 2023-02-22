@@ -181,17 +181,17 @@ namespace Java.Lang
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.Redirect.html#PIPE
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.Redirect.html#DISCARD
             /// </summary>
-            public static Java.Lang.ProcessBuilder.Redirect PIPE => Clazz.GetField<Java.Lang.ProcessBuilder.Redirect>("PIPE");
+            public static Java.Lang.ProcessBuilder.Redirect DISCARD => Clazz.GetField<Java.Lang.ProcessBuilder.Redirect>("DISCARD");
             /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.Redirect.html#INHERIT
             /// </summary>
             public static Java.Lang.ProcessBuilder.Redirect INHERIT => Clazz.GetField<Java.Lang.ProcessBuilder.Redirect>("INHERIT");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.Redirect.html#DISCARD
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.Redirect.html#PIPE
             /// </summary>
-            public static Java.Lang.ProcessBuilder.Redirect DISCARD => Clazz.GetField<Java.Lang.ProcessBuilder.Redirect>("DISCARD");
+            public static Java.Lang.ProcessBuilder.Redirect PIPE => Clazz.GetField<Java.Lang.ProcessBuilder.Redirect>("PIPE");
             
             #endregion
 

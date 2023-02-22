@@ -30,17 +30,17 @@ namespace Javax.Crypto.Spec
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/GCMParameterSpec.html#<init>(int,byte[])
-        /// </summary>
-        public GCMParameterSpec(int arg0, byte[] arg1)
-            : base(arg0, arg1)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/GCMParameterSpec.html#<init>(int,byte[],int,int)
         /// </summary>
         public GCMParameterSpec(int arg0, byte[] arg1, int arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/GCMParameterSpec.html#<init>(int,byte[])
+        /// </summary>
+        public GCMParameterSpec(int arg0, byte[] arg1)
+            : base(arg0, arg1)
         {
         }
         

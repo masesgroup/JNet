@@ -49,6 +49,47 @@ namespace Java.Util
         #endregion
 
         #region Nested classes
+        #region AbstractIntSpliterator
+        public partial class AbstractIntSpliterator
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.AbstractIntSpliterator.html#characteristics()
+            /// </summary>
+            public int Characteristics()
+            {
+                return IExecute<int>("characteristics");
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.AbstractIntSpliterator.html#estimateSize()
+            /// </summary>
+            public long EstimateSize()
+            {
+                return IExecute<long>("estimateSize");
+            }
+            
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region AbstractLongSpliterator
         public partial class AbstractLongSpliterator
         {
@@ -160,47 +201,6 @@ namespace Java.Util
             }
             /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.AbstractDoubleSpliterator.html#estimateSize()
-            /// </summary>
-            public long EstimateSize()
-            {
-                return IExecute<long>("estimateSize");
-            }
-            
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region AbstractIntSpliterator
-        public partial class AbstractIntSpliterator
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.AbstractIntSpliterator.html#characteristics()
-            /// </summary>
-            public int Characteristics()
-            {
-                return IExecute<int>("characteristics");
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.AbstractIntSpliterator.html#estimateSize()
             /// </summary>
             public long EstimateSize()
             {

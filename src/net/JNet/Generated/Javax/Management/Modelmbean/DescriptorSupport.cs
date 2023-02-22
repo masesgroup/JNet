@@ -30,6 +30,13 @@ namespace Javax.Management.Modelmbean
     {
         #region Constructors
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/DescriptorSupport.html#<init>(int) throws javax.management.MBeanException,javax.management.RuntimeOperationsException
+        /// </summary>
+        public DescriptorSupport(int arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/DescriptorSupport.html#<init>(java.lang.String...)
         /// </summary>
         public DescriptorSupport(params string[] arg0)
@@ -40,13 +47,6 @@ namespace Javax.Management.Modelmbean
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/DescriptorSupport.html#<init>(java.lang.String) throws javax.management.MBeanException,javax.management.RuntimeOperationsException,javax.management.modelmbean.XMLParseException
         /// </summary>
         public DescriptorSupport(string arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/DescriptorSupport.html#<init>(int) throws javax.management.MBeanException,javax.management.RuntimeOperationsException
-        /// </summary>
-        public DescriptorSupport(int arg0)
             : base(arg0)
         {
         }

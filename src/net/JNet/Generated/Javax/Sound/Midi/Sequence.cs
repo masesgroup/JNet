@@ -30,17 +30,17 @@ namespace Javax.Sound.Midi
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequence.html#<init>(float,int) throws javax.sound.midi.InvalidMidiDataException
-        /// </summary>
-        public Sequence(float arg0, int arg1)
-            : base(arg0, arg1)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequence.html#<init>(float,int,int) throws javax.sound.midi.InvalidMidiDataException
         /// </summary>
         public Sequence(float arg0, int arg1, int arg2)
             : base(arg0, arg1, arg2)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequence.html#<init>(float,int) throws javax.sound.midi.InvalidMidiDataException
+        /// </summary>
+        public Sequence(float arg0, int arg1)
+            : base(arg0, arg1)
         {
         }
         
@@ -64,13 +64,13 @@ namespace Javax.Sound.Midi
         /// </summary>
         public static float SMPTE_25 => Clazz.GetField<float>("SMPTE_25");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequence.html#SMPTE_30DROP
-        /// </summary>
-        public static float SMPTE_30DROP => Clazz.GetField<float>("SMPTE_30DROP");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequence.html#SMPTE_30
         /// </summary>
         public static float SMPTE_30 => Clazz.GetField<float>("SMPTE_30");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequence.html#SMPTE_30DROP
+        /// </summary>
+        public static float SMPTE_30DROP => Clazz.GetField<float>("SMPTE_30DROP");
         
         #endregion
 

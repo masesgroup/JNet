@@ -76,6 +76,10 @@ namespace Java.Security
 
             #region Fields
             /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Capability.html#NONE
+            /// </summary>
+            public static Java.Security.DrbgParameters.Capability NONE => Clazz.GetField<Java.Security.DrbgParameters.Capability>("NONE");
+            /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Capability.html#PR_AND_RESEED
             /// </summary>
             public static Java.Security.DrbgParameters.Capability PR_AND_RESEED => Clazz.GetField<Java.Security.DrbgParameters.Capability>("PR_AND_RESEED");
@@ -83,10 +87,6 @@ namespace Java.Security
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Capability.html#RESEED_ONLY
             /// </summary>
             public static Java.Security.DrbgParameters.Capability RESEED_ONLY => Clazz.GetField<Java.Security.DrbgParameters.Capability>("RESEED_ONLY");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Capability.html#NONE
-            /// </summary>
-            public static Java.Security.DrbgParameters.Capability NONE => Clazz.GetField<Java.Security.DrbgParameters.Capability>("NONE");
             
             #endregion
 
@@ -165,6 +165,48 @@ namespace Java.Security
         }
         #endregion
 
+        #region Reseed
+        public partial class Reseed
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+            public static implicit operator Java.Security.SecureRandomParameters(Java.Security.DrbgParameters.Reseed t) => t.Cast<Java.Security.SecureRandomParameters>();
+            
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Reseed.html#getAdditionalInput() 
+            /// </summary>
+            public byte[] AdditionalInput
+            {
+                get { return IExecuteArray<byte>("getAdditionalInput"); }
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Reseed.html#getPredictionResistance() 
+            /// </summary>
+            public bool PredictionResistance
+            {
+                get { return IExecute<bool>("getPredictionResistance"); }
+            }
+            
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region NextBytes
         public partial class NextBytes
         {
@@ -206,48 +248,6 @@ namespace Java.Security
             public int Strength
             {
                 get { return IExecute<int>("getStrength"); }
-            }
-            
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region Reseed
-        public partial class Reseed
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-            public static implicit operator Java.Security.SecureRandomParameters(Java.Security.DrbgParameters.Reseed t) => t.Cast<Java.Security.SecureRandomParameters>();
-            
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Reseed.html#getAdditionalInput() 
-            /// </summary>
-            public byte[] AdditionalInput
-            {
-                get { return IExecuteArray<byte>("getAdditionalInput"); }
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Reseed.html#getPredictionResistance() 
-            /// </summary>
-            public bool PredictionResistance
-            {
-                get { return IExecute<bool>("getPredictionResistance"); }
             }
             
             #endregion

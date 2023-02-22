@@ -30,17 +30,17 @@ namespace Java.Awt.FontNs
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphMetrics.html#<init>(float,java.awt.geom.Rectangle2D,byte)
-        /// </summary>
-        public GlyphMetrics(float arg0, Java.Awt.Geom.Rectangle2D arg1, byte arg2)
-            : base(arg0, arg1, arg2)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphMetrics.html#<init>(boolean,float,float,java.awt.geom.Rectangle2D,byte)
         /// </summary>
         public GlyphMetrics(bool arg0, float arg1, float arg2, Java.Awt.Geom.Rectangle2D arg3, byte arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphMetrics.html#<init>(float,java.awt.geom.Rectangle2D,byte)
+        /// </summary>
+        public GlyphMetrics(float arg0, Java.Awt.Geom.Rectangle2D arg1, byte arg2)
+            : base(arg0, arg1, arg2)
         {
         }
         
@@ -52,14 +52,6 @@ namespace Java.Awt.FontNs
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphMetrics.html#STANDARD
-        /// </summary>
-        public static byte STANDARD => Clazz.GetField<byte>("STANDARD");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphMetrics.html#LIGATURE
-        /// </summary>
-        public static byte LIGATURE => Clazz.GetField<byte>("LIGATURE");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphMetrics.html#COMBINING
         /// </summary>
         public static byte COMBINING => Clazz.GetField<byte>("COMBINING");
@@ -67,6 +59,14 @@ namespace Java.Awt.FontNs
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphMetrics.html#COMPONENT
         /// </summary>
         public static byte COMPONENT => Clazz.GetField<byte>("COMPONENT");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphMetrics.html#LIGATURE
+        /// </summary>
+        public static byte LIGATURE => Clazz.GetField<byte>("LIGATURE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphMetrics.html#STANDARD
+        /// </summary>
+        public static byte STANDARD => Clazz.GetField<byte>("STANDARD");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphMetrics.html#WHITESPACE
         /// </summary>

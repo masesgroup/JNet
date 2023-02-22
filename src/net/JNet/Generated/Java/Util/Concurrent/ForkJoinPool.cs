@@ -179,40 +179,6 @@ namespace Java.Util.Concurrent
         #endregion
 
         #region Nested classes
-        #region ForkJoinWorkerThreadFactory
-        public partial class ForkJoinWorkerThreadFactory
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinPool.ForkJoinWorkerThreadFactory.html#newThread(java.util.concurrent.ForkJoinPool)
-            /// </summary>
-            public Java.Util.Concurrent.ForkJoinWorkerThread NewThread(Java.Util.Concurrent.ForkJoinPool arg0)
-            {
-                return IExecute<Java.Util.Concurrent.ForkJoinWorkerThread>("newThread", arg0);
-            }
-            
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region ManagedBlocker
         public partial class ManagedBlocker
         {
@@ -246,6 +212,40 @@ namespace Java.Util.Concurrent
             public bool IsReleasable()
             {
                 return IExecute<bool>("isReleasable");
+            }
+            
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region ForkJoinWorkerThreadFactory
+        public partial class ForkJoinWorkerThreadFactory
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinPool.ForkJoinWorkerThreadFactory.html#newThread(java.util.concurrent.ForkJoinPool)
+            /// </summary>
+            public Java.Util.Concurrent.ForkJoinWorkerThread NewThread(Java.Util.Concurrent.ForkJoinPool arg0)
+            {
+                return IExecute<Java.Util.Concurrent.ForkJoinWorkerThread>("newThread", arg0);
             }
             
             #endregion

@@ -45,10 +45,6 @@ namespace Javax.Management.Remote
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectionNotification.html#OPENED
-        /// </summary>
-        public static string OPENED => Clazz.GetField<string>("OPENED");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectionNotification.html#CLOSED
         /// </summary>
         public static string CLOSED => Clazz.GetField<string>("CLOSED");
@@ -60,6 +56,10 @@ namespace Javax.Management.Remote
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectionNotification.html#NOTIFS_LOST
         /// </summary>
         public static string NOTIFS_LOST => Clazz.GetField<string>("NOTIFS_LOST");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectionNotification.html#OPENED
+        /// </summary>
+        public static string OPENED => Clazz.GetField<string>("OPENED");
         
         #endregion
 

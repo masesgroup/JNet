@@ -30,17 +30,10 @@ namespace Java.Beans.Beancontext
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#<init>(java.beans.beancontext.BeanContext)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#<init>(java.beans.beancontext.BeanContext,java.util.Locale,boolean,boolean)
         /// </summary>
-        public BeanContextSupport(Java.Beans.Beancontext.BeanContext arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#<init>(java.beans.beancontext.BeanContext,java.util.Locale)
-        /// </summary>
-        public BeanContextSupport(Java.Beans.Beancontext.BeanContext arg0, Java.Util.Locale arg1)
-            : base(arg0, arg1)
+        public BeanContextSupport(Java.Beans.Beancontext.BeanContext arg0, Java.Util.Locale arg1, bool arg2, bool arg3)
+            : base(arg0, arg1, arg2, arg3)
         {
         }
         /// <summary>
@@ -51,10 +44,17 @@ namespace Java.Beans.Beancontext
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#<init>(java.beans.beancontext.BeanContext,java.util.Locale,boolean,boolean)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#<init>(java.beans.beancontext.BeanContext,java.util.Locale)
         /// </summary>
-        public BeanContextSupport(Java.Beans.Beancontext.BeanContext arg0, Java.Util.Locale arg1, bool arg2, bool arg3)
-            : base(arg0, arg1, arg2, arg3)
+        public BeanContextSupport(Java.Beans.Beancontext.BeanContext arg0, Java.Util.Locale arg1)
+            : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextSupport.html#<init>(java.beans.beancontext.BeanContext)
+        /// </summary>
+        public BeanContextSupport(Java.Beans.Beancontext.BeanContext arg0)
+            : base(arg0)
         {
         }
         

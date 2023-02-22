@@ -30,20 +30,6 @@ namespace Javax.Swing
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JCheckBoxMenuItem.html#<init>(javax.swing.Action)
-        /// </summary>
-        public JCheckBoxMenuItem(Javax.Swing.Action arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JCheckBoxMenuItem.html#<init>(java.lang.String,javax.swing.Icon)
-        /// </summary>
-        public JCheckBoxMenuItem(string arg0, Javax.Swing.Icon arg1)
-            : base(arg0, arg1)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JCheckBoxMenuItem.html#<init>(java.lang.String,boolean)
         /// </summary>
         public JCheckBoxMenuItem(string arg0, bool arg1)
@@ -58,16 +44,30 @@ namespace Javax.Swing
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JCheckBoxMenuItem.html#<init>(javax.swing.Icon)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JCheckBoxMenuItem.html#<init>(java.lang.String,javax.swing.Icon)
         /// </summary>
-        public JCheckBoxMenuItem(Javax.Swing.Icon arg0)
-            : base(arg0)
+        public JCheckBoxMenuItem(string arg0, Javax.Swing.Icon arg1)
+            : base(arg0, arg1)
         {
         }
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JCheckBoxMenuItem.html#<init>(java.lang.String)
         /// </summary>
         public JCheckBoxMenuItem(string arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JCheckBoxMenuItem.html#<init>(javax.swing.Action)
+        /// </summary>
+        public JCheckBoxMenuItem(Javax.Swing.Action arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JCheckBoxMenuItem.html#<init>(javax.swing.Icon)
+        /// </summary>
+        public JCheckBoxMenuItem(Javax.Swing.Icon arg0)
             : base(arg0)
         {
         }

@@ -39,17 +39,25 @@ namespace Org.W3c.Dom.Css
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_UNKNOWN
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_ATTR
         /// </summary>
-        public static short CSS_UNKNOWN => Clazz.GetField<short>("CSS_UNKNOWN");
+        public static short CSS_ATTR => Clazz.GetField<short>("CSS_ATTR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_NUMBER
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_CM
         /// </summary>
-        public static short CSS_NUMBER => Clazz.GetField<short>("CSS_NUMBER");
+        public static short CSS_CM => Clazz.GetField<short>("CSS_CM");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_PERCENTAGE
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_COUNTER
         /// </summary>
-        public static short CSS_PERCENTAGE => Clazz.GetField<short>("CSS_PERCENTAGE");
+        public static short CSS_COUNTER => Clazz.GetField<short>("CSS_COUNTER");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_DEG
+        /// </summary>
+        public static short CSS_DEG => Clazz.GetField<short>("CSS_DEG");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_DIMENSION
+        /// </summary>
+        public static short CSS_DIMENSION => Clazz.GetField<short>("CSS_DIMENSION");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_EMS
         /// </summary>
@@ -59,81 +67,57 @@ namespace Org.W3c.Dom.Css
         /// </summary>
         public static short CSS_EXS => Clazz.GetField<short>("CSS_EXS");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_PX
-        /// </summary>
-        public static short CSS_PX => Clazz.GetField<short>("CSS_PX");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_CM
-        /// </summary>
-        public static short CSS_CM => Clazz.GetField<short>("CSS_CM");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_MM
-        /// </summary>
-        public static short CSS_MM => Clazz.GetField<short>("CSS_MM");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_IN
-        /// </summary>
-        public static short CSS_IN => Clazz.GetField<short>("CSS_IN");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_PT
-        /// </summary>
-        public static short CSS_PT => Clazz.GetField<short>("CSS_PT");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_PC
-        /// </summary>
-        public static short CSS_PC => Clazz.GetField<short>("CSS_PC");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_DEG
-        /// </summary>
-        public static short CSS_DEG => Clazz.GetField<short>("CSS_DEG");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_RAD
-        /// </summary>
-        public static short CSS_RAD => Clazz.GetField<short>("CSS_RAD");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_GRAD
         /// </summary>
         public static short CSS_GRAD => Clazz.GetField<short>("CSS_GRAD");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_MS
-        /// </summary>
-        public static short CSS_MS => Clazz.GetField<short>("CSS_MS");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_S
-        /// </summary>
-        public static short CSS_S => Clazz.GetField<short>("CSS_S");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_HZ
         /// </summary>
         public static short CSS_HZ => Clazz.GetField<short>("CSS_HZ");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_KHZ
-        /// </summary>
-        public static short CSS_KHZ => Clazz.GetField<short>("CSS_KHZ");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_DIMENSION
-        /// </summary>
-        public static short CSS_DIMENSION => Clazz.GetField<short>("CSS_DIMENSION");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_STRING
-        /// </summary>
-        public static short CSS_STRING => Clazz.GetField<short>("CSS_STRING");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_URI
-        /// </summary>
-        public static short CSS_URI => Clazz.GetField<short>("CSS_URI");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_IDENT
         /// </summary>
         public static short CSS_IDENT => Clazz.GetField<short>("CSS_IDENT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_ATTR
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_IN
         /// </summary>
-        public static short CSS_ATTR => Clazz.GetField<short>("CSS_ATTR");
+        public static short CSS_IN => Clazz.GetField<short>("CSS_IN");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_COUNTER
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_KHZ
         /// </summary>
-        public static short CSS_COUNTER => Clazz.GetField<short>("CSS_COUNTER");
+        public static short CSS_KHZ => Clazz.GetField<short>("CSS_KHZ");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_MM
+        /// </summary>
+        public static short CSS_MM => Clazz.GetField<short>("CSS_MM");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_MS
+        /// </summary>
+        public static short CSS_MS => Clazz.GetField<short>("CSS_MS");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_NUMBER
+        /// </summary>
+        public static short CSS_NUMBER => Clazz.GetField<short>("CSS_NUMBER");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_PC
+        /// </summary>
+        public static short CSS_PC => Clazz.GetField<short>("CSS_PC");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_PERCENTAGE
+        /// </summary>
+        public static short CSS_PERCENTAGE => Clazz.GetField<short>("CSS_PERCENTAGE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_PT
+        /// </summary>
+        public static short CSS_PT => Clazz.GetField<short>("CSS_PT");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_PX
+        /// </summary>
+        public static short CSS_PX => Clazz.GetField<short>("CSS_PX");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_RAD
+        /// </summary>
+        public static short CSS_RAD => Clazz.GetField<short>("CSS_RAD");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_RECT
         /// </summary>
@@ -142,6 +126,22 @@ namespace Org.W3c.Dom.Css
         /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_RGBCOLOR
         /// </summary>
         public static short CSS_RGBCOLOR => Clazz.GetField<short>("CSS_RGBCOLOR");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_S
+        /// </summary>
+        public static short CSS_S => Clazz.GetField<short>("CSS_S");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_STRING
+        /// </summary>
+        public static short CSS_STRING => Clazz.GetField<short>("CSS_STRING");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_UNKNOWN
+        /// </summary>
+        public static short CSS_UNKNOWN => Clazz.GetField<short>("CSS_UNKNOWN");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#CSS_URI
+        /// </summary>
+        public static short CSS_URI => Clazz.GetField<short>("CSS_URI");
         
         #endregion
 

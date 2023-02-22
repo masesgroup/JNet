@@ -38,17 +38,9 @@ namespace Java.Nio.File.Attribute
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFilePermission.html#OWNER_READ
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFilePermission.html#GROUP_EXECUTE
         /// </summary>
-        public static Java.Nio.File.Attribute.PosixFilePermission OWNER_READ => Clazz.GetField<Java.Nio.File.Attribute.PosixFilePermission>("OWNER_READ");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFilePermission.html#OWNER_WRITE
-        /// </summary>
-        public static Java.Nio.File.Attribute.PosixFilePermission OWNER_WRITE => Clazz.GetField<Java.Nio.File.Attribute.PosixFilePermission>("OWNER_WRITE");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFilePermission.html#OWNER_EXECUTE
-        /// </summary>
-        public static Java.Nio.File.Attribute.PosixFilePermission OWNER_EXECUTE => Clazz.GetField<Java.Nio.File.Attribute.PosixFilePermission>("OWNER_EXECUTE");
+        public static Java.Nio.File.Attribute.PosixFilePermission GROUP_EXECUTE => Clazz.GetField<Java.Nio.File.Attribute.PosixFilePermission>("GROUP_EXECUTE");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFilePermission.html#GROUP_READ
         /// </summary>
@@ -58,9 +50,9 @@ namespace Java.Nio.File.Attribute
         /// </summary>
         public static Java.Nio.File.Attribute.PosixFilePermission GROUP_WRITE => Clazz.GetField<Java.Nio.File.Attribute.PosixFilePermission>("GROUP_WRITE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFilePermission.html#GROUP_EXECUTE
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFilePermission.html#OTHERS_EXECUTE
         /// </summary>
-        public static Java.Nio.File.Attribute.PosixFilePermission GROUP_EXECUTE => Clazz.GetField<Java.Nio.File.Attribute.PosixFilePermission>("GROUP_EXECUTE");
+        public static Java.Nio.File.Attribute.PosixFilePermission OTHERS_EXECUTE => Clazz.GetField<Java.Nio.File.Attribute.PosixFilePermission>("OTHERS_EXECUTE");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFilePermission.html#OTHERS_READ
         /// </summary>
@@ -70,9 +62,17 @@ namespace Java.Nio.File.Attribute
         /// </summary>
         public static Java.Nio.File.Attribute.PosixFilePermission OTHERS_WRITE => Clazz.GetField<Java.Nio.File.Attribute.PosixFilePermission>("OTHERS_WRITE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFilePermission.html#OTHERS_EXECUTE
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFilePermission.html#OWNER_EXECUTE
         /// </summary>
-        public static Java.Nio.File.Attribute.PosixFilePermission OTHERS_EXECUTE => Clazz.GetField<Java.Nio.File.Attribute.PosixFilePermission>("OTHERS_EXECUTE");
+        public static Java.Nio.File.Attribute.PosixFilePermission OWNER_EXECUTE => Clazz.GetField<Java.Nio.File.Attribute.PosixFilePermission>("OWNER_EXECUTE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFilePermission.html#OWNER_READ
+        /// </summary>
+        public static Java.Nio.File.Attribute.PosixFilePermission OWNER_READ => Clazz.GetField<Java.Nio.File.Attribute.PosixFilePermission>("OWNER_READ");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFilePermission.html#OWNER_WRITE
+        /// </summary>
+        public static Java.Nio.File.Attribute.PosixFilePermission OWNER_WRITE => Clazz.GetField<Java.Nio.File.Attribute.PosixFilePermission>("OWNER_WRITE");
         
         #endregion
 

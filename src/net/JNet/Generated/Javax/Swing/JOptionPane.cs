@@ -30,6 +30,13 @@ namespace Javax.Swing
     {
         #region Constructors
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#<init>(java.lang.Object,int,int,javax.swing.Icon)
+        /// </summary>
+        public JOptionPane(object arg0, int arg1, int arg2, Javax.Swing.Icon arg3)
+            : base(arg0, arg1, arg2, arg3)
+        {
+        }
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#<init>(java.lang.Object,int,int)
         /// </summary>
         public JOptionPane(object arg0, int arg1, int arg2)
@@ -50,13 +57,6 @@ namespace Javax.Swing
             : base(arg0)
         {
         }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#<init>(java.lang.Object,int,int,javax.swing.Icon)
-        /// </summary>
-        public JOptionPane(object arg0, int arg1, int arg2, Javax.Swing.Icon arg3)
-            : base(arg0, arg1, arg2, arg3)
-        {
-        }
         
         #endregion
 
@@ -67,45 +67,17 @@ namespace Javax.Swing
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#UNINITIALIZED_VALUE
-        /// </summary>
-        public static object UNINITIALIZED_VALUE => Clazz.GetField("UNINITIALIZED_VALUE");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#DEFAULT_OPTION
-        /// </summary>
-        public static int DEFAULT_OPTION => Clazz.GetField<int>("DEFAULT_OPTION");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#YES_NO_OPTION
-        /// </summary>
-        public static int YES_NO_OPTION => Clazz.GetField<int>("YES_NO_OPTION");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#YES_NO_CANCEL_OPTION
-        /// </summary>
-        public static int YES_NO_CANCEL_OPTION => Clazz.GetField<int>("YES_NO_CANCEL_OPTION");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#OK_CANCEL_OPTION
-        /// </summary>
-        public static int OK_CANCEL_OPTION => Clazz.GetField<int>("OK_CANCEL_OPTION");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#YES_OPTION
-        /// </summary>
-        public static int YES_OPTION => Clazz.GetField<int>("YES_OPTION");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#NO_OPTION
-        /// </summary>
-        public static int NO_OPTION => Clazz.GetField<int>("NO_OPTION");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#CANCEL_OPTION
         /// </summary>
         public static int CANCEL_OPTION => Clazz.GetField<int>("CANCEL_OPTION");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#OK_OPTION
-        /// </summary>
-        public static int OK_OPTION => Clazz.GetField<int>("OK_OPTION");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#CLOSED_OPTION
         /// </summary>
         public static int CLOSED_OPTION => Clazz.GetField<int>("CLOSED_OPTION");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#DEFAULT_OPTION
+        /// </summary>
+        public static int DEFAULT_OPTION => Clazz.GetField<int>("DEFAULT_OPTION");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#ERROR_MESSAGE
         /// </summary>
@@ -115,37 +87,65 @@ namespace Javax.Swing
         /// </summary>
         public static int INFORMATION_MESSAGE => Clazz.GetField<int>("INFORMATION_MESSAGE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#WARNING_MESSAGE
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#NO_OPTION
         /// </summary>
-        public static int WARNING_MESSAGE => Clazz.GetField<int>("WARNING_MESSAGE");
+        public static int NO_OPTION => Clazz.GetField<int>("NO_OPTION");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#QUESTION_MESSAGE
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#OK_CANCEL_OPTION
         /// </summary>
-        public static int QUESTION_MESSAGE => Clazz.GetField<int>("QUESTION_MESSAGE");
+        public static int OK_CANCEL_OPTION => Clazz.GetField<int>("OK_CANCEL_OPTION");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#OK_OPTION
+        /// </summary>
+        public static int OK_OPTION => Clazz.GetField<int>("OK_OPTION");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#PLAIN_MESSAGE
         /// </summary>
         public static int PLAIN_MESSAGE => Clazz.GetField<int>("PLAIN_MESSAGE");
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#QUESTION_MESSAGE
+        /// </summary>
+        public static int QUESTION_MESSAGE => Clazz.GetField<int>("QUESTION_MESSAGE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#WARNING_MESSAGE
+        /// </summary>
+        public static int WARNING_MESSAGE => Clazz.GetField<int>("WARNING_MESSAGE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#YES_NO_CANCEL_OPTION
+        /// </summary>
+        public static int YES_NO_CANCEL_OPTION => Clazz.GetField<int>("YES_NO_CANCEL_OPTION");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#YES_NO_OPTION
+        /// </summary>
+        public static int YES_NO_OPTION => Clazz.GetField<int>("YES_NO_OPTION");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#YES_OPTION
+        /// </summary>
+        public static int YES_OPTION => Clazz.GetField<int>("YES_OPTION");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#UNINITIALIZED_VALUE
+        /// </summary>
+        public static object UNINITIALIZED_VALUE => Clazz.GetField("UNINITIALIZED_VALUE");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#ICON_PROPERTY
         /// </summary>
         public static string ICON_PROPERTY => Clazz.GetField<string>("ICON_PROPERTY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#MESSAGE_PROPERTY
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#INITIAL_SELECTION_VALUE_PROPERTY
         /// </summary>
-        public static string MESSAGE_PROPERTY => Clazz.GetField<string>("MESSAGE_PROPERTY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#VALUE_PROPERTY
-        /// </summary>
-        public static string VALUE_PROPERTY => Clazz.GetField<string>("VALUE_PROPERTY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#OPTIONS_PROPERTY
-        /// </summary>
-        public static string OPTIONS_PROPERTY => Clazz.GetField<string>("OPTIONS_PROPERTY");
+        public static string INITIAL_SELECTION_VALUE_PROPERTY => Clazz.GetField<string>("INITIAL_SELECTION_VALUE_PROPERTY");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#INITIAL_VALUE_PROPERTY
         /// </summary>
         public static string INITIAL_VALUE_PROPERTY => Clazz.GetField<string>("INITIAL_VALUE_PROPERTY");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#INPUT_VALUE_PROPERTY
+        /// </summary>
+        public static string INPUT_VALUE_PROPERTY => Clazz.GetField<string>("INPUT_VALUE_PROPERTY");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#MESSAGE_PROPERTY
+        /// </summary>
+        public static string MESSAGE_PROPERTY => Clazz.GetField<string>("MESSAGE_PROPERTY");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#MESSAGE_TYPE_PROPERTY
         /// </summary>
@@ -155,17 +155,17 @@ namespace Javax.Swing
         /// </summary>
         public static string OPTION_TYPE_PROPERTY => Clazz.GetField<string>("OPTION_TYPE_PROPERTY");
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#OPTIONS_PROPERTY
+        /// </summary>
+        public static string OPTIONS_PROPERTY => Clazz.GetField<string>("OPTIONS_PROPERTY");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#SELECTION_VALUES_PROPERTY
         /// </summary>
         public static string SELECTION_VALUES_PROPERTY => Clazz.GetField<string>("SELECTION_VALUES_PROPERTY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#INITIAL_SELECTION_VALUE_PROPERTY
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#VALUE_PROPERTY
         /// </summary>
-        public static string INITIAL_SELECTION_VALUE_PROPERTY => Clazz.GetField<string>("INITIAL_SELECTION_VALUE_PROPERTY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#INPUT_VALUE_PROPERTY
-        /// </summary>
-        public static string INPUT_VALUE_PROPERTY => Clazz.GetField<string>("INPUT_VALUE_PROPERTY");
+        public static string VALUE_PROPERTY => Clazz.GetField<string>("VALUE_PROPERTY");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JOptionPane.html#WANTS_INPUT_PROPERTY
         /// </summary>

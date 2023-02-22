@@ -37,17 +37,17 @@ namespace Javax.Swing
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollPane.html#<init>(java.awt.Component)
-        /// </summary>
-        public JScrollPane(Java.Awt.Component arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollPane.html#<init>(java.awt.Component,int,int)
         /// </summary>
         public JScrollPane(Java.Awt.Component arg0, int arg1, int arg2)
             : base(arg0, arg1, arg2)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollPane.html#<init>(java.awt.Component)
+        /// </summary>
+        public JScrollPane(Java.Awt.Component arg0)
+            : base(arg0)
         {
         }
         

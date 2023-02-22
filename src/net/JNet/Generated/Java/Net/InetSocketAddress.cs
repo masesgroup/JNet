@@ -30,13 +30,6 @@ namespace Java.Net
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html#<init>(java.net.InetAddress,int)
-        /// </summary>
-        public InetSocketAddress(Java.Net.InetAddress arg0, int arg1)
-            : base(arg0, arg1)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html#<init>(int)
         /// </summary>
         public InetSocketAddress(int arg0)
@@ -47,6 +40,13 @@ namespace Java.Net
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html#<init>(java.lang.String,int)
         /// </summary>
         public InetSocketAddress(string arg0, int arg1)
+            : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/InetSocketAddress.html#<init>(java.net.InetAddress,int)
+        /// </summary>
+        public InetSocketAddress(Java.Net.InetAddress arg0, int arg1)
             : base(arg0, arg1)
         {
         }

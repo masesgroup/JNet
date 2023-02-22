@@ -30,16 +30,16 @@ namespace Javax.Xml.Crypto.Dsig.Dom
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/dom/DOMValidateContext.html#<init>(javax.xml.crypto.KeySelector,org.w3c.dom.Node)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/dom/DOMValidateContext.html#<init>(java.security.Key,org.w3c.dom.Node)
         /// </summary>
-        public DOMValidateContext(Javax.Xml.Crypto.KeySelector arg0, Org.W3c.Dom.Node arg1)
+        public DOMValidateContext(Java.Security.Key arg0, Org.W3c.Dom.Node arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/dom/DOMValidateContext.html#<init>(java.security.Key,org.w3c.dom.Node)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/dom/DOMValidateContext.html#<init>(javax.xml.crypto.KeySelector,org.w3c.dom.Node)
         /// </summary>
-        public DOMValidateContext(Java.Security.Key arg0, Org.W3c.Dom.Node arg1)
+        public DOMValidateContext(Javax.Xml.Crypto.KeySelector arg0, Org.W3c.Dom.Node arg1)
             : base(arg0, arg1)
         {
         }

@@ -53,13 +53,13 @@ namespace Java.Awt
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Label.html#LEFT
-        /// </summary>
-        public static int LEFT => Clazz.GetField<int>("LEFT");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Label.html#CENTER
         /// </summary>
         public static int CENTER => Clazz.GetField<int>("CENTER");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Label.html#LEFT
+        /// </summary>
+        public static int LEFT => Clazz.GetField<int>("LEFT");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Label.html#RIGHT
         /// </summary>

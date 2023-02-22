@@ -30,17 +30,17 @@ namespace Javax.Crypto.Spec
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/PBEKeySpec.html#<init>(char[],byte[],int)
-        /// </summary>
-        public PBEKeySpec(char[] arg0, byte[] arg1, int arg2)
-            : base(arg0, arg1, arg2)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/PBEKeySpec.html#<init>(char[],byte[],int,int)
         /// </summary>
         public PBEKeySpec(char[] arg0, byte[] arg1, int arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/PBEKeySpec.html#<init>(char[],byte[],int)
+        /// </summary>
+        public PBEKeySpec(char[] arg0, byte[] arg1, int arg2)
+            : base(arg0, arg1, arg2)
         {
         }
         /// <summary>

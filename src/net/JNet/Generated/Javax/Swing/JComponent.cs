@@ -39,21 +39,21 @@ namespace Javax.Swing
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#WHEN_FOCUSED
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#UNDEFINED_CONDITION
         /// </summary>
-        public static int WHEN_FOCUSED => Clazz.GetField<int>("WHEN_FOCUSED");
+        public static int UNDEFINED_CONDITION => Clazz.GetField<int>("UNDEFINED_CONDITION");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#WHEN_ANCESTOR_OF_FOCUSED_COMPONENT
         /// </summary>
         public static int WHEN_ANCESTOR_OF_FOCUSED_COMPONENT => Clazz.GetField<int>("WHEN_ANCESTOR_OF_FOCUSED_COMPONENT");
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#WHEN_FOCUSED
+        /// </summary>
+        public static int WHEN_FOCUSED => Clazz.GetField<int>("WHEN_FOCUSED");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#WHEN_IN_FOCUSED_WINDOW
         /// </summary>
         public static int WHEN_IN_FOCUSED_WINDOW => Clazz.GetField<int>("WHEN_IN_FOCUSED_WINDOW");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#UNDEFINED_CONDITION
-        /// </summary>
-        public static int UNDEFINED_CONDITION => Clazz.GetField<int>("UNDEFINED_CONDITION");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComponent.html#TOOL_TIP_TEXT_KEY
         /// </summary>

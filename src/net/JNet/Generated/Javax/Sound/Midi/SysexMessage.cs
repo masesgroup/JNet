@@ -30,17 +30,17 @@ namespace Javax.Sound.Midi
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/SysexMessage.html#<init>(int,byte[],int) throws javax.sound.midi.InvalidMidiDataException
-        /// </summary>
-        public SysexMessage(int arg0, byte[] arg1, int arg2)
-            : base(arg0, arg1, arg2)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/SysexMessage.html#<init>(byte[],int) throws javax.sound.midi.InvalidMidiDataException
         /// </summary>
         public SysexMessage(byte[] arg0, int arg1)
             : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/SysexMessage.html#<init>(int,byte[],int) throws javax.sound.midi.InvalidMidiDataException
+        /// </summary>
+        public SysexMessage(int arg0, byte[] arg1, int arg2)
+            : base(arg0, arg1, arg2)
         {
         }
         
@@ -52,13 +52,13 @@ namespace Javax.Sound.Midi
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/SysexMessage.html#SYSTEM_EXCLUSIVE
-        /// </summary>
-        public static int SYSTEM_EXCLUSIVE => Clazz.GetField<int>("SYSTEM_EXCLUSIVE");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/SysexMessage.html#SPECIAL_SYSTEM_EXCLUSIVE
         /// </summary>
         public static int SPECIAL_SYSTEM_EXCLUSIVE => Clazz.GetField<int>("SPECIAL_SYSTEM_EXCLUSIVE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/SysexMessage.html#SYSTEM_EXCLUSIVE
+        /// </summary>
+        public static int SYSTEM_EXCLUSIVE => Clazz.GetField<int>("SYSTEM_EXCLUSIVE");
         
         #endregion
 

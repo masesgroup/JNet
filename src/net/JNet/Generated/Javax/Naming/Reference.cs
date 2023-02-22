@@ -30,17 +30,17 @@ namespace Javax.Naming
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Reference.html#<init>(java.lang.String,javax.naming.RefAddr,java.lang.String,java.lang.String)
-        /// </summary>
-        public Reference(string arg0, Javax.Naming.RefAddr arg1, string arg2, string arg3)
-            : base(arg0, arg1, arg2, arg3)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Reference.html#<init>(java.lang.String,java.lang.String,java.lang.String)
         /// </summary>
         public Reference(string arg0, string arg1, string arg2)
             : base(arg0, arg1, arg2)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Reference.html#<init>(java.lang.String,javax.naming.RefAddr,java.lang.String,java.lang.String)
+        /// </summary>
+        public Reference(string arg0, Javax.Naming.RefAddr arg1, string arg2, string arg3)
+            : base(arg0, arg1, arg2, arg3)
         {
         }
         /// <summary>

@@ -30,10 +30,10 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#<init>(java.lang.String)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#<init>(java.lang.String,java.lang.String,java.lang.String)
         /// </summary>
-        public Locale(string arg0)
-            : base(arg0)
+        public Locale(string arg0, string arg1, string arg2)
+            : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
@@ -44,10 +44,10 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#<init>(java.lang.String,java.lang.String,java.lang.String)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#<init>(java.lang.String)
         /// </summary>
-        public Locale(string arg0, string arg1, string arg2)
-            : base(arg0, arg1, arg2)
+        public Locale(string arg0)
+            : base(arg0)
         {
         }
         
@@ -61,81 +61,13 @@ namespace Java.Util
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#ENGLISH
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#PRIVATE_USE_EXTENSION
         /// </summary>
-        public static Java.Util.Locale ENGLISH => Clazz.GetField<Java.Util.Locale>("ENGLISH");
+        public static char PRIVATE_USE_EXTENSION => Clazz.GetField<char>("PRIVATE_USE_EXTENSION");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#FRENCH
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#UNICODE_LOCALE_EXTENSION
         /// </summary>
-        public static Java.Util.Locale FRENCH => Clazz.GetField<Java.Util.Locale>("FRENCH");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#GERMAN
-        /// </summary>
-        public static Java.Util.Locale GERMAN => Clazz.GetField<Java.Util.Locale>("GERMAN");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#ITALIAN
-        /// </summary>
-        public static Java.Util.Locale ITALIAN => Clazz.GetField<Java.Util.Locale>("ITALIAN");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#JAPANESE
-        /// </summary>
-        public static Java.Util.Locale JAPANESE => Clazz.GetField<Java.Util.Locale>("JAPANESE");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#KOREAN
-        /// </summary>
-        public static Java.Util.Locale KOREAN => Clazz.GetField<Java.Util.Locale>("KOREAN");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#CHINESE
-        /// </summary>
-        public static Java.Util.Locale CHINESE => Clazz.GetField<Java.Util.Locale>("CHINESE");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#SIMPLIFIED_CHINESE
-        /// </summary>
-        public static Java.Util.Locale SIMPLIFIED_CHINESE => Clazz.GetField<Java.Util.Locale>("SIMPLIFIED_CHINESE");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#TRADITIONAL_CHINESE
-        /// </summary>
-        public static Java.Util.Locale TRADITIONAL_CHINESE => Clazz.GetField<Java.Util.Locale>("TRADITIONAL_CHINESE");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#FRANCE
-        /// </summary>
-        public static Java.Util.Locale FRANCE => Clazz.GetField<Java.Util.Locale>("FRANCE");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#GERMANY
-        /// </summary>
-        public static Java.Util.Locale GERMANY => Clazz.GetField<Java.Util.Locale>("GERMANY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#ITALY
-        /// </summary>
-        public static Java.Util.Locale ITALY => Clazz.GetField<Java.Util.Locale>("ITALY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#JAPAN
-        /// </summary>
-        public static Java.Util.Locale JAPAN => Clazz.GetField<Java.Util.Locale>("JAPAN");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#KOREA
-        /// </summary>
-        public static Java.Util.Locale KOREA => Clazz.GetField<Java.Util.Locale>("KOREA");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#CHINA
-        /// </summary>
-        public static Java.Util.Locale CHINA => Clazz.GetField<Java.Util.Locale>("CHINA");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#PRC
-        /// </summary>
-        public static Java.Util.Locale PRC => Clazz.GetField<Java.Util.Locale>("PRC");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#TAIWAN
-        /// </summary>
-        public static Java.Util.Locale TAIWAN => Clazz.GetField<Java.Util.Locale>("TAIWAN");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#UK
-        /// </summary>
-        public static Java.Util.Locale UK => Clazz.GetField<Java.Util.Locale>("UK");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#US
-        /// </summary>
-        public static Java.Util.Locale US => Clazz.GetField<Java.Util.Locale>("US");
+        public static char UNICODE_LOCALE_EXTENSION => Clazz.GetField<char>("UNICODE_LOCALE_EXTENSION");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#CANADA
         /// </summary>
@@ -145,17 +77,85 @@ namespace Java.Util
         /// </summary>
         public static Java.Util.Locale CANADA_FRENCH => Clazz.GetField<Java.Util.Locale>("CANADA_FRENCH");
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#CHINA
+        /// </summary>
+        public static Java.Util.Locale CHINA => Clazz.GetField<Java.Util.Locale>("CHINA");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#CHINESE
+        /// </summary>
+        public static Java.Util.Locale CHINESE => Clazz.GetField<Java.Util.Locale>("CHINESE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#ENGLISH
+        /// </summary>
+        public static Java.Util.Locale ENGLISH => Clazz.GetField<Java.Util.Locale>("ENGLISH");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#FRANCE
+        /// </summary>
+        public static Java.Util.Locale FRANCE => Clazz.GetField<Java.Util.Locale>("FRANCE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#FRENCH
+        /// </summary>
+        public static Java.Util.Locale FRENCH => Clazz.GetField<Java.Util.Locale>("FRENCH");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#GERMAN
+        /// </summary>
+        public static Java.Util.Locale GERMAN => Clazz.GetField<Java.Util.Locale>("GERMAN");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#GERMANY
+        /// </summary>
+        public static Java.Util.Locale GERMANY => Clazz.GetField<Java.Util.Locale>("GERMANY");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#ITALIAN
+        /// </summary>
+        public static Java.Util.Locale ITALIAN => Clazz.GetField<Java.Util.Locale>("ITALIAN");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#ITALY
+        /// </summary>
+        public static Java.Util.Locale ITALY => Clazz.GetField<Java.Util.Locale>("ITALY");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#JAPAN
+        /// </summary>
+        public static Java.Util.Locale JAPAN => Clazz.GetField<Java.Util.Locale>("JAPAN");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#JAPANESE
+        /// </summary>
+        public static Java.Util.Locale JAPANESE => Clazz.GetField<Java.Util.Locale>("JAPANESE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#KOREA
+        /// </summary>
+        public static Java.Util.Locale KOREA => Clazz.GetField<Java.Util.Locale>("KOREA");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#KOREAN
+        /// </summary>
+        public static Java.Util.Locale KOREAN => Clazz.GetField<Java.Util.Locale>("KOREAN");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#PRC
+        /// </summary>
+        public static Java.Util.Locale PRC => Clazz.GetField<Java.Util.Locale>("PRC");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#ROOT
         /// </summary>
         public static Java.Util.Locale ROOT => Clazz.GetField<Java.Util.Locale>("ROOT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#PRIVATE_USE_EXTENSION
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#SIMPLIFIED_CHINESE
         /// </summary>
-        public static char PRIVATE_USE_EXTENSION => Clazz.GetField<char>("PRIVATE_USE_EXTENSION");
+        public static Java.Util.Locale SIMPLIFIED_CHINESE => Clazz.GetField<Java.Util.Locale>("SIMPLIFIED_CHINESE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#UNICODE_LOCALE_EXTENSION
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#TAIWAN
         /// </summary>
-        public static char UNICODE_LOCALE_EXTENSION => Clazz.GetField<char>("UNICODE_LOCALE_EXTENSION");
+        public static Java.Util.Locale TAIWAN => Clazz.GetField<Java.Util.Locale>("TAIWAN");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#TRADITIONAL_CHINESE
+        /// </summary>
+        public static Java.Util.Locale TRADITIONAL_CHINESE => Clazz.GetField<Java.Util.Locale>("TRADITIONAL_CHINESE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#UK
+        /// </summary>
+        public static Java.Util.Locale UK => Clazz.GetField<Java.Util.Locale>("UK");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.html#US
+        /// </summary>
+        public static Java.Util.Locale US => Clazz.GetField<Java.Util.Locale>("US");
         
         #endregion
 
@@ -392,69 +392,6 @@ namespace Java.Util
         }
         #endregion
 
-        #region LanguageRange
-        public partial class LanguageRange
-        {
-            #region Constructors
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.LanguageRange.html#<init>(java.lang.String)
-            /// </summary>
-            public LanguageRange(string arg0)
-                : base(arg0)
-            {
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.LanguageRange.html#<init>(java.lang.String,double)
-            /// </summary>
-            public LanguageRange(string arg0, double arg1)
-                : base(arg0, arg1)
-            {
-            }
-            
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.LanguageRange.html#MAX_WEIGHT
-            /// </summary>
-            public static double MAX_WEIGHT => Clazz.GetField<double>("MAX_WEIGHT");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.LanguageRange.html#MIN_WEIGHT
-            /// </summary>
-            public static double MIN_WEIGHT => Clazz.GetField<double>("MIN_WEIGHT");
-            
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.LanguageRange.html#getRange() 
-            /// </summary>
-            public string Range
-            {
-                get { return IExecute<string>("getRange"); }
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.LanguageRange.html#getWeight() 
-            /// </summary>
-            public double Weight
-            {
-                get { return IExecute<double>("getWeight"); }
-            }
-            
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region Builder
         public partial class Builder
         {
@@ -573,52 +510,6 @@ namespace Java.Util
         }
         #endregion
 
-        #region IsoCountryCode
-        public partial class IsoCountryCode
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.IsoCountryCode.html#PART1_ALPHA2
-            /// </summary>
-            public static Java.Util.Locale.IsoCountryCode PART1_ALPHA2 => Clazz.GetField<Java.Util.Locale.IsoCountryCode>("PART1_ALPHA2");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.IsoCountryCode.html#PART1_ALPHA3
-            /// </summary>
-            public static Java.Util.Locale.IsoCountryCode PART1_ALPHA3 => Clazz.GetField<Java.Util.Locale.IsoCountryCode>("PART1_ALPHA3");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.IsoCountryCode.html#PART3
-            /// </summary>
-            public static Java.Util.Locale.IsoCountryCode PART3 => Clazz.GetField<Java.Util.Locale.IsoCountryCode>("PART3");
-            
-            #endregion
-
-            #region Static methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.IsoCountryCode.html#values()
-            /// </summary>
-            public static Java.Util.Locale.IsoCountryCode[] Values()
-            {
-                return SExecuteArray<Java.Util.Locale.IsoCountryCode>("values");
-            }
-            
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region FilteringMode
         public partial class FilteringMode
         {
@@ -661,6 +552,115 @@ namespace Java.Util
             public static Java.Util.Locale.FilteringMode[] Values()
             {
                 return SExecuteArray<Java.Util.Locale.FilteringMode>("values");
+            }
+            
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region LanguageRange
+        public partial class LanguageRange
+        {
+            #region Constructors
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.LanguageRange.html#<init>(java.lang.String,double)
+            /// </summary>
+            public LanguageRange(string arg0, double arg1)
+                : base(arg0, arg1)
+            {
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.LanguageRange.html#<init>(java.lang.String)
+            /// </summary>
+            public LanguageRange(string arg0)
+                : base(arg0)
+            {
+            }
+            
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.LanguageRange.html#MAX_WEIGHT
+            /// </summary>
+            public static double MAX_WEIGHT => Clazz.GetField<double>("MAX_WEIGHT");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.LanguageRange.html#MIN_WEIGHT
+            /// </summary>
+            public static double MIN_WEIGHT => Clazz.GetField<double>("MIN_WEIGHT");
+            
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.LanguageRange.html#getRange() 
+            /// </summary>
+            public string Range
+            {
+                get { return IExecute<string>("getRange"); }
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.LanguageRange.html#getWeight() 
+            /// </summary>
+            public double Weight
+            {
+                get { return IExecute<double>("getWeight"); }
+            }
+            
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region IsoCountryCode
+        public partial class IsoCountryCode
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.IsoCountryCode.html#PART1_ALPHA2
+            /// </summary>
+            public static Java.Util.Locale.IsoCountryCode PART1_ALPHA2 => Clazz.GetField<Java.Util.Locale.IsoCountryCode>("PART1_ALPHA2");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.IsoCountryCode.html#PART1_ALPHA3
+            /// </summary>
+            public static Java.Util.Locale.IsoCountryCode PART1_ALPHA3 => Clazz.GetField<Java.Util.Locale.IsoCountryCode>("PART1_ALPHA3");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.IsoCountryCode.html#PART3
+            /// </summary>
+            public static Java.Util.Locale.IsoCountryCode PART3 => Clazz.GetField<Java.Util.Locale.IsoCountryCode>("PART3");
+            
+            #endregion
+
+            #region Static methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.IsoCountryCode.html#values()
+            /// </summary>
+            public static Java.Util.Locale.IsoCountryCode[] Values()
+            {
+                return SExecuteArray<Java.Util.Locale.IsoCountryCode>("values");
             }
             
             #endregion

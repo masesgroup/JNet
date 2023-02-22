@@ -38,21 +38,13 @@ namespace Java.Awt.EventNs
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#SHIFT_DOWN_MASK
-        /// </summary>
-        public static int SHIFT_DOWN_MASK => Clazz.GetField<int>("SHIFT_DOWN_MASK");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#CTRL_DOWN_MASK
-        /// </summary>
-        public static int CTRL_DOWN_MASK => Clazz.GetField<int>("CTRL_DOWN_MASK");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#META_DOWN_MASK
-        /// </summary>
-        public static int META_DOWN_MASK => Clazz.GetField<int>("META_DOWN_MASK");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#ALT_DOWN_MASK
         /// </summary>
         public static int ALT_DOWN_MASK => Clazz.GetField<int>("ALT_DOWN_MASK");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#ALT_GRAPH_DOWN_MASK
+        /// </summary>
+        public static int ALT_GRAPH_DOWN_MASK => Clazz.GetField<int>("ALT_GRAPH_DOWN_MASK");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#BUTTON1_DOWN_MASK
         /// </summary>
@@ -66,9 +58,17 @@ namespace Java.Awt.EventNs
         /// </summary>
         public static int BUTTON3_DOWN_MASK => Clazz.GetField<int>("BUTTON3_DOWN_MASK");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#ALT_GRAPH_DOWN_MASK
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#CTRL_DOWN_MASK
         /// </summary>
-        public static int ALT_GRAPH_DOWN_MASK => Clazz.GetField<int>("ALT_GRAPH_DOWN_MASK");
+        public static int CTRL_DOWN_MASK => Clazz.GetField<int>("CTRL_DOWN_MASK");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#META_DOWN_MASK
+        /// </summary>
+        public static int META_DOWN_MASK => Clazz.GetField<int>("META_DOWN_MASK");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputEvent.html#SHIFT_DOWN_MASK
+        /// </summary>
+        public static int SHIFT_DOWN_MASK => Clazz.GetField<int>("SHIFT_DOWN_MASK");
         
         #endregion
 

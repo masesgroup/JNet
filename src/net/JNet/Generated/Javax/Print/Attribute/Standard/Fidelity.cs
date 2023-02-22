@@ -40,13 +40,13 @@ namespace Javax.Print.Attribute.Standard
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Fidelity.html#FIDELITY_TRUE
-        /// </summary>
-        public static Javax.Print.Attribute.Standard.Fidelity FIDELITY_TRUE => Clazz.GetField<Javax.Print.Attribute.Standard.Fidelity>("FIDELITY_TRUE");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Fidelity.html#FIDELITY_FALSE
         /// </summary>
         public static Javax.Print.Attribute.Standard.Fidelity FIDELITY_FALSE => Clazz.GetField<Javax.Print.Attribute.Standard.Fidelity>("FIDELITY_FALSE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Fidelity.html#FIDELITY_TRUE
+        /// </summary>
+        public static Javax.Print.Attribute.Standard.Fidelity FIDELITY_TRUE => Clazz.GetField<Javax.Print.Attribute.Standard.Fidelity>("FIDELITY_TRUE");
         
         #endregion
 

@@ -183,41 +183,6 @@ namespace Java.Awt
         #endregion
 
         #region Nested classes
-        #region MultipleDocumentHandlingType
-        public partial class MultipleDocumentHandlingType
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.MultipleDocumentHandlingType.html#SEPARATE_DOCUMENTS_COLLATED_COPIES
-            /// </summary>
-            public static Java.Awt.JobAttributes.MultipleDocumentHandlingType SEPARATE_DOCUMENTS_COLLATED_COPIES => Clazz.GetField<Java.Awt.JobAttributes.MultipleDocumentHandlingType>("SEPARATE_DOCUMENTS_COLLATED_COPIES");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.MultipleDocumentHandlingType.html#SEPARATE_DOCUMENTS_UNCOLLATED_COPIES
-            /// </summary>
-            public static Java.Awt.JobAttributes.MultipleDocumentHandlingType SEPARATE_DOCUMENTS_UNCOLLATED_COPIES => Clazz.GetField<Java.Awt.JobAttributes.MultipleDocumentHandlingType>("SEPARATE_DOCUMENTS_UNCOLLATED_COPIES");
-            
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region DestinationType
         public partial class DestinationType
         {
@@ -253,8 +218,8 @@ namespace Java.Awt
         }
         #endregion
 
-        #region SidesType
-        public partial class SidesType
+        #region MultipleDocumentHandlingType
+        public partial class MultipleDocumentHandlingType
         {
             #region Constructors
 
@@ -266,17 +231,13 @@ namespace Java.Awt
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.SidesType.html#ONE_SIDED
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.MultipleDocumentHandlingType.html#SEPARATE_DOCUMENTS_COLLATED_COPIES
             /// </summary>
-            public static Java.Awt.JobAttributes.SidesType ONE_SIDED => Clazz.GetField<Java.Awt.JobAttributes.SidesType>("ONE_SIDED");
+            public static Java.Awt.JobAttributes.MultipleDocumentHandlingType SEPARATE_DOCUMENTS_COLLATED_COPIES => Clazz.GetField<Java.Awt.JobAttributes.MultipleDocumentHandlingType>("SEPARATE_DOCUMENTS_COLLATED_COPIES");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.SidesType.html#TWO_SIDED_LONG_EDGE
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.MultipleDocumentHandlingType.html#SEPARATE_DOCUMENTS_UNCOLLATED_COPIES
             /// </summary>
-            public static Java.Awt.JobAttributes.SidesType TWO_SIDED_LONG_EDGE => Clazz.GetField<Java.Awt.JobAttributes.SidesType>("TWO_SIDED_LONG_EDGE");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.SidesType.html#TWO_SIDED_SHORT_EDGE
-            /// </summary>
-            public static Java.Awt.JobAttributes.SidesType TWO_SIDED_SHORT_EDGE => Clazz.GetField<Java.Awt.JobAttributes.SidesType>("TWO_SIDED_SHORT_EDGE");
+            public static Java.Awt.JobAttributes.MultipleDocumentHandlingType SEPARATE_DOCUMENTS_UNCOLLATED_COPIES => Clazz.GetField<Java.Awt.JobAttributes.MultipleDocumentHandlingType>("SEPARATE_DOCUMENTS_UNCOLLATED_COPIES");
             
             #endregion
 
@@ -355,6 +316,45 @@ namespace Java.Awt
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.DefaultSelectionType.html#SELECTION
             /// </summary>
             public static Java.Awt.JobAttributes.DefaultSelectionType SELECTION => Clazz.GetField<Java.Awt.JobAttributes.DefaultSelectionType>("SELECTION");
+            
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region SidesType
+        public partial class SidesType
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.SidesType.html#ONE_SIDED
+            /// </summary>
+            public static Java.Awt.JobAttributes.SidesType ONE_SIDED => Clazz.GetField<Java.Awt.JobAttributes.SidesType>("ONE_SIDED");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.SidesType.html#TWO_SIDED_LONG_EDGE
+            /// </summary>
+            public static Java.Awt.JobAttributes.SidesType TWO_SIDED_LONG_EDGE => Clazz.GetField<Java.Awt.JobAttributes.SidesType>("TWO_SIDED_LONG_EDGE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.SidesType.html#TWO_SIDED_SHORT_EDGE
+            /// </summary>
+            public static Java.Awt.JobAttributes.SidesType TWO_SIDED_SHORT_EDGE => Clazz.GetField<Java.Awt.JobAttributes.SidesType>("TWO_SIDED_SHORT_EDGE");
             
             #endregion
 

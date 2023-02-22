@@ -30,16 +30,16 @@ namespace Javax.Naming.Spi
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/ResolveResult.html#<init>(java.lang.Object,javax.naming.Name)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/ResolveResult.html#<init>(java.lang.Object,java.lang.String)
         /// </summary>
-        public ResolveResult(object arg0, Javax.Naming.Name arg1)
+        public ResolveResult(object arg0, string arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/ResolveResult.html#<init>(java.lang.Object,java.lang.String)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/ResolveResult.html#<init>(java.lang.Object,javax.naming.Name)
         /// </summary>
-        public ResolveResult(object arg0, string arg1)
+        public ResolveResult(object arg0, Javax.Naming.Name arg1)
             : base(arg0, arg1)
         {
         }

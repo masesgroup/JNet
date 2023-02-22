@@ -78,6 +78,48 @@ namespace Java.Awt
         #endregion
 
         #region Nested classes
+        #region ColorSpaceType
+        public partial class ColorSpaceType
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MultipleGradientPaint.ColorSpaceType.html#LINEAR_RGB
+            /// </summary>
+            public static Java.Awt.MultipleGradientPaint.ColorSpaceType LINEAR_RGB => Clazz.GetField<Java.Awt.MultipleGradientPaint.ColorSpaceType>("LINEAR_RGB");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MultipleGradientPaint.ColorSpaceType.html#SRGB
+            /// </summary>
+            public static Java.Awt.MultipleGradientPaint.ColorSpaceType SRGB => Clazz.GetField<Java.Awt.MultipleGradientPaint.ColorSpaceType>("SRGB");
+            
+            #endregion
+
+            #region Static methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MultipleGradientPaint.ColorSpaceType.html#values()
+            /// </summary>
+            public static Java.Awt.MultipleGradientPaint.ColorSpaceType[] Values()
+            {
+                return SExecuteArray<Java.Awt.MultipleGradientPaint.ColorSpaceType>("values");
+            }
+            
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region CycleMethod
         public partial class CycleMethod
         {
@@ -112,48 +154,6 @@ namespace Java.Awt
             public static Java.Awt.MultipleGradientPaint.CycleMethod[] Values()
             {
                 return SExecuteArray<Java.Awt.MultipleGradientPaint.CycleMethod>("values");
-            }
-            
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region ColorSpaceType
-        public partial class ColorSpaceType
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MultipleGradientPaint.ColorSpaceType.html#SRGB
-            /// </summary>
-            public static Java.Awt.MultipleGradientPaint.ColorSpaceType SRGB => Clazz.GetField<Java.Awt.MultipleGradientPaint.ColorSpaceType>("SRGB");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MultipleGradientPaint.ColorSpaceType.html#LINEAR_RGB
-            /// </summary>
-            public static Java.Awt.MultipleGradientPaint.ColorSpaceType LINEAR_RGB => Clazz.GetField<Java.Awt.MultipleGradientPaint.ColorSpaceType>("LINEAR_RGB");
-            
-            #endregion
-
-            #region Static methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MultipleGradientPaint.ColorSpaceType.html#values()
-            /// </summary>
-            public static Java.Awt.MultipleGradientPaint.ColorSpaceType[] Values()
-            {
-                return SExecuteArray<Java.Awt.MultipleGradientPaint.ColorSpaceType>("values");
             }
             
             #endregion

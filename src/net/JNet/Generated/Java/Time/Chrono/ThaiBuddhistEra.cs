@@ -39,13 +39,13 @@ namespace Java.Time.Chrono
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ThaiBuddhistEra.html#BEFORE_BE
-        /// </summary>
-        public static Java.Time.Chrono.ThaiBuddhistEra BEFORE_BE => Clazz.GetField<Java.Time.Chrono.ThaiBuddhistEra>("BEFORE_BE");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ThaiBuddhistEra.html#BE
         /// </summary>
         public static Java.Time.Chrono.ThaiBuddhistEra BE => Clazz.GetField<Java.Time.Chrono.ThaiBuddhistEra>("BE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/chrono/ThaiBuddhistEra.html#BEFORE_BE
+        /// </summary>
+        public static Java.Time.Chrono.ThaiBuddhistEra BEFORE_BE => Clazz.GetField<Java.Time.Chrono.ThaiBuddhistEra>("BEFORE_BE");
         
         #endregion
 

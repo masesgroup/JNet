@@ -30,9 +30,9 @@ namespace Javax.Naming.Ldap
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/SortControl.html#<init>(javax.naming.ldap.SortKey[],boolean) throws java.io.IOException
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/SortControl.html#<init>(java.lang.String,boolean) throws java.io.IOException
         /// </summary>
-        public SortControl(Javax.Naming.Ldap.SortKey[] arg0, bool arg1)
+        public SortControl(string arg0, bool arg1)
             : base(arg0, arg1)
         {
         }
@@ -44,9 +44,9 @@ namespace Javax.Naming.Ldap
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/SortControl.html#<init>(java.lang.String,boolean) throws java.io.IOException
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/SortControl.html#<init>(javax.naming.ldap.SortKey[],boolean) throws java.io.IOException
         /// </summary>
-        public SortControl(string arg0, bool arg1)
+        public SortControl(Javax.Naming.Ldap.SortKey[] arg0, bool arg1)
             : base(arg0, arg1)
         {
         }

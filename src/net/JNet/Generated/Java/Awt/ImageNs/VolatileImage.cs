@@ -39,6 +39,10 @@ namespace Java.Awt.ImageNs
 
         #region Fields
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/VolatileImage.html#IMAGE_INCOMPATIBLE
+        /// </summary>
+        public static int IMAGE_INCOMPATIBLE => Clazz.GetField<int>("IMAGE_INCOMPATIBLE");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/VolatileImage.html#IMAGE_OK
         /// </summary>
         public static int IMAGE_OK => Clazz.GetField<int>("IMAGE_OK");
@@ -46,10 +50,6 @@ namespace Java.Awt.ImageNs
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/VolatileImage.html#IMAGE_RESTORED
         /// </summary>
         public static int IMAGE_RESTORED => Clazz.GetField<int>("IMAGE_RESTORED");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/VolatileImage.html#IMAGE_INCOMPATIBLE
-        /// </summary>
-        public static int IMAGE_INCOMPATIBLE => Clazz.GetField<int>("IMAGE_INCOMPATIBLE");
         
         #endregion
 

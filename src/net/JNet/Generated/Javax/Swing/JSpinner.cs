@@ -127,47 +127,6 @@ namespace Javax.Swing
         #endregion
 
         #region Nested classes
-        #region ListEditor
-        public partial class ListEditor
-        {
-            #region Constructors
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.ListEditor.html#<init>(javax.swing.JSpinner)
-            /// </summary>
-            public ListEditor(Javax.Swing.JSpinner arg0)
-                : base(arg0)
-            {
-            }
-            
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.ListEditor.html#getModel() 
-            /// </summary>
-            public Javax.Swing.SpinnerListModel Model
-            {
-                get { return IExecute<Javax.Swing.SpinnerListModel>("getModel"); }
-            }
-            
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region NumberEditor
         public partial class NumberEditor
         {
@@ -384,6 +343,47 @@ namespace Javax.Swing
             public void StateChanged(Javax.Swing.Event.ChangeEvent arg0)
             {
                 IExecute("stateChanged", arg0);
+            }
+            
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region ListEditor
+        public partial class ListEditor
+        {
+            #region Constructors
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.ListEditor.html#<init>(javax.swing.JSpinner)
+            /// </summary>
+            public ListEditor(Javax.Swing.JSpinner arg0)
+                : base(arg0)
+            {
+            }
+            
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.ListEditor.html#getModel() 
+            /// </summary>
+            public Javax.Swing.SpinnerListModel Model
+            {
+                get { return IExecute<Javax.Swing.SpinnerListModel>("getModel"); }
             }
             
             #endregion

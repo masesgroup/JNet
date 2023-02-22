@@ -39,41 +39,17 @@ namespace Javax.Swing
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#DEFAULT
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#ACCELERATOR_KEY
         /// </summary>
-        public static string DEFAULT => Clazz.GetField<string>("DEFAULT");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#NAME
-        /// </summary>
-        public static string NAME => Clazz.GetField<string>("NAME");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#SHORT_DESCRIPTION
-        /// </summary>
-        public static string SHORT_DESCRIPTION => Clazz.GetField<string>("SHORT_DESCRIPTION");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#LONG_DESCRIPTION
-        /// </summary>
-        public static string LONG_DESCRIPTION => Clazz.GetField<string>("LONG_DESCRIPTION");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#SMALL_ICON
-        /// </summary>
-        public static string SMALL_ICON => Clazz.GetField<string>("SMALL_ICON");
+        public static string ACCELERATOR_KEY => Clazz.GetField<string>("ACCELERATOR_KEY");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#ACTION_COMMAND_KEY
         /// </summary>
         public static string ACTION_COMMAND_KEY => Clazz.GetField<string>("ACTION_COMMAND_KEY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#ACCELERATOR_KEY
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#DEFAULT
         /// </summary>
-        public static string ACCELERATOR_KEY => Clazz.GetField<string>("ACCELERATOR_KEY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#MNEMONIC_KEY
-        /// </summary>
-        public static string MNEMONIC_KEY => Clazz.GetField<string>("MNEMONIC_KEY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#SELECTED_KEY
-        /// </summary>
-        public static string SELECTED_KEY => Clazz.GetField<string>("SELECTED_KEY");
+        public static string DEFAULT => Clazz.GetField<string>("DEFAULT");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#DISPLAYED_MNEMONIC_INDEX_KEY
         /// </summary>
@@ -82,6 +58,30 @@ namespace Javax.Swing
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#LARGE_ICON_KEY
         /// </summary>
         public static string LARGE_ICON_KEY => Clazz.GetField<string>("LARGE_ICON_KEY");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#LONG_DESCRIPTION
+        /// </summary>
+        public static string LONG_DESCRIPTION => Clazz.GetField<string>("LONG_DESCRIPTION");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#MNEMONIC_KEY
+        /// </summary>
+        public static string MNEMONIC_KEY => Clazz.GetField<string>("MNEMONIC_KEY");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#NAME
+        /// </summary>
+        public static string NAME => Clazz.GetField<string>("NAME");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#SELECTED_KEY
+        /// </summary>
+        public static string SELECTED_KEY => Clazz.GetField<string>("SELECTED_KEY");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#SHORT_DESCRIPTION
+        /// </summary>
+        public static string SHORT_DESCRIPTION => Clazz.GetField<string>("SHORT_DESCRIPTION");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#SMALL_ICON
+        /// </summary>
+        public static string SMALL_ICON => Clazz.GetField<string>("SMALL_ICON");
         
         #endregion
 

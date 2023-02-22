@@ -46,17 +46,17 @@ namespace Javax.Swing.Text.Html.Parser
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Entity.html#name
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Entity.html#data
         /// </summary>
-        public string name => Instance.GetField<string>("name");
+        public char[] data => Instance.GetField<char[]>("data");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Entity.html#type
         /// </summary>
         public int type => Instance.GetField<int>("type");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Entity.html#data
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/Entity.html#name
         /// </summary>
-        public char[] data => Instance.GetField<char[]>("data");
+        public string name => Instance.GetField<string>("name");
         
         #endregion
 

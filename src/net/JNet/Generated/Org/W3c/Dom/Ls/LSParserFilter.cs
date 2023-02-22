@@ -42,6 +42,10 @@ namespace Org.W3c.Dom.Ls
         /// </summary>
         public static short FILTER_ACCEPT => Clazz.GetField<short>("FILTER_ACCEPT");
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParserFilter.html#FILTER_INTERRUPT
+        /// </summary>
+        public static short FILTER_INTERRUPT => Clazz.GetField<short>("FILTER_INTERRUPT");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParserFilter.html#FILTER_REJECT
         /// </summary>
         public static short FILTER_REJECT => Clazz.GetField<short>("FILTER_REJECT");
@@ -49,10 +53,6 @@ namespace Org.W3c.Dom.Ls
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParserFilter.html#FILTER_SKIP
         /// </summary>
         public static short FILTER_SKIP => Clazz.GetField<short>("FILTER_SKIP");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParserFilter.html#FILTER_INTERRUPT
-        /// </summary>
-        public static short FILTER_INTERRUPT => Clazz.GetField<short>("FILTER_INTERRUPT");
         
         #endregion
 

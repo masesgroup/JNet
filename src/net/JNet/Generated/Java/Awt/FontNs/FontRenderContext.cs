@@ -30,16 +30,16 @@ namespace Java.Awt.FontNs
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/FontRenderContext.html#<init>(java.awt.geom.AffineTransform,java.lang.Object,java.lang.Object)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/FontRenderContext.html#<init>(java.awt.geom.AffineTransform,boolean,boolean)
         /// </summary>
-        public FontRenderContext(Java.Awt.Geom.AffineTransform arg0, object arg1, object arg2)
+        public FontRenderContext(Java.Awt.Geom.AffineTransform arg0, bool arg1, bool arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/FontRenderContext.html#<init>(java.awt.geom.AffineTransform,boolean,boolean)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/FontRenderContext.html#<init>(java.awt.geom.AffineTransform,java.lang.Object,java.lang.Object)
         /// </summary>
-        public FontRenderContext(Java.Awt.Geom.AffineTransform arg0, bool arg1, bool arg2)
+        public FontRenderContext(Java.Awt.Geom.AffineTransform arg0, object arg1, object arg2)
             : base(arg0, arg1, arg2)
         {
         }

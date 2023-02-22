@@ -38,14 +38,6 @@ namespace Org.W3c.Dom.Ranges
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#START_TO_START
-        /// </summary>
-        public static short START_TO_START => Clazz.GetField<short>("START_TO_START");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#START_TO_END
-        /// </summary>
-        public static short START_TO_END => Clazz.GetField<short>("START_TO_END");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#END_TO_END
         /// </summary>
         public static short END_TO_END => Clazz.GetField<short>("END_TO_END");
@@ -53,6 +45,14 @@ namespace Org.W3c.Dom.Ranges
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#END_TO_START
         /// </summary>
         public static short END_TO_START => Clazz.GetField<short>("END_TO_START");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#START_TO_END
+        /// </summary>
+        public static short START_TO_END => Clazz.GetField<short>("START_TO_END");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/Range.html#START_TO_START
+        /// </summary>
+        public static short START_TO_START => Clazz.GetField<short>("START_TO_START");
         
         #endregion
 

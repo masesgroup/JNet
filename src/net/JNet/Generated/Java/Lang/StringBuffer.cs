@@ -30,6 +30,13 @@ namespace Java.Lang
     {
         #region Constructors
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StringBuffer.html#<init>(int)
+        /// </summary>
+        public StringBuffer(int arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StringBuffer.html#<init>(java.lang.CharSequence)
         /// </summary>
         public StringBuffer(Java.Lang.CharSequence arg0)
@@ -40,13 +47,6 @@ namespace Java.Lang
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StringBuffer.html#<init>(java.lang.String)
         /// </summary>
         public StringBuffer(string arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StringBuffer.html#<init>(int)
-        /// </summary>
-        public StringBuffer(int arg0)
             : base(arg0)
         {
         }

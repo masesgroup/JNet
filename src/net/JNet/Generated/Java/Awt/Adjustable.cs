@@ -42,13 +42,13 @@ namespace Java.Awt
         /// </summary>
         public static int HORIZONTAL => Clazz.GetField<int>("HORIZONTAL");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Adjustable.html#VERTICAL
-        /// </summary>
-        public static int VERTICAL => Clazz.GetField<int>("VERTICAL");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Adjustable.html#NO_ORIENTATION
         /// </summary>
         public static int NO_ORIENTATION => Clazz.GetField<int>("NO_ORIENTATION");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Adjustable.html#VERTICAL
+        /// </summary>
+        public static int VERTICAL => Clazz.GetField<int>("VERTICAL");
         
         #endregion
 

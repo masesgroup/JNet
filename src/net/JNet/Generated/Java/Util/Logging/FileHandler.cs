@@ -30,10 +30,10 @@ namespace Java.Util.Logging
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/FileHandler.html#<init>(java.lang.String,int,int) throws java.io.IOException,java.lang.SecurityException
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/FileHandler.html#<init>(java.lang.String,boolean) throws java.io.IOException,java.lang.SecurityException
         /// </summary>
-        public FileHandler(string arg0, int arg1, int arg2)
-            : base(arg0, arg1, arg2)
+        public FileHandler(string arg0, bool arg1)
+            : base(arg0, arg1)
         {
         }
         /// <summary>
@@ -41,6 +41,13 @@ namespace Java.Util.Logging
         /// </summary>
         public FileHandler(string arg0, int arg1, int arg2, bool arg3)
             : base(arg0, arg1, arg2, arg3)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/FileHandler.html#<init>(java.lang.String,int,int) throws java.io.IOException,java.lang.SecurityException
+        /// </summary>
+        public FileHandler(string arg0, int arg1, int arg2)
+            : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
@@ -55,13 +62,6 @@ namespace Java.Util.Logging
         /// </summary>
         public FileHandler(string arg0)
             : base(arg0)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.logging/java/util/logging/FileHandler.html#<init>(java.lang.String,boolean) throws java.io.IOException,java.lang.SecurityException
-        /// </summary>
-        public FileHandler(string arg0, bool arg1)
-            : base(arg0, arg1)
         {
         }
         

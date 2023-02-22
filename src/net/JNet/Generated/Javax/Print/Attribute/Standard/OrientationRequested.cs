@@ -41,13 +41,13 @@ namespace Javax.Print.Attribute.Standard
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/OrientationRequested.html#PORTRAIT
-        /// </summary>
-        public static Javax.Print.Attribute.Standard.OrientationRequested PORTRAIT => Clazz.GetField<Javax.Print.Attribute.Standard.OrientationRequested>("PORTRAIT");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/OrientationRequested.html#LANDSCAPE
         /// </summary>
         public static Javax.Print.Attribute.Standard.OrientationRequested LANDSCAPE => Clazz.GetField<Javax.Print.Attribute.Standard.OrientationRequested>("LANDSCAPE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/OrientationRequested.html#PORTRAIT
+        /// </summary>
+        public static Javax.Print.Attribute.Standard.OrientationRequested PORTRAIT => Clazz.GetField<Javax.Print.Attribute.Standard.OrientationRequested>("PORTRAIT");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/OrientationRequested.html#REVERSE_LANDSCAPE
         /// </summary>

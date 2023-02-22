@@ -30,17 +30,10 @@ namespace Javax.Swing
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextArea.html#<init>(javax.swing.text.Document,java.lang.String,int,int)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextArea.html#<init>(int,int)
         /// </summary>
-        public JTextArea(Javax.Swing.Text.Document arg0, string arg1, int arg2, int arg3)
-            : base(arg0, arg1, arg2, arg3)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextArea.html#<init>(javax.swing.text.Document)
-        /// </summary>
-        public JTextArea(Javax.Swing.Text.Document arg0)
-            : base(arg0)
+        public JTextArea(int arg0, int arg1)
+            : base(arg0, arg1)
         {
         }
         /// <summary>
@@ -58,10 +51,17 @@ namespace Javax.Swing
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextArea.html#<init>(int,int)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextArea.html#<init>(javax.swing.text.Document,java.lang.String,int,int)
         /// </summary>
-        public JTextArea(int arg0, int arg1)
-            : base(arg0, arg1)
+        public JTextArea(Javax.Swing.Text.Document arg0, string arg1, int arg2, int arg3)
+            : base(arg0, arg1, arg2, arg3)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTextArea.html#<init>(javax.swing.text.Document)
+        /// </summary>
+        public JTextArea(Javax.Swing.Text.Document arg0)
+            : base(arg0)
         {
         }
         

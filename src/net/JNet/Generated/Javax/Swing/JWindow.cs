@@ -30,20 +30,6 @@ namespace Javax.Swing
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JWindow.html#<init>(java.awt.Window,java.awt.GraphicsConfiguration)
-        /// </summary>
-        public JWindow(Java.Awt.Window arg0, Java.Awt.GraphicsConfiguration arg1)
-            : base(arg0, arg1)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JWindow.html#<init>(java.awt.Window)
-        /// </summary>
-        public JWindow(Java.Awt.Window arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JWindow.html#<init>(java.awt.Frame)
         /// </summary>
         public JWindow(Java.Awt.Frame arg0)
@@ -54,6 +40,20 @@ namespace Javax.Swing
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JWindow.html#<init>(java.awt.GraphicsConfiguration)
         /// </summary>
         public JWindow(Java.Awt.GraphicsConfiguration arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JWindow.html#<init>(java.awt.Window,java.awt.GraphicsConfiguration)
+        /// </summary>
+        public JWindow(Java.Awt.Window arg0, Java.Awt.GraphicsConfiguration arg1)
+            : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JWindow.html#<init>(java.awt.Window)
+        /// </summary>
+        public JWindow(Java.Awt.Window arg0)
             : base(arg0)
         {
         }

@@ -83,6 +83,10 @@ namespace Javax.Swing
 
             #region Fields
             /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LayoutStyle.ComponentPlacement.html#INDENT
+            /// </summary>
+            public static Javax.Swing.LayoutStyle.ComponentPlacement INDENT => Clazz.GetField<Javax.Swing.LayoutStyle.ComponentPlacement>("INDENT");
+            /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LayoutStyle.ComponentPlacement.html#RELATED
             /// </summary>
             public static Javax.Swing.LayoutStyle.ComponentPlacement RELATED => Clazz.GetField<Javax.Swing.LayoutStyle.ComponentPlacement>("RELATED");
@@ -90,10 +94,6 @@ namespace Javax.Swing
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LayoutStyle.ComponentPlacement.html#UNRELATED
             /// </summary>
             public static Javax.Swing.LayoutStyle.ComponentPlacement UNRELATED => Clazz.GetField<Javax.Swing.LayoutStyle.ComponentPlacement>("UNRELATED");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/LayoutStyle.ComponentPlacement.html#INDENT
-            /// </summary>
-            public static Javax.Swing.LayoutStyle.ComponentPlacement INDENT => Clazz.GetField<Javax.Swing.LayoutStyle.ComponentPlacement>("INDENT");
             
             #endregion
 

@@ -39,6 +39,10 @@ namespace Javax.Print.Attribute.Standard
 
         #region Fields
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Severity.html#ERROR
+        /// </summary>
+        public static Javax.Print.Attribute.Standard.Severity ERROR => Clazz.GetField<Javax.Print.Attribute.Standard.Severity>("ERROR");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Severity.html#REPORT
         /// </summary>
         public static Javax.Print.Attribute.Standard.Severity REPORT => Clazz.GetField<Javax.Print.Attribute.Standard.Severity>("REPORT");
@@ -46,10 +50,6 @@ namespace Javax.Print.Attribute.Standard
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Severity.html#WARNING
         /// </summary>
         public static Javax.Print.Attribute.Standard.Severity WARNING => Clazz.GetField<Javax.Print.Attribute.Standard.Severity>("WARNING");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Severity.html#ERROR
-        /// </summary>
-        public static Javax.Print.Attribute.Standard.Severity ERROR => Clazz.GetField<Javax.Print.Attribute.Standard.Severity>("ERROR");
         
         #endregion
 

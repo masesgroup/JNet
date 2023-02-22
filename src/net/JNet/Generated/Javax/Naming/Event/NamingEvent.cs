@@ -49,6 +49,10 @@ namespace Javax.Naming.Event
         /// </summary>
         public static int OBJECT_ADDED => Clazz.GetField<int>("OBJECT_ADDED");
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingEvent.html#OBJECT_CHANGED
+        /// </summary>
+        public static int OBJECT_CHANGED => Clazz.GetField<int>("OBJECT_CHANGED");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingEvent.html#OBJECT_REMOVED
         /// </summary>
         public static int OBJECT_REMOVED => Clazz.GetField<int>("OBJECT_REMOVED");
@@ -56,10 +60,6 @@ namespace Javax.Naming.Event
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingEvent.html#OBJECT_RENAMED
         /// </summary>
         public static int OBJECT_RENAMED => Clazz.GetField<int>("OBJECT_RENAMED");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/NamingEvent.html#OBJECT_CHANGED
-        /// </summary>
-        public static int OBJECT_CHANGED => Clazz.GetField<int>("OBJECT_CHANGED");
         
         #endregion
 

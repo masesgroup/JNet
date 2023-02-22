@@ -30,6 +30,13 @@ namespace Java.Util.Zip
     {
         #region Constructors
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/InflaterOutputStream.html#<init>(java.io.OutputStream,java.util.zip.Inflater,int)
+        /// </summary>
+        public InflaterOutputStream(Java.Io.OutputStream arg0, Java.Util.Zip.Inflater arg1, int arg2)
+            : base(arg0, arg1, arg2)
+        {
+        }
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/InflaterOutputStream.html#<init>(java.io.OutputStream,java.util.zip.Inflater)
         /// </summary>
         public InflaterOutputStream(Java.Io.OutputStream arg0, Java.Util.Zip.Inflater arg1)
@@ -41,13 +48,6 @@ namespace Java.Util.Zip
         /// </summary>
         public InflaterOutputStream(Java.Io.OutputStream arg0)
             : base(arg0)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/InflaterOutputStream.html#<init>(java.io.OutputStream,java.util.zip.Inflater,int)
-        /// </summary>
-        public InflaterOutputStream(Java.Io.OutputStream arg0, Java.Util.Zip.Inflater arg1, int arg2)
-            : base(arg0, arg1, arg2)
         {
         }
         

@@ -39,65 +39,65 @@ namespace Javax.Swing.Text.Html.Parser
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#name
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#applet
         /// </summary>
-        public string name => Instance.GetField<string>("name");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#elements
-        /// </summary>
-        public Java.Util.Vector elements => Instance.GetField<Java.Util.Vector>("elements");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#elementHash
-        /// </summary>
-        public Java.Util.Hashtable elementHash => Instance.GetField<Java.Util.Hashtable>("elementHash");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#entityHash
-        /// </summary>
-        public Java.Util.Hashtable entityHash => Instance.GetField<Java.Util.Hashtable>("entityHash");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#pcdata
-        /// </summary>
-        public Javax.Swing.Text.Html.Parser.Element pcdata => Instance.GetField<Javax.Swing.Text.Html.Parser.Element>("pcdata");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#html
-        /// </summary>
-        public Javax.Swing.Text.Html.Parser.Element html => Instance.GetField<Javax.Swing.Text.Html.Parser.Element>("html");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#meta
-        /// </summary>
-        public Javax.Swing.Text.Html.Parser.Element meta => Instance.GetField<Javax.Swing.Text.Html.Parser.Element>("meta");
+        public Javax.Swing.Text.Html.Parser.Element applet => Instance.GetField<Javax.Swing.Text.Html.Parser.Element>("applet");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#base
         /// </summary>
         public Javax.Swing.Text.Html.Parser.Element baseField => Instance.GetField<Javax.Swing.Text.Html.Parser.Element>("base");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#isindex
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#body
         /// </summary>
-        public Javax.Swing.Text.Html.Parser.Element isindex => Instance.GetField<Javax.Swing.Text.Html.Parser.Element>("isindex");
+        public Javax.Swing.Text.Html.Parser.Element body => Instance.GetField<Javax.Swing.Text.Html.Parser.Element>("body");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#head
         /// </summary>
         public Javax.Swing.Text.Html.Parser.Element head => Instance.GetField<Javax.Swing.Text.Html.Parser.Element>("head");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#body
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#html
         /// </summary>
-        public Javax.Swing.Text.Html.Parser.Element body => Instance.GetField<Javax.Swing.Text.Html.Parser.Element>("body");
+        public Javax.Swing.Text.Html.Parser.Element html => Instance.GetField<Javax.Swing.Text.Html.Parser.Element>("html");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#applet
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#isindex
         /// </summary>
-        public Javax.Swing.Text.Html.Parser.Element applet => Instance.GetField<Javax.Swing.Text.Html.Parser.Element>("applet");
+        public Javax.Swing.Text.Html.Parser.Element isindex => Instance.GetField<Javax.Swing.Text.Html.Parser.Element>("isindex");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#param
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#meta
         /// </summary>
-        public Javax.Swing.Text.Html.Parser.Element param => Instance.GetField<Javax.Swing.Text.Html.Parser.Element>("param");
+        public Javax.Swing.Text.Html.Parser.Element meta => Instance.GetField<Javax.Swing.Text.Html.Parser.Element>("meta");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#p
         /// </summary>
         public Javax.Swing.Text.Html.Parser.Element p => Instance.GetField<Javax.Swing.Text.Html.Parser.Element>("p");
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#param
+        /// </summary>
+        public Javax.Swing.Text.Html.Parser.Element param => Instance.GetField<Javax.Swing.Text.Html.Parser.Element>("param");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#pcdata
+        /// </summary>
+        public Javax.Swing.Text.Html.Parser.Element pcdata => Instance.GetField<Javax.Swing.Text.Html.Parser.Element>("pcdata");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#title
         /// </summary>
         public Javax.Swing.Text.Html.Parser.Element title => Instance.GetField<Javax.Swing.Text.Html.Parser.Element>("title");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#name
+        /// </summary>
+        public string name => Instance.GetField<string>("name");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#entityHash
+        /// </summary>
+        public Java.Util.Hashtable entityHash => Instance.GetField<Java.Util.Hashtable>("entityHash");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#elementHash
+        /// </summary>
+        public Java.Util.Hashtable elementHash => Instance.GetField<Java.Util.Hashtable>("elementHash");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#elements
+        /// </summary>
+        public Java.Util.Vector elements => Instance.GetField<Java.Util.Vector>("elements");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#FILE_VERSION
         /// </summary>

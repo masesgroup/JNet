@@ -41,13 +41,13 @@ namespace Java.Time
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetDateTime.html#MIN
-        /// </summary>
-        public static Java.Time.OffsetDateTime MIN => Clazz.GetField<Java.Time.OffsetDateTime>("MIN");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetDateTime.html#MAX
         /// </summary>
         public static Java.Time.OffsetDateTime MAX => Clazz.GetField<Java.Time.OffsetDateTime>("MAX");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetDateTime.html#MIN
+        /// </summary>
+        public static Java.Time.OffsetDateTime MIN => Clazz.GetField<Java.Time.OffsetDateTime>("MIN");
         
         #endregion
 

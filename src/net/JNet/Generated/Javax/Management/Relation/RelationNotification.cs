@@ -42,25 +42,25 @@ namespace Javax.Management.Relation
         /// </summary>
         public static string RELATION_BASIC_CREATION => Clazz.GetField<string>("RELATION_BASIC_CREATION");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotification.html#RELATION_MBEAN_CREATION
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotification.html#RELATION_BASIC_REMOVAL
         /// </summary>
-        public static string RELATION_MBEAN_CREATION => Clazz.GetField<string>("RELATION_MBEAN_CREATION");
+        public static string RELATION_BASIC_REMOVAL => Clazz.GetField<string>("RELATION_BASIC_REMOVAL");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotification.html#RELATION_BASIC_UPDATE
         /// </summary>
         public static string RELATION_BASIC_UPDATE => Clazz.GetField<string>("RELATION_BASIC_UPDATE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotification.html#RELATION_MBEAN_UPDATE
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotification.html#RELATION_MBEAN_CREATION
         /// </summary>
-        public static string RELATION_MBEAN_UPDATE => Clazz.GetField<string>("RELATION_MBEAN_UPDATE");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotification.html#RELATION_BASIC_REMOVAL
-        /// </summary>
-        public static string RELATION_BASIC_REMOVAL => Clazz.GetField<string>("RELATION_BASIC_REMOVAL");
+        public static string RELATION_MBEAN_CREATION => Clazz.GetField<string>("RELATION_MBEAN_CREATION");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotification.html#RELATION_MBEAN_REMOVAL
         /// </summary>
         public static string RELATION_MBEAN_REMOVAL => Clazz.GetField<string>("RELATION_MBEAN_REMOVAL");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotification.html#RELATION_MBEAN_UPDATE
+        /// </summary>
+        public static string RELATION_MBEAN_UPDATE => Clazz.GetField<string>("RELATION_MBEAN_UPDATE");
         
         #endregion
 

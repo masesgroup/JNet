@@ -66,13 +66,13 @@ namespace Java.Util.Stream
             /// </summary>
             public static Java.Util.Stream.Collector.Characteristics CONCURRENT => Clazz.GetField<Java.Util.Stream.Collector.Characteristics>("CONCURRENT");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.Characteristics.html#UNORDERED
-            /// </summary>
-            public static Java.Util.Stream.Collector.Characteristics UNORDERED => Clazz.GetField<Java.Util.Stream.Collector.Characteristics>("UNORDERED");
-            /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.Characteristics.html#IDENTITY_FINISH
             /// </summary>
             public static Java.Util.Stream.Collector.Characteristics IDENTITY_FINISH => Clazz.GetField<Java.Util.Stream.Collector.Characteristics>("IDENTITY_FINISH");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.Characteristics.html#UNORDERED
+            /// </summary>
+            public static Java.Util.Stream.Collector.Characteristics UNORDERED => Clazz.GetField<Java.Util.Stream.Collector.Characteristics>("UNORDERED");
             
             #endregion
 

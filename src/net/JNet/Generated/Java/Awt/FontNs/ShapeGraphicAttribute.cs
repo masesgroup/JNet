@@ -45,13 +45,13 @@ namespace Java.Awt.FontNs
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/ShapeGraphicAttribute.html#STROKE
-        /// </summary>
-        public static bool STROKE => Clazz.GetField<bool>("STROKE");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/ShapeGraphicAttribute.html#FILL
         /// </summary>
         public static bool FILL => Clazz.GetField<bool>("FILL");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/ShapeGraphicAttribute.html#STROKE
+        /// </summary>
+        public static bool STROKE => Clazz.GetField<bool>("STROKE");
         
         #endregion
 

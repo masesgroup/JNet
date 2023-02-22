@@ -47,14 +47,6 @@ namespace Javax.Swing
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BoxLayout.html#X_AXIS
-        /// </summary>
-        public static int X_AXIS => Clazz.GetField<int>("X_AXIS");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BoxLayout.html#Y_AXIS
-        /// </summary>
-        public static int Y_AXIS => Clazz.GetField<int>("Y_AXIS");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BoxLayout.html#LINE_AXIS
         /// </summary>
         public static int LINE_AXIS => Clazz.GetField<int>("LINE_AXIS");
@@ -62,6 +54,14 @@ namespace Javax.Swing
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BoxLayout.html#PAGE_AXIS
         /// </summary>
         public static int PAGE_AXIS => Clazz.GetField<int>("PAGE_AXIS");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BoxLayout.html#X_AXIS
+        /// </summary>
+        public static int X_AXIS => Clazz.GetField<int>("X_AXIS");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BoxLayout.html#Y_AXIS
+        /// </summary>
+        public static int Y_AXIS => Clazz.GetField<int>("Y_AXIS");
         
         #endregion
 

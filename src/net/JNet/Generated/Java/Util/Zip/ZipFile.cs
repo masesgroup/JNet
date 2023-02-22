@@ -30,31 +30,10 @@ namespace Java.Util.Zip
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#<init>(java.io.File,java.nio.charset.Charset) throws java.io.IOException
-        /// </summary>
-        public ZipFile(Java.Io.File arg0, Java.Nio.Charset.Charset arg1)
-            : base(arg0, arg1)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#<init>(java.lang.String,java.nio.charset.Charset) throws java.io.IOException
-        /// </summary>
-        public ZipFile(string arg0, Java.Nio.Charset.Charset arg1)
-            : base(arg0, arg1)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#<init>(java.io.File,int,java.nio.charset.Charset) throws java.io.IOException
         /// </summary>
         public ZipFile(Java.Io.File arg0, int arg1, Java.Nio.Charset.Charset arg2)
             : base(arg0, arg1, arg2)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#<init>(java.lang.String) throws java.io.IOException
-        /// </summary>
-        public ZipFile(string arg0)
-            : base(arg0)
         {
         }
         /// <summary>
@@ -65,9 +44,30 @@ namespace Java.Util.Zip
         {
         }
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#<init>(java.io.File,java.nio.charset.Charset) throws java.io.IOException
+        /// </summary>
+        public ZipFile(Java.Io.File arg0, Java.Nio.Charset.Charset arg1)
+            : base(arg0, arg1)
+        {
+        }
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#<init>(java.io.File) throws java.util.zip.ZipException,java.io.IOException
         /// </summary>
         public ZipFile(Java.Io.File arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#<init>(java.lang.String,java.nio.charset.Charset) throws java.io.IOException
+        /// </summary>
+        public ZipFile(string arg0, Java.Nio.Charset.Charset arg1)
+            : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#<init>(java.lang.String) throws java.io.IOException
+        /// </summary>
+        public ZipFile(string arg0)
             : base(arg0)
         {
         }
@@ -81,13 +81,13 @@ namespace Java.Util.Zip
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#OPEN_READ
-        /// </summary>
-        public static int OPEN_READ => Clazz.GetField<int>("OPEN_READ");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#OPEN_DELETE
         /// </summary>
         public static int OPEN_DELETE => Clazz.GetField<int>("OPEN_DELETE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipFile.html#OPEN_READ
+        /// </summary>
+        public static int OPEN_READ => Clazz.GetField<int>("OPEN_READ");
         
         #endregion
 

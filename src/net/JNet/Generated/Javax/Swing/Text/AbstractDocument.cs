@@ -40,25 +40,25 @@ namespace Javax.Swing.Text
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#ParagraphElementName
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#BidiElementName
         /// </summary>
-        public static string ParagraphElementName => Clazz.GetField<string>("ParagraphElementName");
+        public static string BidiElementName => Clazz.GetField<string>("BidiElementName");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#ContentElementName
         /// </summary>
         public static string ContentElementName => Clazz.GetField<string>("ContentElementName");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#SectionElementName
-        /// </summary>
-        public static string SectionElementName => Clazz.GetField<string>("SectionElementName");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#BidiElementName
-        /// </summary>
-        public static string BidiElementName => Clazz.GetField<string>("BidiElementName");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#ElementNameAttribute
         /// </summary>
         public static string ElementNameAttribute => Clazz.GetField<string>("ElementNameAttribute");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#ParagraphElementName
+        /// </summary>
+        public static string ParagraphElementName => Clazz.GetField<string>("ParagraphElementName");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#SectionElementName
+        /// </summary>
+        public static string SectionElementName => Clazz.GetField<string>("SectionElementName");
         
         #endregion
 
@@ -260,8 +260,8 @@ namespace Javax.Swing.Text
         #endregion
 
         #region Nested classes
-        #region AttributeContext
-        public partial class AttributeContext
+        #region Content
+        public partial class Content
         {
             #region Constructors
 
@@ -281,46 +281,116 @@ namespace Javax.Swing.Text
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AttributeContext.html#getEmptySet() 
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.Content.html#length()
             /// </summary>
-            public Javax.Swing.Text.AttributeSet EmptySet
+            public int Length()
             {
-                get { return IExecute<Javax.Swing.Text.AttributeSet>("getEmptySet"); }
+                return IExecute<int>("length");
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AttributeContext.html#addAttribute(javax.swing.text.AttributeSet,java.lang.Object,java.lang.Object)
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.Content.html#getString(int,int) throws javax.swing.text.BadLocationException
             /// </summary>
-            public Javax.Swing.Text.AttributeSet AddAttribute(Javax.Swing.Text.AttributeSet arg0, object arg1, object arg2)
+            public string GetString(int arg0, int arg1)
             {
-                return IExecute<Javax.Swing.Text.AttributeSet>("addAttribute", arg0, arg1, arg2);
+                return IExecute<string>("getString", arg0, arg1);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AttributeContext.html#addAttributes(javax.swing.text.AttributeSet,javax.swing.text.AttributeSet)
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.Content.html#createPosition(int) throws javax.swing.text.BadLocationException
             /// </summary>
-            public Javax.Swing.Text.AttributeSet AddAttributes(Javax.Swing.Text.AttributeSet arg0, Javax.Swing.Text.AttributeSet arg1)
+            public Javax.Swing.Text.Position CreatePosition(int arg0)
             {
-                return IExecute<Javax.Swing.Text.AttributeSet>("addAttributes", arg0, arg1);
+                return IExecute<Javax.Swing.Text.Position>("createPosition", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AttributeContext.html#removeAttribute(javax.swing.text.AttributeSet,java.lang.Object)
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.Content.html#insertString(int,java.lang.String) throws javax.swing.text.BadLocationException
             /// </summary>
-            public Javax.Swing.Text.AttributeSet RemoveAttribute(Javax.Swing.Text.AttributeSet arg0, object arg1)
+            public Javax.Swing.Undo.UndoableEdit InsertString(int arg0, string arg1)
             {
-                return IExecute<Javax.Swing.Text.AttributeSet>("removeAttribute", arg0, arg1);
+                return IExecute<Javax.Swing.Undo.UndoableEdit>("insertString", arg0, arg1);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AttributeContext.html#removeAttributes(javax.swing.text.AttributeSet,javax.swing.text.AttributeSet)
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.Content.html#remove(int,int) throws javax.swing.text.BadLocationException
             /// </summary>
-            public Javax.Swing.Text.AttributeSet RemoveAttributes(Javax.Swing.Text.AttributeSet arg0, Javax.Swing.Text.AttributeSet arg1)
+            public Javax.Swing.Undo.UndoableEdit Remove(int arg0, int arg1)
             {
-                return IExecute<Javax.Swing.Text.AttributeSet>("removeAttributes", arg0, arg1);
+                return IExecute<Javax.Swing.Undo.UndoableEdit>("remove", arg0, arg1);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AttributeContext.html#reclaim(javax.swing.text.AttributeSet)
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.Content.html#getChars(int,int,javax.swing.text.Segment) throws javax.swing.text.BadLocationException
             /// </summary>
-            public void Reclaim(Javax.Swing.Text.AttributeSet arg0)
+            public void GetChars(int arg0, int arg1, Javax.Swing.Text.Segment arg2)
             {
-                IExecute("reclaim", arg0);
+                IExecute("getChars", arg0, arg1, arg2);
+            }
+            
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region DefaultDocumentEvent
+        public partial class DefaultDocumentEvent
+        {
+            #region Constructors
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.DefaultDocumentEvent.html#<init>(javax.swing.text.AbstractDocument,int,int,javax.swing.event.DocumentEvent$EventType)
+            /// </summary>
+            public DefaultDocumentEvent(Javax.Swing.Text.AbstractDocument arg0, int arg1, int arg2, Javax.Swing.Event.DocumentEvent.EventType arg3)
+                : base(arg0, arg1, arg2, arg3)
+            {
+            }
+            
+            #endregion
+
+            #region Class/Interface conversion operators
+            public static implicit operator Javax.Swing.Event.DocumentEvent(Javax.Swing.Text.AbstractDocument.DefaultDocumentEvent t) => t.Cast<Javax.Swing.Event.DocumentEvent>();
+            
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.DefaultDocumentEvent.html#getDocument() 
+            /// </summary>
+            public Javax.Swing.Text.Document Document
+            {
+                get { return IExecute<Javax.Swing.Text.Document>("getDocument"); }
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.DefaultDocumentEvent.html#getLength() 
+            /// </summary>
+            public int Length
+            {
+                get { return IExecute<int>("getLength"); }
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.DefaultDocumentEvent.html#getOffset() 
+            /// </summary>
+            public int Offset
+            {
+                get { return IExecute<int>("getOffset"); }
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.DefaultDocumentEvent.html#getType() 
+            /// </summary>
+            public Javax.Swing.Event.DocumentEvent.EventType Type
+            {
+                get { return IExecute<Javax.Swing.Event.DocumentEvent.EventType>("getType"); }
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.DefaultDocumentEvent.html#getChange(javax.swing.text.Element)
+            /// </summary>
+            public Javax.Swing.Event.DocumentEvent.ElementChange GetChange(Javax.Swing.Text.Element arg0)
+            {
+                return IExecute<Javax.Swing.Event.DocumentEvent.ElementChange>("getChange", arg0);
             }
             
             #endregion
@@ -563,6 +633,68 @@ namespace Javax.Swing.Text
         }
         #endregion
 
+        #region ElementEdit
+        public partial class ElementEdit
+        {
+            #region Constructors
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.ElementEdit.html#<init>(javax.swing.text.Element,int,javax.swing.text.Element[],javax.swing.text.Element[])
+            /// </summary>
+            public ElementEdit(Javax.Swing.Text.Element arg0, int arg1, Javax.Swing.Text.Element[] arg2, Javax.Swing.Text.Element[] arg3)
+                : base(arg0, arg1, arg2, arg3)
+            {
+            }
+            
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.ElementEdit.html#getChildrenAdded() 
+            /// </summary>
+            public Javax.Swing.Text.Element[] ChildrenAdded
+            {
+                get { return IExecuteArray<Javax.Swing.Text.Element>("getChildrenAdded"); }
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.ElementEdit.html#getChildrenRemoved() 
+            /// </summary>
+            public Javax.Swing.Text.Element[] ChildrenRemoved
+            {
+                get { return IExecuteArray<Javax.Swing.Text.Element>("getChildrenRemoved"); }
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.ElementEdit.html#getElement() 
+            /// </summary>
+            public Javax.Swing.Text.Element Element
+            {
+                get { return IExecute<Javax.Swing.Text.Element>("getElement"); }
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.ElementEdit.html#getIndex() 
+            /// </summary>
+            public int Index
+            {
+                get { return IExecute<int>("getIndex"); }
+            }
+            
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region BranchElement
         public partial class BranchElement
         {
@@ -645,140 +777,8 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region DefaultDocumentEvent
-        public partial class DefaultDocumentEvent
-        {
-            #region Constructors
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.DefaultDocumentEvent.html#<init>(javax.swing.text.AbstractDocument,int,int,javax.swing.event.DocumentEvent$EventType)
-            /// </summary>
-            public DefaultDocumentEvent(Javax.Swing.Text.AbstractDocument arg0, int arg1, int arg2, Javax.Swing.Event.DocumentEvent.EventType arg3)
-                : base(arg0, arg1, arg2, arg3)
-            {
-            }
-            
-            #endregion
-
-            #region Class/Interface conversion operators
-            public static implicit operator Javax.Swing.Event.DocumentEvent(Javax.Swing.Text.AbstractDocument.DefaultDocumentEvent t) => t.Cast<Javax.Swing.Event.DocumentEvent>();
-            
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.DefaultDocumentEvent.html#getDocument() 
-            /// </summary>
-            public Javax.Swing.Text.Document Document
-            {
-                get { return IExecute<Javax.Swing.Text.Document>("getDocument"); }
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.DefaultDocumentEvent.html#getLength() 
-            /// </summary>
-            public int Length
-            {
-                get { return IExecute<int>("getLength"); }
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.DefaultDocumentEvent.html#getOffset() 
-            /// </summary>
-            public int Offset
-            {
-                get { return IExecute<int>("getOffset"); }
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.DefaultDocumentEvent.html#getType() 
-            /// </summary>
-            public Javax.Swing.Event.DocumentEvent.EventType Type
-            {
-                get { return IExecute<Javax.Swing.Event.DocumentEvent.EventType>("getType"); }
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.DefaultDocumentEvent.html#getChange(javax.swing.text.Element)
-            /// </summary>
-            public Javax.Swing.Event.DocumentEvent.ElementChange GetChange(Javax.Swing.Text.Element arg0)
-            {
-                return IExecute<Javax.Swing.Event.DocumentEvent.ElementChange>("getChange", arg0);
-            }
-            
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region ElementEdit
-        public partial class ElementEdit
-        {
-            #region Constructors
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.ElementEdit.html#<init>(javax.swing.text.Element,int,javax.swing.text.Element[],javax.swing.text.Element[])
-            /// </summary>
-            public ElementEdit(Javax.Swing.Text.Element arg0, int arg1, Javax.Swing.Text.Element[] arg2, Javax.Swing.Text.Element[] arg3)
-                : base(arg0, arg1, arg2, arg3)
-            {
-            }
-            
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.ElementEdit.html#getChildrenAdded() 
-            /// </summary>
-            public Javax.Swing.Text.Element[] ChildrenAdded
-            {
-                get { return IExecuteArray<Javax.Swing.Text.Element>("getChildrenAdded"); }
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.ElementEdit.html#getChildrenRemoved() 
-            /// </summary>
-            public Javax.Swing.Text.Element[] ChildrenRemoved
-            {
-                get { return IExecuteArray<Javax.Swing.Text.Element>("getChildrenRemoved"); }
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.ElementEdit.html#getElement() 
-            /// </summary>
-            public Javax.Swing.Text.Element Element
-            {
-                get { return IExecute<Javax.Swing.Text.Element>("getElement"); }
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.ElementEdit.html#getIndex() 
-            /// </summary>
-            public int Index
-            {
-                get { return IExecute<int>("getIndex"); }
-            }
-            
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region Content
-        public partial class Content
+        #region AttributeContext
+        public partial class AttributeContext
         {
             #region Constructors
 
@@ -798,46 +798,46 @@ namespace Javax.Swing.Text
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.Content.html#length()
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AttributeContext.html#getEmptySet() 
             /// </summary>
-            public int Length()
+            public Javax.Swing.Text.AttributeSet EmptySet
             {
-                return IExecute<int>("length");
+                get { return IExecute<Javax.Swing.Text.AttributeSet>("getEmptySet"); }
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.Content.html#getString(int,int) throws javax.swing.text.BadLocationException
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AttributeContext.html#addAttribute(javax.swing.text.AttributeSet,java.lang.Object,java.lang.Object)
             /// </summary>
-            public string GetString(int arg0, int arg1)
+            public Javax.Swing.Text.AttributeSet AddAttribute(Javax.Swing.Text.AttributeSet arg0, object arg1, object arg2)
             {
-                return IExecute<string>("getString", arg0, arg1);
+                return IExecute<Javax.Swing.Text.AttributeSet>("addAttribute", arg0, arg1, arg2);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.Content.html#createPosition(int) throws javax.swing.text.BadLocationException
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AttributeContext.html#addAttributes(javax.swing.text.AttributeSet,javax.swing.text.AttributeSet)
             /// </summary>
-            public Javax.Swing.Text.Position CreatePosition(int arg0)
+            public Javax.Swing.Text.AttributeSet AddAttributes(Javax.Swing.Text.AttributeSet arg0, Javax.Swing.Text.AttributeSet arg1)
             {
-                return IExecute<Javax.Swing.Text.Position>("createPosition", arg0);
+                return IExecute<Javax.Swing.Text.AttributeSet>("addAttributes", arg0, arg1);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.Content.html#insertString(int,java.lang.String) throws javax.swing.text.BadLocationException
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AttributeContext.html#removeAttribute(javax.swing.text.AttributeSet,java.lang.Object)
             /// </summary>
-            public Javax.Swing.Undo.UndoableEdit InsertString(int arg0, string arg1)
+            public Javax.Swing.Text.AttributeSet RemoveAttribute(Javax.Swing.Text.AttributeSet arg0, object arg1)
             {
-                return IExecute<Javax.Swing.Undo.UndoableEdit>("insertString", arg0, arg1);
+                return IExecute<Javax.Swing.Text.AttributeSet>("removeAttribute", arg0, arg1);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.Content.html#remove(int,int) throws javax.swing.text.BadLocationException
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AttributeContext.html#removeAttributes(javax.swing.text.AttributeSet,javax.swing.text.AttributeSet)
             /// </summary>
-            public Javax.Swing.Undo.UndoableEdit Remove(int arg0, int arg1)
+            public Javax.Swing.Text.AttributeSet RemoveAttributes(Javax.Swing.Text.AttributeSet arg0, Javax.Swing.Text.AttributeSet arg1)
             {
-                return IExecute<Javax.Swing.Undo.UndoableEdit>("remove", arg0, arg1);
+                return IExecute<Javax.Swing.Text.AttributeSet>("removeAttributes", arg0, arg1);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.Content.html#getChars(int,int,javax.swing.text.Segment) throws javax.swing.text.BadLocationException
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AttributeContext.html#reclaim(javax.swing.text.AttributeSet)
             /// </summary>
-            public void GetChars(int arg0, int arg1, Javax.Swing.Text.Segment arg2)
+            public void Reclaim(Javax.Swing.Text.AttributeSet arg0)
             {
-                IExecute("getChars", arg0, arg1, arg2);
+                IExecute("reclaim", arg0);
             }
             
             #endregion

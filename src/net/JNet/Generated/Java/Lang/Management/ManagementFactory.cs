@@ -46,9 +46,21 @@ namespace Java.Lang.Management
         /// </summary>
         public static string COMPILATION_MXBEAN_NAME => Clazz.GetField<string>("COMPILATION_MXBEAN_NAME");
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#GARBAGE_COLLECTOR_MXBEAN_DOMAIN_TYPE
+        /// </summary>
+        public static string GARBAGE_COLLECTOR_MXBEAN_DOMAIN_TYPE => Clazz.GetField<string>("GARBAGE_COLLECTOR_MXBEAN_DOMAIN_TYPE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#MEMORY_MANAGER_MXBEAN_DOMAIN_TYPE
+        /// </summary>
+        public static string MEMORY_MANAGER_MXBEAN_DOMAIN_TYPE => Clazz.GetField<string>("MEMORY_MANAGER_MXBEAN_DOMAIN_TYPE");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#MEMORY_MXBEAN_NAME
         /// </summary>
         public static string MEMORY_MXBEAN_NAME => Clazz.GetField<string>("MEMORY_MXBEAN_NAME");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#MEMORY_POOL_MXBEAN_DOMAIN_TYPE
+        /// </summary>
+        public static string MEMORY_POOL_MXBEAN_DOMAIN_TYPE => Clazz.GetField<string>("MEMORY_POOL_MXBEAN_DOMAIN_TYPE");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#OPERATING_SYSTEM_MXBEAN_NAME
         /// </summary>
@@ -61,18 +73,6 @@ namespace Java.Lang.Management
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#THREAD_MXBEAN_NAME
         /// </summary>
         public static string THREAD_MXBEAN_NAME => Clazz.GetField<string>("THREAD_MXBEAN_NAME");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#GARBAGE_COLLECTOR_MXBEAN_DOMAIN_TYPE
-        /// </summary>
-        public static string GARBAGE_COLLECTOR_MXBEAN_DOMAIN_TYPE => Clazz.GetField<string>("GARBAGE_COLLECTOR_MXBEAN_DOMAIN_TYPE");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#MEMORY_MANAGER_MXBEAN_DOMAIN_TYPE
-        /// </summary>
-        public static string MEMORY_MANAGER_MXBEAN_DOMAIN_TYPE => Clazz.GetField<string>("MEMORY_MANAGER_MXBEAN_DOMAIN_TYPE");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ManagementFactory.html#MEMORY_POOL_MXBEAN_DOMAIN_TYPE
-        /// </summary>
-        public static string MEMORY_POOL_MXBEAN_DOMAIN_TYPE => Clazz.GetField<string>("MEMORY_POOL_MXBEAN_DOMAIN_TYPE");
         
         #endregion
 

@@ -30,16 +30,23 @@ namespace Java.Awt.ImageNs.Renderable
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderContext.html#<init>(java.awt.geom.AffineTransform,java.awt.Shape)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderContext.html#<init>(java.awt.geom.AffineTransform,java.awt.RenderingHints)
         /// </summary>
-        public RenderContext(Java.Awt.Geom.AffineTransform arg0, Java.Awt.Shape arg1)
+        public RenderContext(Java.Awt.Geom.AffineTransform arg0, Java.Awt.RenderingHints arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderContext.html#<init>(java.awt.geom.AffineTransform,java.awt.RenderingHints)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderContext.html#<init>(java.awt.geom.AffineTransform,java.awt.Shape,java.awt.RenderingHints)
         /// </summary>
-        public RenderContext(Java.Awt.Geom.AffineTransform arg0, Java.Awt.RenderingHints arg1)
+        public RenderContext(Java.Awt.Geom.AffineTransform arg0, Java.Awt.Shape arg1, Java.Awt.RenderingHints arg2)
+            : base(arg0, arg1, arg2)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderContext.html#<init>(java.awt.geom.AffineTransform,java.awt.Shape)
+        /// </summary>
+        public RenderContext(Java.Awt.Geom.AffineTransform arg0, Java.Awt.Shape arg1)
             : base(arg0, arg1)
         {
         }
@@ -48,13 +55,6 @@ namespace Java.Awt.ImageNs.Renderable
         /// </summary>
         public RenderContext(Java.Awt.Geom.AffineTransform arg0)
             : base(arg0)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderContext.html#<init>(java.awt.geom.AffineTransform,java.awt.Shape,java.awt.RenderingHints)
-        /// </summary>
-        public RenderContext(Java.Awt.Geom.AffineTransform arg0, Java.Awt.Shape arg1, Java.Awt.RenderingHints arg2)
-            : base(arg0, arg1, arg2)
         {
         }
         

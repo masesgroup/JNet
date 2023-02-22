@@ -37,17 +37,17 @@ namespace Javax.Swing.Border
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/EtchedBorder.html#<init>(java.awt.Color,java.awt.Color)
-        /// </summary>
-        public EtchedBorder(Java.Awt.Color arg0, Java.Awt.Color arg1)
-            : base(arg0, arg1)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/EtchedBorder.html#<init>(int)
         /// </summary>
         public EtchedBorder(int arg0)
             : base(arg0)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/EtchedBorder.html#<init>(java.awt.Color,java.awt.Color)
+        /// </summary>
+        public EtchedBorder(Java.Awt.Color arg0, Java.Awt.Color arg1)
+            : base(arg0, arg1)
         {
         }
         
@@ -59,13 +59,13 @@ namespace Javax.Swing.Border
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/EtchedBorder.html#RAISED
-        /// </summary>
-        public static int RAISED => Clazz.GetField<int>("RAISED");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/EtchedBorder.html#LOWERED
         /// </summary>
         public static int LOWERED => Clazz.GetField<int>("LOWERED");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/EtchedBorder.html#RAISED
+        /// </summary>
+        public static int RAISED => Clazz.GetField<int>("RAISED");
         
         #endregion
 

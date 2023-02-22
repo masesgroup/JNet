@@ -39,6 +39,10 @@ namespace Java.Time.Temporal
 
         #region Fields
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/WeekFields.html#WEEK_BASED_YEARS
+        /// </summary>
+        public static Java.Time.Temporal.TemporalUnit WEEK_BASED_YEARS => Clazz.GetField<Java.Time.Temporal.TemporalUnit>("WEEK_BASED_YEARS");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/WeekFields.html#ISO
         /// </summary>
         public static Java.Time.Temporal.WeekFields ISO => Clazz.GetField<Java.Time.Temporal.WeekFields>("ISO");
@@ -46,10 +50,6 @@ namespace Java.Time.Temporal
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/WeekFields.html#SUNDAY_START
         /// </summary>
         public static Java.Time.Temporal.WeekFields SUNDAY_START => Clazz.GetField<Java.Time.Temporal.WeekFields>("SUNDAY_START");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/WeekFields.html#WEEK_BASED_YEARS
-        /// </summary>
-        public static Java.Time.Temporal.TemporalUnit WEEK_BASED_YEARS => Clazz.GetField<Java.Time.Temporal.TemporalUnit>("WEEK_BASED_YEARS");
         
         #endregion
 

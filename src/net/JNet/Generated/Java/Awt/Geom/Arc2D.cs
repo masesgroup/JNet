@@ -38,13 +38,13 @@ namespace Java.Awt.Geom
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#OPEN
-        /// </summary>
-        public static int OPEN => Clazz.GetField<int>("OPEN");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#CHORD
         /// </summary>
         public static int CHORD => Clazz.GetField<int>("CHORD");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#OPEN
+        /// </summary>
+        public static int OPEN => Clazz.GetField<int>("OPEN");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.html#PIE
         /// </summary>
@@ -178,13 +178,6 @@ namespace Java.Awt.Geom
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Double.html#<init>(java.awt.geom.Rectangle2D,double,double,int)
-            /// </summary>
-            public Double(Java.Awt.Geom.Rectangle2D arg0, double arg1, double arg2, int arg3)
-                : base(arg0, arg1, arg2, arg3)
-            {
-            }
-            /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Double.html#<init>(double,double,double,double,double,double,int)
             /// </summary>
             public Double(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5, int arg6)
@@ -198,6 +191,13 @@ namespace Java.Awt.Geom
                 : base(arg0)
             {
             }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Double.html#<init>(java.awt.geom.Rectangle2D,double,double,int)
+            /// </summary>
+            public Double(Java.Awt.Geom.Rectangle2D arg0, double arg1, double arg2, int arg3)
+                : base(arg0, arg1, arg2, arg3)
+            {
+            }
             
             #endregion
 
@@ -208,17 +208,9 @@ namespace Java.Awt.Geom
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Double.html#x
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Double.html#extent
             /// </summary>
-            public double x => Instance.GetField<double>("x");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Double.html#y
-            /// </summary>
-            public double y => Instance.GetField<double>("y");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Double.html#width
-            /// </summary>
-            public double width => Instance.GetField<double>("width");
+            public double extent => Instance.GetField<double>("extent");
             /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Double.html#height
             /// </summary>
@@ -228,9 +220,17 @@ namespace Java.Awt.Geom
             /// </summary>
             public double start => Instance.GetField<double>("start");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Double.html#extent
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Double.html#width
             /// </summary>
-            public double extent => Instance.GetField<double>("extent");
+            public double width => Instance.GetField<double>("width");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Double.html#x
+            /// </summary>
+            public double x => Instance.GetField<double>("x");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Double.html#y
+            /// </summary>
+            public double y => Instance.GetField<double>("y");
             
             #endregion
 
@@ -251,13 +251,6 @@ namespace Java.Awt.Geom
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Float.html#<init>(java.awt.geom.Rectangle2D,float,float,int)
-            /// </summary>
-            public Float(Java.Awt.Geom.Rectangle2D arg0, float arg1, float arg2, int arg3)
-                : base(arg0, arg1, arg2, arg3)
-            {
-            }
-            /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Float.html#<init>(float,float,float,float,float,float,int)
             /// </summary>
             public Float(float arg0, float arg1, float arg2, float arg3, float arg4, float arg5, int arg6)
@@ -271,6 +264,13 @@ namespace Java.Awt.Geom
                 : base(arg0)
             {
             }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Float.html#<init>(java.awt.geom.Rectangle2D,float,float,int)
+            /// </summary>
+            public Float(Java.Awt.Geom.Rectangle2D arg0, float arg1, float arg2, int arg3)
+                : base(arg0, arg1, arg2, arg3)
+            {
+            }
             
             #endregion
 
@@ -281,17 +281,9 @@ namespace Java.Awt.Geom
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Float.html#x
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Float.html#extent
             /// </summary>
-            public float x => Instance.GetField<float>("x");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Float.html#y
-            /// </summary>
-            public float y => Instance.GetField<float>("y");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Float.html#width
-            /// </summary>
-            public float width => Instance.GetField<float>("width");
+            public float extent => Instance.GetField<float>("extent");
             /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Float.html#height
             /// </summary>
@@ -301,9 +293,17 @@ namespace Java.Awt.Geom
             /// </summary>
             public float start => Instance.GetField<float>("start");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Float.html#extent
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Float.html#width
             /// </summary>
-            public float extent => Instance.GetField<float>("extent");
+            public float width => Instance.GetField<float>("width");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Float.html#x
+            /// </summary>
+            public float x => Instance.GetField<float>("x");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Arc2D.Float.html#y
+            /// </summary>
+            public float y => Instance.GetField<float>("y");
             
             #endregion
 

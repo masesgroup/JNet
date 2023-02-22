@@ -30,24 +30,10 @@ namespace Java.Awt.ImageNs
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBufferShort.html#<init>(short[][],int,int[])
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBufferShort.html#<init>(int,int)
         /// </summary>
-        public DataBufferShort(short[][] arg0, int arg1, int[] arg2)
-            : base(arg0, arg1, arg2)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBufferShort.html#<init>(short[][],int)
-        /// </summary>
-        public DataBufferShort(short[][] arg0, int arg1)
+        public DataBufferShort(int arg0, int arg1)
             : base(arg0, arg1)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBufferShort.html#<init>(short[],int,int)
-        /// </summary>
-        public DataBufferShort(short[] arg0, int arg1, int arg2)
-            : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
@@ -58,16 +44,30 @@ namespace Java.Awt.ImageNs
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBufferShort.html#<init>(int,int)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBufferShort.html#<init>(short[],int,int)
         /// </summary>
-        public DataBufferShort(int arg0, int arg1)
-            : base(arg0, arg1)
+        public DataBufferShort(short[] arg0, int arg1, int arg2)
+            : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBufferShort.html#<init>(short[],int)
         /// </summary>
         public DataBufferShort(short[] arg0, int arg1)
+            : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBufferShort.html#<init>(short[][],int,int[])
+        /// </summary>
+        public DataBufferShort(short[][] arg0, int arg1, int[] arg2)
+            : base(arg0, arg1, arg2)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBufferShort.html#<init>(short[][],int)
+        /// </summary>
+        public DataBufferShort(short[][] arg0, int arg1)
             : base(arg0, arg1)
         {
         }

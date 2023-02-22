@@ -52,17 +52,17 @@ namespace Java.Awt.Im
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodHighlight.html#RAW_TEXT
-        /// </summary>
-        public static int RAW_TEXT => Clazz.GetField<int>("RAW_TEXT");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodHighlight.html#CONVERTED_TEXT
         /// </summary>
         public static int CONVERTED_TEXT => Clazz.GetField<int>("CONVERTED_TEXT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodHighlight.html#UNSELECTED_RAW_TEXT_HIGHLIGHT
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodHighlight.html#RAW_TEXT
         /// </summary>
-        public static Java.Awt.Im.InputMethodHighlight UNSELECTED_RAW_TEXT_HIGHLIGHT => Clazz.GetField<Java.Awt.Im.InputMethodHighlight>("UNSELECTED_RAW_TEXT_HIGHLIGHT");
+        public static int RAW_TEXT => Clazz.GetField<int>("RAW_TEXT");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodHighlight.html#SELECTED_CONVERTED_TEXT_HIGHLIGHT
+        /// </summary>
+        public static Java.Awt.Im.InputMethodHighlight SELECTED_CONVERTED_TEXT_HIGHLIGHT => Clazz.GetField<Java.Awt.Im.InputMethodHighlight>("SELECTED_CONVERTED_TEXT_HIGHLIGHT");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodHighlight.html#SELECTED_RAW_TEXT_HIGHLIGHT
         /// </summary>
@@ -72,9 +72,9 @@ namespace Java.Awt.Im
         /// </summary>
         public static Java.Awt.Im.InputMethodHighlight UNSELECTED_CONVERTED_TEXT_HIGHLIGHT => Clazz.GetField<Java.Awt.Im.InputMethodHighlight>("UNSELECTED_CONVERTED_TEXT_HIGHLIGHT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodHighlight.html#SELECTED_CONVERTED_TEXT_HIGHLIGHT
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodHighlight.html#UNSELECTED_RAW_TEXT_HIGHLIGHT
         /// </summary>
-        public static Java.Awt.Im.InputMethodHighlight SELECTED_CONVERTED_TEXT_HIGHLIGHT => Clazz.GetField<Java.Awt.Im.InputMethodHighlight>("SELECTED_CONVERTED_TEXT_HIGHLIGHT");
+        public static Java.Awt.Im.InputMethodHighlight UNSELECTED_RAW_TEXT_HIGHLIGHT => Clazz.GetField<Java.Awt.Im.InputMethodHighlight>("UNSELECTED_RAW_TEXT_HIGHLIGHT");
         
         #endregion
 

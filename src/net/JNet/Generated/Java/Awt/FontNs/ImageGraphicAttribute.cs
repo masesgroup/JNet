@@ -30,17 +30,17 @@ namespace Java.Awt.FontNs
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/ImageGraphicAttribute.html#<init>(java.awt.Image,int)
-        /// </summary>
-        public ImageGraphicAttribute(Java.Awt.Image arg0, int arg1)
-            : base(arg0, arg1)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/ImageGraphicAttribute.html#<init>(java.awt.Image,int,float,float)
         /// </summary>
         public ImageGraphicAttribute(Java.Awt.Image arg0, int arg1, float arg2, float arg3)
             : base(arg0, arg1, arg2, arg3)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/ImageGraphicAttribute.html#<init>(java.awt.Image,int)
+        /// </summary>
+        public ImageGraphicAttribute(Java.Awt.Image arg0, int arg1)
+            : base(arg0, arg1)
         {
         }
         

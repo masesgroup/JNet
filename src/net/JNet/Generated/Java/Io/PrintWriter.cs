@@ -30,34 +30,6 @@ namespace Java.Io
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintWriter.html#<init>(java.lang.String) throws java.io.FileNotFoundException
-        /// </summary>
-        public PrintWriter(string arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintWriter.html#<init>(java.lang.String,java.lang.String) throws java.io.FileNotFoundException,java.io.UnsupportedEncodingException
-        /// </summary>
-        public PrintWriter(string arg0, string arg1)
-            : base(arg0, arg1)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintWriter.html#<init>(java.lang.String,java.nio.charset.Charset) throws java.io.IOException
-        /// </summary>
-        public PrintWriter(string arg0, Java.Nio.Charset.Charset arg1)
-            : base(arg0, arg1)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintWriter.html#<init>(java.io.File) throws java.io.FileNotFoundException
-        /// </summary>
-        public PrintWriter(Java.Io.File arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintWriter.html#<init>(java.io.File,java.lang.String) throws java.io.FileNotFoundException,java.io.UnsupportedEncodingException
         /// </summary>
         public PrintWriter(Java.Io.File arg0, string arg1)
@@ -72,17 +44,10 @@ namespace Java.Io
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintWriter.html#<init>(java.io.Writer)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintWriter.html#<init>(java.io.File) throws java.io.FileNotFoundException
         /// </summary>
-        public PrintWriter(Java.Io.Writer arg0)
+        public PrintWriter(Java.Io.File arg0)
             : base(arg0)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintWriter.html#<init>(java.io.Writer,boolean)
-        /// </summary>
-        public PrintWriter(Java.Io.Writer arg0, bool arg1)
-            : base(arg0, arg1)
         {
         }
         /// <summary>
@@ -103,6 +68,41 @@ namespace Java.Io
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintWriter.html#<init>(java.io.OutputStream)
         /// </summary>
         public PrintWriter(Java.Io.OutputStream arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintWriter.html#<init>(java.io.Writer,boolean)
+        /// </summary>
+        public PrintWriter(Java.Io.Writer arg0, bool arg1)
+            : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintWriter.html#<init>(java.io.Writer)
+        /// </summary>
+        public PrintWriter(Java.Io.Writer arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintWriter.html#<init>(java.lang.String,java.lang.String) throws java.io.FileNotFoundException,java.io.UnsupportedEncodingException
+        /// </summary>
+        public PrintWriter(string arg0, string arg1)
+            : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintWriter.html#<init>(java.lang.String,java.nio.charset.Charset) throws java.io.IOException
+        /// </summary>
+        public PrintWriter(string arg0, Java.Nio.Charset.Charset arg1)
+            : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintWriter.html#<init>(java.lang.String) throws java.io.FileNotFoundException
+        /// </summary>
+        public PrintWriter(string arg0)
             : base(arg0)
         {
         }

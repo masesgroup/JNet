@@ -39,22 +39,6 @@ namespace Java.Sql
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#parameterNoNulls
-        /// </summary>
-        public static int parameterNoNulls => Clazz.GetField<int>("parameterNoNulls");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#parameterNullable
-        /// </summary>
-        public static int parameterNullable => Clazz.GetField<int>("parameterNullable");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#parameterNullableUnknown
-        /// </summary>
-        public static int parameterNullableUnknown => Clazz.GetField<int>("parameterNullableUnknown");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#parameterModeUnknown
-        /// </summary>
-        public static int parameterModeUnknown => Clazz.GetField<int>("parameterModeUnknown");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#parameterModeIn
         /// </summary>
         public static int parameterModeIn => Clazz.GetField<int>("parameterModeIn");
@@ -66,6 +50,22 @@ namespace Java.Sql
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#parameterModeOut
         /// </summary>
         public static int parameterModeOut => Clazz.GetField<int>("parameterModeOut");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#parameterModeUnknown
+        /// </summary>
+        public static int parameterModeUnknown => Clazz.GetField<int>("parameterModeUnknown");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#parameterNoNulls
+        /// </summary>
+        public static int parameterNoNulls => Clazz.GetField<int>("parameterNoNulls");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#parameterNullable
+        /// </summary>
+        public static int parameterNullable => Clazz.GetField<int>("parameterNullable");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ParameterMetaData.html#parameterNullableUnknown
+        /// </summary>
+        public static int parameterNullableUnknown => Clazz.GetField<int>("parameterNullableUnknown");
         
         #endregion
 

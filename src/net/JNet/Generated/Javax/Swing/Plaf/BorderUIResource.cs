@@ -113,10 +113,10 @@ namespace Javax.Swing.Plaf
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.BevelBorderUIResource.html#<init>(int)
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.BevelBorderUIResource.html#<init>(int,java.awt.Color,java.awt.Color,java.awt.Color,java.awt.Color)
             /// </summary>
-            public BevelBorderUIResource(int arg0)
-                : base(arg0)
+            public BevelBorderUIResource(int arg0, Java.Awt.Color arg1, Java.Awt.Color arg2, Java.Awt.Color arg3, Java.Awt.Color arg4)
+                : base(arg0, arg1, arg2, arg3, arg4)
             {
             }
             /// <summary>
@@ -127,10 +127,10 @@ namespace Javax.Swing.Plaf
             {
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.BevelBorderUIResource.html#<init>(int,java.awt.Color,java.awt.Color,java.awt.Color,java.awt.Color)
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.BevelBorderUIResource.html#<init>(int)
             /// </summary>
-            public BevelBorderUIResource(int arg0, Java.Awt.Color arg1, Java.Awt.Color arg2, Java.Awt.Color arg3, Java.Awt.Color arg4)
-                : base(arg0, arg1, arg2, arg3, arg4)
+            public BevelBorderUIResource(int arg0)
+                : base(arg0)
             {
             }
             
@@ -157,22 +157,57 @@ namespace Javax.Swing.Plaf
         }
         #endregion
 
+        #region CompoundBorderUIResource
+        public partial class CompoundBorderUIResource
+        {
+            #region Constructors
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.CompoundBorderUIResource.html#<init>(javax.swing.border.Border,javax.swing.border.Border)
+            /// </summary>
+            public CompoundBorderUIResource(Javax.Swing.Border.Border arg0, Javax.Swing.Border.Border arg1)
+                : base(arg0, arg1)
+            {
+            }
+            
+            #endregion
+
+            #region Class/Interface conversion operators
+            public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.BorderUIResource.CompoundBorderUIResource t) => t.Cast<Javax.Swing.Plaf.UIResource>();
+            
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region LineBorderUIResource
         public partial class LineBorderUIResource
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.LineBorderUIResource.html#<init>(java.awt.Color)
-            /// </summary>
-            public LineBorderUIResource(Java.Awt.Color arg0)
-                : base(arg0)
-            {
-            }
-            /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.LineBorderUIResource.html#<init>(java.awt.Color,int)
             /// </summary>
             public LineBorderUIResource(Java.Awt.Color arg0, int arg1)
                 : base(arg0, arg1)
+            {
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.LineBorderUIResource.html#<init>(java.awt.Color)
+            /// </summary>
+            public LineBorderUIResource(Java.Awt.Color arg0)
+                : base(arg0)
             {
             }
             
@@ -211,17 +246,17 @@ namespace Javax.Swing.Plaf
             {
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.EtchedBorderUIResource.html#<init>(java.awt.Color,java.awt.Color)
-            /// </summary>
-            public EtchedBorderUIResource(Java.Awt.Color arg0, Java.Awt.Color arg1)
-                : base(arg0, arg1)
-            {
-            }
-            /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.EtchedBorderUIResource.html#<init>(int)
             /// </summary>
             public EtchedBorderUIResource(int arg0)
                 : base(arg0)
+            {
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.EtchedBorderUIResource.html#<init>(java.awt.Color,java.awt.Color)
+            /// </summary>
+            public EtchedBorderUIResource(Java.Awt.Color arg0, Java.Awt.Color arg1)
+                : base(arg0, arg1)
             {
             }
             
@@ -229,6 +264,76 @@ namespace Javax.Swing.Plaf
 
             #region Class/Interface conversion operators
             public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.BorderUIResource.EtchedBorderUIResource t) => t.Cast<Javax.Swing.Plaf.UIResource>();
+            
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region TitledBorderUIResource
+        public partial class TitledBorderUIResource
+        {
+            #region Constructors
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.TitledBorderUIResource.html#<init>(java.lang.String)
+            /// </summary>
+            public TitledBorderUIResource(string arg0)
+                : base(arg0)
+            {
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.TitledBorderUIResource.html#<init>(javax.swing.border.Border,java.lang.String,int,int,java.awt.Font,java.awt.Color)
+            /// </summary>
+            public TitledBorderUIResource(Javax.Swing.Border.Border arg0, string arg1, int arg2, int arg3, Java.Awt.Font arg4, Java.Awt.Color arg5)
+                : base(arg0, arg1, arg2, arg3, arg4, arg5)
+            {
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.TitledBorderUIResource.html#<init>(javax.swing.border.Border,java.lang.String,int,int,java.awt.Font)
+            /// </summary>
+            public TitledBorderUIResource(Javax.Swing.Border.Border arg0, string arg1, int arg2, int arg3, Java.Awt.Font arg4)
+                : base(arg0, arg1, arg2, arg3, arg4)
+            {
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.TitledBorderUIResource.html#<init>(javax.swing.border.Border,java.lang.String,int,int)
+            /// </summary>
+            public TitledBorderUIResource(Javax.Swing.Border.Border arg0, string arg1, int arg2, int arg3)
+                : base(arg0, arg1, arg2, arg3)
+            {
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.TitledBorderUIResource.html#<init>(javax.swing.border.Border,java.lang.String)
+            /// </summary>
+            public TitledBorderUIResource(Javax.Swing.Border.Border arg0, string arg1)
+                : base(arg0, arg1)
+            {
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.TitledBorderUIResource.html#<init>(javax.swing.border.Border)
+            /// </summary>
+            public TitledBorderUIResource(Javax.Swing.Border.Border arg0)
+                : base(arg0)
+            {
+            }
+            
+            #endregion
+
+            #region Class/Interface conversion operators
+            public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.BorderUIResource.TitledBorderUIResource t) => t.Cast<Javax.Swing.Plaf.UIResource>();
             
             #endregion
 
@@ -320,111 +425,6 @@ namespace Javax.Swing.Plaf
 
             #region Class/Interface conversion operators
             public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.BorderUIResource.MatteBorderUIResource t) => t.Cast<Javax.Swing.Plaf.UIResource>();
-            
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region TitledBorderUIResource
-        public partial class TitledBorderUIResource
-        {
-            #region Constructors
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.TitledBorderUIResource.html#<init>(javax.swing.border.Border,java.lang.String,int,int,java.awt.Font,java.awt.Color)
-            /// </summary>
-            public TitledBorderUIResource(Javax.Swing.Border.Border arg0, string arg1, int arg2, int arg3, Java.Awt.Font arg4, Java.Awt.Color arg5)
-                : base(arg0, arg1, arg2, arg3, arg4, arg5)
-            {
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.TitledBorderUIResource.html#<init>(javax.swing.border.Border,java.lang.String,int,int,java.awt.Font)
-            /// </summary>
-            public TitledBorderUIResource(Javax.Swing.Border.Border arg0, string arg1, int arg2, int arg3, Java.Awt.Font arg4)
-                : base(arg0, arg1, arg2, arg3, arg4)
-            {
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.TitledBorderUIResource.html#<init>(javax.swing.border.Border,java.lang.String,int,int)
-            /// </summary>
-            public TitledBorderUIResource(Javax.Swing.Border.Border arg0, string arg1, int arg2, int arg3)
-                : base(arg0, arg1, arg2, arg3)
-            {
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.TitledBorderUIResource.html#<init>(javax.swing.border.Border,java.lang.String)
-            /// </summary>
-            public TitledBorderUIResource(Javax.Swing.Border.Border arg0, string arg1)
-                : base(arg0, arg1)
-            {
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.TitledBorderUIResource.html#<init>(javax.swing.border.Border)
-            /// </summary>
-            public TitledBorderUIResource(Javax.Swing.Border.Border arg0)
-                : base(arg0)
-            {
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.TitledBorderUIResource.html#<init>(java.lang.String)
-            /// </summary>
-            public TitledBorderUIResource(string arg0)
-                : base(arg0)
-            {
-            }
-            
-            #endregion
-
-            #region Class/Interface conversion operators
-            public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.BorderUIResource.TitledBorderUIResource t) => t.Cast<Javax.Swing.Plaf.UIResource>();
-            
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region CompoundBorderUIResource
-        public partial class CompoundBorderUIResource
-        {
-            #region Constructors
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.CompoundBorderUIResource.html#<init>(javax.swing.border.Border,javax.swing.border.Border)
-            /// </summary>
-            public CompoundBorderUIResource(Javax.Swing.Border.Border arg0, Javax.Swing.Border.Border arg1)
-                : base(arg0, arg1)
-            {
-            }
-            
-            #endregion
-
-            #region Class/Interface conversion operators
-            public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.BorderUIResource.CompoundBorderUIResource t) => t.Cast<Javax.Swing.Plaf.UIResource>();
             
             #endregion
 

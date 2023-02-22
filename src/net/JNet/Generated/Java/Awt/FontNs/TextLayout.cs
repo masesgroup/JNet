@@ -30,17 +30,17 @@ namespace Java.Awt.FontNs
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#<init>(java.text.AttributedCharacterIterator,java.awt.font.FontRenderContext)
-        /// </summary>
-        public TextLayout(Java.Text.AttributedCharacterIterator arg0, Java.Awt.FontNs.FontRenderContext arg1)
-            : base(arg0, arg1)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#<init>(java.lang.String,java.awt.Font,java.awt.font.FontRenderContext)
         /// </summary>
         public TextLayout(string arg0, Java.Awt.Font arg1, Java.Awt.FontNs.FontRenderContext arg2)
             : base(arg0, arg1, arg2)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#<init>(java.text.AttributedCharacterIterator,java.awt.font.FontRenderContext)
+        /// </summary>
+        public TextLayout(Java.Text.AttributedCharacterIterator arg0, Java.Awt.FontNs.FontRenderContext arg1)
+            : base(arg0, arg1)
         {
         }
         

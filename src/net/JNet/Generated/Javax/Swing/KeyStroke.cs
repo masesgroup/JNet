@@ -65,7 +65,7 @@ namespace Javax.Swing
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/KeyStroke.html#getKeyStroke(java.lang.Character,int)
         /// </summary>
-        public static Javax.Swing.KeyStroke GetKeyStroke(char arg0, int arg1)
+        public static Javax.Swing.KeyStroke GetKeyStroke(char? arg0, int arg1)
         {
             return SExecute<Javax.Swing.KeyStroke>("getKeyStroke", arg0, arg1);
         }

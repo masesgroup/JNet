@@ -38,10 +38,6 @@ namespace Org.W3c.Dom
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMError.html#SEVERITY_WARNING
-        /// </summary>
-        public static short SEVERITY_WARNING => Clazz.GetField<short>("SEVERITY_WARNING");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMError.html#SEVERITY_ERROR
         /// </summary>
         public static short SEVERITY_ERROR => Clazz.GetField<short>("SEVERITY_ERROR");
@@ -49,6 +45,10 @@ namespace Org.W3c.Dom
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMError.html#SEVERITY_FATAL_ERROR
         /// </summary>
         public static short SEVERITY_FATAL_ERROR => Clazz.GetField<short>("SEVERITY_FATAL_ERROR");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMError.html#SEVERITY_WARNING
+        /// </summary>
+        public static short SEVERITY_WARNING => Clazz.GetField<short>("SEVERITY_WARNING");
         
         #endregion
 

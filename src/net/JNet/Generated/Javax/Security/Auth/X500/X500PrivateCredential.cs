@@ -30,17 +30,17 @@ namespace Javax.Security.Auth.X500
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/x500/X500PrivateCredential.html#<init>(java.security.cert.X509Certificate,java.security.PrivateKey)
-        /// </summary>
-        public X500PrivateCredential(Java.Security.Cert.X509Certificate arg0, Java.Security.PrivateKey arg1)
-            : base(arg0, arg1)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/x500/X500PrivateCredential.html#<init>(java.security.cert.X509Certificate,java.security.PrivateKey,java.lang.String)
         /// </summary>
         public X500PrivateCredential(Java.Security.Cert.X509Certificate arg0, Java.Security.PrivateKey arg1, string arg2)
             : base(arg0, arg1, arg2)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/x500/X500PrivateCredential.html#<init>(java.security.cert.X509Certificate,java.security.PrivateKey)
+        /// </summary>
+        public X500PrivateCredential(Java.Security.Cert.X509Certificate arg0, Java.Security.PrivateKey arg1)
+            : base(arg0, arg1)
         {
         }
         

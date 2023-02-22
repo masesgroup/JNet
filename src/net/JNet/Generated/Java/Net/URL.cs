@@ -30,24 +30,10 @@ namespace Java.Net
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#<init>(java.net.URL,java.lang.String,java.net.URLStreamHandler) throws java.net.MalformedURLException
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#<init>(java.lang.String,java.lang.String,int,java.lang.String,java.net.URLStreamHandler) throws java.net.MalformedURLException
         /// </summary>
-        public URL(Java.Net.URL arg0, string arg1, Java.Net.URLStreamHandler arg2)
-            : base(arg0, arg1, arg2)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#<init>(java.net.URL,java.lang.String) throws java.net.MalformedURLException
-        /// </summary>
-        public URL(Java.Net.URL arg0, string arg1)
-            : base(arg0, arg1)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#<init>(java.lang.String) throws java.net.MalformedURLException
-        /// </summary>
-        public URL(string arg0)
-            : base(arg0)
+        public URL(string arg0, string arg1, int arg2, string arg3, Java.Net.URLStreamHandler arg4)
+            : base(arg0, arg1, arg2, arg3, arg4)
         {
         }
         /// <summary>
@@ -65,10 +51,24 @@ namespace Java.Net
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#<init>(java.lang.String,java.lang.String,int,java.lang.String,java.net.URLStreamHandler) throws java.net.MalformedURLException
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#<init>(java.lang.String) throws java.net.MalformedURLException
         /// </summary>
-        public URL(string arg0, string arg1, int arg2, string arg3, Java.Net.URLStreamHandler arg4)
-            : base(arg0, arg1, arg2, arg3, arg4)
+        public URL(string arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#<init>(java.net.URL,java.lang.String,java.net.URLStreamHandler) throws java.net.MalformedURLException
+        /// </summary>
+        public URL(Java.Net.URL arg0, string arg1, Java.Net.URLStreamHandler arg2)
+            : base(arg0, arg1, arg2)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html#<init>(java.net.URL,java.lang.String) throws java.net.MalformedURLException
+        /// </summary>
+        public URL(Java.Net.URL arg0, string arg1)
+            : base(arg0, arg1)
         {
         }
         

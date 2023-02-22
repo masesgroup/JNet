@@ -30,6 +30,13 @@ namespace Javax.Swing
     {
         #region Constructors
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToolBar.html#<init>(int)
+        /// </summary>
+        public JToolBar(int arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToolBar.html#<init>(java.lang.String,int)
         /// </summary>
         public JToolBar(string arg0, int arg1)
@@ -40,13 +47,6 @@ namespace Javax.Swing
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToolBar.html#<init>(java.lang.String)
         /// </summary>
         public JToolBar(string arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JToolBar.html#<init>(int)
-        /// </summary>
-        public JToolBar(int arg0)
             : base(arg0)
         {
         }

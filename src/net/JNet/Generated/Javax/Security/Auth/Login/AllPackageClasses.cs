@@ -23,6 +23,70 @@
 
 namespace Javax.Security.Auth.Login
 {
+    #region AccountException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/AccountException.html
+    /// </summary>
+    public partial class AccountException : Javax.Security.Auth.Login.LoginException
+    {
+        public AccountException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.security.auth.login.AccountException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region AccountExpiredException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/AccountExpiredException.html
+    /// </summary>
+    public partial class AccountExpiredException : Javax.Security.Auth.Login.AccountException
+    {
+        public AccountExpiredException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.security.auth.login.AccountExpiredException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region AccountLockedException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/AccountLockedException.html
+    /// </summary>
+    public partial class AccountLockedException : Javax.Security.Auth.Login.AccountException
+    {
+        public AccountLockedException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.security.auth.login.AccountLockedException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region AccountNotFoundException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/AccountNotFoundException.html
+    /// </summary>
+    public partial class AccountNotFoundException : Javax.Security.Auth.Login.AccountException
+    {
+        public AccountNotFoundException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.security.auth.login.AccountNotFoundException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region AppConfigurationEntry
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/AppConfigurationEntry.html
@@ -88,105 +152,6 @@ namespace Javax.Security.Auth.Login
         }
         #endregion
 
-
-    }
-    #endregion
-
-    #region CredentialNotFoundException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/CredentialNotFoundException.html
-    /// </summary>
-    public partial class CredentialNotFoundException : Javax.Security.Auth.Login.CredentialException
-    {
-        public CredentialNotFoundException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.security.auth.login.CredentialNotFoundException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region CredentialExpiredException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/CredentialExpiredException.html
-    /// </summary>
-    public partial class CredentialExpiredException : Javax.Security.Auth.Login.CredentialException
-    {
-        public CredentialExpiredException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.security.auth.login.CredentialExpiredException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region AccountLockedException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/AccountLockedException.html
-    /// </summary>
-    public partial class AccountLockedException : Javax.Security.Auth.Login.AccountException
-    {
-        public AccountLockedException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.security.auth.login.AccountLockedException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region LoginContext
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/LoginContext.html
-    /// </summary>
-    public partial class LoginContext : MASES.JCOBridge.C2JBridge.JVMBridgeBase<LoginContext>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public LoginContext() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public LoginContext(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.security.auth.login.LoginContext";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region LoginException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/LoginException.html
-    /// </summary>
-    public partial class LoginException : Java.Security.GeneralSecurityException
-    {
-        public LoginException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.security.auth.login.LoginException";
-
-        // TODO: complete the class
 
     }
     #endregion
@@ -260,38 +225,6 @@ namespace Javax.Security.Auth.Login
     }
     #endregion
 
-    #region AccountNotFoundException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/AccountNotFoundException.html
-    /// </summary>
-    public partial class AccountNotFoundException : Javax.Security.Auth.Login.AccountException
-    {
-        public AccountNotFoundException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.security.auth.login.AccountNotFoundException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region FailedLoginException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/FailedLoginException.html
-    /// </summary>
-    public partial class FailedLoginException : Javax.Security.Auth.Login.LoginException
-    {
-        public FailedLoginException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.security.auth.login.FailedLoginException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
     #region ConfigurationSpi
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/ConfigurationSpi.html
@@ -343,32 +276,99 @@ namespace Javax.Security.Auth.Login
     }
     #endregion
 
-    #region AccountException
+    #region CredentialExpiredException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/AccountException.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/CredentialExpiredException.html
     /// </summary>
-    public partial class AccountException : Javax.Security.Auth.Login.LoginException
+    public partial class CredentialExpiredException : Javax.Security.Auth.Login.CredentialException
     {
-        public AccountException() { }
+        public CredentialExpiredException() { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.security.auth.login.AccountException";
+        public override string ClassName => "javax.security.auth.login.CredentialExpiredException";
 
         // TODO: complete the class
 
     }
     #endregion
 
-    #region AccountExpiredException
+    #region CredentialNotFoundException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/AccountExpiredException.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/CredentialNotFoundException.html
     /// </summary>
-    public partial class AccountExpiredException : Javax.Security.Auth.Login.AccountException
+    public partial class CredentialNotFoundException : Javax.Security.Auth.Login.CredentialException
     {
-        public AccountExpiredException() { }
+        public CredentialNotFoundException() { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.security.auth.login.AccountExpiredException";
+        public override string ClassName => "javax.security.auth.login.CredentialNotFoundException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region FailedLoginException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/FailedLoginException.html
+    /// </summary>
+    public partial class FailedLoginException : Javax.Security.Auth.Login.LoginException
+    {
+        public FailedLoginException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.security.auth.login.FailedLoginException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region LoginContext
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/LoginContext.html
+    /// </summary>
+    public partial class LoginContext : MASES.JCOBridge.C2JBridge.JVMBridgeBase<LoginContext>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public LoginContext() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public LoginContext(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.security.auth.login.LoginContext";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region LoginException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/LoginException.html
+    /// </summary>
+    public partial class LoginException : Java.Security.GeneralSecurityException
+    {
+        public LoginException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.security.auth.login.LoginException";
 
         // TODO: complete the class
 

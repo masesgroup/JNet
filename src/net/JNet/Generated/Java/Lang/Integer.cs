@@ -38,25 +38,25 @@ namespace Java.Lang
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#MIN_VALUE
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#BYTES
         /// </summary>
-        public static int MIN_VALUE => Clazz.GetField<int>("MIN_VALUE");
+        public static int BYTES => Clazz.GetField<int>("BYTES");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#MAX_VALUE
         /// </summary>
         public static int MAX_VALUE => Clazz.GetField<int>("MAX_VALUE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#TYPE
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#MIN_VALUE
         /// </summary>
-        public static Java.Lang.Class TYPE => Clazz.GetField<Java.Lang.Class>("TYPE");
+        public static int MIN_VALUE => Clazz.GetField<int>("MIN_VALUE");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#SIZE
         /// </summary>
         public static int SIZE => Clazz.GetField<int>("SIZE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#BYTES
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#TYPE
         /// </summary>
-        public static int BYTES => Clazz.GetField<int>("BYTES");
+        public static Java.Lang.Class TYPE => Clazz.GetField<Java.Lang.Class>("TYPE");
         
         #endregion
 
@@ -232,51 +232,51 @@ namespace Java.Lang
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#decode(java.lang.String) throws java.lang.NumberFormatException
         /// </summary>
-        public static int Decode(string arg0)
+        public static int? Decode(string arg0)
         {
-            return SExecute<int>("decode", arg0);
+            return SExecute<int?>("decode", arg0);
         }
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#getInteger(java.lang.String,int)
         /// </summary>
-        public static int GetInteger(string arg0, int arg1)
+        public static int? GetInteger(string arg0, int arg1)
         {
-            return SExecute<int>("getInteger", arg0, arg1);
+            return SExecute<int?>("getInteger", arg0, arg1);
         }
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#getInteger(java.lang.String,java.lang.Integer)
         /// </summary>
-        public static int GetInteger(string arg0, int arg1)
+        public static int? GetInteger(string arg0, int? arg1)
         {
-            return SExecute<int>("getInteger", arg0, arg1);
+            return SExecute<int?>("getInteger", arg0, arg1);
         }
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#getInteger(java.lang.String)
         /// </summary>
-        public static int GetInteger(string arg0)
+        public static int? GetInteger(string arg0)
         {
-            return SExecute<int>("getInteger", arg0);
+            return SExecute<int?>("getInteger", arg0);
         }
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#valueOf(int)
         /// </summary>
-        public static int ValueOf(int arg0)
+        public static int? ValueOf(int arg0)
         {
-            return SExecute<int>("valueOf", arg0);
+            return SExecute<int?>("valueOf", arg0);
         }
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#valueOf(java.lang.String,int) throws java.lang.NumberFormatException
         /// </summary>
-        public static int ValueOf(string arg0, int arg1)
+        public static int? ValueOf(string arg0, int arg1)
         {
-            return SExecute<int>("valueOf", arg0, arg1);
+            return SExecute<int?>("valueOf", arg0, arg1);
         }
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#valueOf(java.lang.String) throws java.lang.NumberFormatException
         /// </summary>
-        public static int ValueOf(string arg0)
+        public static int? ValueOf(string arg0)
         {
-            return SExecute<int>("valueOf", arg0);
+            return SExecute<int?>("valueOf", arg0);
         }
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#toBinaryString(int)
@@ -341,7 +341,7 @@ namespace Java.Lang
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html#compareTo(java.lang.Integer)
         /// </summary>
-        public int CompareTo(int arg0)
+        public int CompareTo(int? arg0)
         {
             return IExecute<int>("compareTo", arg0);
         }

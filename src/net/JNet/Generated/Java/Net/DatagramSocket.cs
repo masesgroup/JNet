@@ -37,16 +37,16 @@ namespace Java.Net
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#<init>(java.net.SocketAddress) throws java.net.SocketException
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#<init>(int) throws java.net.SocketException
         /// </summary>
-        public DatagramSocket(Java.Net.SocketAddress arg0)
+        public DatagramSocket(int arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#<init>(int) throws java.net.SocketException
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#<init>(java.net.SocketAddress) throws java.net.SocketException
         /// </summary>
-        public DatagramSocket(int arg0)
+        public DatagramSocket(Java.Net.SocketAddress arg0)
             : base(arg0)
         {
         }

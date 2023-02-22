@@ -30,6 +30,13 @@ namespace Javax.Imageio.Plugins.Tiff
     {
         #region Constructors
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#<init>(javax.imageio.plugins.tiff.TIFFTag,int,int,java.lang.Object)
+        /// </summary>
+        public TIFFField(Javax.Imageio.Plugins.Tiff.TIFFTag arg0, int arg1, int arg2, object arg3)
+            : base(arg0, arg1, arg2, arg3)
+        {
+        }
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#<init>(javax.imageio.plugins.tiff.TIFFTag,int,int)
         /// </summary>
         public TIFFField(Javax.Imageio.Plugins.Tiff.TIFFTag arg0, int arg1, int arg2)
@@ -37,9 +44,9 @@ namespace Javax.Imageio.Plugins.Tiff
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#<init>(javax.imageio.plugins.tiff.TIFFTag,int,int,java.lang.Object)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#<init>(javax.imageio.plugins.tiff.TIFFTag,int,long,javax.imageio.plugins.tiff.TIFFDirectory)
         /// </summary>
-        public TIFFField(Javax.Imageio.Plugins.Tiff.TIFFTag arg0, int arg1, int arg2, object arg3)
+        public TIFFField(Javax.Imageio.Plugins.Tiff.TIFFTag arg0, int arg1, long arg2, Javax.Imageio.Plugins.Tiff.TIFFDirectory arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }
@@ -48,13 +55,6 @@ namespace Javax.Imageio.Plugins.Tiff
         /// </summary>
         public TIFFField(Javax.Imageio.Plugins.Tiff.TIFFTag arg0, long arg1)
             : base(arg0, arg1)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#<init>(javax.imageio.plugins.tiff.TIFFTag,int,long,javax.imageio.plugins.tiff.TIFFDirectory)
-        /// </summary>
-        public TIFFField(Javax.Imageio.Plugins.Tiff.TIFFTag arg0, int arg1, long arg2, Javax.Imageio.Plugins.Tiff.TIFFDirectory arg3)
-            : base(arg0, arg1, arg2, arg3)
         {
         }
         

@@ -30,17 +30,17 @@ namespace Java.Awt
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#<init>(int) throws java.awt.HeadlessException
-        /// </summary>
-        public Scrollbar(int arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#<init>(int,int,int,int,int) throws java.awt.HeadlessException
         /// </summary>
         public Scrollbar(int arg0, int arg1, int arg2, int arg3, int arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Scrollbar.html#<init>(int) throws java.awt.HeadlessException
+        /// </summary>
+        public Scrollbar(int arg0)
+            : base(arg0)
         {
         }
         

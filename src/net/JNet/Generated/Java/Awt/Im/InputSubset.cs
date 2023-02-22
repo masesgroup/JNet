@@ -38,6 +38,26 @@ namespace Java.Awt.Im
 
         #region Fields
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputSubset.html#FULLWIDTH_DIGITS
+        /// </summary>
+        public static Java.Awt.Im.InputSubset FULLWIDTH_DIGITS => Clazz.GetField<Java.Awt.Im.InputSubset>("FULLWIDTH_DIGITS");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputSubset.html#FULLWIDTH_LATIN
+        /// </summary>
+        public static Java.Awt.Im.InputSubset FULLWIDTH_LATIN => Clazz.GetField<Java.Awt.Im.InputSubset>("FULLWIDTH_LATIN");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputSubset.html#HALFWIDTH_KATAKANA
+        /// </summary>
+        public static Java.Awt.Im.InputSubset HALFWIDTH_KATAKANA => Clazz.GetField<Java.Awt.Im.InputSubset>("HALFWIDTH_KATAKANA");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputSubset.html#HANJA
+        /// </summary>
+        public static Java.Awt.Im.InputSubset HANJA => Clazz.GetField<Java.Awt.Im.InputSubset>("HANJA");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputSubset.html#KANJI
+        /// </summary>
+        public static Java.Awt.Im.InputSubset KANJI => Clazz.GetField<Java.Awt.Im.InputSubset>("KANJI");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputSubset.html#LATIN
         /// </summary>
         public static Java.Awt.Im.InputSubset LATIN => Clazz.GetField<Java.Awt.Im.InputSubset>("LATIN");
@@ -46,33 +66,13 @@ namespace Java.Awt.Im
         /// </summary>
         public static Java.Awt.Im.InputSubset LATIN_DIGITS => Clazz.GetField<Java.Awt.Im.InputSubset>("LATIN_DIGITS");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputSubset.html#TRADITIONAL_HANZI
-        /// </summary>
-        public static Java.Awt.Im.InputSubset TRADITIONAL_HANZI => Clazz.GetField<Java.Awt.Im.InputSubset>("TRADITIONAL_HANZI");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputSubset.html#SIMPLIFIED_HANZI
         /// </summary>
         public static Java.Awt.Im.InputSubset SIMPLIFIED_HANZI => Clazz.GetField<Java.Awt.Im.InputSubset>("SIMPLIFIED_HANZI");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputSubset.html#KANJI
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputSubset.html#TRADITIONAL_HANZI
         /// </summary>
-        public static Java.Awt.Im.InputSubset KANJI => Clazz.GetField<Java.Awt.Im.InputSubset>("KANJI");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputSubset.html#HANJA
-        /// </summary>
-        public static Java.Awt.Im.InputSubset HANJA => Clazz.GetField<Java.Awt.Im.InputSubset>("HANJA");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputSubset.html#HALFWIDTH_KATAKANA
-        /// </summary>
-        public static Java.Awt.Im.InputSubset HALFWIDTH_KATAKANA => Clazz.GetField<Java.Awt.Im.InputSubset>("HALFWIDTH_KATAKANA");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputSubset.html#FULLWIDTH_LATIN
-        /// </summary>
-        public static Java.Awt.Im.InputSubset FULLWIDTH_LATIN => Clazz.GetField<Java.Awt.Im.InputSubset>("FULLWIDTH_LATIN");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputSubset.html#FULLWIDTH_DIGITS
-        /// </summary>
-        public static Java.Awt.Im.InputSubset FULLWIDTH_DIGITS => Clazz.GetField<Java.Awt.Im.InputSubset>("FULLWIDTH_DIGITS");
+        public static Java.Awt.Im.InputSubset TRADITIONAL_HANZI => Clazz.GetField<Java.Awt.Im.InputSubset>("TRADITIONAL_HANZI");
         
         #endregion
 

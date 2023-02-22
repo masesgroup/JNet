@@ -30,17 +30,17 @@ namespace Java.Awt
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuShortcut.html#<init>(int)
-        /// </summary>
-        public MenuShortcut(int arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuShortcut.html#<init>(int,boolean)
         /// </summary>
         public MenuShortcut(int arg0, bool arg1)
             : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MenuShortcut.html#<init>(int)
+        /// </summary>
+        public MenuShortcut(int arg0)
+            : base(arg0)
         {
         }
         

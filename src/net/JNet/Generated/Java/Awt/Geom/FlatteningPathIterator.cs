@@ -30,17 +30,17 @@ namespace Java.Awt.Geom
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/FlatteningPathIterator.html#<init>(java.awt.geom.PathIterator,double)
-        /// </summary>
-        public FlatteningPathIterator(Java.Awt.Geom.PathIterator arg0, double arg1)
-            : base(arg0, arg1)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/FlatteningPathIterator.html#<init>(java.awt.geom.PathIterator,double,int)
         /// </summary>
         public FlatteningPathIterator(Java.Awt.Geom.PathIterator arg0, double arg1, int arg2)
             : base(arg0, arg1, arg2)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/FlatteningPathIterator.html#<init>(java.awt.geom.PathIterator,double)
+        /// </summary>
+        public FlatteningPathIterator(Java.Awt.Geom.PathIterator arg0, double arg1)
+            : base(arg0, arg1)
         {
         }
         

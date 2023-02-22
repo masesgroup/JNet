@@ -37,17 +37,17 @@ namespace Javax.Swing
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#<init>(int,java.awt.Component,java.awt.Component)
-        /// </summary>
-        public JSplitPane(int arg0, Java.Awt.Component arg1, Java.Awt.Component arg2)
-            : base(arg0, arg1, arg2)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#<init>(int,boolean)
         /// </summary>
         public JSplitPane(int arg0, bool arg1)
             : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#<init>(int,java.awt.Component,java.awt.Component)
+        /// </summary>
+        public JSplitPane(int arg0, Java.Awt.Component arg1, Java.Awt.Component arg2)
+            : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
@@ -67,17 +67,53 @@ namespace Javax.Swing
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#VERTICAL_SPLIT
-        /// </summary>
-        public static int VERTICAL_SPLIT => Clazz.GetField<int>("VERTICAL_SPLIT");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#HORIZONTAL_SPLIT
         /// </summary>
         public static int HORIZONTAL_SPLIT => Clazz.GetField<int>("HORIZONTAL_SPLIT");
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#VERTICAL_SPLIT
+        /// </summary>
+        public static int VERTICAL_SPLIT => Clazz.GetField<int>("VERTICAL_SPLIT");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#BOTTOM
+        /// </summary>
+        public static string BOTTOM => Clazz.GetField<string>("BOTTOM");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#CONTINUOUS_LAYOUT_PROPERTY
+        /// </summary>
+        public static string CONTINUOUS_LAYOUT_PROPERTY => Clazz.GetField<string>("CONTINUOUS_LAYOUT_PROPERTY");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#DIVIDER
+        /// </summary>
+        public static string DIVIDER => Clazz.GetField<string>("DIVIDER");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#DIVIDER_LOCATION_PROPERTY
+        /// </summary>
+        public static string DIVIDER_LOCATION_PROPERTY => Clazz.GetField<string>("DIVIDER_LOCATION_PROPERTY");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#DIVIDER_SIZE_PROPERTY
+        /// </summary>
+        public static string DIVIDER_SIZE_PROPERTY => Clazz.GetField<string>("DIVIDER_SIZE_PROPERTY");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#LAST_DIVIDER_LOCATION_PROPERTY
+        /// </summary>
+        public static string LAST_DIVIDER_LOCATION_PROPERTY => Clazz.GetField<string>("LAST_DIVIDER_LOCATION_PROPERTY");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#LEFT
         /// </summary>
         public static string LEFT => Clazz.GetField<string>("LEFT");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#ONE_TOUCH_EXPANDABLE_PROPERTY
+        /// </summary>
+        public static string ONE_TOUCH_EXPANDABLE_PROPERTY => Clazz.GetField<string>("ONE_TOUCH_EXPANDABLE_PROPERTY");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#ORIENTATION_PROPERTY
+        /// </summary>
+        public static string ORIENTATION_PROPERTY => Clazz.GetField<string>("ORIENTATION_PROPERTY");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#RESIZE_WEIGHT_PROPERTY
+        /// </summary>
+        public static string RESIZE_WEIGHT_PROPERTY => Clazz.GetField<string>("RESIZE_WEIGHT_PROPERTY");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#RIGHT
         /// </summary>
@@ -86,42 +122,6 @@ namespace Javax.Swing
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#TOP
         /// </summary>
         public static string TOP => Clazz.GetField<string>("TOP");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#BOTTOM
-        /// </summary>
-        public static string BOTTOM => Clazz.GetField<string>("BOTTOM");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#DIVIDER
-        /// </summary>
-        public static string DIVIDER => Clazz.GetField<string>("DIVIDER");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#ORIENTATION_PROPERTY
-        /// </summary>
-        public static string ORIENTATION_PROPERTY => Clazz.GetField<string>("ORIENTATION_PROPERTY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#CONTINUOUS_LAYOUT_PROPERTY
-        /// </summary>
-        public static string CONTINUOUS_LAYOUT_PROPERTY => Clazz.GetField<string>("CONTINUOUS_LAYOUT_PROPERTY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#DIVIDER_SIZE_PROPERTY
-        /// </summary>
-        public static string DIVIDER_SIZE_PROPERTY => Clazz.GetField<string>("DIVIDER_SIZE_PROPERTY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#ONE_TOUCH_EXPANDABLE_PROPERTY
-        /// </summary>
-        public static string ONE_TOUCH_EXPANDABLE_PROPERTY => Clazz.GetField<string>("ONE_TOUCH_EXPANDABLE_PROPERTY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#LAST_DIVIDER_LOCATION_PROPERTY
-        /// </summary>
-        public static string LAST_DIVIDER_LOCATION_PROPERTY => Clazz.GetField<string>("LAST_DIVIDER_LOCATION_PROPERTY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#DIVIDER_LOCATION_PROPERTY
-        /// </summary>
-        public static string DIVIDER_LOCATION_PROPERTY => Clazz.GetField<string>("DIVIDER_LOCATION_PROPERTY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSplitPane.html#RESIZE_WEIGHT_PROPERTY
-        /// </summary>
-        public static string RESIZE_WEIGHT_PROPERTY => Clazz.GetField<string>("RESIZE_WEIGHT_PROPERTY");
         
         #endregion
 

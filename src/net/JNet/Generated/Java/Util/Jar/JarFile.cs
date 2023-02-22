@@ -30,24 +30,10 @@ namespace Java.Util.Jar
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarFile.html#<init>(java.lang.String,boolean) throws java.io.IOException
-        /// </summary>
-        public JarFile(string arg0, bool arg1)
-            : base(arg0, arg1)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarFile.html#<init>(java.io.File,boolean,int,java.lang.Runtime$Version) throws java.io.IOException
         /// </summary>
         public JarFile(Java.Io.File arg0, bool arg1, int arg2, Java.Lang.Runtime.Version arg3)
             : base(arg0, arg1, arg2, arg3)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarFile.html#<init>(java.io.File,boolean) throws java.io.IOException
-        /// </summary>
-        public JarFile(Java.Io.File arg0, bool arg1)
-            : base(arg0, arg1)
         {
         }
         /// <summary>
@@ -58,10 +44,24 @@ namespace Java.Util.Jar
         {
         }
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarFile.html#<init>(java.io.File,boolean) throws java.io.IOException
+        /// </summary>
+        public JarFile(Java.Io.File arg0, bool arg1)
+            : base(arg0, arg1)
+        {
+        }
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarFile.html#<init>(java.io.File) throws java.io.IOException
         /// </summary>
         public JarFile(Java.Io.File arg0)
             : base(arg0)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarFile.html#<init>(java.lang.String,boolean) throws java.io.IOException
+        /// </summary>
+        public JarFile(string arg0, bool arg1)
+            : base(arg0, arg1)
         {
         }
         /// <summary>

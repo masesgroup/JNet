@@ -30,6 +30,13 @@ namespace Java.Awt
     {
         #region Constructors
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.html#<init>(java.awt.Image,java.lang.String,java.awt.PopupMenu)
+        /// </summary>
+        public TrayIcon(Java.Awt.Image arg0, string arg1, Java.Awt.PopupMenu arg2)
+            : base(arg0, arg1, arg2)
+        {
+        }
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.html#<init>(java.awt.Image,java.lang.String)
         /// </summary>
         public TrayIcon(Java.Awt.Image arg0, string arg1)
@@ -41,13 +48,6 @@ namespace Java.Awt
         /// </summary>
         public TrayIcon(Java.Awt.Image arg0)
             : base(arg0)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.html#<init>(java.awt.Image,java.lang.String,java.awt.PopupMenu)
-        /// </summary>
-        public TrayIcon(Java.Awt.Image arg0, string arg1, Java.Awt.PopupMenu arg2)
-            : base(arg0, arg1, arg2)
         {
         }
         
@@ -199,10 +199,6 @@ namespace Java.Awt
             /// </summary>
             public static Java.Awt.TrayIcon.MessageType ERROR => Clazz.GetField<Java.Awt.TrayIcon.MessageType>("ERROR");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.MessageType.html#WARNING
-            /// </summary>
-            public static Java.Awt.TrayIcon.MessageType WARNING => Clazz.GetField<Java.Awt.TrayIcon.MessageType>("WARNING");
-            /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.MessageType.html#INFO
             /// </summary>
             public static Java.Awt.TrayIcon.MessageType INFO => Clazz.GetField<Java.Awt.TrayIcon.MessageType>("INFO");
@@ -210,6 +206,10 @@ namespace Java.Awt
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.MessageType.html#NONE
             /// </summary>
             public static Java.Awt.TrayIcon.MessageType NONE => Clazz.GetField<Java.Awt.TrayIcon.MessageType>("NONE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.MessageType.html#WARNING
+            /// </summary>
+            public static Java.Awt.TrayIcon.MessageType WARNING => Clazz.GetField<Java.Awt.TrayIcon.MessageType>("WARNING");
             
             #endregion
 

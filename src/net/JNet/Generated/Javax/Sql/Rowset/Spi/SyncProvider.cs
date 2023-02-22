@@ -38,25 +38,9 @@ namespace Javax.Sql.Rowset.Spi
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncProvider.html#GRADE_NONE
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncProvider.html#DATASOURCE_DB_LOCK
         /// </summary>
-        public static int GRADE_NONE => Clazz.GetField<int>("GRADE_NONE");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncProvider.html#GRADE_CHECK_MODIFIED_AT_COMMIT
-        /// </summary>
-        public static int GRADE_CHECK_MODIFIED_AT_COMMIT => Clazz.GetField<int>("GRADE_CHECK_MODIFIED_AT_COMMIT");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncProvider.html#GRADE_CHECK_ALL_AT_COMMIT
-        /// </summary>
-        public static int GRADE_CHECK_ALL_AT_COMMIT => Clazz.GetField<int>("GRADE_CHECK_ALL_AT_COMMIT");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncProvider.html#GRADE_LOCK_WHEN_MODIFIED
-        /// </summary>
-        public static int GRADE_LOCK_WHEN_MODIFIED => Clazz.GetField<int>("GRADE_LOCK_WHEN_MODIFIED");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncProvider.html#GRADE_LOCK_WHEN_LOADED
-        /// </summary>
-        public static int GRADE_LOCK_WHEN_LOADED => Clazz.GetField<int>("GRADE_LOCK_WHEN_LOADED");
+        public static int DATASOURCE_DB_LOCK => Clazz.GetField<int>("DATASOURCE_DB_LOCK");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncProvider.html#DATASOURCE_NO_LOCK
         /// </summary>
@@ -70,17 +54,33 @@ namespace Javax.Sql.Rowset.Spi
         /// </summary>
         public static int DATASOURCE_TABLE_LOCK => Clazz.GetField<int>("DATASOURCE_TABLE_LOCK");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncProvider.html#DATASOURCE_DB_LOCK
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncProvider.html#GRADE_CHECK_ALL_AT_COMMIT
         /// </summary>
-        public static int DATASOURCE_DB_LOCK => Clazz.GetField<int>("DATASOURCE_DB_LOCK");
+        public static int GRADE_CHECK_ALL_AT_COMMIT => Clazz.GetField<int>("GRADE_CHECK_ALL_AT_COMMIT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncProvider.html#UPDATABLE_VIEW_SYNC
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncProvider.html#GRADE_CHECK_MODIFIED_AT_COMMIT
         /// </summary>
-        public static int UPDATABLE_VIEW_SYNC => Clazz.GetField<int>("UPDATABLE_VIEW_SYNC");
+        public static int GRADE_CHECK_MODIFIED_AT_COMMIT => Clazz.GetField<int>("GRADE_CHECK_MODIFIED_AT_COMMIT");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncProvider.html#GRADE_LOCK_WHEN_LOADED
+        /// </summary>
+        public static int GRADE_LOCK_WHEN_LOADED => Clazz.GetField<int>("GRADE_LOCK_WHEN_LOADED");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncProvider.html#GRADE_LOCK_WHEN_MODIFIED
+        /// </summary>
+        public static int GRADE_LOCK_WHEN_MODIFIED => Clazz.GetField<int>("GRADE_LOCK_WHEN_MODIFIED");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncProvider.html#GRADE_NONE
+        /// </summary>
+        public static int GRADE_NONE => Clazz.GetField<int>("GRADE_NONE");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncProvider.html#NONUPDATABLE_VIEW_SYNC
         /// </summary>
         public static int NONUPDATABLE_VIEW_SYNC => Clazz.GetField<int>("NONUPDATABLE_VIEW_SYNC");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncProvider.html#UPDATABLE_VIEW_SYNC
+        /// </summary>
+        public static int UPDATABLE_VIEW_SYNC => Clazz.GetField<int>("UPDATABLE_VIEW_SYNC");
         
         #endregion
 

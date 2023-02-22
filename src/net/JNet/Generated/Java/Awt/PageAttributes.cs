@@ -30,17 +30,17 @@ namespace Java.Awt
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.html#<init>(java.awt.PageAttributes$ColorType,java.awt.PageAttributes$MediaType,java.awt.PageAttributes$OrientationRequestedType,java.awt.PageAttributes$OriginType,java.awt.PageAttributes$PrintQualityType,int[])
-        /// </summary>
-        public PageAttributes(Java.Awt.PageAttributes.ColorType arg0, Java.Awt.PageAttributes.MediaType arg1, Java.Awt.PageAttributes.OrientationRequestedType arg2, Java.Awt.PageAttributes.OriginType arg3, Java.Awt.PageAttributes.PrintQualityType arg4, int[] arg5)
-            : base(arg0, arg1, arg2, arg3, arg4, arg5)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.html#<init>(java.awt.PageAttributes)
         /// </summary>
         public PageAttributes(Java.Awt.PageAttributes arg0)
             : base(arg0)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.html#<init>(java.awt.PageAttributes$ColorType,java.awt.PageAttributes$MediaType,java.awt.PageAttributes$OrientationRequestedType,java.awt.PageAttributes$OriginType,java.awt.PageAttributes$PrintQualityType,int[])
+        /// </summary>
+        public PageAttributes(Java.Awt.PageAttributes.ColorType arg0, Java.Awt.PageAttributes.MediaType arg1, Java.Awt.PageAttributes.OrientationRequestedType arg2, Java.Awt.PageAttributes.OriginType arg3, Java.Awt.PageAttributes.PrintQualityType arg4, int[] arg5)
+            : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
         }
         
@@ -183,6 +183,80 @@ namespace Java.Awt
         #endregion
 
         #region Nested classes
+        #region PrintQualityType
+        public partial class PrintQualityType
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.PrintQualityType.html#DRAFT
+            /// </summary>
+            public static Java.Awt.PageAttributes.PrintQualityType DRAFT => Clazz.GetField<Java.Awt.PageAttributes.PrintQualityType>("DRAFT");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.PrintQualityType.html#HIGH
+            /// </summary>
+            public static Java.Awt.PageAttributes.PrintQualityType HIGH => Clazz.GetField<Java.Awt.PageAttributes.PrintQualityType>("HIGH");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.PrintQualityType.html#NORMAL
+            /// </summary>
+            public static Java.Awt.PageAttributes.PrintQualityType NORMAL => Clazz.GetField<Java.Awt.PageAttributes.PrintQualityType>("NORMAL");
+            
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region OrientationRequestedType
+        public partial class OrientationRequestedType
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.OrientationRequestedType.html#LANDSCAPE
+            /// </summary>
+            public static Java.Awt.PageAttributes.OrientationRequestedType LANDSCAPE => Clazz.GetField<Java.Awt.PageAttributes.OrientationRequestedType>("LANDSCAPE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.OrientationRequestedType.html#PORTRAIT
+            /// </summary>
+            public static Java.Awt.PageAttributes.OrientationRequestedType PORTRAIT => Clazz.GetField<Java.Awt.PageAttributes.OrientationRequestedType>("PORTRAIT");
+            
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region ColorType
         public partial class ColorType
         {
@@ -218,8 +292,8 @@ namespace Java.Awt
         }
         #endregion
 
-        #region PrintQualityType
-        public partial class PrintQualityType
+        #region OriginType
+        public partial class OriginType
         {
             #region Constructors
 
@@ -231,52 +305,13 @@ namespace Java.Awt
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.PrintQualityType.html#HIGH
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.OriginType.html#PHYSICAL
             /// </summary>
-            public static Java.Awt.PageAttributes.PrintQualityType HIGH => Clazz.GetField<Java.Awt.PageAttributes.PrintQualityType>("HIGH");
+            public static Java.Awt.PageAttributes.OriginType PHYSICAL => Clazz.GetField<Java.Awt.PageAttributes.OriginType>("PHYSICAL");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.PrintQualityType.html#NORMAL
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.OriginType.html#PRINTABLE
             /// </summary>
-            public static Java.Awt.PageAttributes.PrintQualityType NORMAL => Clazz.GetField<Java.Awt.PageAttributes.PrintQualityType>("NORMAL");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.PrintQualityType.html#DRAFT
-            /// </summary>
-            public static Java.Awt.PageAttributes.PrintQualityType DRAFT => Clazz.GetField<Java.Awt.PageAttributes.PrintQualityType>("DRAFT");
-            
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region OrientationRequestedType
-        public partial class OrientationRequestedType
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.OrientationRequestedType.html#PORTRAIT
-            /// </summary>
-            public static Java.Awt.PageAttributes.OrientationRequestedType PORTRAIT => Clazz.GetField<Java.Awt.PageAttributes.OrientationRequestedType>("PORTRAIT");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.OrientationRequestedType.html#LANDSCAPE
-            /// </summary>
-            public static Java.Awt.PageAttributes.OrientationRequestedType LANDSCAPE => Clazz.GetField<Java.Awt.PageAttributes.OrientationRequestedType>("LANDSCAPE");
+            public static Java.Awt.PageAttributes.OriginType PRINTABLE => Clazz.GetField<Java.Awt.PageAttributes.OriginType>("PRINTABLE");
             
             #endregion
 
@@ -305,305 +340,9 @@ namespace Java.Awt
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_4A0
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_4A0 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_4A0");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_2A0
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_2A0 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_2A0");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_A0
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_A0 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_A0");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_A1
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_A1 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_A1");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_A2
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_A2 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_A2");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_A3
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_A3 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_A3");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_A4
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_A4 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_A4");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_A5
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_A5 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_A5");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_A6
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_A6 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_A6");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_A7
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_A7 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_A7");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_A8
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_A8 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_A8");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_A9
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_A9 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_A9");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_A10
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_A10 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_A10");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_B0
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_B0 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_B0");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_B1
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_B1 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_B1");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_B2
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_B2 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_B2");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_B3
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_B3 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_B3");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_B4
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_B4 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_B4");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_B5
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_B5 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_B5");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_B6
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_B6 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_B6");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_B7
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_B7 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_B7");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_B8
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_B8 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_B8");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_B9
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_B9 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_B9");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_B10
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_B10 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_B10");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#JIS_B0
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType JIS_B0 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("JIS_B0");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#JIS_B1
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType JIS_B1 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("JIS_B1");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#JIS_B2
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType JIS_B2 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("JIS_B2");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#JIS_B3
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType JIS_B3 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("JIS_B3");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#JIS_B4
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType JIS_B4 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("JIS_B4");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#JIS_B5
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType JIS_B5 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("JIS_B5");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#JIS_B6
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType JIS_B6 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("JIS_B6");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#JIS_B7
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType JIS_B7 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("JIS_B7");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#JIS_B8
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType JIS_B8 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("JIS_B8");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#JIS_B9
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType JIS_B9 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("JIS_B9");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#JIS_B10
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType JIS_B10 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("JIS_B10");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_C0
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_C0 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_C0");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_C1
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_C1 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_C1");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_C2
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_C2 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_C2");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_C3
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_C3 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_C3");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_C4
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_C4 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_C4");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_C5
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_C5 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_C5");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_C6
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_C6 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_C6");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_C7
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_C7 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_C7");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_C8
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_C8 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_C8");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_C9
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_C9 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_C9");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_C10
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_C10 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_C10");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_DESIGNATED_LONG
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_DESIGNATED_LONG => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_DESIGNATED_LONG");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#EXECUTIVE
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType EXECUTIVE => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("EXECUTIVE");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#FOLIO
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType FOLIO => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("FOLIO");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#INVOICE
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType INVOICE => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("INVOICE");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#LEDGER
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType LEDGER => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("LEDGER");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#NA_LETTER
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType NA_LETTER => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("NA_LETTER");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#NA_LEGAL
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType NA_LEGAL => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("NA_LEGAL");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#QUARTO
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType QUARTO => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("QUARTO");
-            /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#A
             /// </summary>
             public static Java.Awt.PageAttributes.MediaType A => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("A");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#B
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType B => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("B");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#C
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType C => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("C");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#D
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType D => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("D");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#E
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType E => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("E");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#NA_10X15_ENVELOPE
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType NA_10X15_ENVELOPE => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("NA_10X15_ENVELOPE");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#NA_10X14_ENVELOPE
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType NA_10X14_ENVELOPE => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("NA_10X14_ENVELOPE");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#NA_10X13_ENVELOPE
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType NA_10X13_ENVELOPE => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("NA_10X13_ENVELOPE");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#NA_9X12_ENVELOPE
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType NA_9X12_ENVELOPE => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("NA_9X12_ENVELOPE");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#NA_9X11_ENVELOPE
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType NA_9X11_ENVELOPE => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("NA_9X11_ENVELOPE");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#NA_7X9_ENVELOPE
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType NA_7X9_ENVELOPE => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("NA_7X9_ENVELOPE");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#NA_6X9_ENVELOPE
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType NA_6X9_ENVELOPE => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("NA_6X9_ENVELOPE");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#NA_NUMBER_9_ENVELOPE
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType NA_NUMBER_9_ENVELOPE => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("NA_NUMBER_9_ENVELOPE");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#NA_NUMBER_10_ENVELOPE
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType NA_NUMBER_10_ENVELOPE => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("NA_NUMBER_10_ENVELOPE");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#NA_NUMBER_11_ENVELOPE
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType NA_NUMBER_11_ENVELOPE => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("NA_NUMBER_11_ENVELOPE");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#NA_NUMBER_12_ENVELOPE
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType NA_NUMBER_12_ENVELOPE => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("NA_NUMBER_12_ENVELOPE");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#NA_NUMBER_14_ENVELOPE
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType NA_NUMBER_14_ENVELOPE => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("NA_NUMBER_14_ENVELOPE");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#INVITE_ENVELOPE
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType INVITE_ENVELOPE => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("INVITE_ENVELOPE");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ITALY_ENVELOPE
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ITALY_ENVELOPE => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ITALY_ENVELOPE");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#MONARCH_ENVELOPE
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType MONARCH_ENVELOPE => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("MONARCH_ENVELOPE");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#PERSONAL_ENVELOPE
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType PERSONAL_ENVELOPE => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("PERSONAL_ENVELOPE");
             /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#A0
             /// </summary>
@@ -612,6 +351,10 @@ namespace Java.Awt
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#A1
             /// </summary>
             public static Java.Awt.PageAttributes.MediaType A1 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("A1");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#A10
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType A10 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("A10");
             /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#A2
             /// </summary>
@@ -645,9 +388,9 @@ namespace Java.Awt
             /// </summary>
             public static Java.Awt.PageAttributes.MediaType A9 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("A9");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#A10
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#B
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType A10 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("A10");
+            public static Java.Awt.PageAttributes.MediaType B => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("B");
             /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#B0
             /// </summary>
@@ -656,6 +399,10 @@ namespace Java.Awt
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#B1
             /// </summary>
             public static Java.Awt.PageAttributes.MediaType B1 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("B1");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#B10
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType B10 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("B10");
             /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#B2
             /// </summary>
@@ -669,17 +416,9 @@ namespace Java.Awt
             /// </summary>
             public static Java.Awt.PageAttributes.MediaType B4 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("B4");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_B4_ENVELOPE
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_B4_ENVELOPE => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_B4_ENVELOPE");
-            /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#B5
             /// </summary>
             public static Java.Awt.PageAttributes.MediaType B5 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("B5");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_B5_ENVELOPE
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_B5_ENVELOPE => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_B5_ENVELOPE");
             /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#B6
             /// </summary>
@@ -697,157 +436,77 @@ namespace Java.Awt
             /// </summary>
             public static Java.Awt.PageAttributes.MediaType B9 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("B9");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#B10
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#C
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType B10 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("B10");
+            public static Java.Awt.PageAttributes.MediaType C => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("C");
             /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#C0
             /// </summary>
             public static Java.Awt.PageAttributes.MediaType C0 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("C0");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_C0_ENVELOPE
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_C0_ENVELOPE => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_C0_ENVELOPE");
-            /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#C1
             /// </summary>
             public static Java.Awt.PageAttributes.MediaType C1 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("C1");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_C1_ENVELOPE
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_C1_ENVELOPE => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_C1_ENVELOPE");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#C2
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType C2 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("C2");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_C2_ENVELOPE
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_C2_ENVELOPE => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_C2_ENVELOPE");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#C3
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType C3 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("C3");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_C3_ENVELOPE
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_C3_ENVELOPE => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_C3_ENVELOPE");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#C4
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType C4 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("C4");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_C4_ENVELOPE
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_C4_ENVELOPE => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_C4_ENVELOPE");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#C5
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType C5 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("C5");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_C5_ENVELOPE
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_C5_ENVELOPE => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_C5_ENVELOPE");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#C6
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType C6 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("C6");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_C6_ENVELOPE
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_C6_ENVELOPE => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_C6_ENVELOPE");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#C7
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType C7 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("C7");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_C7_ENVELOPE
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_C7_ENVELOPE => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_C7_ENVELOPE");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#C8
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType C8 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("C8");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_C8_ENVELOPE
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_C8_ENVELOPE => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_C8_ENVELOPE");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#C9
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType C9 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("C9");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_C9_ENVELOPE
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_C9_ENVELOPE => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_C9_ENVELOPE");
             /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#C10
             /// </summary>
             public static Java.Awt.PageAttributes.MediaType C10 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("C10");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_C10_ENVELOPE
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#C2
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_C10_ENVELOPE => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_C10_ENVELOPE");
+            public static Java.Awt.PageAttributes.MediaType C2 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("C2");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_DESIGNATED_LONG_ENVELOPE
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#C3
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ISO_DESIGNATED_LONG_ENVELOPE => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_DESIGNATED_LONG_ENVELOPE");
+            public static Java.Awt.PageAttributes.MediaType C3 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("C3");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#STATEMENT
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#C4
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType STATEMENT => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("STATEMENT");
+            public static Java.Awt.PageAttributes.MediaType C4 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("C4");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#TABLOID
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#C5
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType TABLOID => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("TABLOID");
+            public static Java.Awt.PageAttributes.MediaType C5 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("C5");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#LETTER
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#C6
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType LETTER => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("LETTER");
+            public static Java.Awt.PageAttributes.MediaType C6 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("C6");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#NOTE
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#C7
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType NOTE => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("NOTE");
+            public static Java.Awt.PageAttributes.MediaType C7 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("C7");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#LEGAL
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#C8
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType LEGAL => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("LEGAL");
+            public static Java.Awt.PageAttributes.MediaType C8 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("C8");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ENV_10X15
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#C9
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ENV_10X15 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ENV_10X15");
+            public static Java.Awt.PageAttributes.MediaType C9 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("C9");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ENV_10X14
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#D
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ENV_10X14 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ENV_10X14");
+            public static Java.Awt.PageAttributes.MediaType D => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("D");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#E
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType E => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("E");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ENV_10
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType ENV_10 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ENV_10");
             /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ENV_10X13
             /// </summary>
             public static Java.Awt.PageAttributes.MediaType ENV_10X13 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ENV_10X13");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ENV_9X12
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ENV_10X14
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ENV_9X12 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ENV_9X12");
+            public static Java.Awt.PageAttributes.MediaType ENV_10X14 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ENV_10X14");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ENV_9X11
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ENV_10X15
             /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ENV_9X11 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ENV_9X11");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ENV_7X9
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ENV_7X9 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ENV_7X9");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ENV_6X9
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ENV_6X9 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ENV_6X9");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ENV_9
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ENV_9 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ENV_9");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ENV_10
-            /// </summary>
-            public static Java.Awt.PageAttributes.MediaType ENV_10 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ENV_10");
+            public static Java.Awt.PageAttributes.MediaType ENV_10X15 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ENV_10X15");
             /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ENV_11
             /// </summary>
@@ -860,6 +519,26 @@ namespace Java.Awt
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ENV_14
             /// </summary>
             public static Java.Awt.PageAttributes.MediaType ENV_14 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ENV_14");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ENV_6X9
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType ENV_6X9 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ENV_6X9");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ENV_7X9
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType ENV_7X9 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ENV_7X9");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ENV_9
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType ENV_9 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ENV_9");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ENV_9X11
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType ENV_9X11 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ENV_9X11");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ENV_9X12
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType ENV_9X12 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ENV_9X12");
             /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ENV_INVITE
             /// </summary>
@@ -877,56 +556,377 @@ namespace Java.Awt
             /// </summary>
             public static Java.Awt.PageAttributes.MediaType ENV_PERSONAL => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ENV_PERSONAL");
             /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#EXECUTIVE
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType EXECUTIVE => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("EXECUTIVE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#FOLIO
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType FOLIO => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("FOLIO");
+            /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#INVITE
             /// </summary>
             public static Java.Awt.PageAttributes.MediaType INVITE => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("INVITE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#INVITE_ENVELOPE
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType INVITE_ENVELOPE => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("INVITE_ENVELOPE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#INVOICE
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType INVOICE => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("INVOICE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_2A0
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType ISO_2A0 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_2A0");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_4A0
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType ISO_4A0 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_4A0");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_A0
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType ISO_A0 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_A0");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_A1
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType ISO_A1 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_A1");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_A10
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType ISO_A10 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_A10");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_A2
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType ISO_A2 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_A2");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_A3
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType ISO_A3 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_A3");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_A4
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType ISO_A4 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_A4");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_A5
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType ISO_A5 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_A5");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_A6
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType ISO_A6 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_A6");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_A7
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType ISO_A7 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_A7");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_A8
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType ISO_A8 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_A8");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_A9
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType ISO_A9 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_A9");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_B0
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType ISO_B0 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_B0");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_B1
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType ISO_B1 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_B1");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_B10
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType ISO_B10 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_B10");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_B2
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType ISO_B2 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_B2");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_B3
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType ISO_B3 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_B3");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_B4
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType ISO_B4 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_B4");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_B4_ENVELOPE
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType ISO_B4_ENVELOPE => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_B4_ENVELOPE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_B5
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType ISO_B5 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_B5");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_B5_ENVELOPE
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType ISO_B5_ENVELOPE => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_B5_ENVELOPE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_B6
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType ISO_B6 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_B6");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_B7
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType ISO_B7 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_B7");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_B8
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType ISO_B8 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_B8");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_B9
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType ISO_B9 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_B9");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_C0
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType ISO_C0 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_C0");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_C0_ENVELOPE
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType ISO_C0_ENVELOPE => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_C0_ENVELOPE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_C1
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType ISO_C1 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_C1");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_C1_ENVELOPE
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType ISO_C1_ENVELOPE => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_C1_ENVELOPE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_C10
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType ISO_C10 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_C10");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_C10_ENVELOPE
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType ISO_C10_ENVELOPE => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_C10_ENVELOPE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_C2
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType ISO_C2 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_C2");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_C2_ENVELOPE
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType ISO_C2_ENVELOPE => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_C2_ENVELOPE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_C3
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType ISO_C3 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_C3");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_C3_ENVELOPE
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType ISO_C3_ENVELOPE => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_C3_ENVELOPE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_C4
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType ISO_C4 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_C4");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_C4_ENVELOPE
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType ISO_C4_ENVELOPE => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_C4_ENVELOPE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_C5
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType ISO_C5 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_C5");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_C5_ENVELOPE
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType ISO_C5_ENVELOPE => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_C5_ENVELOPE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_C6
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType ISO_C6 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_C6");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_C6_ENVELOPE
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType ISO_C6_ENVELOPE => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_C6_ENVELOPE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_C7
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType ISO_C7 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_C7");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_C7_ENVELOPE
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType ISO_C7_ENVELOPE => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_C7_ENVELOPE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_C8
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType ISO_C8 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_C8");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_C8_ENVELOPE
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType ISO_C8_ENVELOPE => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_C8_ENVELOPE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_C9
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType ISO_C9 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_C9");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_C9_ENVELOPE
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType ISO_C9_ENVELOPE => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_C9_ENVELOPE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_DESIGNATED_LONG
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType ISO_DESIGNATED_LONG => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_DESIGNATED_LONG");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ISO_DESIGNATED_LONG_ENVELOPE
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType ISO_DESIGNATED_LONG_ENVELOPE => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ISO_DESIGNATED_LONG_ENVELOPE");
             /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ITALY
             /// </summary>
             public static Java.Awt.PageAttributes.MediaType ITALY => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ITALY");
             /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#ITALY_ENVELOPE
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType ITALY_ENVELOPE => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("ITALY_ENVELOPE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#JIS_B0
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType JIS_B0 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("JIS_B0");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#JIS_B1
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType JIS_B1 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("JIS_B1");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#JIS_B10
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType JIS_B10 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("JIS_B10");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#JIS_B2
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType JIS_B2 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("JIS_B2");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#JIS_B3
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType JIS_B3 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("JIS_B3");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#JIS_B4
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType JIS_B4 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("JIS_B4");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#JIS_B5
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType JIS_B5 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("JIS_B5");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#JIS_B6
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType JIS_B6 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("JIS_B6");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#JIS_B7
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType JIS_B7 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("JIS_B7");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#JIS_B8
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType JIS_B8 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("JIS_B8");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#JIS_B9
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType JIS_B9 => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("JIS_B9");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#LEDGER
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType LEDGER => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("LEDGER");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#LEGAL
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType LEGAL => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("LEGAL");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#LETTER
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType LETTER => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("LETTER");
+            /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#MONARCH
             /// </summary>
             public static Java.Awt.PageAttributes.MediaType MONARCH => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("MONARCH");
             /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#MONARCH_ENVELOPE
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType MONARCH_ENVELOPE => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("MONARCH_ENVELOPE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#NA_10X13_ENVELOPE
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType NA_10X13_ENVELOPE => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("NA_10X13_ENVELOPE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#NA_10X14_ENVELOPE
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType NA_10X14_ENVELOPE => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("NA_10X14_ENVELOPE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#NA_10X15_ENVELOPE
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType NA_10X15_ENVELOPE => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("NA_10X15_ENVELOPE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#NA_6X9_ENVELOPE
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType NA_6X9_ENVELOPE => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("NA_6X9_ENVELOPE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#NA_7X9_ENVELOPE
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType NA_7X9_ENVELOPE => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("NA_7X9_ENVELOPE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#NA_9X11_ENVELOPE
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType NA_9X11_ENVELOPE => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("NA_9X11_ENVELOPE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#NA_9X12_ENVELOPE
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType NA_9X12_ENVELOPE => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("NA_9X12_ENVELOPE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#NA_LEGAL
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType NA_LEGAL => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("NA_LEGAL");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#NA_LETTER
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType NA_LETTER => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("NA_LETTER");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#NA_NUMBER_10_ENVELOPE
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType NA_NUMBER_10_ENVELOPE => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("NA_NUMBER_10_ENVELOPE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#NA_NUMBER_11_ENVELOPE
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType NA_NUMBER_11_ENVELOPE => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("NA_NUMBER_11_ENVELOPE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#NA_NUMBER_12_ENVELOPE
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType NA_NUMBER_12_ENVELOPE => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("NA_NUMBER_12_ENVELOPE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#NA_NUMBER_14_ENVELOPE
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType NA_NUMBER_14_ENVELOPE => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("NA_NUMBER_14_ENVELOPE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#NA_NUMBER_9_ENVELOPE
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType NA_NUMBER_9_ENVELOPE => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("NA_NUMBER_9_ENVELOPE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#NOTE
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType NOTE => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("NOTE");
+            /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#PERSONAL
             /// </summary>
             public static Java.Awt.PageAttributes.MediaType PERSONAL => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("PERSONAL");
-            
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region OriginType
-        public partial class OriginType
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.OriginType.html#PHYSICAL
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#PERSONAL_ENVELOPE
             /// </summary>
-            public static Java.Awt.PageAttributes.OriginType PHYSICAL => Clazz.GetField<Java.Awt.PageAttributes.OriginType>("PHYSICAL");
+            public static Java.Awt.PageAttributes.MediaType PERSONAL_ENVELOPE => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("PERSONAL_ENVELOPE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.OriginType.html#PRINTABLE
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#QUARTO
             /// </summary>
-            public static Java.Awt.PageAttributes.OriginType PRINTABLE => Clazz.GetField<Java.Awt.PageAttributes.OriginType>("PRINTABLE");
+            public static Java.Awt.PageAttributes.MediaType QUARTO => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("QUARTO");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#STATEMENT
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType STATEMENT => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("STATEMENT");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#TABLOID
+            /// </summary>
+            public static Java.Awt.PageAttributes.MediaType TABLOID => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("TABLOID");
             
             #endregion
 

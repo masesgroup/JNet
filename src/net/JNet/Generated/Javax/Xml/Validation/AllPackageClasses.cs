@@ -23,23 +23,23 @@
 
 namespace Javax.Xml.Validation
 {
-    #region SchemaFactoryLoader
+    #region Schema
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/SchemaFactoryLoader.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/Schema.html
     /// </summary>
-    public partial class SchemaFactoryLoader : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SchemaFactoryLoader>
+    public partial class Schema : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Schema>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public SchemaFactoryLoader() { }
+        public Schema() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public SchemaFactoryLoader(params object[] args) : base(args) { }
+        public Schema(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.xml.validation.SchemaFactoryLoader";
+        public override string ClassName => "javax.xml.validation.Schema";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -109,23 +109,23 @@ namespace Javax.Xml.Validation
     }
     #endregion
 
-    #region ValidatorHandler
+    #region SchemaFactoryLoader
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/ValidatorHandler.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/SchemaFactoryLoader.html
     /// </summary>
-    public partial class ValidatorHandler : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ValidatorHandler>
+    public partial class SchemaFactoryLoader : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SchemaFactoryLoader>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ValidatorHandler() { }
+        public SchemaFactoryLoader() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public ValidatorHandler(params object[] args) : base(args) { }
+        public SchemaFactoryLoader(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.xml.validation.ValidatorHandler";
+        public override string ClassName => "javax.xml.validation.SchemaFactoryLoader";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -179,23 +179,23 @@ namespace Javax.Xml.Validation
     }
     #endregion
 
-    #region Schema
+    #region Validator
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/Schema.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/Validator.html
     /// </summary>
-    public partial class Schema : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Schema>
+    public partial class Validator : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Validator>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public Schema() { }
+        public Validator() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public Schema(params object[] args) : base(args) { }
+        public Validator(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.xml.validation.Schema";
+        public override string ClassName => "javax.xml.validation.Validator";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -214,23 +214,23 @@ namespace Javax.Xml.Validation
     }
     #endregion
 
-    #region Validator
+    #region ValidatorHandler
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/Validator.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/validation/ValidatorHandler.html
     /// </summary>
-    public partial class Validator : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Validator>
+    public partial class ValidatorHandler : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ValidatorHandler>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public Validator() { }
+        public ValidatorHandler() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public Validator(params object[] args) : base(args) { }
+        public ValidatorHandler(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.xml.validation.Validator";
+        public override string ClassName => "javax.xml.validation.ValidatorHandler";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;

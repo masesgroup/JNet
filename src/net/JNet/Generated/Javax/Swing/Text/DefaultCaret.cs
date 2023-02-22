@@ -42,17 +42,17 @@ namespace Javax.Swing.Text
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#UPDATE_WHEN_ON_EDT
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#ALWAYS_UPDATE
         /// </summary>
-        public static int UPDATE_WHEN_ON_EDT => Clazz.GetField<int>("UPDATE_WHEN_ON_EDT");
+        public static int ALWAYS_UPDATE => Clazz.GetField<int>("ALWAYS_UPDATE");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#NEVER_UPDATE
         /// </summary>
         public static int NEVER_UPDATE => Clazz.GetField<int>("NEVER_UPDATE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#ALWAYS_UPDATE
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#UPDATE_WHEN_ON_EDT
         /// </summary>
-        public static int ALWAYS_UPDATE => Clazz.GetField<int>("ALWAYS_UPDATE");
+        public static int UPDATE_WHEN_ON_EDT => Clazz.GetField<int>("UPDATE_WHEN_ON_EDT");
         
         #endregion
 

@@ -30,23 +30,30 @@ namespace Java.Math
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#<init>(java.math.BigInteger,java.math.MathContext)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#<init>(char[],int,int,java.math.MathContext)
         /// </summary>
-        public BigDecimal(Java.Math.BigInteger arg0, Java.Math.MathContext arg1)
+        public BigDecimal(char[] arg0, int arg1, int arg2, Java.Math.MathContext arg3)
+            : base(arg0, arg1, arg2, arg3)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#<init>(char[],int,int)
+        /// </summary>
+        public BigDecimal(char[] arg0, int arg1, int arg2)
+            : base(arg0, arg1, arg2)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#<init>(char[],java.math.MathContext)
+        /// </summary>
+        public BigDecimal(char[] arg0, Java.Math.MathContext arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#<init>(java.math.BigInteger)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#<init>(char[])
         /// </summary>
-        public BigDecimal(Java.Math.BigInteger arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#<init>(long)
-        /// </summary>
-        public BigDecimal(long arg0)
+        public BigDecimal(char[] arg0)
             : base(arg0)
         {
         }
@@ -79,41 +86,6 @@ namespace Java.Math
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#<init>(java.math.BigInteger,int,java.math.MathContext)
-        /// </summary>
-        public BigDecimal(Java.Math.BigInteger arg0, int arg1, Java.Math.MathContext arg2)
-            : base(arg0, arg1, arg2)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#<init>(java.math.BigInteger,int)
-        /// </summary>
-        public BigDecimal(Java.Math.BigInteger arg0, int arg1)
-            : base(arg0, arg1)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#<init>(long,java.math.MathContext)
-        /// </summary>
-        public BigDecimal(long arg0, Java.Math.MathContext arg1)
-            : base(arg0, arg1)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#<init>(char[],int,int,java.math.MathContext)
-        /// </summary>
-        public BigDecimal(char[] arg0, int arg1, int arg2, Java.Math.MathContext arg3)
-            : base(arg0, arg1, arg2, arg3)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#<init>(char[],int,int)
-        /// </summary>
-        public BigDecimal(char[] arg0, int arg1, int arg2)
-            : base(arg0, arg1, arg2)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#<init>(java.lang.String,java.math.MathContext)
         /// </summary>
         public BigDecimal(string arg0, Java.Math.MathContext arg1)
@@ -128,16 +100,44 @@ namespace Java.Math
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#<init>(char[],java.math.MathContext)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#<init>(java.math.BigInteger,int,java.math.MathContext)
         /// </summary>
-        public BigDecimal(char[] arg0, Java.Math.MathContext arg1)
+        public BigDecimal(Java.Math.BigInteger arg0, int arg1, Java.Math.MathContext arg2)
+            : base(arg0, arg1, arg2)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#<init>(java.math.BigInteger,int)
+        /// </summary>
+        public BigDecimal(Java.Math.BigInteger arg0, int arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#<init>(char[])
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#<init>(java.math.BigInteger,java.math.MathContext)
         /// </summary>
-        public BigDecimal(char[] arg0)
+        public BigDecimal(Java.Math.BigInteger arg0, Java.Math.MathContext arg1)
+            : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#<init>(java.math.BigInteger)
+        /// </summary>
+        public BigDecimal(Java.Math.BigInteger arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#<init>(long,java.math.MathContext)
+        /// </summary>
+        public BigDecimal(long arg0, Java.Math.MathContext arg1)
+            : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#<init>(long)
+        /// </summary>
+        public BigDecimal(long arg0)
             : base(arg0)
         {
         }
@@ -150,10 +150,6 @@ namespace Java.Math
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#ZERO
-        /// </summary>
-        public static Java.Math.BigDecimal ZERO => Clazz.GetField<Java.Math.BigDecimal>("ZERO");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#ONE
         /// </summary>
         public static Java.Math.BigDecimal ONE => Clazz.GetField<Java.Math.BigDecimal>("ONE");
@@ -161,6 +157,10 @@ namespace Java.Math
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#TEN
         /// </summary>
         public static Java.Math.BigDecimal TEN => Clazz.GetField<Java.Math.BigDecimal>("TEN");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html#ZERO
+        /// </summary>
+        public static Java.Math.BigDecimal ZERO => Clazz.GetField<Java.Math.BigDecimal>("ZERO");
         
         #endregion
 

@@ -30,6 +30,20 @@ namespace Java.Awt.Dnd
     {
         #region Constructors
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTarget.html#<init>(java.awt.Component,int,java.awt.dnd.DropTargetListener,boolean,java.awt.datatransfer.FlavorMap) throws java.awt.HeadlessException
+        /// </summary>
+        public DropTarget(Java.Awt.Component arg0, int arg1, Java.Awt.Dnd.DropTargetListener arg2, bool arg3, Java.Awt.Datatransfer.FlavorMap arg4)
+            : base(arg0, arg1, arg2, arg3, arg4)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTarget.html#<init>(java.awt.Component,int,java.awt.dnd.DropTargetListener,boolean) throws java.awt.HeadlessException
+        /// </summary>
+        public DropTarget(Java.Awt.Component arg0, int arg1, Java.Awt.Dnd.DropTargetListener arg2, bool arg3)
+            : base(arg0, arg1, arg2, arg3)
+        {
+        }
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTarget.html#<init>(java.awt.Component,int,java.awt.dnd.DropTargetListener) throws java.awt.HeadlessException
         /// </summary>
         public DropTarget(Java.Awt.Component arg0, int arg1, Java.Awt.Dnd.DropTargetListener arg2)
@@ -41,20 +55,6 @@ namespace Java.Awt.Dnd
         /// </summary>
         public DropTarget(Java.Awt.Component arg0, Java.Awt.Dnd.DropTargetListener arg1)
             : base(arg0, arg1)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTarget.html#<init>(java.awt.Component,int,java.awt.dnd.DropTargetListener,boolean) throws java.awt.HeadlessException
-        /// </summary>
-        public DropTarget(Java.Awt.Component arg0, int arg1, Java.Awt.Dnd.DropTargetListener arg2, bool arg3)
-            : base(arg0, arg1, arg2, arg3)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTarget.html#<init>(java.awt.Component,int,java.awt.dnd.DropTargetListener,boolean,java.awt.datatransfer.FlavorMap) throws java.awt.HeadlessException
-        /// </summary>
-        public DropTarget(Java.Awt.Component arg0, int arg1, Java.Awt.Dnd.DropTargetListener arg2, bool arg3, Java.Awt.Datatransfer.FlavorMap arg4)
-            : base(arg0, arg1, arg2, arg3, arg4)
         {
         }
         

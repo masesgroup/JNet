@@ -30,6 +30,20 @@ namespace Java.Awt.ImageNs
     {
         #region Constructors
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBufferDouble.html#<init>(double[],int,int)
+        /// </summary>
+        public DataBufferDouble(double[] arg0, int arg1, int arg2)
+            : base(arg0, arg1, arg2)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBufferDouble.html#<init>(double[],int)
+        /// </summary>
+        public DataBufferDouble(double[] arg0, int arg1)
+            : base(arg0, arg1)
+        {
+        }
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBufferDouble.html#<init>(double[][],int,int[])
         /// </summary>
         public DataBufferDouble(double[][] arg0, int arg1, int[] arg2)
@@ -44,20 +58,6 @@ namespace Java.Awt.ImageNs
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBufferDouble.html#<init>(double[],int,int)
-        /// </summary>
-        public DataBufferDouble(double[] arg0, int arg1, int arg2)
-            : base(arg0, arg1, arg2)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBufferDouble.html#<init>(int)
-        /// </summary>
-        public DataBufferDouble(int arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBufferDouble.html#<init>(int,int)
         /// </summary>
         public DataBufferDouble(int arg0, int arg1)
@@ -65,10 +65,10 @@ namespace Java.Awt.ImageNs
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBufferDouble.html#<init>(double[],int)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBufferDouble.html#<init>(int)
         /// </summary>
-        public DataBufferDouble(double[] arg0, int arg1)
-            : base(arg0, arg1)
+        public DataBufferDouble(int arg0)
+            : base(arg0)
         {
         }
         

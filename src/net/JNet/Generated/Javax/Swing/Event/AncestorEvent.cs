@@ -49,13 +49,13 @@ namespace Javax.Swing.Event
         /// </summary>
         public static int ANCESTOR_ADDED => Clazz.GetField<int>("ANCESTOR_ADDED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/AncestorEvent.html#ANCESTOR_REMOVED
-        /// </summary>
-        public static int ANCESTOR_REMOVED => Clazz.GetField<int>("ANCESTOR_REMOVED");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/AncestorEvent.html#ANCESTOR_MOVED
         /// </summary>
         public static int ANCESTOR_MOVED => Clazz.GetField<int>("ANCESTOR_MOVED");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/AncestorEvent.html#ANCESTOR_REMOVED
+        /// </summary>
+        public static int ANCESTOR_REMOVED => Clazz.GetField<int>("ANCESTOR_REMOVED");
         
         #endregion
 

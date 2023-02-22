@@ -70,14 +70,6 @@ namespace Javax.Swing.Plaf.Basic
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicMenuUI.ChangeHandler.html#menu
-            /// </summary>
-            public Javax.Swing.JMenu menu => Instance.GetField<Javax.Swing.JMenu>("menu");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicMenuUI.ChangeHandler.html#ui
-            /// </summary>
-            public Javax.Swing.Plaf.Basic.BasicMenuUI ui => Instance.GetField<Javax.Swing.Plaf.Basic.BasicMenuUI>("ui");
-            /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicMenuUI.ChangeHandler.html#isSelected
             /// </summary>
             public bool isSelected => Instance.GetField<bool>("isSelected");
@@ -85,6 +77,14 @@ namespace Javax.Swing.Plaf.Basic
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicMenuUI.ChangeHandler.html#wasFocused
             /// </summary>
             public Java.Awt.Component wasFocused => Instance.GetField<Java.Awt.Component>("wasFocused");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicMenuUI.ChangeHandler.html#menu
+            /// </summary>
+            public Javax.Swing.JMenu menu => Instance.GetField<Javax.Swing.JMenu>("menu");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicMenuUI.ChangeHandler.html#ui
+            /// </summary>
+            public Javax.Swing.Plaf.Basic.BasicMenuUI ui => Instance.GetField<Javax.Swing.Plaf.Basic.BasicMenuUI>("ui");
             
             #endregion
 

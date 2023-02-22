@@ -40,6 +40,10 @@ namespace Javax.Swing
 
         #region Fields
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#HORIZONTAL_WRAP
+        /// </summary>
+        public static int HORIZONTAL_WRAP => Clazz.GetField<int>("HORIZONTAL_WRAP");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#VERTICAL
         /// </summary>
         public static int VERTICAL => Clazz.GetField<int>("VERTICAL");
@@ -47,10 +51,6 @@ namespace Javax.Swing
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#VERTICAL_WRAP
         /// </summary>
         public static int VERTICAL_WRAP => Clazz.GetField<int>("VERTICAL_WRAP");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#HORIZONTAL_WRAP
-        /// </summary>
-        public static int HORIZONTAL_WRAP => Clazz.GetField<int>("HORIZONTAL_WRAP");
         
         #endregion
 

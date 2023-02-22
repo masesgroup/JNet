@@ -30,13 +30,6 @@ namespace Javax.Swing
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#<init>(javax.swing.BoundedRangeModel)
-        /// </summary>
-        public JProgressBar(Javax.Swing.BoundedRangeModel arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#<init>(int,int,int)
         /// </summary>
         public JProgressBar(int arg0, int arg1, int arg2)
@@ -54,6 +47,13 @@ namespace Javax.Swing
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#<init>(int)
         /// </summary>
         public JProgressBar(int arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JProgressBar.html#<init>(javax.swing.BoundedRangeModel)
+        /// </summary>
+        public JProgressBar(Javax.Swing.BoundedRangeModel arg0)
             : base(arg0)
         {
         }

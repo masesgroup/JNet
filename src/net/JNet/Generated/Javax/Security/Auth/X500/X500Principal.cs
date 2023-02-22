@@ -30,16 +30,16 @@ namespace Javax.Security.Auth.X500
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/x500/X500Principal.html#<init>(java.io.InputStream)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/x500/X500Principal.html#<init>(byte[])
         /// </summary>
-        public X500Principal(Java.Io.InputStream arg0)
+        public X500Principal(byte[] arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/x500/X500Principal.html#<init>(byte[])
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/x500/X500Principal.html#<init>(java.io.InputStream)
         /// </summary>
-        public X500Principal(byte[] arg0)
+        public X500Principal(Java.Io.InputStream arg0)
             : base(arg0)
         {
         }
@@ -61,6 +61,10 @@ namespace Javax.Security.Auth.X500
 
         #region Fields
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/x500/X500Principal.html#CANONICAL
+        /// </summary>
+        public static string CANONICAL => Clazz.GetField<string>("CANONICAL");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/x500/X500Principal.html#RFC1779
         /// </summary>
         public static string RFC1779 => Clazz.GetField<string>("RFC1779");
@@ -68,10 +72,6 @@ namespace Javax.Security.Auth.X500
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/x500/X500Principal.html#RFC2253
         /// </summary>
         public static string RFC2253 => Clazz.GetField<string>("RFC2253");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/x500/X500Principal.html#CANONICAL
-        /// </summary>
-        public static string CANONICAL => Clazz.GetField<string>("CANONICAL");
         
         #endregion
 

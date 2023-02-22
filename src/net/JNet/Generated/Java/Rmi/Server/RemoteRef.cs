@@ -39,13 +39,13 @@ namespace Java.Rmi.Server
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteRef.html#serialVersionUID
-        /// </summary>
-        public static long serialVersionUID => Clazz.GetField<long>("serialVersionUID");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteRef.html#packagePrefix
         /// </summary>
         public static string packagePrefix => Clazz.GetField<string>("packagePrefix");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteRef.html#serialVersionUID
+        /// </summary>
+        public static long serialVersionUID => Clazz.GetField<long>("serialVersionUID");
         
         #endregion
 

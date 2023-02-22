@@ -23,23 +23,23 @@
 
 namespace Javax.Sound.Midi.Spi
 {
-    #region MidiFileReader
+    #region MidiDeviceProvider
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/spi/MidiFileReader.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/spi/MidiDeviceProvider.html
     /// </summary>
-    public partial class MidiFileReader : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MidiFileReader>
+    public partial class MidiDeviceProvider : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MidiDeviceProvider>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public MidiFileReader() { }
+        public MidiDeviceProvider() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public MidiFileReader(params object[] args) : base(args) { }
+        public MidiDeviceProvider(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.sound.midi.spi.MidiFileReader";
+        public override string ClassName => "javax.sound.midi.spi.MidiDeviceProvider";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -58,23 +58,23 @@ namespace Javax.Sound.Midi.Spi
     }
     #endregion
 
-    #region MidiDeviceProvider
+    #region MidiFileReader
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/spi/MidiDeviceProvider.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/spi/MidiFileReader.html
     /// </summary>
-    public partial class MidiDeviceProvider : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MidiDeviceProvider>
+    public partial class MidiFileReader : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MidiFileReader>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public MidiDeviceProvider() { }
+        public MidiFileReader() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public MidiDeviceProvider(params object[] args) : base(args) { }
+        public MidiFileReader(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.sound.midi.spi.MidiDeviceProvider";
+        public override string ClassName => "javax.sound.midi.spi.MidiFileReader";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;

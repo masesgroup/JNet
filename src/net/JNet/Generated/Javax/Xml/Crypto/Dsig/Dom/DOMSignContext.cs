@@ -30,20 +30,6 @@ namespace Javax.Xml.Crypto.Dsig.Dom
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/dom/DOMSignContext.html#<init>(javax.xml.crypto.KeySelector,org.w3c.dom.Node,org.w3c.dom.Node)
-        /// </summary>
-        public DOMSignContext(Javax.Xml.Crypto.KeySelector arg0, Org.W3c.Dom.Node arg1, Org.W3c.Dom.Node arg2)
-            : base(arg0, arg1, arg2)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/dom/DOMSignContext.html#<init>(javax.xml.crypto.KeySelector,org.w3c.dom.Node)
-        /// </summary>
-        public DOMSignContext(Javax.Xml.Crypto.KeySelector arg0, Org.W3c.Dom.Node arg1)
-            : base(arg0, arg1)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/dom/DOMSignContext.html#<init>(java.security.Key,org.w3c.dom.Node,org.w3c.dom.Node)
         /// </summary>
         public DOMSignContext(Java.Security.Key arg0, Org.W3c.Dom.Node arg1, Org.W3c.Dom.Node arg2)
@@ -54,6 +40,20 @@ namespace Javax.Xml.Crypto.Dsig.Dom
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/dom/DOMSignContext.html#<init>(java.security.Key,org.w3c.dom.Node)
         /// </summary>
         public DOMSignContext(Java.Security.Key arg0, Org.W3c.Dom.Node arg1)
+            : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/dom/DOMSignContext.html#<init>(javax.xml.crypto.KeySelector,org.w3c.dom.Node,org.w3c.dom.Node)
+        /// </summary>
+        public DOMSignContext(Javax.Xml.Crypto.KeySelector arg0, Org.W3c.Dom.Node arg1, Org.W3c.Dom.Node arg2)
+            : base(arg0, arg1, arg2)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/dom/DOMSignContext.html#<init>(javax.xml.crypto.KeySelector,org.w3c.dom.Node)
+        /// </summary>
+        public DOMSignContext(Javax.Xml.Crypto.KeySelector arg0, Org.W3c.Dom.Node arg1)
             : base(arg0, arg1)
         {
         }

@@ -504,21 +504,21 @@ namespace Java.Lang.ModuleNs
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Modifier.html#OPEN
-            /// </summary>
-            public static Java.Lang.ModuleNs.ModuleDescriptor.Modifier OPEN => Clazz.GetField<Java.Lang.ModuleNs.ModuleDescriptor.Modifier>("OPEN");
-            /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Modifier.html#AUTOMATIC
             /// </summary>
             public static Java.Lang.ModuleNs.ModuleDescriptor.Modifier AUTOMATIC => Clazz.GetField<Java.Lang.ModuleNs.ModuleDescriptor.Modifier>("AUTOMATIC");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Modifier.html#SYNTHETIC
-            /// </summary>
-            public static Java.Lang.ModuleNs.ModuleDescriptor.Modifier SYNTHETIC => Clazz.GetField<Java.Lang.ModuleNs.ModuleDescriptor.Modifier>("SYNTHETIC");
-            /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Modifier.html#MANDATED
             /// </summary>
             public static Java.Lang.ModuleNs.ModuleDescriptor.Modifier MANDATED => Clazz.GetField<Java.Lang.ModuleNs.ModuleDescriptor.Modifier>("MANDATED");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Modifier.html#OPEN
+            /// </summary>
+            public static Java.Lang.ModuleNs.ModuleDescriptor.Modifier OPEN => Clazz.GetField<Java.Lang.ModuleNs.ModuleDescriptor.Modifier>("OPEN");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Modifier.html#SYNTHETIC
+            /// </summary>
+            public static Java.Lang.ModuleNs.ModuleDescriptor.Modifier SYNTHETIC => Clazz.GetField<Java.Lang.ModuleNs.ModuleDescriptor.Modifier>("SYNTHETIC");
             
             #endregion
 

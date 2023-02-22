@@ -38,25 +38,25 @@ namespace Java.Security.Cert
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXReason.html#NAME_CHAINING
-        /// </summary>
-        public static Java.Security.Cert.PKIXReason NAME_CHAINING => Clazz.GetField<Java.Security.Cert.PKIXReason>("NAME_CHAINING");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXReason.html#INVALID_KEY_USAGE
         /// </summary>
         public static Java.Security.Cert.PKIXReason INVALID_KEY_USAGE => Clazz.GetField<Java.Security.Cert.PKIXReason>("INVALID_KEY_USAGE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXReason.html#INVALID_NAME
+        /// </summary>
+        public static Java.Security.Cert.PKIXReason INVALID_NAME => Clazz.GetField<Java.Security.Cert.PKIXReason>("INVALID_NAME");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXReason.html#INVALID_POLICY
         /// </summary>
         public static Java.Security.Cert.PKIXReason INVALID_POLICY => Clazz.GetField<Java.Security.Cert.PKIXReason>("INVALID_POLICY");
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXReason.html#NAME_CHAINING
+        /// </summary>
+        public static Java.Security.Cert.PKIXReason NAME_CHAINING => Clazz.GetField<Java.Security.Cert.PKIXReason>("NAME_CHAINING");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXReason.html#NO_TRUST_ANCHOR
         /// </summary>
         public static Java.Security.Cert.PKIXReason NO_TRUST_ANCHOR => Clazz.GetField<Java.Security.Cert.PKIXReason>("NO_TRUST_ANCHOR");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXReason.html#UNRECOGNIZED_CRIT_EXT
-        /// </summary>
-        public static Java.Security.Cert.PKIXReason UNRECOGNIZED_CRIT_EXT => Clazz.GetField<Java.Security.Cert.PKIXReason>("UNRECOGNIZED_CRIT_EXT");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXReason.html#NOT_CA_CERT
         /// </summary>
@@ -66,9 +66,9 @@ namespace Java.Security.Cert
         /// </summary>
         public static Java.Security.Cert.PKIXReason PATH_TOO_LONG => Clazz.GetField<Java.Security.Cert.PKIXReason>("PATH_TOO_LONG");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXReason.html#INVALID_NAME
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PKIXReason.html#UNRECOGNIZED_CRIT_EXT
         /// </summary>
-        public static Java.Security.Cert.PKIXReason INVALID_NAME => Clazz.GetField<Java.Security.Cert.PKIXReason>("INVALID_NAME");
+        public static Java.Security.Cert.PKIXReason UNRECOGNIZED_CRIT_EXT => Clazz.GetField<Java.Security.Cert.PKIXReason>("UNRECOGNIZED_CRIT_EXT");
         
         #endregion
 

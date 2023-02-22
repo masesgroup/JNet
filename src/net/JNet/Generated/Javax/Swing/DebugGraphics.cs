@@ -30,17 +30,17 @@ namespace Javax.Swing
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#<init>(java.awt.Graphics)
-        /// </summary>
-        public DebugGraphics(Java.Awt.Graphics arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#<init>(java.awt.Graphics,javax.swing.JComponent)
         /// </summary>
         public DebugGraphics(Java.Awt.Graphics arg0, Javax.Swing.JComponent arg1)
             : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#<init>(java.awt.Graphics)
+        /// </summary>
+        public DebugGraphics(Java.Awt.Graphics arg0)
+            : base(arg0)
         {
         }
         
@@ -52,17 +52,17 @@ namespace Javax.Swing
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#LOG_OPTION
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#BUFFERED_OPTION
         /// </summary>
-        public static int LOG_OPTION => Clazz.GetField<int>("LOG_OPTION");
+        public static int BUFFERED_OPTION => Clazz.GetField<int>("BUFFERED_OPTION");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#FLASH_OPTION
         /// </summary>
         public static int FLASH_OPTION => Clazz.GetField<int>("FLASH_OPTION");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#BUFFERED_OPTION
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#LOG_OPTION
         /// </summary>
-        public static int BUFFERED_OPTION => Clazz.GetField<int>("BUFFERED_OPTION");
+        public static int LOG_OPTION => Clazz.GetField<int>("LOG_OPTION");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DebugGraphics.html#NONE_OPTION
         /// </summary>

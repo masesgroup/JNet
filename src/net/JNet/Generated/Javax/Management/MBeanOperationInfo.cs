@@ -30,6 +30,13 @@ namespace Javax.Management
     {
         #region Constructors
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanOperationInfo.html#<init>(java.lang.String,java.lang.reflect.Method)
+        /// </summary>
+        public MBeanOperationInfo(string arg0, Java.Lang.Reflect.Method arg1)
+            : base(arg0, arg1)
+        {
+        }
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanOperationInfo.html#<init>(java.lang.String,java.lang.String,javax.management.MBeanParameterInfo[],java.lang.String,int,javax.management.Descriptor)
         /// </summary>
         public MBeanOperationInfo(string arg0, string arg1, Javax.Management.MBeanParameterInfo[] arg2, string arg3, int arg4, Javax.Management.Descriptor arg5)
@@ -43,13 +50,6 @@ namespace Javax.Management
             : base(arg0, arg1, arg2, arg3, arg4)
         {
         }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanOperationInfo.html#<init>(java.lang.String,java.lang.reflect.Method)
-        /// </summary>
-        public MBeanOperationInfo(string arg0, Java.Lang.Reflect.Method arg1)
-            : base(arg0, arg1)
-        {
-        }
         
         #endregion
 
@@ -60,10 +60,6 @@ namespace Javax.Management
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanOperationInfo.html#INFO
-        /// </summary>
-        public static int INFO => Clazz.GetField<int>("INFO");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanOperationInfo.html#ACTION
         /// </summary>
         public static int ACTION => Clazz.GetField<int>("ACTION");
@@ -71,6 +67,10 @@ namespace Javax.Management
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanOperationInfo.html#ACTION_INFO
         /// </summary>
         public static int ACTION_INFO => Clazz.GetField<int>("ACTION_INFO");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanOperationInfo.html#INFO
+        /// </summary>
+        public static int INFO => Clazz.GetField<int>("INFO");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanOperationInfo.html#UNKNOWN
         /// </summary>

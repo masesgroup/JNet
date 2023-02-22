@@ -23,35 +23,16 @@
 
 namespace Javax.Imageio.Metadata
 {
-    #region IIOMetadataNode
+    #region IIOInvalidTreeException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOInvalidTreeException.html
     /// </summary>
-    public partial class IIOMetadataNode : MASES.JCOBridge.C2JBridge.JVMBridgeBase<IIOMetadataNode>
+    public partial class IIOInvalidTreeException : Javax.Imageio.IIOException
     {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public IIOMetadataNode() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public IIOMetadataNode(params object[] args) : base(args) { }
+        public IIOInvalidTreeException() { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.imageio.metadata.IIOMetadataNode";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
+        public override string ClassName => "javax.imageio.metadata.IIOInvalidTreeException";
 
         // TODO: complete the class
 
@@ -93,23 +74,23 @@ namespace Javax.Imageio.Metadata
     }
     #endregion
 
-    #region IIOMetadataFormatImpl
+    #region IIOMetadataController
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormatImpl.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataController.html
     /// </summary>
-    public partial class IIOMetadataFormatImpl : MASES.JCOBridge.C2JBridge.JVMBridgeBase<IIOMetadataFormatImpl>
+    public partial class IIOMetadataController : MASES.JCOBridge.C2JBridge.JVMBridgeBase<IIOMetadataController>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public IIOMetadataFormatImpl() { }
+        public IIOMetadataController() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public IIOMetadataFormatImpl(params object[] args) : base(args) { }
+        public IIOMetadataController(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.imageio.metadata.IIOMetadataFormatImpl";
+        public override string ClassName => "javax.imageio.metadata.IIOMetadataController";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -118,7 +99,7 @@ namespace Javax.Imageio.Metadata
         public override bool IsCloseable => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
+        public override bool IsInterface => true;
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;
@@ -163,39 +144,23 @@ namespace Javax.Imageio.Metadata
     }
     #endregion
 
-    #region IIOInvalidTreeException
+    #region IIOMetadataFormatImpl
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOInvalidTreeException.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataFormatImpl.html
     /// </summary>
-    public partial class IIOInvalidTreeException : Javax.Imageio.IIOException
-    {
-        public IIOInvalidTreeException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.imageio.metadata.IIOInvalidTreeException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region IIOMetadataController
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataController.html
-    /// </summary>
-    public partial class IIOMetadataController : MASES.JCOBridge.C2JBridge.JVMBridgeBase<IIOMetadataController>
+    public partial class IIOMetadataFormatImpl : MASES.JCOBridge.C2JBridge.JVMBridgeBase<IIOMetadataFormatImpl>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public IIOMetadataController() { }
+        public IIOMetadataFormatImpl() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public IIOMetadataController(params object[] args) : base(args) { }
+        public IIOMetadataFormatImpl(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.imageio.metadata.IIOMetadataController";
+        public override string ClassName => "javax.imageio.metadata.IIOMetadataFormatImpl";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -204,7 +169,42 @@ namespace Javax.Imageio.Metadata
         public override bool IsCloseable => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region IIOMetadataNode
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadataNode.html
+    /// </summary>
+    public partial class IIOMetadataNode : MASES.JCOBridge.C2JBridge.JVMBridgeBase<IIOMetadataNode>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public IIOMetadataNode() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public IIOMetadataNode(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.imageio.metadata.IIOMetadataNode";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;

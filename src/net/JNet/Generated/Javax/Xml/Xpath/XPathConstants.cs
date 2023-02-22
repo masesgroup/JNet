@@ -38,6 +38,22 @@ namespace Javax.Xml.Xpath
 
         #region Fields
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathConstants.html#DOM_OBJECT_MODEL
+        /// </summary>
+        public static string DOM_OBJECT_MODEL => Clazz.GetField<string>("DOM_OBJECT_MODEL");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathConstants.html#BOOLEAN
+        /// </summary>
+        public static Javax.Xml.Namespace.QName BOOLEAN => Clazz.GetField<Javax.Xml.Namespace.QName>("BOOLEAN");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathConstants.html#NODE
+        /// </summary>
+        public static Javax.Xml.Namespace.QName NODE => Clazz.GetField<Javax.Xml.Namespace.QName>("NODE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathConstants.html#NODESET
+        /// </summary>
+        public static Javax.Xml.Namespace.QName NODESET => Clazz.GetField<Javax.Xml.Namespace.QName>("NODESET");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathConstants.html#NUMBER
         /// </summary>
         public static Javax.Xml.Namespace.QName NUMBER => Clazz.GetField<Javax.Xml.Namespace.QName>("NUMBER");
@@ -45,22 +61,6 @@ namespace Javax.Xml.Xpath
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathConstants.html#STRING
         /// </summary>
         public static Javax.Xml.Namespace.QName STRING => Clazz.GetField<Javax.Xml.Namespace.QName>("STRING");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathConstants.html#BOOLEAN
-        /// </summary>
-        public static Javax.Xml.Namespace.QName BOOLEAN => Clazz.GetField<Javax.Xml.Namespace.QName>("BOOLEAN");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathConstants.html#NODESET
-        /// </summary>
-        public static Javax.Xml.Namespace.QName NODESET => Clazz.GetField<Javax.Xml.Namespace.QName>("NODESET");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathConstants.html#NODE
-        /// </summary>
-        public static Javax.Xml.Namespace.QName NODE => Clazz.GetField<Javax.Xml.Namespace.QName>("NODE");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathConstants.html#DOM_OBJECT_MODEL
-        /// </summary>
-        public static string DOM_OBJECT_MODEL => Clazz.GetField<string>("DOM_OBJECT_MODEL");
         
         #endregion
 

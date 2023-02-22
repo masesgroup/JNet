@@ -23,26 +23,42 @@
 
 namespace Java.Awt.ColorNs
 {
-    #region ICC_Profile
+    #region CMMException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/CMMException.html
     /// </summary>
-    public partial class ICC_Profile : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ICC_Profile>
+    public partial class CMMException : Java.Lang.RuntimeException
+    {
+        public CMMException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.awt.color.CMMException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region ColorSpace
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html
+    /// </summary>
+    public partial class ColorSpace : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ColorSpace>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ICC_Profile() { }
+        public ColorSpace() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public ICC_Profile(params object[] args) : base(args) { }
+        public ColorSpace(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.awt.color.ICC_Profile";
+        public override string ClassName => "java.awt.color.ColorSpace";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
+        public override bool IsAbstract => true;
 
         /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
         public override bool IsCloseable => false;
@@ -93,23 +109,23 @@ namespace Java.Awt.ColorNs
     }
     #endregion
 
-    #region ICC_ProfileRGB
+    #region ICC_Profile
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_ProfileRGB.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html
     /// </summary>
-    public partial class ICC_ProfileRGB : Java.Awt.ColorNs.ICC_Profile
+    public partial class ICC_Profile : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ICC_Profile>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ICC_ProfileRGB() { }
+        public ICC_Profile() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public ICC_ProfileRGB(params object[] args) : base(args) { }
+        public ICC_Profile(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.awt.color.ICC_ProfileRGB";
+        public override string ClassName => "java.awt.color.ICC_Profile";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -163,16 +179,35 @@ namespace Java.Awt.ColorNs
     }
     #endregion
 
-    #region CMMException
+    #region ICC_ProfileRGB
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/CMMException.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_ProfileRGB.html
     /// </summary>
-    public partial class CMMException : Java.Lang.RuntimeException
+    public partial class ICC_ProfileRGB : Java.Awt.ColorNs.ICC_Profile
     {
-        public CMMException() { }
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public ICC_ProfileRGB() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public ICC_ProfileRGB(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.awt.color.CMMException";
+        public override string ClassName => "java.awt.color.ICC_ProfileRGB";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
 
         // TODO: complete the class
 
@@ -189,41 +224,6 @@ namespace Java.Awt.ColorNs
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "java.awt.color.ProfileDataException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region ColorSpace
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ColorSpace.html
-    /// </summary>
-    public partial class ColorSpace : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ColorSpace>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public ColorSpace() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public ColorSpace(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.awt.color.ColorSpace";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
 
         // TODO: complete the class
 

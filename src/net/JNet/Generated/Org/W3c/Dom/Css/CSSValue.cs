@@ -38,6 +38,10 @@ namespace Org.W3c.Dom.Css
 
         #region Fields
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSValue.html#CSS_CUSTOM
+        /// </summary>
+        public static short CSS_CUSTOM => Clazz.GetField<short>("CSS_CUSTOM");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSValue.html#CSS_INHERIT
         /// </summary>
         public static short CSS_INHERIT => Clazz.GetField<short>("CSS_INHERIT");
@@ -49,10 +53,6 @@ namespace Org.W3c.Dom.Css
         /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSValue.html#CSS_VALUE_LIST
         /// </summary>
         public static short CSS_VALUE_LIST => Clazz.GetField<short>("CSS_VALUE_LIST");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSValue.html#CSS_CUSTOM
-        /// </summary>
-        public static short CSS_CUSTOM => Clazz.GetField<short>("CSS_CUSTOM");
         
         #endregion
 

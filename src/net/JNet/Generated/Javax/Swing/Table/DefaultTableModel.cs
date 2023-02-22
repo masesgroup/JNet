@@ -124,13 +124,6 @@ namespace Javax.Swing.Table
             IExecute("setColumnCount", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableModel.html#setColumnIdentifiers(java.lang.Object[])
-        /// </summary>
-        public void SetColumnIdentifiers(object[] arg0)
-        {
-            IExecute("setColumnIdentifiers", arg0);
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableModel.html#setDataVector(java.lang.Object[][],java.lang.Object[])
         /// </summary>
         public void SetDataVector(object[][] arg0, object[] arg1)

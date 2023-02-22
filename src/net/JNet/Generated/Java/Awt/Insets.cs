@@ -47,21 +47,21 @@ namespace Java.Awt
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Insets.html#top
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Insets.html#bottom
         /// </summary>
-        public int top => Instance.GetField<int>("top");
+        public int bottom => Instance.GetField<int>("bottom");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Insets.html#left
         /// </summary>
         public int left => Instance.GetField<int>("left");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Insets.html#bottom
-        /// </summary>
-        public int bottom => Instance.GetField<int>("bottom");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Insets.html#right
         /// </summary>
         public int right => Instance.GetField<int>("right");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Insets.html#top
+        /// </summary>
+        public int top => Instance.GetField<int>("top");
         
         #endregion
 

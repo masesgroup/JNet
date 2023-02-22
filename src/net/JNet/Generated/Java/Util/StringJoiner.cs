@@ -30,17 +30,17 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/StringJoiner.html#<init>(java.lang.CharSequence)
-        /// </summary>
-        public StringJoiner(Java.Lang.CharSequence arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/StringJoiner.html#<init>(java.lang.CharSequence,java.lang.CharSequence,java.lang.CharSequence)
         /// </summary>
         public StringJoiner(Java.Lang.CharSequence arg0, Java.Lang.CharSequence arg1, Java.Lang.CharSequence arg2)
             : base(arg0, arg1, arg2)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/StringJoiner.html#<init>(java.lang.CharSequence)
+        /// </summary>
+        public StringJoiner(Java.Lang.CharSequence arg0)
+            : base(arg0)
         {
         }
         

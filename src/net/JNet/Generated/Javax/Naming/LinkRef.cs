@@ -30,16 +30,16 @@ namespace Javax.Naming
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/LinkRef.html#<init>(javax.naming.Name)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/LinkRef.html#<init>(java.lang.String)
         /// </summary>
-        public LinkRef(Javax.Naming.Name arg0)
+        public LinkRef(string arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/LinkRef.html#<init>(java.lang.String)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/LinkRef.html#<init>(javax.naming.Name)
         /// </summary>
-        public LinkRef(string arg0)
+        public LinkRef(Javax.Naming.Name arg0)
             : base(arg0)
         {
         }

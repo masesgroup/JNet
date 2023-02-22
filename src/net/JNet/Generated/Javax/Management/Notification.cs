@@ -30,6 +30,13 @@ namespace Javax.Management
     {
         #region Constructors
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Notification.html#<init>(java.lang.String,java.lang.Object,long,java.lang.String)
+        /// </summary>
+        public Notification(string arg0, object arg1, long arg2, string arg3)
+            : base(arg0, arg1, arg2, arg3)
+        {
+        }
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Notification.html#<init>(java.lang.String,java.lang.Object,long,long,java.lang.String)
         /// </summary>
         public Notification(string arg0, object arg1, long arg2, long arg3, string arg4)
@@ -40,13 +47,6 @@ namespace Javax.Management
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Notification.html#<init>(java.lang.String,java.lang.Object,long,long)
         /// </summary>
         public Notification(string arg0, object arg1, long arg2, long arg3)
-            : base(arg0, arg1, arg2, arg3)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Notification.html#<init>(java.lang.String,java.lang.Object,long,java.lang.String)
-        /// </summary>
-        public Notification(string arg0, object arg1, long arg2, string arg3)
             : base(arg0, arg1, arg2, arg3)
         {
         }

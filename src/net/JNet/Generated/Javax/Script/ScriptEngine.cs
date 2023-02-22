@@ -42,10 +42,6 @@ namespace Javax.Script
         /// </summary>
         public static string ARGV => Clazz.GetField<string>("ARGV");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#FILENAME
-        /// </summary>
-        public static string FILENAME => Clazz.GetField<string>("FILENAME");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#ENGINE
         /// </summary>
         public static string ENGINE => Clazz.GetField<string>("ENGINE");
@@ -54,9 +50,9 @@ namespace Javax.Script
         /// </summary>
         public static string ENGINE_VERSION => Clazz.GetField<string>("ENGINE_VERSION");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#NAME
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#FILENAME
         /// </summary>
-        public static string NAME => Clazz.GetField<string>("NAME");
+        public static string FILENAME => Clazz.GetField<string>("FILENAME");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#LANGUAGE
         /// </summary>
@@ -65,6 +61,10 @@ namespace Javax.Script
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#LANGUAGE_VERSION
         /// </summary>
         public static string LANGUAGE_VERSION => Clazz.GetField<string>("LANGUAGE_VERSION");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngine.html#NAME
+        /// </summary>
+        public static string NAME => Clazz.GetField<string>("NAME");
         
         #endregion
 

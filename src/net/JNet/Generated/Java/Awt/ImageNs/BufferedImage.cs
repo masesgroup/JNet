@@ -54,13 +54,33 @@ namespace Java.Awt.ImageNs
 
         #region Fields
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#TYPE_3BYTE_BGR
+        /// </summary>
+        public static int TYPE_3BYTE_BGR => Clazz.GetField<int>("TYPE_3BYTE_BGR");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#TYPE_4BYTE_ABGR
+        /// </summary>
+        public static int TYPE_4BYTE_ABGR => Clazz.GetField<int>("TYPE_4BYTE_ABGR");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#TYPE_4BYTE_ABGR_PRE
+        /// </summary>
+        public static int TYPE_4BYTE_ABGR_PRE => Clazz.GetField<int>("TYPE_4BYTE_ABGR_PRE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#TYPE_BYTE_BINARY
+        /// </summary>
+        public static int TYPE_BYTE_BINARY => Clazz.GetField<int>("TYPE_BYTE_BINARY");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#TYPE_BYTE_GRAY
+        /// </summary>
+        public static int TYPE_BYTE_GRAY => Clazz.GetField<int>("TYPE_BYTE_GRAY");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#TYPE_BYTE_INDEXED
+        /// </summary>
+        public static int TYPE_BYTE_INDEXED => Clazz.GetField<int>("TYPE_BYTE_INDEXED");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#TYPE_CUSTOM
         /// </summary>
         public static int TYPE_CUSTOM => Clazz.GetField<int>("TYPE_CUSTOM");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#TYPE_INT_RGB
-        /// </summary>
-        public static int TYPE_INT_RGB => Clazz.GetField<int>("TYPE_INT_RGB");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#TYPE_INT_ARGB
         /// </summary>
@@ -74,41 +94,21 @@ namespace Java.Awt.ImageNs
         /// </summary>
         public static int TYPE_INT_BGR => Clazz.GetField<int>("TYPE_INT_BGR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#TYPE_3BYTE_BGR
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#TYPE_INT_RGB
         /// </summary>
-        public static int TYPE_3BYTE_BGR => Clazz.GetField<int>("TYPE_3BYTE_BGR");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#TYPE_4BYTE_ABGR
-        /// </summary>
-        public static int TYPE_4BYTE_ABGR => Clazz.GetField<int>("TYPE_4BYTE_ABGR");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#TYPE_4BYTE_ABGR_PRE
-        /// </summary>
-        public static int TYPE_4BYTE_ABGR_PRE => Clazz.GetField<int>("TYPE_4BYTE_ABGR_PRE");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#TYPE_USHORT_565_RGB
-        /// </summary>
-        public static int TYPE_USHORT_565_RGB => Clazz.GetField<int>("TYPE_USHORT_565_RGB");
+        public static int TYPE_INT_RGB => Clazz.GetField<int>("TYPE_INT_RGB");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#TYPE_USHORT_555_RGB
         /// </summary>
         public static int TYPE_USHORT_555_RGB => Clazz.GetField<int>("TYPE_USHORT_555_RGB");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#TYPE_BYTE_GRAY
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#TYPE_USHORT_565_RGB
         /// </summary>
-        public static int TYPE_BYTE_GRAY => Clazz.GetField<int>("TYPE_BYTE_GRAY");
+        public static int TYPE_USHORT_565_RGB => Clazz.GetField<int>("TYPE_USHORT_565_RGB");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#TYPE_USHORT_GRAY
         /// </summary>
         public static int TYPE_USHORT_GRAY => Clazz.GetField<int>("TYPE_USHORT_GRAY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#TYPE_BYTE_BINARY
-        /// </summary>
-        public static int TYPE_BYTE_BINARY => Clazz.GetField<int>("TYPE_BYTE_BINARY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#TYPE_BYTE_INDEXED
-        /// </summary>
-        public static int TYPE_BYTE_INDEXED => Clazz.GetField<int>("TYPE_BYTE_INDEXED");
         
         #endregion
 

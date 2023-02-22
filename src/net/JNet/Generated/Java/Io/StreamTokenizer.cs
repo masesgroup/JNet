@@ -45,9 +45,17 @@ namespace Java.Io
 
         #region Fields
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#nval
+        /// </summary>
+        public double nval => Instance.GetField<double>("nval");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#ttype
         /// </summary>
         public int ttype => Instance.GetField<int>("ttype");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#sval
+        /// </summary>
+        public string sval => Instance.GetField<string>("sval");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#TT_EOF
         /// </summary>
@@ -64,14 +72,6 @@ namespace Java.Io
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#TT_WORD
         /// </summary>
         public static int TT_WORD => Clazz.GetField<int>("TT_WORD");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#sval
-        /// </summary>
-        public string sval => Instance.GetField<string>("sval");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#nval
-        /// </summary>
-        public double nval => Instance.GetField<double>("nval");
         
         #endregion
 

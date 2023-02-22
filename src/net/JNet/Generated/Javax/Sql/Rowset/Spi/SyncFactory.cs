@@ -42,13 +42,13 @@ namespace Javax.Sql.Rowset.Spi
         /// </summary>
         public static string ROWSET_SYNC_PROVIDER => Clazz.GetField<string>("ROWSET_SYNC_PROVIDER");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncFactory.html#ROWSET_SYNC_VENDOR
-        /// </summary>
-        public static string ROWSET_SYNC_VENDOR => Clazz.GetField<string>("ROWSET_SYNC_VENDOR");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncFactory.html#ROWSET_SYNC_PROVIDER_VERSION
         /// </summary>
         public static string ROWSET_SYNC_PROVIDER_VERSION => Clazz.GetField<string>("ROWSET_SYNC_PROVIDER_VERSION");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncFactory.html#ROWSET_SYNC_VENDOR
+        /// </summary>
+        public static string ROWSET_SYNC_VENDOR => Clazz.GetField<string>("ROWSET_SYNC_VENDOR");
         
         #endregion
 

@@ -46,14 +46,6 @@ namespace Java.Time.Format
         /// </summary>
         public static Java.Time.Format.TextStyle FULL_STANDALONE => Clazz.GetField<Java.Time.Format.TextStyle>("FULL_STANDALONE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/TextStyle.html#SHORT
-        /// </summary>
-        public static Java.Time.Format.TextStyle SHORT => Clazz.GetField<Java.Time.Format.TextStyle>("SHORT");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/TextStyle.html#SHORT_STANDALONE
-        /// </summary>
-        public static Java.Time.Format.TextStyle SHORT_STANDALONE => Clazz.GetField<Java.Time.Format.TextStyle>("SHORT_STANDALONE");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/TextStyle.html#NARROW
         /// </summary>
         public static Java.Time.Format.TextStyle NARROW => Clazz.GetField<Java.Time.Format.TextStyle>("NARROW");
@@ -61,6 +53,14 @@ namespace Java.Time.Format
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/TextStyle.html#NARROW_STANDALONE
         /// </summary>
         public static Java.Time.Format.TextStyle NARROW_STANDALONE => Clazz.GetField<Java.Time.Format.TextStyle>("NARROW_STANDALONE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/TextStyle.html#SHORT
+        /// </summary>
+        public static Java.Time.Format.TextStyle SHORT => Clazz.GetField<Java.Time.Format.TextStyle>("SHORT");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/TextStyle.html#SHORT_STANDALONE
+        /// </summary>
+        public static Java.Time.Format.TextStyle SHORT_STANDALONE => Clazz.GetField<Java.Time.Format.TextStyle>("SHORT_STANDALONE");
         
         #endregion
 

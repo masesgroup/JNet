@@ -30,17 +30,17 @@ namespace Javax.Swing.Undo
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/StateEdit.html#<init>(javax.swing.undo.StateEditable)
-        /// </summary>
-        public StateEdit(Javax.Swing.Undo.StateEditable arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/StateEdit.html#<init>(javax.swing.undo.StateEditable,java.lang.String)
         /// </summary>
         public StateEdit(Javax.Swing.Undo.StateEditable arg0, string arg1)
             : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/undo/StateEdit.html#<init>(javax.swing.undo.StateEditable)
+        /// </summary>
+        public StateEdit(Javax.Swing.Undo.StateEditable arg0)
+            : base(arg0)
         {
         }
         

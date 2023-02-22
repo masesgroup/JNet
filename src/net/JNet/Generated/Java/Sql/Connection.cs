@@ -44,13 +44,13 @@ namespace Java.Sql
         /// </summary>
         public static int TRANSACTION_NONE => Clazz.GetField<int>("TRANSACTION_NONE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#TRANSACTION_READ_UNCOMMITTED
-        /// </summary>
-        public static int TRANSACTION_READ_UNCOMMITTED => Clazz.GetField<int>("TRANSACTION_READ_UNCOMMITTED");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#TRANSACTION_READ_COMMITTED
         /// </summary>
         public static int TRANSACTION_READ_COMMITTED => Clazz.GetField<int>("TRANSACTION_READ_COMMITTED");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#TRANSACTION_READ_UNCOMMITTED
+        /// </summary>
+        public static int TRANSACTION_READ_UNCOMMITTED => Clazz.GetField<int>("TRANSACTION_READ_UNCOMMITTED");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#TRANSACTION_REPEATABLE_READ
         /// </summary>

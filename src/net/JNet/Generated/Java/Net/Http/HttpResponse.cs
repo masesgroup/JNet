@@ -84,103 +84,8 @@ namespace Java.Net.Http
         #endregion
 
         #region Nested classes
-        #region ResponseInfo
-        public partial class ResponseInfo
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.ResponseInfo.html#statusCode()
-            /// </summary>
-            public int StatusCode()
-            {
-                return IExecute<int>("statusCode");
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.ResponseInfo.html#headers()
-            /// </summary>
-            public Java.Net.Http.HttpHeaders Headers()
-            {
-                return IExecute<Java.Net.Http.HttpHeaders>("headers");
-            }
-            
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region BodySubscribers
-        public partial class BodySubscribers
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region PushPromiseHandler
         public partial class PushPromiseHandler
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region BodyHandler
-        public partial class BodyHandler
         {
             #region Constructors
 
@@ -233,8 +138,103 @@ namespace Java.Net.Http
         }
         #endregion
 
+        #region BodyHandler
+        public partial class BodyHandler
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region ResponseInfo
+        public partial class ResponseInfo
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.ResponseInfo.html#statusCode()
+            /// </summary>
+            public int StatusCode()
+            {
+                return IExecute<int>("statusCode");
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.ResponseInfo.html#headers()
+            /// </summary>
+            public Java.Net.Http.HttpHeaders Headers()
+            {
+                return IExecute<Java.Net.Http.HttpHeaders>("headers");
+            }
+            
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region BodyHandlers
         public partial class BodyHandlers
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region BodySubscribers
+        public partial class BodySubscribers
         {
             #region Constructors
 

@@ -37,17 +37,17 @@ namespace Javax.Swing
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JPanel.html#<init>(java.awt.LayoutManager)
-        /// </summary>
-        public JPanel(Java.Awt.LayoutManager arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JPanel.html#<init>(java.awt.LayoutManager,boolean)
         /// </summary>
         public JPanel(Java.Awt.LayoutManager arg0, bool arg1)
             : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JPanel.html#<init>(java.awt.LayoutManager)
+        /// </summary>
+        public JPanel(Java.Awt.LayoutManager arg0)
+            : base(arg0)
         {
         }
         

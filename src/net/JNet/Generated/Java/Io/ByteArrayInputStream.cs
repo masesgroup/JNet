@@ -30,17 +30,17 @@ namespace Java.Io
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ByteArrayInputStream.html#<init>(byte[])
-        /// </summary>
-        public ByteArrayInputStream(byte[] arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ByteArrayInputStream.html#<init>(byte[],int,int)
         /// </summary>
         public ByteArrayInputStream(byte[] arg0, int arg1, int arg2)
             : base(arg0, arg1, arg2)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ByteArrayInputStream.html#<init>(byte[])
+        /// </summary>
+        public ByteArrayInputStream(byte[] arg0)
+            : base(arg0)
         {
         }
         

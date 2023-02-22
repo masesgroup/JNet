@@ -30,17 +30,17 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#<init>(int)
-        /// </summary>
-        public Hashtable(int arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#<init>(int,float)
         /// </summary>
         public Hashtable(int arg0, float arg1)
             : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#<init>(int)
+        /// </summary>
+        public Hashtable(int arg0)
+            : base(arg0)
         {
         }
         

@@ -30,17 +30,17 @@ namespace Java.Io
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/LineNumberReader.html#<init>(java.io.Reader)
-        /// </summary>
-        public LineNumberReader(Java.Io.Reader arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/LineNumberReader.html#<init>(java.io.Reader,int)
         /// </summary>
         public LineNumberReader(Java.Io.Reader arg0, int arg1)
             : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/LineNumberReader.html#<init>(java.io.Reader)
+        /// </summary>
+        public LineNumberReader(Java.Io.Reader arg0)
+            : base(arg0)
         {
         }
         

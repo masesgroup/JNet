@@ -38,25 +38,25 @@ namespace Java.Lang
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#MIN_VALUE
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#BYTES
         /// </summary>
-        public static short MIN_VALUE => Clazz.GetField<short>("MIN_VALUE");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#MAX_VALUE
-        /// </summary>
-        public static short MAX_VALUE => Clazz.GetField<short>("MAX_VALUE");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#TYPE
-        /// </summary>
-        public static Java.Lang.Class TYPE => Clazz.GetField<Java.Lang.Class>("TYPE");
+        public static int BYTES => Clazz.GetField<int>("BYTES");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#SIZE
         /// </summary>
         public static int SIZE => Clazz.GetField<int>("SIZE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#BYTES
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#TYPE
         /// </summary>
-        public static int BYTES => Clazz.GetField<int>("BYTES");
+        public static Java.Lang.Class TYPE => Clazz.GetField<Java.Lang.Class>("TYPE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#MAX_VALUE
+        /// </summary>
+        public static short MAX_VALUE => Clazz.GetField<short>("MAX_VALUE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#MIN_VALUE
+        /// </summary>
+        public static short MIN_VALUE => Clazz.GetField<short>("MIN_VALUE");
         
         #endregion
 
@@ -92,30 +92,30 @@ namespace Java.Lang
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#decode(java.lang.String) throws java.lang.NumberFormatException
         /// </summary>
-        public static short Decode(string arg0)
+        public static short? Decode(string arg0)
         {
-            return SExecute<short>("decode", arg0);
+            return SExecute<short?>("decode", arg0);
         }
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#valueOf(java.lang.String,int) throws java.lang.NumberFormatException
         /// </summary>
-        public static short ValueOf(string arg0, int arg1)
+        public static short? ValueOf(string arg0, int arg1)
         {
-            return SExecute<short>("valueOf", arg0, arg1);
+            return SExecute<short?>("valueOf", arg0, arg1);
         }
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#valueOf(java.lang.String) throws java.lang.NumberFormatException
         /// </summary>
-        public static short ValueOf(string arg0)
+        public static short? ValueOf(string arg0)
         {
-            return SExecute<short>("valueOf", arg0);
+            return SExecute<short?>("valueOf", arg0);
         }
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#valueOf(short)
         /// </summary>
-        public static short ValueOf(short arg0)
+        public static short? ValueOf(short arg0)
         {
-            return SExecute<short>("valueOf", arg0);
+            return SExecute<short?>("valueOf", arg0);
         }
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#toString(short)
@@ -166,7 +166,7 @@ namespace Java.Lang
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#compareTo(java.lang.Short)
         /// </summary>
-        public int CompareTo(short arg0)
+        public int CompareTo(short? arg0)
         {
             return IExecute<int>("compareTo", arg0);
         }

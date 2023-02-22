@@ -30,17 +30,17 @@ namespace Javax.Crypto.Spec
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/DHParameterSpec.html#<init>(java.math.BigInteger,java.math.BigInteger)
-        /// </summary>
-        public DHParameterSpec(Java.Math.BigInteger arg0, Java.Math.BigInteger arg1)
-            : base(arg0, arg1)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/DHParameterSpec.html#<init>(java.math.BigInteger,java.math.BigInteger,int)
         /// </summary>
         public DHParameterSpec(Java.Math.BigInteger arg0, Java.Math.BigInteger arg1, int arg2)
             : base(arg0, arg1, arg2)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/spec/DHParameterSpec.html#<init>(java.math.BigInteger,java.math.BigInteger)
+        /// </summary>
+        public DHParameterSpec(Java.Math.BigInteger arg0, Java.Math.BigInteger arg1)
+            : base(arg0, arg1)
         {
         }
         

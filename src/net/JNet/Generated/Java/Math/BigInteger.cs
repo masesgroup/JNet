@@ -30,31 +30,10 @@ namespace Java.Math
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#<init>(int,java.util.Random)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#<init>(byte[],int,int)
         /// </summary>
-        public BigInteger(int arg0, Java.Util.Random arg1)
-            : base(arg0, arg1)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#<init>(java.lang.String)
-        /// </summary>
-        public BigInteger(string arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#<init>(int,int,java.util.Random)
-        /// </summary>
-        public BigInteger(int arg0, int arg1, Java.Util.Random arg2)
+        public BigInteger(byte[] arg0, int arg1, int arg2)
             : base(arg0, arg1, arg2)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#<init>(int,byte[],int,int)
-        /// </summary>
-        public BigInteger(int arg0, byte[] arg1, int arg2, int arg3)
-            : base(arg0, arg1, arg2, arg3)
         {
         }
         /// <summary>
@@ -65,10 +44,31 @@ namespace Java.Math
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#<init>(byte[],int,int)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#<init>(int,byte[],int,int)
         /// </summary>
-        public BigInteger(byte[] arg0, int arg1, int arg2)
+        public BigInteger(int arg0, byte[] arg1, int arg2, int arg3)
+            : base(arg0, arg1, arg2, arg3)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#<init>(int,byte[])
+        /// </summary>
+        public BigInteger(int arg0, byte[] arg1)
+            : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#<init>(int,int,java.util.Random)
+        /// </summary>
+        public BigInteger(int arg0, int arg1, Java.Util.Random arg2)
             : base(arg0, arg1, arg2)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#<init>(int,java.util.Random)
+        /// </summary>
+        public BigInteger(int arg0, Java.Util.Random arg1)
+            : base(arg0, arg1)
         {
         }
         /// <summary>
@@ -79,10 +79,10 @@ namespace Java.Math
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#<init>(int,byte[])
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#<init>(java.lang.String)
         /// </summary>
-        public BigInteger(int arg0, byte[] arg1)
-            : base(arg0, arg1)
+        public BigInteger(string arg0)
+            : base(arg0)
         {
         }
         
@@ -94,21 +94,21 @@ namespace Java.Math
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#ZERO
-        /// </summary>
-        public static Java.Math.BigInteger ZERO => Clazz.GetField<Java.Math.BigInteger>("ZERO");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#ONE
         /// </summary>
         public static Java.Math.BigInteger ONE => Clazz.GetField<Java.Math.BigInteger>("ONE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#TEN
+        /// </summary>
+        public static Java.Math.BigInteger TEN => Clazz.GetField<Java.Math.BigInteger>("TEN");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#TWO
         /// </summary>
         public static Java.Math.BigInteger TWO => Clazz.GetField<Java.Math.BigInteger>("TWO");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#TEN
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigInteger.html#ZERO
         /// </summary>
-        public static Java.Math.BigInteger TEN => Clazz.GetField<Java.Math.BigInteger>("TEN");
+        public static Java.Math.BigInteger ZERO => Clazz.GetField<Java.Math.BigInteger>("ZERO");
         
         #endregion
 

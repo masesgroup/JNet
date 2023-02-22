@@ -38,37 +38,41 @@ namespace Java.Lang.Annotation
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/ElementType.html#TYPE
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/ElementType.html#ANNOTATION_TYPE
         /// </summary>
-        public static Java.Lang.Annotation.ElementType TYPE => Clazz.GetField<Java.Lang.Annotation.ElementType>("TYPE");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/ElementType.html#FIELD
-        /// </summary>
-        public static Java.Lang.Annotation.ElementType FIELD => Clazz.GetField<Java.Lang.Annotation.ElementType>("FIELD");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/ElementType.html#METHOD
-        /// </summary>
-        public static Java.Lang.Annotation.ElementType METHOD => Clazz.GetField<Java.Lang.Annotation.ElementType>("METHOD");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/ElementType.html#PARAMETER
-        /// </summary>
-        public static Java.Lang.Annotation.ElementType PARAMETER => Clazz.GetField<Java.Lang.Annotation.ElementType>("PARAMETER");
+        public static Java.Lang.Annotation.ElementType ANNOTATION_TYPE => Clazz.GetField<Java.Lang.Annotation.ElementType>("ANNOTATION_TYPE");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/ElementType.html#CONSTRUCTOR
         /// </summary>
         public static Java.Lang.Annotation.ElementType CONSTRUCTOR => Clazz.GetField<Java.Lang.Annotation.ElementType>("CONSTRUCTOR");
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/ElementType.html#FIELD
+        /// </summary>
+        public static Java.Lang.Annotation.ElementType FIELD => Clazz.GetField<Java.Lang.Annotation.ElementType>("FIELD");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/ElementType.html#LOCAL_VARIABLE
         /// </summary>
         public static Java.Lang.Annotation.ElementType LOCAL_VARIABLE => Clazz.GetField<Java.Lang.Annotation.ElementType>("LOCAL_VARIABLE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/ElementType.html#ANNOTATION_TYPE
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/ElementType.html#METHOD
         /// </summary>
-        public static Java.Lang.Annotation.ElementType ANNOTATION_TYPE => Clazz.GetField<Java.Lang.Annotation.ElementType>("ANNOTATION_TYPE");
+        public static Java.Lang.Annotation.ElementType METHOD => Clazz.GetField<Java.Lang.Annotation.ElementType>("METHOD");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/ElementType.html#MODULE
+        /// </summary>
+        public static Java.Lang.Annotation.ElementType MODULE => Clazz.GetField<Java.Lang.Annotation.ElementType>("MODULE");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/ElementType.html#PACKAGE
         /// </summary>
         public static Java.Lang.Annotation.ElementType PACKAGE => Clazz.GetField<Java.Lang.Annotation.ElementType>("PACKAGE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/ElementType.html#PARAMETER
+        /// </summary>
+        public static Java.Lang.Annotation.ElementType PARAMETER => Clazz.GetField<Java.Lang.Annotation.ElementType>("PARAMETER");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/ElementType.html#TYPE
+        /// </summary>
+        public static Java.Lang.Annotation.ElementType TYPE => Clazz.GetField<Java.Lang.Annotation.ElementType>("TYPE");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/ElementType.html#TYPE_PARAMETER
         /// </summary>
@@ -77,10 +81,6 @@ namespace Java.Lang.Annotation
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/ElementType.html#TYPE_USE
         /// </summary>
         public static Java.Lang.Annotation.ElementType TYPE_USE => Clazz.GetField<Java.Lang.Annotation.ElementType>("TYPE_USE");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/ElementType.html#MODULE
-        /// </summary>
-        public static Java.Lang.Annotation.ElementType MODULE => Clazz.GetField<Java.Lang.Annotation.ElementType>("MODULE");
         
         #endregion
 

@@ -30,20 +30,6 @@ namespace Javax.Naming
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Binding.html#<init>(java.lang.String,java.lang.String,java.lang.Object,boolean)
-        /// </summary>
-        public Binding(string arg0, string arg1, object arg2, bool arg3)
-            : base(arg0, arg1, arg2, arg3)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Binding.html#<init>(java.lang.String,java.lang.String,java.lang.Object)
-        /// </summary>
-        public Binding(string arg0, string arg1, object arg2)
-            : base(arg0, arg1, arg2)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Binding.html#<init>(java.lang.String,java.lang.Object,boolean)
         /// </summary>
         public Binding(string arg0, object arg1, bool arg2)
@@ -55,6 +41,20 @@ namespace Javax.Naming
         /// </summary>
         public Binding(string arg0, object arg1)
             : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Binding.html#<init>(java.lang.String,java.lang.String,java.lang.Object,boolean)
+        /// </summary>
+        public Binding(string arg0, string arg1, object arg2, bool arg3)
+            : base(arg0, arg1, arg2, arg3)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Binding.html#<init>(java.lang.String,java.lang.String,java.lang.Object)
+        /// </summary>
+        public Binding(string arg0, string arg1, object arg2)
+            : base(arg0, arg1, arg2)
         {
         }
         

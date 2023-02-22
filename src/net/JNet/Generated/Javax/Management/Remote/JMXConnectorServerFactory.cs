@@ -46,13 +46,13 @@ namespace Javax.Management.Remote
         /// </summary>
         public static string DEFAULT_CLASS_LOADER_NAME => Clazz.GetField<string>("DEFAULT_CLASS_LOADER_NAME");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServerFactory.html#PROTOCOL_PROVIDER_PACKAGES
-        /// </summary>
-        public static string PROTOCOL_PROVIDER_PACKAGES => Clazz.GetField<string>("PROTOCOL_PROVIDER_PACKAGES");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServerFactory.html#PROTOCOL_PROVIDER_CLASS_LOADER
         /// </summary>
         public static string PROTOCOL_PROVIDER_CLASS_LOADER => Clazz.GetField<string>("PROTOCOL_PROVIDER_CLASS_LOADER");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServerFactory.html#PROTOCOL_PROVIDER_PACKAGES
+        /// </summary>
+        public static string PROTOCOL_PROVIDER_PACKAGES => Clazz.GetField<string>("PROTOCOL_PROVIDER_PACKAGES");
         
         #endregion
 

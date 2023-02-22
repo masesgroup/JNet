@@ -23,23 +23,23 @@
 
 namespace Javax.Imageio.Plugins.Jpeg
 {
-    #region JPEGImageWriteParam
+    #region JPEGHuffmanTable
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGImageWriteParam.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGHuffmanTable.html
     /// </summary>
-    public partial class JPEGImageWriteParam : Javax.Imageio.ImageWriteParam
+    public partial class JPEGHuffmanTable : MASES.JCOBridge.C2JBridge.JVMBridgeBase<JPEGHuffmanTable>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public JPEGImageWriteParam() { }
+        public JPEGHuffmanTable() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public JPEGImageWriteParam(params object[] args) : base(args) { }
+        public JPEGHuffmanTable(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.imageio.plugins.jpeg.JPEGImageWriteParam";
+        public override string ClassName => "javax.imageio.plugins.jpeg.JPEGHuffmanTable";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -93,23 +93,23 @@ namespace Javax.Imageio.Plugins.Jpeg
     }
     #endregion
 
-    #region JPEGQTable
+    #region JPEGImageWriteParam
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGQTable.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGImageWriteParam.html
     /// </summary>
-    public partial class JPEGQTable : MASES.JCOBridge.C2JBridge.JVMBridgeBase<JPEGQTable>
+    public partial class JPEGImageWriteParam : Javax.Imageio.ImageWriteParam
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public JPEGQTable() { }
+        public JPEGImageWriteParam() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public JPEGQTable(params object[] args) : base(args) { }
+        public JPEGImageWriteParam(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.imageio.plugins.jpeg.JPEGQTable";
+        public override string ClassName => "javax.imageio.plugins.jpeg.JPEGImageWriteParam";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -128,23 +128,23 @@ namespace Javax.Imageio.Plugins.Jpeg
     }
     #endregion
 
-    #region JPEGHuffmanTable
+    #region JPEGQTable
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGHuffmanTable.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGQTable.html
     /// </summary>
-    public partial class JPEGHuffmanTable : MASES.JCOBridge.C2JBridge.JVMBridgeBase<JPEGHuffmanTable>
+    public partial class JPEGQTable : MASES.JCOBridge.C2JBridge.JVMBridgeBase<JPEGQTable>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public JPEGHuffmanTable() { }
+        public JPEGQTable() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public JPEGHuffmanTable(params object[] args) : base(args) { }
+        public JPEGQTable(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.imageio.plugins.jpeg.JPEGHuffmanTable";
+        public override string ClassName => "javax.imageio.plugins.jpeg.JPEGQTable";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;

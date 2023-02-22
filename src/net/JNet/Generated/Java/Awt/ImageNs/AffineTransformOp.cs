@@ -30,16 +30,16 @@ namespace Java.Awt.ImageNs
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/AffineTransformOp.html#<init>(java.awt.geom.AffineTransform,java.awt.RenderingHints)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/AffineTransformOp.html#<init>(java.awt.geom.AffineTransform,int)
         /// </summary>
-        public AffineTransformOp(Java.Awt.Geom.AffineTransform arg0, Java.Awt.RenderingHints arg1)
+        public AffineTransformOp(Java.Awt.Geom.AffineTransform arg0, int arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/AffineTransformOp.html#<init>(java.awt.geom.AffineTransform,int)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/AffineTransformOp.html#<init>(java.awt.geom.AffineTransform,java.awt.RenderingHints)
         /// </summary>
-        public AffineTransformOp(Java.Awt.Geom.AffineTransform arg0, int arg1)
+        public AffineTransformOp(Java.Awt.Geom.AffineTransform arg0, Java.Awt.RenderingHints arg1)
             : base(arg0, arg1)
         {
         }
@@ -54,17 +54,17 @@ namespace Java.Awt.ImageNs
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/AffineTransformOp.html#TYPE_NEAREST_NEIGHBOR
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/AffineTransformOp.html#TYPE_BICUBIC
         /// </summary>
-        public static int TYPE_NEAREST_NEIGHBOR => Clazz.GetField<int>("TYPE_NEAREST_NEIGHBOR");
+        public static int TYPE_BICUBIC => Clazz.GetField<int>("TYPE_BICUBIC");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/AffineTransformOp.html#TYPE_BILINEAR
         /// </summary>
         public static int TYPE_BILINEAR => Clazz.GetField<int>("TYPE_BILINEAR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/AffineTransformOp.html#TYPE_BICUBIC
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/AffineTransformOp.html#TYPE_NEAREST_NEIGHBOR
         /// </summary>
-        public static int TYPE_BICUBIC => Clazz.GetField<int>("TYPE_BICUBIC");
+        public static int TYPE_NEAREST_NEIGHBOR => Clazz.GetField<int>("TYPE_NEAREST_NEIGHBOR");
         
         #endregion
 

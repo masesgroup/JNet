@@ -140,8 +140,8 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region CharacterAttribute
-        public partial class CharacterAttribute
+        #region FontAttribute
+        public partial class FontAttribute
         {
             #region Constructors
 
@@ -194,8 +194,8 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region FontAttribute
-        public partial class FontAttribute
+        #region CharacterAttribute
+        public partial class CharacterAttribute
         {
             #region Constructors
 

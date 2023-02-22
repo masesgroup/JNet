@@ -59,13 +59,13 @@ namespace Javax.Swing
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#W3C_LENGTH_UNITS
-        /// </summary>
-        public static string W3C_LENGTH_UNITS => Clazz.GetField<string>("W3C_LENGTH_UNITS");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#HONOR_DISPLAY_PROPERTIES
         /// </summary>
         public static string HONOR_DISPLAY_PROPERTIES => Clazz.GetField<string>("HONOR_DISPLAY_PROPERTIES");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#W3C_LENGTH_UNITS
+        /// </summary>
+        public static string W3C_LENGTH_UNITS => Clazz.GetField<string>("W3C_LENGTH_UNITS");
         
         #endregion
 

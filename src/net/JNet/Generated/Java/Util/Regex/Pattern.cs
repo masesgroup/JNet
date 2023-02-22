@@ -39,9 +39,9 @@ namespace Java.Util.Regex
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#UNIX_LINES
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#CANON_EQ
         /// </summary>
-        public static int UNIX_LINES => Clazz.GetField<int>("UNIX_LINES");
+        public static int CANON_EQ => Clazz.GetField<int>("CANON_EQ");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#CASE_INSENSITIVE
         /// </summary>
@@ -51,29 +51,29 @@ namespace Java.Util.Regex
         /// </summary>
         public static int COMMENTS => Clazz.GetField<int>("COMMENTS");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#MULTILINE
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#DOTALL
         /// </summary>
-        public static int MULTILINE => Clazz.GetField<int>("MULTILINE");
+        public static int DOTALL => Clazz.GetField<int>("DOTALL");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#LITERAL
         /// </summary>
         public static int LITERAL => Clazz.GetField<int>("LITERAL");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#DOTALL
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#MULTILINE
         /// </summary>
-        public static int DOTALL => Clazz.GetField<int>("DOTALL");
+        public static int MULTILINE => Clazz.GetField<int>("MULTILINE");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#UNICODE_CASE
         /// </summary>
         public static int UNICODE_CASE => Clazz.GetField<int>("UNICODE_CASE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#CANON_EQ
-        /// </summary>
-        public static int CANON_EQ => Clazz.GetField<int>("CANON_EQ");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#UNICODE_CHARACTER_CLASS
         /// </summary>
         public static int UNICODE_CHARACTER_CLASS => Clazz.GetField<int>("UNICODE_CHARACTER_CLASS");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html#UNIX_LINES
+        /// </summary>
+        public static int UNIX_LINES => Clazz.GetField<int>("UNIX_LINES");
         
         #endregion
 

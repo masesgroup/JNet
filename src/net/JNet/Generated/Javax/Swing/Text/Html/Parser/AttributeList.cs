@@ -47,25 +47,25 @@ namespace Javax.Swing.Text.Html.Parser
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/AttributeList.html#name
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/AttributeList.html#modifier
         /// </summary>
-        public string name => Instance.GetField<string>("name");
+        public int modifier => Instance.GetField<int>("modifier");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/AttributeList.html#type
         /// </summary>
         public int type => Instance.GetField<int>("type");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/AttributeList.html#values
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/AttributeList.html#name
         /// </summary>
-        public Java.Util.Vector values => Instance.GetField<Java.Util.Vector>("values");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/AttributeList.html#modifier
-        /// </summary>
-        public int modifier => Instance.GetField<int>("modifier");
+        public string name => Instance.GetField<string>("name");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/AttributeList.html#value
         /// </summary>
         public string value => Instance.GetField<string>("value");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/AttributeList.html#values
+        /// </summary>
+        public Java.Util.Vector values => Instance.GetField<Java.Util.Vector>("values");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/AttributeList.html#next
         /// </summary>

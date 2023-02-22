@@ -30,17 +30,17 @@ namespace Java.Lang
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackTraceElement.html#<init>(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int)
-        /// </summary>
-        public StackTraceElement(string arg0, string arg1, string arg2, string arg3, string arg4, string arg5, int arg6)
-            : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackTraceElement.html#<init>(java.lang.String,java.lang.String,java.lang.String,int)
         /// </summary>
         public StackTraceElement(string arg0, string arg1, string arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackTraceElement.html#<init>(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int)
+        /// </summary>
+        public StackTraceElement(string arg0, string arg1, string arg2, string arg3, string arg4, string arg5, int arg6)
+            : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
         {
         }
         

@@ -47,57 +47,57 @@ namespace Java.Awt
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BorderLayout.html#NORTH
-        /// </summary>
-        public static string NORTH => Clazz.GetField<string>("NORTH");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BorderLayout.html#SOUTH
-        /// </summary>
-        public static string SOUTH => Clazz.GetField<string>("SOUTH");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BorderLayout.html#EAST
-        /// </summary>
-        public static string EAST => Clazz.GetField<string>("EAST");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BorderLayout.html#WEST
-        /// </summary>
-        public static string WEST => Clazz.GetField<string>("WEST");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BorderLayout.html#CENTER
-        /// </summary>
-        public static string CENTER => Clazz.GetField<string>("CENTER");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BorderLayout.html#BEFORE_FIRST_LINE
-        /// </summary>
-        public static string BEFORE_FIRST_LINE => Clazz.GetField<string>("BEFORE_FIRST_LINE");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BorderLayout.html#AFTER_LAST_LINE
         /// </summary>
         public static string AFTER_LAST_LINE => Clazz.GetField<string>("AFTER_LAST_LINE");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BorderLayout.html#BEFORE_LINE_BEGINS
-        /// </summary>
-        public static string BEFORE_LINE_BEGINS => Clazz.GetField<string>("BEFORE_LINE_BEGINS");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BorderLayout.html#AFTER_LINE_ENDS
         /// </summary>
         public static string AFTER_LINE_ENDS => Clazz.GetField<string>("AFTER_LINE_ENDS");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BorderLayout.html#PAGE_START
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BorderLayout.html#BEFORE_FIRST_LINE
         /// </summary>
-        public static string PAGE_START => Clazz.GetField<string>("PAGE_START");
+        public static string BEFORE_FIRST_LINE => Clazz.GetField<string>("BEFORE_FIRST_LINE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BorderLayout.html#PAGE_END
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BorderLayout.html#BEFORE_LINE_BEGINS
         /// </summary>
-        public static string PAGE_END => Clazz.GetField<string>("PAGE_END");
+        public static string BEFORE_LINE_BEGINS => Clazz.GetField<string>("BEFORE_LINE_BEGINS");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BorderLayout.html#CENTER
+        /// </summary>
+        public static string CENTER => Clazz.GetField<string>("CENTER");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BorderLayout.html#EAST
+        /// </summary>
+        public static string EAST => Clazz.GetField<string>("EAST");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BorderLayout.html#LINE_END
+        /// </summary>
+        public static string LINE_END => Clazz.GetField<string>("LINE_END");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BorderLayout.html#LINE_START
         /// </summary>
         public static string LINE_START => Clazz.GetField<string>("LINE_START");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BorderLayout.html#LINE_END
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BorderLayout.html#NORTH
         /// </summary>
-        public static string LINE_END => Clazz.GetField<string>("LINE_END");
+        public static string NORTH => Clazz.GetField<string>("NORTH");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BorderLayout.html#PAGE_END
+        /// </summary>
+        public static string PAGE_END => Clazz.GetField<string>("PAGE_END");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BorderLayout.html#PAGE_START
+        /// </summary>
+        public static string PAGE_START => Clazz.GetField<string>("PAGE_START");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BorderLayout.html#SOUTH
+        /// </summary>
+        public static string SOUTH => Clazz.GetField<string>("SOUTH");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BorderLayout.html#WEST
+        /// </summary>
+        public static string WEST => Clazz.GetField<string>("WEST");
         
         #endregion
 

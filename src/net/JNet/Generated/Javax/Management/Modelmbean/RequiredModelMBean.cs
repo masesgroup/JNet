@@ -121,7 +121,7 @@ namespace Javax.Management.Modelmbean
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/RequiredModelMBean.html#postRegister(java.lang.Boolean)
         /// </summary>
-        public void PostRegister(bool arg0)
+        public void PostRegister(bool? arg0)
         {
             IExecute("postRegister", arg0);
         }

@@ -45,21 +45,21 @@ namespace Javax.Imageio
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html#MODE_DISABLED
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html#MODE_COPY_FROM_METADATA
         /// </summary>
-        public static int MODE_DISABLED => Clazz.GetField<int>("MODE_DISABLED");
+        public static int MODE_COPY_FROM_METADATA => Clazz.GetField<int>("MODE_COPY_FROM_METADATA");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html#MODE_DEFAULT
         /// </summary>
         public static int MODE_DEFAULT => Clazz.GetField<int>("MODE_DEFAULT");
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html#MODE_DISABLED
+        /// </summary>
+        public static int MODE_DISABLED => Clazz.GetField<int>("MODE_DISABLED");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html#MODE_EXPLICIT
         /// </summary>
         public static int MODE_EXPLICIT => Clazz.GetField<int>("MODE_EXPLICIT");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html#MODE_COPY_FROM_METADATA
-        /// </summary>
-        public static int MODE_COPY_FROM_METADATA => Clazz.GetField<int>("MODE_COPY_FROM_METADATA");
         
         #endregion
 

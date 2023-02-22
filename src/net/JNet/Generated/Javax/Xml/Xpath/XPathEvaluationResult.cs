@@ -77,6 +77,14 @@ namespace Javax.Xml.Xpath
             /// </summary>
             public static Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType BOOLEAN => Clazz.GetField<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>("BOOLEAN");
             /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.XPathResultType.html#NODE
+            /// </summary>
+            public static Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType NODE => Clazz.GetField<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>("NODE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.XPathResultType.html#NODESET
+            /// </summary>
+            public static Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType NODESET => Clazz.GetField<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>("NODESET");
+            /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.XPathResultType.html#NUMBER
             /// </summary>
             public static Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType NUMBER => Clazz.GetField<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>("NUMBER");
@@ -84,14 +92,6 @@ namespace Javax.Xml.Xpath
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.XPathResultType.html#STRING
             /// </summary>
             public static Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType STRING => Clazz.GetField<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>("STRING");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.XPathResultType.html#NODESET
-            /// </summary>
-            public static Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType NODESET => Clazz.GetField<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>("NODESET");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPathEvaluationResult.XPathResultType.html#NODE
-            /// </summary>
-            public static Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType NODE => Clazz.GetField<Javax.Xml.Xpath.XPathEvaluationResult.XPathResultType>("NODE");
             
             #endregion
 

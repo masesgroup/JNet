@@ -32,7 +32,7 @@ namespace Javax.Management.Timer
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerNotification.html#<init>(java.lang.String,java.lang.Object,long,long,java.lang.String,java.lang.Integer)
         /// </summary>
-        public TimerNotification(string arg0, object arg1, long arg2, long arg3, string arg4, int arg5)
+        public TimerNotification(string arg0, object arg1, long arg2, long arg3, string arg4, int? arg5)
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
         }
@@ -55,9 +55,9 @@ namespace Javax.Management.Timer
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerNotification.html#getNotificationID() 
         /// </summary>
-        public int NotificationID
+        public int? NotificationID
         {
-            get { return IExecute<int>("getNotificationID"); }
+            get { return IExecute<int?>("getNotificationID"); }
         }
         
         #endregion

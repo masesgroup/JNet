@@ -87,10 +87,6 @@ namespace Javax.Smartcardio
             /// </summary>
             public static Javax.Smartcardio.CardTerminals.State ALL => Clazz.GetField<Javax.Smartcardio.CardTerminals.State>("ALL");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminals.State.html#CARD_PRESENT
-            /// </summary>
-            public static Javax.Smartcardio.CardTerminals.State CARD_PRESENT => Clazz.GetField<Javax.Smartcardio.CardTerminals.State>("CARD_PRESENT");
-            /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminals.State.html#CARD_ABSENT
             /// </summary>
             public static Javax.Smartcardio.CardTerminals.State CARD_ABSENT => Clazz.GetField<Javax.Smartcardio.CardTerminals.State>("CARD_ABSENT");
@@ -98,6 +94,10 @@ namespace Javax.Smartcardio
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminals.State.html#CARD_INSERTION
             /// </summary>
             public static Javax.Smartcardio.CardTerminals.State CARD_INSERTION => Clazz.GetField<Javax.Smartcardio.CardTerminals.State>("CARD_INSERTION");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminals.State.html#CARD_PRESENT
+            /// </summary>
+            public static Javax.Smartcardio.CardTerminals.State CARD_PRESENT => Clazz.GetField<Javax.Smartcardio.CardTerminals.State>("CARD_PRESENT");
             /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CardTerminals.State.html#CARD_REMOVAL
             /// </summary>

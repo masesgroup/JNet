@@ -45,17 +45,17 @@ namespace Java.Sql
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverPropertyInfo.html#name
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverPropertyInfo.html#required
         /// </summary>
-        public string name => Instance.GetField<string>("name");
+        public bool required => Instance.GetField<bool>("required");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverPropertyInfo.html#description
         /// </summary>
         public string description => Instance.GetField<string>("description");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverPropertyInfo.html#required
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverPropertyInfo.html#name
         /// </summary>
-        public bool required => Instance.GetField<bool>("required");
+        public string name => Instance.GetField<string>("name");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverPropertyInfo.html#value
         /// </summary>

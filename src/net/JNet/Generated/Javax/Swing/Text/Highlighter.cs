@@ -105,6 +105,40 @@ namespace Javax.Swing.Text
         #endregion
 
         #region Nested classes
+        #region HighlightPainter
+        public partial class HighlightPainter
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Highlighter.HighlightPainter.html#paint(java.awt.Graphics,int,int,java.awt.Shape,javax.swing.text.JTextComponent)
+            /// </summary>
+            public void Paint(Java.Awt.Graphics arg0, int arg1, int arg2, Java.Awt.Shape arg3, Javax.Swing.Text.JTextComponent arg4)
+            {
+                IExecute("paint", arg0, arg1, arg2, arg3, arg4);
+            }
+            
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region Highlight
         public partial class Highlight
         {
@@ -145,40 +179,6 @@ namespace Javax.Swing.Text
             public int StartOffset
             {
                 get { return IExecute<int>("getStartOffset"); }
-            }
-            
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region HighlightPainter
-        public partial class HighlightPainter
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Highlighter.HighlightPainter.html#paint(java.awt.Graphics,int,int,java.awt.Shape,javax.swing.text.JTextComponent)
-            /// </summary>
-            public void Paint(Java.Awt.Graphics arg0, int arg1, int arg2, Java.Awt.Shape arg3, Javax.Swing.Text.JTextComponent arg4)
-            {
-                IExecute("paint", arg0, arg1, arg2, arg3, arg4);
             }
             
             #endregion

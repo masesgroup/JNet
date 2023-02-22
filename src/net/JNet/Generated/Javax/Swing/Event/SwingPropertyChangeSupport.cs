@@ -30,17 +30,17 @@ namespace Javax.Swing.Event
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/SwingPropertyChangeSupport.html#<init>(java.lang.Object)
-        /// </summary>
-        public SwingPropertyChangeSupport(object arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/SwingPropertyChangeSupport.html#<init>(java.lang.Object,boolean)
         /// </summary>
         public SwingPropertyChangeSupport(object arg0, bool arg1)
             : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/SwingPropertyChangeSupport.html#<init>(java.lang.Object)
+        /// </summary>
+        public SwingPropertyChangeSupport(object arg0)
+            : base(arg0)
         {
         }
         

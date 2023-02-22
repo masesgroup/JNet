@@ -38,17 +38,17 @@ namespace Java.Awt.ColorNs
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_ProfileRGB.html#REDCOMPONENT
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_ProfileRGB.html#BLUECOMPONENT
         /// </summary>
-        public static int REDCOMPONENT => Clazz.GetField<int>("REDCOMPONENT");
+        public static int BLUECOMPONENT => Clazz.GetField<int>("BLUECOMPONENT");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_ProfileRGB.html#GREENCOMPONENT
         /// </summary>
         public static int GREENCOMPONENT => Clazz.GetField<int>("GREENCOMPONENT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_ProfileRGB.html#BLUECOMPONENT
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_ProfileRGB.html#REDCOMPONENT
         /// </summary>
-        public static int BLUECOMPONENT => Clazz.GetField<int>("BLUECOMPONENT");
+        public static int REDCOMPONENT => Clazz.GetField<int>("REDCOMPONENT");
         
         #endregion
 

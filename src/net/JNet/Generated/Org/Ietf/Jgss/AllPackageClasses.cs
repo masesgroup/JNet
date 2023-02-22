@@ -23,23 +23,23 @@
 
 namespace Org.Ietf.Jgss
 {
-    #region Oid
+    #region ChannelBinding
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/Oid.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/ChannelBinding.html
     /// </summary>
-    public partial class Oid : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Oid>
+    public partial class ChannelBinding : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ChannelBinding>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public Oid() { }
+        public ChannelBinding() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public Oid(params object[] args) : base(args) { }
+        public ChannelBinding(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "org.ietf.jgss.Oid";
+        public override string ClassName => "org.ietf.jgss.ChannelBinding";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -93,6 +93,41 @@ namespace Org.Ietf.Jgss
     }
     #endregion
 
+    #region GSSCredential
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html
+    /// </summary>
+    public partial class GSSCredential : MASES.JCOBridge.C2JBridge.JVMBridgeBase<GSSCredential>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public GSSCredential() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public GSSCredential(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "org.ietf.jgss.GSSCredential";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region GSSException
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSException.html
@@ -109,26 +144,26 @@ namespace Org.Ietf.Jgss
     }
     #endregion
 
-    #region MessageProp
+    #region GSSManager
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/MessageProp.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSManager.html
     /// </summary>
-    public partial class MessageProp : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MessageProp>
+    public partial class GSSManager : MASES.JCOBridge.C2JBridge.JVMBridgeBase<GSSManager>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public MessageProp() { }
+        public GSSManager() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public MessageProp(params object[] args) : base(args) { }
+        public GSSManager(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "org.ietf.jgss.MessageProp";
+        public override string ClassName => "org.ietf.jgss.GSSManager";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
+        public override bool IsAbstract => true;
 
         /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
         public override bool IsCloseable => false;
@@ -179,58 +214,23 @@ namespace Org.Ietf.Jgss
     }
     #endregion
 
-    #region GSSManager
+    #region MessageProp
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSManager.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/MessageProp.html
     /// </summary>
-    public partial class GSSManager : MASES.JCOBridge.C2JBridge.JVMBridgeBase<GSSManager>
+    public partial class MessageProp : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MessageProp>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public GSSManager() { }
+        public MessageProp() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public GSSManager(params object[] args) : base(args) { }
+        public MessageProp(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "org.ietf.jgss.GSSManager";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region ChannelBinding
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/ChannelBinding.html
-    /// </summary>
-    public partial class ChannelBinding : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ChannelBinding>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public ChannelBinding() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public ChannelBinding(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "org.ietf.jgss.ChannelBinding";
+        public override string ClassName => "org.ietf.jgss.MessageProp";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -249,32 +249,32 @@ namespace Org.Ietf.Jgss
     }
     #endregion
 
-    #region GSSCredential
+    #region Oid
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/Oid.html
     /// </summary>
-    public partial class GSSCredential : MASES.JCOBridge.C2JBridge.JVMBridgeBase<GSSCredential>
+    public partial class Oid : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Oid>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public GSSCredential() { }
+        public Oid() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public GSSCredential(params object[] args) : base(args) { }
+        public Oid(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "org.ietf.jgss.GSSCredential";
+        public override string ClassName => "org.ietf.jgss.Oid";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
+        public override bool IsAbstract => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
         public override bool IsCloseable => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
+        public override bool IsInterface => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;

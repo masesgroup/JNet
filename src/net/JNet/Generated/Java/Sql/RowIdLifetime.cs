@@ -42,6 +42,10 @@ namespace Java.Sql
         /// </summary>
         public static Java.Sql.RowIdLifetime ROWID_UNSUPPORTED => Clazz.GetField<Java.Sql.RowIdLifetime>("ROWID_UNSUPPORTED");
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/RowIdLifetime.html#ROWID_VALID_FOREVER
+        /// </summary>
+        public static Java.Sql.RowIdLifetime ROWID_VALID_FOREVER => Clazz.GetField<Java.Sql.RowIdLifetime>("ROWID_VALID_FOREVER");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/RowIdLifetime.html#ROWID_VALID_OTHER
         /// </summary>
         public static Java.Sql.RowIdLifetime ROWID_VALID_OTHER => Clazz.GetField<Java.Sql.RowIdLifetime>("ROWID_VALID_OTHER");
@@ -53,10 +57,6 @@ namespace Java.Sql
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/RowIdLifetime.html#ROWID_VALID_TRANSACTION
         /// </summary>
         public static Java.Sql.RowIdLifetime ROWID_VALID_TRANSACTION => Clazz.GetField<Java.Sql.RowIdLifetime>("ROWID_VALID_TRANSACTION");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/RowIdLifetime.html#ROWID_VALID_FOREVER
-        /// </summary>
-        public static Java.Sql.RowIdLifetime ROWID_VALID_FOREVER => Clazz.GetField<Java.Sql.RowIdLifetime>("ROWID_VALID_FOREVER");
         
         #endregion
 

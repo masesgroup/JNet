@@ -30,13 +30,6 @@ namespace Java.Io
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileOutputStream.html#<init>(java.io.FileDescriptor)
-        /// </summary>
-        public FileOutputStream(Java.Io.FileDescriptor arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileOutputStream.html#<init>(java.io.File,boolean) throws java.io.FileNotFoundException
         /// </summary>
         public FileOutputStream(Java.Io.File arg0, bool arg1)
@@ -47,6 +40,13 @@ namespace Java.Io
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileOutputStream.html#<init>(java.io.File) throws java.io.FileNotFoundException
         /// </summary>
         public FileOutputStream(Java.Io.File arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileOutputStream.html#<init>(java.io.FileDescriptor)
+        /// </summary>
+        public FileOutputStream(Java.Io.FileDescriptor arg0)
             : base(arg0)
         {
         }

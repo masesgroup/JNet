@@ -30,13 +30,6 @@ namespace Java.Awt.Geom
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/GeneralPath.html#<init>(java.awt.Shape)
-        /// </summary>
-        public GeneralPath(Java.Awt.Shape arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/GeneralPath.html#<init>(int,int)
         /// </summary>
         public GeneralPath(int arg0, int arg1)
@@ -47,6 +40,13 @@ namespace Java.Awt.Geom
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/GeneralPath.html#<init>(int)
         /// </summary>
         public GeneralPath(int arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/GeneralPath.html#<init>(java.awt.Shape)
+        /// </summary>
+        public GeneralPath(Java.Awt.Shape arg0)
             : base(arg0)
         {
         }

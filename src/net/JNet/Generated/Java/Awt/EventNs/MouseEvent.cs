@@ -59,50 +59,6 @@ namespace Java.Awt.EventNs
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseEvent.html#MOUSE_FIRST
-        /// </summary>
-        public static int MOUSE_FIRST => Clazz.GetField<int>("MOUSE_FIRST");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseEvent.html#MOUSE_LAST
-        /// </summary>
-        public static int MOUSE_LAST => Clazz.GetField<int>("MOUSE_LAST");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseEvent.html#MOUSE_CLICKED
-        /// </summary>
-        public static int MOUSE_CLICKED => Clazz.GetField<int>("MOUSE_CLICKED");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseEvent.html#MOUSE_PRESSED
-        /// </summary>
-        public static int MOUSE_PRESSED => Clazz.GetField<int>("MOUSE_PRESSED");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseEvent.html#MOUSE_RELEASED
-        /// </summary>
-        public static int MOUSE_RELEASED => Clazz.GetField<int>("MOUSE_RELEASED");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseEvent.html#MOUSE_MOVED
-        /// </summary>
-        public static int MOUSE_MOVED => Clazz.GetField<int>("MOUSE_MOVED");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseEvent.html#MOUSE_ENTERED
-        /// </summary>
-        public static int MOUSE_ENTERED => Clazz.GetField<int>("MOUSE_ENTERED");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseEvent.html#MOUSE_EXITED
-        /// </summary>
-        public static int MOUSE_EXITED => Clazz.GetField<int>("MOUSE_EXITED");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseEvent.html#MOUSE_DRAGGED
-        /// </summary>
-        public static int MOUSE_DRAGGED => Clazz.GetField<int>("MOUSE_DRAGGED");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseEvent.html#MOUSE_WHEEL
-        /// </summary>
-        public static int MOUSE_WHEEL => Clazz.GetField<int>("MOUSE_WHEEL");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseEvent.html#NOBUTTON
-        /// </summary>
-        public static int NOBUTTON => Clazz.GetField<int>("NOBUTTON");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseEvent.html#BUTTON1
         /// </summary>
         public static int BUTTON1 => Clazz.GetField<int>("BUTTON1");
@@ -114,6 +70,50 @@ namespace Java.Awt.EventNs
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseEvent.html#BUTTON3
         /// </summary>
         public static int BUTTON3 => Clazz.GetField<int>("BUTTON3");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseEvent.html#MOUSE_CLICKED
+        /// </summary>
+        public static int MOUSE_CLICKED => Clazz.GetField<int>("MOUSE_CLICKED");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseEvent.html#MOUSE_DRAGGED
+        /// </summary>
+        public static int MOUSE_DRAGGED => Clazz.GetField<int>("MOUSE_DRAGGED");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseEvent.html#MOUSE_ENTERED
+        /// </summary>
+        public static int MOUSE_ENTERED => Clazz.GetField<int>("MOUSE_ENTERED");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseEvent.html#MOUSE_EXITED
+        /// </summary>
+        public static int MOUSE_EXITED => Clazz.GetField<int>("MOUSE_EXITED");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseEvent.html#MOUSE_FIRST
+        /// </summary>
+        public static int MOUSE_FIRST => Clazz.GetField<int>("MOUSE_FIRST");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseEvent.html#MOUSE_LAST
+        /// </summary>
+        public static int MOUSE_LAST => Clazz.GetField<int>("MOUSE_LAST");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseEvent.html#MOUSE_MOVED
+        /// </summary>
+        public static int MOUSE_MOVED => Clazz.GetField<int>("MOUSE_MOVED");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseEvent.html#MOUSE_PRESSED
+        /// </summary>
+        public static int MOUSE_PRESSED => Clazz.GetField<int>("MOUSE_PRESSED");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseEvent.html#MOUSE_RELEASED
+        /// </summary>
+        public static int MOUSE_RELEASED => Clazz.GetField<int>("MOUSE_RELEASED");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseEvent.html#MOUSE_WHEEL
+        /// </summary>
+        public static int MOUSE_WHEEL => Clazz.GetField<int>("MOUSE_WHEEL");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/MouseEvent.html#NOBUTTON
+        /// </summary>
+        public static int NOBUTTON => Clazz.GetField<int>("NOBUTTON");
         
         #endregion
 

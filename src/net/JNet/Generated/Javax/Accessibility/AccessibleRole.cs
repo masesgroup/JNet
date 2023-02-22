@@ -42,57 +42,53 @@ namespace Javax.Accessibility
         /// </summary>
         public static Javax.Accessibility.AccessibleRole ALERT => Clazz.GetField<Javax.Accessibility.AccessibleRole>("ALERT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#COLUMN_HEADER
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#AWT_COMPONENT
         /// </summary>
-        public static Javax.Accessibility.AccessibleRole COLUMN_HEADER => Clazz.GetField<Javax.Accessibility.AccessibleRole>("COLUMN_HEADER");
+        public static Javax.Accessibility.AccessibleRole AWT_COMPONENT => Clazz.GetField<Javax.Accessibility.AccessibleRole>("AWT_COMPONENT");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#CANVAS
         /// </summary>
         public static Javax.Accessibility.AccessibleRole CANVAS => Clazz.GetField<Javax.Accessibility.AccessibleRole>("CANVAS");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#COMBO_BOX
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#CHECK_BOX
         /// </summary>
-        public static Javax.Accessibility.AccessibleRole COMBO_BOX => Clazz.GetField<Javax.Accessibility.AccessibleRole>("COMBO_BOX");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#DESKTOP_ICON
-        /// </summary>
-        public static Javax.Accessibility.AccessibleRole DESKTOP_ICON => Clazz.GetField<Javax.Accessibility.AccessibleRole>("DESKTOP_ICON");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#HTML_CONTAINER
-        /// </summary>
-        public static Javax.Accessibility.AccessibleRole HTML_CONTAINER => Clazz.GetField<Javax.Accessibility.AccessibleRole>("HTML_CONTAINER");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#INTERNAL_FRAME
-        /// </summary>
-        public static Javax.Accessibility.AccessibleRole INTERNAL_FRAME => Clazz.GetField<Javax.Accessibility.AccessibleRole>("INTERNAL_FRAME");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#DESKTOP_PANE
-        /// </summary>
-        public static Javax.Accessibility.AccessibleRole DESKTOP_PANE => Clazz.GetField<Javax.Accessibility.AccessibleRole>("DESKTOP_PANE");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#OPTION_PANE
-        /// </summary>
-        public static Javax.Accessibility.AccessibleRole OPTION_PANE => Clazz.GetField<Javax.Accessibility.AccessibleRole>("OPTION_PANE");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#WINDOW
-        /// </summary>
-        public static Javax.Accessibility.AccessibleRole WINDOW => Clazz.GetField<Javax.Accessibility.AccessibleRole>("WINDOW");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#FRAME
-        /// </summary>
-        public static Javax.Accessibility.AccessibleRole FRAME => Clazz.GetField<Javax.Accessibility.AccessibleRole>("FRAME");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#DIALOG
-        /// </summary>
-        public static Javax.Accessibility.AccessibleRole DIALOG => Clazz.GetField<Javax.Accessibility.AccessibleRole>("DIALOG");
+        public static Javax.Accessibility.AccessibleRole CHECK_BOX => Clazz.GetField<Javax.Accessibility.AccessibleRole>("CHECK_BOX");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#COLOR_CHOOSER
         /// </summary>
         public static Javax.Accessibility.AccessibleRole COLOR_CHOOSER => Clazz.GetField<Javax.Accessibility.AccessibleRole>("COLOR_CHOOSER");
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#COLUMN_HEADER
+        /// </summary>
+        public static Javax.Accessibility.AccessibleRole COLUMN_HEADER => Clazz.GetField<Javax.Accessibility.AccessibleRole>("COLUMN_HEADER");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#COMBO_BOX
+        /// </summary>
+        public static Javax.Accessibility.AccessibleRole COMBO_BOX => Clazz.GetField<Javax.Accessibility.AccessibleRole>("COMBO_BOX");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#DATE_EDITOR
+        /// </summary>
+        public static Javax.Accessibility.AccessibleRole DATE_EDITOR => Clazz.GetField<Javax.Accessibility.AccessibleRole>("DATE_EDITOR");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#DESKTOP_ICON
+        /// </summary>
+        public static Javax.Accessibility.AccessibleRole DESKTOP_ICON => Clazz.GetField<Javax.Accessibility.AccessibleRole>("DESKTOP_ICON");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#DESKTOP_PANE
+        /// </summary>
+        public static Javax.Accessibility.AccessibleRole DESKTOP_PANE => Clazz.GetField<Javax.Accessibility.AccessibleRole>("DESKTOP_PANE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#DIALOG
+        /// </summary>
+        public static Javax.Accessibility.AccessibleRole DIALOG => Clazz.GetField<Javax.Accessibility.AccessibleRole>("DIALOG");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#DIRECTORY_PANE
         /// </summary>
         public static Javax.Accessibility.AccessibleRole DIRECTORY_PANE => Clazz.GetField<Javax.Accessibility.AccessibleRole>("DIRECTORY_PANE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#EDITBAR
+        /// </summary>
+        public static Javax.Accessibility.AccessibleRole EDITBAR => Clazz.GetField<Javax.Accessibility.AccessibleRole>("EDITBAR");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#FILE_CHOOSER
         /// </summary>
@@ -102,6 +98,34 @@ namespace Javax.Accessibility
         /// </summary>
         public static Javax.Accessibility.AccessibleRole FILLER => Clazz.GetField<Javax.Accessibility.AccessibleRole>("FILLER");
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#FONT_CHOOSER
+        /// </summary>
+        public static Javax.Accessibility.AccessibleRole FONT_CHOOSER => Clazz.GetField<Javax.Accessibility.AccessibleRole>("FONT_CHOOSER");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#FOOTER
+        /// </summary>
+        public static Javax.Accessibility.AccessibleRole FOOTER => Clazz.GetField<Javax.Accessibility.AccessibleRole>("FOOTER");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#FRAME
+        /// </summary>
+        public static Javax.Accessibility.AccessibleRole FRAME => Clazz.GetField<Javax.Accessibility.AccessibleRole>("FRAME");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#GLASS_PANE
+        /// </summary>
+        public static Javax.Accessibility.AccessibleRole GLASS_PANE => Clazz.GetField<Javax.Accessibility.AccessibleRole>("GLASS_PANE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#GROUP_BOX
+        /// </summary>
+        public static Javax.Accessibility.AccessibleRole GROUP_BOX => Clazz.GetField<Javax.Accessibility.AccessibleRole>("GROUP_BOX");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#HEADER
+        /// </summary>
+        public static Javax.Accessibility.AccessibleRole HEADER => Clazz.GetField<Javax.Accessibility.AccessibleRole>("HEADER");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#HTML_CONTAINER
+        /// </summary>
+        public static Javax.Accessibility.AccessibleRole HTML_CONTAINER => Clazz.GetField<Javax.Accessibility.AccessibleRole>("HTML_CONTAINER");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#HYPERLINK
         /// </summary>
         public static Javax.Accessibility.AccessibleRole HYPERLINK => Clazz.GetField<Javax.Accessibility.AccessibleRole>("HYPERLINK");
@@ -110,17 +134,13 @@ namespace Javax.Accessibility
         /// </summary>
         public static Javax.Accessibility.AccessibleRole ICON => Clazz.GetField<Javax.Accessibility.AccessibleRole>("ICON");
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#INTERNAL_FRAME
+        /// </summary>
+        public static Javax.Accessibility.AccessibleRole INTERNAL_FRAME => Clazz.GetField<Javax.Accessibility.AccessibleRole>("INTERNAL_FRAME");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#LABEL
         /// </summary>
         public static Javax.Accessibility.AccessibleRole LABEL => Clazz.GetField<Javax.Accessibility.AccessibleRole>("LABEL");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#ROOT_PANE
-        /// </summary>
-        public static Javax.Accessibility.AccessibleRole ROOT_PANE => Clazz.GetField<Javax.Accessibility.AccessibleRole>("ROOT_PANE");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#GLASS_PANE
-        /// </summary>
-        public static Javax.Accessibility.AccessibleRole GLASS_PANE => Clazz.GetField<Javax.Accessibility.AccessibleRole>("GLASS_PANE");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#LAYERED_PANE
         /// </summary>
@@ -134,85 +154,105 @@ namespace Javax.Accessibility
         /// </summary>
         public static Javax.Accessibility.AccessibleRole LIST_ITEM => Clazz.GetField<Javax.Accessibility.AccessibleRole>("LIST_ITEM");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#MENU_BAR
-        /// </summary>
-        public static Javax.Accessibility.AccessibleRole MENU_BAR => Clazz.GetField<Javax.Accessibility.AccessibleRole>("MENU_BAR");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#POPUP_MENU
-        /// </summary>
-        public static Javax.Accessibility.AccessibleRole POPUP_MENU => Clazz.GetField<Javax.Accessibility.AccessibleRole>("POPUP_MENU");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#MENU
         /// </summary>
         public static Javax.Accessibility.AccessibleRole MENU => Clazz.GetField<Javax.Accessibility.AccessibleRole>("MENU");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#MENU_BAR
+        /// </summary>
+        public static Javax.Accessibility.AccessibleRole MENU_BAR => Clazz.GetField<Javax.Accessibility.AccessibleRole>("MENU_BAR");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#MENU_ITEM
         /// </summary>
         public static Javax.Accessibility.AccessibleRole MENU_ITEM => Clazz.GetField<Javax.Accessibility.AccessibleRole>("MENU_ITEM");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#SEPARATOR
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#OPTION_PANE
         /// </summary>
-        public static Javax.Accessibility.AccessibleRole SEPARATOR => Clazz.GetField<Javax.Accessibility.AccessibleRole>("SEPARATOR");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#PAGE_TAB_LIST
-        /// </summary>
-        public static Javax.Accessibility.AccessibleRole PAGE_TAB_LIST => Clazz.GetField<Javax.Accessibility.AccessibleRole>("PAGE_TAB_LIST");
+        public static Javax.Accessibility.AccessibleRole OPTION_PANE => Clazz.GetField<Javax.Accessibility.AccessibleRole>("OPTION_PANE");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#PAGE_TAB
         /// </summary>
         public static Javax.Accessibility.AccessibleRole PAGE_TAB => Clazz.GetField<Javax.Accessibility.AccessibleRole>("PAGE_TAB");
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#PAGE_TAB_LIST
+        /// </summary>
+        public static Javax.Accessibility.AccessibleRole PAGE_TAB_LIST => Clazz.GetField<Javax.Accessibility.AccessibleRole>("PAGE_TAB_LIST");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#PANEL
         /// </summary>
         public static Javax.Accessibility.AccessibleRole PANEL => Clazz.GetField<Javax.Accessibility.AccessibleRole>("PANEL");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#PROGRESS_BAR
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#PARAGRAPH
         /// </summary>
-        public static Javax.Accessibility.AccessibleRole PROGRESS_BAR => Clazz.GetField<Javax.Accessibility.AccessibleRole>("PROGRESS_BAR");
+        public static Javax.Accessibility.AccessibleRole PARAGRAPH => Clazz.GetField<Javax.Accessibility.AccessibleRole>("PARAGRAPH");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#PASSWORD_TEXT
         /// </summary>
         public static Javax.Accessibility.AccessibleRole PASSWORD_TEXT => Clazz.GetField<Javax.Accessibility.AccessibleRole>("PASSWORD_TEXT");
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#POPUP_MENU
+        /// </summary>
+        public static Javax.Accessibility.AccessibleRole POPUP_MENU => Clazz.GetField<Javax.Accessibility.AccessibleRole>("POPUP_MENU");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#PROGRESS_BAR
+        /// </summary>
+        public static Javax.Accessibility.AccessibleRole PROGRESS_BAR => Clazz.GetField<Javax.Accessibility.AccessibleRole>("PROGRESS_BAR");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#PROGRESS_MONITOR
+        /// </summary>
+        public static Javax.Accessibility.AccessibleRole PROGRESS_MONITOR => Clazz.GetField<Javax.Accessibility.AccessibleRole>("PROGRESS_MONITOR");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#PUSH_BUTTON
         /// </summary>
         public static Javax.Accessibility.AccessibleRole PUSH_BUTTON => Clazz.GetField<Javax.Accessibility.AccessibleRole>("PUSH_BUTTON");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#TOGGLE_BUTTON
-        /// </summary>
-        public static Javax.Accessibility.AccessibleRole TOGGLE_BUTTON => Clazz.GetField<Javax.Accessibility.AccessibleRole>("TOGGLE_BUTTON");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#CHECK_BOX
-        /// </summary>
-        public static Javax.Accessibility.AccessibleRole CHECK_BOX => Clazz.GetField<Javax.Accessibility.AccessibleRole>("CHECK_BOX");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#RADIO_BUTTON
         /// </summary>
         public static Javax.Accessibility.AccessibleRole RADIO_BUTTON => Clazz.GetField<Javax.Accessibility.AccessibleRole>("RADIO_BUTTON");
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#ROOT_PANE
+        /// </summary>
+        public static Javax.Accessibility.AccessibleRole ROOT_PANE => Clazz.GetField<Javax.Accessibility.AccessibleRole>("ROOT_PANE");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#ROW_HEADER
         /// </summary>
         public static Javax.Accessibility.AccessibleRole ROW_HEADER => Clazz.GetField<Javax.Accessibility.AccessibleRole>("ROW_HEADER");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#SCROLL_PANE
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#RULER
         /// </summary>
-        public static Javax.Accessibility.AccessibleRole SCROLL_PANE => Clazz.GetField<Javax.Accessibility.AccessibleRole>("SCROLL_PANE");
+        public static Javax.Accessibility.AccessibleRole RULER => Clazz.GetField<Javax.Accessibility.AccessibleRole>("RULER");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#SCROLL_BAR
         /// </summary>
         public static Javax.Accessibility.AccessibleRole SCROLL_BAR => Clazz.GetField<Javax.Accessibility.AccessibleRole>("SCROLL_BAR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#VIEWPORT
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#SCROLL_PANE
         /// </summary>
-        public static Javax.Accessibility.AccessibleRole VIEWPORT => Clazz.GetField<Javax.Accessibility.AccessibleRole>("VIEWPORT");
+        public static Javax.Accessibility.AccessibleRole SCROLL_PANE => Clazz.GetField<Javax.Accessibility.AccessibleRole>("SCROLL_PANE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#SEPARATOR
+        /// </summary>
+        public static Javax.Accessibility.AccessibleRole SEPARATOR => Clazz.GetField<Javax.Accessibility.AccessibleRole>("SEPARATOR");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#SLIDER
         /// </summary>
         public static Javax.Accessibility.AccessibleRole SLIDER => Clazz.GetField<Javax.Accessibility.AccessibleRole>("SLIDER");
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#SPIN_BOX
+        /// </summary>
+        public static Javax.Accessibility.AccessibleRole SPIN_BOX => Clazz.GetField<Javax.Accessibility.AccessibleRole>("SPIN_BOX");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#SPLIT_PANE
         /// </summary>
         public static Javax.Accessibility.AccessibleRole SPLIT_PANE => Clazz.GetField<Javax.Accessibility.AccessibleRole>("SPLIT_PANE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#STATUS_BAR
+        /// </summary>
+        public static Javax.Accessibility.AccessibleRole STATUS_BAR => Clazz.GetField<Javax.Accessibility.AccessibleRole>("STATUS_BAR");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#SWING_COMPONENT
+        /// </summary>
+        public static Javax.Accessibility.AccessibleRole SWING_COMPONENT => Clazz.GetField<Javax.Accessibility.AccessibleRole>("SWING_COMPONENT");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#TABLE
         /// </summary>
@@ -222,9 +262,9 @@ namespace Javax.Accessibility
         /// </summary>
         public static Javax.Accessibility.AccessibleRole TEXT => Clazz.GetField<Javax.Accessibility.AccessibleRole>("TEXT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#TREE
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#TOGGLE_BUTTON
         /// </summary>
-        public static Javax.Accessibility.AccessibleRole TREE => Clazz.GetField<Javax.Accessibility.AccessibleRole>("TREE");
+        public static Javax.Accessibility.AccessibleRole TOGGLE_BUTTON => Clazz.GetField<Javax.Accessibility.AccessibleRole>("TOGGLE_BUTTON");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#TOOL_BAR
         /// </summary>
@@ -234,61 +274,21 @@ namespace Javax.Accessibility
         /// </summary>
         public static Javax.Accessibility.AccessibleRole TOOL_TIP => Clazz.GetField<Javax.Accessibility.AccessibleRole>("TOOL_TIP");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#AWT_COMPONENT
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#TREE
         /// </summary>
-        public static Javax.Accessibility.AccessibleRole AWT_COMPONENT => Clazz.GetField<Javax.Accessibility.AccessibleRole>("AWT_COMPONENT");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#SWING_COMPONENT
-        /// </summary>
-        public static Javax.Accessibility.AccessibleRole SWING_COMPONENT => Clazz.GetField<Javax.Accessibility.AccessibleRole>("SWING_COMPONENT");
+        public static Javax.Accessibility.AccessibleRole TREE => Clazz.GetField<Javax.Accessibility.AccessibleRole>("TREE");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#UNKNOWN
         /// </summary>
         public static Javax.Accessibility.AccessibleRole UNKNOWN => Clazz.GetField<Javax.Accessibility.AccessibleRole>("UNKNOWN");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#STATUS_BAR
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#VIEWPORT
         /// </summary>
-        public static Javax.Accessibility.AccessibleRole STATUS_BAR => Clazz.GetField<Javax.Accessibility.AccessibleRole>("STATUS_BAR");
+        public static Javax.Accessibility.AccessibleRole VIEWPORT => Clazz.GetField<Javax.Accessibility.AccessibleRole>("VIEWPORT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#DATE_EDITOR
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#WINDOW
         /// </summary>
-        public static Javax.Accessibility.AccessibleRole DATE_EDITOR => Clazz.GetField<Javax.Accessibility.AccessibleRole>("DATE_EDITOR");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#SPIN_BOX
-        /// </summary>
-        public static Javax.Accessibility.AccessibleRole SPIN_BOX => Clazz.GetField<Javax.Accessibility.AccessibleRole>("SPIN_BOX");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#FONT_CHOOSER
-        /// </summary>
-        public static Javax.Accessibility.AccessibleRole FONT_CHOOSER => Clazz.GetField<Javax.Accessibility.AccessibleRole>("FONT_CHOOSER");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#GROUP_BOX
-        /// </summary>
-        public static Javax.Accessibility.AccessibleRole GROUP_BOX => Clazz.GetField<Javax.Accessibility.AccessibleRole>("GROUP_BOX");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#HEADER
-        /// </summary>
-        public static Javax.Accessibility.AccessibleRole HEADER => Clazz.GetField<Javax.Accessibility.AccessibleRole>("HEADER");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#FOOTER
-        /// </summary>
-        public static Javax.Accessibility.AccessibleRole FOOTER => Clazz.GetField<Javax.Accessibility.AccessibleRole>("FOOTER");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#PARAGRAPH
-        /// </summary>
-        public static Javax.Accessibility.AccessibleRole PARAGRAPH => Clazz.GetField<Javax.Accessibility.AccessibleRole>("PARAGRAPH");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#RULER
-        /// </summary>
-        public static Javax.Accessibility.AccessibleRole RULER => Clazz.GetField<Javax.Accessibility.AccessibleRole>("RULER");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#EDITBAR
-        /// </summary>
-        public static Javax.Accessibility.AccessibleRole EDITBAR => Clazz.GetField<Javax.Accessibility.AccessibleRole>("EDITBAR");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleRole.html#PROGRESS_MONITOR
-        /// </summary>
-        public static Javax.Accessibility.AccessibleRole PROGRESS_MONITOR => Clazz.GetField<Javax.Accessibility.AccessibleRole>("PROGRESS_MONITOR");
+        public static Javax.Accessibility.AccessibleRole WINDOW => Clazz.GetField<Javax.Accessibility.AccessibleRole>("WINDOW");
         
         #endregion
 

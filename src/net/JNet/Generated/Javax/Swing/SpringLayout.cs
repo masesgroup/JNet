@@ -39,6 +39,22 @@ namespace Javax.Swing
 
         #region Fields
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#BASELINE
+        /// </summary>
+        public static string BASELINE => Clazz.GetField<string>("BASELINE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#EAST
+        /// </summary>
+        public static string EAST => Clazz.GetField<string>("EAST");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#HEIGHT
+        /// </summary>
+        public static string HEIGHT => Clazz.GetField<string>("HEIGHT");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#HORIZONTAL_CENTER
+        /// </summary>
+        public static string HORIZONTAL_CENTER => Clazz.GetField<string>("HORIZONTAL_CENTER");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#NORTH
         /// </summary>
         public static string NORTH => Clazz.GetField<string>("NORTH");
@@ -47,33 +63,17 @@ namespace Javax.Swing
         /// </summary>
         public static string SOUTH => Clazz.GetField<string>("SOUTH");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#EAST
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#VERTICAL_CENTER
         /// </summary>
-        public static string EAST => Clazz.GetField<string>("EAST");
+        public static string VERTICAL_CENTER => Clazz.GetField<string>("VERTICAL_CENTER");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#WEST
         /// </summary>
         public static string WEST => Clazz.GetField<string>("WEST");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#HORIZONTAL_CENTER
-        /// </summary>
-        public static string HORIZONTAL_CENTER => Clazz.GetField<string>("HORIZONTAL_CENTER");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#VERTICAL_CENTER
-        /// </summary>
-        public static string VERTICAL_CENTER => Clazz.GetField<string>("VERTICAL_CENTER");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#BASELINE
-        /// </summary>
-        public static string BASELINE => Clazz.GetField<string>("BASELINE");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#WIDTH
         /// </summary>
         public static string WIDTH => Clazz.GetField<string>("WIDTH");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#HEIGHT
-        /// </summary>
-        public static string HEIGHT => Clazz.GetField<string>("HEIGHT");
         
         #endregion
 

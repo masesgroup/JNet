@@ -38,21 +38,21 @@ namespace Javax.Lang.Model.Element
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/NestingKind.html#TOP_LEVEL
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/NestingKind.html#ANONYMOUS
         /// </summary>
-        public static Javax.Lang.Model.Element.NestingKind TOP_LEVEL => Clazz.GetField<Javax.Lang.Model.Element.NestingKind>("TOP_LEVEL");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/NestingKind.html#MEMBER
-        /// </summary>
-        public static Javax.Lang.Model.Element.NestingKind MEMBER => Clazz.GetField<Javax.Lang.Model.Element.NestingKind>("MEMBER");
+        public static Javax.Lang.Model.Element.NestingKind ANONYMOUS => Clazz.GetField<Javax.Lang.Model.Element.NestingKind>("ANONYMOUS");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/NestingKind.html#LOCAL
         /// </summary>
         public static Javax.Lang.Model.Element.NestingKind LOCAL => Clazz.GetField<Javax.Lang.Model.Element.NestingKind>("LOCAL");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/NestingKind.html#ANONYMOUS
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/NestingKind.html#MEMBER
         /// </summary>
-        public static Javax.Lang.Model.Element.NestingKind ANONYMOUS => Clazz.GetField<Javax.Lang.Model.Element.NestingKind>("ANONYMOUS");
+        public static Javax.Lang.Model.Element.NestingKind MEMBER => Clazz.GetField<Javax.Lang.Model.Element.NestingKind>("MEMBER");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/NestingKind.html#TOP_LEVEL
+        /// </summary>
+        public static Javax.Lang.Model.Element.NestingKind TOP_LEVEL => Clazz.GetField<Javax.Lang.Model.Element.NestingKind>("TOP_LEVEL");
         
         #endregion
 

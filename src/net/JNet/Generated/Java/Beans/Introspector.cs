@@ -38,17 +38,17 @@ namespace Java.Beans
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Introspector.html#USE_ALL_BEANINFO
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Introspector.html#IGNORE_ALL_BEANINFO
         /// </summary>
-        public static int USE_ALL_BEANINFO => Clazz.GetField<int>("USE_ALL_BEANINFO");
+        public static int IGNORE_ALL_BEANINFO => Clazz.GetField<int>("IGNORE_ALL_BEANINFO");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Introspector.html#IGNORE_IMMEDIATE_BEANINFO
         /// </summary>
         public static int IGNORE_IMMEDIATE_BEANINFO => Clazz.GetField<int>("IGNORE_IMMEDIATE_BEANINFO");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Introspector.html#IGNORE_ALL_BEANINFO
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Introspector.html#USE_ALL_BEANINFO
         /// </summary>
-        public static int IGNORE_ALL_BEANINFO => Clazz.GetField<int>("IGNORE_ALL_BEANINFO");
+        public static int USE_ALL_BEANINFO => Clazz.GetField<int>("USE_ALL_BEANINFO");
         
         #endregion
 

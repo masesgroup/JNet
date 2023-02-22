@@ -30,17 +30,17 @@ namespace Java.Util.Zip
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#<init>(int)
-        /// </summary>
-        public Deflater(int arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#<init>(int,boolean)
         /// </summary>
         public Deflater(int arg0, bool arg1)
             : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#<init>(int)
+        /// </summary>
+        public Deflater(int arg0)
+            : base(arg0)
         {
         }
         
@@ -52,37 +52,41 @@ namespace Java.Util.Zip
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#DEFLATED
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#BEST_COMPRESSION
         /// </summary>
-        public static int DEFLATED => Clazz.GetField<int>("DEFLATED");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#NO_COMPRESSION
-        /// </summary>
-        public static int NO_COMPRESSION => Clazz.GetField<int>("NO_COMPRESSION");
+        public static int BEST_COMPRESSION => Clazz.GetField<int>("BEST_COMPRESSION");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#BEST_SPEED
         /// </summary>
         public static int BEST_SPEED => Clazz.GetField<int>("BEST_SPEED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#BEST_COMPRESSION
-        /// </summary>
-        public static int BEST_COMPRESSION => Clazz.GetField<int>("BEST_COMPRESSION");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#DEFAULT_COMPRESSION
         /// </summary>
         public static int DEFAULT_COMPRESSION => Clazz.GetField<int>("DEFAULT_COMPRESSION");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#DEFAULT_STRATEGY
+        /// </summary>
+        public static int DEFAULT_STRATEGY => Clazz.GetField<int>("DEFAULT_STRATEGY");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#DEFLATED
+        /// </summary>
+        public static int DEFLATED => Clazz.GetField<int>("DEFLATED");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#FILTERED
         /// </summary>
         public static int FILTERED => Clazz.GetField<int>("FILTERED");
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#FULL_FLUSH
+        /// </summary>
+        public static int FULL_FLUSH => Clazz.GetField<int>("FULL_FLUSH");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#HUFFMAN_ONLY
         /// </summary>
         public static int HUFFMAN_ONLY => Clazz.GetField<int>("HUFFMAN_ONLY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#DEFAULT_STRATEGY
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#NO_COMPRESSION
         /// </summary>
-        public static int DEFAULT_STRATEGY => Clazz.GetField<int>("DEFAULT_STRATEGY");
+        public static int NO_COMPRESSION => Clazz.GetField<int>("NO_COMPRESSION");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#NO_FLUSH
         /// </summary>
@@ -91,10 +95,6 @@ namespace Java.Util.Zip
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#SYNC_FLUSH
         /// </summary>
         public static int SYNC_FLUSH => Clazz.GetField<int>("SYNC_FLUSH");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#FULL_FLUSH
-        /// </summary>
-        public static int FULL_FLUSH => Clazz.GetField<int>("FULL_FLUSH");
         
         #endregion
 

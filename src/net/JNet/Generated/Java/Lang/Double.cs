@@ -38,18 +38,6 @@ namespace Java.Lang
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#POSITIVE_INFINITY
-        /// </summary>
-        public static double POSITIVE_INFINITY => Clazz.GetField<double>("POSITIVE_INFINITY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#NEGATIVE_INFINITY
-        /// </summary>
-        public static double NEGATIVE_INFINITY => Clazz.GetField<double>("NEGATIVE_INFINITY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#NaN
-        /// </summary>
-        public static double NaN => Clazz.GetField<double>("NaN");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#MAX_VALUE
         /// </summary>
         public static double MAX_VALUE => Clazz.GetField<double>("MAX_VALUE");
@@ -62,6 +50,22 @@ namespace Java.Lang
         /// </summary>
         public static double MIN_VALUE => Clazz.GetField<double>("MIN_VALUE");
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#NaN
+        /// </summary>
+        public static double NaN => Clazz.GetField<double>("NaN");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#NEGATIVE_INFINITY
+        /// </summary>
+        public static double NEGATIVE_INFINITY => Clazz.GetField<double>("NEGATIVE_INFINITY");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#POSITIVE_INFINITY
+        /// </summary>
+        public static double POSITIVE_INFINITY => Clazz.GetField<double>("POSITIVE_INFINITY");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#BYTES
+        /// </summary>
+        public static int BYTES => Clazz.GetField<int>("BYTES");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#MAX_EXPONENT
         /// </summary>
         public static int MAX_EXPONENT => Clazz.GetField<int>("MAX_EXPONENT");
@@ -73,10 +77,6 @@ namespace Java.Lang
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#SIZE
         /// </summary>
         public static int SIZE => Clazz.GetField<int>("SIZE");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#BYTES
-        /// </summary>
-        public static int BYTES => Clazz.GetField<int>("BYTES");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#TYPE
         /// </summary>
@@ -151,16 +151,16 @@ namespace Java.Lang
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#valueOf(double)
         /// </summary>
-        public static double ValueOf(double arg0)
+        public static double? ValueOf(double arg0)
         {
-            return SExecute<double>("valueOf", arg0);
+            return SExecute<double?>("valueOf", arg0);
         }
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#valueOf(java.lang.String) throws java.lang.NumberFormatException
         /// </summary>
-        public static double ValueOf(string arg0)
+        public static double? ValueOf(string arg0)
         {
-            return SExecute<double>("valueOf", arg0);
+            return SExecute<double?>("valueOf", arg0);
         }
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#toHexString(double)
@@ -218,7 +218,7 @@ namespace Java.Lang
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#compareTo(java.lang.Double)
         /// </summary>
-        public int CompareTo(double arg0)
+        public int CompareTo(double? arg0)
         {
             return IExecute<int>("compareTo", arg0);
         }

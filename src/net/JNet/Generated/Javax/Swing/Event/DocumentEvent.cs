@@ -152,6 +152,10 @@ namespace Javax.Swing.Event
 
             #region Fields
             /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentEvent.EventType.html#CHANGE
+            /// </summary>
+            public static Javax.Swing.Event.DocumentEvent.EventType CHANGE => Clazz.GetField<Javax.Swing.Event.DocumentEvent.EventType>("CHANGE");
+            /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentEvent.EventType.html#INSERT
             /// </summary>
             public static Javax.Swing.Event.DocumentEvent.EventType INSERT => Clazz.GetField<Javax.Swing.Event.DocumentEvent.EventType>("INSERT");
@@ -159,10 +163,6 @@ namespace Javax.Swing.Event
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentEvent.EventType.html#REMOVE
             /// </summary>
             public static Javax.Swing.Event.DocumentEvent.EventType REMOVE => Clazz.GetField<Javax.Swing.Event.DocumentEvent.EventType>("REMOVE");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/DocumentEvent.EventType.html#CHANGE
-            /// </summary>
-            public static Javax.Swing.Event.DocumentEvent.EventType CHANGE => Clazz.GetField<Javax.Swing.Event.DocumentEvent.EventType>("CHANGE");
             
             #endregion
 

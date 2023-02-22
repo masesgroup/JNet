@@ -30,17 +30,10 @@ namespace Java.Net
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#<init>(java.lang.String,java.lang.String,java.lang.String) throws java.net.URISyntaxException
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#<init>(java.lang.String,java.lang.String,java.lang.String,int,java.lang.String,java.lang.String,java.lang.String) throws java.net.URISyntaxException
         /// </summary>
-        public URI(string arg0, string arg1, string arg2)
-            : base(arg0, arg1, arg2)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#<init>(java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.net.URISyntaxException
-        /// </summary>
-        public URI(string arg0, string arg1, string arg2, string arg3)
-            : base(arg0, arg1, arg2, arg3)
+        public URI(string arg0, string arg1, string arg2, int arg3, string arg4, string arg5, string arg6)
+            : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
         {
         }
         /// <summary>
@@ -51,17 +44,24 @@ namespace Java.Net
         {
         }
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#<init>(java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.net.URISyntaxException
+        /// </summary>
+        public URI(string arg0, string arg1, string arg2, string arg3)
+            : base(arg0, arg1, arg2, arg3)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#<init>(java.lang.String,java.lang.String,java.lang.String) throws java.net.URISyntaxException
+        /// </summary>
+        public URI(string arg0, string arg1, string arg2)
+            : base(arg0, arg1, arg2)
+        {
+        }
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#<init>(java.lang.String) throws java.net.URISyntaxException
         /// </summary>
         public URI(string arg0)
             : base(arg0)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URI.html#<init>(java.lang.String,java.lang.String,java.lang.String,int,java.lang.String,java.lang.String,java.lang.String) throws java.net.URISyntaxException
-        /// </summary>
-        public URI(string arg0, string arg1, string arg2, int arg3, string arg4, string arg5, string arg6)
-            : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
         {
         }
         

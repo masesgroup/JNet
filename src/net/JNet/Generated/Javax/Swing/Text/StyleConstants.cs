@@ -38,105 +38,105 @@ namespace Javax.Swing.Text
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#ComponentElementName
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#ALIGN_CENTER
         /// </summary>
-        public static string ComponentElementName => Clazz.GetField<string>("ComponentElementName");
+        public static int ALIGN_CENTER => Clazz.GetField<int>("ALIGN_CENTER");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#IconElementName
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#ALIGN_JUSTIFIED
         /// </summary>
-        public static string IconElementName => Clazz.GetField<string>("IconElementName");
+        public static int ALIGN_JUSTIFIED => Clazz.GetField<int>("ALIGN_JUSTIFIED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#NameAttribute
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#ALIGN_LEFT
         /// </summary>
-        public static object NameAttribute => Clazz.GetField("NameAttribute");
+        public static int ALIGN_LEFT => Clazz.GetField<int>("ALIGN_LEFT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#ResolveAttribute
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#ALIGN_RIGHT
         /// </summary>
-        public static object ResolveAttribute => Clazz.GetField("ResolveAttribute");
+        public static int ALIGN_RIGHT => Clazz.GetField<int>("ALIGN_RIGHT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#ModelAttribute
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#Alignment
         /// </summary>
-        public static object ModelAttribute => Clazz.GetField("ModelAttribute");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#BidiLevel
-        /// </summary>
-        public static object BidiLevel => Clazz.GetField("BidiLevel");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#FontFamily
-        /// </summary>
-        public static object FontFamily => Clazz.GetField("FontFamily");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#Family
-        /// </summary>
-        public static object Family => Clazz.GetField("Family");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#FontSize
-        /// </summary>
-        public static object FontSize => Clazz.GetField("FontSize");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#Size
-        /// </summary>
-        public static object Size => Clazz.GetField("Size");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#Bold
-        /// </summary>
-        public static object Bold => Clazz.GetField("Bold");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#Italic
-        /// </summary>
-        public static object Italic => Clazz.GetField("Italic");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#Underline
-        /// </summary>
-        public static object Underline => Clazz.GetField("Underline");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#StrikeThrough
-        /// </summary>
-        public static object StrikeThrough => Clazz.GetField("StrikeThrough");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#Superscript
-        /// </summary>
-        public static object Superscript => Clazz.GetField("Superscript");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#Subscript
-        /// </summary>
-        public static object Subscript => Clazz.GetField("Subscript");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#Foreground
-        /// </summary>
-        public static object Foreground => Clazz.GetField("Foreground");
+        public static object Alignment => Clazz.GetField("Alignment");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#Background
         /// </summary>
         public static object Background => Clazz.GetField("Background");
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#BidiLevel
+        /// </summary>
+        public static object BidiLevel => Clazz.GetField("BidiLevel");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#Bold
+        /// </summary>
+        public static object Bold => Clazz.GetField("Bold");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#ComponentAttribute
         /// </summary>
         public static object ComponentAttribute => Clazz.GetField("ComponentAttribute");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#IconAttribute
-        /// </summary>
-        public static object IconAttribute => Clazz.GetField("IconAttribute");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#ComposedTextAttribute
         /// </summary>
         public static object ComposedTextAttribute => Clazz.GetField("ComposedTextAttribute");
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#Family
+        /// </summary>
+        public static object Family => Clazz.GetField("Family");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#FirstLineIndent
         /// </summary>
         public static object FirstLineIndent => Clazz.GetField("FirstLineIndent");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#FontFamily
+        /// </summary>
+        public static object FontFamily => Clazz.GetField("FontFamily");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#FontSize
+        /// </summary>
+        public static object FontSize => Clazz.GetField("FontSize");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#Foreground
+        /// </summary>
+        public static object Foreground => Clazz.GetField("Foreground");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#IconAttribute
+        /// </summary>
+        public static object IconAttribute => Clazz.GetField("IconAttribute");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#Italic
+        /// </summary>
+        public static object Italic => Clazz.GetField("Italic");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#LeftIndent
         /// </summary>
         public static object LeftIndent => Clazz.GetField("LeftIndent");
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#LineSpacing
+        /// </summary>
+        public static object LineSpacing => Clazz.GetField("LineSpacing");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#ModelAttribute
+        /// </summary>
+        public static object ModelAttribute => Clazz.GetField("ModelAttribute");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#NameAttribute
+        /// </summary>
+        public static object NameAttribute => Clazz.GetField("NameAttribute");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#Orientation
+        /// </summary>
+        public static object Orientation => Clazz.GetField("Orientation");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#ResolveAttribute
+        /// </summary>
+        public static object ResolveAttribute => Clazz.GetField("ResolveAttribute");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#RightIndent
         /// </summary>
         public static object RightIndent => Clazz.GetField("RightIndent");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#LineSpacing
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#Size
         /// </summary>
-        public static object LineSpacing => Clazz.GetField("LineSpacing");
+        public static object Size => Clazz.GetField("Size");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#SpaceAbove
         /// </summary>
@@ -146,33 +146,33 @@ namespace Javax.Swing.Text
         /// </summary>
         public static object SpaceBelow => Clazz.GetField("SpaceBelow");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#Alignment
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#StrikeThrough
         /// </summary>
-        public static object Alignment => Clazz.GetField("Alignment");
+        public static object StrikeThrough => Clazz.GetField("StrikeThrough");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#Subscript
+        /// </summary>
+        public static object Subscript => Clazz.GetField("Subscript");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#Superscript
+        /// </summary>
+        public static object Superscript => Clazz.GetField("Superscript");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#TabSet
         /// </summary>
         public static object TabSet => Clazz.GetField("TabSet");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#Orientation
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#Underline
         /// </summary>
-        public static object Orientation => Clazz.GetField("Orientation");
+        public static object Underline => Clazz.GetField("Underline");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#ALIGN_LEFT
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#ComponentElementName
         /// </summary>
-        public static int ALIGN_LEFT => Clazz.GetField<int>("ALIGN_LEFT");
+        public static string ComponentElementName => Clazz.GetField<string>("ComponentElementName");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#ALIGN_CENTER
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#IconElementName
         /// </summary>
-        public static int ALIGN_CENTER => Clazz.GetField<int>("ALIGN_CENTER");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#ALIGN_RIGHT
-        /// </summary>
-        public static int ALIGN_RIGHT => Clazz.GetField<int>("ALIGN_RIGHT");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#ALIGN_JUSTIFIED
-        /// </summary>
-        public static int ALIGN_JUSTIFIED => Clazz.GetField<int>("ALIGN_JUSTIFIED");
+        public static string IconElementName => Clazz.GetField<string>("IconElementName");
         
         #endregion
 
@@ -479,8 +479,8 @@ namespace Javax.Swing.Text
         #endregion
 
         #region Nested classes
-        #region ParagraphConstants
-        public partial class ParagraphConstants
+        #region CharacterConstants
+        public partial class CharacterConstants
         {
             #region Constructors
 
@@ -533,8 +533,8 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region CharacterConstants
-        public partial class CharacterConstants
+        #region ColorConstants
+        public partial class ColorConstants
         {
             #region Constructors
 
@@ -560,8 +560,8 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region ColorConstants
-        public partial class ColorConstants
+        #region ParagraphConstants
+        public partial class ParagraphConstants
         {
             #region Constructors
 

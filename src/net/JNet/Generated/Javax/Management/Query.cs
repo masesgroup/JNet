@@ -38,41 +38,41 @@ namespace Javax.Management
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#GT
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#DIV
         /// </summary>
-        public static int GT => Clazz.GetField<int>("GT");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#LT
-        /// </summary>
-        public static int LT => Clazz.GetField<int>("LT");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#GE
-        /// </summary>
-        public static int GE => Clazz.GetField<int>("GE");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#LE
-        /// </summary>
-        public static int LE => Clazz.GetField<int>("LE");
+        public static int DIV => Clazz.GetField<int>("DIV");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#EQ
         /// </summary>
         public static int EQ => Clazz.GetField<int>("EQ");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#PLUS
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#GE
         /// </summary>
-        public static int PLUS => Clazz.GetField<int>("PLUS");
+        public static int GE => Clazz.GetField<int>("GE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#GT
+        /// </summary>
+        public static int GT => Clazz.GetField<int>("GT");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#LE
+        /// </summary>
+        public static int LE => Clazz.GetField<int>("LE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#LT
+        /// </summary>
+        public static int LT => Clazz.GetField<int>("LT");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#MINUS
         /// </summary>
         public static int MINUS => Clazz.GetField<int>("MINUS");
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#PLUS
+        /// </summary>
+        public static int PLUS => Clazz.GetField<int>("PLUS");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#TIMES
         /// </summary>
         public static int TIMES => Clazz.GetField<int>("TIMES");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Query.html#DIV
-        /// </summary>
-        public static int DIV => Clazz.GetField<int>("DIV");
         
         #endregion
 

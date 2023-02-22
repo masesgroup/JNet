@@ -30,6 +30,13 @@ namespace Java.Util.Concurrent
     {
         #region Constructors
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#<init>(int)
+        /// </summary>
+        public Phaser(int arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#<init>(java.util.concurrent.Phaser,int)
         /// </summary>
         public Phaser(Java.Util.Concurrent.Phaser arg0, int arg1)
@@ -40,13 +47,6 @@ namespace Java.Util.Concurrent
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#<init>(java.util.concurrent.Phaser)
         /// </summary>
         public Phaser(Java.Util.Concurrent.Phaser arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#<init>(int)
-        /// </summary>
-        public Phaser(int arg0)
             : base(arg0)
         {
         }

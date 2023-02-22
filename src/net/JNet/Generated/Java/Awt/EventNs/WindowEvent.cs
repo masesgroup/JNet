@@ -30,17 +30,17 @@ namespace Java.Awt.EventNs
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowEvent.html#<init>(java.awt.Window,int)
-        /// </summary>
-        public WindowEvent(Java.Awt.Window arg0, int arg1)
-            : base(arg0, arg1)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowEvent.html#<init>(java.awt.Window,int,int,int)
         /// </summary>
         public WindowEvent(Java.Awt.Window arg0, int arg1, int arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowEvent.html#<init>(java.awt.Window,int,java.awt.Window,int,int)
+        /// </summary>
+        public WindowEvent(Java.Awt.Window arg0, int arg1, Java.Awt.Window arg2, int arg3, int arg4)
+            : base(arg0, arg1, arg2, arg3, arg4)
         {
         }
         /// <summary>
@@ -51,10 +51,10 @@ namespace Java.Awt.EventNs
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowEvent.html#<init>(java.awt.Window,int,java.awt.Window,int,int)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowEvent.html#<init>(java.awt.Window,int)
         /// </summary>
-        public WindowEvent(Java.Awt.Window arg0, int arg1, Java.Awt.Window arg2, int arg3, int arg4)
-            : base(arg0, arg1, arg2, arg3, arg4)
+        public WindowEvent(Java.Awt.Window arg0, int arg1)
+            : base(arg0, arg1)
         {
         }
         
@@ -66,53 +66,53 @@ namespace Java.Awt.EventNs
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowEvent.html#WINDOW_FIRST
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowEvent.html#WINDOW_ACTIVATED
         /// </summary>
-        public static int WINDOW_FIRST => Clazz.GetField<int>("WINDOW_FIRST");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowEvent.html#WINDOW_OPENED
-        /// </summary>
-        public static int WINDOW_OPENED => Clazz.GetField<int>("WINDOW_OPENED");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowEvent.html#WINDOW_CLOSING
-        /// </summary>
-        public static int WINDOW_CLOSING => Clazz.GetField<int>("WINDOW_CLOSING");
+        public static int WINDOW_ACTIVATED => Clazz.GetField<int>("WINDOW_ACTIVATED");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowEvent.html#WINDOW_CLOSED
         /// </summary>
         public static int WINDOW_CLOSED => Clazz.GetField<int>("WINDOW_CLOSED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowEvent.html#WINDOW_ICONIFIED
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowEvent.html#WINDOW_CLOSING
         /// </summary>
-        public static int WINDOW_ICONIFIED => Clazz.GetField<int>("WINDOW_ICONIFIED");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowEvent.html#WINDOW_DEICONIFIED
-        /// </summary>
-        public static int WINDOW_DEICONIFIED => Clazz.GetField<int>("WINDOW_DEICONIFIED");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowEvent.html#WINDOW_ACTIVATED
-        /// </summary>
-        public static int WINDOW_ACTIVATED => Clazz.GetField<int>("WINDOW_ACTIVATED");
+        public static int WINDOW_CLOSING => Clazz.GetField<int>("WINDOW_CLOSING");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowEvent.html#WINDOW_DEACTIVATED
         /// </summary>
         public static int WINDOW_DEACTIVATED => Clazz.GetField<int>("WINDOW_DEACTIVATED");
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowEvent.html#WINDOW_DEICONIFIED
+        /// </summary>
+        public static int WINDOW_DEICONIFIED => Clazz.GetField<int>("WINDOW_DEICONIFIED");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowEvent.html#WINDOW_FIRST
+        /// </summary>
+        public static int WINDOW_FIRST => Clazz.GetField<int>("WINDOW_FIRST");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowEvent.html#WINDOW_GAINED_FOCUS
         /// </summary>
         public static int WINDOW_GAINED_FOCUS => Clazz.GetField<int>("WINDOW_GAINED_FOCUS");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowEvent.html#WINDOW_ICONIFIED
+        /// </summary>
+        public static int WINDOW_ICONIFIED => Clazz.GetField<int>("WINDOW_ICONIFIED");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowEvent.html#WINDOW_LAST
+        /// </summary>
+        public static int WINDOW_LAST => Clazz.GetField<int>("WINDOW_LAST");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowEvent.html#WINDOW_LOST_FOCUS
         /// </summary>
         public static int WINDOW_LOST_FOCUS => Clazz.GetField<int>("WINDOW_LOST_FOCUS");
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowEvent.html#WINDOW_OPENED
+        /// </summary>
+        public static int WINDOW_OPENED => Clazz.GetField<int>("WINDOW_OPENED");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowEvent.html#WINDOW_STATE_CHANGED
         /// </summary>
         public static int WINDOW_STATE_CHANGED => Clazz.GetField<int>("WINDOW_STATE_CHANGED");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowEvent.html#WINDOW_LAST
-        /// </summary>
-        public static int WINDOW_LAST => Clazz.GetField<int>("WINDOW_LAST");
         
         #endregion
 

@@ -30,17 +30,17 @@ namespace Java.Awt.EventNs
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyEvent.html#<init>(java.awt.Component,int,java.awt.Component,java.awt.Container)
-        /// </summary>
-        public HierarchyEvent(Java.Awt.Component arg0, int arg1, Java.Awt.Component arg2, Java.Awt.Container arg3)
-            : base(arg0, arg1, arg2, arg3)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyEvent.html#<init>(java.awt.Component,int,java.awt.Component,java.awt.Container,long)
         /// </summary>
         public HierarchyEvent(Java.Awt.Component arg0, int arg1, Java.Awt.Component arg2, Java.Awt.Container arg3, long arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyEvent.html#<init>(java.awt.Component,int,java.awt.Component,java.awt.Container)
+        /// </summary>
+        public HierarchyEvent(Java.Awt.Component arg0, int arg1, Java.Awt.Component arg2, Java.Awt.Container arg3)
+            : base(arg0, arg1, arg2, arg3)
         {
         }
         
@@ -52,14 +52,6 @@ namespace Java.Awt.EventNs
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyEvent.html#HIERARCHY_FIRST
-        /// </summary>
-        public static int HIERARCHY_FIRST => Clazz.GetField<int>("HIERARCHY_FIRST");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyEvent.html#HIERARCHY_CHANGED
-        /// </summary>
-        public static int HIERARCHY_CHANGED => Clazz.GetField<int>("HIERARCHY_CHANGED");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyEvent.html#ANCESTOR_MOVED
         /// </summary>
         public static int ANCESTOR_MOVED => Clazz.GetField<int>("ANCESTOR_MOVED");
@@ -68,6 +60,18 @@ namespace Java.Awt.EventNs
         /// </summary>
         public static int ANCESTOR_RESIZED => Clazz.GetField<int>("ANCESTOR_RESIZED");
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyEvent.html#DISPLAYABILITY_CHANGED
+        /// </summary>
+        public static int DISPLAYABILITY_CHANGED => Clazz.GetField<int>("DISPLAYABILITY_CHANGED");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyEvent.html#HIERARCHY_CHANGED
+        /// </summary>
+        public static int HIERARCHY_CHANGED => Clazz.GetField<int>("HIERARCHY_CHANGED");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyEvent.html#HIERARCHY_FIRST
+        /// </summary>
+        public static int HIERARCHY_FIRST => Clazz.GetField<int>("HIERARCHY_FIRST");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyEvent.html#HIERARCHY_LAST
         /// </summary>
         public static int HIERARCHY_LAST => Clazz.GetField<int>("HIERARCHY_LAST");
@@ -75,10 +79,6 @@ namespace Java.Awt.EventNs
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyEvent.html#PARENT_CHANGED
         /// </summary>
         public static int PARENT_CHANGED => Clazz.GetField<int>("PARENT_CHANGED");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyEvent.html#DISPLAYABILITY_CHANGED
-        /// </summary>
-        public static int DISPLAYABILITY_CHANGED => Clazz.GetField<int>("DISPLAYABILITY_CHANGED");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/HierarchyEvent.html#SHOWING_CHANGED
         /// </summary>

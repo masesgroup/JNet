@@ -56,33 +56,6 @@ namespace Java.Util.Concurrent
         #endregion
 
         #region Nested classes
-        #region Processor
-        public partial class Processor
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region Subscriber
         public partial class Subscriber
         {
@@ -140,6 +113,33 @@ namespace Java.Util.Concurrent
 
         #region Publisher
         public partial class Publisher
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region Processor
+        public partial class Processor
         {
             #region Constructors
 

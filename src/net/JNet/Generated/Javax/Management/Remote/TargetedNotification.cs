@@ -32,7 +32,7 @@ namespace Javax.Management.Remote
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/TargetedNotification.html#<init>(javax.management.Notification,java.lang.Integer)
         /// </summary>
-        public TargetedNotification(Javax.Management.Notification arg0, int arg1)
+        public TargetedNotification(Javax.Management.Notification arg0, int? arg1)
             : base(arg0, arg1)
         {
         }
@@ -56,9 +56,9 @@ namespace Javax.Management.Remote
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/TargetedNotification.html#getListenerID() 
         /// </summary>
-        public int ListenerID
+        public int? ListenerID
         {
-            get { return IExecute<int>("getListenerID"); }
+            get { return IExecute<int?>("getListenerID"); }
         }
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/TargetedNotification.html#getNotification() 

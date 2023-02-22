@@ -30,16 +30,9 @@ namespace Java.Io
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStreamReader.html#<init>(java.io.InputStream)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStreamReader.html#<init>(java.io.InputStream,java.lang.String) throws java.io.UnsupportedEncodingException
         /// </summary>
-        public InputStreamReader(Java.Io.InputStream arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStreamReader.html#<init>(java.io.InputStream,java.nio.charset.CharsetDecoder)
-        /// </summary>
-        public InputStreamReader(Java.Io.InputStream arg0, Java.Nio.Charset.CharsetDecoder arg1)
+        public InputStreamReader(Java.Io.InputStream arg0, string arg1)
             : base(arg0, arg1)
         {
         }
@@ -51,10 +44,17 @@ namespace Java.Io
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStreamReader.html#<init>(java.io.InputStream,java.lang.String) throws java.io.UnsupportedEncodingException
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStreamReader.html#<init>(java.io.InputStream,java.nio.charset.CharsetDecoder)
         /// </summary>
-        public InputStreamReader(Java.Io.InputStream arg0, string arg1)
+        public InputStreamReader(Java.Io.InputStream arg0, Java.Nio.Charset.CharsetDecoder arg1)
             : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/InputStreamReader.html#<init>(java.io.InputStream)
+        /// </summary>
+        public InputStreamReader(Java.Io.InputStream arg0)
+            : base(arg0)
         {
         }
         

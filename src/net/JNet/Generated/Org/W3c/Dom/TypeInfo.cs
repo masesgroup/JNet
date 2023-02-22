@@ -38,21 +38,21 @@ namespace Org.W3c.Dom
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/TypeInfo.html#DERIVATION_RESTRICTION
-        /// </summary>
-        public static int DERIVATION_RESTRICTION => Clazz.GetField<int>("DERIVATION_RESTRICTION");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/TypeInfo.html#DERIVATION_EXTENSION
         /// </summary>
         public static int DERIVATION_EXTENSION => Clazz.GetField<int>("DERIVATION_EXTENSION");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/TypeInfo.html#DERIVATION_UNION
-        /// </summary>
-        public static int DERIVATION_UNION => Clazz.GetField<int>("DERIVATION_UNION");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/TypeInfo.html#DERIVATION_LIST
         /// </summary>
         public static int DERIVATION_LIST => Clazz.GetField<int>("DERIVATION_LIST");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/TypeInfo.html#DERIVATION_RESTRICTION
+        /// </summary>
+        public static int DERIVATION_RESTRICTION => Clazz.GetField<int>("DERIVATION_RESTRICTION");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/TypeInfo.html#DERIVATION_UNION
+        /// </summary>
+        public static int DERIVATION_UNION => Clazz.GetField<int>("DERIVATION_UNION");
         
         #endregion
 

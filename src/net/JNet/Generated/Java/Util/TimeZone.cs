@@ -40,13 +40,13 @@ namespace Java.Util
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TimeZone.html#SHORT
-        /// </summary>
-        public static int SHORT => Clazz.GetField<int>("SHORT");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TimeZone.html#LONG
         /// </summary>
         public static int LONG => Clazz.GetField<int>("LONG");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TimeZone.html#SHORT
+        /// </summary>
+        public static int SHORT => Clazz.GetField<int>("SHORT");
         
         #endregion
 

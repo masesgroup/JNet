@@ -38,26 +38,6 @@ namespace Java.Net
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOptions.html#TCP_NODELAY
-        /// </summary>
-        public static int TCP_NODELAY => Clazz.GetField<int>("TCP_NODELAY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOptions.html#SO_BINDADDR
-        /// </summary>
-        public static int SO_BINDADDR => Clazz.GetField<int>("SO_BINDADDR");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOptions.html#SO_REUSEADDR
-        /// </summary>
-        public static int SO_REUSEADDR => Clazz.GetField<int>("SO_REUSEADDR");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOptions.html#SO_REUSEPORT
-        /// </summary>
-        public static int SO_REUSEPORT => Clazz.GetField<int>("SO_REUSEPORT");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOptions.html#SO_BROADCAST
-        /// </summary>
-        public static int SO_BROADCAST => Clazz.GetField<int>("SO_BROADCAST");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOptions.html#IP_MULTICAST_IF
         /// </summary>
         public static int IP_MULTICAST_IF => Clazz.GetField<int>("IP_MULTICAST_IF");
@@ -74,29 +54,49 @@ namespace Java.Net
         /// </summary>
         public static int IP_TOS => Clazz.GetField<int>("IP_TOS");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOptions.html#SO_LINGER
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOptions.html#SO_BINDADDR
         /// </summary>
-        public static int SO_LINGER => Clazz.GetField<int>("SO_LINGER");
+        public static int SO_BINDADDR => Clazz.GetField<int>("SO_BINDADDR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOptions.html#SO_TIMEOUT
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOptions.html#SO_BROADCAST
         /// </summary>
-        public static int SO_TIMEOUT => Clazz.GetField<int>("SO_TIMEOUT");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOptions.html#SO_SNDBUF
-        /// </summary>
-        public static int SO_SNDBUF => Clazz.GetField<int>("SO_SNDBUF");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOptions.html#SO_RCVBUF
-        /// </summary>
-        public static int SO_RCVBUF => Clazz.GetField<int>("SO_RCVBUF");
+        public static int SO_BROADCAST => Clazz.GetField<int>("SO_BROADCAST");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOptions.html#SO_KEEPALIVE
         /// </summary>
         public static int SO_KEEPALIVE => Clazz.GetField<int>("SO_KEEPALIVE");
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOptions.html#SO_LINGER
+        /// </summary>
+        public static int SO_LINGER => Clazz.GetField<int>("SO_LINGER");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOptions.html#SO_OOBINLINE
         /// </summary>
         public static int SO_OOBINLINE => Clazz.GetField<int>("SO_OOBINLINE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOptions.html#SO_RCVBUF
+        /// </summary>
+        public static int SO_RCVBUF => Clazz.GetField<int>("SO_RCVBUF");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOptions.html#SO_REUSEADDR
+        /// </summary>
+        public static int SO_REUSEADDR => Clazz.GetField<int>("SO_REUSEADDR");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOptions.html#SO_REUSEPORT
+        /// </summary>
+        public static int SO_REUSEPORT => Clazz.GetField<int>("SO_REUSEPORT");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOptions.html#SO_SNDBUF
+        /// </summary>
+        public static int SO_SNDBUF => Clazz.GetField<int>("SO_SNDBUF");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOptions.html#SO_TIMEOUT
+        /// </summary>
+        public static int SO_TIMEOUT => Clazz.GetField<int>("SO_TIMEOUT");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/SocketOptions.html#TCP_NODELAY
+        /// </summary>
+        public static int TCP_NODELAY => Clazz.GetField<int>("TCP_NODELAY");
         
         #endregion
 

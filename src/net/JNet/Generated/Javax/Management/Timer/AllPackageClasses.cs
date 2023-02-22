@@ -23,23 +23,23 @@
 
 namespace Javax.Management.Timer
 {
-    #region TimerNotification
+    #region Timer
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerNotification.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html
     /// </summary>
-    public partial class TimerNotification : Javax.Management.Notification
+    public partial class Timer : Javax.Management.NotificationBroadcasterSupport
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public TimerNotification() { }
+        public Timer() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public TimerNotification(params object[] args) : base(args) { }
+        public Timer(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.management.timer.TimerNotification";
+        public override string ClassName => "javax.management.timer.Timer";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -93,23 +93,23 @@ namespace Javax.Management.Timer
     }
     #endregion
 
-    #region Timer
+    #region TimerNotification
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerNotification.html
     /// </summary>
-    public partial class Timer : Javax.Management.NotificationBroadcasterSupport
+    public partial class TimerNotification : Javax.Management.Notification
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public Timer() { }
+        public TimerNotification() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public Timer(params object[] args) : base(args) { }
+        public TimerNotification(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.management.timer.Timer";
+        public override string ClassName => "javax.management.timer.TimerNotification";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;

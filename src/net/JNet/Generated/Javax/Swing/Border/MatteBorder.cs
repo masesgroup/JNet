@@ -30,17 +30,10 @@ namespace Javax.Swing.Border
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/MatteBorder.html#<init>(javax.swing.Icon)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/MatteBorder.html#<init>(int,int,int,int,java.awt.Color)
         /// </summary>
-        public MatteBorder(Javax.Swing.Icon arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/MatteBorder.html#<init>(java.awt.Insets,javax.swing.Icon)
-        /// </summary>
-        public MatteBorder(Java.Awt.Insets arg0, Javax.Swing.Icon arg1)
-            : base(arg0, arg1)
+        public MatteBorder(int arg0, int arg1, int arg2, int arg3, Java.Awt.Color arg4)
+            : base(arg0, arg1, arg2, arg3, arg4)
         {
         }
         /// <summary>
@@ -58,10 +51,17 @@ namespace Javax.Swing.Border
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/MatteBorder.html#<init>(int,int,int,int,java.awt.Color)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/MatteBorder.html#<init>(java.awt.Insets,javax.swing.Icon)
         /// </summary>
-        public MatteBorder(int arg0, int arg1, int arg2, int arg3, Java.Awt.Color arg4)
-            : base(arg0, arg1, arg2, arg3, arg4)
+        public MatteBorder(Java.Awt.Insets arg0, Javax.Swing.Icon arg1)
+            : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/border/MatteBorder.html#<init>(javax.swing.Icon)
+        /// </summary>
+        public MatteBorder(Javax.Swing.Icon arg0)
+            : base(arg0)
         {
         }
         

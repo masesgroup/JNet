@@ -63,6 +63,94 @@ namespace Javax.Swing.Text
         #endregion
 
         #region Nested classes
+        #region UnderlineAction
+        public partial class UnderlineAction
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region FontFamilyAction
+        public partial class FontFamilyAction
+        {
+            #region Constructors
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyledEditorKit.FontFamilyAction.html#<init>(java.lang.String,java.lang.String)
+            /// </summary>
+            public FontFamilyAction(string arg0, string arg1)
+                : base(arg0, arg1)
+            {
+            }
+            
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region BoldAction
+        public partial class BoldAction
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region AlignmentAction
         public partial class AlignmentAction
         {
@@ -97,15 +185,42 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region FontFamilyAction
-        public partial class FontFamilyAction
+        #region ItalicAction
+        public partial class ItalicAction
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region StyledTextAction
+        public partial class StyledTextAction
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyledEditorKit.FontFamilyAction.html#<init>(java.lang.String,java.lang.String)
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyledEditorKit.StyledTextAction.html#<init>(java.lang.String)
             /// </summary>
-            public FontFamilyAction(string arg0, string arg1)
-                : base(arg0, arg1)
+            public StyledTextAction(string arg0)
+                : base(arg0)
             {
             }
             
@@ -165,40 +280,6 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region StyledTextAction
-        public partial class StyledTextAction
-        {
-            #region Constructors
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyledEditorKit.StyledTextAction.html#<init>(java.lang.String)
-            /// </summary>
-            public StyledTextAction(string arg0)
-                : base(arg0)
-            {
-            }
-            
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region ForegroundAction
         public partial class ForegroundAction
         {
@@ -211,87 +292,6 @@ namespace Javax.Swing.Text
             {
             }
             
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region ItalicAction
-        public partial class ItalicAction
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region UnderlineAction
-        public partial class UnderlineAction
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region BoldAction
-        public partial class BoldAction
-        {
-            #region Constructors
-
             #endregion
 
             #region Class/Interface conversion operators

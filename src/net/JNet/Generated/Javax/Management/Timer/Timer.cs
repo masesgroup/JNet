@@ -40,21 +40,21 @@ namespace Javax.Management.Timer
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#ONE_SECOND
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#ONE_DAY
         /// </summary>
-        public static long ONE_SECOND => Clazz.GetField<long>("ONE_SECOND");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#ONE_MINUTE
-        /// </summary>
-        public static long ONE_MINUTE => Clazz.GetField<long>("ONE_MINUTE");
+        public static long ONE_DAY => Clazz.GetField<long>("ONE_DAY");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#ONE_HOUR
         /// </summary>
         public static long ONE_HOUR => Clazz.GetField<long>("ONE_HOUR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#ONE_DAY
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#ONE_MINUTE
         /// </summary>
-        public static long ONE_DAY => Clazz.GetField<long>("ONE_DAY");
+        public static long ONE_MINUTE => Clazz.GetField<long>("ONE_MINUTE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#ONE_SECOND
+        /// </summary>
+        public static long ONE_SECOND => Clazz.GetField<long>("ONE_SECOND");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#ONE_WEEK
         /// </summary>
@@ -105,77 +105,77 @@ namespace Javax.Management.Timer
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#getFixedRate(java.lang.Integer)
         /// </summary>
-        public bool GetFixedRate(int arg0)
+        public bool? GetFixedRate(int? arg0)
         {
-            return IExecute<bool>("getFixedRate", arg0);
+            return IExecute<bool?>("getFixedRate", arg0);
         }
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#addNotification(java.lang.String,java.lang.String,java.lang.Object,java.util.Date,long,long,boolean) throws java.lang.IllegalArgumentException
         /// </summary>
-        public int AddNotification(string arg0, string arg1, object arg2, Java.Util.Date arg3, long arg4, long arg5, bool arg6)
+        public int? AddNotification(string arg0, string arg1, object arg2, Java.Util.Date arg3, long arg4, long arg5, bool arg6)
         {
-            return IExecute<int>("addNotification", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            return IExecute<int?>("addNotification", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#addNotification(java.lang.String,java.lang.String,java.lang.Object,java.util.Date,long,long) throws java.lang.IllegalArgumentException
         /// </summary>
-        public int AddNotification(string arg0, string arg1, object arg2, Java.Util.Date arg3, long arg4, long arg5)
+        public int? AddNotification(string arg0, string arg1, object arg2, Java.Util.Date arg3, long arg4, long arg5)
         {
-            return IExecute<int>("addNotification", arg0, arg1, arg2, arg3, arg4, arg5);
+            return IExecute<int?>("addNotification", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#addNotification(java.lang.String,java.lang.String,java.lang.Object,java.util.Date,long) throws java.lang.IllegalArgumentException
         /// </summary>
-        public int AddNotification(string arg0, string arg1, object arg2, Java.Util.Date arg3, long arg4)
+        public int? AddNotification(string arg0, string arg1, object arg2, Java.Util.Date arg3, long arg4)
         {
-            return IExecute<int>("addNotification", arg0, arg1, arg2, arg3, arg4);
+            return IExecute<int?>("addNotification", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#addNotification(java.lang.String,java.lang.String,java.lang.Object,java.util.Date) throws java.lang.IllegalArgumentException
         /// </summary>
-        public int AddNotification(string arg0, string arg1, object arg2, Java.Util.Date arg3)
+        public int? AddNotification(string arg0, string arg1, object arg2, Java.Util.Date arg3)
         {
-            return IExecute<int>("addNotification", arg0, arg1, arg2, arg3);
+            return IExecute<int?>("addNotification", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#getNbOccurences(java.lang.Integer)
         /// </summary>
-        public long GetNbOccurences(int arg0)
+        public long? GetNbOccurences(int? arg0)
         {
-            return IExecute<long>("getNbOccurences", arg0);
+            return IExecute<long?>("getNbOccurences", arg0);
         }
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#getPeriod(java.lang.Integer)
         /// </summary>
-        public long GetPeriod(int arg0)
+        public long? GetPeriod(int? arg0)
         {
-            return IExecute<long>("getPeriod", arg0);
+            return IExecute<long?>("getPeriod", arg0);
         }
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#getNotificationUserData(java.lang.Integer)
         /// </summary>
-        public object GetNotificationUserData(int arg0)
+        public object GetNotificationUserData(int? arg0)
         {
             return IExecute("getNotificationUserData", arg0);
         }
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#getNotificationMessage(java.lang.Integer)
         /// </summary>
-        public string GetNotificationMessage(int arg0)
+        public string GetNotificationMessage(int? arg0)
         {
             return IExecute<string>("getNotificationMessage", arg0);
         }
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#getNotificationType(java.lang.Integer)
         /// </summary>
-        public string GetNotificationType(int arg0)
+        public string GetNotificationType(int? arg0)
         {
             return IExecute<string>("getNotificationType", arg0);
         }
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#getDate(java.lang.Integer)
         /// </summary>
-        public Java.Util.Date GetDate(int arg0)
+        public Java.Util.Date GetDate(int? arg0)
         {
             return IExecute<Java.Util.Date>("getDate", arg0);
         }
@@ -189,7 +189,7 @@ namespace Javax.Management.Timer
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#removeNotification(java.lang.Integer) throws javax.management.InstanceNotFoundException
         /// </summary>
-        public void RemoveNotification(int arg0)
+        public void RemoveNotification(int? arg0)
         {
             IExecute("removeNotification", arg0);
         }
@@ -224,7 +224,7 @@ namespace Javax.Management.Timer
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/Timer.html#postRegister(java.lang.Boolean)
         /// </summary>
-        public void PostRegister(bool arg0)
+        public void PostRegister(bool? arg0)
         {
             IExecute("postRegister", arg0);
         }

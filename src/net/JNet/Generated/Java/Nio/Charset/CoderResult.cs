@@ -38,13 +38,13 @@ namespace Java.Nio.Charset
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CoderResult.html#UNDERFLOW
-        /// </summary>
-        public static Java.Nio.Charset.CoderResult UNDERFLOW => Clazz.GetField<Java.Nio.Charset.CoderResult>("UNDERFLOW");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CoderResult.html#OVERFLOW
         /// </summary>
         public static Java.Nio.Charset.CoderResult OVERFLOW => Clazz.GetField<Java.Nio.Charset.CoderResult>("OVERFLOW");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CoderResult.html#UNDERFLOW
+        /// </summary>
+        public static Java.Nio.Charset.CoderResult UNDERFLOW => Clazz.GetField<Java.Nio.Charset.CoderResult>("UNDERFLOW");
         
         #endregion
 

@@ -23,6 +23,22 @@
 
 namespace Javax.Security.Sasl
 {
+    #region AuthenticationException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/AuthenticationException.html
+    /// </summary>
+    public partial class AuthenticationException : Javax.Security.Sasl.SaslException
+    {
+        public AuthenticationException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.security.sasl.AuthenticationException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region AuthorizeCallback
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/AuthorizeCallback.html
@@ -58,48 +74,32 @@ namespace Javax.Security.Sasl
     }
     #endregion
 
-    #region SaslException
+    #region RealmCallback
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslException.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/RealmCallback.html
     /// </summary>
-    public partial class SaslException : Java.Io.IOException
-    {
-        public SaslException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.security.sasl.SaslException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region SaslClientFactory
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslClientFactory.html
-    /// </summary>
-    public partial class SaslClientFactory : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SaslClientFactory>
+    public partial class RealmCallback : Javax.Security.Auth.Callback.TextInputCallback
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public SaslClientFactory() { }
+        public RealmCallback() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public SaslClientFactory(params object[] args) : base(args) { }
+        public RealmCallback(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.security.sasl.SaslClientFactory";
+        public override string ClassName => "javax.security.sasl.RealmCallback";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
+        public override bool IsAbstract => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
         public override bool IsCloseable => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
+        public override bool IsInterface => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;
@@ -135,57 +135,6 @@ namespace Javax.Security.Sasl
 
         /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
         public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region AuthenticationException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/AuthenticationException.html
-    /// </summary>
-    public partial class AuthenticationException : Javax.Security.Sasl.SaslException
-    {
-        public AuthenticationException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.security.sasl.AuthenticationException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region SaslServer
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslServer.html
-    /// </summary>
-    public partial class SaslServer : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SaslServer>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public SaslServer() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public SaslServer(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.security.sasl.SaslServer";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;
@@ -265,32 +214,83 @@ namespace Javax.Security.Sasl
     }
     #endregion
 
-    #region RealmCallback
+    #region SaslClientFactory
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/RealmCallback.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslClientFactory.html
     /// </summary>
-    public partial class RealmCallback : Javax.Security.Auth.Callback.TextInputCallback
+    public partial class SaslClientFactory : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SaslClientFactory>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public RealmCallback() { }
+        public SaslClientFactory() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public RealmCallback(params object[] args) : base(args) { }
+        public SaslClientFactory(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.security.sasl.RealmCallback";
+        public override string ClassName => "javax.security.sasl.SaslClientFactory";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
+        public override bool IsAbstract => true;
 
         /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
         public override bool IsCloseable => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region SaslException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslException.html
+    /// </summary>
+    public partial class SaslException : Java.Io.IOException
+    {
+        public SaslException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.security.sasl.SaslException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region SaslServer
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslServer.html
+    /// </summary>
+    public partial class SaslServer : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SaslServer>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public SaslServer() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public SaslServer(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.security.sasl.SaslServer";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;

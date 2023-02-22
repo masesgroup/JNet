@@ -112,21 +112,21 @@ namespace Java.Awt
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BufferCapabilities.FlipContents.html#UNDEFINED
-            /// </summary>
-            public static Java.Awt.BufferCapabilities.FlipContents UNDEFINED => Clazz.GetField<Java.Awt.BufferCapabilities.FlipContents>("UNDEFINED");
-            /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BufferCapabilities.FlipContents.html#BACKGROUND
             /// </summary>
             public static Java.Awt.BufferCapabilities.FlipContents BACKGROUND => Clazz.GetField<Java.Awt.BufferCapabilities.FlipContents>("BACKGROUND");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BufferCapabilities.FlipContents.html#COPIED
+            /// </summary>
+            public static Java.Awt.BufferCapabilities.FlipContents COPIED => Clazz.GetField<Java.Awt.BufferCapabilities.FlipContents>("COPIED");
             /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BufferCapabilities.FlipContents.html#PRIOR
             /// </summary>
             public static Java.Awt.BufferCapabilities.FlipContents PRIOR => Clazz.GetField<Java.Awt.BufferCapabilities.FlipContents>("PRIOR");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BufferCapabilities.FlipContents.html#COPIED
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BufferCapabilities.FlipContents.html#UNDEFINED
             /// </summary>
-            public static Java.Awt.BufferCapabilities.FlipContents COPIED => Clazz.GetField<Java.Awt.BufferCapabilities.FlipContents>("COPIED");
+            public static Java.Awt.BufferCapabilities.FlipContents UNDEFINED => Clazz.GetField<Java.Awt.BufferCapabilities.FlipContents>("UNDEFINED");
             
             #endregion
 

@@ -30,16 +30,16 @@ namespace Java.Util.Jar
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.html#<init>(java.util.jar.Attributes)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.html#<init>(int)
         /// </summary>
-        public Attributes(Java.Util.Jar.Attributes arg0)
+        public Attributes(int arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.html#<init>(int)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.html#<init>(java.util.jar.Attributes)
         /// </summary>
-        public Attributes(int arg0)
+        public Attributes(Java.Util.Jar.Attributes arg0)
             : base(arg0)
         {
         }
@@ -161,29 +161,13 @@ namespace Java.Util.Jar
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#MANIFEST_VERSION
-            /// </summary>
-            public static Java.Util.Jar.Attributes.Name MANIFEST_VERSION => Clazz.GetField<Java.Util.Jar.Attributes.Name>("MANIFEST_VERSION");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#SIGNATURE_VERSION
-            /// </summary>
-            public static Java.Util.Jar.Attributes.Name SIGNATURE_VERSION => Clazz.GetField<Java.Util.Jar.Attributes.Name>("SIGNATURE_VERSION");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#CONTENT_TYPE
-            /// </summary>
-            public static Java.Util.Jar.Attributes.Name CONTENT_TYPE => Clazz.GetField<Java.Util.Jar.Attributes.Name>("CONTENT_TYPE");
-            /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#CLASS_PATH
             /// </summary>
             public static Java.Util.Jar.Attributes.Name CLASS_PATH => Clazz.GetField<Java.Util.Jar.Attributes.Name>("CLASS_PATH");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#MAIN_CLASS
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#CONTENT_TYPE
             /// </summary>
-            public static Java.Util.Jar.Attributes.Name MAIN_CLASS => Clazz.GetField<Java.Util.Jar.Attributes.Name>("MAIN_CLASS");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#SEALED
-            /// </summary>
-            public static Java.Util.Jar.Attributes.Name SEALED => Clazz.GetField<Java.Util.Jar.Attributes.Name>("SEALED");
+            public static Java.Util.Jar.Attributes.Name CONTENT_TYPE => Clazz.GetField<Java.Util.Jar.Attributes.Name>("CONTENT_TYPE");
             /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#EXTENSION_LIST
             /// </summary>
@@ -197,29 +181,45 @@ namespace Java.Util.Jar
             /// </summary>
             public static Java.Util.Jar.Attributes.Name IMPLEMENTATION_TITLE => Clazz.GetField<Java.Util.Jar.Attributes.Name>("IMPLEMENTATION_TITLE");
             /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#IMPLEMENTATION_VENDOR
+            /// </summary>
+            public static Java.Util.Jar.Attributes.Name IMPLEMENTATION_VENDOR => Clazz.GetField<Java.Util.Jar.Attributes.Name>("IMPLEMENTATION_VENDOR");
+            /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#IMPLEMENTATION_VERSION
             /// </summary>
             public static Java.Util.Jar.Attributes.Name IMPLEMENTATION_VERSION => Clazz.GetField<Java.Util.Jar.Attributes.Name>("IMPLEMENTATION_VERSION");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#IMPLEMENTATION_VENDOR
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#MAIN_CLASS
             /// </summary>
-            public static Java.Util.Jar.Attributes.Name IMPLEMENTATION_VENDOR => Clazz.GetField<Java.Util.Jar.Attributes.Name>("IMPLEMENTATION_VENDOR");
+            public static Java.Util.Jar.Attributes.Name MAIN_CLASS => Clazz.GetField<Java.Util.Jar.Attributes.Name>("MAIN_CLASS");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#MANIFEST_VERSION
+            /// </summary>
+            public static Java.Util.Jar.Attributes.Name MANIFEST_VERSION => Clazz.GetField<Java.Util.Jar.Attributes.Name>("MANIFEST_VERSION");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#MULTI_RELEASE
+            /// </summary>
+            public static Java.Util.Jar.Attributes.Name MULTI_RELEASE => Clazz.GetField<Java.Util.Jar.Attributes.Name>("MULTI_RELEASE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#SEALED
+            /// </summary>
+            public static Java.Util.Jar.Attributes.Name SEALED => Clazz.GetField<Java.Util.Jar.Attributes.Name>("SEALED");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#SIGNATURE_VERSION
+            /// </summary>
+            public static Java.Util.Jar.Attributes.Name SIGNATURE_VERSION => Clazz.GetField<Java.Util.Jar.Attributes.Name>("SIGNATURE_VERSION");
             /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#SPECIFICATION_TITLE
             /// </summary>
             public static Java.Util.Jar.Attributes.Name SPECIFICATION_TITLE => Clazz.GetField<Java.Util.Jar.Attributes.Name>("SPECIFICATION_TITLE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#SPECIFICATION_VERSION
-            /// </summary>
-            public static Java.Util.Jar.Attributes.Name SPECIFICATION_VERSION => Clazz.GetField<Java.Util.Jar.Attributes.Name>("SPECIFICATION_VERSION");
-            /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#SPECIFICATION_VENDOR
             /// </summary>
             public static Java.Util.Jar.Attributes.Name SPECIFICATION_VENDOR => Clazz.GetField<Java.Util.Jar.Attributes.Name>("SPECIFICATION_VENDOR");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#MULTI_RELEASE
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/Attributes.Name.html#SPECIFICATION_VERSION
             /// </summary>
-            public static Java.Util.Jar.Attributes.Name MULTI_RELEASE => Clazz.GetField<Java.Util.Jar.Attributes.Name>("MULTI_RELEASE");
+            public static Java.Util.Jar.Attributes.Name SPECIFICATION_VERSION => Clazz.GetField<Java.Util.Jar.Attributes.Name>("SPECIFICATION_VERSION");
             
             #endregion
 

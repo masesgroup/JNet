@@ -23,22 +23,6 @@
 
 namespace Org.W3c.Dom.Ranges
 {
-    #region RangeException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/RangeException.html
-    /// </summary>
-    public partial class RangeException : Java.Lang.RuntimeException
-    {
-        public RangeException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "org.w3c.dom.ranges.RangeException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
     #region DocumentRange
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/DocumentRange.html
@@ -103,6 +87,22 @@ namespace Org.W3c.Dom.Ranges
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region RangeException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ranges/RangeException.html
+    /// </summary>
+    public partial class RangeException : Java.Lang.RuntimeException
+    {
+        public RangeException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "org.w3c.dom.ranges.RangeException";
 
         // TODO: complete the class
 

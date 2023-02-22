@@ -42,13 +42,13 @@ namespace Java.Lang
         /// </summary>
         public static Java.Io.InputStream inField => Clazz.GetField<Java.Io.InputStream>("in");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#out
-        /// </summary>
-        public static Java.Io.PrintStream outField => Clazz.GetField<Java.Io.PrintStream>("out");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#err
         /// </summary>
         public static Java.Io.PrintStream err => Clazz.GetField<Java.Io.PrintStream>("err");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#out
+        /// </summary>
+        public static Java.Io.PrintStream outField => Clazz.GetField<Java.Io.PrintStream>("out");
         
         #endregion
 

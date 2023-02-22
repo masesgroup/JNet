@@ -23,58 +23,23 @@
 
 namespace Org.W3c.Dom.Stylesheets
 {
-    #region StyleSheet
+    #region DocumentStyle
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/stylesheets/StyleSheet.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/stylesheets/DocumentStyle.html
     /// </summary>
-    public partial class StyleSheet : MASES.JCOBridge.C2JBridge.JVMBridgeBase<StyleSheet>
+    public partial class DocumentStyle : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DocumentStyle>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public StyleSheet() { }
+        public DocumentStyle() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public StyleSheet(params object[] args) : base(args) { }
+        public DocumentStyle(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "org.w3c.dom.stylesheets.StyleSheet";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region MediaList
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/stylesheets/MediaList.html
-    /// </summary>
-    public partial class MediaList : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MediaList>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public MediaList() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public MediaList(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "org.w3c.dom.stylesheets.MediaList";
+        public override string ClassName => "org.w3c.dom.stylesheets.DocumentStyle";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -128,23 +93,23 @@ namespace Org.W3c.Dom.Stylesheets
     }
     #endregion
 
-    #region StyleSheetList
+    #region MediaList
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/stylesheets/StyleSheetList.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/stylesheets/MediaList.html
     /// </summary>
-    public partial class StyleSheetList : MASES.JCOBridge.C2JBridge.JVMBridgeBase<StyleSheetList>
+    public partial class MediaList : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MediaList>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public StyleSheetList() { }
+        public MediaList() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public StyleSheetList(params object[] args) : base(args) { }
+        public MediaList(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "org.w3c.dom.stylesheets.StyleSheetList";
+        public override string ClassName => "org.w3c.dom.stylesheets.MediaList";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -163,23 +128,58 @@ namespace Org.W3c.Dom.Stylesheets
     }
     #endregion
 
-    #region DocumentStyle
+    #region StyleSheet
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/stylesheets/DocumentStyle.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/stylesheets/StyleSheet.html
     /// </summary>
-    public partial class DocumentStyle : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DocumentStyle>
+    public partial class StyleSheet : MASES.JCOBridge.C2JBridge.JVMBridgeBase<StyleSheet>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public DocumentStyle() { }
+        public StyleSheet() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public DocumentStyle(params object[] args) : base(args) { }
+        public StyleSheet(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "org.w3c.dom.stylesheets.DocumentStyle";
+        public override string ClassName => "org.w3c.dom.stylesheets.StyleSheet";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region StyleSheetList
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/stylesheets/StyleSheetList.html
+    /// </summary>
+    public partial class StyleSheetList : MASES.JCOBridge.C2JBridge.JVMBridgeBase<StyleSheetList>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public StyleSheetList() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public StyleSheetList(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "org.w3c.dom.stylesheets.StyleSheetList";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;

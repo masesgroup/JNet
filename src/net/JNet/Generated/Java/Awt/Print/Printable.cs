@@ -38,13 +38,13 @@ namespace Java.Awt.Print
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Printable.html#PAGE_EXISTS
-        /// </summary>
-        public static int PAGE_EXISTS => Clazz.GetField<int>("PAGE_EXISTS");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Printable.html#NO_SUCH_PAGE
         /// </summary>
         public static int NO_SUCH_PAGE => Clazz.GetField<int>("NO_SUCH_PAGE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Printable.html#PAGE_EXISTS
+        /// </summary>
+        public static int PAGE_EXISTS => Clazz.GetField<int>("PAGE_EXISTS");
         
         #endregion
 

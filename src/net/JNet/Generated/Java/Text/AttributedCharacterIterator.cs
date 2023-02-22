@@ -99,6 +99,10 @@ namespace Java.Text
 
             #region Fields
             /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.Attribute.html#INPUT_METHOD_SEGMENT
+            /// </summary>
+            public static Java.Text.AttributedCharacterIterator.Attribute INPUT_METHOD_SEGMENT => Clazz.GetField<Java.Text.AttributedCharacterIterator.Attribute>("INPUT_METHOD_SEGMENT");
+            /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.Attribute.html#LANGUAGE
             /// </summary>
             public static Java.Text.AttributedCharacterIterator.Attribute LANGUAGE => Clazz.GetField<Java.Text.AttributedCharacterIterator.Attribute>("LANGUAGE");
@@ -106,10 +110,6 @@ namespace Java.Text
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.Attribute.html#READING
             /// </summary>
             public static Java.Text.AttributedCharacterIterator.Attribute READING => Clazz.GetField<Java.Text.AttributedCharacterIterator.Attribute>("READING");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.Attribute.html#INPUT_METHOD_SEGMENT
-            /// </summary>
-            public static Java.Text.AttributedCharacterIterator.Attribute INPUT_METHOD_SEGMENT => Clazz.GetField<Java.Text.AttributedCharacterIterator.Attribute>("INPUT_METHOD_SEGMENT");
             
             #endregion
 

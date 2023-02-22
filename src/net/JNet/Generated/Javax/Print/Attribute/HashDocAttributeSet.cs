@@ -30,9 +30,9 @@ namespace Javax.Print.Attribute
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/HashDocAttributeSet.html#<init>(javax.print.attribute.DocAttributeSet)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/HashDocAttributeSet.html#<init>(javax.print.attribute.DocAttribute)
         /// </summary>
-        public HashDocAttributeSet(Javax.Print.Attribute.DocAttributeSet arg0)
+        public HashDocAttributeSet(Javax.Print.Attribute.DocAttribute arg0)
             : base(arg0)
         {
         }
@@ -44,9 +44,9 @@ namespace Javax.Print.Attribute
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/HashDocAttributeSet.html#<init>(javax.print.attribute.DocAttribute)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/HashDocAttributeSet.html#<init>(javax.print.attribute.DocAttributeSet)
         /// </summary>
-        public HashDocAttributeSet(Javax.Print.Attribute.DocAttribute arg0)
+        public HashDocAttributeSet(Javax.Print.Attribute.DocAttributeSet arg0)
             : base(arg0)
         {
         }

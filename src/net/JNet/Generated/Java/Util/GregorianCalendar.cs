@@ -30,10 +30,10 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/GregorianCalendar.html#<init>(int,int,int)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/GregorianCalendar.html#<init>(int,int,int,int,int,int)
         /// </summary>
-        public GregorianCalendar(int arg0, int arg1, int arg2)
-            : base(arg0, arg1, arg2)
+        public GregorianCalendar(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5)
+            : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
         }
         /// <summary>
@@ -44,17 +44,10 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/GregorianCalendar.html#<init>(int,int,int,int,int,int)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/GregorianCalendar.html#<init>(int,int,int)
         /// </summary>
-        public GregorianCalendar(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5)
-            : base(arg0, arg1, arg2, arg3, arg4, arg5)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/GregorianCalendar.html#<init>(java.util.TimeZone)
-        /// </summary>
-        public GregorianCalendar(Java.Util.TimeZone arg0)
-            : base(arg0)
+        public GregorianCalendar(int arg0, int arg1, int arg2)
+            : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
@@ -71,6 +64,13 @@ namespace Java.Util
             : base(arg0, arg1)
         {
         }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/GregorianCalendar.html#<init>(java.util.TimeZone)
+        /// </summary>
+        public GregorianCalendar(Java.Util.TimeZone arg0)
+            : base(arg0)
+        {
+        }
         
         #endregion
 
@@ -80,13 +80,13 @@ namespace Java.Util
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/GregorianCalendar.html#BC
-        /// </summary>
-        public static int BC => Clazz.GetField<int>("BC");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/GregorianCalendar.html#AD
         /// </summary>
         public static int AD => Clazz.GetField<int>("AD");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/GregorianCalendar.html#BC
+        /// </summary>
+        public static int BC => Clazz.GetField<int>("BC");
         
         #endregion
 

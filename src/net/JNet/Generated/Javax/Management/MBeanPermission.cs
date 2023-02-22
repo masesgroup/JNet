@@ -30,17 +30,17 @@ namespace Javax.Management
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanPermission.html#<init>(java.lang.String,java.lang.String)
-        /// </summary>
-        public MBeanPermission(string arg0, string arg1)
-            : base(arg0, arg1)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanPermission.html#<init>(java.lang.String,java.lang.String,javax.management.ObjectName,java.lang.String)
         /// </summary>
         public MBeanPermission(string arg0, string arg1, Javax.Management.ObjectName arg2, string arg3)
             : base(arg0, arg1, arg2, arg3)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanPermission.html#<init>(java.lang.String,java.lang.String)
+        /// </summary>
+        public MBeanPermission(string arg0, string arg1)
+            : base(arg0, arg1)
         {
         }
         

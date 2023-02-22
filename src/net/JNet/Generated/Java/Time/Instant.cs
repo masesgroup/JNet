@@ -45,13 +45,13 @@ namespace Java.Time
         /// </summary>
         public static Java.Time.Instant EPOCH => Clazz.GetField<Java.Time.Instant>("EPOCH");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html#MIN
-        /// </summary>
-        public static Java.Time.Instant MIN => Clazz.GetField<Java.Time.Instant>("MIN");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html#MAX
         /// </summary>
         public static Java.Time.Instant MAX => Clazz.GetField<Java.Time.Instant>("MAX");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html#MIN
+        /// </summary>
+        public static Java.Time.Instant MIN => Clazz.GetField<Java.Time.Instant>("MIN");
         
         #endregion
 

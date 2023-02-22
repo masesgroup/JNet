@@ -30,17 +30,17 @@ namespace Org.Ietf.Jgss
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/ChannelBinding.html#<init>(java.net.InetAddress,java.net.InetAddress,byte[])
-        /// </summary>
-        public ChannelBinding(Java.Net.InetAddress arg0, Java.Net.InetAddress arg1, byte[] arg2)
-            : base(arg0, arg1, arg2)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/ChannelBinding.html#<init>(byte[])
         /// </summary>
         public ChannelBinding(byte[] arg0)
             : base(arg0)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/ChannelBinding.html#<init>(java.net.InetAddress,java.net.InetAddress,byte[])
+        /// </summary>
+        public ChannelBinding(Java.Net.InetAddress arg0, Java.Net.InetAddress arg1, byte[] arg2)
+            : base(arg0, arg1, arg2)
         {
         }
         

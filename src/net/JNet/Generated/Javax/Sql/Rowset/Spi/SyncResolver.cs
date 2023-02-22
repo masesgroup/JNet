@@ -39,10 +39,6 @@ namespace Javax.Sql.Rowset.Spi
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncResolver.html#UPDATE_ROW_CONFLICT
-        /// </summary>
-        public static int UPDATE_ROW_CONFLICT => Clazz.GetField<int>("UPDATE_ROW_CONFLICT");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncResolver.html#DELETE_ROW_CONFLICT
         /// </summary>
         public static int DELETE_ROW_CONFLICT => Clazz.GetField<int>("DELETE_ROW_CONFLICT");
@@ -54,6 +50,10 @@ namespace Javax.Sql.Rowset.Spi
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncResolver.html#NO_ROW_CONFLICT
         /// </summary>
         public static int NO_ROW_CONFLICT => Clazz.GetField<int>("NO_ROW_CONFLICT");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncResolver.html#UPDATE_ROW_CONFLICT
+        /// </summary>
+        public static int UPDATE_ROW_CONFLICT => Clazz.GetField<int>("UPDATE_ROW_CONFLICT");
         
         #endregion
 

@@ -30,17 +30,17 @@ namespace Java.Util.Jar
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarInputStream.html#<init>(java.io.InputStream) throws java.io.IOException
-        /// </summary>
-        public JarInputStream(Java.Io.InputStream arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarInputStream.html#<init>(java.io.InputStream,boolean) throws java.io.IOException
         /// </summary>
         public JarInputStream(Java.Io.InputStream arg0, bool arg1)
             : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/jar/JarInputStream.html#<init>(java.io.InputStream) throws java.io.IOException
+        /// </summary>
+        public JarInputStream(Java.Io.InputStream arg0)
+            : base(arg0)
         {
         }
         

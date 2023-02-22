@@ -38,10 +38,6 @@ namespace Java.Util
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#EMPTY_SET
-        /// </summary>
-        public static Java.Util.Set EMPTY_SET => Clazz.GetField<Java.Util.Set>("EMPTY_SET");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#EMPTY_LIST
         /// </summary>
         public static Java.Util.List EMPTY_LIST => Clazz.GetField<Java.Util.List>("EMPTY_LIST");
@@ -49,6 +45,10 @@ namespace Java.Util
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#EMPTY_MAP
         /// </summary>
         public static Java.Util.Map EMPTY_MAP => Clazz.GetField<Java.Util.Map>("EMPTY_MAP");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#EMPTY_SET
+        /// </summary>
+        public static Java.Util.Set EMPTY_SET => Clazz.GetField<Java.Util.Set>("EMPTY_SET");
         
         #endregion
 

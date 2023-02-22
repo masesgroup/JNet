@@ -48,9 +48,9 @@ namespace Javax.Swing.Filechooser
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileView.html#isTraversable(java.io.File)
         /// </summary>
-        public bool IsTraversable(Java.Io.File arg0)
+        public bool? IsTraversable(Java.Io.File arg0)
         {
-            return IExecute<bool>("isTraversable", arg0);
+            return IExecute<bool?>("isTraversable", arg0);
         }
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/filechooser/FileView.html#getDescription(java.io.File)

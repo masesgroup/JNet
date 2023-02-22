@@ -30,17 +30,17 @@ namespace Java.Awt
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dimension.html#<init>(java.awt.Dimension)
-        /// </summary>
-        public Dimension(Java.Awt.Dimension arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dimension.html#<init>(int,int)
         /// </summary>
         public Dimension(int arg0, int arg1)
             : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dimension.html#<init>(java.awt.Dimension)
+        /// </summary>
+        public Dimension(Java.Awt.Dimension arg0)
+            : base(arg0)
         {
         }
         
@@ -53,13 +53,13 @@ namespace Java.Awt
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dimension.html#width
-        /// </summary>
-        public int width => Instance.GetField<int>("width");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dimension.html#height
         /// </summary>
         public int height => Instance.GetField<int>("height");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Dimension.html#width
+        /// </summary>
+        public int width => Instance.GetField<int>("width");
         
         #endregion
 

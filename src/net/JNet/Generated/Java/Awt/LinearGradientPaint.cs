@@ -30,17 +30,17 @@ namespace Java.Awt
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/LinearGradientPaint.html#<init>(java.awt.geom.Point2D,java.awt.geom.Point2D,float[],java.awt.Color[])
-        /// </summary>
-        public LinearGradientPaint(Java.Awt.Geom.Point2D arg0, Java.Awt.Geom.Point2D arg1, float[] arg2, Java.Awt.Color[] arg3)
-            : base(arg0, arg1, arg2, arg3)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/LinearGradientPaint.html#<init>(float,float,float,float,float[],java.awt.Color[])
         /// </summary>
         public LinearGradientPaint(float arg0, float arg1, float arg2, float arg3, float[] arg4, Java.Awt.Color[] arg5)
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/LinearGradientPaint.html#<init>(java.awt.geom.Point2D,java.awt.geom.Point2D,float[],java.awt.Color[])
+        /// </summary>
+        public LinearGradientPaint(Java.Awt.Geom.Point2D arg0, Java.Awt.Geom.Point2D arg1, float[] arg2, Java.Awt.Color[] arg3)
+            : base(arg0, arg1, arg2, arg3)
         {
         }
         

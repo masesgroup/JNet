@@ -38,89 +38,21 @@ namespace Java.Net
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#HTTP_OK
-        /// </summary>
-        public static int HTTP_OK => Clazz.GetField<int>("HTTP_OK");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#HTTP_CREATED
-        /// </summary>
-        public static int HTTP_CREATED => Clazz.GetField<int>("HTTP_CREATED");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#HTTP_ACCEPTED
         /// </summary>
         public static int HTTP_ACCEPTED => Clazz.GetField<int>("HTTP_ACCEPTED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#HTTP_NOT_AUTHORITATIVE
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#HTTP_BAD_GATEWAY
         /// </summary>
-        public static int HTTP_NOT_AUTHORITATIVE => Clazz.GetField<int>("HTTP_NOT_AUTHORITATIVE");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#HTTP_NO_CONTENT
-        /// </summary>
-        public static int HTTP_NO_CONTENT => Clazz.GetField<int>("HTTP_NO_CONTENT");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#HTTP_RESET
-        /// </summary>
-        public static int HTTP_RESET => Clazz.GetField<int>("HTTP_RESET");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#HTTP_PARTIAL
-        /// </summary>
-        public static int HTTP_PARTIAL => Clazz.GetField<int>("HTTP_PARTIAL");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#HTTP_MULT_CHOICE
-        /// </summary>
-        public static int HTTP_MULT_CHOICE => Clazz.GetField<int>("HTTP_MULT_CHOICE");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#HTTP_MOVED_PERM
-        /// </summary>
-        public static int HTTP_MOVED_PERM => Clazz.GetField<int>("HTTP_MOVED_PERM");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#HTTP_MOVED_TEMP
-        /// </summary>
-        public static int HTTP_MOVED_TEMP => Clazz.GetField<int>("HTTP_MOVED_TEMP");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#HTTP_SEE_OTHER
-        /// </summary>
-        public static int HTTP_SEE_OTHER => Clazz.GetField<int>("HTTP_SEE_OTHER");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#HTTP_NOT_MODIFIED
-        /// </summary>
-        public static int HTTP_NOT_MODIFIED => Clazz.GetField<int>("HTTP_NOT_MODIFIED");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#HTTP_USE_PROXY
-        /// </summary>
-        public static int HTTP_USE_PROXY => Clazz.GetField<int>("HTTP_USE_PROXY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#HTTP_BAD_REQUEST
-        /// </summary>
-        public static int HTTP_BAD_REQUEST => Clazz.GetField<int>("HTTP_BAD_REQUEST");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#HTTP_UNAUTHORIZED
-        /// </summary>
-        public static int HTTP_UNAUTHORIZED => Clazz.GetField<int>("HTTP_UNAUTHORIZED");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#HTTP_PAYMENT_REQUIRED
-        /// </summary>
-        public static int HTTP_PAYMENT_REQUIRED => Clazz.GetField<int>("HTTP_PAYMENT_REQUIRED");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#HTTP_FORBIDDEN
-        /// </summary>
-        public static int HTTP_FORBIDDEN => Clazz.GetField<int>("HTTP_FORBIDDEN");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#HTTP_NOT_FOUND
-        /// </summary>
-        public static int HTTP_NOT_FOUND => Clazz.GetField<int>("HTTP_NOT_FOUND");
+        public static int HTTP_BAD_GATEWAY => Clazz.GetField<int>("HTTP_BAD_GATEWAY");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#HTTP_BAD_METHOD
         /// </summary>
         public static int HTTP_BAD_METHOD => Clazz.GetField<int>("HTTP_BAD_METHOD");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#HTTP_NOT_ACCEPTABLE
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#HTTP_BAD_REQUEST
         /// </summary>
-        public static int HTTP_NOT_ACCEPTABLE => Clazz.GetField<int>("HTTP_NOT_ACCEPTABLE");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#HTTP_PROXY_AUTH
-        /// </summary>
-        public static int HTTP_PROXY_AUTH => Clazz.GetField<int>("HTTP_PROXY_AUTH");
+        public static int HTTP_BAD_REQUEST => Clazz.GetField<int>("HTTP_BAD_REQUEST");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#HTTP_CLIENT_TIMEOUT
         /// </summary>
@@ -130,49 +62,117 @@ namespace Java.Net
         /// </summary>
         public static int HTTP_CONFLICT => Clazz.GetField<int>("HTTP_CONFLICT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#HTTP_GONE
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#HTTP_CREATED
         /// </summary>
-        public static int HTTP_GONE => Clazz.GetField<int>("HTTP_GONE");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#HTTP_LENGTH_REQUIRED
-        /// </summary>
-        public static int HTTP_LENGTH_REQUIRED => Clazz.GetField<int>("HTTP_LENGTH_REQUIRED");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#HTTP_PRECON_FAILED
-        /// </summary>
-        public static int HTTP_PRECON_FAILED => Clazz.GetField<int>("HTTP_PRECON_FAILED");
+        public static int HTTP_CREATED => Clazz.GetField<int>("HTTP_CREATED");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#HTTP_ENTITY_TOO_LARGE
         /// </summary>
         public static int HTTP_ENTITY_TOO_LARGE => Clazz.GetField<int>("HTTP_ENTITY_TOO_LARGE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#HTTP_REQ_TOO_LONG
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#HTTP_FORBIDDEN
         /// </summary>
-        public static int HTTP_REQ_TOO_LONG => Clazz.GetField<int>("HTTP_REQ_TOO_LONG");
+        public static int HTTP_FORBIDDEN => Clazz.GetField<int>("HTTP_FORBIDDEN");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#HTTP_UNSUPPORTED_TYPE
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#HTTP_GATEWAY_TIMEOUT
         /// </summary>
-        public static int HTTP_UNSUPPORTED_TYPE => Clazz.GetField<int>("HTTP_UNSUPPORTED_TYPE");
+        public static int HTTP_GATEWAY_TIMEOUT => Clazz.GetField<int>("HTTP_GATEWAY_TIMEOUT");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#HTTP_GONE
+        /// </summary>
+        public static int HTTP_GONE => Clazz.GetField<int>("HTTP_GONE");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#HTTP_INTERNAL_ERROR
         /// </summary>
         public static int HTTP_INTERNAL_ERROR => Clazz.GetField<int>("HTTP_INTERNAL_ERROR");
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#HTTP_LENGTH_REQUIRED
+        /// </summary>
+        public static int HTTP_LENGTH_REQUIRED => Clazz.GetField<int>("HTTP_LENGTH_REQUIRED");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#HTTP_MOVED_PERM
+        /// </summary>
+        public static int HTTP_MOVED_PERM => Clazz.GetField<int>("HTTP_MOVED_PERM");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#HTTP_MOVED_TEMP
+        /// </summary>
+        public static int HTTP_MOVED_TEMP => Clazz.GetField<int>("HTTP_MOVED_TEMP");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#HTTP_MULT_CHOICE
+        /// </summary>
+        public static int HTTP_MULT_CHOICE => Clazz.GetField<int>("HTTP_MULT_CHOICE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#HTTP_NO_CONTENT
+        /// </summary>
+        public static int HTTP_NO_CONTENT => Clazz.GetField<int>("HTTP_NO_CONTENT");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#HTTP_NOT_ACCEPTABLE
+        /// </summary>
+        public static int HTTP_NOT_ACCEPTABLE => Clazz.GetField<int>("HTTP_NOT_ACCEPTABLE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#HTTP_NOT_AUTHORITATIVE
+        /// </summary>
+        public static int HTTP_NOT_AUTHORITATIVE => Clazz.GetField<int>("HTTP_NOT_AUTHORITATIVE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#HTTP_NOT_FOUND
+        /// </summary>
+        public static int HTTP_NOT_FOUND => Clazz.GetField<int>("HTTP_NOT_FOUND");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#HTTP_NOT_IMPLEMENTED
         /// </summary>
         public static int HTTP_NOT_IMPLEMENTED => Clazz.GetField<int>("HTTP_NOT_IMPLEMENTED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#HTTP_BAD_GATEWAY
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#HTTP_NOT_MODIFIED
         /// </summary>
-        public static int HTTP_BAD_GATEWAY => Clazz.GetField<int>("HTTP_BAD_GATEWAY");
+        public static int HTTP_NOT_MODIFIED => Clazz.GetField<int>("HTTP_NOT_MODIFIED");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#HTTP_OK
+        /// </summary>
+        public static int HTTP_OK => Clazz.GetField<int>("HTTP_OK");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#HTTP_PARTIAL
+        /// </summary>
+        public static int HTTP_PARTIAL => Clazz.GetField<int>("HTTP_PARTIAL");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#HTTP_PAYMENT_REQUIRED
+        /// </summary>
+        public static int HTTP_PAYMENT_REQUIRED => Clazz.GetField<int>("HTTP_PAYMENT_REQUIRED");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#HTTP_PRECON_FAILED
+        /// </summary>
+        public static int HTTP_PRECON_FAILED => Clazz.GetField<int>("HTTP_PRECON_FAILED");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#HTTP_PROXY_AUTH
+        /// </summary>
+        public static int HTTP_PROXY_AUTH => Clazz.GetField<int>("HTTP_PROXY_AUTH");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#HTTP_REQ_TOO_LONG
+        /// </summary>
+        public static int HTTP_REQ_TOO_LONG => Clazz.GetField<int>("HTTP_REQ_TOO_LONG");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#HTTP_RESET
+        /// </summary>
+        public static int HTTP_RESET => Clazz.GetField<int>("HTTP_RESET");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#HTTP_SEE_OTHER
+        /// </summary>
+        public static int HTTP_SEE_OTHER => Clazz.GetField<int>("HTTP_SEE_OTHER");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#HTTP_UNAUTHORIZED
+        /// </summary>
+        public static int HTTP_UNAUTHORIZED => Clazz.GetField<int>("HTTP_UNAUTHORIZED");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#HTTP_UNAVAILABLE
         /// </summary>
         public static int HTTP_UNAVAILABLE => Clazz.GetField<int>("HTTP_UNAVAILABLE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#HTTP_GATEWAY_TIMEOUT
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#HTTP_UNSUPPORTED_TYPE
         /// </summary>
-        public static int HTTP_GATEWAY_TIMEOUT => Clazz.GetField<int>("HTTP_GATEWAY_TIMEOUT");
+        public static int HTTP_UNSUPPORTED_TYPE => Clazz.GetField<int>("HTTP_UNSUPPORTED_TYPE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#HTTP_USE_PROXY
+        /// </summary>
+        public static int HTTP_USE_PROXY => Clazz.GetField<int>("HTTP_USE_PROXY");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpURLConnection.html#HTTP_VERSION
         /// </summary>

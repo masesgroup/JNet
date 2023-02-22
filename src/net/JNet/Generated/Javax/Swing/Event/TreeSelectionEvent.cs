@@ -30,16 +30,16 @@ namespace Javax.Swing.Event
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeSelectionEvent.html#<init>(java.lang.Object,javax.swing.tree.TreePath[],boolean[],javax.swing.tree.TreePath,javax.swing.tree.TreePath)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeSelectionEvent.html#<init>(java.lang.Object,javax.swing.tree.TreePath,boolean,javax.swing.tree.TreePath,javax.swing.tree.TreePath)
         /// </summary>
-        public TreeSelectionEvent(object arg0, Javax.Swing.Tree.TreePath[] arg1, bool[] arg2, Javax.Swing.Tree.TreePath arg3, Javax.Swing.Tree.TreePath arg4)
+        public TreeSelectionEvent(object arg0, Javax.Swing.Tree.TreePath arg1, bool arg2, Javax.Swing.Tree.TreePath arg3, Javax.Swing.Tree.TreePath arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeSelectionEvent.html#<init>(java.lang.Object,javax.swing.tree.TreePath,boolean,javax.swing.tree.TreePath,javax.swing.tree.TreePath)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/TreeSelectionEvent.html#<init>(java.lang.Object,javax.swing.tree.TreePath[],boolean[],javax.swing.tree.TreePath,javax.swing.tree.TreePath)
         /// </summary>
-        public TreeSelectionEvent(object arg0, Javax.Swing.Tree.TreePath arg1, bool arg2, Javax.Swing.Tree.TreePath arg3, Javax.Swing.Tree.TreePath arg4)
+        public TreeSelectionEvent(object arg0, Javax.Swing.Tree.TreePath[] arg1, bool[] arg2, Javax.Swing.Tree.TreePath arg3, Javax.Swing.Tree.TreePath arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
         }

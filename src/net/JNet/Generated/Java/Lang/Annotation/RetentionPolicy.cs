@@ -38,10 +38,6 @@ namespace Java.Lang.Annotation
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/RetentionPolicy.html#SOURCE
-        /// </summary>
-        public static Java.Lang.Annotation.RetentionPolicy SOURCE => Clazz.GetField<Java.Lang.Annotation.RetentionPolicy>("SOURCE");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/RetentionPolicy.html#CLASS
         /// </summary>
         public static Java.Lang.Annotation.RetentionPolicy CLASS => Clazz.GetField<Java.Lang.Annotation.RetentionPolicy>("CLASS");
@@ -49,6 +45,10 @@ namespace Java.Lang.Annotation
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/RetentionPolicy.html#RUNTIME
         /// </summary>
         public static Java.Lang.Annotation.RetentionPolicy RUNTIME => Clazz.GetField<Java.Lang.Annotation.RetentionPolicy>("RUNTIME");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/RetentionPolicy.html#SOURCE
+        /// </summary>
+        public static Java.Lang.Annotation.RetentionPolicy SOURCE => Clazz.GetField<Java.Lang.Annotation.RetentionPolicy>("SOURCE");
         
         #endregion
 

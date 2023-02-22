@@ -132,41 +132,41 @@ namespace Javax.Sound.Sampled
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.Type.html#MASTER_GAIN
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.Type.html#AUX_RETURN
             /// </summary>
-            public static Javax.Sound.Sampled.FloatControl.Type MASTER_GAIN => Clazz.GetField<Javax.Sound.Sampled.FloatControl.Type>("MASTER_GAIN");
+            public static Javax.Sound.Sampled.FloatControl.Type AUX_RETURN => Clazz.GetField<Javax.Sound.Sampled.FloatControl.Type>("AUX_RETURN");
             /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.Type.html#AUX_SEND
             /// </summary>
             public static Javax.Sound.Sampled.FloatControl.Type AUX_SEND => Clazz.GetField<Javax.Sound.Sampled.FloatControl.Type>("AUX_SEND");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.Type.html#AUX_RETURN
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.Type.html#BALANCE
             /// </summary>
-            public static Javax.Sound.Sampled.FloatControl.Type AUX_RETURN => Clazz.GetField<Javax.Sound.Sampled.FloatControl.Type>("AUX_RETURN");
+            public static Javax.Sound.Sampled.FloatControl.Type BALANCE => Clazz.GetField<Javax.Sound.Sampled.FloatControl.Type>("BALANCE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.Type.html#REVERB_SEND
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.Type.html#MASTER_GAIN
             /// </summary>
-            public static Javax.Sound.Sampled.FloatControl.Type REVERB_SEND => Clazz.GetField<Javax.Sound.Sampled.FloatControl.Type>("REVERB_SEND");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.Type.html#REVERB_RETURN
-            /// </summary>
-            public static Javax.Sound.Sampled.FloatControl.Type REVERB_RETURN => Clazz.GetField<Javax.Sound.Sampled.FloatControl.Type>("REVERB_RETURN");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.Type.html#VOLUME
-            /// </summary>
-            public static Javax.Sound.Sampled.FloatControl.Type VOLUME => Clazz.GetField<Javax.Sound.Sampled.FloatControl.Type>("VOLUME");
+            public static Javax.Sound.Sampled.FloatControl.Type MASTER_GAIN => Clazz.GetField<Javax.Sound.Sampled.FloatControl.Type>("MASTER_GAIN");
             /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.Type.html#PAN
             /// </summary>
             public static Javax.Sound.Sampled.FloatControl.Type PAN => Clazz.GetField<Javax.Sound.Sampled.FloatControl.Type>("PAN");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.Type.html#BALANCE
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.Type.html#REVERB_RETURN
             /// </summary>
-            public static Javax.Sound.Sampled.FloatControl.Type BALANCE => Clazz.GetField<Javax.Sound.Sampled.FloatControl.Type>("BALANCE");
+            public static Javax.Sound.Sampled.FloatControl.Type REVERB_RETURN => Clazz.GetField<Javax.Sound.Sampled.FloatControl.Type>("REVERB_RETURN");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.Type.html#REVERB_SEND
+            /// </summary>
+            public static Javax.Sound.Sampled.FloatControl.Type REVERB_SEND => Clazz.GetField<Javax.Sound.Sampled.FloatControl.Type>("REVERB_SEND");
             /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.Type.html#SAMPLE_RATE
             /// </summary>
             public static Javax.Sound.Sampled.FloatControl.Type SAMPLE_RATE => Clazz.GetField<Javax.Sound.Sampled.FloatControl.Type>("SAMPLE_RATE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/FloatControl.Type.html#VOLUME
+            /// </summary>
+            public static Javax.Sound.Sampled.FloatControl.Type VOLUME => Clazz.GetField<Javax.Sound.Sampled.FloatControl.Type>("VOLUME");
             
             #endregion
 

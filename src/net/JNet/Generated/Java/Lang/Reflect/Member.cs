@@ -38,13 +38,13 @@ namespace Java.Lang.Reflect
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Member.html#PUBLIC
-        /// </summary>
-        public static int PUBLIC => Clazz.GetField<int>("PUBLIC");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Member.html#DECLARED
         /// </summary>
         public static int DECLARED => Clazz.GetField<int>("DECLARED");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Member.html#PUBLIC
+        /// </summary>
+        public static int PUBLIC => Clazz.GetField<int>("PUBLIC");
         
         #endregion
 

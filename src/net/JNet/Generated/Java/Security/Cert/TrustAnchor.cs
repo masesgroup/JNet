@@ -37,17 +37,17 @@ namespace Java.Security.Cert
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/TrustAnchor.html#<init>(javax.security.auth.x500.X500Principal,java.security.PublicKey,byte[])
-        /// </summary>
-        public TrustAnchor(Javax.Security.Auth.X500.X500Principal arg0, Java.Security.PublicKey arg1, byte[] arg2)
-            : base(arg0, arg1, arg2)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/TrustAnchor.html#<init>(java.security.cert.X509Certificate,byte[])
         /// </summary>
         public TrustAnchor(Java.Security.Cert.X509Certificate arg0, byte[] arg1)
             : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/TrustAnchor.html#<init>(javax.security.auth.x500.X500Principal,java.security.PublicKey,byte[])
+        /// </summary>
+        public TrustAnchor(Javax.Security.Auth.X500.X500Principal arg0, Java.Security.PublicKey arg1, byte[] arg2)
+            : base(arg0, arg1, arg2)
         {
         }
         

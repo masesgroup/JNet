@@ -40,33 +40,33 @@ namespace Java.Sql
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#CLOSE_CURRENT_RESULT
-        /// </summary>
-        public static int CLOSE_CURRENT_RESULT => Clazz.GetField<int>("CLOSE_CURRENT_RESULT");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#KEEP_CURRENT_RESULT
-        /// </summary>
-        public static int KEEP_CURRENT_RESULT => Clazz.GetField<int>("KEEP_CURRENT_RESULT");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#CLOSE_ALL_RESULTS
         /// </summary>
         public static int CLOSE_ALL_RESULTS => Clazz.GetField<int>("CLOSE_ALL_RESULTS");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#SUCCESS_NO_INFO
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#CLOSE_CURRENT_RESULT
         /// </summary>
-        public static int SUCCESS_NO_INFO => Clazz.GetField<int>("SUCCESS_NO_INFO");
+        public static int CLOSE_CURRENT_RESULT => Clazz.GetField<int>("CLOSE_CURRENT_RESULT");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#EXECUTE_FAILED
         /// </summary>
         public static int EXECUTE_FAILED => Clazz.GetField<int>("EXECUTE_FAILED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#RETURN_GENERATED_KEYS
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#KEEP_CURRENT_RESULT
         /// </summary>
-        public static int RETURN_GENERATED_KEYS => Clazz.GetField<int>("RETURN_GENERATED_KEYS");
+        public static int KEEP_CURRENT_RESULT => Clazz.GetField<int>("KEEP_CURRENT_RESULT");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#NO_GENERATED_KEYS
         /// </summary>
         public static int NO_GENERATED_KEYS => Clazz.GetField<int>("NO_GENERATED_KEYS");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#RETURN_GENERATED_KEYS
+        /// </summary>
+        public static int RETURN_GENERATED_KEYS => Clazz.GetField<int>("RETURN_GENERATED_KEYS");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#SUCCESS_NO_INFO
+        /// </summary>
+        public static int SUCCESS_NO_INFO => Clazz.GetField<int>("SUCCESS_NO_INFO");
         
         #endregion
 

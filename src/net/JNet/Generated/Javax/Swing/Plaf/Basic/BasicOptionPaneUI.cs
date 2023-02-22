@@ -38,13 +38,13 @@ namespace Javax.Swing.Plaf.Basic
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicOptionPaneUI.html#MinimumWidth
-        /// </summary>
-        public static int MinimumWidth => Clazz.GetField<int>("MinimumWidth");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicOptionPaneUI.html#MinimumHeight
         /// </summary>
         public static int MinimumHeight => Clazz.GetField<int>("MinimumHeight");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicOptionPaneUI.html#MinimumWidth
+        /// </summary>
+        public static int MinimumWidth => Clazz.GetField<int>("MinimumWidth");
         
         #endregion
 

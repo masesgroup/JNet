@@ -38,17 +38,17 @@ namespace Javax.Swing
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#SINGLE_SELECTION
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#MULTIPLE_INTERVAL_SELECTION
         /// </summary>
-        public static int SINGLE_SELECTION => Clazz.GetField<int>("SINGLE_SELECTION");
+        public static int MULTIPLE_INTERVAL_SELECTION => Clazz.GetField<int>("MULTIPLE_INTERVAL_SELECTION");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#SINGLE_INTERVAL_SELECTION
         /// </summary>
         public static int SINGLE_INTERVAL_SELECTION => Clazz.GetField<int>("SINGLE_INTERVAL_SELECTION");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#MULTIPLE_INTERVAL_SELECTION
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ListSelectionModel.html#SINGLE_SELECTION
         /// </summary>
-        public static int MULTIPLE_INTERVAL_SELECTION => Clazz.GetField<int>("MULTIPLE_INTERVAL_SELECTION");
+        public static int SINGLE_SELECTION => Clazz.GetField<int>("SINGLE_SELECTION");
         
         #endregion
 

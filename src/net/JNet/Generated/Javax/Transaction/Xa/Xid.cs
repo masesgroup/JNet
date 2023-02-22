@@ -38,13 +38,13 @@ namespace Javax.Transaction.Xa
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/Xid.html#MAXGTRIDSIZE
-        /// </summary>
-        public static int MAXGTRIDSIZE => Clazz.GetField<int>("MAXGTRIDSIZE");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/Xid.html#MAXBQUALSIZE
         /// </summary>
         public static int MAXBQUALSIZE => Clazz.GetField<int>("MAXBQUALSIZE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/Xid.html#MAXGTRIDSIZE
+        /// </summary>
+        public static int MAXGTRIDSIZE => Clazz.GetField<int>("MAXGTRIDSIZE");
         
         #endregion
 

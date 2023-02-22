@@ -59,49 +59,29 @@ namespace Javax.Sound.Midi
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/ShortMessage.html#MIDI_TIME_CODE
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/ShortMessage.html#ACTIVE_SENSING
         /// </summary>
-        public static int MIDI_TIME_CODE => Clazz.GetField<int>("MIDI_TIME_CODE");
+        public static int ACTIVE_SENSING => Clazz.GetField<int>("ACTIVE_SENSING");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/ShortMessage.html#SONG_POSITION_POINTER
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/ShortMessage.html#CHANNEL_PRESSURE
         /// </summary>
-        public static int SONG_POSITION_POINTER => Clazz.GetField<int>("SONG_POSITION_POINTER");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/ShortMessage.html#SONG_SELECT
-        /// </summary>
-        public static int SONG_SELECT => Clazz.GetField<int>("SONG_SELECT");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/ShortMessage.html#TUNE_REQUEST
-        /// </summary>
-        public static int TUNE_REQUEST => Clazz.GetField<int>("TUNE_REQUEST");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/ShortMessage.html#END_OF_EXCLUSIVE
-        /// </summary>
-        public static int END_OF_EXCLUSIVE => Clazz.GetField<int>("END_OF_EXCLUSIVE");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/ShortMessage.html#TIMING_CLOCK
-        /// </summary>
-        public static int TIMING_CLOCK => Clazz.GetField<int>("TIMING_CLOCK");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/ShortMessage.html#START
-        /// </summary>
-        public static int START => Clazz.GetField<int>("START");
+        public static int CHANNEL_PRESSURE => Clazz.GetField<int>("CHANNEL_PRESSURE");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/ShortMessage.html#CONTINUE
         /// </summary>
         public static int CONTINUE => Clazz.GetField<int>("CONTINUE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/ShortMessage.html#STOP
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/ShortMessage.html#CONTROL_CHANGE
         /// </summary>
-        public static int STOP => Clazz.GetField<int>("STOP");
+        public static int CONTROL_CHANGE => Clazz.GetField<int>("CONTROL_CHANGE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/ShortMessage.html#ACTIVE_SENSING
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/ShortMessage.html#END_OF_EXCLUSIVE
         /// </summary>
-        public static int ACTIVE_SENSING => Clazz.GetField<int>("ACTIVE_SENSING");
+        public static int END_OF_EXCLUSIVE => Clazz.GetField<int>("END_OF_EXCLUSIVE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/ShortMessage.html#SYSTEM_RESET
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/ShortMessage.html#MIDI_TIME_CODE
         /// </summary>
-        public static int SYSTEM_RESET => Clazz.GetField<int>("SYSTEM_RESET");
+        public static int MIDI_TIME_CODE => Clazz.GetField<int>("MIDI_TIME_CODE");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/ShortMessage.html#NOTE_OFF
         /// </summary>
@@ -111,25 +91,45 @@ namespace Javax.Sound.Midi
         /// </summary>
         public static int NOTE_ON => Clazz.GetField<int>("NOTE_ON");
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/ShortMessage.html#PITCH_BEND
+        /// </summary>
+        public static int PITCH_BEND => Clazz.GetField<int>("PITCH_BEND");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/ShortMessage.html#POLY_PRESSURE
         /// </summary>
         public static int POLY_PRESSURE => Clazz.GetField<int>("POLY_PRESSURE");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/ShortMessage.html#CONTROL_CHANGE
-        /// </summary>
-        public static int CONTROL_CHANGE => Clazz.GetField<int>("CONTROL_CHANGE");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/ShortMessage.html#PROGRAM_CHANGE
         /// </summary>
         public static int PROGRAM_CHANGE => Clazz.GetField<int>("PROGRAM_CHANGE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/ShortMessage.html#CHANNEL_PRESSURE
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/ShortMessage.html#SONG_POSITION_POINTER
         /// </summary>
-        public static int CHANNEL_PRESSURE => Clazz.GetField<int>("CHANNEL_PRESSURE");
+        public static int SONG_POSITION_POINTER => Clazz.GetField<int>("SONG_POSITION_POINTER");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/ShortMessage.html#PITCH_BEND
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/ShortMessage.html#SONG_SELECT
         /// </summary>
-        public static int PITCH_BEND => Clazz.GetField<int>("PITCH_BEND");
+        public static int SONG_SELECT => Clazz.GetField<int>("SONG_SELECT");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/ShortMessage.html#START
+        /// </summary>
+        public static int START => Clazz.GetField<int>("START");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/ShortMessage.html#STOP
+        /// </summary>
+        public static int STOP => Clazz.GetField<int>("STOP");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/ShortMessage.html#SYSTEM_RESET
+        /// </summary>
+        public static int SYSTEM_RESET => Clazz.GetField<int>("SYSTEM_RESET");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/ShortMessage.html#TIMING_CLOCK
+        /// </summary>
+        public static int TIMING_CLOCK => Clazz.GetField<int>("TIMING_CLOCK");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/ShortMessage.html#TUNE_REQUEST
+        /// </summary>
+        public static int TUNE_REQUEST => Clazz.GetField<int>("TUNE_REQUEST");
         
         #endregion
 

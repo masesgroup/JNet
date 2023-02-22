@@ -40,13 +40,13 @@ namespace Javax.Swing.Text
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#FOCUS_ACCELERATOR_KEY
-        /// </summary>
-        public static string FOCUS_ACCELERATOR_KEY => Clazz.GetField<string>("FOCUS_ACCELERATOR_KEY");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#DEFAULT_KEYMAP
         /// </summary>
         public static string DEFAULT_KEYMAP => Clazz.GetField<string>("DEFAULT_KEYMAP");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.html#FOCUS_ACCELERATOR_KEY
+        /// </summary>
+        public static string FOCUS_ACCELERATOR_KEY => Clazz.GetField<string>("FOCUS_ACCELERATOR_KEY");
         
         #endregion
 
@@ -727,13 +727,13 @@ namespace Javax.Swing.Text
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.KeyBinding.html#key
-            /// </summary>
-            public Javax.Swing.KeyStroke key => Instance.GetField<Javax.Swing.KeyStroke>("key");
-            /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.KeyBinding.html#actionName
             /// </summary>
             public string actionName => Instance.GetField<string>("actionName");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/JTextComponent.KeyBinding.html#key
+            /// </summary>
+            public Javax.Swing.KeyStroke key => Instance.GetField<Javax.Swing.KeyStroke>("key");
             
             #endregion
 

@@ -30,10 +30,10 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#<init>(java.io.File) throws java.io.FileNotFoundException
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#<init>(java.io.File,java.lang.String,java.util.Locale) throws java.io.FileNotFoundException,java.io.UnsupportedEncodingException
         /// </summary>
-        public Formatter(Java.Io.File arg0)
-            : base(arg0)
+        public Formatter(Java.Io.File arg0, string arg1, Java.Util.Locale arg2)
+            : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
@@ -44,24 +44,17 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#<init>(java.io.File,java.lang.String,java.util.Locale) throws java.io.FileNotFoundException,java.io.UnsupportedEncodingException
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#<init>(java.io.File,java.nio.charset.Charset,java.util.Locale) throws java.io.IOException
         /// </summary>
-        public Formatter(Java.Io.File arg0, string arg1, Java.Util.Locale arg2)
+        public Formatter(Java.Io.File arg0, Java.Nio.Charset.Charset arg1, Java.Util.Locale arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#<init>(java.lang.String,java.nio.charset.Charset,java.util.Locale) throws java.io.IOException
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#<init>(java.io.File) throws java.io.FileNotFoundException
         /// </summary>
-        public Formatter(string arg0, Java.Nio.Charset.Charset arg1, Java.Util.Locale arg2)
-            : base(arg0, arg1, arg2)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#<init>(java.lang.String,java.lang.String,java.util.Locale) throws java.io.FileNotFoundException,java.io.UnsupportedEncodingException
-        /// </summary>
-        public Formatter(string arg0, string arg1, Java.Util.Locale arg2)
-            : base(arg0, arg1, arg2)
+        public Formatter(Java.Io.File arg0)
+            : base(arg0)
         {
         }
         /// <summary>
@@ -86,6 +79,13 @@ namespace Java.Util
         {
         }
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#<init>(java.io.OutputStream)
+        /// </summary>
+        public Formatter(Java.Io.OutputStream arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#<init>(java.io.PrintStream)
         /// </summary>
         public Formatter(Java.Io.PrintStream arg0)
@@ -93,10 +93,10 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#<init>(java.io.File,java.nio.charset.Charset,java.util.Locale) throws java.io.IOException
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#<init>(java.lang.Appendable,java.util.Locale)
         /// </summary>
-        public Formatter(Java.Io.File arg0, Java.Nio.Charset.Charset arg1, Java.Util.Locale arg2)
-            : base(arg0, arg1, arg2)
+        public Formatter(Java.Lang.Appendable arg0, Java.Util.Locale arg1)
+            : base(arg0, arg1)
         {
         }
         /// <summary>
@@ -107,10 +107,10 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#<init>(java.io.OutputStream)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#<init>(java.lang.String,java.lang.String,java.util.Locale) throws java.io.FileNotFoundException,java.io.UnsupportedEncodingException
         /// </summary>
-        public Formatter(Java.Io.OutputStream arg0)
-            : base(arg0)
+        public Formatter(string arg0, string arg1, Java.Util.Locale arg2)
+            : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
@@ -121,17 +121,17 @@ namespace Java.Util
         {
         }
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#<init>(java.lang.String,java.nio.charset.Charset,java.util.Locale) throws java.io.IOException
+        /// </summary>
+        public Formatter(string arg0, Java.Nio.Charset.Charset arg1, Java.Util.Locale arg2)
+            : base(arg0, arg1, arg2)
+        {
+        }
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#<init>(java.lang.String) throws java.io.FileNotFoundException
         /// </summary>
         public Formatter(string arg0)
             : base(arg0)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#<init>(java.lang.Appendable,java.util.Locale)
-        /// </summary>
-        public Formatter(Java.Lang.Appendable arg0, Java.Util.Locale arg1)
-            : base(arg0, arg1)
         {
         }
         /// <summary>
@@ -225,13 +225,13 @@ namespace Java.Util
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.BigDecimalLayoutForm.html#SCIENTIFIC
-            /// </summary>
-            public static Java.Util.Formatter.BigDecimalLayoutForm SCIENTIFIC => Clazz.GetField<Java.Util.Formatter.BigDecimalLayoutForm>("SCIENTIFIC");
-            /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.BigDecimalLayoutForm.html#DECIMAL_FLOAT
             /// </summary>
             public static Java.Util.Formatter.BigDecimalLayoutForm DECIMAL_FLOAT => Clazz.GetField<Java.Util.Formatter.BigDecimalLayoutForm>("DECIMAL_FLOAT");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.BigDecimalLayoutForm.html#SCIENTIFIC
+            /// </summary>
+            public static Java.Util.Formatter.BigDecimalLayoutForm SCIENTIFIC => Clazz.GetField<Java.Util.Formatter.BigDecimalLayoutForm>("SCIENTIFIC");
             
             #endregion
 

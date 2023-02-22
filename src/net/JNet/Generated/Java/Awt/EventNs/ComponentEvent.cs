@@ -49,6 +49,10 @@ namespace Java.Awt.EventNs
         /// </summary>
         public static int COMPONENT_FIRST => Clazz.GetField<int>("COMPONENT_FIRST");
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentEvent.html#COMPONENT_HIDDEN
+        /// </summary>
+        public static int COMPONENT_HIDDEN => Clazz.GetField<int>("COMPONENT_HIDDEN");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentEvent.html#COMPONENT_LAST
         /// </summary>
         public static int COMPONENT_LAST => Clazz.GetField<int>("COMPONENT_LAST");
@@ -64,10 +68,6 @@ namespace Java.Awt.EventNs
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentEvent.html#COMPONENT_SHOWN
         /// </summary>
         public static int COMPONENT_SHOWN => Clazz.GetField<int>("COMPONENT_SHOWN");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentEvent.html#COMPONENT_HIDDEN
-        /// </summary>
-        public static int COMPONENT_HIDDEN => Clazz.GetField<int>("COMPONENT_HIDDEN");
         
         #endregion
 

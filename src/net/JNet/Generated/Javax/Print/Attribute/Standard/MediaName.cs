@@ -39,21 +39,21 @@ namespace Javax.Print.Attribute.Standard
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaName.html#NA_LETTER_WHITE
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaName.html#ISO_A4_TRANSPARENT
         /// </summary>
-        public static Javax.Print.Attribute.Standard.MediaName NA_LETTER_WHITE => Clazz.GetField<Javax.Print.Attribute.Standard.MediaName>("NA_LETTER_WHITE");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaName.html#NA_LETTER_TRANSPARENT
-        /// </summary>
-        public static Javax.Print.Attribute.Standard.MediaName NA_LETTER_TRANSPARENT => Clazz.GetField<Javax.Print.Attribute.Standard.MediaName>("NA_LETTER_TRANSPARENT");
+        public static Javax.Print.Attribute.Standard.MediaName ISO_A4_TRANSPARENT => Clazz.GetField<Javax.Print.Attribute.Standard.MediaName>("ISO_A4_TRANSPARENT");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaName.html#ISO_A4_WHITE
         /// </summary>
         public static Javax.Print.Attribute.Standard.MediaName ISO_A4_WHITE => Clazz.GetField<Javax.Print.Attribute.Standard.MediaName>("ISO_A4_WHITE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaName.html#ISO_A4_TRANSPARENT
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaName.html#NA_LETTER_TRANSPARENT
         /// </summary>
-        public static Javax.Print.Attribute.Standard.MediaName ISO_A4_TRANSPARENT => Clazz.GetField<Javax.Print.Attribute.Standard.MediaName>("ISO_A4_TRANSPARENT");
+        public static Javax.Print.Attribute.Standard.MediaName NA_LETTER_TRANSPARENT => Clazz.GetField<Javax.Print.Attribute.Standard.MediaName>("NA_LETTER_TRANSPARENT");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/MediaName.html#NA_LETTER_WHITE
+        /// </summary>
+        public static Javax.Print.Attribute.Standard.MediaName NA_LETTER_WHITE => Clazz.GetField<Javax.Print.Attribute.Standard.MediaName>("NA_LETTER_WHITE");
         
         #endregion
 

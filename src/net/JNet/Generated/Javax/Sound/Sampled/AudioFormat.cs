@@ -30,17 +30,17 @@ namespace Javax.Sound.Sampled
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.html#<init>(javax.sound.sampled.AudioFormat$Encoding,float,int,int,int,float,boolean)
-        /// </summary>
-        public AudioFormat(Javax.Sound.Sampled.AudioFormat.Encoding arg0, float arg1, int arg2, int arg3, int arg4, float arg5, bool arg6)
-            : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.html#<init>(float,int,int,boolean,boolean)
         /// </summary>
         public AudioFormat(float arg0, int arg1, int arg2, bool arg3, bool arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.html#<init>(javax.sound.sampled.AudioFormat$Encoding,float,int,int,int,float,boolean)
+        /// </summary>
+        public AudioFormat(Javax.Sound.Sampled.AudioFormat.Encoding arg0, float arg1, int arg2, int arg3, int arg4, float arg5, bool arg6)
+            : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
         {
         }
         
@@ -146,6 +146,14 @@ namespace Javax.Sound.Sampled
 
             #region Fields
             /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.Encoding.html#ALAW
+            /// </summary>
+            public static Javax.Sound.Sampled.AudioFormat.Encoding ALAW => Clazz.GetField<Javax.Sound.Sampled.AudioFormat.Encoding>("ALAW");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.Encoding.html#PCM_FLOAT
+            /// </summary>
+            public static Javax.Sound.Sampled.AudioFormat.Encoding PCM_FLOAT => Clazz.GetField<Javax.Sound.Sampled.AudioFormat.Encoding>("PCM_FLOAT");
+            /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.Encoding.html#PCM_SIGNED
             /// </summary>
             public static Javax.Sound.Sampled.AudioFormat.Encoding PCM_SIGNED => Clazz.GetField<Javax.Sound.Sampled.AudioFormat.Encoding>("PCM_SIGNED");
@@ -154,17 +162,9 @@ namespace Javax.Sound.Sampled
             /// </summary>
             public static Javax.Sound.Sampled.AudioFormat.Encoding PCM_UNSIGNED => Clazz.GetField<Javax.Sound.Sampled.AudioFormat.Encoding>("PCM_UNSIGNED");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.Encoding.html#PCM_FLOAT
-            /// </summary>
-            public static Javax.Sound.Sampled.AudioFormat.Encoding PCM_FLOAT => Clazz.GetField<Javax.Sound.Sampled.AudioFormat.Encoding>("PCM_FLOAT");
-            /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.Encoding.html#ULAW
             /// </summary>
             public static Javax.Sound.Sampled.AudioFormat.Encoding ULAW => Clazz.GetField<Javax.Sound.Sampled.AudioFormat.Encoding>("ULAW");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/AudioFormat.Encoding.html#ALAW
-            /// </summary>
-            public static Javax.Sound.Sampled.AudioFormat.Encoding ALAW => Clazz.GetField<Javax.Sound.Sampled.AudioFormat.Encoding>("ALAW");
             
             #endregion
 

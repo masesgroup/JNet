@@ -41,13 +41,13 @@ namespace Javax.Print.Attribute.Standard
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Chromaticity.html#MONOCHROME
-        /// </summary>
-        public static Javax.Print.Attribute.Standard.Chromaticity MONOCHROME => Clazz.GetField<Javax.Print.Attribute.Standard.Chromaticity>("MONOCHROME");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Chromaticity.html#COLOR
         /// </summary>
         public static Javax.Print.Attribute.Standard.Chromaticity COLOR => Clazz.GetField<Javax.Print.Attribute.Standard.Chromaticity>("COLOR");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/standard/Chromaticity.html#MONOCHROME
+        /// </summary>
+        public static Javax.Print.Attribute.Standard.Chromaticity MONOCHROME => Clazz.GetField<Javax.Print.Attribute.Standard.Chromaticity>("MONOCHROME");
         
         #endregion
 

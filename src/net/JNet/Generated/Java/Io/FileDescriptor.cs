@@ -38,6 +38,10 @@ namespace Java.Io
 
         #region Fields
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileDescriptor.html#err
+        /// </summary>
+        public static Java.Io.FileDescriptor err => Clazz.GetField<Java.Io.FileDescriptor>("err");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileDescriptor.html#in
         /// </summary>
         public static Java.Io.FileDescriptor inField => Clazz.GetField<Java.Io.FileDescriptor>("in");
@@ -45,10 +49,6 @@ namespace Java.Io
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileDescriptor.html#out
         /// </summary>
         public static Java.Io.FileDescriptor outField => Clazz.GetField<Java.Io.FileDescriptor>("out");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileDescriptor.html#err
-        /// </summary>
-        public static Java.Io.FileDescriptor err => Clazz.GetField<Java.Io.FileDescriptor>("err");
         
         #endregion
 

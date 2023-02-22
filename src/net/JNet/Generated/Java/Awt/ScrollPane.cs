@@ -46,13 +46,13 @@ namespace Java.Awt
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ScrollPane.html#SCROLLBARS_AS_NEEDED
-        /// </summary>
-        public static int SCROLLBARS_AS_NEEDED => Clazz.GetField<int>("SCROLLBARS_AS_NEEDED");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ScrollPane.html#SCROLLBARS_ALWAYS
         /// </summary>
         public static int SCROLLBARS_ALWAYS => Clazz.GetField<int>("SCROLLBARS_ALWAYS");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ScrollPane.html#SCROLLBARS_AS_NEEDED
+        /// </summary>
+        public static int SCROLLBARS_AS_NEEDED => Clazz.GetField<int>("SCROLLBARS_AS_NEEDED");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/ScrollPane.html#SCROLLBARS_NEVER
         /// </summary>

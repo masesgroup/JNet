@@ -132,25 +132,25 @@ namespace Java.Awt
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.State.html#OFF
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.State.html#ERROR
             /// </summary>
-            public static Java.Awt.Taskbar.State OFF => Clazz.GetField<Java.Awt.Taskbar.State>("OFF");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.State.html#NORMAL
-            /// </summary>
-            public static Java.Awt.Taskbar.State NORMAL => Clazz.GetField<Java.Awt.Taskbar.State>("NORMAL");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.State.html#PAUSED
-            /// </summary>
-            public static Java.Awt.Taskbar.State PAUSED => Clazz.GetField<Java.Awt.Taskbar.State>("PAUSED");
+            public static Java.Awt.Taskbar.State ERROR => Clazz.GetField<Java.Awt.Taskbar.State>("ERROR");
             /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.State.html#INDETERMINATE
             /// </summary>
             public static Java.Awt.Taskbar.State INDETERMINATE => Clazz.GetField<Java.Awt.Taskbar.State>("INDETERMINATE");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.State.html#ERROR
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.State.html#NORMAL
             /// </summary>
-            public static Java.Awt.Taskbar.State ERROR => Clazz.GetField<Java.Awt.Taskbar.State>("ERROR");
+            public static Java.Awt.Taskbar.State NORMAL => Clazz.GetField<Java.Awt.Taskbar.State>("NORMAL");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.State.html#OFF
+            /// </summary>
+            public static Java.Awt.Taskbar.State OFF => Clazz.GetField<Java.Awt.Taskbar.State>("OFF");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.State.html#PAUSED
+            /// </summary>
+            public static Java.Awt.Taskbar.State PAUSED => Clazz.GetField<Java.Awt.Taskbar.State>("PAUSED");
             
             #endregion
 
@@ -186,17 +186,17 @@ namespace Java.Awt
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.Feature.html#ICON_BADGE_TEXT
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.Feature.html#ICON_BADGE_IMAGE_WINDOW
             /// </summary>
-            public static Java.Awt.Taskbar.Feature ICON_BADGE_TEXT => Clazz.GetField<Java.Awt.Taskbar.Feature>("ICON_BADGE_TEXT");
+            public static Java.Awt.Taskbar.Feature ICON_BADGE_IMAGE_WINDOW => Clazz.GetField<Java.Awt.Taskbar.Feature>("ICON_BADGE_IMAGE_WINDOW");
             /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.Feature.html#ICON_BADGE_NUMBER
             /// </summary>
             public static Java.Awt.Taskbar.Feature ICON_BADGE_NUMBER => Clazz.GetField<Java.Awt.Taskbar.Feature>("ICON_BADGE_NUMBER");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.Feature.html#ICON_BADGE_IMAGE_WINDOW
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.Feature.html#ICON_BADGE_TEXT
             /// </summary>
-            public static Java.Awt.Taskbar.Feature ICON_BADGE_IMAGE_WINDOW => Clazz.GetField<Java.Awt.Taskbar.Feature>("ICON_BADGE_IMAGE_WINDOW");
+            public static Java.Awt.Taskbar.Feature ICON_BADGE_TEXT => Clazz.GetField<Java.Awt.Taskbar.Feature>("ICON_BADGE_TEXT");
             /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.Feature.html#ICON_IMAGE
             /// </summary>

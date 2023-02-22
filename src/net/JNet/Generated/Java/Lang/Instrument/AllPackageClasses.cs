@@ -58,6 +58,57 @@ namespace Java.Lang.Instrument
     }
     #endregion
 
+    #region ClassFileTransformer
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/ClassFileTransformer.html
+    /// </summary>
+    public partial class ClassFileTransformer : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ClassFileTransformer>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public ClassFileTransformer() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public ClassFileTransformer(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.lang.instrument.ClassFileTransformer";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region IllegalClassFormatException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/IllegalClassFormatException.html
+    /// </summary>
+    public partial class IllegalClassFormatException : Java.Lang.Exception
+    {
+        public IllegalClassFormatException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "java.lang.instrument.IllegalClassFormatException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region Instrumentation
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html
@@ -109,41 +160,6 @@ namespace Java.Lang.Instrument
     }
     #endregion
 
-    #region ClassFileTransformer
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/ClassFileTransformer.html
-    /// </summary>
-    public partial class ClassFileTransformer : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ClassFileTransformer>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public ClassFileTransformer() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public ClassFileTransformer(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.lang.instrument.ClassFileTransformer";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
     #region UnmodifiableModuleException
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/UnmodifiableModuleException.html
@@ -154,22 +170,6 @@ namespace Java.Lang.Instrument
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
         public override string ClassName => "java.lang.instrument.UnmodifiableModuleException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region IllegalClassFormatException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/IllegalClassFormatException.html
-    /// </summary>
-    public partial class IllegalClassFormatException : Java.Lang.Exception
-    {
-        public IllegalClassFormatException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "java.lang.instrument.IllegalClassFormatException";
 
         // TODO: complete the class
 

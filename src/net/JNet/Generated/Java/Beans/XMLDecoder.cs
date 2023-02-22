@@ -30,13 +30,6 @@ namespace Java.Beans
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLDecoder.html#<init>(org.xml.sax.InputSource)
-        /// </summary>
-        public XMLDecoder(Org.Xml.Sax.InputSource arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLDecoder.html#<init>(java.io.InputStream,java.lang.Object,java.beans.ExceptionListener,java.lang.ClassLoader)
         /// </summary>
         public XMLDecoder(Java.Io.InputStream arg0, object arg1, Java.Beans.ExceptionListener arg2, Java.Lang.ClassLoader arg3)
@@ -44,10 +37,10 @@ namespace Java.Beans
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLDecoder.html#<init>(java.io.InputStream)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLDecoder.html#<init>(java.io.InputStream,java.lang.Object,java.beans.ExceptionListener)
         /// </summary>
-        public XMLDecoder(Java.Io.InputStream arg0)
-            : base(arg0)
+        public XMLDecoder(Java.Io.InputStream arg0, object arg1, Java.Beans.ExceptionListener arg2)
+            : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
@@ -58,10 +51,17 @@ namespace Java.Beans
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLDecoder.html#<init>(java.io.InputStream,java.lang.Object,java.beans.ExceptionListener)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLDecoder.html#<init>(java.io.InputStream)
         /// </summary>
-        public XMLDecoder(Java.Io.InputStream arg0, object arg1, Java.Beans.ExceptionListener arg2)
-            : base(arg0, arg1, arg2)
+        public XMLDecoder(Java.Io.InputStream arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLDecoder.html#<init>(org.xml.sax.InputSource)
+        /// </summary>
+        public XMLDecoder(Org.Xml.Sax.InputSource arg0)
+            : base(arg0)
         {
         }
         

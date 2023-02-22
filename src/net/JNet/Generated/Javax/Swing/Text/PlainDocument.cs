@@ -45,13 +45,13 @@ namespace Javax.Swing.Text
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/PlainDocument.html#tabSizeAttribute
-        /// </summary>
-        public static string tabSizeAttribute => Clazz.GetField<string>("tabSizeAttribute");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/PlainDocument.html#lineLimitAttribute
         /// </summary>
         public static string lineLimitAttribute => Clazz.GetField<string>("lineLimitAttribute");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/PlainDocument.html#tabSizeAttribute
+        /// </summary>
+        public static string tabSizeAttribute => Clazz.GetField<string>("tabSizeAttribute");
         
         #endregion
 

@@ -38,6 +38,10 @@ namespace Javax.Lang.Model.Type
 
         #region Fields
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#ARRAY
+        /// </summary>
+        public static Javax.Lang.Model.Type.TypeKind ARRAY => Clazz.GetField<Javax.Lang.Model.Type.TypeKind>("ARRAY");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#BOOLEAN
         /// </summary>
         public static Javax.Lang.Model.Type.TypeKind BOOLEAN => Clazz.GetField<Javax.Lang.Model.Type.TypeKind>("BOOLEAN");
@@ -46,33 +50,45 @@ namespace Javax.Lang.Model.Type
         /// </summary>
         public static Javax.Lang.Model.Type.TypeKind BYTE => Clazz.GetField<Javax.Lang.Model.Type.TypeKind>("BYTE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#SHORT
-        /// </summary>
-        public static Javax.Lang.Model.Type.TypeKind SHORT => Clazz.GetField<Javax.Lang.Model.Type.TypeKind>("SHORT");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#INT
-        /// </summary>
-        public static Javax.Lang.Model.Type.TypeKind INT => Clazz.GetField<Javax.Lang.Model.Type.TypeKind>("INT");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#LONG
-        /// </summary>
-        public static Javax.Lang.Model.Type.TypeKind LONG => Clazz.GetField<Javax.Lang.Model.Type.TypeKind>("LONG");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#CHAR
         /// </summary>
         public static Javax.Lang.Model.Type.TypeKind CHAR => Clazz.GetField<Javax.Lang.Model.Type.TypeKind>("CHAR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#FLOAT
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#DECLARED
         /// </summary>
-        public static Javax.Lang.Model.Type.TypeKind FLOAT => Clazz.GetField<Javax.Lang.Model.Type.TypeKind>("FLOAT");
+        public static Javax.Lang.Model.Type.TypeKind DECLARED => Clazz.GetField<Javax.Lang.Model.Type.TypeKind>("DECLARED");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#DOUBLE
         /// </summary>
         public static Javax.Lang.Model.Type.TypeKind DOUBLE => Clazz.GetField<Javax.Lang.Model.Type.TypeKind>("DOUBLE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#VOID
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#ERROR
         /// </summary>
-        public static Javax.Lang.Model.Type.TypeKind VOID => Clazz.GetField<Javax.Lang.Model.Type.TypeKind>("VOID");
+        public static Javax.Lang.Model.Type.TypeKind ERROR => Clazz.GetField<Javax.Lang.Model.Type.TypeKind>("ERROR");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#EXECUTABLE
+        /// </summary>
+        public static Javax.Lang.Model.Type.TypeKind EXECUTABLE => Clazz.GetField<Javax.Lang.Model.Type.TypeKind>("EXECUTABLE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#FLOAT
+        /// </summary>
+        public static Javax.Lang.Model.Type.TypeKind FLOAT => Clazz.GetField<Javax.Lang.Model.Type.TypeKind>("FLOAT");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#INT
+        /// </summary>
+        public static Javax.Lang.Model.Type.TypeKind INT => Clazz.GetField<Javax.Lang.Model.Type.TypeKind>("INT");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#INTERSECTION
+        /// </summary>
+        public static Javax.Lang.Model.Type.TypeKind INTERSECTION => Clazz.GetField<Javax.Lang.Model.Type.TypeKind>("INTERSECTION");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#LONG
+        /// </summary>
+        public static Javax.Lang.Model.Type.TypeKind LONG => Clazz.GetField<Javax.Lang.Model.Type.TypeKind>("LONG");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#MODULE
+        /// </summary>
+        public static Javax.Lang.Model.Type.TypeKind MODULE => Clazz.GetField<Javax.Lang.Model.Type.TypeKind>("MODULE");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#NONE
         /// </summary>
@@ -82,49 +98,33 @@ namespace Javax.Lang.Model.Type
         /// </summary>
         public static Javax.Lang.Model.Type.TypeKind NULL => Clazz.GetField<Javax.Lang.Model.Type.TypeKind>("NULL");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#ARRAY
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#OTHER
         /// </summary>
-        public static Javax.Lang.Model.Type.TypeKind ARRAY => Clazz.GetField<Javax.Lang.Model.Type.TypeKind>("ARRAY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#DECLARED
-        /// </summary>
-        public static Javax.Lang.Model.Type.TypeKind DECLARED => Clazz.GetField<Javax.Lang.Model.Type.TypeKind>("DECLARED");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#ERROR
-        /// </summary>
-        public static Javax.Lang.Model.Type.TypeKind ERROR => Clazz.GetField<Javax.Lang.Model.Type.TypeKind>("ERROR");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#TYPEVAR
-        /// </summary>
-        public static Javax.Lang.Model.Type.TypeKind TYPEVAR => Clazz.GetField<Javax.Lang.Model.Type.TypeKind>("TYPEVAR");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#WILDCARD
-        /// </summary>
-        public static Javax.Lang.Model.Type.TypeKind WILDCARD => Clazz.GetField<Javax.Lang.Model.Type.TypeKind>("WILDCARD");
+        public static Javax.Lang.Model.Type.TypeKind OTHER => Clazz.GetField<Javax.Lang.Model.Type.TypeKind>("OTHER");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#PACKAGE
         /// </summary>
         public static Javax.Lang.Model.Type.TypeKind PACKAGE => Clazz.GetField<Javax.Lang.Model.Type.TypeKind>("PACKAGE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#EXECUTABLE
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#SHORT
         /// </summary>
-        public static Javax.Lang.Model.Type.TypeKind EXECUTABLE => Clazz.GetField<Javax.Lang.Model.Type.TypeKind>("EXECUTABLE");
+        public static Javax.Lang.Model.Type.TypeKind SHORT => Clazz.GetField<Javax.Lang.Model.Type.TypeKind>("SHORT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#OTHER
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#TYPEVAR
         /// </summary>
-        public static Javax.Lang.Model.Type.TypeKind OTHER => Clazz.GetField<Javax.Lang.Model.Type.TypeKind>("OTHER");
+        public static Javax.Lang.Model.Type.TypeKind TYPEVAR => Clazz.GetField<Javax.Lang.Model.Type.TypeKind>("TYPEVAR");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#UNION
         /// </summary>
         public static Javax.Lang.Model.Type.TypeKind UNION => Clazz.GetField<Javax.Lang.Model.Type.TypeKind>("UNION");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#INTERSECTION
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#VOID
         /// </summary>
-        public static Javax.Lang.Model.Type.TypeKind INTERSECTION => Clazz.GetField<Javax.Lang.Model.Type.TypeKind>("INTERSECTION");
+        public static Javax.Lang.Model.Type.TypeKind VOID => Clazz.GetField<Javax.Lang.Model.Type.TypeKind>("VOID");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#MODULE
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeKind.html#WILDCARD
         /// </summary>
-        public static Javax.Lang.Model.Type.TypeKind MODULE => Clazz.GetField<Javax.Lang.Model.Type.TypeKind>("MODULE");
+        public static Javax.Lang.Model.Type.TypeKind WILDCARD => Clazz.GetField<Javax.Lang.Model.Type.TypeKind>("WILDCARD");
         
         #endregion
 

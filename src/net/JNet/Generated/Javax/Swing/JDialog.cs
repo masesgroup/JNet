@@ -30,10 +30,10 @@ namespace Javax.Swing
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#<init>(java.awt.Window)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#<init>(java.awt.Dialog,boolean)
         /// </summary>
-        public JDialog(Java.Awt.Window arg0)
-            : base(arg0)
+        public JDialog(Java.Awt.Dialog arg0, bool arg1)
+            : base(arg0, arg1)
         {
         }
         /// <summary>
@@ -58,17 +58,10 @@ namespace Javax.Swing
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#<init>(java.awt.Window,java.lang.String)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#<init>(java.awt.Dialog)
         /// </summary>
-        public JDialog(Java.Awt.Window arg0, string arg1)
-            : base(arg0, arg1)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#<init>(java.awt.Frame,java.lang.String)
-        /// </summary>
-        public JDialog(Java.Awt.Frame arg0, string arg1)
-            : base(arg0, arg1)
+        public JDialog(Java.Awt.Dialog arg0)
+            : base(arg0)
         {
         }
         /// <summary>
@@ -76,27 +69,6 @@ namespace Javax.Swing
         /// </summary>
         public JDialog(Java.Awt.Frame arg0, bool arg1)
             : base(arg0, arg1)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#<init>(java.awt.Frame)
-        /// </summary>
-        public JDialog(Java.Awt.Frame arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#<init>(java.awt.Dialog,boolean)
-        /// </summary>
-        public JDialog(Java.Awt.Dialog arg0, bool arg1)
-            : base(arg0, arg1)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#<init>(java.awt.Dialog)
-        /// </summary>
-        public JDialog(Java.Awt.Dialog arg0)
-            : base(arg0)
         {
         }
         /// <summary>
@@ -111,6 +83,34 @@ namespace Javax.Swing
         /// </summary>
         public JDialog(Java.Awt.Frame arg0, string arg1, bool arg2)
             : base(arg0, arg1, arg2)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#<init>(java.awt.Frame,java.lang.String)
+        /// </summary>
+        public JDialog(Java.Awt.Frame arg0, string arg1)
+            : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#<init>(java.awt.Frame)
+        /// </summary>
+        public JDialog(Java.Awt.Frame arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#<init>(java.awt.Window,java.lang.String)
+        /// </summary>
+        public JDialog(Java.Awt.Window arg0, string arg1)
+            : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JDialog.html#<init>(java.awt.Window)
+        /// </summary>
+        public JDialog(Java.Awt.Window arg0)
+            : base(arg0)
         {
         }
         

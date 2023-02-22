@@ -30,20 +30,6 @@ namespace Javax.Naming.Directory
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/SearchResult.html#<init>(java.lang.String,java.lang.String,java.lang.Object,javax.naming.directory.Attributes,boolean)
-        /// </summary>
-        public SearchResult(string arg0, string arg1, object arg2, Javax.Naming.Directory.Attributes arg3, bool arg4)
-            : base(arg0, arg1, arg2, arg3, arg4)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/SearchResult.html#<init>(java.lang.String,java.lang.String,java.lang.Object,javax.naming.directory.Attributes)
-        /// </summary>
-        public SearchResult(string arg0, string arg1, object arg2, Javax.Naming.Directory.Attributes arg3)
-            : base(arg0, arg1, arg2, arg3)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/SearchResult.html#<init>(java.lang.String,java.lang.Object,javax.naming.directory.Attributes,boolean)
         /// </summary>
         public SearchResult(string arg0, object arg1, Javax.Naming.Directory.Attributes arg2, bool arg3)
@@ -55,6 +41,20 @@ namespace Javax.Naming.Directory
         /// </summary>
         public SearchResult(string arg0, object arg1, Javax.Naming.Directory.Attributes arg2)
             : base(arg0, arg1, arg2)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/SearchResult.html#<init>(java.lang.String,java.lang.String,java.lang.Object,javax.naming.directory.Attributes,boolean)
+        /// </summary>
+        public SearchResult(string arg0, string arg1, object arg2, Javax.Naming.Directory.Attributes arg3, bool arg4)
+            : base(arg0, arg1, arg2, arg3, arg4)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/SearchResult.html#<init>(java.lang.String,java.lang.String,java.lang.Object,javax.naming.directory.Attributes)
+        /// </summary>
+        public SearchResult(string arg0, string arg1, object arg2, Javax.Naming.Directory.Attributes arg3)
+            : base(arg0, arg1, arg2, arg3)
         {
         }
         

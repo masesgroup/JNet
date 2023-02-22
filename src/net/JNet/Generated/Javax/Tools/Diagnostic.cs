@@ -126,10 +126,6 @@ namespace Javax.Tools
             /// </summary>
             public static Javax.Tools.Diagnostic.Kind ERROR => Clazz.GetField<Javax.Tools.Diagnostic.Kind>("ERROR");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.Kind.html#WARNING
-            /// </summary>
-            public static Javax.Tools.Diagnostic.Kind WARNING => Clazz.GetField<Javax.Tools.Diagnostic.Kind>("WARNING");
-            /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.Kind.html#MANDATORY_WARNING
             /// </summary>
             public static Javax.Tools.Diagnostic.Kind MANDATORY_WARNING => Clazz.GetField<Javax.Tools.Diagnostic.Kind>("MANDATORY_WARNING");
@@ -141,6 +137,10 @@ namespace Javax.Tools
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.Kind.html#OTHER
             /// </summary>
             public static Javax.Tools.Diagnostic.Kind OTHER => Clazz.GetField<Javax.Tools.Diagnostic.Kind>("OTHER");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/Diagnostic.Kind.html#WARNING
+            /// </summary>
+            public static Javax.Tools.Diagnostic.Kind WARNING => Clazz.GetField<Javax.Tools.Diagnostic.Kind>("WARNING");
             
             #endregion
 

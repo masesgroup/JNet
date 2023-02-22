@@ -70,6 +70,14 @@ namespace Java.Awt.Geom
 
             #region Fields
             /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Ellipse2D.Double.html#height
+            /// </summary>
+            public double height => Instance.GetField<double>("height");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Ellipse2D.Double.html#width
+            /// </summary>
+            public double width => Instance.GetField<double>("width");
+            /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Ellipse2D.Double.html#x
             /// </summary>
             public double x => Instance.GetField<double>("x");
@@ -77,14 +85,6 @@ namespace Java.Awt.Geom
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Ellipse2D.Double.html#y
             /// </summary>
             public double y => Instance.GetField<double>("y");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Ellipse2D.Double.html#width
-            /// </summary>
-            public double width => Instance.GetField<double>("width");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Ellipse2D.Double.html#height
-            /// </summary>
-            public double height => Instance.GetField<double>("height");
             
             #endregion
 
@@ -121,6 +121,14 @@ namespace Java.Awt.Geom
 
             #region Fields
             /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Ellipse2D.Float.html#height
+            /// </summary>
+            public float height => Instance.GetField<float>("height");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Ellipse2D.Float.html#width
+            /// </summary>
+            public float width => Instance.GetField<float>("width");
+            /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Ellipse2D.Float.html#x
             /// </summary>
             public float x => Instance.GetField<float>("x");
@@ -128,14 +136,6 @@ namespace Java.Awt.Geom
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Ellipse2D.Float.html#y
             /// </summary>
             public float y => Instance.GetField<float>("y");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Ellipse2D.Float.html#width
-            /// </summary>
-            public float width => Instance.GetField<float>("width");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Ellipse2D.Float.html#height
-            /// </summary>
-            public float height => Instance.GetField<float>("height");
             
             #endregion
 

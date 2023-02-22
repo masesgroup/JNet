@@ -30,10 +30,38 @@ namespace Javax.Smartcardio
     {
         #region Constructors
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CommandAPDU.html#<init>(byte[],int,int)
+        /// </summary>
+        public CommandAPDU(byte[] arg0, int arg1, int arg2)
+            : base(arg0, arg1, arg2)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CommandAPDU.html#<init>(byte[])
+        /// </summary>
+        public CommandAPDU(byte[] arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CommandAPDU.html#<init>(int,int,int,int,byte[],int,int,int)
+        /// </summary>
+        public CommandAPDU(int arg0, int arg1, int arg2, int arg3, byte[] arg4, int arg5, int arg6, int arg7)
+            : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7)
+        {
+        }
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CommandAPDU.html#<init>(int,int,int,int,byte[],int,int)
         /// </summary>
         public CommandAPDU(int arg0, int arg1, int arg2, int arg3, byte[] arg4, int arg5, int arg6)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CommandAPDU.html#<init>(int,int,int,int,byte[],int)
+        /// </summary>
+        public CommandAPDU(int arg0, int arg1, int arg2, int arg3, byte[] arg4, int arg5)
+            : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
         }
         /// <summary>
@@ -51,31 +79,10 @@ namespace Javax.Smartcardio
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CommandAPDU.html#<init>(int,int,int,int,byte[],int)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CommandAPDU.html#<init>(int,int,int,int)
         /// </summary>
-        public CommandAPDU(int arg0, int arg1, int arg2, int arg3, byte[] arg4, int arg5)
-            : base(arg0, arg1, arg2, arg3, arg4, arg5)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CommandAPDU.html#<init>(int,int,int,int,byte[],int,int,int)
-        /// </summary>
-        public CommandAPDU(int arg0, int arg1, int arg2, int arg3, byte[] arg4, int arg5, int arg6, int arg7)
-            : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CommandAPDU.html#<init>(byte[])
-        /// </summary>
-        public CommandAPDU(byte[] arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CommandAPDU.html#<init>(byte[],int,int)
-        /// </summary>
-        public CommandAPDU(byte[] arg0, int arg1, int arg2)
-            : base(arg0, arg1, arg2)
+        public CommandAPDU(int arg0, int arg1, int arg2, int arg3)
+            : base(arg0, arg1, arg2, arg3)
         {
         }
         /// <summary>
@@ -83,13 +90,6 @@ namespace Javax.Smartcardio
         /// </summary>
         public CommandAPDU(Java.Nio.ByteBuffer arg0)
             : base(arg0)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/CommandAPDU.html#<init>(int,int,int,int)
-        /// </summary>
-        public CommandAPDU(int arg0, int arg1, int arg2, int arg3)
-            : base(arg0, arg1, arg2, arg3)
         {
         }
         

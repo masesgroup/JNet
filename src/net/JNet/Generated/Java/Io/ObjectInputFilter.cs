@@ -49,61 +49,6 @@ namespace Java.Io
         #endregion
 
         #region Nested classes
-        #region FilterInfo
-        public partial class FilterInfo
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.FilterInfo.html#arrayLength()
-            /// </summary>
-            public long ArrayLength()
-            {
-                return IExecute<long>("arrayLength");
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.FilterInfo.html#depth()
-            /// </summary>
-            public long Depth()
-            {
-                return IExecute<long>("depth");
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.FilterInfo.html#references()
-            /// </summary>
-            public long References()
-            {
-                return IExecute<long>("references");
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.FilterInfo.html#streamBytes()
-            /// </summary>
-            public long StreamBytes()
-            {
-                return IExecute<long>("streamBytes");
-            }
-            
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region Status
         public partial class Status
         {
@@ -117,10 +62,6 @@ namespace Java.Io
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.Status.html#UNDECIDED
-            /// </summary>
-            public static Java.Io.ObjectInputFilter.Status UNDECIDED => Clazz.GetField<Java.Io.ObjectInputFilter.Status>("UNDECIDED");
-            /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.Status.html#ALLOWED
             /// </summary>
             public static Java.Io.ObjectInputFilter.Status ALLOWED => Clazz.GetField<Java.Io.ObjectInputFilter.Status>("ALLOWED");
@@ -128,6 +69,10 @@ namespace Java.Io
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.Status.html#REJECTED
             /// </summary>
             public static Java.Io.ObjectInputFilter.Status REJECTED => Clazz.GetField<Java.Io.ObjectInputFilter.Status>("REJECTED");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.Status.html#UNDECIDED
+            /// </summary>
+            public static Java.Io.ObjectInputFilter.Status UNDECIDED => Clazz.GetField<Java.Io.ObjectInputFilter.Status>("UNDECIDED");
             
             #endregion
 
@@ -185,6 +130,61 @@ namespace Java.Io
 
             #region Instance methods
 
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region FilterInfo
+        public partial class FilterInfo
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.FilterInfo.html#arrayLength()
+            /// </summary>
+            public long ArrayLength()
+            {
+                return IExecute<long>("arrayLength");
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.FilterInfo.html#depth()
+            /// </summary>
+            public long Depth()
+            {
+                return IExecute<long>("depth");
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.FilterInfo.html#references()
+            /// </summary>
+            public long References()
+            {
+                return IExecute<long>("references");
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.FilterInfo.html#streamBytes()
+            /// </summary>
+            public long StreamBytes()
+            {
+                return IExecute<long>("streamBytes");
+            }
+            
             #endregion
 
             // TODO: complete the class

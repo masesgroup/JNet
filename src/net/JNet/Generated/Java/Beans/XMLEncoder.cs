@@ -30,17 +30,17 @@ namespace Java.Beans
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLEncoder.html#<init>(java.io.OutputStream)
-        /// </summary>
-        public XMLEncoder(Java.Io.OutputStream arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLEncoder.html#<init>(java.io.OutputStream,java.lang.String,boolean,int)
         /// </summary>
         public XMLEncoder(Java.Io.OutputStream arg0, string arg1, bool arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/XMLEncoder.html#<init>(java.io.OutputStream)
+        /// </summary>
+        public XMLEncoder(Java.Io.OutputStream arg0)
+            : base(arg0)
         {
         }
         

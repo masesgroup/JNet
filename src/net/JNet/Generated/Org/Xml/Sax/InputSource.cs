@@ -30,16 +30,16 @@ namespace Org.Xml.Sax
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/InputSource.html#<init>(java.io.Reader)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/InputSource.html#<init>(java.io.InputStream)
         /// </summary>
-        public InputSource(Java.Io.Reader arg0)
+        public InputSource(Java.Io.InputStream arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/InputSource.html#<init>(java.io.InputStream)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/InputSource.html#<init>(java.io.Reader)
         /// </summary>
-        public InputSource(Java.Io.InputStream arg0)
+        public InputSource(Java.Io.Reader arg0)
             : base(arg0)
         {
         }

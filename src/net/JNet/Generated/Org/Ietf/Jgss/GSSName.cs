@@ -38,13 +38,17 @@ namespace Org.Ietf.Jgss
 
         #region Fields
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#NT_ANONYMOUS
+        /// </summary>
+        public static Org.Ietf.Jgss.Oid NT_ANONYMOUS => Clazz.GetField<Org.Ietf.Jgss.Oid>("NT_ANONYMOUS");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#NT_EXPORT_NAME
+        /// </summary>
+        public static Org.Ietf.Jgss.Oid NT_EXPORT_NAME => Clazz.GetField<Org.Ietf.Jgss.Oid>("NT_EXPORT_NAME");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#NT_HOSTBASED_SERVICE
         /// </summary>
         public static Org.Ietf.Jgss.Oid NT_HOSTBASED_SERVICE => Clazz.GetField<Org.Ietf.Jgss.Oid>("NT_HOSTBASED_SERVICE");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#NT_USER_NAME
-        /// </summary>
-        public static Org.Ietf.Jgss.Oid NT_USER_NAME => Clazz.GetField<Org.Ietf.Jgss.Oid>("NT_USER_NAME");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#NT_MACHINE_UID_NAME
         /// </summary>
@@ -54,13 +58,9 @@ namespace Org.Ietf.Jgss
         /// </summary>
         public static Org.Ietf.Jgss.Oid NT_STRING_UID_NAME => Clazz.GetField<Org.Ietf.Jgss.Oid>("NT_STRING_UID_NAME");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#NT_ANONYMOUS
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#NT_USER_NAME
         /// </summary>
-        public static Org.Ietf.Jgss.Oid NT_ANONYMOUS => Clazz.GetField<Org.Ietf.Jgss.Oid>("NT_ANONYMOUS");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSName.html#NT_EXPORT_NAME
-        /// </summary>
-        public static Org.Ietf.Jgss.Oid NT_EXPORT_NAME => Clazz.GetField<Org.Ietf.Jgss.Oid>("NT_EXPORT_NAME");
+        public static Org.Ietf.Jgss.Oid NT_USER_NAME => Clazz.GetField<Org.Ietf.Jgss.Oid>("NT_USER_NAME");
         
         #endregion
 

@@ -63,9 +63,9 @@ namespace Javax.Tools
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileObject.Kind.html#SOURCE
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileObject.Kind.html#extension
             /// </summary>
-            public static Javax.Tools.JavaFileObject.Kind SOURCE => Clazz.GetField<Javax.Tools.JavaFileObject.Kind>("SOURCE");
+            public string extension => Instance.GetField<string>("extension");
             /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileObject.Kind.html#CLASS
             /// </summary>
@@ -79,9 +79,9 @@ namespace Javax.Tools
             /// </summary>
             public static Javax.Tools.JavaFileObject.Kind OTHER => Clazz.GetField<Javax.Tools.JavaFileObject.Kind>("OTHER");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileObject.Kind.html#extension
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/JavaFileObject.Kind.html#SOURCE
             /// </summary>
-            public string extension => Instance.GetField<string>("extension");
+            public static Javax.Tools.JavaFileObject.Kind SOURCE => Clazz.GetField<Javax.Tools.JavaFileObject.Kind>("SOURCE");
             
             #endregion
 

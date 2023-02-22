@@ -30,30 +30,9 @@ namespace Java.Io
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileWriter.html#<init>(java.io.FileDescriptor)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileWriter.html#<init>(java.io.File,boolean) throws java.io.IOException
         /// </summary>
-        public FileWriter(Java.Io.FileDescriptor arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileWriter.html#<init>(java.lang.String,java.nio.charset.Charset) throws java.io.IOException
-        /// </summary>
-        public FileWriter(string arg0, Java.Nio.Charset.Charset arg1)
-            : base(arg0, arg1)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileWriter.html#<init>(java.lang.String,java.nio.charset.Charset,boolean) throws java.io.IOException
-        /// </summary>
-        public FileWriter(string arg0, Java.Nio.Charset.Charset arg1, bool arg2)
-            : base(arg0, arg1, arg2)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileWriter.html#<init>(java.io.File,java.nio.charset.Charset) throws java.io.IOException
-        /// </summary>
-        public FileWriter(Java.Io.File arg0, Java.Nio.Charset.Charset arg1)
+        public FileWriter(Java.Io.File arg0, bool arg1)
             : base(arg0, arg1)
         {
         }
@@ -65,16 +44,9 @@ namespace Java.Io
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileWriter.html#<init>(java.lang.String) throws java.io.IOException
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileWriter.html#<init>(java.io.File,java.nio.charset.Charset) throws java.io.IOException
         /// </summary>
-        public FileWriter(string arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileWriter.html#<init>(java.lang.String,boolean) throws java.io.IOException
-        /// </summary>
-        public FileWriter(string arg0, bool arg1)
+        public FileWriter(Java.Io.File arg0, Java.Nio.Charset.Charset arg1)
             : base(arg0, arg1)
         {
         }
@@ -86,10 +58,38 @@ namespace Java.Io
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileWriter.html#<init>(java.io.File,boolean) throws java.io.IOException
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileWriter.html#<init>(java.io.FileDescriptor)
         /// </summary>
-        public FileWriter(Java.Io.File arg0, bool arg1)
+        public FileWriter(Java.Io.FileDescriptor arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileWriter.html#<init>(java.lang.String,boolean) throws java.io.IOException
+        /// </summary>
+        public FileWriter(string arg0, bool arg1)
             : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileWriter.html#<init>(java.lang.String,java.nio.charset.Charset,boolean) throws java.io.IOException
+        /// </summary>
+        public FileWriter(string arg0, Java.Nio.Charset.Charset arg1, bool arg2)
+            : base(arg0, arg1, arg2)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileWriter.html#<init>(java.lang.String,java.nio.charset.Charset) throws java.io.IOException
+        /// </summary>
+        public FileWriter(string arg0, Java.Nio.Charset.Charset arg1)
+            : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileWriter.html#<init>(java.lang.String) throws java.io.IOException
+        /// </summary>
+        public FileWriter(string arg0)
+            : base(arg0)
         {
         }
         

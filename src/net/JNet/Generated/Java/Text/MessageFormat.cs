@@ -30,17 +30,17 @@ namespace Java.Text
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#<init>(java.lang.String)
-        /// </summary>
-        public MessageFormat(string arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#<init>(java.lang.String,java.util.Locale)
         /// </summary>
         public MessageFormat(string arg0, Java.Util.Locale arg1)
             : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html#<init>(java.lang.String)
+        /// </summary>
+        public MessageFormat(string arg0)
+            : base(arg0)
         {
         }
         

@@ -139,6 +139,10 @@ namespace Javax.Swing
 
             #region Fields
             /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.StateValue.html#DONE
+            /// </summary>
+            public static Javax.Swing.SwingWorker.StateValue DONE => Clazz.GetField<Javax.Swing.SwingWorker.StateValue>("DONE");
+            /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.StateValue.html#PENDING
             /// </summary>
             public static Javax.Swing.SwingWorker.StateValue PENDING => Clazz.GetField<Javax.Swing.SwingWorker.StateValue>("PENDING");
@@ -146,10 +150,6 @@ namespace Javax.Swing
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.StateValue.html#STARTED
             /// </summary>
             public static Javax.Swing.SwingWorker.StateValue STARTED => Clazz.GetField<Javax.Swing.SwingWorker.StateValue>("STARTED");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingWorker.StateValue.html#DONE
-            /// </summary>
-            public static Javax.Swing.SwingWorker.StateValue DONE => Clazz.GetField<Javax.Swing.SwingWorker.StateValue>("DONE");
             
             #endregion
 

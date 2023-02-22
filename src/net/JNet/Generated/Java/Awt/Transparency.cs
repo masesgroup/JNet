@@ -38,13 +38,13 @@ namespace Java.Awt
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Transparency.html#OPAQUE
-        /// </summary>
-        public static int OPAQUE => Clazz.GetField<int>("OPAQUE");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Transparency.html#BITMASK
         /// </summary>
         public static int BITMASK => Clazz.GetField<int>("BITMASK");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Transparency.html#OPAQUE
+        /// </summary>
+        public static int OPAQUE => Clazz.GetField<int>("OPAQUE");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Transparency.html#TRANSLUCENT
         /// </summary>

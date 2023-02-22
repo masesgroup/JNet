@@ -30,16 +30,16 @@ namespace Java.Awt.ImageNs
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ByteLookupTable.html#<init>(int,byte[][])
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ByteLookupTable.html#<init>(int,byte[])
         /// </summary>
-        public ByteLookupTable(int arg0, byte[][] arg1)
+        public ByteLookupTable(int arg0, byte[] arg1)
             : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ByteLookupTable.html#<init>(int,byte[])
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ByteLookupTable.html#<init>(int,byte[][])
         /// </summary>
-        public ByteLookupTable(int arg0, byte[] arg1)
+        public ByteLookupTable(int arg0, byte[][] arg1)
             : base(arg0, arg1)
         {
         }

@@ -40,25 +40,13 @@ namespace Java.Time
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/DayOfWeek.html#MONDAY
-        /// </summary>
-        public static Java.Time.DayOfWeek MONDAY => Clazz.GetField<Java.Time.DayOfWeek>("MONDAY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/DayOfWeek.html#TUESDAY
-        /// </summary>
-        public static Java.Time.DayOfWeek TUESDAY => Clazz.GetField<Java.Time.DayOfWeek>("TUESDAY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/DayOfWeek.html#WEDNESDAY
-        /// </summary>
-        public static Java.Time.DayOfWeek WEDNESDAY => Clazz.GetField<Java.Time.DayOfWeek>("WEDNESDAY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/DayOfWeek.html#THURSDAY
-        /// </summary>
-        public static Java.Time.DayOfWeek THURSDAY => Clazz.GetField<Java.Time.DayOfWeek>("THURSDAY");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/DayOfWeek.html#FRIDAY
         /// </summary>
         public static Java.Time.DayOfWeek FRIDAY => Clazz.GetField<Java.Time.DayOfWeek>("FRIDAY");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/DayOfWeek.html#MONDAY
+        /// </summary>
+        public static Java.Time.DayOfWeek MONDAY => Clazz.GetField<Java.Time.DayOfWeek>("MONDAY");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/DayOfWeek.html#SATURDAY
         /// </summary>
@@ -67,6 +55,18 @@ namespace Java.Time
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/DayOfWeek.html#SUNDAY
         /// </summary>
         public static Java.Time.DayOfWeek SUNDAY => Clazz.GetField<Java.Time.DayOfWeek>("SUNDAY");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/DayOfWeek.html#THURSDAY
+        /// </summary>
+        public static Java.Time.DayOfWeek THURSDAY => Clazz.GetField<Java.Time.DayOfWeek>("THURSDAY");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/DayOfWeek.html#TUESDAY
+        /// </summary>
+        public static Java.Time.DayOfWeek TUESDAY => Clazz.GetField<Java.Time.DayOfWeek>("TUESDAY");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/DayOfWeek.html#WEDNESDAY
+        /// </summary>
+        public static Java.Time.DayOfWeek WEDNESDAY => Clazz.GetField<Java.Time.DayOfWeek>("WEDNESDAY");
         
         #endregion
 

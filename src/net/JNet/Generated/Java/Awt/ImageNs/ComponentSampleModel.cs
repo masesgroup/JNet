@@ -30,17 +30,17 @@ namespace Java.Awt.ImageNs
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ComponentSampleModel.html#<init>(int,int,int,int,int,int[])
-        /// </summary>
-        public ComponentSampleModel(int arg0, int arg1, int arg2, int arg3, int arg4, int[] arg5)
-            : base(arg0, arg1, arg2, arg3, arg4, arg5)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ComponentSampleModel.html#<init>(int,int,int,int,int,int[],int[])
         /// </summary>
         public ComponentSampleModel(int arg0, int arg1, int arg2, int arg3, int arg4, int[] arg5, int[] arg6)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ComponentSampleModel.html#<init>(int,int,int,int,int,int[])
+        /// </summary>
+        public ComponentSampleModel(int arg0, int arg1, int arg2, int arg3, int arg4, int[] arg5)
+            : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
         }
         

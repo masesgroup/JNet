@@ -38,10 +38,6 @@ namespace Javax.Management.Monitor
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorNotification.html#OBSERVED_OBJECT_ERROR
-        /// </summary>
-        public static string OBSERVED_OBJECT_ERROR => Clazz.GetField<string>("OBSERVED_OBJECT_ERROR");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorNotification.html#OBSERVED_ATTRIBUTE_ERROR
         /// </summary>
         public static string OBSERVED_ATTRIBUTE_ERROR => Clazz.GetField<string>("OBSERVED_ATTRIBUTE_ERROR");
@@ -50,17 +46,25 @@ namespace Javax.Management.Monitor
         /// </summary>
         public static string OBSERVED_ATTRIBUTE_TYPE_ERROR => Clazz.GetField<string>("OBSERVED_ATTRIBUTE_TYPE_ERROR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorNotification.html#THRESHOLD_ERROR
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorNotification.html#OBSERVED_OBJECT_ERROR
         /// </summary>
-        public static string THRESHOLD_ERROR => Clazz.GetField<string>("THRESHOLD_ERROR");
+        public static string OBSERVED_OBJECT_ERROR => Clazz.GetField<string>("OBSERVED_OBJECT_ERROR");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorNotification.html#RUNTIME_ERROR
         /// </summary>
         public static string RUNTIME_ERROR => Clazz.GetField<string>("RUNTIME_ERROR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorNotification.html#THRESHOLD_VALUE_EXCEEDED
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorNotification.html#STRING_TO_COMPARE_VALUE_DIFFERED
         /// </summary>
-        public static string THRESHOLD_VALUE_EXCEEDED => Clazz.GetField<string>("THRESHOLD_VALUE_EXCEEDED");
+        public static string STRING_TO_COMPARE_VALUE_DIFFERED => Clazz.GetField<string>("STRING_TO_COMPARE_VALUE_DIFFERED");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorNotification.html#STRING_TO_COMPARE_VALUE_MATCHED
+        /// </summary>
+        public static string STRING_TO_COMPARE_VALUE_MATCHED => Clazz.GetField<string>("STRING_TO_COMPARE_VALUE_MATCHED");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorNotification.html#THRESHOLD_ERROR
+        /// </summary>
+        public static string THRESHOLD_ERROR => Clazz.GetField<string>("THRESHOLD_ERROR");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorNotification.html#THRESHOLD_HIGH_VALUE_EXCEEDED
         /// </summary>
@@ -70,13 +74,9 @@ namespace Javax.Management.Monitor
         /// </summary>
         public static string THRESHOLD_LOW_VALUE_EXCEEDED => Clazz.GetField<string>("THRESHOLD_LOW_VALUE_EXCEEDED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorNotification.html#STRING_TO_COMPARE_VALUE_MATCHED
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorNotification.html#THRESHOLD_VALUE_EXCEEDED
         /// </summary>
-        public static string STRING_TO_COMPARE_VALUE_MATCHED => Clazz.GetField<string>("STRING_TO_COMPARE_VALUE_MATCHED");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/monitor/MonitorNotification.html#STRING_TO_COMPARE_VALUE_DIFFERED
-        /// </summary>
-        public static string STRING_TO_COMPARE_VALUE_DIFFERED => Clazz.GetField<string>("STRING_TO_COMPARE_VALUE_DIFFERED");
+        public static string THRESHOLD_VALUE_EXCEEDED => Clazz.GetField<string>("THRESHOLD_VALUE_EXCEEDED");
         
         #endregion
 

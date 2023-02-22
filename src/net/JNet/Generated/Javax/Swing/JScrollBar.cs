@@ -30,17 +30,17 @@ namespace Javax.Swing
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollBar.html#<init>(int)
-        /// </summary>
-        public JScrollBar(int arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollBar.html#<init>(int,int,int,int,int)
         /// </summary>
         public JScrollBar(int arg0, int arg1, int arg2, int arg3, int arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollBar.html#<init>(int)
+        /// </summary>
+        public JScrollBar(int arg0)
+            : base(arg0)
         {
         }
         

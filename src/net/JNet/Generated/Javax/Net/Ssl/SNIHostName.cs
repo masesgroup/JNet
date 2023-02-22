@@ -30,16 +30,16 @@ namespace Javax.Net.Ssl
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SNIHostName.html#<init>(java.lang.String)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SNIHostName.html#<init>(byte[])
         /// </summary>
-        public SNIHostName(string arg0)
+        public SNIHostName(byte[] arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SNIHostName.html#<init>(byte[])
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SNIHostName.html#<init>(java.lang.String)
         /// </summary>
-        public SNIHostName(byte[] arg0)
+        public SNIHostName(string arg0)
             : base(arg0)
         {
         }

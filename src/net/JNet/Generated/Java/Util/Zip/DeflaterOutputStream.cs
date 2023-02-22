@@ -30,13 +30,6 @@ namespace Java.Util.Zip
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/DeflaterOutputStream.html#<init>(java.io.OutputStream)
-        /// </summary>
-        public DeflaterOutputStream(Java.Io.OutputStream arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/DeflaterOutputStream.html#<init>(java.io.OutputStream,boolean)
         /// </summary>
         public DeflaterOutputStream(Java.Io.OutputStream arg0, bool arg1)
@@ -44,10 +37,10 @@ namespace Java.Util.Zip
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/DeflaterOutputStream.html#<init>(java.io.OutputStream,java.util.zip.Deflater)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/DeflaterOutputStream.html#<init>(java.io.OutputStream,java.util.zip.Deflater,boolean)
         /// </summary>
-        public DeflaterOutputStream(Java.Io.OutputStream arg0, Java.Util.Zip.Deflater arg1)
-            : base(arg0, arg1)
+        public DeflaterOutputStream(Java.Io.OutputStream arg0, Java.Util.Zip.Deflater arg1, bool arg2)
+            : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
@@ -65,10 +58,17 @@ namespace Java.Util.Zip
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/DeflaterOutputStream.html#<init>(java.io.OutputStream,java.util.zip.Deflater,boolean)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/DeflaterOutputStream.html#<init>(java.io.OutputStream,java.util.zip.Deflater)
         /// </summary>
-        public DeflaterOutputStream(Java.Io.OutputStream arg0, Java.Util.Zip.Deflater arg1, bool arg2)
-            : base(arg0, arg1, arg2)
+        public DeflaterOutputStream(Java.Io.OutputStream arg0, Java.Util.Zip.Deflater arg1)
+            : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/DeflaterOutputStream.html#<init>(java.io.OutputStream)
+        /// </summary>
+        public DeflaterOutputStream(Java.Io.OutputStream arg0)
+            : base(arg0)
         {
         }
         

@@ -30,17 +30,17 @@ namespace Javax.Security.Auth.Kerberos
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosPrincipal.html#<init>(java.lang.String)
-        /// </summary>
-        public KerberosPrincipal(string arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosPrincipal.html#<init>(java.lang.String,int)
         /// </summary>
         public KerberosPrincipal(string arg0, int arg1)
             : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosPrincipal.html#<init>(java.lang.String)
+        /// </summary>
+        public KerberosPrincipal(string arg0)
+            : base(arg0)
         {
         }
         
@@ -54,21 +54,17 @@ namespace Javax.Security.Auth.Kerberos
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosPrincipal.html#KRB_NT_UNKNOWN
-        /// </summary>
-        public static int KRB_NT_UNKNOWN => Clazz.GetField<int>("KRB_NT_UNKNOWN");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosPrincipal.html#KRB_NT_PRINCIPAL
         /// </summary>
         public static int KRB_NT_PRINCIPAL => Clazz.GetField<int>("KRB_NT_PRINCIPAL");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosPrincipal.html#KRB_NT_SRV_INST
-        /// </summary>
-        public static int KRB_NT_SRV_INST => Clazz.GetField<int>("KRB_NT_SRV_INST");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosPrincipal.html#KRB_NT_SRV_HST
         /// </summary>
         public static int KRB_NT_SRV_HST => Clazz.GetField<int>("KRB_NT_SRV_HST");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosPrincipal.html#KRB_NT_SRV_INST
+        /// </summary>
+        public static int KRB_NT_SRV_INST => Clazz.GetField<int>("KRB_NT_SRV_INST");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosPrincipal.html#KRB_NT_SRV_XHST
         /// </summary>
@@ -77,6 +73,10 @@ namespace Javax.Security.Auth.Kerberos
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosPrincipal.html#KRB_NT_UID
         /// </summary>
         public static int KRB_NT_UID => Clazz.GetField<int>("KRB_NT_UID");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KerberosPrincipal.html#KRB_NT_UNKNOWN
+        /// </summary>
+        public static int KRB_NT_UNKNOWN => Clazz.GetField<int>("KRB_NT_UNKNOWN");
         
         #endregion
 

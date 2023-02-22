@@ -30,24 +30,10 @@ namespace Javax.Swing
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#<init>(java.lang.String)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#<init>(java.lang.String,boolean,boolean,boolean,boolean)
         /// </summary>
-        public JInternalFrame(string arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#<init>(java.lang.String,boolean)
-        /// </summary>
-        public JInternalFrame(string arg0, bool arg1)
-            : base(arg0, arg1)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#<init>(java.lang.String,boolean,boolean)
-        /// </summary>
-        public JInternalFrame(string arg0, bool arg1, bool arg2)
-            : base(arg0, arg1, arg2)
+        public JInternalFrame(string arg0, bool arg1, bool arg2, bool arg3, bool arg4)
+            : base(arg0, arg1, arg2, arg3, arg4)
         {
         }
         /// <summary>
@@ -58,10 +44,24 @@ namespace Javax.Swing
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#<init>(java.lang.String,boolean,boolean,boolean,boolean)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#<init>(java.lang.String,boolean,boolean)
         /// </summary>
-        public JInternalFrame(string arg0, bool arg1, bool arg2, bool arg3, bool arg4)
-            : base(arg0, arg1, arg2, arg3, arg4)
+        public JInternalFrame(string arg0, bool arg1, bool arg2)
+            : base(arg0, arg1, arg2)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#<init>(java.lang.String,boolean)
+        /// </summary>
+        public JInternalFrame(string arg0, bool arg1)
+            : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#<init>(java.lang.String)
+        /// </summary>
+        public JInternalFrame(string arg0)
+            : base(arg0)
         {
         }
         
@@ -80,45 +80,45 @@ namespace Javax.Swing
         /// </summary>
         public static string CONTENT_PANE_PROPERTY => Clazz.GetField<string>("CONTENT_PANE_PROPERTY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#MENU_BAR_PROPERTY
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#FRAME_ICON_PROPERTY
         /// </summary>
-        public static string MENU_BAR_PROPERTY => Clazz.GetField<string>("MENU_BAR_PROPERTY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#TITLE_PROPERTY
-        /// </summary>
-        public static string TITLE_PROPERTY => Clazz.GetField<string>("TITLE_PROPERTY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#LAYERED_PANE_PROPERTY
-        /// </summary>
-        public static string LAYERED_PANE_PROPERTY => Clazz.GetField<string>("LAYERED_PANE_PROPERTY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#ROOT_PANE_PROPERTY
-        /// </summary>
-        public static string ROOT_PANE_PROPERTY => Clazz.GetField<string>("ROOT_PANE_PROPERTY");
+        public static string FRAME_ICON_PROPERTY => Clazz.GetField<string>("FRAME_ICON_PROPERTY");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#GLASS_PANE_PROPERTY
         /// </summary>
         public static string GLASS_PANE_PROPERTY => Clazz.GetField<string>("GLASS_PANE_PROPERTY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#FRAME_ICON_PROPERTY
-        /// </summary>
-        public static string FRAME_ICON_PROPERTY => Clazz.GetField<string>("FRAME_ICON_PROPERTY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#IS_SELECTED_PROPERTY
-        /// </summary>
-        public static string IS_SELECTED_PROPERTY => Clazz.GetField<string>("IS_SELECTED_PROPERTY");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#IS_CLOSED_PROPERTY
         /// </summary>
         public static string IS_CLOSED_PROPERTY => Clazz.GetField<string>("IS_CLOSED_PROPERTY");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#IS_ICON_PROPERTY
+        /// </summary>
+        public static string IS_ICON_PROPERTY => Clazz.GetField<string>("IS_ICON_PROPERTY");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#IS_MAXIMUM_PROPERTY
         /// </summary>
         public static string IS_MAXIMUM_PROPERTY => Clazz.GetField<string>("IS_MAXIMUM_PROPERTY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#IS_ICON_PROPERTY
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#IS_SELECTED_PROPERTY
         /// </summary>
-        public static string IS_ICON_PROPERTY => Clazz.GetField<string>("IS_ICON_PROPERTY");
+        public static string IS_SELECTED_PROPERTY => Clazz.GetField<string>("IS_SELECTED_PROPERTY");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#LAYERED_PANE_PROPERTY
+        /// </summary>
+        public static string LAYERED_PANE_PROPERTY => Clazz.GetField<string>("LAYERED_PANE_PROPERTY");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#MENU_BAR_PROPERTY
+        /// </summary>
+        public static string MENU_BAR_PROPERTY => Clazz.GetField<string>("MENU_BAR_PROPERTY");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#ROOT_PANE_PROPERTY
+        /// </summary>
+        public static string ROOT_PANE_PROPERTY => Clazz.GetField<string>("ROOT_PANE_PROPERTY");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#TITLE_PROPERTY
+        /// </summary>
+        public static string TITLE_PROPERTY => Clazz.GetField<string>("TITLE_PROPERTY");
         
         #endregion
 
@@ -386,14 +386,13 @@ namespace Javax.Swing
         {
             IExecute("setLayer", arg0);
         }
-#warning Commented waiting to differentiate types
-        ///// <summary>
-        ///// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#setLayer(java.lang.Integer)
-        ///// </summary>
-        //public void SetLayer(int arg0)
-        //{
-        //    IExecute("setLayer", arg0);
-        //}
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#setLayer(java.lang.Integer)
+        /// </summary>
+        public void SetLayer(int? arg0)
+        {
+            IExecute("setLayer", arg0);
+        }
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JInternalFrame.html#setMaximizable(boolean)
         /// </summary>

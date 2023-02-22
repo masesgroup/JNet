@@ -37,27 +37,6 @@ namespace Java.Awt.ImageNs
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/IndexColorModel.html#<init>(int,int,byte[],int,boolean)
-        /// </summary>
-        public IndexColorModel(int arg0, int arg1, byte[] arg2, int arg3, bool arg4)
-            : base(arg0, arg1, arg2, arg3, arg4)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/IndexColorModel.html#<init>(int,int,byte[],int,boolean,int)
-        /// </summary>
-        public IndexColorModel(int arg0, int arg1, byte[] arg2, int arg3, bool arg4, int arg5)
-            : base(arg0, arg1, arg2, arg3, arg4, arg5)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/IndexColorModel.html#<init>(int,int,int[],int,int,java.math.BigInteger)
-        /// </summary>
-        public IndexColorModel(int arg0, int arg1, int[] arg2, int arg3, int arg4, Java.Math.BigInteger arg5)
-            : base(arg0, arg1, arg2, arg3, arg4, arg5)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/IndexColorModel.html#<init>(int,int,byte[],byte[],byte[],int)
         /// </summary>
         public IndexColorModel(int arg0, int arg1, byte[] arg2, byte[] arg3, byte[] arg4, int arg5)
@@ -72,10 +51,31 @@ namespace Java.Awt.ImageNs
         {
         }
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/IndexColorModel.html#<init>(int,int,byte[],int,boolean,int)
+        /// </summary>
+        public IndexColorModel(int arg0, int arg1, byte[] arg2, int arg3, bool arg4, int arg5)
+            : base(arg0, arg1, arg2, arg3, arg4, arg5)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/IndexColorModel.html#<init>(int,int,byte[],int,boolean)
+        /// </summary>
+        public IndexColorModel(int arg0, int arg1, byte[] arg2, int arg3, bool arg4)
+            : base(arg0, arg1, arg2, arg3, arg4)
+        {
+        }
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/IndexColorModel.html#<init>(int,int,int[],int,boolean,int,int)
         /// </summary>
         public IndexColorModel(int arg0, int arg1, int[] arg2, int arg3, bool arg4, int arg5, int arg6)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/IndexColorModel.html#<init>(int,int,int[],int,int,java.math.BigInteger)
+        /// </summary>
+        public IndexColorModel(int arg0, int arg1, int[] arg2, int arg3, int arg4, Java.Math.BigInteger arg5)
+            : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
         }
         

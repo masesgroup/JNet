@@ -49,6 +49,56 @@ namespace Javax.Swing
         #endregion
 
         #region Nested classes
+        #region ComparisonType
+        public partial class ComparisonType
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.ComparisonType.html#AFTER
+            /// </summary>
+            public static Javax.Swing.RowFilter.ComparisonType AFTER => Clazz.GetField<Javax.Swing.RowFilter.ComparisonType>("AFTER");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.ComparisonType.html#BEFORE
+            /// </summary>
+            public static Javax.Swing.RowFilter.ComparisonType BEFORE => Clazz.GetField<Javax.Swing.RowFilter.ComparisonType>("BEFORE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.ComparisonType.html#EQUAL
+            /// </summary>
+            public static Javax.Swing.RowFilter.ComparisonType EQUAL => Clazz.GetField<Javax.Swing.RowFilter.ComparisonType>("EQUAL");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.ComparisonType.html#NOT_EQUAL
+            /// </summary>
+            public static Javax.Swing.RowFilter.ComparisonType NOT_EQUAL => Clazz.GetField<Javax.Swing.RowFilter.ComparisonType>("NOT_EQUAL");
+            
+            #endregion
+
+            #region Static methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.ComparisonType.html#values()
+            /// </summary>
+            public static Javax.Swing.RowFilter.ComparisonType[] Values()
+            {
+                return SExecuteArray<Javax.Swing.RowFilter.ComparisonType>("values");
+            }
+            
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region Entry
         public partial class Entry
         {
@@ -105,56 +155,6 @@ namespace Javax.Swing
                 return IExecute<string>("getStringValue", arg0);
             }
             
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region ComparisonType
-        public partial class ComparisonType
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.ComparisonType.html#BEFORE
-            /// </summary>
-            public static Javax.Swing.RowFilter.ComparisonType BEFORE => Clazz.GetField<Javax.Swing.RowFilter.ComparisonType>("BEFORE");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.ComparisonType.html#AFTER
-            /// </summary>
-            public static Javax.Swing.RowFilter.ComparisonType AFTER => Clazz.GetField<Javax.Swing.RowFilter.ComparisonType>("AFTER");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.ComparisonType.html#EQUAL
-            /// </summary>
-            public static Javax.Swing.RowFilter.ComparisonType EQUAL => Clazz.GetField<Javax.Swing.RowFilter.ComparisonType>("EQUAL");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.ComparisonType.html#NOT_EQUAL
-            /// </summary>
-            public static Javax.Swing.RowFilter.ComparisonType NOT_EQUAL => Clazz.GetField<Javax.Swing.RowFilter.ComparisonType>("NOT_EQUAL");
-            
-            #endregion
-
-            #region Static methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.ComparisonType.html#values()
-            /// </summary>
-            public static Javax.Swing.RowFilter.ComparisonType[] Values()
-            {
-                return SExecuteArray<Javax.Swing.RowFilter.ComparisonType>("values");
-            }
-            
-            #endregion
-
-            #region Instance methods
-
             #endregion
 
             // TODO: complete the class

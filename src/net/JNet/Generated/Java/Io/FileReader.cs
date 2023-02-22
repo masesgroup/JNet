@@ -37,10 +37,10 @@ namespace Java.Io
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileReader.html#<init>(java.lang.String,java.nio.charset.Charset) throws java.io.IOException
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileReader.html#<init>(java.io.File) throws java.io.FileNotFoundException
         /// </summary>
-        public FileReader(string arg0, Java.Nio.Charset.Charset arg1)
-            : base(arg0, arg1)
+        public FileReader(Java.Io.File arg0)
+            : base(arg0)
         {
         }
         /// <summary>
@@ -51,10 +51,10 @@ namespace Java.Io
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileReader.html#<init>(java.io.File) throws java.io.FileNotFoundException
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/FileReader.html#<init>(java.lang.String,java.nio.charset.Charset) throws java.io.IOException
         /// </summary>
-        public FileReader(Java.Io.File arg0)
-            : base(arg0)
+        public FileReader(string arg0, Java.Nio.Charset.Charset arg1)
+            : base(arg0, arg1)
         {
         }
         /// <summary>

@@ -46,6 +46,14 @@ namespace Javax.Swing
 
         #region Fields
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SizeRequirements.html#alignment
+        /// </summary>
+        public float alignment => Instance.GetField<float>("alignment");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SizeRequirements.html#maximum
+        /// </summary>
+        public int maximum => Instance.GetField<int>("maximum");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SizeRequirements.html#minimum
         /// </summary>
         public int minimum => Instance.GetField<int>("minimum");
@@ -53,14 +61,6 @@ namespace Javax.Swing
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SizeRequirements.html#preferred
         /// </summary>
         public int preferred => Instance.GetField<int>("preferred");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SizeRequirements.html#maximum
-        /// </summary>
-        public int maximum => Instance.GetField<int>("maximum");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SizeRequirements.html#alignment
-        /// </summary>
-        public float alignment => Instance.GetField<float>("alignment");
         
         #endregion
 

@@ -62,9 +62,9 @@ namespace Javax.Management
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#getMBeanCount() throws java.io.IOException 
         /// </summary>
-        public int MBeanCount
+        public int? MBeanCount
         {
-            get { return IExecute<int>("getMBeanCount"); }
+            get { return IExecute<int?>("getMBeanCount"); }
         }
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerConnection.html#isInstanceOf(javax.management.ObjectName,java.lang.String) throws javax.management.InstanceNotFoundException,java.io.IOException

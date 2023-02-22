@@ -223,9 +223,13 @@ namespace Java.Lang.Invoke
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#PUBLIC
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#MODULE
             /// </summary>
-            public static int PUBLIC => Clazz.GetField<int>("PUBLIC");
+            public static int MODULE => Clazz.GetField<int>("MODULE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#PACKAGE
+            /// </summary>
+            public static int PACKAGE => Clazz.GetField<int>("PACKAGE");
             /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#PRIVATE
             /// </summary>
@@ -235,13 +239,9 @@ namespace Java.Lang.Invoke
             /// </summary>
             public static int PROTECTED => Clazz.GetField<int>("PROTECTED");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#PACKAGE
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#PUBLIC
             /// </summary>
-            public static int PACKAGE => Clazz.GetField<int>("PACKAGE");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#MODULE
-            /// </summary>
-            public static int MODULE => Clazz.GetField<int>("MODULE");
+            public static int PUBLIC => Clazz.GetField<int>("PUBLIC");
             /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#UNCONDITIONAL
             /// </summary>

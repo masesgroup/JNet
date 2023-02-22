@@ -125,6 +125,10 @@ namespace Javax.Swing.Event
 
             #region Fields
             /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/HyperlinkEvent.EventType.html#ACTIVATED
+            /// </summary>
+            public static Javax.Swing.Event.HyperlinkEvent.EventType ACTIVATED => Clazz.GetField<Javax.Swing.Event.HyperlinkEvent.EventType>("ACTIVATED");
+            /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/HyperlinkEvent.EventType.html#ENTERED
             /// </summary>
             public static Javax.Swing.Event.HyperlinkEvent.EventType ENTERED => Clazz.GetField<Javax.Swing.Event.HyperlinkEvent.EventType>("ENTERED");
@@ -132,10 +136,6 @@ namespace Javax.Swing.Event
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/HyperlinkEvent.EventType.html#EXITED
             /// </summary>
             public static Javax.Swing.Event.HyperlinkEvent.EventType EXITED => Clazz.GetField<Javax.Swing.Event.HyperlinkEvent.EventType>("EXITED");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/HyperlinkEvent.EventType.html#ACTIVATED
-            /// </summary>
-            public static Javax.Swing.Event.HyperlinkEvent.EventType ACTIVATED => Clazz.GetField<Javax.Swing.Event.HyperlinkEvent.EventType>("ACTIVATED");
             
             #endregion
 

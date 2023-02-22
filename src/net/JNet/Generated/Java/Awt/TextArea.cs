@@ -30,13 +30,6 @@ namespace Java.Awt
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextArea.html#<init>(java.lang.String,int,int) throws java.awt.HeadlessException
-        /// </summary>
-        public TextArea(string arg0, int arg1, int arg2)
-            : base(arg0, arg1, arg2)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextArea.html#<init>(int,int) throws java.awt.HeadlessException
         /// </summary>
         public TextArea(int arg0, int arg1)
@@ -44,17 +37,24 @@ namespace Java.Awt
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextArea.html#<init>(java.lang.String) throws java.awt.HeadlessException
-        /// </summary>
-        public TextArea(string arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextArea.html#<init>(java.lang.String,int,int,int) throws java.awt.HeadlessException
         /// </summary>
         public TextArea(string arg0, int arg1, int arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextArea.html#<init>(java.lang.String,int,int) throws java.awt.HeadlessException
+        /// </summary>
+        public TextArea(string arg0, int arg1, int arg2)
+            : base(arg0, arg1, arg2)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextArea.html#<init>(java.lang.String) throws java.awt.HeadlessException
+        /// </summary>
+        public TextArea(string arg0)
+            : base(arg0)
         {
         }
         
@@ -70,10 +70,6 @@ namespace Java.Awt
         /// </summary>
         public static int SCROLLBARS_BOTH => Clazz.GetField<int>("SCROLLBARS_BOTH");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextArea.html#SCROLLBARS_VERTICAL_ONLY
-        /// </summary>
-        public static int SCROLLBARS_VERTICAL_ONLY => Clazz.GetField<int>("SCROLLBARS_VERTICAL_ONLY");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextArea.html#SCROLLBARS_HORIZONTAL_ONLY
         /// </summary>
         public static int SCROLLBARS_HORIZONTAL_ONLY => Clazz.GetField<int>("SCROLLBARS_HORIZONTAL_ONLY");
@@ -81,6 +77,10 @@ namespace Java.Awt
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextArea.html#SCROLLBARS_NONE
         /// </summary>
         public static int SCROLLBARS_NONE => Clazz.GetField<int>("SCROLLBARS_NONE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TextArea.html#SCROLLBARS_VERTICAL_ONLY
+        /// </summary>
+        public static int SCROLLBARS_VERTICAL_ONLY => Clazz.GetField<int>("SCROLLBARS_VERTICAL_ONLY");
         
         #endregion
 

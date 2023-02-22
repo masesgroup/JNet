@@ -23,93 +23,23 @@
 
 namespace Javax.Sql
 {
-    #region RowSetWriter
+    #region CommonDataSource
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetWriter.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/CommonDataSource.html
     /// </summary>
-    public partial class RowSetWriter : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RowSetWriter>
+    public partial class CommonDataSource : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CommonDataSource>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public RowSetWriter() { }
+        public CommonDataSource() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public RowSetWriter(params object[] args) : base(args) { }
+        public CommonDataSource(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.sql.RowSetWriter";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region RowSet
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html
-    /// </summary>
-    public partial class RowSet : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RowSet>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public RowSet() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public RowSet(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.sql.RowSet";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region PooledConnectionBuilder
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/PooledConnectionBuilder.html
-    /// </summary>
-    public partial class PooledConnectionBuilder : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PooledConnectionBuilder>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public PooledConnectionBuilder() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public PooledConnectionBuilder(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.sql.PooledConnectionBuilder";
+        public override string ClassName => "javax.sql.CommonDataSource";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -176,141 +106,23 @@ namespace Javax.Sql
     }
     #endregion
 
-    #region PooledConnection
+    #region ConnectionPoolDataSource
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/PooledConnection.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/ConnectionPoolDataSource.html
     /// </summary>
-    public partial class PooledConnection : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PooledConnection>
+    public partial class ConnectionPoolDataSource : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ConnectionPoolDataSource>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public PooledConnection() { }
+        public ConnectionPoolDataSource() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public PooledConnection(params object[] args) : base(args) { }
+        public ConnectionPoolDataSource(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.sql.PooledConnection";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region XADataSource
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/XADataSource.html
-    /// </summary>
-    public partial class XADataSource : MASES.JCOBridge.C2JBridge.JVMBridgeBase<XADataSource>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public XADataSource() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public XADataSource(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.sql.XADataSource";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region StatementEventListener
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/StatementEventListener.html
-    /// </summary>
-    public partial class StatementEventListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
-    {
-#warning Remember to build the body class for event listener
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region CommonDataSource
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/CommonDataSource.html
-    /// </summary>
-    public partial class CommonDataSource : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CommonDataSource>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public CommonDataSource() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public CommonDataSource(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.sql.CommonDataSource";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region RowSetMetaData
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetMetaData.html
-    /// </summary>
-    public partial class RowSetMetaData : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RowSetMetaData>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public RowSetMetaData() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public RowSetMetaData(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.sql.RowSetMetaData";
+        public override string ClassName => "javax.sql.ConnectionPoolDataSource";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -364,6 +176,111 @@ namespace Javax.Sql
     }
     #endregion
 
+    #region PooledConnection
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/PooledConnection.html
+    /// </summary>
+    public partial class PooledConnection : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PooledConnection>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public PooledConnection() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public PooledConnection(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.sql.PooledConnection";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region PooledConnectionBuilder
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/PooledConnectionBuilder.html
+    /// </summary>
+    public partial class PooledConnectionBuilder : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PooledConnectionBuilder>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public PooledConnectionBuilder() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public PooledConnectionBuilder(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.sql.PooledConnectionBuilder";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region RowSet
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSet.html
+    /// </summary>
+    public partial class RowSet : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RowSet>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public RowSet() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public RowSet(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.sql.RowSet";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region RowSetEvent
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetEvent.html
@@ -399,23 +316,23 @@ namespace Javax.Sql
     }
     #endregion
 
-    #region ConnectionPoolDataSource
+    #region RowSetInternal
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/ConnectionPoolDataSource.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetInternal.html
     /// </summary>
-    public partial class ConnectionPoolDataSource : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ConnectionPoolDataSource>
+    public partial class RowSetInternal : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RowSetInternal>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ConnectionPoolDataSource() { }
+        public RowSetInternal() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public ConnectionPoolDataSource(params object[] args) : base(args) { }
+        public RowSetInternal(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.sql.ConnectionPoolDataSource";
+        public override string ClassName => "javax.sql.RowSetInternal";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -434,23 +351,106 @@ namespace Javax.Sql
     }
     #endregion
 
-    #region XAConnection
+    #region RowSetListener
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/XAConnection.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetListener.html
     /// </summary>
-    public partial class XAConnection : MASES.JCOBridge.C2JBridge.JVMBridgeBase<XAConnection>
+    public partial class RowSetListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    {
+#warning Remember to build the body class for event listener
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region RowSetMetaData
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetMetaData.html
+    /// </summary>
+    public partial class RowSetMetaData : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RowSetMetaData>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public XAConnection() { }
+        public RowSetMetaData() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public XAConnection(params object[] args) : base(args) { }
+        public RowSetMetaData(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.sql.XAConnection";
+        public override string ClassName => "javax.sql.RowSetMetaData";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region RowSetReader
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetReader.html
+    /// </summary>
+    public partial class RowSetReader : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RowSetReader>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public RowSetReader() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public RowSetReader(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.sql.RowSetReader";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region RowSetWriter
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetWriter.html
+    /// </summary>
+    public partial class RowSetWriter : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RowSetWriter>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public RowSetWriter() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public RowSetWriter(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.sql.RowSetWriter";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -504,58 +504,36 @@ namespace Javax.Sql
     }
     #endregion
 
-    #region RowSetReader
+    #region StatementEventListener
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetReader.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/StatementEventListener.html
     /// </summary>
-    public partial class RowSetReader : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RowSetReader>
+    public partial class StatementEventListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public RowSetReader() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public RowSetReader(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.sql.RowSetReader";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
+#warning Remember to build the body class for event listener
 
         // TODO: complete the class
 
     }
     #endregion
 
-    #region RowSetInternal
+    #region XAConnection
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetInternal.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/XAConnection.html
     /// </summary>
-    public partial class RowSetInternal : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RowSetInternal>
+    public partial class XAConnection : MASES.JCOBridge.C2JBridge.JVMBridgeBase<XAConnection>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public RowSetInternal() { }
+        public XAConnection() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public RowSetInternal(params object[] args) : base(args) { }
+        public XAConnection(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.sql.RowSetInternal";
+        public override string ClassName => "javax.sql.XAConnection";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -609,13 +587,35 @@ namespace Javax.Sql
     }
     #endregion
 
-    #region RowSetListener
+    #region XADataSource
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetListener.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/XADataSource.html
     /// </summary>
-    public partial class RowSetListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class XADataSource : MASES.JCOBridge.C2JBridge.JVMBridgeBase<XADataSource>
     {
-#warning Remember to build the body class for event listener
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public XADataSource() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public XADataSource(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.sql.XADataSource";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
 
         // TODO: complete the class
 

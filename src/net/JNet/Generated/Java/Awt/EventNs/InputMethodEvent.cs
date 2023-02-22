@@ -59,21 +59,21 @@ namespace Java.Awt.EventNs
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodEvent.html#INPUT_METHOD_FIRST
-        /// </summary>
-        public static int INPUT_METHOD_FIRST => Clazz.GetField<int>("INPUT_METHOD_FIRST");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodEvent.html#INPUT_METHOD_TEXT_CHANGED
-        /// </summary>
-        public static int INPUT_METHOD_TEXT_CHANGED => Clazz.GetField<int>("INPUT_METHOD_TEXT_CHANGED");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodEvent.html#CARET_POSITION_CHANGED
         /// </summary>
         public static int CARET_POSITION_CHANGED => Clazz.GetField<int>("CARET_POSITION_CHANGED");
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodEvent.html#INPUT_METHOD_FIRST
+        /// </summary>
+        public static int INPUT_METHOD_FIRST => Clazz.GetField<int>("INPUT_METHOD_FIRST");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodEvent.html#INPUT_METHOD_LAST
         /// </summary>
         public static int INPUT_METHOD_LAST => Clazz.GetField<int>("INPUT_METHOD_LAST");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodEvent.html#INPUT_METHOD_TEXT_CHANGED
+        /// </summary>
+        public static int INPUT_METHOD_TEXT_CHANGED => Clazz.GetField<int>("INPUT_METHOD_TEXT_CHANGED");
         
         #endregion
 

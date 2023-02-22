@@ -30,17 +30,17 @@ namespace Javax.Swing.Tree
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.html#<init>(javax.swing.JTree,javax.swing.tree.DefaultTreeCellRenderer)
-        /// </summary>
-        public DefaultTreeCellEditor(Javax.Swing.JTree arg0, Javax.Swing.Tree.DefaultTreeCellRenderer arg1)
-            : base(arg0, arg1)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.html#<init>(javax.swing.JTree,javax.swing.tree.DefaultTreeCellRenderer,javax.swing.tree.TreeCellEditor)
         /// </summary>
         public DefaultTreeCellEditor(Javax.Swing.JTree arg0, Javax.Swing.Tree.DefaultTreeCellRenderer arg1, Javax.Swing.Tree.TreeCellEditor arg2)
             : base(arg0, arg1, arg2)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.html#<init>(javax.swing.JTree,javax.swing.tree.DefaultTreeCellRenderer)
+        /// </summary>
+        public DefaultTreeCellEditor(Javax.Swing.JTree arg0, Javax.Swing.Tree.DefaultTreeCellRenderer arg1)
+            : base(arg0, arg1)
         {
         }
         
@@ -157,6 +157,40 @@ namespace Javax.Swing.Tree
         #endregion
 
         #region Nested classes
+        #region DefaultTextField
+        public partial class DefaultTextField
+        {
+            #region Constructors
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.DefaultTextField.html#<init>(javax.swing.tree.DefaultTreeCellEditor,javax.swing.border.Border)
+            /// </summary>
+            public DefaultTextField(Javax.Swing.Tree.DefaultTreeCellEditor arg0, Javax.Swing.Border.Border arg1)
+                : base(arg0, arg1)
+            {
+            }
+            
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region EditorContainer
         public partial class EditorContainer
         {
@@ -192,40 +226,6 @@ namespace Javax.Swing.Tree
                 IExecute("EditorContainer");
             }
             
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region DefaultTextField
-        public partial class DefaultTextField
-        {
-            #region Constructors
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeCellEditor.DefaultTextField.html#<init>(javax.swing.tree.DefaultTreeCellEditor,javax.swing.border.Border)
-            /// </summary>
-            public DefaultTextField(Javax.Swing.Tree.DefaultTreeCellEditor arg0, Javax.Swing.Border.Border arg1)
-                : base(arg0, arg1)
-            {
-            }
-            
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
             #endregion
 
             // TODO: complete the class

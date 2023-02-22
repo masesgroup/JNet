@@ -46,10 +46,6 @@ namespace Java.Rmi.Server
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/ObjID.html#REGISTRY_ID
-        /// </summary>
-        public static int REGISTRY_ID => Clazz.GetField<int>("REGISTRY_ID");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/ObjID.html#ACTIVATOR_ID
         /// </summary>
         public static int ACTIVATOR_ID => Clazz.GetField<int>("ACTIVATOR_ID");
@@ -57,6 +53,10 @@ namespace Java.Rmi.Server
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/ObjID.html#DGC_ID
         /// </summary>
         public static int DGC_ID => Clazz.GetField<int>("DGC_ID");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/ObjID.html#REGISTRY_ID
+        /// </summary>
+        public static int REGISTRY_ID => Clazz.GetField<int>("REGISTRY_ID");
         
         #endregion
 

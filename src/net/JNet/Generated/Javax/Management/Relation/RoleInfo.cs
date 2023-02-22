@@ -30,17 +30,10 @@ namespace Javax.Management.Relation
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html#<init>(javax.management.relation.RoleInfo) throws java.lang.IllegalArgumentException
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html#<init>(java.lang.String,java.lang.String,boolean,boolean,int,int,java.lang.String) throws java.lang.IllegalArgumentException,javax.management.relation.InvalidRoleInfoException,java.lang.ClassNotFoundException,javax.management.NotCompliantMBeanException
         /// </summary>
-        public RoleInfo(Javax.Management.Relation.RoleInfo arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html#<init>(java.lang.String,java.lang.String) throws java.lang.IllegalArgumentException,java.lang.ClassNotFoundException,javax.management.NotCompliantMBeanException
-        /// </summary>
-        public RoleInfo(string arg0, string arg1)
-            : base(arg0, arg1)
+        public RoleInfo(string arg0, string arg1, bool arg2, bool arg3, int arg4, int arg5, string arg6)
+            : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
         {
         }
         /// <summary>
@@ -51,10 +44,17 @@ namespace Javax.Management.Relation
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html#<init>(java.lang.String,java.lang.String,boolean,boolean,int,int,java.lang.String) throws java.lang.IllegalArgumentException,javax.management.relation.InvalidRoleInfoException,java.lang.ClassNotFoundException,javax.management.NotCompliantMBeanException
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html#<init>(java.lang.String,java.lang.String) throws java.lang.IllegalArgumentException,java.lang.ClassNotFoundException,javax.management.NotCompliantMBeanException
         /// </summary>
-        public RoleInfo(string arg0, string arg1, bool arg2, bool arg3, int arg4, int arg5, string arg6)
-            : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
+        public RoleInfo(string arg0, string arg1)
+            : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html#<init>(javax.management.relation.RoleInfo) throws java.lang.IllegalArgumentException
+        /// </summary>
+        public RoleInfo(Javax.Management.Relation.RoleInfo arg0)
+            : base(arg0)
         {
         }
         

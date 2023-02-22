@@ -40,6 +40,10 @@ namespace Javax.Xml.Crypto.Dsig
 
         #region Fields
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/DigestMethod.html#RIPEMD160
+        /// </summary>
+        public static string RIPEMD160 => Clazz.GetField<string>("RIPEMD160");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/DigestMethod.html#SHA1
         /// </summary>
         public static string SHA1 => Clazz.GetField<string>("SHA1");
@@ -51,18 +55,6 @@ namespace Javax.Xml.Crypto.Dsig
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/DigestMethod.html#SHA256
         /// </summary>
         public static string SHA256 => Clazz.GetField<string>("SHA256");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/DigestMethod.html#SHA384
-        /// </summary>
-        public static string SHA384 => Clazz.GetField<string>("SHA384");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/DigestMethod.html#SHA512
-        /// </summary>
-        public static string SHA512 => Clazz.GetField<string>("SHA512");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/DigestMethod.html#RIPEMD160
-        /// </summary>
-        public static string RIPEMD160 => Clazz.GetField<string>("RIPEMD160");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/DigestMethod.html#SHA3_224
         /// </summary>
@@ -79,6 +71,14 @@ namespace Javax.Xml.Crypto.Dsig
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/DigestMethod.html#SHA3_512
         /// </summary>
         public static string SHA3_512 => Clazz.GetField<string>("SHA3_512");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/DigestMethod.html#SHA384
+        /// </summary>
+        public static string SHA384 => Clazz.GetField<string>("SHA384");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/DigestMethod.html#SHA512
+        /// </summary>
+        public static string SHA512 => Clazz.GetField<string>("SHA512");
         
         #endregion
 

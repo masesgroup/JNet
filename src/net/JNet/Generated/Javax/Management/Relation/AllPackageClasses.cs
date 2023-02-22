@@ -23,6 +23,86 @@
 
 namespace Javax.Management.Relation
 {
+    #region InvalidRelationIdException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/InvalidRelationIdException.html
+    /// </summary>
+    public partial class InvalidRelationIdException : Javax.Management.Relation.RelationException
+    {
+        public InvalidRelationIdException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.management.relation.InvalidRelationIdException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region InvalidRelationServiceException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/InvalidRelationServiceException.html
+    /// </summary>
+    public partial class InvalidRelationServiceException : Javax.Management.Relation.RelationException
+    {
+        public InvalidRelationServiceException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.management.relation.InvalidRelationServiceException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region InvalidRelationTypeException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/InvalidRelationTypeException.html
+    /// </summary>
+    public partial class InvalidRelationTypeException : Javax.Management.Relation.RelationException
+    {
+        public InvalidRelationTypeException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.management.relation.InvalidRelationTypeException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region InvalidRoleInfoException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/InvalidRoleInfoException.html
+    /// </summary>
+    public partial class InvalidRoleInfoException : Javax.Management.Relation.RelationException
+    {
+        public InvalidRoleInfoException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.management.relation.InvalidRoleInfoException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region InvalidRoleValueException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/InvalidRoleValueException.html
+    /// </summary>
+    public partial class InvalidRoleValueException : Javax.Management.Relation.RelationException
+    {
+        public InvalidRoleValueException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.management.relation.InvalidRoleValueException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region MBeanServerNotificationFilter
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/MBeanServerNotificationFilter.html
@@ -58,195 +138,23 @@ namespace Javax.Management.Relation
     }
     #endregion
 
-    #region RoleInfo
+    #region Relation
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/Relation.html
     /// </summary>
-    public partial class RoleInfo : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RoleInfo>
+    public partial class Relation : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Relation>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public RoleInfo() { }
+        public Relation() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public RoleInfo(params object[] args) : base(args) { }
+        public Relation(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.management.relation.RoleInfo";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region RoleList
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleList.html
-    /// </summary>
-    public partial class RoleList : Java.Util.ArrayList
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public RoleList() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public RoleList(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.management.relation.RoleList";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region InvalidRelationTypeException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/InvalidRelationTypeException.html
-    /// </summary>
-    public partial class InvalidRelationTypeException : Javax.Management.Relation.RelationException
-    {
-        public InvalidRelationTypeException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.management.relation.InvalidRelationTypeException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region RoleNotFoundException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleNotFoundException.html
-    /// </summary>
-    public partial class RoleNotFoundException : Javax.Management.Relation.RelationException
-    {
-        public RoleNotFoundException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.management.relation.RoleNotFoundException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region RoleUnresolvedList
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleUnresolvedList.html
-    /// </summary>
-    public partial class RoleUnresolvedList : Java.Util.ArrayList
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public RoleUnresolvedList() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public RoleUnresolvedList(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.management.relation.RoleUnresolvedList";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region RelationTypeSupport
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationTypeSupport.html
-    /// </summary>
-    public partial class RelationTypeSupport : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RelationTypeSupport>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public RelationTypeSupport() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public RelationTypeSupport(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.management.relation.RelationTypeSupport";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region RelationSupportMBean
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupportMBean.html
-    /// </summary>
-    public partial class RelationSupportMBean : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RelationSupportMBean>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public RelationSupportMBean() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public RelationSupportMBean(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.management.relation.RelationSupportMBean";
+        public override string ClassName => "javax.management.relation.Relation";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -256,57 +164,6 @@ namespace Javax.Management.Relation
 
         /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
         public override bool IsInterface => true;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region RelationNotFoundException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotFoundException.html
-    /// </summary>
-    public partial class RelationNotFoundException : Javax.Management.Relation.RelationException
-    {
-        public RelationNotFoundException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.management.relation.RelationNotFoundException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region RelationSupport
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupport.html
-    /// </summary>
-    public partial class RelationSupport : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RelationSupport>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public RelationSupport() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public RelationSupport(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.management.relation.RelationSupport";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;
@@ -332,125 +189,39 @@ namespace Javax.Management.Relation
     }
     #endregion
 
-    #region RoleInfoNotFoundException
+    #region RelationNotFoundException
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfoNotFoundException.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotFoundException.html
     /// </summary>
-    public partial class RoleInfoNotFoundException : Javax.Management.Relation.RelationException
+    public partial class RelationNotFoundException : Javax.Management.Relation.RelationException
     {
-        public RoleInfoNotFoundException() { }
+        public RelationNotFoundException() { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.management.relation.RoleInfoNotFoundException";
+        public override string ClassName => "javax.management.relation.RelationNotFoundException";
 
         // TODO: complete the class
 
     }
     #endregion
 
-    #region RoleUnresolved
+    #region RelationNotification
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleUnresolved.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotification.html
     /// </summary>
-    public partial class RoleUnresolved : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RoleUnresolved>
+    public partial class RelationNotification : Javax.Management.Notification
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public RoleUnresolved() { }
+        public RelationNotification() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public RoleUnresolved(params object[] args) : base(args) { }
+        public RelationNotification(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.management.relation.RoleUnresolved";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region RoleStatus
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleStatus.html
-    /// </summary>
-    public partial class RoleStatus : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RoleStatus>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public RoleStatus() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public RoleStatus(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.management.relation.RoleStatus";
-
-        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-        public override bool IsCloseable => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => false;
-
-        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-        public override bool IsStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region RelationServiceNotRegisteredException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationServiceNotRegisteredException.html
-    /// </summary>
-    public partial class RelationServiceNotRegisteredException : Javax.Management.Relation.RelationException
-    {
-        public RelationServiceNotRegisteredException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.management.relation.RelationServiceNotRegisteredException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region Role
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/Role.html
-    /// </summary>
-    public partial class Role : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Role>
-    {
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public Role() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public Role(params object[] args) : base(args) { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.management.relation.Role";
+        public override string ClassName => "javax.management.relation.RelationNotification";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -504,23 +275,109 @@ namespace Javax.Management.Relation
     }
     #endregion
 
-    #region Relation
+    #region RelationServiceMBean
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/Relation.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationServiceMBean.html
     /// </summary>
-    public partial class Relation : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Relation>
+    public partial class RelationServiceMBean : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RelationServiceMBean>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public Relation() { }
+        public RelationServiceMBean() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public Relation(params object[] args) : base(args) { }
+        public RelationServiceMBean(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.management.relation.Relation";
+        public override string ClassName => "javax.management.relation.RelationServiceMBean";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => true;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region RelationServiceNotRegisteredException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationServiceNotRegisteredException.html
+    /// </summary>
+    public partial class RelationServiceNotRegisteredException : Javax.Management.Relation.RelationException
+    {
+        public RelationServiceNotRegisteredException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.management.relation.RelationServiceNotRegisteredException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region RelationSupport
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupport.html
+    /// </summary>
+    public partial class RelationSupport : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RelationSupport>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public RelationSupport() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public RelationSupport(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.management.relation.RelationSupport";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region RelationSupportMBean
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupportMBean.html
+    /// </summary>
+    public partial class RelationSupportMBean : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RelationSupportMBean>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public RelationSupportMBean() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public RelationSupportMBean(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.management.relation.RelationSupportMBean";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => true;
@@ -590,6 +447,178 @@ namespace Javax.Management.Relation
     }
     #endregion
 
+    #region RelationTypeSupport
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationTypeSupport.html
+    /// </summary>
+    public partial class RelationTypeSupport : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RelationTypeSupport>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public RelationTypeSupport() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public RelationTypeSupport(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.management.relation.RelationTypeSupport";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region Role
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/Role.html
+    /// </summary>
+    public partial class Role : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Role>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public Role() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public Role(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.management.relation.Role";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region RoleInfo
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfo.html
+    /// </summary>
+    public partial class RoleInfo : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RoleInfo>
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public RoleInfo() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public RoleInfo(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.management.relation.RoleInfo";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region RoleInfoNotFoundException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleInfoNotFoundException.html
+    /// </summary>
+    public partial class RoleInfoNotFoundException : Javax.Management.Relation.RelationException
+    {
+        public RoleInfoNotFoundException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.management.relation.RoleInfoNotFoundException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region RoleList
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleList.html
+    /// </summary>
+    public partial class RoleList : Java.Util.ArrayList
+    {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public RoleList() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public RoleList(params object[] args) : base(args) { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.management.relation.RoleList";
+
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
+
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region RoleNotFoundException
+    /// <summary>
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleNotFoundException.html
+    /// </summary>
+    public partial class RoleNotFoundException : Javax.Management.Relation.RelationException
+    {
+        public RoleNotFoundException() { }
+
+        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+        public override string ClassName => "javax.management.relation.RoleNotFoundException";
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region RoleResult
     /// <summary>
     /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleResult.html
@@ -625,23 +654,23 @@ namespace Javax.Management.Relation
     }
     #endregion
 
-    #region RelationNotification
+    #region RoleStatus
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationNotification.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleStatus.html
     /// </summary>
-    public partial class RelationNotification : Javax.Management.Notification
+    public partial class RoleStatus : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RoleStatus>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public RelationNotification() { }
+        public RoleStatus() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public RelationNotification(params object[] args) : base(args) { }
+        public RoleStatus(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.management.relation.RelationNotification";
+        public override string ClassName => "javax.management.relation.RoleStatus";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -660,32 +689,32 @@ namespace Javax.Management.Relation
     }
     #endregion
 
-    #region RelationServiceMBean
+    #region RoleUnresolved
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationServiceMBean.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleUnresolved.html
     /// </summary>
-    public partial class RelationServiceMBean : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RelationServiceMBean>
+    public partial class RoleUnresolved : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RoleUnresolved>
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public RelationServiceMBean() { }
+        public RoleUnresolved() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public RelationServiceMBean(params object[] args) : base(args) { }
+        public RoleUnresolved(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.management.relation.RelationServiceMBean";
+        public override string ClassName => "javax.management.relation.RoleUnresolved";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-        public override bool IsAbstract => true;
+        public override bool IsAbstract => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
         public override bool IsCloseable => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-        public override bool IsInterface => true;
+        public override bool IsInterface => false;
 
         /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
         public override bool IsStatic => false;
@@ -695,64 +724,35 @@ namespace Javax.Management.Relation
     }
     #endregion
 
-    #region InvalidRoleValueException
+    #region RoleUnresolvedList
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/InvalidRoleValueException.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleUnresolvedList.html
     /// </summary>
-    public partial class InvalidRoleValueException : Javax.Management.Relation.RelationException
+    public partial class RoleUnresolvedList : Java.Util.ArrayList
     {
-        public InvalidRoleValueException() { }
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public RoleUnresolvedList() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public RoleUnresolvedList(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.management.relation.InvalidRoleValueException";
+        public override string ClassName => "javax.management.relation.RoleUnresolvedList";
 
-        // TODO: complete the class
+        /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+        public override bool IsAbstract => false;
 
-    }
-    #endregion
+        /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+        public override bool IsCloseable => false;
 
-    #region InvalidRelationServiceException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/InvalidRelationServiceException.html
-    /// </summary>
-    public partial class InvalidRelationServiceException : Javax.Management.Relation.RelationException
-    {
-        public InvalidRelationServiceException() { }
+        /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+        public override bool IsInterface => false;
 
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.management.relation.InvalidRelationServiceException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region InvalidRelationIdException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/InvalidRelationIdException.html
-    /// </summary>
-    public partial class InvalidRelationIdException : Javax.Management.Relation.RelationException
-    {
-        public InvalidRelationIdException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.management.relation.InvalidRelationIdException";
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region InvalidRoleInfoException
-    /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/InvalidRoleInfoException.html
-    /// </summary>
-    public partial class InvalidRoleInfoException : Javax.Management.Relation.RelationException
-    {
-        public InvalidRoleInfoException() { }
-
-        /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.management.relation.InvalidRoleInfoException";
+        /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+        public override bool IsStatic => false;
 
         // TODO: complete the class
 

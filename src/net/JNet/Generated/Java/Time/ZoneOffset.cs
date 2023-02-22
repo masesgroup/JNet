@@ -41,17 +41,17 @@ namespace Java.Time
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneOffset.html#UTC
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneOffset.html#MAX
         /// </summary>
-        public static Java.Time.ZoneOffset UTC => Clazz.GetField<Java.Time.ZoneOffset>("UTC");
+        public static Java.Time.ZoneOffset MAX => Clazz.GetField<Java.Time.ZoneOffset>("MAX");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneOffset.html#MIN
         /// </summary>
         public static Java.Time.ZoneOffset MIN => Clazz.GetField<Java.Time.ZoneOffset>("MIN");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneOffset.html#MAX
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneOffset.html#UTC
         /// </summary>
-        public static Java.Time.ZoneOffset MAX => Clazz.GetField<Java.Time.ZoneOffset>("MAX");
+        public static Java.Time.ZoneOffset UTC => Clazz.GetField<Java.Time.ZoneOffset>("UTC");
         
         #endregion
 

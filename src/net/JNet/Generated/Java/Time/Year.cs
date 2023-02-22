@@ -41,13 +41,13 @@ namespace Java.Time
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Year.html#MIN_VALUE
-        /// </summary>
-        public static int MIN_VALUE => Clazz.GetField<int>("MIN_VALUE");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Year.html#MAX_VALUE
         /// </summary>
         public static int MAX_VALUE => Clazz.GetField<int>("MAX_VALUE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Year.html#MIN_VALUE
+        /// </summary>
+        public static int MIN_VALUE => Clazz.GetField<int>("MIN_VALUE");
         
         #endregion
 

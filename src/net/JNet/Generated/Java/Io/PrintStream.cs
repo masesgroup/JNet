@@ -30,41 +30,6 @@ namespace Java.Io
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#<init>(java.lang.String,java.lang.String) throws java.io.FileNotFoundException,java.io.UnsupportedEncodingException
-        /// </summary>
-        public PrintStream(string arg0, string arg1)
-            : base(arg0, arg1)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#<init>(java.lang.String) throws java.io.FileNotFoundException
-        /// </summary>
-        public PrintStream(string arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#<init>(java.io.OutputStream,boolean,java.nio.charset.Charset)
-        /// </summary>
-        public PrintStream(Java.Io.OutputStream arg0, bool arg1, Java.Nio.Charset.Charset arg2)
-            : base(arg0, arg1, arg2)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#<init>(java.io.OutputStream,boolean,java.lang.String) throws java.io.UnsupportedEncodingException
-        /// </summary>
-        public PrintStream(Java.Io.OutputStream arg0, bool arg1, string arg2)
-            : base(arg0, arg1, arg2)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#<init>(java.lang.String,java.nio.charset.Charset) throws java.io.IOException
-        /// </summary>
-        public PrintStream(string arg0, Java.Nio.Charset.Charset arg1)
-            : base(arg0, arg1)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#<init>(java.io.File,java.lang.String) throws java.io.FileNotFoundException,java.io.UnsupportedEncodingException
         /// </summary>
         public PrintStream(Java.Io.File arg0, string arg1)
@@ -86,10 +51,17 @@ namespace Java.Io
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#<init>(java.io.OutputStream)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#<init>(java.io.OutputStream,boolean,java.lang.String) throws java.io.UnsupportedEncodingException
         /// </summary>
-        public PrintStream(Java.Io.OutputStream arg0)
-            : base(arg0)
+        public PrintStream(Java.Io.OutputStream arg0, bool arg1, string arg2)
+            : base(arg0, arg1, arg2)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#<init>(java.io.OutputStream,boolean,java.nio.charset.Charset)
+        /// </summary>
+        public PrintStream(Java.Io.OutputStream arg0, bool arg1, Java.Nio.Charset.Charset arg2)
+            : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
@@ -97,6 +69,34 @@ namespace Java.Io
         /// </summary>
         public PrintStream(Java.Io.OutputStream arg0, bool arg1)
             : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#<init>(java.io.OutputStream)
+        /// </summary>
+        public PrintStream(Java.Io.OutputStream arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#<init>(java.lang.String,java.lang.String) throws java.io.FileNotFoundException,java.io.UnsupportedEncodingException
+        /// </summary>
+        public PrintStream(string arg0, string arg1)
+            : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#<init>(java.lang.String,java.nio.charset.Charset) throws java.io.IOException
+        /// </summary>
+        public PrintStream(string arg0, Java.Nio.Charset.Charset arg1)
+            : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#<init>(java.lang.String) throws java.io.FileNotFoundException
+        /// </summary>
+        public PrintStream(string arg0)
+            : base(arg0)
         {
         }
         

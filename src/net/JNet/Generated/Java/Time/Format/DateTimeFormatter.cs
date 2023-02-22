@@ -38,61 +38,61 @@ namespace Java.Time.Format
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#ISO_LOCAL_DATE
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#BASIC_ISO_DATE
         /// </summary>
-        public static Java.Time.Format.DateTimeFormatter ISO_LOCAL_DATE => Clazz.GetField<Java.Time.Format.DateTimeFormatter>("ISO_LOCAL_DATE");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#ISO_OFFSET_DATE
-        /// </summary>
-        public static Java.Time.Format.DateTimeFormatter ISO_OFFSET_DATE => Clazz.GetField<Java.Time.Format.DateTimeFormatter>("ISO_OFFSET_DATE");
+        public static Java.Time.Format.DateTimeFormatter BASIC_ISO_DATE => Clazz.GetField<Java.Time.Format.DateTimeFormatter>("BASIC_ISO_DATE");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#ISO_DATE
         /// </summary>
         public static Java.Time.Format.DateTimeFormatter ISO_DATE => Clazz.GetField<Java.Time.Format.DateTimeFormatter>("ISO_DATE");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#ISO_LOCAL_TIME
-        /// </summary>
-        public static Java.Time.Format.DateTimeFormatter ISO_LOCAL_TIME => Clazz.GetField<Java.Time.Format.DateTimeFormatter>("ISO_LOCAL_TIME");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#ISO_OFFSET_TIME
-        /// </summary>
-        public static Java.Time.Format.DateTimeFormatter ISO_OFFSET_TIME => Clazz.GetField<Java.Time.Format.DateTimeFormatter>("ISO_OFFSET_TIME");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#ISO_TIME
-        /// </summary>
-        public static Java.Time.Format.DateTimeFormatter ISO_TIME => Clazz.GetField<Java.Time.Format.DateTimeFormatter>("ISO_TIME");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#ISO_LOCAL_DATE_TIME
-        /// </summary>
-        public static Java.Time.Format.DateTimeFormatter ISO_LOCAL_DATE_TIME => Clazz.GetField<Java.Time.Format.DateTimeFormatter>("ISO_LOCAL_DATE_TIME");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#ISO_OFFSET_DATE_TIME
-        /// </summary>
-        public static Java.Time.Format.DateTimeFormatter ISO_OFFSET_DATE_TIME => Clazz.GetField<Java.Time.Format.DateTimeFormatter>("ISO_OFFSET_DATE_TIME");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#ISO_ZONED_DATE_TIME
-        /// </summary>
-        public static Java.Time.Format.DateTimeFormatter ISO_ZONED_DATE_TIME => Clazz.GetField<Java.Time.Format.DateTimeFormatter>("ISO_ZONED_DATE_TIME");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#ISO_DATE_TIME
         /// </summary>
         public static Java.Time.Format.DateTimeFormatter ISO_DATE_TIME => Clazz.GetField<Java.Time.Format.DateTimeFormatter>("ISO_DATE_TIME");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#ISO_ORDINAL_DATE
-        /// </summary>
-        public static Java.Time.Format.DateTimeFormatter ISO_ORDINAL_DATE => Clazz.GetField<Java.Time.Format.DateTimeFormatter>("ISO_ORDINAL_DATE");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#ISO_WEEK_DATE
-        /// </summary>
-        public static Java.Time.Format.DateTimeFormatter ISO_WEEK_DATE => Clazz.GetField<Java.Time.Format.DateTimeFormatter>("ISO_WEEK_DATE");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#ISO_INSTANT
         /// </summary>
         public static Java.Time.Format.DateTimeFormatter ISO_INSTANT => Clazz.GetField<Java.Time.Format.DateTimeFormatter>("ISO_INSTANT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#BASIC_ISO_DATE
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#ISO_LOCAL_DATE
         /// </summary>
-        public static Java.Time.Format.DateTimeFormatter BASIC_ISO_DATE => Clazz.GetField<Java.Time.Format.DateTimeFormatter>("BASIC_ISO_DATE");
+        public static Java.Time.Format.DateTimeFormatter ISO_LOCAL_DATE => Clazz.GetField<Java.Time.Format.DateTimeFormatter>("ISO_LOCAL_DATE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#ISO_LOCAL_DATE_TIME
+        /// </summary>
+        public static Java.Time.Format.DateTimeFormatter ISO_LOCAL_DATE_TIME => Clazz.GetField<Java.Time.Format.DateTimeFormatter>("ISO_LOCAL_DATE_TIME");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#ISO_LOCAL_TIME
+        /// </summary>
+        public static Java.Time.Format.DateTimeFormatter ISO_LOCAL_TIME => Clazz.GetField<Java.Time.Format.DateTimeFormatter>("ISO_LOCAL_TIME");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#ISO_OFFSET_DATE
+        /// </summary>
+        public static Java.Time.Format.DateTimeFormatter ISO_OFFSET_DATE => Clazz.GetField<Java.Time.Format.DateTimeFormatter>("ISO_OFFSET_DATE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#ISO_OFFSET_DATE_TIME
+        /// </summary>
+        public static Java.Time.Format.DateTimeFormatter ISO_OFFSET_DATE_TIME => Clazz.GetField<Java.Time.Format.DateTimeFormatter>("ISO_OFFSET_DATE_TIME");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#ISO_OFFSET_TIME
+        /// </summary>
+        public static Java.Time.Format.DateTimeFormatter ISO_OFFSET_TIME => Clazz.GetField<Java.Time.Format.DateTimeFormatter>("ISO_OFFSET_TIME");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#ISO_ORDINAL_DATE
+        /// </summary>
+        public static Java.Time.Format.DateTimeFormatter ISO_ORDINAL_DATE => Clazz.GetField<Java.Time.Format.DateTimeFormatter>("ISO_ORDINAL_DATE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#ISO_TIME
+        /// </summary>
+        public static Java.Time.Format.DateTimeFormatter ISO_TIME => Clazz.GetField<Java.Time.Format.DateTimeFormatter>("ISO_TIME");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#ISO_WEEK_DATE
+        /// </summary>
+        public static Java.Time.Format.DateTimeFormatter ISO_WEEK_DATE => Clazz.GetField<Java.Time.Format.DateTimeFormatter>("ISO_WEEK_DATE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#ISO_ZONED_DATE_TIME
+        /// </summary>
+        public static Java.Time.Format.DateTimeFormatter ISO_ZONED_DATE_TIME => Clazz.GetField<Java.Time.Format.DateTimeFormatter>("ISO_ZONED_DATE_TIME");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/format/DateTimeFormatter.html#RFC_1123_DATE_TIME
         /// </summary>

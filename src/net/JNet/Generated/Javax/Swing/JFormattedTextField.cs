@@ -30,16 +30,16 @@ namespace Javax.Swing
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#<init>(javax.swing.JFormattedTextField$AbstractFormatterFactory,java.lang.Object)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#<init>(java.lang.Object)
         /// </summary>
-        public JFormattedTextField(Javax.Swing.JFormattedTextField.AbstractFormatterFactory arg0, object arg1)
-            : base(arg0, arg1)
+        public JFormattedTextField(object arg0)
+            : base(arg0)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#<init>(javax.swing.JFormattedTextField$AbstractFormatterFactory)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#<init>(java.text.Format)
         /// </summary>
-        public JFormattedTextField(Javax.Swing.JFormattedTextField.AbstractFormatterFactory arg0)
+        public JFormattedTextField(Java.Text.Format arg0)
             : base(arg0)
         {
         }
@@ -51,16 +51,16 @@ namespace Javax.Swing
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#<init>(java.lang.Object)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#<init>(javax.swing.JFormattedTextField$AbstractFormatterFactory,java.lang.Object)
         /// </summary>
-        public JFormattedTextField(object arg0)
-            : base(arg0)
+        public JFormattedTextField(Javax.Swing.JFormattedTextField.AbstractFormatterFactory arg0, object arg1)
+            : base(arg0, arg1)
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#<init>(java.text.Format)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#<init>(javax.swing.JFormattedTextField$AbstractFormatterFactory)
         /// </summary>
-        public JFormattedTextField(Java.Text.Format arg0)
+        public JFormattedTextField(Javax.Swing.JFormattedTextField.AbstractFormatterFactory arg0)
             : base(arg0)
         {
         }
@@ -81,13 +81,13 @@ namespace Javax.Swing
         /// </summary>
         public static int COMMIT_OR_REVERT => Clazz.GetField<int>("COMMIT_OR_REVERT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#REVERT
-        /// </summary>
-        public static int REVERT => Clazz.GetField<int>("REVERT");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#PERSIST
         /// </summary>
         public static int PERSIST => Clazz.GetField<int>("PERSIST");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.html#REVERT
+        /// </summary>
+        public static int REVERT => Clazz.GetField<int>("REVERT");
         
         #endregion
 

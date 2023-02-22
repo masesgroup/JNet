@@ -52,13 +52,13 @@ namespace Javax.Swing.Text
         /// </summary>
         public char[] array => Instance.GetField<char[]>("array");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Segment.html#offset
-        /// </summary>
-        public int offset => Instance.GetField<int>("offset");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Segment.html#count
         /// </summary>
         public int count => Instance.GetField<int>("count");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Segment.html#offset
+        /// </summary>
+        public int offset => Instance.GetField<int>("offset");
         
         #endregion
 

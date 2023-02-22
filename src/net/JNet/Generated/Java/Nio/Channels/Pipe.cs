@@ -70,16 +70,16 @@ namespace Java.Nio.Channels
         #endregion
 
         #region Nested classes
-        #region SinkChannel
-        public partial class SinkChannel
+        #region SourceChannel
+        public partial class SourceChannel
         {
             #region Constructors
 
             #endregion
 
             #region Class/Interface conversion operators
-            public static implicit operator Java.Nio.Channels.WritableByteChannel(Java.Nio.Channels.Pipe.SinkChannel t) => t.Cast<Java.Nio.Channels.WritableByteChannel>();
-            public static implicit operator Java.Nio.Channels.GatheringByteChannel(Java.Nio.Channels.Pipe.SinkChannel t) => t.Cast<Java.Nio.Channels.GatheringByteChannel>();
+            public static implicit operator Java.Nio.Channels.ReadableByteChannel(Java.Nio.Channels.Pipe.SourceChannel t) => t.Cast<Java.Nio.Channels.ReadableByteChannel>();
+            public static implicit operator Java.Nio.Channels.ScatteringByteChannel(Java.Nio.Channels.Pipe.SourceChannel t) => t.Cast<Java.Nio.Channels.ScatteringByteChannel>();
             
             #endregion
 
@@ -99,16 +99,16 @@ namespace Java.Nio.Channels
         }
         #endregion
 
-        #region SourceChannel
-        public partial class SourceChannel
+        #region SinkChannel
+        public partial class SinkChannel
         {
             #region Constructors
 
             #endregion
 
             #region Class/Interface conversion operators
-            public static implicit operator Java.Nio.Channels.ReadableByteChannel(Java.Nio.Channels.Pipe.SourceChannel t) => t.Cast<Java.Nio.Channels.ReadableByteChannel>();
-            public static implicit operator Java.Nio.Channels.ScatteringByteChannel(Java.Nio.Channels.Pipe.SourceChannel t) => t.Cast<Java.Nio.Channels.ScatteringByteChannel>();
+            public static implicit operator Java.Nio.Channels.WritableByteChannel(Java.Nio.Channels.Pipe.SinkChannel t) => t.Cast<Java.Nio.Channels.WritableByteChannel>();
+            public static implicit operator Java.Nio.Channels.GatheringByteChannel(Java.Nio.Channels.Pipe.SinkChannel t) => t.Cast<Java.Nio.Channels.GatheringByteChannel>();
             
             #endregion
 

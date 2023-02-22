@@ -64,15 +64,15 @@ namespace Javax.Swing.Plaf.Basic
         #endregion
 
         #region Nested classes
-        #region BasicHighlighter
-        public partial class BasicHighlighter
+        #region BasicCaret
+        public partial class BasicCaret
         {
             #region Constructors
 
             #endregion
 
             #region Class/Interface conversion operators
-            public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.Basic.BasicTextUI.BasicHighlighter t) => t.Cast<Javax.Swing.Plaf.UIResource>();
+            public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.Basic.BasicTextUI.BasicCaret t) => t.Cast<Javax.Swing.Plaf.UIResource>();
             
             #endregion
 
@@ -92,15 +92,15 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region BasicCaret
-        public partial class BasicCaret
+        #region BasicHighlighter
+        public partial class BasicHighlighter
         {
             #region Constructors
 
             #endregion
 
             #region Class/Interface conversion operators
-            public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.Basic.BasicTextUI.BasicCaret t) => t.Cast<Javax.Swing.Plaf.UIResource>();
+            public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.Basic.BasicTextUI.BasicHighlighter t) => t.Cast<Javax.Swing.Plaf.UIResource>();
             
             #endregion
 

@@ -309,10 +309,6 @@ namespace Javax.Swing.Text.Html
             /// </summary>
             public static Javax.Swing.Text.Html.CSS.Attribute VERTICAL_ALIGN => Clazz.GetField<Javax.Swing.Text.Html.CSS.Attribute>("VERTICAL_ALIGN");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#WORD_SPACING
-            /// </summary>
-            public static Javax.Swing.Text.Html.CSS.Attribute WORD_SPACING => Clazz.GetField<Javax.Swing.Text.Html.CSS.Attribute>("WORD_SPACING");
-            /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#WHITE_SPACE
             /// </summary>
             public static Javax.Swing.Text.Html.CSS.Attribute WHITE_SPACE => Clazz.GetField<Javax.Swing.Text.Html.CSS.Attribute>("WHITE_SPACE");
@@ -320,6 +316,10 @@ namespace Javax.Swing.Text.Html
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#WIDTH
             /// </summary>
             public static Javax.Swing.Text.Html.CSS.Attribute WIDTH => Clazz.GetField<Javax.Swing.Text.Html.CSS.Attribute>("WIDTH");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/CSS.Attribute.html#WORD_SPACING
+            /// </summary>
+            public static Javax.Swing.Text.Html.CSS.Attribute WORD_SPACING => Clazz.GetField<Javax.Swing.Text.Html.CSS.Attribute>("WORD_SPACING");
             
             #endregion
 

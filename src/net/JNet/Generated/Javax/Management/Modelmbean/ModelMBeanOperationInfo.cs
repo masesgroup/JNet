@@ -30,10 +30,17 @@ namespace Javax.Management.Modelmbean
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanOperationInfo.html#<init>(javax.management.modelmbean.ModelMBeanOperationInfo)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanOperationInfo.html#<init>(java.lang.String,java.lang.reflect.Method,javax.management.Descriptor)
         /// </summary>
-        public ModelMBeanOperationInfo(Javax.Management.Modelmbean.ModelMBeanOperationInfo arg0)
-            : base(arg0)
+        public ModelMBeanOperationInfo(string arg0, Java.Lang.Reflect.Method arg1, Javax.Management.Descriptor arg2)
+            : base(arg0, arg1, arg2)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanOperationInfo.html#<init>(java.lang.String,java.lang.reflect.Method)
+        /// </summary>
+        public ModelMBeanOperationInfo(string arg0, Java.Lang.Reflect.Method arg1)
+            : base(arg0, arg1)
         {
         }
         /// <summary>
@@ -51,17 +58,10 @@ namespace Javax.Management.Modelmbean
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanOperationInfo.html#<init>(java.lang.String,java.lang.reflect.Method,javax.management.Descriptor)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanOperationInfo.html#<init>(javax.management.modelmbean.ModelMBeanOperationInfo)
         /// </summary>
-        public ModelMBeanOperationInfo(string arg0, Java.Lang.Reflect.Method arg1, Javax.Management.Descriptor arg2)
-            : base(arg0, arg1, arg2)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanOperationInfo.html#<init>(java.lang.String,java.lang.reflect.Method)
-        /// </summary>
-        public ModelMBeanOperationInfo(string arg0, Java.Lang.Reflect.Method arg1)
-            : base(arg0, arg1)
+        public ModelMBeanOperationInfo(Javax.Management.Modelmbean.ModelMBeanOperationInfo arg0)
+            : base(arg0)
         {
         }
         

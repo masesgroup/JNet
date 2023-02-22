@@ -30,9 +30,23 @@ namespace Javax.Xml.Transform.Stream
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html#<init>(java.io.Reader)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html#<init>(java.io.File)
         /// </summary>
-        public StreamSource(Java.Io.Reader arg0)
+        public StreamSource(Java.Io.File arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html#<init>(java.io.InputStream,java.lang.String)
+        /// </summary>
+        public StreamSource(Java.Io.InputStream arg0, string arg1)
+            : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html#<init>(java.io.InputStream)
+        /// </summary>
+        public StreamSource(Java.Io.InputStream arg0)
             : base(arg0)
         {
         }
@@ -44,31 +58,17 @@ namespace Javax.Xml.Transform.Stream
         {
         }
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html#<init>(java.io.Reader)
+        /// </summary>
+        public StreamSource(Java.Io.Reader arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html#<init>(java.lang.String)
         /// </summary>
         public StreamSource(string arg0)
             : base(arg0)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html#<init>(java.io.File)
-        /// </summary>
-        public StreamSource(Java.Io.File arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html#<init>(java.io.InputStream)
-        /// </summary>
-        public StreamSource(Java.Io.InputStream arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/stream/StreamSource.html#<init>(java.io.InputStream,java.lang.String)
-        /// </summary>
-        public StreamSource(Java.Io.InputStream arg0, string arg1)
-            : base(arg0, arg1)
         {
         }
         

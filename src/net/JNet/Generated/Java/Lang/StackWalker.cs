@@ -56,6 +56,52 @@ namespace Java.Lang
         #endregion
 
         #region Nested classes
+        #region Option
+        public partial class Option
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.Option.html#RETAIN_CLASS_REFERENCE
+            /// </summary>
+            public static Java.Lang.StackWalker.Option RETAIN_CLASS_REFERENCE => Clazz.GetField<Java.Lang.StackWalker.Option>("RETAIN_CLASS_REFERENCE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.Option.html#SHOW_HIDDEN_FRAMES
+            /// </summary>
+            public static Java.Lang.StackWalker.Option SHOW_HIDDEN_FRAMES => Clazz.GetField<Java.Lang.StackWalker.Option>("SHOW_HIDDEN_FRAMES");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.Option.html#SHOW_REFLECT_FRAMES
+            /// </summary>
+            public static Java.Lang.StackWalker.Option SHOW_REFLECT_FRAMES => Clazz.GetField<Java.Lang.StackWalker.Option>("SHOW_REFLECT_FRAMES");
+            
+            #endregion
+
+            #region Static methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.Option.html#values()
+            /// </summary>
+            public static Java.Lang.StackWalker.Option[] Values()
+            {
+                return SExecuteArray<Java.Lang.StackWalker.Option>("values");
+            }
+            
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region StackFrame
         public partial class StackFrame
         {
@@ -140,52 +186,6 @@ namespace Java.Lang
                 return IExecute<string>("getClassName");
             }
             
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region Option
-        public partial class Option
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.Option.html#RETAIN_CLASS_REFERENCE
-            /// </summary>
-            public static Java.Lang.StackWalker.Option RETAIN_CLASS_REFERENCE => Clazz.GetField<Java.Lang.StackWalker.Option>("RETAIN_CLASS_REFERENCE");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.Option.html#SHOW_REFLECT_FRAMES
-            /// </summary>
-            public static Java.Lang.StackWalker.Option SHOW_REFLECT_FRAMES => Clazz.GetField<Java.Lang.StackWalker.Option>("SHOW_REFLECT_FRAMES");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.Option.html#SHOW_HIDDEN_FRAMES
-            /// </summary>
-            public static Java.Lang.StackWalker.Option SHOW_HIDDEN_FRAMES => Clazz.GetField<Java.Lang.StackWalker.Option>("SHOW_HIDDEN_FRAMES");
-            
-            #endregion
-
-            #region Static methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StackWalker.Option.html#values()
-            /// </summary>
-            public static Java.Lang.StackWalker.Option[] Values()
-            {
-                return SExecuteArray<Java.Lang.StackWalker.Option>("values");
-            }
-            
-            #endregion
-
-            #region Instance methods
-
             #endregion
 
             // TODO: complete the class

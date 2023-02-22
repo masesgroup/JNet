@@ -30,10 +30,10 @@ namespace Javax.Swing
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JPasswordField.html#<init>(javax.swing.text.Document,java.lang.String,int)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JPasswordField.html#<init>(int)
         /// </summary>
-        public JPasswordField(Javax.Swing.Text.Document arg0, string arg1, int arg2)
-            : base(arg0, arg1, arg2)
+        public JPasswordField(int arg0)
+            : base(arg0)
         {
         }
         /// <summary>
@@ -44,17 +44,17 @@ namespace Javax.Swing
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JPasswordField.html#<init>(int)
-        /// </summary>
-        public JPasswordField(int arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JPasswordField.html#<init>(java.lang.String)
         /// </summary>
         public JPasswordField(string arg0)
             : base(arg0)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JPasswordField.html#<init>(javax.swing.text.Document,java.lang.String,int)
+        /// </summary>
+        public JPasswordField(Javax.Swing.Text.Document arg0, string arg1, int arg2)
+            : base(arg0, arg1, arg2)
         {
         }
         

@@ -76,6 +76,10 @@ namespace Javax.Xml.Catalog
 
             #region Fields
             /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.Feature.html#DEFER
+            /// </summary>
+            public static Javax.Xml.Catalog.CatalogFeatures.Feature DEFER => Clazz.GetField<Javax.Xml.Catalog.CatalogFeatures.Feature>("DEFER");
+            /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.Feature.html#FILES
             /// </summary>
             public static Javax.Xml.Catalog.CatalogFeatures.Feature FILES => Clazz.GetField<Javax.Xml.Catalog.CatalogFeatures.Feature>("FILES");
@@ -83,10 +87,6 @@ namespace Javax.Xml.Catalog
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.Feature.html#PREFER
             /// </summary>
             public static Javax.Xml.Catalog.CatalogFeatures.Feature PREFER => Clazz.GetField<Javax.Xml.Catalog.CatalogFeatures.Feature>("PREFER");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.Feature.html#DEFER
-            /// </summary>
-            public static Javax.Xml.Catalog.CatalogFeatures.Feature DEFER => Clazz.GetField<Javax.Xml.Catalog.CatalogFeatures.Feature>("DEFER");
             /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.Feature.html#RESOLVE
             /// </summary>

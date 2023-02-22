@@ -45,14 +45,6 @@ namespace Java.Awt.EventNs
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ContainerEvent.html#CONTAINER_FIRST
-        /// </summary>
-        public static int CONTAINER_FIRST => Clazz.GetField<int>("CONTAINER_FIRST");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ContainerEvent.html#CONTAINER_LAST
-        /// </summary>
-        public static int CONTAINER_LAST => Clazz.GetField<int>("CONTAINER_LAST");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ContainerEvent.html#COMPONENT_ADDED
         /// </summary>
         public static int COMPONENT_ADDED => Clazz.GetField<int>("COMPONENT_ADDED");
@@ -60,6 +52,14 @@ namespace Java.Awt.EventNs
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ContainerEvent.html#COMPONENT_REMOVED
         /// </summary>
         public static int COMPONENT_REMOVED => Clazz.GetField<int>("COMPONENT_REMOVED");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ContainerEvent.html#CONTAINER_FIRST
+        /// </summary>
+        public static int CONTAINER_FIRST => Clazz.GetField<int>("CONTAINER_FIRST");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ContainerEvent.html#CONTAINER_LAST
+        /// </summary>
+        public static int CONTAINER_LAST => Clazz.GetField<int>("CONTAINER_LAST");
         
         #endregion
 

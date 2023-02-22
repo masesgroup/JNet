@@ -30,17 +30,17 @@ namespace Javax.Sql
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/StatementEvent.html#<init>(javax.sql.PooledConnection,java.sql.PreparedStatement)
-        /// </summary>
-        public StatementEvent(Javax.Sql.PooledConnection arg0, Java.Sql.PreparedStatement arg1)
-            : base(arg0, arg1)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/StatementEvent.html#<init>(javax.sql.PooledConnection,java.sql.PreparedStatement,java.sql.SQLException)
         /// </summary>
         public StatementEvent(Javax.Sql.PooledConnection arg0, Java.Sql.PreparedStatement arg1, Java.Sql.SQLException arg2)
             : base(arg0, arg1, arg2)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/StatementEvent.html#<init>(javax.sql.PooledConnection,java.sql.PreparedStatement)
+        /// </summary>
+        public StatementEvent(Javax.Sql.PooledConnection arg0, Java.Sql.PreparedStatement arg1)
+            : base(arg0, arg1)
         {
         }
         

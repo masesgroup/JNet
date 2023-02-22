@@ -30,17 +30,17 @@ namespace Java.Security
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/ProtectionDomain.html#<init>(java.security.CodeSource,java.security.PermissionCollection)
-        /// </summary>
-        public ProtectionDomain(Java.Security.CodeSource arg0, Java.Security.PermissionCollection arg1)
-            : base(arg0, arg1)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/ProtectionDomain.html#<init>(java.security.CodeSource,java.security.PermissionCollection,java.lang.ClassLoader,java.security.Principal[])
         /// </summary>
         public ProtectionDomain(Java.Security.CodeSource arg0, Java.Security.PermissionCollection arg1, Java.Lang.ClassLoader arg2, Java.Security.Principal[] arg3)
             : base(arg0, arg1, arg2, arg3)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/ProtectionDomain.html#<init>(java.security.CodeSource,java.security.PermissionCollection)
+        /// </summary>
+        public ProtectionDomain(Java.Security.CodeSource arg0, Java.Security.PermissionCollection arg1)
+            : base(arg0, arg1)
         {
         }
         

@@ -55,13 +55,13 @@ namespace Javax.Swing
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTabbedPane.html#WRAP_TAB_LAYOUT
-        /// </summary>
-        public static int WRAP_TAB_LAYOUT => Clazz.GetField<int>("WRAP_TAB_LAYOUT");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTabbedPane.html#SCROLL_TAB_LAYOUT
         /// </summary>
         public static int SCROLL_TAB_LAYOUT => Clazz.GetField<int>("SCROLL_TAB_LAYOUT");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTabbedPane.html#WRAP_TAB_LAYOUT
+        /// </summary>
+        public static int WRAP_TAB_LAYOUT => Clazz.GetField<int>("WRAP_TAB_LAYOUT");
         
         #endregion
 

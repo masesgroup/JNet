@@ -30,9 +30,16 @@ namespace Javax.Swing
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ImageIcon.html#<init>(java.net.URL)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ImageIcon.html#<init>(byte[],java.lang.String)
         /// </summary>
-        public ImageIcon(Java.Net.URL arg0)
+        public ImageIcon(byte[] arg0, string arg1)
+            : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ImageIcon.html#<init>(byte[])
+        /// </summary>
+        public ImageIcon(byte[] arg0)
             : base(arg0)
         {
         }
@@ -47,20 +54,6 @@ namespace Javax.Swing
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ImageIcon.html#<init>(java.awt.Image)
         /// </summary>
         public ImageIcon(Java.Awt.Image arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ImageIcon.html#<init>(byte[],java.lang.String)
-        /// </summary>
-        public ImageIcon(byte[] arg0, string arg1)
-            : base(arg0, arg1)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ImageIcon.html#<init>(byte[])
-        /// </summary>
-        public ImageIcon(byte[] arg0)
             : base(arg0)
         {
         }
@@ -83,6 +76,13 @@ namespace Javax.Swing
         /// </summary>
         public ImageIcon(Java.Net.URL arg0, string arg1)
             : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ImageIcon.html#<init>(java.net.URL)
+        /// </summary>
+        public ImageIcon(Java.Net.URL arg0)
+            : base(arg0)
         {
         }
         

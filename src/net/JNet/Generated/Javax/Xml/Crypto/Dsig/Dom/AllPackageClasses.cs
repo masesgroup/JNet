@@ -23,23 +23,23 @@
 
 namespace Javax.Xml.Crypto.Dsig.Dom
 {
-    #region DOMValidateContext
+    #region DOMSignContext
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/dom/DOMValidateContext.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/dom/DOMSignContext.html
     /// </summary>
-    public partial class DOMValidateContext : Javax.Xml.Crypto.Dom.DOMCryptoContext
+    public partial class DOMSignContext : Javax.Xml.Crypto.Dom.DOMCryptoContext
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public DOMValidateContext() { }
+        public DOMSignContext() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public DOMValidateContext(params object[] args) : base(args) { }
+        public DOMSignContext(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.xml.crypto.dsig.dom.DOMValidateContext";
+        public override string ClassName => "javax.xml.crypto.dsig.dom.DOMSignContext";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;
@@ -58,23 +58,23 @@ namespace Javax.Xml.Crypto.Dsig.Dom
     }
     #endregion
 
-    #region DOMSignContext
+    #region DOMValidateContext
     /// <summary>
-    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/dom/DOMSignContext.html
+    /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/dom/DOMValidateContext.html
     /// </summary>
-    public partial class DOMSignContext : Javax.Xml.Crypto.Dom.DOMCryptoContext
+    public partial class DOMValidateContext : Javax.Xml.Crypto.Dom.DOMCryptoContext
     {
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public DOMSignContext() { }
+        public DOMValidateContext() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public DOMSignContext(params object[] args) : base(args) { }
+        public DOMValidateContext(params object[] args) : base(args) { }
 
         /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-        public override string ClassName => "javax.xml.crypto.dsig.dom.DOMSignContext";
+        public override string ClassName => "javax.xml.crypto.dsig.dom.DOMValidateContext";
 
         /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
         public override bool IsAbstract => false;

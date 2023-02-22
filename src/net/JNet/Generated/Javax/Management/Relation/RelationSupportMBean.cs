@@ -49,14 +49,14 @@ namespace Javax.Management.Relation
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupportMBean.html#isInRelationService()
         /// </summary>
-        public bool IsInRelationService()
+        public bool? IsInRelationService()
         {
-            return IExecute<bool>("isInRelationService");
+            return IExecute<bool?>("isInRelationService");
         }
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupportMBean.html#setRelationServiceManagementFlag(java.lang.Boolean) throws java.lang.IllegalArgumentException
         /// </summary>
-        public void SetRelationServiceManagementFlag(bool arg0)
+        public void SetRelationServiceManagementFlag(bool? arg0)
         {
             IExecute("setRelationServiceManagementFlag", arg0);
         }

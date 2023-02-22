@@ -38,33 +38,33 @@ namespace Java.Util
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#ORDERED
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#CONCURRENT
         /// </summary>
-        public static int ORDERED => Clazz.GetField<int>("ORDERED");
+        public static int CONCURRENT => Clazz.GetField<int>("CONCURRENT");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#DISTINCT
         /// </summary>
         public static int DISTINCT => Clazz.GetField<int>("DISTINCT");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#SORTED
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#IMMUTABLE
         /// </summary>
-        public static int SORTED => Clazz.GetField<int>("SORTED");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#SIZED
-        /// </summary>
-        public static int SIZED => Clazz.GetField<int>("SIZED");
+        public static int IMMUTABLE => Clazz.GetField<int>("IMMUTABLE");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#NONNULL
         /// </summary>
         public static int NONNULL => Clazz.GetField<int>("NONNULL");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#IMMUTABLE
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#ORDERED
         /// </summary>
-        public static int IMMUTABLE => Clazz.GetField<int>("IMMUTABLE");
+        public static int ORDERED => Clazz.GetField<int>("ORDERED");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#CONCURRENT
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#SIZED
         /// </summary>
-        public static int CONCURRENT => Clazz.GetField<int>("CONCURRENT");
+        public static int SIZED => Clazz.GetField<int>("SIZED");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#SORTED
+        /// </summary>
+        public static int SORTED => Clazz.GetField<int>("SORTED");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.html#SUBSIZED
         /// </summary>

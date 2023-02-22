@@ -30,17 +30,17 @@ namespace Javax.Swing
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#<init>(javax.swing.tree.TreeNode,boolean)
-        /// </summary>
-        public JTree(Javax.Swing.Tree.TreeNode arg0, bool arg1)
-            : base(arg0, arg1)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#<init>(javax.swing.tree.TreeModel)
         /// </summary>
         public JTree(Javax.Swing.Tree.TreeModel arg0)
             : base(arg0)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#<init>(javax.swing.tree.TreeNode,boolean)
+        /// </summary>
+        public JTree(Javax.Swing.Tree.TreeNode arg0, bool arg1)
+            : base(arg0, arg1)
         {
         }
         /// <summary>
@@ -61,69 +61,69 @@ namespace Javax.Swing
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#CELL_RENDERER_PROPERTY
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#ANCHOR_SELECTION_PATH_PROPERTY
         /// </summary>
-        public static string CELL_RENDERER_PROPERTY => Clazz.GetField<string>("CELL_RENDERER_PROPERTY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#TREE_MODEL_PROPERTY
-        /// </summary>
-        public static string TREE_MODEL_PROPERTY => Clazz.GetField<string>("TREE_MODEL_PROPERTY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#ROOT_VISIBLE_PROPERTY
-        /// </summary>
-        public static string ROOT_VISIBLE_PROPERTY => Clazz.GetField<string>("ROOT_VISIBLE_PROPERTY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#SHOWS_ROOT_HANDLES_PROPERTY
-        /// </summary>
-        public static string SHOWS_ROOT_HANDLES_PROPERTY => Clazz.GetField<string>("SHOWS_ROOT_HANDLES_PROPERTY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#ROW_HEIGHT_PROPERTY
-        /// </summary>
-        public static string ROW_HEIGHT_PROPERTY => Clazz.GetField<string>("ROW_HEIGHT_PROPERTY");
+        public static string ANCHOR_SELECTION_PATH_PROPERTY => Clazz.GetField<string>("ANCHOR_SELECTION_PATH_PROPERTY");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#CELL_EDITOR_PROPERTY
         /// </summary>
         public static string CELL_EDITOR_PROPERTY => Clazz.GetField<string>("CELL_EDITOR_PROPERTY");
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#CELL_RENDERER_PROPERTY
+        /// </summary>
+        public static string CELL_RENDERER_PROPERTY => Clazz.GetField<string>("CELL_RENDERER_PROPERTY");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#EDITABLE_PROPERTY
         /// </summary>
         public static string EDITABLE_PROPERTY => Clazz.GetField<string>("EDITABLE_PROPERTY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#LARGE_MODEL_PROPERTY
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#EXPANDS_SELECTED_PATHS_PROPERTY
         /// </summary>
-        public static string LARGE_MODEL_PROPERTY => Clazz.GetField<string>("LARGE_MODEL_PROPERTY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#SELECTION_MODEL_PROPERTY
-        /// </summary>
-        public static string SELECTION_MODEL_PROPERTY => Clazz.GetField<string>("SELECTION_MODEL_PROPERTY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#VISIBLE_ROW_COUNT_PROPERTY
-        /// </summary>
-        public static string VISIBLE_ROW_COUNT_PROPERTY => Clazz.GetField<string>("VISIBLE_ROW_COUNT_PROPERTY");
+        public static string EXPANDS_SELECTED_PATHS_PROPERTY => Clazz.GetField<string>("EXPANDS_SELECTED_PATHS_PROPERTY");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#INVOKES_STOP_CELL_EDITING_PROPERTY
         /// </summary>
         public static string INVOKES_STOP_CELL_EDITING_PROPERTY => Clazz.GetField<string>("INVOKES_STOP_CELL_EDITING_PROPERTY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#SCROLLS_ON_EXPAND_PROPERTY
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#LARGE_MODEL_PROPERTY
         /// </summary>
-        public static string SCROLLS_ON_EXPAND_PROPERTY => Clazz.GetField<string>("SCROLLS_ON_EXPAND_PROPERTY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#TOGGLE_CLICK_COUNT_PROPERTY
-        /// </summary>
-        public static string TOGGLE_CLICK_COUNT_PROPERTY => Clazz.GetField<string>("TOGGLE_CLICK_COUNT_PROPERTY");
+        public static string LARGE_MODEL_PROPERTY => Clazz.GetField<string>("LARGE_MODEL_PROPERTY");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#LEAD_SELECTION_PATH_PROPERTY
         /// </summary>
         public static string LEAD_SELECTION_PATH_PROPERTY => Clazz.GetField<string>("LEAD_SELECTION_PATH_PROPERTY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#ANCHOR_SELECTION_PATH_PROPERTY
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#ROOT_VISIBLE_PROPERTY
         /// </summary>
-        public static string ANCHOR_SELECTION_PATH_PROPERTY => Clazz.GetField<string>("ANCHOR_SELECTION_PATH_PROPERTY");
+        public static string ROOT_VISIBLE_PROPERTY => Clazz.GetField<string>("ROOT_VISIBLE_PROPERTY");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#EXPANDS_SELECTED_PATHS_PROPERTY
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#ROW_HEIGHT_PROPERTY
         /// </summary>
-        public static string EXPANDS_SELECTED_PATHS_PROPERTY => Clazz.GetField<string>("EXPANDS_SELECTED_PATHS_PROPERTY");
+        public static string ROW_HEIGHT_PROPERTY => Clazz.GetField<string>("ROW_HEIGHT_PROPERTY");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#SCROLLS_ON_EXPAND_PROPERTY
+        /// </summary>
+        public static string SCROLLS_ON_EXPAND_PROPERTY => Clazz.GetField<string>("SCROLLS_ON_EXPAND_PROPERTY");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#SELECTION_MODEL_PROPERTY
+        /// </summary>
+        public static string SELECTION_MODEL_PROPERTY => Clazz.GetField<string>("SELECTION_MODEL_PROPERTY");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#SHOWS_ROOT_HANDLES_PROPERTY
+        /// </summary>
+        public static string SHOWS_ROOT_HANDLES_PROPERTY => Clazz.GetField<string>("SHOWS_ROOT_HANDLES_PROPERTY");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#TOGGLE_CLICK_COUNT_PROPERTY
+        /// </summary>
+        public static string TOGGLE_CLICK_COUNT_PROPERTY => Clazz.GetField<string>("TOGGLE_CLICK_COUNT_PROPERTY");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#TREE_MODEL_PROPERTY
+        /// </summary>
+        public static string TREE_MODEL_PROPERTY => Clazz.GetField<string>("TREE_MODEL_PROPERTY");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#VISIBLE_ROW_COUNT_PROPERTY
+        /// </summary>
+        public static string VISIBLE_ROW_COUNT_PROPERTY => Clazz.GetField<string>("VISIBLE_ROW_COUNT_PROPERTY");
         
         #endregion
 

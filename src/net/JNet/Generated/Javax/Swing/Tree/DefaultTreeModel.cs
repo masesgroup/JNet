@@ -30,17 +30,17 @@ namespace Javax.Swing.Tree
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeModel.html#<init>(javax.swing.tree.TreeNode)
-        /// </summary>
-        public DefaultTreeModel(Javax.Swing.Tree.TreeNode arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeModel.html#<init>(javax.swing.tree.TreeNode,boolean)
         /// </summary>
         public DefaultTreeModel(Javax.Swing.Tree.TreeNode arg0, bool arg1)
             : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultTreeModel.html#<init>(javax.swing.tree.TreeNode)
+        /// </summary>
+        public DefaultTreeModel(Javax.Swing.Tree.TreeNode arg0)
+            : base(arg0)
         {
         }
         

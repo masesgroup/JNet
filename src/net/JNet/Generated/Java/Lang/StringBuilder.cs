@@ -30,6 +30,13 @@ namespace Java.Lang
     {
         #region Constructors
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StringBuilder.html#<init>(int)
+        /// </summary>
+        public StringBuilder(int arg0)
+            : base(arg0)
+        {
+        }
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StringBuilder.html#<init>(java.lang.CharSequence)
         /// </summary>
         public StringBuilder(Java.Lang.CharSequence arg0)
@@ -40,13 +47,6 @@ namespace Java.Lang
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StringBuilder.html#<init>(java.lang.String)
         /// </summary>
         public StringBuilder(string arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/StringBuilder.html#<init>(int)
-        /// </summary>
-        public StringBuilder(int arg0)
             : base(arg0)
         {
         }

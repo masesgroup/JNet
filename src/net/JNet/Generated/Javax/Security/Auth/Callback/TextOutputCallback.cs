@@ -47,6 +47,10 @@ namespace Javax.Security.Auth.Callback
 
         #region Fields
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/TextOutputCallback.html#ERROR
+        /// </summary>
+        public static int ERROR => Clazz.GetField<int>("ERROR");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/TextOutputCallback.html#INFORMATION
         /// </summary>
         public static int INFORMATION => Clazz.GetField<int>("INFORMATION");
@@ -54,10 +58,6 @@ namespace Javax.Security.Auth.Callback
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/TextOutputCallback.html#WARNING
         /// </summary>
         public static int WARNING => Clazz.GetField<int>("WARNING");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/callback/TextOutputCallback.html#ERROR
-        /// </summary>
-        public static int ERROR => Clazz.GetField<int>("ERROR");
         
         #endregion
 

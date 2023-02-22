@@ -30,17 +30,10 @@ namespace Java.Beans.Beancontext
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#<init>(java.beans.beancontext.BeanContextServices)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#<init>(java.beans.beancontext.BeanContextServices,java.util.Locale,boolean,boolean)
         /// </summary>
-        public BeanContextServicesSupport(Java.Beans.Beancontext.BeanContextServices arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#<init>(java.beans.beancontext.BeanContextServices,java.util.Locale)
-        /// </summary>
-        public BeanContextServicesSupport(Java.Beans.Beancontext.BeanContextServices arg0, Java.Util.Locale arg1)
-            : base(arg0, arg1)
+        public BeanContextServicesSupport(Java.Beans.Beancontext.BeanContextServices arg0, Java.Util.Locale arg1, bool arg2, bool arg3)
+            : base(arg0, arg1, arg2, arg3)
         {
         }
         /// <summary>
@@ -51,10 +44,17 @@ namespace Java.Beans.Beancontext
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#<init>(java.beans.beancontext.BeanContextServices,java.util.Locale,boolean,boolean)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#<init>(java.beans.beancontext.BeanContextServices,java.util.Locale)
         /// </summary>
-        public BeanContextServicesSupport(Java.Beans.Beancontext.BeanContextServices arg0, Java.Util.Locale arg1, bool arg2, bool arg3)
-            : base(arg0, arg1, arg2, arg3)
+        public BeanContextServicesSupport(Java.Beans.Beancontext.BeanContextServices arg0, Java.Util.Locale arg1)
+            : base(arg0, arg1)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#<init>(java.beans.beancontext.BeanContextServices)
+        /// </summary>
+        public BeanContextServicesSupport(Java.Beans.Beancontext.BeanContextServices arg0)
+            : base(arg0)
         {
         }
         

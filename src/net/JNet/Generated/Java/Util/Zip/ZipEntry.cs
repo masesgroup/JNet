@@ -53,13 +53,13 @@ namespace Java.Util.Zip
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#STORED
-        /// </summary>
-        public static int STORED => Clazz.GetField<int>("STORED");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#DEFLATED
         /// </summary>
         public static int DEFLATED => Clazz.GetField<int>("DEFLATED");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/ZipEntry.html#STORED
+        /// </summary>
+        public static int STORED => Clazz.GetField<int>("STORED");
         
         #endregion
 

@@ -30,17 +30,17 @@ namespace Javax.Management.Openmbean
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanConstructorInfoSupport.html#<init>(java.lang.String,java.lang.String,javax.management.openmbean.OpenMBeanParameterInfo[])
-        /// </summary>
-        public OpenMBeanConstructorInfoSupport(string arg0, string arg1, Javax.Management.Openmbean.OpenMBeanParameterInfo[] arg2)
-            : base(arg0, arg1, arg2)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanConstructorInfoSupport.html#<init>(java.lang.String,java.lang.String,javax.management.openmbean.OpenMBeanParameterInfo[],javax.management.Descriptor)
         /// </summary>
         public OpenMBeanConstructorInfoSupport(string arg0, string arg1, Javax.Management.Openmbean.OpenMBeanParameterInfo[] arg2, Javax.Management.Descriptor arg3)
             : base(arg0, arg1, arg2, arg3)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/OpenMBeanConstructorInfoSupport.html#<init>(java.lang.String,java.lang.String,javax.management.openmbean.OpenMBeanParameterInfo[])
+        /// </summary>
+        public OpenMBeanConstructorInfoSupport(string arg0, string arg1, Javax.Management.Openmbean.OpenMBeanParameterInfo[] arg2)
+            : base(arg0, arg1, arg2)
         {
         }
         

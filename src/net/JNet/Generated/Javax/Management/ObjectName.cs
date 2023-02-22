@@ -30,17 +30,17 @@ namespace Javax.Management
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#<init>(java.lang.String) throws javax.management.MalformedObjectNameException
-        /// </summary>
-        public ObjectName(string arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#<init>(java.lang.String,java.lang.String,java.lang.String) throws javax.management.MalformedObjectNameException
         /// </summary>
         public ObjectName(string arg0, string arg1, string arg2)
             : base(arg0, arg1, arg2)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#<init>(java.lang.String) throws javax.management.MalformedObjectNameException
+        /// </summary>
+        public ObjectName(string arg0)
+            : base(arg0)
         {
         }
         

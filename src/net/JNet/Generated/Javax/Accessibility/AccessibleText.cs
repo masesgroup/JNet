@@ -42,13 +42,13 @@ namespace Javax.Accessibility
         /// </summary>
         public static int CHARACTER => Clazz.GetField<int>("CHARACTER");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleText.html#WORD
-        /// </summary>
-        public static int WORD => Clazz.GetField<int>("WORD");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleText.html#SENTENCE
         /// </summary>
         public static int SENTENCE => Clazz.GetField<int>("SENTENCE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleText.html#WORD
+        /// </summary>
+        public static int WORD => Clazz.GetField<int>("WORD");
         
         #endregion
 

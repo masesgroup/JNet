@@ -30,17 +30,10 @@ namespace Java.Awt
     {
         #region Constructors
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#<init>(float)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#<init>(float,int,int,float,float[],float)
         /// </summary>
-        public BasicStroke(float arg0)
-            : base(arg0)
-        {
-        }
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#<init>(float,int,int)
-        /// </summary>
-        public BasicStroke(float arg0, int arg1, int arg2)
-            : base(arg0, arg1, arg2)
+        public BasicStroke(float arg0, int arg1, int arg2, float arg3, float[] arg4, float arg5)
+            : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
         }
         /// <summary>
@@ -51,10 +44,17 @@ namespace Java.Awt
         {
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#<init>(float,int,int,float,float[],float)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#<init>(float,int,int)
         /// </summary>
-        public BasicStroke(float arg0, int arg1, int arg2, float arg3, float[] arg4, float arg5)
-            : base(arg0, arg1, arg2, arg3, arg4, arg5)
+        public BasicStroke(float arg0, int arg1, int arg2)
+            : base(arg0, arg1, arg2)
+        {
+        }
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#<init>(float)
+        /// </summary>
+        public BasicStroke(float arg0)
+            : base(arg0)
         {
         }
         
@@ -67,18 +67,6 @@ namespace Java.Awt
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#JOIN_MITER
-        /// </summary>
-        public static int JOIN_MITER => Clazz.GetField<int>("JOIN_MITER");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#JOIN_ROUND
-        /// </summary>
-        public static int JOIN_ROUND => Clazz.GetField<int>("JOIN_ROUND");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#JOIN_BEVEL
-        /// </summary>
-        public static int JOIN_BEVEL => Clazz.GetField<int>("JOIN_BEVEL");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#CAP_BUTT
         /// </summary>
         public static int CAP_BUTT => Clazz.GetField<int>("CAP_BUTT");
@@ -90,6 +78,18 @@ namespace Java.Awt
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#CAP_SQUARE
         /// </summary>
         public static int CAP_SQUARE => Clazz.GetField<int>("CAP_SQUARE");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#JOIN_BEVEL
+        /// </summary>
+        public static int JOIN_BEVEL => Clazz.GetField<int>("JOIN_BEVEL");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#JOIN_MITER
+        /// </summary>
+        public static int JOIN_MITER => Clazz.GetField<int>("JOIN_MITER");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/BasicStroke.html#JOIN_ROUND
+        /// </summary>
+        public static int JOIN_ROUND => Clazz.GetField<int>("JOIN_ROUND");
         
         #endregion
 

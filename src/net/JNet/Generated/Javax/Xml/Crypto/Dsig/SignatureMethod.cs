@@ -48,46 +48,6 @@ namespace Javax.Xml.Crypto.Dsig
         /// </summary>
         public static string DSA_SHA256 => Clazz.GetField<string>("DSA_SHA256");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureMethod.html#RSA_SHA1
-        /// </summary>
-        public static string RSA_SHA1 => Clazz.GetField<string>("RSA_SHA1");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureMethod.html#RSA_SHA224
-        /// </summary>
-        public static string RSA_SHA224 => Clazz.GetField<string>("RSA_SHA224");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureMethod.html#RSA_SHA256
-        /// </summary>
-        public static string RSA_SHA256 => Clazz.GetField<string>("RSA_SHA256");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureMethod.html#RSA_SHA384
-        /// </summary>
-        public static string RSA_SHA384 => Clazz.GetField<string>("RSA_SHA384");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureMethod.html#RSA_SHA512
-        /// </summary>
-        public static string RSA_SHA512 => Clazz.GetField<string>("RSA_SHA512");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureMethod.html#SHA1_RSA_MGF1
-        /// </summary>
-        public static string SHA1_RSA_MGF1 => Clazz.GetField<string>("SHA1_RSA_MGF1");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureMethod.html#SHA224_RSA_MGF1
-        /// </summary>
-        public static string SHA224_RSA_MGF1 => Clazz.GetField<string>("SHA224_RSA_MGF1");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureMethod.html#SHA256_RSA_MGF1
-        /// </summary>
-        public static string SHA256_RSA_MGF1 => Clazz.GetField<string>("SHA256_RSA_MGF1");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureMethod.html#SHA384_RSA_MGF1
-        /// </summary>
-        public static string SHA384_RSA_MGF1 => Clazz.GetField<string>("SHA384_RSA_MGF1");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureMethod.html#SHA512_RSA_MGF1
-        /// </summary>
-        public static string SHA512_RSA_MGF1 => Clazz.GetField<string>("SHA512_RSA_MGF1");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureMethod.html#ECDSA_SHA1
         /// </summary>
         public static string ECDSA_SHA1 => Clazz.GetField<string>("ECDSA_SHA1");
@@ -127,6 +87,46 @@ namespace Javax.Xml.Crypto.Dsig
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureMethod.html#HMAC_SHA512
         /// </summary>
         public static string HMAC_SHA512 => Clazz.GetField<string>("HMAC_SHA512");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureMethod.html#RSA_SHA1
+        /// </summary>
+        public static string RSA_SHA1 => Clazz.GetField<string>("RSA_SHA1");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureMethod.html#RSA_SHA224
+        /// </summary>
+        public static string RSA_SHA224 => Clazz.GetField<string>("RSA_SHA224");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureMethod.html#RSA_SHA256
+        /// </summary>
+        public static string RSA_SHA256 => Clazz.GetField<string>("RSA_SHA256");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureMethod.html#RSA_SHA384
+        /// </summary>
+        public static string RSA_SHA384 => Clazz.GetField<string>("RSA_SHA384");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureMethod.html#RSA_SHA512
+        /// </summary>
+        public static string RSA_SHA512 => Clazz.GetField<string>("RSA_SHA512");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureMethod.html#SHA1_RSA_MGF1
+        /// </summary>
+        public static string SHA1_RSA_MGF1 => Clazz.GetField<string>("SHA1_RSA_MGF1");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureMethod.html#SHA224_RSA_MGF1
+        /// </summary>
+        public static string SHA224_RSA_MGF1 => Clazz.GetField<string>("SHA224_RSA_MGF1");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureMethod.html#SHA256_RSA_MGF1
+        /// </summary>
+        public static string SHA256_RSA_MGF1 => Clazz.GetField<string>("SHA256_RSA_MGF1");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureMethod.html#SHA384_RSA_MGF1
+        /// </summary>
+        public static string SHA384_RSA_MGF1 => Clazz.GetField<string>("SHA384_RSA_MGF1");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignatureMethod.html#SHA512_RSA_MGF1
+        /// </summary>
+        public static string SHA512_RSA_MGF1 => Clazz.GetField<string>("SHA512_RSA_MGF1");
         
         #endregion
 

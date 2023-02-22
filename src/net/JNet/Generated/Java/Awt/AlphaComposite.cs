@@ -43,45 +43,45 @@ namespace Java.Awt
         /// </summary>
         public static int CLEAR => Clazz.GetField<int>("CLEAR");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#SRC
-        /// </summary>
-        public static int SRC => Clazz.GetField<int>("SRC");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#DST
         /// </summary>
         public static int DST => Clazz.GetField<int>("DST");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#SRC_OVER
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#DST_ATOP
         /// </summary>
-        public static int SRC_OVER => Clazz.GetField<int>("SRC_OVER");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#DST_OVER
-        /// </summary>
-        public static int DST_OVER => Clazz.GetField<int>("DST_OVER");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#SRC_IN
-        /// </summary>
-        public static int SRC_IN => Clazz.GetField<int>("SRC_IN");
+        public static int DST_ATOP => Clazz.GetField<int>("DST_ATOP");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#DST_IN
         /// </summary>
         public static int DST_IN => Clazz.GetField<int>("DST_IN");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#SRC_OUT
-        /// </summary>
-        public static int SRC_OUT => Clazz.GetField<int>("SRC_OUT");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#DST_OUT
         /// </summary>
         public static int DST_OUT => Clazz.GetField<int>("DST_OUT");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#DST_OVER
+        /// </summary>
+        public static int DST_OVER => Clazz.GetField<int>("DST_OVER");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#SRC
+        /// </summary>
+        public static int SRC => Clazz.GetField<int>("SRC");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#SRC_ATOP
         /// </summary>
         public static int SRC_ATOP => Clazz.GetField<int>("SRC_ATOP");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#DST_ATOP
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#SRC_IN
         /// </summary>
-        public static int DST_ATOP => Clazz.GetField<int>("DST_ATOP");
+        public static int SRC_IN => Clazz.GetField<int>("SRC_IN");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#SRC_OUT
+        /// </summary>
+        public static int SRC_OUT => Clazz.GetField<int>("SRC_OUT");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#SRC_OVER
+        /// </summary>
+        public static int SRC_OVER => Clazz.GetField<int>("SRC_OVER");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#XOR
         /// </summary>
@@ -91,45 +91,45 @@ namespace Java.Awt
         /// </summary>
         public static Java.Awt.AlphaComposite Clear => Clazz.GetField<Java.Awt.AlphaComposite>("Clear");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#Src
-        /// </summary>
-        public static Java.Awt.AlphaComposite Src => Clazz.GetField<Java.Awt.AlphaComposite>("Src");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#Dst
         /// </summary>
         public static Java.Awt.AlphaComposite Dst => Clazz.GetField<Java.Awt.AlphaComposite>("Dst");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#SrcOver
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#DstAtop
         /// </summary>
-        public static Java.Awt.AlphaComposite SrcOver => Clazz.GetField<Java.Awt.AlphaComposite>("SrcOver");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#DstOver
-        /// </summary>
-        public static Java.Awt.AlphaComposite DstOver => Clazz.GetField<Java.Awt.AlphaComposite>("DstOver");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#SrcIn
-        /// </summary>
-        public static Java.Awt.AlphaComposite SrcIn => Clazz.GetField<Java.Awt.AlphaComposite>("SrcIn");
+        public static Java.Awt.AlphaComposite DstAtop => Clazz.GetField<Java.Awt.AlphaComposite>("DstAtop");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#DstIn
         /// </summary>
         public static Java.Awt.AlphaComposite DstIn => Clazz.GetField<Java.Awt.AlphaComposite>("DstIn");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#SrcOut
-        /// </summary>
-        public static Java.Awt.AlphaComposite SrcOut => Clazz.GetField<Java.Awt.AlphaComposite>("SrcOut");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#DstOut
         /// </summary>
         public static Java.Awt.AlphaComposite DstOut => Clazz.GetField<Java.Awt.AlphaComposite>("DstOut");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#DstOver
+        /// </summary>
+        public static Java.Awt.AlphaComposite DstOver => Clazz.GetField<Java.Awt.AlphaComposite>("DstOver");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#Src
+        /// </summary>
+        public static Java.Awt.AlphaComposite Src => Clazz.GetField<Java.Awt.AlphaComposite>("Src");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#SrcAtop
         /// </summary>
         public static Java.Awt.AlphaComposite SrcAtop => Clazz.GetField<Java.Awt.AlphaComposite>("SrcAtop");
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#DstAtop
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#SrcIn
         /// </summary>
-        public static Java.Awt.AlphaComposite DstAtop => Clazz.GetField<Java.Awt.AlphaComposite>("DstAtop");
+        public static Java.Awt.AlphaComposite SrcIn => Clazz.GetField<Java.Awt.AlphaComposite>("SrcIn");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#SrcOut
+        /// </summary>
+        public static Java.Awt.AlphaComposite SrcOut => Clazz.GetField<Java.Awt.AlphaComposite>("SrcOut");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#SrcOver
+        /// </summary>
+        public static Java.Awt.AlphaComposite SrcOver => Clazz.GetField<Java.Awt.AlphaComposite>("SrcOver");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/AlphaComposite.html#Xor
         /// </summary>

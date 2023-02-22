@@ -38,18 +38,6 @@ namespace Java.Lang
 
         #region Fields
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#POSITIVE_INFINITY
-        /// </summary>
-        public static float POSITIVE_INFINITY => Clazz.GetField<float>("POSITIVE_INFINITY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#NEGATIVE_INFINITY
-        /// </summary>
-        public static float NEGATIVE_INFINITY => Clazz.GetField<float>("NEGATIVE_INFINITY");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#NaN
-        /// </summary>
-        public static float NaN => Clazz.GetField<float>("NaN");
-        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#MAX_VALUE
         /// </summary>
         public static float MAX_VALUE => Clazz.GetField<float>("MAX_VALUE");
@@ -62,6 +50,22 @@ namespace Java.Lang
         /// </summary>
         public static float MIN_VALUE => Clazz.GetField<float>("MIN_VALUE");
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#NaN
+        /// </summary>
+        public static float NaN => Clazz.GetField<float>("NaN");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#NEGATIVE_INFINITY
+        /// </summary>
+        public static float NEGATIVE_INFINITY => Clazz.GetField<float>("NEGATIVE_INFINITY");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#POSITIVE_INFINITY
+        /// </summary>
+        public static float POSITIVE_INFINITY => Clazz.GetField<float>("POSITIVE_INFINITY");
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#BYTES
+        /// </summary>
+        public static int BYTES => Clazz.GetField<int>("BYTES");
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#MAX_EXPONENT
         /// </summary>
         public static int MAX_EXPONENT => Clazz.GetField<int>("MAX_EXPONENT");
@@ -73,10 +77,6 @@ namespace Java.Lang
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#SIZE
         /// </summary>
         public static int SIZE => Clazz.GetField<int>("SIZE");
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#BYTES
-        /// </summary>
-        public static int BYTES => Clazz.GetField<int>("BYTES");
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#TYPE
         /// </summary>
@@ -158,16 +158,16 @@ namespace Java.Lang
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#valueOf(float)
         /// </summary>
-        public static float ValueOf(float arg0)
+        public static float? ValueOf(float arg0)
         {
-            return SExecute<float>("valueOf", arg0);
+            return SExecute<float?>("valueOf", arg0);
         }
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#valueOf(java.lang.String) throws java.lang.NumberFormatException
         /// </summary>
-        public static float ValueOf(string arg0)
+        public static float? ValueOf(string arg0)
         {
-            return SExecute<float>("valueOf", arg0);
+            return SExecute<float?>("valueOf", arg0);
         }
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#toHexString(float)
@@ -218,7 +218,7 @@ namespace Java.Lang
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#compareTo(java.lang.Float)
         /// </summary>
-        public int CompareTo(float arg0)
+        public int CompareTo(float? arg0)
         {
             return IExecute<int>("compareTo", arg0);
         }
