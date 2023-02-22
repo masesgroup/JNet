@@ -105,62 +105,6 @@ namespace Java.Util
         #endregion
 
         #region Nested classes
-        #region SimpleImmutableEntry
-        public partial class SimpleImmutableEntry
-        {
-            #region Constructors
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.SimpleImmutableEntry.html#<init>(K,V)
-            /// </summary>
-            public SimpleImmutableEntry(object arg0, object arg1)
-                : base(arg0, arg1)
-            {
-            }
-            
-            #endregion
-
-            #region Class/Interface conversion operators
-            public static implicit operator Java.Io.Serializable(Java.Util.AbstractMap.SimpleImmutableEntry t) => t.Cast<Java.Io.Serializable>();
-            
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.SimpleImmutableEntry.html#getKey() 
-            /// </summary>
-            public object Key
-            {
-                get { return IExecute("getKey"); }
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.SimpleImmutableEntry.html#getValue() 
-            /// </summary>
-            public object Value
-            {
-                get { return IExecute("getValue"); }
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.SimpleImmutableEntry.html#setValue(V)
-            /// </summary>
-            public object SetValue(object arg0)
-            {
-                return IExecute("setValue", arg0);
-            }
-            
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region SimpleEntry
         public partial class SimpleEntry
         {
@@ -205,6 +149,62 @@ namespace Java.Util
             }
             /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.SimpleEntry.html#setValue(V)
+            /// </summary>
+            public object SetValue(object arg0)
+            {
+                return IExecute("setValue", arg0);
+            }
+            
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region SimpleImmutableEntry
+        public partial class SimpleImmutableEntry
+        {
+            #region Constructors
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.SimpleImmutableEntry.html#<init>(K,V)
+            /// </summary>
+            public SimpleImmutableEntry(object arg0, object arg1)
+                : base(arg0, arg1)
+            {
+            }
+            
+            #endregion
+
+            #region Class/Interface conversion operators
+            public static implicit operator Java.Io.Serializable(Java.Util.AbstractMap.SimpleImmutableEntry t) => t.Cast<Java.Io.Serializable>();
+            
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.SimpleImmutableEntry.html#getKey() 
+            /// </summary>
+            public object Key
+            {
+                get { return IExecute("getKey"); }
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.SimpleImmutableEntry.html#getValue() 
+            /// </summary>
+            public object Value
+            {
+                get { return IExecute("getValue"); }
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.SimpleImmutableEntry.html#setValue(V)
             /// </summary>
             public object SetValue(object arg0)
             {

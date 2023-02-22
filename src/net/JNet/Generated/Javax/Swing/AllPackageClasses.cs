@@ -1312,74 +1312,6 @@ namespace Javax.Swing
         public override bool IsStatic => false;
 
         // TODO: complete the class
-        #region SequentialGroup
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.SequentialGroup.html
-        /// </summary>
-        public partial class SequentialGroup : Javax.Swing.GroupLayout.Group
-        {
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public SequentialGroup() { }
-            /// <summary>
-            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-            /// </summary>
-            public SequentialGroup(params object[] args) : base(args) { }
-
-            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-            public override string ClassName => "javax.swing.GroupLayout$SequentialGroup";
-
-            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-            public override bool IsAbstract => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-            public override bool IsCloseable => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-            public override bool IsInterface => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-            public override bool IsStatic => false;
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region ParallelGroup
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.ParallelGroup.html
-        /// </summary>
-        public partial class ParallelGroup : Javax.Swing.GroupLayout.Group
-        {
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public ParallelGroup() { }
-            /// <summary>
-            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-            /// </summary>
-            public ParallelGroup(params object[] args) : base(args) { }
-
-            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-            public override string ClassName => "javax.swing.GroupLayout$ParallelGroup";
-
-            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-            public override bool IsAbstract => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-            public override bool IsCloseable => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-            public override bool IsInterface => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-            public override bool IsStatic => false;
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region Alignment
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.Alignment.html
@@ -1434,6 +1366,74 @@ namespace Javax.Swing
 
             /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
             public override bool IsAbstract => true;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+            public override bool IsCloseable => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+            public override bool IsInterface => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+            public override bool IsStatic => false;
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region ParallelGroup
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.ParallelGroup.html
+        /// </summary>
+        public partial class ParallelGroup : Javax.Swing.GroupLayout.Group
+        {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public ParallelGroup() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public ParallelGroup(params object[] args) : base(args) { }
+
+            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+            public override string ClassName => "javax.swing.GroupLayout$ParallelGroup";
+
+            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+            public override bool IsAbstract => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+            public override bool IsCloseable => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+            public override bool IsInterface => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+            public override bool IsStatic => false;
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region SequentialGroup
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.SequentialGroup.html
+        /// </summary>
+        public partial class SequentialGroup : Javax.Swing.GroupLayout.Group
+        {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public SequentialGroup() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public SequentialGroup(params object[] args) : base(args) { }
+
+            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+            public override string ClassName => "javax.swing.GroupLayout$SequentialGroup";
+
+            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+            public override bool IsAbstract => false;
             
             /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
             public override bool IsCloseable => false;
@@ -2076,40 +2076,6 @@ namespace Javax.Swing
         public override bool IsStatic => false;
 
         // TODO: complete the class
-        #region AbstractFormatterFactory
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.AbstractFormatterFactory.html
-        /// </summary>
-        public partial class AbstractFormatterFactory : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AbstractFormatterFactory>
-        {
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public AbstractFormatterFactory() { }
-            /// <summary>
-            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-            /// </summary>
-            public AbstractFormatterFactory(params object[] args) : base(args) { }
-
-            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-            public override string ClassName => "javax.swing.JFormattedTextField$AbstractFormatterFactory";
-
-            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-            public override bool IsAbstract => true;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-            public override bool IsCloseable => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-            public override bool IsInterface => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-            public override bool IsStatic => true;
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region AbstractFormatter
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.AbstractFormatter.html
@@ -2127,6 +2093,40 @@ namespace Javax.Swing
 
             /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
             public override string ClassName => "javax.swing.JFormattedTextField$AbstractFormatter";
+
+            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+            public override bool IsAbstract => true;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+            public override bool IsCloseable => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+            public override bool IsInterface => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+            public override bool IsStatic => true;
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region AbstractFormatterFactory
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.AbstractFormatterFactory.html
+        /// </summary>
+        public partial class AbstractFormatterFactory : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AbstractFormatterFactory>
+        {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public AbstractFormatterFactory() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public AbstractFormatterFactory(params object[] args) : base(args) { }
+
+            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+            public override string ClassName => "javax.swing.JFormattedTextField$AbstractFormatterFactory";
 
             /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
             public override bool IsAbstract => true;
@@ -3016,40 +3016,6 @@ namespace Javax.Swing
         public override bool IsStatic => false;
 
         // TODO: complete the class
-        #region NumberEditor
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.NumberEditor.html
-        /// </summary>
-        public partial class NumberEditor : Javax.Swing.JSpinner.DefaultEditor
-        {
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public NumberEditor() { }
-            /// <summary>
-            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-            /// </summary>
-            public NumberEditor(params object[] args) : base(args) { }
-
-            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-            public override string ClassName => "javax.swing.JSpinner$NumberEditor";
-
-            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-            public override bool IsAbstract => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-            public override bool IsCloseable => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-            public override bool IsInterface => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-            public override bool IsStatic => true;
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region DateEditor
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.DateEditor.html
@@ -3135,6 +3101,40 @@ namespace Javax.Swing
 
             /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
             public override string ClassName => "javax.swing.JSpinner$ListEditor";
+
+            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+            public override bool IsAbstract => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+            public override bool IsCloseable => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+            public override bool IsInterface => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+            public override bool IsStatic => true;
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region NumberEditor
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.NumberEditor.html
+        /// </summary>
+        public partial class NumberEditor : Javax.Swing.JSpinner.DefaultEditor
+        {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public NumberEditor() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public NumberEditor(params object[] args) : base(args) { }
+
+            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+            public override string ClassName => "javax.swing.JSpinner$NumberEditor";
 
             /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
             public override bool IsAbstract => false;
@@ -3257,40 +3257,6 @@ namespace Javax.Swing
         public override bool IsStatic => false;
 
         // TODO: complete the class
-        #region PrintMode
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.PrintMode.html
-        /// </summary>
-        public partial class PrintMode : Java.Lang.Enum
-        {
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public PrintMode() { }
-            /// <summary>
-            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-            /// </summary>
-            public PrintMode(params object[] args) : base(args) { }
-
-            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-            public override string ClassName => "javax.swing.JTable$PrintMode";
-
-            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-            public override bool IsAbstract => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-            public override bool IsCloseable => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-            public override bool IsInterface => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-            public override bool IsStatic => true;
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region DropLocation
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.DropLocation.html
@@ -3308,6 +3274,40 @@ namespace Javax.Swing
 
             /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
             public override string ClassName => "javax.swing.JTable$DropLocation";
+
+            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+            public override bool IsAbstract => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+            public override bool IsCloseable => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+            public override bool IsInterface => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+            public override bool IsStatic => true;
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region PrintMode
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.PrintMode.html
+        /// </summary>
+        public partial class PrintMode : Java.Lang.Enum
+        {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public PrintMode() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public PrintMode(params object[] args) : base(args) { }
+
+            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+            public override string ClassName => "javax.swing.JTable$PrintMode";
 
             /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
             public override bool IsAbstract => false;
@@ -5449,40 +5449,6 @@ namespace Javax.Swing
         public override bool IsStatic => false;
 
         // TODO: complete the class
-        #region TransferSupport
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.TransferSupport.html
-        /// </summary>
-        public partial class TransferSupport : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TransferSupport>
-        {
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public TransferSupport() { }
-            /// <summary>
-            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-            /// </summary>
-            public TransferSupport(params object[] args) : base(args) { }
-
-            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-            public override string ClassName => "javax.swing.TransferHandler$TransferSupport";
-
-            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-            public override bool IsAbstract => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-            public override bool IsCloseable => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-            public override bool IsInterface => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-            public override bool IsStatic => true;
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region DropLocation
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.DropLocation.html
@@ -5500,6 +5466,40 @@ namespace Javax.Swing
 
             /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
             public override string ClassName => "javax.swing.TransferHandler$DropLocation";
+
+            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+            public override bool IsAbstract => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+            public override bool IsCloseable => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+            public override bool IsInterface => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+            public override bool IsStatic => true;
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region TransferSupport
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.TransferSupport.html
+        /// </summary>
+        public partial class TransferSupport : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TransferSupport>
+        {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public TransferSupport() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public TransferSupport(params object[] args) : base(args) { }
+
+            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+            public override string ClassName => "javax.swing.TransferHandler$TransferSupport";
 
             /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
             public override bool IsAbstract => false;
@@ -5587,6 +5587,40 @@ namespace Javax.Swing
         public override bool IsStatic => false;
 
         // TODO: complete the class
+        #region ActiveValue
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.ActiveValue.html
+        /// </summary>
+        public partial class ActiveValue : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ActiveValue>
+        {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public ActiveValue() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public ActiveValue(params object[] args) : base(args) { }
+
+            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+            public override string ClassName => "javax.swing.UIDefaults$ActiveValue";
+
+            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+            public override bool IsAbstract => true;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+            public override bool IsCloseable => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+            public override bool IsInterface => true;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+            public override bool IsStatic => true;
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region LazyInputMap
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.LazyInputMap.html
@@ -5681,40 +5715,6 @@ namespace Javax.Swing
             
             /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
             public override bool IsInterface => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-            public override bool IsStatic => true;
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region ActiveValue
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.ActiveValue.html
-        /// </summary>
-        public partial class ActiveValue : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ActiveValue>
-        {
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public ActiveValue() { }
-            /// <summary>
-            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-            /// </summary>
-            public ActiveValue(params object[] args) : base(args) { }
-
-            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-            public override string ClassName => "javax.swing.UIDefaults$ActiveValue";
-
-            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-            public override bool IsAbstract => true;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-            public override bool IsCloseable => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-            public override bool IsInterface => true;
             
             /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
             public override bool IsStatic => true;

@@ -50,48 +50,6 @@ namespace Javax.Swing.Plaf.Basic
         #endregion
 
         #region Nested classes
-        #region ViewportChangeHandler
-        public partial class ViewportChangeHandler
-        {
-            #region Constructors
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicScrollPaneUI.ViewportChangeHandler.html#<init>(javax.swing.plaf.basic.BasicScrollPaneUI)
-            /// </summary>
-            public ViewportChangeHandler(Javax.Swing.Plaf.Basic.BasicScrollPaneUI arg0)
-                : base(arg0)
-            {
-            }
-            
-            #endregion
-
-            #region Class/Interface conversion operators
-            public static implicit operator Javax.Swing.Event.ChangeListener(Javax.Swing.Plaf.Basic.BasicScrollPaneUI.ViewportChangeHandler t) => t.Cast<Javax.Swing.Event.ChangeListener>();
-            
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicScrollPaneUI.ViewportChangeHandler.html#stateChanged(javax.swing.event.ChangeEvent)
-            /// </summary>
-            public void StateChanged(Javax.Swing.Event.ChangeEvent arg0)
-            {
-                IExecute("stateChanged", arg0);
-            }
-            
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region PropertyChangeHandler
         public partial class PropertyChangeHandler
         {
@@ -126,6 +84,48 @@ namespace Javax.Swing.Plaf.Basic
             public void PropertyChange(Java.Beans.PropertyChangeEvent arg0)
             {
                 IExecute("propertyChange", arg0);
+            }
+            
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region ViewportChangeHandler
+        public partial class ViewportChangeHandler
+        {
+            #region Constructors
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicScrollPaneUI.ViewportChangeHandler.html#<init>(javax.swing.plaf.basic.BasicScrollPaneUI)
+            /// </summary>
+            public ViewportChangeHandler(Javax.Swing.Plaf.Basic.BasicScrollPaneUI arg0)
+                : base(arg0)
+            {
+            }
+            
+            #endregion
+
+            #region Class/Interface conversion operators
+            public static implicit operator Javax.Swing.Event.ChangeListener(Javax.Swing.Plaf.Basic.BasicScrollPaneUI.ViewportChangeHandler t) => t.Cast<Javax.Swing.Event.ChangeListener>();
+            
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicScrollPaneUI.ViewportChangeHandler.html#stateChanged(javax.swing.event.ChangeEvent)
+            /// </summary>
+            public void StateChanged(Javax.Swing.Event.ChangeEvent arg0)
+            {
+                IExecute("stateChanged", arg0);
             }
             
             #endregion

@@ -124,40 +124,6 @@ namespace Java.Util
         public override bool IsStatic => false;
 
         // TODO: complete the class
-        #region SimpleImmutableEntry
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.SimpleImmutableEntry.html
-        /// </summary>
-        public partial class SimpleImmutableEntry : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SimpleImmutableEntry>
-        {
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public SimpleImmutableEntry() { }
-            /// <summary>
-            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-            /// </summary>
-            public SimpleImmutableEntry(params object[] args) : base(args) { }
-
-            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-            public override string ClassName => "java.util.AbstractMap$SimpleImmutableEntry";
-
-            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-            public override bool IsAbstract => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-            public override bool IsCloseable => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-            public override bool IsInterface => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-            public override bool IsStatic => true;
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region SimpleEntry
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.SimpleEntry.html
@@ -175,6 +141,40 @@ namespace Java.Util
 
             /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
             public override string ClassName => "java.util.AbstractMap$SimpleEntry";
+
+            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+            public override bool IsAbstract => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+            public override bool IsCloseable => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+            public override bool IsInterface => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+            public override bool IsStatic => true;
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region SimpleImmutableEntry
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractMap.SimpleImmutableEntry.html
+        /// </summary>
+        public partial class SimpleImmutableEntry : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SimpleImmutableEntry>
+        {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public SimpleImmutableEntry() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public SimpleImmutableEntry(params object[] args) : base(args) { }
+
+            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+            public override string ClassName => "java.util.AbstractMap$SimpleImmutableEntry";
 
             /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
             public override bool IsAbstract => false;
@@ -437,40 +437,6 @@ namespace Java.Util
         public override bool IsStatic => false;
 
         // TODO: complete the class
-        #region Encoder
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Base64.Encoder.html
-        /// </summary>
-        public partial class Encoder : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Encoder>
-        {
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public Encoder() { }
-            /// <summary>
-            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-            /// </summary>
-            public Encoder(params object[] args) : base(args) { }
-
-            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-            public override string ClassName => "java.util.Base64$Encoder";
-
-            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-            public override bool IsAbstract => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-            public override bool IsCloseable => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-            public override bool IsInterface => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-            public override bool IsStatic => true;
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region Decoder
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Base64.Decoder.html
@@ -488,6 +454,40 @@ namespace Java.Util
 
             /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
             public override string ClassName => "java.util.Base64$Decoder";
+
+            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+            public override bool IsAbstract => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+            public override bool IsCloseable => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+            public override bool IsInterface => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+            public override bool IsStatic => true;
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region Encoder
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Base64.Encoder.html
+        /// </summary>
+        public partial class Encoder : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Encoder>
+        {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public Encoder() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public Encoder(params object[] args) : base(args) { }
+
+            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+            public override string ClassName => "java.util.Base64$Encoder";
 
             /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
             public override bool IsAbstract => false;
@@ -1930,40 +1930,6 @@ namespace Java.Util
         public override bool IsStatic => false;
 
         // TODO: complete the class
-        #region Category
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.Category.html
-        /// </summary>
-        public partial class Category : Java.Lang.Enum
-        {
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public Category() { }
-            /// <summary>
-            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-            /// </summary>
-            public Category(params object[] args) : base(args) { }
-
-            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-            public override string ClassName => "java.util.Locale$Category";
-
-            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-            public override bool IsAbstract => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-            public override bool IsCloseable => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-            public override bool IsInterface => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-            public override bool IsStatic => true;
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region Builder
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.Builder.html
@@ -1981,6 +1947,40 @@ namespace Java.Util
 
             /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
             public override string ClassName => "java.util.Locale$Builder";
+
+            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+            public override bool IsAbstract => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+            public override bool IsCloseable => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+            public override bool IsInterface => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+            public override bool IsStatic => true;
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region Category
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.Category.html
+        /// </summary>
+        public partial class Category : Java.Lang.Enum
+        {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public Category() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public Category(params object[] args) : base(args) { }
+
+            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+            public override string ClassName => "java.util.Locale$Category";
 
             /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
             public override bool IsAbstract => false;
@@ -2032,40 +2032,6 @@ namespace Java.Util
         }
         #endregion
 
-        #region LanguageRange
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.LanguageRange.html
-        /// </summary>
-        public partial class LanguageRange : MASES.JCOBridge.C2JBridge.JVMBridgeBase<LanguageRange>
-        {
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public LanguageRange() { }
-            /// <summary>
-            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-            /// </summary>
-            public LanguageRange(params object[] args) : base(args) { }
-
-            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-            public override string ClassName => "java.util.Locale$LanguageRange";
-
-            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-            public override bool IsAbstract => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-            public override bool IsCloseable => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-            public override bool IsInterface => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-            public override bool IsStatic => true;
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region IsoCountryCode
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.IsoCountryCode.html
@@ -2086,6 +2052,40 @@ namespace Java.Util
 
             /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
             public override bool IsAbstract => true;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+            public override bool IsCloseable => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+            public override bool IsInterface => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+            public override bool IsStatic => true;
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region LanguageRange
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.LanguageRange.html
+        /// </summary>
+        public partial class LanguageRange : MASES.JCOBridge.C2JBridge.JVMBridgeBase<LanguageRange>
+        {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public LanguageRange() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public LanguageRange(params object[] args) : base(args) { }
+
+            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+            public override string ClassName => "java.util.Locale$LanguageRange";
+
+            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+            public override bool IsAbstract => false;
             
             /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
             public override bool IsCloseable => false;
@@ -2548,6 +2548,40 @@ namespace Java.Util
         public override bool IsStatic => false;
 
         // TODO: complete the class
+        #region OfDouble
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfDouble.html
+        /// </summary>
+        public partial class OfDouble : MASES.JCOBridge.C2JBridge.JVMBridgeBase<OfDouble>
+        {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public OfDouble() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public OfDouble(params object[] args) : base(args) { }
+
+            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+            public override string ClassName => "java.util.PrimitiveIterator$OfDouble";
+
+            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+            public override bool IsAbstract => true;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+            public override bool IsCloseable => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+            public override bool IsInterface => true;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+            public override bool IsStatic => true;
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region OfInt
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfInt.html
@@ -2599,40 +2633,6 @@ namespace Java.Util
 
             /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
             public override string ClassName => "java.util.PrimitiveIterator$OfLong";
-
-            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-            public override bool IsAbstract => true;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-            public override bool IsCloseable => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-            public override bool IsInterface => true;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-            public override bool IsStatic => true;
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region OfDouble
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfDouble.html
-        /// </summary>
-        public partial class OfDouble : MASES.JCOBridge.C2JBridge.JVMBridgeBase<OfDouble>
-        {
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public OfDouble() { }
-            /// <summary>
-            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-            /// </summary>
-            public OfDouble(params object[] args) : base(args) { }
-
-            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-            public override string ClassName => "java.util.PrimitiveIterator$OfDouble";
 
             /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
             public override bool IsAbstract => true;
@@ -3259,6 +3259,40 @@ namespace Java.Util
         public override bool IsStatic => false;
 
         // TODO: complete the class
+        #region OfDouble
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfDouble.html
+        /// </summary>
+        public partial class OfDouble : MASES.JCOBridge.C2JBridge.JVMBridgeBase<OfDouble>
+        {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public OfDouble() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public OfDouble(params object[] args) : base(args) { }
+
+            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+            public override string ClassName => "java.util.Spliterator$OfDouble";
+
+            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+            public override bool IsAbstract => true;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+            public override bool IsCloseable => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+            public override bool IsInterface => true;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+            public override bool IsStatic => true;
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region OfInt
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfInt.html
@@ -3361,40 +3395,6 @@ namespace Java.Util
         }
         #endregion
 
-        #region OfDouble
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfDouble.html
-        /// </summary>
-        public partial class OfDouble : MASES.JCOBridge.C2JBridge.JVMBridgeBase<OfDouble>
-        {
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public OfDouble() { }
-            /// <summary>
-            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-            /// </summary>
-            public OfDouble(params object[] args) : base(args) { }
-
-            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-            public override string ClassName => "java.util.Spliterator$OfDouble";
-
-            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-            public override bool IsAbstract => true;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-            public override bool IsCloseable => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-            public override bool IsInterface => true;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-            public override bool IsStatic => true;
-
-            // TODO: complete the class
-        }
-        #endregion
-
 
     }
     #endregion
@@ -3430,6 +3430,40 @@ namespace Java.Util
         public override bool IsStatic => false;
 
         // TODO: complete the class
+        #region AbstractDoubleSpliterator
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.AbstractDoubleSpliterator.html
+        /// </summary>
+        public partial class AbstractDoubleSpliterator : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AbstractDoubleSpliterator>
+        {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public AbstractDoubleSpliterator() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public AbstractDoubleSpliterator(params object[] args) : base(args) { }
+
+            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+            public override string ClassName => "java.util.Spliterators$AbstractDoubleSpliterator";
+
+            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+            public override bool IsAbstract => true;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+            public override bool IsCloseable => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+            public override bool IsInterface => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+            public override bool IsStatic => true;
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region AbstractIntSpliterator
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.AbstractIntSpliterator.html
@@ -3515,40 +3549,6 @@ namespace Java.Util
 
             /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
             public override string ClassName => "java.util.Spliterators$AbstractSpliterator";
-
-            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-            public override bool IsAbstract => true;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-            public override bool IsCloseable => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-            public override bool IsInterface => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-            public override bool IsStatic => true;
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region AbstractDoubleSpliterator
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterators.AbstractDoubleSpliterator.html
-        /// </summary>
-        public partial class AbstractDoubleSpliterator : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AbstractDoubleSpliterator>
-        {
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public AbstractDoubleSpliterator() { }
-            /// <summary>
-            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-            /// </summary>
-            public AbstractDoubleSpliterator(params object[] args) : base(args) { }
-
-            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-            public override string ClassName => "java.util.Spliterators$AbstractDoubleSpliterator";
 
             /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
             public override bool IsAbstract => true;

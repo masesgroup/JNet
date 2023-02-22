@@ -328,40 +328,6 @@ namespace Java.Lang
         #endregion
 
         #region Nested classes
-        #region UncaughtExceptionHandler
-        public partial class UncaughtExceptionHandler
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.UncaughtExceptionHandler.html#uncaughtException(java.lang.Thread,java.lang.Throwable)
-            /// </summary>
-            public void UncaughtException(Java.Lang.Thread arg0, Java.Lang.Throwable arg1)
-            {
-                IExecute("uncaughtException", arg0, arg1);
-            }
-            
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region State
         public partial class State
         {
@@ -414,6 +380,40 @@ namespace Java.Lang
 
             #region Instance methods
 
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region UncaughtExceptionHandler
+        public partial class UncaughtExceptionHandler
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.UncaughtExceptionHandler.html#uncaughtException(java.lang.Thread,java.lang.Throwable)
+            /// </summary>
+            public void UncaughtException(Java.Lang.Thread arg0, Java.Lang.Throwable arg1)
+            {
+                IExecute("uncaughtException", arg0, arg1);
+            }
+            
             #endregion
 
             // TODO: complete the class

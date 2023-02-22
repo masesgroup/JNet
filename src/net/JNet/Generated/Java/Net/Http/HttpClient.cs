@@ -84,52 +84,6 @@ namespace Java.Net.Http
         #endregion
 
         #region Nested classes
-        #region Redirect
-        public partial class Redirect
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Redirect.html#ALWAYS
-            /// </summary>
-            public static Java.Net.Http.HttpClient.Redirect ALWAYS => Clazz.GetField<Java.Net.Http.HttpClient.Redirect>("ALWAYS");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Redirect.html#NEVER
-            /// </summary>
-            public static Java.Net.Http.HttpClient.Redirect NEVER => Clazz.GetField<Java.Net.Http.HttpClient.Redirect>("NEVER");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Redirect.html#NORMAL
-            /// </summary>
-            public static Java.Net.Http.HttpClient.Redirect NORMAL => Clazz.GetField<Java.Net.Http.HttpClient.Redirect>("NORMAL");
-            
-            #endregion
-
-            #region Static methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Redirect.html#values()
-            /// </summary>
-            public static Java.Net.Http.HttpClient.Redirect[] Values()
-            {
-                return SExecuteArray<Java.Net.Http.HttpClient.Redirect>("values");
-            }
-            
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region Builder
         public partial class Builder
         {
@@ -218,6 +172,52 @@ namespace Java.Net.Http
                 return IExecute<Java.Net.Http.HttpClient.Builder>("sslParameters", arg0);
             }
             
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region Redirect
+        public partial class Redirect
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Redirect.html#ALWAYS
+            /// </summary>
+            public static Java.Net.Http.HttpClient.Redirect ALWAYS => Clazz.GetField<Java.Net.Http.HttpClient.Redirect>("ALWAYS");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Redirect.html#NEVER
+            /// </summary>
+            public static Java.Net.Http.HttpClient.Redirect NEVER => Clazz.GetField<Java.Net.Http.HttpClient.Redirect>("NEVER");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Redirect.html#NORMAL
+            /// </summary>
+            public static Java.Net.Http.HttpClient.Redirect NORMAL => Clazz.GetField<Java.Net.Http.HttpClient.Redirect>("NORMAL");
+            
+            #endregion
+
+            #region Static methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.Redirect.html#values()
+            /// </summary>
+            public static Java.Net.Http.HttpClient.Redirect[] Values()
+            {
+                return SExecuteArray<Java.Net.Http.HttpClient.Redirect>("values");
+            }
+            
+            #endregion
+
+            #region Instance methods
+
             #endregion
 
             // TODO: complete the class

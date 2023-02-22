@@ -245,8 +245,8 @@ namespace Javax.Swing.Text
         #endregion
 
         #region Nested classes
-        #region CopyAction
-        public partial class CopyAction
+        #region BeepAction
+        public partial class BeepAction
         {
             #region Constructors
 
@@ -272,8 +272,8 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region PasteAction
-        public partial class PasteAction
+        #region CopyAction
+        public partial class CopyAction
         {
             #region Constructors
 
@@ -326,8 +326,62 @@ namespace Javax.Swing.Text
         }
         #endregion
 
+        #region DefaultKeyTypedAction
+        public partial class DefaultKeyTypedAction
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region InsertBreakAction
         public partial class InsertBreakAction
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region InsertContentAction
+        public partial class InsertContentAction
         {
             #region Constructors
 
@@ -380,62 +434,8 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region BeepAction
-        public partial class BeepAction
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region DefaultKeyTypedAction
-        public partial class DefaultKeyTypedAction
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region InsertContentAction
-        public partial class InsertContentAction
+        #region PasteAction
+        public partial class PasteAction
         {
             #region Constructors
 

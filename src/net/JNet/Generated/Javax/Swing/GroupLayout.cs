@@ -226,95 +226,6 @@ namespace Javax.Swing
         #endregion
 
         #region Nested classes
-        #region SequentialGroup
-        public partial class SequentialGroup
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.SequentialGroup.html#addComponent(boolean,java.awt.Component,int,int,int)
-            /// </summary>
-            public Javax.Swing.GroupLayout.SequentialGroup AddComponent(bool arg0, Java.Awt.Component arg1, int arg2, int arg3, int arg4)
-            {
-                return IExecute<Javax.Swing.GroupLayout.SequentialGroup>("addComponent", arg0, arg1, arg2, arg3, arg4);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.SequentialGroup.html#addComponent(boolean,java.awt.Component)
-            /// </summary>
-            public Javax.Swing.GroupLayout.SequentialGroup AddComponent(bool arg0, Java.Awt.Component arg1)
-            {
-                return IExecute<Javax.Swing.GroupLayout.SequentialGroup>("addComponent", arg0, arg1);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.SequentialGroup.html#addContainerGap()
-            /// </summary>
-            public Javax.Swing.GroupLayout.SequentialGroup AddContainerGap()
-            {
-                return IExecute<Javax.Swing.GroupLayout.SequentialGroup>("addContainerGap");
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.SequentialGroup.html#addContainerGap(int,int)
-            /// </summary>
-            public Javax.Swing.GroupLayout.SequentialGroup AddContainerGap(int arg0, int arg1)
-            {
-                return IExecute<Javax.Swing.GroupLayout.SequentialGroup>("addContainerGap", arg0, arg1);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.SequentialGroup.html#addGroup(boolean,javax.swing.GroupLayout$Group)
-            /// </summary>
-            public Javax.Swing.GroupLayout.SequentialGroup AddGroup(bool arg0, Javax.Swing.GroupLayout.Group arg1)
-            {
-                return IExecute<Javax.Swing.GroupLayout.SequentialGroup>("addGroup", arg0, arg1);
-            }
-            
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region ParallelGroup
-        public partial class ParallelGroup
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region Alignment
         public partial class Alignment
         {
@@ -419,6 +330,95 @@ namespace Javax.Swing
             public Javax.Swing.GroupLayout.Group AddGroup(Javax.Swing.GroupLayout.Group arg0)
             {
                 return IExecute<Javax.Swing.GroupLayout.Group>("addGroup", arg0);
+            }
+            
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region ParallelGroup
+        public partial class ParallelGroup
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region SequentialGroup
+        public partial class SequentialGroup
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.SequentialGroup.html#addComponent(boolean,java.awt.Component,int,int,int)
+            /// </summary>
+            public Javax.Swing.GroupLayout.SequentialGroup AddComponent(bool arg0, Java.Awt.Component arg1, int arg2, int arg3, int arg4)
+            {
+                return IExecute<Javax.Swing.GroupLayout.SequentialGroup>("addComponent", arg0, arg1, arg2, arg3, arg4);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.SequentialGroup.html#addComponent(boolean,java.awt.Component)
+            /// </summary>
+            public Javax.Swing.GroupLayout.SequentialGroup AddComponent(bool arg0, Java.Awt.Component arg1)
+            {
+                return IExecute<Javax.Swing.GroupLayout.SequentialGroup>("addComponent", arg0, arg1);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.SequentialGroup.html#addContainerGap()
+            /// </summary>
+            public Javax.Swing.GroupLayout.SequentialGroup AddContainerGap()
+            {
+                return IExecute<Javax.Swing.GroupLayout.SequentialGroup>("addContainerGap");
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.SequentialGroup.html#addContainerGap(int,int)
+            /// </summary>
+            public Javax.Swing.GroupLayout.SequentialGroup AddContainerGap(int arg0, int arg1)
+            {
+                return IExecute<Javax.Swing.GroupLayout.SequentialGroup>("addContainerGap", arg0, arg1);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.SequentialGroup.html#addGroup(boolean,javax.swing.GroupLayout$Group)
+            /// </summary>
+            public Javax.Swing.GroupLayout.SequentialGroup AddGroup(bool arg0, Javax.Swing.GroupLayout.Group arg1)
+            {
+                return IExecute<Javax.Swing.GroupLayout.SequentialGroup>("addGroup", arg0, arg1);
             }
             
             #endregion

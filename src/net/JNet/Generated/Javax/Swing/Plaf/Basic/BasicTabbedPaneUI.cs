@@ -92,48 +92,6 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region TabSelectionHandler
-        public partial class TabSelectionHandler
-        {
-            #region Constructors
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTabbedPaneUI.TabSelectionHandler.html#<init>(javax.swing.plaf.basic.BasicTabbedPaneUI)
-            /// </summary>
-            public TabSelectionHandler(Javax.Swing.Plaf.Basic.BasicTabbedPaneUI arg0)
-                : base(arg0)
-            {
-            }
-            
-            #endregion
-
-            #region Class/Interface conversion operators
-            public static implicit operator Javax.Swing.Event.ChangeListener(Javax.Swing.Plaf.Basic.BasicTabbedPaneUI.TabSelectionHandler t) => t.Cast<Javax.Swing.Event.ChangeListener>();
-            
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTabbedPaneUI.TabSelectionHandler.html#stateChanged(javax.swing.event.ChangeEvent)
-            /// </summary>
-            public void StateChanged(Javax.Swing.Event.ChangeEvent arg0)
-            {
-                IExecute("stateChanged", arg0);
-            }
-            
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region TabbedPaneLayout
         public partial class TabbedPaneLayout
         {
@@ -203,6 +161,48 @@ namespace Javax.Swing.Plaf.Basic
             public void RemoveLayoutComponent(Java.Awt.Component arg0)
             {
                 IExecute("removeLayoutComponent", arg0);
+            }
+            
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region TabSelectionHandler
+        public partial class TabSelectionHandler
+        {
+            #region Constructors
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTabbedPaneUI.TabSelectionHandler.html#<init>(javax.swing.plaf.basic.BasicTabbedPaneUI)
+            /// </summary>
+            public TabSelectionHandler(Javax.Swing.Plaf.Basic.BasicTabbedPaneUI arg0)
+                : base(arg0)
+            {
+            }
+            
+            #endregion
+
+            #region Class/Interface conversion operators
+            public static implicit operator Javax.Swing.Event.ChangeListener(Javax.Swing.Plaf.Basic.BasicTabbedPaneUI.TabSelectionHandler t) => t.Cast<Javax.Swing.Event.ChangeListener>();
+            
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTabbedPaneUI.TabSelectionHandler.html#stateChanged(javax.swing.event.ChangeEvent)
+            /// </summary>
+            public void StateChanged(Javax.Swing.Event.ChangeEvent arg0)
+            {
+                IExecute("stateChanged", arg0);
             }
             
             #endregion

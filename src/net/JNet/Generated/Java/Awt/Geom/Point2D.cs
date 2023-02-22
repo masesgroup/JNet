@@ -120,6 +120,49 @@ namespace Java.Awt.Geom
         #endregion
 
         #region Nested classes
+        #region Double
+        public partial class Double
+        {
+            #region Constructors
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Point2D.Double.html#<init>(double,double)
+            /// </summary>
+            public Double(double arg0, double arg1)
+                : base(arg0, arg1)
+            {
+            }
+            
+            #endregion
+
+            #region Class/Interface conversion operators
+            public static implicit operator Java.Io.Serializable(Java.Awt.Geom.Point2D.Double t) => t.Cast<Java.Io.Serializable>();
+            
+            #endregion
+
+            #region Fields
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Point2D.Double.html#x
+            /// </summary>
+            public double x => Instance.GetField<double>("x");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Point2D.Double.html#y
+            /// </summary>
+            public double y => Instance.GetField<double>("y");
+            
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region Float
         public partial class Float
         {
@@ -164,49 +207,6 @@ namespace Java.Awt.Geom
                 IExecute("setLocation", arg0, arg1);
             }
             
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region Double
-        public partial class Double
-        {
-            #region Constructors
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Point2D.Double.html#<init>(double,double)
-            /// </summary>
-            public Double(double arg0, double arg1)
-                : base(arg0, arg1)
-            {
-            }
-            
-            #endregion
-
-            #region Class/Interface conversion operators
-            public static implicit operator Java.Io.Serializable(Java.Awt.Geom.Point2D.Double t) => t.Cast<Java.Io.Serializable>();
-            
-            #endregion
-
-            #region Fields
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Point2D.Double.html#x
-            /// </summary>
-            public double x => Instance.GetField<double>("x");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Point2D.Double.html#y
-            /// </summary>
-            public double y => Instance.GetField<double>("y");
-            
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
             #endregion
 
             // TODO: complete the class

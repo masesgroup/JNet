@@ -506,8 +506,8 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region FontConstants
-        public partial class FontConstants
+        #region ColorConstants
+        public partial class ColorConstants
         {
             #region Constructors
 
@@ -533,8 +533,8 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region ColorConstants
-        public partial class ColorConstants
+        #region FontConstants
+        public partial class FontConstants
         {
             #region Constructors
 

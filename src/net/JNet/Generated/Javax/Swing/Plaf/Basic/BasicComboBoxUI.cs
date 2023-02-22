@@ -91,48 +91,6 @@ namespace Javax.Swing.Plaf.Basic
         #endregion
 
         #region Nested classes
-        #region ItemHandler
-        public partial class ItemHandler
-        {
-            #region Constructors
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboBoxUI.ItemHandler.html#<init>(javax.swing.plaf.basic.BasicComboBoxUI)
-            /// </summary>
-            public ItemHandler(Javax.Swing.Plaf.Basic.BasicComboBoxUI arg0)
-                : base(arg0)
-            {
-            }
-            
-            #endregion
-
-            #region Class/Interface conversion operators
-            public static implicit operator Java.Awt.EventNs.ItemListener(Javax.Swing.Plaf.Basic.BasicComboBoxUI.ItemHandler t) => t.Cast<Java.Awt.EventNs.ItemListener>();
-            
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboBoxUI.ItemHandler.html#itemStateChanged(java.awt.event.ItemEvent)
-            /// </summary>
-            public void ItemStateChanged(Java.Awt.EventNs.ItemEvent arg0)
-            {
-                IExecute("itemStateChanged", arg0);
-            }
-            
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region ComboBoxLayoutManager
         public partial class ComboBoxLayoutManager
         {
@@ -195,6 +153,97 @@ namespace Javax.Swing.Plaf.Basic
             public void RemoveLayoutComponent(Java.Awt.Component arg0)
             {
                 IExecute("removeLayoutComponent", arg0);
+            }
+            
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region FocusHandler
+        public partial class FocusHandler
+        {
+            #region Constructors
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboBoxUI.FocusHandler.html#<init>(javax.swing.plaf.basic.BasicComboBoxUI)
+            /// </summary>
+            public FocusHandler(Javax.Swing.Plaf.Basic.BasicComboBoxUI arg0)
+                : base(arg0)
+            {
+            }
+            
+            #endregion
+
+            #region Class/Interface conversion operators
+            public static implicit operator Java.Awt.EventNs.FocusListener(Javax.Swing.Plaf.Basic.BasicComboBoxUI.FocusHandler t) => t.Cast<Java.Awt.EventNs.FocusListener>();
+            
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboBoxUI.FocusHandler.html#focusGained(java.awt.event.FocusEvent)
+            /// </summary>
+            public void FocusGained(Java.Awt.EventNs.FocusEvent arg0)
+            {
+                IExecute("focusGained", arg0);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboBoxUI.FocusHandler.html#focusLost(java.awt.event.FocusEvent)
+            /// </summary>
+            public void FocusLost(Java.Awt.EventNs.FocusEvent arg0)
+            {
+                IExecute("focusLost", arg0);
+            }
+            
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region ItemHandler
+        public partial class ItemHandler
+        {
+            #region Constructors
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboBoxUI.ItemHandler.html#<init>(javax.swing.plaf.basic.BasicComboBoxUI)
+            /// </summary>
+            public ItemHandler(Javax.Swing.Plaf.Basic.BasicComboBoxUI arg0)
+                : base(arg0)
+            {
+            }
+            
+            #endregion
+
+            #region Class/Interface conversion operators
+            public static implicit operator Java.Awt.EventNs.ItemListener(Javax.Swing.Plaf.Basic.BasicComboBoxUI.ItemHandler t) => t.Cast<Java.Awt.EventNs.ItemListener>();
+            
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboBoxUI.ItemHandler.html#itemStateChanged(java.awt.event.ItemEvent)
+            /// </summary>
+            public void ItemStateChanged(Java.Awt.EventNs.ItemEvent arg0)
+            {
+                IExecute("itemStateChanged", arg0);
             }
             
             #endregion
@@ -293,55 +342,6 @@ namespace Javax.Swing.Plaf.Basic
             public void PropertyChange(Java.Beans.PropertyChangeEvent arg0)
             {
                 IExecute("propertyChange", arg0);
-            }
-            
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region FocusHandler
-        public partial class FocusHandler
-        {
-            #region Constructors
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboBoxUI.FocusHandler.html#<init>(javax.swing.plaf.basic.BasicComboBoxUI)
-            /// </summary>
-            public FocusHandler(Javax.Swing.Plaf.Basic.BasicComboBoxUI arg0)
-                : base(arg0)
-            {
-            }
-            
-            #endregion
-
-            #region Class/Interface conversion operators
-            public static implicit operator Java.Awt.EventNs.FocusListener(Javax.Swing.Plaf.Basic.BasicComboBoxUI.FocusHandler t) => t.Cast<Java.Awt.EventNs.FocusListener>();
-            
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboBoxUI.FocusHandler.html#focusGained(java.awt.event.FocusEvent)
-            /// </summary>
-            public void FocusGained(Java.Awt.EventNs.FocusEvent arg0)
-            {
-                IExecute("focusGained", arg0);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboBoxUI.FocusHandler.html#focusLost(java.awt.event.FocusEvent)
-            /// </summary>
-            public void FocusLost(Java.Awt.EventNs.FocusEvent arg0)
-            {
-                IExecute("focusLost", arg0);
             }
             
             #endregion

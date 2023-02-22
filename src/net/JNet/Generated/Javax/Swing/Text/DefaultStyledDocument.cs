@@ -152,6 +152,110 @@ namespace Javax.Swing.Text
         #endregion
 
         #region Nested classes
+        #region AttributeUndoableEdit
+        public partial class AttributeUndoableEdit
+        {
+            #region Constructors
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.AttributeUndoableEdit.html#<init>(javax.swing.text.Element,javax.swing.text.AttributeSet,boolean)
+            /// </summary>
+            public AttributeUndoableEdit(Javax.Swing.Text.Element arg0, Javax.Swing.Text.AttributeSet arg1, bool arg2)
+                : base(arg0, arg1, arg2)
+            {
+            }
+            
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region ElementBuffer
+        public partial class ElementBuffer
+        {
+            #region Constructors
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementBuffer.html#<init>(javax.swing.text.DefaultStyledDocument,javax.swing.text.Element)
+            /// </summary>
+            public ElementBuffer(Javax.Swing.Text.DefaultStyledDocument arg0, Javax.Swing.Text.Element arg1)
+                : base(arg0, arg1)
+            {
+            }
+            
+            #endregion
+
+            #region Class/Interface conversion operators
+            public static implicit operator Java.Io.Serializable(Javax.Swing.Text.DefaultStyledDocument.ElementBuffer t) => t.Cast<Java.Io.Serializable>();
+            
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementBuffer.html#getRootElement() 
+            /// </summary>
+            public Javax.Swing.Text.Element RootElement
+            {
+                get { return IExecute<Javax.Swing.Text.Element>("getRootElement"); }
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementBuffer.html#clone(javax.swing.text.Element,javax.swing.text.Element)
+            /// </summary>
+            public Javax.Swing.Text.Element Clone(Javax.Swing.Text.Element arg0, Javax.Swing.Text.Element arg1)
+            {
+                return IExecute<Javax.Swing.Text.Element>("clone", arg0, arg1);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementBuffer.html#change(int,int,javax.swing.text.AbstractDocument$DefaultDocumentEvent)
+            /// </summary>
+            public void Change(int arg0, int arg1, Javax.Swing.Text.AbstractDocument.DefaultDocumentEvent arg2)
+            {
+                IExecute("change", arg0, arg1, arg2);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementBuffer.html#insert(int,int,javax.swing.text.DefaultStyledDocument$ElementSpec[],javax.swing.text.AbstractDocument$DefaultDocumentEvent)
+            /// </summary>
+            public void Insert(int arg0, int arg1, Javax.Swing.Text.DefaultStyledDocument.ElementSpec[] arg2, Javax.Swing.Text.AbstractDocument.DefaultDocumentEvent arg3)
+            {
+                IExecute("insert", arg0, arg1, arg2, arg3);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementBuffer.html#remove(int,int,javax.swing.text.AbstractDocument$DefaultDocumentEvent)
+            /// </summary>
+            public void Remove(int arg0, int arg1, Javax.Swing.Text.AbstractDocument.DefaultDocumentEvent arg2)
+            {
+                IExecute("remove", arg0, arg1, arg2);
+            }
+            
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region ElementSpec
         public partial class ElementSpec
         {
@@ -264,110 +368,6 @@ namespace Javax.Swing.Text
                 get { return IExecute<short>("getType"); } set { IExecute("setType", value); }
             }
             
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region ElementBuffer
-        public partial class ElementBuffer
-        {
-            #region Constructors
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementBuffer.html#<init>(javax.swing.text.DefaultStyledDocument,javax.swing.text.Element)
-            /// </summary>
-            public ElementBuffer(Javax.Swing.Text.DefaultStyledDocument arg0, Javax.Swing.Text.Element arg1)
-                : base(arg0, arg1)
-            {
-            }
-            
-            #endregion
-
-            #region Class/Interface conversion operators
-            public static implicit operator Java.Io.Serializable(Javax.Swing.Text.DefaultStyledDocument.ElementBuffer t) => t.Cast<Java.Io.Serializable>();
-            
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementBuffer.html#getRootElement() 
-            /// </summary>
-            public Javax.Swing.Text.Element RootElement
-            {
-                get { return IExecute<Javax.Swing.Text.Element>("getRootElement"); }
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementBuffer.html#clone(javax.swing.text.Element,javax.swing.text.Element)
-            /// </summary>
-            public Javax.Swing.Text.Element Clone(Javax.Swing.Text.Element arg0, Javax.Swing.Text.Element arg1)
-            {
-                return IExecute<Javax.Swing.Text.Element>("clone", arg0, arg1);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementBuffer.html#change(int,int,javax.swing.text.AbstractDocument$DefaultDocumentEvent)
-            /// </summary>
-            public void Change(int arg0, int arg1, Javax.Swing.Text.AbstractDocument.DefaultDocumentEvent arg2)
-            {
-                IExecute("change", arg0, arg1, arg2);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementBuffer.html#insert(int,int,javax.swing.text.DefaultStyledDocument$ElementSpec[],javax.swing.text.AbstractDocument$DefaultDocumentEvent)
-            /// </summary>
-            public void Insert(int arg0, int arg1, Javax.Swing.Text.DefaultStyledDocument.ElementSpec[] arg2, Javax.Swing.Text.AbstractDocument.DefaultDocumentEvent arg3)
-            {
-                IExecute("insert", arg0, arg1, arg2, arg3);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementBuffer.html#remove(int,int,javax.swing.text.AbstractDocument$DefaultDocumentEvent)
-            /// </summary>
-            public void Remove(int arg0, int arg1, Javax.Swing.Text.AbstractDocument.DefaultDocumentEvent arg2)
-            {
-                IExecute("remove", arg0, arg1, arg2);
-            }
-            
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region AttributeUndoableEdit
-        public partial class AttributeUndoableEdit
-        {
-            #region Constructors
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.AttributeUndoableEdit.html#<init>(javax.swing.text.Element,javax.swing.text.AttributeSet,boolean)
-            /// </summary>
-            public AttributeUndoableEdit(Javax.Swing.Text.Element arg0, Javax.Swing.Text.AttributeSet arg1, bool arg2)
-                : base(arg0, arg1, arg2)
-            {
-            }
-            
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
             #endregion
 
             // TODO: complete the class

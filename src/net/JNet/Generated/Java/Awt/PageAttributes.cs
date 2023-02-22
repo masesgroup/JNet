@@ -183,80 +183,6 @@ namespace Java.Awt
         #endregion
 
         #region Nested classes
-        #region PrintQualityType
-        public partial class PrintQualityType
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.PrintQualityType.html#DRAFT
-            /// </summary>
-            public static Java.Awt.PageAttributes.PrintQualityType DRAFT => Clazz.GetField<Java.Awt.PageAttributes.PrintQualityType>("DRAFT");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.PrintQualityType.html#HIGH
-            /// </summary>
-            public static Java.Awt.PageAttributes.PrintQualityType HIGH => Clazz.GetField<Java.Awt.PageAttributes.PrintQualityType>("HIGH");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.PrintQualityType.html#NORMAL
-            /// </summary>
-            public static Java.Awt.PageAttributes.PrintQualityType NORMAL => Clazz.GetField<Java.Awt.PageAttributes.PrintQualityType>("NORMAL");
-            
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region OrientationRequestedType
-        public partial class OrientationRequestedType
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.OrientationRequestedType.html#LANDSCAPE
-            /// </summary>
-            public static Java.Awt.PageAttributes.OrientationRequestedType LANDSCAPE => Clazz.GetField<Java.Awt.PageAttributes.OrientationRequestedType>("LANDSCAPE");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.OrientationRequestedType.html#PORTRAIT
-            /// </summary>
-            public static Java.Awt.PageAttributes.OrientationRequestedType PORTRAIT => Clazz.GetField<Java.Awt.PageAttributes.OrientationRequestedType>("PORTRAIT");
-            
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region ColorType
         public partial class ColorType
         {
@@ -277,41 +203,6 @@ namespace Java.Awt
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.ColorType.html#MONOCHROME
             /// </summary>
             public static Java.Awt.PageAttributes.ColorType MONOCHROME => Clazz.GetField<Java.Awt.PageAttributes.ColorType>("MONOCHROME");
-            
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region OriginType
-        public partial class OriginType
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.OriginType.html#PHYSICAL
-            /// </summary>
-            public static Java.Awt.PageAttributes.OriginType PHYSICAL => Clazz.GetField<Java.Awt.PageAttributes.OriginType>("PHYSICAL");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.OriginType.html#PRINTABLE
-            /// </summary>
-            public static Java.Awt.PageAttributes.OriginType PRINTABLE => Clazz.GetField<Java.Awt.PageAttributes.OriginType>("PRINTABLE");
             
             #endregion
 
@@ -927,6 +818,115 @@ namespace Java.Awt
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html#TABLOID
             /// </summary>
             public static Java.Awt.PageAttributes.MediaType TABLOID => Clazz.GetField<Java.Awt.PageAttributes.MediaType>("TABLOID");
+            
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region OrientationRequestedType
+        public partial class OrientationRequestedType
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.OrientationRequestedType.html#LANDSCAPE
+            /// </summary>
+            public static Java.Awt.PageAttributes.OrientationRequestedType LANDSCAPE => Clazz.GetField<Java.Awt.PageAttributes.OrientationRequestedType>("LANDSCAPE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.OrientationRequestedType.html#PORTRAIT
+            /// </summary>
+            public static Java.Awt.PageAttributes.OrientationRequestedType PORTRAIT => Clazz.GetField<Java.Awt.PageAttributes.OrientationRequestedType>("PORTRAIT");
+            
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region OriginType
+        public partial class OriginType
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.OriginType.html#PHYSICAL
+            /// </summary>
+            public static Java.Awt.PageAttributes.OriginType PHYSICAL => Clazz.GetField<Java.Awt.PageAttributes.OriginType>("PHYSICAL");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.OriginType.html#PRINTABLE
+            /// </summary>
+            public static Java.Awt.PageAttributes.OriginType PRINTABLE => Clazz.GetField<Java.Awt.PageAttributes.OriginType>("PRINTABLE");
+            
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region PrintQualityType
+        public partial class PrintQualityType
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.PrintQualityType.html#DRAFT
+            /// </summary>
+            public static Java.Awt.PageAttributes.PrintQualityType DRAFT => Clazz.GetField<Java.Awt.PageAttributes.PrintQualityType>("DRAFT");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.PrintQualityType.html#HIGH
+            /// </summary>
+            public static Java.Awt.PageAttributes.PrintQualityType HIGH => Clazz.GetField<Java.Awt.PageAttributes.PrintQualityType>("HIGH");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.PrintQualityType.html#NORMAL
+            /// </summary>
+            public static Java.Awt.PageAttributes.PrintQualityType NORMAL => Clazz.GetField<Java.Awt.PageAttributes.PrintQualityType>("NORMAL");
             
             #endregion
 

@@ -350,48 +350,6 @@ namespace Java.Util
         #endregion
 
         #region Nested classes
-        #region Category
-        public partial class Category
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.Category.html#DISPLAY
-            /// </summary>
-            public static Java.Util.Locale.Category DISPLAY => Clazz.GetField<Java.Util.Locale.Category>("DISPLAY");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.Category.html#FORMAT
-            /// </summary>
-            public static Java.Util.Locale.Category FORMAT => Clazz.GetField<Java.Util.Locale.Category>("FORMAT");
-            
-            #endregion
-
-            #region Static methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.Category.html#values()
-            /// </summary>
-            public static Java.Util.Locale.Category[] Values()
-            {
-                return SExecuteArray<Java.Util.Locale.Category>("values");
-            }
-            
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region Builder
         public partial class Builder
         {
@@ -510,6 +468,48 @@ namespace Java.Util
         }
         #endregion
 
+        #region Category
+        public partial class Category
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.Category.html#DISPLAY
+            /// </summary>
+            public static Java.Util.Locale.Category DISPLAY => Clazz.GetField<Java.Util.Locale.Category>("DISPLAY");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.Category.html#FORMAT
+            /// </summary>
+            public static Java.Util.Locale.Category FORMAT => Clazz.GetField<Java.Util.Locale.Category>("FORMAT");
+            
+            #endregion
+
+            #region Static methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.Category.html#values()
+            /// </summary>
+            public static Java.Util.Locale.Category[] Values()
+            {
+                return SExecuteArray<Java.Util.Locale.Category>("values");
+            }
+            
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region FilteringMode
         public partial class FilteringMode
         {
@@ -552,6 +552,52 @@ namespace Java.Util
             public static Java.Util.Locale.FilteringMode[] Values()
             {
                 return SExecuteArray<Java.Util.Locale.FilteringMode>("values");
+            }
+            
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region IsoCountryCode
+        public partial class IsoCountryCode
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.IsoCountryCode.html#PART1_ALPHA2
+            /// </summary>
+            public static Java.Util.Locale.IsoCountryCode PART1_ALPHA2 => Clazz.GetField<Java.Util.Locale.IsoCountryCode>("PART1_ALPHA2");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.IsoCountryCode.html#PART1_ALPHA3
+            /// </summary>
+            public static Java.Util.Locale.IsoCountryCode PART1_ALPHA3 => Clazz.GetField<Java.Util.Locale.IsoCountryCode>("PART1_ALPHA3");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.IsoCountryCode.html#PART3
+            /// </summary>
+            public static Java.Util.Locale.IsoCountryCode PART3 => Clazz.GetField<Java.Util.Locale.IsoCountryCode>("PART3");
+            
+            #endregion
+
+            #region Static methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.IsoCountryCode.html#values()
+            /// </summary>
+            public static Java.Util.Locale.IsoCountryCode[] Values()
+            {
+                return SExecuteArray<Java.Util.Locale.IsoCountryCode>("values");
             }
             
             #endregion
@@ -621,52 +667,6 @@ namespace Java.Util
                 get { return IExecute<double>("getWeight"); }
             }
             
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region IsoCountryCode
-        public partial class IsoCountryCode
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.IsoCountryCode.html#PART1_ALPHA2
-            /// </summary>
-            public static Java.Util.Locale.IsoCountryCode PART1_ALPHA2 => Clazz.GetField<Java.Util.Locale.IsoCountryCode>("PART1_ALPHA2");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.IsoCountryCode.html#PART1_ALPHA3
-            /// </summary>
-            public static Java.Util.Locale.IsoCountryCode PART1_ALPHA3 => Clazz.GetField<Java.Util.Locale.IsoCountryCode>("PART1_ALPHA3");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.IsoCountryCode.html#PART3
-            /// </summary>
-            public static Java.Util.Locale.IsoCountryCode PART3 => Clazz.GetField<Java.Util.Locale.IsoCountryCode>("PART3");
-            
-            #endregion
-
-            #region Static methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Locale.IsoCountryCode.html#values()
-            /// </summary>
-            public static Java.Util.Locale.IsoCountryCode[] Values()
-            {
-                return SExecuteArray<Java.Util.Locale.IsoCountryCode>("values");
-            }
-            
-            #endregion
-
-            #region Instance methods
-
             #endregion
 
             // TODO: complete the class

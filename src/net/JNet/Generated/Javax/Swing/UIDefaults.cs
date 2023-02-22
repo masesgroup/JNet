@@ -245,6 +245,33 @@ namespace Javax.Swing
         #endregion
 
         #region Nested classes
+        #region ActiveValue
+        public partial class ActiveValue
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region LazyInputMap
         public partial class LazyInputMap
         {
@@ -318,33 +345,6 @@ namespace Javax.Swing
             {
             }
             
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region ActiveValue
-        public partial class ActiveValue
-        {
-            #region Constructors
-
             #endregion
 
             #region Class/Interface conversion operators

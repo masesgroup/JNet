@@ -749,40 +749,6 @@ namespace Java.Security
         }
         #endregion
 
-        #region Reseed
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Reseed.html
-        /// </summary>
-        public partial class Reseed : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Reseed>
-        {
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public Reseed() { }
-            /// <summary>
-            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-            /// </summary>
-            public Reseed(params object[] args) : base(args) { }
-
-            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-            public override string ClassName => "java.security.DrbgParameters$Reseed";
-
-            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-            public override bool IsAbstract => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-            public override bool IsCloseable => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-            public override bool IsInterface => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-            public override bool IsStatic => true;
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region NextBytes
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.NextBytes.html
@@ -800,6 +766,40 @@ namespace Java.Security
 
             /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
             public override string ClassName => "java.security.DrbgParameters$NextBytes";
+
+            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+            public override bool IsAbstract => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+            public override bool IsCloseable => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+            public override bool IsInterface => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+            public override bool IsStatic => true;
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region Reseed
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DrbgParameters.Reseed.html
+        /// </summary>
+        public partial class Reseed : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Reseed>
+        {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public Reseed() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public Reseed(params object[] args) : base(args) { }
+
+            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+            public override string ClassName => "java.security.DrbgParameters$Reseed";
 
             /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
             public override bool IsAbstract => false;
@@ -1297,128 +1297,26 @@ namespace Java.Security
         public override bool IsStatic => false;
 
         // TODO: complete the class
-        #region LoadStoreParameter
+        #region Builder
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.LoadStoreParameter.html
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.Builder.html
         /// </summary>
-        public partial class LoadStoreParameter : MASES.JCOBridge.C2JBridge.JVMBridgeBase<LoadStoreParameter>
+        public partial class Builder : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Builder>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            public LoadStoreParameter() { }
+            public Builder() { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
-            public LoadStoreParameter(params object[] args) : base(args) { }
+            public Builder(params object[] args) : base(args) { }
 
             /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-            public override string ClassName => "java.security.KeyStore$LoadStoreParameter";
+            public override string ClassName => "java.security.KeyStore$Builder";
 
             /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
             public override bool IsAbstract => true;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-            public override bool IsCloseable => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-            public override bool IsInterface => true;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-            public override bool IsStatic => true;
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region TrustedCertificateEntry
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.TrustedCertificateEntry.html
-        /// </summary>
-        public partial class TrustedCertificateEntry : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TrustedCertificateEntry>
-        {
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public TrustedCertificateEntry() { }
-            /// <summary>
-            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-            /// </summary>
-            public TrustedCertificateEntry(params object[] args) : base(args) { }
-
-            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-            public override string ClassName => "java.security.KeyStore$TrustedCertificateEntry";
-
-            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-            public override bool IsAbstract => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-            public override bool IsCloseable => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-            public override bool IsInterface => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-            public override bool IsStatic => true;
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region ProtectionParameter
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.ProtectionParameter.html
-        /// </summary>
-        public partial class ProtectionParameter : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ProtectionParameter>
-        {
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public ProtectionParameter() { }
-            /// <summary>
-            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-            /// </summary>
-            public ProtectionParameter(params object[] args) : base(args) { }
-
-            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-            public override string ClassName => "java.security.KeyStore$ProtectionParameter";
-
-            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-            public override bool IsAbstract => true;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-            public override bool IsCloseable => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-            public override bool IsInterface => true;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-            public override bool IsStatic => true;
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region PrivateKeyEntry
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.PrivateKeyEntry.html
-        /// </summary>
-        public partial class PrivateKeyEntry : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PrivateKeyEntry>
-        {
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public PrivateKeyEntry() { }
-            /// <summary>
-            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-            /// </summary>
-            public PrivateKeyEntry(params object[] args) : base(args) { }
-
-            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-            public override string ClassName => "java.security.KeyStore$PrivateKeyEntry";
-
-            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-            public override bool IsAbstract => false;
             
             /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
             public override bool IsCloseable => false;
@@ -1450,40 +1348,6 @@ namespace Java.Security
 
             /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
             public override string ClassName => "java.security.KeyStore$CallbackHandlerProtection";
-
-            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-            public override bool IsAbstract => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-            public override bool IsCloseable => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-            public override bool IsInterface => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-            public override bool IsStatic => true;
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region SecretKeyEntry
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.SecretKeyEntry.html
-        /// </summary>
-        public partial class SecretKeyEntry : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SecretKeyEntry>
-        {
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public SecretKeyEntry() { }
-            /// <summary>
-            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-            /// </summary>
-            public SecretKeyEntry(params object[] args) : base(args) { }
-
-            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-            public override string ClassName => "java.security.KeyStore$SecretKeyEntry";
 
             /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
             public override bool IsAbstract => false;
@@ -1535,6 +1399,40 @@ namespace Java.Security
         }
         #endregion
 
+        #region LoadStoreParameter
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.LoadStoreParameter.html
+        /// </summary>
+        public partial class LoadStoreParameter : MASES.JCOBridge.C2JBridge.JVMBridgeBase<LoadStoreParameter>
+        {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public LoadStoreParameter() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public LoadStoreParameter(params object[] args) : base(args) { }
+
+            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+            public override string ClassName => "java.security.KeyStore$LoadStoreParameter";
+
+            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+            public override bool IsAbstract => true;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+            public override bool IsCloseable => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+            public override bool IsInterface => true;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+            public override bool IsStatic => true;
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region PasswordProtection
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.PasswordProtection.html
@@ -1569,26 +1467,128 @@ namespace Java.Security
         }
         #endregion
 
-        #region Builder
+        #region PrivateKeyEntry
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.Builder.html
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.PrivateKeyEntry.html
         /// </summary>
-        public partial class Builder : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Builder>
+        public partial class PrivateKeyEntry : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PrivateKeyEntry>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            public Builder() { }
+            public PrivateKeyEntry() { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
-            public Builder(params object[] args) : base(args) { }
+            public PrivateKeyEntry(params object[] args) : base(args) { }
 
             /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-            public override string ClassName => "java.security.KeyStore$Builder";
+            public override string ClassName => "java.security.KeyStore$PrivateKeyEntry";
+
+            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+            public override bool IsAbstract => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+            public override bool IsCloseable => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+            public override bool IsInterface => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+            public override bool IsStatic => true;
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region ProtectionParameter
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.ProtectionParameter.html
+        /// </summary>
+        public partial class ProtectionParameter : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ProtectionParameter>
+        {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public ProtectionParameter() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public ProtectionParameter(params object[] args) : base(args) { }
+
+            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+            public override string ClassName => "java.security.KeyStore$ProtectionParameter";
 
             /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
             public override bool IsAbstract => true;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+            public override bool IsCloseable => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+            public override bool IsInterface => true;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+            public override bool IsStatic => true;
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region SecretKeyEntry
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.SecretKeyEntry.html
+        /// </summary>
+        public partial class SecretKeyEntry : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SecretKeyEntry>
+        {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public SecretKeyEntry() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public SecretKeyEntry(params object[] args) : base(args) { }
+
+            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+            public override string ClassName => "java.security.KeyStore$SecretKeyEntry";
+
+            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+            public override bool IsAbstract => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+            public override bool IsCloseable => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+            public override bool IsInterface => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+            public override bool IsStatic => true;
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region TrustedCertificateEntry
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStore.TrustedCertificateEntry.html
+        /// </summary>
+        public partial class TrustedCertificateEntry : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TrustedCertificateEntry>
+        {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public TrustedCertificateEntry() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public TrustedCertificateEntry(params object[] args) : base(args) { }
+
+            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+            public override string ClassName => "java.security.KeyStore$TrustedCertificateEntry";
+
+            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+            public override bool IsAbstract => false;
             
             /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
             public override bool IsCloseable => false;

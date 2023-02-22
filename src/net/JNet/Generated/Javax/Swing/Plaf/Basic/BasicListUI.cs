@@ -49,14 +49,14 @@ namespace Javax.Swing.Plaf.Basic
         #endregion
 
         #region Nested classes
-        #region PropertyChangeHandler
-        public partial class PropertyChangeHandler
+        #region FocusHandler
+        public partial class FocusHandler
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.PropertyChangeHandler.html#<init>(javax.swing.plaf.basic.BasicListUI)
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.FocusHandler.html#<init>(javax.swing.plaf.basic.BasicListUI)
             /// </summary>
-            public PropertyChangeHandler(Javax.Swing.Plaf.Basic.BasicListUI arg0)
+            public FocusHandler(Javax.Swing.Plaf.Basic.BasicListUI arg0)
                 : base(arg0)
             {
             }
@@ -64,7 +64,7 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Class/Interface conversion operators
-            public static implicit operator Java.Beans.PropertyChangeListener(Javax.Swing.Plaf.Basic.BasicListUI.PropertyChangeHandler t) => t.Cast<Java.Beans.PropertyChangeListener>();
+            public static implicit operator Java.Awt.EventNs.FocusListener(Javax.Swing.Plaf.Basic.BasicListUI.FocusHandler t) => t.Cast<Java.Awt.EventNs.FocusListener>();
             
             #endregion
 
@@ -78,11 +78,74 @@ namespace Javax.Swing.Plaf.Basic
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.PropertyChangeHandler.html#propertyChange(java.beans.PropertyChangeEvent)
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.FocusHandler.html#focusGained(java.awt.event.FocusEvent)
             /// </summary>
-            public void PropertyChange(Java.Beans.PropertyChangeEvent arg0)
+            public void FocusGained(Java.Awt.EventNs.FocusEvent arg0)
             {
-                IExecute("propertyChange", arg0);
+                IExecute("focusGained", arg0);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.FocusHandler.html#focusLost(java.awt.event.FocusEvent)
+            /// </summary>
+            public void FocusLost(Java.Awt.EventNs.FocusEvent arg0)
+            {
+                IExecute("focusLost", arg0);
+            }
+            
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region ListDataHandler
+        public partial class ListDataHandler
+        {
+            #region Constructors
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.ListDataHandler.html#<init>(javax.swing.plaf.basic.BasicListUI)
+            /// </summary>
+            public ListDataHandler(Javax.Swing.Plaf.Basic.BasicListUI arg0)
+                : base(arg0)
+            {
+            }
+            
+            #endregion
+
+            #region Class/Interface conversion operators
+            public static implicit operator Javax.Swing.Event.ListDataListener(Javax.Swing.Plaf.Basic.BasicListUI.ListDataHandler t) => t.Cast<Javax.Swing.Event.ListDataListener>();
+            
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.ListDataHandler.html#contentsChanged(javax.swing.event.ListDataEvent)
+            /// </summary>
+            public void ContentsChanged(Javax.Swing.Event.ListDataEvent arg0)
+            {
+                IExecute("contentsChanged", arg0);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.ListDataHandler.html#intervalAdded(javax.swing.event.ListDataEvent)
+            /// </summary>
+            public void IntervalAdded(Javax.Swing.Event.ListDataEvent arg0)
+            {
+                IExecute("intervalAdded", arg0);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.ListDataHandler.html#intervalRemoved(javax.swing.event.ListDataEvent)
+            /// </summary>
+            public void IntervalRemoved(Javax.Swing.Event.ListDataEvent arg0)
+            {
+                IExecute("intervalRemoved", arg0);
             }
             
             #endregion
@@ -217,14 +280,14 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
-        #region FocusHandler
-        public partial class FocusHandler
+        #region PropertyChangeHandler
+        public partial class PropertyChangeHandler
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.FocusHandler.html#<init>(javax.swing.plaf.basic.BasicListUI)
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.PropertyChangeHandler.html#<init>(javax.swing.plaf.basic.BasicListUI)
             /// </summary>
-            public FocusHandler(Javax.Swing.Plaf.Basic.BasicListUI arg0)
+            public PropertyChangeHandler(Javax.Swing.Plaf.Basic.BasicListUI arg0)
                 : base(arg0)
             {
             }
@@ -232,7 +295,7 @@ namespace Javax.Swing.Plaf.Basic
             #endregion
 
             #region Class/Interface conversion operators
-            public static implicit operator Java.Awt.EventNs.FocusListener(Javax.Swing.Plaf.Basic.BasicListUI.FocusHandler t) => t.Cast<Java.Awt.EventNs.FocusListener>();
+            public static implicit operator Java.Beans.PropertyChangeListener(Javax.Swing.Plaf.Basic.BasicListUI.PropertyChangeHandler t) => t.Cast<Java.Beans.PropertyChangeListener>();
             
             #endregion
 
@@ -246,74 +309,11 @@ namespace Javax.Swing.Plaf.Basic
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.FocusHandler.html#focusGained(java.awt.event.FocusEvent)
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.PropertyChangeHandler.html#propertyChange(java.beans.PropertyChangeEvent)
             /// </summary>
-            public void FocusGained(Java.Awt.EventNs.FocusEvent arg0)
+            public void PropertyChange(Java.Beans.PropertyChangeEvent arg0)
             {
-                IExecute("focusGained", arg0);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.FocusHandler.html#focusLost(java.awt.event.FocusEvent)
-            /// </summary>
-            public void FocusLost(Java.Awt.EventNs.FocusEvent arg0)
-            {
-                IExecute("focusLost", arg0);
-            }
-            
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region ListDataHandler
-        public partial class ListDataHandler
-        {
-            #region Constructors
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.ListDataHandler.html#<init>(javax.swing.plaf.basic.BasicListUI)
-            /// </summary>
-            public ListDataHandler(Javax.Swing.Plaf.Basic.BasicListUI arg0)
-                : base(arg0)
-            {
-            }
-            
-            #endregion
-
-            #region Class/Interface conversion operators
-            public static implicit operator Javax.Swing.Event.ListDataListener(Javax.Swing.Plaf.Basic.BasicListUI.ListDataHandler t) => t.Cast<Javax.Swing.Event.ListDataListener>();
-            
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.ListDataHandler.html#contentsChanged(javax.swing.event.ListDataEvent)
-            /// </summary>
-            public void ContentsChanged(Javax.Swing.Event.ListDataEvent arg0)
-            {
-                IExecute("contentsChanged", arg0);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.ListDataHandler.html#intervalAdded(javax.swing.event.ListDataEvent)
-            /// </summary>
-            public void IntervalAdded(Javax.Swing.Event.ListDataEvent arg0)
-            {
-                IExecute("intervalAdded", arg0);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicListUI.ListDataHandler.html#intervalRemoved(javax.swing.event.ListDataEvent)
-            /// </summary>
-            public void IntervalRemoved(Javax.Swing.Event.ListDataEvent arg0)
-            {
-                IExecute("intervalRemoved", arg0);
+                IExecute("propertyChange", arg0);
             }
             
             #endregion

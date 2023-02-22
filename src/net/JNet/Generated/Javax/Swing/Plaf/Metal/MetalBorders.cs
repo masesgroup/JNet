@@ -84,15 +84,15 @@ namespace Javax.Swing.Plaf.Metal
         #endregion
 
         #region Nested classes
-        #region MenuItemBorder
-        public partial class MenuItemBorder
+        #region ButtonBorder
+        public partial class ButtonBorder
         {
             #region Constructors
 
             #endregion
 
             #region Class/Interface conversion operators
-            public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.Metal.MetalBorders.MenuItemBorder t) => t.Cast<Javax.Swing.Plaf.UIResource>();
+            public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.Metal.MetalBorders.ButtonBorder t) => t.Cast<Javax.Swing.Plaf.UIResource>();
             
             #endregion
 
@@ -112,15 +112,15 @@ namespace Javax.Swing.Plaf.Metal
         }
         #endregion
 
-        #region PaletteBorder
-        public partial class PaletteBorder
+        #region Flush3DBorder
+        public partial class Flush3DBorder
         {
             #region Constructors
 
             #endregion
 
             #region Class/Interface conversion operators
-            public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.Metal.MetalBorders.PaletteBorder t) => t.Cast<Javax.Swing.Plaf.UIResource>();
+            public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.Metal.MetalBorders.Flush3DBorder t) => t.Cast<Javax.Swing.Plaf.UIResource>();
             
             #endregion
 
@@ -168,90 +168,6 @@ namespace Javax.Swing.Plaf.Metal
         }
         #endregion
 
-        #region ToolBarBorder
-        public partial class ToolBarBorder
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-            public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.Metal.MetalBorders.ToolBarBorder t) => t.Cast<Javax.Swing.Plaf.UIResource>();
-            public static implicit operator Javax.Swing.SwingConstants(Javax.Swing.Plaf.Metal.MetalBorders.ToolBarBorder t) => t.Cast<Javax.Swing.SwingConstants>();
-            
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region ButtonBorder
-        public partial class ButtonBorder
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-            public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.Metal.MetalBorders.ButtonBorder t) => t.Cast<Javax.Swing.Plaf.UIResource>();
-            
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region ToggleButtonBorder
-        public partial class ToggleButtonBorder
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region MenuBarBorder
         public partial class MenuBarBorder
         {
@@ -280,42 +196,15 @@ namespace Javax.Swing.Plaf.Metal
         }
         #endregion
 
-        #region RolloverButtonBorder
-        public partial class RolloverButtonBorder
+        #region MenuItemBorder
+        public partial class MenuItemBorder
         {
             #region Constructors
 
             #endregion
 
             #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region Flush3DBorder
-        public partial class Flush3DBorder
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-            public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.Metal.MetalBorders.Flush3DBorder t) => t.Cast<Javax.Swing.Plaf.UIResource>();
+            public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.Metal.MetalBorders.MenuItemBorder t) => t.Cast<Javax.Swing.Plaf.UIResource>();
             
             #endregion
 
@@ -335,8 +224,92 @@ namespace Javax.Swing.Plaf.Metal
         }
         #endregion
 
-        #region TableHeaderBorder
-        public partial class TableHeaderBorder
+        #region OptionDialogBorder
+        public partial class OptionDialogBorder
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+            public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.Metal.MetalBorders.OptionDialogBorder t) => t.Cast<Javax.Swing.Plaf.UIResource>();
+            
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region PaletteBorder
+        public partial class PaletteBorder
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+            public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.Metal.MetalBorders.PaletteBorder t) => t.Cast<Javax.Swing.Plaf.UIResource>();
+            
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region PopupMenuBorder
+        public partial class PopupMenuBorder
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+            public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.Metal.MetalBorders.PopupMenuBorder t) => t.Cast<Javax.Swing.Plaf.UIResource>();
+            
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region RolloverButtonBorder
+        public partial class RolloverButtonBorder
         {
             #region Constructors
 
@@ -390,44 +363,15 @@ namespace Javax.Swing.Plaf.Metal
         }
         #endregion
 
-        #region OptionDialogBorder
-        public partial class OptionDialogBorder
+        #region TableHeaderBorder
+        public partial class TableHeaderBorder
         {
             #region Constructors
 
             #endregion
 
             #region Class/Interface conversion operators
-            public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.Metal.MetalBorders.OptionDialogBorder t) => t.Cast<Javax.Swing.Plaf.UIResource>();
-            
-            #endregion
 
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region PopupMenuBorder
-        public partial class PopupMenuBorder
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-            public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.Metal.MetalBorders.PopupMenuBorder t) => t.Cast<Javax.Swing.Plaf.UIResource>();
-            
             #endregion
 
             #region Fields
@@ -455,6 +399,62 @@ namespace Javax.Swing.Plaf.Metal
 
             #region Class/Interface conversion operators
 
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region ToggleButtonBorder
+        public partial class ToggleButtonBorder
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region ToolBarBorder
+        public partial class ToolBarBorder
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+            public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.Metal.MetalBorders.ToolBarBorder t) => t.Cast<Javax.Swing.Plaf.UIResource>();
+            public static implicit operator Javax.Swing.SwingConstants(Javax.Swing.Plaf.Metal.MetalBorders.ToolBarBorder t) => t.Cast<Javax.Swing.SwingConstants>();
+            
             #endregion
 
             #region Fields

@@ -196,6 +196,41 @@ namespace Java.Util.Concurrent
         }
         #endregion
 
+        #region CallerRunsPolicy
+        public partial class CallerRunsPolicy
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+            public static implicit operator Java.Util.Concurrent.RejectedExecutionHandler(Java.Util.Concurrent.ThreadPoolExecutor.CallerRunsPolicy t) => t.Cast<Java.Util.Concurrent.RejectedExecutionHandler>();
+            
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.CallerRunsPolicy.html#rejectedExecution(java.lang.Runnable,java.util.concurrent.ThreadPoolExecutor)
+            /// </summary>
+            public void RejectedExecution(Java.Lang.Runnable arg0, Java.Util.Concurrent.ThreadPoolExecutor arg1)
+            {
+                IExecute("rejectedExecution", arg0, arg1);
+            }
+            
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region DiscardOldestPolicy
         public partial class DiscardOldestPolicy
         {
@@ -254,41 +289,6 @@ namespace Java.Util.Concurrent
             #region Instance methods
             /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.DiscardPolicy.html#rejectedExecution(java.lang.Runnable,java.util.concurrent.ThreadPoolExecutor)
-            /// </summary>
-            public void RejectedExecution(Java.Lang.Runnable arg0, Java.Util.Concurrent.ThreadPoolExecutor arg1)
-            {
-                IExecute("rejectedExecution", arg0, arg1);
-            }
-            
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region CallerRunsPolicy
-        public partial class CallerRunsPolicy
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-            public static implicit operator Java.Util.Concurrent.RejectedExecutionHandler(Java.Util.Concurrent.ThreadPoolExecutor.CallerRunsPolicy t) => t.Cast<Java.Util.Concurrent.RejectedExecutionHandler>();
-            
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.CallerRunsPolicy.html#rejectedExecution(java.lang.Runnable,java.util.concurrent.ThreadPoolExecutor)
             /// </summary>
             public void RejectedExecution(Java.Lang.Runnable arg0, Java.Util.Concurrent.ThreadPoolExecutor arg1)
             {

@@ -63,14 +63,48 @@ namespace Javax.Swing.Plaf.Basic
         #endregion
 
         #region Nested classes
-        #region MoveAction
-        public partial class MoveAction
+        #region CloseAction
+        public partial class CloseAction
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameTitlePane.MoveAction.html#<init>(javax.swing.plaf.basic.BasicInternalFrameTitlePane)
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameTitlePane.CloseAction.html#<init>(javax.swing.plaf.basic.BasicInternalFrameTitlePane)
             /// </summary>
-            public MoveAction(Javax.Swing.Plaf.Basic.BasicInternalFrameTitlePane arg0)
+            public CloseAction(Javax.Swing.Plaf.Basic.BasicInternalFrameTitlePane arg0)
+                : base(arg0)
+            {
+            }
+            
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region IconifyAction
+        public partial class IconifyAction
+        {
+            #region Constructors
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameTitlePane.IconifyAction.html#<init>(javax.swing.plaf.basic.BasicInternalFrameTitlePane)
+            /// </summary>
+            public IconifyAction(Javax.Swing.Plaf.Basic.BasicInternalFrameTitlePane arg0)
                 : base(arg0)
             {
             }
@@ -131,6 +165,116 @@ namespace Javax.Swing.Plaf.Basic
         }
         #endregion
 
+        #region MoveAction
+        public partial class MoveAction
+        {
+            #region Constructors
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameTitlePane.MoveAction.html#<init>(javax.swing.plaf.basic.BasicInternalFrameTitlePane)
+            /// </summary>
+            public MoveAction(Javax.Swing.Plaf.Basic.BasicInternalFrameTitlePane arg0)
+                : base(arg0)
+            {
+            }
+            
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region PropertyChangeHandler
+        public partial class PropertyChangeHandler
+        {
+            #region Constructors
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameTitlePane.PropertyChangeHandler.html#<init>(javax.swing.plaf.basic.BasicInternalFrameTitlePane)
+            /// </summary>
+            public PropertyChangeHandler(Javax.Swing.Plaf.Basic.BasicInternalFrameTitlePane arg0)
+                : base(arg0)
+            {
+            }
+            
+            #endregion
+
+            #region Class/Interface conversion operators
+            public static implicit operator Java.Beans.PropertyChangeListener(Javax.Swing.Plaf.Basic.BasicInternalFrameTitlePane.PropertyChangeHandler t) => t.Cast<Java.Beans.PropertyChangeListener>();
+            
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameTitlePane.PropertyChangeHandler.html#propertyChange(java.beans.PropertyChangeEvent)
+            /// </summary>
+            public void PropertyChange(Java.Beans.PropertyChangeEvent arg0)
+            {
+                IExecute("propertyChange", arg0);
+            }
+            
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region RestoreAction
+        public partial class RestoreAction
+        {
+            #region Constructors
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameTitlePane.RestoreAction.html#<init>(javax.swing.plaf.basic.BasicInternalFrameTitlePane)
+            /// </summary>
+            public RestoreAction(Javax.Swing.Plaf.Basic.BasicInternalFrameTitlePane arg0)
+                : base(arg0)
+            {
+            }
+            
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region SizeAction
         public partial class SizeAction
         {
@@ -139,6 +283,40 @@ namespace Javax.Swing.Plaf.Basic
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameTitlePane.SizeAction.html#<init>(javax.swing.plaf.basic.BasicInternalFrameTitlePane)
             /// </summary>
             public SizeAction(Javax.Swing.Plaf.Basic.BasicInternalFrameTitlePane arg0)
+                : base(arg0)
+            {
+            }
+            
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region SystemMenuBar
+        public partial class SystemMenuBar
+        {
+            #region Constructors
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameTitlePane.SystemMenuBar.html#<init>(javax.swing.plaf.basic.BasicInternalFrameTitlePane)
+            /// </summary>
+            public SystemMenuBar(Javax.Swing.Plaf.Basic.BasicInternalFrameTitlePane arg0)
                 : base(arg0)
             {
             }
@@ -229,184 +407,6 @@ namespace Javax.Swing.Plaf.Basic
                 IExecute("removeLayoutComponent", arg0);
             }
             
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region SystemMenuBar
-        public partial class SystemMenuBar
-        {
-            #region Constructors
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameTitlePane.SystemMenuBar.html#<init>(javax.swing.plaf.basic.BasicInternalFrameTitlePane)
-            /// </summary>
-            public SystemMenuBar(Javax.Swing.Plaf.Basic.BasicInternalFrameTitlePane arg0)
-                : base(arg0)
-            {
-            }
-            
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region RestoreAction
-        public partial class RestoreAction
-        {
-            #region Constructors
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameTitlePane.RestoreAction.html#<init>(javax.swing.plaf.basic.BasicInternalFrameTitlePane)
-            /// </summary>
-            public RestoreAction(Javax.Swing.Plaf.Basic.BasicInternalFrameTitlePane arg0)
-                : base(arg0)
-            {
-            }
-            
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region PropertyChangeHandler
-        public partial class PropertyChangeHandler
-        {
-            #region Constructors
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameTitlePane.PropertyChangeHandler.html#<init>(javax.swing.plaf.basic.BasicInternalFrameTitlePane)
-            /// </summary>
-            public PropertyChangeHandler(Javax.Swing.Plaf.Basic.BasicInternalFrameTitlePane arg0)
-                : base(arg0)
-            {
-            }
-            
-            #endregion
-
-            #region Class/Interface conversion operators
-            public static implicit operator Java.Beans.PropertyChangeListener(Javax.Swing.Plaf.Basic.BasicInternalFrameTitlePane.PropertyChangeHandler t) => t.Cast<Java.Beans.PropertyChangeListener>();
-            
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameTitlePane.PropertyChangeHandler.html#propertyChange(java.beans.PropertyChangeEvent)
-            /// </summary>
-            public void PropertyChange(Java.Beans.PropertyChangeEvent arg0)
-            {
-                IExecute("propertyChange", arg0);
-            }
-            
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region CloseAction
-        public partial class CloseAction
-        {
-            #region Constructors
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameTitlePane.CloseAction.html#<init>(javax.swing.plaf.basic.BasicInternalFrameTitlePane)
-            /// </summary>
-            public CloseAction(Javax.Swing.Plaf.Basic.BasicInternalFrameTitlePane arg0)
-                : base(arg0)
-            {
-            }
-            
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region IconifyAction
-        public partial class IconifyAction
-        {
-            #region Constructors
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicInternalFrameTitlePane.IconifyAction.html#<init>(javax.swing.plaf.basic.BasicInternalFrameTitlePane)
-            /// </summary>
-            public IconifyAction(Javax.Swing.Plaf.Basic.BasicInternalFrameTitlePane arg0)
-                : base(arg0)
-            {
-            }
-            
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
             #endregion
 
             // TODO: complete the class

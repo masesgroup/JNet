@@ -121,40 +121,6 @@ namespace Java.Lang.ModuleNs
         public override bool IsStatic => false;
 
         // TODO: complete the class
-        #region Requires
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Requires.html
-        /// </summary>
-        public partial class Requires : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Requires>
-        {
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public Requires() { }
-            /// <summary>
-            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-            /// </summary>
-            public Requires(params object[] args) : base(args) { }
-
-            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-            public override string ClassName => "java.lang.module.ModuleDescriptor$Requires";
-
-            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-            public override bool IsAbstract => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-            public override bool IsCloseable => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-            public override bool IsInterface => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-            public override bool IsStatic => true;
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region Builder
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Builder.html
@@ -172,6 +138,74 @@ namespace Java.Lang.ModuleNs
 
             /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
             public override string ClassName => "java.lang.module.ModuleDescriptor$Builder";
+
+            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+            public override bool IsAbstract => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+            public override bool IsCloseable => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+            public override bool IsInterface => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+            public override bool IsStatic => true;
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region Exports
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Exports.html
+        /// </summary>
+        public partial class Exports : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Exports>
+        {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public Exports() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public Exports(params object[] args) : base(args) { }
+
+            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+            public override string ClassName => "java.lang.module.ModuleDescriptor$Exports";
+
+            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+            public override bool IsAbstract => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+            public override bool IsCloseable => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+            public override bool IsInterface => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+            public override bool IsStatic => true;
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region Modifier
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Modifier.html
+        /// </summary>
+        public partial class Modifier : Java.Lang.Enum
+        {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public Modifier() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public Modifier(params object[] args) : base(args) { }
+
+            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+            public override string ClassName => "java.lang.module.ModuleDescriptor$Modifier";
 
             /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
             public override bool IsAbstract => false;
@@ -257,23 +291,23 @@ namespace Java.Lang.ModuleNs
         }
         #endregion
 
-        #region Exports
+        #region Requires
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Exports.html
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Requires.html
         /// </summary>
-        public partial class Exports : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Exports>
+        public partial class Requires : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Requires>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            public Exports() { }
+            public Requires() { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
-            public Exports(params object[] args) : base(args) { }
+            public Requires(params object[] args) : base(args) { }
 
             /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-            public override string ClassName => "java.lang.module.ModuleDescriptor$Exports";
+            public override string ClassName => "java.lang.module.ModuleDescriptor$Requires";
 
             /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
             public override bool IsAbstract => false;
@@ -308,40 +342,6 @@ namespace Java.Lang.ModuleNs
 
             /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
             public override string ClassName => "java.lang.module.ModuleDescriptor$Version";
-
-            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-            public override bool IsAbstract => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-            public override bool IsCloseable => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-            public override bool IsInterface => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-            public override bool IsStatic => true;
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region Modifier
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Modifier.html
-        /// </summary>
-        public partial class Modifier : Java.Lang.Enum
-        {
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public Modifier() { }
-            /// <summary>
-            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-            /// </summary>
-            public Modifier(params object[] args) : base(args) { }
-
-            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-            public override string ClassName => "java.lang.module.ModuleDescriptor$Modifier";
 
             /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
             public override bool IsAbstract => false;

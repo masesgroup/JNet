@@ -194,40 +194,6 @@ namespace Java.Lang
         public override bool IsStatic => false;
 
         // TODO: complete the class
-        #region UnicodeScript
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html
-        /// </summary>
-        public partial class UnicodeScript : Java.Lang.Enum
-        {
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public UnicodeScript() { }
-            /// <summary>
-            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-            /// </summary>
-            public UnicodeScript(params object[] args) : base(args) { }
-
-            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-            public override string ClassName => "java.lang.Character$UnicodeScript";
-
-            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-            public override bool IsAbstract => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-            public override bool IsCloseable => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-            public override bool IsInterface => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-            public override bool IsStatic => true;
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region Subset
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.Subset.html
@@ -279,6 +245,40 @@ namespace Java.Lang
 
             /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
             public override string ClassName => "java.lang.Character$UnicodeBlock";
+
+            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+            public override bool IsAbstract => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+            public override bool IsCloseable => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+            public override bool IsInterface => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+            public override bool IsStatic => true;
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region UnicodeScript
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html
+        /// </summary>
+        public partial class UnicodeScript : Java.Lang.Enum
+        {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public UnicodeScript() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public UnicodeScript(params object[] args) : base(args) { }
+
+            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+            public override string ClassName => "java.lang.Character$UnicodeScript";
 
             /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
             public override bool IsAbstract => false;
@@ -2035,40 +2035,6 @@ namespace Java.Lang
         public override bool IsStatic => false;
 
         // TODO: complete the class
-        #region UncaughtExceptionHandler
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.UncaughtExceptionHandler.html
-        /// </summary>
-        public partial class UncaughtExceptionHandler : MASES.JCOBridge.C2JBridge.JVMBridgeBase<UncaughtExceptionHandler>
-        {
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public UncaughtExceptionHandler() { }
-            /// <summary>
-            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-            /// </summary>
-            public UncaughtExceptionHandler(params object[] args) : base(args) { }
-
-            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-            public override string ClassName => "java.lang.Thread$UncaughtExceptionHandler";
-
-            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-            public override bool IsAbstract => true;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-            public override bool IsCloseable => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-            public override bool IsInterface => true;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-            public override bool IsStatic => true;
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region State
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.State.html
@@ -2095,6 +2061,40 @@ namespace Java.Lang
             
             /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
             public override bool IsInterface => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+            public override bool IsStatic => true;
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region UncaughtExceptionHandler
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.UncaughtExceptionHandler.html
+        /// </summary>
+        public partial class UncaughtExceptionHandler : MASES.JCOBridge.C2JBridge.JVMBridgeBase<UncaughtExceptionHandler>
+        {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public UncaughtExceptionHandler() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public UncaughtExceptionHandler(params object[] args) : base(args) { }
+
+            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+            public override string ClassName => "java.lang.Thread$UncaughtExceptionHandler";
+
+            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+            public override bool IsAbstract => true;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+            public override bool IsCloseable => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+            public override bool IsInterface => true;
             
             /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
             public override bool IsStatic => true;

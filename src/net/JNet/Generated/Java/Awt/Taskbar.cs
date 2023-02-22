@@ -119,60 +119,6 @@ namespace Java.Awt
         #endregion
 
         #region Nested classes
-        #region State
-        public partial class State
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.State.html#ERROR
-            /// </summary>
-            public static Java.Awt.Taskbar.State ERROR => Clazz.GetField<Java.Awt.Taskbar.State>("ERROR");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.State.html#INDETERMINATE
-            /// </summary>
-            public static Java.Awt.Taskbar.State INDETERMINATE => Clazz.GetField<Java.Awt.Taskbar.State>("INDETERMINATE");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.State.html#NORMAL
-            /// </summary>
-            public static Java.Awt.Taskbar.State NORMAL => Clazz.GetField<Java.Awt.Taskbar.State>("NORMAL");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.State.html#OFF
-            /// </summary>
-            public static Java.Awt.Taskbar.State OFF => Clazz.GetField<Java.Awt.Taskbar.State>("OFF");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.State.html#PAUSED
-            /// </summary>
-            public static Java.Awt.Taskbar.State PAUSED => Clazz.GetField<Java.Awt.Taskbar.State>("PAUSED");
-            
-            #endregion
-
-            #region Static methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.State.html#values()
-            /// </summary>
-            public static Java.Awt.Taskbar.State[] Values()
-            {
-                return SExecuteArray<Java.Awt.Taskbar.State>("values");
-            }
-            
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region Feature
         public partial class Feature
         {
@@ -235,6 +181,60 @@ namespace Java.Awt
             public static Java.Awt.Taskbar.Feature[] Values()
             {
                 return SExecuteArray<Java.Awt.Taskbar.Feature>("values");
+            }
+            
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region State
+        public partial class State
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.State.html#ERROR
+            /// </summary>
+            public static Java.Awt.Taskbar.State ERROR => Clazz.GetField<Java.Awt.Taskbar.State>("ERROR");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.State.html#INDETERMINATE
+            /// </summary>
+            public static Java.Awt.Taskbar.State INDETERMINATE => Clazz.GetField<Java.Awt.Taskbar.State>("INDETERMINATE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.State.html#NORMAL
+            /// </summary>
+            public static Java.Awt.Taskbar.State NORMAL => Clazz.GetField<Java.Awt.Taskbar.State>("NORMAL");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.State.html#OFF
+            /// </summary>
+            public static Java.Awt.Taskbar.State OFF => Clazz.GetField<Java.Awt.Taskbar.State>("OFF");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.State.html#PAUSED
+            /// </summary>
+            public static Java.Awt.Taskbar.State PAUSED => Clazz.GetField<Java.Awt.Taskbar.State>("PAUSED");
+            
+            #endregion
+
+            #region Static methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.State.html#values()
+            /// </summary>
+            public static Java.Awt.Taskbar.State[] Values()
+            {
+                return SExecuteArray<Java.Awt.Taskbar.State>("values");
             }
             
             #endregion

@@ -1038,40 +1038,6 @@ namespace Java.Nio.Channels
         public override bool IsStatic => false;
 
         // TODO: complete the class
-        #region SourceChannel
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Pipe.SourceChannel.html
-        /// </summary>
-        public partial class SourceChannel : Java.Nio.Channels.Spi.AbstractSelectableChannel
-        {
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public SourceChannel() { }
-            /// <summary>
-            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-            /// </summary>
-            public SourceChannel(params object[] args) : base(args) { }
-
-            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-            public override string ClassName => "java.nio.channels.Pipe$SourceChannel";
-
-            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-            public override bool IsAbstract => true;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-            public override bool IsCloseable => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-            public override bool IsInterface => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-            public override bool IsStatic => true;
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region SinkChannel
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Pipe.SinkChannel.html
@@ -1089,6 +1055,40 @@ namespace Java.Nio.Channels
 
             /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
             public override string ClassName => "java.nio.channels.Pipe$SinkChannel";
+
+            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+            public override bool IsAbstract => true;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+            public override bool IsCloseable => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+            public override bool IsInterface => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+            public override bool IsStatic => true;
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region SourceChannel
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Pipe.SourceChannel.html
+        /// </summary>
+        public partial class SourceChannel : Java.Nio.Channels.Spi.AbstractSelectableChannel
+        {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public SourceChannel() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public SourceChannel(params object[] args) : base(args) { }
+
+            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+            public override string ClassName => "java.nio.channels.Pipe$SourceChannel";
 
             /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
             public override bool IsAbstract => true;

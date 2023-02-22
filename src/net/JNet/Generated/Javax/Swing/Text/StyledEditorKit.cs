@@ -63,8 +63,42 @@ namespace Javax.Swing.Text
         #endregion
 
         #region Nested classes
-        #region UnderlineAction
-        public partial class UnderlineAction
+        #region AlignmentAction
+        public partial class AlignmentAction
+        {
+            #region Constructors
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyledEditorKit.AlignmentAction.html#<init>(java.lang.String,int)
+            /// </summary>
+            public AlignmentAction(string arg0, int arg1)
+                : base(arg0, arg1)
+            {
+            }
+            
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region BoldAction
+        public partial class BoldAction
         {
             #region Constructors
 
@@ -124,11 +158,18 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region BoldAction
-        public partial class BoldAction
+        #region FontSizeAction
+        public partial class FontSizeAction
         {
             #region Constructors
-
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyledEditorKit.FontSizeAction.html#<init>(java.lang.String,int)
+            /// </summary>
+            public FontSizeAction(string arg0, int arg1)
+                : base(arg0, arg1)
+            {
+            }
+            
             #endregion
 
             #region Class/Interface conversion operators
@@ -151,14 +192,14 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region AlignmentAction
-        public partial class AlignmentAction
+        #region ForegroundAction
+        public partial class ForegroundAction
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyledEditorKit.AlignmentAction.html#<init>(java.lang.String,int)
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyledEditorKit.ForegroundAction.html#<init>(java.lang.String,java.awt.Color)
             /// </summary>
-            public AlignmentAction(string arg0, int arg1)
+            public ForegroundAction(string arg0, Java.Awt.Color arg1)
                 : base(arg0, arg1)
             {
             }
@@ -246,52 +287,11 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region FontSizeAction
-        public partial class FontSizeAction
+        #region UnderlineAction
+        public partial class UnderlineAction
         {
             #region Constructors
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyledEditorKit.FontSizeAction.html#<init>(java.lang.String,int)
-            /// </summary>
-            public FontSizeAction(string arg0, int arg1)
-                : base(arg0, arg1)
-            {
-            }
-            
-            #endregion
 
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region ForegroundAction
-        public partial class ForegroundAction
-        {
-            #region Constructors
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyledEditorKit.ForegroundAction.html#<init>(java.lang.String,java.awt.Color)
-            /// </summary>
-            public ForegroundAction(string arg0, Java.Awt.Color arg1)
-                : base(arg0, arg1)
-            {
-            }
-            
             #endregion
 
             #region Class/Interface conversion operators

@@ -233,97 +233,6 @@ namespace Javax.Swing.Plaf.Metal
         #endregion
 
         #region Nested classes
-        #region FolderIcon16
-        public partial class FolderIcon16
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-            public static implicit operator Javax.Swing.Icon(Javax.Swing.Plaf.Metal.MetalIconFactory.FolderIcon16 t) => t.Cast<Javax.Swing.Icon>();
-            public static implicit operator Java.Io.Serializable(Javax.Swing.Plaf.Metal.MetalIconFactory.FolderIcon16 t) => t.Cast<Java.Io.Serializable>();
-            
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.FolderIcon16.html#getAdditionalHeight() 
-            /// </summary>
-            public int AdditionalHeight
-            {
-                get { return IExecute<int>("getAdditionalHeight"); }
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.FolderIcon16.html#getIconHeight() 
-            /// </summary>
-            public int IconHeight
-            {
-                get { return IExecute<int>("getIconHeight"); }
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.FolderIcon16.html#getIconWidth() 
-            /// </summary>
-            public int IconWidth
-            {
-                get { return IExecute<int>("getIconWidth"); }
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.FolderIcon16.html#getShift() 
-            /// </summary>
-            public int Shift
-            {
-                get { return IExecute<int>("getShift"); }
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.FolderIcon16.html#paintIcon(java.awt.Component,java.awt.Graphics,int,int)
-            /// </summary>
-            public void PaintIcon(Java.Awt.Component arg0, Java.Awt.Graphics arg1, int arg2, int arg3)
-            {
-                IExecute("paintIcon", arg0, arg1, arg2, arg3);
-            }
-            
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region TreeFolderIcon
-        public partial class TreeFolderIcon
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region FileIcon16
         public partial class FileIcon16
         {
@@ -388,6 +297,70 @@ namespace Javax.Swing.Plaf.Metal
         }
         #endregion
 
+        #region FolderIcon16
+        public partial class FolderIcon16
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+            public static implicit operator Javax.Swing.Icon(Javax.Swing.Plaf.Metal.MetalIconFactory.FolderIcon16 t) => t.Cast<Javax.Swing.Icon>();
+            public static implicit operator Java.Io.Serializable(Javax.Swing.Plaf.Metal.MetalIconFactory.FolderIcon16 t) => t.Cast<Java.Io.Serializable>();
+            
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.FolderIcon16.html#getAdditionalHeight() 
+            /// </summary>
+            public int AdditionalHeight
+            {
+                get { return IExecute<int>("getAdditionalHeight"); }
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.FolderIcon16.html#getIconHeight() 
+            /// </summary>
+            public int IconHeight
+            {
+                get { return IExecute<int>("getIconHeight"); }
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.FolderIcon16.html#getIconWidth() 
+            /// </summary>
+            public int IconWidth
+            {
+                get { return IExecute<int>("getIconWidth"); }
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.FolderIcon16.html#getShift() 
+            /// </summary>
+            public int Shift
+            {
+                get { return IExecute<int>("getShift"); }
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.FolderIcon16.html#paintIcon(java.awt.Component,java.awt.Graphics,int,int)
+            /// </summary>
+            public void PaintIcon(Java.Awt.Component arg0, Java.Awt.Graphics arg1, int arg2, int arg3)
+            {
+                IExecute("paintIcon", arg0, arg1, arg2, arg3);
+            }
+            
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region PaletteCloseIcon
         public partial class PaletteCloseIcon
         {
@@ -433,33 +406,6 @@ namespace Javax.Swing.Plaf.Metal
                 IExecute("paintIcon", arg0, arg1, arg2, arg3);
             }
             
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region TreeLeafIcon
-        public partial class TreeLeafIcon
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
             #endregion
 
             // TODO: complete the class
@@ -524,6 +470,60 @@ namespace Javax.Swing.Plaf.Metal
                 IExecute("paintMe", arg0, arg1, arg2, arg3);
             }
             
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region TreeFolderIcon
+        public partial class TreeFolderIcon
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region TreeLeafIcon
+        public partial class TreeLeafIcon
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
             #endregion
 
             // TODO: complete the class

@@ -70,56 +70,6 @@ namespace Javax.Net.Ssl
         #endregion
 
         #region Nested classes
-        #region Status
-        public partial class Status
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.Status.html#BUFFER_OVERFLOW
-            /// </summary>
-            public static Javax.Net.Ssl.SSLEngineResult.Status BUFFER_OVERFLOW => Clazz.GetField<Javax.Net.Ssl.SSLEngineResult.Status>("BUFFER_OVERFLOW");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.Status.html#BUFFER_UNDERFLOW
-            /// </summary>
-            public static Javax.Net.Ssl.SSLEngineResult.Status BUFFER_UNDERFLOW => Clazz.GetField<Javax.Net.Ssl.SSLEngineResult.Status>("BUFFER_UNDERFLOW");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.Status.html#CLOSED
-            /// </summary>
-            public static Javax.Net.Ssl.SSLEngineResult.Status CLOSED => Clazz.GetField<Javax.Net.Ssl.SSLEngineResult.Status>("CLOSED");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.Status.html#OK
-            /// </summary>
-            public static Javax.Net.Ssl.SSLEngineResult.Status OK => Clazz.GetField<Javax.Net.Ssl.SSLEngineResult.Status>("OK");
-            
-            #endregion
-
-            #region Static methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.Status.html#values()
-            /// </summary>
-            public static Javax.Net.Ssl.SSLEngineResult.Status[] Values()
-            {
-                return SExecuteArray<Javax.Net.Ssl.SSLEngineResult.Status>("values");
-            }
-            
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region HandshakeStatus
         public partial class HandshakeStatus
         {
@@ -166,6 +116,56 @@ namespace Javax.Net.Ssl
             public static Javax.Net.Ssl.SSLEngineResult.HandshakeStatus[] Values()
             {
                 return SExecuteArray<Javax.Net.Ssl.SSLEngineResult.HandshakeStatus>("values");
+            }
+            
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region Status
+        public partial class Status
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.Status.html#BUFFER_OVERFLOW
+            /// </summary>
+            public static Javax.Net.Ssl.SSLEngineResult.Status BUFFER_OVERFLOW => Clazz.GetField<Javax.Net.Ssl.SSLEngineResult.Status>("BUFFER_OVERFLOW");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.Status.html#BUFFER_UNDERFLOW
+            /// </summary>
+            public static Javax.Net.Ssl.SSLEngineResult.Status BUFFER_UNDERFLOW => Clazz.GetField<Javax.Net.Ssl.SSLEngineResult.Status>("BUFFER_UNDERFLOW");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.Status.html#CLOSED
+            /// </summary>
+            public static Javax.Net.Ssl.SSLEngineResult.Status CLOSED => Clazz.GetField<Javax.Net.Ssl.SSLEngineResult.Status>("CLOSED");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.Status.html#OK
+            /// </summary>
+            public static Javax.Net.Ssl.SSLEngineResult.Status OK => Clazz.GetField<Javax.Net.Ssl.SSLEngineResult.Status>("OK");
+            
+            #endregion
+
+            #region Static methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLEngineResult.Status.html#values()
+            /// </summary>
+            public static Javax.Net.Ssl.SSLEngineResult.Status[] Values()
+            {
+                return SExecuteArray<Javax.Net.Ssl.SSLEngineResult.Status>("values");
             }
             
             #endregion

@@ -1131,23 +1131,23 @@ namespace Java.Util.Concurrent
         public override bool IsStatic => false;
 
         // TODO: complete the class
-        #region Subscriber
+        #region Processor
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Flow.Subscriber.html
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Flow.Processor.html
         /// </summary>
-        public partial class Subscriber : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Subscriber>
+        public partial class Processor : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Processor>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            public Subscriber() { }
+            public Processor() { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
-            public Subscriber(params object[] args) : base(args) { }
+            public Processor(params object[] args) : base(args) { }
 
             /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-            public override string ClassName => "java.util.concurrent.Flow$Subscriber";
+            public override string ClassName => "java.util.concurrent.Flow$Processor";
 
             /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
             public override bool IsAbstract => true;
@@ -1199,23 +1199,23 @@ namespace Java.Util.Concurrent
         }
         #endregion
 
-        #region Processor
+        #region Subscriber
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Flow.Processor.html
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Flow.Subscriber.html
         /// </summary>
-        public partial class Processor : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Processor>
+        public partial class Subscriber : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Subscriber>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            public Processor() { }
+            public Subscriber() { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
-            public Processor(params object[] args) : base(args) { }
+            public Subscriber(params object[] args) : base(args) { }
 
             /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-            public override string ClassName => "java.util.concurrent.Flow$Processor";
+            public override string ClassName => "java.util.concurrent.Flow$Subscriber";
 
             /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
             public override bool IsAbstract => true;
@@ -1302,40 +1302,6 @@ namespace Java.Util.Concurrent
         public override bool IsStatic => false;
 
         // TODO: complete the class
-        #region ManagedBlocker
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinPool.ManagedBlocker.html
-        /// </summary>
-        public partial class ManagedBlocker : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ManagedBlocker>
-        {
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public ManagedBlocker() { }
-            /// <summary>
-            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-            /// </summary>
-            public ManagedBlocker(params object[] args) : base(args) { }
-
-            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-            public override string ClassName => "java.util.concurrent.ForkJoinPool$ManagedBlocker";
-
-            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-            public override bool IsAbstract => true;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-            public override bool IsCloseable => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-            public override bool IsInterface => true;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-            public override bool IsStatic => true;
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region ForkJoinWorkerThreadFactory
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinPool.ForkJoinWorkerThreadFactory.html
@@ -1353,6 +1319,40 @@ namespace Java.Util.Concurrent
 
             /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
             public override string ClassName => "java.util.concurrent.ForkJoinPool$ForkJoinWorkerThreadFactory";
+
+            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+            public override bool IsAbstract => true;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+            public override bool IsCloseable => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+            public override bool IsInterface => true;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+            public override bool IsStatic => true;
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region ManagedBlocker
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinPool.ManagedBlocker.html
+        /// </summary>
+        public partial class ManagedBlocker : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ManagedBlocker>
+        {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public ManagedBlocker() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public ManagedBlocker(params object[] args) : base(args) { }
+
+            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+            public override string ClassName => "java.util.concurrent.ForkJoinPool$ManagedBlocker";
 
             /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
             public override bool IsAbstract => true;
@@ -2225,6 +2225,40 @@ namespace Java.Util.Concurrent
         }
         #endregion
 
+        #region CallerRunsPolicy
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.CallerRunsPolicy.html
+        /// </summary>
+        public partial class CallerRunsPolicy : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CallerRunsPolicy>
+        {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public CallerRunsPolicy() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public CallerRunsPolicy(params object[] args) : base(args) { }
+
+            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+            public override string ClassName => "java.util.concurrent.ThreadPoolExecutor$CallerRunsPolicy";
+
+            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+            public override bool IsAbstract => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+            public override bool IsCloseable => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+            public override bool IsInterface => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+            public override bool IsStatic => true;
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region DiscardOldestPolicy
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.DiscardOldestPolicy.html
@@ -2276,40 +2310,6 @@ namespace Java.Util.Concurrent
 
             /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
             public override string ClassName => "java.util.concurrent.ThreadPoolExecutor$DiscardPolicy";
-
-            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-            public override bool IsAbstract => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-            public override bool IsCloseable => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-            public override bool IsInterface => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-            public override bool IsStatic => true;
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region CallerRunsPolicy
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.CallerRunsPolicy.html
-        /// </summary>
-        public partial class CallerRunsPolicy : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CallerRunsPolicy>
-        {
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public CallerRunsPolicy() { }
-            /// <summary>
-            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-            /// </summary>
-            public CallerRunsPolicy(params object[] args) : base(args) { }
-
-            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-            public override string ClassName => "java.util.concurrent.ThreadPoolExecutor$CallerRunsPolicy";
 
             /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
             public override bool IsAbstract => false;

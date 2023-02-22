@@ -113,35 +113,8 @@ namespace Javax.Swing.Text
         #endregion
 
         #region Nested classes
-        #region ParagraphAttribute
-        public partial class ParagraphAttribute
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region FontAttribute
-        public partial class FontAttribute
+        #region CharacterAttribute
+        public partial class CharacterAttribute
         {
             #region Constructors
 
@@ -194,8 +167,35 @@ namespace Javax.Swing.Text
         }
         #endregion
 
-        #region CharacterAttribute
-        public partial class CharacterAttribute
+        #region FontAttribute
+        public partial class FontAttribute
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region ParagraphAttribute
+        public partial class ParagraphAttribute
         {
             #region Constructors
 

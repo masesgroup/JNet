@@ -91,6 +91,40 @@ namespace Java.Net.Http
         #endregion
 
         #region Nested classes
+        #region BodyPublisher
+        public partial class BodyPublisher
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublisher.html#contentLength()
+            /// </summary>
+            public long ContentLength()
+            {
+                return IExecute<long>("contentLength");
+            }
+            
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region BodyPublishers
         public partial class BodyPublishers
         {
@@ -270,40 +304,6 @@ namespace Java.Net.Http
             public Java.Net.Http.HttpRequest.Builder Uri(Java.Net.URI arg0)
             {
                 return IExecute<Java.Net.Http.HttpRequest.Builder>("uri", arg0);
-            }
-            
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region BodyPublisher
-        public partial class BodyPublisher
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublisher.html#contentLength()
-            /// </summary>
-            public long ContentLength()
-            {
-                return IExecute<long>("contentLength");
             }
             
             #endregion

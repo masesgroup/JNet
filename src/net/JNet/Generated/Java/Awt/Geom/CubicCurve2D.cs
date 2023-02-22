@@ -310,6 +310,73 @@ namespace Java.Awt.Geom
         #endregion
 
         #region Nested classes
+        #region Double
+        public partial class Double
+        {
+            #region Constructors
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Double.html#<init>(double,double,double,double,double,double,double,double)
+            /// </summary>
+            public Double(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7)
+                : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7)
+            {
+            }
+            
+            #endregion
+
+            #region Class/Interface conversion operators
+            public static implicit operator Java.Io.Serializable(Java.Awt.Geom.CubicCurve2D.Double t) => t.Cast<Java.Io.Serializable>();
+            
+            #endregion
+
+            #region Fields
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Double.html#ctrlx1
+            /// </summary>
+            public double ctrlx1 => Instance.GetField<double>("ctrlx1");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Double.html#ctrlx2
+            /// </summary>
+            public double ctrlx2 => Instance.GetField<double>("ctrlx2");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Double.html#ctrly1
+            /// </summary>
+            public double ctrly1 => Instance.GetField<double>("ctrly1");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Double.html#ctrly2
+            /// </summary>
+            public double ctrly2 => Instance.GetField<double>("ctrly2");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Double.html#x1
+            /// </summary>
+            public double x1 => Instance.GetField<double>("x1");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Double.html#x2
+            /// </summary>
+            public double x2 => Instance.GetField<double>("x2");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Double.html#y1
+            /// </summary>
+            public double y1 => Instance.GetField<double>("y1");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Double.html#y2
+            /// </summary>
+            public double y2 => Instance.GetField<double>("y2");
+            
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region Float
         public partial class Float
         {
@@ -378,73 +445,6 @@ namespace Java.Awt.Geom
                 IExecute("setCurve", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
             }
             
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region Double
-        public partial class Double
-        {
-            #region Constructors
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Double.html#<init>(double,double,double,double,double,double,double,double)
-            /// </summary>
-            public Double(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7)
-                : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7)
-            {
-            }
-            
-            #endregion
-
-            #region Class/Interface conversion operators
-            public static implicit operator Java.Io.Serializable(Java.Awt.Geom.CubicCurve2D.Double t) => t.Cast<Java.Io.Serializable>();
-            
-            #endregion
-
-            #region Fields
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Double.html#ctrlx1
-            /// </summary>
-            public double ctrlx1 => Instance.GetField<double>("ctrlx1");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Double.html#ctrlx2
-            /// </summary>
-            public double ctrlx2 => Instance.GetField<double>("ctrlx2");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Double.html#ctrly1
-            /// </summary>
-            public double ctrly1 => Instance.GetField<double>("ctrly1");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Double.html#ctrly2
-            /// </summary>
-            public double ctrly2 => Instance.GetField<double>("ctrly2");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Double.html#x1
-            /// </summary>
-            public double x1 => Instance.GetField<double>("x1");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Double.html#x2
-            /// </summary>
-            public double x2 => Instance.GetField<double>("x2");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Double.html#y1
-            /// </summary>
-            public double y1 => Instance.GetField<double>("y1");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.Double.html#y2
-            /// </summary>
-            public double y2 => Instance.GetField<double>("y2");
-            
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
             #endregion
 
             // TODO: complete the class

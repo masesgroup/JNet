@@ -109,6 +109,61 @@ namespace Java.Util
         #endregion
 
         #region Nested classes
+        #region OfDouble
+        public partial class OfDouble
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfDouble.html#tryAdvance(java.util.function.DoubleConsumer)
+            /// </summary>
+            public bool TryAdvance(Java.Util.Function.DoubleConsumer arg0)
+            {
+                return IExecute<bool>("tryAdvance", arg0);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfDouble.html#tryAdvance(java.lang.Object)
+            /// </summary>
+            public bool TryAdvance(object arg0)
+            {
+                return IExecute<bool>("tryAdvance", arg0);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfDouble.html#forEachRemaining(java.lang.Object)
+            /// </summary>
+            public void ForEachRemaining(object arg0)
+            {
+                IExecute("forEachRemaining", arg0);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfDouble.html#forEachRemaining(java.util.function.DoubleConsumer)
+            /// </summary>
+            public void ForEachRemaining(Java.Util.Function.DoubleConsumer arg0)
+            {
+                IExecute("forEachRemaining", arg0);
+            }
+            
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region OfInt
         public partial class OfInt
         {
@@ -250,61 +305,6 @@ namespace Java.Util
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfPrimitive.html#forEachRemaining(T_CONS)
             /// </summary>
             public void ForEachRemaining(object arg0)
-            {
-                IExecute("forEachRemaining", arg0);
-            }
-            
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region OfDouble
-        public partial class OfDouble
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfDouble.html#tryAdvance(java.util.function.DoubleConsumer)
-            /// </summary>
-            public bool TryAdvance(Java.Util.Function.DoubleConsumer arg0)
-            {
-                return IExecute<bool>("tryAdvance", arg0);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfDouble.html#tryAdvance(java.lang.Object)
-            /// </summary>
-            public bool TryAdvance(object arg0)
-            {
-                return IExecute<bool>("tryAdvance", arg0);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfDouble.html#forEachRemaining(java.lang.Object)
-            /// </summary>
-            public void ForEachRemaining(object arg0)
-            {
-                IExecute("forEachRemaining", arg0);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Spliterator.OfDouble.html#forEachRemaining(java.util.function.DoubleConsumer)
-            /// </summary>
-            public void ForEachRemaining(Java.Util.Function.DoubleConsumer arg0)
             {
                 IExecute("forEachRemaining", arg0);
             }

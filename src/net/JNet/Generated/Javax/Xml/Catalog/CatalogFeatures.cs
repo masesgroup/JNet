@@ -63,6 +63,40 @@ namespace Javax.Xml.Catalog
         #endregion
 
         #region Nested classes
+        #region Builder
+        public partial class Builder
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.Builder.html#build()
+            /// </summary>
+            public Javax.Xml.Catalog.CatalogFeatures Build()
+            {
+                return IExecute<Javax.Xml.Catalog.CatalogFeatures>("build");
+            }
+            
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region Feature
         public partial class Feature
         {
@@ -119,40 +153,6 @@ namespace Javax.Xml.Catalog
             public string DefaultValue()
             {
                 return IExecute<string>("defaultValue");
-            }
-            
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region Builder
-        public partial class Builder
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogFeatures.Builder.html#build()
-            /// </summary>
-            public Javax.Xml.Catalog.CatalogFeatures Build()
-            {
-                return IExecute<Javax.Xml.Catalog.CatalogFeatures>("build");
             }
             
             #endregion

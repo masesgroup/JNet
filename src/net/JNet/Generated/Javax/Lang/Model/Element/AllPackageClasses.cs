@@ -368,74 +368,6 @@ namespace Javax.Lang.Model.Element
         }
         #endregion
 
-        #region DirectiveVisitor
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveVisitor.html
-        /// </summary>
-        public partial class DirectiveVisitor : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DirectiveVisitor>
-        {
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public DirectiveVisitor() { }
-            /// <summary>
-            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-            /// </summary>
-            public DirectiveVisitor(params object[] args) : base(args) { }
-
-            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-            public override string ClassName => "javax.lang.model.element.ModuleElement$DirectiveVisitor";
-
-            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-            public override bool IsAbstract => true;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-            public override bool IsCloseable => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-            public override bool IsInterface => true;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-            public override bool IsStatic => true;
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region UsesDirective
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.UsesDirective.html
-        /// </summary>
-        public partial class UsesDirective : MASES.JCOBridge.C2JBridge.JVMBridgeBase<UsesDirective>
-        {
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public UsesDirective() { }
-            /// <summary>
-            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-            /// </summary>
-            public UsesDirective(params object[] args) : base(args) { }
-
-            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-            public override string ClassName => "javax.lang.model.element.ModuleElement$UsesDirective";
-
-            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-            public override bool IsAbstract => true;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-            public override bool IsCloseable => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-            public override bool IsInterface => true;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-            public override bool IsStatic => true;
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region DirectiveKind
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveKind.html
@@ -470,23 +402,23 @@ namespace Javax.Lang.Model.Element
         }
         #endregion
 
-        #region ProvidesDirective
+        #region DirectiveVisitor
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.ProvidesDirective.html
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.DirectiveVisitor.html
         /// </summary>
-        public partial class ProvidesDirective : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ProvidesDirective>
+        public partial class DirectiveVisitor : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DirectiveVisitor>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            public ProvidesDirective() { }
+            public DirectiveVisitor() { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
-            public ProvidesDirective(params object[] args) : base(args) { }
+            public DirectiveVisitor(params object[] args) : base(args) { }
 
             /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-            public override string ClassName => "javax.lang.model.element.ModuleElement$ProvidesDirective";
+            public override string ClassName => "javax.lang.model.element.ModuleElement$DirectiveVisitor";
 
             /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
             public override bool IsAbstract => true;
@@ -572,6 +504,40 @@ namespace Javax.Lang.Model.Element
         }
         #endregion
 
+        #region ProvidesDirective
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.ProvidesDirective.html
+        /// </summary>
+        public partial class ProvidesDirective : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ProvidesDirective>
+        {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public ProvidesDirective() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public ProvidesDirective(params object[] args) : base(args) { }
+
+            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+            public override string ClassName => "javax.lang.model.element.ModuleElement$ProvidesDirective";
+
+            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+            public override bool IsAbstract => true;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+            public override bool IsCloseable => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+            public override bool IsInterface => true;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+            public override bool IsStatic => true;
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region RequiresDirective
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.RequiresDirective.html
@@ -589,6 +555,40 @@ namespace Javax.Lang.Model.Element
 
             /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
             public override string ClassName => "javax.lang.model.element.ModuleElement$RequiresDirective";
+
+            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+            public override bool IsAbstract => true;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+            public override bool IsCloseable => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+            public override bool IsInterface => true;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+            public override bool IsStatic => true;
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region UsesDirective
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.UsesDirective.html
+        /// </summary>
+        public partial class UsesDirective : MASES.JCOBridge.C2JBridge.JVMBridgeBase<UsesDirective>
+        {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public UsesDirective() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public UsesDirective(params object[] args) : base(args) { }
+
+            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+            public override string ClassName => "javax.lang.model.element.ModuleElement$UsesDirective";
 
             /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
             public override bool IsAbstract => true;

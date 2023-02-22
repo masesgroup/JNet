@@ -183,6 +183,45 @@ namespace Java.Awt
         #endregion
 
         #region Nested classes
+        #region DefaultSelectionType
+        public partial class DefaultSelectionType
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.DefaultSelectionType.html#ALL
+            /// </summary>
+            public static Java.Awt.JobAttributes.DefaultSelectionType ALL => Clazz.GetField<Java.Awt.JobAttributes.DefaultSelectionType>("ALL");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.DefaultSelectionType.html#RANGE
+            /// </summary>
+            public static Java.Awt.JobAttributes.DefaultSelectionType RANGE => Clazz.GetField<Java.Awt.JobAttributes.DefaultSelectionType>("RANGE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.DefaultSelectionType.html#SELECTION
+            /// </summary>
+            public static Java.Awt.JobAttributes.DefaultSelectionType SELECTION => Clazz.GetField<Java.Awt.JobAttributes.DefaultSelectionType>("SELECTION");
+            
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region DestinationType
         public partial class DestinationType
         {
@@ -203,41 +242,6 @@ namespace Java.Awt
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.DestinationType.html#PRINTER
             /// </summary>
             public static Java.Awt.JobAttributes.DestinationType PRINTER => Clazz.GetField<Java.Awt.JobAttributes.DestinationType>("PRINTER");
-            
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region MultipleDocumentHandlingType
-        public partial class MultipleDocumentHandlingType
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.MultipleDocumentHandlingType.html#SEPARATE_DOCUMENTS_COLLATED_COPIES
-            /// </summary>
-            public static Java.Awt.JobAttributes.MultipleDocumentHandlingType SEPARATE_DOCUMENTS_COLLATED_COPIES => Clazz.GetField<Java.Awt.JobAttributes.MultipleDocumentHandlingType>("SEPARATE_DOCUMENTS_COLLATED_COPIES");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.MultipleDocumentHandlingType.html#SEPARATE_DOCUMENTS_UNCOLLATED_COPIES
-            /// </summary>
-            public static Java.Awt.JobAttributes.MultipleDocumentHandlingType SEPARATE_DOCUMENTS_UNCOLLATED_COPIES => Clazz.GetField<Java.Awt.JobAttributes.MultipleDocumentHandlingType>("SEPARATE_DOCUMENTS_UNCOLLATED_COPIES");
             
             #endregion
 
@@ -292,8 +296,8 @@ namespace Java.Awt
         }
         #endregion
 
-        #region DefaultSelectionType
-        public partial class DefaultSelectionType
+        #region MultipleDocumentHandlingType
+        public partial class MultipleDocumentHandlingType
         {
             #region Constructors
 
@@ -305,17 +309,13 @@ namespace Java.Awt
 
             #region Fields
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.DefaultSelectionType.html#ALL
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.MultipleDocumentHandlingType.html#SEPARATE_DOCUMENTS_COLLATED_COPIES
             /// </summary>
-            public static Java.Awt.JobAttributes.DefaultSelectionType ALL => Clazz.GetField<Java.Awt.JobAttributes.DefaultSelectionType>("ALL");
+            public static Java.Awt.JobAttributes.MultipleDocumentHandlingType SEPARATE_DOCUMENTS_COLLATED_COPIES => Clazz.GetField<Java.Awt.JobAttributes.MultipleDocumentHandlingType>("SEPARATE_DOCUMENTS_COLLATED_COPIES");
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.DefaultSelectionType.html#RANGE
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.MultipleDocumentHandlingType.html#SEPARATE_DOCUMENTS_UNCOLLATED_COPIES
             /// </summary>
-            public static Java.Awt.JobAttributes.DefaultSelectionType RANGE => Clazz.GetField<Java.Awt.JobAttributes.DefaultSelectionType>("RANGE");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.DefaultSelectionType.html#SELECTION
-            /// </summary>
-            public static Java.Awt.JobAttributes.DefaultSelectionType SELECTION => Clazz.GetField<Java.Awt.JobAttributes.DefaultSelectionType>("SELECTION");
+            public static Java.Awt.JobAttributes.MultipleDocumentHandlingType SEPARATE_DOCUMENTS_UNCOLLATED_COPIES => Clazz.GetField<Java.Awt.JobAttributes.MultipleDocumentHandlingType>("SEPARATE_DOCUMENTS_UNCOLLATED_COPIES");
             
             #endregion
 

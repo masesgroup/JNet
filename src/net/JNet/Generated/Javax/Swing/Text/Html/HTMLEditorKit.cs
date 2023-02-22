@@ -220,6 +220,47 @@ namespace Javax.Swing.Text.Html
         }
         #endregion
 
+        #region InsertHTMLTextAction
+        public partial class InsertHTMLTextAction
+        {
+            #region Constructors
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.InsertHTMLTextAction.html#<init>(java.lang.String,java.lang.String,javax.swing.text.html.HTML$Tag,javax.swing.text.html.HTML$Tag,javax.swing.text.html.HTML$Tag,javax.swing.text.html.HTML$Tag)
+            /// </summary>
+            public InsertHTMLTextAction(string arg0, string arg1, Javax.Swing.Text.Html.HTML.Tag arg2, Javax.Swing.Text.Html.HTML.Tag arg3, Javax.Swing.Text.Html.HTML.Tag arg4, Javax.Swing.Text.Html.HTML.Tag arg5)
+                : base(arg0, arg1, arg2, arg3, arg4, arg5)
+            {
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.InsertHTMLTextAction.html#<init>(java.lang.String,java.lang.String,javax.swing.text.html.HTML$Tag,javax.swing.text.html.HTML$Tag)
+            /// </summary>
+            public InsertHTMLTextAction(string arg0, string arg1, Javax.Swing.Text.Html.HTML.Tag arg2, Javax.Swing.Text.Html.HTML.Tag arg3)
+                : base(arg0, arg1, arg2, arg3)
+            {
+            }
+            
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region Parser
         public partial class Parser
         {
@@ -335,47 +376,6 @@ namespace Javax.Swing.Text.Html
                 IExecute("handleText", arg0, arg1);
             }
             
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region InsertHTMLTextAction
-        public partial class InsertHTMLTextAction
-        {
-            #region Constructors
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.InsertHTMLTextAction.html#<init>(java.lang.String,java.lang.String,javax.swing.text.html.HTML$Tag,javax.swing.text.html.HTML$Tag,javax.swing.text.html.HTML$Tag,javax.swing.text.html.HTML$Tag)
-            /// </summary>
-            public InsertHTMLTextAction(string arg0, string arg1, Javax.Swing.Text.Html.HTML.Tag arg2, Javax.Swing.Text.Html.HTML.Tag arg3, Javax.Swing.Text.Html.HTML.Tag arg4, Javax.Swing.Text.Html.HTML.Tag arg5)
-                : base(arg0, arg1, arg2, arg3, arg4, arg5)
-            {
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.InsertHTMLTextAction.html#<init>(java.lang.String,java.lang.String,javax.swing.text.html.HTML$Tag,javax.swing.text.html.HTML$Tag)
-            /// </summary>
-            public InsertHTMLTextAction(string arg0, string arg1, Javax.Swing.Text.Html.HTML.Tag arg2, Javax.Swing.Text.Html.HTML.Tag arg3)
-                : base(arg0, arg1, arg2, arg3)
-            {
-            }
-            
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
             #endregion
 
             // TODO: complete the class

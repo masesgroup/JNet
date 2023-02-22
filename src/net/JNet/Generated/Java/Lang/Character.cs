@@ -911,608 +911,6 @@ namespace Java.Lang
         #endregion
 
         #region Nested classes
-        #region UnicodeScript
-        public partial class UnicodeScript
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#ADLAM
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript ADLAM => Clazz.GetField<Java.Lang.Character.UnicodeScript>("ADLAM");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#AHOM
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript AHOM => Clazz.GetField<Java.Lang.Character.UnicodeScript>("AHOM");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#ANATOLIAN_HIEROGLYPHS
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript ANATOLIAN_HIEROGLYPHS => Clazz.GetField<Java.Lang.Character.UnicodeScript>("ANATOLIAN_HIEROGLYPHS");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#ARABIC
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript ARABIC => Clazz.GetField<Java.Lang.Character.UnicodeScript>("ARABIC");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#ARMENIAN
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript ARMENIAN => Clazz.GetField<Java.Lang.Character.UnicodeScript>("ARMENIAN");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#AVESTAN
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript AVESTAN => Clazz.GetField<Java.Lang.Character.UnicodeScript>("AVESTAN");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#BALINESE
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript BALINESE => Clazz.GetField<Java.Lang.Character.UnicodeScript>("BALINESE");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#BAMUM
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript BAMUM => Clazz.GetField<Java.Lang.Character.UnicodeScript>("BAMUM");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#BASSA_VAH
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript BASSA_VAH => Clazz.GetField<Java.Lang.Character.UnicodeScript>("BASSA_VAH");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#BATAK
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript BATAK => Clazz.GetField<Java.Lang.Character.UnicodeScript>("BATAK");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#BENGALI
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript BENGALI => Clazz.GetField<Java.Lang.Character.UnicodeScript>("BENGALI");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#BHAIKSUKI
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript BHAIKSUKI => Clazz.GetField<Java.Lang.Character.UnicodeScript>("BHAIKSUKI");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#BOPOMOFO
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript BOPOMOFO => Clazz.GetField<Java.Lang.Character.UnicodeScript>("BOPOMOFO");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#BRAHMI
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript BRAHMI => Clazz.GetField<Java.Lang.Character.UnicodeScript>("BRAHMI");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#BRAILLE
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript BRAILLE => Clazz.GetField<Java.Lang.Character.UnicodeScript>("BRAILLE");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#BUGINESE
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript BUGINESE => Clazz.GetField<Java.Lang.Character.UnicodeScript>("BUGINESE");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#BUHID
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript BUHID => Clazz.GetField<Java.Lang.Character.UnicodeScript>("BUHID");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#CANADIAN_ABORIGINAL
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript CANADIAN_ABORIGINAL => Clazz.GetField<Java.Lang.Character.UnicodeScript>("CANADIAN_ABORIGINAL");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#CARIAN
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript CARIAN => Clazz.GetField<Java.Lang.Character.UnicodeScript>("CARIAN");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#CAUCASIAN_ALBANIAN
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript CAUCASIAN_ALBANIAN => Clazz.GetField<Java.Lang.Character.UnicodeScript>("CAUCASIAN_ALBANIAN");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#CHAKMA
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript CHAKMA => Clazz.GetField<Java.Lang.Character.UnicodeScript>("CHAKMA");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#CHAM
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript CHAM => Clazz.GetField<Java.Lang.Character.UnicodeScript>("CHAM");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#CHEROKEE
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript CHEROKEE => Clazz.GetField<Java.Lang.Character.UnicodeScript>("CHEROKEE");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#COMMON
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript COMMON => Clazz.GetField<Java.Lang.Character.UnicodeScript>("COMMON");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#COPTIC
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript COPTIC => Clazz.GetField<Java.Lang.Character.UnicodeScript>("COPTIC");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#CUNEIFORM
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript CUNEIFORM => Clazz.GetField<Java.Lang.Character.UnicodeScript>("CUNEIFORM");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#CYPRIOT
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript CYPRIOT => Clazz.GetField<Java.Lang.Character.UnicodeScript>("CYPRIOT");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#CYRILLIC
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript CYRILLIC => Clazz.GetField<Java.Lang.Character.UnicodeScript>("CYRILLIC");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#DESERET
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript DESERET => Clazz.GetField<Java.Lang.Character.UnicodeScript>("DESERET");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#DEVANAGARI
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript DEVANAGARI => Clazz.GetField<Java.Lang.Character.UnicodeScript>("DEVANAGARI");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#DUPLOYAN
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript DUPLOYAN => Clazz.GetField<Java.Lang.Character.UnicodeScript>("DUPLOYAN");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#EGYPTIAN_HIEROGLYPHS
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript EGYPTIAN_HIEROGLYPHS => Clazz.GetField<Java.Lang.Character.UnicodeScript>("EGYPTIAN_HIEROGLYPHS");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#ELBASAN
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript ELBASAN => Clazz.GetField<Java.Lang.Character.UnicodeScript>("ELBASAN");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#ETHIOPIC
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript ETHIOPIC => Clazz.GetField<Java.Lang.Character.UnicodeScript>("ETHIOPIC");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#GEORGIAN
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript GEORGIAN => Clazz.GetField<Java.Lang.Character.UnicodeScript>("GEORGIAN");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#GLAGOLITIC
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript GLAGOLITIC => Clazz.GetField<Java.Lang.Character.UnicodeScript>("GLAGOLITIC");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#GOTHIC
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript GOTHIC => Clazz.GetField<Java.Lang.Character.UnicodeScript>("GOTHIC");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#GRANTHA
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript GRANTHA => Clazz.GetField<Java.Lang.Character.UnicodeScript>("GRANTHA");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#GREEK
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript GREEK => Clazz.GetField<Java.Lang.Character.UnicodeScript>("GREEK");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#GUJARATI
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript GUJARATI => Clazz.GetField<Java.Lang.Character.UnicodeScript>("GUJARATI");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#GURMUKHI
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript GURMUKHI => Clazz.GetField<Java.Lang.Character.UnicodeScript>("GURMUKHI");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#HAN
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript HAN => Clazz.GetField<Java.Lang.Character.UnicodeScript>("HAN");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#HANGUL
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript HANGUL => Clazz.GetField<Java.Lang.Character.UnicodeScript>("HANGUL");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#HANUNOO
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript HANUNOO => Clazz.GetField<Java.Lang.Character.UnicodeScript>("HANUNOO");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#HATRAN
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript HATRAN => Clazz.GetField<Java.Lang.Character.UnicodeScript>("HATRAN");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#HEBREW
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript HEBREW => Clazz.GetField<Java.Lang.Character.UnicodeScript>("HEBREW");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#HIRAGANA
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript HIRAGANA => Clazz.GetField<Java.Lang.Character.UnicodeScript>("HIRAGANA");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#IMPERIAL_ARAMAIC
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript IMPERIAL_ARAMAIC => Clazz.GetField<Java.Lang.Character.UnicodeScript>("IMPERIAL_ARAMAIC");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#INHERITED
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript INHERITED => Clazz.GetField<Java.Lang.Character.UnicodeScript>("INHERITED");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#INSCRIPTIONAL_PAHLAVI
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript INSCRIPTIONAL_PAHLAVI => Clazz.GetField<Java.Lang.Character.UnicodeScript>("INSCRIPTIONAL_PAHLAVI");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#INSCRIPTIONAL_PARTHIAN
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript INSCRIPTIONAL_PARTHIAN => Clazz.GetField<Java.Lang.Character.UnicodeScript>("INSCRIPTIONAL_PARTHIAN");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#JAVANESE
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript JAVANESE => Clazz.GetField<Java.Lang.Character.UnicodeScript>("JAVANESE");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#KAITHI
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript KAITHI => Clazz.GetField<Java.Lang.Character.UnicodeScript>("KAITHI");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#KANNADA
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript KANNADA => Clazz.GetField<Java.Lang.Character.UnicodeScript>("KANNADA");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#KATAKANA
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript KATAKANA => Clazz.GetField<Java.Lang.Character.UnicodeScript>("KATAKANA");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#KAYAH_LI
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript KAYAH_LI => Clazz.GetField<Java.Lang.Character.UnicodeScript>("KAYAH_LI");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#KHAROSHTHI
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript KHAROSHTHI => Clazz.GetField<Java.Lang.Character.UnicodeScript>("KHAROSHTHI");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#KHMER
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript KHMER => Clazz.GetField<Java.Lang.Character.UnicodeScript>("KHMER");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#KHOJKI
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript KHOJKI => Clazz.GetField<Java.Lang.Character.UnicodeScript>("KHOJKI");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#KHUDAWADI
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript KHUDAWADI => Clazz.GetField<Java.Lang.Character.UnicodeScript>("KHUDAWADI");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#LAO
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript LAO => Clazz.GetField<Java.Lang.Character.UnicodeScript>("LAO");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#LATIN
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript LATIN => Clazz.GetField<Java.Lang.Character.UnicodeScript>("LATIN");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#LEPCHA
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript LEPCHA => Clazz.GetField<Java.Lang.Character.UnicodeScript>("LEPCHA");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#LIMBU
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript LIMBU => Clazz.GetField<Java.Lang.Character.UnicodeScript>("LIMBU");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#LINEAR_A
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript LINEAR_A => Clazz.GetField<Java.Lang.Character.UnicodeScript>("LINEAR_A");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#LINEAR_B
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript LINEAR_B => Clazz.GetField<Java.Lang.Character.UnicodeScript>("LINEAR_B");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#LISU
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript LISU => Clazz.GetField<Java.Lang.Character.UnicodeScript>("LISU");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#LYCIAN
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript LYCIAN => Clazz.GetField<Java.Lang.Character.UnicodeScript>("LYCIAN");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#LYDIAN
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript LYDIAN => Clazz.GetField<Java.Lang.Character.UnicodeScript>("LYDIAN");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#MAHAJANI
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript MAHAJANI => Clazz.GetField<Java.Lang.Character.UnicodeScript>("MAHAJANI");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#MALAYALAM
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript MALAYALAM => Clazz.GetField<Java.Lang.Character.UnicodeScript>("MALAYALAM");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#MANDAIC
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript MANDAIC => Clazz.GetField<Java.Lang.Character.UnicodeScript>("MANDAIC");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#MANICHAEAN
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript MANICHAEAN => Clazz.GetField<Java.Lang.Character.UnicodeScript>("MANICHAEAN");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#MARCHEN
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript MARCHEN => Clazz.GetField<Java.Lang.Character.UnicodeScript>("MARCHEN");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#MASARAM_GONDI
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript MASARAM_GONDI => Clazz.GetField<Java.Lang.Character.UnicodeScript>("MASARAM_GONDI");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#MEETEI_MAYEK
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript MEETEI_MAYEK => Clazz.GetField<Java.Lang.Character.UnicodeScript>("MEETEI_MAYEK");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#MENDE_KIKAKUI
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript MENDE_KIKAKUI => Clazz.GetField<Java.Lang.Character.UnicodeScript>("MENDE_KIKAKUI");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#MEROITIC_CURSIVE
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript MEROITIC_CURSIVE => Clazz.GetField<Java.Lang.Character.UnicodeScript>("MEROITIC_CURSIVE");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#MEROITIC_HIEROGLYPHS
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript MEROITIC_HIEROGLYPHS => Clazz.GetField<Java.Lang.Character.UnicodeScript>("MEROITIC_HIEROGLYPHS");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#MIAO
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript MIAO => Clazz.GetField<Java.Lang.Character.UnicodeScript>("MIAO");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#MODI
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript MODI => Clazz.GetField<Java.Lang.Character.UnicodeScript>("MODI");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#MONGOLIAN
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript MONGOLIAN => Clazz.GetField<Java.Lang.Character.UnicodeScript>("MONGOLIAN");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#MRO
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript MRO => Clazz.GetField<Java.Lang.Character.UnicodeScript>("MRO");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#MULTANI
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript MULTANI => Clazz.GetField<Java.Lang.Character.UnicodeScript>("MULTANI");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#MYANMAR
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript MYANMAR => Clazz.GetField<Java.Lang.Character.UnicodeScript>("MYANMAR");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#NABATAEAN
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript NABATAEAN => Clazz.GetField<Java.Lang.Character.UnicodeScript>("NABATAEAN");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#NEW_TAI_LUE
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript NEW_TAI_LUE => Clazz.GetField<Java.Lang.Character.UnicodeScript>("NEW_TAI_LUE");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#NEWA
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript NEWA => Clazz.GetField<Java.Lang.Character.UnicodeScript>("NEWA");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#NKO
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript NKO => Clazz.GetField<Java.Lang.Character.UnicodeScript>("NKO");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#NUSHU
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript NUSHU => Clazz.GetField<Java.Lang.Character.UnicodeScript>("NUSHU");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#OGHAM
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript OGHAM => Clazz.GetField<Java.Lang.Character.UnicodeScript>("OGHAM");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#OL_CHIKI
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript OL_CHIKI => Clazz.GetField<Java.Lang.Character.UnicodeScript>("OL_CHIKI");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#OLD_HUNGARIAN
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript OLD_HUNGARIAN => Clazz.GetField<Java.Lang.Character.UnicodeScript>("OLD_HUNGARIAN");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#OLD_ITALIC
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript OLD_ITALIC => Clazz.GetField<Java.Lang.Character.UnicodeScript>("OLD_ITALIC");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#OLD_NORTH_ARABIAN
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript OLD_NORTH_ARABIAN => Clazz.GetField<Java.Lang.Character.UnicodeScript>("OLD_NORTH_ARABIAN");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#OLD_PERMIC
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript OLD_PERMIC => Clazz.GetField<Java.Lang.Character.UnicodeScript>("OLD_PERMIC");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#OLD_PERSIAN
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript OLD_PERSIAN => Clazz.GetField<Java.Lang.Character.UnicodeScript>("OLD_PERSIAN");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#OLD_SOUTH_ARABIAN
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript OLD_SOUTH_ARABIAN => Clazz.GetField<Java.Lang.Character.UnicodeScript>("OLD_SOUTH_ARABIAN");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#OLD_TURKIC
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript OLD_TURKIC => Clazz.GetField<Java.Lang.Character.UnicodeScript>("OLD_TURKIC");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#ORIYA
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript ORIYA => Clazz.GetField<Java.Lang.Character.UnicodeScript>("ORIYA");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#OSAGE
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript OSAGE => Clazz.GetField<Java.Lang.Character.UnicodeScript>("OSAGE");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#OSMANYA
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript OSMANYA => Clazz.GetField<Java.Lang.Character.UnicodeScript>("OSMANYA");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#PAHAWH_HMONG
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript PAHAWH_HMONG => Clazz.GetField<Java.Lang.Character.UnicodeScript>("PAHAWH_HMONG");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#PALMYRENE
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript PALMYRENE => Clazz.GetField<Java.Lang.Character.UnicodeScript>("PALMYRENE");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#PAU_CIN_HAU
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript PAU_CIN_HAU => Clazz.GetField<Java.Lang.Character.UnicodeScript>("PAU_CIN_HAU");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#PHAGS_PA
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript PHAGS_PA => Clazz.GetField<Java.Lang.Character.UnicodeScript>("PHAGS_PA");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#PHOENICIAN
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript PHOENICIAN => Clazz.GetField<Java.Lang.Character.UnicodeScript>("PHOENICIAN");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#PSALTER_PAHLAVI
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript PSALTER_PAHLAVI => Clazz.GetField<Java.Lang.Character.UnicodeScript>("PSALTER_PAHLAVI");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#REJANG
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript REJANG => Clazz.GetField<Java.Lang.Character.UnicodeScript>("REJANG");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#RUNIC
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript RUNIC => Clazz.GetField<Java.Lang.Character.UnicodeScript>("RUNIC");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#SAMARITAN
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript SAMARITAN => Clazz.GetField<Java.Lang.Character.UnicodeScript>("SAMARITAN");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#SAURASHTRA
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript SAURASHTRA => Clazz.GetField<Java.Lang.Character.UnicodeScript>("SAURASHTRA");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#SHARADA
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript SHARADA => Clazz.GetField<Java.Lang.Character.UnicodeScript>("SHARADA");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#SHAVIAN
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript SHAVIAN => Clazz.GetField<Java.Lang.Character.UnicodeScript>("SHAVIAN");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#SIDDHAM
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript SIDDHAM => Clazz.GetField<Java.Lang.Character.UnicodeScript>("SIDDHAM");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#SIGNWRITING
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript SIGNWRITING => Clazz.GetField<Java.Lang.Character.UnicodeScript>("SIGNWRITING");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#SINHALA
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript SINHALA => Clazz.GetField<Java.Lang.Character.UnicodeScript>("SINHALA");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#SORA_SOMPENG
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript SORA_SOMPENG => Clazz.GetField<Java.Lang.Character.UnicodeScript>("SORA_SOMPENG");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#SOYOMBO
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript SOYOMBO => Clazz.GetField<Java.Lang.Character.UnicodeScript>("SOYOMBO");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#SUNDANESE
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript SUNDANESE => Clazz.GetField<Java.Lang.Character.UnicodeScript>("SUNDANESE");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#SYLOTI_NAGRI
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript SYLOTI_NAGRI => Clazz.GetField<Java.Lang.Character.UnicodeScript>("SYLOTI_NAGRI");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#SYRIAC
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript SYRIAC => Clazz.GetField<Java.Lang.Character.UnicodeScript>("SYRIAC");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#TAGALOG
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript TAGALOG => Clazz.GetField<Java.Lang.Character.UnicodeScript>("TAGALOG");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#TAGBANWA
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript TAGBANWA => Clazz.GetField<Java.Lang.Character.UnicodeScript>("TAGBANWA");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#TAI_LE
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript TAI_LE => Clazz.GetField<Java.Lang.Character.UnicodeScript>("TAI_LE");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#TAI_THAM
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript TAI_THAM => Clazz.GetField<Java.Lang.Character.UnicodeScript>("TAI_THAM");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#TAI_VIET
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript TAI_VIET => Clazz.GetField<Java.Lang.Character.UnicodeScript>("TAI_VIET");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#TAKRI
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript TAKRI => Clazz.GetField<Java.Lang.Character.UnicodeScript>("TAKRI");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#TAMIL
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript TAMIL => Clazz.GetField<Java.Lang.Character.UnicodeScript>("TAMIL");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#TANGUT
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript TANGUT => Clazz.GetField<Java.Lang.Character.UnicodeScript>("TANGUT");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#TELUGU
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript TELUGU => Clazz.GetField<Java.Lang.Character.UnicodeScript>("TELUGU");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#THAANA
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript THAANA => Clazz.GetField<Java.Lang.Character.UnicodeScript>("THAANA");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#THAI
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript THAI => Clazz.GetField<Java.Lang.Character.UnicodeScript>("THAI");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#TIBETAN
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript TIBETAN => Clazz.GetField<Java.Lang.Character.UnicodeScript>("TIBETAN");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#TIFINAGH
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript TIFINAGH => Clazz.GetField<Java.Lang.Character.UnicodeScript>("TIFINAGH");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#TIRHUTA
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript TIRHUTA => Clazz.GetField<Java.Lang.Character.UnicodeScript>("TIRHUTA");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#UGARITIC
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript UGARITIC => Clazz.GetField<Java.Lang.Character.UnicodeScript>("UGARITIC");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#UNKNOWN
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript UNKNOWN => Clazz.GetField<Java.Lang.Character.UnicodeScript>("UNKNOWN");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#VAI
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript VAI => Clazz.GetField<Java.Lang.Character.UnicodeScript>("VAI");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#WARANG_CITI
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript WARANG_CITI => Clazz.GetField<Java.Lang.Character.UnicodeScript>("WARANG_CITI");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#YI
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript YI => Clazz.GetField<Java.Lang.Character.UnicodeScript>("YI");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#ZANABAZAR_SQUARE
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript ZANABAZAR_SQUARE => Clazz.GetField<Java.Lang.Character.UnicodeScript>("ZANABAZAR_SQUARE");
-            
-            #endregion
-
-            #region Static methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#values()
-            /// </summary>
-            public static Java.Lang.Character.UnicodeScript[] Values()
-            {
-                return SExecuteArray<Java.Lang.Character.UnicodeScript>("values");
-            }
-            
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region Subset
         public partial class Subset
         {
@@ -2696,6 +2094,608 @@ namespace Java.Lang
             public static Java.Lang.Character.UnicodeBlock Of(int arg0)
             {
                 return SExecute<Java.Lang.Character.UnicodeBlock>("of", arg0);
+            }
+            
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region UnicodeScript
+        public partial class UnicodeScript
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#ADLAM
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript ADLAM => Clazz.GetField<Java.Lang.Character.UnicodeScript>("ADLAM");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#AHOM
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript AHOM => Clazz.GetField<Java.Lang.Character.UnicodeScript>("AHOM");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#ANATOLIAN_HIEROGLYPHS
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript ANATOLIAN_HIEROGLYPHS => Clazz.GetField<Java.Lang.Character.UnicodeScript>("ANATOLIAN_HIEROGLYPHS");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#ARABIC
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript ARABIC => Clazz.GetField<Java.Lang.Character.UnicodeScript>("ARABIC");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#ARMENIAN
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript ARMENIAN => Clazz.GetField<Java.Lang.Character.UnicodeScript>("ARMENIAN");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#AVESTAN
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript AVESTAN => Clazz.GetField<Java.Lang.Character.UnicodeScript>("AVESTAN");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#BALINESE
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript BALINESE => Clazz.GetField<Java.Lang.Character.UnicodeScript>("BALINESE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#BAMUM
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript BAMUM => Clazz.GetField<Java.Lang.Character.UnicodeScript>("BAMUM");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#BASSA_VAH
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript BASSA_VAH => Clazz.GetField<Java.Lang.Character.UnicodeScript>("BASSA_VAH");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#BATAK
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript BATAK => Clazz.GetField<Java.Lang.Character.UnicodeScript>("BATAK");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#BENGALI
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript BENGALI => Clazz.GetField<Java.Lang.Character.UnicodeScript>("BENGALI");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#BHAIKSUKI
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript BHAIKSUKI => Clazz.GetField<Java.Lang.Character.UnicodeScript>("BHAIKSUKI");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#BOPOMOFO
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript BOPOMOFO => Clazz.GetField<Java.Lang.Character.UnicodeScript>("BOPOMOFO");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#BRAHMI
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript BRAHMI => Clazz.GetField<Java.Lang.Character.UnicodeScript>("BRAHMI");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#BRAILLE
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript BRAILLE => Clazz.GetField<Java.Lang.Character.UnicodeScript>("BRAILLE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#BUGINESE
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript BUGINESE => Clazz.GetField<Java.Lang.Character.UnicodeScript>("BUGINESE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#BUHID
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript BUHID => Clazz.GetField<Java.Lang.Character.UnicodeScript>("BUHID");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#CANADIAN_ABORIGINAL
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript CANADIAN_ABORIGINAL => Clazz.GetField<Java.Lang.Character.UnicodeScript>("CANADIAN_ABORIGINAL");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#CARIAN
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript CARIAN => Clazz.GetField<Java.Lang.Character.UnicodeScript>("CARIAN");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#CAUCASIAN_ALBANIAN
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript CAUCASIAN_ALBANIAN => Clazz.GetField<Java.Lang.Character.UnicodeScript>("CAUCASIAN_ALBANIAN");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#CHAKMA
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript CHAKMA => Clazz.GetField<Java.Lang.Character.UnicodeScript>("CHAKMA");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#CHAM
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript CHAM => Clazz.GetField<Java.Lang.Character.UnicodeScript>("CHAM");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#CHEROKEE
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript CHEROKEE => Clazz.GetField<Java.Lang.Character.UnicodeScript>("CHEROKEE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#COMMON
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript COMMON => Clazz.GetField<Java.Lang.Character.UnicodeScript>("COMMON");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#COPTIC
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript COPTIC => Clazz.GetField<Java.Lang.Character.UnicodeScript>("COPTIC");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#CUNEIFORM
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript CUNEIFORM => Clazz.GetField<Java.Lang.Character.UnicodeScript>("CUNEIFORM");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#CYPRIOT
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript CYPRIOT => Clazz.GetField<Java.Lang.Character.UnicodeScript>("CYPRIOT");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#CYRILLIC
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript CYRILLIC => Clazz.GetField<Java.Lang.Character.UnicodeScript>("CYRILLIC");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#DESERET
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript DESERET => Clazz.GetField<Java.Lang.Character.UnicodeScript>("DESERET");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#DEVANAGARI
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript DEVANAGARI => Clazz.GetField<Java.Lang.Character.UnicodeScript>("DEVANAGARI");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#DUPLOYAN
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript DUPLOYAN => Clazz.GetField<Java.Lang.Character.UnicodeScript>("DUPLOYAN");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#EGYPTIAN_HIEROGLYPHS
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript EGYPTIAN_HIEROGLYPHS => Clazz.GetField<Java.Lang.Character.UnicodeScript>("EGYPTIAN_HIEROGLYPHS");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#ELBASAN
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript ELBASAN => Clazz.GetField<Java.Lang.Character.UnicodeScript>("ELBASAN");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#ETHIOPIC
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript ETHIOPIC => Clazz.GetField<Java.Lang.Character.UnicodeScript>("ETHIOPIC");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#GEORGIAN
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript GEORGIAN => Clazz.GetField<Java.Lang.Character.UnicodeScript>("GEORGIAN");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#GLAGOLITIC
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript GLAGOLITIC => Clazz.GetField<Java.Lang.Character.UnicodeScript>("GLAGOLITIC");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#GOTHIC
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript GOTHIC => Clazz.GetField<Java.Lang.Character.UnicodeScript>("GOTHIC");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#GRANTHA
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript GRANTHA => Clazz.GetField<Java.Lang.Character.UnicodeScript>("GRANTHA");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#GREEK
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript GREEK => Clazz.GetField<Java.Lang.Character.UnicodeScript>("GREEK");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#GUJARATI
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript GUJARATI => Clazz.GetField<Java.Lang.Character.UnicodeScript>("GUJARATI");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#GURMUKHI
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript GURMUKHI => Clazz.GetField<Java.Lang.Character.UnicodeScript>("GURMUKHI");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#HAN
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript HAN => Clazz.GetField<Java.Lang.Character.UnicodeScript>("HAN");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#HANGUL
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript HANGUL => Clazz.GetField<Java.Lang.Character.UnicodeScript>("HANGUL");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#HANUNOO
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript HANUNOO => Clazz.GetField<Java.Lang.Character.UnicodeScript>("HANUNOO");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#HATRAN
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript HATRAN => Clazz.GetField<Java.Lang.Character.UnicodeScript>("HATRAN");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#HEBREW
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript HEBREW => Clazz.GetField<Java.Lang.Character.UnicodeScript>("HEBREW");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#HIRAGANA
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript HIRAGANA => Clazz.GetField<Java.Lang.Character.UnicodeScript>("HIRAGANA");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#IMPERIAL_ARAMAIC
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript IMPERIAL_ARAMAIC => Clazz.GetField<Java.Lang.Character.UnicodeScript>("IMPERIAL_ARAMAIC");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#INHERITED
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript INHERITED => Clazz.GetField<Java.Lang.Character.UnicodeScript>("INHERITED");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#INSCRIPTIONAL_PAHLAVI
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript INSCRIPTIONAL_PAHLAVI => Clazz.GetField<Java.Lang.Character.UnicodeScript>("INSCRIPTIONAL_PAHLAVI");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#INSCRIPTIONAL_PARTHIAN
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript INSCRIPTIONAL_PARTHIAN => Clazz.GetField<Java.Lang.Character.UnicodeScript>("INSCRIPTIONAL_PARTHIAN");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#JAVANESE
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript JAVANESE => Clazz.GetField<Java.Lang.Character.UnicodeScript>("JAVANESE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#KAITHI
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript KAITHI => Clazz.GetField<Java.Lang.Character.UnicodeScript>("KAITHI");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#KANNADA
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript KANNADA => Clazz.GetField<Java.Lang.Character.UnicodeScript>("KANNADA");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#KATAKANA
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript KATAKANA => Clazz.GetField<Java.Lang.Character.UnicodeScript>("KATAKANA");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#KAYAH_LI
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript KAYAH_LI => Clazz.GetField<Java.Lang.Character.UnicodeScript>("KAYAH_LI");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#KHAROSHTHI
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript KHAROSHTHI => Clazz.GetField<Java.Lang.Character.UnicodeScript>("KHAROSHTHI");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#KHMER
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript KHMER => Clazz.GetField<Java.Lang.Character.UnicodeScript>("KHMER");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#KHOJKI
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript KHOJKI => Clazz.GetField<Java.Lang.Character.UnicodeScript>("KHOJKI");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#KHUDAWADI
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript KHUDAWADI => Clazz.GetField<Java.Lang.Character.UnicodeScript>("KHUDAWADI");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#LAO
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript LAO => Clazz.GetField<Java.Lang.Character.UnicodeScript>("LAO");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#LATIN
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript LATIN => Clazz.GetField<Java.Lang.Character.UnicodeScript>("LATIN");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#LEPCHA
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript LEPCHA => Clazz.GetField<Java.Lang.Character.UnicodeScript>("LEPCHA");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#LIMBU
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript LIMBU => Clazz.GetField<Java.Lang.Character.UnicodeScript>("LIMBU");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#LINEAR_A
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript LINEAR_A => Clazz.GetField<Java.Lang.Character.UnicodeScript>("LINEAR_A");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#LINEAR_B
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript LINEAR_B => Clazz.GetField<Java.Lang.Character.UnicodeScript>("LINEAR_B");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#LISU
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript LISU => Clazz.GetField<Java.Lang.Character.UnicodeScript>("LISU");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#LYCIAN
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript LYCIAN => Clazz.GetField<Java.Lang.Character.UnicodeScript>("LYCIAN");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#LYDIAN
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript LYDIAN => Clazz.GetField<Java.Lang.Character.UnicodeScript>("LYDIAN");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#MAHAJANI
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript MAHAJANI => Clazz.GetField<Java.Lang.Character.UnicodeScript>("MAHAJANI");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#MALAYALAM
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript MALAYALAM => Clazz.GetField<Java.Lang.Character.UnicodeScript>("MALAYALAM");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#MANDAIC
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript MANDAIC => Clazz.GetField<Java.Lang.Character.UnicodeScript>("MANDAIC");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#MANICHAEAN
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript MANICHAEAN => Clazz.GetField<Java.Lang.Character.UnicodeScript>("MANICHAEAN");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#MARCHEN
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript MARCHEN => Clazz.GetField<Java.Lang.Character.UnicodeScript>("MARCHEN");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#MASARAM_GONDI
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript MASARAM_GONDI => Clazz.GetField<Java.Lang.Character.UnicodeScript>("MASARAM_GONDI");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#MEETEI_MAYEK
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript MEETEI_MAYEK => Clazz.GetField<Java.Lang.Character.UnicodeScript>("MEETEI_MAYEK");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#MENDE_KIKAKUI
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript MENDE_KIKAKUI => Clazz.GetField<Java.Lang.Character.UnicodeScript>("MENDE_KIKAKUI");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#MEROITIC_CURSIVE
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript MEROITIC_CURSIVE => Clazz.GetField<Java.Lang.Character.UnicodeScript>("MEROITIC_CURSIVE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#MEROITIC_HIEROGLYPHS
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript MEROITIC_HIEROGLYPHS => Clazz.GetField<Java.Lang.Character.UnicodeScript>("MEROITIC_HIEROGLYPHS");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#MIAO
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript MIAO => Clazz.GetField<Java.Lang.Character.UnicodeScript>("MIAO");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#MODI
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript MODI => Clazz.GetField<Java.Lang.Character.UnicodeScript>("MODI");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#MONGOLIAN
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript MONGOLIAN => Clazz.GetField<Java.Lang.Character.UnicodeScript>("MONGOLIAN");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#MRO
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript MRO => Clazz.GetField<Java.Lang.Character.UnicodeScript>("MRO");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#MULTANI
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript MULTANI => Clazz.GetField<Java.Lang.Character.UnicodeScript>("MULTANI");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#MYANMAR
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript MYANMAR => Clazz.GetField<Java.Lang.Character.UnicodeScript>("MYANMAR");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#NABATAEAN
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript NABATAEAN => Clazz.GetField<Java.Lang.Character.UnicodeScript>("NABATAEAN");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#NEW_TAI_LUE
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript NEW_TAI_LUE => Clazz.GetField<Java.Lang.Character.UnicodeScript>("NEW_TAI_LUE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#NEWA
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript NEWA => Clazz.GetField<Java.Lang.Character.UnicodeScript>("NEWA");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#NKO
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript NKO => Clazz.GetField<Java.Lang.Character.UnicodeScript>("NKO");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#NUSHU
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript NUSHU => Clazz.GetField<Java.Lang.Character.UnicodeScript>("NUSHU");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#OGHAM
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript OGHAM => Clazz.GetField<Java.Lang.Character.UnicodeScript>("OGHAM");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#OL_CHIKI
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript OL_CHIKI => Clazz.GetField<Java.Lang.Character.UnicodeScript>("OL_CHIKI");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#OLD_HUNGARIAN
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript OLD_HUNGARIAN => Clazz.GetField<Java.Lang.Character.UnicodeScript>("OLD_HUNGARIAN");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#OLD_ITALIC
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript OLD_ITALIC => Clazz.GetField<Java.Lang.Character.UnicodeScript>("OLD_ITALIC");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#OLD_NORTH_ARABIAN
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript OLD_NORTH_ARABIAN => Clazz.GetField<Java.Lang.Character.UnicodeScript>("OLD_NORTH_ARABIAN");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#OLD_PERMIC
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript OLD_PERMIC => Clazz.GetField<Java.Lang.Character.UnicodeScript>("OLD_PERMIC");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#OLD_PERSIAN
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript OLD_PERSIAN => Clazz.GetField<Java.Lang.Character.UnicodeScript>("OLD_PERSIAN");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#OLD_SOUTH_ARABIAN
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript OLD_SOUTH_ARABIAN => Clazz.GetField<Java.Lang.Character.UnicodeScript>("OLD_SOUTH_ARABIAN");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#OLD_TURKIC
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript OLD_TURKIC => Clazz.GetField<Java.Lang.Character.UnicodeScript>("OLD_TURKIC");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#ORIYA
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript ORIYA => Clazz.GetField<Java.Lang.Character.UnicodeScript>("ORIYA");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#OSAGE
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript OSAGE => Clazz.GetField<Java.Lang.Character.UnicodeScript>("OSAGE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#OSMANYA
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript OSMANYA => Clazz.GetField<Java.Lang.Character.UnicodeScript>("OSMANYA");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#PAHAWH_HMONG
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript PAHAWH_HMONG => Clazz.GetField<Java.Lang.Character.UnicodeScript>("PAHAWH_HMONG");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#PALMYRENE
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript PALMYRENE => Clazz.GetField<Java.Lang.Character.UnicodeScript>("PALMYRENE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#PAU_CIN_HAU
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript PAU_CIN_HAU => Clazz.GetField<Java.Lang.Character.UnicodeScript>("PAU_CIN_HAU");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#PHAGS_PA
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript PHAGS_PA => Clazz.GetField<Java.Lang.Character.UnicodeScript>("PHAGS_PA");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#PHOENICIAN
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript PHOENICIAN => Clazz.GetField<Java.Lang.Character.UnicodeScript>("PHOENICIAN");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#PSALTER_PAHLAVI
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript PSALTER_PAHLAVI => Clazz.GetField<Java.Lang.Character.UnicodeScript>("PSALTER_PAHLAVI");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#REJANG
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript REJANG => Clazz.GetField<Java.Lang.Character.UnicodeScript>("REJANG");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#RUNIC
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript RUNIC => Clazz.GetField<Java.Lang.Character.UnicodeScript>("RUNIC");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#SAMARITAN
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript SAMARITAN => Clazz.GetField<Java.Lang.Character.UnicodeScript>("SAMARITAN");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#SAURASHTRA
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript SAURASHTRA => Clazz.GetField<Java.Lang.Character.UnicodeScript>("SAURASHTRA");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#SHARADA
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript SHARADA => Clazz.GetField<Java.Lang.Character.UnicodeScript>("SHARADA");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#SHAVIAN
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript SHAVIAN => Clazz.GetField<Java.Lang.Character.UnicodeScript>("SHAVIAN");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#SIDDHAM
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript SIDDHAM => Clazz.GetField<Java.Lang.Character.UnicodeScript>("SIDDHAM");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#SIGNWRITING
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript SIGNWRITING => Clazz.GetField<Java.Lang.Character.UnicodeScript>("SIGNWRITING");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#SINHALA
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript SINHALA => Clazz.GetField<Java.Lang.Character.UnicodeScript>("SINHALA");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#SORA_SOMPENG
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript SORA_SOMPENG => Clazz.GetField<Java.Lang.Character.UnicodeScript>("SORA_SOMPENG");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#SOYOMBO
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript SOYOMBO => Clazz.GetField<Java.Lang.Character.UnicodeScript>("SOYOMBO");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#SUNDANESE
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript SUNDANESE => Clazz.GetField<Java.Lang.Character.UnicodeScript>("SUNDANESE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#SYLOTI_NAGRI
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript SYLOTI_NAGRI => Clazz.GetField<Java.Lang.Character.UnicodeScript>("SYLOTI_NAGRI");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#SYRIAC
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript SYRIAC => Clazz.GetField<Java.Lang.Character.UnicodeScript>("SYRIAC");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#TAGALOG
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript TAGALOG => Clazz.GetField<Java.Lang.Character.UnicodeScript>("TAGALOG");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#TAGBANWA
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript TAGBANWA => Clazz.GetField<Java.Lang.Character.UnicodeScript>("TAGBANWA");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#TAI_LE
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript TAI_LE => Clazz.GetField<Java.Lang.Character.UnicodeScript>("TAI_LE");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#TAI_THAM
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript TAI_THAM => Clazz.GetField<Java.Lang.Character.UnicodeScript>("TAI_THAM");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#TAI_VIET
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript TAI_VIET => Clazz.GetField<Java.Lang.Character.UnicodeScript>("TAI_VIET");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#TAKRI
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript TAKRI => Clazz.GetField<Java.Lang.Character.UnicodeScript>("TAKRI");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#TAMIL
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript TAMIL => Clazz.GetField<Java.Lang.Character.UnicodeScript>("TAMIL");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#TANGUT
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript TANGUT => Clazz.GetField<Java.Lang.Character.UnicodeScript>("TANGUT");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#TELUGU
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript TELUGU => Clazz.GetField<Java.Lang.Character.UnicodeScript>("TELUGU");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#THAANA
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript THAANA => Clazz.GetField<Java.Lang.Character.UnicodeScript>("THAANA");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#THAI
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript THAI => Clazz.GetField<Java.Lang.Character.UnicodeScript>("THAI");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#TIBETAN
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript TIBETAN => Clazz.GetField<Java.Lang.Character.UnicodeScript>("TIBETAN");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#TIFINAGH
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript TIFINAGH => Clazz.GetField<Java.Lang.Character.UnicodeScript>("TIFINAGH");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#TIRHUTA
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript TIRHUTA => Clazz.GetField<Java.Lang.Character.UnicodeScript>("TIRHUTA");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#UGARITIC
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript UGARITIC => Clazz.GetField<Java.Lang.Character.UnicodeScript>("UGARITIC");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#UNKNOWN
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript UNKNOWN => Clazz.GetField<Java.Lang.Character.UnicodeScript>("UNKNOWN");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#VAI
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript VAI => Clazz.GetField<Java.Lang.Character.UnicodeScript>("VAI");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#WARANG_CITI
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript WARANG_CITI => Clazz.GetField<Java.Lang.Character.UnicodeScript>("WARANG_CITI");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#YI
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript YI => Clazz.GetField<Java.Lang.Character.UnicodeScript>("YI");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#ZANABAZAR_SQUARE
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript ZANABAZAR_SQUARE => Clazz.GetField<Java.Lang.Character.UnicodeScript>("ZANABAZAR_SQUARE");
+            
+            #endregion
+
+            #region Static methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.UnicodeScript.html#values()
+            /// </summary>
+            public static Java.Lang.Character.UnicodeScript[] Values()
+            {
+                return SExecuteArray<Java.Lang.Character.UnicodeScript>("values");
             }
             
             #endregion

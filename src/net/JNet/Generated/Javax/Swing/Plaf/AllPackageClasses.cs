@@ -157,23 +157,23 @@ namespace Javax.Swing.Plaf
         }
         #endregion
 
-        #region LineBorderUIResource
+        #region EmptyBorderUIResource
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.LineBorderUIResource.html
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.EmptyBorderUIResource.html
         /// </summary>
-        public partial class LineBorderUIResource : Javax.Swing.Border.LineBorder
+        public partial class EmptyBorderUIResource : Javax.Swing.Border.EmptyBorder
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            public LineBorderUIResource() { }
+            public EmptyBorderUIResource() { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
-            public LineBorderUIResource(params object[] args) : base(args) { }
+            public EmptyBorderUIResource(params object[] args) : base(args) { }
 
             /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-            public override string ClassName => "javax.swing.plaf.BorderUIResource$LineBorderUIResource";
+            public override string ClassName => "javax.swing.plaf.BorderUIResource$EmptyBorderUIResource";
 
             /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
             public override bool IsAbstract => false;
@@ -225,57 +225,23 @@ namespace Javax.Swing.Plaf
         }
         #endregion
 
-        #region TitledBorderUIResource
+        #region LineBorderUIResource
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.TitledBorderUIResource.html
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.LineBorderUIResource.html
         /// </summary>
-        public partial class TitledBorderUIResource : Javax.Swing.Border.TitledBorder
+        public partial class LineBorderUIResource : Javax.Swing.Border.LineBorder
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            public TitledBorderUIResource() { }
+            public LineBorderUIResource() { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
-            public TitledBorderUIResource(params object[] args) : base(args) { }
+            public LineBorderUIResource(params object[] args) : base(args) { }
 
             /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-            public override string ClassName => "javax.swing.plaf.BorderUIResource$TitledBorderUIResource";
-
-            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-            public override bool IsAbstract => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-            public override bool IsCloseable => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-            public override bool IsInterface => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-            public override bool IsStatic => true;
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region EmptyBorderUIResource
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.EmptyBorderUIResource.html
-        /// </summary>
-        public partial class EmptyBorderUIResource : Javax.Swing.Border.EmptyBorder
-        {
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public EmptyBorderUIResource() { }
-            /// <summary>
-            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-            /// </summary>
-            public EmptyBorderUIResource(params object[] args) : base(args) { }
-
-            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-            public override string ClassName => "javax.swing.plaf.BorderUIResource$EmptyBorderUIResource";
+            public override string ClassName => "javax.swing.plaf.BorderUIResource$LineBorderUIResource";
 
             /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
             public override bool IsAbstract => false;
@@ -310,6 +276,40 @@ namespace Javax.Swing.Plaf
 
             /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
             public override string ClassName => "javax.swing.plaf.BorderUIResource$MatteBorderUIResource";
+
+            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+            public override bool IsAbstract => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+            public override bool IsCloseable => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+            public override bool IsInterface => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+            public override bool IsStatic => true;
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region TitledBorderUIResource
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.TitledBorderUIResource.html
+        /// </summary>
+        public partial class TitledBorderUIResource : Javax.Swing.Border.TitledBorder
+        {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public TitledBorderUIResource() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public TitledBorderUIResource(params object[] args) : base(args) { }
+
+            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+            public override string ClassName => "javax.swing.plaf.BorderUIResource$TitledBorderUIResource";
 
             /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
             public override bool IsAbstract => false;

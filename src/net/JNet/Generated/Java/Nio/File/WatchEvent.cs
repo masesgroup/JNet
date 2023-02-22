@@ -63,40 +63,6 @@ namespace Java.Nio.File
         #endregion
 
         #region Nested classes
-        #region Modifier
-        public partial class Modifier
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.Modifier.html#name()
-            /// </summary>
-            public string Name()
-            {
-                return IExecute<string>("name");
-            }
-            
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region Kind
         public partial class Kind
         {
@@ -119,6 +85,40 @@ namespace Java.Nio.File
             #region Instance methods
             /// <summary>
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.Kind.html#name()
+            /// </summary>
+            public string Name()
+            {
+                return IExecute<string>("name");
+            }
+            
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region Modifier
+        public partial class Modifier
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchEvent.Modifier.html#name()
             /// </summary>
             public string Name()
             {

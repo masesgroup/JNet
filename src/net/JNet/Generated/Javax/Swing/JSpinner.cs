@@ -127,61 +127,6 @@ namespace Javax.Swing
         #endregion
 
         #region Nested classes
-        #region NumberEditor
-        public partial class NumberEditor
-        {
-            #region Constructors
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.NumberEditor.html#<init>(javax.swing.JSpinner,java.lang.String)
-            /// </summary>
-            public NumberEditor(Javax.Swing.JSpinner arg0, string arg1)
-                : base(arg0, arg1)
-            {
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.NumberEditor.html#<init>(javax.swing.JSpinner)
-            /// </summary>
-            public NumberEditor(Javax.Swing.JSpinner arg0)
-                : base(arg0)
-            {
-            }
-            
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.NumberEditor.html#getFormat() 
-            /// </summary>
-            public Java.Text.DecimalFormat Format
-            {
-                get { return IExecute<Java.Text.DecimalFormat>("getFormat"); }
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.NumberEditor.html#getModel() 
-            /// </summary>
-            public Javax.Swing.SpinnerNumberModel Model
-            {
-                get { return IExecute<Javax.Swing.SpinnerNumberModel>("getModel"); }
-            }
-            
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region DateEditor
         public partial class DateEditor
         {
@@ -384,6 +329,61 @@ namespace Javax.Swing
             public Javax.Swing.SpinnerListModel Model
             {
                 get { return IExecute<Javax.Swing.SpinnerListModel>("getModel"); }
+            }
+            
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region NumberEditor
+        public partial class NumberEditor
+        {
+            #region Constructors
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.NumberEditor.html#<init>(javax.swing.JSpinner,java.lang.String)
+            /// </summary>
+            public NumberEditor(Javax.Swing.JSpinner arg0, string arg1)
+                : base(arg0, arg1)
+            {
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.NumberEditor.html#<init>(javax.swing.JSpinner)
+            /// </summary>
+            public NumberEditor(Javax.Swing.JSpinner arg0)
+                : base(arg0)
+            {
+            }
+            
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.NumberEditor.html#getFormat() 
+            /// </summary>
+            public Java.Text.DecimalFormat Format
+            {
+                get { return IExecute<Java.Text.DecimalFormat>("getFormat"); }
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSpinner.NumberEditor.html#getModel() 
+            /// </summary>
+            public Javax.Swing.SpinnerNumberModel Model
+            {
+                get { return IExecute<Javax.Swing.SpinnerNumberModel>("getModel"); }
             }
             
             #endregion

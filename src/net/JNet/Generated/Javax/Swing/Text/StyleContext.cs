@@ -229,97 +229,6 @@ namespace Javax.Swing.Text
         #endregion
 
         #region Nested classes
-        #region SmallAttributeSet
-        public partial class SmallAttributeSet
-        {
-            #region Constructors
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.SmallAttributeSet.html#<init>(javax.swing.text.StyleContext,javax.swing.text.AttributeSet)
-            /// </summary>
-            public SmallAttributeSet(Javax.Swing.Text.StyleContext arg0, Javax.Swing.Text.AttributeSet arg1)
-                : base(arg0, arg1)
-            {
-            }
-            
-            #endregion
-
-            #region Class/Interface conversion operators
-            public static implicit operator Javax.Swing.Text.AttributeSet(Javax.Swing.Text.StyleContext.SmallAttributeSet t) => t.Cast<Javax.Swing.Text.AttributeSet>();
-            
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.SmallAttributeSet.html#getAttributeCount() 
-            /// </summary>
-            public int AttributeCount
-            {
-                get { return IExecute<int>("getAttributeCount"); }
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.SmallAttributeSet.html#getResolveParent() 
-            /// </summary>
-            public Javax.Swing.Text.AttributeSet ResolveParent
-            {
-                get { return IExecute<Javax.Swing.Text.AttributeSet>("getResolveParent"); }
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.SmallAttributeSet.html#containsAttribute(java.lang.Object,java.lang.Object)
-            /// </summary>
-            public bool ContainsAttribute(object arg0, object arg1)
-            {
-                return IExecute<bool>("containsAttribute", arg0, arg1);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.SmallAttributeSet.html#containsAttributes(javax.swing.text.AttributeSet)
-            /// </summary>
-            public bool ContainsAttributes(Javax.Swing.Text.AttributeSet arg0)
-            {
-                return IExecute<bool>("containsAttributes", arg0);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.SmallAttributeSet.html#isDefined(java.lang.Object)
-            /// </summary>
-            public bool IsDefined(object arg0)
-            {
-                return IExecute<bool>("isDefined", arg0);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.SmallAttributeSet.html#isEqual(javax.swing.text.AttributeSet)
-            /// </summary>
-            public bool IsEqual(Javax.Swing.Text.AttributeSet arg0)
-            {
-                return IExecute<bool>("isEqual", arg0);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.SmallAttributeSet.html#getAttribute(java.lang.Object)
-            /// </summary>
-            public object GetAttribute(object arg0)
-            {
-                return IExecute("getAttribute", arg0);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.SmallAttributeSet.html#copyAttributes()
-            /// </summary>
-            public Javax.Swing.Text.AttributeSet CopyAttributes()
-            {
-                return IExecute<Javax.Swing.Text.AttributeSet>("copyAttributes");
-            }
-            
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region NamedStyle
         public partial class NamedStyle
         {
@@ -474,6 +383,97 @@ namespace Javax.Swing.Text
             public void RemoveChangeListener(Javax.Swing.Event.ChangeListener arg0)
             {
                 IExecute("removeChangeListener", arg0);
+            }
+            
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region SmallAttributeSet
+        public partial class SmallAttributeSet
+        {
+            #region Constructors
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.SmallAttributeSet.html#<init>(javax.swing.text.StyleContext,javax.swing.text.AttributeSet)
+            /// </summary>
+            public SmallAttributeSet(Javax.Swing.Text.StyleContext arg0, Javax.Swing.Text.AttributeSet arg1)
+                : base(arg0, arg1)
+            {
+            }
+            
+            #endregion
+
+            #region Class/Interface conversion operators
+            public static implicit operator Javax.Swing.Text.AttributeSet(Javax.Swing.Text.StyleContext.SmallAttributeSet t) => t.Cast<Javax.Swing.Text.AttributeSet>();
+            
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.SmallAttributeSet.html#getAttributeCount() 
+            /// </summary>
+            public int AttributeCount
+            {
+                get { return IExecute<int>("getAttributeCount"); }
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.SmallAttributeSet.html#getResolveParent() 
+            /// </summary>
+            public Javax.Swing.Text.AttributeSet ResolveParent
+            {
+                get { return IExecute<Javax.Swing.Text.AttributeSet>("getResolveParent"); }
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.SmallAttributeSet.html#containsAttribute(java.lang.Object,java.lang.Object)
+            /// </summary>
+            public bool ContainsAttribute(object arg0, object arg1)
+            {
+                return IExecute<bool>("containsAttribute", arg0, arg1);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.SmallAttributeSet.html#containsAttributes(javax.swing.text.AttributeSet)
+            /// </summary>
+            public bool ContainsAttributes(Javax.Swing.Text.AttributeSet arg0)
+            {
+                return IExecute<bool>("containsAttributes", arg0);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.SmallAttributeSet.html#isDefined(java.lang.Object)
+            /// </summary>
+            public bool IsDefined(object arg0)
+            {
+                return IExecute<bool>("isDefined", arg0);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.SmallAttributeSet.html#isEqual(javax.swing.text.AttributeSet)
+            /// </summary>
+            public bool IsEqual(Javax.Swing.Text.AttributeSet arg0)
+            {
+                return IExecute<bool>("isEqual", arg0);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.SmallAttributeSet.html#getAttribute(java.lang.Object)
+            /// </summary>
+            public object GetAttribute(object arg0)
+            {
+                return IExecute("getAttribute", arg0);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleContext.SmallAttributeSet.html#copyAttributes()
+            /// </summary>
+            public Javax.Swing.Text.AttributeSet CopyAttributes()
+            {
+                return IExecute<Javax.Swing.Text.AttributeSet>("copyAttributes");
             }
             
             #endregion

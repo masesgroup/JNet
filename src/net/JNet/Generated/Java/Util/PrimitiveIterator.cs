@@ -56,6 +56,61 @@ namespace Java.Util
         #endregion
 
         #region Nested classes
+        #region OfDouble
+        public partial class OfDouble
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfDouble.html#nextDouble()
+            /// </summary>
+            public double NextDouble()
+            {
+                return IExecute<double>("nextDouble");
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfDouble.html#next()
+            /// </summary>
+            public object Next()
+            {
+                return IExecute("next");
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfDouble.html#forEachRemaining(java.lang.Object)
+            /// </summary>
+            public void ForEachRemaining(object arg0)
+            {
+                IExecute("forEachRemaining", arg0);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfDouble.html#forEachRemaining(java.util.function.DoubleConsumer)
+            /// </summary>
+            public void ForEachRemaining(Java.Util.Function.DoubleConsumer arg0)
+            {
+                IExecute("forEachRemaining", arg0);
+            }
+            
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region OfInt
         public partial class OfInt
         {
@@ -156,61 +211,6 @@ namespace Java.Util
             /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfLong.html#forEachRemaining(java.util.function.LongConsumer)
             /// </summary>
             public void ForEachRemaining(Java.Util.Function.LongConsumer arg0)
-            {
-                IExecute("forEachRemaining", arg0);
-            }
-            
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region OfDouble
-        public partial class OfDouble
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfDouble.html#nextDouble()
-            /// </summary>
-            public double NextDouble()
-            {
-                return IExecute<double>("nextDouble");
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfDouble.html#next()
-            /// </summary>
-            public object Next()
-            {
-                return IExecute("next");
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfDouble.html#forEachRemaining(java.lang.Object)
-            /// </summary>
-            public void ForEachRemaining(object arg0)
-            {
-                IExecute("forEachRemaining", arg0);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.OfDouble.html#forEachRemaining(java.util.function.DoubleConsumer)
-            /// </summary>
-            public void ForEachRemaining(Java.Util.Function.DoubleConsumer arg0)
             {
                 IExecute("forEachRemaining", arg0);
             }

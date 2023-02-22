@@ -192,21 +192,21 @@ namespace Javax.Swing.Plaf
         }
         #endregion
 
-        #region LineBorderUIResource
-        public partial class LineBorderUIResource
+        #region EmptyBorderUIResource
+        public partial class EmptyBorderUIResource
         {
             #region Constructors
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.LineBorderUIResource.html#<init>(java.awt.Color,int)
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.EmptyBorderUIResource.html#<init>(int,int,int,int)
             /// </summary>
-            public LineBorderUIResource(Java.Awt.Color arg0, int arg1)
-                : base(arg0, arg1)
+            public EmptyBorderUIResource(int arg0, int arg1, int arg2, int arg3)
+                : base(arg0, arg1, arg2, arg3)
             {
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.LineBorderUIResource.html#<init>(java.awt.Color)
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.EmptyBorderUIResource.html#<init>(java.awt.Insets)
             /// </summary>
-            public LineBorderUIResource(Java.Awt.Color arg0)
+            public EmptyBorderUIResource(Java.Awt.Insets arg0)
                 : base(arg0)
             {
             }
@@ -214,7 +214,7 @@ namespace Javax.Swing.Plaf
             #endregion
 
             #region Class/Interface conversion operators
-            public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.BorderUIResource.LineBorderUIResource t) => t.Cast<Javax.Swing.Plaf.UIResource>();
+            public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.BorderUIResource.EmptyBorderUIResource t) => t.Cast<Javax.Swing.Plaf.UIResource>();
             
             #endregion
 
@@ -264,6 +264,97 @@ namespace Javax.Swing.Plaf
 
             #region Class/Interface conversion operators
             public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.BorderUIResource.EtchedBorderUIResource t) => t.Cast<Javax.Swing.Plaf.UIResource>();
+            
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region LineBorderUIResource
+        public partial class LineBorderUIResource
+        {
+            #region Constructors
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.LineBorderUIResource.html#<init>(java.awt.Color,int)
+            /// </summary>
+            public LineBorderUIResource(Java.Awt.Color arg0, int arg1)
+                : base(arg0, arg1)
+            {
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.LineBorderUIResource.html#<init>(java.awt.Color)
+            /// </summary>
+            public LineBorderUIResource(Java.Awt.Color arg0)
+                : base(arg0)
+            {
+            }
+            
+            #endregion
+
+            #region Class/Interface conversion operators
+            public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.BorderUIResource.LineBorderUIResource t) => t.Cast<Javax.Swing.Plaf.UIResource>();
+            
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region MatteBorderUIResource
+        public partial class MatteBorderUIResource
+        {
+            #region Constructors
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.MatteBorderUIResource.html#<init>(int,int,int,int,java.awt.Color)
+            /// </summary>
+            public MatteBorderUIResource(int arg0, int arg1, int arg2, int arg3, Java.Awt.Color arg4)
+                : base(arg0, arg1, arg2, arg3, arg4)
+            {
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.MatteBorderUIResource.html#<init>(int,int,int,int,javax.swing.Icon)
+            /// </summary>
+            public MatteBorderUIResource(int arg0, int arg1, int arg2, int arg3, Javax.Swing.Icon arg4)
+                : base(arg0, arg1, arg2, arg3, arg4)
+            {
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.MatteBorderUIResource.html#<init>(javax.swing.Icon)
+            /// </summary>
+            public MatteBorderUIResource(Javax.Swing.Icon arg0)
+                : base(arg0)
+            {
+            }
+            
+            #endregion
+
+            #region Class/Interface conversion operators
+            public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.BorderUIResource.MatteBorderUIResource t) => t.Cast<Javax.Swing.Plaf.UIResource>();
             
             #endregion
 
@@ -334,97 +425,6 @@ namespace Javax.Swing.Plaf
 
             #region Class/Interface conversion operators
             public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.BorderUIResource.TitledBorderUIResource t) => t.Cast<Javax.Swing.Plaf.UIResource>();
-            
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region EmptyBorderUIResource
-        public partial class EmptyBorderUIResource
-        {
-            #region Constructors
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.EmptyBorderUIResource.html#<init>(int,int,int,int)
-            /// </summary>
-            public EmptyBorderUIResource(int arg0, int arg1, int arg2, int arg3)
-                : base(arg0, arg1, arg2, arg3)
-            {
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.EmptyBorderUIResource.html#<init>(java.awt.Insets)
-            /// </summary>
-            public EmptyBorderUIResource(Java.Awt.Insets arg0)
-                : base(arg0)
-            {
-            }
-            
-            #endregion
-
-            #region Class/Interface conversion operators
-            public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.BorderUIResource.EmptyBorderUIResource t) => t.Cast<Javax.Swing.Plaf.UIResource>();
-            
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region MatteBorderUIResource
-        public partial class MatteBorderUIResource
-        {
-            #region Constructors
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.MatteBorderUIResource.html#<init>(int,int,int,int,java.awt.Color)
-            /// </summary>
-            public MatteBorderUIResource(int arg0, int arg1, int arg2, int arg3, Java.Awt.Color arg4)
-                : base(arg0, arg1, arg2, arg3, arg4)
-            {
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.MatteBorderUIResource.html#<init>(int,int,int,int,javax.swing.Icon)
-            /// </summary>
-            public MatteBorderUIResource(int arg0, int arg1, int arg2, int arg3, Javax.Swing.Icon arg4)
-                : base(arg0, arg1, arg2, arg3, arg4)
-            {
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/BorderUIResource.MatteBorderUIResource.html#<init>(javax.swing.Icon)
-            /// </summary>
-            public MatteBorderUIResource(Javax.Swing.Icon arg0)
-                : base(arg0)
-            {
-            }
-            
-            #endregion
-
-            #region Class/Interface conversion operators
-            public static implicit operator Javax.Swing.Plaf.UIResource(Javax.Swing.Plaf.BorderUIResource.MatteBorderUIResource t) => t.Cast<Javax.Swing.Plaf.UIResource>();
             
             #endregion
 

@@ -2193,23 +2193,23 @@ namespace Java.Awt
         public override bool IsStatic => false;
 
         // TODO: complete the class
-        #region DestinationType
+        #region DefaultSelectionType
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.DestinationType.html
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.DefaultSelectionType.html
         /// </summary>
-        public partial class DestinationType : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DestinationType>
+        public partial class DefaultSelectionType : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DefaultSelectionType>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            public DestinationType() { }
+            public DefaultSelectionType() { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
-            public DestinationType(params object[] args) : base(args) { }
+            public DefaultSelectionType(params object[] args) : base(args) { }
 
             /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-            public override string ClassName => "java.awt.JobAttributes$DestinationType";
+            public override string ClassName => "java.awt.JobAttributes$DefaultSelectionType";
 
             /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
             public override bool IsAbstract => false;
@@ -2227,23 +2227,23 @@ namespace Java.Awt
         }
         #endregion
 
-        #region MultipleDocumentHandlingType
+        #region DestinationType
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.MultipleDocumentHandlingType.html
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.DestinationType.html
         /// </summary>
-        public partial class MultipleDocumentHandlingType : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MultipleDocumentHandlingType>
+        public partial class DestinationType : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DestinationType>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            public MultipleDocumentHandlingType() { }
+            public DestinationType() { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
-            public MultipleDocumentHandlingType(params object[] args) : base(args) { }
+            public DestinationType(params object[] args) : base(args) { }
 
             /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-            public override string ClassName => "java.awt.JobAttributes$MultipleDocumentHandlingType";
+            public override string ClassName => "java.awt.JobAttributes$DestinationType";
 
             /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
             public override bool IsAbstract => false;
@@ -2295,23 +2295,23 @@ namespace Java.Awt
         }
         #endregion
 
-        #region DefaultSelectionType
+        #region MultipleDocumentHandlingType
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.DefaultSelectionType.html
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/JobAttributes.MultipleDocumentHandlingType.html
         /// </summary>
-        public partial class DefaultSelectionType : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DefaultSelectionType>
+        public partial class MultipleDocumentHandlingType : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MultipleDocumentHandlingType>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            public DefaultSelectionType() { }
+            public MultipleDocumentHandlingType() { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
-            public DefaultSelectionType(params object[] args) : base(args) { }
+            public MultipleDocumentHandlingType(params object[] args) : base(args) { }
 
             /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-            public override string ClassName => "java.awt.JobAttributes$DefaultSelectionType";
+            public override string ClassName => "java.awt.JobAttributes$MultipleDocumentHandlingType";
 
             /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
             public override bool IsAbstract => false;
@@ -3061,23 +3061,57 @@ namespace Java.Awt
         public override bool IsStatic => false;
 
         // TODO: complete the class
-        #region PrintQualityType
+        #region ColorType
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.PrintQualityType.html
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.ColorType.html
         /// </summary>
-        public partial class PrintQualityType : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PrintQualityType>
+        public partial class ColorType : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ColorType>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            public PrintQualityType() { }
+            public ColorType() { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
-            public PrintQualityType(params object[] args) : base(args) { }
+            public ColorType(params object[] args) : base(args) { }
 
             /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-            public override string ClassName => "java.awt.PageAttributes$PrintQualityType";
+            public override string ClassName => "java.awt.PageAttributes$ColorType";
+
+            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+            public override bool IsAbstract => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+            public override bool IsCloseable => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+            public override bool IsInterface => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+            public override bool IsStatic => true;
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region MediaType
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html
+        /// </summary>
+        public partial class MediaType : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MediaType>
+        {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public MediaType() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public MediaType(params object[] args) : base(args) { }
+
+            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+            public override string ClassName => "java.awt.PageAttributes$MediaType";
 
             /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
             public override bool IsAbstract => false;
@@ -3129,40 +3163,6 @@ namespace Java.Awt
         }
         #endregion
 
-        #region ColorType
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.ColorType.html
-        /// </summary>
-        public partial class ColorType : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ColorType>
-        {
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public ColorType() { }
-            /// <summary>
-            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-            /// </summary>
-            public ColorType(params object[] args) : base(args) { }
-
-            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-            public override string ClassName => "java.awt.PageAttributes$ColorType";
-
-            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-            public override bool IsAbstract => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-            public override bool IsCloseable => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-            public override bool IsInterface => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-            public override bool IsStatic => true;
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region OriginType
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.OriginType.html
@@ -3197,23 +3197,23 @@ namespace Java.Awt
         }
         #endregion
 
-        #region MediaType
+        #region PrintQualityType
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.MediaType.html
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/PageAttributes.PrintQualityType.html
         /// </summary>
-        public partial class MediaType : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MediaType>
+        public partial class PrintQualityType : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PrintQualityType>
         {
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            public MediaType() { }
+            public PrintQualityType() { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
-            public MediaType(params object[] args) : base(args) { }
+            public PrintQualityType(params object[] args) : base(args) { }
 
             /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-            public override string ClassName => "java.awt.PageAttributes$MediaType";
+            public override string ClassName => "java.awt.PageAttributes$PrintQualityType";
 
             /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
             public override bool IsAbstract => false;
@@ -4070,40 +4070,6 @@ namespace Java.Awt
         public override bool IsStatic => false;
 
         // TODO: complete the class
-        #region State
-        /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.State.html
-        /// </summary>
-        public partial class State : Java.Lang.Enum
-        {
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            public State() { }
-            /// <summary>
-            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-            /// </summary>
-            public State(params object[] args) : base(args) { }
-
-            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
-            public override string ClassName => "java.awt.Taskbar$State";
-
-            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
-            public override bool IsAbstract => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
-            public override bool IsCloseable => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
-            public override bool IsInterface => false;
-            
-            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
-            public override bool IsStatic => true;
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region Feature
         /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.Feature.html
@@ -4121,6 +4087,40 @@ namespace Java.Awt
 
             /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
             public override string ClassName => "java.awt.Taskbar$Feature";
+
+            /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
+            public override bool IsAbstract => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsCloseable"/>
+            public override bool IsCloseable => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsInterface"/>
+            public override bool IsInterface => false;
+            
+            /// <inheritdoc cref="JVMBridgeBase.IsStatic"/>
+            public override bool IsStatic => true;
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region State
+        /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.State.html
+        /// </summary>
+        public partial class State : Java.Lang.Enum
+        {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public State() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            public State(params object[] args) : base(args) { }
+
+            /// <inheritdoc cref="JVMBridgeBase.ClassName"/>
+            public override string ClassName => "java.awt.Taskbar$State";
 
             /// <inheritdoc cref="JVMBridgeBase.IsAbstract"/>
             public override bool IsAbstract => false;

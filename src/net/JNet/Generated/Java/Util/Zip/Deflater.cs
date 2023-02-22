@@ -230,9 +230,9 @@ namespace Java.Util.Zip
             IExecute("setInput", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#setInput(java.nio.ByteBuffer)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#setInput(byte[])
         /// </summary>
-        public void SetInput(Java.Nio.ByteBuffer arg0)
+        public void SetInput(byte[] arg0)
         {
             IExecute("setInput", arg0);
         }

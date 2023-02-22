@@ -49,34 +49,6 @@ namespace Java.Security.Cert
         #endregion
 
         #region Nested classes
-        #region Reason
-        public partial class Reason
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-            public static implicit operator Java.Io.Serializable(Java.Security.Cert.CertPathValidatorException.Reason t) => t.Cast<Java.Io.Serializable>();
-            
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region BasicReason
         public partial class BasicReason
         {
@@ -129,6 +101,34 @@ namespace Java.Security.Cert
                 return SExecuteArray<Java.Security.Cert.CertPathValidatorException.BasicReason>("values");
             }
             
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region Reason
+        public partial class Reason
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+            public static implicit operator Java.Io.Serializable(Java.Security.Cert.CertPathValidatorException.Reason t) => t.Cast<Java.Io.Serializable>();
+            
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
             #endregion
 
             #region Instance methods

@@ -98,6 +98,68 @@ namespace Java.Util
         #endregion
 
         #region Nested classes
+        #region Decoder
+        public partial class Decoder
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Base64.Decoder.html#decode(byte[])
+            /// </summary>
+            public byte[] Decode(byte[] arg0)
+            {
+                return IExecuteArray<byte>("decode", arg0);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Base64.Decoder.html#decode(java.lang.String)
+            /// </summary>
+            public byte[] Decode(string arg0)
+            {
+                return IExecuteArray<byte>("decode", arg0);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Base64.Decoder.html#decode(byte[],byte[])
+            /// </summary>
+            public int Decode(byte[] arg0, byte[] arg1)
+            {
+                return IExecute<int>("decode", arg0, arg1);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Base64.Decoder.html#wrap(java.io.InputStream)
+            /// </summary>
+            public Java.Io.InputStream Wrap(Java.Io.InputStream arg0)
+            {
+                return IExecute<Java.Io.InputStream>("wrap", arg0);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Base64.Decoder.html#decode(java.nio.ByteBuffer)
+            /// </summary>
+            public Java.Nio.ByteBuffer Decode(Java.Nio.ByteBuffer arg0)
+            {
+                return IExecute<Java.Nio.ByteBuffer>("decode", arg0);
+            }
+            
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region Encoder
         public partial class Encoder
         {
@@ -159,68 +221,6 @@ namespace Java.Util
             public Java.Util.Base64.Encoder WithoutPadding()
             {
                 return IExecute<Java.Util.Base64.Encoder>("withoutPadding");
-            }
-            
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region Decoder
-        public partial class Decoder
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Base64.Decoder.html#decode(byte[])
-            /// </summary>
-            public byte[] Decode(byte[] arg0)
-            {
-                return IExecuteArray<byte>("decode", arg0);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Base64.Decoder.html#decode(java.lang.String)
-            /// </summary>
-            public byte[] Decode(string arg0)
-            {
-                return IExecuteArray<byte>("decode", arg0);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Base64.Decoder.html#decode(byte[],byte[])
-            /// </summary>
-            public int Decode(byte[] arg0, byte[] arg1)
-            {
-                return IExecute<int>("decode", arg0, arg1);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Base64.Decoder.html#wrap(java.io.InputStream)
-            /// </summary>
-            public Java.Io.InputStream Wrap(Java.Io.InputStream arg0)
-            {
-                return IExecute<Java.Io.InputStream>("wrap", arg0);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Base64.Decoder.html#decode(java.nio.ByteBuffer)
-            /// </summary>
-            public Java.Nio.ByteBuffer Decode(Java.Nio.ByteBuffer arg0)
-            {
-                return IExecute<Java.Nio.ByteBuffer>("decode", arg0);
             }
             
             #endregion

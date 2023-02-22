@@ -142,40 +142,6 @@ namespace Javax.Swing
         #endregion
 
         #region Nested classes
-        #region AbstractFormatterFactory
-        public partial class AbstractFormatterFactory
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.AbstractFormatterFactory.html#getFormatter(javax.swing.JFormattedTextField)
-            /// </summary>
-            public Javax.Swing.JFormattedTextField.AbstractFormatter GetFormatter(Javax.Swing.JFormattedTextField arg0)
-            {
-                return IExecute<Javax.Swing.JFormattedTextField.AbstractFormatter>("getFormatter", arg0);
-            }
-            
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region AbstractFormatter
         public partial class AbstractFormatter
         {
@@ -224,6 +190,40 @@ namespace Javax.Swing
             public void Uninstall()
             {
                 IExecute("uninstall");
+            }
+            
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region AbstractFormatterFactory
+        public partial class AbstractFormatterFactory
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFormattedTextField.AbstractFormatterFactory.html#getFormatter(javax.swing.JFormattedTextField)
+            /// </summary>
+            public Javax.Swing.JFormattedTextField.AbstractFormatter GetFormatter(Javax.Swing.JFormattedTextField arg0)
+            {
+                return IExecute<Javax.Swing.JFormattedTextField.AbstractFormatter>("getFormatter", arg0);
             }
             
             #endregion

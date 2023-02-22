@@ -49,90 +49,6 @@ namespace Javax.Swing.Plaf.Basic
         #endregion
 
         #region Nested classes
-        #region MouseInputHandler
-        public partial class MouseInputHandler
-        {
-            #region Constructors
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableUI.MouseInputHandler.html#<init>(javax.swing.plaf.basic.BasicTableUI)
-            /// </summary>
-            public MouseInputHandler(Javax.Swing.Plaf.Basic.BasicTableUI arg0)
-                : base(arg0)
-            {
-            }
-            
-            #endregion
-
-            #region Class/Interface conversion operators
-            public static implicit operator Javax.Swing.Event.MouseInputListener(Javax.Swing.Plaf.Basic.BasicTableUI.MouseInputHandler t) => t.Cast<Javax.Swing.Event.MouseInputListener>();
-            
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableUI.MouseInputHandler.html#mouseClicked(java.awt.event.MouseEvent)
-            /// </summary>
-            public void MouseClicked(Java.Awt.EventNs.MouseEvent arg0)
-            {
-                IExecute("mouseClicked", arg0);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableUI.MouseInputHandler.html#mouseDragged(java.awt.event.MouseEvent)
-            /// </summary>
-            public void MouseDragged(Java.Awt.EventNs.MouseEvent arg0)
-            {
-                IExecute("mouseDragged", arg0);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableUI.MouseInputHandler.html#mouseEntered(java.awt.event.MouseEvent)
-            /// </summary>
-            public void MouseEntered(Java.Awt.EventNs.MouseEvent arg0)
-            {
-                IExecute("mouseEntered", arg0);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableUI.MouseInputHandler.html#mouseExited(java.awt.event.MouseEvent)
-            /// </summary>
-            public void MouseExited(Java.Awt.EventNs.MouseEvent arg0)
-            {
-                IExecute("mouseExited", arg0);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableUI.MouseInputHandler.html#mouseMoved(java.awt.event.MouseEvent)
-            /// </summary>
-            public void MouseMoved(Java.Awt.EventNs.MouseEvent arg0)
-            {
-                IExecute("mouseMoved", arg0);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableUI.MouseInputHandler.html#mousePressed(java.awt.event.MouseEvent)
-            /// </summary>
-            public void MousePressed(Java.Awt.EventNs.MouseEvent arg0)
-            {
-                IExecute("mousePressed", arg0);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableUI.MouseInputHandler.html#mouseReleased(java.awt.event.MouseEvent)
-            /// </summary>
-            public void MouseReleased(Java.Awt.EventNs.MouseEvent arg0)
-            {
-                IExecute("mouseReleased", arg0);
-            }
-            
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region FocusHandler
         public partial class FocusHandler
         {
@@ -230,6 +146,90 @@ namespace Javax.Swing.Plaf.Basic
             public void KeyTyped(Java.Awt.EventNs.KeyEvent arg0)
             {
                 IExecute("keyTyped", arg0);
+            }
+            
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region MouseInputHandler
+        public partial class MouseInputHandler
+        {
+            #region Constructors
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableUI.MouseInputHandler.html#<init>(javax.swing.plaf.basic.BasicTableUI)
+            /// </summary>
+            public MouseInputHandler(Javax.Swing.Plaf.Basic.BasicTableUI arg0)
+                : base(arg0)
+            {
+            }
+            
+            #endregion
+
+            #region Class/Interface conversion operators
+            public static implicit operator Javax.Swing.Event.MouseInputListener(Javax.Swing.Plaf.Basic.BasicTableUI.MouseInputHandler t) => t.Cast<Javax.Swing.Event.MouseInputListener>();
+            
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableUI.MouseInputHandler.html#mouseClicked(java.awt.event.MouseEvent)
+            /// </summary>
+            public void MouseClicked(Java.Awt.EventNs.MouseEvent arg0)
+            {
+                IExecute("mouseClicked", arg0);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableUI.MouseInputHandler.html#mouseDragged(java.awt.event.MouseEvent)
+            /// </summary>
+            public void MouseDragged(Java.Awt.EventNs.MouseEvent arg0)
+            {
+                IExecute("mouseDragged", arg0);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableUI.MouseInputHandler.html#mouseEntered(java.awt.event.MouseEvent)
+            /// </summary>
+            public void MouseEntered(Java.Awt.EventNs.MouseEvent arg0)
+            {
+                IExecute("mouseEntered", arg0);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableUI.MouseInputHandler.html#mouseExited(java.awt.event.MouseEvent)
+            /// </summary>
+            public void MouseExited(Java.Awt.EventNs.MouseEvent arg0)
+            {
+                IExecute("mouseExited", arg0);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableUI.MouseInputHandler.html#mouseMoved(java.awt.event.MouseEvent)
+            /// </summary>
+            public void MouseMoved(Java.Awt.EventNs.MouseEvent arg0)
+            {
+                IExecute("mouseMoved", arg0);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableUI.MouseInputHandler.html#mousePressed(java.awt.event.MouseEvent)
+            /// </summary>
+            public void MousePressed(Java.Awt.EventNs.MouseEvent arg0)
+            {
+                IExecute("mousePressed", arg0);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTableUI.MouseInputHandler.html#mouseReleased(java.awt.event.MouseEvent)
+            /// </summary>
+            public void MouseReleased(Java.Awt.EventNs.MouseEvent arg0)
+            {
+                IExecute("mouseReleased", arg0);
             }
             
             #endregion

@@ -186,9 +186,9 @@ namespace Javax.Swing.Text.Html
             IExecute("removeStyleSheet", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#setBaseFontSize(java.lang.String)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#setBaseFontSize(int)
         /// </summary>
-        public void SetBaseFontSize(string arg0)
+        public void SetBaseFontSize(int arg0)
         {
             IExecute("setBaseFontSize", arg0);
         }
@@ -196,41 +196,6 @@ namespace Javax.Swing.Text.Html
         #endregion
 
         #region Nested classes
-        #region ListPainter
-        public partial class ListPainter
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-            public static implicit operator Java.Io.Serializable(Javax.Swing.Text.Html.StyleSheet.ListPainter t) => t.Cast<Java.Io.Serializable>();
-            
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.ListPainter.html#paint(java.awt.Graphics,float,float,float,float,javax.swing.text.View,int)
-            /// </summary>
-            public void Paint(Java.Awt.Graphics arg0, float arg1, float arg2, float arg3, float arg4, Javax.Swing.Text.View arg5, int arg6)
-            {
-                IExecute("paint", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
-            }
-            
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region BoxPainter
         public partial class BoxPainter
         {
@@ -265,6 +230,41 @@ namespace Javax.Swing.Text.Html
             public void Paint(Java.Awt.Graphics arg0, float arg1, float arg2, float arg3, float arg4, Javax.Swing.Text.View arg5)
             {
                 IExecute("paint", arg0, arg1, arg2, arg3, arg4, arg5);
+            }
+            
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region ListPainter
+        public partial class ListPainter
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+            public static implicit operator Java.Io.Serializable(Javax.Swing.Text.Html.StyleSheet.ListPainter t) => t.Cast<Java.Io.Serializable>();
+            
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.ListPainter.html#paint(java.awt.Graphics,float,float,float,float,javax.swing.text.View,int)
+            /// </summary>
+            public void Paint(Java.Awt.Graphics arg0, float arg1, float arg2, float arg3, float arg4, Javax.Swing.Text.View arg5, int arg6)
+            {
+                IExecute("paint", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
             }
             
             #endregion

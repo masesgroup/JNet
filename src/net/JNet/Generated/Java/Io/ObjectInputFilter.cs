@@ -49,52 +49,6 @@ namespace Java.Io
         #endregion
 
         #region Nested classes
-        #region Status
-        public partial class Status
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.Status.html#ALLOWED
-            /// </summary>
-            public static Java.Io.ObjectInputFilter.Status ALLOWED => Clazz.GetField<Java.Io.ObjectInputFilter.Status>("ALLOWED");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.Status.html#REJECTED
-            /// </summary>
-            public static Java.Io.ObjectInputFilter.Status REJECTED => Clazz.GetField<Java.Io.ObjectInputFilter.Status>("REJECTED");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.Status.html#UNDECIDED
-            /// </summary>
-            public static Java.Io.ObjectInputFilter.Status UNDECIDED => Clazz.GetField<Java.Io.ObjectInputFilter.Status>("UNDECIDED");
-            
-            #endregion
-
-            #region Static methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.Status.html#values()
-            /// </summary>
-            public static Java.Io.ObjectInputFilter.Status[] Values()
-            {
-                return SExecuteArray<Java.Io.ObjectInputFilter.Status>("values");
-            }
-            
-            #endregion
-
-            #region Instance methods
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region Config
         public partial class Config
         {
@@ -185,6 +139,52 @@ namespace Java.Io
                 return IExecute<long>("streamBytes");
             }
             
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region Status
+        public partial class Status
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.Status.html#ALLOWED
+            /// </summary>
+            public static Java.Io.ObjectInputFilter.Status ALLOWED => Clazz.GetField<Java.Io.ObjectInputFilter.Status>("ALLOWED");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.Status.html#REJECTED
+            /// </summary>
+            public static Java.Io.ObjectInputFilter.Status REJECTED => Clazz.GetField<Java.Io.ObjectInputFilter.Status>("REJECTED");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.Status.html#UNDECIDED
+            /// </summary>
+            public static Java.Io.ObjectInputFilter.Status UNDECIDED => Clazz.GetField<Java.Io.ObjectInputFilter.Status>("UNDECIDED");
+            
+            #endregion
+
+            #region Static methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectInputFilter.Status.html#values()
+            /// </summary>
+            public static Java.Io.ObjectInputFilter.Status[] Values()
+            {
+                return SExecuteArray<Java.Io.ObjectInputFilter.Status>("values");
+            }
+            
+            #endregion
+
+            #region Instance methods
+
             #endregion
 
             // TODO: complete the class

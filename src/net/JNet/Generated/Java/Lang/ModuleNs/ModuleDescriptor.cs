@@ -126,54 +126,6 @@ namespace Java.Lang.ModuleNs
         #endregion
 
         #region Nested classes
-        #region Requires
-        public partial class Requires
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Requires.html#compareTo(java.lang.module.ModuleDescriptor$Requires)
-            /// </summary>
-            public int CompareTo(Java.Lang.ModuleNs.ModuleDescriptor.Requires arg0)
-            {
-                return IExecute<int>("compareTo", arg0);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Requires.html#compareTo(java.lang.Object)
-            /// </summary>
-            public int CompareTo(object arg0)
-            {
-                return IExecute<int>("compareTo", arg0);
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Requires.html#name()
-            /// </summary>
-            public string Name()
-            {
-                return IExecute<string>("name");
-            }
-            
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
         #region Builder
         public partial class Builder
         {
@@ -285,6 +237,111 @@ namespace Java.Lang.ModuleNs
         }
         #endregion
 
+        #region Exports
+        public partial class Exports
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+
+            #endregion
+
+            #region Static methods
+
+            #endregion
+
+            #region Instance methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Exports.html#isQualified()
+            /// </summary>
+            public bool IsQualified()
+            {
+                return IExecute<bool>("isQualified");
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Exports.html#compareTo(java.lang.module.ModuleDescriptor$Exports)
+            /// </summary>
+            public int CompareTo(Java.Lang.ModuleNs.ModuleDescriptor.Exports arg0)
+            {
+                return IExecute<int>("compareTo", arg0);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Exports.html#compareTo(java.lang.Object)
+            /// </summary>
+            public int CompareTo(object arg0)
+            {
+                return IExecute<int>("compareTo", arg0);
+            }
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Exports.html#source()
+            /// </summary>
+            public string Source()
+            {
+                return IExecute<string>("source");
+            }
+            
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
+        #region Modifier
+        public partial class Modifier
+        {
+            #region Constructors
+
+            #endregion
+
+            #region Class/Interface conversion operators
+
+            #endregion
+
+            #region Fields
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Modifier.html#AUTOMATIC
+            /// </summary>
+            public static Java.Lang.ModuleNs.ModuleDescriptor.Modifier AUTOMATIC => Clazz.GetField<Java.Lang.ModuleNs.ModuleDescriptor.Modifier>("AUTOMATIC");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Modifier.html#MANDATED
+            /// </summary>
+            public static Java.Lang.ModuleNs.ModuleDescriptor.Modifier MANDATED => Clazz.GetField<Java.Lang.ModuleNs.ModuleDescriptor.Modifier>("MANDATED");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Modifier.html#OPEN
+            /// </summary>
+            public static Java.Lang.ModuleNs.ModuleDescriptor.Modifier OPEN => Clazz.GetField<Java.Lang.ModuleNs.ModuleDescriptor.Modifier>("OPEN");
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Modifier.html#SYNTHETIC
+            /// </summary>
+            public static Java.Lang.ModuleNs.ModuleDescriptor.Modifier SYNTHETIC => Clazz.GetField<Java.Lang.ModuleNs.ModuleDescriptor.Modifier>("SYNTHETIC");
+            
+            #endregion
+
+            #region Static methods
+            /// <summary>
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Modifier.html#values()
+            /// </summary>
+            public static Java.Lang.ModuleNs.ModuleDescriptor.Modifier[] Values()
+            {
+                return SExecuteArray<Java.Lang.ModuleNs.ModuleDescriptor.Modifier>("values");
+            }
+            
+            #endregion
+
+            #region Instance methods
+
+            #endregion
+
+            // TODO: complete the class
+        }
+        #endregion
+
         #region Opens
         public partial class Opens
         {
@@ -388,8 +445,8 @@ namespace Java.Lang.ModuleNs
         }
         #endregion
 
-        #region Exports
-        public partial class Exports
+        #region Requires
+        public partial class Requires
         {
             #region Constructors
 
@@ -409,32 +466,25 @@ namespace Java.Lang.ModuleNs
 
             #region Instance methods
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Exports.html#isQualified()
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Requires.html#compareTo(java.lang.module.ModuleDescriptor$Requires)
             /// </summary>
-            public bool IsQualified()
-            {
-                return IExecute<bool>("isQualified");
-            }
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Exports.html#compareTo(java.lang.module.ModuleDescriptor$Exports)
-            /// </summary>
-            public int CompareTo(Java.Lang.ModuleNs.ModuleDescriptor.Exports arg0)
+            public int CompareTo(Java.Lang.ModuleNs.ModuleDescriptor.Requires arg0)
             {
                 return IExecute<int>("compareTo", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Exports.html#compareTo(java.lang.Object)
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Requires.html#compareTo(java.lang.Object)
             /// </summary>
             public int CompareTo(object arg0)
             {
                 return IExecute<int>("compareTo", arg0);
             }
             /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Exports.html#source()
+            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Requires.html#name()
             /// </summary>
-            public string Source()
+            public string Name()
             {
-                return IExecute<string>("source");
+                return IExecute<string>("name");
             }
             
             #endregion
@@ -485,56 +535,6 @@ namespace Java.Lang.ModuleNs
                 return IExecute<int>("compareTo", arg0);
             }
             
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region Modifier
-        public partial class Modifier
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Modifier.html#AUTOMATIC
-            /// </summary>
-            public static Java.Lang.ModuleNs.ModuleDescriptor.Modifier AUTOMATIC => Clazz.GetField<Java.Lang.ModuleNs.ModuleDescriptor.Modifier>("AUTOMATIC");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Modifier.html#MANDATED
-            /// </summary>
-            public static Java.Lang.ModuleNs.ModuleDescriptor.Modifier MANDATED => Clazz.GetField<Java.Lang.ModuleNs.ModuleDescriptor.Modifier>("MANDATED");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Modifier.html#OPEN
-            /// </summary>
-            public static Java.Lang.ModuleNs.ModuleDescriptor.Modifier OPEN => Clazz.GetField<Java.Lang.ModuleNs.ModuleDescriptor.Modifier>("OPEN");
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Modifier.html#SYNTHETIC
-            /// </summary>
-            public static Java.Lang.ModuleNs.ModuleDescriptor.Modifier SYNTHETIC => Clazz.GetField<Java.Lang.ModuleNs.ModuleDescriptor.Modifier>("SYNTHETIC");
-            
-            #endregion
-
-            #region Static methods
-            /// <summary>
-            /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Modifier.html#values()
-            /// </summary>
-            public static Java.Lang.ModuleNs.ModuleDescriptor.Modifier[] Values()
-            {
-                return SExecuteArray<Java.Lang.ModuleNs.ModuleDescriptor.Modifier>("values");
-            }
-            
-            #endregion
-
-            #region Instance methods
-
             #endregion
 
             // TODO: complete the class
