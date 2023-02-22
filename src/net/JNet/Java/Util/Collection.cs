@@ -24,6 +24,8 @@ namespace Java.Util
 {
     public class Collection<E> : JVMBridgeBaseEnumerable<Collection<E>, E>
     {
+        public override bool IsInterface => true;
+
         public override string ClassName => "java.util.Collection";
 #if !JNETREFLECTOR
         public static implicit operator Lang.Iterable<E>(Collection<E> instance) => instance.Cast<Lang.Iterable<E>>();

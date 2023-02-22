@@ -18,6 +18,9 @@
 
 namespace Java.Util
 {
+    /// <summary>
+    /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Stack.html"/>
+    /// </summary>
     public class Stack<E> : Vector<E>
     {
         public override string ClassName => "java.util.Stack";

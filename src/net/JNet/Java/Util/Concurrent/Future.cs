@@ -20,6 +20,9 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util.Concurrent
 {
+    /// <summary>
+    /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Future.html"/>
+    /// </summary>
     public class Future<E> : JVMBridgeBase<Future<E>>
     {
         public override string ClassName => "java.util.concurrent.Future";

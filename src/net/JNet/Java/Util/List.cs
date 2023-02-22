@@ -26,7 +26,9 @@ namespace Java.Util
     {
         // can be extended with methods not reflected or not available in Java;
     }
-
+    /// <summary>
+    /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html"/>
+    /// </summary>
     public class List<E> : List
     {
         public static implicit operator Collection<E>(List<E> instance) => instance.Cast<Collection<E>>();

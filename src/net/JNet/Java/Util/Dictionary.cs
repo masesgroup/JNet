@@ -20,8 +20,13 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
+    /// <summary>
+    /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Dictionary.html"/>
+    /// </summary>
     public class Dictionary<K, V> : JVMBridgeBase<Dictionary<K, V>>
     {
+        public override bool IsAbstract => true;
+
         public override string ClassName => "java.util.Dictionary";
     }
 }

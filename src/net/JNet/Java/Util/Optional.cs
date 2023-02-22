@@ -20,6 +20,9 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {
+    /// <summary>
+    /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html"/>
+    /// </summary>
     public class Optional<T> : JVMBridgeBase<Optional<T>>
     {
         public override string ClassName => "java.util.Optional";
