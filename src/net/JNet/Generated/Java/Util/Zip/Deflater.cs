@@ -216,9 +216,9 @@ namespace Java.Util.Zip
             IExecute("setDictionary", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#setDictionary(byte[])
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#setDictionary(java.nio.ByteBuffer)
         /// </summary>
-        public void SetDictionary(byte[] arg0)
+        public void SetDictionary(Java.Nio.ByteBuffer arg0)
         {
             IExecute("setDictionary", arg0);
         }
@@ -230,9 +230,9 @@ namespace Java.Util.Zip
             IExecute("setInput", arg0, arg1, arg2);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#setInput(byte[])
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#setInput(java.nio.ByteBuffer)
         /// </summary>
-        public void SetInput(byte[] arg0)
+        public void SetInput(Java.Nio.ByteBuffer arg0)
         {
             IExecute("setInput", arg0);
         }
