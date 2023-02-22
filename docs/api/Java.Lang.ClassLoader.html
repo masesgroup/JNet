@@ -83,6 +83,7 @@
     <div class="level2"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span></div>
     <div class="level3"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span>&lt;<a class="xref" href="Java.Lang.ClassLoader.html">ClassLoader</a>&gt;</div>
     <div class="level4"><span class="xref">ClassLoader</span></div>
+      <div class="level5"><a class="xref" href="Java.Security.SecureClassLoader.html">SecureClassLoader</a></div>
   </div>
   <div class="implements">
     <h5>Implements</h5>
@@ -195,6 +196,21 @@
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.GetHashCode()</span>
     </div>
     <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wait(System.Int64)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wait(System.Int64, System.Int32)</span>
+    </div>
+    <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IExecute(System.String, System.Object[])</span>
     </div>
     <div>
@@ -291,6 +307,57 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class ClassLoader : JVMBridgeBase&lt;ClassLoader&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
   </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_ClassLoader__ctor.md&amp;value=---%0Auid%3A%20Java.Lang.ClassLoader.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/ClassLoader.cs/#L38">View Source</a>
+  </span>
+  <a id="Java_Lang_ClassLoader__ctor_" data-uid="Java.Lang.ClassLoader.#ctor*"></a>
+  <h4 id="Java_Lang_ClassLoader__ctor" data-uid="Java.Lang.ClassLoader.#ctor">ClassLoader()</h4>
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ClassLoader()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_ClassLoader__ctor_System_Object___.md&amp;value=---%0Auid%3A%20Java.Lang.ClassLoader.%23ctor(System.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/ClassLoader.cs/#L42">View Source</a>
+  </span>
+  <a id="Java_Lang_ClassLoader__ctor_" data-uid="Java.Lang.ClassLoader.#ctor*"></a>
+  <h4 id="Java_Lang_ClassLoader__ctor_System_Object___" data-uid="Java.Lang.ClassLoader.#ctor(System.Object[])">ClassLoader(Object[])</h4>
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ClassLoader(params object[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="properties">Properties
   </h3>
   <span class="small pull-right mobile-hide">
@@ -298,7 +365,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_ClassLoader_ClassName.md&amp;value=---%0Auid%3A%20Java.Lang.ClassLoader.ClassName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/ClassLoader.cs/#L29">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/ClassLoader.cs/#L34">View Source</a>
   </span>
   <a id="Java_Lang_ClassLoader_ClassName_" data-uid="Java.Lang.ClassLoader.ClassName*"></a>
   <h4 id="Java_Lang_ClassLoader_ClassName" data-uid="Java.Lang.ClassLoader.ClassName">ClassName</h4>
@@ -327,14 +394,46 @@
   <div><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.ClassName</span></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_ClassLoader_Parent.md&amp;value=---%0Auid%3A%20Java.Lang.ClassLoader.Parent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/ClassLoader.cs/#L51">View Source</a>
+  </span>
+  <a id="Java_Lang_ClassLoader_Parent_" data-uid="Java.Lang.ClassLoader.Parent*"></a>
+  <h4 id="Java_Lang_ClassLoader_Parent" data-uid="Java.Lang.ClassLoader.Parent">Parent</h4>
+  <div class="markdown level1 summary"><p>Returns the parent class loader for delegation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ClassLoader Parent { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Lang.ClassLoader.html">ClassLoader</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_ClassLoader_SystemClassLoader.md&amp;value=---%0Auid%3A%20Java.Lang.ClassLoader.SystemClassLoader%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/ClassLoader.cs/#L31">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/ClassLoader.cs/#L68">View Source</a>
   </span>
   <a id="Java_Lang_ClassLoader_SystemClassLoader_" data-uid="Java.Lang.ClassLoader.SystemClassLoader*"></a>
   <h4 id="Java_Lang_ClassLoader_SystemClassLoader" data-uid="Java.Lang.ClassLoader.SystemClassLoader">SystemClassLoader</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns the system class loader for delegation.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -351,6 +450,469 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Java.Lang.ClassLoader.html">ClassLoader</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_ClassLoader_ClearAssertionStatus.md&amp;value=---%0Auid%3A%20Java.Lang.ClassLoader.ClearAssertionStatus%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/ClassLoader.cs/#L47">View Source</a>
+  </span>
+  <a id="Java_Lang_ClassLoader_ClearAssertionStatus_" data-uid="Java.Lang.ClassLoader.ClearAssertionStatus*"></a>
+  <h4 id="Java_Lang_ClassLoader_ClearAssertionStatus" data-uid="Java.Lang.ClassLoader.ClearAssertionStatus">ClearAssertionStatus()</h4>
+  <div class="markdown level1 summary"><p>Sets the default assertion status for this class loader to false and discards any package defaults or class assertion status settings associated with the class loader.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearAssertionStatus()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_ClassLoader_GetResource_System_String_.md&amp;value=---%0Auid%3A%20Java.Lang.ClassLoader.GetResource(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/ClassLoader.cs/#L55">View Source</a>
+  </span>
+  <a id="Java_Lang_ClassLoader_GetResource_" data-uid="Java.Lang.ClassLoader.GetResource*"></a>
+  <h4 id="Java_Lang_ClassLoader_GetResource_System_String_" data-uid="Java.Lang.ClassLoader.GetResource(System.String)">GetResource(String)</h4>
+  <div class="markdown level1 summary"><p>Finds the resource with the given name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public URL GetResource(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Net.URL.html">URL</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_ClassLoader_GetResourceAsStream_System_String_.md&amp;value=---%0Auid%3A%20Java.Lang.ClassLoader.GetResourceAsStream(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/ClassLoader.cs/#L59">View Source</a>
+  </span>
+  <a id="Java_Lang_ClassLoader_GetResourceAsStream_" data-uid="Java.Lang.ClassLoader.GetResourceAsStream*"></a>
+  <h4 id="Java_Lang_ClassLoader_GetResourceAsStream_System_String_" data-uid="Java.Lang.ClassLoader.GetResourceAsStream(System.String)">GetResourceAsStream(String)</h4>
+  <div class="markdown level1 summary"><p>Returns an input stream for reading the specified resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InputStream GetResourceAsStream(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Io.InputStream.html">InputStream</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_ClassLoader_GetResources_System_String_.md&amp;value=---%0Auid%3A%20Java.Lang.ClassLoader.GetResources(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/ClassLoader.cs/#L63">View Source</a>
+  </span>
+  <a id="Java_Lang_ClassLoader_GetResources_" data-uid="Java.Lang.ClassLoader.GetResources*"></a>
+  <h4 id="Java_Lang_ClassLoader_GetResources_System_String_" data-uid="Java.Lang.ClassLoader.GetResources(System.String)">GetResources(String)</h4>
+  <div class="markdown level1 summary"><p>Finds all the resources with the given name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Enumeration&lt;URL&gt; GetResources(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Enumeration-1.html">Enumeration</a>&lt;<a class="xref" href="Java.Net.URL.html">URL</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_ClassLoader_GetSystemResource_System_String_.md&amp;value=---%0Auid%3A%20Java.Lang.ClassLoader.GetSystemResource(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/ClassLoader.cs/#L73">View Source</a>
+  </span>
+  <a id="Java_Lang_ClassLoader_GetSystemResource_" data-uid="Java.Lang.ClassLoader.GetSystemResource*"></a>
+  <h4 id="Java_Lang_ClassLoader_GetSystemResource_System_String_" data-uid="Java.Lang.ClassLoader.GetSystemResource(System.String)">GetSystemResource(String)</h4>
+  <div class="markdown level1 summary"><p>Find a resource of the specified name from the search path used to load classes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static URL GetSystemResource(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Net.URL.html">URL</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_ClassLoader_GetSystemResourceAsStream_System_String_.md&amp;value=---%0Auid%3A%20Java.Lang.ClassLoader.GetSystemResourceAsStream(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/ClassLoader.cs/#L77">View Source</a>
+  </span>
+  <a id="Java_Lang_ClassLoader_GetSystemResourceAsStream_" data-uid="Java.Lang.ClassLoader.GetSystemResourceAsStream*"></a>
+  <h4 id="Java_Lang_ClassLoader_GetSystemResourceAsStream_System_String_" data-uid="Java.Lang.ClassLoader.GetSystemResourceAsStream(System.String)">GetSystemResourceAsStream(String)</h4>
+  <div class="markdown level1 summary"><p>Open for reading, a resource of the specified name from the search path used to load classes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static InputStream GetSystemResourceAsStream(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Io.InputStream.html">InputStream</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_ClassLoader_GetSystemResources_System_String_.md&amp;value=---%0Auid%3A%20Java.Lang.ClassLoader.GetSystemResources(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/ClassLoader.cs/#L81">View Source</a>
+  </span>
+  <a id="Java_Lang_ClassLoader_GetSystemResources_" data-uid="Java.Lang.ClassLoader.GetSystemResources*"></a>
+  <h4 id="Java_Lang_ClassLoader_GetSystemResources_System_String_" data-uid="Java.Lang.ClassLoader.GetSystemResources(System.String)">GetSystemResources(String)</h4>
+  <div class="markdown level1 summary"><p>Finds all resources of the specified name from the search path used to load classes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Enumeration&lt;URL&gt; GetSystemResources(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Util.Enumeration-1.html">Enumeration</a>&lt;<a class="xref" href="Java.Net.URL.html">URL</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_ClassLoader_LoadClass_System_String_.md&amp;value=---%0Auid%3A%20Java.Lang.ClassLoader.LoadClass(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/ClassLoader.cs/#L85">View Source</a>
+  </span>
+  <a id="Java_Lang_ClassLoader_LoadClass_" data-uid="Java.Lang.ClassLoader.LoadClass*"></a>
+  <h4 id="Java_Lang_ClassLoader_LoadClass_System_String_" data-uid="Java.Lang.ClassLoader.LoadClass(System.String)">LoadClass(String)</h4>
+  <div class="markdown level1 summary"><p>Loads the class with the specified binary name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Class LoadClass(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Lang.Class.html">Class</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_ClassLoader_SetClassAssertionStatus_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20Java.Lang.ClassLoader.SetClassAssertionStatus(System.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/ClassLoader.cs/#L89">View Source</a>
+  </span>
+  <a id="Java_Lang_ClassLoader_SetClassAssertionStatus_" data-uid="Java.Lang.ClassLoader.SetClassAssertionStatus*"></a>
+  <h4 id="Java_Lang_ClassLoader_SetClassAssertionStatus_System_String_System_Boolean_" data-uid="Java.Lang.ClassLoader.SetClassAssertionStatus(System.String,System.Boolean)">SetClassAssertionStatus(String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Sets the desired assertion status for the named top-level class in this class loader and any nested classes contained therein.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetClassAssertionStatus(string className, bool enabled)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">className</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">enabled</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_ClassLoader_SetDefaultAssertionStatus_System_Boolean_.md&amp;value=---%0Auid%3A%20Java.Lang.ClassLoader.SetDefaultAssertionStatus(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/ClassLoader.cs/#L93">View Source</a>
+  </span>
+  <a id="Java_Lang_ClassLoader_SetDefaultAssertionStatus_" data-uid="Java.Lang.ClassLoader.SetDefaultAssertionStatus*"></a>
+  <h4 id="Java_Lang_ClassLoader_SetDefaultAssertionStatus_System_Boolean_" data-uid="Java.Lang.ClassLoader.SetDefaultAssertionStatus(System.Boolean)">SetDefaultAssertionStatus(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Sets the default assertion status for this class loader.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDefaultAssertionStatus(bool enabled)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">enabled</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_ClassLoader_SetPackageAssertionStatus_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20Java.Lang.ClassLoader.SetPackageAssertionStatus(System.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/ClassLoader.cs/#L97">View Source</a>
+  </span>
+  <a id="Java_Lang_ClassLoader_SetPackageAssertionStatus_" data-uid="Java.Lang.ClassLoader.SetPackageAssertionStatus*"></a>
+  <h4 id="Java_Lang_ClassLoader_SetPackageAssertionStatus_System_String_System_Boolean_" data-uid="Java.Lang.ClassLoader.SetPackageAssertionStatus(System.String,System.Boolean)">SetPackageAssertionStatus(String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Sets the package default assertion status for the named package.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPackageAssertionStatus(string packageName, bool enabled)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">packageName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">enabled</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -389,7 +951,7 @@
                     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_ClassLoader.md&amp;value=---%0Auid%3A%20Java.Lang.ClassLoader%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/ClassLoader.cs/#L26" class="contribution-link">View Source</a>
+                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/ClassLoader.cs/#L31" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

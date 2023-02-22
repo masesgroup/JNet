@@ -1,0 +1,2028 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DefaultCaret
+   | JNet website </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DefaultCaret
+   | JNet website ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Javax.Swing.Text.DefaultCaret">
+  
+  
+  <h1 id="Javax_Swing_Text_DefaultCaret" data-uid="Javax.Swing.Text.DefaultCaret" class="text-break">Class DefaultCaret
+  </h1>
+  <div class="markdown level0 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html</a></p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+    <div class="level2"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span></div>
+    <div class="level3"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span>&lt;<a class="xref" href="Java.Awt.Geom.RectangularShape.html">RectangularShape</a>&gt;</div>
+    <div class="level4"><a class="xref" href="Java.Awt.Geom.RectangularShape.html">RectangularShape</a></div>
+    <div class="level5"><a class="xref" href="Java.Awt.Geom.Rectangle2D.html">Rectangle2D</a></div>
+    <div class="level6"><a class="xref" href="Java.Awt.Rectangle.html">Rectangle</a></div>
+    <div class="level7"><span class="xref">DefaultCaret</span></div>
+      <div class="level8"><a class="xref" href="Javax.Swing.Plaf.Basic.BasicTextUI.BasicCaret.html">BasicTextUI.BasicCaret</a></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+    <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeCore</span></div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic</span></div>
+    <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBase</span></div>
+    <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Java.Awt.Rectangle.html#Java_Awt_Rectangle_height">Rectangle.height</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Rectangle.html#Java_Awt_Rectangle_width">Rectangle.width</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Rectangle.html#Java_Awt_Rectangle_x">Rectangle.x</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Rectangle.html#Java_Awt_Rectangle_y">Rectangle.y</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Rectangle.html#Java_Awt_Rectangle_Location">Rectangle.Location</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Rectangle.html#Java_Awt_Rectangle_Size">Rectangle.Size</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Rectangle.html#Java_Awt_Rectangle_Contains_System_Int32_System_Int32_System_Int32_System_Int32_">Rectangle.Contains(Int32, Int32, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Rectangle.html#Java_Awt_Rectangle_Contains_System_Int32_System_Int32_">Rectangle.Contains(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Rectangle.html#Java_Awt_Rectangle_Contains_Java_Awt_Point_">Rectangle.Contains(Point)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Rectangle.html#Java_Awt_Rectangle_Contains_Java_Awt_Rectangle_">Rectangle.Contains(Rectangle)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Rectangle.html#Java_Awt_Rectangle_Intersects_Java_Awt_Rectangle_">Rectangle.Intersects(Rectangle)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Rectangle.html#Java_Awt_Rectangle_Intersection_Java_Awt_Rectangle_">Rectangle.Intersection(Rectangle)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Rectangle.html#Java_Awt_Rectangle_Union_Java_Awt_Rectangle_">Rectangle.Union(Rectangle)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Rectangle.html#Java_Awt_Rectangle_Add_System_Int32_System_Int32_">Rectangle.Add(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Rectangle.html#Java_Awt_Rectangle_Add_Java_Awt_Point_">Rectangle.Add(Point)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Rectangle.html#Java_Awt_Rectangle_Add_Java_Awt_Rectangle_">Rectangle.Add(Rectangle)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Rectangle.html#Java_Awt_Rectangle_Grow_System_Int32_System_Int32_">Rectangle.Grow(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Rectangle.html#Java_Awt_Rectangle_SetBounds_System_Int32_System_Int32_System_Int32_System_Int32_">Rectangle.SetBounds(Int32, Int32, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Rectangle.html#Java_Awt_Rectangle_SetBounds_Java_Awt_Rectangle_">Rectangle.SetBounds(Rectangle)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Rectangle.html#Java_Awt_Rectangle_SetLocation_System_Int32_System_Int32_">Rectangle.SetLocation(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Rectangle.html#Java_Awt_Rectangle_SetSize_System_Int32_System_Int32_">Rectangle.SetSize(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Rectangle.html#Java_Awt_Rectangle_Translate_System_Int32_System_Int32_">Rectangle.Translate(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Geom.Rectangle2D.html#Java_Awt_Geom_Rectangle2D_OUT_BOTTOM">Rectangle2D.OUT_BOTTOM</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Geom.Rectangle2D.html#Java_Awt_Geom_Rectangle2D_OUT_LEFT">Rectangle2D.OUT_LEFT</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Geom.Rectangle2D.html#Java_Awt_Geom_Rectangle2D_OUT_RIGHT">Rectangle2D.OUT_RIGHT</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Geom.Rectangle2D.html#Java_Awt_Geom_Rectangle2D_OUT_TOP">Rectangle2D.OUT_TOP</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Geom.Rectangle2D.html#Java_Awt_Geom_Rectangle2D_Intersect_Java_Awt_Geom_Rectangle2D_Java_Awt_Geom_Rectangle2D_Java_Awt_Geom_Rectangle2D_">Rectangle2D.Intersect(Rectangle2D, Rectangle2D, Rectangle2D)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Geom.Rectangle2D.html#Java_Awt_Geom_Rectangle2D_Union_Java_Awt_Geom_Rectangle2D_Java_Awt_Geom_Rectangle2D_Java_Awt_Geom_Rectangle2D_">Rectangle2D.Union(Rectangle2D, Rectangle2D, Rectangle2D)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Geom.Rectangle2D.html#Java_Awt_Geom_Rectangle2D_Outcode_System_Double_System_Double_">Rectangle2D.Outcode(Double, Double)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Geom.Rectangle2D.html#Java_Awt_Geom_Rectangle2D_CreateIntersection_Java_Awt_Geom_Rectangle2D_">Rectangle2D.CreateIntersection(Rectangle2D)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Geom.Rectangle2D.html#Java_Awt_Geom_Rectangle2D_CreateUnion_Java_Awt_Geom_Rectangle2D_">Rectangle2D.CreateUnion(Rectangle2D)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Geom.Rectangle2D.html#Java_Awt_Geom_Rectangle2D_SetRect_System_Double_System_Double_System_Double_System_Double_">Rectangle2D.SetRect(Double, Double, Double, Double)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Geom.Rectangle2D.html#Java_Awt_Geom_Rectangle2D_IntersectsLine_System_Double_System_Double_System_Double_System_Double_">Rectangle2D.IntersectsLine(Double, Double, Double, Double)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Geom.Rectangle2D.html#Java_Awt_Geom_Rectangle2D_IntersectsLine_Java_Awt_Geom_Line2D_">Rectangle2D.IntersectsLine(Line2D)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Geom.Rectangle2D.html#Java_Awt_Geom_Rectangle2D_Outcode_Java_Awt_Geom_Point2D_">Rectangle2D.Outcode(Point2D)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Geom.Rectangle2D.html#Java_Awt_Geom_Rectangle2D_Add_System_Double_System_Double_">Rectangle2D.Add(Double, Double)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Geom.Rectangle2D.html#Java_Awt_Geom_Rectangle2D_Add_Java_Awt_Geom_Point2D_">Rectangle2D.Add(Point2D)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Geom.Rectangle2D.html#Java_Awt_Geom_Rectangle2D_Add_Java_Awt_Geom_Rectangle2D_">Rectangle2D.Add(Rectangle2D)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Geom.Rectangle2D.html#Java_Awt_Geom_Rectangle2D_SetRect_Java_Awt_Geom_Rectangle2D_">Rectangle2D.SetRect(Rectangle2D)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Geom.RectangularShape.html#Java_Awt_Geom_RectangularShape_Bounds">RectangularShape.Bounds</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Geom.RectangularShape.html#Java_Awt_Geom_RectangularShape_CenterX">RectangularShape.CenterX</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Geom.RectangularShape.html#Java_Awt_Geom_RectangularShape_CenterY">RectangularShape.CenterY</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Geom.RectangularShape.html#Java_Awt_Geom_RectangularShape_Frame">RectangularShape.Frame</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Geom.RectangularShape.html#Java_Awt_Geom_RectangularShape_Height">RectangularShape.Height</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Geom.RectangularShape.html#Java_Awt_Geom_RectangularShape_MaxX">RectangularShape.MaxX</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Geom.RectangularShape.html#Java_Awt_Geom_RectangularShape_MaxY">RectangularShape.MaxY</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Geom.RectangularShape.html#Java_Awt_Geom_RectangularShape_MinX">RectangularShape.MinX</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Geom.RectangularShape.html#Java_Awt_Geom_RectangularShape_MinY">RectangularShape.MinY</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Geom.RectangularShape.html#Java_Awt_Geom_RectangularShape_Width">RectangularShape.Width</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Geom.RectangularShape.html#Java_Awt_Geom_RectangularShape_X">RectangularShape.X</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Geom.RectangularShape.html#Java_Awt_Geom_RectangularShape_Y">RectangularShape.Y</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Geom.RectangularShape.html#Java_Awt_Geom_RectangularShape_IsEmpty">RectangularShape.IsEmpty()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Geom.RectangularShape.html#Java_Awt_Geom_RectangularShape_SetFrame_System_Double_System_Double_System_Double_System_Double_">RectangularShape.SetFrame(Double, Double, Double, Double)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Geom.RectangularShape.html#Java_Awt_Geom_RectangularShape_Contains_Java_Awt_Geom_Point2D_">RectangularShape.Contains(Point2D)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Geom.RectangularShape.html#Java_Awt_Geom_RectangularShape_Contains_Java_Awt_Geom_Rectangle2D_">RectangularShape.Contains(Rectangle2D)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Geom.RectangularShape.html#Java_Awt_Geom_RectangularShape_Intersects_Java_Awt_Geom_Rectangle2D_">RectangularShape.Intersects(Rectangle2D)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Geom.RectangularShape.html#Java_Awt_Geom_RectangularShape_GetPathIterator_Java_Awt_Geom_AffineTransform_System_Double_">RectangularShape.GetPathIterator(AffineTransform, Double)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Geom.RectangularShape.html#Java_Awt_Geom_RectangularShape_SetFrame_Java_Awt_Geom_Point2D_Java_Awt_Geom_Dimension2D_">RectangularShape.SetFrame(Point2D, Dimension2D)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Geom.RectangularShape.html#Java_Awt_Geom_RectangularShape_SetFrameFromCenter_System_Double_System_Double_System_Double_System_Double_">RectangularShape.SetFrameFromCenter(Double, Double, Double, Double)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Geom.RectangularShape.html#Java_Awt_Geom_RectangularShape_SetFrameFromCenter_Java_Awt_Geom_Point2D_Java_Awt_Geom_Point2D_">RectangularShape.SetFrameFromCenter(Point2D, Point2D)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Geom.RectangularShape.html#Java_Awt_Geom_RectangularShape_SetFrameFromDiagonal_System_Double_System_Double_System_Double_System_Double_">RectangularShape.SetFrameFromDiagonal(Double, Double, Double, Double)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Geom.RectangularShape.html#Java_Awt_Geom_RectangularShape_SetFrameFromDiagonal_Java_Awt_Geom_Point2D_Java_Awt_Geom_Point2D_">RectangularShape.SetFrameFromDiagonal(Point2D, Point2D)</a>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Awt.Geom.RectangularShape&gt;.SExecute(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Awt.Geom.RectangularShape&gt;.SExecute&lt;TReturn&gt;(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Awt.Geom.RectangularShape&gt;.SExecute(System.Type, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Awt.Geom.RectangularShape&gt;.SExecute&lt;TNewClass, TReturn&gt;(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Awt.Geom.RectangularShape&gt;.SExecute&lt;TReturn&gt;(System.Type, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Awt.Geom.RectangularShape&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Awt.Geom.RectangularShape&gt;.SExecute&lt;TReturn, TConverter&gt;(System.Type, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Awt.Geom.RectangularShape&gt;.SExecuteArray&lt;T&gt;(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Awt.Geom.RectangularShape&gt;.IsAssignableFrom(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Awt.Geom.RectangularShape&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Awt.Geom.RectangularShape&gt;.New(System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Awt.Geom.RectangularShape&gt;.Execute&lt;T&gt;(T[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Awt.Geom.RectangularShape&gt;.DynClazz</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Awt.Geom.RectangularShape&gt;.Clazz</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Awt.Geom.RectangularShape&gt;.MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.DynClazz</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Awt.Geom.RectangularShape&gt;.MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.Clazz</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TReturn&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.New&lt;TNewClass&gt;(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.New&lt;TNewClass, TReturn&gt;(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.New&lt;TNewClass, TReturn, TConverter&gt;(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsInstanceOf(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wait(System.Int64)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wait(System.Int64, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IExecute(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IExecute&lt;TReturn&gt;(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IExecuteArray&lt;T&gt;(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.DynInstance</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Instance</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember#system-dynamic-dynamicobject-trygetmember(system-dynamic-getmemberbinder-system-object@)">DynamicObject.TryGetMember(GetMemberBinder, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember#system-dynamic-dynamicobject-trysetmember(system-dynamic-setmemberbinder-system-object)">DynamicObject.TrySetMember(SetMemberBinder, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember#system-dynamic-dynamicobject-trydeletemember(system-dynamic-deletememberbinder)">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember#system-dynamic-dynamicobject-tryinvokemember(system-dynamic-invokememberbinder-system-object()-system-object@)">DynamicObject.TryInvokeMember(InvokeMemberBinder, Object[], Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert#system-dynamic-dynamicobject-tryconvert(system-dynamic-convertbinder-system-object@)">DynamicObject.TryConvert(ConvertBinder, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance#system-dynamic-dynamicobject-trycreateinstance(system-dynamic-createinstancebinder-system-object()-system-object@)">DynamicObject.TryCreateInstance(CreateInstanceBinder, Object[], Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke#system-dynamic-dynamicobject-tryinvoke(system-dynamic-invokebinder-system-object()-system-object@)">DynamicObject.TryInvoke(InvokeBinder, Object[], Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation#system-dynamic-dynamicobject-trybinaryoperation(system-dynamic-binaryoperationbinder-system-object-system-object@)">DynamicObject.TryBinaryOperation(BinaryOperationBinder, Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation#system-dynamic-dynamicobject-tryunaryoperation(system-dynamic-unaryoperationbinder-system-object@)">DynamicObject.TryUnaryOperation(UnaryOperationBinder, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex#system-dynamic-dynamicobject-trygetindex(system-dynamic-getindexbinder-system-object()-system-object@)">DynamicObject.TryGetIndex(GetIndexBinder, Object[], Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex#system-dynamic-dynamicobject-trysetindex(system-dynamic-setindexbinder-system-object()-system-object)">DynamicObject.TrySetIndex(SetIndexBinder, Object[], Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex#system-dynamic-dynamicobject-trydeleteindex(system-dynamic-deleteindexbinder-system-object())">DynamicObject.TryDeleteIndex(DeleteIndexBinder, Object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames#system-dynamic-dynamicobject-getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject#system-dynamic-dynamicobject-getmetaobject(system-linq-expressions-expression)">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Javax.Swing.Text.html">Javax.Swing.Text</a></h6>
+  <h6><strong>Assembly</strong>: MASES.JNet.dll</h6>
+  <h5 id="Javax_Swing_Text_DefaultCaret_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DefaultCaret : Rectangle, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_Text_DefaultCaret__ctor.md&amp;value=---%0Auid%3A%20Javax.Swing.Text.DefaultCaret.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/AllPackageClasses.cs/#L824">View Source</a>
+  </span>
+  <a id="Javax_Swing_Text_DefaultCaret__ctor_" data-uid="Javax.Swing.Text.DefaultCaret.#ctor*"></a>
+  <h4 id="Javax_Swing_Text_DefaultCaret__ctor" data-uid="Javax.Swing.Text.DefaultCaret.#ctor">DefaultCaret()</h4>
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DefaultCaret()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_Text_DefaultCaret__ctor_System_Object___.md&amp;value=---%0Auid%3A%20Javax.Swing.Text.DefaultCaret.%23ctor(System.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/AllPackageClasses.cs/#L828">View Source</a>
+  </span>
+  <a id="Javax_Swing_Text_DefaultCaret__ctor_" data-uid="Javax.Swing.Text.DefaultCaret.#ctor*"></a>
+  <h4 id="Javax_Swing_Text_DefaultCaret__ctor_System_Object___" data-uid="Javax.Swing.Text.DefaultCaret.#ctor(System.Object[])">DefaultCaret(Object[])</h4>
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DefaultCaret(params object[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_Text_DefaultCaret_ALWAYS_UPDATE.md&amp;value=---%0Auid%3A%20Javax.Swing.Text.DefaultCaret.ALWAYS_UPDATE%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/DefaultCaret.cs/#L47">View Source</a>
+  </span>
+  <a id="Javax_Swing_Text_DefaultCaret_ALWAYS_UPDATE_" data-uid="Javax.Swing.Text.DefaultCaret.ALWAYS_UPDATE*"></a>
+  <h4 id="Javax_Swing_Text_DefaultCaret_ALWAYS_UPDATE" data-uid="Javax.Swing.Text.DefaultCaret.ALWAYS_UPDATE">ALWAYS_UPDATE</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#ALWAYS_UPDATE">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#ALWAYS_UPDATE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ALWAYS_UPDATE { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_Text_DefaultCaret_BlinkRate.md&amp;value=---%0Auid%3A%20Javax.Swing.Text.DefaultCaret.BlinkRate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/DefaultCaret.cs/#L67">View Source</a>
+  </span>
+  <a id="Javax_Swing_Text_DefaultCaret_BlinkRate_" data-uid="Javax.Swing.Text.DefaultCaret.BlinkRate*"></a>
+  <h4 id="Javax_Swing_Text_DefaultCaret_BlinkRate" data-uid="Javax.Swing.Text.DefaultCaret.BlinkRate">BlinkRate</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#getBlinkRate()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#getBlinkRate()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#setBlinkRate(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#setBlinkRate(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int BlinkRate { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_Text_DefaultCaret_ChangeListeners.md&amp;value=---%0Auid%3A%20Javax.Swing.Text.DefaultCaret.ChangeListeners%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/DefaultCaret.cs/#L74">View Source</a>
+  </span>
+  <a id="Javax_Swing_Text_DefaultCaret_ChangeListeners_" data-uid="Javax.Swing.Text.DefaultCaret.ChangeListeners*"></a>
+  <h4 id="Javax_Swing_Text_DefaultCaret_ChangeListeners" data-uid="Javax.Swing.Text.DefaultCaret.ChangeListeners">ChangeListeners</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#getChangeListeners()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#getChangeListeners()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ChangeListener[] ChangeListeners { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Javax.Swing.Event.ChangeListener.html">ChangeListener</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_Text_DefaultCaret_ClassName.md&amp;value=---%0Auid%3A%20Javax.Swing.Text.DefaultCaret.ClassName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/AllPackageClasses.cs/#L831">View Source</a>
+  </span>
+  <a id="Javax_Swing_Text_DefaultCaret_ClassName_" data-uid="Javax.Swing.Text.DefaultCaret.ClassName*"></a>
+  <h4 id="Javax_Swing_Text_DefaultCaret_ClassName" data-uid="Javax.Swing.Text.DefaultCaret.ClassName">ClassName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ClassName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Java.Awt.Rectangle.html#Java_Awt_Rectangle_ClassName">Rectangle.ClassName</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_Text_DefaultCaret_Dot.md&amp;value=---%0Auid%3A%20Javax.Swing.Text.DefaultCaret.Dot%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/DefaultCaret.cs/#L81">View Source</a>
+  </span>
+  <a id="Javax_Swing_Text_DefaultCaret_Dot_" data-uid="Javax.Swing.Text.DefaultCaret.Dot*"></a>
+  <h4 id="Javax_Swing_Text_DefaultCaret_Dot" data-uid="Javax.Swing.Text.DefaultCaret.Dot">Dot</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#getDot()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#getDot()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#setDot(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#setDot(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Dot { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_Text_DefaultCaret_DotBias.md&amp;value=---%0Auid%3A%20Javax.Swing.Text.DefaultCaret.DotBias%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/DefaultCaret.cs/#L88">View Source</a>
+  </span>
+  <a id="Javax_Swing_Text_DefaultCaret_DotBias_" data-uid="Javax.Swing.Text.DefaultCaret.DotBias*"></a>
+  <h4 id="Javax_Swing_Text_DefaultCaret_DotBias" data-uid="Javax.Swing.Text.DefaultCaret.DotBias">DotBias</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#getDotBias()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#getDotBias()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Position.Bias DotBias { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Javax.Swing.Text.Position.Bias.html">Position.Bias</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_Text_DefaultCaret_IsAbstract.md&amp;value=---%0Auid%3A%20Javax.Swing.Text.DefaultCaret.IsAbstract%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/AllPackageClasses.cs/#L834">View Source</a>
+  </span>
+  <a id="Javax_Swing_Text_DefaultCaret_IsAbstract_" data-uid="Javax.Swing.Text.DefaultCaret.IsAbstract*"></a>
+  <h4 id="Javax_Swing_Text_DefaultCaret_IsAbstract" data-uid="Javax.Swing.Text.DefaultCaret.IsAbstract">IsAbstract</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsAbstract { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Java.Awt.Rectangle.html#Java_Awt_Rectangle_IsAbstract">Rectangle.IsAbstract</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_Text_DefaultCaret_IsCloseable.md&amp;value=---%0Auid%3A%20Javax.Swing.Text.DefaultCaret.IsCloseable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/AllPackageClasses.cs/#L837">View Source</a>
+  </span>
+  <a id="Javax_Swing_Text_DefaultCaret_IsCloseable_" data-uid="Javax.Swing.Text.DefaultCaret.IsCloseable*"></a>
+  <h4 id="Javax_Swing_Text_DefaultCaret_IsCloseable" data-uid="Javax.Swing.Text.DefaultCaret.IsCloseable">IsCloseable</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsCloseable { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Java.Awt.Rectangle.html#Java_Awt_Rectangle_IsCloseable">Rectangle.IsCloseable</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_Text_DefaultCaret_IsInterface.md&amp;value=---%0Auid%3A%20Javax.Swing.Text.DefaultCaret.IsInterface%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/AllPackageClasses.cs/#L840">View Source</a>
+  </span>
+  <a id="Javax_Swing_Text_DefaultCaret_IsInterface_" data-uid="Javax.Swing.Text.DefaultCaret.IsInterface*"></a>
+  <h4 id="Javax_Swing_Text_DefaultCaret_IsInterface" data-uid="Javax.Swing.Text.DefaultCaret.IsInterface">IsInterface</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsInterface { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Java.Awt.Rectangle.html#Java_Awt_Rectangle_IsInterface">Rectangle.IsInterface</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_Text_DefaultCaret_IsStatic.md&amp;value=---%0Auid%3A%20Javax.Swing.Text.DefaultCaret.IsStatic%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/AllPackageClasses.cs/#L843">View Source</a>
+  </span>
+  <a id="Javax_Swing_Text_DefaultCaret_IsStatic_" data-uid="Javax.Swing.Text.DefaultCaret.IsStatic*"></a>
+  <h4 id="Javax_Swing_Text_DefaultCaret_IsStatic" data-uid="Javax.Swing.Text.DefaultCaret.IsStatic">IsStatic</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsStatic { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Java.Awt.Rectangle.html#Java_Awt_Rectangle_IsStatic">Rectangle.IsStatic</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_Text_DefaultCaret_MagicCaretPosition.md&amp;value=---%0Auid%3A%20Javax.Swing.Text.DefaultCaret.MagicCaretPosition%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/DefaultCaret.cs/#L95">View Source</a>
+  </span>
+  <a id="Javax_Swing_Text_DefaultCaret_MagicCaretPosition_" data-uid="Javax.Swing.Text.DefaultCaret.MagicCaretPosition*"></a>
+  <h4 id="Javax_Swing_Text_DefaultCaret_MagicCaretPosition" data-uid="Javax.Swing.Text.DefaultCaret.MagicCaretPosition">MagicCaretPosition</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#getMagicCaretPosition()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#getMagicCaretPosition()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#setMagicCaretPosition(java.awt.Point)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#setMagicCaretPosition(java.awt.Point)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Point MagicCaretPosition { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Awt.Point.html">Point</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_Text_DefaultCaret_Mark.md&amp;value=---%0Auid%3A%20Javax.Swing.Text.DefaultCaret.Mark%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/DefaultCaret.cs/#L102">View Source</a>
+  </span>
+  <a id="Javax_Swing_Text_DefaultCaret_Mark_" data-uid="Javax.Swing.Text.DefaultCaret.Mark*"></a>
+  <h4 id="Javax_Swing_Text_DefaultCaret_Mark" data-uid="Javax.Swing.Text.DefaultCaret.Mark">Mark</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#getMark()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#getMark()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Mark { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_Text_DefaultCaret_MarkBias.md&amp;value=---%0Auid%3A%20Javax.Swing.Text.DefaultCaret.MarkBias%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/DefaultCaret.cs/#L109">View Source</a>
+  </span>
+  <a id="Javax_Swing_Text_DefaultCaret_MarkBias_" data-uid="Javax.Swing.Text.DefaultCaret.MarkBias*"></a>
+  <h4 id="Javax_Swing_Text_DefaultCaret_MarkBias" data-uid="Javax.Swing.Text.DefaultCaret.MarkBias">MarkBias</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#getMarkBias()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#getMarkBias()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Position.Bias MarkBias { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Javax.Swing.Text.Position.Bias.html">Position.Bias</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_Text_DefaultCaret_NEVER_UPDATE.md&amp;value=---%0Auid%3A%20Javax.Swing.Text.DefaultCaret.NEVER_UPDATE%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/DefaultCaret.cs/#L51">View Source</a>
+  </span>
+  <a id="Javax_Swing_Text_DefaultCaret_NEVER_UPDATE_" data-uid="Javax.Swing.Text.DefaultCaret.NEVER_UPDATE*"></a>
+  <h4 id="Javax_Swing_Text_DefaultCaret_NEVER_UPDATE" data-uid="Javax.Swing.Text.DefaultCaret.NEVER_UPDATE">NEVER_UPDATE</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#NEVER_UPDATE">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#NEVER_UPDATE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int NEVER_UPDATE { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_Text_DefaultCaret_UPDATE_WHEN_ON_EDT.md&amp;value=---%0Auid%3A%20Javax.Swing.Text.DefaultCaret.UPDATE_WHEN_ON_EDT%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/DefaultCaret.cs/#L55">View Source</a>
+  </span>
+  <a id="Javax_Swing_Text_DefaultCaret_UPDATE_WHEN_ON_EDT_" data-uid="Javax.Swing.Text.DefaultCaret.UPDATE_WHEN_ON_EDT*"></a>
+  <h4 id="Javax_Swing_Text_DefaultCaret_UPDATE_WHEN_ON_EDT" data-uid="Javax.Swing.Text.DefaultCaret.UPDATE_WHEN_ON_EDT">UPDATE_WHEN_ON_EDT</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#UPDATE_WHEN_ON_EDT">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#UPDATE_WHEN_ON_EDT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int UPDATE_WHEN_ON_EDT { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_Text_DefaultCaret_UpdatePolicy.md&amp;value=---%0Auid%3A%20Javax.Swing.Text.DefaultCaret.UpdatePolicy%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/DefaultCaret.cs/#L116">View Source</a>
+  </span>
+  <a id="Javax_Swing_Text_DefaultCaret_UpdatePolicy_" data-uid="Javax.Swing.Text.DefaultCaret.UpdatePolicy*"></a>
+  <h4 id="Javax_Swing_Text_DefaultCaret_UpdatePolicy" data-uid="Javax.Swing.Text.DefaultCaret.UpdatePolicy">UpdatePolicy</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#getUpdatePolicy()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#getUpdatePolicy()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#setUpdatePolicy(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#setUpdatePolicy(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int UpdatePolicy { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_Text_DefaultCaret_AddChangeListener_Javax_Swing_Event_ChangeListener_.md&amp;value=---%0Auid%3A%20Javax.Swing.Text.DefaultCaret.AddChangeListener(Javax.Swing.Event.ChangeListener)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/DefaultCaret.cs/#L144">View Source</a>
+  </span>
+  <a id="Javax_Swing_Text_DefaultCaret_AddChangeListener_" data-uid="Javax.Swing.Text.DefaultCaret.AddChangeListener*"></a>
+  <h4 id="Javax_Swing_Text_DefaultCaret_AddChangeListener_Javax_Swing_Event_ChangeListener_" data-uid="Javax.Swing.Text.DefaultCaret.AddChangeListener(Javax.Swing.Event.ChangeListener)">AddChangeListener(ChangeListener)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#addChangeListener(javax.swing.event.ChangeListener)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#addChangeListener(javax.swing.event.ChangeListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddChangeListener(ChangeListener arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Javax.Swing.Event.ChangeListener.html">ChangeListener</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_Text_DefaultCaret_Deinstall_Javax_Swing_Text_JTextComponent_.md&amp;value=---%0Auid%3A%20Javax.Swing.Text.DefaultCaret.Deinstall(Javax.Swing.Text.JTextComponent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/DefaultCaret.cs/#L151">View Source</a>
+  </span>
+  <a id="Javax_Swing_Text_DefaultCaret_Deinstall_" data-uid="Javax.Swing.Text.DefaultCaret.Deinstall*"></a>
+  <h4 id="Javax_Swing_Text_DefaultCaret_Deinstall_Javax_Swing_Text_JTextComponent_" data-uid="Javax.Swing.Text.DefaultCaret.Deinstall(Javax.Swing.Text.JTextComponent)">Deinstall(JTextComponent)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#deinstall(javax.swing.text.JTextComponent)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#deinstall(javax.swing.text.JTextComponent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Deinstall(JTextComponent arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Javax.Swing.Text.JTextComponent.html">JTextComponent</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_Text_DefaultCaret_FocusGained_Java_Awt_EventNs_FocusEvent_.md&amp;value=---%0Auid%3A%20Javax.Swing.Text.DefaultCaret.FocusGained(Java.Awt.EventNs.FocusEvent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/DefaultCaret.cs/#L158">View Source</a>
+  </span>
+  <a id="Javax_Swing_Text_DefaultCaret_FocusGained_" data-uid="Javax.Swing.Text.DefaultCaret.FocusGained*"></a>
+  <h4 id="Javax_Swing_Text_DefaultCaret_FocusGained_Java_Awt_EventNs_FocusEvent_" data-uid="Javax.Swing.Text.DefaultCaret.FocusGained(Java.Awt.EventNs.FocusEvent)">FocusGained(FocusEvent)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#focusGained(java.awt.event.FocusEvent)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#focusGained(java.awt.event.FocusEvent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FocusGained(FocusEvent arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Awt.EventNs.FocusEvent.html">FocusEvent</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_Text_DefaultCaret_FocusLost_Java_Awt_EventNs_FocusEvent_.md&amp;value=---%0Auid%3A%20Javax.Swing.Text.DefaultCaret.FocusLost(Java.Awt.EventNs.FocusEvent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/DefaultCaret.cs/#L165">View Source</a>
+  </span>
+  <a id="Javax_Swing_Text_DefaultCaret_FocusLost_" data-uid="Javax.Swing.Text.DefaultCaret.FocusLost*"></a>
+  <h4 id="Javax_Swing_Text_DefaultCaret_FocusLost_Java_Awt_EventNs_FocusEvent_" data-uid="Javax.Swing.Text.DefaultCaret.FocusLost(Java.Awt.EventNs.FocusEvent)">FocusLost(FocusEvent)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#focusLost(java.awt.event.FocusEvent)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#focusLost(java.awt.event.FocusEvent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FocusLost(FocusEvent arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Awt.EventNs.FocusEvent.html">FocusEvent</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_Text_DefaultCaret_Install_Javax_Swing_Text_JTextComponent_.md&amp;value=---%0Auid%3A%20Javax.Swing.Text.DefaultCaret.Install(Javax.Swing.Text.JTextComponent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/DefaultCaret.cs/#L172">View Source</a>
+  </span>
+  <a id="Javax_Swing_Text_DefaultCaret_Install_" data-uid="Javax.Swing.Text.DefaultCaret.Install*"></a>
+  <h4 id="Javax_Swing_Text_DefaultCaret_Install_Javax_Swing_Text_JTextComponent_" data-uid="Javax.Swing.Text.DefaultCaret.Install(Javax.Swing.Text.JTextComponent)">Install(JTextComponent)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#install(javax.swing.text.JTextComponent)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#install(javax.swing.text.JTextComponent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Install(JTextComponent arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Javax.Swing.Text.JTextComponent.html">JTextComponent</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_Text_DefaultCaret_IsActive.md&amp;value=---%0Auid%3A%20Javax.Swing.Text.DefaultCaret.IsActive%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/DefaultCaret.cs/#L123">View Source</a>
+  </span>
+  <a id="Javax_Swing_Text_DefaultCaret_IsActive_" data-uid="Javax.Swing.Text.DefaultCaret.IsActive*"></a>
+  <h4 id="Javax_Swing_Text_DefaultCaret_IsActive" data-uid="Javax.Swing.Text.DefaultCaret.IsActive">IsActive()</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#isActive()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#isActive()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsActive()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_Text_DefaultCaret_IsSelectionVisible.md&amp;value=---%0Auid%3A%20Javax.Swing.Text.DefaultCaret.IsSelectionVisible%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/DefaultCaret.cs/#L130">View Source</a>
+  </span>
+  <a id="Javax_Swing_Text_DefaultCaret_IsSelectionVisible_" data-uid="Javax.Swing.Text.DefaultCaret.IsSelectionVisible*"></a>
+  <h4 id="Javax_Swing_Text_DefaultCaret_IsSelectionVisible" data-uid="Javax.Swing.Text.DefaultCaret.IsSelectionVisible">IsSelectionVisible()</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#isSelectionVisible()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#isSelectionVisible()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSelectionVisible()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_Text_DefaultCaret_IsVisible.md&amp;value=---%0Auid%3A%20Javax.Swing.Text.DefaultCaret.IsVisible%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/DefaultCaret.cs/#L137">View Source</a>
+  </span>
+  <a id="Javax_Swing_Text_DefaultCaret_IsVisible_" data-uid="Javax.Swing.Text.DefaultCaret.IsVisible*"></a>
+  <h4 id="Javax_Swing_Text_DefaultCaret_IsVisible" data-uid="Javax.Swing.Text.DefaultCaret.IsVisible">IsVisible()</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#isVisible()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#isVisible()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsVisible()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_Text_DefaultCaret_MouseClicked_Java_Awt_EventNs_MouseEvent_.md&amp;value=---%0Auid%3A%20Javax.Swing.Text.DefaultCaret.MouseClicked(Java.Awt.EventNs.MouseEvent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/DefaultCaret.cs/#L179">View Source</a>
+  </span>
+  <a id="Javax_Swing_Text_DefaultCaret_MouseClicked_" data-uid="Javax.Swing.Text.DefaultCaret.MouseClicked*"></a>
+  <h4 id="Javax_Swing_Text_DefaultCaret_MouseClicked_Java_Awt_EventNs_MouseEvent_" data-uid="Javax.Swing.Text.DefaultCaret.MouseClicked(Java.Awt.EventNs.MouseEvent)">MouseClicked(MouseEvent)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#mouseClicked(java.awt.event.MouseEvent)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#mouseClicked(java.awt.event.MouseEvent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MouseClicked(MouseEvent arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Awt.EventNs.MouseEvent.html">MouseEvent</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_Text_DefaultCaret_MouseDragged_Java_Awt_EventNs_MouseEvent_.md&amp;value=---%0Auid%3A%20Javax.Swing.Text.DefaultCaret.MouseDragged(Java.Awt.EventNs.MouseEvent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/DefaultCaret.cs/#L186">View Source</a>
+  </span>
+  <a id="Javax_Swing_Text_DefaultCaret_MouseDragged_" data-uid="Javax.Swing.Text.DefaultCaret.MouseDragged*"></a>
+  <h4 id="Javax_Swing_Text_DefaultCaret_MouseDragged_Java_Awt_EventNs_MouseEvent_" data-uid="Javax.Swing.Text.DefaultCaret.MouseDragged(Java.Awt.EventNs.MouseEvent)">MouseDragged(MouseEvent)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#mouseDragged(java.awt.event.MouseEvent)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#mouseDragged(java.awt.event.MouseEvent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MouseDragged(MouseEvent arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Awt.EventNs.MouseEvent.html">MouseEvent</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_Text_DefaultCaret_MouseEntered_Java_Awt_EventNs_MouseEvent_.md&amp;value=---%0Auid%3A%20Javax.Swing.Text.DefaultCaret.MouseEntered(Java.Awt.EventNs.MouseEvent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/DefaultCaret.cs/#L193">View Source</a>
+  </span>
+  <a id="Javax_Swing_Text_DefaultCaret_MouseEntered_" data-uid="Javax.Swing.Text.DefaultCaret.MouseEntered*"></a>
+  <h4 id="Javax_Swing_Text_DefaultCaret_MouseEntered_Java_Awt_EventNs_MouseEvent_" data-uid="Javax.Swing.Text.DefaultCaret.MouseEntered(Java.Awt.EventNs.MouseEvent)">MouseEntered(MouseEvent)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#mouseEntered(java.awt.event.MouseEvent)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#mouseEntered(java.awt.event.MouseEvent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MouseEntered(MouseEvent arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Awt.EventNs.MouseEvent.html">MouseEvent</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_Text_DefaultCaret_MouseExited_Java_Awt_EventNs_MouseEvent_.md&amp;value=---%0Auid%3A%20Javax.Swing.Text.DefaultCaret.MouseExited(Java.Awt.EventNs.MouseEvent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/DefaultCaret.cs/#L200">View Source</a>
+  </span>
+  <a id="Javax_Swing_Text_DefaultCaret_MouseExited_" data-uid="Javax.Swing.Text.DefaultCaret.MouseExited*"></a>
+  <h4 id="Javax_Swing_Text_DefaultCaret_MouseExited_Java_Awt_EventNs_MouseEvent_" data-uid="Javax.Swing.Text.DefaultCaret.MouseExited(Java.Awt.EventNs.MouseEvent)">MouseExited(MouseEvent)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#mouseExited(java.awt.event.MouseEvent)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#mouseExited(java.awt.event.MouseEvent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MouseExited(MouseEvent arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Awt.EventNs.MouseEvent.html">MouseEvent</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_Text_DefaultCaret_MouseMoved_Java_Awt_EventNs_MouseEvent_.md&amp;value=---%0Auid%3A%20Javax.Swing.Text.DefaultCaret.MouseMoved(Java.Awt.EventNs.MouseEvent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/DefaultCaret.cs/#L207">View Source</a>
+  </span>
+  <a id="Javax_Swing_Text_DefaultCaret_MouseMoved_" data-uid="Javax.Swing.Text.DefaultCaret.MouseMoved*"></a>
+  <h4 id="Javax_Swing_Text_DefaultCaret_MouseMoved_Java_Awt_EventNs_MouseEvent_" data-uid="Javax.Swing.Text.DefaultCaret.MouseMoved(Java.Awt.EventNs.MouseEvent)">MouseMoved(MouseEvent)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#mouseMoved(java.awt.event.MouseEvent)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#mouseMoved(java.awt.event.MouseEvent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MouseMoved(MouseEvent arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Awt.EventNs.MouseEvent.html">MouseEvent</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_Text_DefaultCaret_MousePressed_Java_Awt_EventNs_MouseEvent_.md&amp;value=---%0Auid%3A%20Javax.Swing.Text.DefaultCaret.MousePressed(Java.Awt.EventNs.MouseEvent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/DefaultCaret.cs/#L214">View Source</a>
+  </span>
+  <a id="Javax_Swing_Text_DefaultCaret_MousePressed_" data-uid="Javax.Swing.Text.DefaultCaret.MousePressed*"></a>
+  <h4 id="Javax_Swing_Text_DefaultCaret_MousePressed_Java_Awt_EventNs_MouseEvent_" data-uid="Javax.Swing.Text.DefaultCaret.MousePressed(Java.Awt.EventNs.MouseEvent)">MousePressed(MouseEvent)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#mousePressed(java.awt.event.MouseEvent)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#mousePressed(java.awt.event.MouseEvent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MousePressed(MouseEvent arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Awt.EventNs.MouseEvent.html">MouseEvent</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_Text_DefaultCaret_MouseReleased_Java_Awt_EventNs_MouseEvent_.md&amp;value=---%0Auid%3A%20Javax.Swing.Text.DefaultCaret.MouseReleased(Java.Awt.EventNs.MouseEvent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/DefaultCaret.cs/#L221">View Source</a>
+  </span>
+  <a id="Javax_Swing_Text_DefaultCaret_MouseReleased_" data-uid="Javax.Swing.Text.DefaultCaret.MouseReleased*"></a>
+  <h4 id="Javax_Swing_Text_DefaultCaret_MouseReleased_Java_Awt_EventNs_MouseEvent_" data-uid="Javax.Swing.Text.DefaultCaret.MouseReleased(Java.Awt.EventNs.MouseEvent)">MouseReleased(MouseEvent)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#mouseReleased(java.awt.event.MouseEvent)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#mouseReleased(java.awt.event.MouseEvent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MouseReleased(MouseEvent arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Awt.EventNs.MouseEvent.html">MouseEvent</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_Text_DefaultCaret_MoveDot_System_Int32_.md&amp;value=---%0Auid%3A%20Javax.Swing.Text.DefaultCaret.MoveDot(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/DefaultCaret.cs/#L235">View Source</a>
+  </span>
+  <a id="Javax_Swing_Text_DefaultCaret_MoveDot_" data-uid="Javax.Swing.Text.DefaultCaret.MoveDot*"></a>
+  <h4 id="Javax_Swing_Text_DefaultCaret_MoveDot_System_Int32_" data-uid="Javax.Swing.Text.DefaultCaret.MoveDot(System.Int32)">MoveDot(Int32)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#moveDot(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#moveDot(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MoveDot(int arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_Text_DefaultCaret_MoveDot_System_Int32_Javax_Swing_Text_Position_Bias_.md&amp;value=---%0Auid%3A%20Javax.Swing.Text.DefaultCaret.MoveDot(System.Int32%2CJavax.Swing.Text.Position.Bias)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/DefaultCaret.cs/#L228">View Source</a>
+  </span>
+  <a id="Javax_Swing_Text_DefaultCaret_MoveDot_" data-uid="Javax.Swing.Text.DefaultCaret.MoveDot*"></a>
+  <h4 id="Javax_Swing_Text_DefaultCaret_MoveDot_System_Int32_Javax_Swing_Text_Position_Bias_" data-uid="Javax.Swing.Text.DefaultCaret.MoveDot(System.Int32,Javax.Swing.Text.Position.Bias)">MoveDot(Int32, Position.Bias)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#moveDot(int,javax.swing.text.Position$Bias)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#moveDot(int,javax.swing.text.Position$Bias)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MoveDot(int arg0, Position.Bias arg1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Javax.Swing.Text.Position.Bias.html">Position.Bias</a></td>
+        <td><span class="parametername">arg1</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_Text_DefaultCaret_Paint_Java_Awt_Graphics_.md&amp;value=---%0Auid%3A%20Javax.Swing.Text.DefaultCaret.Paint(Java.Awt.Graphics)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/DefaultCaret.cs/#L242">View Source</a>
+  </span>
+  <a id="Javax_Swing_Text_DefaultCaret_Paint_" data-uid="Javax.Swing.Text.DefaultCaret.Paint*"></a>
+  <h4 id="Javax_Swing_Text_DefaultCaret_Paint_Java_Awt_Graphics_" data-uid="Javax.Swing.Text.DefaultCaret.Paint(Java.Awt.Graphics)">Paint(Graphics)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#paint(java.awt.Graphics)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#paint(java.awt.Graphics)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Paint(Graphics arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Awt.Graphics.html">Graphics</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_Text_DefaultCaret_RemoveChangeListener_Javax_Swing_Event_ChangeListener_.md&amp;value=---%0Auid%3A%20Javax.Swing.Text.DefaultCaret.RemoveChangeListener(Javax.Swing.Event.ChangeListener)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/DefaultCaret.cs/#L249">View Source</a>
+  </span>
+  <a id="Javax_Swing_Text_DefaultCaret_RemoveChangeListener_" data-uid="Javax.Swing.Text.DefaultCaret.RemoveChangeListener*"></a>
+  <h4 id="Javax_Swing_Text_DefaultCaret_RemoveChangeListener_Javax_Swing_Event_ChangeListener_" data-uid="Javax.Swing.Text.DefaultCaret.RemoveChangeListener(Javax.Swing.Event.ChangeListener)">RemoveChangeListener(ChangeListener)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#removeChangeListener(javax.swing.event.ChangeListener)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#removeChangeListener(javax.swing.event.ChangeListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveChangeListener(ChangeListener arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Javax.Swing.Event.ChangeListener.html">ChangeListener</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_Text_DefaultCaret_SetDot_System_Int32_Javax_Swing_Text_Position_Bias_.md&amp;value=---%0Auid%3A%20Javax.Swing.Text.DefaultCaret.SetDot(System.Int32%2CJavax.Swing.Text.Position.Bias)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/DefaultCaret.cs/#L256">View Source</a>
+  </span>
+  <a id="Javax_Swing_Text_DefaultCaret_SetDot_" data-uid="Javax.Swing.Text.DefaultCaret.SetDot*"></a>
+  <h4 id="Javax_Swing_Text_DefaultCaret_SetDot_System_Int32_Javax_Swing_Text_Position_Bias_" data-uid="Javax.Swing.Text.DefaultCaret.SetDot(System.Int32,Javax.Swing.Text.Position.Bias)">SetDot(Int32, Position.Bias)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#setDot(int,javax.swing.text.Position$Bias)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#setDot(int,javax.swing.text.Position$Bias)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDot(int arg0, Position.Bias arg1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Javax.Swing.Text.Position.Bias.html">Position.Bias</a></td>
+        <td><span class="parametername">arg1</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_Text_DefaultCaret_SetSelectionVisible_System_Boolean_.md&amp;value=---%0Auid%3A%20Javax.Swing.Text.DefaultCaret.SetSelectionVisible(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/DefaultCaret.cs/#L263">View Source</a>
+  </span>
+  <a id="Javax_Swing_Text_DefaultCaret_SetSelectionVisible_" data-uid="Javax.Swing.Text.DefaultCaret.SetSelectionVisible*"></a>
+  <h4 id="Javax_Swing_Text_DefaultCaret_SetSelectionVisible_System_Boolean_" data-uid="Javax.Swing.Text.DefaultCaret.SetSelectionVisible(System.Boolean)">SetSelectionVisible(Boolean)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#setSelectionVisible(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#setSelectionVisible(boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSelectionVisible(bool arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_Text_DefaultCaret_SetVisible_System_Boolean_.md&amp;value=---%0Auid%3A%20Javax.Swing.Text.DefaultCaret.SetVisible(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/DefaultCaret.cs/#L270">View Source</a>
+  </span>
+  <a id="Javax_Swing_Text_DefaultCaret_SetVisible_" data-uid="Javax.Swing.Text.DefaultCaret.SetVisible*"></a>
+  <h4 id="Javax_Swing_Text_DefaultCaret_SetVisible_System_Boolean_" data-uid="Javax.Swing.Text.DefaultCaret.SetVisible(System.Boolean)">SetVisible(Boolean)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#setVisible(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultCaret.html#setVisible(boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetVisible(bool arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="operators">Operators
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_Text_DefaultCaret_op_Implicit_Javax_Swing_Text_DefaultCaret__Java_Awt_EventNs_FocusListener.md&amp;value=---%0Auid%3A%20Javax.Swing.Text.DefaultCaret.op_Implicit(Javax.Swing.Text.DefaultCaret)~Java.Awt.EventNs.FocusListener%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/DefaultCaret.cs/#L37">View Source</a>
+  </span>
+  <a id="Javax_Swing_Text_DefaultCaret_op_Implicit_" data-uid="Javax.Swing.Text.DefaultCaret.op_Implicit*"></a>
+  <h4 id="Javax_Swing_Text_DefaultCaret_op_Implicit_Javax_Swing_Text_DefaultCaret__Java_Awt_EventNs_FocusListener" data-uid="Javax.Swing.Text.DefaultCaret.op_Implicit(Javax.Swing.Text.DefaultCaret)~Java.Awt.EventNs.FocusListener">Implicit(DefaultCaret to FocusListener)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator FocusListener(DefaultCaret t)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Javax.Swing.Text.DefaultCaret.html">DefaultCaret</a></td>
+        <td><span class="parametername">t</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Awt.EventNs.FocusListener.html">FocusListener</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_Text_DefaultCaret_op_Implicit_Javax_Swing_Text_DefaultCaret__Java_Awt_EventNs_MouseListener.md&amp;value=---%0Auid%3A%20Javax.Swing.Text.DefaultCaret.op_Implicit(Javax.Swing.Text.DefaultCaret)~Java.Awt.EventNs.MouseListener%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/DefaultCaret.cs/#L38">View Source</a>
+  </span>
+  <a id="Javax_Swing_Text_DefaultCaret_op_Implicit_" data-uid="Javax.Swing.Text.DefaultCaret.op_Implicit*"></a>
+  <h4 id="Javax_Swing_Text_DefaultCaret_op_Implicit_Javax_Swing_Text_DefaultCaret__Java_Awt_EventNs_MouseListener" data-uid="Javax.Swing.Text.DefaultCaret.op_Implicit(Javax.Swing.Text.DefaultCaret)~Java.Awt.EventNs.MouseListener">Implicit(DefaultCaret to MouseListener)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator MouseListener(DefaultCaret t)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Javax.Swing.Text.DefaultCaret.html">DefaultCaret</a></td>
+        <td><span class="parametername">t</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Awt.EventNs.MouseListener.html">MouseListener</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_Text_DefaultCaret_op_Implicit_Javax_Swing_Text_DefaultCaret__Java_Awt_EventNs_MouseMotionListener.md&amp;value=---%0Auid%3A%20Javax.Swing.Text.DefaultCaret.op_Implicit(Javax.Swing.Text.DefaultCaret)~Java.Awt.EventNs.MouseMotionListener%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/DefaultCaret.cs/#L39">View Source</a>
+  </span>
+  <a id="Javax_Swing_Text_DefaultCaret_op_Implicit_" data-uid="Javax.Swing.Text.DefaultCaret.op_Implicit*"></a>
+  <h4 id="Javax_Swing_Text_DefaultCaret_op_Implicit_Javax_Swing_Text_DefaultCaret__Java_Awt_EventNs_MouseMotionListener" data-uid="Javax.Swing.Text.DefaultCaret.op_Implicit(Javax.Swing.Text.DefaultCaret)~Java.Awt.EventNs.MouseMotionListener">Implicit(DefaultCaret to MouseMotionListener)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator MouseMotionListener(DefaultCaret t)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Javax.Swing.Text.DefaultCaret.html">DefaultCaret</a></td>
+        <td><span class="parametername">t</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Awt.EventNs.MouseMotionListener.html">MouseMotionListener</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_Text_DefaultCaret_op_Implicit_Javax_Swing_Text_DefaultCaret__Javax_Swing_Text_Caret.md&amp;value=---%0Auid%3A%20Javax.Swing.Text.DefaultCaret.op_Implicit(Javax.Swing.Text.DefaultCaret)~Javax.Swing.Text.Caret%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/DefaultCaret.cs/#L36">View Source</a>
+  </span>
+  <a id="Javax_Swing_Text_DefaultCaret_op_Implicit_" data-uid="Javax.Swing.Text.DefaultCaret.op_Implicit*"></a>
+  <h4 id="Javax_Swing_Text_DefaultCaret_op_Implicit_Javax_Swing_Text_DefaultCaret__Javax_Swing_Text_Caret" data-uid="Javax.Swing.Text.DefaultCaret.op_Implicit(Javax.Swing.Text.DefaultCaret)~Javax.Swing.Text.Caret">Implicit(DefaultCaret to Caret)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Caret(DefaultCaret t)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Javax.Swing.Text.DefaultCaret.html">DefaultCaret</a></td>
+        <td><span class="parametername">t</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Javax.Swing.Text.Caret.html">Caret</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">System.Dynamic.IDynamicMetaObjectProvider</a>
+  </div>
+  <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeCore</span>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">System.IDisposable</a>
+  </div>
+  <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic</span>
+  </div>
+  <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBase</span>
+  </div>
+  <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="MASES.JNet.Extensions.JNetCoreExtensions.html#MASES_JNet_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_Text_DefaultCaret.md&amp;value=---%0Auid%3A%20Javax.Swing.Text.DefaultCaret%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/Text/DefaultCaret.cs/#L29" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2023 MASES s.r.l..<br>Generated by <strong>DocFX</strong></span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

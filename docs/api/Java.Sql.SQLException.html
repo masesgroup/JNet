@@ -73,15 +73,27 @@
   
   <h1 id="Java_Sql_SQLException" data-uid="Java.Sql.SQLException" class="text-break">Class SQLException
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLException.html">https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLException.html</a></p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
     <div class="level1"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></div>
     <div class="level2"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeException</span></div>
-    <div class="level3"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeException</span>&lt;<a class="xref" href="Java.Sql.SQLException.html">SQLException</a>&gt;</div>
-    <div class="level4"><span class="xref">SQLException</span></div>
+    <div class="level3"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeException</span>&lt;<a class="xref" href="Java.Lang.Exception.html">Exception</a>&gt;</div>
+    <div class="level4"><a class="xref" href="Java.Lang.Exception.html">Exception</a></div>
+    <div class="level5"><span class="xref">SQLException</span></div>
+      <div class="level6"><a class="xref" href="Java.Sql.BatchUpdateException.html">BatchUpdateException</a></div>
+      <div class="level6"><a class="xref" href="Java.Sql.SQLClientInfoException.html">SQLClientInfoException</a></div>
+      <div class="level6"><a class="xref" href="Java.Sql.SQLNonTransientException.html">SQLNonTransientException</a></div>
+      <div class="level6"><a class="xref" href="Java.Sql.SQLRecoverableException.html">SQLRecoverableException</a></div>
+      <div class="level6"><a class="xref" href="Java.Sql.SQLTransientException.html">SQLTransientException</a></div>
+      <div class="level6"><a class="xref" href="Java.Sql.SQLWarning.html">SQLWarning</a></div>
+      <div class="level6"><a class="xref" href="Javax.Sql.Rowset.RowSetWarning.html">RowSetWarning</a></div>
+      <div class="level6"><a class="xref" href="Javax.Sql.Rowset.Serial.SerialException.html">SerialException</a></div>
+      <div class="level6"><a class="xref" href="Javax.Sql.Rowset.Spi.SyncFactoryException.html">SyncFactoryException</a></div>
+      <div class="level6"><a class="xref" href="Javax.Sql.Rowset.Spi.SyncProviderException.html">SyncProviderException</a></div>
   </div>
   <div class="implements">
     <h5>Implements</h5>
@@ -92,16 +104,19 @@
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeException&lt;Java.Sql.SQLException&gt;.Convert(MASES.JCOBridge.C2JBridge.JVMInterop.JavaException)</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeException&lt;Java.Lang.Exception&gt;.Convert(MASES.JCOBridge.C2JBridge.JVMInterop.JavaException)</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeException&lt;Java.Sql.SQLException&gt;.Create(System.Object[])</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeException&lt;Java.Lang.Exception&gt;.Create(System.Object[])</span>
     </div>
     <div>
-      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeException&lt;Java.Sql.SQLException&gt;.ThrowNew(System.Object[])</span>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeException&lt;Java.Lang.Exception&gt;.ThrowNew(System.Object[])</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeException.New(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeException.New&lt;TException&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeException.IExecute(System.String, System.Object[])</span>
@@ -186,7 +201,24 @@
   <h6><strong>Assembly</strong>: MASES.JNet.dll</h6>
   <h5 id="Java_Sql_SQLException_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class SQLException : JVMBridgeException&lt;SQLException&gt;, ISerializable, _Exception, IJVMBridgeCore</code></pre>
+    <pre><code class="lang-csharp hljs">public class SQLException : Exception, ISerializable, _Exception, IJVMBridgeCore</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Sql_SQLException__ctor.md&amp;value=---%0Auid%3A%20Java.Sql.SQLException.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Sql/AllPackageClasses.cs/#L1041">View Source</a>
+  </span>
+  <a id="Java_Sql_SQLException__ctor_" data-uid="Java.Sql.SQLException.#ctor*"></a>
+  <h4 id="Java_Sql_SQLException__ctor" data-uid="Java.Sql.SQLException.#ctor">SQLException()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SQLException()</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
@@ -195,7 +227,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Sql_SQLException_ClassName.md&amp;value=---%0Auid%3A%20Java.Sql.SQLException.ClassName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Sql/SQLException.cs/#L25">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Sql/AllPackageClasses.cs/#L1044">View Source</a>
   </span>
   <a id="Java_Sql_SQLException_ClassName_" data-uid="Java.Sql.SQLException.ClassName*"></a>
   <h4 id="Java_Sql_SQLException_ClassName" data-uid="Java.Sql.SQLException.ClassName">ClassName</h4>
@@ -221,7 +253,7 @@
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeException.ClassName</span></div>
+  <div><a class="xref" href="Java.Lang.Exception.html#Java_Lang_Exception_ClassName">Exception.ClassName</a></div>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable">System.Runtime.Serialization.ISerializable</a>
@@ -243,7 +275,7 @@
                     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Sql_SQLException.md&amp;value=---%0Auid%3A%20Java.Sql.SQLException%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Sql/SQLException.cs/#L23" class="contribution-link">View Source</a>
+                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Sql/SQLException.cs/#L21" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

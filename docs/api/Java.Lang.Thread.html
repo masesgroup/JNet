@@ -83,6 +83,7 @@
     <div class="level2"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span></div>
     <div class="level3"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span>&lt;<a class="xref" href="Java.Lang.Thread.html">Thread</a>&gt;</div>
     <div class="level4"><span class="xref">Thread</span></div>
+      <div class="level5"><a class="xref" href="Java.Util.Concurrent.ForkJoinWorkerThread.html">ForkJoinWorkerThread</a></div>
   </div>
   <div class="implements">
     <h5>Implements</h5>
@@ -193,6 +194,21 @@
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wait(System.Int64)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wait(System.Int64, System.Int32)</span>
     </div>
     <div>
       <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IExecute(System.String, System.Object[])</span>
@@ -314,7 +330,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Thread__ctor_Java_Lang_Runnable_.md&amp;value=---%0Auid%3A%20Java.Lang.Thread.%23ctor(Java.Lang.Runnable)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/Thread.cs/#L39">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/Thread.cs/#L43">View Source</a>
   </span>
   <a id="Java_Lang_Thread__ctor_" data-uid="Java.Lang.Thread.#ctor*"></a>
   <h4 id="Java_Lang_Thread__ctor_Java_Lang_Runnable_" data-uid="Java.Lang.Thread.#ctor(Java.Lang.Runnable)">Thread(Runnable)</h4>
@@ -348,7 +364,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Thread__ctor_Java_Lang_Runnable_System_String_.md&amp;value=---%0Auid%3A%20Java.Lang.Thread.%23ctor(Java.Lang.Runnable%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/Thread.cs/#L45">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/Thread.cs/#L49">View Source</a>
   </span>
   <a id="Java_Lang_Thread__ctor_" data-uid="Java.Lang.Thread.#ctor*"></a>
   <h4 id="Java_Lang_Thread__ctor_Java_Lang_Runnable_System_String_" data-uid="Java.Lang.Thread.#ctor(Java.Lang.Runnable,System.String)">Thread(Runnable, String)</h4>
@@ -388,7 +404,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Thread__ctor_Java_Lang_ThreadGroup_Java_Lang_Runnable_.md&amp;value=---%0Auid%3A%20Java.Lang.Thread.%23ctor(Java.Lang.ThreadGroup%2CJava.Lang.Runnable)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/Thread.cs/#L56">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/Thread.cs/#L60">View Source</a>
   </span>
   <a id="Java_Lang_Thread__ctor_" data-uid="Java.Lang.Thread.#ctor*"></a>
   <h4 id="Java_Lang_Thread__ctor_Java_Lang_ThreadGroup_Java_Lang_Runnable_" data-uid="Java.Lang.Thread.#ctor(Java.Lang.ThreadGroup,Java.Lang.Runnable)">Thread(ThreadGroup, Runnable)</h4>
@@ -428,7 +444,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Thread__ctor_Java_Lang_ThreadGroup_Java_Lang_Runnable_System_String_.md&amp;value=---%0Auid%3A%20Java.Lang.Thread.%23ctor(Java.Lang.ThreadGroup%2CJava.Lang.Runnable%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/Thread.cs/#L63">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/Thread.cs/#L67">View Source</a>
   </span>
   <a id="Java_Lang_Thread__ctor_" data-uid="Java.Lang.Thread.#ctor*"></a>
   <h4 id="Java_Lang_Thread__ctor_Java_Lang_ThreadGroup_Java_Lang_Runnable_System_String_" data-uid="Java.Lang.Thread.#ctor(Java.Lang.ThreadGroup,Java.Lang.Runnable,System.String)">Thread(ThreadGroup, Runnable, String)</h4>
@@ -474,7 +490,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Thread__ctor_Java_Lang_ThreadGroup_Java_Lang_Runnable_System_String_System_Int64_.md&amp;value=---%0Auid%3A%20Java.Lang.Thread.%23ctor(Java.Lang.ThreadGroup%2CJava.Lang.Runnable%2CSystem.String%2CSystem.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/Thread.cs/#L71">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/Thread.cs/#L75">View Source</a>
   </span>
   <a id="Java_Lang_Thread__ctor_" data-uid="Java.Lang.Thread.#ctor*"></a>
   <h4 id="Java_Lang_Thread__ctor_Java_Lang_ThreadGroup_Java_Lang_Runnable_System_String_System_Int64_" data-uid="Java.Lang.Thread.#ctor(Java.Lang.ThreadGroup,Java.Lang.Runnable,System.String,System.Int64)">Thread(ThreadGroup, Runnable, String, Int64)</h4>
@@ -526,7 +542,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Thread__ctor_Java_Lang_ThreadGroup_System_String_.md&amp;value=---%0Auid%3A%20Java.Lang.Thread.%23ctor(Java.Lang.ThreadGroup%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/Thread.cs/#L77">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/Thread.cs/#L81">View Source</a>
   </span>
   <a id="Java_Lang_Thread__ctor_" data-uid="Java.Lang.Thread.#ctor*"></a>
   <h4 id="Java_Lang_Thread__ctor_Java_Lang_ThreadGroup_System_String_" data-uid="Java.Lang.Thread.#ctor(Java.Lang.ThreadGroup,System.String)">Thread(ThreadGroup, String)</h4>
@@ -563,10 +579,43 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Thread__ctor_System_Object___.md&amp;value=---%0Auid%3A%20Java.Lang.Thread.%23ctor(System.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/Thread.cs/#L38">View Source</a>
+  </span>
+  <a id="Java_Lang_Thread__ctor_" data-uid="Java.Lang.Thread.#ctor*"></a>
+  <h4 id="Java_Lang_Thread__ctor_System_Object___" data-uid="Java.Lang.Thread.#ctor(System.Object[])">Thread(Object[])</h4>
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Thread(params object[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Thread__ctor_System_String_.md&amp;value=---%0Auid%3A%20Java.Lang.Thread.%23ctor(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/Thread.cs/#L50">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/Thread.cs/#L54">View Source</a>
   </span>
   <a id="Java_Lang_Thread__ctor_" data-uid="Java.Lang.Thread.#ctor*"></a>
   <h4 id="Java_Lang_Thread__ctor_System_String_" data-uid="Java.Lang.Thread.#ctor(System.String)">Thread(String)</h4>
@@ -602,7 +651,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Thread_ActiveCount.md&amp;value=---%0Auid%3A%20Java.Lang.Thread.ActiveCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/Thread.cs/#L81">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/Thread.cs/#L85">View Source</a>
   </span>
   <a id="Java_Lang_Thread_ActiveCount_" data-uid="Java.Lang.Thread.ActiveCount*"></a>
   <h4 id="Java_Lang_Thread_ActiveCount" data-uid="Java.Lang.Thread.ActiveCount">ActiveCount</h4>
@@ -665,7 +714,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Thread_Id.md&amp;value=---%0Auid%3A%20Java.Lang.Thread.Id%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/Thread.cs/#L116">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/Thread.cs/#L120">View Source</a>
   </span>
   <a id="Java_Lang_Thread_Id_" data-uid="Java.Lang.Thread.Id*"></a>
   <h4 id="Java_Lang_Thread_Id" data-uid="Java.Lang.Thread.Id">Id</h4>
@@ -696,7 +745,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Thread_Interrupted.md&amp;value=---%0Auid%3A%20Java.Lang.Thread.Interrupted%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/Thread.cs/#L97">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/Thread.cs/#L101">View Source</a>
   </span>
   <a id="Java_Lang_Thread_Interrupted_" data-uid="Java.Lang.Thread.Interrupted*"></a>
   <h4 id="Java_Lang_Thread_Interrupted" data-uid="Java.Lang.Thread.Interrupted">Interrupted</h4>
@@ -728,7 +777,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Thread_IsAlive.md&amp;value=---%0Auid%3A%20Java.Lang.Thread.IsAlive%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/Thread.cs/#L136">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/Thread.cs/#L140">View Source</a>
   </span>
   <a id="Java_Lang_Thread_IsAlive_" data-uid="Java.Lang.Thread.IsAlive*"></a>
   <h4 id="Java_Lang_Thread_IsAlive" data-uid="Java.Lang.Thread.IsAlive">IsAlive</h4>
@@ -759,7 +808,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Thread_IsDaemon.md&amp;value=---%0Auid%3A%20Java.Lang.Thread.IsDaemon%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/Thread.cs/#L140">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/Thread.cs/#L144">View Source</a>
   </span>
   <a id="Java_Lang_Thread_IsDaemon_" data-uid="Java.Lang.Thread.IsDaemon*"></a>
   <h4 id="Java_Lang_Thread_IsDaemon" data-uid="Java.Lang.Thread.IsDaemon">IsDaemon</h4>
@@ -790,7 +839,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Thread_IsInterrupted.md&amp;value=---%0Auid%3A%20Java.Lang.Thread.IsInterrupted%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/Thread.cs/#L144">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/Thread.cs/#L148">View Source</a>
   </span>
   <a id="Java_Lang_Thread_IsInterrupted_" data-uid="Java.Lang.Thread.IsInterrupted*"></a>
   <h4 id="Java_Lang_Thread_IsInterrupted" data-uid="Java.Lang.Thread.IsInterrupted">IsInterrupted</h4>
@@ -821,7 +870,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Thread_Name.md&amp;value=---%0Auid%3A%20Java.Lang.Thread.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/Thread.cs/#L120">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/Thread.cs/#L124">View Source</a>
   </span>
   <a id="Java_Lang_Thread_Name_" data-uid="Java.Lang.Thread.Name*"></a>
   <h4 id="Java_Lang_Thread_Name" data-uid="Java.Lang.Thread.Name">Name</h4>
@@ -852,7 +901,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Thread_Priority.md&amp;value=---%0Auid%3A%20Java.Lang.Thread.Priority%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/Thread.cs/#L124">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/Thread.cs/#L128">View Source</a>
   </span>
   <a id="Java_Lang_Thread_Priority_" data-uid="Java.Lang.Thread.Priority*"></a>
   <h4 id="Java_Lang_Thread_Priority" data-uid="Java.Lang.Thread.Priority">Priority</h4>
@@ -883,7 +932,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Thread_ThreadGroup.md&amp;value=---%0Auid%3A%20Java.Lang.Thread.ThreadGroup%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/Thread.cs/#L128">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/Thread.cs/#L132">View Source</a>
   </span>
   <a id="Java_Lang_Thread_ThreadGroup_" data-uid="Java.Lang.Thread.ThreadGroup*"></a>
   <h4 id="Java_Lang_Thread_ThreadGroup" data-uid="Java.Lang.Thread.ThreadGroup">ThreadGroup</h4>
@@ -916,7 +965,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Thread_HoldsLock_System_Object_.md&amp;value=---%0Auid%3A%20Java.Lang.Thread.HoldsLock(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/Thread.cs/#L92">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/Thread.cs/#L96">View Source</a>
   </span>
   <a id="Java_Lang_Thread_HoldsLock_" data-uid="Java.Lang.Thread.HoldsLock*"></a>
   <h4 id="Java_Lang_Thread_HoldsLock_System_Object_" data-uid="Java.Lang.Thread.HoldsLock(System.Object)">HoldsLock(Object)</h4>
@@ -966,7 +1015,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Thread_Interrupt.md&amp;value=---%0Auid%3A%20Java.Lang.Thread.Interrupt%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/Thread.cs/#L132">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/Thread.cs/#L136">View Source</a>
   </span>
   <a id="Java_Lang_Thread_Interrupt_" data-uid="Java.Lang.Thread.Interrupt*"></a>
   <h4 id="Java_Lang_Thread_Interrupt" data-uid="Java.Lang.Thread.Interrupt">Interrupt()</h4>
@@ -982,7 +1031,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Thread_Join.md&amp;value=---%0Auid%3A%20Java.Lang.Thread.Join%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/Thread.cs/#L148">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/Thread.cs/#L152">View Source</a>
   </span>
   <a id="Java_Lang_Thread_Join_" data-uid="Java.Lang.Thread.Join*"></a>
   <h4 id="Java_Lang_Thread_Join" data-uid="Java.Lang.Thread.Join">Join()</h4>
@@ -998,7 +1047,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Thread_Join_System_Int64_.md&amp;value=---%0Auid%3A%20Java.Lang.Thread.Join(System.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/Thread.cs/#L153">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/Thread.cs/#L157">View Source</a>
   </span>
   <a id="Java_Lang_Thread_Join_" data-uid="Java.Lang.Thread.Join*"></a>
   <h4 id="Java_Lang_Thread_Join_System_Int64_" data-uid="Java.Lang.Thread.Join(System.Int64)">Join(Int64)</h4>
@@ -1032,7 +1081,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Thread_Join_System_Int64_System_Int32_.md&amp;value=---%0Auid%3A%20Java.Lang.Thread.Join(System.Int64%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/Thread.cs/#L159">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/Thread.cs/#L163">View Source</a>
   </span>
   <a id="Java_Lang_Thread_Join_" data-uid="Java.Lang.Thread.Join*"></a>
   <h4 id="Java_Lang_Thread_Join_System_Int64_System_Int32_" data-uid="Java.Lang.Thread.Join(System.Int64,System.Int32)">Join(Int64, Int32)</h4>
@@ -1072,7 +1121,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Thread_Run.md&amp;value=---%0Auid%3A%20Java.Lang.Thread.Run%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/Thread.cs/#L163">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/Thread.cs/#L167">View Source</a>
   </span>
   <a id="Java_Lang_Thread_Run_" data-uid="Java.Lang.Thread.Run*"></a>
   <h4 id="Java_Lang_Thread_Run" data-uid="Java.Lang.Thread.Run">Run()</h4>
@@ -1088,7 +1137,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Thread_SetDaemon_System_Boolean_.md&amp;value=---%0Auid%3A%20Java.Lang.Thread.SetDaemon(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/Thread.cs/#L168">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/Thread.cs/#L172">View Source</a>
   </span>
   <a id="Java_Lang_Thread_SetDaemon_" data-uid="Java.Lang.Thread.SetDaemon*"></a>
   <h4 id="Java_Lang_Thread_SetDaemon_System_Boolean_" data-uid="Java.Lang.Thread.SetDaemon(System.Boolean)">SetDaemon(Boolean)</h4>
@@ -1122,7 +1171,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Thread_SetDefaultUncaughtExceptionHandler_Java_Lang_Thread_UncaughtExceptionHandler_.md&amp;value=---%0Auid%3A%20Java.Lang.Thread.SetDefaultUncaughtExceptionHandler(Java.Lang.Thread.UncaughtExceptionHandler)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/Thread.cs/#L86">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/Thread.cs/#L90">View Source</a>
   </span>
   <a id="Java_Lang_Thread_SetDefaultUncaughtExceptionHandler_" data-uid="Java.Lang.Thread.SetDefaultUncaughtExceptionHandler*"></a>
   <h4 id="Java_Lang_Thread_SetDefaultUncaughtExceptionHandler_Java_Lang_Thread_UncaughtExceptionHandler_" data-uid="Java.Lang.Thread.SetDefaultUncaughtExceptionHandler(Java.Lang.Thread.UncaughtExceptionHandler)">SetDefaultUncaughtExceptionHandler(Thread.UncaughtExceptionHandler)</h4>
@@ -1156,7 +1205,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Thread_SetName_System_String_.md&amp;value=---%0Auid%3A%20Java.Lang.Thread.SetName(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/Thread.cs/#L178">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/Thread.cs/#L182">View Source</a>
   </span>
   <a id="Java_Lang_Thread_SetName_" data-uid="Java.Lang.Thread.SetName*"></a>
   <h4 id="Java_Lang_Thread_SetName_System_String_" data-uid="Java.Lang.Thread.SetName(System.String)">SetName(String)</h4>
@@ -1190,7 +1239,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Thread_SetPriority_System_Int32_.md&amp;value=---%0Auid%3A%20Java.Lang.Thread.SetPriority(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/Thread.cs/#L183">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/Thread.cs/#L187">View Source</a>
   </span>
   <a id="Java_Lang_Thread_SetPriority_" data-uid="Java.Lang.Thread.SetPriority*"></a>
   <h4 id="Java_Lang_Thread_SetPriority_System_Int32_" data-uid="Java.Lang.Thread.SetPriority(System.Int32)">SetPriority(Int32)</h4>
@@ -1224,7 +1273,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Thread_SetUncaughtExceptionHandler_Java_Lang_Thread_UncaughtExceptionHandler_.md&amp;value=---%0Auid%3A%20Java.Lang.Thread.SetUncaughtExceptionHandler(Java.Lang.Thread.UncaughtExceptionHandler)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/Thread.cs/#L173">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/Thread.cs/#L177">View Source</a>
   </span>
   <a id="Java_Lang_Thread_SetUncaughtExceptionHandler_" data-uid="Java.Lang.Thread.SetUncaughtExceptionHandler*"></a>
   <h4 id="Java_Lang_Thread_SetUncaughtExceptionHandler_Java_Lang_Thread_UncaughtExceptionHandler_" data-uid="Java.Lang.Thread.SetUncaughtExceptionHandler(Java.Lang.Thread.UncaughtExceptionHandler)">SetUncaughtExceptionHandler(Thread.UncaughtExceptionHandler)</h4>
@@ -1258,7 +1307,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Thread_Sleep_System_Int64_.md&amp;value=---%0Auid%3A%20Java.Lang.Thread.Sleep(System.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/Thread.cs/#L102">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/Thread.cs/#L106">View Source</a>
   </span>
   <a id="Java_Lang_Thread_Sleep_" data-uid="Java.Lang.Thread.Sleep*"></a>
   <h4 id="Java_Lang_Thread_Sleep_System_Int64_" data-uid="Java.Lang.Thread.Sleep(System.Int64)">Sleep(Int64)</h4>
@@ -1292,7 +1341,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Thread_Sleep_System_Int64_System_Int32_.md&amp;value=---%0Auid%3A%20Java.Lang.Thread.Sleep(System.Int64%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/Thread.cs/#L108">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/Thread.cs/#L112">View Source</a>
   </span>
   <a id="Java_Lang_Thread_Sleep_" data-uid="Java.Lang.Thread.Sleep*"></a>
   <h4 id="Java_Lang_Thread_Sleep_System_Int64_System_Int32_" data-uid="Java.Lang.Thread.Sleep(System.Int64,System.Int32)">Sleep(Int64, Int32)</h4>
@@ -1332,7 +1381,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Thread_Start.md&amp;value=---%0Auid%3A%20Java.Lang.Thread.Start%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/Thread.cs/#L187">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/Thread.cs/#L191">View Source</a>
   </span>
   <a id="Java_Lang_Thread_Start_" data-uid="Java.Lang.Thread.Start*"></a>
   <h4 id="Java_Lang_Thread_Start" data-uid="Java.Lang.Thread.Start">Start()</h4>
@@ -1348,7 +1397,7 @@
     <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Lang_Thread_Yield.md&amp;value=---%0Auid%3A%20Java.Lang.Thread.Yield%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/Thread.cs/#L112">View Source</a>
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Lang/Thread.cs/#L116">View Source</a>
   </span>
   <a id="Java_Lang_Thread_Yield_" data-uid="Java.Lang.Thread.Yield*"></a>
   <h4 id="Java_Lang_Thread_Yield" data-uid="Java.Lang.Thread.Yield">Yield()</h4>

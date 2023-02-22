@@ -1,0 +1,1062 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class BeanContextServicesSupport
+   | JNet website </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class BeanContextServicesSupport
+   | JNet website ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Java.Beans.Beancontext.BeanContextServicesSupport">
+  
+  
+  <h1 id="Java_Beans_Beancontext_BeanContextServicesSupport" data-uid="Java.Beans.Beancontext.BeanContextServicesSupport" class="text-break">Class BeanContextServicesSupport
+  </h1>
+  <div class="markdown level0 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html</a></p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+    <div class="level2"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span></div>
+    <div class="level3"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span>&lt;<a class="xref" href="Java.Beans.Beancontext.BeanContextChildSupport.html">BeanContextChildSupport</a>&gt;</div>
+    <div class="level4"><a class="xref" href="Java.Beans.Beancontext.BeanContextChildSupport.html">BeanContextChildSupport</a></div>
+    <div class="level5"><a class="xref" href="Java.Beans.Beancontext.BeanContextSupport.html">BeanContextSupport</a></div>
+    <div class="level6"><span class="xref">BeanContextServicesSupport</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+    <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeCore</span></div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic</span></div>
+    <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBase</span></div>
+    <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Java.Beans.Beancontext.BeanContextSupport.html#Java_Beans_Beancontext_BeanContextSupport_BeanContextPeer">BeanContextSupport.BeanContextPeer</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Beans.Beancontext.BeanContextSupport.html#Java_Beans_Beancontext_BeanContextSupport_Locale">BeanContextSupport.Locale</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Beans.Beancontext.BeanContextSupport.html#Java_Beans_Beancontext_BeanContextSupport_Add_System_Object_">BeanContextSupport.Add(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Beans.Beancontext.BeanContextSupport.html#Java_Beans_Beancontext_BeanContextSupport_AvoidingGui">BeanContextSupport.AvoidingGui()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Beans.Beancontext.BeanContextSupport.html#Java_Beans_Beancontext_BeanContextSupport_Contains_System_Object_">BeanContextSupport.Contains(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Beans.Beancontext.BeanContextSupport.html#Java_Beans_Beancontext_BeanContextSupport_ContainsKey_System_Object_">BeanContextSupport.ContainsKey(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Beans.Beancontext.BeanContextSupport.html#Java_Beans_Beancontext_BeanContextSupport_IsEmpty">BeanContextSupport.IsEmpty()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Beans.Beancontext.BeanContextSupport.html#Java_Beans_Beancontext_BeanContextSupport_IsSerializing">BeanContextSupport.IsSerializing()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Beans.Beancontext.BeanContextSupport.html#Java_Beans_Beancontext_BeanContextSupport_Remove_System_Object_">BeanContextSupport.Remove(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Beans.Beancontext.BeanContextSupport.html#Java_Beans_Beancontext_BeanContextSupport_ReadChildren_Java_Io_ObjectInputStream_">BeanContextSupport.ReadChildren(ObjectInputStream)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Beans.Beancontext.BeanContextSupport.html#Java_Beans_Beancontext_BeanContextSupport_WriteChildren_Java_Io_ObjectOutputStream_">BeanContextSupport.WriteChildren(ObjectOutputStream)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Beans.Beancontext.BeanContextSupport.html#Java_Beans_Beancontext_BeanContextSupport_Size">BeanContextSupport.Size()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Beans.Beancontext.BeanContextSupport.html#Java_Beans_Beancontext_BeanContextSupport_GetResourceAsStream_System_String_Java_Beans_Beancontext_BeanContextChild_">BeanContextSupport.GetResourceAsStream(String, BeanContextChild)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Beans.Beancontext.BeanContextSupport.html#Java_Beans_Beancontext_BeanContextSupport_InstantiateChild_System_String_">BeanContextSupport.InstantiateChild(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Beans.Beancontext.BeanContextSupport.html#Java_Beans_Beancontext_BeanContextSupport_ToArray">BeanContextSupport.ToArray()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Beans.Beancontext.BeanContextSupport.html#Java_Beans_Beancontext_BeanContextSupport_ToArray_System_Object___">BeanContextSupport.ToArray(Object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Beans.Beancontext.BeanContextSupport.html#Java_Beans_Beancontext_BeanContextSupport_GetResource_System_String_Java_Beans_Beancontext_BeanContextChild_">BeanContextSupport.GetResource(String, BeanContextChild)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Beans.Beancontext.BeanContextSupport.html#Java_Beans_Beancontext_BeanContextSupport_IsDesignTime">BeanContextSupport.IsDesignTime()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Beans.Beancontext.BeanContextSupport.html#Java_Beans_Beancontext_BeanContextSupport_NeedsGui">BeanContextSupport.NeedsGui()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Beans.Beancontext.BeanContextSupport.html#Java_Beans_Beancontext_BeanContextSupport_DontUseGui">BeanContextSupport.DontUseGui()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Beans.Beancontext.BeanContextSupport.html#Java_Beans_Beancontext_BeanContextSupport_OkToUseGui">BeanContextSupport.OkToUseGui()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Beans.Beancontext.BeanContextSupport.html#Java_Beans_Beancontext_BeanContextSupport_SetDesignTime_System_Boolean_">BeanContextSupport.SetDesignTime(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Beans.Beancontext.BeanContextSupport.html#Java_Beans_Beancontext_BeanContextSupport_AddBeanContextMembershipListener_Java_Beans_Beancontext_BeanContextMembershipListener_">BeanContextSupport.AddBeanContextMembershipListener(BeanContextMembershipListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Beans.Beancontext.BeanContextSupport.html#Java_Beans_Beancontext_BeanContextSupport_Clear">BeanContextSupport.Clear()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Beans.Beancontext.BeanContextSupport.html#Java_Beans_Beancontext_BeanContextSupport_PropertyChange_Java_Beans_PropertyChangeEvent_">BeanContextSupport.PropertyChange(PropertyChangeEvent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Beans.Beancontext.BeanContextSupport.html#Java_Beans_Beancontext_BeanContextSupport_RemoveBeanContextMembershipListener_Java_Beans_Beancontext_BeanContextMembershipListener_">BeanContextSupport.RemoveBeanContextMembershipListener(BeanContextMembershipListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Beans.Beancontext.BeanContextSupport.html#Java_Beans_Beancontext_BeanContextSupport_VetoableChange_Java_Beans_PropertyChangeEvent_">BeanContextSupport.VetoableChange(PropertyChangeEvent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Beans.Beancontext.BeanContextChildSupport.html#Java_Beans_Beancontext_BeanContextChildSupport_beanContextChildPeer">BeanContextChildSupport.beanContextChildPeer</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Beans.Beancontext.BeanContextChildSupport.html#Java_Beans_Beancontext_BeanContextChildSupport_BeanContext">BeanContextChildSupport.BeanContext</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Beans.Beancontext.BeanContextChildSupport.html#Java_Beans_Beancontext_BeanContextChildSupport_BeanContextChildPeer">BeanContextChildSupport.BeanContextChildPeer</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Beans.Beancontext.BeanContextChildSupport.html#Java_Beans_Beancontext_BeanContextChildSupport_IsDelegated">BeanContextChildSupport.IsDelegated()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Beans.Beancontext.BeanContextChildSupport.html#Java_Beans_Beancontext_BeanContextChildSupport_ValidatePendingSetBeanContext_Java_Beans_Beancontext_BeanContext_">BeanContextChildSupport.ValidatePendingSetBeanContext(BeanContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Beans.Beancontext.BeanContextChildSupport.html#Java_Beans_Beancontext_BeanContextChildSupport_AddPropertyChangeListener_System_String_Java_Beans_PropertyChangeListener_">BeanContextChildSupport.AddPropertyChangeListener(String, PropertyChangeListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Beans.Beancontext.BeanContextChildSupport.html#Java_Beans_Beancontext_BeanContextChildSupport_AddVetoableChangeListener_System_String_Java_Beans_VetoableChangeListener_">BeanContextChildSupport.AddVetoableChangeListener(String, VetoableChangeListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Beans.Beancontext.BeanContextChildSupport.html#Java_Beans_Beancontext_BeanContextChildSupport_FirePropertyChange_System_String_System_Object_System_Object_">BeanContextChildSupport.FirePropertyChange(String, Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Beans.Beancontext.BeanContextChildSupport.html#Java_Beans_Beancontext_BeanContextChildSupport_FireVetoableChange_System_String_System_Object_System_Object_">BeanContextChildSupport.FireVetoableChange(String, Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Beans.Beancontext.BeanContextChildSupport.html#Java_Beans_Beancontext_BeanContextChildSupport_RemovePropertyChangeListener_System_String_Java_Beans_PropertyChangeListener_">BeanContextChildSupport.RemovePropertyChangeListener(String, PropertyChangeListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Beans.Beancontext.BeanContextChildSupport.html#Java_Beans_Beancontext_BeanContextChildSupport_RemoveVetoableChangeListener_System_String_Java_Beans_VetoableChangeListener_">BeanContextChildSupport.RemoveVetoableChangeListener(String, VetoableChangeListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Beans.Beancontext.BeanContextChildSupport.html#Java_Beans_Beancontext_BeanContextChildSupport_ServiceAvailable_Java_Beans_Beancontext_BeanContextServiceAvailableEvent_">BeanContextChildSupport.ServiceAvailable(BeanContextServiceAvailableEvent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Beans.Beancontext.BeanContextChildSupport.html#Java_Beans_Beancontext_BeanContextChildSupport_ServiceRevoked_Java_Beans_Beancontext_BeanContextServiceRevokedEvent_">BeanContextChildSupport.ServiceRevoked(BeanContextServiceRevokedEvent)</a>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Beans.Beancontext.BeanContextChildSupport&gt;.SExecute(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Beans.Beancontext.BeanContextChildSupport&gt;.SExecute&lt;TReturn&gt;(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Beans.Beancontext.BeanContextChildSupport&gt;.SExecute(System.Type, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Beans.Beancontext.BeanContextChildSupport&gt;.SExecute&lt;TNewClass, TReturn&gt;(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Beans.Beancontext.BeanContextChildSupport&gt;.SExecute&lt;TReturn&gt;(System.Type, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Beans.Beancontext.BeanContextChildSupport&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Beans.Beancontext.BeanContextChildSupport&gt;.SExecute&lt;TReturn, TConverter&gt;(System.Type, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Beans.Beancontext.BeanContextChildSupport&gt;.SExecuteArray&lt;T&gt;(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Beans.Beancontext.BeanContextChildSupport&gt;.IsAssignableFrom(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Beans.Beancontext.BeanContextChildSupport&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Beans.Beancontext.BeanContextChildSupport&gt;.New(System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Beans.Beancontext.BeanContextChildSupport&gt;.Execute&lt;T&gt;(T[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Beans.Beancontext.BeanContextChildSupport&gt;.DynClazz</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Beans.Beancontext.BeanContextChildSupport&gt;.Clazz</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Beans.Beancontext.BeanContextChildSupport&gt;.MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.DynClazz</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Beans.Beancontext.BeanContextChildSupport&gt;.MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.Clazz</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TReturn&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.New&lt;TNewClass&gt;(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.New&lt;TNewClass, TReturn&gt;(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.New&lt;TNewClass, TReturn, TConverter&gt;(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsInstanceOf(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wait(System.Int64)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wait(System.Int64, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IExecute(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IExecute&lt;TReturn&gt;(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IExecuteArray&lt;T&gt;(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.DynInstance</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Instance</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember#system-dynamic-dynamicobject-trygetmember(system-dynamic-getmemberbinder-system-object@)">DynamicObject.TryGetMember(GetMemberBinder, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember#system-dynamic-dynamicobject-trysetmember(system-dynamic-setmemberbinder-system-object)">DynamicObject.TrySetMember(SetMemberBinder, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember#system-dynamic-dynamicobject-trydeletemember(system-dynamic-deletememberbinder)">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember#system-dynamic-dynamicobject-tryinvokemember(system-dynamic-invokememberbinder-system-object()-system-object@)">DynamicObject.TryInvokeMember(InvokeMemberBinder, Object[], Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert#system-dynamic-dynamicobject-tryconvert(system-dynamic-convertbinder-system-object@)">DynamicObject.TryConvert(ConvertBinder, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance#system-dynamic-dynamicobject-trycreateinstance(system-dynamic-createinstancebinder-system-object()-system-object@)">DynamicObject.TryCreateInstance(CreateInstanceBinder, Object[], Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke#system-dynamic-dynamicobject-tryinvoke(system-dynamic-invokebinder-system-object()-system-object@)">DynamicObject.TryInvoke(InvokeBinder, Object[], Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation#system-dynamic-dynamicobject-trybinaryoperation(system-dynamic-binaryoperationbinder-system-object-system-object@)">DynamicObject.TryBinaryOperation(BinaryOperationBinder, Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation#system-dynamic-dynamicobject-tryunaryoperation(system-dynamic-unaryoperationbinder-system-object@)">DynamicObject.TryUnaryOperation(UnaryOperationBinder, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex#system-dynamic-dynamicobject-trygetindex(system-dynamic-getindexbinder-system-object()-system-object@)">DynamicObject.TryGetIndex(GetIndexBinder, Object[], Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex#system-dynamic-dynamicobject-trysetindex(system-dynamic-setindexbinder-system-object()-system-object)">DynamicObject.TrySetIndex(SetIndexBinder, Object[], Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex#system-dynamic-dynamicobject-trydeleteindex(system-dynamic-deleteindexbinder-system-object())">DynamicObject.TryDeleteIndex(DeleteIndexBinder, Object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames#system-dynamic-dynamicobject-getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject#system-dynamic-dynamicobject-getmetaobject(system-linq-expressions-expression)">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Java.Beans.Beancontext.html">Java.Beans.Beancontext</a></h6>
+  <h6><strong>Assembly</strong>: MASES.JNet.dll</h6>
+  <h5 id="Java_Beans_Beancontext_BeanContextServicesSupport_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class BeanContextServicesSupport : BeanContextSupport, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_Beancontext_BeanContextServicesSupport__ctor.md&amp;value=---%0Auid%3A%20Java.Beans.Beancontext.BeanContextServicesSupport.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/AllPackageClasses.cs/#L529">View Source</a>
+  </span>
+  <a id="Java_Beans_Beancontext_BeanContextServicesSupport__ctor_" data-uid="Java.Beans.Beancontext.BeanContextServicesSupport.#ctor*"></a>
+  <h4 id="Java_Beans_Beancontext_BeanContextServicesSupport__ctor" data-uid="Java.Beans.Beancontext.BeanContextServicesSupport.#ctor">BeanContextServicesSupport()</h4>
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BeanContextServicesSupport()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_Beancontext_BeanContextServicesSupport__ctor_Java_Beans_Beancontext_BeanContextServices_.md&amp;value=---%0Auid%3A%20Java.Beans.Beancontext.BeanContextServicesSupport.%23ctor(Java.Beans.Beancontext.BeanContextServices)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServicesSupport.cs/#L56">View Source</a>
+  </span>
+  <a id="Java_Beans_Beancontext_BeanContextServicesSupport__ctor_" data-uid="Java.Beans.Beancontext.BeanContextServicesSupport.#ctor*"></a>
+  <h4 id="Java_Beans_Beancontext_BeanContextServicesSupport__ctor_Java_Beans_Beancontext_BeanContextServices_" data-uid="Java.Beans.Beancontext.BeanContextServicesSupport.#ctor(Java.Beans.Beancontext.BeanContextServices)">BeanContextServicesSupport(BeanContextServices)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BeanContextServicesSupport(BeanContextServices arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Beans.Beancontext.BeanContextServices.html">BeanContextServices</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_Beancontext_BeanContextServicesSupport__ctor_Java_Beans_Beancontext_BeanContextServices_Java_Util_Locale_.md&amp;value=---%0Auid%3A%20Java.Beans.Beancontext.BeanContextServicesSupport.%23ctor(Java.Beans.Beancontext.BeanContextServices%2CJava.Util.Locale)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServicesSupport.cs/#L49">View Source</a>
+  </span>
+  <a id="Java_Beans_Beancontext_BeanContextServicesSupport__ctor_" data-uid="Java.Beans.Beancontext.BeanContextServicesSupport.#ctor*"></a>
+  <h4 id="Java_Beans_Beancontext_BeanContextServicesSupport__ctor_Java_Beans_Beancontext_BeanContextServices_Java_Util_Locale_" data-uid="Java.Beans.Beancontext.BeanContextServicesSupport.#ctor(Java.Beans.Beancontext.BeanContextServices,Java.Util.Locale)">BeanContextServicesSupport(BeanContextServices, Locale)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BeanContextServicesSupport(BeanContextServices arg0, Locale arg1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Beans.Beancontext.BeanContextServices.html">BeanContextServices</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Java.Util.Locale.html">Locale</a></td>
+        <td><span class="parametername">arg1</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_Beancontext_BeanContextServicesSupport__ctor_Java_Beans_Beancontext_BeanContextServices_Java_Util_Locale_System_Boolean_.md&amp;value=---%0Auid%3A%20Java.Beans.Beancontext.BeanContextServicesSupport.%23ctor(Java.Beans.Beancontext.BeanContextServices%2CJava.Util.Locale%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServicesSupport.cs/#L42">View Source</a>
+  </span>
+  <a id="Java_Beans_Beancontext_BeanContextServicesSupport__ctor_" data-uid="Java.Beans.Beancontext.BeanContextServicesSupport.#ctor*"></a>
+  <h4 id="Java_Beans_Beancontext_BeanContextServicesSupport__ctor_Java_Beans_Beancontext_BeanContextServices_Java_Util_Locale_System_Boolean_" data-uid="Java.Beans.Beancontext.BeanContextServicesSupport.#ctor(Java.Beans.Beancontext.BeanContextServices,Java.Util.Locale,System.Boolean)">BeanContextServicesSupport(BeanContextServices, Locale, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BeanContextServicesSupport(BeanContextServices arg0, Locale arg1, bool arg2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Beans.Beancontext.BeanContextServices.html">BeanContextServices</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Java.Util.Locale.html">Locale</a></td>
+        <td><span class="parametername">arg1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">arg2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_Beancontext_BeanContextServicesSupport__ctor_Java_Beans_Beancontext_BeanContextServices_Java_Util_Locale_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20Java.Beans.Beancontext.BeanContextServicesSupport.%23ctor(Java.Beans.Beancontext.BeanContextServices%2CJava.Util.Locale%2CSystem.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServicesSupport.cs/#L35">View Source</a>
+  </span>
+  <a id="Java_Beans_Beancontext_BeanContextServicesSupport__ctor_" data-uid="Java.Beans.Beancontext.BeanContextServicesSupport.#ctor*"></a>
+  <h4 id="Java_Beans_Beancontext_BeanContextServicesSupport__ctor_Java_Beans_Beancontext_BeanContextServices_Java_Util_Locale_System_Boolean_System_Boolean_" data-uid="Java.Beans.Beancontext.BeanContextServicesSupport.#ctor(Java.Beans.Beancontext.BeanContextServices,Java.Util.Locale,System.Boolean,System.Boolean)">BeanContextServicesSupport(BeanContextServices, Locale, Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BeanContextServicesSupport(BeanContextServices arg0, Locale arg1, bool arg2, bool arg3)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Beans.Beancontext.BeanContextServices.html">BeanContextServices</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Java.Util.Locale.html">Locale</a></td>
+        <td><span class="parametername">arg1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">arg2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">arg3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_Beancontext_BeanContextServicesSupport__ctor_System_Object___.md&amp;value=---%0Auid%3A%20Java.Beans.Beancontext.BeanContextServicesSupport.%23ctor(System.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/AllPackageClasses.cs/#L533">View Source</a>
+  </span>
+  <a id="Java_Beans_Beancontext_BeanContextServicesSupport__ctor_" data-uid="Java.Beans.Beancontext.BeanContextServicesSupport.#ctor*"></a>
+  <h4 id="Java_Beans_Beancontext_BeanContextServicesSupport__ctor_System_Object___" data-uid="Java.Beans.Beancontext.BeanContextServicesSupport.#ctor(System.Object[])">BeanContextServicesSupport(Object[])</h4>
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BeanContextServicesSupport(params object[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_Beancontext_BeanContextServicesSupport_BeanContextServicesPeer.md&amp;value=---%0Auid%3A%20Java.Beans.Beancontext.BeanContextServicesSupport.BeanContextServicesPeer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServicesSupport.cs/#L80">View Source</a>
+  </span>
+  <a id="Java_Beans_Beancontext_BeanContextServicesSupport_BeanContextServicesPeer_" data-uid="Java.Beans.Beancontext.BeanContextServicesSupport.BeanContextServicesPeer*"></a>
+  <h4 id="Java_Beans_Beancontext_BeanContextServicesSupport_BeanContextServicesPeer" data-uid="Java.Beans.Beancontext.BeanContextServicesSupport.BeanContextServicesPeer">BeanContextServicesPeer</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#getBeanContextServicesPeer()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#getBeanContextServicesPeer()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BeanContextServices BeanContextServicesPeer { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Beans.Beancontext.BeanContextServices.html">BeanContextServices</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_Beancontext_BeanContextServicesSupport_ClassName.md&amp;value=---%0Auid%3A%20Java.Beans.Beancontext.BeanContextServicesSupport.ClassName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/AllPackageClasses.cs/#L536">View Source</a>
+  </span>
+  <a id="Java_Beans_Beancontext_BeanContextServicesSupport_ClassName_" data-uid="Java.Beans.Beancontext.BeanContextServicesSupport.ClassName*"></a>
+  <h4 id="Java_Beans_Beancontext_BeanContextServicesSupport_ClassName" data-uid="Java.Beans.Beancontext.BeanContextServicesSupport.ClassName">ClassName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ClassName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Java.Beans.Beancontext.BeanContextSupport.html#Java_Beans_Beancontext_BeanContextSupport_ClassName">BeanContextSupport.ClassName</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_Beancontext_BeanContextServicesSupport_IsAbstract.md&amp;value=---%0Auid%3A%20Java.Beans.Beancontext.BeanContextServicesSupport.IsAbstract%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/AllPackageClasses.cs/#L539">View Source</a>
+  </span>
+  <a id="Java_Beans_Beancontext_BeanContextServicesSupport_IsAbstract_" data-uid="Java.Beans.Beancontext.BeanContextServicesSupport.IsAbstract*"></a>
+  <h4 id="Java_Beans_Beancontext_BeanContextServicesSupport_IsAbstract" data-uid="Java.Beans.Beancontext.BeanContextServicesSupport.IsAbstract">IsAbstract</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsAbstract { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Java.Beans.Beancontext.BeanContextSupport.html#Java_Beans_Beancontext_BeanContextSupport_IsAbstract">BeanContextSupport.IsAbstract</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_Beancontext_BeanContextServicesSupport_IsCloseable.md&amp;value=---%0Auid%3A%20Java.Beans.Beancontext.BeanContextServicesSupport.IsCloseable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/AllPackageClasses.cs/#L542">View Source</a>
+  </span>
+  <a id="Java_Beans_Beancontext_BeanContextServicesSupport_IsCloseable_" data-uid="Java.Beans.Beancontext.BeanContextServicesSupport.IsCloseable*"></a>
+  <h4 id="Java_Beans_Beancontext_BeanContextServicesSupport_IsCloseable" data-uid="Java.Beans.Beancontext.BeanContextServicesSupport.IsCloseable">IsCloseable</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsCloseable { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Java.Beans.Beancontext.BeanContextSupport.html#Java_Beans_Beancontext_BeanContextSupport_IsCloseable">BeanContextSupport.IsCloseable</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_Beancontext_BeanContextServicesSupport_IsInterface.md&amp;value=---%0Auid%3A%20Java.Beans.Beancontext.BeanContextServicesSupport.IsInterface%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/AllPackageClasses.cs/#L545">View Source</a>
+  </span>
+  <a id="Java_Beans_Beancontext_BeanContextServicesSupport_IsInterface_" data-uid="Java.Beans.Beancontext.BeanContextServicesSupport.IsInterface*"></a>
+  <h4 id="Java_Beans_Beancontext_BeanContextServicesSupport_IsInterface" data-uid="Java.Beans.Beancontext.BeanContextServicesSupport.IsInterface">IsInterface</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsInterface { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Java.Beans.Beancontext.BeanContextSupport.html#Java_Beans_Beancontext_BeanContextSupport_IsInterface">BeanContextSupport.IsInterface</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_Beancontext_BeanContextServicesSupport_IsStatic.md&amp;value=---%0Auid%3A%20Java.Beans.Beancontext.BeanContextServicesSupport.IsStatic%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/AllPackageClasses.cs/#L548">View Source</a>
+  </span>
+  <a id="Java_Beans_Beancontext_BeanContextServicesSupport_IsStatic_" data-uid="Java.Beans.Beancontext.BeanContextServicesSupport.IsStatic*"></a>
+  <h4 id="Java_Beans_Beancontext_BeanContextServicesSupport_IsStatic" data-uid="Java.Beans.Beancontext.BeanContextServicesSupport.IsStatic">IsStatic</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsStatic { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Java.Beans.Beancontext.BeanContextSupport.html#Java_Beans_Beancontext_BeanContextSupport_IsStatic">BeanContextSupport.IsStatic</a></div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_Beancontext_BeanContextServicesSupport_AddBeanContextServicesListener_Java_Beans_Beancontext_BeanContextServicesListener_.md&amp;value=---%0Auid%3A%20Java.Beans.Beancontext.BeanContextServicesSupport.AddBeanContextServicesListener(Java.Beans.Beancontext.BeanContextServicesListener)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServicesSupport.cs/#L87">View Source</a>
+  </span>
+  <a id="Java_Beans_Beancontext_BeanContextServicesSupport_AddBeanContextServicesListener_" data-uid="Java.Beans.Beancontext.BeanContextServicesSupport.AddBeanContextServicesListener*"></a>
+  <h4 id="Java_Beans_Beancontext_BeanContextServicesSupport_AddBeanContextServicesListener_Java_Beans_Beancontext_BeanContextServicesListener_" data-uid="Java.Beans.Beancontext.BeanContextServicesSupport.AddBeanContextServicesListener(Java.Beans.Beancontext.BeanContextServicesListener)">AddBeanContextServicesListener(BeanContextServicesListener)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#addBeanContextServicesListener(java.beans.beancontext.BeanContextServicesListener)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#addBeanContextServicesListener(java.beans.beancontext.BeanContextServicesListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddBeanContextServicesListener(BeanContextServicesListener arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Beans.Beancontext.BeanContextServicesListener.html">BeanContextServicesListener</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_Beancontext_BeanContextServicesSupport_Initialize.md&amp;value=---%0Auid%3A%20Java.Beans.Beancontext.BeanContextServicesSupport.Initialize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServicesSupport.cs/#L94">View Source</a>
+  </span>
+  <a id="Java_Beans_Beancontext_BeanContextServicesSupport_Initialize_" data-uid="Java.Beans.Beancontext.BeanContextServicesSupport.Initialize*"></a>
+  <h4 id="Java_Beans_Beancontext_BeanContextServicesSupport_Initialize" data-uid="Java.Beans.Beancontext.BeanContextServicesSupport.Initialize">Initialize()</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#initialize()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#initialize()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Initialize()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_Beancontext_BeanContextServicesSupport_ReleaseService_Java_Beans_Beancontext_BeanContextChild_System_Object_System_Object_.md&amp;value=---%0Auid%3A%20Java.Beans.Beancontext.BeanContextServicesSupport.ReleaseService(Java.Beans.Beancontext.BeanContextChild%2CSystem.Object%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServicesSupport.cs/#L101">View Source</a>
+  </span>
+  <a id="Java_Beans_Beancontext_BeanContextServicesSupport_ReleaseService_" data-uid="Java.Beans.Beancontext.BeanContextServicesSupport.ReleaseService*"></a>
+  <h4 id="Java_Beans_Beancontext_BeanContextServicesSupport_ReleaseService_Java_Beans_Beancontext_BeanContextChild_System_Object_System_Object_" data-uid="Java.Beans.Beancontext.BeanContextServicesSupport.ReleaseService(Java.Beans.Beancontext.BeanContextChild,System.Object,System.Object)">ReleaseService(BeanContextChild, Object, Object)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#releaseService(java.beans.beancontext.BeanContextChild,java.lang.Object,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#releaseService(java.beans.beancontext.BeanContextChild,java.lang.Object,java.lang.Object)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReleaseService(BeanContextChild arg0, object arg1, object arg2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Beans.Beancontext.BeanContextChild.html">BeanContextChild</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">arg1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">arg2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_Beancontext_BeanContextServicesSupport_RemoveBeanContextServicesListener_Java_Beans_Beancontext_BeanContextServicesListener_.md&amp;value=---%0Auid%3A%20Java.Beans.Beancontext.BeanContextServicesSupport.RemoveBeanContextServicesListener(Java.Beans.Beancontext.BeanContextServicesListener)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServicesSupport.cs/#L108">View Source</a>
+  </span>
+  <a id="Java_Beans_Beancontext_BeanContextServicesSupport_RemoveBeanContextServicesListener_" data-uid="Java.Beans.Beancontext.BeanContextServicesSupport.RemoveBeanContextServicesListener*"></a>
+  <h4 id="Java_Beans_Beancontext_BeanContextServicesSupport_RemoveBeanContextServicesListener_Java_Beans_Beancontext_BeanContextServicesListener_" data-uid="Java.Beans.Beancontext.BeanContextServicesSupport.RemoveBeanContextServicesListener(Java.Beans.Beancontext.BeanContextServicesListener)">RemoveBeanContextServicesListener(BeanContextServicesListener)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#removeBeanContextServicesListener(java.beans.beancontext.BeanContextServicesListener)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#removeBeanContextServicesListener(java.beans.beancontext.BeanContextServicesListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveBeanContextServicesListener(BeanContextServicesListener arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Beans.Beancontext.BeanContextServicesListener.html">BeanContextServicesListener</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="operators">Operators
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_Beancontext_BeanContextServicesSupport_op_Implicit_Java_Beans_Beancontext_BeanContextServicesSupport__Java_Beans_Beancontext_BeanContextServices.md&amp;value=---%0Auid%3A%20Java.Beans.Beancontext.BeanContextServicesSupport.op_Implicit(Java.Beans.Beancontext.BeanContextServicesSupport)~Java.Beans.Beancontext.BeanContextServices%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServicesSupport.cs/#L64">View Source</a>
+  </span>
+  <a id="Java_Beans_Beancontext_BeanContextServicesSupport_op_Implicit_" data-uid="Java.Beans.Beancontext.BeanContextServicesSupport.op_Implicit*"></a>
+  <h4 id="Java_Beans_Beancontext_BeanContextServicesSupport_op_Implicit_Java_Beans_Beancontext_BeanContextServicesSupport__Java_Beans_Beancontext_BeanContextServices" data-uid="Java.Beans.Beancontext.BeanContextServicesSupport.op_Implicit(Java.Beans.Beancontext.BeanContextServicesSupport)~Java.Beans.Beancontext.BeanContextServices">Implicit(BeanContextServicesSupport to BeanContextServices)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator BeanContextServices(BeanContextServicesSupport t)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Beans.Beancontext.BeanContextServicesSupport.html">BeanContextServicesSupport</a></td>
+        <td><span class="parametername">t</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Beans.Beancontext.BeanContextServices.html">BeanContextServices</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">System.Dynamic.IDynamicMetaObjectProvider</a>
+  </div>
+  <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeCore</span>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">System.IDisposable</a>
+  </div>
+  <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic</span>
+  </div>
+  <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBase</span>
+  </div>
+  <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="MASES.JNet.Extensions.JNetCoreExtensions.html#MASES_JNet_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Beans_Beancontext_BeanContextServicesSupport.md&amp;value=---%0Auid%3A%20Java.Beans.Beancontext.BeanContextServicesSupport%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServicesSupport.cs/#L29" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2023 MASES s.r.l..<br>Generated by <strong>DocFX</strong></span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

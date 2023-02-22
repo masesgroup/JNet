@@ -1,0 +1,2277 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class JEditorPane
+   | JNet website </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class JEditorPane
+   | JNet website ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Javax.Swing.JEditorPane">
+  
+  
+  <h1 id="Javax_Swing_JEditorPane" data-uid="Javax.Swing.JEditorPane" class="text-break">Class JEditorPane
+  </h1>
+  <div class="markdown level0 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html</a></p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+    <div class="level2"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span></div>
+    <div class="level3"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span>&lt;<a class="xref" href="Java.Awt.Component.html">Component</a>&gt;</div>
+    <div class="level4"><a class="xref" href="Java.Awt.Component.html">Component</a></div>
+    <div class="level5"><a class="xref" href="Java.Awt.Container.html">Container</a></div>
+    <div class="level6"><a class="xref" href="Javax.Swing.JComponent.html">JComponent</a></div>
+    <div class="level7"><a class="xref" href="Javax.Swing.Text.JTextComponent.html">JTextComponent</a></div>
+    <div class="level8"><span class="xref">JEditorPane</span></div>
+      <div class="level9"><a class="xref" href="Javax.Swing.JTextPane.html">JTextPane</a></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+    <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeCore</span></div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic</span></div>
+    <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBase</span></div>
+    <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.JTextComponent.html#Javax_Swing_Text_JTextComponent_DEFAULT_KEYMAP">JTextComponent.DEFAULT_KEYMAP</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.JTextComponent.html#Javax_Swing_Text_JTextComponent_FOCUS_ACCELERATOR_KEY">JTextComponent.FOCUS_ACCELERATOR_KEY</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.JTextComponent.html#Javax_Swing_Text_JTextComponent_AddKeymap_System_String_Javax_Swing_Text_Keymap_">JTextComponent.AddKeymap(String, Keymap)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.JTextComponent.html#Javax_Swing_Text_JTextComponent_GetKeymap_System_String_">JTextComponent.GetKeymap(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.JTextComponent.html#Javax_Swing_Text_JTextComponent_RemoveKeymap_System_String_">JTextComponent.RemoveKeymap(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.JTextComponent.html#Javax_Swing_Text_JTextComponent_LoadKeymap_Javax_Swing_Text_Keymap_Javax_Swing_Text_JTextComponent_KeyBinding___Javax_Swing_Action___">JTextComponent.LoadKeymap(Keymap, JTextComponent.KeyBinding[], Action[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.JTextComponent.html#Javax_Swing_Text_JTextComponent_Actions">JTextComponent.Actions</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.JTextComponent.html#Javax_Swing_Text_JTextComponent_Caret">JTextComponent.Caret</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.JTextComponent.html#Javax_Swing_Text_JTextComponent_CaretColor">JTextComponent.CaretColor</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.JTextComponent.html#Javax_Swing_Text_JTextComponent_CaretListeners">JTextComponent.CaretListeners</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.JTextComponent.html#Javax_Swing_Text_JTextComponent_CaretPosition">JTextComponent.CaretPosition</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.JTextComponent.html#Javax_Swing_Text_JTextComponent_DisabledTextColor">JTextComponent.DisabledTextColor</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.JTextComponent.html#Javax_Swing_Text_JTextComponent_Document">JTextComponent.Document</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.JTextComponent.html#Javax_Swing_Text_JTextComponent_DragEnabled">JTextComponent.DragEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.JTextComponent.html#Javax_Swing_Text_JTextComponent_FocusAccelerator">JTextComponent.FocusAccelerator</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.JTextComponent.html#Javax_Swing_Text_JTextComponent_Highlighter">JTextComponent.Highlighter</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.JTextComponent.html#Javax_Swing_Text_JTextComponent_Keymap">JTextComponent.Keymap</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.JTextComponent.html#Javax_Swing_Text_JTextComponent_Margin">JTextComponent.Margin</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.JTextComponent.html#Javax_Swing_Text_JTextComponent_NavigationFilter">JTextComponent.NavigationFilter</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.JTextComponent.html#Javax_Swing_Text_JTextComponent_PreferredScrollableViewportSize">JTextComponent.PreferredScrollableViewportSize</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.JTextComponent.html#Javax_Swing_Text_JTextComponent_ScrollableTracksViewportHeight">JTextComponent.ScrollableTracksViewportHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.JTextComponent.html#Javax_Swing_Text_JTextComponent_ScrollableTracksViewportWidth">JTextComponent.ScrollableTracksViewportWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.JTextComponent.html#Javax_Swing_Text_JTextComponent_SelectedText">JTextComponent.SelectedText</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.JTextComponent.html#Javax_Swing_Text_JTextComponent_SelectedTextColor">JTextComponent.SelectedTextColor</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.JTextComponent.html#Javax_Swing_Text_JTextComponent_SelectionColor">JTextComponent.SelectionColor</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.JTextComponent.html#Javax_Swing_Text_JTextComponent_SelectionEnd">JTextComponent.SelectionEnd</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.JTextComponent.html#Javax_Swing_Text_JTextComponent_SelectionStart">JTextComponent.SelectionStart</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.JTextComponent.html#Javax_Swing_Text_JTextComponent_Text">JTextComponent.Text</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.JTextComponent.html#Javax_Swing_Text_JTextComponent_IsEditable">JTextComponent.IsEditable()</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.JTextComponent.html#Javax_Swing_Text_JTextComponent_Print">JTextComponent.Print()</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.JTextComponent.html#Javax_Swing_Text_JTextComponent_Print_Java_Text_MessageFormat_Java_Text_MessageFormat_System_Boolean_Javax_Print_PrintService_Javax_Print_Attribute_PrintRequestAttributeSet_System_Boolean_">JTextComponent.Print(MessageFormat, MessageFormat, Boolean, PrintService, PrintRequestAttributeSet, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.JTextComponent.html#Javax_Swing_Text_JTextComponent_Print_Java_Text_MessageFormat_Java_Text_MessageFormat_">JTextComponent.Print(MessageFormat, MessageFormat)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.JTextComponent.html#Javax_Swing_Text_JTextComponent_GetDropLocation">JTextComponent.GetDropLocation()</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.JTextComponent.html#Javax_Swing_Text_JTextComponent_GetScrollableBlockIncrement_Java_Awt_Rectangle_System_Int32_System_Int32_">JTextComponent.GetScrollableBlockIncrement(Rectangle, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.JTextComponent.html#Javax_Swing_Text_JTextComponent_GetScrollableUnitIncrement_Java_Awt_Rectangle_System_Int32_System_Int32_">JTextComponent.GetScrollableUnitIncrement(Rectangle, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.JTextComponent.html#Javax_Swing_Text_JTextComponent_ViewToModel2D_Java_Awt_Geom_Point2D_">JTextComponent.ViewToModel2D(Point2D)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.JTextComponent.html#Javax_Swing_Text_JTextComponent_ModelToView2D_System_Int32_">JTextComponent.ModelToView2D(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.JTextComponent.html#Javax_Swing_Text_JTextComponent_GetPrintable_Java_Text_MessageFormat_Java_Text_MessageFormat_">JTextComponent.GetPrintable(MessageFormat, MessageFormat)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.JTextComponent.html#Javax_Swing_Text_JTextComponent_GetText_System_Int32_System_Int32_">JTextComponent.GetText(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.JTextComponent.html#Javax_Swing_Text_JTextComponent_AddCaretListener_Javax_Swing_Event_CaretListener_">JTextComponent.AddCaretListener(CaretListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.JTextComponent.html#Javax_Swing_Text_JTextComponent_Copy">JTextComponent.Copy()</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.JTextComponent.html#Javax_Swing_Text_JTextComponent_Cut">JTextComponent.Cut()</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.JTextComponent.html#Javax_Swing_Text_JTextComponent_MoveCaretPosition_System_Int32_">JTextComponent.MoveCaretPosition(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.JTextComponent.html#Javax_Swing_Text_JTextComponent_Paste">JTextComponent.Paste()</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.JTextComponent.html#Javax_Swing_Text_JTextComponent_Read_Java_Io_Reader_System_Object_">JTextComponent.Read(Reader, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.JTextComponent.html#Javax_Swing_Text_JTextComponent_RemoveCaretListener_Javax_Swing_Event_CaretListener_">JTextComponent.RemoveCaretListener(CaretListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.JTextComponent.html#Javax_Swing_Text_JTextComponent_ReplaceSelection_System_String_">JTextComponent.ReplaceSelection(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.JTextComponent.html#Javax_Swing_Text_JTextComponent_Select_System_Int32_System_Int32_">JTextComponent.Select(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.JTextComponent.html#Javax_Swing_Text_JTextComponent_SelectAll">JTextComponent.SelectAll()</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.JTextComponent.html#Javax_Swing_Text_JTextComponent_SetEditable_System_Boolean_">JTextComponent.SetEditable(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.JTextComponent.html#Javax_Swing_Text_JTextComponent_SetUI_Javax_Swing_Plaf_TextUI_">JTextComponent.SetUI(TextUI)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.Text.JTextComponent.html#Javax_Swing_Text_JTextComponent_Write_Java_Io_Writer_">JTextComponent.Write(Writer)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_UNDEFINED_CONDITION">JComponent.UNDEFINED_CONDITION</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_WHEN_ANCESTOR_OF_FOCUSED_COMPONENT">JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_WHEN_FOCUSED">JComponent.WHEN_FOCUSED</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_WHEN_IN_FOCUSED_WINDOW">JComponent.WHEN_IN_FOCUSED_WINDOW</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_TOOL_TIP_TEXT_KEY">JComponent.TOOL_TIP_TEXT_KEY</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_DefaultLocale">JComponent.DefaultLocale</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_IsLightweightComponent_Java_Awt_Component_">JComponent.IsLightweightComponent(Component)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_ActionMap">JComponent.ActionMap</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_AncestorListeners">JComponent.AncestorListeners</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_Autoscrolls">JComponent.Autoscrolls</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_Border">JComponent.Border</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_ComponentPopupMenu">JComponent.ComponentPopupMenu</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_DebugGraphicsOptions">JComponent.DebugGraphicsOptions</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_InheritsPopupMenu">JComponent.InheritsPopupMenu</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_InputMap">JComponent.InputMap</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_InputVerifier">JComponent.InputVerifier</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_RegisteredKeyStrokes">JComponent.RegisteredKeyStrokes</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_RootPane">JComponent.RootPane</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_ToolTipText">JComponent.ToolTipText</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_TopLevelAncestor">JComponent.TopLevelAncestor</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_TransferHandler">JComponent.TransferHandler</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_UI">JComponent.UI</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_UIClassID">JComponent.UIClassID</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_VerifyInputWhenFocusTarget">JComponent.VerifyInputWhenFocusTarget</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_VetoableChangeListeners">JComponent.VetoableChangeListeners</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_VisibleRect">JComponent.VisibleRect</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_IsOptimizedDrawingEnabled">JComponent.IsOptimizedDrawingEnabled()</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_IsPaintingTile">JComponent.IsPaintingTile()</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_IsRequestFocusEnabled">JComponent.IsRequestFocusEnabled()</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_RequestFocus_System_Boolean_">JComponent.RequestFocus(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_IsPaintingForPrint">JComponent.IsPaintingForPrint()</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_GetClientProperty_System_Object_">JComponent.GetClientProperty(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_GetInputMap_System_Int32_">JComponent.GetInputMap(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_PutClientProperty_System_Object_System_Object_">JComponent.PutClientProperty(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_SetInputMap_System_Int32_Javax_Swing_InputMap_">JComponent.SetInputMap(Int32, InputMap)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_GetConditionForKeyStroke_Javax_Swing_KeyStroke_">JComponent.GetConditionForKeyStroke(KeyStroke)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_GetActionForKeyStroke_Javax_Swing_KeyStroke_">JComponent.GetActionForKeyStroke(KeyStroke)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_GetInsets_Java_Awt_Insets_">JComponent.GetInsets(Insets)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_GetPopupLocation_Java_Awt_EventNs_MouseEvent_">JComponent.GetPopupLocation(MouseEvent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_GetToolTipLocation_Java_Awt_EventNs_MouseEvent_">JComponent.GetToolTipLocation(MouseEvent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_GetToolTipText_Java_Awt_EventNs_MouseEvent_">JComponent.GetToolTipText(MouseEvent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_CreateToolTip">JComponent.CreateToolTip()</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_AddVetoableChangeListener_Java_Beans_VetoableChangeListener_">JComponent.AddVetoableChangeListener(VetoableChangeListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_RemoveVetoableChangeListener_Java_Beans_VetoableChangeListener_">JComponent.RemoveVetoableChangeListener(VetoableChangeListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_AddAncestorListener_Javax_Swing_Event_AncestorListener_">JComponent.AddAncestorListener(AncestorListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_ComputeVisibleRect_Java_Awt_Rectangle_">JComponent.ComputeVisibleRect(Rectangle)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_FirePropertyChange_System_String_System_Boolean_System_Boolean_">JComponent.FirePropertyChange(String, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_FirePropertyChange_System_String_System_Int32_System_Int32_">JComponent.FirePropertyChange(String, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_GrabFocus">JComponent.GrabFocus()</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_PaintImmediately_System_Int32_System_Int32_System_Int32_System_Int32_">JComponent.PaintImmediately(Int32, Int32, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_PaintImmediately_Java_Awt_Rectangle_">JComponent.PaintImmediately(Rectangle)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_RegisterKeyboardAction_Java_Awt_EventNs_ActionListener_System_String_Javax_Swing_KeyStroke_System_Int32_">JComponent.RegisterKeyboardAction(ActionListener, String, KeyStroke, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_RegisterKeyboardAction_Java_Awt_EventNs_ActionListener_Javax_Swing_KeyStroke_System_Int32_">JComponent.RegisterKeyboardAction(ActionListener, KeyStroke, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_RemoveAncestorListener_Javax_Swing_Event_AncestorListener_">JComponent.RemoveAncestorListener(AncestorListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_Repaint_Java_Awt_Rectangle_">JComponent.Repaint(Rectangle)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_ResetKeyboardActions">JComponent.ResetKeyboardActions()</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_ScrollRectToVisible_Java_Awt_Rectangle_">JComponent.ScrollRectToVisible(Rectangle)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_SetAlignmentX_System_Single_">JComponent.SetAlignmentX(Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_SetAlignmentY_System_Single_">JComponent.SetAlignmentY(Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_SetDoubleBuffered_System_Boolean_">JComponent.SetDoubleBuffered(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_SetOpaque_System_Boolean_">JComponent.SetOpaque(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_SetRequestFocusEnabled_System_Boolean_">JComponent.SetRequestFocusEnabled(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_UnregisterKeyboardAction_Javax_Swing_KeyStroke_">JComponent.UnregisterKeyboardAction(KeyStroke)</a>
+    </div>
+    <div>
+      <a class="xref" href="Javax.Swing.JComponent.html#Javax_Swing_JComponent_UpdateUI">JComponent.UpdateUI()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_ComponentCount">Container.ComponentCount</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_Components">Container.Components</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_ContainerListeners">Container.ContainerListeners</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_FocusTraversalPolicy">Container.FocusTraversalPolicy</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_Insets">Container.Insets</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_Layout">Container.Layout</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_IsAncestorOf_Java_Awt_Component_">Container.IsAncestorOf(Component)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_IsFocusCycleRoot">Container.IsFocusCycleRoot()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_IsFocusTraversalPolicySet">Container.IsFocusTraversalPolicySet()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_IsValidateRoot">Container.IsValidateRoot()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_IsFocusTraversalPolicyProvider">Container.IsFocusTraversalPolicyProvider()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_SetFocusTraversalPolicyProvider_System_Boolean_">Container.SetFocusTraversalPolicyProvider(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_GetComponentZOrder_Java_Awt_Component_">Container.GetComponentZOrder(Component)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_Add_Java_Awt_Component_System_Int32_">Container.Add(Component, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_Add_Java_Awt_Component_">Container.Add(Component)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_Add_System_String_Java_Awt_Component_">Container.Add(String, Component)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_FindComponentAt_System_Int32_System_Int32_">Container.FindComponentAt(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_FindComponentAt_Java_Awt_Point_">Container.FindComponentAt(Point)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_GetComponent_System_Int32_">Container.GetComponent(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_GetMousePosition_System_Boolean_">Container.GetMousePosition(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_AddContainerListener_Java_Awt_EventNs_ContainerListener_">Container.AddContainerListener(ContainerListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_RemoveContainerListener_Java_Awt_EventNs_ContainerListener_">Container.RemoveContainerListener(ContainerListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_Add_Java_Awt_Component_System_Object_System_Int32_">Container.Add(Component, Object, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_Add_Java_Awt_Component_System_Object_">Container.Add(Component, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_PaintComponents_Java_Awt_Graphics_">Container.PaintComponents(Graphics)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_PrintComponents_Java_Awt_Graphics_">Container.PrintComponents(Graphics)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_Remove_System_Int32_">Container.Remove(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_Remove_Java_Awt_Component_">Container.Remove(Component)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_RemoveAll">Container.RemoveAll()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_SetComponentZOrder_Java_Awt_Component_System_Int32_">Container.SetComponentZOrder(Component, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_SetFocusCycleRoot_System_Boolean_">Container.SetFocusCycleRoot(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_TransferFocusDownCycle">Container.TransferFocusDownCycle()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_CreateHostedContainer_System_Boolean_">Container.CreateHostedContainer(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_HostedContainer">Container.HostedContainer</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_Dispose">Container.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_BOTTOM_ALIGNMENT">Component.BOTTOM_ALIGNMENT</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_CENTER_ALIGNMENT">Component.CENTER_ALIGNMENT</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_LEFT_ALIGNMENT">Component.LEFT_ALIGNMENT</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_RIGHT_ALIGNMENT">Component.RIGHT_ALIGNMENT</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_TOP_ALIGNMENT">Component.TOP_ALIGNMENT</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_AccessibleContext">Component.AccessibleContext</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_AlignmentX">Component.AlignmentX</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_AlignmentY">Component.AlignmentY</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_Background">Component.Background</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_Bounds">Component.Bounds</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_ColorModel">Component.ColorModel</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_ComponentListeners">Component.ComponentListeners</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_ComponentOrientation">Component.ComponentOrientation</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_Cursor">Component.Cursor</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_DropTarget">Component.DropTarget</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_FocusCycleRootAncestor">Component.FocusCycleRootAncestor</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_FocusListeners">Component.FocusListeners</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_FocusTraversalKeysEnabled">Component.FocusTraversalKeysEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_Font">Component.Font</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_Foreground">Component.Foreground</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_Graphics">Component.Graphics</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_GraphicsConfiguration">Component.GraphicsConfiguration</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_Height">Component.Height</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_HierarchyBoundsListeners">Component.HierarchyBoundsListeners</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_HierarchyListeners">Component.HierarchyListeners</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_IgnoreRepaint">Component.IgnoreRepaint</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_InputContext">Component.InputContext</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_InputMethodListeners">Component.InputMethodListeners</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_InputMethodRequests">Component.InputMethodRequests</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_KeyListeners">Component.KeyListeners</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_Locale">Component.Locale</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_Location">Component.Location</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_LocationOnScreen">Component.LocationOnScreen</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_MaximumSize">Component.MaximumSize</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_MinimumSize">Component.MinimumSize</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_MouseListeners">Component.MouseListeners</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_MouseMotionListeners">Component.MouseMotionListeners</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_MousePosition">Component.MousePosition</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_MouseWheelListeners">Component.MouseWheelListeners</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_Name">Component.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_Parent">Component.Parent</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_PreferredSize">Component.PreferredSize</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_PropertyChangeListeners">Component.PropertyChangeListeners</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_Size">Component.Size</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_Toolkit">Component.Toolkit</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_TreeLock">Component.TreeLock</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_Width">Component.Width</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_X">Component.X</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_Y">Component.Y</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_AreFocusTraversalKeysSet_System_Int32_">Component.AreFocusTraversalKeysSet(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_Contains_System_Int32_System_Int32_">Component.Contains(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_Contains_Java_Awt_Point_">Component.Contains(Point)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_HasFocus">Component.HasFocus()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_ImageUpdate_Java_Awt_Image_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_">Component.ImageUpdate(Image, Int32, Int32, Int32, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_IsBackgroundSet">Component.IsBackgroundSet()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_IsCursorSet">Component.IsCursorSet()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_IsDisplayable">Component.IsDisplayable()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_IsDoubleBuffered">Component.IsDoubleBuffered()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_IsEnabled">Component.IsEnabled()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_IsFocusable">Component.IsFocusable()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_IsFocusCycleRoot_Java_Awt_Container_">Component.IsFocusCycleRoot(Container)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_IsFocusOwner">Component.IsFocusOwner()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_IsFontSet">Component.IsFontSet()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_IsForegroundSet">Component.IsForegroundSet()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_IsLightweight">Component.IsLightweight()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_IsMaximumSizeSet">Component.IsMaximumSizeSet()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_IsMinimumSizeSet">Component.IsMinimumSizeSet()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_IsOpaque">Component.IsOpaque()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_IsPreferredSizeSet">Component.IsPreferredSizeSet()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_IsShowing">Component.IsShowing()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_IsValid">Component.IsValid()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_IsVisible">Component.IsVisible()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_PrepareImage_Java_Awt_Image_System_Int32_System_Int32_Java_Awt_ImageNs_ImageObserver_">Component.PrepareImage(Image, Int32, Int32, ImageObserver)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_PrepareImage_Java_Awt_Image_Java_Awt_ImageNs_ImageObserver_">Component.PrepareImage(Image, ImageObserver)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_RequestFocusInWindow">Component.RequestFocusInWindow()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_DispatchEvent_Java_Awt_AWTEvent_">Component.DispatchEvent(AWTEvent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_CheckImage_Java_Awt_Image_System_Int32_System_Int32_Java_Awt_ImageNs_ImageObserver_">Component.CheckImage(Image, Int32, Int32, ImageObserver)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_CheckImage_Java_Awt_Image_Java_Awt_ImageNs_ImageObserver_">Component.CheckImage(Image, ImageObserver)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_GetBaseline_System_Int32_System_Int32_">Component.GetBaseline(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_GetComponentAt_System_Int32_System_Int32_">Component.GetComponentAt(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_GetComponentAt_Java_Awt_Point_">Component.GetComponentAt(Point)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_GetSize_Java_Awt_Dimension_">Component.GetSize(Dimension)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_GetFontMetrics_Java_Awt_Font_">Component.GetFontMetrics(Font)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_CreateImage_System_Int32_System_Int32_">Component.CreateImage(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_CreateImage_Java_Awt_ImageNs_ImageProducer_">Component.CreateImage(ImageProducer)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_CreateVolatileImage_System_Int32_System_Int32_Java_Awt_ImageCapabilities_">Component.CreateVolatileImage(Int32, Int32, ImageCapabilities)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_CreateVolatileImage_System_Int32_System_Int32_">Component.CreateVolatileImage(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_GetLocation_Java_Awt_Point_">Component.GetLocation(Point)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_GetBounds_Java_Awt_Rectangle_">Component.GetBounds(Rectangle)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_GetPropertyChangeListeners_System_String_">Component.GetPropertyChangeListeners(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_AddComponentListener_Java_Awt_EventNs_ComponentListener_">Component.AddComponentListener(ComponentListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_AddFocusListener_Java_Awt_EventNs_FocusListener_">Component.AddFocusListener(FocusListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_AddInputMethodListener_Java_Awt_EventNs_InputMethodListener_">Component.AddInputMethodListener(InputMethodListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_AddKeyListener_Java_Awt_EventNs_KeyListener_">Component.AddKeyListener(KeyListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_AddMouseListener_Java_Awt_EventNs_MouseListener_">Component.AddMouseListener(MouseListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_AddMouseMotionListener_Java_Awt_EventNs_MouseMotionListener_">Component.AddMouseMotionListener(MouseMotionListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_AddMouseWheelListener_Java_Awt_EventNs_MouseWheelListener_">Component.AddMouseWheelListener(MouseWheelListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_RemoveComponentListener_Java_Awt_EventNs_ComponentListener_">Component.RemoveComponentListener(ComponentListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_RemoveFocusListener_Java_Awt_EventNs_FocusListener_">Component.RemoveFocusListener(FocusListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_RemoveInputMethodListener_Java_Awt_EventNs_InputMethodListener_">Component.RemoveInputMethodListener(InputMethodListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_RemoveKeyListener_Java_Awt_EventNs_KeyListener_">Component.RemoveKeyListener(KeyListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_RemoveMouseListener_Java_Awt_EventNs_MouseListener_">Component.RemoveMouseListener(MouseListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_RemoveMouseMotionListener_Java_Awt_EventNs_MouseMotionListener_">Component.RemoveMouseMotionListener(MouseMotionListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_RemoveMouseWheelListener_Java_Awt_EventNs_MouseWheelListener_">Component.RemoveMouseWheelListener(MouseWheelListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_Add_Java_Awt_PopupMenu_">Component.Add(PopupMenu)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_AddHierarchyBoundsListener_Java_Awt_EventNs_HierarchyBoundsListener_">Component.AddHierarchyBoundsListener(HierarchyBoundsListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_AddHierarchyListener_Java_Awt_EventNs_HierarchyListener_">Component.AddHierarchyListener(HierarchyListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_AddNotify">Component.AddNotify()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_AddPropertyChangeListener_Java_Beans_PropertyChangeListener_">Component.AddPropertyChangeListener(PropertyChangeListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_AddPropertyChangeListener_System_String_Java_Beans_PropertyChangeListener_">Component.AddPropertyChangeListener(String, PropertyChangeListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_ApplyComponentOrientation_Java_Awt_ComponentOrientation_">Component.ApplyComponentOrientation(ComponentOrientation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_DoLayout">Component.DoLayout()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_EnableInputMethods_System_Boolean_">Component.EnableInputMethods(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_FirePropertyChange_System_String_System_Byte_System_Byte_">Component.FirePropertyChange(String, Byte, Byte)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_FirePropertyChange_System_String_System_Char_System_Char_">Component.FirePropertyChange(String, Char, Char)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_FirePropertyChange_System_String_System_Double_System_Double_">Component.FirePropertyChange(String, Double, Double)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_FirePropertyChange_System_String_System_Single_System_Single_">Component.FirePropertyChange(String, Single, Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_FirePropertyChange_System_String_System_Int64_System_Int64_">Component.FirePropertyChange(String, Int64, Int64)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_FirePropertyChange_System_String_System_Int16_System_Int16_">Component.FirePropertyChange(String, Int16, Int16)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_Invalidate">Component.Invalidate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_List">Component.List()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_List_Java_Io_PrintStream_System_Int32_">Component.List(PrintStream, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_List_Java_Io_PrintStream_">Component.List(PrintStream)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_List_Java_Io_PrintWriter_System_Int32_">Component.List(PrintWriter, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_List_Java_Io_PrintWriter_">Component.List(PrintWriter)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_Paint_Java_Awt_Graphics_">Component.Paint(Graphics)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_PaintAll_Java_Awt_Graphics_">Component.PaintAll(Graphics)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_Print_Java_Awt_Graphics_">Component.Print(Graphics)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_PrintAll_Java_Awt_Graphics_">Component.PrintAll(Graphics)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_Remove_Java_Awt_MenuComponent_">Component.Remove(MenuComponent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_RemoveHierarchyBoundsListener_Java_Awt_EventNs_HierarchyBoundsListener_">Component.RemoveHierarchyBoundsListener(HierarchyBoundsListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_RemoveHierarchyListener_Java_Awt_EventNs_HierarchyListener_">Component.RemoveHierarchyListener(HierarchyListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_RemoveNotify">Component.RemoveNotify()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_RemovePropertyChangeListener_Java_Beans_PropertyChangeListener_">Component.RemovePropertyChangeListener(PropertyChangeListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_RemovePropertyChangeListener_System_String_Java_Beans_PropertyChangeListener_">Component.RemovePropertyChangeListener(String, PropertyChangeListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_Repaint">Component.Repaint()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_Repaint_System_Int32_System_Int32_System_Int32_System_Int32_">Component.Repaint(Int32, Int32, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_Repaint_System_Int64_System_Int32_System_Int32_System_Int32_System_Int32_">Component.Repaint(Int64, Int32, Int32, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_Repaint_System_Int64_">Component.Repaint(Int64)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_RequestFocus">Component.RequestFocus()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_Revalidate">Component.Revalidate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_SetBounds_System_Int32_System_Int32_System_Int32_System_Int32_">Component.SetBounds(Int32, Int32, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_SetEnabled_System_Boolean_">Component.SetEnabled(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_SetFocusable_System_Boolean_">Component.SetFocusable(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_SetLocation_System_Int32_System_Int32_">Component.SetLocation(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_SetMixingCutoutShape_Java_Awt_Shape_">Component.SetMixingCutoutShape(Shape)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_SetSize_System_Int32_System_Int32_">Component.SetSize(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_SetVisible_System_Boolean_">Component.SetVisible(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_TransferFocus">Component.TransferFocus()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_TransferFocusBackward">Component.TransferFocusBackward()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_TransferFocusUpCycle">Component.TransferFocusUpCycle()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_Update_Java_Awt_Graphics_">Component.Update(Graphics)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Component.html#Java_Awt_Component_Validate">Component.Validate()</a>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Awt.Component&gt;.SExecute(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Awt.Component&gt;.SExecute&lt;TReturn&gt;(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Awt.Component&gt;.SExecute(System.Type, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Awt.Component&gt;.SExecute&lt;TNewClass, TReturn&gt;(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Awt.Component&gt;.SExecute&lt;TReturn&gt;(System.Type, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Awt.Component&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Awt.Component&gt;.SExecute&lt;TReturn, TConverter&gt;(System.Type, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Awt.Component&gt;.SExecuteArray&lt;T&gt;(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Awt.Component&gt;.IsAssignableFrom(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Awt.Component&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Awt.Component&gt;.New(System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Awt.Component&gt;.Execute&lt;T&gt;(T[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Awt.Component&gt;.DynClazz</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Awt.Component&gt;.Clazz</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Awt.Component&gt;.MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.DynClazz</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Awt.Component&gt;.MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.Clazz</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TReturn&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.New&lt;TNewClass&gt;(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.New&lt;TNewClass, TReturn&gt;(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.New&lt;TNewClass, TReturn, TConverter&gt;(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsInstanceOf(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wait(System.Int64)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wait(System.Int64, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IExecute(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IExecute&lt;TReturn&gt;(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IExecuteArray&lt;T&gt;(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.DynInstance</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Instance</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember#system-dynamic-dynamicobject-trygetmember(system-dynamic-getmemberbinder-system-object@)">DynamicObject.TryGetMember(GetMemberBinder, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember#system-dynamic-dynamicobject-trysetmember(system-dynamic-setmemberbinder-system-object)">DynamicObject.TrySetMember(SetMemberBinder, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember#system-dynamic-dynamicobject-trydeletemember(system-dynamic-deletememberbinder)">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember#system-dynamic-dynamicobject-tryinvokemember(system-dynamic-invokememberbinder-system-object()-system-object@)">DynamicObject.TryInvokeMember(InvokeMemberBinder, Object[], Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert#system-dynamic-dynamicobject-tryconvert(system-dynamic-convertbinder-system-object@)">DynamicObject.TryConvert(ConvertBinder, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance#system-dynamic-dynamicobject-trycreateinstance(system-dynamic-createinstancebinder-system-object()-system-object@)">DynamicObject.TryCreateInstance(CreateInstanceBinder, Object[], Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke#system-dynamic-dynamicobject-tryinvoke(system-dynamic-invokebinder-system-object()-system-object@)">DynamicObject.TryInvoke(InvokeBinder, Object[], Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation#system-dynamic-dynamicobject-trybinaryoperation(system-dynamic-binaryoperationbinder-system-object-system-object@)">DynamicObject.TryBinaryOperation(BinaryOperationBinder, Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation#system-dynamic-dynamicobject-tryunaryoperation(system-dynamic-unaryoperationbinder-system-object@)">DynamicObject.TryUnaryOperation(UnaryOperationBinder, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex#system-dynamic-dynamicobject-trygetindex(system-dynamic-getindexbinder-system-object()-system-object@)">DynamicObject.TryGetIndex(GetIndexBinder, Object[], Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex#system-dynamic-dynamicobject-trysetindex(system-dynamic-setindexbinder-system-object()-system-object)">DynamicObject.TrySetIndex(SetIndexBinder, Object[], Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex#system-dynamic-dynamicobject-trydeleteindex(system-dynamic-deleteindexbinder-system-object())">DynamicObject.TryDeleteIndex(DeleteIndexBinder, Object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames#system-dynamic-dynamicobject-getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject#system-dynamic-dynamicobject-getmetaobject(system-linq-expressions-expression)">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Javax.Swing.html">Javax.Swing</a></h6>
+  <h6><strong>Assembly</strong>: MASES.JNet.dll</h6>
+  <h5 id="Javax_Swing_JEditorPane_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class JEditorPane : JTextComponent, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_JEditorPane__ctor.md&amp;value=---%0Auid%3A%20Javax.Swing.JEditorPane.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L1987">View Source</a>
+  </span>
+  <a id="Javax_Swing_JEditorPane__ctor_" data-uid="Javax.Swing.JEditorPane.#ctor*"></a>
+  <h4 id="Javax_Swing_JEditorPane__ctor" data-uid="Javax.Swing.JEditorPane.#ctor">JEditorPane()</h4>
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JEditorPane()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_JEditorPane__ctor_Java_Net_URL_.md&amp;value=---%0Auid%3A%20Javax.Swing.JEditorPane.%23ctor(Java.Net.URL)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JEditorPane.cs/#L49">View Source</a>
+  </span>
+  <a id="Javax_Swing_JEditorPane__ctor_" data-uid="Javax.Swing.JEditorPane.#ctor*"></a>
+  <h4 id="Javax_Swing_JEditorPane__ctor_Java_Net_URL_" data-uid="Javax.Swing.JEditorPane.#ctor(Java.Net.URL)">JEditorPane(URL)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JEditorPane(URL arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Net.URL.html">URL</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_JEditorPane__ctor_System_Object___.md&amp;value=---%0Auid%3A%20Javax.Swing.JEditorPane.%23ctor(System.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L1991">View Source</a>
+  </span>
+  <a id="Javax_Swing_JEditorPane__ctor_" data-uid="Javax.Swing.JEditorPane.#ctor*"></a>
+  <h4 id="Javax_Swing_JEditorPane__ctor_System_Object___" data-uid="Javax.Swing.JEditorPane.#ctor(System.Object[])">JEditorPane(Object[])</h4>
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JEditorPane(params object[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_JEditorPane__ctor_System_String_.md&amp;value=---%0Auid%3A%20Javax.Swing.JEditorPane.%23ctor(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JEditorPane.cs/#L42">View Source</a>
+  </span>
+  <a id="Javax_Swing_JEditorPane__ctor_" data-uid="Javax.Swing.JEditorPane.#ctor*"></a>
+  <h4 id="Javax_Swing_JEditorPane__ctor_System_String_" data-uid="Javax.Swing.JEditorPane.#ctor(System.String)">JEditorPane(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JEditorPane(string arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_JEditorPane__ctor_System_String_System_String_.md&amp;value=---%0Auid%3A%20Javax.Swing.JEditorPane.%23ctor(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JEditorPane.cs/#L35">View Source</a>
+  </span>
+  <a id="Javax_Swing_JEditorPane__ctor_" data-uid="Javax.Swing.JEditorPane.#ctor*"></a>
+  <h4 id="Javax_Swing_JEditorPane__ctor_System_String_System_String_" data-uid="Javax.Swing.JEditorPane.#ctor(System.String,System.String)">JEditorPane(String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JEditorPane(string arg0, string arg1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">arg1</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_JEditorPane_ClassName.md&amp;value=---%0Auid%3A%20Javax.Swing.JEditorPane.ClassName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L1994">View Source</a>
+  </span>
+  <a id="Javax_Swing_JEditorPane_ClassName_" data-uid="Javax.Swing.JEditorPane.ClassName*"></a>
+  <h4 id="Javax_Swing_JEditorPane_ClassName" data-uid="Javax.Swing.JEditorPane.ClassName">ClassName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ClassName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Javax.Swing.Text.JTextComponent.html#Javax_Swing_Text_JTextComponent_ClassName">JTextComponent.ClassName</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_JEditorPane_ContentType.md&amp;value=---%0Auid%3A%20Javax.Swing.JEditorPane.ContentType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JEditorPane.cs/#L108">View Source</a>
+  </span>
+  <a id="Javax_Swing_JEditorPane_ContentType_" data-uid="Javax.Swing.JEditorPane.ContentType*"></a>
+  <h4 id="Javax_Swing_JEditorPane_ContentType" data-uid="Javax.Swing.JEditorPane.ContentType">ContentType</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#getContentType()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#getContentType()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#setContentType(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#setContentType(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ContentType { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_JEditorPane_EditorKit.md&amp;value=---%0Auid%3A%20Javax.Swing.JEditorPane.EditorKit%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JEditorPane.cs/#L115">View Source</a>
+  </span>
+  <a id="Javax_Swing_JEditorPane_EditorKit_" data-uid="Javax.Swing.JEditorPane.EditorKit*"></a>
+  <h4 id="Javax_Swing_JEditorPane_EditorKit" data-uid="Javax.Swing.JEditorPane.EditorKit">EditorKit</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#getEditorKit()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#getEditorKit()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#setEditorKit(javax.swing.text.EditorKit)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#setEditorKit(javax.swing.text.EditorKit)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EditorKit EditorKit { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Javax.Swing.Text.EditorKit.html">EditorKit</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_JEditorPane_HONOR_DISPLAY_PROPERTIES.md&amp;value=---%0Auid%3A%20Javax.Swing.JEditorPane.HONOR_DISPLAY_PROPERTIES%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JEditorPane.cs/#L64">View Source</a>
+  </span>
+  <a id="Javax_Swing_JEditorPane_HONOR_DISPLAY_PROPERTIES_" data-uid="Javax.Swing.JEditorPane.HONOR_DISPLAY_PROPERTIES*"></a>
+  <h4 id="Javax_Swing_JEditorPane_HONOR_DISPLAY_PROPERTIES" data-uid="Javax.Swing.JEditorPane.HONOR_DISPLAY_PROPERTIES">HONOR_DISPLAY_PROPERTIES</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#HONOR_DISPLAY_PROPERTIES">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#HONOR_DISPLAY_PROPERTIES</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string HONOR_DISPLAY_PROPERTIES { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_JEditorPane_HyperlinkListeners.md&amp;value=---%0Auid%3A%20Javax.Swing.JEditorPane.HyperlinkListeners%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JEditorPane.cs/#L122">View Source</a>
+  </span>
+  <a id="Javax_Swing_JEditorPane_HyperlinkListeners_" data-uid="Javax.Swing.JEditorPane.HyperlinkListeners*"></a>
+  <h4 id="Javax_Swing_JEditorPane_HyperlinkListeners" data-uid="Javax.Swing.JEditorPane.HyperlinkListeners">HyperlinkListeners</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#getHyperlinkListeners()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#getHyperlinkListeners()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HyperlinkListener[] HyperlinkListeners { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Javax.Swing.Event.HyperlinkListener.html">HyperlinkListener</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_JEditorPane_IsAbstract.md&amp;value=---%0Auid%3A%20Javax.Swing.JEditorPane.IsAbstract%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L1997">View Source</a>
+  </span>
+  <a id="Javax_Swing_JEditorPane_IsAbstract_" data-uid="Javax.Swing.JEditorPane.IsAbstract*"></a>
+  <h4 id="Javax_Swing_JEditorPane_IsAbstract" data-uid="Javax.Swing.JEditorPane.IsAbstract">IsAbstract</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsAbstract { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Javax.Swing.Text.JTextComponent.html#Javax_Swing_Text_JTextComponent_IsAbstract">JTextComponent.IsAbstract</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_JEditorPane_IsCloseable.md&amp;value=---%0Auid%3A%20Javax.Swing.JEditorPane.IsCloseable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L2000">View Source</a>
+  </span>
+  <a id="Javax_Swing_JEditorPane_IsCloseable_" data-uid="Javax.Swing.JEditorPane.IsCloseable*"></a>
+  <h4 id="Javax_Swing_JEditorPane_IsCloseable" data-uid="Javax.Swing.JEditorPane.IsCloseable">IsCloseable</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsCloseable { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Javax.Swing.Text.JTextComponent.html#Javax_Swing_Text_JTextComponent_IsCloseable">JTextComponent.IsCloseable</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_JEditorPane_IsInterface.md&amp;value=---%0Auid%3A%20Javax.Swing.JEditorPane.IsInterface%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L2003">View Source</a>
+  </span>
+  <a id="Javax_Swing_JEditorPane_IsInterface_" data-uid="Javax.Swing.JEditorPane.IsInterface*"></a>
+  <h4 id="Javax_Swing_JEditorPane_IsInterface" data-uid="Javax.Swing.JEditorPane.IsInterface">IsInterface</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsInterface { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Javax.Swing.Text.JTextComponent.html#Javax_Swing_Text_JTextComponent_IsInterface">JTextComponent.IsInterface</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_JEditorPane_IsStatic.md&amp;value=---%0Auid%3A%20Javax.Swing.JEditorPane.IsStatic%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/AllPackageClasses.cs/#L2006">View Source</a>
+  </span>
+  <a id="Javax_Swing_JEditorPane_IsStatic_" data-uid="Javax.Swing.JEditorPane.IsStatic*"></a>
+  <h4 id="Javax_Swing_JEditorPane_IsStatic" data-uid="Javax.Swing.JEditorPane.IsStatic">IsStatic</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsStatic { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Javax.Swing.Text.JTextComponent.html#Javax_Swing_Text_JTextComponent_IsStatic">JTextComponent.IsStatic</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_JEditorPane_Page.md&amp;value=---%0Auid%3A%20Javax.Swing.JEditorPane.Page%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JEditorPane.cs/#L129">View Source</a>
+  </span>
+  <a id="Javax_Swing_JEditorPane_Page_" data-uid="Javax.Swing.JEditorPane.Page*"></a>
+  <h4 id="Javax_Swing_JEditorPane_Page" data-uid="Javax.Swing.JEditorPane.Page">Page</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#getPage()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#getPage()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public URL Page { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Net.URL.html">URL</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_JEditorPane_W3C_LENGTH_UNITS.md&amp;value=---%0Auid%3A%20Javax.Swing.JEditorPane.W3C_LENGTH_UNITS%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JEditorPane.cs/#L68">View Source</a>
+  </span>
+  <a id="Javax_Swing_JEditorPane_W3C_LENGTH_UNITS_" data-uid="Javax.Swing.JEditorPane.W3C_LENGTH_UNITS*"></a>
+  <h4 id="Javax_Swing_JEditorPane_W3C_LENGTH_UNITS" data-uid="Javax.Swing.JEditorPane.W3C_LENGTH_UNITS">W3C_LENGTH_UNITS</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#W3C_LENGTH_UNITS">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#W3C_LENGTH_UNITS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string W3C_LENGTH_UNITS { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_JEditorPane_AddHyperlinkListener_Javax_Swing_Event_HyperlinkListener_.md&amp;value=---%0Auid%3A%20Javax.Swing.JEditorPane.AddHyperlinkListener(Javax.Swing.Event.HyperlinkListener)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JEditorPane.cs/#L143">View Source</a>
+  </span>
+  <a id="Javax_Swing_JEditorPane_AddHyperlinkListener_" data-uid="Javax.Swing.JEditorPane.AddHyperlinkListener*"></a>
+  <h4 id="Javax_Swing_JEditorPane_AddHyperlinkListener_Javax_Swing_Event_HyperlinkListener_" data-uid="Javax.Swing.JEditorPane.AddHyperlinkListener(Javax.Swing.Event.HyperlinkListener)">AddHyperlinkListener(HyperlinkListener)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#addHyperlinkListener(javax.swing.event.HyperlinkListener)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#addHyperlinkListener(javax.swing.event.HyperlinkListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddHyperlinkListener(HyperlinkListener arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Javax.Swing.Event.HyperlinkListener.html">HyperlinkListener</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_JEditorPane_CreateEditorKitForContentType_System_String_.md&amp;value=---%0Auid%3A%20Javax.Swing.JEditorPane.CreateEditorKitForContentType(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JEditorPane.cs/#L83">View Source</a>
+  </span>
+  <a id="Javax_Swing_JEditorPane_CreateEditorKitForContentType_" data-uid="Javax.Swing.JEditorPane.CreateEditorKitForContentType*"></a>
+  <h4 id="Javax_Swing_JEditorPane_CreateEditorKitForContentType_System_String_" data-uid="Javax.Swing.JEditorPane.CreateEditorKitForContentType(System.String)">CreateEditorKitForContentType(String)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#createEditorKitForContentType(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#createEditorKitForContentType(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static EditorKit CreateEditorKitForContentType(string arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Javax.Swing.Text.EditorKit.html">EditorKit</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_JEditorPane_FireHyperlinkUpdate_Javax_Swing_Event_HyperlinkEvent_.md&amp;value=---%0Auid%3A%20Javax.Swing.JEditorPane.FireHyperlinkUpdate(Javax.Swing.Event.HyperlinkEvent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JEditorPane.cs/#L157">View Source</a>
+  </span>
+  <a id="Javax_Swing_JEditorPane_FireHyperlinkUpdate_" data-uid="Javax.Swing.JEditorPane.FireHyperlinkUpdate*"></a>
+  <h4 id="Javax_Swing_JEditorPane_FireHyperlinkUpdate_Javax_Swing_Event_HyperlinkEvent_" data-uid="Javax.Swing.JEditorPane.FireHyperlinkUpdate(Javax.Swing.Event.HyperlinkEvent)">FireHyperlinkUpdate(HyperlinkEvent)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#fireHyperlinkUpdate(javax.swing.event.HyperlinkEvent)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#fireHyperlinkUpdate(javax.swing.event.HyperlinkEvent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FireHyperlinkUpdate(HyperlinkEvent arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Javax.Swing.Event.HyperlinkEvent.html">HyperlinkEvent</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_JEditorPane_GetEditorKitClassNameForContentType_System_String_.md&amp;value=---%0Auid%3A%20Javax.Swing.JEditorPane.GetEditorKitClassNameForContentType(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JEditorPane.cs/#L76">View Source</a>
+  </span>
+  <a id="Javax_Swing_JEditorPane_GetEditorKitClassNameForContentType_" data-uid="Javax.Swing.JEditorPane.GetEditorKitClassNameForContentType*"></a>
+  <h4 id="Javax_Swing_JEditorPane_GetEditorKitClassNameForContentType_System_String_" data-uid="Javax.Swing.JEditorPane.GetEditorKitClassNameForContentType(System.String)">GetEditorKitClassNameForContentType(String)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#getEditorKitClassNameForContentType(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#getEditorKitClassNameForContentType(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetEditorKitClassNameForContentType(string arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_JEditorPane_GetEditorKitForContentType_System_String_.md&amp;value=---%0Auid%3A%20Javax.Swing.JEditorPane.GetEditorKitForContentType(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JEditorPane.cs/#L136">View Source</a>
+  </span>
+  <a id="Javax_Swing_JEditorPane_GetEditorKitForContentType_" data-uid="Javax.Swing.JEditorPane.GetEditorKitForContentType*"></a>
+  <h4 id="Javax_Swing_JEditorPane_GetEditorKitForContentType_System_String_" data-uid="Javax.Swing.JEditorPane.GetEditorKitForContentType(System.String)">GetEditorKitForContentType(String)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#getEditorKitForContentType(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#getEditorKitForContentType(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EditorKit GetEditorKitForContentType(string arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Javax.Swing.Text.EditorKit.html">EditorKit</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_JEditorPane_Read_Java_Io_InputStream_System_Object_.md&amp;value=---%0Auid%3A%20Javax.Swing.JEditorPane.Read(Java.Io.InputStream%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JEditorPane.cs/#L164">View Source</a>
+  </span>
+  <a id="Javax_Swing_JEditorPane_Read_" data-uid="Javax.Swing.JEditorPane.Read*"></a>
+  <h4 id="Javax_Swing_JEditorPane_Read_Java_Io_InputStream_System_Object_" data-uid="Javax.Swing.JEditorPane.Read(Java.Io.InputStream,System.Object)">Read(InputStream, Object)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#read(java.io.InputStream,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#read(java.io.InputStream,java.lang.Object)</a> throws java.io.IOException</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Read(InputStream arg0, object arg1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Io.InputStream.html">InputStream</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">arg1</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_JEditorPane_RegisterEditorKitForContentType_System_String_System_String_.md&amp;value=---%0Auid%3A%20Javax.Swing.JEditorPane.RegisterEditorKitForContentType(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JEditorPane.cs/#L97">View Source</a>
+  </span>
+  <a id="Javax_Swing_JEditorPane_RegisterEditorKitForContentType_" data-uid="Javax.Swing.JEditorPane.RegisterEditorKitForContentType*"></a>
+  <h4 id="Javax_Swing_JEditorPane_RegisterEditorKitForContentType_System_String_System_String_" data-uid="Javax.Swing.JEditorPane.RegisterEditorKitForContentType(System.String,System.String)">RegisterEditorKitForContentType(String, String)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#registerEditorKitForContentType(java.lang.String,java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#registerEditorKitForContentType(java.lang.String,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RegisterEditorKitForContentType(string arg0, string arg1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">arg1</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_JEditorPane_RegisterEditorKitForContentType_System_String_System_String_Java_Lang_ClassLoader_.md&amp;value=---%0Auid%3A%20Javax.Swing.JEditorPane.RegisterEditorKitForContentType(System.String%2CSystem.String%2CJava.Lang.ClassLoader)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JEditorPane.cs/#L90">View Source</a>
+  </span>
+  <a id="Javax_Swing_JEditorPane_RegisterEditorKitForContentType_" data-uid="Javax.Swing.JEditorPane.RegisterEditorKitForContentType*"></a>
+  <h4 id="Javax_Swing_JEditorPane_RegisterEditorKitForContentType_System_String_System_String_Java_Lang_ClassLoader_" data-uid="Javax.Swing.JEditorPane.RegisterEditorKitForContentType(System.String,System.String,Java.Lang.ClassLoader)">RegisterEditorKitForContentType(String, String, ClassLoader)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#registerEditorKitForContentType(java.lang.String,java.lang.String,java.lang.ClassLoader)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#registerEditorKitForContentType(java.lang.String,java.lang.String,java.lang.ClassLoader)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RegisterEditorKitForContentType(string arg0, string arg1, ClassLoader arg2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">arg1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Java.Lang.ClassLoader.html">ClassLoader</a></td>
+        <td><span class="parametername">arg2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_JEditorPane_RemoveHyperlinkListener_Javax_Swing_Event_HyperlinkListener_.md&amp;value=---%0Auid%3A%20Javax.Swing.JEditorPane.RemoveHyperlinkListener(Javax.Swing.Event.HyperlinkListener)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JEditorPane.cs/#L150">View Source</a>
+  </span>
+  <a id="Javax_Swing_JEditorPane_RemoveHyperlinkListener_" data-uid="Javax.Swing.JEditorPane.RemoveHyperlinkListener*"></a>
+  <h4 id="Javax_Swing_JEditorPane_RemoveHyperlinkListener_Javax_Swing_Event_HyperlinkListener_" data-uid="Javax.Swing.JEditorPane.RemoveHyperlinkListener(Javax.Swing.Event.HyperlinkListener)">RemoveHyperlinkListener(HyperlinkListener)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#removeHyperlinkListener(javax.swing.event.HyperlinkListener)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#removeHyperlinkListener(javax.swing.event.HyperlinkListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveHyperlinkListener(HyperlinkListener arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Javax.Swing.Event.HyperlinkListener.html">HyperlinkListener</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_JEditorPane_ScrollToReference_System_String_.md&amp;value=---%0Auid%3A%20Javax.Swing.JEditorPane.ScrollToReference(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JEditorPane.cs/#L171">View Source</a>
+  </span>
+  <a id="Javax_Swing_JEditorPane_ScrollToReference_" data-uid="Javax.Swing.JEditorPane.ScrollToReference*"></a>
+  <h4 id="Javax_Swing_JEditorPane_ScrollToReference_System_String_" data-uid="Javax.Swing.JEditorPane.ScrollToReference(System.String)">ScrollToReference(String)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#scrollToReference(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#scrollToReference(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ScrollToReference(string arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_JEditorPane_SetEditorKitForContentType_System_String_Javax_Swing_Text_EditorKit_.md&amp;value=---%0Auid%3A%20Javax.Swing.JEditorPane.SetEditorKitForContentType(System.String%2CJavax.Swing.Text.EditorKit)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JEditorPane.cs/#L178">View Source</a>
+  </span>
+  <a id="Javax_Swing_JEditorPane_SetEditorKitForContentType_" data-uid="Javax.Swing.JEditorPane.SetEditorKitForContentType*"></a>
+  <h4 id="Javax_Swing_JEditorPane_SetEditorKitForContentType_System_String_Javax_Swing_Text_EditorKit_" data-uid="Javax.Swing.JEditorPane.SetEditorKitForContentType(System.String,Javax.Swing.Text.EditorKit)">SetEditorKitForContentType(String, EditorKit)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#setEditorKitForContentType(java.lang.String,javax.swing.text.EditorKit)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#setEditorKitForContentType(java.lang.String,javax.swing.text.EditorKit)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetEditorKitForContentType(string arg0, EditorKit arg1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Javax.Swing.Text.EditorKit.html">EditorKit</a></td>
+        <td><span class="parametername">arg1</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_JEditorPane_SetPage_Java_Net_URL_.md&amp;value=---%0Auid%3A%20Javax.Swing.JEditorPane.SetPage(Java.Net.URL)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JEditorPane.cs/#L192">View Source</a>
+  </span>
+  <a id="Javax_Swing_JEditorPane_SetPage_" data-uid="Javax.Swing.JEditorPane.SetPage*"></a>
+  <h4 id="Javax_Swing_JEditorPane_SetPage_Java_Net_URL_" data-uid="Javax.Swing.JEditorPane.SetPage(Java.Net.URL)">SetPage(URL)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#setPage(java.net.URL)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#setPage(java.net.URL)</a> throws java.io.IOException</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPage(URL arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Net.URL.html">URL</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_JEditorPane_SetPage_System_String_.md&amp;value=---%0Auid%3A%20Javax.Swing.JEditorPane.SetPage(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JEditorPane.cs/#L185">View Source</a>
+  </span>
+  <a id="Javax_Swing_JEditorPane_SetPage_" data-uid="Javax.Swing.JEditorPane.SetPage*"></a>
+  <h4 id="Javax_Swing_JEditorPane_SetPage_System_String_" data-uid="Javax.Swing.JEditorPane.SetPage(System.String)">SetPage(String)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#setPage(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JEditorPane.html#setPage(java.lang.String)</a> throws java.io.IOException</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPage(string arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">System.Dynamic.IDynamicMetaObjectProvider</a>
+  </div>
+  <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeCore</span>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">System.IDisposable</a>
+  </div>
+  <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic</span>
+  </div>
+  <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBase</span>
+  </div>
+  <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="MASES.JNet.Extensions.JNetCoreExtensions.html#MASES_JNet_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Javax_Swing_JEditorPane.md&amp;value=---%0Auid%3A%20Javax.Swing.JEditorPane%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JEditorPane.cs/#L29" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2023 MASES s.r.l..<br>Generated by <strong>DocFX</strong></span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

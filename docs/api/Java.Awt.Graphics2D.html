@@ -1,0 +1,1764 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Graphics2D
+   | JNet website </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Graphics2D
+   | JNet website ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Java.Awt.Graphics2D">
+  
+  
+  <h1 id="Java_Awt_Graphics2D" data-uid="Java.Awt.Graphics2D" class="text-break">Class Graphics2D
+  </h1>
+  <div class="markdown level0 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html</a></p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+    <div class="level2"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span></div>
+    <div class="level3"><span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase</span>&lt;<a class="xref" href="Java.Awt.Graphics.html">Graphics</a>&gt;</div>
+    <div class="level4"><a class="xref" href="Java.Awt.Graphics.html">Graphics</a></div>
+    <div class="level5"><span class="xref">Graphics2D</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+    <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeCore</span></div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic</span></div>
+    <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBase</span></div>
+    <div><span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Java.Awt.Graphics.html#Java_Awt_Graphics_Clip">Graphics.Clip</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Graphics.html#Java_Awt_Graphics_ClipBounds">Graphics.ClipBounds</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Graphics.html#Java_Awt_Graphics_Color">Graphics.Color</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Graphics.html#Java_Awt_Graphics_Font">Graphics.Font</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Graphics.html#Java_Awt_Graphics_FontMetrics">Graphics.FontMetrics</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Graphics.html#Java_Awt_Graphics_DrawImage_Java_Awt_Image_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_Java_Awt_Color_Java_Awt_ImageNs_ImageObserver_">Graphics.DrawImage(Image, Int32, Int32, Int32, Int32, Int32, Int32, Int32, Int32, Color, ImageObserver)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Graphics.html#Java_Awt_Graphics_DrawImage_Java_Awt_Image_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_Java_Awt_ImageNs_ImageObserver_">Graphics.DrawImage(Image, Int32, Int32, Int32, Int32, Int32, Int32, Int32, Int32, ImageObserver)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Graphics.html#Java_Awt_Graphics_DrawImage_Java_Awt_Image_System_Int32_System_Int32_System_Int32_System_Int32_Java_Awt_Color_Java_Awt_ImageNs_ImageObserver_">Graphics.DrawImage(Image, Int32, Int32, Int32, Int32, Color, ImageObserver)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Graphics.html#Java_Awt_Graphics_DrawImage_Java_Awt_Image_System_Int32_System_Int32_System_Int32_System_Int32_Java_Awt_ImageNs_ImageObserver_">Graphics.DrawImage(Image, Int32, Int32, Int32, Int32, ImageObserver)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Graphics.html#Java_Awt_Graphics_DrawImage_Java_Awt_Image_System_Int32_System_Int32_Java_Awt_Color_Java_Awt_ImageNs_ImageObserver_">Graphics.DrawImage(Image, Int32, Int32, Color, ImageObserver)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Graphics.html#Java_Awt_Graphics_DrawImage_Java_Awt_Image_System_Int32_System_Int32_Java_Awt_ImageNs_ImageObserver_">Graphics.DrawImage(Image, Int32, Int32, ImageObserver)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Graphics.html#Java_Awt_Graphics_GetFontMetrics_Java_Awt_Font_">Graphics.GetFontMetrics(Font)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Graphics.html#Java_Awt_Graphics_Create">Graphics.Create()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Graphics.html#Java_Awt_Graphics_ClearRect_System_Int32_System_Int32_System_Int32_System_Int32_">Graphics.ClearRect(Int32, Int32, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Graphics.html#Java_Awt_Graphics_ClipRect_System_Int32_System_Int32_System_Int32_System_Int32_">Graphics.ClipRect(Int32, Int32, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Graphics.html#Java_Awt_Graphics_CopyArea_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_">Graphics.CopyArea(Int32, Int32, Int32, Int32, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Graphics.html#Java_Awt_Graphics_Dispose">Graphics.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Graphics.html#Java_Awt_Graphics_DrawArc_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_">Graphics.DrawArc(Int32, Int32, Int32, Int32, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Graphics.html#Java_Awt_Graphics_DrawLine_System_Int32_System_Int32_System_Int32_System_Int32_">Graphics.DrawLine(Int32, Int32, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Graphics.html#Java_Awt_Graphics_DrawOval_System_Int32_System_Int32_System_Int32_System_Int32_">Graphics.DrawOval(Int32, Int32, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Graphics.html#Java_Awt_Graphics_DrawPolygon_System_Int32___System_Int32___System_Int32_">Graphics.DrawPolygon(Int32[], Int32[], Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Graphics.html#Java_Awt_Graphics_DrawPolyline_System_Int32___System_Int32___System_Int32_">Graphics.DrawPolyline(Int32[], Int32[], Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Graphics.html#Java_Awt_Graphics_DrawRoundRect_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_">Graphics.DrawRoundRect(Int32, Int32, Int32, Int32, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Graphics.html#Java_Awt_Graphics_DrawString_System_String_System_Int32_System_Int32_">Graphics.DrawString(String, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Graphics.html#Java_Awt_Graphics_DrawString_Java_Text_AttributedCharacterIterator_System_Int32_System_Int32_">Graphics.DrawString(AttributedCharacterIterator, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Graphics.html#Java_Awt_Graphics_FillArc_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_">Graphics.FillArc(Int32, Int32, Int32, Int32, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Graphics.html#Java_Awt_Graphics_FillOval_System_Int32_System_Int32_System_Int32_System_Int32_">Graphics.FillOval(Int32, Int32, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Graphics.html#Java_Awt_Graphics_FillPolygon_System_Int32___System_Int32___System_Int32_">Graphics.FillPolygon(Int32[], Int32[], Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Graphics.html#Java_Awt_Graphics_FillRect_System_Int32_System_Int32_System_Int32_System_Int32_">Graphics.FillRect(Int32, Int32, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Graphics.html#Java_Awt_Graphics_FillRoundRect_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_">Graphics.FillRoundRect(Int32, Int32, Int32, Int32, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Graphics.html#Java_Awt_Graphics_SetClip_System_Int32_System_Int32_System_Int32_System_Int32_">Graphics.SetClip(Int32, Int32, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Graphics.html#Java_Awt_Graphics_SetPaintMode">Graphics.SetPaintMode()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Graphics.html#Java_Awt_Graphics_SetXORMode_Java_Awt_Color_">Graphics.SetXORMode(Color)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Graphics.html#Java_Awt_Graphics_Translate_System_Int32_System_Int32_">Graphics.Translate(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Graphics.html#Java_Awt_Graphics_HitClip_System_Int32_System_Int32_System_Int32_System_Int32_">Graphics.HitClip(Int32, Int32, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Graphics.html#Java_Awt_Graphics_Create_System_Int32_System_Int32_System_Int32_System_Int32_">Graphics.Create(Int32, Int32, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Graphics.html#Java_Awt_Graphics_GetClipBounds_Java_Awt_Rectangle_">Graphics.GetClipBounds(Rectangle)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Graphics.html#Java_Awt_Graphics_Draw3DRect_System_Int32_System_Int32_System_Int32_System_Int32_System_Boolean_">Graphics.Draw3DRect(Int32, Int32, Int32, Int32, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Graphics.html#Java_Awt_Graphics_DrawBytes_System_Byte___System_Int32_System_Int32_System_Int32_System_Int32_">Graphics.DrawBytes(Byte[], Int32, Int32, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Graphics.html#Java_Awt_Graphics_DrawChars_System_Char___System_Int32_System_Int32_System_Int32_System_Int32_">Graphics.DrawChars(Char[], Int32, Int32, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Graphics.html#Java_Awt_Graphics_DrawPolygon_Java_Awt_Polygon_">Graphics.DrawPolygon(Polygon)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Graphics.html#Java_Awt_Graphics_DrawRect_System_Int32_System_Int32_System_Int32_System_Int32_">Graphics.DrawRect(Int32, Int32, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Graphics.html#Java_Awt_Graphics_Fill3DRect_System_Int32_System_Int32_System_Int32_System_Int32_System_Boolean_">Graphics.Fill3DRect(Int32, Int32, Int32, Int32, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Graphics.html#Java_Awt_Graphics_FillPolygon_Java_Awt_Polygon_">Graphics.FillPolygon(Polygon)</a>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Awt.Graphics&gt;.SExecute(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Awt.Graphics&gt;.SExecute&lt;TReturn&gt;(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Awt.Graphics&gt;.SExecute(System.Type, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Awt.Graphics&gt;.SExecute&lt;TNewClass, TReturn&gt;(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Awt.Graphics&gt;.SExecute&lt;TReturn&gt;(System.Type, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Awt.Graphics&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Awt.Graphics&gt;.SExecute&lt;TReturn, TConverter&gt;(System.Type, System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Awt.Graphics&gt;.SExecuteArray&lt;T&gt;(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Awt.Graphics&gt;.IsAssignableFrom(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Awt.Graphics&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Awt.Graphics&gt;.New(System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Awt.Graphics&gt;.Execute&lt;T&gt;(T[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Awt.Graphics&gt;.DynClazz</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Awt.Graphics&gt;.Clazz</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Awt.Graphics&gt;.MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.DynClazz</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase&lt;Java.Awt.Graphics&gt;.MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.Clazz</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TReturn&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(System.Type, MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.New&lt;TNewClass&gt;(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.New&lt;TNewClass, TReturn&gt;(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.New&lt;TNewClass, TReturn, TConverter&gt;(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsInstanceOf(MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wait(System.Int64)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Wait(System.Int64, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IExecute(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IExecute&lt;TReturn&gt;(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IExecuteArray&lt;T&gt;(System.String, System.Object[])</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.DynInstance</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.Instance</span>
+    </div>
+    <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.JVMBridgeBase.IsListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember#system-dynamic-dynamicobject-trygetmember(system-dynamic-getmemberbinder-system-object@)">DynamicObject.TryGetMember(GetMemberBinder, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember#system-dynamic-dynamicobject-trysetmember(system-dynamic-setmemberbinder-system-object)">DynamicObject.TrySetMember(SetMemberBinder, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember#system-dynamic-dynamicobject-trydeletemember(system-dynamic-deletememberbinder)">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember#system-dynamic-dynamicobject-tryinvokemember(system-dynamic-invokememberbinder-system-object()-system-object@)">DynamicObject.TryInvokeMember(InvokeMemberBinder, Object[], Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert#system-dynamic-dynamicobject-tryconvert(system-dynamic-convertbinder-system-object@)">DynamicObject.TryConvert(ConvertBinder, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance#system-dynamic-dynamicobject-trycreateinstance(system-dynamic-createinstancebinder-system-object()-system-object@)">DynamicObject.TryCreateInstance(CreateInstanceBinder, Object[], Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke#system-dynamic-dynamicobject-tryinvoke(system-dynamic-invokebinder-system-object()-system-object@)">DynamicObject.TryInvoke(InvokeBinder, Object[], Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation#system-dynamic-dynamicobject-trybinaryoperation(system-dynamic-binaryoperationbinder-system-object-system-object@)">DynamicObject.TryBinaryOperation(BinaryOperationBinder, Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation#system-dynamic-dynamicobject-tryunaryoperation(system-dynamic-unaryoperationbinder-system-object@)">DynamicObject.TryUnaryOperation(UnaryOperationBinder, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex#system-dynamic-dynamicobject-trygetindex(system-dynamic-getindexbinder-system-object()-system-object@)">DynamicObject.TryGetIndex(GetIndexBinder, Object[], Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex#system-dynamic-dynamicobject-trysetindex(system-dynamic-setindexbinder-system-object()-system-object)">DynamicObject.TrySetIndex(SetIndexBinder, Object[], Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex#system-dynamic-dynamicobject-trydeleteindex(system-dynamic-deleteindexbinder-system-object())">DynamicObject.TryDeleteIndex(DeleteIndexBinder, Object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames#system-dynamic-dynamicobject-getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject#system-dynamic-dynamicobject-getmetaobject(system-linq-expressions-expression)">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Java.Awt.html">Java.Awt</a></h6>
+  <h6><strong>Assembly</strong>: MASES.JNet.dll</h6>
+  <h5 id="Java_Awt_Graphics2D_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Graphics2D : Graphics, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_Graphics2D__ctor.md&amp;value=---%0Auid%3A%20Java.Awt.Graphics2D.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/AllPackageClasses.cs/#L1653">View Source</a>
+  </span>
+  <a id="Java_Awt_Graphics2D__ctor_" data-uid="Java.Awt.Graphics2D.#ctor*"></a>
+  <h4 id="Java_Awt_Graphics2D__ctor" data-uid="Java.Awt.Graphics2D.#ctor">Graphics2D()</h4>
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Graphics2D()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_Graphics2D__ctor_System_Object___.md&amp;value=---%0Auid%3A%20Java.Awt.Graphics2D.%23ctor(System.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/AllPackageClasses.cs/#L1657">View Source</a>
+  </span>
+  <a id="Java_Awt_Graphics2D__ctor_" data-uid="Java.Awt.Graphics2D.#ctor*"></a>
+  <h4 id="Java_Awt_Graphics2D__ctor_System_Object___" data-uid="Java.Awt.Graphics2D.#ctor(System.Object[])">Graphics2D(Object[])</h4>
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Graphics2D(params object[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_Graphics2D_Background.md&amp;value=---%0Auid%3A%20Java.Awt.Graphics2D.Background%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Graphics2D.cs/#L51">View Source</a>
+  </span>
+  <a id="Java_Awt_Graphics2D_Background_" data-uid="Java.Awt.Graphics2D.Background*"></a>
+  <h4 id="Java_Awt_Graphics2D_Background" data-uid="Java.Awt.Graphics2D.Background">Background</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#getBackground()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#getBackground()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#setBackground(java.awt.Color)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#setBackground(java.awt.Color)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color Background { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Awt.Color.html">Color</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_Graphics2D_ClassName.md&amp;value=---%0Auid%3A%20Java.Awt.Graphics2D.ClassName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/AllPackageClasses.cs/#L1660">View Source</a>
+  </span>
+  <a id="Java_Awt_Graphics2D_ClassName_" data-uid="Java.Awt.Graphics2D.ClassName*"></a>
+  <h4 id="Java_Awt_Graphics2D_ClassName" data-uid="Java.Awt.Graphics2D.ClassName">ClassName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ClassName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Java.Awt.Graphics.html#Java_Awt_Graphics_ClassName">Graphics.ClassName</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_Graphics2D_Composite.md&amp;value=---%0Auid%3A%20Java.Awt.Graphics2D.Composite%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Graphics2D.cs/#L58">View Source</a>
+  </span>
+  <a id="Java_Awt_Graphics2D_Composite_" data-uid="Java.Awt.Graphics2D.Composite*"></a>
+  <h4 id="Java_Awt_Graphics2D_Composite" data-uid="Java.Awt.Graphics2D.Composite">Composite</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#getComposite()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#getComposite()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#setComposite(java.awt.Composite)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#setComposite(java.awt.Composite)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Composite Composite { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Awt.Composite.html">Composite</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_Graphics2D_DeviceConfiguration.md&amp;value=---%0Auid%3A%20Java.Awt.Graphics2D.DeviceConfiguration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Graphics2D.cs/#L65">View Source</a>
+  </span>
+  <a id="Java_Awt_Graphics2D_DeviceConfiguration_" data-uid="Java.Awt.Graphics2D.DeviceConfiguration*"></a>
+  <h4 id="Java_Awt_Graphics2D_DeviceConfiguration" data-uid="Java.Awt.Graphics2D.DeviceConfiguration">DeviceConfiguration</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#getDeviceConfiguration()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#getDeviceConfiguration()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GraphicsConfiguration DeviceConfiguration { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Awt.GraphicsConfiguration.html">GraphicsConfiguration</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_Graphics2D_FontRenderContext.md&amp;value=---%0Auid%3A%20Java.Awt.Graphics2D.FontRenderContext%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Graphics2D.cs/#L72">View Source</a>
+  </span>
+  <a id="Java_Awt_Graphics2D_FontRenderContext_" data-uid="Java.Awt.Graphics2D.FontRenderContext*"></a>
+  <h4 id="Java_Awt_Graphics2D_FontRenderContext" data-uid="Java.Awt.Graphics2D.FontRenderContext">FontRenderContext</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#getFontRenderContext()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#getFontRenderContext()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FontRenderContext FontRenderContext { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Awt.FontNs.FontRenderContext.html">FontRenderContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_Graphics2D_IsAbstract.md&amp;value=---%0Auid%3A%20Java.Awt.Graphics2D.IsAbstract%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/AllPackageClasses.cs/#L1663">View Source</a>
+  </span>
+  <a id="Java_Awt_Graphics2D_IsAbstract_" data-uid="Java.Awt.Graphics2D.IsAbstract*"></a>
+  <h4 id="Java_Awt_Graphics2D_IsAbstract" data-uid="Java.Awt.Graphics2D.IsAbstract">IsAbstract</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsAbstract { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Java.Awt.Graphics.html#Java_Awt_Graphics_IsAbstract">Graphics.IsAbstract</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_Graphics2D_IsCloseable.md&amp;value=---%0Auid%3A%20Java.Awt.Graphics2D.IsCloseable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/AllPackageClasses.cs/#L1666">View Source</a>
+  </span>
+  <a id="Java_Awt_Graphics2D_IsCloseable_" data-uid="Java.Awt.Graphics2D.IsCloseable*"></a>
+  <h4 id="Java_Awt_Graphics2D_IsCloseable" data-uid="Java.Awt.Graphics2D.IsCloseable">IsCloseable</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsCloseable { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Java.Awt.Graphics.html#Java_Awt_Graphics_IsCloseable">Graphics.IsCloseable</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_Graphics2D_IsInterface.md&amp;value=---%0Auid%3A%20Java.Awt.Graphics2D.IsInterface%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/AllPackageClasses.cs/#L1669">View Source</a>
+  </span>
+  <a id="Java_Awt_Graphics2D_IsInterface_" data-uid="Java.Awt.Graphics2D.IsInterface*"></a>
+  <h4 id="Java_Awt_Graphics2D_IsInterface" data-uid="Java.Awt.Graphics2D.IsInterface">IsInterface</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsInterface { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Java.Awt.Graphics.html#Java_Awt_Graphics_IsInterface">Graphics.IsInterface</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_Graphics2D_IsStatic.md&amp;value=---%0Auid%3A%20Java.Awt.Graphics2D.IsStatic%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/AllPackageClasses.cs/#L1672">View Source</a>
+  </span>
+  <a id="Java_Awt_Graphics2D_IsStatic_" data-uid="Java.Awt.Graphics2D.IsStatic*"></a>
+  <h4 id="Java_Awt_Graphics2D_IsStatic" data-uid="Java.Awt.Graphics2D.IsStatic">IsStatic</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsStatic { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Java.Awt.Graphics.html#Java_Awt_Graphics_IsStatic">Graphics.IsStatic</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_Graphics2D_Paint.md&amp;value=---%0Auid%3A%20Java.Awt.Graphics2D.Paint%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Graphics2D.cs/#L79">View Source</a>
+  </span>
+  <a id="Java_Awt_Graphics2D_Paint_" data-uid="Java.Awt.Graphics2D.Paint*"></a>
+  <h4 id="Java_Awt_Graphics2D_Paint" data-uid="Java.Awt.Graphics2D.Paint">Paint</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#getPaint()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#getPaint()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#setPaint(java.awt.Paint)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#setPaint(java.awt.Paint)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Paint Paint { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Awt.Paint.html">Paint</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_Graphics2D_RenderingHints.md&amp;value=---%0Auid%3A%20Java.Awt.Graphics2D.RenderingHints%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Graphics2D.cs/#L86">View Source</a>
+  </span>
+  <a id="Java_Awt_Graphics2D_RenderingHints_" data-uid="Java.Awt.Graphics2D.RenderingHints*"></a>
+  <h4 id="Java_Awt_Graphics2D_RenderingHints" data-uid="Java.Awt.Graphics2D.RenderingHints">RenderingHints</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RenderingHints RenderingHints { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Awt.RenderingHints.html">RenderingHints</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_Graphics2D_Stroke.md&amp;value=---%0Auid%3A%20Java.Awt.Graphics2D.Stroke%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Graphics2D.cs/#L93">View Source</a>
+  </span>
+  <a id="Java_Awt_Graphics2D_Stroke_" data-uid="Java.Awt.Graphics2D.Stroke*"></a>
+  <h4 id="Java_Awt_Graphics2D_Stroke" data-uid="Java.Awt.Graphics2D.Stroke">Stroke</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#getStroke()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#getStroke()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#setStroke(java.awt.Stroke)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#setStroke(java.awt.Stroke)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Stroke Stroke { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Awt.Stroke.html">Stroke</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_Graphics2D_Clip_Java_Awt_Shape_.md&amp;value=---%0Auid%3A%20Java.Awt.Graphics2D.Clip(Java.Awt.Shape)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Graphics2D.cs/#L128">View Source</a>
+  </span>
+  <a id="Java_Awt_Graphics2D_Clip_" data-uid="Java.Awt.Graphics2D.Clip*"></a>
+  <h4 id="Java_Awt_Graphics2D_Clip_Java_Awt_Shape_" data-uid="Java.Awt.Graphics2D.Clip(Java.Awt.Shape)">Clip(Shape)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#clip(java.awt.Shape)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#clip(java.awt.Shape)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clip(Shape arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Awt.Shape.html">Shape</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_Graphics2D_Draw_Java_Awt_Shape_.md&amp;value=---%0Auid%3A%20Java.Awt.Graphics2D.Draw(Java.Awt.Shape)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Graphics2D.cs/#L135">View Source</a>
+  </span>
+  <a id="Java_Awt_Graphics2D_Draw_" data-uid="Java.Awt.Graphics2D.Draw*"></a>
+  <h4 id="Java_Awt_Graphics2D_Draw_Java_Awt_Shape_" data-uid="Java.Awt.Graphics2D.Draw(Java.Awt.Shape)">Draw(Shape)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#draw(java.awt.Shape)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#draw(java.awt.Shape)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Draw(Shape arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Awt.Shape.html">Shape</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_Graphics2D_DrawGlyphVector_Java_Awt_FontNs_GlyphVector_System_Single_System_Single_.md&amp;value=---%0Auid%3A%20Java.Awt.Graphics2D.DrawGlyphVector(Java.Awt.FontNs.GlyphVector%2CSystem.Single%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Graphics2D.cs/#L142">View Source</a>
+  </span>
+  <a id="Java_Awt_Graphics2D_DrawGlyphVector_" data-uid="Java.Awt.Graphics2D.DrawGlyphVector*"></a>
+  <h4 id="Java_Awt_Graphics2D_DrawGlyphVector_Java_Awt_FontNs_GlyphVector_System_Single_System_Single_" data-uid="Java.Awt.Graphics2D.DrawGlyphVector(Java.Awt.FontNs.GlyphVector,System.Single,System.Single)">DrawGlyphVector(GlyphVector, Single, Single)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#drawGlyphVector(java.awt.font.GlyphVector,float,float)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#drawGlyphVector(java.awt.font.GlyphVector,float,float)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawGlyphVector(GlyphVector arg0, float arg1, float arg2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Awt.FontNs.GlyphVector.html">GlyphVector</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">arg1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">arg2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_Graphics2D_DrawImage_Java_Awt_Image_Java_Awt_Geom_AffineTransform_Java_Awt_ImageNs_ImageObserver_.md&amp;value=---%0Auid%3A%20Java.Awt.Graphics2D.DrawImage(Java.Awt.Image%2CJava.Awt.Geom.AffineTransform%2CJava.Awt.ImageNs.ImageObserver)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Graphics2D.cs/#L100">View Source</a>
+  </span>
+  <a id="Java_Awt_Graphics2D_DrawImage_" data-uid="Java.Awt.Graphics2D.DrawImage*"></a>
+  <h4 id="Java_Awt_Graphics2D_DrawImage_Java_Awt_Image_Java_Awt_Geom_AffineTransform_Java_Awt_ImageNs_ImageObserver_" data-uid="Java.Awt.Graphics2D.DrawImage(Java.Awt.Image,Java.Awt.Geom.AffineTransform,Java.Awt.ImageNs.ImageObserver)">DrawImage(Image, AffineTransform, ImageObserver)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#drawImage(java.awt.Image,java.awt.geom.AffineTransform,java.awt.image.ImageObserver)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#drawImage(java.awt.Image,java.awt.geom.AffineTransform,java.awt.image.ImageObserver)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DrawImage(Image arg0, AffineTransform arg1, ImageObserver arg2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Awt.Image.html">Image</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Java.Awt.Geom.AffineTransform.html">AffineTransform</a></td>
+        <td><span class="parametername">arg1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Java.Awt.ImageNs.ImageObserver.html">ImageObserver</a></td>
+        <td><span class="parametername">arg2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_Graphics2D_DrawImage_Java_Awt_ImageNs_BufferedImage_Java_Awt_ImageNs_BufferedImageOp_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Java.Awt.Graphics2D.DrawImage(Java.Awt.ImageNs.BufferedImage%2CJava.Awt.ImageNs.BufferedImageOp%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Graphics2D.cs/#L149">View Source</a>
+  </span>
+  <a id="Java_Awt_Graphics2D_DrawImage_" data-uid="Java.Awt.Graphics2D.DrawImage*"></a>
+  <h4 id="Java_Awt_Graphics2D_DrawImage_Java_Awt_ImageNs_BufferedImage_Java_Awt_ImageNs_BufferedImageOp_System_Int32_System_Int32_" data-uid="Java.Awt.Graphics2D.DrawImage(Java.Awt.ImageNs.BufferedImage,Java.Awt.ImageNs.BufferedImageOp,System.Int32,System.Int32)">DrawImage(BufferedImage, BufferedImageOp, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#drawImage(java.awt.image.BufferedImage,java.awt.image.BufferedImageOp,int,int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#drawImage(java.awt.image.BufferedImage,java.awt.image.BufferedImageOp,int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawImage(BufferedImage arg0, BufferedImageOp arg1, int arg2, int arg3)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Awt.ImageNs.BufferedImage.html">BufferedImage</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Java.Awt.ImageNs.BufferedImageOp.html">BufferedImageOp</a></td>
+        <td><span class="parametername">arg1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">arg2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">arg3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_Graphics2D_DrawRenderableImage_Java_Awt_ImageNs_Renderable_RenderableImage_Java_Awt_Geom_AffineTransform_.md&amp;value=---%0Auid%3A%20Java.Awt.Graphics2D.DrawRenderableImage(Java.Awt.ImageNs.Renderable.RenderableImage%2CJava.Awt.Geom.AffineTransform)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Graphics2D.cs/#L156">View Source</a>
+  </span>
+  <a id="Java_Awt_Graphics2D_DrawRenderableImage_" data-uid="Java.Awt.Graphics2D.DrawRenderableImage*"></a>
+  <h4 id="Java_Awt_Graphics2D_DrawRenderableImage_Java_Awt_ImageNs_Renderable_RenderableImage_Java_Awt_Geom_AffineTransform_" data-uid="Java.Awt.Graphics2D.DrawRenderableImage(Java.Awt.ImageNs.Renderable.RenderableImage,Java.Awt.Geom.AffineTransform)">DrawRenderableImage(RenderableImage, AffineTransform)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#drawRenderableImage(java.awt.image.renderable.RenderableImage,java.awt.geom.AffineTransform)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#drawRenderableImage(java.awt.image.renderable.RenderableImage,java.awt.geom.AffineTransform)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawRenderableImage(RenderableImage arg0, AffineTransform arg1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Awt.ImageNs.Renderable.RenderableImage.html">RenderableImage</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Java.Awt.Geom.AffineTransform.html">AffineTransform</a></td>
+        <td><span class="parametername">arg1</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_Graphics2D_DrawRenderedImage_Java_Awt_ImageNs_RenderedImage_Java_Awt_Geom_AffineTransform_.md&amp;value=---%0Auid%3A%20Java.Awt.Graphics2D.DrawRenderedImage(Java.Awt.ImageNs.RenderedImage%2CJava.Awt.Geom.AffineTransform)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Graphics2D.cs/#L163">View Source</a>
+  </span>
+  <a id="Java_Awt_Graphics2D_DrawRenderedImage_" data-uid="Java.Awt.Graphics2D.DrawRenderedImage*"></a>
+  <h4 id="Java_Awt_Graphics2D_DrawRenderedImage_Java_Awt_ImageNs_RenderedImage_Java_Awt_Geom_AffineTransform_" data-uid="Java.Awt.Graphics2D.DrawRenderedImage(Java.Awt.ImageNs.RenderedImage,Java.Awt.Geom.AffineTransform)">DrawRenderedImage(RenderedImage, AffineTransform)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#drawRenderedImage(java.awt.image.RenderedImage,java.awt.geom.AffineTransform)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#drawRenderedImage(java.awt.image.RenderedImage,java.awt.geom.AffineTransform)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawRenderedImage(RenderedImage arg0, AffineTransform arg1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Awt.ImageNs.RenderedImage.html">RenderedImage</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Java.Awt.Geom.AffineTransform.html">AffineTransform</a></td>
+        <td><span class="parametername">arg1</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_Graphics2D_DrawString_Java_Text_AttributedCharacterIterator_System_Single_System_Single_.md&amp;value=---%0Auid%3A%20Java.Awt.Graphics2D.DrawString(Java.Text.AttributedCharacterIterator%2CSystem.Single%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Graphics2D.cs/#L177">View Source</a>
+  </span>
+  <a id="Java_Awt_Graphics2D_DrawString_" data-uid="Java.Awt.Graphics2D.DrawString*"></a>
+  <h4 id="Java_Awt_Graphics2D_DrawString_Java_Text_AttributedCharacterIterator_System_Single_System_Single_" data-uid="Java.Awt.Graphics2D.DrawString(Java.Text.AttributedCharacterIterator,System.Single,System.Single)">DrawString(AttributedCharacterIterator, Single, Single)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#drawString(java.text.AttributedCharacterIterator,float,float)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#drawString(java.text.AttributedCharacterIterator,float,float)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawString(AttributedCharacterIterator arg0, float arg1, float arg2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Text.AttributedCharacterIterator.html">AttributedCharacterIterator</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">arg1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">arg2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_Graphics2D_DrawString_System_String_System_Single_System_Single_.md&amp;value=---%0Auid%3A%20Java.Awt.Graphics2D.DrawString(System.String%2CSystem.Single%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Graphics2D.cs/#L170">View Source</a>
+  </span>
+  <a id="Java_Awt_Graphics2D_DrawString_" data-uid="Java.Awt.Graphics2D.DrawString*"></a>
+  <h4 id="Java_Awt_Graphics2D_DrawString_System_String_System_Single_System_Single_" data-uid="Java.Awt.Graphics2D.DrawString(System.String,System.Single,System.Single)">DrawString(String, Single, Single)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#drawString(java.lang.String,float,float)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#drawString(java.lang.String,float,float)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawString(string arg0, float arg1, float arg2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">arg1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">arg2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_Graphics2D_Fill_Java_Awt_Shape_.md&amp;value=---%0Auid%3A%20Java.Awt.Graphics2D.Fill(Java.Awt.Shape)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Graphics2D.cs/#L184">View Source</a>
+  </span>
+  <a id="Java_Awt_Graphics2D_Fill_" data-uid="Java.Awt.Graphics2D.Fill*"></a>
+  <h4 id="Java_Awt_Graphics2D_Fill_Java_Awt_Shape_" data-uid="Java.Awt.Graphics2D.Fill(Java.Awt.Shape)">Fill(Shape)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#fill(java.awt.Shape)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#fill(java.awt.Shape)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Fill(Shape arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Awt.Shape.html">Shape</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_Graphics2D_GetRenderingHint_Java_Awt_RenderingHints_Key_.md&amp;value=---%0Auid%3A%20Java.Awt.Graphics2D.GetRenderingHint(Java.Awt.RenderingHints.Key)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Graphics2D.cs/#L121">View Source</a>
+  </span>
+  <a id="Java_Awt_Graphics2D_GetRenderingHint_" data-uid="Java.Awt.Graphics2D.GetRenderingHint*"></a>
+  <h4 id="Java_Awt_Graphics2D_GetRenderingHint_Java_Awt_RenderingHints_Key_" data-uid="Java.Awt.Graphics2D.GetRenderingHint(Java.Awt.RenderingHints.Key)">GetRenderingHint(RenderingHints.Key)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#getRenderingHint(java.awt.RenderingHints$Key)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#getRenderingHint(java.awt.RenderingHints$Key)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object GetRenderingHint(RenderingHints.Key arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Awt.RenderingHints.Key.html">RenderingHints.Key</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_Graphics2D_GetTransform.md&amp;value=---%0Auid%3A%20Java.Awt.Graphics2D.GetTransform%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Graphics2D.cs/#L114">View Source</a>
+  </span>
+  <a id="Java_Awt_Graphics2D_GetTransform_" data-uid="Java.Awt.Graphics2D.GetTransform*"></a>
+  <h4 id="Java_Awt_Graphics2D_GetTransform" data-uid="Java.Awt.Graphics2D.GetTransform">GetTransform()</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#getTransform()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#getTransform()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AffineTransform GetTransform()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Awt.Geom.AffineTransform.html">AffineTransform</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_Graphics2D_Hit_Java_Awt_Rectangle_Java_Awt_Shape_System_Boolean_.md&amp;value=---%0Auid%3A%20Java.Awt.Graphics2D.Hit(Java.Awt.Rectangle%2CJava.Awt.Shape%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Graphics2D.cs/#L107">View Source</a>
+  </span>
+  <a id="Java_Awt_Graphics2D_Hit_" data-uid="Java.Awt.Graphics2D.Hit*"></a>
+  <h4 id="Java_Awt_Graphics2D_Hit_Java_Awt_Rectangle_Java_Awt_Shape_System_Boolean_" data-uid="Java.Awt.Graphics2D.Hit(Java.Awt.Rectangle,Java.Awt.Shape,System.Boolean)">Hit(Rectangle, Shape, Boolean)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#hit(java.awt.Rectangle,java.awt.Shape,boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#hit(java.awt.Rectangle,java.awt.Shape,boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Hit(Rectangle arg0, Shape arg1, bool arg2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Awt.Rectangle.html">Rectangle</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Java.Awt.Shape.html">Shape</a></td>
+        <td><span class="parametername">arg1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">arg2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_Graphics2D_Rotate_System_Double_.md&amp;value=---%0Auid%3A%20Java.Awt.Graphics2D.Rotate(System.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Graphics2D.cs/#L198">View Source</a>
+  </span>
+  <a id="Java_Awt_Graphics2D_Rotate_" data-uid="Java.Awt.Graphics2D.Rotate*"></a>
+  <h4 id="Java_Awt_Graphics2D_Rotate_System_Double_" data-uid="Java.Awt.Graphics2D.Rotate(System.Double)">Rotate(Double)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#rotate(double)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#rotate(double)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Rotate(double arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_Graphics2D_Rotate_System_Double_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20Java.Awt.Graphics2D.Rotate(System.Double%2CSystem.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Graphics2D.cs/#L191">View Source</a>
+  </span>
+  <a id="Java_Awt_Graphics2D_Rotate_" data-uid="Java.Awt.Graphics2D.Rotate*"></a>
+  <h4 id="Java_Awt_Graphics2D_Rotate_System_Double_System_Double_System_Double_" data-uid="Java.Awt.Graphics2D.Rotate(System.Double,System.Double,System.Double)">Rotate(Double, Double, Double)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#rotate(double,double,double)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#rotate(double,double,double)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Rotate(double arg0, double arg1, double arg2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">arg1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">arg2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_Graphics2D_Scale_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20Java.Awt.Graphics2D.Scale(System.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Graphics2D.cs/#L205">View Source</a>
+  </span>
+  <a id="Java_Awt_Graphics2D_Scale_" data-uid="Java.Awt.Graphics2D.Scale*"></a>
+  <h4 id="Java_Awt_Graphics2D_Scale_System_Double_System_Double_" data-uid="Java.Awt.Graphics2D.Scale(System.Double,System.Double)">Scale(Double, Double)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#scale(double,double)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#scale(double,double)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Scale(double arg0, double arg1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">arg1</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_Graphics2D_SetRenderingHint_Java_Awt_RenderingHints_Key_System_Object_.md&amp;value=---%0Auid%3A%20Java.Awt.Graphics2D.SetRenderingHint(Java.Awt.RenderingHints.Key%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Graphics2D.cs/#L212">View Source</a>
+  </span>
+  <a id="Java_Awt_Graphics2D_SetRenderingHint_" data-uid="Java.Awt.Graphics2D.SetRenderingHint*"></a>
+  <h4 id="Java_Awt_Graphics2D_SetRenderingHint_Java_Awt_RenderingHints_Key_System_Object_" data-uid="Java.Awt.Graphics2D.SetRenderingHint(Java.Awt.RenderingHints.Key,System.Object)">SetRenderingHint(RenderingHints.Key, Object)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#setRenderingHint(java.awt.RenderingHints$Key,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#setRenderingHint(java.awt.RenderingHints$Key,java.lang.Object)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRenderingHint(RenderingHints.Key arg0, object arg1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Awt.RenderingHints.Key.html">RenderingHints.Key</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">arg1</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_Graphics2D_SetTransform_Java_Awt_Geom_AffineTransform_.md&amp;value=---%0Auid%3A%20Java.Awt.Graphics2D.SetTransform(Java.Awt.Geom.AffineTransform)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Graphics2D.cs/#L219">View Source</a>
+  </span>
+  <a id="Java_Awt_Graphics2D_SetTransform_" data-uid="Java.Awt.Graphics2D.SetTransform*"></a>
+  <h4 id="Java_Awt_Graphics2D_SetTransform_Java_Awt_Geom_AffineTransform_" data-uid="Java.Awt.Graphics2D.SetTransform(Java.Awt.Geom.AffineTransform)">SetTransform(AffineTransform)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#setTransform(java.awt.geom.AffineTransform)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#setTransform(java.awt.geom.AffineTransform)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTransform(AffineTransform arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Awt.Geom.AffineTransform.html">AffineTransform</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_Graphics2D_Shear_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20Java.Awt.Graphics2D.Shear(System.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Graphics2D.cs/#L226">View Source</a>
+  </span>
+  <a id="Java_Awt_Graphics2D_Shear_" data-uid="Java.Awt.Graphics2D.Shear*"></a>
+  <h4 id="Java_Awt_Graphics2D_Shear_System_Double_System_Double_" data-uid="Java.Awt.Graphics2D.Shear(System.Double,System.Double)">Shear(Double, Double)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#shear(double,double)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#shear(double,double)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Shear(double arg0, double arg1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">arg1</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_Graphics2D_Transform_Java_Awt_Geom_AffineTransform_.md&amp;value=---%0Auid%3A%20Java.Awt.Graphics2D.Transform(Java.Awt.Geom.AffineTransform)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Graphics2D.cs/#L233">View Source</a>
+  </span>
+  <a id="Java_Awt_Graphics2D_Transform_" data-uid="Java.Awt.Graphics2D.Transform*"></a>
+  <h4 id="Java_Awt_Graphics2D_Transform_Java_Awt_Geom_AffineTransform_" data-uid="Java.Awt.Graphics2D.Transform(Java.Awt.Geom.AffineTransform)">Transform(AffineTransform)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#transform(java.awt.geom.AffineTransform)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#transform(java.awt.geom.AffineTransform)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Transform(AffineTransform arg0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Java.Awt.Geom.AffineTransform.html">AffineTransform</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_Graphics2D_Translate_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20Java.Awt.Graphics2D.Translate(System.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Graphics2D.cs/#L240">View Source</a>
+  </span>
+  <a id="Java_Awt_Graphics2D_Translate_" data-uid="Java.Awt.Graphics2D.Translate*"></a>
+  <h4 id="Java_Awt_Graphics2D_Translate_System_Double_System_Double_" data-uid="Java.Awt.Graphics2D.Translate(System.Double,System.Double)">Translate(Double, Double)</h4>
+  <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#translate(double,double)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Graphics2D.html#translate(double,double)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Translate(double arg0, double arg1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">arg0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">arg1</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">System.Dynamic.IDynamicMetaObjectProvider</a>
+  </div>
+  <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeCore</span>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">System.IDisposable</a>
+  </div>
+  <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic</span>
+  </div>
+  <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeBase</span>
+  </div>
+  <div>
+      <span class="xref">MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="MASES.JNet.Extensions.JNetCoreExtensions.html#MASES_JNet_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=Java_Awt_Graphics2D.md&amp;value=---%0Auid%3A%20Java.Awt.Graphics2D%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Awt/Graphics2D.cs/#L29" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2023 MASES s.r.l..<br>Generated by <strong>DocFX</strong></span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
