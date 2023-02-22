@@ -326,6 +326,13 @@ namespace Javax.Swing
             IExecute("removeSelectionInterval", arg0, arg1);
         }
         /// <summary>
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setListData(E[])
+        /// </summary>
+        public void SetListData(object[] arg0)
+        {
+            IExecute("setListData", arg0);
+        }
+        /// <summary>
         /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setSelectedValue(java.lang.Object,boolean)
         /// </summary>
         public void SetSelectedValue(object arg0, bool arg1)

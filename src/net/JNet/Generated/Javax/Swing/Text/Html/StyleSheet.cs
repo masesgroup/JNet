@@ -186,9 +186,9 @@ namespace Javax.Swing.Text.Html
             IExecute("removeStyleSheet", arg0);
         }
         /// <summary>
-        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#setBaseFontSize(java.lang.String)
+        /// https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#setBaseFontSize(int)
         /// </summary>
-        public void SetBaseFontSize(string arg0)
+        public void SetBaseFontSize(int arg0)
         {
             IExecute("setBaseFontSize", arg0);
         }
