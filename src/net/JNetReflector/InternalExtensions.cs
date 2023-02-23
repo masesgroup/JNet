@@ -24,6 +24,7 @@ using System.Collections.Generic;
 using Java.Lang;
 using Java.Lang.Reflect;
 using System.Text;
+using MASES.JNetReflector.Templates;
 
 namespace MASES.JNetReflector
 {
@@ -579,6 +580,11 @@ namespace MASES.JNetReflector
             return entry.TypeName;
         }
 
+        public static string JavadocHrefUrl(this Class entry)
+        {
+            return string.Format(AllPackageClasses.HREF_URL, JavadocUrl(entry));
+        }
+
         #endregion
 
         #region Constructor extension
@@ -661,6 +667,11 @@ namespace MASES.JNetReflector
             }
 
             return entry.Name;
+        }
+
+        public static string JavadocHrefUrl(this Constructor entry)
+        {
+            return string.Format(AllPackageClasses.HREF_URL, JavadocUrl(entry));
         }
 
         #endregion
@@ -866,6 +877,11 @@ namespace MASES.JNetReflector
             return entry.Name;
         }
 
+        public static string JavadocHrefUrl(this Method entry)
+        {
+            return string.Format(AllPackageClasses.HREF_URL, JavadocUrl(entry));
+        }
+
         #endregion
 
         #region Field extension
@@ -950,6 +966,11 @@ namespace MASES.JNetReflector
             return entry.Name;
         }
 
+        public static string JavadocHrefUrl(this Field entry)
+        {
+            return string.Format(AllPackageClasses.HREF_URL, JavadocUrl(entry));
+        }
+
         #endregion
 
         #region Parameter extension
@@ -1010,33 +1031,5 @@ namespace MASES.JNetReflector
         }
 
         #endregion
-
-        public static string ToFolderName(this System.Reflection.AssemblyName assName)
-        {
-            var name = string.Concat(assName.FullName.Split(' '));
-
-            name = name.Replace(',', '_')
-                       .Replace('=', '_').ToLowerInvariant();
-
-            return name;
-        }
-
-        public static readonly string ReflectorVersion = typeof(JNetReflectorExtensions).Assembly.GetName().Version.ToString();
-
-        public static string[] KeyWords = new string[]
-        {
-            "import",
-            "final",
-            "package",
-            "implements",
-            "extends",
-            "break",
-            "finally",
-            "continue",
-            "Class",
-            "classType",
-            "classInstance",
-            "native"
-        };
     }
 }
