@@ -488,8 +488,7 @@ namespace MASES.JNetReflector
                     if (!parameter.IsVarArgs)
                     {
                         constructorHelpBuilder.AppendLine(string.Format(AllPackageClasses.ClassStub.ConstructorStub.HELP_PARAM_DECORATION, parameter.Name,
-                                                                                                                                           parameter.Type.IsNetNative() ? "langword" : "cref",
-                                                                                                                                           parameter.TypeWithoutArray()));
+                                                                                                                                           parameter.TypeWithoutArrayOrNullable()));
                         constructorParamsBuilder.AppendFormat($"{parameter.Type()} {parameter.Name}, ");
                         constructorExecutionParamsBuilder.AppendFormat($"{parameter.Name}, ");
                     }
@@ -509,8 +508,7 @@ namespace MASES.JNetReflector
                 if (hasVarArg)
                 {
                     constructorHelpBuilder.AppendLine(string.Format(AllPackageClasses.ClassStub.ConstructorStub.HELP_PARAM_DECORATION, varArg.Name,
-                                                                                                                                       varArg.Type.IsNetNative() ? "langword" : "cref",
-                                                                                                                                       varArg.TypeWithoutArray()));
+                                                                                                                                       varArg.TypeWithoutArrayOrNullable()));
                     constructorParamsBuilder.AppendFormat($"params {varArg.Type()} {varArg.Name}, ");
                 }
 
@@ -848,8 +846,7 @@ namespace MASES.JNetReflector
                     if (!parameter.IsVarArgs)
                     {
                         methodHelpBuilder.AppendLine(string.Format(AllPackageClasses.ClassStub.MethodStub.HELP_PARAM_DECORATION, parameter.Name,
-                                                                                                                                 parameter.Type.IsNetNative() ? "langword" : "cref",
-                                                                                                                                 parameter.TypeWithoutArray()));
+                                                                                                                                 parameter.TypeWithoutArrayOrNullable()));
                         methodParamsBuilder.AppendFormat($"{parameter.Type()} {parameter.Name}, ");
                         methodExecutionParamsBuilder.AppendFormat($"{parameter.Name}, ");
                     }
@@ -868,8 +865,7 @@ namespace MASES.JNetReflector
                 if (hasVarArg)
                 {
                     methodHelpBuilder.AppendLine(string.Format(AllPackageClasses.ClassStub.MethodStub.HELP_PARAM_DECORATION, varArg.Name,
-                                                                                                                             varArg.Type.IsNetNative() ? "langword" : "cref",
-                                                                                                                             varArg.TypeWithoutArray()));
+                                                                                                                             varArg.TypeWithoutArrayOrNullable()));
                     methodParamsBuilder.AppendFormat($"params {varArg.Type()} {varArg.Name}, ");
                 }
 

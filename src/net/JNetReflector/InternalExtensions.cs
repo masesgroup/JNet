@@ -25,6 +25,7 @@ using Java.Lang;
 using Java.Lang.Reflect;
 using System.Text;
 using MASES.JNetReflector.Templates;
+using System.Xml.XPath;
 
 namespace MASES.JNetReflector
 {
@@ -681,7 +682,7 @@ namespace MASES.JNetReflector
 
         public static string JavadocHrefUrl(this Constructor entry)
         {
-            return string.Format(AllPackageClasses.HREF_URL, JavadocUrl(entry).Replace("<", "%3C").Replace(">", "%3E")); 
+            return string.Format(AllPackageClasses.HREF_URL, JavadocUrl(entry).Replace("<", "%3C").Replace(">", "%3E"));
         }
 
         #endregion
@@ -1035,10 +1036,12 @@ namespace MASES.JNetReflector
             return entry.Type.ToNetType(camel);
         }
 
-        public static string TypeWithoutArray(this Parameter entry, bool camel = true)
+        public static string TypeWithoutArrayOrNullable(this Parameter entry, bool camel = true)
         {
             var result = entry.Type(camel);
-            return result.Contains(SpecialNames.ArrayTypeTrailer) ? result.Substring(0, result.IndexOf(SpecialNames.ArrayTypeTrailer)) : result;
+            if (result.EndsWith("?")) result = result.Substring(0, result.IndexOf("?"));
+            if (result.Contains(SpecialNames.ArrayTypeTrailer)) result = result.Substring(0, result.IndexOf(SpecialNames.ArrayTypeTrailer));
+            return result;
         }
 
         public static bool IsObjectType(this Parameter entry, bool camel = true)
