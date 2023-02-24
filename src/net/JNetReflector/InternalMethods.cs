@@ -269,11 +269,12 @@ namespace MASES.JNetReflector
                         nestedClassBlock = allPackageStubNestedException.Replace(AllPackageClasses.ClassStub.NestedClassStub.JAVACLASS, jSubClass.JVMFullClassName())
                                                                         .Replace(AllPackageClasses.ClassStub.NestedClassStub.CLASS, jSubClass.JVMNestedClassName())
                                                                         .Replace(AllPackageClasses.ClassStub.NestedClassStub.HELP, jSubClass.JavadocHrefUrl())
-                                                                        .Replace(AllPackageClasses.ClassStub.NestedClassStub.BASECLASS, jSubClass.JVMBaseClassName(false));
+                                                                        .Replace(AllPackageClasses.ClassStub.NestedClassStub.BASECLASS, jSubClass.JVMBaseClassName(false))
+                                                                        .Replace(AllPackageClasses.ClassStub.NestedClassStub.JCOBRIDGE_VERSION, SpecialNames.JCOBridgeVersion);
                     }
                     else
                     {
-                        bool isSubClassCloseable = false; // to be defined
+                        bool isSubClassCloseable = jSubClass.IsCloseable();
                         bool isSubClassAbstract = jSubClass.IsAbstract();
                         bool isSubClassInterface = jSubClass.IsInterface();
                         bool isSubClassStatic = jSubClass.IsStatic();
@@ -287,7 +288,8 @@ namespace MASES.JNetReflector
                                                          .Replace(AllPackageClasses.ClassStub.NestedClassStub.ISABSTRACT, isSubClassAbstract ? "true" : "false")
                                                          .Replace(AllPackageClasses.ClassStub.NestedClassStub.ISCLOSEABLE, isSubClassCloseable ? "true" : "false")
                                                          .Replace(AllPackageClasses.ClassStub.NestedClassStub.ISINTERFACE, isSubClassInterface ? "true" : "false")
-                                                         .Replace(AllPackageClasses.ClassStub.NestedClassStub.ISSTATIC, isSubClassStatic ? "true" : "false");
+                                                         .Replace(AllPackageClasses.ClassStub.NestedClassStub.ISSTATIC, isSubClassStatic ? "true" : "false")
+                                                         .Replace(AllPackageClasses.ClassStub.NestedClassStub.JCOBRIDGE_VERSION, SpecialNames.JCOBridgeVersion);
 
                         if (!jSubClassIsListener)
                         {
@@ -369,11 +371,12 @@ namespace MASES.JNetReflector
                 classBlock = allPackageStubException.Replace(AllPackageClasses.ClassStub.JAVACLASS, fullClassName)
                                                     .Replace(AllPackageClasses.ClassStub.CLASS, className)
                                                     .Replace(AllPackageClasses.ClassStub.HELP, jClass.JavadocHrefUrl())
-                                                    .Replace(AllPackageClasses.ClassStub.BASECLASS, jClass.JVMBaseClassName(false));
+                                                    .Replace(AllPackageClasses.ClassStub.BASECLASS, jClass.JVMBaseClassName(false))
+                                                    .Replace(AllPackageClasses.ClassStub.JCOBRIDGE_VERSION, SpecialNames.JCOBridgeVersion);
             }
             else
             {
-                bool isClassCloseable = false; // to be defined
+                bool isClassCloseable = jClass.IsCloseable();
                 bool isClassAbstract = jClass.IsAbstract();
                 bool isClassInterface = jClass.IsInterface();
                 bool isClassStatic = jClass.IsStatic();
@@ -387,7 +390,8 @@ namespace MASES.JNetReflector
                                      .Replace(AllPackageClasses.ClassStub.ISABSTRACT, isClassAbstract ? "true" : "false")
                                      .Replace(AllPackageClasses.ClassStub.ISCLOSEABLE, isClassCloseable ? "true" : "false")
                                      .Replace(AllPackageClasses.ClassStub.ISINTERFACE, isClassInterface ? "true" : "false")
-                                     .Replace(AllPackageClasses.ClassStub.ISSTATIC, isClassStatic ? "true" : "false");
+                                     .Replace(AllPackageClasses.ClassStub.ISSTATIC, isClassStatic ? "true" : "false")
+                                     .Replace(AllPackageClasses.ClassStub.JCOBRIDGE_VERSION, SpecialNames.JCOBridgeVersion);
 
                 if (!jClassIsListener)
                 {
@@ -485,7 +489,7 @@ namespace MASES.JNetReflector
                     {
                         constructorHelpBuilder.AppendLine(string.Format(AllPackageClasses.ClassStub.ConstructorStub.HELP_PARAM_DECORATION, parameter.Name,
                                                                                                                                            parameter.Type.IsNetNative() ? "langword" : "cref",
-                                                                                                                                           parameter.Type()));
+                                                                                                                                           parameter.TypeWithoutArray()));
                         constructorParamsBuilder.AppendFormat($"{parameter.Type()} {parameter.Name}, ");
                         constructorExecutionParamsBuilder.AppendFormat($"{parameter.Name}, ");
                     }
@@ -506,7 +510,7 @@ namespace MASES.JNetReflector
                 {
                     constructorHelpBuilder.AppendLine(string.Format(AllPackageClasses.ClassStub.ConstructorStub.HELP_PARAM_DECORATION, varArg.Name,
                                                                                                                                        varArg.Type.IsNetNative() ? "langword" : "cref",
-                                                                                                                                       varArg.Type()));
+                                                                                                                                       varArg.TypeWithoutArray()));
                     constructorParamsBuilder.AppendFormat($"params {varArg.Type()} {varArg.Name}, ");
                 }
 
@@ -829,6 +833,7 @@ namespace MASES.JNetReflector
                 string methodName = method.MethodName(classDefinitions);
 
                 if (methodName == "Clone" && returnType == "object") continue;
+                if (methodName == "Dispose") modifier = " new" + modifier; // avoids warning for override
 
                 bool bypass = false;
                 bool hasVarArg = false;
@@ -844,7 +849,7 @@ namespace MASES.JNetReflector
                     {
                         methodHelpBuilder.AppendLine(string.Format(AllPackageClasses.ClassStub.MethodStub.HELP_PARAM_DECORATION, parameter.Name,
                                                                                                                                  parameter.Type.IsNetNative() ? "langword" : "cref",
-                                                                                                                                 parameter.Type()));
+                                                                                                                                 parameter.TypeWithoutArray()));
                         methodParamsBuilder.AppendFormat($"{parameter.Type()} {parameter.Name}, ");
                         methodExecutionParamsBuilder.AppendFormat($"{parameter.Name}, ");
                     }
@@ -864,7 +869,7 @@ namespace MASES.JNetReflector
                 {
                     methodHelpBuilder.AppendLine(string.Format(AllPackageClasses.ClassStub.MethodStub.HELP_PARAM_DECORATION, varArg.Name,
                                                                                                                              varArg.Type.IsNetNative() ? "langword" : "cref",
-                                                                                                                             varArg.Type()));
+                                                                                                                             varArg.TypeWithoutArray()));
                     methodParamsBuilder.AppendFormat($"params {varArg.Type()} {varArg.Name}, ");
                 }
 

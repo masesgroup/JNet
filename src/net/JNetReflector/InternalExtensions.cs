@@ -394,6 +394,16 @@ namespace MASES.JNetReflector
             return Modifier.IsStatic(entry.Modifiers);
         }
 
+        public static bool IsCloseable(this Class entry)
+        {
+            if (entry == null) throw new ArgumentNullException(nameof(entry));
+            foreach (var interfaceToCheck in entry.Interfaces)
+            {
+                if (interfaceToCheck.TypeName == "java.lang.Closeable") return true;
+            }
+            return false;
+        }
+
         public static bool IsJavaLangException(this Class entry)
         {
             if (entry == null) return false;
@@ -582,7 +592,7 @@ namespace MASES.JNetReflector
 
         public static string JavadocHrefUrl(this Class entry)
         {
-            return string.Format(AllPackageClasses.HREF_URL, JavadocUrl(entry));
+            return string.Format(AllPackageClasses.HREF_URL, JavadocUrl(entry).Replace("<", "%3C").Replace(">", "%3E"));
         }
 
         #endregion
@@ -646,7 +656,7 @@ namespace MASES.JNetReflector
             if (JNetReflectorCore.OriginJavadocUrl != null)
             {
                 var genString = entry.GenericString;
-
+                if (genString.Contains("throws")) genString = genString.Substring(0, genString.IndexOf("throws") - 1);
                 if (JNetReflectorCore.JavadocVersion > 9)
                 {
                     genString = genString.Substring(genString.IndexOf(entry.Name) + entry.Name.Length);
@@ -671,7 +681,7 @@ namespace MASES.JNetReflector
 
         public static string JavadocHrefUrl(this Constructor entry)
         {
-            return string.Format(AllPackageClasses.HREF_URL, JavadocUrl(entry));
+            return string.Format(AllPackageClasses.HREF_URL, JavadocUrl(entry).Replace("<", "%3C").Replace(">", "%3E")); 
         }
 
         #endregion
@@ -861,6 +871,7 @@ namespace MASES.JNetReflector
             {
                 var genString = entry.GenericString;
                 genString = genString.Substring(genString.IndexOf(entry.Name));
+                if (genString.Contains("throws")) genString = genString.Substring(0, genString.IndexOf("throws") - 1);
                 if (JNetReflectorCore.JavadocVersion < 7)
                 {
                     genString = genString.Replace(",", ", ");
@@ -879,7 +890,7 @@ namespace MASES.JNetReflector
 
         public static string JavadocHrefUrl(this Method entry)
         {
-            return string.Format(AllPackageClasses.HREF_URL, JavadocUrl(entry));
+            return string.Format(AllPackageClasses.HREF_URL, JavadocUrl(entry).Replace("<", "%3C").Replace(">", "%3E"));
         }
 
         #endregion
@@ -968,7 +979,7 @@ namespace MASES.JNetReflector
 
         public static string JavadocHrefUrl(this Field entry)
         {
-            return string.Format(AllPackageClasses.HREF_URL, JavadocUrl(entry));
+            return string.Format(AllPackageClasses.HREF_URL, JavadocUrl(entry).Replace("<", "%3C").Replace(">", "%3E"));
         }
 
         #endregion
@@ -1022,6 +1033,12 @@ namespace MASES.JNetReflector
         {
             if (entry == null) throw new ArgumentNullException(nameof(entry));
             return entry.Type.ToNetType(camel);
+        }
+
+        public static string TypeWithoutArray(this Parameter entry, bool camel = true)
+        {
+            var result = entry.Type(camel);
+            return result.Contains(SpecialNames.ArrayTypeTrailer) ? result.Substring(0, result.IndexOf(SpecialNames.ArrayTypeTrailer)) : result;
         }
 
         public static bool IsObjectType(this Parameter entry, bool camel = true)
