@@ -28,7 +28,9 @@ namespace Java.Lang
     /// </summary>
     public sealed class Module : JVMBridgeBase<Module>
     {
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.lang.Module";
         /// <summary>
         /// If the caller's module is this module then update this module to export the given package to the given module.

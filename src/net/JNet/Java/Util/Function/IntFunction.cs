@@ -35,7 +35,9 @@ namespace Java.Util.Function
     /// <typeparam name="TReturn">The return data type associated to the event</typeparam>
     public class IntFunction<TReturn> : Function<int, TReturn>, IIntFunction<TReturn>
     {
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_ClassName.htm"/>
+        /// </summary>
         public sealed override string ClassName => "org.mases.jnet.util.function.JNetIntFunction";
 
         /// <inheritdoc cref="Function{Int64, TReturn}"/>

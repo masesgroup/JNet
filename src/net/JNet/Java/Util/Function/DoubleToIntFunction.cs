@@ -39,7 +39,9 @@ namespace Java.Util.Function
     /// </summary>
     public class DoubleToIntFunction : JVMBridgeListener, IDoubleToIntFunction
     {
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_ClassName.htm"/>
+        /// </summary>
         public sealed override string ClassName => "org.mases.jnet.util.function.JNetDoubleToIntFunction";
 
         Func<double, int> executionFunction = null;

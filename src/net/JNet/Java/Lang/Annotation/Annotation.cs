@@ -26,7 +26,9 @@ namespace Java.Lang.Annotation
 #if JNETREFLECTOR
     public class Annotation : JVMBridgeBase<Annotation>
     {
+        /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr_2.5.3/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassName.htm"/>
+        /// </summary>
         public override string ClassName => "java.lang.annotation.Annotation";
 #else
     public partial class Annotation
